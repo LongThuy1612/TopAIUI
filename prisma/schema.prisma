@@ -1,0 +1,133 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Status {
+  PENDING
+  PUBLISHED
+  CANCELED
+}
+
+enum PricingType {
+  FREE
+  FREEMIUM
+  PAID
+}
+
+enum UserRole {
+  USER
+  MANAGER
+  ADMIN
+}
+
+model Category {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  name       String
+  icon       String   @default("🔧")
+  parentId   String?
+  isFeatured Boolean  @default(false)
+  viewCount  Float    @default(0)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  tools Tool[]
+
+  @@map("Category")
+}
+
+model Tool {
+  id              String      @id @default(cuid())
+  name            String
+  slug            String      @unique
+  status          Status      @default(PUBLISHED)
+  logoUrl         String?
+  screenshotUrl   String?
+  videoUrl        String?
+  images          Json?
+  affiliateUrl    String?
+  couponCode      String?
+  pricingType     PricingType @default(FREEMIUM)
+  website         String?
+  toolifyUrl      String?
+  twitterUrl      String?
+  discordUrl      String?
+  productHuntUrl  String?
+  socialLinks     Json?
+  isFeatured      Boolean     @default(false)
+  isJustLaunched  Boolean     @default(false)
+  isVerified      Boolean     @default(false)
+  isFreeTool      Boolean     @default(false)
+  isAd            Boolean     @default(false)
+  adPriority      Int         @default(0)
+  rejectionReason String?
+  monthlyTraffic  String?
+  monthlyVisits   Float       @default(0)
+  collectionCount Int         @default(0)
+  impressions     Float       @default(0)
+  clicksOrganic   Float       @default(0)
+  clicksPaid      Float       @default(0)
+  domainAuthority Int         @default(0)
+  viewCount       Float       @default(0)
+  clickCount      Float       @default(0)
+  averageRating   Float       @default(0)
+  reviewCount     Int         @default(0)
+  reviewScore     Float       @default(0)
+  ratingCount     Int         @default(0)
+  upvoteCount     Int         @default(0)
+  trafficRank     Int         @default(0)
+  nuxtTraffic     Json?
+  companyInfo     Json?
+  attributes      Json?
+  ownerId         String?
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  categories Category[]
+
+  @@index([status])
+  @@map("Tool")
+}
+
+model User {
+  id                       String    @id @default(cuid())
+  email                    String    @unique
+  password                 String?
+  name                     String?
+  company                  String?
+  country                  String?
+  phone                    String?
+  city                     String?
+  state                    String?
+  zip                      String?
+  address                  String?
+  vatNumber                String?
+  role                     UserRole  @default(USER)
+  emailVerified            Boolean   @default(false)
+  verificationToken        String?
+  verificationTokenExpiry  DateTime?
+  createdAt                DateTime  @default(now())
+  updatedAt                DateTime  @updatedAt
+  credits                  Int       @default(0)
+  usage                    Json?
+  adCredits                Int       @default(0)
+  linkCredits              Int       @default(0)
+  postCredits              Int       @default(0)
+  bio                      String?
+  website                  String?
+  stripeCustomerId         String?
+  passwordChangedAt        DateTime?
+  passwordResetToken       String?
+  passwordResetTokenExpiry DateTime?
+  isBanned                 Boolean   @default(false)
+  deletedAt                DateTime?
+  hasSetPassword           Boolean   @default(false)
+
+  @@map("User")
+}

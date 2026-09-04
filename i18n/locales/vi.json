@@ -1,0 +1,130 @@
+{
+  "header": {
+    "searchPlaceholder": "Tìm kiếm công cụ AI...",
+    "categories": "Danh mục",
+    "rankings": "Xếp hạng",
+    "submit": "Đăng công cụ",
+    "admin": "Quản trị"
+  },
+  "hero": {
+    "titlePrefix": "Khám phá những",
+    "titleHighlight": "công cụ AI tốt nhất",
+    "subtitle": "Duyệt hàng trăm sản phẩm AI theo danh mục, so sánh giá và tìm công cụ phù hợp với công việc của bạn.",
+    "searchPlaceholder": "Tìm kiếm công cụ AI..."
+  },
+  "stats": {
+    "tools": "Công cụ AI",
+    "categories": "Danh mục",
+    "featured": "Công cụ nổi bật"
+  },
+  "tabs": {
+    "heading": "Khám phá công cụ",
+    "newest": "Mới",
+    "featured": "Nổi bật nhất",
+    "free": "Miễn phí",
+    "viewAll": "Xem tất cả →"
+  },
+  "announcement": {
+    "featured": "Nổi bật"
+  },
+  "sidebar": {
+    "featuredTools": "Công cụ nổi bật",
+    "topCategories": "Danh mục hàng đầu"
+  },
+  "sections": {
+    "browseByCategory": "Duyệt theo danh mục",
+    "newestTools": "Công cụ mới nhất",
+    "featuredTools": "Công cụ nổi bật",
+    "viewAll": "Xem tất cả →"
+  },
+  "cta": {
+    "title": "Bạn có công cụ AI muốn chia sẻ?",
+    "subtitle": "Đưa công cụ của bạn đến với những người đang tìm kiếm giải pháp như vậy.",
+    "button": "Đăng công cụ của bạn"
+  },
+  "empty": {
+    "noTools": "Chưa có công cụ nào — hãy chạy",
+    "noResults": "Không tìm thấy công cụ nào"
+  },
+  "category": {
+    "allTools": "Tất cả công cụ",
+    "allToolsTitle": "Tất cả công cụ AI",
+    "allPricing": "Tất cả mức giá",
+    "sortNewest": "Mới nhất",
+    "sortFeatured": "Nổi bật trước",
+    "sortName": "Tên A–Z",
+    "toolsFound": "công cụ | công cụ",
+    "searchPlaceholder": "Tìm kiếm công cụ..."
+  },
+  "pricing": {
+    "FREE": "Miễn phí",
+    "FREEMIUM": "Miễn phí giới hạn",
+    "PAID": "Trả phí"
+  },
+  "tool": {
+    "openSite": "Mở trang web",
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "featured": "Nổi bật",
+    "introduction": "Giới thiệu",
+    "addedOn": "Ngày thêm",
+    "monthlyVisitors": "Lượt truy cập / tháng",
+    "features": "Tính năng nổi bật",
+    "useCases": "Trường hợp sử dụng",
+    "prosAndCons": "Ưu & nhược điểm",
+    "pros": "Ưu điểm",
+    "cons": "Nhược điểm",
+    "faq": "Câu hỏi thường gặp",
+    "alternatives": "Công cụ thay thế cho",
+    "backToCategory": "Quay lại",
+    "notFound": "Không tìm thấy công cụ",
+    "similarTools": "Công cụ tương tự",
+    "tabProductInfo": "Thông tin sản phẩm",
+    "tabPricing": "Bảng giá",
+    "tabReviews": "Đánh giá",
+    "tabAnalytics": "Phân tích",
+    "tabAlternatives": "Thay thế",
+    "productInformationHeading": "Thông tin sản phẩm {name}",
+    "whatIs": "{name} là gì?",
+    "howToUseHeading": "Cách sử dụng {name}?",
+    "reviewsHeading": "Đánh giá {name} ({count})",
+    "ratingPrompt": "Bạn có giới thiệu {name} không? Để lại bình luận",
+    "whatDoYouThink": "Bạn nghĩ gì?",
+    "loginToComment": "Đăng nhập để bình luận",
+    "pricingHeading": "Bảng giá {name}",
+    "noPricingYet": "Chưa có thông tin giá.",
+    "analyticsHeading": "Phân tích {name}",
+    "trafficAnalysis": "Phân tích lưu lượng truy cập {name}",
+    "visitOverTime": "Lượt truy cập theo thời gian",
+    "monthlyVisits": "Lượt truy cập / tháng",
+    "avgVisitDuration": "Thời gian truy cập TB",
+    "pagePerVisit": "Trang / lượt truy cập",
+    "bounceRate": "Tỷ lệ thoát",
+    "noTrafficYet": "Chưa có dữ liệu lưu lượng truy cập.",
+    "badgeVerified": "Đã xác minh",
+    "badgeJustLaunched": "Mới ra mắt",
+    "badgeFreeTool": "Công cụ miễn phí",
+    "affiliateLink": "Liên kết tiếp thị",
+    "couponCode": "Mã giảm giá",
+    "ratings": "đánh giá",
+    "upvotes": "lượt upvote",
+    "domainAuthority": "Domain Authority",
+    "trafficRank": "Xếp hạng traffic",
+    "viewCount": "Lượt xem trang"
+  },
+  "footer": {
+    "tagline": "Khám phá, so sánh và chia sẻ những công cụ AI tốt nhất — xây dựng với Nuxt & PostgreSQL.",
+    "product": "Sản phẩm",
+    "home": "Trang chủ",
+    "allTools": "Tất cả công cụ",
+    "submit": "Đăng công cụ",
+    "categories": "Danh mục",
+    "company": "Về chúng tôi",
+    "admin": "Đăng nhập quản trị",
+    "language": "Ngôn ngữ",
+    "copyright": "Bảo lưu mọi quyền."
+  },
+  "language": {
+    "label": "Ngôn ngữ"
+  }
+}

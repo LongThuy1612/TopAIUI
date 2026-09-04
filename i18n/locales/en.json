@@ -1,0 +1,130 @@
+{
+  "header": {
+    "searchPlaceholder": "Search AI tools...",
+    "categories": "Categories",
+    "rankings": "Rankings",
+    "submit": "Submit a tool",
+    "admin": "Admin"
+  },
+  "hero": {
+    "titlePrefix": "Discover the best",
+    "titleHighlight": "AI tools",
+    "subtitle": "Browse hundreds of AI products by category, compare pricing, and find the right tool for your workflow.",
+    "searchPlaceholder": "Search AI tools..."
+  },
+  "stats": {
+    "tools": "AI tools listed",
+    "categories": "Categories",
+    "featured": "Featured tools"
+  },
+  "tabs": {
+    "heading": "Explore tools",
+    "newest": "New",
+    "featured": "Most Featured",
+    "free": "Free",
+    "viewAll": "View all →"
+  },
+  "announcement": {
+    "featured": "Featured"
+  },
+  "sidebar": {
+    "featuredTools": "Featured tools",
+    "topCategories": "Top categories"
+  },
+  "sections": {
+    "browseByCategory": "Browse by category",
+    "newestTools": "Newest tools",
+    "featuredTools": "Featured tools",
+    "viewAll": "View all →"
+  },
+  "cta": {
+    "title": "Have an AI tool to share?",
+    "subtitle": "Get it listed in front of people looking for tools like yours.",
+    "button": "Submit your tool"
+  },
+  "empty": {
+    "noTools": "No tools yet — run",
+    "noResults": "No tools found"
+  },
+  "category": {
+    "allTools": "All tools",
+    "allToolsTitle": "All AI Tools",
+    "allPricing": "All pricing",
+    "sortNewest": "Newest first",
+    "sortFeatured": "Featured first",
+    "sortName": "Name A–Z",
+    "toolsFound": "tool found | tools found",
+    "searchPlaceholder": "Search tools..."
+  },
+  "pricing": {
+    "FREE": "Free",
+    "FREEMIUM": "Freemium",
+    "PAID": "Paid"
+  },
+  "tool": {
+    "openSite": "Open site",
+    "save": "Save",
+    "saved": "Saved",
+    "featured": "Featured",
+    "introduction": "Introduction",
+    "addedOn": "Added on",
+    "monthlyVisitors": "Monthly Visitors",
+    "features": "Key features",
+    "useCases": "Use cases",
+    "prosAndCons": "Pros & cons",
+    "pros": "Pros",
+    "cons": "Cons",
+    "faq": "Frequently asked questions",
+    "alternatives": "Alternatives to",
+    "backToCategory": "Back to",
+    "notFound": "Tool not found",
+    "similarTools": "Similar tools",
+    "tabProductInfo": "Product Information",
+    "tabPricing": "Pricing",
+    "tabReviews": "Reviews",
+    "tabAnalytics": "Analytics",
+    "tabAlternatives": "Alternatives",
+    "productInformationHeading": "{name} Product Information",
+    "whatIs": "What is {name}?",
+    "howToUseHeading": "How to use {name}?",
+    "reviewsHeading": "{name} Reviews ({count})",
+    "ratingPrompt": "Would you recommend {name}? Leave a comment",
+    "whatDoYouThink": "What do you think?",
+    "loginToComment": "Login to comment",
+    "pricingHeading": "{name} Pricing",
+    "noPricingYet": "No pricing information yet.",
+    "analyticsHeading": "Analytics of {name}",
+    "trafficAnalysis": "{name} Website Traffic Analysis",
+    "visitOverTime": "Visit Over Time",
+    "monthlyVisits": "Monthly Visits",
+    "avgVisitDuration": "Avg. Visit Duration",
+    "pagePerVisit": "Page per Visit",
+    "bounceRate": "Bounce Rate",
+    "noTrafficYet": "No traffic data tracked yet.",
+    "badgeVerified": "Verified",
+    "badgeJustLaunched": "Just launched",
+    "badgeFreeTool": "Free tool",
+    "affiliateLink": "Affiliate link",
+    "couponCode": "Coupon code",
+    "ratings": "ratings",
+    "upvotes": "upvotes",
+    "domainAuthority": "Domain Authority",
+    "trafficRank": "Traffic Rank",
+    "viewCount": "Page Views"
+  },
+  "footer": {
+    "tagline": "Discover, compare and share the best AI tools — powered by Nuxt & PostgreSQL.",
+    "product": "Product",
+    "home": "Home",
+    "allTools": "All tools",
+    "submit": "Submit a tool",
+    "categories": "Categories",
+    "company": "Company",
+    "admin": "Admin login",
+    "language": "Language",
+    "copyright": "All rights reserved."
+  },
+  "language": {
+    "label": "Language"
+  }
+}
