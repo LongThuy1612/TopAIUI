@@ -18,7 +18,7 @@ async function login() {
   }
 }
 
-useSeoMeta({ title: 'Admin login — Topainew' })
+useSeoMeta({ title: 'Admin login — TopAICollection' })
 </script>
 
 <template>

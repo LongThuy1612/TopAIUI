@@ -22,7 +22,7 @@ async function onSubmit() {
   }
 }
 
-useSeoMeta({ title: 'Submit a tool — Topainew' })
+useSeoMeta({ title: 'Submit a tool — TopAICollection' })
 </script>
 
 <template>

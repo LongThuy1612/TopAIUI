@@ -103,14 +103,14 @@ onMounted(() => {
 onBeforeUnmount(() => sectionObserver?.disconnect())
 
 useSeoMeta({
-  title: () => `${tool.value?.name} — Topainew`
+  title: () => `${tool.value?.name} — TopAICollection`
 })
 </script>
 
 <template>
   <div v-if="tool" class="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
     <nav class="flex flex-wrap items-center gap-1.5 text-sm text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">Topainew</NuxtLink>
+      <NuxtLink to="/" class="hover:text-brand-600">TopAICollection</NuxtLink>
       <template v-if="category">
         <span>›</span>
         <NuxtLink :to="`/category/${category.slug}`" class="hover:text-brand-600">{{ category.name }}</NuxtLink>

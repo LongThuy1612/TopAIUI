@@ -47,6 +47,7 @@
     "noResults": "Không tìm thấy công cụ nào"
   },
   "category": {
+    "breadcrumbHome": "Trang chủ",
     "allTools": "Tất cả công cụ",
     "allToolsTitle": "Tất cả công cụ AI",
     "allPricing": "Tất cả mức giá",
@@ -54,12 +55,30 @@
     "sortFeatured": "Nổi bật trước",
     "sortName": "Tên A–Z",
     "toolsFound": "công cụ | công cụ",
-    "searchPlaceholder": "Tìm kiếm công cụ..."
+    "searchPlaceholder": "Tìm kiếm công cụ...",
+    "filters": "Bộ lọc",
+    "viewGrid": "Xem dạng lưới",
+    "viewList": "Xem dạng danh sách"
   },
   "pricing": {
     "FREE": "Miễn phí",
     "FREEMIUM": "Miễn phí giới hạn",
     "PAID": "Trả phí"
+  },
+  "ranking": {
+    "title": "Bảng xếp hạng AI",
+    "subtitle": "Xếp hạng dựa trên dữ liệu lưu lượng truy cập và tăng trưởng trong hệ thống của chúng tôi.",
+    "byGrowth1m": "Tăng trưởng 1 tháng",
+    "byGrowth3m": "Tăng trưởng 3 tháng",
+    "byGrowth6m": "Tăng trưởng 6 tháng",
+    "byTraffic": "Lượt truy cập / tháng",
+    "colRank": "Hạng",
+    "colTool": "Công cụ",
+    "colVisits": "Lượt truy cập / tháng",
+    "colGrowth": "Tăng trưởng",
+    "colAuthority": "Domain Authority",
+    "colCategory": "Danh mục",
+    "noData": "Chưa có dữ liệu xếp hạng."
   },
   "tool": {
     "openSite": "Mở trang web",

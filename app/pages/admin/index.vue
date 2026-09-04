@@ -43,7 +43,7 @@ async function remove(id: string) {
   refresh()
 }
 
-useSeoMeta({ title: 'Admin — Topainew' })
+useSeoMeta({ title: 'Admin — TopAICollection' })
 </script>
 
 <template>

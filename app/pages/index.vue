@@ -23,13 +23,19 @@ const activeTab = ref<'newest' | 'featured' | 'free'>('newest')
 const tabLists = { newest: newestTools, featured: featuredTools, free: freeTools }
 const tabTools = computed(() => tabLists[activeTab.value].value.slice(0, 10))
 
+const viewAllHref = computed(() => {
+  if (activeTab.value === 'newest') return { path: '/new' }
+  if (activeTab.value === 'featured') return { path: '/featured' }
+  return { path: '/free' }
+})
+
 const heroQuery = ref('')
 function onSearch(q: string) {
   navigateTo({ path: '/category/all', query: q ? { q } : {} })
 }
 
 useSeoMeta({
-  title: 'Topainew — Discover the Best AI Tools',
+  title: 'TopAICollection — Discover the Best AI Tools',
   description: 'Explore hundreds of AI tools by category — find the right AI for coding, writing, design, video and more.'
 })
 </script>
@@ -79,7 +85,7 @@ useSeoMeta({
                 {{ t(`tabs.${tab}`) }}
               </button>
             </div>
-            <NuxtLink to="/category/all" class="text-sm font-semibold text-brand-600 hover:text-brand-700">{{ t('tabs.viewAll') }}</NuxtLink>
+            <NuxtLink :to="viewAllHref" class="text-sm font-semibold text-brand-600 hover:text-brand-700">{{ t('tabs.viewAll') }}</NuxtLink>
           </div>
 
           <div v-if="tabTools.length" class="mt-2 divide-y divide-ink-100">

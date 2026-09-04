@@ -19,7 +19,11 @@ export default defineEventHandler(async (event) => {
   const sortMap: Record<string, Prisma.ToolOrderByWithRelationInput | Prisma.ToolOrderByWithRelationInput[]> = {
     newest: { createdAt: 'desc' },
     featured: [{ isFeatured: 'desc' }, { createdAt: 'desc' }],
-    name: { name: 'asc' }
+    name: { name: 'asc' },
+    traffic: { monthlyVisits: 'desc' },
+    growth1m: { last1MonthGrowth: 'desc' },
+    growth3m: { last3MonthGrowth: 'desc' },
+    growth6m: { last6MonthGrowth: 'desc' }
   }
   const orderBy = sortMap[String(query.sort)] ?? sortMap.newest
 

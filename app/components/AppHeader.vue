@@ -16,7 +16,7 @@ function onSearch(q: string) {
     <div class="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
       <NuxtLink to="/" class="flex shrink-0 items-center gap-2">
         <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-sm font-extrabold text-white">T</span>
-        <span class="text-lg font-extrabold tracking-tight text-ink-900">Topainew</span>
+        <span class="text-lg font-extrabold tracking-tight text-ink-900">TopAICollection</span>
       </NuxtLink>
 
       <nav class="hidden shrink-0 items-center gap-1 lg:flex">
@@ -42,7 +42,7 @@ function onSearch(q: string) {
             </NuxtLink>
           </div>
         </div>
-        <NuxtLink to="/category/all" class="rounded-lg px-3 py-2 text-sm font-medium text-ink-600 hover:bg-ink-100/60 hover:text-brand-600">
+        <NuxtLink to="/ranking" class="rounded-lg px-3 py-2 text-sm font-medium text-ink-600 hover:bg-ink-100/60 hover:text-brand-600">
           {{ t('header.rankings') }}
         </NuxtLink>
       </nav>

@@ -8,19 +8,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum Status {
-  PENDING
-  PUBLISHED
-  CANCELED
-}
-
 enum PricingType {
   FREE
   FREEMIUM
   PAID
 }
 
-enum UserRole {
+enum Role {
   USER
   MANAGER
   ADMIN
@@ -28,9 +22,11 @@ enum UserRole {
 
 model Category {
   id         String   @id @default(cuid())
+  handle     String?
   slug       String   @unique
   name       String
   icon       String   @default("🔧")
+  url        String?
   parentId   String?
   isFeatured Boolean  @default(false)
   viewCount  Float    @default(0)
@@ -43,56 +39,156 @@ model Category {
 }
 
 model Tool {
-  id              String      @id @default(cuid())
-  name            String
-  slug            String      @unique
-  status          Status      @default(PUBLISHED)
-  logoUrl         String?
-  screenshotUrl   String?
-  videoUrl        String?
-  images          Json?
-  affiliateUrl    String?
-  couponCode      String?
-  pricingType     PricingType @default(FREEMIUM)
-  website         String?
-  toolifyUrl      String?
-  twitterUrl      String?
-  discordUrl      String?
-  productHuntUrl  String?
-  socialLinks     Json?
-  isFeatured      Boolean     @default(false)
-  isJustLaunched  Boolean     @default(false)
-  isVerified      Boolean     @default(false)
-  isFreeTool      Boolean     @default(false)
-  isAd            Boolean     @default(false)
-  adPriority      Int         @default(0)
-  rejectionReason String?
-  monthlyTraffic  String?
-  monthlyVisits   Float       @default(0)
-  collectionCount Int         @default(0)
-  impressions     Float       @default(0)
-  clicksOrganic   Float       @default(0)
-  clicksPaid      Float       @default(0)
-  domainAuthority Int         @default(0)
-  viewCount       Float       @default(0)
-  clickCount      Float       @default(0)
-  averageRating   Float       @default(0)
-  reviewCount     Int         @default(0)
-  reviewScore     Float       @default(0)
-  ratingCount     Int         @default(0)
-  upvoteCount     Int         @default(0)
-  trafficRank     Int         @default(0)
-  nuxtTraffic     Json?
-  companyInfo     Json?
-  attributes      Json?
-  ownerId         String?
-  createdAt       DateTime    @default(now())
-  updatedAt       DateTime    @updatedAt
+  id                String      @id @default(cuid())
+  slug              String      @unique
+  url               String?
+  timestamp         String?
+  icon              String?
+  logoUrl           String?
+  screenshotUrl     String?
+  videoUrl          String?
+  images            Json?
+  affiliateUrl      String?
+  couponCode        String?
+  pricingType       PricingType @default(FREEMIUM)
+  website           String?
+  toolifyUrl        String?
+  twitterUrl        String?
+  discordUrl        String?
+  productHuntUrl    String?
+  socialLinks       Json?
+  isFeatured        Boolean     @default(false)
+  isJustLaunched    Boolean     @default(false)
+  isVerified        Boolean     @default(false)
+  isFreeTool        Boolean     @default(false)
+  isAd              Boolean     @default(false)
+  adPriority        Int         @default(0)
+  rejectionReason   String?
+  monthlyTraffic    String?
+  monthlyVisits     Float       @default(0)
+  collectionCount   Int         @default(0)
+  impressions       Float       @default(0)
+  clicksOrganic     Float       @default(0)
+  clicksPaid        Float       @default(0)
+  domainAuthority   Int         @default(0)
+  viewCount         Float       @default(0)
+  clickCount        Float       @default(0)
+  averageRating     Float       @default(0)
+  reviewCount       Int         @default(0)
+  reviewScore       Float       @default(0)
+  ratingCount       Int         @default(0)
+  upvoteCount       Int         @default(0)
+  trafficRank       Int         @default(0)
+  last6MonthGrowth  Float       @default(0)
+  last3MonthGrowth  Float       @default(0)
+  last1MonthGrowth  Float       @default(0)
+  nuxtTraffic       Json?
+  companyInfo       Json?
+  attributes        Json?
+  step1             Boolean     @default(false)
+  step2             Boolean     @default(false)
+  ownerId           String?
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+  deletedAt         DateTime?
+  status            String      @default("PUBLISHED")
+  name              String
 
-  categories Category[]
+  categories    Category[]
+  translations  ToolTranslation[]
+  faqs          Faq[]
+  features      Feature[]
+  pricingPlans  PricingPlan[]
+  reviews       Review[]
 
   @@index([status])
   @@map("Tool")
+}
+
+model ToolTranslation {
+  id                String   @id @default(cuid())
+  toolId            String
+  locale            String
+  shortDesc         String?
+  description       String?
+  whatIs            String?
+  howToUse          String?
+  coreFeatures      String[]
+  useCases          String[]
+  isManualOverride  Boolean  @default(false)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  tool Tool @relation(fields: [toolId], references: [id])
+
+  @@unique([toolId, locale])
+  @@map("ToolTranslation")
+}
+
+model Faq {
+  id       String @id @default(cuid())
+  toolId   String
+  locale   String
+  question String
+  answer   String
+
+  tool Tool @relation(fields: [toolId], references: [id])
+
+  @@map("Faq")
+}
+
+model Feature {
+  id      String @id @default(cuid())
+  toolId  String
+  locale  String
+  content String
+
+  tool Tool @relation(fields: [toolId], references: [id])
+
+  @@map("Feature")
+}
+
+model PricingPlan {
+  id       String   @id @default(cuid())
+  toolId   String
+  locale   String
+  name     String
+  price    String
+  period   String
+  features String[]
+
+  tool Tool @relation(fields: [toolId], references: [id])
+
+  @@map("PricingPlan")
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  rating     Int
+  comment    String?
+  userId     String
+  toolId     String
+  locale     String
+  isVerified Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  status     String   @default("PENDING")
+  userInfo   Json?
+
+  tool Tool @relation(fields: [toolId], references: [id])
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("Review")
+}
+
+model Tag {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  viewCount Float    @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("Tag")
 }
 
 model User {
@@ -108,7 +204,7 @@ model User {
   zip                      String?
   address                  String?
   vatNumber                String?
-  role                     UserRole  @default(USER)
+  role                     Role      @default(USER)
   emailVerified            Boolean   @default(false)
   verificationToken        String?
   verificationTokenExpiry  DateTime?
@@ -128,6 +224,8 @@ model User {
   isBanned                 Boolean   @default(false)
   deletedAt                DateTime?
   hasSetPassword           Boolean   @default(false)
+
+  reviews Review[]
 
   @@map("User")
 }

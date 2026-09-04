@@ -13,7 +13,7 @@ const year = new Date().getFullYear()
       <div class="col-span-2 sm:col-span-1">
         <NuxtLink to="/" class="flex items-center gap-2">
           <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-brand-500 text-xs font-extrabold text-white">T</span>
-          <span class="text-base font-extrabold tracking-tight text-white">Topainew</span>
+          <span class="text-base font-extrabold tracking-tight text-white">TopAICollection</span>
         </NuxtLink>
         <p class="mt-3 max-w-[220px] text-sm leading-relaxed">{{ t('footer.tagline') }}</p>
         <div class="mt-4">
@@ -48,7 +48,7 @@ const year = new Date().getFullYear()
     </div>
 
     <div class="mt-10 border-t border-white/10 py-6 text-center text-xs">
-      © {{ year }} Topainew — {{ t('footer.copyright') }}
+      © {{ year }} TopAICollection — {{ t('footer.copyright') }}
     </div>
   </footer>
 </template>

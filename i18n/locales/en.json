@@ -47,6 +47,7 @@
     "noResults": "No tools found"
   },
   "category": {
+    "breadcrumbHome": "Home",
     "allTools": "All tools",
     "allToolsTitle": "All AI Tools",
     "allPricing": "All pricing",
@@ -54,12 +55,30 @@
     "sortFeatured": "Featured first",
     "sortName": "Name A–Z",
     "toolsFound": "tool found | tools found",
-    "searchPlaceholder": "Search tools..."
+    "searchPlaceholder": "Search tools...",
+    "filters": "Filters",
+    "viewGrid": "Grid view",
+    "viewList": "List view"
   },
   "pricing": {
     "FREE": "Free",
     "FREEMIUM": "Freemium",
     "PAID": "Paid"
+  },
+  "ranking": {
+    "title": "Top AI Tools",
+    "subtitle": "Ranked using traffic and growth data tracked in our directory.",
+    "byGrowth1m": "1-Month Growth",
+    "byGrowth3m": "3-Month Growth",
+    "byGrowth6m": "6-Month Growth",
+    "byTraffic": "Monthly Visits",
+    "colRank": "Rank",
+    "colTool": "Tool",
+    "colVisits": "Monthly Visits",
+    "colGrowth": "Growth",
+    "colAuthority": "Domain Authority",
+    "colCategory": "Category",
+    "noData": "No ranking data yet."
   },
   "tool": {
     "openSite": "Open site",
