@@ -5,9 +5,9 @@ services:
     ports:
       - '5432:5432'
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: topainew
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-topainew}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -24,9 +24,9 @@ services:
     ports:
       - '3000:3000'
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/topainew
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-topainew}
       ADMIN_TOKEN: ${ADMIN_TOKEN:-changeme-prod-token}
-      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-changeme-prod-password}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin}
       NUXT_PUBLIC_SITE_URL: http://localhost:3000
     depends_on:
       postgres:
