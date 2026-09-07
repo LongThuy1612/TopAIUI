@@ -1,0 +1,8 @@
+-- AlterTable
+ALTER TABLE "CategoryTranslation" ALTER COLUMN "updatedAt" SET DEFAULT CURRENT_TIMESTAMP;
+
+-- AlterTable
+ALTER TABLE "CollectionTranslation" ALTER COLUMN "updatedAt" SET DEFAULT CURRENT_TIMESTAMP;
+
+-- AlterTable
+ALTER TABLE "TagTranslation" ALTER COLUMN "updatedAt" SET DEFAULT CURRENT_TIMESTAMP;

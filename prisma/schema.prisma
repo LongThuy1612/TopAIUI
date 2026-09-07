@@ -48,7 +48,7 @@ model CategoryTranslation {
   seoTitle         String?
   seoDesc          String?
   isManualOverride Boolean  @default(false)
-  updatedAt        DateTime @updatedAt
+  updatedAt        DateTime @default(now()) @updatedAt
 
   category Category @relation(fields: [categoryId], references: [id])
 
@@ -217,7 +217,7 @@ model TagTranslation {
   locale           String
   name             String
   isManualOverride Boolean  @default(false)
-  updatedAt        DateTime @updatedAt
+  updatedAt        DateTime @default(now()) @updatedAt
 
   tag Tag @relation(fields: [tagId], references: [id])
 
@@ -284,7 +284,7 @@ model CollectionTranslation {
   title            String
   description      String?
   isManualOverride Boolean  @default(false)
-  updatedAt        DateTime @updatedAt
+  updatedAt        DateTime @default(now()) @updatedAt
 
   collection Collection @relation(fields: [collectionId], references: [id])
 
