@@ -33,9 +33,27 @@ model Category {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
 
-  tools Tool[]
+  tools        Tool[]
+  translations CategoryTranslation[]
 
   @@map("Category")
+}
+
+model CategoryTranslation {
+  id               String   @id @default(cuid())
+  categoryId       String
+  locale           String
+  name             String
+  description      String?
+  seoTitle         String?
+  seoDesc          String?
+  isManualOverride Boolean  @default(false)
+  updatedAt        DateTime @updatedAt
+
+  category Category @relation(fields: [categoryId], references: [id])
+
+  @@unique([categoryId, locale])
+  @@map("CategoryTranslation")
 }
 
 model Tool {
@@ -188,7 +206,23 @@ model Tag {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
+  translations TagTranslation[]
+
   @@map("Tag")
+}
+
+model TagTranslation {
+  id               String   @id @default(cuid())
+  tagId            String
+  locale           String
+  name             String
+  isManualOverride Boolean  @default(false)
+  updatedAt        DateTime @updatedAt
+
+  tag Tag @relation(fields: [tagId], references: [id])
+
+  @@unique([tagId, locale])
+  @@map("TagTranslation")
 }
 
 model User {
@@ -228,4 +262,32 @@ model User {
   reviews Review[]
 
   @@map("User")
+}
+
+model Collection {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  coverImage String?
+  isFeatured Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  translations CollectionTranslation[]
+
+  @@map("Collection")
+}
+
+model CollectionTranslation {
+  id               String   @id @default(cuid())
+  collectionId     String
+  locale           String
+  title            String
+  description      String?
+  isManualOverride Boolean  @default(false)
+  updatedAt        DateTime @updatedAt
+
+  collection Collection @relation(fields: [collectionId], references: [id])
+
+  @@unique([collectionId, locale])
+  @@map("CollectionTranslation")
 }
