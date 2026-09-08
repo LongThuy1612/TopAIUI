@@ -33,7 +33,7 @@ model Category {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
 
-  tools        Tool[]
+  tools        Tool[] @relation("ToolToCategory")
   translations CategoryTranslation[]
 
   @@map("Category")
@@ -112,7 +112,7 @@ model Tool {
   status            String      @default("PUBLISHED")
   name              String
 
-  categories    Category[]
+  categories    Category[] @relation("ToolToCategory")
   translations  ToolTranslation[]
   faqs          Faq[]
   features      Feature[]
