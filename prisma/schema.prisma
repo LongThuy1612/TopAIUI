@@ -48,7 +48,7 @@ model CategoryTranslation {
   seoTitle         String?
   seoDesc          String?
   isManualOverride Boolean  @default(false)
-  updatedAt        DateTime @default(now()) @updatedAt
+  updatedAt        DateTime @default(now()) @updatedAt @map("updated_at")
 
   category Category @relation(fields: [categoryId], references: [id])
 
@@ -134,8 +134,8 @@ model ToolTranslation {
   coreFeatures      String[]
   useCases          String[]
   isManualOverride  Boolean  @default(false)
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
 
   tool Tool @relation(fields: [toolId], references: [id])
 
@@ -217,7 +217,7 @@ model TagTranslation {
   locale           String
   name             String
   isManualOverride Boolean  @default(false)
-  updatedAt        DateTime @default(now()) @updatedAt
+  updatedAt        DateTime @default(now()) @updatedAt @map("updated_at")
 
   tag Tag @relation(fields: [tagId], references: [id])
 
@@ -284,7 +284,7 @@ model CollectionTranslation {
   title            String
   description      String?
   isManualOverride Boolean  @default(false)
-  updatedAt        DateTime @default(now()) @updatedAt
+  updatedAt        DateTime @default(now()) @updatedAt @map("updated_at")
 
   collection Collection @relation(fields: [collectionId], references: [id])
 
