@@ -3,7 +3,7 @@ import type { Prisma } from '@prisma/client'
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
   const page = Math.max(1, Number(query.page) || 1)
-  const limit = Math.min(60, Number(query.limit) || 24)
+  const limit = Math.min(300, Number(query.limit) || 24)
 
   // status is hardcoded to 'PUBLISHED' — this endpoint never leaks pending
   // (unapproved) submissions to the public. Admin-only visibility lives in

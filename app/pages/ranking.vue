@@ -19,16 +19,12 @@ const periodGrowthField: Record<Period, 'last1MonthGrowth' | 'last3MonthGrowth' 
 }
 
 const activePeriod = ref<Period>('growth1m')
-const page = ref(1)
-
-watch(activePeriod, () => { page.value = 1 })
 
 const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
-  query: computed(() => ({ sort: activePeriod.value, page: page.value, limit: 24 }))
+  query: computed(() => ({ sort: activePeriod.value, limit: 300 }))
 })
 
 const tools = computed(() => toolsRes.value?.items ?? [])
-const pageCount = computed(() => toolsRes.value?.pageCount ?? 1)
 
 const monthLabel = computed(() => new Date().toLocaleDateString(undefined, { month: 'long', year: 'numeric' }))
 
@@ -103,10 +99,10 @@ useSeoMeta({
               <span
                 :class="[
                   'flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold',
-                  rankBadge[(page - 1) * 24 + i + 1] ?? 'bg-ink-100 text-ink-500'
+                  rankBadge[i + 1] ?? 'bg-ink-100 text-ink-500'
                 ]"
               >
-                {{ (page - 1) * 24 + i + 1 }}
+                {{ i + 1 }}
               </span>
             </td>
             <td class="px-4 py-3">
@@ -137,7 +133,5 @@ useSeoMeta({
     <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
       {{ t('ranking.noData') }}
     </div>
-
-    <Pagination v-model:page="page" :page-count="pageCount" />
   </div>
 </template>
