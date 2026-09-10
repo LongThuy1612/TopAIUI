@@ -24,7 +24,7 @@ model Category {
   id         String   @id @default(cuid())
   handle     String?
   slug       String   @unique
-  name       String
+  name       String?
   icon       String   @default("🔧")
   url        String?
   parentId   String?
