@@ -34,7 +34,7 @@ const year = new Date().getFullYear()
         <h3 class="text-xs font-semibold uppercase tracking-wide text-ink-200">{{ t('footer.categories') }}</h3>
         <ul class="mt-3 space-y-2 text-sm">
           <li v-for="cat in categories?.slice(0, 5)" :key="cat.slug">
-            <NuxtLink :to="`/category/${cat.slug}`" class="hover:text-white">{{ cat.icon }} {{ cat.name }}</NuxtLink>
+            <NuxtLink :to="`/category/${cat.slug}`" class="hover:text-white"><CategoryIcon :icon="cat.icon" /> {{ cat.name }}</NuxtLink>
           </li>
         </ul>
       </div>

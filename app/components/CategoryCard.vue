@@ -14,7 +14,7 @@ defineProps<{
     ]"
   >
     <span class="flex items-center gap-2 truncate">
-      <span>{{ category.icon }}</span>
+      <CategoryIcon :icon="category.icon" />
       <span class="truncate">{{ category.name }}</span>
     </span>
     <span class="shrink-0 text-xs text-ink-400">{{ category.count }}</span>

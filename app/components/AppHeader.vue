@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import type { Category } from '~/types'
-
 const { t } = useI18n()
-const { data: categories } = await useFetch<Category[]>('/api/categories')
-
-const categoriesOpen = ref(false)
 
 function onSearch(q: string) {
   navigateTo({ path: '/category/all', query: q ? { q } : {} })
@@ -20,28 +15,9 @@ function onSearch(q: string) {
       </NuxtLink>
 
       <nav class="hidden shrink-0 items-center gap-1 lg:flex">
-        <div class="relative" @mouseenter="categoriesOpen = true" @mouseleave="categoriesOpen = false">
-          <button class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-ink-600 hover:bg-ink-100/60 hover:text-brand-600">
-            {{ t('header.categories') }}
-            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div
-            v-show="categoriesOpen"
-            class="absolute left-0 top-full grid w-[420px] grid-cols-2 gap-1 rounded-xl border border-ink-100 bg-white p-3 shadow-lg"
-          >
-            <NuxtLink
-              v-for="cat in categories"
-              :key="cat.slug"
-              :to="`/category/${cat.slug}`"
-              class="flex items-center gap-2 truncate rounded-lg px-3 py-2 text-sm text-ink-600 hover:bg-brand-50 hover:text-brand-700"
-            >
-              <span>{{ cat.icon }}</span>
-              <span class="truncate">{{ cat.name }}</span>
-            </NuxtLink>
-          </div>
-        </div>
+        <NuxtLink to="/category/all" class="rounded-lg px-3 py-2 text-sm font-medium text-ink-600 hover:bg-ink-100/60 hover:text-brand-600">
+          {{ t('header.categories') }}
+        </NuxtLink>
         <NuxtLink to="/ranking" class="rounded-lg px-3 py-2 text-sm font-medium text-ink-600 hover:bg-ink-100/60 hover:text-brand-600">
           {{ t('header.rankings') }}
         </NuxtLink>

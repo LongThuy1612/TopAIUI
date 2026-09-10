@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-01-01',
   future: { compatibilityVersion: 4 },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/icon'],
   css: ['~/assets/css/main.css'],
 
   i18n: {
@@ -33,10 +33,14 @@ export default defineNuxtConfig({
     }
   },
 
-  // --- ISR strategy: public catalog vs. Admin/CMS vs. User areas ---
+  // --- HTML cache strategy: public catalog vs. Admin/CMS vs. User areas ---
   //
-  // PUBLIC pages (same HTML for every visitor) → safe to cache with ISR.
-  // Self-hosted Docker/node-server: Nitro runs these as SWR under the hood.
+  // PUBLIC pages (same HTML for every visitor) → safe to cache.
+  // `isr` only has a runtime implementation on the Vercel/Netlify/Zeabur
+  // presets — on `node-server` it is silently ignored, so self-hosted Docker
+  // deploys need the generic `cache` route rule instead (backed by Nitro's
+  // built-in storage, `swr: true` serves the stale page instantly while
+  // revalidating in the background).
   //
   // ADMIN / CMS pages → must NEVER be cached or shared between requests:
   //   - could leak one admin's session/data to another visitor
@@ -47,22 +51,21 @@ export default defineNuxtConfig({
   // each response is specific to the logged-in user, so caching is unsafe.
   routeRules: {
     // Public — safe to cache, identical for everyone
-    '/': { isr: 60 },
-    '/category/**': { isr: 300 },
-    '/tools/**': { isr: 3600 },
+    '/': { cache: { maxAge: 60, swr: true } },
+    '/category/**': { cache: { maxAge: 300, swr: true } },
+    '/tools/**': { cache: { maxAge: 3600, swr: true } },
 
     // Public form, but has per-submission state (success/error) — don't cache
-    '/submit': { isr: false, headers: { 'Cache-Control': 'no-store' } },
+    '/submit': { headers: { 'Cache-Control': 'no-store' } },
 
     // Admin / CMS — always dynamic, never cached, hidden from search engines
     '/admin/**': {
-      isr: false,
       ssr: true,
       headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
     },
 
     // API — data endpoints stay dynamic; admin API additionally is not CORS-open
-    '/api/admin/**': { isr: false, cors: false, headers: { 'Cache-Control': 'no-store' } },
-    '/api/**': { isr: false, cors: true }
+    '/api/admin/**': { cors: false, headers: { 'Cache-Control': 'no-store' } },
+    '/api/**': { cors: true }
   }
 })

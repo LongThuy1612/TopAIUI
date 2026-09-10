@@ -6,9 +6,6 @@ const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 const isAll = computed(() => slug.value === 'all')
 
-const { data: categories } = await useFetch<Category[]>('/api/categories')
-const activeCategory = computed(() => isAll.value ? undefined : categories.value?.find(c => c.slug === slug.value))
-
 const pricingValues = ['FREE', 'FREEMIUM', 'PAID'] as const
 const sortValues = ['newest', 'featured', 'name'] as const
 
@@ -24,16 +21,20 @@ const filtersOpen = ref(false)
 
 watch([pricingFilter, sortBy, searchQuery, slug], () => { page.value = 1 })
 
-const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
-  query: computed(() => ({
-    category: isAll.value ? undefined : slug.value,
-    pricing: pricingFilter.value === 'all' ? undefined : pricingFilter.value,
-    q: searchQuery.value || undefined,
-    sort: sortBy.value,
-    page: page.value,
-    limit: 24
-  }))
-})
+const [{ data: categories }, { data: toolsRes }] = await Promise.all([
+  useFetch<Category[]>('/api/categories'),
+  useFetch<ToolsResponse>('/api/tools', {
+    query: computed(() => ({
+      category: isAll.value ? undefined : slug.value,
+      pricing: pricingFilter.value === 'all' ? undefined : pricingFilter.value,
+      q: searchQuery.value || undefined,
+      sort: sortBy.value,
+      page: page.value,
+      limit: 24
+    }))
+  })
+])
+const activeCategory = computed(() => isAll.value ? undefined : categories.value?.find(c => c.slug === slug.value))
 
 const tools = computed(() => toolsRes.value?.items ?? [])
 const total = computed(() => toolsRes.value?.total ?? 0)
@@ -55,7 +56,7 @@ useSeoMeta({
     <div class="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
       <div>
         <h1 class="flex items-center gap-2 text-3xl font-extrabold text-ink-900">
-          <span v-if="activeCategory">{{ activeCategory.icon }}</span>
+          <CategoryIcon v-if="activeCategory" :icon="activeCategory.icon" />
           <span v-else>🗂️</span>
           {{ activeCategory?.name ?? (isAll ? t('category.allToolsTitle') : slug) }}
         </h1>

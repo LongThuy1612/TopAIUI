@@ -3,10 +3,12 @@ import type { Category, ToolsResponse } from '~/types'
 
 const { t } = useI18n()
 
-const { data: newestRes } = await useFetch<ToolsResponse>('/api/tools', { query: { limit: 20, sort: 'newest' } })
-const { data: featuredRes } = await useFetch<ToolsResponse>('/api/tools', { query: { featured: 'true', limit: 20 } })
-const { data: freeRes } = await useFetch<ToolsResponse>('/api/tools', { query: { pricing: 'FREE', limit: 20, sort: 'newest' } })
-const { data: categories } = await useFetch<Category[]>('/api/categories')
+const [{ data: newestRes }, { data: featuredRes }, { data: freeRes }, { data: categories }] = await Promise.all([
+  useFetch<ToolsResponse>('/api/tools', { query: { limit: 20, sort: 'newest' } }),
+  useFetch<ToolsResponse>('/api/tools', { query: { featured: 'true', limit: 20 } }),
+  useFetch<ToolsResponse>('/api/tools', { query: { pricing: 'FREE', limit: 20, sort: 'newest' } }),
+  useFetch<Category[]>('/api/categories')
+])
 
 const newestTools = computed(() => newestRes.value?.items ?? [])
 const featuredTools = computed(() => featuredRes.value?.items ?? [])
