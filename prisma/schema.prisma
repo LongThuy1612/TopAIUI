@@ -185,7 +185,7 @@ model Review {
   id         String   @id @default(cuid())
   rating     Int
   comment    String?
-  userId     String
+  userId     String?
   toolId     String
   locale     String
   isVerified Boolean  @default(false)
@@ -194,8 +194,8 @@ model Review {
   status     String   @default("PENDING")
   userInfo   Json?
 
-  tool Tool @relation(fields: [toolId], references: [id])
-  user User @relation(fields: [userId], references: [id])
+  tool Tool  @relation(fields: [toolId], references: [id])
+  user User? @relation(fields: [userId], references: [id])
 
   @@map("Review")
 }
