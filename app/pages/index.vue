@@ -172,7 +172,10 @@ useSeoMeta({
           >
             <span class="pointer-events-none absolute -top-1.5 -right-1 text-[86px] font-extrabold leading-none text-brand-800 opacity-[0.06]">{{ initialsOf(tool.name) }}</span>
             <div class="relative flex items-center gap-3">
-              <span class="inline-flex h-8 w-8 items-center justify-center rounded-[9px] bg-brand-800 text-xs font-extrabold text-white">{{ initialsOf(tool.name) }}</span>
+              <div v-if="tool.logoUrl" class="h-8 w-8 shrink-0 overflow-hidden rounded-[9px]">
+                <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
+              </div>
+              <span v-else class="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[9px] bg-brand-800 text-xs font-extrabold text-white">{{ initialsOf(tool.name) }}</span>
               <span class="text-[19px] font-extrabold text-ink-900">{{ tool.name }}</span>
             </div>
             <p v-if="tool.shortDesc" class="relative mt-3.5 line-clamp-2 text-sm leading-[1.55] text-brand-600">{{ tool.shortDesc }}</p>
