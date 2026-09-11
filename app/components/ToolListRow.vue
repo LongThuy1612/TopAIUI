@@ -8,7 +8,7 @@ const props = defineProps<{
 const { t } = useI18n()
 
 const pricingStyle: Record<string, string> = {
-  FREE: 'bg-brand-100 text-brand-600',
+  FREE: 'bg-emerald-50 text-emerald-700',
   FREEMIUM: 'border border-brand-300 text-brand-600',
   PAID: 'bg-amber-50 text-amber-700'
 }
