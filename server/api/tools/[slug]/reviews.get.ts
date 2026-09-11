@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
   const limit = Math.min(50, Number(query.limit) || 10)
   const orderDir = query.sort === 'oldest' ? 'asc' : 'desc'
 
-  const where = { tool: { slug }, status: 'PUBLISHED' } as const
+  const where = { tool: { slug }, status: 'APPROVED' } as const
 
   const [items, total] = await Promise.all([
     prisma.review.findMany({
