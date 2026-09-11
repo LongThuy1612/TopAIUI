@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Servicevilkår - TopAICollection",
+    "description": "Læs vilkår og betingelser for brug af TopAICollections tjenester og hjemmeside."
+  },
+  "title": "Servicevilkår",
+  "lastUpdated": "Sidst opdateret",
+  "introduction": "Disse servicevilkår regulerer din brug af TopAICollections websted og tjenester. Ved at tilgå eller bruge vores tjeneste accepterer du at være bundet af disse vilkår.",
+  "sections": {
+    "acceptance": {
+      "title": "Accept af vilkår",
+      "content": "Ved at tilgå og bruge denne hjemmeside accepterer og accepterer du at være bundet af vilkårene og bestemmelsen i denne aftale."
+    },
+    "use": {
+      "title": "Brug af tjenesten",
+      "content": [
+        "Du skal være mindst 13 år for at bruge vores service",
+        "Du er ansvarlig for at opretholde fortroligheden af ​​din konto",
+        "Du accepterer ikke at bruge tjenesten til ulovlige eller uautoriserede formål",
+        "Du må ikke overføre orme, vira eller ondsindet kode"
+      ]
+    },
+    "content": {
+      "title": "Brugerindhold",
+      "content": [
+        "Du bevarer ejerskabet af indhold, du indsender",
+        "Du giver os en licens til at bruge, ændre og vise dit indhold",
+        "Du er ansvarlig for det indhold, du poster",
+        "Vi forbeholder os retten til at fjerne indhold, der overtræder disse vilkår"
+      ]
+    },
+    "intellectual": {
+      "title": "Intellektuel ejendomsret",
+      "content": "Tjenesten og dens originale indhold, funktioner og funktionalitet er og vil forblive TopAICollections og dets licensgiveres eksklusive ejendom."
+    },
+    "privacy": {
+      "title": "Privatliv",
+      "content": "Din brug af vores service er også underlagt vores privatlivspolitik. Læs venligst vores privatlivspolitik, som også styrer webstedet og informerer brugerne om vores dataindsamlingspraksis."
+    },
+    "disclaimers": {
+      "title": "Ansvarsfraskrivelser",
+      "content": [
+        "Tjenesten leveres på basis af \"som den er\" og \"som tilgængelig\".",
+        "Vi garanterer ikke, at tjenesten vil være uafbrudt eller fejlfri",
+        "Vi er ikke ansvarlige for tredjepartsværktøjer anført i vores bibliotek",
+        "Brug af AI-værktøjer er på eget ansvar"
+      ]
+    },
+    "liability": {
+      "title": "Ansvarsbegrænsning",
+      "content": "TopAICollection eller dets direktører, medarbejdere, partnere, agenter, leverandører eller tilknyttede selskaber skal under ingen omstændigheder være ansvarlige for indirekte, tilfældige, særlige, følgeskader eller strafskader."
+    },
+    "governing": {
+      "title": "Gældende lov",
+      "content": "Disse vilkår skal styres og fortolkes i overensstemmelse med lovene i den jurisdiktion, hvor TopAICollection opererer, uden hensyntagen til dets lovkonflikter."
+    }
+  },
+  "contact": {
+    "title": "Kontaktoplysninger",
+    "content": "Hvis du har spørgsmål om disse servicevilkår, bedes du kontakte os på:"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "关于我们 - TopAICollection",
+    "description": "了解 TopAICollection 的使命是帮助您发现满足您需求的最佳 AI 工具和网站。"
+  },
+  "badge": "关于我们",
+  "hero": {
+    "title": "通往人工智能革命的大门",
+    "subtitle": "我们的使命是实现人工智能工具的民主化，并帮助每个人利用人工智能的力量。"
+  },
+  "stats": {
+    "tools": "人工智能工具",
+    "categories": "类别",
+    "users": "每月用户数",
+    "languages": "语言"
+  },
+  "mission": {
+    "title": "我们的使命",
+    "paragraph1": "在 TopAICollection，我们相信每个人都应该可以使用人工智能。我们的平台提供了最佳人工智能工具和网站的综合目录，使用户可以轻松地在工作和日常生活中发现和利用人工智能。",
+    "paragraph2": "我们仔细策划和审查我们集合中的每个工具，确保我们的用户只能访问最高质量的人工智能解决方案。我们的专家团队根据功能、用户体验、定价和实际应用来评估工具。",
+    "paragraph3": "无论您是开发人员、设计师、营销人员、教育工作者还是企业主，TopAICollection 都可以帮助您找到完美的 AI 工具来提高您的生产力和创造力。"
+  },
+  "features": {
+    "title": "为什么选择TopAICollection",
+    "global": {
+      "title": "全球影响力",
+      "description": "提供 20 多种语言版本，为全球数百万用户提供服务"
+    },
+    "updated": {
+      "title": "每日更新",
+      "description": "我们的收藏每天都会更新最新的人工智能创新"
+    },
+    "community": {
+      "title": "社区驱动",
+      "description": "用户评论和评级可帮助您做出明智的决定"
+    },
+    "verified": {
+      "title": "经过验证的工具",
+      "description": "每个工具都经过我们团队的仔细审查和验证"
+    }
+  },
+  "cta": {
+    "title": "立即开始您的人工智能之旅",
+    "subtitle": "探索我们的人工智能工具集合或提交您自己的工具",
+    "browse": "浏览工具",
+    "submit": "提交您的工具"
+  }
+}

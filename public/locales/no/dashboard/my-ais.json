@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Ingen AI-verktøy ennå",
+      "description": "Send inn AI-verktøyet ditt for å bli oppdaget av millioner av brukere.",
+      "cta": "Send inn AI-verktøy"
+    },
+    "columns": {
+      "tool": "Verktøy",
+      "organic": "Organisk trafikk",
+      "paid": "Betalt trafikk",
+      "impressions": "Visninger",
+      "actions": "Handlinger",
+      "status": "Status"
+    },
+    "statusTooltip": {
+      "pending": "Venter på godkjennelse fra administrator"
+    },
+    "submittedToast": "Verktøyet ditt er sendt inn og venter på vurdering.",
+    "warnings": {
+      "pendingView": "Dette verktøyet er fortsatt under vurdering og ikke offentlig synlig ennå.",
+      "confirmDelete": "Er du sikker på at du vil slette dette AI-verktøyet? Denne handlingen kan ikke angres."
+    },
+    "submit": {
+      "tool": "Send inn AI-verktøy",
+      "update": "Oppdater AI",
+      "name": "GPT-navn",
+      "url": "ChatGPT-URL",
+      "category": "Kategori",
+      "description": "Beskrivelse",
+      "gpt": {
+        "title": "Send inn din GPT",
+        "label": "Send inn GPT",
+        "description": "Send inn din egendefinerte GPT for å bli oppdaget av tusenvis av brukere."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Innleveringer",
+    "deleteSuccess": "Innleveringen ble slettet.",
+    "deleteError": "Kunne ikke slette innsendingen.",
+    "noSubmissions": "Ingen gjesteinnlegg ennå",
+    "untitled": "Innlevering uten tittel",
+    "confirmDelete": "Er du sikker på at du vil slette denne innsendingen? Denne handlingen kan ikke angres.",
+    "columns": {
+      "subject": "Tema",
+      "date": "Dato",
+      "actions": "Handlinger",
+      "status": "Status"
+    }
+  }
+}

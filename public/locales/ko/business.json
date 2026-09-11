@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "비즈니스 솔루션 - 우리와 협력하세요 | TopAICollection",
+    "description": "TopAICollection을 통해 비즈니스 파트너십 기회를 탐색해 보세요. 광고, 후원 콘텐츠 등"
+  },
+  "title": "비즈니스 솔루션",
+  "subtitle": "TopAICollection과 협력하여 전 세계 AI 애호가에게 다가가세요",
+  "contact": {
+    "title": "문의하기"
+  },
+  "offers": {
+    "ads": "타겟 광고 캠페인 운영",
+    "partnerships": "전략적 파트너십 구축",
+    "growth": "AI 제품 성장 가속화",
+    "consulting": "맞춤형 AI 통합 서비스"
+  },
+  "form": {
+    "fullName": "성명",
+    "workEmail": "직장 이메일",
+    "companyName": "회사명",
+    "inquiryType": "문의 유형",
+    "selectType": "유형 선택",
+    "message": "메시지",
+    "messagePlaceholder": "귀하의 요구 사항에 대해 자세히 알려주십시오...",
+    "inquiryTypes": {
+      "advertise": "공시 하다",
+      "guestPost": "게스트 포스트",
+      "partnership": "공동",
+      "customDevelopment": "맞춤형 개발",
+      "other": "다른"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "귀하의 AI 도구를 광고하세요",
+      "description": "귀하의 AI 도구가 당사 플랫폼 전반에 걸쳐 눈에 띄게 표시되도록 하십시오.",
+      "link": "자세히 알아보기"
+    },
+    "guestPost": {
+      "title": "게스트 게시물 및 링크",
+      "description": "콘텐츠를 게시하거나 당사의 권위 있는 사이트에 백링크를 받으세요.",
+      "link": "자세히 알아보기"
+    },
+    "submitTool": {
+      "title": "도구 제출",
+      "description": "AI 도구를 우리 디렉토리에 무료로 추가하세요.",
+      "link": "지금 제출"
+    },
+    "customSolutions": {
+      "title": "맞춤형 솔루션",
+      "description": "맞춤형 파트너십 기회를 원하시면 저희에게 연락주세요.",
+      "link": "문의하기"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100개 이상의 파트너",
+    "partnerCountSub": "선도적인 AI 기업의 신뢰를 받는",
+    "contactSupport": "지원팀에 문의"
+  },
+  "validation": {
+    "required": "필수 필드입니다",
+    "toolNameRequired": "도구 이름이 필요합니다",
+    "url": "잘못된 URL",
+    "descriptionMin": "설명은 10자 이상이어야 합니다.",
+    "categoryRequired": "카테고리를 선택해주세요",
+    "email": "유효하지 않은 이메일 주소입니다",
+    "messageMin": "메시지는 10자 이상이어야 합니다."
+  },
+  "success": "귀하의 문의사항이 성공적으로 제출되었습니다!"
+}

@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Sosiaalinen seuranta",
+    "description": "Seuraa avainsanoja TikTokissa ja YouTubessa.",
+    "table": {
+      "platform": "Alusta",
+      "keyword": "Avainsana",
+      "videos": "Videot",
+      "views": "Näyttökerrat",
+      "creators": "Luojat",
+      "status": "Tila"
+    },
+    "status": {
+      "active": "Aktiivinen"
+    },
+    "monthlyQueries": "Kuukausittaiset kyselyt",
+    "videosToday": "Videot tänään",
+    "creatorsToday": "Luojat tänään",
+    "metrics": {
+      "monthlyQueries": "Kuukausittaiset kyselyt",
+      "videosToday": "Videoita tänään",
+      "creatorsToday": "Tekijät tänään"
+    }
+  },
+  "socialListeningTitle": "Sosiaalinen seuranta",
+  "socialTable": {
+    "tool": "AI-työkalu",
+    "noData": "Tietoja ei löytynyt"
+  },
+  "allPlatforms": "Kaikki alustat"
+}

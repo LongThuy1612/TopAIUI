@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "AIツールを検索...",
+    "categories": "カテゴリー",
+    "rankings": "ランキング",
+    "submit": "ツールを登録",
+    "admin": "管理者"
+  },
+  "hero": {
+    "titlePrefix": "最高の",
+    "titleHighlight": "AIツール",
+    "subtitle": "カテゴリー別に数百のAI製品を閲覧し、価格を比較して、あなたのワークフローに合ったツールを見つけましょう。",
+    "searchPlaceholder": "AIツールを検索..."
+  },
+  "stats": {
+    "tools": "件のAIツール",
+    "categories": "カテゴリー",
+    "featured": "注目のツール"
+  },
+  "tabs": {
+    "heading": "ツールを探す",
+    "newest": "新着",
+    "featured": "注目",
+    "free": "無料",
+    "viewAll": "すべて見る →"
+  },
+  "announcement": {
+    "featured": "注目"
+  },
+  "sidebar": {
+    "featuredTools": "注目のツール",
+    "topCategories": "人気カテゴリー"
+  },
+  "sections": {
+    "browseByCategory": "カテゴリーで見る",
+    "newestTools": "新着ツール",
+    "featuredTools": "注目のツール",
+    "viewAll": "すべて見る →",
+    "justLaunched": "新規リリース",
+    "featuredThisWeek": "今週の注目ツール",
+    "featuredThisWeekSubtitle": "コミュニティで最も保存・評価されたツール。",
+    "updatedDaily": "毎日更新",
+    "viewMore": "もっと見る →"
+  },
+  "cta": {
+    "title": "紹介したいAIツールはありますか？",
+    "subtitle": "同じようなツールを探している人たちに届けましょう。",
+    "button": "ツールを登録する"
+  },
+  "empty": {
+    "noTools": "まだツールがありません — 次を実行してください",
+    "noResults": "ツールが見つかりません"
+  },
+  "category": {
+    "breadcrumbHome": "ホーム",
+    "allTools": "すべてのツール",
+    "allToolsTitle": "すべてのAIツール",
+    "allPricing": "すべての価格帯",
+    "sortNewest": "新着順",
+    "sortFeatured": "注目順",
+    "sortName": "名前順 A–Z",
+    "toolsFound": "件のツールが見つかりました | 件のツールが見つかりました",
+    "searchPlaceholder": "ツールを検索...",
+    "filters": "フィルター",
+    "viewGrid": "グリッド表示",
+    "viewList": "リスト表示"
+  },
+  "pricing": {
+    "FREE": "無料",
+    "FREEMIUM": "フリーミアム",
+    "PAID": "有料"
+  },
+  "ranking": {
+    "title": "人気のAIツール",
+    "subtitle": "当ディレクトリで記録されたトラフィックと成長データに基づくランキングです。",
+    "byGrowth1m": "1か月の成長率",
+    "byGrowth3m": "3か月の成長率",
+    "byGrowth6m": "6か月の成長率",
+    "byTraffic": "月間訪問数",
+    "colRank": "順位",
+    "colTool": "ツール",
+    "colVisits": "月間訪問数",
+    "colGrowth": "成長率",
+    "colAuthority": "ドメインオーソリティ",
+    "colCategory": "カテゴリー",
+    "noData": "ランキングデータはまだありません。"
+  },
+  "tool": {
+    "openSite": "サイトを開く",
+    "save": "保存",
+    "saved": "保存済み",
+    "featured": "注目",
+    "introduction": "紹介",
+    "addedOn": "登録日",
+    "monthlyVisitors": "月間訪問者数",
+    "features": "主な機能",
+    "useCases": "使用例",
+    "prosAndCons": "メリット・デメリット",
+    "pros": "メリット",
+    "cons": "デメリット",
+    "faq": "よくある質問",
+    "alternatives": "の代替ツール",
+    "backToCategory": "戻る：",
+    "notFound": "ツールが見つかりません",
+    "similarTools": "似ているツール",
+    "tabProductInfo": "製品情報",
+    "tabPricing": "料金",
+    "tabReviews": "レビュー",
+    "tabAnalytics": "分析",
+    "tabAlternatives": "代替ツール",
+    "productInformationHeading": "{name} の製品情報",
+    "whatIs": "{name} とは？",
+    "howToUseHeading": "{name} の使い方は？",
+    "reviewsHeading": "{name} のレビュー（{count}件）",
+    "ratingPrompt": "{name} をおすすめしますか？コメントを残してください",
+    "whatDoYouThink": "あなたの感想は？",
+    "loginToComment": "コメントするにはログイン",
+    "pricingHeading": "{name} の料金",
+    "noPricingYet": "料金情報はまだありません。",
+    "analyticsHeading": "{name} の分析",
+    "trafficAnalysis": "{name} のウェブサイトトラフィック分析",
+    "visitOverTime": "訪問数の推移",
+    "monthlyVisits": "月間訪問数",
+    "avgVisitDuration": "平均滞在時間",
+    "pagePerVisit": "訪問あたりのページ数",
+    "bounceRate": "離脱率",
+    "noTrafficYet": "トラフィックデータはまだありません。",
+    "badgeVerified": "認証済み",
+    "badgeJustLaunched": "新規リリース",
+    "badgeFreeTool": "無料ツール",
+    "affiliateLink": "アフィリエイトリンク",
+    "couponCode": "クーポンコード",
+    "ratings": "件の評価",
+    "upvotes": "件のアップボート",
+    "domainAuthority": "ドメインオーソリティ",
+    "trafficRank": "トラフィック順位",
+    "viewCount": "ページビュー"
+  },
+  "footer": {
+    "tagline": "最高のAIツールを見つけて、比較して、共有しよう — Nuxt と PostgreSQL で構築。",
+    "product": "プロダクト",
+    "home": "ホーム",
+    "allTools": "すべてのツール",
+    "submit": "ツールを登録",
+    "categories": "カテゴリー",
+    "company": "会社情報",
+    "admin": "管理者ログイン",
+    "language": "言語",
+    "copyright": "全著作権所有。"
+  },
+  "language": {
+    "label": "言語"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "שלח את ה-GPT שלך - קבל את ה-GPT שלך מוצג | TopAICollection",
+    "description": "שלח את ה-GPT המותאם אישית שלך כדי להופיע בספריית ה-GPTs שלנו. להגיע לאלפי חובבי AI."
+  },
+  "title": "שלח את ה-GPT שלך",
+  "subtitle": "קבל את ה-GPT המותאם אישית שלך במדריך שלנו",
+  "loginRequired": "נדרשת התחברות",
+  "submitButton": "שלח GPT",
+  "whySubmit": {
+    "title": "למה לשלוח את ה-GPT שלך?"
+  },
+  "benefits": {
+    "audience": "להגיע לאלפי חובבי בינה מלאכותית מדי יום",
+    "instant": "רישום מיידי עם אימות",
+    "global": "חשיפה גלובלית בכל השפות",
+    "analytics": "עקוב אחר קליקים ומעורבות"
+  },
+  "proTip": {
+    "title": "טיפ מקצועי",
+    "desc": "ודא שה-GPT שלך ציבורי ונגיש באמצעות קישור לפני השליחה."
+  },
+  "form": {
+    "gptName": "שם GPT",
+    "gptNamePlaceholder": "לְמָשָׁל אשף הקוד",
+    "gptUrl": "כתובת URL של ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "כתובת אתר של סמל",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "תיאור / הוראות",
+    "gptDescriptionPlaceholder": "תאר מה ה-GPT שלך עושה..."
+  },
+  "validation": {
+    "required": "שדה זה חובה",
+    "invalidUrl": "כתובת URL לא חוקית של ChatGPT",
+    "nameTooShort": "השם חייב להיות לפחות 2 תווים",
+    "descriptionTooShort": "התיאור חייב להיות באורך 10 תווים לפחות",
+    "toolNameRequired": "נדרש שם הכלי",
+    "url": "כתובת אתר לא חוקית",
+    "descriptionMin": "התיאור חייב להיות באורך 10 תווים לפחות",
+    "categoryRequired": "אנא בחר קטגוריה",
+    "email": "כתובת אימייל לא חוקית",
+    "messageMin": "ההודעה חייבת להיות באורך 10 תווים לפחות"
+  },
+  "sidebar": {
+    "gptCount": "הוגשו מסמכי GPT",
+    "gptCountSub": "וגדל"
+  },
+  "success": "ה-GPT שלך נשלח בהצלחה!"
+}

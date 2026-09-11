@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- Beoordeling en analyse van AI-tools"
+  },
+  "errors": {
+    "notFound": "Gereedschap niet gevonden",
+    "notFoundDescription": "Het hulpmiddel dat u zoekt bestaat niet.",
+    "serverError": "Interne serverfout.",
+    "serverErrorDescription": "Er is een onverwachte fout opgetreden op de server. Probeer het later opnieuw."
+  },
+  "actions": {
+    "visit": "Bezoek website",
+    "save": "Redden",
+    "saved": "Opgeslagen",
+    "share": "Deel",
+    "update": "Update dit hulpprogramma",
+    "advertise": "Maak reclame voor dit hulpmiddel",
+    "visitWebsite": "Bezoek website",
+    "readMore": "Lees meer",
+    "readLess": "Lees minder",
+    "openVideo": "Video openen"
+  },
+  "cta": {
+    "visit": "Open terrein",
+    "advertise": "Maak reclame voor dit hulpmiddel",
+    "update": "Update dit hulpprogramma"
+  },
+  "sidebar": {
+    "category": "Categorie",
+    "tags": "Labels"
+  },
+  "tabs": {
+    "socialListening": "Sociaal luisteren",
+    "alternatives": "Alternatieven"
+  },
+  "similar": {
+    "title": "Soortgelijke AI-tools"
+  },
+  "stats": {
+    "monthlyVisits": "Maandelijkse bezoeken",
+    "growth": "Groei",
+    "reviews": "beoordelingen",
+    "averageTime": "Gemiddelde tijd ter plaatse",
+    "pagesPerVisit": "Pagina's per bezoek",
+    "bounceRate": "Bouncepercentage",
+    "visits": "Bezoeken",
+    "reviews_formatted": "{rating} ({count} {label})"
+  },
+  "sections": {
+    "overview": "Overzicht",
+    "reviews": "Recensies",
+    "analytics": "Analyse",
+    "embed": "Insluiten",
+    "alternatives": "Alternatieven",
+    "related": "Gerelateerde hulpmiddelen"
+  },
+  "details": {
+    "description": "Toolintroductie:",
+    "monthlyTraffic": "Maandelijks verkeer:",
+    "socialMedia": "Sociale media en e-mail:",
+    "company": "Bedrijf",
+    "categories": "Categorieën",
+    "tags": "Labels"
+  },
+  "content": {
+    "whatIs": "Wat is",
+    "howToUse": "Hoe te gebruiken",
+    "coreFeatures": "Kernfuncties",
+    "useCases": "Gebruiksscenario's",
+    "pricingPlans": "Prijsplannen",
+    "faqs": "Veelgestelde vragen",
+    "relatedTools": "Gerelateerde hulpmiddelen",
+    "productInfo": "Productinformatie",
+    "writtenBy": "Geschreven & bewerkt door",
+    "factCheckedBy": "Feiten gecontroleerd door"
+  },
+  "analytics": {
+    "title": "Analyses en verkeersinzichten",
+    "subtitle": "Analyse van",
+    "latestTraffic": "Laatste websiteverkeer",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Bronnen van websiteverkeer",
+    "topKeywords": "Topzoekwoorden",
+    "keyword": "Trefwoord",
+    "traffic": "Verkeer",
+    "trafficSubtitle": "om het webverkeer te verbeteren",
+    "geoSubtitle": "indicatoren voor zoekmachines",
+    "sourceSubtitle": "indicatoren voor zoekmachines",
+    "keywordSubtitle": "indicatoren voor zoekmachines",
+    "source": "Bron",
+    "noChartData": "Geen grafiekgegevens",
+    "noTrafficChartData": "Geen verkeerskaartgegevens",
+    "desktopVsMobile": "Desktop vs Mobiel",
+    "desktop": "Bureaublad",
+    "mobileWeb": "Mobiel web",
+    "similarSites": "Vergelijkbare sites",
+    "globalRank": "Wereldwijde rangschikking",
+    "founded": "Opgericht",
+    "socialInfluence": "Invloed van sociale media",
+    "views": "bekeken",
+    "mentions": "vermeldt",
+    "trendHistory": "Trendgeschiedenis",
+    "trendSubtitle": "Trends in verkeer, weergaven en stemmen in de loop van de tijd",
+    "upvotes": "stemmen",
+    "percentage": "Percentage"
+  },
+  "embed": {
+    "title": "Embedden op uw website",
+    "description": "Voeg deze tool toe aan uw website met een prachtige embed-widget",
+    "preview": "Voorbeeld",
+    "code": "Code insluiten",
+    "copy": "Kopieer code",
+    "copied": "Gekopieerd!",
+    "badgeAlt": "TopAICollection-badge",
+    "themes": {
+      "light": "Licht",
+      "neutral": "Neutraal",
+      "dark": "Donker"
+    }
+  },
+  "alternatives": {
+    "title": "Alternatieven",
+    "description": "Soortgelijke tools die u misschien leuk vindt"
+  },
+  "pricing": {
+    "title": "Prijsplannen",
+    "subtitle": "Kies het plan dat het beste bij u past",
+    "popular": "Populair",
+    "getStarted": "Aan de slag",
+    "disclaimer": "Prijzen en functies kunnen variëren. Bezoek de officiële website voor de meest actuele informatie.",
+    "noPricingInfo": "Geen prijsinformatie beschikbaar",
+    "free": "Gratis",
+    "moreFeatures": "Meer functies"
+  },
+  "charts": {
+    "trafficChart": "Verkeersgrafiek",
+    "comingSoon": "Diagramvisualisatie binnenkort beschikbaar"
+  },
+  "reviews": {
+    "title": "Recensies",
+    "pointsScale": "uit 5",
+    "subtitle": "Kijk wat de gemeenschap ervan vindt",
+    "writeTitle": "Raad je dit hulpmiddel aan?",
+    "placeholder": "Deel uw ervaring met deze tool...",
+    "privacy": "Privacy beschermd",
+    "success": "Beoordeling succesvol verzonden!",
+    "submit": "Beoordeling plaatsen",
+    "loginToReview": "Log in om een beoordeling in te dienen",
+    "loginLink": "Inloggen",
+    "noReviews": "Nog geen beoordelingen. Wees de eerste die dit hulpmiddel beoordeelt!",
+    "viewMore": "Alle beoordelingen bekijken",
+    "allReviewsTitle": "Alle beoordelingen voor",
+    "reviewsPageTitle": "Beoordelingen",
+    "by": "door",
+    "verified": "Geverifieerd",
+    "anonymous": "Anonieme gebruiker",
+    "ratingLabel": "Beoordeling",
+    "commentLabel": "Opmerking",
+    "dateLabel": "Datum",
+    "page": "Pagina",
+    "editReview": "Beoordeling bewerken",
+    "deleteReview": "Beoordeling verwijderen",
+    "deleteConfirm": "Weet je zeker dat je je beoordeling wilt verwijderen?",
+    "editTitle": "Je beoordeling bewerken",
+    "updateSuccess": "Beoordeling succesvol bijgewerkt!",
+    "deleteSuccess": "Beoordeling succesvol verwijderd!",
+    "commentRequired": "Voeg een opmerking toe aan je beoordeling.",
+    "ratingRequired": "Selecteer een beoordeling.",
+    "alreadyReviewed": "U heeft dit hulpmiddel al beoordeeld. Gebruik de ✏️ bewerken-knop op uw beoordeling om deze bij te werken.",
+    "sort": {
+      "label": "Sorteer op",
+      "newest": "Nieuwste eerst",
+      "oldest": "Oudste eerst",
+      "highest": "Hoogste beoordeling",
+      "lowest": "Laagste beoordeling"
+    },
+    "save": "Redden",
+    "cancel": "Annuleren",
+    "close": "Dichtbij",
+    "userLabel": "Gebruiker",
+    "unverify": "Bevestiging ongedaan maken",
+    "markVerified": "Markeer geverifieerd",
+    "confirm": "Bevestigen",
+    "noReviewsFound": "Er zijn geen recensies gevonden voor dit hulpmiddel.",
+    "deleteError": "Verwijderen mislukt.",
+    "updateError": "Bijwerken mislukt.",
+    "pagination": {
+      "showing": "Weergeven",
+      "of": "van",
+      "reviews": "beoordelingen",
+      "prev": "Vorige",
+      "next": "Volgende"
+    },
+    "actionsLabel": "Acties",
+    "statusLabel": "Status"
+  },
+  "share": {
+    "title": "Deel dit hulpmiddel"
+  },
+  "metrics": {
+    "monthlyVisits": "Maandelijkse bezoeken",
+    "growth": "Groei"
+  },
+  "tags": "Labels",
+  "overview": "Overzicht",
+  "howToUse": "Hoe te gebruiken",
+  "pricingPlans": "Prijsplannen",
+  "faqs": "Veelgestelde vragen",
+  "geoChart": {
+    "noData": "Geen geografische gegevens beschikbaar",
+    "loading": "Geografische gegevens laden..."
+  },
+  "introduction": "Invoering",
+  "description": "Beschrijving",
+  "coreFeatures": "Kernfuncties",
+  "useCases": "Gebruiksscenario's",
+  "screenshots": "Schermafbeeldingen",
+  "companyInfo": {
+    "companyName": "Bedrijfsnaam",
+    "contactEmail": "Neem contact op met E-mail"
+  },
+  "nav": {
+    "scrollLeft": "Scroll naar links",
+    "scrollRight": "Scroll naar rechts",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "imageSlide": "Afbeelding {index}",
+    "videoSlide": "Videodia"
+  },
+  "badges": {
+    "verifiedListing": "Geverifieerde vermelding",
+    "freePlan": "Gratis plan",
+    "paidPlans": "Betaalde plannen & prijs"
+  },
+  "dummyReviews": {
+    "c1": "Dit is een geweldige AI-tool! Het heeft mijn workflow volledig veranderd.",
+    "c2": "Zeer goede functies en gemakkelijk te gebruiken. Ten zeerste aanbevolen.",
+    "c3": "Ik heb veel alternatieven geprobeerd, maar deze is veruit de beste.",
+    "c4": "Uitstekende waarde voor de prijs. Het gratis abonnement is ook zeer genereus.",
+    "c5": "Geweldige UI en intuïtief ontwerp. Soms een beetje traag, maar over het algemeen fantastisch.",
+    "c6": "Een must-have tool voor elke professional. Bespaart me uren per week.",
+    "c7": "Goede functionaliteit maar vereist een leercurve."
+  }
+}

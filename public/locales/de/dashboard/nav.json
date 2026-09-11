@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "backToHome": "Zurück zur Startseite",
+    "dashboard": "Übersicht",
+    "websiteInsights": "Website-Analysen",
+    "socialListening": "Soziales Zuhören",
+    "researchReport": "Forschungsbericht",
+    "myAis": "Meine KIs",
+    "favorites": "Favoriten",
+    "profileSettings": "Profil-Einstellungen",
+    "advertise": "Werbung",
+    "postsLinks": "Beiträge & Links",
+    "paymentInvoice": "Zahlung & Rechnung",
+    "overview": "Überblick",
+    "myInquiries": "Meine Anfragen"
+  },
+  "logout": "Abmelden",
+  "logoutConfirmTitle": "Abmelden",
+  "logoutConfirmDescription": "Sind Sie sicher, dass Sie sich abmelden möchten?",
+  "upgrade": "„Upgrade“",
+  "sections": {
+    "research": "FORSCHUNG",
+    "management": "GESCHÄFTSFÜHRUNG",
+    "business": "GESCHÄFTLICH",
+    "admin": "„ADMIN“",
+    "guestPost": "Gastbeiträge",
+    "updateAi": "KI aktualisieren",
+    "myGpts": "Meine GPTs"
+  },
+  "help": "Hilfe",
+  "close": "Schließen",
+  "status": {
+    "active": "Aktiv"
+  },
+  "advertiseAi": "Machen Sie Werbung für KI",
+  "myAis": {
+    "title": "Meine KIs",
+    "subtitle": "Verwalten und verfolgen Sie die Leistung Ihrer eingereichten KI-Tools.",
+    "empty": {
+      "cta": "KI-Tool einreichen"
+    }
+  }
+}

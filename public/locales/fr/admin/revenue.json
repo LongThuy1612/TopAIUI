@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Revenus et santé financière",
+    "totalRevenue": "Revenu total",
+    "mrr": "MRR (mensuel récurrent)",
+    "mrrDescription": "Revenus récurrents estimés basés sur les abonnements actifs",
+    "breakdown": "Répartition des revenus",
+    "revenueGrowth": "Croissance des revenus (30 jours)",
+    "noData": "Aucune donnée sur les revenus disponible",
+    "noTrendsData": "Aucune donnée de croissance trouvée pour les 30 derniers jours",
+    "comingSoon": "À venir"
+  }
+}

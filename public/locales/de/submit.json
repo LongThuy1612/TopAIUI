@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Reichen Sie Ihr KI-Tool ein - TopAICollection",
+    "description": "Listen Sie Ihr KI-Tool im Verzeichnis der TopAICollection auf und erreichen Sie Millionen von Nutzern, die nach KI-Lösungen suchen."
+  },
+  "badge": "Listen Sie Ihr Tool auf",
+  "hero": {
+    "title": "Lassen Sie Ihr KI-Tool entdecken",
+    "subtitle": "Schließen Sie sich tausenden von KI-Tools in unserem Verzeichnis an und erreichen Sie weltweit Millionen potenzieller Nutzer."
+  },
+  "benefits": {
+    "title": "Warum bei TopAICollection auflisten?",
+    "traffic": {
+      "title": "Erhöhter Traffic",
+      "description": "Erhalten Sie direkten Traffic von Nutzern, die aktiv nach KI-Lösungen suchen."
+    },
+    "exposure": {
+      "title": "Globale Präsenz",
+      "description": "Erreichen Sie Nutzer in über 20 Sprachen in mehr als 100 Ländern."
+    },
+    "credibility": {
+      "title": "Verbesserte Glaubwürdigkeit",
+      "description": "Bauen Sie Vertrauen durch verifizierte Einträge und Nutzerbewertungen auf."
+    }
+  },
+  "pricing": {
+    "title": "Wählen Sie Ihren Plan",
+    "popular": "Am beliebtesten",
+    "basic": {
+      "name": "Basis-Eintrag",
+      "price": "Kostenlos",
+      "features": {
+        "0": "Einfacher Tool-Eintrag",
+        "1": "Kategorieplatzierung",
+        "2": "Kontaktinformationen",
+        "3": "Grundlegende Analysen"
+      }
+    },
+    "featured": {
+      "name": "Hervorgehobener Eintrag",
+      "price": "99 $/Monat",
+      "features": {
+        "0": "Alles im Basis-Plan",
+        "1": "Hervorgehobenes Abzeichen",
+        "2": "Priorität in den Suchergebnissen",
+        "3": "Startseitenplatzierung",
+        "4": "Erweiterte Analysen",
+        "5": "Social-Media-Promotion"
+      }
+    },
+    "premium": {
+      "name": "Premium-Eintrag",
+      "price": "299 $/Monat",
+      "features": {
+        "0": "Alles im hervorgehobenen Plan",
+        "1": "Top-Suchplatzierung",
+        "2": "Aufnahme in den Newsletter",
+        "3": "Blogbeitrag-Review",
+        "4": "Video-Präsentation",
+        "5": "Dedizierter Support"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Name des Tools",
+    "namePlaceholder": "z.B. ChatGPT, DALL-E, Midjourney",
+    "website": "Webseiten-URL",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "Kategorien",
+    "selectCategory": "Wählen Sie eine Kategorie",
+    "price": "$49 Einmalige Gebühr",
+    "submit": "Tool einreichen",
+    "success": {
+      "title": "Einreichung erfolgreich!",
+      "description": "Ihr Tool wurde zur Überprüfung eingereicht.",
+      "redirecting": "Weiterleitung zur Zahlung..."
+    }
+  },
+  "form": {
+    "title": "Reichen Sie Ihr Tool ein",
+    "sections": {
+      "basic": "Grundlegende Informationen",
+      "categorization": "Kategorie & Tags",
+      "media": "Medien-Assets",
+      "plan": "Plan auswählen",
+      "contact": "Kontaktinformationen"
+    },
+    "fields": {
+      "name": {
+        "label": "Name des Tools",
+        "placeholder": "Mein tolles KI-Tool"
+      },
+      "url": {
+        "label": "Webseiten-URL",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "Slogan",
+        "placeholder": "Kurzbeschreibung in maximal 100 Zeichen"
+      },
+      "description": {
+        "label": "Beschreibung",
+        "placeholder": "Detaillierte Beschreibung Ihres KI-Tools (max. 500 Zeichen)"
+      },
+      "category": {
+        "label": "Kategorie",
+        "placeholder": "Wählen Sie eine Kategorie",
+        "options": {
+          "productivity": "Produktivität",
+          "business": "Geschäft",
+          "development": "Entwicklung",
+          "other": "Sonstiges"
+        }
+      },
+      "tags": {
+        "label": "Schlagworte",
+        "placeholder": "KI, Produktivität, Automatisierung (durch Kommas getrennt)",
+        "hint": "Felder durch Kommata getrennt"
+      },
+      "logo": {
+        "label": "Logo",
+        "placeholder": "Klicken zum Hochladen oder per Drag-and-Drop",
+        "hint": "PNG oder JPG, max. 2 MB"
+      },
+      "plan": {
+        "label": "Eintragsplan",
+        "placeholder": "Wählen Sie einen Plan"
+      },
+      "terms": {
+        "label": "Ich stimme den Nutzungsbedingungen und der Datenschutzerklärung zu."
+      },
+      "contact_name": {
+        "label": "Ihr Name",
+        "placeholder": "z. B. Peter Mustermann"
+      },
+      "contact_email": {
+        "label": "Ihre E-Mail",
+        "placeholder": "z.B. john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "Mit dem Absenden stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu.",
+      "freeSubmission": "Kostenlose Einreichung."
+    },
+    "submit": "Tool einreichen",
+    "submitting": "Wird eingereicht...",
+    "success": {
+      "title": "Das Tool wurde erfolgreich eingereicht!",
+      "description": "Wir werden Ihre Einreichung überprüfen und Sie innerhalb von 48 Stunden benachrichtigen."
+    },
+    "error": {
+      "title": "Einreichung fehlgeschlagen",
+      "description": "Bitte überprüfen Sie alle Felder und versuchen Sie es erneut.",
+      "noSettings": "Übermittlungseinstellungen sind nicht verfügbar. Bitte versuchen Sie es später noch einmal."
+    },
+    "loginRequiredTitle": "Anmeldung erforderlich",
+    "loginRequiredDesc": "Bitte melden Sie sich an, um ein Tool einzureichen. Ihr Fortschritt wird erst gespeichert, wenn Sie sich authentifizieren.",
+    "loginBtn": "Einloggen"
+  },
+  "categoriesPage": {
+    "searchCategory": "Kategorien durchsuchen…",
+    "noCategoryFound": "Keine Kategorien gefunden."
+  },
+  "toolForm": {
+    "selectSubCategory": "Wählen Sie eine Unterkategorie…",
+    "noSubCategory": "Keine Unterkategorien."
+  },
+  "errors": {
+    "general": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "processing": "Wird bearbeitet...",
+  "sidebar": {
+    "toolCount": "Über 5.000 KI-Tools",
+    "toolCountSub": "Schließen Sie sich unserem stetig wachsenden Verzeichnis an",
+    "badgeDescription": "Die Einreichung Ihres Tools ist der erste Schritt, um Sichtbarkeit in der KI-Community zu erlangen."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Übermittlungsdetails konnten nicht geladen werden.",
+      "noId": "Keine Einreichungs-ID angegeben.",
+      "notFound": "Einreichung nicht gefunden."
+    },
+    "status": {
+      "paymentRequired": "Zahlung erforderlich",
+      "paymentRequiredDesc": "Schließen Sie Ihre Zahlung ab, um mit der Überprüfung fortzufahren.",
+      "underReview": "Wird überprüft",
+      "underReviewDesc": "Ihr Beitrag wird von unserem Team geprüft.",
+      "approved": "Genehmigt",
+      "approvedDesc": "Ihr Beitrag wurde genehmigt und veröffentlicht.",
+      "received": "Erhalten",
+      "receivedDesc": "Wir haben Ihre Einreichung erhalten."
+    },
+    "types": {
+      "submit": "KI-Tool einreichen",
+      "advertise": "Werben",
+      "guestPost": "Gastbeitrag",
+      "updateAI": "KI aktualisieren"
+    },
+    "paymentAlert": "Um Ihre Einreichung abzuschließen, ist eine Zahlung erforderlich.",
+    "actions": {
+      "viewDashboard": "Dashboard anzeigen"
+    }
+  },
+  "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+  "backToHome": "Zurück nach Hause",
+  "submissionSuccess": {
+    "title": "Titel",
+    "description": "Beschreibung"
+  },
+  "successTitle": "Erfolgstitel",
+  "title": "Titel"
+}

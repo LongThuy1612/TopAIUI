@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Indsend dit AI-værktøj - TopAICollection",
+    "description": "Føj dit AI-værktøj til TopAICollection-biblioteket, og nå ud til millioner af brugere, der leder efter AI-løsninger."
+  },
+  "badge": "Tilføj dit værktøj",
+  "hero": {
+    "title": "Få dit AI-værktøj opdaget",
+    "subtitle": "Slut dig til tusindvis af AI-værktøjer i vores bibliotek, og nå ud til millioner af potentielle brugere over hele verden"
+  },
+  "benefits": {
+    "title": "Hvorfor tilføje til TopAICollection?",
+    "traffic": {
+      "title": "Øget trafik",
+      "description": "Få direkte trafik fra brugere, der aktivt søger efter AI-løsninger"
+    },
+    "exposure": {
+      "title": "Global eksponering",
+      "description": "Nå ud til brugere på over 20 sprog i mere end 100 lande"
+    },
+    "credibility": {
+      "title": "Øget troværdighed",
+      "description": "Opbyg tillid med en bekræftet fortegnelse og brugeranmeldelser"
+    }
+  },
+  "pricing": {
+    "title": "Vælg din plan",
+    "popular": "Mest populære",
+    "basic": {
+      "name": "Grundlæggende fortegnelse",
+      "price": "Gratis",
+      "features": {
+        "0": "Grundlæggende værktøjsfortegnelse",
+        "1": "Kategoriplacering",
+        "2": "Kontaktoplysninger",
+        "3": "Grundlæggende analyser"
+      }
+    },
+    "featured": {
+      "name": "Fremhævet fortegnelse",
+      "price": "$99/måned",
+      "features": {
+        "0": "Alt i Basic",
+        "1": "Fremhævet badge",
+        "2": "Prioritet i søgeresultater",
+        "3": "Placering på forsiden",
+        "4": "Avancerede analyser",
+        "5": "Kampagner på sociale medier"
+      }
+    },
+    "premium": {
+      "name": "Premium fortegnelse",
+      "price": "$299/måned",
+      "features": {
+        "0": "Alt i Fremhævet",
+        "1": "Øverste søgeplacering",
+        "2": "Inklusion i nyhedsbrev",
+        "3": "Anmeldelse på blogpost",
+        "4": "Video-showcase",
+        "5": "Dedikeret support"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Værktøjsnavn",
+    "namePlaceholder": "f.eks. ChatGPT, DALL-E, Midjourney",
+    "website": "Webadresse",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "Kategorier",
+    "selectCategory": "Vælg en kategori",
+    "price": "$49 engangsgebyr",
+    "submit": "Indsend værktøj",
+    "success": {
+      "title": "Indsendelse lykkedes!",
+      "description": "Dit værktøj er indsendt til gennemgang.",
+      "redirecting": "Omdirigerer til betaling..."
+    }
+  },
+  "form": {
+    "title": "Indsend dit værktøj",
+    "sections": {
+      "basic": "Grundlæggende oplysninger",
+      "categorization": "Kategori og tags",
+      "media": "Medieaktiver",
+      "plan": "Vælg Plan",
+      "contact": "Kontaktoplysninger"
+    },
+    "fields": {
+      "name": {
+        "label": "Værktøjsnavn",
+        "placeholder": "Mit fantastiske AI-værktøj"
+      },
+      "url": {
+        "label": "Webadresse (URL)",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "Slogan",
+        "placeholder": "Kort beskrivelse på højst 100 tegn"
+      },
+      "description": {
+        "label": "Beskrivelse",
+        "placeholder": "Detaljeret beskrivelse af dit AI-værktøj (maks. 500 tegn)"
+      },
+      "category": {
+        "label": "Kategori",
+        "placeholder": "Vælg en kategori",
+        "options": {
+          "productivity": "Produktivitet",
+          "business": "Erhverv",
+          "development": "Udvikling",
+          "other": "Andet"
+        }
+      },
+      "tags": {
+        "label": "Tags",
+        "placeholder": "ai, produktivitet, automatisering (kommasepareret)",
+        "hint": "Adskilt af kommaer"
+      },
+      "logo": {
+        "label": "LOGOET",
+        "placeholder": "Klik for at uploade eller træk og slip",
+        "hint": "PNG eller JPG, maks. 2MB"
+      },
+      "plan": {
+        "label": "Abonnementsplan",
+        "placeholder": "Vælg en plan"
+      },
+      "terms": {
+        "label": "Jeg accepterer servicevilkårene og privatlivspolitikken"
+      },
+      "contact_name": {
+        "label": "Dit navn",
+        "placeholder": "f.eks. John Doe"
+      },
+      "contact_email": {
+        "label": "Din e-mail",
+        "placeholder": "f.eks. john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "Ved at indsende accepterer du vores servicevilkår og privatlivspolitik.",
+      "freeSubmission": "Gratis indsendelse."
+    },
+    "submit": "Indsend Værktøj",
+    "submitting": "Indsender...",
+    "success": {
+      "title": "Dit værktøj blev indsendt!",
+      "description": "Vi vil gennemgå din indsendelse og give dig besked inden for 48 timer."
+    },
+    "error": {
+      "title": "Indsendelse mislykkedes",
+      "description": "Tjek venligst alle felter, og prøv igen.",
+      "noSettings": "Indsendelsesindstillinger er ikke tilgængelige. Prøv venligst igen senere."
+    },
+    "loginRequiredTitle": "Login påkrævet",
+    "loginRequiredDesc": "Log ind for at indsende et værktøj. Dine fremskridt gemmes ikke, før du har godkendt dem.",
+    "loginBtn": "Log ind"
+  },
+  "categoriesPage": {
+    "searchCategory": "Søg i kategorier…",
+    "noCategoryFound": "Ingen kategorier fundet."
+  },
+  "toolForm": {
+    "selectSubCategory": "Vælg en underkategori…",
+    "noSubCategory": "Ingen underkategorier."
+  },
+  "errors": {
+    "general": "Noget gik galt. Prøv igen."
+  },
+  "processing": "Behandler...",
+  "sidebar": {
+    "toolCount": "5.000+ AI-værktøjer",
+    "toolCountSub": "Bliv en del af vores snarlige bibliotek",
+    "badgeDescription": "At indsende dit værktøj er det første skridt mod synlighed i AI-samfundet."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Kunne ikke indlæse indsendelsesoplysningerne.",
+      "noId": "Intet indsendelses-id angivet.",
+      "notFound": "Indsendelsen blev ikke fundet."
+    },
+    "status": {
+      "paymentRequired": "Betaling påkrævet",
+      "paymentRequiredDesc": "Gennemfør din betaling for at fortsætte med gennemgangen.",
+      "underReview": "Under gennemgang",
+      "underReviewDesc": "Din indsendelse bliver gennemgået af vores team.",
+      "approved": "Godkendt",
+      "approvedDesc": "Din indsendelse er blevet godkendt og offentliggjort.",
+      "received": "Modtaget",
+      "receivedDesc": "Vi har modtaget dit indlæg."
+    },
+    "types": {
+      "submit": "Indsend AI-værktøj",
+      "advertise": "Annoncer",
+      "guestPost": "Gæsteopslag",
+      "updateAI": "Opdater AI"
+    },
+    "paymentAlert": "Der kræves betaling for at fuldføre din indsendelse.",
+    "actions": {
+      "viewDashboard": "Se Dashboard"
+    }
+  },
+  "error": "Noget gik galt. Prøv venligst igen.",
+  "backToHome": "Tilbage til Hjemmet",
+  "submissionSuccess": {
+    "title": "Titel",
+    "description": "Beskrivelse"
+  },
+  "successTitle": "Succestitel",
+  "title": "Titel"
+}

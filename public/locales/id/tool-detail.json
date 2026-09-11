@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- Tinjauan & Analisis Alat AI"
+  },
+  "errors": {
+    "notFound": "Alat tidak ditemukan",
+    "notFoundDescription": "Alat yang Anda cari tidak ada.",
+    "serverError": "Kesalahan server internal.",
+    "serverErrorDescription": "Terjadi kesalahan yang tidak terduga pada server. Harap coba lagi nanti."
+  },
+  "actions": {
+    "visit": "Kunjungi Situs Web",
+    "save": "Menyimpan",
+    "saved": "Disimpan",
+    "share": "Membagikan",
+    "update": "Perbarui alat ini",
+    "advertise": "Iklankan alat ini",
+    "visitWebsite": "Kunjungi Situs Web",
+    "readMore": "Baca lebih lanjut",
+    "readLess": "Baca lebih sedikit",
+    "openVideo": "Buka Videonya"
+  },
+  "cta": {
+    "visit": "Buka situs",
+    "advertise": "Iklankan alat ini",
+    "update": "Perbarui alat ini"
+  },
+  "sidebar": {
+    "category": "Kategori",
+    "tags": "Tag"
+  },
+  "tabs": {
+    "socialListening": "Mendengarkan Sosial",
+    "alternatives": "Alternatif"
+  },
+  "similar": {
+    "title": "Alat AI serupa"
+  },
+  "stats": {
+    "monthlyVisits": "Kunjungan Bulanan",
+    "growth": "Pertumbuhan",
+    "reviews": "ulasan",
+    "averageTime": "Waktu rata-rata di situs",
+    "pagesPerVisit": "Halaman per kunjungan",
+    "bounceRate": "Rasio pentalan",
+    "visits": "Kunjungan",
+    "reviews_formatted": "{rating} ({count} {label})"
+  },
+  "sections": {
+    "overview": "Ringkasan",
+    "reviews": "Ulasan",
+    "analytics": "Analisis",
+    "embed": "Menanamkan",
+    "alternatives": "Alternatif",
+    "related": "Alat Terkait"
+  },
+  "details": {
+    "description": "Pengenalan Alat:",
+    "monthlyTraffic": "Lalu Lintas Bulanan:",
+    "socialMedia": "Media Sosial dan Email:",
+    "company": "Perusahaan",
+    "categories": "Kategori",
+    "tags": "Tag"
+  },
+  "content": {
+    "whatIs": "Apa",
+    "howToUse": "Cara Menggunakan",
+    "coreFeatures": "Fitur Inti",
+    "useCases": "Kasus Penggunaan",
+    "pricingPlans": "Paket Harga",
+    "faqs": "Pertanyaan yang Sering Diajukan",
+    "relatedTools": "Alat Terkait",
+    "productInfo": "Informasi Produk",
+    "writtenBy": "Ditulis & Diedit oleh",
+    "factCheckedBy": "Diperiksa faktanya oleh"
+  },
+  "analytics": {
+    "title": "Analisis & Wawasan Lalu Lintas",
+    "subtitle": "Analisis",
+    "latestTraffic": "Lalu lintas situs web terbaru",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Sumber lalu lintas situs web",
+    "topKeywords": "Kata Kunci Teratas",
+    "keyword": "Kata kunci",
+    "traffic": "Lalu lintas",
+    "trafficSubtitle": "untuk meningkatkan lalu lintas web",
+    "geoSubtitle": "indikator mesin pencari",
+    "sourceSubtitle": "indikator mesin pencari",
+    "keywordSubtitle": "indikator mesin pencari",
+    "percentage": "Persentase",
+    "source": "Sumber",
+    "noChartData": "Tidak ada data grafik",
+    "noTrafficChartData": "Tidak ada data grafik lalu lintas",
+    "desktopVsMobile": "Desktop vs Seluler",
+    "mobileWeb": "Web Seluler",
+    "similarSites": "Situs serupa",
+    "globalRank": "Peringkat global",
+    "founded": "Didirikan",
+    "socialInfluence": "Pengaruh Media Sosial",
+    "views": "dilihat",
+    "mentions": "menyebutkan",
+    "trendHistory": "Sejarah Tren",
+    "trendSubtitle": "Tren lalu lintas, penayangan, dan suara positif dari waktu ke waktu",
+    "upvotes": "suara positif",
+    "desktop": "Desktop"
+  },
+  "embed": {
+    "title": "Sematkan di situs web Anda",
+    "description": "Tambahkan alat ini ke situs web Anda dengan widget penyematan yang indah",
+    "preview": "Pratinjau",
+    "code": "Sematkan Kode",
+    "copy": "Salin Kode",
+    "copied": "Disalin!",
+    "badgeAlt": "Lencana Koleksi TopAI TopAICollection",
+    "themes": {
+      "light": "Terang",
+      "neutral": "Netral",
+      "dark": "Gelap"
+    }
+  },
+  "alternatives": {
+    "title": "Alternatif",
+    "description": "Alat serupa yang mungkin Anda sukai"
+  },
+  "pricing": {
+    "title": "Paket Harga",
+    "subtitle": "Pilih paket yang paling sesuai untuk Anda",
+    "popular": "Populer",
+    "getStarted": "Memulai",
+    "disclaimer": "Harga dan fitur mungkin berbeda. Kunjungi situs resminya untuk mendapatkan informasi terkini.",
+    "noPricingInfo": "Tidak ada informasi harga yang tersedia",
+    "free": "Gratis",
+    "moreFeatures": "Fitur Lainnya"
+  },
+  "charts": {
+    "trafficChart": "Bagan Lalu Lintas",
+    "comingSoon": "Visualisasi grafik segera hadir"
+  },
+  "reviews": {
+    "title": "Ulasan",
+    "pointsScale": "dari 5",
+    "subtitle": "Lihat apa yang dipikirkan komunitas",
+    "writeTitle": "Apakah Anda merekomendasikan alat ini?",
+    "placeholder": "Bagikan pengalaman Anda dengan alat ini...",
+    "privacy": "Privasi Dilindungi",
+    "success": "Ulasan berhasil dikirimkan!",
+    "submit": "Tinjauan Posting",
+    "loginToReview": "Silakan masuk untuk mengirimkan ulasan",
+    "loginLink": "Masuk",
+    "noReviews": "Belum ada ulasan. Jadilah yang pertama mengulas alat ini!",
+    "viewMore": "Lihat Semua Ulasan",
+    "allReviewsTitle": "Semua Ulasan untuk",
+    "reviewsPageTitle": "Ulasan",
+    "by": "oleh",
+    "verified": "Terverifikasi",
+    "anonymous": "Pengguna Anonim",
+    "ratingLabel": "Penilaian",
+    "commentLabel": "Komentar",
+    "dateLabel": "Tanggal",
+    "page": "Halaman",
+    "editReview": "Edit ulasan",
+    "deleteReview": "Hapus ulasan",
+    "deleteConfirm": "Apakah Anda yakin ingin menghapus ulasan Anda?",
+    "editTitle": "Edit ulasan Anda",
+    "updateSuccess": "Ulasan berhasil diperbarui!",
+    "deleteSuccess": "Ulasan berhasil dihapus!",
+    "commentRequired": "Mohon berikan komentar untuk ulasan Anda.",
+    "ratingRequired": "Mohon pilih penilaian.",
+    "alreadyReviewed": "Anda sudah mengulas alat ini. Gunakan tombol ✏️ edit pada ulasan Anda untuk memperbaruinya.",
+    "sort": {
+      "label": "Urutkan berdasarkan",
+      "newest": "Yang terbaru dulu",
+      "oldest": "Yang tertua terlebih dahulu",
+      "highest": "Peringkat tertinggi",
+      "lowest": "Peringkat terendah"
+    },
+    "save": "Menyimpan",
+    "cancel": "Membatalkan",
+    "close": "Menutup",
+    "userLabel": "Pengguna",
+    "unverify": "Batalkan verifikasi",
+    "markVerified": "Tandai Terverifikasi",
+    "confirm": "Mengonfirmasi",
+    "noReviewsFound": "Tidak ada ulasan ditemukan untuk alat ini.",
+    "deleteError": "Gagal menghapus.",
+    "updateError": "Gagal memperbarui.",
+    "pagination": {
+      "showing": "Menampilkan",
+      "of": "dari",
+      "reviews": "ulasan",
+      "prev": "Sebelumnya",
+      "next": "Berikutnya"
+    },
+    "actionsLabel": "Tindakan",
+    "statusLabel": "Status"
+  },
+  "share": {
+    "title": "Bagikan alat ini"
+  },
+  "metrics": {
+    "monthlyVisits": "Kunjungan Bulanan",
+    "growth": "Pertumbuhan"
+  },
+  "tags": "Tag",
+  "overview": "Ringkasan",
+  "howToUse": "Cara Menggunakan",
+  "pricingPlans": "Paket Harga",
+  "faqs": "FAQ",
+  "geoChart": {
+    "noData": "Tidak ada data geografis yang tersedia",
+    "loading": "Memuat data geografis..."
+  },
+  "introduction": "Perkenalan",
+  "description": "Keterangan",
+  "coreFeatures": "Fitur Inti",
+  "useCases": "Kasus Penggunaan",
+  "screenshots": "Tangkapan layar",
+  "companyInfo": {
+    "companyName": "Nama perusahaan",
+    "contactEmail": "Hubungi Email"
+  },
+  "nav": {
+    "scrollLeft": "Gulir ke kiri",
+    "scrollRight": "Gulir ke kanan",
+    "previous": "Sebelumnya",
+    "next": "Selanjutnya",
+    "imageSlide": "Gambar {index}",
+    "videoSlide": "slide video"
+  },
+  "badges": {
+    "verifiedListing": "Daftar Terverifikasi",
+    "freePlan": "Paket Gratis",
+    "paidPlans": "Paket Berbayar & Harga"
+  },
+  "dummyReviews": {
+    "c1": "Ini adalah alat AI yang luar biasa! Ini sepenuhnya mengubah alur kerja saya.",
+    "c2": "Fitur yang sangat baik dan mudah digunakan. Sangat direkomendasikan.",
+    "c3": "Saya telah mencoba banyak alternatif, tetapi yang satu ini adalah yang terbaik sejauh ini.",
+    "c4": "Nilai yang sangat baik untuk harganya. Paket gratisnya juga sangat murah hati.",
+    "c5": "UI yang bagus dan desain yang intuitif. Terkadang agak lambat, tetapi secara keseluruhan fantastis.",
+    "c6": "Alat yang wajib dimiliki bagi setiap profesional. Menghemat waktu saya berjam-jam setiap minggu.",
+    "c7": "Fungsionalitas yang baik tetapi memerlukan kurva pembelajaran."
+  }
+}

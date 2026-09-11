@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- Gjennomgang og analyse av AI-verktøy"
+  },
+  "errors": {
+    "notFound": "Verktøyet ble ikke funnet",
+    "notFoundDescription": "Verktøyet du leter etter eksisterer ikke.",
+    "serverError": "Intern serverfeil.",
+    "serverErrorDescription": "En uventet feil oppsto på serveren. Vennligst prøv igjen senere."
+  },
+  "actions": {
+    "visit": "Besøk nettstedet",
+    "save": "Spare",
+    "saved": "Lagret",
+    "share": "Dele",
+    "update": "Oppdater dette verktøyet",
+    "advertise": "Annonser dette verktøyet",
+    "visitWebsite": "Besøk nettstedet",
+    "readMore": "Les mer",
+    "readLess": "Les mindre",
+    "openVideo": "Åpne video"
+  },
+  "cta": {
+    "visit": "Åpne nettsted",
+    "advertise": "Annonser dette verktøyet",
+    "update": "Oppdater dette verktøyet"
+  },
+  "sidebar": {
+    "category": "Kategori",
+    "tags": "Tagger"
+  },
+  "tabs": {
+    "socialListening": "Sosial lytting",
+    "alternatives": "Alternativer"
+  },
+  "similar": {
+    "title": "Lignende AI-verktøy"
+  },
+  "stats": {
+    "monthlyVisits": "Månedlige besøk",
+    "growth": "Vekst",
+    "reviews": "anmeldelser",
+    "averageTime": "Gjennomsnittlig tid på stedet",
+    "pagesPerVisit": "Sider per besøk",
+    "bounceRate": "Fluktfrekvens",
+    "visits": "Besøk",
+    "reviews_formatted": "«{rating} ({count} {label})»"
+  },
+  "sections": {
+    "overview": "Oversikt",
+    "reviews": "Anmeldelser",
+    "analytics": "Analyser",
+    "embed": "Bygg inn",
+    "alternatives": "Alternativer",
+    "related": "Relaterte verktøy"
+  },
+  "details": {
+    "description": "Verktøyintroduksjon:",
+    "monthlyTraffic": "Månedlig trafikk:",
+    "socialMedia": "Sosiale medier og e-post:",
+    "company": "Bedrift",
+    "categories": "Kategorier",
+    "tags": "Tagger"
+  },
+  "content": {
+    "whatIs": "Hva er",
+    "howToUse": "Hvordan bruke",
+    "coreFeatures": "Kjernefunksjoner",
+    "useCases": "Brukssaker",
+    "pricingPlans": "Prisplaner",
+    "faqs": "Ofte stilte spørsmål",
+    "relatedTools": "Relaterte verktøy",
+    "productInfo": "Produktinformasjon",
+    "writtenBy": "Skrevet og redigert av",
+    "factCheckedBy": "Faktasjekket av"
+  },
+  "analytics": {
+    "title": "Analytics og trafikkinnsikt",
+    "subtitle": "Analyse av",
+    "latestTraffic": "Siste nettstedtrafikk",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Trafikkkilder til nettstedet",
+    "topKeywords": "Topp søkeord",
+    "keyword": "Nøkkelord",
+    "traffic": "Trafikk",
+    "trafficSubtitle": "for å forbedre nettrafikken",
+    "geoSubtitle": "søkemotorindikatorer",
+    "sourceSubtitle": "søkemotorindikatorer",
+    "keywordSubtitle": "søkemotorindikatorer",
+    "percentage": "Prosentdel",
+    "source": "Kilde",
+    "noChartData": "Ingen kartdata",
+    "noTrafficChartData": "Ingen trafikkkartdata",
+    "desktopVsMobile": "Stasjonær vs. Mobil",
+    "desktop": "Stasjonær",
+    "mobileWeb": "Mobil",
+    "similarSites": "Lignende nettsteder",
+    "globalRank": "Global rangering",
+    "founded": "Grunnlagt",
+    "socialInfluence": "Innflytelse på sosiale medier",
+    "views": "visninger",
+    "mentions": "nevner",
+    "trendHistory": "Trendhistorikk",
+    "trendSubtitle": "Trender for trafikk, visninger og oppstemmer over tid",
+    "upvotes": "Positiv stemme"
+  },
+  "embed": {
+    "title": "Bygg inn på nettstedet ditt",
+    "description": "Legg til dette verktøyet på nettstedet ditt med en vakker innebygd widget",
+    "preview": "Forhåndsvisning",
+    "code": "Bygg inn kode",
+    "copy": "Kopier kode",
+    "copied": "Kopiert!",
+    "badgeAlt": "TopAICollection-emblem",
+    "themes": {
+      "light": "Lys",
+      "neutral": "Nøytral",
+      "dark": "Mørk"
+    }
+  },
+  "alternatives": {
+    "title": "Alternativer",
+    "description": "Lignende verktøy du kanskje liker"
+  },
+  "pricing": {
+    "title": "Prisplaner",
+    "subtitle": "Velg den planen som passer best for deg",
+    "popular": "Populær",
+    "getStarted": "Kom i gang",
+    "disclaimer": "Priser og funksjoner kan variere. Besøk den offisielle nettsiden for den mest oppdaterte informasjonen.",
+    "noPricingInfo": "Ingen prisinformasjon tilgjengelig",
+    "free": "Gratis",
+    "moreFeatures": "Flere funksjoner"
+  },
+  "charts": {
+    "trafficChart": "Trafikkkart",
+    "comingSoon": "Kartvisualisering kommer snart"
+  },
+  "reviews": {
+    "title": "Anmeldelser",
+    "pointsScale": "av 5",
+    "subtitle": "Se hva samfunnet mener",
+    "writeTitle": "Anbefaler du dette verktøyet?",
+    "placeholder": "Del opplevelsen din med dette verktøyet...",
+    "privacy": "Personvernbeskyttet",
+    "success": "Anmeldelsen er sendt inn!",
+    "submit": "Post anmeldelse",
+    "loginToReview": "Logg inn for å sende en anmeldelse",
+    "loginLink": "Logg inn",
+    "noReviews": "Ingen anmeldelser ennå. Bli den første til å anmelde dette verktøyet!",
+    "viewMore": "Se alle anmeldelser",
+    "allReviewsTitle": "Alle anmeldelser av",
+    "reviewsPageTitle": "Anmeldelser",
+    "by": "av",
+    "verified": "Verifisert",
+    "anonymous": "Anonym bruker",
+    "ratingLabel": "Vurdering",
+    "commentLabel": "Kommentar",
+    "dateLabel": "Dato",
+    "page": "Side",
+    "editReview": "Rediger anmeldelse",
+    "deleteReview": "Slett anmeldelse",
+    "deleteConfirm": "Er du sikker på at du vil slette anmeldelsen din?",
+    "editTitle": "Rediger anmeldelsen din",
+    "updateSuccess": "Anmeldelse oppdatert!",
+    "deleteSuccess": "Anmeldelse slettet!",
+    "commentRequired": "Legg til en kommentar i anmeldelsen din.",
+    "ratingRequired": "Velg en vurdering.",
+    "alreadyReviewed": "Du har allerede anmeldt dette verktøyet. Bruk ✏️ rediger-knappen på anmeldelsen din for å oppdatere den.",
+    "sort": {
+      "label": "Sorter etter",
+      "newest": "Nyeste først",
+      "oldest": "Eldste først",
+      "highest": "Høyeste vurdering",
+      "lowest": "Laveste vurdering"
+    },
+    "save": "Spare",
+    "cancel": "Kansellere",
+    "close": "Lukke",
+    "userLabel": "Bruker",
+    "unverify": "Opphev bekreftelse",
+    "markVerified": "Merk bekreftet",
+    "confirm": "Bekreft",
+    "noReviewsFound": "Ingen anmeldelser funnet for dette verktøyet.",
+    "deleteError": "Kunne ikke slette.",
+    "updateError": "Kunne ikke oppdatere.",
+    "pagination": {
+      "showing": "Viser",
+      "of": "av",
+      "reviews": "anmeldelser",
+      "prev": "Forrige",
+      "next": "Neste"
+    },
+    "actionsLabel": "Handlinger",
+    "statusLabel": "Status"
+  },
+  "share": {
+    "title": "Del dette verktøyet"
+  },
+  "metrics": {
+    "monthlyVisits": "Månedlige besøk",
+    "growth": "Vekst"
+  },
+  "tags": "Tagger",
+  "overview": "Oversikt",
+  "howToUse": "Hvordan bruke",
+  "pricingPlans": "Prisplaner",
+  "faqs": "Vanlige spørsmål",
+  "geoChart": {
+    "noData": "Ingen geografiske data tilgjengelig",
+    "loading": "Laster inn geografiske data ..."
+  },
+  "introduction": "Introduksjon",
+  "description": "Beskrivelse",
+  "coreFeatures": "Kjernefunksjoner",
+  "useCases": "Brukssaker",
+  "screenshots": "Skjermbilder",
+  "companyInfo": {
+    "companyName": "Firmanavn",
+    "contactEmail": "Kontakt e-post"
+  },
+  "nav": {
+    "scrollLeft": "Rull til venstre",
+    "scrollRight": "Rull til høyre",
+    "previous": "Forrige",
+    "next": "Neste",
+    "imageSlide": "Bilde {index}",
+    "videoSlide": "Video lysbilde"
+  },
+  "badges": {
+    "verifiedListing": "Verifisert oppføring",
+    "freePlan": "Gratis plan",
+    "paidPlans": "Betalte planer og priser"
+  },
+  "dummyReviews": {
+    "c1": "Dette er et fantastisk AI-verktøy! Det endret arbeidsflyten min fullstendig.",
+    "c2": "Veldig gode funksjoner og lett å bruke. Anbefales på det sterkeste.",
+    "c3": "Jeg har prøvd mange alternativer, men denne er den desidert beste.",
+    "c4": "Utmerket verdi for prisen. Gratisplanen er også veldig raus.",
+    "c5": "Flott UI og intuitivt design. Noen ganger litt tregt, men generelt fantastisk.",
+    "c6": "Et må-ha-verktøy for enhver profesjonell. Sparer meg for timer hver uke.",
+    "c7": "God funksjonalitet, men krever en viss læringskurve."
+  }
+}

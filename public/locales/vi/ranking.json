@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Bảng xếp hạng công cụ AI hàng đầu",
+    "description": "Khám phá các công cụ AI được truy cập nhiều nhất thế giới dựa trên dữ liệu lưu lượng truy cập thực tế.",
+    "subtitle": "Khám phá các công cụ AI được truy cập nhiều nhất thế giới dựa trên dữ liệu lưu lượng truy cập thực tế."
+  },
+  "trending": {
+    "title": "Các công cụ AI đang thịnh hành",
+    "description": "Các công cụ AI có mức tăng trưởng nhanh nhất trong tháng qua.",
+    "subtitle": "Các công cụ AI có mức tăng trưởng nhanh nhất trong tháng qua."
+  },
+  "category": "Danh mục",
+  "noTools": "Không tìm thấy công cụ nào.",
+  "noToolsInCategory": "Không tìm thấy công cụ nào trong danh mục này.",
+  "loading": "Đang tải...",
+  "favorite": "Thêm vào yêu thích",
+  "unfavorite": "Xóa khỏi yêu thích",
+  "visitWebsite": "Truy cập website",
+  "errors": {
+    "general": "Không thể tải dữ liệu xếp hạng."
+  },
+  "topAI": "AI hàng đầu",
+  "trendingAI": "Thịnh hành",
+  "categoryAI": "Danh mục",
+  "regionAI": "Khu vực",
+  "region": "Khu vực",
+  "allRegions": "Toàn cầu",
+  "channelAI": "Nguồn kênh",
+  "channel": "Kênh",
+  "allChannels": "Tất cả nguồn",
+  "incomeAI": "Cộng đồng/TN",
+  "socialMetrics": "Chỉ số MXH",
+  "channelVisits": "Truy cập từ kênh",
+  "period": "Giai đoạn",
+  "last7Days": "7 ngày qua",
+  "lastMonth": "Tháng qua",
+  "last3Months": "3 tháng qua",
+  "lastYear": "Năm qua",
+  "allCategories": "Tất cả danh mục",
+  "selectPeriod": "Chọn giai đoạn",
+  "rank": "Hạng",
+  "tool": "Công cụ",
+  "visits": "Lượt truy cập",
+  "growth": "Tăng trưởng",
+  "actions": "Hành động",
+  "leaderboard": {
+    "header": {
+      "title": "Bảng Xếp Hạng AI",
+      "description": "Khám phá các công cụ AI được cộng đồng bình chọn nhiều nhất.",
+      "dailyTitle": "Công Cụ AI Hàng Đầu Hôm Nay",
+      "monthlyTitle": "Công Cụ AI Tốt Nhất Tháng {date}",
+      "yearlyTitle": "Công Cụ AI Tốt Nhất Năm {date}",
+      "tabs": {
+        "daily": "Hàng ngày",
+        "monthly": "Hàng tháng",
+        "yearly": "Hàng năm"
+      },
+      "prevPeriod": "Kỳ trước",
+      "nextPeriod": "Kỳ tiếp theo",
+      "pickDate": "Chọn ngày",
+      "pickMonth": "Tháng chọn"
+    },
+    "empty": {
+      "title": "Không có công cụ nào ra mắt hôm nay",
+      "description": "Không có công cụ nào được ghi nhận cho ngày này. Hãy thử chọn một ngày khác.",
+      "showMore": "Hiển thị thêm công cụ",
+      "loadingMore": "Đang tải thêm công cụ...",
+      "toolsListTitle": "Công cụ nổi bật"
+    },
+    "card": {
+      "visitWebsite": "Truy cập website",
+      "loginToUpvote": "Vui lòng đăng nhập để bình chọn (upvote) cho công cụ"
+    },
+    "page": {
+      "errorLoading": "Không thể tải dữ liệu bảng xếp hạng."
+    },
+    "sidebar": {
+      "launchArchive": "Lưu Trữ Ra Mắt",
+      "topCategories": "Danh Mục Hàng Đầu"
+    }
+  },
+  "maxResultsHint": "Giới hạn số lượng kết quả tối đa.",
+  "regions": {
+    "us": "Hoa Kỳ",
+    "gb": "Vương quốc Anh",
+    "in": "Ấn Độ",
+    "vn": "Việt Nam",
+    "ca": "Canada",
+    "ph": "Philippines"
+  },
+  "channels": {
+    "search": "Tìm kiếm",
+    "direct": "Trực tiếp",
+    "social": "Xã hội",
+    "referrals": "Giới thiệu"
+  },
+  "viewDetails": "Xem chi tiết"
+}

@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Chính Sách Cookie - TopAICollection",
+    "description": "Tìm hiểu về cách TopAICollection sử dụng cookie và các công nghệ tương tự."
+  },
+  "title": "Chính Sách Cookie",
+  "lastUpdated": "Cập nhật lần cuối",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Cookie Là Gì",
+      "description": "Cookie là các tệp văn bản nhỏ được lưu trữ trên máy tính hoặc thiết bị di động của bạn khi bạn truy cập trang web của chúng tôi. Chúng giúp chúng tôi cung cấp cho bạn trải nghiệm tốt hơn bằng cách ghi nhớ tùy chọn của bạn và hiểu cách bạn sử dụng trang web của chúng tôi."
+    },
+    "howWeUse": {
+      "title": "Cách Chúng Tôi Sử Dụng Cookie",
+      "intro": "Chúng tôi sử dụng cookie cho các mục đích sau:",
+      "essential": "Cookie Thiết Yếu: Cần thiết để trang web hoạt động đúng cách, bao gồm xác thực và bảo mật.",
+      "analytics": "Cookie Phân Tích: Giúp chúng tôi hiểu cách khách truy cập tương tác với trang web của chúng tôi.",
+      "preference": "Cookie Tùy Chọn: Ghi nhớ cài đặt và tùy chọn của bạn, chẳng hạn như ngôn ngữ và địa phương.",
+      "marketing": "Cookie Tiếp Thị: Được sử dụng để cung cấp quảng cáo phù hợp và theo dõi hiệu suất chiến dịch."
+    },
+    "managing": {
+      "title": "Quản Lý Cookie",
+      "intro": "Hầu hết các trình duyệt web cho phép bạn kiểm soát cookie thông qua cài đặt của chúng. Bạn có thể chọn:",
+      "blockAll": "Chặn tất cả cookie",
+      "acceptAll": "Chấp nhận tất cả cookie",
+      "beNotified": "Được thông báo khi cookie được đặt",
+      "deleteExisting": "Xóa cookie đã được đặt",
+      "note": "Xin lưu ý rằng việc chặn một số cookie nhất định có thể ảnh hưởng đến trải nghiệm của bạn trên trang web của chúng tôi."
+    },
+    "thirdParty": {
+      "title": "Cookie Của Bên Thứ Ba",
+      "intro": "Một số cookie trên trang web của chúng tôi được đặt bởi các dịch vụ bên thứ ba mà chúng tôi sử dụng, bao gồm:",
+      "googleAnalytics": "Google Analytics (phân tích)",
+      "vercel": "Vercel (lưu trữ và phân tích)"
+    },
+    "contact": {
+      "title": "Liên Hệ Với Chúng Tôi",
+      "message": "Nếu bạn có câu hỏi về việc sử dụng cookie của chúng tôi, vui lòng",
+      "contactLink": "liên hệ với chúng tôi"
+    }
+  }
+}

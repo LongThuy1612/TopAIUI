@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Lagrede verktøy - TopAICollection",
+    "description": "Se og administrer lagrede AI-verktøy og nettsteder"
+  },
+  "title": "Lagrede verktøy",
+  "description": "Se og administrer lagrede AI-verktøy og nettsteder.",
+  "emptyState": {
+    "title": "Ingen lagrede verktøy ennå",
+    "description": "Begynn å utforske og lagre dine favoritt AI-verktøy for enkel tilgang senere.",
+    "action": "Bla gjennom AI-verktøy"
+  },
+  "stats": {
+    "lastUpdated": "Sist oppdatert {date}"
+  },
+  "filters": {
+    "all": "Alle",
+    "popular": "Mest populær",
+    "category": "Etter kategori"
+  },
+  "errors": {
+    "loadFailed": "Kunne ikke laste inn favoritter"
+  },
+  "noDescription": "Ingen beskrivelse tilgjengelig",
+  "retry": "Prøv på nytt",
+  "actions": {
+    "addedToFavorites": "Lagt til i favoritter",
+    "removeFromFavorites": "Fjern fra favoritter",
+    "removedFromFavorites": "Fjernet fra favoritter"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "ابحث عن أدوات الذكاء الاصطناعي...",
+    "categories": "الفئات",
+    "rankings": "التصنيفات",
+    "submit": "أضف أداة",
+    "admin": "المشرف"
+  },
+  "hero": {
+    "titlePrefix": "اكتشف أفضل",
+    "titleHighlight": "أدوات الذكاء الاصطناعي",
+    "subtitle": "تصفّح مئات منتجات الذكاء الاصطناعي حسب الفئة، وقارن الأسعار، واعثر على الأداة المناسبة لسير عملك.",
+    "searchPlaceholder": "ابحث عن أدوات الذكاء الاصطناعي..."
+  },
+  "stats": {
+    "tools": "أداة ذكاء اصطناعي مدرجة",
+    "categories": "فئة",
+    "featured": "أدوات مميزة"
+  },
+  "tabs": {
+    "heading": "استكشف الأدوات",
+    "newest": "الأحدث",
+    "featured": "الأكثر تميزًا",
+    "free": "مجاني",
+    "viewAll": "عرض الكل ←"
+  },
+  "announcement": {
+    "featured": "مميز"
+  },
+  "sidebar": {
+    "featuredTools": "أدوات مميزة",
+    "topCategories": "أفضل الفئات"
+  },
+  "sections": {
+    "browseByCategory": "تصفح حسب الفئة",
+    "newestTools": "أحدث الأدوات",
+    "featuredTools": "أدوات مميزة",
+    "viewAll": "عرض الكل ←",
+    "justLaunched": "أُطلقت للتو",
+    "featuredThisWeek": "الأبرز هذا الأسبوع",
+    "featuredThisWeekSubtitle": "الأدوات الأكثر حفظًا وتقييمًا من قبل مجتمعنا.",
+    "updatedDaily": "يُحدَّث يوميًا",
+    "viewMore": "عرض المزيد ←"
+  },
+  "cta": {
+    "title": "هل لديك أداة ذكاء اصطناعي تريد مشاركتها؟",
+    "subtitle": "اعرضها أمام الأشخاص الباحثين عن أدوات مثل أداتك.",
+    "button": "أضف أداتك"
+  },
+  "empty": {
+    "noTools": "لا توجد أدوات بعد — نفّذ",
+    "noResults": "لم يتم العثور على أدوات"
+  },
+  "category": {
+    "breadcrumbHome": "الرئيسية",
+    "allTools": "جميع الأدوات",
+    "allToolsTitle": "جميع أدوات الذكاء الاصطناعي",
+    "allPricing": "جميع الأسعار",
+    "sortNewest": "الأحدث أولاً",
+    "sortFeatured": "المميز أولاً",
+    "sortName": "الاسم أ–ي",
+    "toolsFound": "أداة موجودة | أدوات موجودة",
+    "searchPlaceholder": "ابحث عن أدوات...",
+    "filters": "التصفية",
+    "viewGrid": "عرض شبكي",
+    "viewList": "عرض قائمة"
+  },
+  "pricing": {
+    "FREE": "مجاني",
+    "FREEMIUM": "مجاني جزئيًا",
+    "PAID": "مدفوع"
+  },
+  "ranking": {
+    "title": "أفضل أدوات الذكاء الاصطناعي",
+    "subtitle": "مرتّبة استنادًا إلى بيانات الزيارات والنمو المسجّلة في دليلنا.",
+    "byGrowth1m": "نمو شهر واحد",
+    "byGrowth3m": "نمو 3 أشهر",
+    "byGrowth6m": "نمو 6 أشهر",
+    "byTraffic": "الزيارات الشهرية",
+    "colRank": "الترتيب",
+    "colTool": "الأداة",
+    "colVisits": "الزيارات الشهرية",
+    "colGrowth": "النمو",
+    "colAuthority": "سلطة النطاق",
+    "colCategory": "الفئة",
+    "noData": "لا توجد بيانات تصنيف بعد."
+  },
+  "tool": {
+    "openSite": "فتح الموقع",
+    "save": "حفظ",
+    "saved": "محفوظ",
+    "featured": "مميز",
+    "introduction": "مقدمة",
+    "addedOn": "أُضيفت في",
+    "monthlyVisitors": "الزوار الشهريون",
+    "features": "الميزات الرئيسية",
+    "useCases": "حالات الاستخدام",
+    "prosAndCons": "الإيجابيات والسلبيات",
+    "pros": "الإيجابيات",
+    "cons": "السلبيات",
+    "faq": "الأسئلة الشائعة",
+    "alternatives": "بدائل لـ",
+    "backToCategory": "العودة إلى",
+    "notFound": "الأداة غير موجودة",
+    "similarTools": "أدوات مشابهة",
+    "tabProductInfo": "معلومات المنتج",
+    "tabPricing": "الأسعار",
+    "tabReviews": "التقييمات",
+    "tabAnalytics": "التحليلات",
+    "tabAlternatives": "البدائل",
+    "productInformationHeading": "معلومات منتج {name}",
+    "whatIs": "ما هو {name}؟",
+    "howToUseHeading": "كيف تستخدم {name}؟",
+    "reviewsHeading": "تقييمات {name} ({count})",
+    "ratingPrompt": "هل توصي بـ {name}؟ اترك تعليقًا",
+    "whatDoYouThink": "ما رأيك؟",
+    "loginToComment": "سجّل الدخول للتعليق",
+    "pricingHeading": "أسعار {name}",
+    "noPricingYet": "لا توجد معلومات عن الأسعار بعد.",
+    "analyticsHeading": "تحليلات {name}",
+    "trafficAnalysis": "تحليل زيارات موقع {name}",
+    "visitOverTime": "الزيارات عبر الزمن",
+    "monthlyVisits": "الزيارات الشهرية",
+    "avgVisitDuration": "متوسط مدة الزيارة",
+    "pagePerVisit": "الصفحات لكل زيارة",
+    "bounceRate": "معدل الارتداد",
+    "noTrafficYet": "لا توجد بيانات زيارات بعد.",
+    "badgeVerified": "موثّق",
+    "badgeJustLaunched": "أُطلقت للتو",
+    "badgeFreeTool": "أداة مجانية",
+    "affiliateLink": "رابط تسويق بالعمولة",
+    "couponCode": "رمز الخصم",
+    "ratings": "تقييمات",
+    "upvotes": "إعجابات",
+    "domainAuthority": "سلطة النطاق",
+    "trafficRank": "ترتيب الزيارات",
+    "viewCount": "مشاهدات الصفحة"
+  },
+  "footer": {
+    "tagline": "اكتشف وقارن وشارك أفضل أدوات الذكاء الاصطناعي — مبني باستخدام Nuxt وPostgreSQL.",
+    "product": "المنتج",
+    "home": "الرئيسية",
+    "allTools": "جميع الأدوات",
+    "submit": "أضف أداة",
+    "categories": "الفئات",
+    "company": "الشركة",
+    "admin": "تسجيل دخول المشرف",
+    "language": "اللغة",
+    "copyright": "جميع الحقوق محفوظة."
+  },
+  "language": {
+    "label": "اللغة"
+  }
+}

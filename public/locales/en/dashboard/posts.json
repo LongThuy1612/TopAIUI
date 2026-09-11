@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Posts & Links",
+    "subtitle": "Manage your guest posts and link insertions.",
+    "submitNew": "Submit New",
+    "submitNewItem": "Submit New Item",
+    "type": "Type",
+    "guestPost": "Guest Post",
+    "linkInsert": "Link Insertion",
+    "targetUrl": "Target URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Title / Anchor Text",
+    "anchorTextPlaceholder": "Title of the article OR Anchor text for link",
+    "submitCredits": "Submit (1 Credit)",
+    "tabs": {
+      "guestPosts": "Guest Posts",
+      "linkInserts": "Link Insertions"
+    },
+    "empty": {
+      "noGuestTitle": "No Guest Posts Yet",
+      "noGuestDesc": "Submit a high-quality article to reach our audience and promote your AI tool.",
+      "noGuestCta": "Submit Guest Post",
+      "noLinkTitle": "No Link Insertions Yet",
+      "noLinkDesc": "You haven't submitted any link insertions yet.",
+      "noLinkCta": "Submit Link Insertion"
+    },
+    "description": "Manage your submitted posts.",
+    "table": {
+      "title": "Title",
+      "anchor": "Anchor Text",
+      "url": "URL",
+      "status": "Status",
+      "date": "Date"
+    }
+  }
+}

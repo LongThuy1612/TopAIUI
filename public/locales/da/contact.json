@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Kontakt os - TopAICollection",
+    "description": "Kom i kontakt med TopAICollection-teamet. Vi er her for at hjælpe med spørgsmål om AI-værktøjer."
+  },
+  "title": "Kontakt os",
+  "subtitle": "Har du et spørgsmål eller feedback? Vi vil meget gerne høre fra dig. Vores team svarer typisk inden for 24 timer.",
+  "form": {
+    "title": "Send os en besked",
+    "fields": {
+      "name": {
+        "label": "Dit navn",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "label": "Email adresse",
+        "placeholder": "john@example.com"
+      },
+      "subject": {
+        "label": "Emne",
+        "placeholder": "Vælg et emne",
+        "options": {
+          "general": "Generel forespørgsel",
+          "support": "Teknisk support",
+          "feedback": "Tilbagemelding",
+          "partnership": "Partnerskabsmulighed",
+          "other": "Andre"
+        }
+      },
+      "message": {
+        "label": "Besked",
+        "placeholder": "Fortæl os, hvad du tænker på..."
+      }
+    },
+    "submit": "Send besked",
+    "submitting": "Sender...",
+    "success": {
+      "title": "Beskeden blev sendt!",
+      "description": "Vi har modtaget din besked og vender snart tilbage til dig."
+    },
+    "error": {
+      "title": "Kunne ikke sende besked",
+      "description": "Noget gik galt. Prøv venligst igen senere."
+    }
+  },
+  "info": {
+    "title": "Tag kontakt",
+    "email": {
+      "title": "Email os",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "Support åbningstider",
+      "content": "Vores supportteam er tilgængeligt mandag til fredag"
+    },
+    "hours": {
+      "title": "Åbningstider",
+      "content": "9:00 - 18:00 EST"
+    },
+    "location": {
+      "title": "Beliggenhed",
+      "content": "Betjener brugere globalt fra vores distribuerede team"
+    }
+  },
+  "faq": {
+    "title": "Ofte stillede spørgsmål",
+    "q1": "Hvordan indsender jeg mit AI-værktøj?",
+    "a1": "Klik på knappen Send værktøj i navigationen, og udfyld indsendelsesformularen.",
+    "q2": "Hvor lang tid tager godkendelsen?",
+    "a2": "De fleste indsendelser bliver gennemgået inden for 1-3 hverdage.",
+    "q3": "Kan jeg opdatere min værktøjsliste?",
+    "a3": "Ja, log ind på dit dashboard og brug funktionen Update AI."
+  }
+}

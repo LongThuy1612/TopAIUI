@@ -1,0 +1,14 @@
+{
+  "title": "Résultats de la recherche",
+  "resultsFor": "Résultats pour \"{query}\"",
+  "filters": "Filtres",
+  "typeFilters": "Taper",
+  "categories": "Catégories",
+  "noResults": "Aucun résultat trouvé",
+  "tryAgain": "Veuillez essayer un autre terme de recherche",
+  "placeholder": "Rechercher des outils d'IA...",
+  "button": "Recherche",
+  "loading": "Recherche...",
+  "clearFilters": "Effacer les filtres",
+  "categoryLabel": "Catégorie"
+}

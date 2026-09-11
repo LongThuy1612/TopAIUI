@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} כלי AI | גלה את הפתרונות הטובים ביותר של {tagName}",
+    "description": "חקור את האוסף האצור שלנו של כלי הבינה המלאכותית הטובים ביותר של {tagName}. השווה תכונות, תמחור וביקורות כדי למצוא את התוכנה המושלמת של {tagName} לצרכים שלך."
+  },
+  "notFound": {
+    "metaTitle": "תג לא נמצא | TopAICollection",
+    "metaDescription": "התגית שאתה מחפש אינה קיימת. גלה כלי AI אחרים."
+  },
+  "breadcrumb": {
+    "home": "בַּיִת",
+    "tools": "כְּלֵי עֲבוֹדָה"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} כלי AI",
+    "collectionDescription": "עיין בספריית כלי הבינה המלאכותית של {tagName}."
+  }
+}

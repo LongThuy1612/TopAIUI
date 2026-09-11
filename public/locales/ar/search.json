@@ -1,0 +1,14 @@
+{
+  "title": "نتائج البحث",
+  "resultsFor": "نتائج ل \"{query}\"",
+  "filters": "المرشحات",
+  "typeFilters": "يكتب",
+  "categories": "فئات",
+  "noResults": "لم يتم العثور على نتائج",
+  "tryAgain": "الرجاء تجربة مصطلح بحث مختلف",
+  "placeholder": "البحث في أدوات الذكاء الاصطناعي...",
+  "button": "يبحث",
+  "loading": "جارٍ البحث...",
+  "clearFilters": "مسح المرشحات",
+  "categoryLabel": "فئة"
+}

@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Theo dõi mạng xã hội",
+    "description": "Theo dõi từ khóa trên TikTok và YouTube.",
+    "table": {
+      "platform": "Nền tảng",
+      "keyword": "Từ khóa",
+      "videos": "Video",
+      "views": "Lượt xem",
+      "creators": "Người tạo",
+      "status": "Trạng thái"
+    },
+    "status": {
+      "active": "Đang hoạt động"
+    },
+    "monthlyQueries": "Truy vấn hàng tháng",
+    "videosToday": "Video hôm nay",
+    "creatorsToday": "Nhà sáng tạo hôm nay",
+    "metrics": {
+      "monthlyQueries": "Truy vấn hàng tháng",
+      "videosToday": "Video hôm nay",
+      "creatorsToday": "Người sáng tạo ngày nay"
+    }
+  },
+  "socialListeningTitle": "Theo dõi mạng xã hội",
+  "socialTable": {
+    "tool": "Công cụ AI",
+    "noData": "Không tìm thấy dữ liệu"
+  },
+  "allPlatforms": "Tất cả nền tảng"
+}

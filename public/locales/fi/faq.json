@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Usein kysytyt kysymykset - TopAICollection",
+    "description": "Löydä vastauksia yleisiin kysymyksiin TopAICollectionista ja AI-työkaluhakemistomme käytöstä."
+  },
+  "badge": "Ohjekeskus",
+  "title": "Usein kysytyt kysymykset",
+  "subtitle": "Löydä vastauksia yleisiin TopAICollectionia koskeviin kysymyksiin",
+  "categories": {
+    "general": "Yleisiä kysymyksiä",
+    "tools": "Tietoja AI-työkaluista",
+    "submission": "Työkalun lähettäminen",
+    "account": "Tili ja laskutus"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Mikä on TopAICollection?",
+        "answer": "TopAICollection on kattava hakemisto tekoälytyökaluista ja -sivustoista. Autamme käyttäjiä löytämään parhaat tekoälyratkaisut heidän tarpeisiinsa tuottavuustyökaluista luoviin sovelluksiin."
+      },
+      "1": {
+        "question": "Miten löydän oikean tekoälytyökalun?",
+        "answer": "Voit selata luokkien mukaan, käyttää hakutoimintoamme tai tarkistaa suositellut ja trendaavat osiot. Jokainen työkalu sisältää yksityiskohtaiset kuvaukset, käyttäjien arvostelut ja luokitukset, jotka auttavat sinua tekemään tietoisen päätöksen."
+      },
+      "2": {
+        "question": "Onko TopAICollectionin käyttö ilmainen?",
+        "answer": "Kyllä! Hakemistomme selaaminen ja etsiminen on täysin ilmaista. Joillakin luetelluilla työkaluilla voi olla oma hinnoittelunsa, joka on selvästi ilmoitettu kunkin työkalun sivulla."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Miten työkalut valitaan hakemistoon?",
+        "answer": "Tarkistamme jokaisen lähetyksen huolellisesti varmistaaksemme laadun. Työkalujen on oltava toimivia, tarjottava arvoa käyttäjille ja noudatettava ohjeitamme. Otamme myös huomioon käyttäjien palautteen ja arvioinnit."
+      },
+      "1": {
+        "question": "Mitä tietoja kustakin työkalusta annetaan?",
+        "answer": "Jokainen työkaluluettelo sisältää kuvauksen, tärkeimmät ominaisuudet, hintatiedot, käyttäjien arvostelut, liikenneanalyysit, luokat ja suorat linkit työkalun verkkosivustolle."
+      },
+      "2": {
+        "question": "Kuinka usein hakemistoa päivitetään?",
+        "answer": "Hakemistoamme päivitetään päivittäin uusilla työkaluilla ja tiedoilla. Seuraamme jatkuvasti lueteltuja työkaluja varmistaaksemme tarkkuuden ja poistaaksemme kaikki, jotka eivät ole enää saatavilla."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Kuinka voin lähettää tekoälytyökaluni?",
+        "answer": "Vieraile Submit Tool -sivullamme ja täytä lähetyslomake. Anna yksityiskohtaisia ​​tietoja työkalustasi, mukaan lukien sen ominaisuudet, kohdeyleisö ja hinta. Tarkistamme kaikki lähetykset 48 tunnin kuluessa."
+      },
+      "1": {
+        "question": "Mitkä ovat työkalujen toimittamisen vaatimukset?",
+        "answer": "Työkalusi on toimittava, tarjottava selkeää arvoa käyttäjille, sillä on oltava ammattimainen verkkosivusto ja noudatettava lakisääteisiä vaatimuksia. Emme hyväksy työkaluja, jotka edistävät laitonta toimintaa tai loukkaavat käyttäjien yksityisyyttä."
+      },
+      "2": {
+        "question": "Kuinka paljon työkalun luettelointi maksaa?",
+        "answer": "Perustiedot ovat ilmaisia. Tarjoamme myös suositeltuja ja premium-listauksia lisäetuilla, kuten ensisijaisella sijoittelulla, mainosominaisuuksilla ja edistyneellä analyysillä."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Tarvitsenko tilin käyttääkseni TopAICollectionia?",
+        "answer": "Hakemistomme selaamiseen ja hakemiseen ei tarvita tiliä. Tilin luomisen avulla voit kuitenkin tallentaa suosikkityökaluja, kirjoittaa arvosteluja ja hallita työkalujen lähetyksiä."
+      },
+      "1": {
+        "question": "Kuinka päivitän työkaluluetteloni?",
+        "answer": "Kirjaudu tilillesi, siirry työkaluhallinnan hallintapaneeliin ja valitse päivitysvaihtoehto. Voit valita suosituista tai premium-sopimuksista, joissa on kuukausi- tai vuosilaskutus."
+      },
+      "2": {
+        "question": "Voinko peruuttaa maksullisen ilmoitukseni milloin tahansa?",
+        "answer": "Kyllä, voit peruuttaa maksulliset tietosi milloin tahansa. Tietosi pysyvät esillä nykyisen laskutusjaksosi loppuun asti, minkä jälkeen voit palata perustietoihin."
+      }
+    }
+  },
+  "cta": {
+    "title": "Onko sinulla vielä kysyttävää?",
+    "subtitle": "Tukitiimimme on täällä auttamassa",
+    "button": "Ota yhteyttä tukeen"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Kontaktieren Sie uns – TopAICollection",
+    "description": "Nehmen Sie Kontakt mit dem TopAICollection-Team auf. Wir helfen Ihnen gerne bei allen Fragen zu KI-Tools weiter."
+  },
+  "title": "Kontaktieren Sie uns",
+  "subtitle": "Haben Sie eine Frage oder Feedback? Wir würden uns freuen, von Ihnen zu hören. Unser Team antwortet in der Regel innerhalb von 24 Stunden.",
+  "form": {
+    "title": "Senden Sie uns eine Nachricht",
+    "fields": {
+      "name": {
+        "label": "Ihr Name",
+        "placeholder": "Erika Mustermann"
+      },
+      "email": {
+        "label": "E-Mail-Adresse",
+        "placeholder": "john@beispiel.com"
+      },
+      "subject": {
+        "label": "Thema",
+        "placeholder": "Wählen Sie ein Thema aus",
+        "options": {
+          "general": "Allgemeine Anfrage",
+          "support": "Technische Unterstützung",
+          "feedback": "Rückmeldung",
+          "partnership": "Möglichkeit einer Partnerschaft",
+          "other": "Andere"
+        }
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Sagen Sie uns, was Sie denken..."
+      }
+    },
+    "submit": "Nachricht senden",
+    "submitting": "Senden...",
+    "success": {
+      "title": "Nachricht erfolgreich gesendet!",
+      "description": "Wir haben Ihre Nachricht erhalten und werden uns bald bei Ihnen melden."
+    },
+    "error": {
+      "title": "Nachricht konnte nicht gesendet werden",
+      "description": "Etwas ist schief gelaufen. Bitte versuchen Sie es später noch einmal."
+    }
+  },
+  "info": {
+    "title": "Nehmen Sie Kontakt auf",
+    "email": {
+      "title": "Schicken Sie uns eine E-Mail",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "Support-Stunden",
+      "content": "Unser Support-Team ist von Montag bis Freitag für Sie da"
+    },
+    "hours": {
+      "title": "Geschäftszeiten",
+      "content": "9:00 - 18:00 Uhr EST"
+    },
+    "location": {
+      "title": "Standort",
+      "content": "Betreuung von Benutzern weltweit durch unser verteiltes Team"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": "Wie reiche ich mein KI-Tool ein?",
+    "a1": "Klicken Sie in der Navigation auf die Schaltfläche „Tool senden“ und füllen Sie das Einreichungsformular aus.",
+    "q2": "Wie lange dauert die Genehmigung?",
+    "a2": "Die meisten Einsendungen werden innerhalb von 1–3 Werktagen überprüft.",
+    "q3": "Kann ich meine Werkzeugliste aktualisieren?",
+    "a3": "Ja, melden Sie sich bei Ihrem Dashboard an und nutzen Sie die Funktion „KI aktualisieren“."
+  }
+}

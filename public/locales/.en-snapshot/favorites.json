@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Saved Tools - TopAICollection",
+    "description": "View and manage your saved AI tools and websites"
+  },
+  "title": "Saved Tools",
+  "description": "View and manage your saved AI tools and websites.",
+  "emptyState": {
+    "title": "No saved tools yet",
+    "description": "Start exploring and save your favorite AI tools for easy access later.",
+    "action": "Browse AI Tools"
+  },
+  "stats": {
+    "lastUpdated": "Last updated {date}"
+  },
+  "filters": {
+    "all": "All",
+    "popular": "Most Popular",
+    "category": "By Category"
+  },
+  "errors": {
+    "loadFailed": "Failed to load favorites"
+  },
+  "noDescription": "No description available",
+  "retry": "Retry",
+  "actions": {
+    "addedToFavorites": "Added to favorites",
+    "removeFromFavorites": "Remove from favorites",
+    "removedFromFavorites": "Removed from favorites"
+  }
+}

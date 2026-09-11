@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Fullständigt namn",
+      "email": "E-postadress",
+      "emailHelp": "E-post kan inte ändras",
+      "emailPlaceholder": "du@exempel.se",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+46 (000) 000-0000",
+      "company": "Företag",
+      "country": "Land",
+      "website": "Webbplats",
+      "save": "Spara ändringar",
+      "saving": "Sparar...",
+      "saveSuccess": "Profilen har uppdaterats."
+    },
+    "password": {
+      "title": "Ändra lösenord",
+      "current": "Nuvarande lösenord",
+      "new": "Nytt lösenord",
+      "confirm": "Bekräfta nytt lösenord",
+      "update": "Uppdatera lösenord"
+    },
+    "notifications": {
+      "title": "Aviseringsinställningar",
+      "email": "E-postaviseringar",
+      "marketing": "Marknadsföringsmejl"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "fullName": "Fullständigt namn",
+    "email": "E-postadress",
+    "emailHelp": "E-post kan inte ändras",
+    "emailPlaceholder": "du@exempel.com",
+    "phone": "Telefonnummer",
+    "company": "Företag",
+    "country": "Land",
+    "website": "Webbplats",
+    "save": "Spara ändringar",
+    "saving": "Sparande...",
+    "saveSuccess": "Profilen har uppdaterats.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Ändra lösenord",
+    "current": "Aktuellt lösenord",
+    "new": "Nytt lösenord",
+    "confirm": "Bekräfta nytt lösenord",
+    "update": "Uppdatera lösenord"
+  },
+  "notifications": {
+    "title": "Aviseringsinställningar",
+    "email": "E-postmeddelanden",
+    "marketing": "Marknadsföringsmail"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Säkerhet",
+    "notifications": "Aviseringar"
+  },
+  "updated": "Inställningarna har uppdaterats"
+}

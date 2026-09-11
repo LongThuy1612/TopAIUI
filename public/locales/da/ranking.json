@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Top rangering af AI-værktøjer",
+    "description": "Oplev de mest besøgte AI-værktøjer i verden baseret på rigtige trafikdata.",
+    "subtitle": "Oplev de mest besøgte AI-værktøjer i verden baseret på rigtige trafikdata."
+  },
+  "trending": {
+    "title": "Trending AI-værktøjer",
+    "description": "De hurtigst voksende AI-værktøjer i den sidste måned.",
+    "subtitle": "De hurtigst voksende AI-værktøjer i den sidste måned."
+  },
+  "category": "Kategori",
+  "noTools": "Ingen værktøjer fundet.",
+  "noToolsInCategory": "Ingen værktøjer fundet i denne kategori.",
+  "loading": "Indlæser...",
+  "favorite": "Tilføj til favoritter",
+  "unfavorite": "Fjern fra favoritter",
+  "visitWebsite": "Besøg hjemmesiden",
+  "errors": {
+    "general": "Rangeringsdata kunne ikke indlæses."
+  },
+  "trendingAI": "Trending AI",
+  "period": "Periode",
+  "last7Days": "Sidste 7 dage",
+  "lastMonth": "Sidste måned",
+  "last3Months": "Sidste 3 måneder",
+  "lastYear": "Sidste år",
+  "allCategories": "Alle kategorier",
+  "selectPeriod": "Vælg Periode",
+  "rank": "Rang",
+  "tool": "Værktøj",
+  "visits": "Besøg",
+  "growth": "Vækst",
+  "actions": "Handlinger",
+  "leaderboard": {
+    "header": {
+      "title": "Leaderboard for AI-værktøjer",
+      "description": "Oplev de mest populære AI-værktøjer fra fællesskabet.",
+      "dailyTitle": "Dagens bedste AI-værktøjer",
+      "monthlyTitle": "Bedste AI-værktøjer fra {date}",
+      "yearlyTitle": "Bedste AI-værktøjer fra {date}",
+      "tabs": {
+        "daily": "Daglig",
+        "monthly": "Månedlig",
+        "yearly": "Årligt"
+      },
+      "prevPeriod": "Tidligere periode",
+      "nextPeriod": "Næste periode",
+      "pickDate": "Vælg dato",
+      "pickMonth": "Vælg måned"
+    },
+    "empty": {
+      "title": "Ingen værktøjer lanceret i dag",
+      "description": "Der er ingen værktøjer registreret for denne specifikke dato. Prøv at navigere til en anden dag.",
+      "showMore": "Vis flere værktøjer",
+      "loadingMore": "Indlæser flere værktøjer...",
+      "toolsListTitle": "Udvalgte værktøjer"
+    },
+    "card": {
+      "visitWebsite": "Besøg hjemmesiden",
+      "loginToUpvote": "Log venligst ind for at opstemme værktøjer"
+    },
+    "page": {
+      "errorLoading": "Leaderboard-data kunne ikke indlæses."
+    },
+    "sidebar": {
+      "launchArchive": "Start Arkiv",
+      "topCategories": "Topkategorier"
+    }
+  },
+  "categoryAI": "Kategori",
+  "regionAI": "Område",
+  "region": "Område",
+  "allRegions": "Global ",
+  "channelAI": "Kanal",
+  "channel": "Kanal",
+  "allChannels": "Alle kilder",
+  "incomeAI": "socialindkomst",
+  "socialMetrics": "Social værdi",
+  "channelVisits": "Kildebesøg",
+  "maxResultsHint": "Begræns det maksimale antal resultater.",
+  "regions": {
+    "us": "USA",
+    "gb": "Storbritannien",
+    "in": "Indien",
+    "ph": "Filippinerne",
+    "ca": "Canada",
+    "vn": "Vietnam"
+  },
+  "channels": {
+    "search": "Søg",
+    "direct": "Direkte",
+    "referrals": "Henvisninger",
+    "social": "Social"
+  },
+  "viewDetails": "Se detaljer",
+  "topAI": "Top AI"
+}

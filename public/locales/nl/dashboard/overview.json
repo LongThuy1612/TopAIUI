@@ -1,0 +1,225 @@
+{
+  "welcome": "Welkom, {name}!",
+  "welcomeDescription": "Verken onze krachtige functies en gegevens om de nieuwste trends en kansen in de AI-industrie te ontdekken.",
+  "user": "Gebruiker",
+  "performanceOverview": "Prestatieoverzicht",
+  "websiteInsightsQuota": "Website Insights-quotum",
+  "socialListeningQueries": "Social Listening-quota",
+  "stats": {
+    "organicClicks": "Organische Klikken",
+    "paidClicks": "Betaalde Klikken",
+    "totalClicks": "Totaal Klikken",
+    "totalTools": "Totaal Tools",
+    "totalViews": "Totaal Weergaven",
+    "credits": "Kredieten"
+  },
+  "features": {
+    "websiteInsights": "Website-inzichten",
+    "socialListening": "Sociaal luisteren",
+    "prioritySupport": "Prioritaire ondersteuning",
+    "advertising": "Reclame",
+    "premiumSupport": "Premium-ondersteuning"
+  },
+  "badgePopular": "Meest populair",
+  "title": "Social Listening-tracking",
+  "description": "Controleer zoekwoorden op TikTok en YouTube.",
+  "adCredits": "Advertentietegoeden",
+  "postCredits": "Postcredits",
+  "linkCredits": "Koppeltegoeden",
+  "forSponsoredListings": "Voor gesponsorde vermeldingen",
+  "forGuestArticles": "Voor gastartikelen",
+  "forLinkInsertions": "Voor het invoegen van links",
+  "buyCredits": "Koop tegoeden",
+  "noOrders": "Geen bestellingen gevonden.",
+  "orderHistory": "Bestelgeschiedenis",
+  "orderId": "Bestel-ID",
+  "amount": "Hoeveelheid",
+  "date": "Datum",
+  "type": "Typen",
+  "invoice": "Factuur",
+  "download": "Downloaden",
+  "currentPlan": "Huidig ​​abonnement",
+  "freeTier": "Gratis niveau",
+  "freeTierDesc": "Upgrade uw abonnement om meer functies en inzichten te ontgrendelen.",
+  "creditBalances": "Creditsaldi",
+  "subscriptionDetails": "Abonnementsgegevens",
+  "upgradePlan": "Upgradeplan",
+  "statusActive": "Actief",
+  "planMemberSince": "Lid van dit plan",
+  "renewalDate": "Verlengt aan",
+  "changePlan": "Plan wijzigen",
+  "redirecting": "Omleiden...",
+  "credits": "Kredieten",
+  "managePortal": "Beheer factureringsportaal",
+  "subscribe": "Abonneer je nu",
+  "upgradeTitle": "Upgrade uw onderzoeksplan",
+  "upgradeDesc": "Ontgrendel geavanceerde analyses, inzichten van concurrenten en meer.",
+  "choosePlan": {
+    "title": "Kies uw onderzoeksplan",
+    "subtitle": "Krijg AI-marktinformatie en -gegevens om beslissingen te nemen."
+  },
+  "billingIntervals": {
+    "monthly": "Maandelijks",
+    "yearly": "Jaarlijks"
+  },
+  "subtitle": "Beheer en volg de prestaties van uw ingediende AI-tools.",
+  "create": "Campagne maken",
+  "noCampaigns": "Nog geen campagnes",
+  "createFirst": "Maak uw eerste campagne om uw AI-tools te promoten",
+  "getStarted": "Aan de slag",
+  "budget": "Begroting",
+  "spent": "Besteed",
+  "startDate": "Startdatum",
+  "endDate": "Einddatum",
+  "notSet": "Niet ingesteld",
+  "ongoing": "Lopend",
+  "pause": "Pauze",
+  "resume": "Cv",
+  "viewDetails": "Details bekijken",
+  "clicks": "Klikken",
+  "impressions": "Indrukken",
+  "rejectionReason": "Reden van afwijzing",
+  "analytics": {
+    "title": "Campagneanalyse",
+    "description": "Gedetailleerd overzicht van vertoningen en klikken gedurende de afgelopen 30 dagen.",
+    "exportJson": "JSON exporteren",
+    "dailyPerformance": "Dagelijkse prestaties",
+    "topLocales": "Topregio's (landinstellingen)"
+  },
+  "track": "Spoor",
+  "noDomains": "Er zijn nog geen domeinen bijgehouden. Voeg er hierboven één toe!",
+  "domain": "Domein",
+  "monthlyVisits": "Maandelijkse bezoeken",
+  "rank": "Rang",
+  "topKeywords": "Topzoekwoorden",
+  "added": "Toegevoegd",
+  "tool": "Hulpmiddel",
+  "organicClicks": "Organische klikken",
+  "paidClicks": "Betaalde klikken",
+  "totalClicks": "Totaal aantal klikken",
+  "addedOn": "Toegevoegd op",
+  "noTools": "Er zijn nog geen tools bijgehouden.",
+  "empty": {
+    "title": "Nog geen AI-tools",
+    "description": "Dien uw AI-tool in om ontdekt te worden door miljoenen gebruikers.",
+    "cta": "Verzend AI-tool"
+  },
+  "columns": {
+    "tool": "Hulpmiddel",
+    "organic": "Organisch verkeer",
+    "paid": "Betaald verkeer",
+    "impressions": "Indrukken",
+    "actions": "Acties",
+    "status": "Status"
+  },
+  "statusTooltip": {
+    "pending": "In afwachting van goedkeuring door de beheerder"
+  },
+  "submittedToast": "Uw tool is ingediend en wacht op beoordeling.",
+  "warnings": {
+    "pendingView": "Deze tool wordt nog beoordeeld en is nog niet publiekelijk zichtbaar.",
+    "confirmDelete": "Weet u zeker dat u deze AI-tool wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+  },
+  "gpt": {
+    "title": "Mijn GPT's",
+    "submitNew": "Dien een nieuwe GPT in",
+    "noGpts": "Geen GPT's gevonden. Stuur je eerste in!",
+    "noGptsDesc": "Er zijn nog geen GPT's ingediend. Dien uw GPT in om ontdekt te worden.",
+    "columns": {
+      "name": "GPT-naam",
+      "url": "ChatGPT-URL",
+      "date": "Ingediend"
+    }
+  },
+  "updateAi": "AI bijwerken",
+  "submitNew": "Nieuw indienen",
+  "submitNewItem": "Nieuw artikel indienen",
+  "linkInsert": {
+    "label": "Link invoegen",
+    "submit": "Linkinvoeging indienen",
+    "empty": {
+      "title": "Er zijn nog geen links toegevoegd",
+      "description": "U heeft nog geen linkinvoegingen ingediend."
+    }
+  },
+  "form": {
+    "type": "Typen",
+    "targetUrl": "Doel-URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Titel / Ankertekst",
+    "anchorTextPlaceholder": "Titel van het artikel OF Ankertekst voor link",
+    "submitCredits": "Verzenden (1 credit)"
+  },
+  "tabs": {
+    "profile": "Profiel",
+    "security": "Beveiliging",
+    "notifications": "Meldingen"
+  },
+  "table": {
+    "keyword": "Trefwoord",
+    "videos": "Video's",
+    "views": "Bekeken",
+    "creators": "Makers",
+    "status": "Status",
+    "platform": "Platform"
+  },
+  "updated": "Instellingen zijn succesvol bijgewerkt",
+  "password": {
+    "title": "Wachtwoord wijzigen",
+    "current": "Huidig ​​wachtwoord",
+    "new": "Nieuw wachtwoord",
+    "confirm": "Bevestig nieuw wachtwoord",
+    "update": "Wachtwoord bijwerken"
+  },
+  "notifications": {
+    "title": "Meldingsvoorkeuren",
+    "email": "E-mailmeldingen",
+    "marketing": "Marketing-e-mails"
+  },
+  "metrics": {
+    "monthlyQueries": "Maandelijkse vragen",
+    "videosToday": "Video's vandaag",
+    "creatorsToday": "Makers vandaag"
+  },
+  "advertiseAi": "Adverteer AI",
+  "myAis": {
+    "title": "Mijn AI's",
+    "subtitle": "Beheer en volg de prestaties van uw ingediende AI-tools.",
+    "empty": {
+      "cta": "Verzend AI-tool"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Reden van afwijzing"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Houd de rangschikking en prestaties van zoekwoorden bij",
+    "socialListeningDesc": "Houd sociale vermeldingen en trends in de gaten",
+    "researchReportDesc": "Genereer uitgebreide marktrapporten",
+    "aiAdvertisingLibrary": "AI-advertentiebibliotheek",
+    "aiAdvertisingDesc": "Analyseer AI-advertenties van concurrenten",
+    "comingSoon": "Binnenkort beschikbaar"
+  },
+  "reports": {
+    "title": "Onderzoeksrapporten",
+    "description": "Krijg toegang tot diepgaande analytische rapporten over de AI-industrie.",
+    "noReports": "Geen rapporten beschikbaar",
+    "free": "Vrij",
+    "download": "Downloaden",
+    "unlock": "Ontgrendel rapport",
+    "noReportsDesc": "Momenteel bereiden wij nieuwe inzichten voor.",
+    "readNow": "Lees rapport",
+    "readerTitle": "Lezer van onderzoeksrapport",
+    "unlockRequired": "Premium-inhoud",
+    "unlockDesc": "Ontgrendel dit diepgaande onderzoeksrapport om volledige toegang te krijgen tot exclusieve marktanalyses, casestudy's en bruikbare inzichten.",
+    "unlockNow": "Ontgrendel nu",
+    "related": "Gerelateerde rapporten",
+    "toc": "Op deze pagina",
+    "backToList": "Terug naar Bibliotheek",
+    "notFound": "Rapport niet gevonden",
+    "unlockSuccess": "Rapport succesvol ontgrendeld!",
+    "unlockError": "Kan het rapport niet ontgrendelen.",
+    "searchPlaceholder": "Rapporten zoeken..."
+  },
+  "toolPerformance": "Toolprestaties (realtime)"
+}

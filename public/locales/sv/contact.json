@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Kontakta oss - TopAICollection",
+    "description": "Kom i kontakt med TopAICollections team. Vi är här för att hjälpa dig med alla frågor om AI-verktyg."
+  },
+  "title": "Kontakta oss",
+  "subtitle": "Har du en fråga eller feedback? Vi vill gärna höra från dig. Vårt team svarar vanligtvis inom 24 timmar.",
+  "form": {
+    "title": "Skicka ett meddelande till oss",
+    "fields": {
+      "name": {
+        "label": "Ditt namn",
+        "placeholder": "Till Johan Johansson<ex id=\"_1\"/>"
+      },
+      "email": {
+        "label": "E-postadress",
+        "placeholder": "john@example.com"
+      },
+      "subject": {
+        "label": "Ämne",
+        "placeholder": "Välj ett ämne",
+        "options": {
+          "general": "Allmän utredning",
+          "support": "Teknisk support",
+          "feedback": "Feed-back",
+          "partnership": "Partnerskapsmöjlighet",
+          "other": "Andra"
+        }
+      },
+      "message": {
+        "label": "Meddelande",
+        "placeholder": "Berätta vad du tänker på..."
+      }
+    },
+    "submit": "Skicka meddelande",
+    "submitting": "Sändning...",
+    "success": {
+      "title": "Meddelandet har skickats!",
+      "description": "Vi har tagit emot ditt meddelande och återkommer snart."
+    },
+    "error": {
+      "title": "Det gick inte att skicka meddelandet",
+      "description": "Något gick fel. Försök igen senare."
+    }
+  },
+  "info": {
+    "title": "Hör av dig",
+    "email": {
+      "title": "Maila oss",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "Supporttider",
+      "content": "Vårt supportteam är tillgängligt måndag till fredag"
+    },
+    "hours": {
+      "title": "Öppettider",
+      "content": "9:00–18:00 EST"
+    },
+    "location": {
+      "title": "Plats",
+      "content": "Betjänar användare globalt från vårt distribuerade team"
+    }
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "q1": "Hur skickar jag in mitt AI-verktyg?",
+    "a1": "Klicka på knappen Skicka verktyg i navigeringen och fyll i inlämningsformuläret.",
+    "q2": "Hur lång tid tar ett godkännande?",
+    "a2": "De flesta bidrag granskas inom 1-3 arbetsdagar.",
+    "q3": "Kan jag uppdatera min verktygslista?",
+    "a3": "Ja, logga in på din instrumentpanel och använd funktionen Uppdatera AI."
+  }
+}

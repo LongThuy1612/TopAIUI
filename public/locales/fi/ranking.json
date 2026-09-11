@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "AI-työkalujen paras sijoitus",
+    "description": "Tutustu maailman suosituimpiin tekoälytyökaluihin, jotka perustuvat todellisiin liikennetietoihin.",
+    "subtitle": "Tutustu maailman suosituimpiin tekoälytyökaluihin, jotka perustuvat todellisiin liikennetietoihin."
+  },
+  "trending": {
+    "title": "Trendaavat AI-työkalut",
+    "description": "Viime kuukauden nopeimmin kasvavat tekoälytyökalut.",
+    "subtitle": "Viime kuukauden nopeimmin kasvavat tekoälytyökalut."
+  },
+  "category": "Luokka",
+  "noTools": "Työkaluja ei löytynyt.",
+  "noToolsInCategory": "Tästä kategoriasta ei löytynyt työkaluja.",
+  "loading": "Ladataan...",
+  "favorite": "Lisää suosikkeihin",
+  "unfavorite": "Poista suosikeista",
+  "visitWebsite": "Vieraile verkkosivustolla",
+  "errors": {
+    "general": "Sijoitustietojen lataaminen epäonnistui."
+  },
+  "topAI": "Huippu AI",
+  "trendingAI": "Trendaavat",
+  "period": "Kausi",
+  "last7Days": "Viimeiset 7 päivää",
+  "lastMonth": "Viimeinen kuukausi",
+  "last3Months": "Viimeiset 3 kuukautta",
+  "lastYear": "Viime vuonna",
+  "allCategories": "Kaikki luokat",
+  "selectPeriod": "Valitse Jakso",
+  "rank": "Sijoitus",
+  "tool": "Työkalu",
+  "visits": "Vierailut",
+  "growth": "Kasvu",
+  "actions": "Toiminnot",
+  "leaderboard": {
+    "header": {
+      "title": "AI Tools -tulostaulukko",
+      "description": "Tutustu yhteisön eniten äänestämiin tekoälytyökaluihin.",
+      "dailyTitle": "Päivän parhaat tekoälytyökalut",
+      "monthlyTitle": "Päivän {date} parhaat tekoälytyökalut",
+      "yearlyTitle": "Päivän {date} parhaat tekoälytyökalut",
+      "tabs": {
+        "daily": "Päivittäin",
+        "monthly": "Kuukausittain",
+        "yearly": "Vuosittain"
+      },
+      "prevPeriod": "Edellinen kausi",
+      "nextPeriod": "Seuraava kausi",
+      "pickDate": "Valitse päivämäärä",
+      "pickMonth": "Valitse kuukausi"
+    },
+    "empty": {
+      "title": "Ei työkaluja julkaistu tänään",
+      "description": "Tälle päivämäärälle ei ole tallennettu työkaluja. Yritä navigoida toiseen päivään.",
+      "showMore": "Näytä lisää työkaluja",
+      "loadingMore": "Ladataan lisää työkaluja...",
+      "toolsListTitle": "Suositellut työkalut"
+    },
+    "card": {
+      "visitWebsite": "Vieraile verkkosivustolla",
+      "loginToUpvote": "Kirjaudu sisään plusäänestystyökaluihin"
+    },
+    "page": {
+      "errorLoading": "Tulostaulukon tietojen lataaminen epäonnistui."
+    },
+    "sidebar": {
+      "launchArchive": "Käynnistä arkisto",
+      "topCategories": "Parhaat luokat"
+    }
+  },
+  "categoryAI": "Luokka",
+  "regionAI": "Maakunta",
+  "region": "Maakunta",
+  "allRegions": "Maailmanlaajuinen",
+  "channelAI": "Kanava",
+  "channel": "Kanava",
+  "allChannels": "Kaikki lähteet",
+  "incomeAI": "Sosiaaliturva/tulot",
+  "socialMetrics": "sosiaalinen arvo",
+  "channelVisits": "Lähdevierailut",
+  "maxResultsHint": "Rajoita tulosten enimmäismäärää.",
+  "regions": {
+    "us": "Yhdysvallat",
+    "ca": "Kanada",
+    "gb": "Yhdistynyt kuningaskunta",
+    "in": "Intia",
+    "ph": "Filippiinit",
+    "vn": "Vietnam"
+  },
+  "channels": {
+    "search": "Hae",
+    "direct": "Suora",
+    "social": "Sosiaalinen",
+    "referrals": "viittaukset"
+  },
+  "viewDetails": "Näytä tiedot"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Risultati della ricerca",
+  "resultsFor": "Risultati per \"{query}\"",
+  "filters": "Filtri",
+  "typeFilters": "Tipo",
+  "categories": "Categorie",
+  "noResults": "Nessun risultato trovato",
+  "tryAgain": "Prova un termine di ricerca diverso",
+  "placeholder": "Cerca strumenti AI...",
+  "button": "Ricerca",
+  "loading": "Ricerca...",
+  "clearFilters": "Cancella filtri",
+  "categoryLabel": "Categoria"
+}

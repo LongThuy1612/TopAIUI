@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- Đánh giá & Phân tích Công cụ AI"
+  },
+  "errors": {
+    "notFound": "Không tìm thấy công cụ",
+    "notFoundDescription": "Công cụ bạn đang tìm kiếm không tồn tại.",
+    "serverError": "Lỗi máy chủ nội bộ.",
+    "serverErrorDescription": "Đã xảy ra lỗi không mong muốn trên máy chủ. Vui lòng thử lại sau."
+  },
+  "actions": {
+    "visit": "Truy cập trang web",
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "share": "Chia sẻ",
+    "update": "Cập nhật công cụ này",
+    "advertise": "Quảng cáo công cụ này",
+    "visitWebsite": "Truy cập website",
+    "readMore": "Xem thêm",
+    "readLess": "Thu gọn",
+    "openVideo": "Mở Video"
+  },
+  "cta": {
+    "visit": "Truy cập trang web",
+    "advertise": "Quảng cáo công cụ này",
+    "update": "Cập nhật công cụ này"
+  },
+  "sidebar": {
+    "category": "Danh mục",
+    "tags": "Thẻ"
+  },
+  "tabs": {
+    "socialListening": "Phân tích",
+    "alternatives": "Lựa chọn thay thế"
+  },
+  "similar": {
+    "title": "Công cụ AI tương tự"
+  },
+  "stats": {
+    "monthlyVisits": "Lượt truy cập hàng tháng",
+    "growth": "Tăng trưởng",
+    "reviews": "đánh giá",
+    "averageTime": "Thời gian truy cập trung bình",
+    "pagesPerVisit": "Trang mỗi lượt truy cập",
+    "bounceRate": "Tỷ lệ thoát",
+    "visits": "lượt truy cập",
+    "reviews_formatted": "{rating} ({count} {label})"
+  },
+  "sections": {
+    "overview": "Tổng quan",
+    "reviews": "Đánh giá",
+    "analytics": "Phân tích",
+    "embed": "Nhúng",
+    "alternatives": "Lựa chọn thay thế",
+    "related": "Công cụ liên quan"
+  },
+  "details": {
+    "description": "Giới thiệu công cụ:",
+    "monthlyTraffic": "Lưu lượng truy cập hàng tháng:",
+    "socialMedia": "Phương tiện truyền thông xã hội và email:",
+    "company": "Công ty",
+    "categories": "Danh mục",
+    "tags": "Thẻ"
+  },
+  "content": {
+    "whatIs": "{name} là gì?",
+    "howToUse": "Cách sử dụng",
+    "coreFeatures": "Tính năng chính",
+    "useCases": "Trường hợp sử dụng",
+    "pricingPlans": "Kế hoạch giá",
+    "faqs": "Câu hỏi thường gặp",
+    "relatedTools": "Công cụ liên quan",
+    "productInfo": "Thông tin sản phẩm {name}",
+    "writtenBy": "Viết & Chỉnh sửa bởi",
+    "factCheckedBy": "Kiểm chứng thông tin bởi"
+  },
+  "analytics": {
+    "title": "Phân tích & Thông tin lưu lượng",
+    "subtitle": "Phân tích của",
+    "latestTraffic": "Lưu lượng truy cập trang web mới nhất",
+    "topCountries": "Quốc gia truy cập nhiều nhất",
+    "trafficSources": "Nguồn lưu lượng truy cập trang web",
+    "topKeywords": "Từ khóa hàng đầu",
+    "keyword": "Từ khóa",
+    "traffic": "Giao thông",
+    "trafficSubtitle": "để cải thiện lưu lượng truy cập web",
+    "geoSubtitle": "chỉ báo cho máy tìm kiếm",
+    "sourceSubtitle": "chỉ báo cho máy tìm kiếm",
+    "keywordSubtitle": "chỉ báo cho máy tìm kiếm",
+    "percentage": "Tỷ lệ",
+    "source": "Nguồn",
+    "noChartData": "Không có dữ liệu biểu đồ",
+    "noTrafficChartData": "Không có dữ liệu biểu đồ lưu lượng",
+    "desktopVsMobile": "Máy tính vs Di động",
+    "desktop": "Máy tính",
+    "mobileWeb": "Web Di động",
+    "similarSites": "Trang web tương tự",
+    "globalRank": "Xếp hạng toàn cầu",
+    "founded": "Thành lập",
+    "socialInfluence": "Ảnh hưởng truyền thông xã hội",
+    "views": "lượt xem",
+    "mentions": "đề cập đến",
+    "trendHistory": "Lịch sử xu hướng",
+    "trendSubtitle": "Lưu lượng truy cập, lượt xem và lượt đánh giá cao xu hướng theo thời gian",
+    "upvotes": "Ủng hộ"
+  },
+  "embed": {
+    "title": "Nhúng vào trang web của bạn",
+    "description": "Thêm công cụ này vào trang web của bạn với widget nhúng đẹp",
+    "preview": "Xem trước",
+    "code": "Mã nhúng",
+    "copy": "Sao chép mã",
+    "copied": "Đã sao chép!",
+    "badgeAlt": "Huy hiệu TopAICollection",
+    "themes": {
+      "light": "Sáng",
+      "neutral": "Trung tính",
+      "dark": "Tối"
+    }
+  },
+  "badges": {
+    "verifiedListing": "Đã xác minh",
+    "freePlan": "Gói miễn phí",
+    "paidPlans": "Gói trả phí & Bảng giá"
+  },
+  "alternatives": {
+    "title": "Lựa chọn thay thế",
+    "description": "Các công cụ tương tự mà bạn có thể thích"
+  },
+  "pricing": {
+    "title": "Gói giá",
+    "subtitle": "Chọn gói phù hợp nhất với bạn",
+    "popular": "Phổ biến",
+    "getStarted": "Bắt đầu",
+    "disclaimer": "Giá và tính năng có thể thay đổi. Truy cập trang web chính thức để biết thông tin mới nhất.",
+    "noPricingInfo": "Không có thông tin giá",
+    "free": "Miễn phí",
+    "moreFeatures": "Thêm tính năng"
+  },
+  "charts": {
+    "trafficChart": "Biểu đồ Traffic",
+    "comingSoon": "Biểu đồ sắp ra mắt"
+  },
+  "reviews": {
+    "title": "Bài đánh giá",
+    "pointsScale": "trên 5",
+    "subtitle": "Xem cộng đồng nghĩ gì",
+    "writeTitle": "Bạn có khuyến nghị công cụ này không?",
+    "placeholder": "Chia sẻ trải nghiệm của bạn với công cụ này...",
+    "privacy": "Được bảo vệ quyền riêng tư",
+    "success": "Đánh giá đã được gửi thành công!",
+    "submit": "Gửi đánh giá",
+    "loginToReview": "Vui lòng đăng nhập để gửi đánh giá",
+    "loginLink": "Đăng nhập",
+    "noReviews": "Chưa có đánh giá nào. Hãy là người đầu tiên đánh giá công cụ này!",
+    "viewMore": "Xem tất cả đánh giá",
+    "allReviewsTitle": "Tất cả đánh giá cho",
+    "reviewsPageTitle": "Đánh giá",
+    "by": "bởi",
+    "verified": "Đã xác minh",
+    "anonymous": "Người dùng ẩn danh",
+    "ratingLabel": "Đánh giá",
+    "commentLabel": "Nhận xét",
+    "dateLabel": "Ngày",
+    "page": "Trang",
+    "editReview": "Chỉnh sửa đánh giá",
+    "deleteReview": "Xóa đánh giá",
+    "deleteConfirm": "Bạn có chắc chắn muốn xóa đánh giá của mình không?",
+    "editTitle": "Chỉnh sửa đánh giá của bạn",
+    "updateSuccess": "Đánh giá đã được cập nhật thành công!",
+    "deleteSuccess": "Đánh giá đã được xóa thành công!",
+    "commentRequired": "Vui lòng nhập bình luận cho đánh giá của bạn.",
+    "ratingRequired": "Vui lòng chọn điểm đánh giá.",
+    "alreadyReviewed": "Bạn đã đánh giá công cụ này rồi. Dùng nút ✏️ chỉnh sửa trên đánh giá của bạn để cập nhật.",
+    "sort": {
+      "label": "Sắp xếp theo",
+      "newest": "Mới nhất",
+      "oldest": "Cũ nhất",
+      "highest": "Đánh giá cao nhất",
+      "lowest": "Đánh giá thấp nhất"
+    },
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "close": "Đóng",
+    "userLabel": "Người dùng",
+    "unverify": "Hủy xác minh",
+    "markVerified": "Đánh Dấu Đã Xác Thực",
+    "confirm": "Xác nhận",
+    "noReviewsFound": "Không tìm thấy đánh giá nào cho công cụ này.",
+    "deleteError": "Xóa thất bại.",
+    "updateError": "Cập nhật thất bại.",
+    "pagination": {
+      "showing": "Hiển thị",
+      "of": "của",
+      "reviews": "đánh giá",
+      "prev": "Trước",
+      "next": "Tiếp"
+    },
+    "statusLabel": "Trạng thái",
+    "actionsLabel": "Hành động"
+  },
+  "share": {
+    "title": "Chia sẻ công cụ này"
+  },
+  "metrics": {
+    "monthlyVisits": "Lượt truy cập hàng tháng",
+    "growth": "Tăng trưởng"
+  },
+  "tags": "Thẻ",
+  "overview": "Tổng quan",
+  "howToUse": "Cách sử dụng",
+  "pricingPlans": "Gói giá",
+  "faqs": "Câu hỏi thường gặp",
+  "geoChart": {
+    "noData": "Không có dữ liệu địa lý",
+    "loading": "Đang tải dữ liệu địa lý..."
+  },
+  "introduction": "Giới thiệu",
+  "description": "Mô tả",
+  "coreFeatures": "Tính năng chính",
+  "useCases": "Trường hợp sử dụng",
+  "screenshots": "Ảnh chụp màn hình",
+  "companyInfo": {
+    "companyName": "Tên công ty",
+    "contactEmail": "Email liên hệ"
+  },
+  "nav": {
+    "scrollLeft": "Cuộn trái",
+    "scrollRight": "Cuộn phải",
+    "previous": "Trước",
+    "next": "Sau",
+    "imageSlide": "Hình ảnh {index}",
+    "videoSlide": "Slide Video"
+  },
+  "dummyReviews": {
+    "c1": "Đây là một công cụ AI tuyệt vời! Nó đã thay đổi hoàn toàn quy trình làm việc của tôi.",
+    "c2": "Tính năng rất tốt và dễ sử dụng. Rất đáng khuyên dùng.",
+    "c3": "Tôi đã thử nhiều giải pháp thay thế, nhưng cho đến nay đây là lựa chọn tốt nhất.",
+    "c4": "Giá trị tuyệt vời so với mức giá. Gói miễn phí cũng rất hào phóng.",
+    "c5": "UI tuyệt vời và thiết kế trực quan. Đôi khi hơi chậm, nhưng nhìn chung là tuyệt vời.",
+    "c6": "Một công cụ phải có cho bất kỳ chuyên gia nào. Giúp tôi tiết kiệm hàng giờ mỗi tuần.",
+    "c7": "Chức năng tốt nhưng đòi hỏi thời gian làm quen."
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "Søg efter AI-værktøjer...",
+    "categories": "Kategorier",
+    "rankings": "Ranglister",
+    "submit": "Indsend et værktøj",
+    "admin": "Admin"
+  },
+  "hero": {
+    "titlePrefix": "Find de bedste",
+    "titleHighlight": "AI-værktøjer",
+    "subtitle": "Gennemse hundredvis af AI-produkter efter kategori, sammenlign priser, og find det rette værktøj til din arbejdsgang.",
+    "searchPlaceholder": "Søg efter AI-værktøjer..."
+  },
+  "stats": {
+    "tools": "AI-værktøjer registreret",
+    "categories": "Kategorier",
+    "featured": "Fremhævede værktøjer"
+  },
+  "tabs": {
+    "heading": "Udforsk værktøjer",
+    "newest": "Nye",
+    "featured": "Mest fremhævede",
+    "free": "Gratis",
+    "viewAll": "Se alle →"
+  },
+  "announcement": {
+    "featured": "Fremhævet"
+  },
+  "sidebar": {
+    "featuredTools": "Fremhævede værktøjer",
+    "topCategories": "Populære kategorier"
+  },
+  "sections": {
+    "browseByCategory": "Gennemse efter kategori",
+    "newestTools": "Nyeste værktøjer",
+    "featuredTools": "Fremhævede værktøjer",
+    "viewAll": "Se alle →",
+    "justLaunched": "Netop lanceret",
+    "featuredThisWeek": "Fremhævet denne uge",
+    "featuredThisWeekSubtitle": "De værktøjer, vores community har gemt og bedømt mest.",
+    "updatedDaily": "Opdateres dagligt",
+    "viewMore": "Se mere →"
+  },
+  "cta": {
+    "title": "Har du et AI-værktøj, du vil dele?",
+    "subtitle": "Vis det til folk, der leder efter værktøjer som dit.",
+    "button": "Indsend dit værktøj"
+  },
+  "empty": {
+    "noTools": "Endnu ingen værktøjer — køre",
+    "noResults": "Ingen værktøjer fundet"
+  },
+  "category": {
+    "breadcrumbHome": "Hjem",
+    "allTools": "Alle værktøjer",
+    "allToolsTitle": "Alle AI-værktøjer",
+    "allPricing": "Alle priser",
+    "sortNewest": "Nyeste først",
+    "sortFeatured": "Fremhævede først",
+    "sortName": "Navn A–Z",
+    "toolsFound": "værktøj fundet | værktøjer fundet",
+    "searchPlaceholder": "Søg efter værktøjer...",
+    "filters": "Filtre",
+    "viewGrid": "Gittervisning",
+    "viewList": "Listevisning"
+  },
+  "pricing": {
+    "FREE": "Gratis",
+    "FREEMIUM": "Freemium",
+    "PAID": "Betalt"
+  },
+  "ranking": {
+    "title": "Bedste AI-værktøjer",
+    "subtitle": "Rangeret ud fra trafik- og vækstdata registreret i vores katalog.",
+    "byGrowth1m": "Vækst 1 måned",
+    "byGrowth3m": "Vækst 3 måneder",
+    "byGrowth6m": "Vækst 6 måneder",
+    "byTraffic": "Månedlige besøg",
+    "colRank": "Placering",
+    "colTool": "Værktøj",
+    "colVisits": "Månedlige besøg",
+    "colGrowth": "Vækst",
+    "colAuthority": "Domæneautoritet",
+    "colCategory": "Kategori",
+    "noData": "Ingen ranglistedata endnu."
+  },
+  "tool": {
+    "openSite": "Åbn websted",
+    "save": "Gem",
+    "saved": "Gemt",
+    "featured": "Fremhævet",
+    "introduction": "Introduktion",
+    "addedOn": "Tilføjet den",
+    "monthlyVisitors": "Månedlige besøgende",
+    "features": "Vigtigste funktioner",
+    "useCases": "Anvendelsesmuligheder",
+    "prosAndCons": "Fordele og ulemper",
+    "pros": "Fordele",
+    "cons": "Ulemper",
+    "faq": "Ofte stillede spørgsmål",
+    "alternatives": "Alternativer til",
+    "backToCategory": "Tilbage til",
+    "notFound": "Værktøj ikke fundet",
+    "similarTools": "Lignende værktøjer",
+    "tabProductInfo": "Produktinformation",
+    "tabPricing": "Priser",
+    "tabReviews": "Anmeldelser",
+    "tabAnalytics": "Analyse",
+    "tabAlternatives": "Alternativer",
+    "productInformationHeading": "Produktinformation for {name}",
+    "whatIs": "Hvad er {name}?",
+    "howToUseHeading": "Hvordan bruger man {name}?",
+    "reviewsHeading": "Anmeldelser af {name} ({count})",
+    "ratingPrompt": "Vil du anbefale {name}? Efterlad en kommentar",
+    "whatDoYouThink": "Hvad tænker du?",
+    "loginToComment": "Log ind for at kommentere",
+    "pricingHeading": "Priser for {name}",
+    "noPricingYet": "Ingen prisoplysninger endnu.",
+    "analyticsHeading": "Analyse af {name}",
+    "trafficAnalysis": "Trafikanalyse for {name}",
+    "visitOverTime": "Besøg over tid",
+    "monthlyVisits": "Månedlige besøg",
+    "avgVisitDuration": "Gns. besøgstid",
+    "pagePerVisit": "Sider pr. besøg",
+    "bounceRate": "Afvisningsprocent",
+    "noTrafficYet": "Ingen trafikdata registreret endnu.",
+    "badgeVerified": "Verificeret",
+    "badgeJustLaunched": "Netop lanceret",
+    "badgeFreeTool": "Gratis værktøj",
+    "affiliateLink": "Affiliate-link",
+    "couponCode": "Rabatkode",
+    "ratings": "bedømmelser",
+    "upvotes": "opstemninger",
+    "domainAuthority": "Domæneautoritet",
+    "trafficRank": "Trafikranking",
+    "viewCount": "Sidevisninger"
+  },
+  "footer": {
+    "tagline": "Find, sammenlign og del de bedste AI-værktøjer — bygget med Nuxt & PostgreSQL.",
+    "product": "Produkt",
+    "home": "Hjem",
+    "allTools": "Alle værktøjer",
+    "submit": "Indsend et værktøj",
+    "categories": "Kategorier",
+    "company": "Virksomhed",
+    "admin": "Admin-login",
+    "language": "Sprog",
+    "copyright": "Alle rettigheder forbeholdes."
+  },
+  "language": {
+    "label": "Sprog"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Pricing Plans - TopAICollection",
+    "description": "Simple, transparent pricing for AI research and social listening."
+  },
+  "title": "Simple, Transparent Pricing",
+  "subtitle": "Start free and scale as you grow. No surprises.",
+  "plans": {
+    "free": {
+      "name": "Free",
+      "banner": "🎉 Get started for free — no credit card required."
+    },
+    "professional": {
+      "name": "Professional"
+    },
+    "enterprise": {
+      "name": "Enterprise"
+    },
+    "free-monthly": {
+      "name": "Free"
+    },
+    "free-yearly": {
+      "name": "Free"
+    },
+    "professional-monthly": {
+      "name": "Professional"
+    },
+    "professional-yearly": {
+      "name": "Professional"
+    },
+    "enterprise-monthly": {
+      "name": "Enterprise"
+    },
+    "enterprise-yearly": {
+      "name": "Enterprise"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Most Popular"
+  },
+  "features": {
+    "websiteInsights": "Website Insights",
+    "socialListening": "Social Listening",
+    "prioritySupport": "Priority Support",
+    "advertising": "Advertising",
+    "premiumSupport": "Premium Support"
+  },
+  "cta": {
+    "loading": "Processing...",
+    "upgrade": "Get Started"
+  },
+  "comparison": {
+    "title": "All Plans Compared",
+    "feature": "Feature"
+  },
+  "billing": {
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "discount20": "Save 20%",
+    "suffixYearly": "/year",
+    "suffixMonthly": "/month",
+    "upgradeTitle": "Upgrade your Research Plan",
+    "upgradeDesc": "Unlock advanced analytics, competitor insights, and more.",
+    "subscribe": "Subscribe Now"
+  },
+  "billingMonthly": "Monthly",
+  "billingYearly": "Yearly",
+  "billingBestValue": "Save 20%",
+  "badgePopular": "Most Popular",
+  "billingPerMonth": "/ month",
+  "billingPerYear": "/ year"
+}

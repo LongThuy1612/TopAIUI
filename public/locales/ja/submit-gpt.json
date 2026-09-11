@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "GPT を送信 - GPT を注目してもらいましょう |TopAICollection",
+    "description": "カスタム GPT を送信して、GPT ディレクトリに掲載してください。何千人もの AI 愛好家にリーチしましょう。"
+  },
+  "title": "GPT を提出する",
+  "subtitle": "ディレクトリでカスタム GPT を紹介してください",
+  "loginRequired": "ログインが必要です",
+  "submitButton": "GPTを送信する",
+  "whySubmit": {
+    "title": "GPT を提出する理由"
+  },
+  "benefits": {
+    "audience": "毎日何千人もの AI 愛好家と連絡を取る",
+    "instant": "確認後の即時リスト化",
+    "global": "すべての言語にわたるグローバルな露出",
+    "analytics": "クリックとエンゲージメントを追跡する"
+  },
+  "proTip": {
+    "title": "プロのヒント",
+    "desc": "送信する前に、GPT が公開されており、リンク経由でアクセスできることを確認してください。"
+  },
+  "form": {
+    "gptName": "GPT 名",
+    "gptNamePlaceholder": "例えばコードウィザード",
+    "gptUrl": "「ChatGPT URL」",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "アイコンのURL",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "説明/指示",
+    "gptDescriptionPlaceholder": "GPT が何をするのか説明してください..."
+  },
+  "validation": {
+    "required": "この項目は必須です",
+    "invalidUrl": "無効な ChatGPT URL",
+    "nameTooShort": "名前は少なくとも 2 文字である必要があります",
+    "descriptionTooShort": "説明は 10 文字以上である必要があります",
+    "toolNameRequired": "ツール名は必須です",
+    "url": "無効な URL",
+    "descriptionMin": "説明は 10 文字以上である必要があります",
+    "categoryRequired": "カテゴリを選択してください",
+    "email": "無効なメールアドレス",
+    "messageMin": "メッセージは 10 文字以上である必要があります"
+  },
+  "sidebar": {
+    "gptCount": "提出された GPT",
+    "gptCountSub": "そして成長する"
+  },
+  "success": "GPT は正常に送信されました。"
+}

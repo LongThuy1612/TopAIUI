@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Tous les outils d'IA - TopAICollection",
+    "description": "Parcourez notre collection complète d’outils d’IA. Filtrez par catégorie, popularité ou trouvez les dernières innovations en matière d'IA.",
+    "archiveMonthTitle": "Outils d'IA — {label} | TopAICollection",
+    "archiveMonthDescription": "Parcourez les outils d'IA ajoutés dans {label}.",
+    "archiveYearTitle": "Outils d'IA — {year} | TopAICollection",
+    "archiveYearDescription": "Parcourez les outils d'IA ajoutés en {year}.",
+    "categoryTitle": "{category} Outils d'IA | TopAICollection",
+    "categoryDescription": "Explorez les meilleurs outils d'IA {category}.",
+    "freeTitle": "Outils d'IA gratuits | {title}",
+    "freeDescription": "Découvrez les meilleurs outils d'IA gratuits en ligne. {description}",
+    "newestTitle": "Nouveaux outils d'IA | {title}",
+    "newestDescription": "Découvrez les derniers outils d'IA ajoutés à notre collection."
+  },
+  "title": "Explorez tous les outils d'IA",
+  "subtitle": "Découvrez la solution d'IA parfaite parmi notre collection complète",
+  "filters": {
+    "all": "Tous les outils",
+    "today": "Aujourd'hui",
+    "featured": "En vedette",
+    "new": "Vient d'être lancé",
+    "mostSaved": "Les plus sauvegardés",
+    "mostUsed": "Les plus utilisés",
+    "trending": "Tendance",
+    "justLaunched": "Vient d'être lancé",
+    "title": "Filtres",
+    "category": "Catégorie",
+    "allCategories": "Toutes les catégories",
+    "type": "Taper",
+    "popular": "Populaire",
+    "newest": "Le plus récent",
+    "name": "Nom",
+    "price": "Prix",
+    "free": "Gratuit",
+    "paid": "Payé",
+    "sortBy": "Trier par"
+  },
+  "sort": {
+    "label": "Trier par",
+    "popular": "Les plus populaires",
+    "trending": "Tendance",
+    "newest": "Le plus récent en premier",
+    "rating": "Les mieux notés",
+    "name": "Alphabétique"
+  },
+  "categories": {
+    "title": "Catégories",
+    "all": "Toutes les catégories",
+    "showMore": "Afficher plus →",
+    "toolCount": "{count} outils"
+  },
+  "results": {
+    "showing": "Affichage de {start} à {end} sur {total} outils",
+    "error": "Erreur de chargement des outils. Veuillez réessayer.",
+    "noResults": "Aucun résultat trouvé",
+    "tryDifferent": "Veuillez essayer différents mots-clés ou filtres."
+  },
+  "pagination": {
+    "next": "Suivant",
+    "page": "CHAPITRE I"
+  },
+  "sidebar": {
+    "trending": "Tendance actuelle",
+    "noTools": "Aucun outil de tendances",
+    "advertise": "Annoncez ici",
+    "advertiseDesc": "Atteignez plus de 5 millions de passionnés d'IA par mois et augmentez vos visites",
+    "emailPlaceholder": "Adresse email"
+  },
+  "hero": {
+    "title": "Découvrez les derniers outils d'IA",
+    "subtitle": "27 955 IA et 459 catégories",
+    "searchPlaceholder": "Rechercher des outils d'IA...",
+    "search": "Recherche"
+  },
+  "breadcrumb": {
+    "home": "Maison",
+    "tools": "Outils"
+  },
+  "jsonLd": {
+    "name": "Répertoire des outils d'IA",
+    "description": "Parcourez notre répertoire complet d’outils d’IA."
+  },
+  "badges": {
+    "featured": "En vedette",
+    "new": "Nouveau",
+    "trending": "Tendance",
+    "popular": "Populaire",
+    "sponsored": "Sponsorisé"
+  },
+  "share": "Partager",
+  "visits": "Visites",
+  "monthlyVisits": "Visites mensuelles estimées",
+  "visit": "Visite",
+  "actions": {
+    "save": "Sauvegarder",
+    "saved": "Enregistré",
+    "visit": "Visite",
+    "share": "Partager",
+    "copyLink": "Copier le lien",
+    "shareThisTool": "Partager cet outil"
+  },
+  "growth": "Croissance",
+  "pricing": {
+    "free": "Gratuit"
+  }
+}

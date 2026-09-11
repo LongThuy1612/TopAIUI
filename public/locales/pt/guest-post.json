@@ -1,0 +1,46 @@
+{
+  "title": "Postagem de convidado e inserção de link",
+  "description": "Compartilhe sua experiência com nossa comunidade por meio de guest posts ou solicite inserções de links estratégicos em conteúdo existente.",
+  "details": "Detalhes da postagem do convidado",
+  "postTitle": "Título da postagem",
+  "postTitlePlaceholder": "Título do seu post convidado",
+  "postContent": "Postar conteúdo ou detalhes",
+  "postContentPlaceholder": "Descreva o conteúdo do seu guest post ou detalhes de inserção do link",
+  "features": {
+    "guestPosts": {
+      "title": "Postagens de convidados",
+      "description": "Compartilhe seu conhecimento e insights sobre IA com nossa comunidade. Crie autoridade e direcione tráfego para seu site."
+    },
+    "linkInsertion": {
+      "title": "Inserção de link",
+      "description": "Solicite o posicionamento estratégico de seus links em conteúdo relevante existente para obter o máximo valor de SEO."
+    },
+    "seoBacklinks": {
+      "title": "Backlinks de SEO",
+      "description": "Aumente suas classificações de SEO com backlinks de alta qualidade de nosso domínio oficial."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Diretrizes de conteúdo",
+    "description": "Todas as postagens de convidados devem ser originais, de alta qualidade e relevantes para IA. Não aceitamos conteúdo gerado por IA sem edição humana."
+  },
+  "meta": {
+    "title": "Postagens de convidados e inserções de links | Coleção principal de IA",
+    "description": "Compartilhe sua experiência com nossa comunidade de IA por meio de guest posts ou solicite inserções de links estratégicos em conteúdo existente."
+  },
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "titleTooShort": "O título deve ter pelo menos 5 caracteres",
+    "contentTooShort": "O conteúdo deve ter pelo menos 20 caracteres",
+    "toolNameRequired": "O nome da ferramenta é obrigatório",
+    "url": "URL inválido",
+    "descriptionMin": "A descrição deve ter pelo menos 10 caracteres",
+    "categoryRequired": "Selecione uma categoria",
+    "email": "Endereço de e-mail inválido",
+    "messageMin": "A mensagem deve ter pelo menos 10 caracteres"
+  },
+  "sidebar": {
+    "articleCount": "Mais de 1.000 artigos",
+    "articleCountSub": "Publicado pela nossa comunidade"
+  }
+}

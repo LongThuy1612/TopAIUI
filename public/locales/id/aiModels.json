@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Model AI & Kumpulan Data | TopAICollection",
+    "description": "Temukan dan jelajahi model AI, kumpulan data, dan arsitektur terbaru untuk proyek Anda berikutnya."
+  },
+  "title": "Perpustakaan Model AI",
+  "subtitle": "Jelajahi koleksi model AI, fine-tune, dan kumpulan data terbesar.",
+  "comingSoon": "Segera Hadir!",
+  "comingSoonMessage": "Kami sedang mengkurasi model AI terbaik. Kunjungi kembali segera.",
+  "searchPlaceholder": "Cari model AI...",
+  "allProviders": "Semua penyedia",
+  "noResults": "Tidak ada model AI yang ditemukan",
+  "noResultsHint": "Coba sesuaikan kriteria pencarian atau filter Anda.",
+  "contextWindow": "Jendela Konteks",
+  "parameters": "Parameter",
+  "provider": "Penyedia",
+  "architecture": "Arsitektur",
+  "releaseDate": "Tanggal Rilis",
+  "costPer1kTokens": "Biaya / 1K token",
+  "free": "Gratis / Sumber Terbuka",
+  "tokens": "token",
+  "viewWebsite": "Kunjungi Situs Web",
+  "modelsCount": "{count} model AI",
+  "modelsCount_plural": "{count} model AI",
+  "modelsGridTitle": "Model AI"
+}

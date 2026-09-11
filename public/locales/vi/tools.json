@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Tất cả công cụ AI - TopAICollection",
+    "description": "Duyệt bộ sưu tập đầy đủ các công cụ AI của chúng tôi. Lọc theo danh mục, độ phổ biến hoặc tìm các đổi mới AI mới nhất.",
+    "archiveMonthTitle": "Công cụ AI — {label} | TopAICollection",
+    "archiveMonthDescription": "Duyệt các công cụ AI được thêm vào {label}.",
+    "archiveYearTitle": "Công cụ AI — {year} | TopAICollection",
+    "archiveYearDescription": "Duyệt các công cụ AI được thêm vào năm {year}.",
+    "categoryTitle": "Công cụ AI {category} | TopAICollection",
+    "categoryDescription": "Khám phá các công cụ AI {category} tốt nhất.",
+    "freeTitle": "Công cụ AI miễn phí | {title}",
+    "freeDescription": "Khám phá các công cụ AI miễn phí tốt nhất. {description}",
+    "newestTitle": "Công cụ AI mới nhất | {title}",
+    "newestDescription": "Xem các công cụ AI mới nhất được thêm vào bộ sưu tập của chúng tôi."
+  },
+  "title": "Khám phá tất cả công cụ AI",
+  "subtitle": "Khám phá giải pháp AI hoàn hảo từ bộ sưu tập toàn diện của chúng tôi",
+  "filters": {
+    "all": "Tất cả công cụ",
+    "today": "Hôm nay",
+    "featured": "Nổi bật",
+    "new": "Vừa ra mắt",
+    "mostSaved": "Được lưu nhiều nhất",
+    "mostUsed": "Được sử dụng nhiều nhất",
+    "trending": "Xu hướng",
+    "justLaunched": "Vừa ra mắt",
+    "title": "Bộ lọc",
+    "category": "Danh mục",
+    "allCategories": "Tất cả danh mục",
+    "type": "Loại",
+    "popular": "Phổ biến",
+    "newest": "Mới nhất",
+    "name": "Tên",
+    "price": "Giá",
+    "free": "Miễn phí",
+    "paid": "Trả phí",
+    "sortBy": "Sắp xếp theo"
+  },
+  "sort": {
+    "label": "Sắp xếp theo",
+    "popular": "Phổ biến nhất",
+    "trending": "Xu hướng",
+    "newest": "Mới nhất",
+    "rating": "Đánh giá cao nhất",
+    "name": "Theo bảng chữ cái"
+  },
+  "categories": {
+    "title": "Danh mục",
+    "all": "Tất cả danh mục",
+    "showMore": "Xem thêm →",
+    "toolCount": "{count} công cụ"
+  },
+  "results": {
+    "showing": "Hiển thị {start}-{end} trong tổng số {total} công cụ",
+    "error": "Lỗi tải công cụ. Vui lòng thử lại.",
+    "noResults": "Không tìm thấy kết quả",
+    "tryDifferent": "Vui lòng thử các từ khóa hoặc bộ lọc khác."
+  },
+  "pagination": {
+    "next": "Tiếp theo",
+    "page": "Trang {page}"
+  },
+  "sidebar": {
+    "trending": "Xu hướng hiện tại",
+    "noTools": "Không có công cụ xu hướng",
+    "advertise": "Quảng cáo tại đây",
+    "advertiseDesc": "Tiếp cận hơn 5 triệu người đam mê AI hàng tháng và tăng lượt truy cập",
+    "emailPlaceholder": "Địa chỉ email"
+  },
+  "hero": {
+    "title": "Khám phá các công cụ AI mới nhất",
+    "subtitle": "27,955 AI và 459 danh mục",
+    "searchPlaceholder": "Tìm kiếm công cụ AI...",
+    "search": "Tìm kiếm"
+  },
+  "breadcrumb": {
+    "home": "Trang chủ",
+    "tools": "Công cụ"
+  },
+  "jsonLd": {
+    "name": "Thư mục công cụ AI",
+    "description": "Duyệt thư mục đầy đủ các công cụ AI của chúng tôi."
+  },
+  "badges": {
+    "featured": "Nổi bật",
+    "new": "Mới",
+    "trending": "Xu hướng",
+    "popular": "Phổ biến",
+    "sponsored": "Được tài trợ"
+  },
+  "share": "Chia sẻ",
+  "visits": "Lượt truy cập",
+  "monthlyVisits": "Lượt truy cập hàng tháng ước tính",
+  "visit": "Truy cập",
+  "actions": {
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "visit": "Truy cập",
+    "share": "Chia sẻ",
+    "copyLink": "Sao chép liên kết",
+    "shareThisTool": "Chia sẻ công cụ này"
+  },
+  "growth": "Tăng trưởng",
+  "pricing": {
+    "free": "Miễn phí"
+  }
+}

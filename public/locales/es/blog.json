@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Blog y noticias sobre IA - TopAICollection",
+    "description": "Manténgase actualizado con las últimas noticias, tutoriales, reseñas y conocimientos sobre inteligencia artificial del mundo de la inteligencia artificial."
+  },
+  "badge": "Perspectivas de IA",
+  "title": "Blog y noticias sobre IA",
+  "subtitle": "Manténgase informado con las últimas tendencias, tutoriales y conocimientos del mundo de la IA",
+  "search": {
+    "placeholder": "Buscar artículos..."
+  },
+  "categories": {
+    "title": "Categorías",
+    "all": "Todos los artículos",
+    "news": "Noticias de IA",
+    "tutorials": "Tutoriales",
+    "reviews": "Reseñas de herramientas",
+    "industry": "Perspectivas de la industria",
+    "guides": "Guías prácticas"
+  },
+  "newsletter": {
+    "title": "Manténgase actualizado",
+    "subtitle": "Reciba las últimas noticias sobre IA en su bandeja de entrada",
+    "placeholder": "Introduce tu correo electrónico",
+    "button": "Suscribir"
+  },
+  "article": {
+    "readTime": "{minutes} min de lectura",
+    "published": "Publicado el {date}",
+    "writtenBy": "Escrito y editado por:",
+    "factCheckedBy": "Verificado por:"
+  },
+  "pagination": {
+    "next": "Próximo",
+    "page": "Página {page} de {total}"
+  },
+  "relatedTools": "Herramientas relacionadas",
+  "backToBlog": "Volver al blog",
+  "errors": {
+    "notFound": "Publicación no encontrada"
+  },
+  "sort": {
+    "latest": "Más recientes",
+    "oldest": "Más antiguos",
+    "popular": "Populares"
+  },
+  "filter": {
+    "allAuthors": "Todos los autores",
+    "sortBy": "Ordenar por"
+  },
+  "relatedPosts": "Publicaciones relacionadas",
+  "faqs": "Preguntas frecuentes"
+}

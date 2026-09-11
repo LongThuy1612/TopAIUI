@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "เครื่องมือ AI ทั้งหมด - TopAICollection",
+    "description": "เรียกดูชุดเครื่องมือ AI ทั้งหมดของเรา กรองตามหมวดหมู่ ความนิยม หรือค้นหานวัตกรรม AI ใหม่ล่าสุด",
+    "archiveMonthTitle": "เครื่องมือ AI — {label} | TopAICollection",
+    "archiveMonthDescription": "เรียกดูเครื่องมือ AI ที่เพิ่มใน {label}",
+    "archiveYearTitle": "เครื่องมือ AI — {year} | TopAICollection",
+    "archiveYearDescription": "เรียกดูเครื่องมือ AI ที่เพิ่มใน {year}",
+    "categoryTitle": "{category} เครื่องมือ AI | TopAICollection",
+    "categoryDescription": "สำรวจเครื่องมือ AI {category} ที่ดีที่สุด",
+    "freeTitle": "เครื่องมือ AI ฟรี | {title}",
+    "freeDescription": "ค้นพบเครื่องมือ AI ฟรีที่ดีที่สุดทางออนไลน์ {description}",
+    "newestTitle": "เครื่องมือ AI ใหม่ล่าสุด | {title}",
+    "newestDescription": "ลองดูเครื่องมือ AI ล่าสุดที่เพิ่มเข้ามาในคอลเลกชันของเรา"
+  },
+  "title": "สำรวจเครื่องมือ AI ทั้งหมด",
+  "subtitle": "ค้นพบโซลูชัน AI ที่สมบูรณ์แบบจากคอลเลกชันที่ครอบคลุมของเรา",
+  "filters": {
+    "all": "เครื่องมือทั้งหมด",
+    "today": "วันนี้",
+    "featured": "โดดเด่น",
+    "new": "เพิ่งเปิดตัว",
+    "mostSaved": "บันทึกมากที่สุด",
+    "mostUsed": "ใช้มากที่สุด",
+    "trending": "กำลังมาแรง",
+    "justLaunched": "เพิ่งเปิดตัว",
+    "title": "ตัวกรอง",
+    "category": "หมวดหมู่",
+    "allCategories": "ทุกหมวดหมู่",
+    "type": "พิมพ์",
+    "popular": "เป็นที่นิยม",
+    "newest": "ใหม่ล่าสุด",
+    "name": "ชื่อ",
+    "price": "ราคา",
+    "free": "ฟรี",
+    "paid": "จ่าย",
+    "sortBy": "เรียงตาม"
+  },
+  "sort": {
+    "label": "เรียงตาม",
+    "popular": "ยอดนิยมที่สุด",
+    "trending": "กำลังมาแรง",
+    "newest": "ใหม่ล่าสุดก่อน",
+    "rating": "เรตติ้งสูงสุด",
+    "name": "ตามตัวอักษร"
+  },
+  "categories": {
+    "title": "หมวดหมู่",
+    "all": "ทุกหมวดหมู่",
+    "showMore": "แสดงเพิ่มเติม →",
+    "toolCount": "เครื่องมือ {count}"
+  },
+  "results": {
+    "showing": "กำลังแสดงเครื่องมือ {start}-{end} จาก {total}",
+    "error": "เกิดข้อผิดพลาดในการโหลดเครื่องมือ โปรดลองอีกครั้ง",
+    "noResults": "ไม่พบข้อมูล",
+    "tryDifferent": "โปรดลองใช้คำค้นหาหรือตัวกรองอื่น"
+  },
+  "pagination": {
+    "next": "ต่อไป",
+    "page": "หน้า {page}"
+  },
+  "sidebar": {
+    "trending": "กำลังมาแรงตอนนี้",
+    "noTools": "ไม่มีเครื่องมืออินเทรนด์",
+    "advertise": "ลงโฆษณาที่นี่",
+    "advertiseDesc": "เข้าถึงผู้ที่ชื่นชอบ AI มากกว่า 5 ล้านคนต่อเดือนและเพิ่มจำนวนการเข้าชมของคุณ",
+    "emailPlaceholder": "ที่อยู่อีเมล"
+  },
+  "hero": {
+    "title": "ค้นพบเครื่องมือ AI ล่าสุด",
+    "subtitle": "27,955 AIs และ 459 หมวดหมู่",
+    "searchPlaceholder": "ค้นหาเครื่องมือ AI...",
+    "search": "ค้นหา"
+  },
+  "breadcrumb": {
+    "home": "บ้าน",
+    "tools": "เครื่องมือ"
+  },
+  "jsonLd": {
+    "name": "ไดเรกทอรีเครื่องมือ AI",
+    "description": "เรียกดูไดเรกทอรีเครื่องมือ AI ทั้งหมดของเรา"
+  },
+  "badges": {
+    "featured": "โดดเด่น",
+    "new": "ใหม่",
+    "trending": "กำลังมาแรง",
+    "popular": "เป็นที่นิยม",
+    "sponsored": "ได้รับการสนับสนุน"
+  },
+  "share": "แบ่งปัน",
+  "visits": "การเข้าชม",
+  "monthlyVisits": "การเข้าชมรายเดือนโดยประมาณ",
+  "visit": "เยี่ยม",
+  "actions": {
+    "save": "บันทึก",
+    "saved": "บันทึกแล้ว",
+    "visit": "เยี่ยม",
+    "share": "แบ่งปัน",
+    "copyLink": "คัดลอกลิงก์",
+    "shareThisTool": "แบ่งปันเครื่องมือนี้"
+  },
+  "growth": "การเจริญเติบโต",
+  "pricing": {
+    "free": "ฟรี"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Website Insights",
+    "subtitle": "Track competitor traffic and keywords.",
+    "track": "Track",
+    "noDomains": "No domains tracked yet",
+    "addDomainDesc": "Add your first domain above to start tracking insights.",
+    "domain": "Domain",
+    "aiTool": "AI Tool",
+    "monthlyVisits": "Monthly Visits",
+    "rankChange": "Rank Change",
+    "globalRank": "Global Rank",
+    "traffic": "Traffic",
+    "audience": "Audience",
+    "updateDate": "Update Date",
+    "rank": "Rank",
+    "topKeywords": "Top Keywords",
+    "added": "Added",
+    "tool": "Tool",
+    "organicClicks": "Organic Clicks",
+    "paidClicks": "Paid Clicks",
+    "totalClicks": "Total Clicks",
+    "addedOn": "Added On",
+    "noTools": "No tools tracked yet.",
+    "deleteSuccess": "Domain removed from tracking",
+    "confirmDelete": "Are you sure you want to stop tracking this domain?",
+    "quota": "Quota",
+    "limitReachedDesc": "You've reached your monthly insights limit. Upgrade to track more domains.",
+    "limitReachedTitle": "You have reached your limit",
+    "limitReachedBody": "You have reached your limit of free searches. Upgrade to get unlimited access.",
+    "upgradePro": "Upgrade to Pro plan",
+    "upgradeNow": "Upgrade Now",
+    "usage": "Usage",
+    "searchPlaceholder": "Search tracked domains...",
+    "advancedFilter": "Advanced Filters",
+    "bulkOpen": "Bulk Open",
+    "export": "Export Data",
+    "actions": "Actions",
+    "viewSocial": "View Social",
+    "exportSuccess": "Exported successfully.",
+    "exportFailed": "Export failed.",
+    "exportData": "Export Data",
+    "exportDesc": "Export this report to share or analyze locally.",
+    "exportLimit": "Export Limit",
+    "rows": "Rows",
+    "creditsCost": "Credits Cost",
+    "availableAfter": "Available After",
+    "confirmExport": "Confirm Export",
+    "notEnoughCredits": "Not Enough Credits",
+    "filters": {
+      "timePeriod": "Time Period",
+      "selectMonth": "Select Month",
+      "months": {
+        "feb2026": "Feb2026",
+        "jan2026": "Jan2026"
+      },
+      "trafficSource": "Traffic Source",
+      "allSources": "All Sources",
+      "sources": {
+        "search": "Search",
+        "direct": "Direct",
+        "social": "Social"
+      },
+      "region": "Region",
+      "regions": {
+        "us": "Us",
+        "vn": "Vn"
+      },
+      "category": "Category",
+      "categories": {
+        "llm": "Llm",
+        "image": "Image",
+        "productivity": "Productivity"
+      },
+      "trafficThreshold": "Traffic Threshold",
+      "minVisits": "Min Visits",
+      "thresholds": {
+        "0": "0",
+        "100k": "100k",
+        "1m": "1m"
+      }
+    },
+    "removeFailed": "Remove failed.",
+    "direct": "Direct",
+    "sortDefault": "Default",
+    "sortTraffic": "Traffic"
+  },
+  "table": {
+    "searchPlaceholder": "Search tracked domains...",
+    "showingResults": "Showing {count} results",
+    "column": {
+      "tool": "Tool",
+      "organic": "Organic Clicks",
+      "paid": "Paid Clicks",
+      "total": "Total Clicks",
+      "growth": "Growth",
+      "trend": "Trend"
+    },
+    "empty": "No domains tracked yet."
+  },
+  "common": {
+    "global": "Global",
+    "allCategories": "All Categories"
+  }
+}

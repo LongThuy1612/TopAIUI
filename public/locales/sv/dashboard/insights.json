@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Webbplatsinsikter",
+    "subtitle": "Spåra konkurrenters trafik och sökord.",
+    "track": "Spåra",
+    "noDomains": "Inga domäner spåras ännu. Lägg till en ovan!",
+    "domain": "Domän",
+    "monthlyVisits": "Besök per månad",
+    "rank": "Rankning",
+    "topKeywords": "Bästa sökord",
+    "added": "Tillagd",
+    "tool": "Verktyg",
+    "organicClicks": "Organiska klick",
+    "paidClicks": "Betald klick",
+    "totalClicks": "Totalt antal klick",
+    "addedOn": "Tillagd på",
+    "noTools": "Inga verktyg spårade ännu.",
+    "addDomainDesc": "Lägg till din första domän ovan för att börja spåra insikter.",
+    "deleteSuccess": "Domänen togs bort från spårning",
+    "confirmDelete": "Är du säker på att du vill sluta spåra den här domänen?",
+    "aiTool": "AI-verktyg",
+    "rankChange": "Rangändring",
+    "globalRank": "Global rangordning",
+    "traffic": "Trafik",
+    "audience": "Publik",
+    "updateDate": "Uppdateringsdatum",
+    "quota": "Kvot",
+    "limitReachedDesc": "Du har nått din månatliga gräns för insikter. Uppgradera för att spåra fler domäner.",
+    "limitReachedTitle": "Du har nått din gräns",
+    "limitReachedBody": "Du har nått din gräns för gratissökningar. Uppgradera för att få obegränsad åtkomst.",
+    "upgradePro": "Uppgradera till Pro-plan",
+    "upgradeNow": "Uppgradera nu",
+    "usage": "Användande",
+    "searchPlaceholder": "Sök spårade domäner...",
+    "advancedFilter": "Avancerade filter",
+    "bulkOpen": "Bulk öppen",
+    "export": "Exportera data",
+    "actions": "Åtgärder",
+    "viewSocial": "Visa Social",
+    "filters": {
+      "months": {
+        "feb2026": "feb 2026",
+        "jan2026": "Jan 2026"
+      },
+      "sources": {
+        "search": "Sök",
+        "direct": "Direkt",
+        "social": "Socialt"
+      },
+      "regions": {
+        "us": "oss",
+        "vn": "Vn"
+      },
+      "categories": {
+        "llm": "LLM",
+        "image": "Bild",
+        "productivity": "Produktivitet"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100k",
+        "1m": "1m"
+      },
+      "timePeriod": "Tidsperiod",
+      "selectMonth": "Välj månad",
+      "trafficSource": "Trafikkälla",
+      "allSources": "Alla källor",
+      "category": "Kategori",
+      "trafficThreshold": "Trafiktröskel",
+      "minVisits": "Minsta besök",
+      "region": "Region"
+    },
+    "exportSuccess": "Exporterades framgångsrikt.",
+    "exportFailed": "Exporten misslyckades.",
+    "exportData": "Exportera data",
+    "exportDesc": "Exportera den här rapporten för att dela eller analysera lokalt.",
+    "exportLimit": "Exportgräns",
+    "rows": "rader",
+    "creditsCost": "Kreditkostnad",
+    "availableAfter": "Tillgänglig efter",
+    "confirmExport": "Bekräfta export",
+    "notEnoughCredits": "Inte tillräckligt med krediter",
+    "removeFailed": "Borttagningen misslyckades.",
+    "direct": "Direkt",
+    "sortDefault": "Standard",
+    "sortTraffic": "Trafik"
+  },
+  "common": {
+    "global": "Globalt",
+    "allCategories": "Alla kategorier"
+  },
+  "table": {
+    "column": {
+      "tool": "Verktyg",
+      "organic": "Ekologiska klick",
+      "paid": "Betalda klick",
+      "total": "Totalt antal klick",
+      "trend": "Trend",
+      "growth": "Tillväxt"
+    },
+    "searchPlaceholder": "Sök spårade domäner...",
+    "showingResults": "Visar {count} resultat",
+    "empty": "Inga domäner spårade ännu."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "AI Models & Datasets | TopAICollection",
+    "description": "Discover and explore the latest AI models, datasets, and architectures for your next project."
+  },
+  "title": "AI Models Library",
+  "subtitle": "Explore the largest collection of AI models, fine-tunes, and datasets.",
+  "comingSoon": "Coming Soon!",
+  "comingSoonMessage": "We are currently curating the best AI models. Check back soon for our comprehensive library.",
+  "searchPlaceholder": "Search AI models...",
+  "allProviders": "All providers",
+  "noResults": "No AI models found",
+  "noResultsHint": "Try adjusting your search or filter criteria.",
+  "contextWindow": "Context Window",
+  "parameters": "Parameters",
+  "provider": "Provider",
+  "architecture": "Architecture",
+  "releaseDate": "Release Date",
+  "costPer1kTokens": "Cost / 1K tokens",
+  "free": "Free / Open Source",
+  "tokens": "tokens",
+  "viewWebsite": "Visit Website",
+  "modelsCount": "{count} AI model",
+  "modelsCount_plural": "{count} AI models",
+  "modelsGridTitle": "AI Models"
+}

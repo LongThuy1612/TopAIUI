@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Social Lyssnande - Övervaka AI-trender | TopAICollection",
+    "description": "Spåra AI-trender på sociala medieplattformar.",
+    "detailTitle": "{name} Social Lyssnande — TopAI",
+    "detailDescription": "Social lyssning-analyser för {name}.",
+    "notFoundTitle": "Verktyget hittades inte - Socialt lyssnande"
+  },
+  "title": "Social Lyssnande",
+  "subtitle": "Spåra videoprestanda för AI-verktyg. Twitter",
+  "leaderboardTitle": "Social Topplista",
+  "leaderboardSubtitle": "Omedelbar spårning. Twitter",
+  "table": {
+    "aiTool": "AI-Verktyg",
+    "introduce": "Introduktion",
+    "videoCount": "Videor",
+    "creatorsCount": "Skapare",
+    "monthlyTraffic": "Månadsvis trafik",
+    "avgViews": "Avg visningar",
+    "avgInteractions": "Avg interaktioner",
+    "totalViews": "Totala visn.",
+    "totalInteractions": "Totala inter.",
+    "emptyState": "Inga data hittades",
+    "pageIndicator": "Sida {page} av {lastPage}",
+    "updatedAt": "Uppdateringsdatum",
+    "totalEngagement": "Totalt engagemang"
+  },
+  "search": {
+    "placeholder": "Ange verktygsnamn eller domän"
+  },
+  "detail": {
+    "viewTool": "Visa verktygsdetaljer",
+    "tabs": {
+      "socialListening": "Social Lyssnande"
+    },
+    "stats": {
+      "monthlyVisits": "Månadsbesök",
+      "growth": "Tillväxt",
+      "growthRate": "Tillväxttakt",
+      "socialVideos": "Sociala videor",
+      "newLastWeek": "Nya denna vecka"
+    },
+    "metrics": {
+      "avgViews": "Avg visningar",
+      "totalVideos": "Totalt videor",
+      "totalCreators": "Totalt skapare",
+      "totalViews": "Total / Avg",
+      "totalLikes": "Gilla / Avg",
+      "totalComments": "Komm. / Avg",
+      "totalShares": "Totalt delningar",
+      "totalCollects": "Totalt sparade",
+      "totalQuotes": "Totalt citat",
+      "totalReposts": "Totalt reposts"
+    },
+    "platforms": {
+      "all": "Alla"
+    },
+    "feed": {
+      "unlockCta": "Lås upp för att se mer",
+      "unlockDesc": "Logga in för att se hela videoanalyser",
+      "viewNow": "Se nu →",
+      "sortBy": "Sortera efter",
+      "sortViews": "Visningar",
+      "sortLikes": "Gilla",
+      "sortDate": "Datum",
+      "loadMore": "Ladda mer",
+      "searchPlaceholder": "Sök efter titel eller skapare...",
+      "emptyState": "Inga inlägg hittades. Bara videoinlägg visas här.",
+      "untitledPost": "Inlägg utan titel",
+      "metrics": {
+        "views": "Visningar",
+        "likes": "Gilla",
+        "retweets": "ReTweets",
+        "shares": "Delningar",
+        "replies": "Svar",
+        "comments": "Kommentarer",
+        "quotes": "Citat",
+        "saves": "Sparade",
+        "collects": "Samlingar",
+        "upvotes": "Uppröster",
+        "follows": "Följare"
+      },
+      "sortComments": "Kommentarer",
+      "sortShares": "Aktier",
+      "title": "Socialt flöde"
+    },
+    "traffic": {
+      "bounceRate": "Avvisningsfrekvens",
+      "pagesPerVisit": "Sidor / Besök",
+      "avgVisitDuration": "Genomsn. besökslängd",
+      "globalRanking": "Global ranking",
+      "category": "Kategori",
+      "categoryRanking": "Kategoriranking",
+      "deviceSplit": "Desktop vs. Mobil",
+      "desktop": "Skrivbord",
+      "mobile": "Mobil",
+      "trafficSources": "Trafikkällor",
+      "topRegions": "Toppländer",
+      "processingMsg": "Trafikdata bearbetas. Kom tillbaka senare.",
+      "monthlyTrafficTrend": "Månatlig trafiktrend",
+      "monthlyTrafficTrendDesc": "Globala historiska besök under de senaste 30 dagarna",
+      "sourceWebsiteInsight": "Källa: Website Insight Global"
+    },
+    "pricing": {
+      "notDocumented": "Prissättningsplaner är inte dokumenterade ännu.",
+      "checkWebsite": "Kolla officiell webbplats",
+      "visitWebsite": "Besök webbplats",
+      "month": "månad"
+    },
+    "lastUpdated": "Senast uppdaterad",
+    "influencers": {
+      "title": "Toppinfluencers",
+      "name": "Skapare",
+      "platform": "Plattform",
+      "videos": "Videor",
+      "reach": "Uppskattad Nå"
+    },
+    "filterInteraction": "Filter interaktion"
+  },
+  "platforms": {
+    "all": "Alla plattformar"
+  },
+  "monitors": {
+    "title": "Dina monitorer",
+    "subtitle": "Spåra specifika sökord på sociala plattformar",
+    "inputPlaceholder": "Ange sökord (t.ex. ChatGPT, Midjourney)",
+    "addButton": "Börja spåra",
+    "emptyTitle": "Inga aktiva monitorer",
+    "emptyDesc": "Lägg till ett nyckelord ovan för att börja övervaka sociala omnämnanden och känslor.",
+    "keyword": "Nyckelord",
+    "platform": "Plattform",
+    "lastActive": "Senast aktiv",
+    "addSuccess": "Monitor har lagts till!",
+    "addError": "Det gick inte att lägga till bildskärm",
+    "statusTracking": "Spårning",
+    "status": "Status"
+  },
+  "socialListeningTitle": "Topplista för social lyssning",
+  "pagination": {
+    "prev": "Föreg",
+    "next": "Nästa",
+    "page": "Sida"
+  },
+  "nav": {
+    "overview": "Översikt",
+    "social": "Socialt",
+    "traffic": "Trafik",
+    "pricing": "Pris"
+  },
+  "locked": {
+    "quotaTitle": "Funktion låst",
+    "quotaDesc": "Du har nått din kvot för social avlyssning. Uppgradera för att låsa upp fler insikter.",
+    "upgradeBtn": "Uppgradera nu",
+    "overlayTitle": "Premium-funktion",
+    "overlayDesc": "Denna funktion kräver en aktiv premium-prenumeration.",
+    "unlockBtn": "Lås upp Premium"
+  }
+}

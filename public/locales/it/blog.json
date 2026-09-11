@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Blog e notizie sull'intelligenza artificiale - TopAICollection",
+    "description": "Rimani aggiornato con le ultime notizie, tutorial, recensioni e approfondimenti sull'intelligenza artificiale dal mondo dell'intelligenza artificiale."
+  },
+  "badge": "Approfondimenti sull'intelligenza artificiale",
+  "title": "Blog e notizie sull'intelligenza artificiale",
+  "subtitle": "Rimani informato con le ultime tendenze, tutorial e approfondimenti dal mondo dell'intelligenza artificiale",
+  "search": {
+    "placeholder": "Cerca articoli..."
+  },
+  "categories": {
+    "title": "Categorie",
+    "all": "Tutti gli articoli",
+    "news": "Notizie sull'AI",
+    "tutorials": "Tutorial",
+    "reviews": "Recensioni degli strumenti",
+    "industry": "Approfondimenti sul settore",
+    "guides": "Guide pratiche"
+  },
+  "newsletter": {
+    "title": "Rimani aggiornato",
+    "subtitle": "Ricevi le ultime notizie sull'intelligenza artificiale direttamente nella tua casella di posta",
+    "placeholder": "Inserisci la tua email",
+    "button": "Iscriviti"
+  },
+  "article": {
+    "readTime": "{minutes} minuti di lettura",
+    "published": "Pubblicato il {date}",
+    "writtenBy": "Scritto e curato da:",
+    "factCheckedBy": "Verificato da:"
+  },
+  "pagination": {
+    "next": "Prossimo",
+    "page": "Pagina {page} di {total}"
+  },
+  "relatedTools": "Strumenti correlati",
+  "backToBlog": "Torna al blog",
+  "errors": {
+    "notFound": "Post non trovato"
+  },
+  "sort": {
+    "latest": "Più recenti",
+    "oldest": "Meno recenti",
+    "popular": "Popolari"
+  },
+  "filter": {
+    "allAuthors": "Tutti gli autori",
+    "sortBy": "Ordina per"
+  },
+  "relatedPosts": "Post correlati",
+  "faqs": "FAQ"
+}

@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "Koleksi TopAI - Temukan Alat AI Terbaik",
+    "description": "Jelajahi {totalTools}+ alat AI di {totalCategories} kategori dalam {languagesCount}+ bahasa"
+  },
+  "home": {
+    "visitWebsite": "Kunjungi Situs Web",
+    "ranking": "Peringkat"
+  },
+  "tool": {
+    "visitWebsite": "Kunjungi Situs Web →",
+    "useCases": "Kasus Penggunaan",
+    "about": "Tentang {name}",
+    "howToUse": "Cara Menggunakan {name}",
+    "faq": "Pertanyaan yang Sering Diajukan"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Privacy Policy - TopAICollection",
+    "description": "Learn how TopAICollection collects, uses, and protects your personal information."
+  },
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated",
+  "introduction": "At TopAICollection, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.",
+  "sections": {
+    "collection": {
+      "title": "Information We Collect",
+      "content": [
+        "Personal information you provide (name, email, etc.)",
+        "Usage data (pages visited, time spent, clicks)",
+        "Device information (browser type, IP address)",
+        "Cookies and similar tracking technologies"
+      ]
+    },
+    "usage": {
+      "title": "How We Use Your Information",
+      "content": [
+        "To provide and maintain our service",
+        "To notify you about changes to our service",
+        "To provide customer support",
+        "To gather analysis or valuable information to improve our service",
+        "To monitor the usage of our service",
+        "To detect, prevent and address technical issues"
+      ]
+    },
+    "cookies": {
+      "title": "Cookies and Tracking",
+      "content": [
+        "We use cookies to track activity and hold certain information",
+        "Cookies help us understand user preferences and improve experience",
+        "You can instruct your browser to refuse all cookies",
+        "If you do not accept cookies, some portions of our service may not be available"
+      ]
+    },
+    "security": {
+      "title": "Data Security",
+      "content": [
+        "We use commercially acceptable means to protect your personal information",
+        "No method of transmission over the Internet is 100% secure",
+        "We cannot guarantee absolute security of your data",
+        "We regularly review our security practices and update as needed"
+      ]
+    },
+    "sharing": {
+      "title": "Information Sharing",
+      "content": [
+        "We do not sell, trade, or rent your personal information",
+        "We may share information with trusted partners who assist us",
+        "We may disclose information if required by law",
+        "In case of merger or acquisition, your data may be transferred"
+      ]
+    },
+    "rights": {
+      "title": "Your Rights",
+      "content": [
+        "Access your personal data",
+        "Correct inaccurate data",
+        "Request deletion of your data",
+        "Object to processing of your data",
+        "Request data portability",
+        "Withdraw consent at any time"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "content": "If you have any questions about this Privacy Policy, please contact us at:"
+  }
+}

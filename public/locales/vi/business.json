@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Giải Pháp Kinh Doanh - Hợp Tác Với Chúng Tôi | TopAICollection",
+    "description": "Khám phá các cơ hội hợp tác kinh doanh với TopAICollection. Quảng cáo, nội dung tài trợ và nhiều hơn nữa."
+  },
+  "title": "Giải pháp doanh nghiệp",
+  "subtitle": "Hợp tác với TopAICollection để tiếp cận cộng đồng đam mê AI toàn cầu",
+  "contact": {
+    "title": "Liên hệ ngay"
+  },
+  "offers": {
+    "ads": "Chạy các chiến dịch quảng cáo mục tiêu",
+    "partnerships": "Khám phá các quan hệ đối tác chiến lược",
+    "growth": "Thúc đẩy sự tăng trưởng sản phẩm AI của bạn",
+    "consulting": "Dịch vụ tích hợp AI tùy chỉnh"
+  },
+  "form": {
+    "fullName": "Họ và tên",
+    "workEmail": "Email công việc",
+    "companyName": "Tên công ty",
+    "inquiryType": "Loại yêu cầu",
+    "selectType": "Chọn loại yêu cầu",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Hãy cho chúng tôi biết về nhu cầu của bạn...",
+    "inquiryTypes": {
+      "advertise": "Quảng cáo",
+      "guestPost": "Đăng bài Guest Post",
+      "partnership": "Hợp tác",
+      "customDevelopment": "Phát triển tùy chỉnh",
+      "other": "Khác"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Quảng cáo công cụ AI",
+      "description": "Làm nổi bật công cụ AI của bạn trên nền tảng của chúng tôi.",
+      "link": "Tìm hiểu thêm"
+    },
+    "guestPost": {
+      "title": "Bài viết khách & Liên kết",
+      "description": "Đăng bài nội dung hoặc xây dựng liên kết trên nền tảng uy tín.",
+      "link": "Tìm hiểu thêm"
+    },
+    "submitTool": {
+      "title": "Gửi công cụ của bạn",
+      "description": "Đưa công cụ AI của bạn vào danh bạ hoàn toàn miễn phí.",
+      "link": "Gửi ngay"
+    },
+    "customSolutions": {
+      "title": "Giải pháp tùy chỉnh",
+      "description": "Liên hệ để khám phá các cơ hội hợp tác đặc biệt.",
+      "link": "Liên hệ"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100+ Đối tác",
+    "partnerCountSub": "Được hàng trăm công ty AI hàng đầu tin tưởng",
+    "contactSupport": "Liên hệ hỗ trợ"
+  },
+  "validation": {
+    "required": "Trường này là bắt buộc",
+    "toolNameRequired": "Tên công cụ là bắt buộc",
+    "url": "Đường dẫn không hợp lệ",
+    "descriptionMin": "Mô tả phải có ít nhất 10 ký tự",
+    "categoryRequired": "Vui lòng chọn danh mục",
+    "email": "Email không hợp lệ",
+    "messageMin": "Tin nhắn phải có ít nhất 10 ký tự"
+  },
+  "success": "Yêu cầu của bạn đã được gửi thành công!"
+}

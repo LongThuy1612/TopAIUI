@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Politique en matière de cookies - TopAICollection",
+    "description": "Découvrez comment TopAICollection utilise les cookies et les technologies similaires."
+  },
+  "title": "Politique en matière de cookies",
+  "lastUpdated": "Dernière mise à jour",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Que sont les cookies",
+      "description": "Les cookies sont de petits fichiers texte stockés sur votre ordinateur ou appareil mobile lorsque vous visitez notre site Web. Ils nous aident à vous offrir une meilleure expérience en mémorisant vos préférences et en comprenant comment vous utilisez notre site."
+    },
+    "howWeUse": {
+      "title": "Comment nous utilisons les cookies",
+      "intro": "Nous utilisons des cookies aux fins suivantes :",
+      "essential": "Cookies essentiels : requis pour le bon fonctionnement du site Web, y compris l'authentification et la sécurité.",
+      "analytics": "Cookies d'analyse : nous aident à comprendre comment les visiteurs interagissent avec notre site Web.",
+      "preference": "Cookies de préférence : mémorisez vos paramètres et préférences, tels que la langue et les paramètres régionaux.",
+      "marketing": "Cookies marketing : utilisés pour diffuser des publicités pertinentes et suivre les performances des campagnes."
+    },
+    "managing": {
+      "title": "Gestion des cookies",
+      "intro": "La plupart des navigateurs Web vous permettent de contrôler les cookies via leurs paramètres. Vous pouvez choisir de :",
+      "blockAll": "Bloquer tous les cookies",
+      "acceptAll": "Acceptez tous les cookies",
+      "beNotified": "Être averti lorsqu'un cookie est installé",
+      "deleteExisting": "Supprimer les cookies déjà installés",
+      "note": "Veuillez noter que le blocage de certains cookies peut avoir un impact sur votre expérience sur notre site Web."
+    },
+    "thirdParty": {
+      "title": "Cookies tiers",
+      "intro": "Certains cookies de notre site sont définis par des services tiers que nous utilisons, notamment :",
+      "googleAnalytics": "Google Analytics (analyse)",
+      "vercel": "Vercel (hébergement et analyses)"
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "message": "Si vous avez des questions sur notre utilisation des cookies, veuillez",
+      "contactLink": "Contactez-nous"
+    }
+  }
+}

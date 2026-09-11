@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "AIツールはまだありません",
+      "description": "AIツールを送信して、何百万人ものユーザーに見つけてもらいましょう。",
+      "cta": "AIツールを送信"
+    },
+    "columns": {
+      "tool": "ツール",
+      "status": "ステータス",
+      "organic": "オーガニックトラフィック",
+      "paid": "有料トラフィック",
+      "impressions": "インプレッション",
+      "actions": "操作"
+    },
+    "statusTooltip": {
+      "pending": "管理者の承認待ち"
+    },
+    "submittedToast": "ツールが送信されました。審査をお待ちください。",
+    "warnings": {
+      "pendingView": "このツールはまだ検討中であり、まだ公開されていません。",
+      "confirmDelete": "この AI ツールを削除してもよろしいですか?この操作は元に戻すことができません。"
+    },
+    "submit": {
+      "tool": "AI ツールを送信する",
+      "update": "AIをアップデートする",
+      "name": "GPT 名",
+      "url": "「ChatGPT URL」",
+      "category": "カテゴリ",
+      "description": "説明",
+      "gpt": {
+        "title": "GPT を提出する",
+        "label": "GPTを送信する",
+        "description": "カスタム GPT を送信して、何千人ものユーザーに発見してもらいましょう。"
+      }
+    }
+  },
+  "submissions": {
+    "title": "提出物",
+    "deleteSuccess": "提出物は正常に削除されました。",
+    "deleteError": "提出物の削除に失敗しました。",
+    "noSubmissions": "まだゲスト投稿はありません",
+    "untitled": "無題の投稿",
+    "confirmDelete": "この提出物を削除してもよろしいですか?この操作は元に戻すことができません。",
+    "columns": {
+      "subject": "主題",
+      "status": "状態",
+      "date": "日付",
+      "actions": "アクション"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compare": {
+    "title": "Sammenlign AI-modeller"
+  },
+  "submissionSuccess": {
+    "title": "Indsendelse lykkedes - TopAICollection",
+    "description": "Din indsendelse er modtaget med succes"
+  },
+  "business": {
+    "title": "For erhverv"
+  },
+  "submitGpt": {
+    "title": "Send tilpasset GPT"
+  },
+  "layout": {
+    "defaultTitle": "AI-værktøjskatalog: 1000+ verificerede gratis AI-værktøjer",
+    "description": "Udforsk den #1 liste over AI-værktøjer. Denne AI-værktøjsordbog-hjemmeside hjælper dig med at finde, sammenligne og lancere den absolut bedste AI-software GRATIS",
+    "keywords": "AI-værktøjer, kunstig intelligens, AI-indeks, top AI-websteder, bedste AI-værktøjer, AI-markedsplads"
+  }
+}

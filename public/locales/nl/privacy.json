@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Privacybeleid - TopAICollection",
+    "description": "Ontdek hoe TopAICollection uw persoonlijke gegevens verzamelt, gebruikt en beschermt."
+  },
+  "title": "Privacybeleid",
+  "lastUpdated": "Laatst bijgewerkt",
+  "introduction": "Bij TopAICollection nemen we uw privacy serieus. In dit privacybeleid wordt uitgelegd hoe wij uw gegevens verzamelen, gebruiken, openbaar maken en beveiligen wanneer u onze website bezoekt.",
+  "sections": {
+    "collection": {
+      "title": "Informatie die we verzamelen",
+      "content": [
+        "Persoonlijke informatie die u verstrekt (naam, e-mailadres, enz.)",
+        "Gebruiksgegevens (bezochte pagina's, bestede tijd, klikken)",
+        "Apparaatinformatie (browsertype, IP-adres)",
+        "Cookies en soortgelijke trackingtechnologieën"
+      ]
+    },
+    "usage": {
+      "title": "Hoe wij uw gegevens gebruiken",
+      "content": [
+        "Voor het leveren en onderhouden van onze service",
+        "Om u op de hoogte te stellen van wijzigingen in onze dienstverlening",
+        "Om klantenondersteuning te bieden",
+        "Om analyses of waardevolle informatie te verzamelen om onze service te verbeteren",
+        "Om het gebruik van onze dienst te monitoren",
+        "Om technische problemen op te sporen, te voorkomen en aan te pakken"
+      ]
+    },
+    "cookies": {
+      "title": "Cookies en tracking",
+      "content": [
+        "We gebruiken cookies om activiteiten bij te houden en bepaalde informatie vast te houden",
+        "Cookies helpen ons de voorkeuren van gebruikers te begrijpen en de ervaring te verbeteren",
+        "U kunt uw browser opdracht geven alle cookies te weigeren",
+        "Als u geen cookies accepteert, zijn sommige delen van onze service mogelijk niet beschikbaar"
+      ]
+    },
+    "security": {
+      "title": "Gegevensbeveiliging",
+      "content": [
+        "We gebruiken commercieel aanvaardbare middelen om uw persoonlijke gegevens te beschermen",
+        "Geen enkele transmissiemethode via internet is 100% veilig",
+        "Wij kunnen de absolute veiligheid van uw gegevens niet garanderen",
+        "We beoordelen onze beveiligingspraktijken regelmatig en updaten deze indien nodig"
+      ]
+    },
+    "sharing": {
+      "title": "Informatie delen",
+      "content": [
+        "Wij verkopen, verhandelen of verhuren uw persoonlijke gegevens niet",
+        "We kunnen informatie delen met vertrouwde partners die ons helpen",
+        "We kunnen informatie openbaar maken als dit wettelijk vereist is",
+        "Bij een fusie of overname kunnen uw gegevens worden overgedragen"
+      ]
+    },
+    "rights": {
+      "title": "Uw rechten",
+      "content": [
+        "Toegang tot uw persoonlijke gegevens",
+        "Corrigeer onjuiste gegevens",
+        "Verzoek om verwijdering van uw gegevens",
+        "Bezwaar maken tegen de verwerking van uw gegevens",
+        "Vraag dataportabiliteit aan",
+        "Trek uw toestemming op elk gewenst moment in"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Neem contact met ons op",
+    "content": "Als u vragen heeft over dit privacybeleid, kunt u contact met ons opnemen via:"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Evästekäytäntö - TopAICollection",
+    "description": "Opi kuinka TopAICollection käyttää evästeitä ja vastaavia tekniikoita."
+  },
+  "title": "Evästekäytäntö",
+  "lastUpdated": "Viimeksi päivitetty",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Mitä evästeet ovat",
+      "description": "Evästeet ovat pieniä tekstitiedostoja, jotka tallentuvat tietokoneellesi tai mobiililaitteellesi, kun vierailet verkkosivustollamme. Ne auttavat meitä tarjoamaan sinulle paremman käyttökokemuksen muistamalla valintasi ja ymmärtämällä, miten käytät sivustoamme."
+    },
+    "howWeUse": {
+      "title": "Kuinka käytämme evästeitä",
+      "intro": "Käytämme evästeitä seuraaviin tarkoituksiin:",
+      "essential": "Välttämättömät evästeet: Vaaditaan verkkosivuston moitteettoman toiminnan kannalta, mukaan lukien todennus ja suojaus.",
+      "analytics": "Analytiikkaevästeet: Auta meitä ymmärtämään, kuinka vierailijat ovat vuorovaikutuksessa verkkosivustomme kanssa.",
+      "preference": "Asetusevästeet: Muista asetuksesi ja asetuksesi, kuten kieli ja alue.",
+      "marketing": "Markkinointievästeet: Käytetään osuvien mainosten näyttämiseen ja kampanjan tehokkuuden seuraamiseen."
+    },
+    "managing": {
+      "title": "Evästeiden hallinta",
+      "intro": "Useimmat verkkoselaimet antavat sinun hallita evästeitä asetustensa kautta. Voit valita seuraavista:",
+      "blockAll": "Estä kaikki evästeet",
+      "acceptAll": "Hyväksy kaikki evästeet",
+      "beNotified": "Saat ilmoituksen, kun eväste on asetettu",
+      "deleteExisting": "Poista evästeet, jotka on jo asetettu",
+      "note": "Huomaa, että tiettyjen evästeiden estäminen voi vaikuttaa käyttökokemukseesi verkkosivustollamme."
+    },
+    "thirdParty": {
+      "title": "Kolmannen osapuolen evästeet",
+      "intro": "Jotkut sivustollamme olevat evästeet ovat käyttämiemme kolmannen osapuolen palveluiden asettamia, mukaan lukien:",
+      "googleAnalytics": "Google Analytics (analytiikka)",
+      "vercel": "Vercel (isännöinti ja analytiikka)"
+    },
+    "contact": {
+      "title": "Ota yhteyttä",
+      "message": "Jos sinulla on kysyttävää evästeiden käytöstämme, ole hyvä",
+      "contactLink": "ota meihin yhteyttä"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Nombre Completo",
+      "email": "Dirección de Correo",
+      "emailHelp": "El correo no se puede cambiar",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "phone": "Número de Teléfono",
+      "company": "Empresa",
+      "country": "País",
+      "website": "Sitio Web",
+      "save": "Guardar Cambios",
+      "saving": "Guardando...",
+      "saveSuccess": "Perfil actualizado exitosamente.",
+      "phonePlaceholder": "+1 (000) 000-0000"
+    },
+    "password": {
+      "title": "Cambiar Contraseña",
+      "current": "Contraseña Actual",
+      "new": "Nueva Contraseña",
+      "confirm": "Confirmar Nueva Contraseña",
+      "update": "Actualizar Contraseña"
+    },
+    "notifications": {
+      "title": "Preferencias de Notificación",
+      "email": "Notificaciones por Correo",
+      "marketing": "Correos de Marketing"
+    }
+  },
+  "profile": {
+    "title": "Perfil",
+    "fullName": "Nombre completo",
+    "email": "Dirección de correo electrónico",
+    "emailHelp": "El correo electrónico no se puede cambiar",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "phone": "Número de teléfono",
+    "company": "Compañía",
+    "country": "País",
+    "website": "Sitio web",
+    "save": "Guardar cambios",
+    "saving": "Ahorro...",
+    "saveSuccess": "Perfil actualizado exitosamente.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Cambiar la contraseña",
+    "current": "Contraseña actual",
+    "new": "Nueva contraseña",
+    "confirm": "Confirmar nueva contraseña",
+    "update": "Actualizar contraseña"
+  },
+  "notifications": {
+    "title": "Preferencias de notificación",
+    "email": "Notificaciones por correo electrónico",
+    "marketing": "Correos electrónicos de marketing"
+  },
+  "tabs": {
+    "profile": "Perfil",
+    "security": "Seguridad",
+    "notifications": "Notificaciones"
+  },
+  "updated": "Configuración actualizada exitosamente"
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Message d'invité et insertion de liens",
+  "description": "Partagez votre expertise avec notre communauté via des publications d'invités ou demandez des insertions de liens stratégiques dans le contenu existant.",
+  "details": "Détails de la publication d'invité",
+  "postTitle": "Titre du message",
+  "postTitlePlaceholder": "Titre de votre message d'invité",
+  "postContent": "Publier du contenu ou des détails",
+  "postContentPlaceholder": "Décrivez le contenu de votre article d'invité ou les détails d'insertion de lien",
+  "features": {
+    "guestPosts": {
+      "title": "Messages d'invités",
+      "description": "Partagez vos connaissances et vos idées sur l'IA avec notre communauté. Renforcez votre autorité et générez du trafic vers votre site Web."
+    },
+    "linkInsertion": {
+      "title": "Insertion de lien",
+      "description": "Demandez un placement stratégique de vos liens dans un contenu existant et pertinent pour une valeur SEO maximale."
+    },
+    "seoBacklinks": {
+      "title": "Backlinks SEO",
+      "description": "Améliorez votre classement SEO avec des backlinks de haute qualité provenant de notre domaine faisant autorité."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Directives relatives au contenu",
+    "description": "Tous les messages d'invités doivent être originaux, de haute qualité et pertinents pour l'IA. Nous n'acceptons pas le contenu généré par l'IA sans édition humaine."
+  },
+  "meta": {
+    "title": "Messages d'invités et insertions de liens | Meilleure collection d'IA",
+    "description": "Partagez votre expertise avec notre communauté IA via des publications d'invités ou demandez des insertions de liens stratégiques dans le contenu existant."
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "titleTooShort": "Le titre doit comporter au moins 5 caractères",
+    "contentTooShort": "Le contenu doit comporter au moins 20 caractères",
+    "toolNameRequired": "Le nom de l'outil est obligatoire",
+    "url": "URL invalide",
+    "descriptionMin": "La description doit comporter au moins 10 caractères",
+    "categoryRequired": "Veuillez sélectionner une catégorie",
+    "email": "Adresse e-mail invalide",
+    "messageMin": "Le message doit contenir au moins 10 caractères"
+  },
+  "sidebar": {
+    "articleCount": "Plus de 1000 articles",
+    "articleCountSub": "Publié par notre communauté"
+  }
+}

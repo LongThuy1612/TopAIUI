@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "AI-Modeller & Datasæt | TopAICollection",
+    "description": "Opdag og udforsk de nyeste AI-modeller, datasæt og arkitekturer til dit næste projekt."
+  },
+  "title": "AI-Modelbibliotek",
+  "subtitle": "Udforsk den største samling af AI-modeller, finjusteringer og datasæt.",
+  "comingSoon": "Kommer snart!",
+  "comingSoonMessage": "Vi sammensætter i øjeblikket de bedste AI-modeller. Kom igen snart.",
+  "searchPlaceholder": "Søg AI-modeller...",
+  "allProviders": "Alle udbydere",
+  "noResults": "Ingen AI-modeller fundet",
+  "noResultsHint": "Prøv at justere dine søge- eller filterkriterier.",
+  "contextWindow": "Kontekstvindue",
+  "parameters": "Parametre",
+  "provider": "Udbyder",
+  "architecture": "Arkitektur",
+  "releaseDate": "Udgivelsesdato",
+  "costPer1kTokens": "Pris / 1K tokens",
+  "free": "Gratis / Open Source",
+  "tokens": "Poletter",
+  "viewWebsite": "Besøg hjemmeside",
+  "modelsCount": "{count} AI-model",
+  "modelsCount_plural": "{count} AI-modeller",
+  "modelsGridTitle": "AI modeller"
+}

@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Thông tin chi tiết về trang web",
+    "subtitle": "Theo dõi đối thủ, lưu lượng và từ khóa của trang web.",
+    "track": "Theo dõi",
+    "noDomains": "Chưa có tên miền nào được theo dõi. Hãy thêm ở trên!",
+    "addDomainDesc": "Thêm tên miền đầu tiên của bạn để bắt đầu theo dõi.",
+    "domain": "Tên miền",
+    "monthlyVisits": "Lượt truy cập hàng tháng",
+    "rank": "Xếp hạng",
+    "topKeywords": "Từ khóa hàng đầu",
+    "added": "Đã thêm",
+    "tool": "Công cụ",
+    "organicClicks": "Lượt nhấp tự nhiên",
+    "paidClicks": "Lượt nhấp trả tiền",
+    "totalClicks": "Tổng lượt nhấp",
+    "addedOn": "Ngày thêm",
+    "noTools": "Chưa có công cụ nào được theo dõi.",
+    "deleteSuccess": "Đã xóa tên miền khỏi danh sách theo dõi",
+    "confirmDelete": "Bạn có chắc chắn muốn ngừng theo dõi tên miền này không?",
+    "quota": "Hạn mức",
+    "limitReachedDesc": "Bạn đã đạt đến giới hạn theo dõi. Vui lòng nâng cấp để theo dõi thêm.",
+    "upgradeNow": "Nâng cấp Ngay",
+    "usage": "Sử dụng",
+    "searchPlaceholder": "Tìm kiếm tên miền...",
+    "advancedFilter": "Bộ lọc Nâng cao",
+    "bulkOpen": "Mở Hàng loạt",
+    "export": "Xuất Dữ liệu",
+    "aiTool": "Công cụ AI",
+    "rankChange": "Thay đổi thứ hạng",
+    "globalRank": "Xếp hạng toàn cầu",
+    "traffic": "Giao thông",
+    "audience": "Khán giả",
+    "updateDate": "Ngày cập nhật",
+    "limitReachedTitle": "Bạn đã đạt đến giới hạn của mình",
+    "limitReachedBody": "Bạn đã đạt đến giới hạn tìm kiếm miễn phí. Nâng cấp để có quyền truy cập không giới hạn.",
+    "upgradePro": "Nâng cấp lên gói Pro",
+    "actions": "hành động",
+    "viewSocial": "Xem mạng xã hội",
+    "filters": {
+      "months": {
+        "feb2026": "Tháng 2 năm 2026",
+        "jan2026": "Tháng 1 năm 2026"
+      },
+      "sources": {
+        "search": "Tìm kiếm",
+        "direct": "Trực tiếp",
+        "social": "Xã hội"
+      },
+      "regions": {
+        "us": "Chúng tôi",
+        "vn": "Vi"
+      },
+      "categories": {
+        "llm": "Ừm",
+        "image": "Hình ảnh",
+        "productivity": "Năng suất"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100 nghìn",
+        "1m": "1tr"
+      },
+      "timePeriod": "Khoảng thời gian",
+      "selectMonth": "Chọn tháng",
+      "trafficSource": "“Nguồn lưu lượng”",
+      "allSources": "Tất cả các nguồn",
+      "region": "Khu vực",
+      "category": "Danh mục",
+      "trafficThreshold": "Ngưỡng giao thông",
+      "minVisits": "Số lượt truy cập tối thiểu"
+    },
+    "exportSuccess": "Xuất thành công.",
+    "exportFailed": "Xuất thất bại.",
+    "exportData": "Xuất dữ liệu",
+    "exportDesc": "Xuất báo cáo này để chia sẻ hoặc phân tích cục bộ.",
+    "exportLimit": "Giới hạn xuất khẩu",
+    "rows": "Hàng",
+    "creditsCost": "Chi phí tín dụng",
+    "availableAfter": "Có sẵn sau",
+    "confirmExport": "Xác nhận xuất khẩu",
+    "notEnoughCredits": "Không đủ tín dụng",
+    "removeFailed": "Xóa thất bại.",
+    "direct": "Trực tiếp",
+    "sortDefault": "Mặc định",
+    "sortTraffic": "Lưu lượng truy cập"
+  },
+  "table": {
+    "searchPlaceholder": "Tìm kiếm tên miền...",
+    "showingResults": "Hiển thị {count} kết quả",
+    "column": {
+      "tool": "Công cụ",
+      "organic": "Lượt nhấp tự nhiên",
+      "paid": "Lượt nhấp trả tiền",
+      "total": "Tổng lượt nhấp",
+      "growth": "Tăng trưởng",
+      "trend": "Xu hướng"
+    },
+    "empty": "Chưa có tên miền nào được theo dõi."
+  },
+  "common": {
+    "global": "Toàn cầu",
+    "allCategories": "Tất cả danh mục"
+  }
+}

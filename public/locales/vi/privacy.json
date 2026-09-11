@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Chính sách bảo mật - TopAICollection",
+    "description": "Tìm hiểu cách TopAICollection thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn."
+  },
+  "title": "Chính sách bảo mật",
+  "lastUpdated": "Cập nhật lần cuối",
+  "introduction": "Tại TopAICollection, chúng tôi coi trọng quyền riêng tư của bạn. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng, tiết lộ và bảo vệ thông tin của bạn khi bạn truy cập trang web của chúng tôi.",
+  "sections": {
+    "collection": {
+      "title": "Thông tin chúng tôi thu thập",
+      "content": [
+        "Thông tin cá nhân bạn cung cấp (tên, email, v.v.)",
+        "Dữ liệu sử dụng (các trang đã truy cập, thời gian sử dụng, số lần nhấp chuột)",
+        "Thông tin thiết bị (loại trình duyệt, địa chỉ IP)",
+        "Cookie và các công nghệ theo dõi tương tự"
+      ]
+    },
+    "usage": {
+      "title": "Cách chúng tôi sử dụng thông tin của bạn",
+      "content": [
+        "Để cung cấp và duy trì dịch vụ của chúng tôi",
+        "Để thông báo cho bạn về những thay đổi đối với dịch vụ của chúng tôi",
+        "Để cung cấp hỗ trợ khách hàng",
+        "Để thu thập phân tích hoặc thông tin có giá trị nhằm cải thiện dịch vụ của chúng tôi",
+        "Để theo dõi việc sử dụng dịch vụ của chúng tôi",
+        "Để phát hiện, ngăn chặn và giải quyết các vấn đề kỹ thuật"
+      ]
+    },
+    "cookies": {
+      "title": "Cookie và theo dõi",
+      "content": [
+        "Chúng tôi sử dụng cookie để theo dõi hoạt động và lưu giữ một số thông tin nhất định",
+        "Cookie giúp chúng tôi hiểu sở thích của người dùng và cải thiện trải nghiệm",
+        "Bạn có thể hướng dẫn trình duyệt của mình từ chối tất cả cookie",
+        "Nếu bạn không chấp nhận cookie, một số phần dịch vụ của chúng tôi có thể không có sẵn"
+      ]
+    },
+    "security": {
+      "title": "Bảo mật dữ liệu",
+      "content": [
+        "Chúng tôi sử dụng các phương tiện được chấp nhận về mặt thương mại để bảo vệ thông tin cá nhân của bạn",
+        "Không có phương thức truyền qua Internet nào an toàn 100%",
+        "Chúng tôi không thể đảm bảo tính bảo mật tuyệt đối cho dữ liệu của bạn",
+        "Chúng tôi thường xuyên xem xét các biện pháp bảo mật của mình và cập nhật khi cần"
+      ]
+    },
+    "sharing": {
+      "title": "Chia sẻ thông tin",
+      "content": [
+        "Chúng tôi không bán, trao đổi hoặc cho thuê thông tin cá nhân của bạn",
+        "Chúng tôi có thể chia sẻ thông tin với các đối tác đáng tin cậy hỗ trợ chúng tôi",
+        "Chúng tôi có thể tiết lộ thông tin nếu pháp luật yêu cầu",
+        "Trong trường hợp sáp nhập hoặc mua lại, dữ liệu của bạn có thể được chuyển giao"
+      ]
+    },
+    "rights": {
+      "title": "Quyền của bạn",
+      "content": [
+        "Truy cập dữ liệu cá nhân của bạn",
+        "Chỉnh sửa dữ liệu không chính xác",
+        "Yêu cầu xóa dữ liệu của bạn",
+        "Phản đối việc xử lý dữ liệu của bạn",
+        "Yêu cầu khả năng di chuyển dữ liệu",
+        "Rút lại sự đồng ý bất cứ lúc nào"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Liên hệ với chúng tôi",
+    "content": "Nếu bạn có bất kỳ câu hỏi nào về Chính sách bảo mật này, vui lòng liên hệ với chúng tôi tại:"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "联系我们 - TopAICollection",
+    "description": "与 TopAICollection 团队取得联系。我们随时为您解答有关人工智能工具的任何问题。"
+  },
+  "title": "联系我们",
+  "subtitle": "有问题或反馈吗？我们很乐意听取您的意见。我们的团队通常会在 24 小时内回复。",
+  "form": {
+    "title": "给我们留言",
+    "fields": {
+      "name": {
+        "label": "你的名字",
+        "placeholder": "约翰·多伊"
+      },
+      "email": {
+        "label": "电子邮件",
+        "placeholder": "约翰@example.com"
+      },
+      "subject": {
+        "label": "主题",
+        "placeholder": "选择一个主题",
+        "options": {
+          "general": "一般查询",
+          "support": "技术支援",
+          "feedback": "反馈",
+          "partnership": "合作机会",
+          "other": "其他"
+        }
+      },
+      "message": {
+        "label": "信息",
+        "placeholder": "告诉我们你的想法......"
+      }
+    },
+    "submit": "发送消息",
+    "submitting": "正在发送...",
+    "success": {
+      "title": "消息发送成功！",
+      "description": "我们已收到您的留言，并将尽快回复您。"
+    },
+    "error": {
+      "title": "发送消息失败",
+      "description": "出了点问题。请稍后重试。"
+    }
+  },
+  "info": {
+    "title": "联系我们",
+    "email": {
+      "title": "给我们发电子邮件",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "支持时间",
+      "content": "我们的支持团队周一至周五提供服务"
+    },
+    "hours": {
+      "title": "营业时间",
+      "content": "上午 9:00 - 下午 6:00（美国东部时间）"
+    },
+    "location": {
+      "title": "地点",
+      "content": "我们的分布式团队为全球用户提供服务"
+    }
+  },
+  "faq": {
+    "title": "常见问题解答",
+    "q1": "如何提交我的 AI 工具？",
+    "a1": "单击导航中的提交工具按钮并填写提交表格。",
+    "q2": "审批需要多长时间？",
+    "a2": "大多数提交的内容都会在 1-3 个工作日内得到审核。",
+    "q3": "我可以更新我的工具列表吗？",
+    "a3": "是的，登录您的仪表板并使用更新 AI 功能。"
+  }
+}

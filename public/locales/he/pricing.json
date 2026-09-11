@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "תוכניות תמחור - TopAICollection",
+    "description": "תמחור פשוט ושקוף למחקר בינה מלאכותית והאזנה חברתית."
+  },
+  "title": "תמחור פשוט ושקוף",
+  "subtitle": "התחל בחינם והתרחב ככל שתגדל. ללא הפתעות.",
+  "plans": {
+    "free": {
+      "name": "חינם",
+      "banner": "התחל בחינם — לא נדרשת כרטיס אשראי."
+    },
+    "professional": {
+      "name": "מקצועי"
+    },
+    "enterprise": {
+      "name": "ארגון"
+    },
+    "free-monthly": {
+      "name": "חינם"
+    },
+    "free-yearly": {
+      "name": "חינם"
+    },
+    "professional-monthly": {
+      "name": "מקצועי"
+    },
+    "professional-yearly": {
+      "name": "מקצועי"
+    },
+    "enterprise-monthly": {
+      "name": "ארגון"
+    },
+    "enterprise-yearly": {
+      "name": "ארגון"
+    }
+  },
+  "badge": {
+    "popular": "⭐ הפופולרי ביותר"
+  },
+  "features": {
+    "websiteInsights": "תובנות אתר",
+    "socialListening": "האזנה חברתית",
+    "prioritySupport": "תמיכה בעדיפות",
+    "advertising": "פרסום",
+    "premiumSupport": "תמיכת פרימיום"
+  },
+  "cta": {
+    "loading": "מעבד...",
+    "upgrade": "מתחילים"
+  },
+  "comparison": {
+    "title": "השוואת כל התוכניות",
+    "feature": "תכונה"
+  },
+  "billing": {
+    "monthly": "יַרחוֹן",
+    "yearly": "שְׁנָתִי",
+    "discount20": "חסוך 20%",
+    "suffixYearly": "/שָׁנָה",
+    "suffixMonthly": "/חוֹדֶשׁ",
+    "upgradeTitle": "שדרג את תוכנית המחקר שלך",
+    "upgradeDesc": "פתח ניתוחים מתקדמים, תובנות מתחרים ועוד.",
+    "subscribe": "הירשם עכשיו"
+  },
+  "billingMonthly": "יַרחוֹן",
+  "billingYearly": "שְׁנָתִי",
+  "billingBestValue": "חסוך 20%",
+  "badgePopular": "הכי פופולרי",
+  "billingPerMonth": "/ חודש",
+  "billingPerYear": "/ שנה"
+}

@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "KI-Tools durchsuchen...",
+    "categories": "Kategorien",
+    "rankings": "Rankings",
+    "submit": "Tool einreichen",
+    "admin": "Admin"
+  },
+  "hero": {
+    "titlePrefix": "Entdecke die besten",
+    "titleHighlight": "KI-Tools",
+    "subtitle": "Durchsuche Hunderte von KI-Produkten nach Kategorie, vergleiche Preise und finde das richtige Tool für deinen Workflow.",
+    "searchPlaceholder": "KI-Tools durchsuchen..."
+  },
+  "stats": {
+    "tools": "KI-Tools gelistet",
+    "categories": "Kategorien",
+    "featured": "Empfohlene Tools"
+  },
+  "tabs": {
+    "heading": "Tools entdecken",
+    "newest": "Neu",
+    "featured": "Am meisten empfohlen",
+    "free": "Kostenlos",
+    "viewAll": "Alle anzeigen →"
+  },
+  "announcement": {
+    "featured": "Empfohlen"
+  },
+  "sidebar": {
+    "featuredTools": "Empfohlene Tools",
+    "topCategories": "Top-Kategorien"
+  },
+  "sections": {
+    "browseByCategory": "Nach Kategorie durchsuchen",
+    "newestTools": "Neueste Tools",
+    "featuredTools": "Empfohlene Tools",
+    "viewAll": "Alle anzeigen →",
+    "justLaunched": "Gerade gestartet",
+    "featuredThisWeek": "Empfehlungen dieser Woche",
+    "featuredThisWeekSubtitle": "Die Tools, die unsere Community am häufigsten gespeichert und bewertet hat.",
+    "updatedDaily": "Täglich aktualisiert",
+    "viewMore": "Mehr anzeigen →"
+  },
+  "cta": {
+    "title": "Hast du ein KI-Tool zum Teilen?",
+    "subtitle": "Zeig es Menschen, die nach Tools wie deinem suchen.",
+    "button": "Dein Tool einreichen"
+  },
+  "empty": {
+    "noTools": "Noch keine Tools — führe aus",
+    "noResults": "Keine Tools gefunden"
+  },
+  "category": {
+    "breadcrumbHome": "Start",
+    "allTools": "Alle Tools",
+    "allToolsTitle": "Alle KI-Tools",
+    "allPricing": "Alle Preise",
+    "sortNewest": "Neueste zuerst",
+    "sortFeatured": "Empfohlene zuerst",
+    "sortName": "Name A–Z",
+    "toolsFound": "Tool gefunden | Tools gefunden",
+    "searchPlaceholder": "Tools durchsuchen...",
+    "filters": "Filter",
+    "viewGrid": "Rasteransicht",
+    "viewList": "Listenansicht"
+  },
+  "pricing": {
+    "FREE": "Kostenlos",
+    "FREEMIUM": "Freemium",
+    "PAID": "Kostenpflichtig"
+  },
+  "ranking": {
+    "title": "Top KI-Tools",
+    "subtitle": "Rangiert nach Traffic- und Wachstumsdaten aus unserem Verzeichnis.",
+    "byGrowth1m": "Wachstum 1 Monat",
+    "byGrowth3m": "Wachstum 3 Monate",
+    "byGrowth6m": "Wachstum 6 Monate",
+    "byTraffic": "Monatliche Besuche",
+    "colRank": "Rang",
+    "colTool": "Tool",
+    "colVisits": "Monatliche Besuche",
+    "colGrowth": "Wachstum",
+    "colAuthority": "Domain-Autorität",
+    "colCategory": "Kategorie",
+    "noData": "Noch keine Ranking-Daten."
+  },
+  "tool": {
+    "openSite": "Website öffnen",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "featured": "Empfohlen",
+    "introduction": "Einführung",
+    "addedOn": "Hinzugefügt am",
+    "monthlyVisitors": "Monatliche Besucher",
+    "features": "Hauptfunktionen",
+    "useCases": "Anwendungsfälle",
+    "prosAndCons": "Vor- und Nachteile",
+    "pros": "Vorteile",
+    "cons": "Nachteile",
+    "faq": "Häufig gestellte Fragen",
+    "alternatives": "Alternativen zu",
+    "backToCategory": "Zurück zu",
+    "notFound": "Tool nicht gefunden",
+    "similarTools": "Ähnliche Tools",
+    "tabProductInfo": "Produktinformationen",
+    "tabPricing": "Preise",
+    "tabReviews": "Bewertungen",
+    "tabAnalytics": "Analysen",
+    "tabAlternatives": "Alternativen",
+    "productInformationHeading": "Produktinformationen zu {name}",
+    "whatIs": "Was ist {name}?",
+    "howToUseHeading": "Wie benutzt man {name}?",
+    "reviewsHeading": "{name} Bewertungen ({count})",
+    "ratingPrompt": "Würdest du {name} empfehlen? Hinterlasse einen Kommentar",
+    "whatDoYouThink": "Was denkst du?",
+    "loginToComment": "Zum Kommentieren anmelden",
+    "pricingHeading": "Preise von {name}",
+    "noPricingYet": "Noch keine Preisinformationen.",
+    "analyticsHeading": "Analysen von {name}",
+    "trafficAnalysis": "Traffic-Analyse der Website {name}",
+    "visitOverTime": "Besuche im Zeitverlauf",
+    "monthlyVisits": "Monatliche Besuche",
+    "avgVisitDuration": "Durchschn. Besuchsdauer",
+    "pagePerVisit": "Seiten pro Besuch",
+    "bounceRate": "Absprungrate",
+    "noTrafficYet": "Noch keine Traffic-Daten erfasst.",
+    "badgeVerified": "Verifiziert",
+    "badgeJustLaunched": "Gerade gestartet",
+    "badgeFreeTool": "Kostenloses Tool",
+    "affiliateLink": "Affiliate-Link",
+    "couponCode": "Gutscheincode",
+    "ratings": "Bewertungen",
+    "upvotes": "Upvotes",
+    "domainAuthority": "Domain-Autorität",
+    "trafficRank": "Traffic-Rang",
+    "viewCount": "Seitenaufrufe"
+  },
+  "footer": {
+    "tagline": "Entdecke, vergleiche und teile die besten KI-Tools — entwickelt mit Nuxt & PostgreSQL.",
+    "product": "Produkt",
+    "home": "Start",
+    "allTools": "Alle Tools",
+    "submit": "Tool einreichen",
+    "categories": "Kategorien",
+    "company": "Unternehmen",
+    "admin": "Admin-Login",
+    "language": "Sprache",
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "language": {
+    "label": "Sprache"
+  }
+}

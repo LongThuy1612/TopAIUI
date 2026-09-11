@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Volver al Panel",
+    "backToHome": "Volver al Inicio",
+    "dashboard": "Panel de Control",
+    "websiteInsights": "Análisis de Sitios",
+    "socialListening": "Escucha Social",
+    "researchReport": "Reporte de Investigación",
+    "myAis": "Mis IA",
+    "favorites": "Favoritos",
+    "profileSettings": "Ajustes de Perfil",
+    "advertise": "Publicar Anuncio",
+    "postsLinks": "Posts y Enlaces",
+    "paymentInvoice": "Pagos y Facturas",
+    "overview": "Resumen",
+    "myInquiries": "Mis consultas"
+  },
+  "logout": "Cerrar Sesión",
+  "logoutConfirmTitle": "Cerrar sesión",
+  "logoutConfirmDescription": "¿Estás seguro de que quieres cerrar sesión?",
+  "upgrade": "Mejorar Plan",
+  "sections": {
+    "research": "INVESTIGACIÓN",
+    "management": "GESTIÓN",
+    "business": "NEGOCIOS",
+    "admin": "ADMINISTRADOR",
+    "guestPost": "Publicaciones de invitados",
+    "updateAi": "Actualizar IA",
+    "myGpts": "Mis GPT"
+  },
+  "help": "Ayuda",
+  "close": "Cerrar",
+  "status": {
+    "active": "Activo"
+  },
+  "advertiseAi": "Anunciar IA",
+  "myAis": {
+    "title": "Mis IA",
+    "subtitle": "Administre y realice un seguimiento del rendimiento de las herramientas de IA enviadas.",
+    "empty": {
+      "cta": "Enviar herramienta de IA"
+    }
+  }
+}

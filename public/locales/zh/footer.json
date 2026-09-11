@@ -1,0 +1,92 @@
+{
+  "about": "关于我们",
+  "contact": "接触",
+  "blog": "博客",
+  "privacy": "隐私政策",
+  "terms": "服务条款",
+  "cookies": "Cookie 政策",
+  "copyright": "© {year} TopAICollection。版权所有。",
+  "sitemap": "网站地图",
+  "resources": "资源",
+  "help": "帮助中心",
+  "faq": "常问问题",
+  "submitTool": "提交工具",
+  "description": "TopAICollection 是发现最佳人工智能工具和网站的终极目录。",
+  "browseByAlphabet": "按字母浏览",
+  "topAITools": {
+    "title": "顶级人工智能工具",
+    "items": {
+      "gpt4": "“GPT-4”",
+      "midjourney": "中途",
+      "chatgpt": "聊天GPT ChatGPT",
+      "stableDiffusion": "稳定扩散",
+      "jasper": "碧玉"
+    }
+  },
+  "moreTools": {
+    "title": "更多工具",
+    "items": {
+      "audio": "音频人工智能",
+      "video": "视频人工智能",
+      "writing": "编写人工智能",
+      "image": "图像人工智能",
+      "coding": "人工智能编码"
+    }
+  },
+  "recommend": {
+    "title": "推荐",
+    "items": {
+      "newest": "最新工具",
+      "mostSaved": "最得救",
+      "trending": "现在流行",
+      "editorsChoice": "编辑的选择",
+      "featured": "精选",
+      "leaderboard": "排行榜"
+    }
+  },
+  "readMore": {
+    "title": "阅读更多",
+    "items": {
+      "blog": "博客",
+      "news": "人工智能新闻",
+      "guides": "指南",
+      "tutorials": "教程",
+      "glossary": "人工智能术语表"
+    }
+  },
+  "company": {
+    "title": "关于",
+    "items": {
+      "aboutUs": "关于我们",
+      "contact": "业务联系",
+      "editorialGuidelines": "编辑指南",
+      "reviewMethodology": "评审方法",
+      "submit": "提交",
+      "advertise": "广告"
+    }
+  },
+  "chooseLanguage": "选择语言",
+  "followUs": "跟着我们",
+  "more": "更多的...",
+  "directory": {
+    "title": "AI工具目录存档"
+  },
+  "companyInfo": {
+    "name": "“TopAICollection Inc.”",
+    "address": "“硅谷科技区”",
+    "city": "“旧金山，加利福尼亚州 94107”",
+    "country": "“美国”",
+    "phone": "“+1 (555) 123-4567”",
+    "email": "“contact@topaicollection.com”"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "视频生成器",
+      "imageGenerators": "图像生成器",
+      "writers": "写作助手",
+      "seoTools": "Seo 工具",
+      "websiteBuilders": "网站构建器",
+      "chatbots": "聊天机器人"
+    }
+  }
+}

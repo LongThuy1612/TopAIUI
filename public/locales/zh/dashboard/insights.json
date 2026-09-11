@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "网站洞察",
+    "subtitle": "跟踪竞争对手的流量和关键词。",
+    "track": "跟踪",
+    "noDomains": "尚未跟踪任何域。在上方添加一个！",
+    "domain": "域名",
+    "monthlyVisits": "月度访问量",
+    "rank": "排名",
+    "topKeywords": "热门关键词",
+    "added": "已添加",
+    "tool": "工具",
+    "organicClicks": "自然点击",
+    "paidClicks": "付费点击",
+    "totalClicks": "总点击次数",
+    "addedOn": "已添加",
+    "noTools": "尚未跟踪任何工具。",
+    "addDomainDesc": "在上面添加您的第一个域以开始跟踪见解。",
+    "deleteSuccess": "域已从跟踪中删除",
+    "confirmDelete": "您确定要停止跟踪该域吗？",
+    "aiTool": "人工智能工具",
+    "rankChange": "排名变化",
+    "globalRank": "全球排名",
+    "traffic": "交通",
+    "audience": "观众",
+    "updateDate": "更新日期",
+    "quota": "配额",
+    "limitReachedDesc": "您已达到每月见解限制。升级以跟踪更多域。",
+    "limitReachedTitle": "你已经达到了你的极限",
+    "limitReachedBody": "您已达到免费搜索的限制。升级以获得无限制的访问权限。",
+    "upgradePro": "升级到专业计划",
+    "upgradeNow": "立即升级",
+    "usage": "用法",
+    "searchPlaceholder": "搜索跟踪的域...",
+    "advancedFilter": "高级过滤器",
+    "bulkOpen": "批量打开",
+    "export": "导出数据",
+    "actions": "行动",
+    "viewSocial": "查看社交",
+    "filters": {
+      "months": {
+        "feb2026": "“2026 年 2 月”",
+        "jan2026": "“2026 年 1 月”"
+      },
+      "sources": {
+        "search": "“搜索”",
+        "direct": "“直接”",
+        "social": "“社交”"
+      },
+      "regions": {
+        "us": "“我们”",
+        "vn": "“Vn”"
+      },
+      "categories": {
+        "llm": "“嗯”",
+        "image": "“图像”",
+        "productivity": "“生产力”"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "“10万”",
+        "1m": "“1米”"
+      },
+      "timePeriod": "《时间段》",
+      "selectMonth": "“选择月份”",
+      "trafficSource": "「流量来源」",
+      "allSources": "“所有来源”",
+      "region": "「地区」",
+      "category": "「类别」",
+      "trafficThreshold": "《流量门槛》",
+      "minVisits": "“最少访问次数”"
+    },
+    "exportSuccess": "导出成功。",
+    "exportFailed": "导出失败。",
+    "exportData": "“导出数据”",
+    "exportDesc": "将此报告导出以便分享或在本地进行分析。",
+    "exportLimit": "“出口限制”",
+    "rows": "“行”",
+    "creditsCost": "“学分成本”",
+    "availableAfter": "“之后可用”",
+    "confirmExport": "“确认导出”",
+    "notEnoughCredits": "“积分不够”",
+    "removeFailed": "移除失败。",
+    "direct": "“直接”",
+    "sortDefault": "默认",
+    "sortTraffic": "流量"
+  },
+  "common": {
+    "global": "“全球”",
+    "allCategories": "“所有类别”"
+  },
+  "table": {
+    "column": {
+      "tool": "“工具”",
+      "organic": "“有机点击”",
+      "paid": "“付费点击”",
+      "total": "“总点击次数”",
+      "trend": "“趋势”",
+      "growth": "增长"
+    },
+    "searchPlaceholder": "“搜索跟踪的域...”",
+    "showingResults": "“显示{count}结果”",
+    "empty": "“尚未跟踪任何域。”"
+  }
+}

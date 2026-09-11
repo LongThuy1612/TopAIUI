@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Opgeslagen tools - TopAICollection",
+    "description": "Bekijk en beheer uw opgeslagen AI-tools en websites"
+  },
+  "title": "Opgeslagen hulpmiddelen",
+  "description": "Bekijk en beheer uw opgeslagen AI-tools en websites.",
+  "emptyState": {
+    "title": "Nog geen opgeslagen tools",
+    "description": "Begin met verkennen en bewaar uw favoriete AI-tools zodat u ze later gemakkelijk kunt openen.",
+    "action": "Blader door AI-tools"
+  },
+  "stats": {
+    "lastUpdated": "Laatst bijgewerkt op {date}"
+  },
+  "filters": {
+    "all": "Alle",
+    "popular": "Meest populair",
+    "category": "Per categorie"
+  },
+  "errors": {
+    "loadFailed": "Kan favorieten niet laden"
+  },
+  "noDescription": "Geen beschrijving beschikbaar",
+  "retry": "Opnieuw proberen",
+  "actions": {
+    "addedToFavorites": "Toegevoegd aan favorieten",
+    "removeFromFavorites": "Verwijderen uit favorieten",
+    "removedFromFavorites": "Verwijderd uit favorieten"
+  }
+}

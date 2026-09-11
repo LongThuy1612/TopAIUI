@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Paiements & Factures",
+    "description": "Gérez vos crédits et consultez l'historique de vos commandes.",
+    "adCredits": "Crédits Pub",
+    "postCredits": "Crédits Article",
+    "linkCredits": "Crédits Lien",
+    "forSponsoredListings": "Pour les listes sponsorisées",
+    "forGuestArticles": "Pour les articles invités",
+    "forLinkInsertions": "Pour les insertions de liens",
+    "buyCredits": "Acheter des Crédits",
+    "noOrders": "Aucune commande trouvée.",
+    "orderHistory": "Historique des Commandes",
+    "orderId": "ID Commande",
+    "amount": "Montant",
+    "status": "Statut",
+    "date": "Rendez-vous",
+    "type": "Taper",
+    "invoice": "Facture",
+    "download": "Télécharger",
+    "currentPlan": "Plan Actuel",
+    "freeTier": "Niveau Gratuit",
+    "freeTierDesc": "Améliorez votre plan pour débloquer plus de fonctionnalités et d'analyses.",
+    "creditBalances": "Soldes de Crédits",
+    "subscriptionDetails": "Détails de l'Abonnement",
+    "upgradePlan": "Améliorer le Plan",
+    "credits": "Crédits",
+    "managePortal": "Gérer le Portail de Facturation",
+    "subscribe": "S'abonner Maintenant",
+    "statusActive": "Actif",
+    "planMemberSince": "Membre de ce régime",
+    "renewalDate": "Renouvelle le",
+    "changePlan": "Changer de forfait",
+    "redirecting": "Redirection...",
+    "errorFetchingPortal": "Impossible d'ouvrir le portail de facturation"
+  },
+  "plans": {
+    "free": {
+      "name": "Gratuit"
+    },
+    "professional": {
+      "name": "Professionnel"
+    },
+    "enterprise": {
+      "name": "Entreprise"
+    }
+  },
+  "transactions": {
+    "noDescription": "Vos transactions de crédit publicitaire apparaîtront ici."
+  }
+}

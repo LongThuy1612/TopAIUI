@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "付款与发票",
+    "description": "管理您的点数并查看订单历史记录。",
+    "adCredits": "广告点数",
+    "postCredits": "文章点数",
+    "linkCredits": "链接点数",
+    "forSponsoredListings": "用于推广列表",
+    "forGuestArticles": "用于客座文章",
+    "forLinkInsertions": "用于链接插入",
+    "buyCredits": "购买点数",
+    "noOrders": "未找到订单。",
+    "orderHistory": "订单历史记录",
+    "orderId": "订单 ID",
+    "amount": "金额",
+    "status": "状态",
+    "date": "日期",
+    "type": "类型",
+    "invoice": "发票",
+    "download": "下载",
+    "currentPlan": "当前计划",
+    "freeTier": "免费版",
+    "freeTierDesc": "升级您的计划以解锁更多功能和见解。",
+    "creditBalances": "点数余额",
+    "subscriptionDetails": "订阅详情",
+    "upgradePlan": "升级计划",
+    "credits": "点数",
+    "managePortal": "管理账单门户",
+    "subscribe": "立即订阅",
+    "statusActive": "积极的",
+    "planMemberSince": "本计划成员",
+    "renewalDate": "续订于",
+    "changePlan": "改变计划",
+    "redirecting": "正在重定向...",
+    "errorFetchingPortal": "无法打开计费门户"
+  },
+  "plans": {
+    "free": {
+      "name": "免费"
+    },
+    "professional": {
+      "name": "专业版"
+    },
+    "enterprise": {
+      "name": "企业版"
+    }
+  },
+  "transactions": {
+    "noDescription": "您的广告信用交易将显示在此处。"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} AI ツール |最適な {tagName} ソリューションを見つけてください",
+    "description": "厳選された最高の {tagName} AI ツールのコレクションをご覧ください。機能、価格、レビューを比較して、ニーズに最適な {tagName} ソフトウェアを見つけてください。"
+  },
+  "notFound": {
+    "metaTitle": "タグが見つかりません |TopAICollection",
+    "metaDescription": "タグが存在しません。他のAIツールをご覧ください。"
+  },
+  "breadcrumb": {
+    "home": "家",
+    "tools": "ツール"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} AI ツール",
+    "collectionDescription": "{tagName} AI ツールのディレクトリを参照してください。"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "title": "Cập nhật công cụ AI của bạn",
+  "description": "Giữ thông tin công cụ AI của bạn luôn cập nhật. Cập nhật mô tả, tính năng, giá cả hoặc bất kỳ chi tiết nào khác.",
+  "hero": {
+    "title": "Công cụ AI của bạn trên TopAICollection",
+    "subtitle": "TopAI giúp bạn tiếp cận hàng triệu người dùng AI và khách hàng tiềm năng trên toàn thế giới."
+  },
+  "form": {
+    "toolLabel": "Công cụ",
+    "toolHint": "Lưu ý: Nếu không tìm thấy công cụ, vui lòng gửi trước.",
+    "toolPlaceholder": "Tìm kiếm công cụ của bạn..."
+  },
+  "pricing": {
+    "title": "Giá cập nhật",
+    "price": "$49",
+    "period": "Một lần",
+    "description": "Chúng tôi sẽ cập nhật cho bạn trong vòng 24 giờ sau khi thanh toán."
+  },
+  "updates": {
+    "title": "Các loại cập nhật được hỗ trợ",
+    "types": [
+      {
+        "label": "Tên công cụ",
+        "description": "Cập nhật tên hiển thị của công cụ của bạn"
+      },
+      {
+        "label": "Sự miêu tả",
+        "description": "Sửa lại mô tả ngắn và dài của công cụ của bạn"
+      },
+      {
+        "label": "Loại",
+        "description": "Thay đổi hoặc thêm danh mục mới"
+      },
+      {
+        "label": "Danh sách tính năng",
+        "description": "Cập nhật các tính năng nổi bật của công cụ của bạn"
+      },
+      {
+        "label": "Trường hợp sử dụng",
+        "description": "Thêm hoặc cập nhật các ví dụ về trường hợp sử dụng"
+      },
+      {
+        "label": "Thông tin về giá",
+        "description": "Cập nhật gói giá và cấp độ"
+      },
+      {
+        "label": "Câu hỏi thường gặp",
+        "description": "Thêm hoặc sửa đổi các câu hỏi thường gặp"
+      },
+      {
+        "label": "URL & Liên kết",
+        "description": "Cập nhật trang web, bản demo hoặc liên kết xã hội"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Cần biết",
+    "items": [
+      "Cập nhật được xử lý trong vòng 24 giờ kể từ khi xác nhận thanh toán.",
+      "Bạn có thể cập nhật nhiều trường trong một yêu cầu.",
+      "Nhóm của chúng tôi sẽ xem xét và công bố những thay đổi của bạn.",
+      "Nếu bản cập nhật yêu cầu làm rõ, chúng tôi sẽ liên hệ qua email.",
+      "Cập nhật ảnh chụp màn hình/phương tiện có thể mất thêm 24 giờ."
+    ]
+  },
+  "faq": {
+    "title": "FAQ - Cập nhật AI",
+    "items": [
+      {
+        "question": "Một bản cập nhật mất bao lâu?",
+        "answer": "Thông tin cập nhật thường được xử lý trong vòng 24 giờ kể từ khi thanh toán. Những thay đổi phức tạp có thể yêu cầu một khoảng thời gian xem xét bổ sung."
+      },
+      {
+        "question": "Tôi có thể cập nhật những gì?",
+        "answer": "Bạn có thể cập nhật tên, mô tả, danh mục, tính năng, trường hợp sử dụng, giá cả, Câu hỏi thường gặp và URL của công cụ."
+      },
+      {
+        "question": "Tôi có thể cập nhật nhiều thứ cùng một lúc không?",
+        "answer": "Đúng! Bạn có thể yêu cầu nhiều bản cập nhật trong một lần gửi. Tất cả các thay đổi được bao gồm trong khoản phí $49."
+      },
+      {
+        "question": "Nếu tôi cần chỉnh sửa sau khi cập nhật thì sao?",
+        "answer": "Những chỉnh sửa nhỏ liên quan đến yêu cầu cập nhật ban đầu của bạn sẽ được xử lý miễn phí trong vòng 7 ngày."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Tại sao cập nhật công cụ của bạn?",
+    "reasons": [
+      "Giữ thông tin chính xác và cập nhật",
+      "Cải thiện thứ hạng tìm kiếm và khả năng hiển thị",
+      "Cập nhật giá cả và thay đổi tính năng",
+      "Thêm ảnh chụp màn hình hoặc bản demo mới",
+      "Sửa mọi thông tin lỗi thời",
+      "Nâng cao mô tả công cụ của bạn"
+    ]
+  },
+  "meta": {
+    "title": "Cập nhật công cụ AI của bạn - TopAICollection",
+    "description": "Luôn cập nhật thông tin về công cụ AI của bạn. Cập nhật mô tả, tính năng, giá cả hoặc bất kỳ chi tiết nào khác để đảm bảo độ chính xác."
+  },
+  "team": "Nhóm TopAICollection",
+  "validation": {
+    "required": "Trường này là bắt buộc",
+    "selectTool": "Vui lòng chọn công cụ để cập nhật",
+    "detailsTooShort": "Chi tiết thay đổi phải có ít nhất 10 ký tự",
+    "toolNameRequired": "Tên công cụ là bắt buộc",
+    "url": "URL không hợp lệ",
+    "descriptionMin": "Mô tả phải có ít nhất 10 ký tự",
+    "categoryRequired": "Vui lòng chọn danh mục",
+    "email": "Email không hợp lệ",
+    "messageMin": "Tin nhắn phải có ít nhất 10 ký tự"
+  },
+  "sidebar": {
+    "updatedCount": "công cụ được cập nhật",
+    "updatedCountSub": "tháng này"
+  }
+}

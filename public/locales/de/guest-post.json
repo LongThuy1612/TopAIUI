@@ -1,0 +1,46 @@
+{
+  "title": "Gastbeitrag und Linkeinfügung",
+  "description": "Teilen Sie Ihr Fachwissen mit unserer Community durch Gastbeiträge oder fordern Sie strategische Linkeinfügungen in bestehende Inhalte an.",
+  "details": "Details zu Gastbeiträgen",
+  "postTitle": "Beitragstitel",
+  "postTitlePlaceholder": "Titel Ihres Gastbeitrags",
+  "postContent": "Veröffentlichen Sie Inhalte oder Details",
+  "postContentPlaceholder": "Beschreiben Sie den Inhalt Ihres Gastbeitrags oder die Details zum Einfügen von Links",
+  "features": {
+    "guestPosts": {
+      "title": "Gastbeiträge",
+      "description": "Teilen Sie Ihr Wissen und Ihre Erkenntnisse über KI mit unserer Community. Bauen Sie Autorität auf und steigern Sie den Traffic auf Ihrer Website."
+    },
+    "linkInsertion": {
+      "title": "Linkeinfügung",
+      "description": "Fordern Sie eine strategische Platzierung Ihrer Links in vorhandenen, relevanten Inhalten für maximalen SEO-Wert an."
+    },
+    "seoBacklinks": {
+      "title": "SEO-Backlinks",
+      "description": "Steigern Sie Ihr SEO-Ranking mit hochwertigen Backlinks von unserer maßgeblichen Domain."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Inhaltsrichtlinien",
+    "description": "Alle Gastbeiträge müssen originell, hochwertig und für KI relevant sein. Wir akzeptieren keine KI-generierten Inhalte ohne menschliche Bearbeitung."
+  },
+  "meta": {
+    "title": "Gastbeiträge und Linkeinfügungen | Top-KI-Sammlung",
+    "description": "Teilen Sie Ihr Fachwissen mit unserer KI-Community durch Gastbeiträge oder fordern Sie strategische Linkeinfügungen in bestehende Inhalte an."
+  },
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "titleTooShort": "Der Titel muss mindestens 5 Zeichen lang sein",
+    "contentTooShort": "Der Inhalt muss mindestens 20 Zeichen lang sein",
+    "toolNameRequired": "Werkzeugname ist erforderlich",
+    "url": "Ungültige URL",
+    "descriptionMin": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
+    "categoryRequired": "Bitte wählen Sie eine Kategorie aus",
+    "email": "Ungültige E-Mail-Adresse",
+    "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+  },
+  "sidebar": {
+    "articleCount": "Über1.000 Artikel",
+    "articleCountSub": "Von unserer Community veröffentlicht"
+  }
+}

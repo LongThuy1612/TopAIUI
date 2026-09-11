@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Alle KI-Tools – TopAICollection",
+    "description": "Durchsuchen Sie unsere komplette Sammlung von KI-Tools. Filtern Sie nach Kategorie, Beliebtheit oder finden Sie die neuesten KI-Innovationen.",
+    "archiveMonthTitle": "KI-Tools – {label} | TopAICollection",
+    "archiveMonthDescription": "Durchsuchen Sie die in {label} hinzugefügten KI-Tools.",
+    "archiveYearTitle": "KI-Tools – {year} | TopAICollection",
+    "archiveYearDescription": "Durchsuchen Sie die im {year} hinzugefügten KI-Tools.",
+    "categoryTitle": "{category} KI-Tools | TopAICollection",
+    "categoryDescription": "Entdecken Sie die besten {category} KI-Tools.",
+    "freeTitle": "Kostenlose KI-Tools | {title}",
+    "freeDescription": "Entdecken Sie die besten kostenlosen KI-Tools online. {description}",
+    "newestTitle": "Neueste KI-Tools | {title}",
+    "newestDescription": "Schauen Sie sich die neuesten KI-Tools an, die unserer Sammlung hinzugefügt wurden."
+  },
+  "title": "Entdecken Sie alle KI-Tools",
+  "subtitle": "Entdecken Sie die perfekte KI-Lösung aus unserer umfassenden Kollektion",
+  "filters": {
+    "all": "Alle Werkzeuge",
+    "today": "Heute",
+    "featured": "Hervorgehoben",
+    "new": "Gerade gestartet",
+    "mostSaved": "Am meisten gespeichert",
+    "mostUsed": "Am häufigsten verwendet",
+    "trending": "Im Trend",
+    "justLaunched": "Gerade gestartet",
+    "title": "Filter",
+    "category": "Kategorie",
+    "allCategories": "Alle Kategorien",
+    "type": "Typ",
+    "popular": "Beliebt",
+    "newest": "Neueste",
+    "name": "Benennung",
+    "price": "Preis",
+    "free": "Frei",
+    "paid": "Bezahlt",
+    "sortBy": "Sortieren nach"
+  },
+  "sort": {
+    "label": "Sortieren nach",
+    "popular": "Am beliebtesten",
+    "trending": "Im Trend",
+    "newest": "Das Neueste zuerst",
+    "rating": "Höchste Bewertung",
+    "name": "Alphabetisch"
+  },
+  "categories": {
+    "title": "Kategorien",
+    "all": "Alle Kategorien",
+    "showMore": "Mehr anzeigen →",
+    "toolCount": "{count} Werkzeuge"
+  },
+  "results": {
+    "showing": "Zeigt {start}–{end} von {total} Tools an",
+    "error": "Fehler beim Laden der Tools. Bitte versuchen Sie es erneut.",
+    "noResults": "Keine Ergebnisse gefunden",
+    "tryDifferent": "Bitte versuchen Sie andere Suchbegriffe oder Filter."
+  },
+  "pagination": {
+    "next": "Nächste",
+    "page": "Seite {page}"
+  },
+  "sidebar": {
+    "trending": "Jetzt im Trend",
+    "noTools": "Keine Trendtools",
+    "advertise": "Werben Sie hier",
+    "advertiseDesc": "Erreichen Sie monatlich mehr als 5 Millionen KI-Enthusiasten und steigern Sie Ihre Besuche",
+    "emailPlaceholder": "E-Mail-Adresse"
+  },
+  "hero": {
+    "title": "Entdecken Sie die neuesten KI-Tools",
+    "subtitle": "27.955 AIs und 459 Kategorien",
+    "searchPlaceholder": "KI-Tools durchsuchen...",
+    "search": "Suchen"
+  },
+  "breadcrumb": {
+    "home": "Heim",
+    "tools": "Werkzeuge"
+  },
+  "jsonLd": {
+    "name": "AI Tools-Verzeichnis",
+    "description": "Durchsuchen Sie unser komplettes Verzeichnis an KI-Tools."
+  },
+  "badges": {
+    "featured": "Vorgestellt",
+    "new": "Neu",
+    "trending": "Im Trend",
+    "popular": "Beliebt",
+    "sponsored": "Gesponsert"
+  },
+  "share": "Aktie",
+  "visits": "Besuche",
+  "monthlyVisits": "Geschätzte monatliche Besuche",
+  "visit": "Besuchen",
+  "actions": {
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "visit": "Besuchen",
+    "share": "Aktie",
+    "copyLink": "Link kopieren",
+    "shareThisTool": "Teilen Sie dieses Tool"
+  },
+  "growth": "Wachstum",
+  "pricing": {
+    "free": "Frei"
+  }
+}

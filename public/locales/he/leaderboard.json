@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "לידרבורד יומי",
+      "title_long": "Leaderboard של כלי בינה מלאכותית"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "לידרבורד חודשי",
+      "title_long": "Leaderboard של כלי AI חודשי"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "לוח הישגים שנתי",
+      "title_long": "Leaderboard של כלי בינה מלאכותית"
+    }
+  }
+}

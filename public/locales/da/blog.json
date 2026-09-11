@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "AI-blog og nyheder - TopAIC-samling",
+    "description": "Hold dig opdateret med de seneste AI-nyheder, tutorials, anmeldelser og indsigt fra kunstig intelligensens verden."
+  },
+  "badge": "AI-indsigt",
+  "title": "AI blog og nyheder",
+  "subtitle": "Hold dig orienteret med de seneste trends, tutorials og indsigt fra AI-verdenen",
+  "search": {
+    "placeholder": "Søg i artikler..."
+  },
+  "categories": {
+    "title": "Kategorier",
+    "all": "Alle artikler",
+    "news": "AI nyheder",
+    "tutorials": "Selvstudier",
+    "reviews": "Værktøjsanmeldelser",
+    "industry": "Brancheindsigt",
+    "guides": "Sådan gør du vejledninger"
+  },
+  "newsletter": {
+    "title": "Hold dig opdateret",
+    "subtitle": "Få de seneste AI-nyheder leveret til din indbakke",
+    "placeholder": "Indtast din e-mail",
+    "button": "Abonner"
+  },
+  "article": {
+    "readTime": "{minutes} min læst",
+    "published": "Udgivet den {date}",
+    "writtenBy": "Skrevet & redigeret af:",
+    "factCheckedBy": "Faktatjekket af:"
+  },
+  "pagination": {
+    "next": "Næste",
+    "page": "Side {page} af {total}"
+  },
+  "relatedTools": "Relaterede værktøjer",
+  "backToBlog": "Tilbage til bloggen",
+  "errors": {
+    "notFound": "Indlægget blev ikke fundet"
+  },
+  "sort": {
+    "latest": "Seneste",
+    "oldest": "Ældste",
+    "popular": "Populære"
+  },
+  "filter": {
+    "allAuthors": "Alle forfattere",
+    "sortBy": "Sorter efter"
+  },
+  "relatedPosts": "Relaterede indlæg",
+  "faqs": "Ofte stillede spørgsmål"
+}

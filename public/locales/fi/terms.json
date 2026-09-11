@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Palveluehdot - TopAICollection",
+    "description": "Lue TopAICollectionin palveluiden ja verkkosivuston käyttöehdot."
+  },
+  "title": "Palveluehdot",
+  "lastUpdated": "Viimeksi päivitetty",
+  "introduction": "Nämä käyttöehdot säätelevät TopAICollection-verkkosivuston ja -palvelujen käyttöä. Kun käytät palveluamme tai käytät sitä, sitoudut noudattamaan näitä ehtoja.",
+  "sections": {
+    "acceptance": {
+      "title": "Ehtojen hyväksyminen",
+      "content": "Käyttämällä tätä verkkosivustoa hyväksyt ja sitoudut noudattamaan tämän sopimuksen ehtoja ja määräyksiä."
+    },
+    "use": {
+      "title": "Palvelun käyttö",
+      "content": [
+        "Sinun tulee olla vähintään 13-vuotias voidaksesi käyttää palveluamme",
+        "Olet vastuussa tilisi luottamuksellisuuden säilyttämisestä",
+        "Sitoudut olemaan käyttämättä palvelua laittomiin tai luvattomiin tarkoituksiin",
+        "Et saa lähettää matoja, viruksia tai haitallista koodia"
+      ]
+    },
+    "content": {
+      "title": "Käyttäjän sisältö",
+      "content": [
+        "Säilytät lähettämäsi sisällön omistusoikeuden",
+        "Myönnät meille luvan käyttää, muokata ja näyttää sisältöäsi",
+        "Olet vastuussa julkaisemastasi sisällöstä",
+        "Pidätämme oikeuden poistaa sisältöä, joka rikkoo näitä ehtoja"
+      ]
+    },
+    "intellectual": {
+      "title": "Immateriaaliomaisuus",
+      "content": "Palvelu ja sen alkuperäinen sisältö, ominaisuudet ja toiminnot ovat ja tulevat olemaan TopAICollectionin ja sen lisenssinantajien yksinomaista omaisuutta."
+    },
+    "privacy": {
+      "title": "Yksityisyys",
+      "content": "Palvelumme käyttöäsi säätelee myös tietosuojakäytäntömme. Tutustu tietosuojakäytäntöömme, joka myös säätelee sivustoa ja kertoo käyttäjille tiedonkeruukäytännöistämme."
+    },
+    "disclaimers": {
+      "title": "Vastuuvapauslausekkeet",
+      "content": [
+        "Palvelu tarjotaan \"sellaisenaan\" ja \"kun saatavilla\" -periaatteella",
+        "Emme takaa, että palvelu on keskeytyksetöntä tai virheetöntä",
+        "Emme ole vastuussa hakemistossamme luetelluista kolmannen osapuolen työkaluista",
+        "AI-työkalujen käyttö on omalla vastuullasi"
+      ]
+    },
+    "liability": {
+      "title": "Vastuun rajoitus",
+      "content": "TopAICollection tai sen johtajat, työntekijät, kumppanit, edustajat, tavarantoimittajat tai tytäryhtiöt eivät ole missään tapauksessa vastuussa mistään epäsuorista, satunnaisista, erityisistä, välillisistä tai rankaisevista vahingoista."
+    },
+    "governing": {
+      "title": "Sovellettava laki",
+      "content": "Näitä ehtoja säännellään ja niitä tulkitaan sen lainkäyttöalueen lakien mukaisesti, jolla TopAICollection toimii, ottamatta huomioon sen lainvalintasäännöksiä."
+    }
+  },
+  "contact": {
+    "title": "Yhteystiedot",
+    "content": "Jos sinulla on kysyttävää näistä käyttöehdoista, ota meihin yhteyttä osoitteessa:"
+  }
+}

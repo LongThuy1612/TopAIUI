@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Thanh toán & Hóa đơn",
+    "description": "Quản lý credit và xem lịch sử đơn hàng.",
+    "adCredits": "Credit Quảng cáo",
+    "postCredits": "Credit Bài viết",
+    "linkCredits": "Credit Liên kết",
+    "forSponsoredListings": "Cho danh sách được tài trợ",
+    "forGuestArticles": "Cho bài viết khách",
+    "forLinkInsertions": "Cho chèn liên kết",
+    "buyCredits": "Mua Credit",
+    "noOrders": "Không tìm thấy đơn hàng.",
+    "orderHistory": "Lịch sử đơn hàng",
+    "orderId": "Mã đơn hàng",
+    "amount": "Số tiền",
+    "status": "Trạng thái",
+    "date": "Ngày",
+    "type": "Loại",
+    "invoice": "Hóa đơn",
+    "download": "Tải xuống",
+    "currentPlan": "Gói hiện tại",
+    "freeTier": "Gói miễn phí",
+    "freeTierDesc": "Nâng cấp gói để mở khóa nhiều tính năng và thông tin hơn.",
+    "creditBalances": "Số dư Credit",
+    "subscriptionDetails": "Chi tiết gói",
+    "upgradePlan": "Nâng cấp gói",
+    "statusActive": "Hoạt động",
+    "planMemberSince": "Đã tham gia gói này",
+    "renewalDate": "Gia hạn vào",
+    "changePlan": "Đổi gói",
+    "redirecting": "Đang chuyển hướng...",
+    "errorFetchingPortal": "Không thể mở cổng thông tin thanh toán",
+    "credits": "Tín dụng",
+    "managePortal": "Quản lý cổng thanh toán",
+    "subscribe": "Đăng ký ngay"
+  },
+  "plans": {
+    "free": {
+      "name": "Miễn phí"
+    },
+    "professional": {
+      "name": "Chuyên nghiệp"
+    },
+    "enterprise": {
+      "name": "Doanh nghiệp"
+    }
+  },
+  "transactions": {
+    "noDescription": "Lịch sử giao dịch credit quảng cáo của bạn sẽ xuất hiện tại đây."
+  }
+}

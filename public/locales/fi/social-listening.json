@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Sosiaalinen Kuuntelu - Seuraa tekoälytrendejä | TopAICollection",
+    "description": "Seuraa tekoälytrendejä sosiaalisessa mediassa.",
+    "detailTitle": "{name} Sosiaalinen Kuuntelu — TopAI",
+    "detailDescription": "Sosiaalisen kuuntelun analytiikka kohteelle {name}.",
+    "notFoundTitle": "Työkalua ei löydy – sosiaalinen kuuntelu"
+  },
+  "title": "Sosiaalinen Kuuntelu",
+  "subtitle": "Seuraa tekoälytyökalujen videosuoritusta. Twitter",
+  "leaderboardTitle": "Tulostaulu",
+  "leaderboardSubtitle": "Välitön seuranta. Twitter",
+  "table": {
+    "aiTool": "Tekoälytyökalu",
+    "introduce": "Esittely",
+    "videoCount": "Videot",
+    "creatorsCount": "Tekijät",
+    "monthlyTraffic": "Kuukausiliikenne",
+    "avgViews": "KA-katselut",
+    "avgInteractions": "KA-vuorovaikutus",
+    "totalViews": "Katselut yht.",
+    "totalInteractions": "Inter. yht.",
+    "emptyState": "Ei tietoja",
+    "pageIndicator": "Sivu {page} / {lastPage}",
+    "updatedAt": "Päivityspäivämäärä",
+    "totalEngagement": "Totaalinen sitoutuminen"
+  },
+  "search": {
+    "placeholder": "Syötä työkalun nimi tai verkkotunnus"
+  },
+  "detail": {
+    "viewTool": "Näytä työkalun tiedot",
+    "tabs": {
+      "socialListening": "Sosiaalinen Kuuntelu"
+    },
+    "stats": {
+      "monthlyVisits": "Kuukausikäynnit",
+      "growth": "Kasvu",
+      "growthRate": "Kasvunopeus",
+      "socialVideos": "Sosiaalisen median videot",
+      "newLastWeek": "Uudet tällä viikolla"
+    },
+    "metrics": {
+      "avgViews": "KA-katselut",
+      "totalVideos": "Videot yhteensä",
+      "totalCreators": "Tekijät yhteensä",
+      "totalViews": "Katselut / KA",
+      "totalLikes": "Tykkäykset / KA",
+      "totalComments": "Kommentit / KA",
+      "totalShares": "Jaot yhteensä",
+      "totalCollects": "Tallennukset yhteensä",
+      "totalQuotes": "Lainaukset yhteensä",
+      "totalReposts": "Uudelleenjulkaisut yhteensä"
+    },
+    "platforms": {
+      "all": "Kaikki"
+    },
+    "feed": {
+      "unlockCta": "Avaa nähdäksesi lisää",
+      "unlockDesc": "Kirjaudu sisään nähdäksesi täydet videoanalyysit",
+      "viewNow": "Katso nyt →",
+      "sortBy": "Lajittele",
+      "sortViews": "Katselut",
+      "sortLikes": "Tykkäykset",
+      "sortDate": "Päivämäärä",
+      "loadMore": "Lataa lisää",
+      "searchPlaceholder": "Hae otsikolla tai tekijällä...",
+      "emptyState": "Julkaisuja ei löydy. Vain videojulkaisut näytetään.",
+      "untitledPost": "Nimetön julkaisu",
+      "metrics": {
+        "views": "Näyttökerrat",
+        "likes": "Tykkäykset",
+        "retweets": "Uudelleentwiittaukset",
+        "shares": "Jaot",
+        "replies": "Vastaukset",
+        "comments": "Kommentit",
+        "quotes": "Lainaukset",
+        "saves": "Tallennetut",
+        "collects": "Kokoelmat",
+        "upvotes": "Äänet",
+        "follows": "Seuraa"
+      },
+      "sortComments": "Kommentit",
+      "sortShares": "Osakkeet",
+      "title": "Sosiaalinen syöte"
+    },
+    "traffic": {
+      "bounceRate": "Poistumisprosentti",
+      "pagesPerVisit": "Sivua / Käynti",
+      "avgVisitDuration": "Keskim. vierailun kesto",
+      "globalRanking": "Globaali sijoitus",
+      "category": "Kategoria",
+      "categoryRanking": "Kategoriasijoitus",
+      "deviceSplit": "Pöytäkone vs. Mobiili",
+      "desktop": "Pöytäkone",
+      "mobile": "Mobiili",
+      "trafficSources": "Liikenteen lähteet",
+      "topRegions": "Tärkeimmät maat",
+      "processingMsg": "Liikennetiedot käsittelyssä. Tarkista myöhemmin.",
+      "monthlyTrafficTrend": "Kuukauden liikennetrendi",
+      "monthlyTrafficTrendDesc": "Maailmanlaajuiset historialliset vierailut viimeisten 30 päivän aikana",
+      "sourceWebsiteInsight": "Lähde: Website Insight Global"
+    },
+    "pricing": {
+      "notDocumented": "Hinnoittelusuunnitelmia ei ole vielä dokumentoitu.",
+      "checkWebsite": "Tarkista virallinen verkkosivusto",
+      "visitWebsite": "Vieraile verkkosivustolla",
+      "month": "kuukausi"
+    },
+    "lastUpdated": "Viimeksi päivitetty",
+    "influencers": {
+      "title": "Huippuvaikuttajat",
+      "name": "Luoja",
+      "platform": "Alusta",
+      "videos": "Videot",
+      "reach": "Arvioitu Tavoita"
+    },
+    "filterInteraction": "Suodattimen vuorovaikutus"
+  },
+  "platforms": {
+    "all": "Kaikki alustat"
+  },
+  "monitors": {
+    "title": "Sinun näytöt",
+    "subtitle": "Seuraa tiettyjä avainsanoja sosiaalisilla alustoilla",
+    "inputPlaceholder": "Anna avainsana (esim. ChatGPT, Midjourney)",
+    "addButton": "Aloita seuranta",
+    "emptyTitle": "Ei aktiivisia näyttöjä",
+    "emptyDesc": "Lisää avainsana yläpuolelle, jotta voit seurata sosiaalisia mainitsemisia ja tunteita.",
+    "keyword": "avainsana",
+    "platform": "Alusta",
+    "status": "Tila",
+    "lastActive": "Viimeksi aktiivinen",
+    "addSuccess": "Monitori lisätty onnistuneesti!",
+    "addError": "Näytön lisääminen epäonnistui",
+    "statusTracking": "Seuranta"
+  },
+  "socialListeningTitle": "Sosiaalisen kuuntelun tulostaulu",
+  "pagination": {
+    "prev": "Ed",
+    "next": "Seuraavaksi",
+    "page": "Sivu"
+  },
+  "nav": {
+    "overview": "Yleiskatsaus",
+    "social": "Sosiaalinen",
+    "traffic": "Liikenne",
+    "pricing": "hinnoittelu"
+  },
+  "locked": {
+    "quotaTitle": "Ominaisuus lukittu",
+    "quotaDesc": "Olet saavuttanut sosiaalisen kuuntelun kiintiösi. Päivitä avataksesi lisää näkemyksiä.",
+    "upgradeBtn": "Päivitä nyt",
+    "overlayTitle": "Premium-ominaisuus",
+    "overlayDesc": "Tämä ominaisuus vaatii aktiivisen premium-tilauksen.",
+    "unlockBtn": "Avaa Premium"
+  }
+}

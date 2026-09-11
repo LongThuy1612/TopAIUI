@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Tietosuojakäytäntö - TopAICollection",
+    "description": "Opi kuinka TopAICollection kerää, käyttää ja suojaa henkilökohtaisia ​​tietojasi."
+  },
+  "title": "Tietosuojakäytäntö",
+  "lastUpdated": "Viimeksi päivitetty",
+  "introduction": "TopAICollectionissa otamme yksityisyytesi vakavasti. Tämä tietosuojakäytäntö selittää, kuinka keräämme, käytämme, paljastamme ja suojaamme tietojasi, kun vierailet verkkosivustollamme.",
+  "sections": {
+    "collection": {
+      "title": "Keräämämme tiedot",
+      "content": [
+        "Antamasi henkilötiedot (nimi, sähköpostiosoite jne.)",
+        "Käyttötiedot (vieraillut sivut, käytetty aika, napsautukset)",
+        "Laitteen tiedot (selaimen tyyppi, IP-osoite)",
+        "Evästeet ja vastaavat seurantatekniikat"
+      ]
+    },
+    "usage": {
+      "title": "Kuinka käytämme tietojasi",
+      "content": [
+        "Palvelumme tarjoamiseksi ja ylläpitämiseksi",
+        "Ilmoittaaksemme sinulle palvelumme muutoksista",
+        "Asiakastuen tarjoaminen",
+        "Analyysin tai arvokkaan tiedon kerääminen palvelumme parantamiseksi",
+        "Valvoaksemme palvelumme käyttöä",
+        "Teknisten ongelmien havaitsemiseksi, ehkäisemiseksi ja ratkaisemiseksi"
+      ]
+    },
+    "cookies": {
+      "title": "Evästeet ja seuranta",
+      "content": [
+        "Käytämme evästeitä seurataksemme toimintaa ja säilyttääksemme tiettyjä tietoja",
+        "Evästeet auttavat meitä ymmärtämään käyttäjien mieltymyksiä ja parantamaan käyttökokemusta",
+        "Voit ohjeistaa selaimesi kieltäytymään kaikista evästeistä",
+        "Jos et hyväksy evästeitä, jotkin palvelumme osat eivät välttämättä ole käytettävissä"
+      ]
+    },
+    "security": {
+      "title": "Tietoturva",
+      "content": [
+        "Käytämme kaupallisesti hyväksyttäviä keinoja henkilötietojesi suojaamiseen",
+        "Mikään Internetin kautta tapahtuva tiedonsiirtotapa ei ole 100 % turvallinen",
+        "Emme voi taata täydellistä tietojesi turvallisuutta",
+        "Tarkistamme säännöllisesti tietoturvakäytäntömme ja päivitämme niitä tarvittaessa"
+      ]
+    },
+    "sharing": {
+      "title": "Tietojen jakaminen",
+      "content": [
+        "Emme myy, vaihda tai vuokraa henkilötietojasi",
+        "Saatamme jakaa tietoja luotettujen kumppaneiden kanssa, jotka auttavat meitä",
+        "Saatamme luovuttaa tietoja, jos laki niin vaatii",
+        "Sulautumisen tai yrityskaupan yhteydessä tietosi voidaan siirtää"
+      ]
+    },
+    "rights": {
+      "title": "Sinun oikeutesi",
+      "content": [
+        "Pääsy henkilötietoihisi",
+        "Korjaa virheelliset tiedot",
+        "Pyydä tietojesi poistamista",
+        "Vastusta tietojesi käsittelyä",
+        "Pyydä tietojen siirrettävyyttä",
+        "Peruuta suostumus milloin tahansa"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "content": "Jos sinulla on kysyttävää tästä tietosuojakäytännöstä, ota meihin yhteyttä osoitteessa:"
+  }
+}

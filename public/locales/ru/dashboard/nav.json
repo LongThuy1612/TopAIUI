@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Вернуться в панель",
+    "backToHome": "Вернуться на главную",
+    "dashboard": "Панель управления",
+    "websiteInsights": "Аналитика сайта",
+    "socialListening": "Социальный мониторинг",
+    "researchReport": "Отчет об исследовании",
+    "myAis": "Мои ИИ",
+    "favorites": "Избранное",
+    "profileSettings": "Настройки профиля",
+    "advertise": "Реклама",
+    "postsLinks": "Посты и ссылки",
+    "paymentInvoice": "Оплата и счета",
+    "overview": "Обзор",
+    "myInquiries": "Мои запросы"
+  },
+  "logout": "Выйти",
+  "logoutConfirmTitle": "Выйти",
+  "logoutConfirmDescription": "Вы уверены, что хотите выйти из своей учетной записи?",
+  "upgrade": "Улучшить тариф",
+  "sections": {
+    "research": "ИССЛЕДОВАНИЯ",
+    "management": "УПРАВЛЕНИЕ",
+    "business": "БИЗНЕС",
+    "admin": "АДМИН",
+    "guestPost": "Гостевые посты",
+    "updateAi": "Обновить ИИ",
+    "myGpts": "Мои теги GPT"
+  },
+  "help": "Помощь",
+  "close": "Закрыть",
+  "status": {
+    "active": "Активно"
+  },
+  "advertiseAi": "Рекламируйте ИИ",
+  "myAis": {
+    "title": "Мои ИИ",
+    "subtitle": "Управляйте и отслеживайте производительность отправленных вами инструментов искусственного интеллекта.",
+    "empty": {
+      "cta": "Отправить инструмент искусственного интеллекта"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Indsend din GPT - Få din GPT fremhævet | TopAI TopAICollectionCollection",
+    "description": "Indsend din tilpassede GPT for at blive vist i vores GPT-indeks. Nå ud til tusindvis af AI-entusiaster."
+  },
+  "title": "Indsend din GPT",
+  "subtitle": "Få din tilpassede GPT vist i vores bibliotek",
+  "loginRequired": "Login påkrævet",
+  "submitButton": "Indsend GPT",
+  "whySubmit": {
+    "title": "Hvorfor indsende din GPT?"
+  },
+  "benefits": {
+    "audience": "Nå ud til tusindvis af AI-entusiaster dagligt",
+    "instant": "Øjeblikkelig notering ved verifikation",
+    "global": "Global eksponering på tværs af alle sprog",
+    "analytics": "Spor klik og engagement"
+  },
+  "proTip": {
+    "title": "Pro tip",
+    "desc": "Sørg for, at din GPT er offentlig og tilgængelig via link, før du indsender."
+  },
+  "form": {
+    "gptName": "GPT navn",
+    "gptNamePlaceholder": "f.eks. Kode Wizard",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "Ikon URL",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Beskrivelse / instruktioner",
+    "gptDescriptionPlaceholder": "Beskriv, hvad din GPT gør...",
+    "gptUrl": "ChatGPT-URL"
+  },
+  "validation": {
+    "required": "Dette felt er påkrævet",
+    "invalidUrl": "Ugyldig ChatGPT-URL",
+    "nameTooShort": "Navnet skal være på mindst 2 tegn",
+    "descriptionTooShort": "Beskrivelsen skal være på mindst 10 tegn",
+    "toolNameRequired": "Værktøjsnavn er påkrævet",
+    "url": "Ugyldig URL",
+    "descriptionMin": "Beskrivelsen skal være på mindst 10 tegn",
+    "categoryRequired": "Vælg venligst en kategori",
+    "email": "Ugyldig e-mailadresse",
+    "messageMin": "Beskeden skal være på mindst 10 tegn"
+  },
+  "sidebar": {
+    "gptCount": "GPT'er indsendt",
+    "gptCountSub": "og vokser"
+  },
+  "success": "Din GPT er blevet indsendt med succes!"
+}

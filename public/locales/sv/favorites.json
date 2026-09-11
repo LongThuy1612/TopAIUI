@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Sparade verktyg - TopAICollection",
+    "description": "Visa och hantera dina sparade AI-verktyg och webbplatser"
+  },
+  "title": "Sparade verktyg",
+  "description": "Visa och hantera dina sparade AI-verktyg och webbplatser.",
+  "emptyState": {
+    "title": "Inga sparade verktyg ännu",
+    "description": "Börja utforska och spara dina favorit AI-verktyg för enkel åtkomst senare.",
+    "action": "Bläddra bland AI-verktyg"
+  },
+  "stats": {
+    "lastUpdated": "Senast uppdaterad {date}"
+  },
+  "filters": {
+    "all": "Alla",
+    "popular": "Mest populära",
+    "category": "Efter kategori"
+  },
+  "errors": {
+    "loadFailed": "Det gick inte att läsa in favoriter"
+  },
+  "noDescription": "Ingen beskrivning tillgänglig",
+  "retry": "Försöka igen",
+  "actions": {
+    "addedToFavorites": "Läggs till i favoriter",
+    "removeFromFavorites": "Ta bort från favoriter",
+    "removedFromFavorites": "Borttagen från favoriter"
+  }
+}

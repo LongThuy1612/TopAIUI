@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "Tabela de classificação diária",
+      "title_long": "Tabela de classificação diária de ferramentas de IA"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "Tabela de classificação mensal",
+      "title_long": "Tabela de classificação mensal de ferramentas de IA"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "Tabela de classificação anual",
+      "title_long": "Tabela anual de ferramentas de IA"
+    }
+  }
+}

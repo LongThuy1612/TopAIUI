@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- Revisão e análise de ferramentas de IA"
+  },
+  "errors": {
+    "notFound": "Ferramenta não encontrada",
+    "notFoundDescription": "A ferramenta que você procura não existe.",
+    "serverError": "Erro interno do servidor.",
+    "serverErrorDescription": "Ocorreu um erro inesperado no servidor. Por favor, tente novamente mais tarde."
+  },
+  "actions": {
+    "visit": "Visite o site",
+    "save": "Salvar",
+    "saved": "Salvo",
+    "share": "Compartilhar",
+    "update": "Atualizar esta ferramenta",
+    "advertise": "Anuncie esta ferramenta",
+    "visitWebsite": "Visite o site",
+    "readMore": "Leia mais",
+    "readLess": "Leia menos",
+    "openVideo": "Abrir vídeo"
+  },
+  "cta": {
+    "visit": "Abrir site",
+    "advertise": "Anuncie esta ferramenta",
+    "update": "Atualizar esta ferramenta"
+  },
+  "sidebar": {
+    "category": "Categoria",
+    "tags": "Etiquetas"
+  },
+  "tabs": {
+    "socialListening": "Escuta Social",
+    "alternatives": "Alternativas"
+  },
+  "similar": {
+    "title": "Ferramentas de IA semelhantes"
+  },
+  "stats": {
+    "monthlyVisits": "Visitas Mensais",
+    "growth": "Crescimento",
+    "reviews": "comentários",
+    "averageTime": "Tempo médio no local",
+    "pagesPerVisit": "Páginas por visita",
+    "bounceRate": "Taxa de rejeição",
+    "visits": "Visitas",
+    "reviews_formatted": "{rating} ({count} avaliações)"
+  },
+  "sections": {
+    "overview": "Visão geral",
+    "reviews": "Avaliações",
+    "analytics": "Análise",
+    "embed": "Incorporar",
+    "alternatives": "Alternativas",
+    "related": "Ferramentas relacionadas"
+  },
+  "details": {
+    "description": "Introdução à ferramenta:",
+    "monthlyTraffic": "Tráfego Mensal:",
+    "socialMedia": "Mídia social e e-mail:",
+    "company": "Empresa",
+    "categories": "Categorias",
+    "tags": "Etiquetas"
+  },
+  "content": {
+    "whatIs": "O que é",
+    "howToUse": "Como usar",
+    "coreFeatures": "Recursos principais",
+    "useCases": "Casos de uso",
+    "pricingPlans": "Planos de preços",
+    "faqs": "Perguntas frequentes",
+    "relatedTools": "Ferramentas relacionadas",
+    "productInfo": "Informações do produto",
+    "writtenBy": "Escrito e editado por",
+    "factCheckedBy": "Verificado por"
+  },
+  "analytics": {
+    "title": "Análise e informações de tráfego",
+    "subtitle": "Análise de",
+    "latestTraffic": "Tráfego mais recente do site",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Fontes de tráfego do site",
+    "topKeywords": "Principais palavras-chave",
+    "keyword": "Palavra-chave",
+    "traffic": "Tráfego",
+    "trafficSubtitle": "para melhorar o tráfego da web",
+    "geoSubtitle": "indicadores de mecanismo de pesquisa",
+    "sourceSubtitle": "indicadores de mecanismo de pesquisa",
+    "keywordSubtitle": "indicadores de mecanismo de pesquisa",
+    "percentage": "Percentagem",
+    "source": "Fonte",
+    "noChartData": "Nenhum dado do gráfico",
+    "noTrafficChartData": "Nenhum dado do gráfico de tráfego",
+    "desktopVsMobile": "Desktop vs Móvel",
+    "desktop": "Área de trabalho",
+    "mobileWeb": "Web Móvel",
+    "similarSites": "Sites semelhantes",
+    "globalRank": "Classificação global",
+    "founded": "Fundado",
+    "socialInfluence": "Influência nas mídias sociais",
+    "views": "visualizações",
+    "mentions": "menciona",
+    "trendHistory": "Histórico de tendências",
+    "trendSubtitle": "Tendências de tráfego, visualizações e upvotes ao longo do tempo",
+    "upvotes": "Avaliar"
+  },
+  "embed": {
+    "title": "Incorpore em seu site",
+    "description": "Adicione esta ferramenta ao seu site com um lindo widget incorporado",
+    "preview": "Visualização",
+    "code": "Código incorporado",
+    "copy": "Copiar código",
+    "copied": "Copiado!",
+    "badgeAlt": "Selo TopAICollection",
+    "themes": {
+      "light": "Claro",
+      "neutral": "Neutro",
+      "dark": "Escuro"
+    }
+  },
+  "alternatives": {
+    "title": "Alternativas",
+    "description": "Ferramentas semelhantes que você pode gostar"
+  },
+  "pricing": {
+    "title": "Planos de preços",
+    "subtitle": "Escolha o plano que funciona melhor para você",
+    "popular": "Populares",
+    "getStarted": "Comece",
+    "disclaimer": "Os preços e recursos podem variar. Visite o site oficial para obter as informações mais atualizadas.",
+    "noPricingInfo": "Nenhuma informação de preço disponível",
+    "free": "Grátis",
+    "moreFeatures": "Mais recursos"
+  },
+  "charts": {
+    "trafficChart": "Gráfico de tráfego",
+    "comingSoon": "Visualização de gráfico em breve"
+  },
+  "reviews": {
+    "title": "Avaliações",
+    "pointsScale": "de 5",
+    "subtitle": "Veja o que a comunidade pensa",
+    "writeTitle": "Você recomenda esta ferramenta?",
+    "placeholder": "Compartilhe sua experiência com esta ferramenta...",
+    "privacy": "Privacidade protegida",
+    "success": "Comentário enviado com sucesso!",
+    "submit": "Pós-revisão",
+    "loginToReview": "Faça login para enviar uma avaliação",
+    "loginLink": "Entrar",
+    "noReviews": "Sem avaliações ainda. Seja o primeiro a avaliar esta ferramenta!",
+    "viewMore": "Ver todas as avaliações",
+    "allReviewsTitle": "Todas as avaliações de",
+    "reviewsPageTitle": "Avaliações",
+    "by": "por",
+    "verified": "Verificado",
+    "anonymous": "Usuário anônimo",
+    "ratingLabel": "Classificação",
+    "commentLabel": "Comentário",
+    "dateLabel": "Data",
+    "page": "Página",
+    "editReview": "Editar avaliação",
+    "deleteReview": "Excluir avaliação",
+    "deleteConfirm": "Tem certeza de que deseja excluir sua avaliação?",
+    "editTitle": "Editar sua avaliação",
+    "updateSuccess": "Avaliação atualizada com sucesso!",
+    "deleteSuccess": "Avaliação excluída com sucesso!",
+    "commentRequired": "Por favor, adicione um comentário à sua avaliação.",
+    "ratingRequired": "Por favor, selecione uma classificação.",
+    "alreadyReviewed": "Você já avaliou esta ferramenta. Use o botão ✏️ editar na sua avaliação para atualizá-la.",
+    "sort": {
+      "label": "Ordenar por",
+      "newest": "O mais novo primeiro",
+      "oldest": "Mais antigo primeiro",
+      "highest": "Classificação mais alta",
+      "lowest": "Classificação mais baixa"
+    },
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "userLabel": "Utilizador",
+    "unverify": "Não verificado",
+    "markVerified": "Marcar como Verificado",
+    "confirm": "Confirme",
+    "noReviewsFound": "Nenhuma avaliação encontrada para esta ferramenta.",
+    "deleteError": "Falha ao excluir.",
+    "updateError": "Falha ao atualizar.",
+    "pagination": {
+      "showing": "Exibindo",
+      "of": "de",
+      "reviews": "avaliações",
+      "prev": "Anterior",
+      "next": "Próximo"
+    },
+    "actionsLabel": "Ações",
+    "statusLabel": "Status"
+  },
+  "share": {
+    "title": "Compartilhe esta ferramenta"
+  },
+  "metrics": {
+    "monthlyVisits": "Visitas Mensais",
+    "growth": "Crescimento"
+  },
+  "tags": "Etiquetas",
+  "overview": "Visão geral",
+  "howToUse": "Como usar",
+  "pricingPlans": "Planos de preços",
+  "faqs": "Perguntas frequentes",
+  "geoChart": {
+    "noData": "Não há dados geográficos disponíveis",
+    "loading": "Carregando dados geográficos..."
+  },
+  "introduction": "Introdução",
+  "description": "Descrição",
+  "coreFeatures": "Recursos principais",
+  "useCases": "Casos de uso",
+  "screenshots": "Capturas de tela",
+  "companyInfo": {
+    "companyName": "nome da empresa",
+    "contactEmail": "E-mail de contato"
+  },
+  "nav": {
+    "scrollLeft": "Role para a esquerda",
+    "scrollRight": "Role para a direita",
+    "previous": "Anterior",
+    "next": "Próximo",
+    "imageSlide": "Imagem {index}",
+    "videoSlide": "Vídeo slide"
+  },
+  "badges": {
+    "verifiedListing": "Listagem verificada",
+    "freePlan": "Plano Gratuito",
+    "paidPlans": "Planos Pagos e Preços"
+  },
+  "dummyReviews": {
+    "c1": "Esta é uma ferramenta de AI incrível! Mudou completamente o meu fluxo de trabalho.",
+    "c2": "Funcionalidades muito boas e fácil de usar. Altamente recomendado.",
+    "c3": "Já experimentei muitas alternativas, mas esta é de longe a melhor.",
+    "c4": "Excelente valor pelo preço. O plano gratuito também é muito generoso.",
+    "c5": "Ótima UI e design intuitivo. Às vezes um pouco lento, mas no geral fantástico.",
+    "c6": "Uma ferramenta indispensável para qualquer profissional. Economiza horas todas as semanas.",
+    "c7": "Boa funcionalidade, mas requer alguma curva de aprendizado."
+  }
+}

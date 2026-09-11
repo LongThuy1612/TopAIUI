@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Hilfecenter – TopAICollection-Support",
+    "description": "Holen Sie sich Hilfe zu TopAICollection. Finden Sie Antworten auf häufig gestellte Fragen und kontaktieren Sie unser Support-Team."
+  },
+  "title": "Hilfecenter",
+  "subtitle": "Wie können wir Ihnen heute helfen?",
+  "sections": {
+    "faq": {
+      "title": "„FAQ“",
+      "description": "Finden Sie Antworten auf häufig gestellte Fragen.",
+      "link": "FAQ anzeigen"
+    },
+    "contact": {
+      "title": "Kontaktieren Sie den Support",
+      "description": "Sie können nicht finden, was Sie brauchen? Kontaktieren Sie uns.",
+      "link": "Kontaktieren Sie uns"
+    }
+  },
+  "commonTopics": {
+    "title": "Häufige Themen",
+    "submitTool": "Wie reiche ich mein KI-Tool ein?",
+    "advertising": "Wie funktioniert Werbung?",
+    "privacy": "Wie lauten Ihre Datenschutzbestimmungen?",
+    "terms": "Wie lauten Ihre Nutzungsbedingungen?"
+  }
+}

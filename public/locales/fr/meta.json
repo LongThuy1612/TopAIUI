@@ -1,0 +1,20 @@
+{
+  "compare": {
+    "title": "Comparez les modèles d'IA"
+  },
+  "submissionSuccess": {
+    "title": "Soumission réussie - TopAICollection",
+    "description": "Votre soumission a été reçue avec succès"
+  },
+  "business": {
+    "title": "Pour les entreprises"
+  },
+  "submitGpt": {
+    "title": "Soumettre un GPT personnalisé"
+  },
+  "layout": {
+    "defaultTitle": "Annuaire d'outils d'IA : 1000+ outils d'IA gratuits et vérifiés",
+    "description": "Explorez la liste de l'annuaire des outils d'IA n°1. Ce site de dictionnaire d'outils d'IA vous aide à trouver, comparer et lancer les tout meilleurs logiciels d'IA GRATUITEMENT.",
+    "keywords": "Outils d'IA, intelligence artificielle, annuaire d'IA, meilleurs sites Web d'IA, meilleurs outils d'IA, marché de l'IA"
+  }
+}

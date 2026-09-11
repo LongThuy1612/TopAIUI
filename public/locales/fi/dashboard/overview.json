@@ -1,0 +1,225 @@
+{
+  "welcome": "Tervetuloa, {name}!",
+  "welcomeDescription": "Tutustu tehokkaisiin ominaisuuksiimme ja tietoihin löytääksesi AI-alan uusimmat trendit ja mahdollisuudet.",
+  "user": "Käyttäjä",
+  "performanceOverview": "Suorituskyvyn yleiskatsaus",
+  "websiteInsightsQuota": "Verkkosivun näkymien kiintiö",
+  "socialListeningQueries": "Sosiaalisen kuuntelun kiintiö",
+  "stats": {
+    "organicClicks": "Orgaaniset klikkaukset",
+    "paidClicks": "Maksetut klikkaukset",
+    "totalClicks": "Klikkaukset yhteensä",
+    "totalTools": "Työkalut yhteensä",
+    "totalViews": "Näyttökerrat yhteensä",
+    "credits": "Krediitit"
+  },
+  "features": {
+    "websiteInsights": "Verkkosivuston näkemykset",
+    "socialListening": "Sosiaalinen kuuntelu",
+    "prioritySupport": "Ensisijainen tuki",
+    "advertising": "Mainonta",
+    "premiumSupport": "Premium-tuki"
+  },
+  "badgePopular": "Suosituin",
+  "title": "Sosiaalisen kuuntelun seuranta",
+  "description": "Tarkkaile avainsanoja TikTokissa ja YouTubessa.",
+  "adCredits": "Mainosten hyvitykset",
+  "postCredits": "Lähetä krediittejä",
+  "linkCredits": "Linkkipisteet",
+  "forSponsoredListings": "Sponsoroiduille listauksille",
+  "forGuestArticles": "Vieraileville artikkeleille",
+  "forLinkInsertions": "Linkkien lisäystä varten",
+  "buyCredits": "Osta krediittejä",
+  "noOrders": "Tilauksia ei löytynyt.",
+  "orderHistory": "Tilaushistoria",
+  "orderId": "Tilaustunnus",
+  "amount": "Määrä",
+  "date": "Päivämäärä",
+  "type": "Tyyppi",
+  "invoice": "Laskuttaa",
+  "download": "Lataa",
+  "currentPlan": "Nykyinen suunnitelma",
+  "freeTier": "Ilmainen taso",
+  "freeTierDesc": "Päivitä suunnitelmasi saadaksesi lisää ominaisuuksia ja oivalluksia.",
+  "creditBalances": "Luottosaldot",
+  "subscriptionDetails": "Tilauksen tiedot",
+  "upgradePlan": "Päivityssuunnitelma",
+  "statusActive": "Aktiivinen",
+  "planMemberSince": "Tämän suunnitelman jäsen",
+  "renewalDate": "Uusitaan päälle",
+  "changePlan": "Muuta suunnitelmaa",
+  "redirecting": "Uudelleenohjataan...",
+  "credits": "Krediitit",
+  "managePortal": "Hallinnoi laskutusportaalia",
+  "subscribe": "Tilaa nyt",
+  "upgradeTitle": "Päivitä tutkimussuunnitelmasi",
+  "upgradeDesc": "Hyödynnä edistynyt analytiikka, kilpailijoiden oivalluksia ja paljon muuta.",
+  "choosePlan": {
+    "title": "Valitse tutkimussuunnitelmasi",
+    "subtitle": "Hanki tekoälyn markkinatietoa ja dataa päätösten tekemiseen."
+  },
+  "billingIntervals": {
+    "monthly": "Kuukausittain",
+    "yearly": "Vuosittain"
+  },
+  "subtitle": "Hallitse ja seuraa lähettämiesi tekoälytyökalujen suorituskykyä.",
+  "create": "Luo kampanja",
+  "noCampaigns": "Ei vielä kampanjoita",
+  "createFirst": "Luo ensimmäinen kampanjasi aloittaaksesi tekoälytyökalujesi mainostamisen",
+  "getStarted": "Aloita",
+  "budget": "Budjetti",
+  "spent": "Käytetty",
+  "startDate": "Aloituspäivämäärä",
+  "endDate": "Päättymispäivämäärä",
+  "notSet": "Ei asetettu",
+  "ongoing": "Meneillään",
+  "pause": "Tauko",
+  "resume": "Jatkaa",
+  "viewDetails": "Näytä tiedot",
+  "clicks": "Napsautukset",
+  "impressions": "Impressiot",
+  "rejectionReason": "Hylkäämisen syy",
+  "analytics": {
+    "title": "Kampanjan analyysi",
+    "description": "Yksityiskohtainen erittely näyttökerroista ja napsautuksista viimeisen 30 päivän ajalta.",
+    "exportJson": "Vie JSON",
+    "dailyPerformance": "Päivittäinen suorituskyky",
+    "topLocales": "Suosituimmat alueet (paikat)"
+  },
+  "track": "Seurata",
+  "noDomains": "Verkkotunnuksia ei ole vielä seurattu. Lisää yksi yläpuolelle!",
+  "domain": "Verkkotunnus",
+  "monthlyVisits": "Kuukausittaiset vierailut",
+  "rank": "Sijoitus",
+  "topKeywords": "Suosituimmat avainsanat",
+  "added": "Lisätty",
+  "tool": "Työkalu",
+  "organicClicks": "Orgaaniset napsautukset",
+  "paidClicks": "Maksulliset napsautukset",
+  "totalClicks": "Napsautukset yhteensä",
+  "addedOn": "Lisätty",
+  "noTools": "Työkaluja ei ole vielä jäljitetty.",
+  "empty": {
+    "title": "Ei vielä tekoälytyökaluja",
+    "description": "Lähetä tekoälytyökalusi, jotta miljoonat käyttäjät löytävät sinut.",
+    "cta": "Lähetä AI-työkalu"
+  },
+  "columns": {
+    "tool": "Työkalu",
+    "status": "Tila",
+    "organic": "Orgaaninen liikenne",
+    "paid": "Maksullinen liikenne",
+    "impressions": "Impressiot",
+    "actions": "Toiminnot"
+  },
+  "statusTooltip": {
+    "pending": "Odottaa järjestelmänvalvojan hyväksyntää"
+  },
+  "submittedToast": "Työkalusi on lähetetty ja odottaa tarkistusta.",
+  "warnings": {
+    "pendingView": "Tämä työkalu on edelleen tarkistettavana, eikä se ole vielä näkyvissä julkisesti.",
+    "confirmDelete": "Haluatko varmasti poistaa tämän tekoälytyökalun? Tätä toimintoa ei voi kumota."
+  },
+  "gpt": {
+    "title": "Minun GPT:ni",
+    "submitNew": "Lähetä uusi GPT",
+    "noGpts": "GPT:itä ei löytynyt. Lähetä ensimmäinen!",
+    "noGptsDesc": "GPT:tä ei ole vielä lähetetty. Lähetä GPT, jotta sinut löydetään.",
+    "columns": {
+      "name": "GPT nimi",
+      "url": "ChatGPT URL-osoite",
+      "date": "Lähetetty"
+    }
+  },
+  "updateAi": "Päivitä AI",
+  "submitNew": "Lähetä Uusi",
+  "submitNewItem": "Lähetä uusi kohde",
+  "linkInsert": {
+    "label": "Linkin lisäys",
+    "submit": "Lähetä linkin lisäys",
+    "empty": {
+      "title": "Ei vielä linkkejä",
+      "description": "Et ole vielä lähettänyt yhtään linkin lisäystä."
+    }
+  },
+  "form": {
+    "type": "Tyyppi",
+    "targetUrl": "Kohde-URL-osoite",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Otsikko / ankkuriteksti",
+    "anchorTextPlaceholder": "Artikkelin otsikko TAI Ankkuriteksti linkille",
+    "submitCredits": "Lähetä (1 saldo)"
+  },
+  "tabs": {
+    "profile": "Profiili",
+    "security": "Turvallisuus",
+    "notifications": "Ilmoitukset"
+  },
+  "table": {
+    "platform": "Alusta",
+    "keyword": "avainsana",
+    "videos": "Videot",
+    "views": "Näkymät",
+    "creators": "Tekijät",
+    "status": "Tila"
+  },
+  "updated": "Asetukset päivitetty onnistuneesti",
+  "password": {
+    "title": "Vaihda salasana",
+    "current": "Nykyinen salasana",
+    "new": "Uusi salasana",
+    "confirm": "Vahvista uusi salasana",
+    "update": "Päivitä salasana"
+  },
+  "notifications": {
+    "title": "Ilmoitusasetukset",
+    "email": "Sähköposti-ilmoitukset",
+    "marketing": "Markkinointisähköpostit"
+  },
+  "metrics": {
+    "monthlyQueries": "Kuukausittaiset kyselyt",
+    "videosToday": "Videoita tänään",
+    "creatorsToday": "Tekijät tänään"
+  },
+  "advertiseAi": "Mainosta tekoälyä",
+  "myAis": {
+    "title": "Minun tekoälyni",
+    "subtitle": "Hallitse ja seuraa lähettämiesi tekoälytyökalujen suorituskykyä.",
+    "empty": {
+      "cta": "Lähetä AI-työkalu"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Hylkäämisen syy"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Seuraa avainsanojen sijoitusta ja tehokkuutta",
+    "socialListeningDesc": "Seuraa sosiaalisia mainintoja ja trendejä",
+    "researchReportDesc": "Luo kattavia markkinaraportteja",
+    "aiAdvertisingLibrary": "Tekoälymainoskirjasto",
+    "aiAdvertisingDesc": "Analysoi kilpailijoiden tekoälymainoksia",
+    "comingSoon": "Tulossa pian"
+  },
+  "reports": {
+    "title": "Tutkimusraportit",
+    "description": "Pääset syvällisiin analyyttisiin raportteihin tekoälyteollisuudesta.",
+    "noReports": "Ei raportteja saatavilla",
+    "free": "Ilmainen",
+    "download": "Lataa",
+    "unlock": "Avaa raportti",
+    "noReportsDesc": "Valmistelemme parhaillaan uusia oivalluksia.",
+    "readNow": "Lukuraportti",
+    "readerTitle": "Tutkimusraportinlukija",
+    "unlockRequired": "Premium-sisältöä",
+    "unlockDesc": "Avaa tämä syväsukellusraportti saadaksesi täyden pääsyn eksklusiiviseen markkina-analyysiin, tapaustutkimuksiin ja käyttökelpoisiin oivalluksiin.",
+    "unlockNow": "Avaa nyt",
+    "related": "asiaan liittyvät kertomukset.",
+    "toc": "Tällä sivulla",
+    "backToList": "Takaisin kirjastoon",
+    "notFound": "Raporttia ei löydy",
+    "unlockSuccess": "Raportin lukitus avattiin onnistuneesti!",
+    "unlockError": "Raportin lukituksen avaaminen epäonnistui.",
+    "searchPlaceholder": "Etsi raportteja"
+  },
+  "toolPerformance": "Työkalun suorituskyky (reaaliaikainen)"
+}

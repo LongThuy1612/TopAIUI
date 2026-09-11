@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "ダッシュボードに戻る",
+    "backToHome": "ホームに戻る",
+    "dashboard": "ダッシュボード",
+    "websiteInsights": "ウェブサイト分析",
+    "socialListening": "ソーシャルリスニング",
+    "researchReport": "調査レポート",
+    "myAis": "マイAI",
+    "favorites": "お気に入り",
+    "profileSettings": "プロフィール設定",
+    "advertise": "広告掲載",
+    "postsLinks": "投稿とリンク",
+    "paymentInvoice": "支払いと請求書",
+    "overview": "概要",
+    "myInquiries": "私の問い合わせ"
+  },
+  "logout": "ログアウト",
+  "logoutConfirmTitle": "ログアウト",
+  "logoutConfirmDescription": "アカウントからログアウトしてもよろしいですか？",
+  "upgrade": "アップグレード",
+  "sections": {
+    "research": "調査",
+    "management": "管理",
+    "business": "ビジネス",
+    "admin": "管理",
+    "guestPost": "ゲストの投稿",
+    "updateAi": "AIをアップデートする",
+    "myGpts": "私の GPT"
+  },
+  "help": "ヘルプ",
+  "close": "閉じる",
+  "status": {
+    "active": "アクティブ"
+  },
+  "advertiseAi": "AIを宣伝する",
+  "myAis": {
+    "title": "私のAI",
+    "subtitle": "提出した AI ツールのパフォーマンスを管理および追跡します。",
+    "empty": {
+      "cta": "AI ツールを送信する"
+    }
+  }
+}

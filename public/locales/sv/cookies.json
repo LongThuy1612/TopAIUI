@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Cookiepolicy - TopAICollection",
+    "description": "Läs om hur TopAICollection använder cookies och liknande tekniker."
+  },
+  "title": "Cookiepolicy",
+  "lastUpdated": "Senast uppdaterad",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Vad är cookies",
+      "description": "Cookies är små textfiler som lagras på din dator eller mobila enhet när du besöker vår webbplats. De hjälper oss att ge dig en bättre upplevelse genom att komma ihåg dina preferenser och förstå hur du använder vår webbplats."
+    },
+    "howWeUse": {
+      "title": "Hur vi använder cookies",
+      "intro": "Vi använder cookies för följande ändamål:",
+      "essential": "Viktiga cookies: Krävs för att webbplatsen ska fungera korrekt, inklusive autentisering och säkerhet.",
+      "analytics": "Analytics-cookies: Hjälp oss att förstå hur besökare interagerar med vår webbplats.",
+      "preference": "Preferenscookies: Kom ihåg dina inställningar och preferenser, såsom språk och språk.",
+      "marketing": "Marknadsföringscookies: Används för att leverera relevanta annonser och spåra kampanjresultat."
+    },
+    "managing": {
+      "title": "Hantera cookies",
+      "intro": "De flesta webbläsare låter dig kontrollera cookies genom deras inställningar. Du kan välja att:",
+      "blockAll": "Blockera alla cookies",
+      "acceptAll": "Acceptera alla cookies",
+      "beNotified": "Bli meddelad när en cookie ställs in",
+      "deleteExisting": "Ta bort cookies som redan har ställts in",
+      "note": "Observera att blockering av vissa cookies kan påverka din upplevelse på vår webbplats."
+    },
+    "thirdParty": {
+      "title": "Tredjepartscookies",
+      "intro": "Vissa cookies på vår webbplats ställs in av tredjepartstjänster som vi använder, inklusive:",
+      "googleAnalytics": "Google Analytics (analys)",
+      "vercel": "Vercel (hosting och analys)"
+    },
+    "contact": {
+      "title": "Kontakta oss",
+      "message": "Om du har frågor om vår användning av cookies, vänligen",
+      "contactLink": "kontakta oss"
+    }
+  }
+}

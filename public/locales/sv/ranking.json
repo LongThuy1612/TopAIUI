@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Topprankning för AI-verktyg",
+    "description": "Upptäck de mest besökta AI-verktygen i världen baserat på verklig trafikdata.",
+    "subtitle": "Upptäck de mest besökta AI-verktygen i världen baserat på verklig trafikdata."
+  },
+  "trending": {
+    "title": "Trendiga AI-verktyg",
+    "description": "De snabbast växande AI-verktygen under den senaste månaden.",
+    "subtitle": "De snabbast växande AI-verktygen under den senaste månaden."
+  },
+  "category": "Kategori",
+  "noTools": "Inga verktyg hittades.",
+  "noToolsInCategory": "Inga verktyg hittades i denna kategori.",
+  "loading": "Belastning...",
+  "favorite": "Lägg till i favoriter",
+  "unfavorite": "Ta bort från favoriter",
+  "visitWebsite": "Besök webbplatsen",
+  "errors": {
+    "general": "Det gick inte att läsa in rankningsdata."
+  },
+  "topAI": "Topp AI",
+  "trendingAI": "Trendigt",
+  "period": "Perioden",
+  "last7Days": "Senaste 7 dagarna",
+  "lastMonth": "Förra månaden",
+  "last3Months": "Senaste 3 månaderna",
+  "lastYear": "Förra året",
+  "allCategories": "Alla kategorier",
+  "selectPeriod": "Välj Period",
+  "rank": "Rang",
+  "tool": "Verktyg",
+  "visits": "Besök",
+  "growth": "Tillväxt",
+  "actions": "Åtgärder",
+  "leaderboard": {
+    "header": {
+      "title": "AI-verktyg Topplista",
+      "description": "Upptäck de mest populära AI-verktygen av communityn.",
+      "dailyTitle": "Dagens bästa AI-verktyg",
+      "monthlyTitle": "Bästa AI-verktyg från {date}",
+      "yearlyTitle": "Bästa AI-verktyg från {date}",
+      "tabs": {
+        "daily": "Dagligen",
+        "monthly": "Månatlig",
+        "yearly": "Årlig"
+      },
+      "prevPeriod": "Tidigare period",
+      "nextPeriod": "Nästa period",
+      "pickDate": "Välj datum",
+      "pickMonth": "Välj månad"
+    },
+    "empty": {
+      "title": "Inga verktyg lanserade idag",
+      "description": "Det finns inga verktyg registrerade för detta specifika datum. Försök att navigera till en annan dag.",
+      "showMore": "Visa fler verktyg",
+      "loadingMore": "Läser in fler verktyg...",
+      "toolsListTitle": "Utvalda verktyg"
+    },
+    "card": {
+      "visitWebsite": "Besök webbplatsen",
+      "loginToUpvote": "Logga in för att rösta upp verktyg"
+    },
+    "page": {
+      "errorLoading": "Det gick inte att läsa in leaderboard-data."
+    },
+    "sidebar": {
+      "launchArchive": "Starta Arkiv",
+      "topCategories": "Toppkategorier"
+    }
+  },
+  "categoryAI": "Kategori",
+  "regionAI": "Län",
+  "region": "Län",
+  "allRegions": "Globalt",
+  "channelAI": "Kanal",
+  "channel": "Kanal",
+  "allChannels": "Alla källor",
+  "incomeAI": "Social/Inkomst",
+  "socialMetrics": "Socialt värde",
+  "channelVisits": "Källbesök",
+  "maxResultsHint": "Begränsa det maximala antalet resultat.",
+  "regions": {
+    "us": "USA",
+    "ca": "Kanada",
+    "gb": "Storbritannien",
+    "in": "Indien",
+    "ph": "Filippinerna",
+    "vn": "Vietnam"
+  },
+  "channels": {
+    "social": "Socialt",
+    "search": "Sök",
+    "direct": "Direkt",
+    "referrals": "Remisser"
+  },
+  "viewDetails": "Visa detaljer"
+}

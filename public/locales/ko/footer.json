@@ -1,0 +1,92 @@
+{
+  "about": "회사 소개",
+  "contact": "연락하다",
+  "blog": "블로그",
+  "privacy": "개인 정보 보호 정책",
+  "terms": "서비스 약관",
+  "cookies": "쿠키 정책",
+  "copyright": "© {year} TopAICollection. 모든 권리 보유.",
+  "sitemap": "사이트맵",
+  "resources": "자원",
+  "help": "도움말 센터",
+  "faq": "자주 묻는 질문(FAQ)",
+  "submitTool": "도구 제출",
+  "description": "TopAICollection은 최고의 AI 도구와 웹사이트를 발견할 수 있는 최고의 디렉토리입니다.",
+  "browseByAlphabet": "알파벳별로 찾아보기",
+  "topAITools": {
+    "title": "최고의 AI 도구",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "중간 여정",
+      "chatgpt": "채팅GPT ChatGPT",
+      "stableDiffusion": "안정적인 확산",
+      "jasper": "벽옥"
+    }
+  },
+  "moreTools": {
+    "title": "더 많은 도구",
+    "items": {
+      "audio": "오디오 AI",
+      "video": "비디오 AI",
+      "writing": "AI 작성",
+      "image": "이미지 AI",
+      "coding": "코딩 AI"
+    }
+  },
+  "recommend": {
+    "title": "추천하다",
+    "items": {
+      "newest": "최신 도구",
+      "mostSaved": "가장 많이 저장된",
+      "trending": "지금 인기 급상승",
+      "editorsChoice": "편집자의 선택",
+      "featured": "추천",
+      "leaderboard": "리더보드"
+    }
+  },
+  "readMore": {
+    "title": "더 읽어보세요",
+    "items": {
+      "blog": "블로그",
+      "news": "AI 뉴스",
+      "guides": "가이드",
+      "tutorials": "튜토리얼",
+      "glossary": "AI 용어집"
+    }
+  },
+  "company": {
+    "title": "에 대한",
+    "items": {
+      "aboutUs": "회사 소개",
+      "contact": "비즈니스 연락처",
+      "editorialGuidelines": "편집 가이드라인",
+      "reviewMethodology": "리뷰 방법론",
+      "submit": "제출",
+      "advertise": "광고하기"
+    }
+  },
+  "chooseLanguage": "언어 선택",
+  "followUs": "우리를 팔로우하세요",
+  "more": "더...",
+  "directory": {
+    "title": "AI 도구 디렉토리 아카이브"
+  },
+  "companyInfo": {
+    "name": "주식회사 탑에이아이컬렉션",
+    "address": "기술 지구, 실리콘 밸리",
+    "city": "샌프란시스코, CA 94107",
+    "country": "미국",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "비디오 생성기",
+      "imageGenerators": "이미지 생성기",
+      "writers": "작가",
+      "seoTools": "SEO 도구",
+      "websiteBuilders": "웹사이트 빌더",
+      "chatbots": "챗봇"
+    }
+  }
+}

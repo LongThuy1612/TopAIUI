@@ -1,0 +1,14 @@
+{
+  "title": "Kết quả tìm kiếm",
+  "resultsFor": "Kết quả cho \"{query}\"",
+  "filters": "Bộ lọc",
+  "typeFilters": "Loại",
+  "categories": "Danh mục",
+  "noResults": "Không tìm thấy công cụ nào",
+  "tryAgain": "Vui lòng thử từ khóa khác",
+  "placeholder": "Tìm kiếm công cụ AI...",
+  "button": "Tìm kiếm",
+  "loading": "Đang tìm kiếm...",
+  "clearFilters": "Xóa bộ lọc",
+  "categoryLabel": "Danh mục"
+}

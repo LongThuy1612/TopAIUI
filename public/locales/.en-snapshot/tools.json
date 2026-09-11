@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "All AI Tools - TopAICollection",
+    "description": "Browse our complete collection of AI tools. Filter by category, popularity, or find the newest AI innovations.",
+    "archiveMonthTitle": "AI Tools — {label} | TopAICollection",
+    "archiveMonthDescription": "Browse AI tools added in {label}.",
+    "archiveYearTitle": "AI Tools — {year} | TopAICollection",
+    "archiveYearDescription": "Browse AI tools added in {year}.",
+    "categoryTitle": "{category} AI Tools | TopAICollection",
+    "categoryDescription": "Explore the best {category} AI tools.",
+    "freeTitle": "Free AI Tools | {title}",
+    "freeDescription": "Discover the best free AI tools online. {description}",
+    "newestTitle": "Newest AI Tools | {title}",
+    "newestDescription": "Check out the latest AI tools added to our collection."
+  },
+  "title": "Explore All AI Tools",
+  "subtitle": "Discover the perfect AI solution from our comprehensive collection",
+  "filters": {
+    "all": "All Tools",
+    "today": "Today",
+    "featured": "Featured",
+    "new": "Latest AIs",
+    "mostSaved": "Most Saved",
+    "mostUsed": "Most Used",
+    "trending": "Trending",
+    "justLaunched": "Latest AIs",
+    "title": "Filters",
+    "category": "Category",
+    "allCategories": "All Categories",
+    "type": "Type",
+    "popular": "Popular",
+    "newest": "Newest",
+    "name": "Name",
+    "price": "Price",
+    "free": "Free",
+    "paid": "Paid",
+    "sortBy": "Sort By"
+  },
+  "sort": {
+    "label": "Sort by",
+    "popular": "Most Popular",
+    "trending": "Trending",
+    "newest": "Newest First",
+    "rating": "Highest Rated",
+    "name": "Alphabetical"
+  },
+  "categories": {
+    "title": "Categories",
+    "all": "All Categories",
+    "showMore": "Show More →",
+    "toolCount": "{count} tools"
+  },
+  "results": {
+    "showing": "Showing {start}-{end} of {total} tools",
+    "error": "Error loading tools. Please try again.",
+    "noResults": "No results found",
+    "tryDifferent": "Please try different keywords or filters."
+  },
+  "pagination": {
+    "next": "Next",
+    "page": "Page {page}"
+  },
+  "sidebar": {
+    "trending": "Trending Now",
+    "noTools": "No trending tools",
+    "advertise": "Advertise Here",
+    "advertiseDesc": "Reach 5M+ monthly AI enthusiasts and grow your visits",
+    "emailPlaceholder": "Email address"
+  },
+  "hero": {
+    "title": "Discover the Latest AI Tools",
+    "subtitle": "27,955 AIs and 459 categories",
+    "searchPlaceholder": "Search AI tools...",
+    "search": "Search"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools"
+  },
+  "jsonLd": {
+    "name": "AI Tools Directory",
+    "description": "Browse our complete directory of AI tools."
+  },
+  "badges": {
+    "featured": "Featured",
+    "new": "New",
+    "trending": "Trending",
+    "popular": "Popular",
+    "sponsored": "Sponsored"
+  },
+  "share": "Share",
+  "visits": "Visits",
+  "monthlyVisits": "Estimated Monthly Visits",
+  "visit": "Visit",
+  "actions": {
+    "save": "Save",
+    "saved": "Saved",
+    "visit": "Visit",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "shareThisTool": "Share this tool"
+  },
+  "growth": "Growth",
+  "pricing": {
+    "free": "Free"
+  }
+}

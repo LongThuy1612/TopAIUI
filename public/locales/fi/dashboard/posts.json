@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Julkaisut ja linkit",
+    "description": "Hallitse vierasjulkaisuja ja linkkien lisäyksiä.",
+    "submitNewItem": "Lähetä uusi kohde",
+    "submitNew": "Lähetä uusi",
+    "guestPost": "Vierasjulkaisu",
+    "linkInsert": "Linkin lisäys",
+    "type": "Tyyppi",
+    "targetUrl": "Kohde-URL",
+    "targetUrlPlaceholder": "https://sivustosi.fi/...",
+    "anchorText": "Otsikko / Ankkuriteksti",
+    "anchorTextPlaceholder": "Artikkelin otsikko TAI linkin ankkuriteksti",
+    "submitCredits": "Lähetä (1 krediitti)",
+    "tabs": {
+      "guestPosts": "Vierasjulkaisut",
+      "linkInserts": "Linkkien lisäykset"
+    },
+    "table": {
+      "title": "Otsikko",
+      "anchor": "Ankkuriteksti",
+      "url": "URL-osoite",
+      "status": "Tila",
+      "date": "Päivämäärä"
+    },
+    "empty": {
+      "noGuestTitle": "Ei vierasjulkaisuja",
+      "noGuestDesc": "Et ole vielä lähettänyt vierasjulkaisuja.",
+      "noGuestCta": "Lähetä vierasjulkaisu",
+      "noLinkTitle": "Ei linkkien lisäyksiä",
+      "noLinkDesc": "Et ole vielä lähettänyt linkkien lisäyksiä.",
+      "noLinkCta": "Lähetä linkin lisäys"
+    },
+    "subtitle": "Hallinnoi vierasviestejäsi ja linkkien lisäyksiä."
+  }
+}

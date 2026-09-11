@@ -1,0 +1,51 @@
+{
+  "plans": {
+    "free": {
+      "name": "Free"
+    },
+    "professional": {
+      "name": "Professional"
+    },
+    "enterprise": {
+      "name": "Enterprise"
+    }
+  },
+  "transactions": {
+    "noDescription": "Your ad credit transactions will appear here."
+  },
+  "billing": {
+    "freeTier": "Free Tier",
+    "freeTierDesc": "Upgrade your plan to unlock more features and insights.",
+    "currentPlan": "Current Plan",
+    "statusActive": "Active",
+    "planMemberSince": "Member of this plan",
+    "renewalDate": "Renews on",
+    "changePlan": "Change Plan",
+    "upgradePlan": "Upgrade Plan",
+    "creditBalances": "Credit Balances",
+    "adCredits": "Ad Credits",
+    "postCredits": "Post Credits",
+    "linkCredits": "Link Credits",
+    "buyCredits": "Buy Credits",
+    "subscribe": "Subscribe Now",
+    "errorFetchingPortal": "Error fetching billing portal",
+    "subscriptionDetails": "Subscription Details",
+    "orderHistory": "Order History",
+    "title": "Billing & Credits",
+    "description": "Manage your subscription, credits, and billing history.",
+    "redirecting": "Redirecting...",
+    "managePortal": "Manage Billing Portal",
+    "forSponsoredListings": "For sponsored tool listings",
+    "forGuestArticles": "For guest articles",
+    "forLinkInsertions": "For link insertions",
+    "noOrders": "No orders found.",
+    "orderId": "Order ID",
+    "date": "Date",
+    "type": "Type",
+    "amount": "Amount",
+    "invoice": "Invoice",
+    "download": "Download",
+    "status": "Status",
+    "credits": "Credits"
+  }
+}

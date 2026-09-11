@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Tekoälyblogit ja uutiset - TopAICollection",
+    "description": "Pysy ajan tasalla uusimmista tekoälyuutisista, opetusohjelmista, arvosteluista ja oivalluksista tekoälyn maailmasta."
+  },
+  "badge": "Blogi",
+  "title": "AI-blogi ja uutiset",
+  "subtitle": "Pysy ajan tasalla uusimmista trendeistä, opetusohjelmista ja oivalluksista tekoälymaailmasta",
+  "search": {
+    "placeholder": "Hae artikkeleita..."
+  },
+  "categories": {
+    "title": "Luokat",
+    "all": "Kaikki artikkelit",
+    "news": "AI-uutiset",
+    "tutorials": "Oppaat",
+    "reviews": "Työkalujen arvostelut",
+    "industry": "Toimialan näkemykset",
+    "guides": "Käyttöoppaat"
+  },
+  "newsletter": {
+    "title": "Pysy ajan tasalla",
+    "subtitle": "Saat viimeisimmät tekoälyuutiset postilaatikkoosi",
+    "placeholder": "Kirjoita sähköpostiosoitteesi",
+    "button": "Tilaa"
+  },
+  "article": {
+    "readTime": "{minutes} min lukeminen",
+    "published": "Julkaistu {date}",
+    "writtenBy": "Kirjoittanut & editoinut:",
+    "factCheckedBy": "Faktat tarkistanut:"
+  },
+  "pagination": {
+    "next": "Seuraavaksi",
+    "page": "Sivu {page}/{total}"
+  },
+  "relatedTools": "Aiheeseen liittyvät työkalut",
+  "backToBlog": "Takaisin blogiin",
+  "errors": {
+    "notFound": "Viestiä ei löydy"
+  },
+  "sort": {
+    "latest": "Uusimmat",
+    "oldest": "Vanhimmat",
+    "popular": "Suositut"
+  },
+  "filter": {
+    "allAuthors": "Kaikki kirjoittajat",
+    "sortBy": "Järjestä"
+  },
+  "relatedPosts": "Liittyvät julkaisut",
+  "faqs": "UKK"
+}

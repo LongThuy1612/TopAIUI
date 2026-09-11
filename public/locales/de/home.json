@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Entdecken Sie die besten KI-Tools und Websites",
+    "description": "Erkunden Sie die #1 AI-Tools-Verzeichnisliste. Diese AI-Tools-Wörterbuch-Website hilft Ihnen, die absolut beste AI-Software KOSTENLOS zu finden, zu vergleichen und zu starten."
+  },
+  "nav": {
+    "today": "Heute",
+    "latestAI": "Neueste KI",
+    "mostSaved": "Am meisten gespeichert",
+    "mostUsed": "Am häufigsten verwendet",
+    "browserPlugin": "Browser-Plugin",
+    "application": "Anwendung",
+    "discordOfAI": "Discord der KI",
+    "compareAI": "Vergleichen Sie KI",
+    "ariaLabel": "Hauptnavigation"
+  },
+  "hero": {
+    "title": "Entdecken Sie die besten KI-Websites und -Tools",
+    "subtitle": "Finden Sie in unserem umfassenden Verzeichnis, das täglich mit den neuesten KI-Innovationen aktualisiert wird, die perfekten KI-Tools für Ihre Anforderungen.",
+    "stats": {
+      "aiTools": "KI-Tools",
+      "categories": "Kategorien",
+      "languages": "Sprachen",
+      "and": "Und",
+      "supporting": "unterstützend",
+      "description": "Umfassende KI-Sammlung, täglich aktualisiert mit den neuesten Innovationen."
+    }
+  },
+  "search": {
+    "placeholder": "Finden Sie Tools per KI, z.B. KI-Tool zur Videoübersetzung",
+    "button": "Suchen"
+  },
+  "sections": {
+    "featured": {
+      "title": "Ausgewählte KI-Tools",
+      "description": "Entdecken Sie die beliebtesten und effektivsten KI-Tools",
+      "noTools": "Derzeit sind keine vorgestellten Tools verfügbar"
+    },
+    "justLaunched": {
+      "title": "Gerade gestartet",
+      "description": "Neueste KI-Tools und Innovationen",
+      "noTools": "Derzeit sind keine neuen Tools verfügbar"
+    },
+    "categories": {
+      "title": "Nach Kategorie durchsuchen",
+      "description": "Finden Sie KI-Tools, geordnet nach Anwendungsfall und Branche"
+    },
+    "trending": {
+      "title": "Jetzt im Trend",
+      "description": "Die beliebtesten KI-Tools dieser Woche"
+    }
+  },
+  "cta": {
+    "title": "Listen Sie Ihr KI-Tool auf",
+    "description": "Erreichen Sie Millionen potenzieller Benutzer, indem Sie Ihr KI-Tool in unserem Verzeichnis auflisten.",
+    "button": "Senden Sie Ihr Werkzeug",
+    "features": {
+      "exposure": "Globale Präsenz",
+      "traffic": "Erhöhter Verkehr",
+      "seo": "SEO-Vorteile"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "KI-Anwendungen",
+      "description": "Entdecken Sie die besten KI-Anwendungen für Produktivität, Kreativität und mehr."
+    },
+    "browserExtensions": {
+      "title": "KI-Browsererweiterungen",
+      "description": "Entdecken Sie die besten KI-Browsererweiterungen, um Ihren Workflow zu beschleunigen."
+    },
+    "latestAi": {
+      "title": "Neueste KI-Tools",
+      "description": "Entdecken Sie die neuesten KI-Tools und Innovationen, täglich aktualisiert."
+    },
+    "mostSaved": {
+      "title": "Am häufigsten gespeicherte KI-Tools",
+      "description": "Entdecken Sie die am häufigsten gespeicherten und mit Lesezeichen versehenen KI-Tools unserer Community."
+    },
+    "mostUsed": {
+      "title": "Meistgenutzte KI-Tools",
+      "description": "Entdecken Sie die beliebtesten und meistgenutzten KI-Tools unserer Community."
+    },
+    "discord": {
+      "title": "KI Discord-Communities",
+      "description": "Entdecken Sie die besten KI Discord-Communities und vernetzen Sie sich mit KI-Enthusiasten."
+    },
+    "today": {
+      "title": "Heutige KI-Tool-Highlights",
+      "description": "Entdecken Sie die besten KI-Tools, die heute auf TopAICollection vorgestellt werden."
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "Textgenerierung",
+          "Image Creation": "Bilderstellung",
+          "Coding": "Programmieren",
+          "Video": "Video",
+          "Audio": "Audio",
+          "Productivity": "Produktivität"
+        },
+        "text": "Wofür möchtest du AI nutzen?"
+      },
+      "budget": {
+        "options": {
+          "Free only": "Nur kostenlos",
+          "Freemium": "Freemium",
+          "Paid is fine": "Kostenpflichtig ist okay"
+        },
+        "text": "Wie hoch ist dein Budget?"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "Anfänger",
+          "Intermediate": "Fortgeschritten",
+          "Expert": "Experte"
+        },
+        "text": "Wie hoch ist dein Erfahrungsniveau?"
+      }
+    },
+    "title": "Deine personalisierten Empfehlungen",
+    "viewTool": "Tool anzeigen",
+    "noTools": "Keine Tools entsprachen deinen genauen Kriterien. Versuche, deine Suche zu erweitern!",
+    "startOver": "Neu starten",
+    "finding": "Die besten AI-Tools für dich finden...",
+    "questionLabel": "Frage {step} von {total}",
+    "completed": "{percentage}% abgeschlossen"
+  }
+}

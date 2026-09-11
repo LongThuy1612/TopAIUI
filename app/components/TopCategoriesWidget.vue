@@ -6,15 +6,21 @@ defineProps<{
 </script>
 
 <template>
-  <div class="rounded-xl border border-ink-100 bg-white p-4">
-    <h3 class="text-sm font-bold text-ink-900">📊 {{ t('sidebar.topCategories') }}</h3>
-    <ol class="mt-3 space-y-3">
-      <li v-for="(cat, i) in categories" :key="cat.slug" class="flex items-start gap-2.5">
-        <span class="w-4 shrink-0 pt-0.5 text-xs font-bold text-brand-500">{{ i + 1 }}</span>
-        <NuxtLink :to="`/category/${cat.slug}`" class="min-w-0 flex-1 truncate text-xs leading-relaxed text-ink-600 hover:text-brand-600">
-          <CategoryIcon :icon="cat.icon" /> {{ cat.name }} <span class="text-ink-400">({{ cat.count }})</span>
+  <div class="rounded-[14px] border border-ink-200 p-[18px]">
+    <div class="flex items-center gap-2.5">
+      <span class="inline-flex h-6 w-6 items-center justify-center rounded-[7px] bg-brand-100 text-xs font-extrabold text-brand-600">📊</span>
+      <span class="text-[17px] font-extrabold text-ink-900">{{ t('sidebar.topCategories') }}</span>
+    </div>
+    <ol class="flex flex-col gap-3.5 pt-4">
+      <li v-for="(cat, i) in categories" :key="cat.slug">
+        <NuxtLink :to="`/category/${cat.slug}`" class="grid grid-cols-[20px_minmax(0,1fr)] gap-2.5 text-sm leading-normal text-ink-800 hover:text-brand-500">
+          <span class="font-extrabold text-ink-500">{{ i + 1 }}</span>
+          <span class="min-w-0 truncate"><CategoryIcon :icon="cat.icon" /> {{ cat.name }} <span class="text-ink-500">({{ cat.count }})</span></span>
         </NuxtLink>
       </li>
     </ol>
+    <div class="pt-4 text-center">
+      <NuxtLink to="/category/all" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
+    </div>
   </div>
 </template>

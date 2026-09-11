@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Nutzungsbedingungen – TopAICollection",
+    "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung der Dienste und der Website von TopAICollection."
+  },
+  "title": "Nutzungsbedingungen",
+  "lastUpdated": "Zuletzt aktualisiert",
+  "introduction": "Diese Nutzungsbedingungen regeln Ihre Nutzung der TopAICollection-Website und -Dienste. Durch den Zugriff auf oder die Nutzung unseres Dienstes erklären Sie sich mit diesen Bedingungen einverstanden.",
+  "sections": {
+    "acceptance": {
+      "title": "Annahme der Bedingungen",
+      "content": "Durch den Zugriff auf und die Nutzung dieser Website akzeptieren Sie die Bedingungen und Bestimmungen dieser Vereinbarung und erklären sich damit einverstanden, an sie gebunden zu sein."
+    },
+    "use": {
+      "title": "Nutzung des Dienstes",
+      "content": [
+        "Um unseren Service nutzen zu können, müssen Sie mindestens 13 Jahre alt sein",
+        "Sie sind für die Wahrung der Vertraulichkeit Ihres Kontos verantwortlich",
+        "Sie erklären sich damit einverstanden, den Dienst nicht für illegale oder unbefugte Zwecke zu nutzen",
+        "Sie dürfen keine Würmer, Viren oder Schadcodes übertragen"
+      ]
+    },
+    "content": {
+      "title": "Benutzerinhalte",
+      "content": [
+        "Sie behalten das Eigentum an den von Ihnen übermittelten Inhalten",
+        "Sie erteilen uns eine Lizenz zur Nutzung, Änderung und Anzeige Ihrer Inhalte",
+        "Sie sind für die von Ihnen geposteten Inhalte verantwortlich",
+        "Wir behalten uns das Recht vor, Inhalte zu entfernen, die gegen diese Bedingungen verstoßen"
+      ]
+    },
+    "intellectual": {
+      "title": "Geistiges Eigentum",
+      "content": "Der Dienst und seine ursprünglichen Inhalte, Merkmale und Funktionen sind und bleiben das ausschließliche Eigentum von TopAICollection und seinen Lizenzgebern."
+    },
+    "privacy": {
+      "title": "Privatsphäre",
+      "content": "Ihre Nutzung unseres Dienstes unterliegt auch unserer Datenschutzrichtlinie. Bitte lesen Sie unsere Datenschutzrichtlinie, die auch für die Website gilt und Benutzer über unsere Datenerfassungspraktiken informiert."
+    },
+    "disclaimers": {
+      "title": "Haftungsausschluss",
+      "content": [
+        "Der Service wird „wie besehen“ und „wie verfügbar“ bereitgestellt",
+        "Wir garantieren nicht, dass der Dienst ununterbrochen oder fehlerfrei ist",
+        "Wir übernehmen keine Verantwortung für die in unserem Verzeichnis aufgeführten Tools von Drittanbietern",
+        "Die Nutzung von KI-Tools erfolgt auf eigenes Risiko"
+      ]
+    },
+    "liability": {
+      "title": "Haftungsbeschränkung",
+      "content": "In keinem Fall haften TopAICollection oder seine Direktoren, Mitarbeiter, Partner, Vertreter, Lieferanten oder verbundenen Unternehmen für indirekte, zufällige, besondere, Folge- oder Strafschäden."
+    },
+    "governing": {
+      "title": "Geltendes Recht",
+      "content": "Diese Bedingungen unterliegen den Gesetzen der Gerichtsbarkeit, in der TopAICollection tätig ist, und werden in Übereinstimmung mit diesen ausgelegt, ohne Rücksicht auf die Kollisionsnormen."
+    }
+  },
+  "contact": {
+    "title": "Kontaktinformationen",
+    "content": "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, kontaktieren Sie uns bitte unter:"
+  }
+}

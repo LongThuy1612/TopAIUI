@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Top-KI-Tools-Ranking",
+    "description": "Entdecken Sie die meistbesuchten KI-Tools der Welt basierend auf echten Verkehrsdaten.",
+    "subtitle": "Entdecken Sie die meistbesuchten KI-Tools der Welt basierend auf echten Verkehrsdaten."
+  },
+  "trending": {
+    "title": "Trendige KI-Tools",
+    "description": "Die am schnellsten wachsenden KI-Tools im letzten Monat.",
+    "subtitle": "Die am schnellsten wachsenden KI-Tools im letzten Monat."
+  },
+  "category": "Kategorie",
+  "noTools": "Keine Werkzeuge gefunden.",
+  "noToolsInCategory": "In dieser Kategorie wurden keine Werkzeuge gefunden.",
+  "loading": "Laden...",
+  "favorite": "Zu Favoriten hinzufügen",
+  "unfavorite": "Aus Favoriten entfernen",
+  "visitWebsite": "Besuchen Sie die Website",
+  "errors": {
+    "general": "Ranking-Daten konnten nicht geladen werden."
+  },
+  "topAI": "Top-KI",
+  "trendingAI": "Im Trend",
+  "period": "Zeitraum",
+  "last7Days": "Letzte 7 Tage",
+  "lastMonth": "Letzten Monat",
+  "last3Months": "Letzte 3 Monate",
+  "lastYear": "Letztes Jahr",
+  "allCategories": "Alle Kategorien",
+  "selectPeriod": "Wählen Sie Zeitraum aus",
+  "rank": "Rang",
+  "tool": "Werkzeug",
+  "visits": "Besuche",
+  "growth": "Wachstum",
+  "actions": "Aktionen",
+  "leaderboard": {
+    "header": {
+      "title": "AI Tools-Bestenliste",
+      "description": "Entdecken Sie die von der Community am meisten bewerteten KI-Tools.",
+      "dailyTitle": "Die besten KI-Tools des Tages",
+      "monthlyTitle": "Beste KI-Tools von {date}",
+      "yearlyTitle": "Beste KI-Tools von {date}",
+      "tabs": {
+        "daily": "Täglich",
+        "monthly": "Monatlich",
+        "yearly": "Jährlich"
+      },
+      "prevPeriod": "Vorheriger Zeitraum",
+      "nextPeriod": "Nächste Periode",
+      "pickDate": "Wählen Sie Datum aus",
+      "pickMonth": "Wählen Sie Monat"
+    },
+    "empty": {
+      "title": "Heute wurden keine Tools eingeführt",
+      "description": "Für dieses bestimmte Datum sind keine Werkzeuge erfasst. Versuchen Sie, zu einem anderen Tag zu navigieren.",
+      "showMore": "Weitere Werkzeuge anzeigen",
+      "loadingMore": "Weitere Tools werden geladen...",
+      "toolsListTitle": "Empfohlene Tools"
+    },
+    "card": {
+      "visitWebsite": "Besuchen Sie die Website",
+      "loginToUpvote": "Bitte melden Sie sich an, um Tools zu bewerten"
+    },
+    "page": {
+      "errorLoading": "Das Laden der Bestenlistendaten ist fehlgeschlagen."
+    },
+    "sidebar": {
+      "launchArchive": "Archiv starten",
+      "topCategories": "Top-Kategorien"
+    }
+  },
+  "categoryAI": "Kategorie",
+  "regionAI": "Bundesland",
+  "region": "Bundesland",
+  "allRegions": "„Global“",
+  "channelAI": "Kanal",
+  "channel": "Kanal",
+  "allChannels": "Alle Quellen",
+  "incomeAI": "RSU Sozialeinkommen",
+  "socialMetrics": "Sozialer Nutzen",
+  "channelVisits": "Quellenbesuche",
+  "maxResultsHint": "Begrenzen Sie die maximale Anzahl der Ergebnisse.",
+  "regions": {
+    "us": "„Vereinigte Staaten“",
+    "ca": "„Kanada“",
+    "gb": "„Vereinigtes Königreich“",
+    "in": "„Indien“",
+    "ph": "„Philippinen“",
+    "vn": "„Vietnam“"
+  },
+  "channels": {
+    "search": "„Suchen“",
+    "direct": "„Direkt“",
+    "social": "„Sozial“",
+    "referrals": "„Empfehlungen“"
+  },
+  "viewDetails": "„Details anzeigen“"
+}

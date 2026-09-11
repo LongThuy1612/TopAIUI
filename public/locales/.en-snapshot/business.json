@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Business Solutions - Partner With Us | TopAICollection",
+    "description": "Explore business partnership opportunities with TopAICollection. Advertising, sponsored content, and more."
+  },
+  "title": "Business Solutions",
+  "subtitle": "Partner with TopAICollection to reach AI enthusiasts worldwide",
+  "contact": {
+    "title": "Get In Touch"
+  },
+  "offers": {
+    "ads": "Run targeted ad campaigns",
+    "partnerships": "Explore strategic partnerships",
+    "growth": "Accelerate your AI product growth",
+    "consulting": "Custom AI integration services"
+  },
+  "form": {
+    "fullName": "Full Name",
+    "workEmail": "Work Email",
+    "companyName": "Company Name",
+    "inquiryType": "Inquiry Type",
+    "selectType": "Select type",
+    "message": "Message",
+    "messagePlaceholder": "Tell us more about your needs...",
+    "inquiryTypes": {
+      "advertise": "Advertise",
+      "guestPost": "Guest Post",
+      "partnership": "Partnership",
+      "customDevelopment": "Custom Development",
+      "other": "Other"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "toolNameRequired": "Tool name is required",
+    "url": "Invalid URL",
+    "descriptionMin": "Description must be at least 10 characters",
+    "categoryRequired": "Please select a category",
+    "email": "Invalid email address",
+    "messageMin": "Message must be at least 10 characters"
+  },
+  "sections": {
+    "advertise": {
+      "title": "Advertise Your AI Tool",
+      "description": "Get your AI tool featured prominently across our platform.",
+      "link": "Learn More"
+    },
+    "guestPost": {
+      "title": "Guest Posts & Links",
+      "description": "Publish content or get backlinks on our high-authority site.",
+      "link": "Learn More"
+    },
+    "submitTool": {
+      "title": "Submit Your Tool",
+      "description": "Add your AI tool to our directory for free.",
+      "link": "Submit Now"
+    },
+    "customSolutions": {
+      "title": "Custom Solutions",
+      "description": "Contact us for custom partnership opportunities.",
+      "link": "Contact Us"
+    }
+  },
+  "success": "Your inquiry has been submitted successfully!"
+}

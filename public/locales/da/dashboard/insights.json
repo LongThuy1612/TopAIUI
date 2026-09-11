@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Hjemmesideindsigt",
+    "subtitle": "Spor konkurrenters trafik og nøgleord.",
+    "track": "Spor",
+    "noDomains": "Ingen domæner spores endnu. Tilføj et ovenfor!",
+    "domain": "Domæne",
+    "monthlyVisits": "Månedlige Besøg",
+    "rank": "Rangering",
+    "topKeywords": "Top Nøgleord",
+    "added": "Tilføjet",
+    "tool": "Værktøj",
+    "organicClicks": "Organiske klik",
+    "paidClicks": "Betalte klik",
+    "totalClicks": "Samlet antal klik",
+    "addedOn": "Tilføjet på",
+    "noTools": "Ingen værktøjer sporet endnu.",
+    "addDomainDesc": "Tilføj dit første domæne ovenfor for at begynde at spore indsigt.",
+    "deleteSuccess": "Domæne fjernet fra sporing",
+    "confirmDelete": "Er du sikker på, at du vil stoppe med at spore dette domæne?",
+    "quota": "Kvota",
+    "limitReachedDesc": "Du har nået din månedlige grænse for indsigt. Opgrader for at spore flere domæner.",
+    "upgradeNow": "Opgrader nu",
+    "usage": "Brug",
+    "searchPlaceholder": "Søg efter sporede domæner...",
+    "advancedFilter": "Avancerede filtre",
+    "bulkOpen": "Bulk åben",
+    "export": "Eksporter data",
+    "aiTool": "AI værktøj",
+    "rankChange": "Rangændring",
+    "globalRank": "Global rang",
+    "traffic": "Trafik",
+    "audience": "Publikum",
+    "updateDate": "Opdateringsdato",
+    "limitReachedTitle": "Du har nået din grænse",
+    "limitReachedBody": "Du har nået din grænse for gratis søgninger. Opgrader for at få ubegrænset adgang.",
+    "upgradePro": "Opgrader til Pro-plan",
+    "actions": "Handlinger",
+    "viewSocial": "Se Social",
+    "exportSuccess": "Eksporteret med succes.",
+    "exportFailed": "Eksport mislykkedes.",
+    "exportData": "Eksporter data",
+    "exportDesc": "Eksportér denne rapport for at dele eller analysere lokalt.",
+    "exportLimit": "Eksportgrænse",
+    "rows": "Rækker",
+    "creditsCost": "Kreditomkostninger",
+    "availableAfter": "Tilgængelig efter",
+    "confirmExport": "Bekræft eksport",
+    "notEnoughCredits": "Ikke nok kreditter",
+    "filters": {
+      "timePeriod": "Tidsperiode",
+      "selectMonth": "Vælg måned",
+      "months": {
+        "feb2026": "februar 2026",
+        "jan2026": "januar 2026"
+      },
+      "trafficSource": "Trafikkilde",
+      "allSources": "Alle Kilder",
+      "sources": {
+        "search": "Søge",
+        "direct": "Direkte",
+        "social": "Social"
+      },
+      "region": "Område",
+      "regions": {
+        "us": "Os",
+        "vn": "Vn"
+      },
+      "category": "Kategori",
+      "categories": {
+        "llm": "Llm",
+        "image": "Billede",
+        "productivity": "Produktivitet"
+      },
+      "trafficThreshold": "Trafiktærskel",
+      "minVisits": "Minimum besøg",
+      "thresholds": {
+        "0": "0",
+        "100k": "100k",
+        "1m": "1m"
+      }
+    },
+    "removeFailed": "Fjernelse mislykkedes.",
+    "direct": "Direkte",
+    "sortDefault": "Standard",
+    "sortTraffic": "Trafik"
+  },
+  "common": {
+    "allCategories": "Alle kategorier",
+    "global": "Global"
+  },
+  "table": {
+    "column": {
+      "tool": "Værktøj",
+      "organic": "Økologiske klik",
+      "paid": "Betalte klik",
+      "total": "Samlet antal klik",
+      "trend": "Tendens",
+      "growth": "Vækst"
+    },
+    "searchPlaceholder": "Søg efter sporede domæner...",
+    "showingResults": "Viser {count} resultater",
+    "empty": "Ingen domæner sporet endnu."
+  }
+}

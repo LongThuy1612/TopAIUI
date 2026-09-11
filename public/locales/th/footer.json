@@ -1,0 +1,92 @@
+{
+  "about": "เกี่ยวกับเรา",
+  "contact": "ติดต่อ",
+  "blog": "บล็อก",
+  "privacy": "นโยบายความเป็นส่วนตัว",
+  "terms": "ข้อกำหนดในการให้บริการ",
+  "cookies": "นโยบายคุกกี้",
+  "copyright": "© {year} TopAICollection สงวนลิขสิทธิ์.",
+  "sitemap": "แผนผังเว็บไซต์",
+  "resources": "ทรัพยากร",
+  "help": "ศูนย์ช่วยเหลือ",
+  "faq": "คำถามที่พบบ่อย",
+  "submitTool": "ส่งเครื่องมือ",
+  "description": "TopAICollection เป็นไดเร็กทอรีขั้นสูงสุดสำหรับการค้นหาเครื่องมือและเว็บไซต์ AI ที่ดีที่สุด",
+  "browseByAlphabet": "เรียกดูตามตัวอักษร",
+  "topAITools": {
+    "title": "เครื่องมือ AI ยอดนิยม",
+    "items": {
+      "gpt4": "GPT -4 ",
+      "midjourney": "กลางการเดินทาง",
+      "chatgpt": "แชทจีพีที",
+      "stableDiffusion": "การแพร่กระจายที่เสถียร",
+      "jasper": "แจสเปอร์"
+    }
+  },
+  "moreTools": {
+    "title": "เครื่องมือเพิ่มเติม",
+    "items": {
+      "audio": "เสียงเอไอ",
+      "video": "วิดีโอเอไอ",
+      "writing": "การเขียนเอไอ",
+      "image": "รูปภาพเอไอ",
+      "coding": "การเข้ารหัสเอไอ"
+    }
+  },
+  "recommend": {
+    "title": "แนะนำ",
+    "items": {
+      "newest": "เครื่องมือใหม่ล่าสุด",
+      "mostSaved": "บันทึกมากที่สุด",
+      "trending": "กำลังมาแรงตอนนี้",
+      "editorsChoice": "ตัวเลือกของบรรณาธิการ",
+      "featured": "โดดเด่น",
+      "leaderboard": "ลีดเดอร์บอร์ด"
+    }
+  },
+  "readMore": {
+    "title": "อ่านเพิ่มเติม",
+    "items": {
+      "blog": "บล็อก",
+      "news": "ข่าวเอไอ",
+      "guides": "คำแนะนำ",
+      "tutorials": "บทช่วยสอน",
+      "glossary": "อภิธานศัพท์เอไอ"
+    }
+  },
+  "company": {
+    "title": "เกี่ยวกับ",
+    "items": {
+      "aboutUs": "เกี่ยวกับเรา",
+      "contact": "ติดต่อธุรกิจ",
+      "editorialGuidelines": "แนวทางปฏิบัติทางบรรณาธิการ",
+      "reviewMethodology": "วิธีการตรวจสอบ",
+      "submit": "ส่ง",
+      "advertise": "ลงโฆษณา"
+    }
+  },
+  "chooseLanguage": "เลือกภาษา",
+  "followUs": "ติดตามเรา",
+  "more": "มากกว่า...",
+  "directory": {
+    "title": "เอกสารถาวรไดเร็กทอรีเครื่องมือ AI"
+  },
+  "companyInfo": {
+    "name": "ท็อปเอไอคอลเลคชัน อิงค์",
+    "address": "“ย่านเทคโนโลยี ซิลิคอนวัลเลย์”",
+    "city": "ซานฟรานซิสโก แคลิฟอร์เนีย 94107",
+    "country": "สหรัฐอเมริกา",
+    "email": "ติดต่อ@topaicollection.com",
+    "phone": "+1 (555) 123-4567"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "เครื่องมือสร้างวิดีโอ",
+      "imageGenerators": "เครื่��งมือสร้างรูปภาพ",
+      "writers": "เครื่องมือเขียน",
+      "seoTools": "เครื่องมือ Seo",
+      "websiteBuilders": "เครื่องมือสร้างเว็บไซต์",
+      "chatbots": "แชทบอท"
+    }
+  }
+}

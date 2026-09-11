@@ -1,0 +1,294 @@
+{
+  "title": "Annoncer dit AI-værktøj",
+  "description": "Få førsteklasses placering og maksimal eksponering for dit AI-værktøj. Nå ud til tusindvis af potentielle brugere, der aktivt søger efter AI-løsninger.",
+  "hero": {
+    "title": "Dine AI'er på TopAICollection",
+    "subtitle": "TopAI kan hjælpe dig med at nå millioner af AI-brugere og dine potentielle kunder over hele verden.",
+    "stats": {
+      "pageViews": "5M+",
+      "pageViewsLabel": "Sidevisninger",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Månedlige besøg",
+      "subscribers": "100K+",
+      "subscribersLabel": "Abonnenter",
+      "desktopUsers": "55 %",
+      "desktopUsersLabel": "Desktop-brugere",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Registrerede brugere",
+      "avgTimeOnSite": "2,5 m",
+      "avgTimeOnSiteLabel": "Gns. tid på webstedet"
+    },
+    "benefits": [
+      "Top AI-værktøjsmappe",
+      "Dofollow-backlink",
+      "Flersproget intro",
+      "Liste og trafik for evigt",
+      "Værdi for Founders & Startups"
+    ]
+  },
+  "tabs": {
+    "submit": "Indsend AI",
+    "submitDesc": "Indsend dine AI-værktøjer, få trafik",
+    "advertise": "Annoncer AI",
+    "advertiseDesc": "Betal pr. klik, fremhævede kampagner, automatisk annonceplacering",
+    "guestPost": "Gæsteindlæg / Link Indsæt",
+    "guestPostDesc": "Gæsteindlæg/linkindlæg på TopAI",
+    "updateAi": "Opdater AI",
+    "updateAiDesc": "Opdater dit værktøjs oplysninger",
+    "submitGpt": "Indsend GPT",
+    "submitGptDesc": "Indsend din GPT, så flere personer kan bruge det",
+    "business": "Mere forretning",
+    "businessDesc": "Såsom: linkudveksling, Twitter-opslag, videoer osv."
+  },
+  "form": {
+    "toolLabel": "Værktøj",
+    "toolHint": "PS: Hvis værktøjet ikke kan findes, så send det først.",
+    "toolPlaceholder": "Søg efter dit værktøj...",
+    "adLandingLink": "Annoncelandingslink",
+    "toolLandingPlaceholder": "Værktøjs-",
+    "websitePlaceholder": "https://example.com",
+    "urlTitle": "Indtast en gyldig webadresse, der starter med http :// eller https ://"
+  },
+  "clicks": {
+    "title": "Vælg det antal klik, du har brug for",
+    "numberOfClicks": "Antal klik",
+    "total": "I alt",
+    "payButton": "Betale",
+    "submitButton": "Afsend"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Annoncer et værktøjseksempel",
+    "description": "Vi fuldautomatiserer din annoncevisning baseret på vores algoritmer for at sikre, at du ikke kan få mindre end antallet af købte klik, men vi kan ikke garantere kvaliteten af ​​klikkene.",
+    "note": "Prioriter for dig at forbruge annonceringsomkostninger for hurtigt at få webstedsklik og -visninger. Du kan: sætte annoncerne på pause eller starte annoncerne.",
+    "typesTitle": "Her er et par typer annoncer:",
+    "mostFrequently": "Oftest",
+    "mostEffective": "Mest effektiv",
+    "standardDesc": "Vises på startsiden, fortegnelser og kategorisider.",
+    "effectiveDesc": "Vises på dine konkurrenters sider, og på de kategorisider du tilhører.",
+    "featured": "Udvalgte*",
+    "featuredDesc1": "Fremhævet placering på Hjem, Seneste AI, Mest brugt, Mest gemt, Søgeresultatside, Kategoridetaljerside osv.",
+    "featuredDesc2": "Øverst på de fleste sider vil der være en sponsorposition.",
+    "targeted": "Målrettet",
+    "standard": "Standard"
+  },
+  "faq": {
+    "title": "FAQ - annoncer",
+    "items": [
+      {
+        "question": "Hvordan fungerer annoncering?",
+        "answer": "Vi viser dit værktøj i førsteklasses positioner på tværs af vores platform. Du betaler pr. klik, og vi sikrer, at din annonce får det antal klik, du har købt."
+      },
+      {
+        "question": "Kan jeg købe klik flere gange?",
+        "answer": "Ja, du kan til enhver tid købe yderligere klikpakker for at øge dit værktøjs synlighed."
+      },
+      {
+        "question": "Kan jeg sætte mine annoncer på pause?",
+        "answer": "Ja, du kan til enhver tid sætte dine annoncekampagner på pause og genoptage dem fra dit betjeningspanel."
+      },
+      {
+        "question": "Hvilken slags analyse får jeg?",
+        "answer": "Du vil modtage detaljerede data om organiske klik, betalte klik, samlede klik, visninger og besparelser."
+      }
+    ]
+  },
+  "whyAdvertise": "Hvorfor annoncere?",
+  "customPackage": {
+    "title": "Har du brug for tilpasset pakke?",
+    "description": "Kontakt os for skræddersyede annonceringsløsninger, der passer til dine specifikke mål.",
+    "contactSales": "Kontakt Salg",
+    "estimatedClicks": "Anslåede klik",
+    "estimatedImpressions": "Anslåede visninger",
+    "estimatedViews": "Anslåede visninger",
+    "estimatedUnits": "Anslåede enheder",
+    "toolSlug": "Værktøjssnegl",
+    "landingUrl": "Landings-url",
+    "campaignParameters": "Kampagneparametre",
+    "metricType": "Metrisk type",
+    "pacingType": "Tempo-type",
+    "basePrice": "Grundpris",
+    "totalBudget": "Samlet budget",
+    "startDate": "Startdato",
+    "endDate": "Slutdato",
+    "priorityBid": "Prioritetsbud",
+    "estimation": "Vurdering",
+    "cancel": "Ophæve",
+    "submitting": "Indsender",
+    "submitProposal": "Indsend forslag"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Premium placering",
+      "description": "Udvalgte steder på hjemmesiden og kategorisiderne"
+    },
+    "targetedAudience": {
+      "title": "Målrettet publikum",
+      "description": "Nå ud til brugere, der aktivt leder efter AI-værktøjer"
+    },
+    "analytics": {
+      "title": "Analyse",
+      "description": "Spor ydeevne med detaljeret indsigt"
+    }
+  },
+  "campaigns": {
+    "previous": "Tidligere",
+    "pageOf": "Side {page} af {total}",
+    "choosePlan": "Vælg dit abonnement",
+    "choosePlanDesc": "Vælg et abonnement nedenfor for at forny eller opgradere din kampagne.",
+    "currentPlan": "Nuværende plan",
+    "selectAgain": "Vælg igen",
+    "selectPlan": "Vælg Pakke"
+  },
+  "transactions": {
+    "noDescription": "Du har ikke købt nogen annoncekredit endnu. Fyld din saldo op for at begynde at køre kampagner."
+  },
+  "meta": {
+    "title": "Annoncer AI-værktøj - TopAICollection",
+    "description": "Annoncer dit AI-værktøj til millioner af AI-entusiaster."
+  },
+  "plans": {
+    "title": "Annonceplaner",
+    "subtitle": "Udvid din rækkevidde",
+    "clickTarget": "Klikmål",
+    "toolRequired": "⚠ Indtast venligst dit værktøjsnavn ovenfor, inden du indsender.",
+    "empty": "Ingen annoncepakker tilgængelige nu. Tjek tilbage senere.",
+    "customPlanConfig": "Konfiguration af brugerdefineret plan",
+    "basePrice": "Base Price",
+    "adPlacements": "Annonceplaceringer",
+    "applyConfig": "Anvend konfiguration",
+    "configured": "Konfigureret",
+    "toolSlug": "Værktøjsslug",
+    "landingUrl": "Landingswebadresse",
+    "campaignParameters": "Kampagneparametre",
+    "metricType": "Metrisk type",
+    "pacingType": "Pacingtype",
+    "totalBudget": "Budget i alt",
+    "startDate": "Startdato",
+    "endDate": "Slutdato",
+    "priorityBid": "Prioriteret bud",
+    "estimation": "Overslag",
+    "estimatedClicks": "Estimerede klik",
+    "estimatedImpressions": "Estimerede visninger",
+    "estimatedViews": "Anslåede visninger",
+    "estimatedUnits": "Estimerede {metric} enheder",
+    "submitProposal": "Indsend brugerdefineret forslag",
+    "submitting": "Indsender...",
+    "cancel": "Annuller",
+    "customBid": {
+      "title": "Tilpasset præstationsbudgivning",
+      "budgetLabel": "Budget i alt",
+      "budgetDescription": "Samlet beløb, du vil bruge.",
+      "priorityBidLabel": "Prioriteret budmultiplikator",
+      "priorityBidDescription": "Højere bud = højere optrædenfrekvens.",
+      "minBudget": "Minimumsbudgettet er 10 $",
+      "minBid": "Minimumsbuddet er $ 0,01"
+    },
+    "placeholders": {
+      "toolSlug": "mit-fantastiske-værktøj",
+      "landingUrl": "https://...",
+      "metricType": "Pris pr. anskaffelse",
+      "pacingType": "Lige"
+    }
+  },
+  "submit": {
+    "button": "Indsend kampagneanmodning",
+    "submitting": "Sender…",
+    "error": "Afsendelse mislykkedes. Prøv venligst igen.",
+    "successTitle": "Kampagne indsendt!",
+    "budgetLabel": "Angiv kampagnebudget ($ USD)",
+    "success": "Kampagnen blev oprettet!",
+    "untitled": "Kampagne uden titel",
+    "missingTool": "Værktøjs- eller målwebadresse er påkrævet",
+    "loginRequiredTitle": "Godkendelse er påkrævet",
+    "loginRequiredDesc": "Log ind for at indsende et værktøj. Dine fremskridt gemmes ikke, før du har godkendt dem."
+  },
+  "sidebar": {
+    "pageViews": "Sidevisninger",
+    "pageViewsSub": "Månedlig sidetrafik"
+  },
+  "details": "Annoncedetaljer",
+  "duration": "Varighed (dage)",
+  "selectDuration": "Vælg varighed",
+  "days": "{count, plural, =1 {1 day} andet {# days}}",
+  "preferredPlacement": "Foretrukken placering",
+  "selectPlacement": "Vælg placering",
+  "placements": {
+    "homepageBanner": "Hjemmeside banner",
+    "sidebar": "Sidebjælke",
+    "categoryPage": "Kategori side",
+    "newsletter": "Nyhedsbrev",
+    "HOME": "Hjemmeside",
+    "CATEGORY": "Kategoriside",
+    "SEARCH": "Søgeresultater",
+    "TOOL_DETAIL": "Detaljerside"
+  },
+  "targetAudience": "Målgruppe",
+  "targetAudiencePlaceholder": "Beskriv din målgruppe",
+  "validation": {
+    "required": "Dette felt er påkrævet",
+    "selectDuration": "Vælg venligst annoncevarighed",
+    "selectPlacement": "Vælg venligst annonceplacering",
+    "targetAudienceMin": "Målgruppen skal være på mindst 10 tegn",
+    "toolNameRequired": "Værktøjsnavn er påkrævet",
+    "url": "Ugyldig URL",
+    "descriptionMin": "Beskrivelsen skal være på mindst 10 tegn",
+    "categoryRequired": "Vælg venligst en kategori",
+    "email": "Ugyldig e-mailadresse",
+    "messageMin": "Beskeden skal være på mindst 10 tegn"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "pr. klik",
+      "CPM": "pr. 1.000 visninger",
+      "CPV": "pr. visning",
+      "FLAT_RATE": "fast sats",
+      "CPC_LABEL": "CPC",
+      "CPM_LABEL": "cpm",
+      "CPV_LABEL": "Pris pr. visning",
+      "FLAT_RATE_LABEL": "Fast beløb"
+    },
+    "units": {
+      "clicks": "klik",
+      "impressions": "Indtryk",
+      "views": "visninger",
+      "units": "Stk."
+    }
+  },
+  "selected": "Tilvalgte",
+  "summary": {
+    "selectedPlanLabel": "Valgt annoncepakke",
+    "totalPriceLabel": "Samlet fast pris",
+    "securityFooter": "Sikker betaling • Øjeblikkelig aktivering • Fuld analyse"
+  },
+  "charts": {
+    "cpc": "Pris pr. klik ($)",
+    "cpm": "cpm",
+    "noData": "Ingen historiske data tilgængelige"
+  }
+}

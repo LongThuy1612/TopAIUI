@@ -1,0 +1,118 @@
+{
+  "title": "Aktualisieren Sie Ihr KI-Tool",
+  "description": "Halten Sie die Informationen zu Ihrem KI-Tool auf dem neuesten Stand. Aktualisieren Sie Beschreibungen, Funktionen, Preise oder andere Details, um die Richtigkeit sicherzustellen.",
+  "hero": {
+    "title": "Ihre KIs auf TopAICollection",
+    "subtitle": "TopAI kann Ihnen dabei helfen, Millionen von KI-Nutzern und Ihre potenziellen Kunden weltweit zu erreichen."
+  },
+  "form": {
+    "toolLabel": "Werkzeug",
+    "toolHint": "PS: Wenn das Tool nicht gefunden werden kann, senden Sie es bitte zuerst.",
+    "toolPlaceholder": "Suchen Sie nach Ihrem Werkzeug..."
+  },
+  "pricing": {
+    "title": "Preise aktualisieren",
+    "price": "49 $",
+    "period": "Einmal",
+    "description": "Wir werden die Informationen innerhalb von 24 Stunden nach der Zahlung für Sie aktualisieren."
+  },
+  "updates": {
+    "title": "Unterstützte Update-Typen",
+    "types": [
+      {
+        "label": "Werkzeugname",
+        "description": "Aktualisieren Sie den Anzeigenamen Ihres Tools"
+      },
+      {
+        "label": "Beschreibung",
+        "description": "Überarbeiten Sie die Kurz- und Langbeschreibungen Ihres Werkzeugs"
+      },
+      {
+        "label": "Kategorie",
+        "description": "Kategorien ändern oder neue hinzufügen"
+      },
+      {
+        "label": "Funktionsliste",
+        "description": "Aktualisieren Sie die Funktionshighlights Ihres Tools"
+      },
+      {
+        "label": "Anwendungsfälle",
+        "description": "Anwendungsfallbeispiele hinzufügen oder aktualisieren"
+      },
+      {
+        "label": "Preisinformationen",
+        "description": "Aktualisieren Sie Preispläne und -stufen"
+      },
+      {
+        "label": "„FAQs“",
+        "description": "Fügen Sie häufig gestellte Fragen hinzu oder ändern Sie sie"
+      },
+      {
+        "label": "URLs und Links",
+        "description": "Aktualisieren Sie Website, Demo oder soziale Links"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Muss es wissen",
+    "items": [
+      "Aktualisierungen werden innerhalb von 24 Stunden nach Zahlungsbestätigung bearbeitet.",
+      "Sie können mehrere Felder in einer einzigen Anfrage aktualisieren.",
+      "Unser Team wird Ihre Änderungen prüfen und veröffentlichen.",
+      "Wenn das Update einer Klärung bedarf, werden wir Sie per E-Mail kontaktieren.",
+      "Screenshot-/Medienaktualisierungen können weitere 24 Stunden dauern."
+    ]
+  },
+  "faq": {
+    "title": "FAQ – AI aktualisieren",
+    "items": [
+      {
+        "question": "Wie lange dauert ein Update?",
+        "answer": "Updates werden in der Regel innerhalb von 24 Stunden nach der Zahlung bearbeitet. Komplexe Änderungen erfordern möglicherweise einen zusätzlichen Überprüfungszeitraum."
+      },
+      {
+        "question": "Was kann ich aktualisieren?",
+        "answer": "Sie können den Namen, die Beschreibung, die Kategorie, die Funktionen, Anwendungsfälle, Preise, FAQs und URLs Ihres Tools aktualisieren."
+      },
+      {
+        "question": "Kann ich mehrere Dinge gleichzeitig aktualisieren?",
+        "answer": "Ja! Sie können mehrere Aktualisierungen in einer einzigen Übermittlung anfordern. Alle Änderungen sind in der Gebühr von 49 $ enthalten."
+      },
+      {
+        "question": "Was passiert, wenn ich nach dem Update Korrekturen vornehmen muss?",
+        "answer": "Kleinere Korrekturen im Zusammenhang mit Ihrer ursprünglichen Update-Anfrage werden innerhalb von 7 Tagen kostenlos bearbeitet."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Warum Ihr Tool aktualisieren?",
+    "reasons": [
+      "Halten Sie die Informationen korrekt und aktuell",
+      "Verbessern Sie das Suchranking und die Sichtbarkeit",
+      "Aktualisieren Sie Preise und Funktionsänderungen",
+      "Fügen Sie neue Screenshots oder Demos hinzu",
+      "Korrigieren Sie alle veralteten Informationen",
+      "Verbessern Sie Ihre Werkzeugbeschreibung"
+    ]
+  },
+  "meta": {
+    "title": "Aktualisieren Sie Ihr KI-Tool – TopAICollection",
+    "description": "Halten Sie die Informationen zu Ihrem KI-Tool auf dem neuesten Stand. Aktualisieren Sie Beschreibungen, Funktionen, Preise oder andere Details, um die Richtigkeit sicherzustellen."
+  },
+  "team": "TopAICollection-Team",
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "selectTool": "Bitte wählen Sie ein Tool zum Aktualisieren aus",
+    "detailsTooShort": "Änderungsdetails müssen mindestens 10 Zeichen lang sein",
+    "toolNameRequired": "Werkzeugname ist erforderlich",
+    "url": "Ungültige URL",
+    "descriptionMin": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
+    "categoryRequired": "Bitte wählen Sie eine Kategorie aus",
+    "email": "Ungültige E-Mail-Adresse",
+    "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+  },
+  "sidebar": {
+    "updatedCount": "Werkzeuge aktualisiert",
+    "updatedCountSub": "diesen Monat"
+  }
+}

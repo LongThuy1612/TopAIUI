@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "文章与链接",
+    "description": "管理您的客座文章和链接插入。",
+    "submitNewItem": "提交新项目",
+    "submitNew": "提交新",
+    "guestPost": "客座文章",
+    "linkInsert": "链接插入",
+    "type": "类型",
+    "targetUrl": "目标 URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "标题 / 锚文本",
+    "anchorTextPlaceholder": "文章标题或链接锚文本",
+    "submitCredits": "提交（1 点数）",
+    "tabs": {
+      "guestPosts": "客座文章",
+      "linkInserts": "链接插入"
+    },
+    "table": {
+      "title": "标题",
+      "anchor": "锚文本",
+      "url": "网址",
+      "status": "状态",
+      "date": "日期"
+    },
+    "empty": {
+      "noGuestTitle": "没有客座文章",
+      "noGuestDesc": "您尚未提交任何客座文章。",
+      "noGuestCta": "提交客座文章",
+      "noLinkTitle": "没有链接插入",
+      "noLinkDesc": "您尚未提交任何链接插入。",
+      "noLinkCta": "提交链接插入"
+    },
+    "subtitle": "管理您的访客帖子和链接插入。"
+  }
+}

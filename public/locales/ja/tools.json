@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "すべての AI ツール - TopAICollection",
+    "description": "AI ツールの完全なコレクションをご覧ください。カテゴリや人気でフィルタリングしたり、最新の AI イノベーションを見つけたりできます。",
+    "archiveMonthTitle": "AI ツール — {label} |TopAICollection",
+    "archiveMonthDescription": "{label} に追加された AI ツールを参照します。",
+    "archiveYearTitle": "AI ツール — {year} |TopAICollection",
+    "archiveYearDescription": "{year} に追加された AI ツールを参照してください。",
+    "categoryTitle": "{category} AI ツール |TopAICollection",
+    "categoryDescription": "最高の {category} AI ツールを探索してください。",
+    "freeTitle": "無料の AI ツール | {title}",
+    "freeDescription": "最高の無料 AI ツールをオンラインで見つけてください。 {description}",
+    "newestTitle": "最新の AI ツール | {title}",
+    "newestDescription": "私たちのコレクションに追加された最新の AI ツールをチェックしてください。"
+  },
+  "title": "すべての AI ツールを探索する",
+  "subtitle": "当社の包括的なコレクションから完璧な AI ソリューションを見つけてください",
+  "filters": {
+    "all": "すべてのツール",
+    "today": "今日",
+    "featured": "注目の",
+    "new": "発売されたばかり",
+    "mostSaved": "最も保存された",
+    "mostUsed": "最もよく使われる",
+    "trending": "トレンド",
+    "justLaunched": "発売されたばかり",
+    "title": "フィルター",
+    "category": "カテゴリ",
+    "allCategories": "すべてのカテゴリ",
+    "type": "タイプ",
+    "popular": "人気のある",
+    "newest": "最新",
+    "name": "名前",
+    "price": "価格",
+    "free": "無料",
+    "paid": "有料",
+    "sortBy": "並べ替え"
+  },
+  "sort": {
+    "label": "並べ替え",
+    "popular": "最も人気のある",
+    "trending": "トレンド",
+    "newest": "新しい順",
+    "rating": "最高評価",
+    "name": "アルファベット順"
+  },
+  "categories": {
+    "title": "カテゴリー",
+    "all": "すべてのカテゴリ",
+    "showMore": "もっと見る→",
+    "toolCount": "{count} 個のツール"
+  },
+  "results": {
+    "showing": "{start} 個のツールのうち {end} ～ {total} を表示しています",
+    "error": "ツールのロード中にエラーが発生しました。もう一度試してください。",
+    "noResults": "結果が見つかりません",
+    "tryDifferent": "異なるキーワードや絞り込み条件をお試しください。"
+  },
+  "pagination": {
+    "next": "次",
+    "page": "ページ {page}"
+  },
+  "sidebar": {
+    "trending": "今のトレンド",
+    "noTools": "トレンドツールがない",
+    "advertise": "ここに広告を掲載します",
+    "advertiseDesc": "月間 500 万人以上の AI 愛好家にリーチし、訪問数を増やします",
+    "emailPlaceholder": "電子メールアドレス"
+  },
+  "hero": {
+    "title": "最新の AI ツールを発見する",
+    "subtitle": "27,955 個の AI と 459 のカテゴリ",
+    "searchPlaceholder": "AI ツールを検索...",
+    "search": "検索"
+  },
+  "breadcrumb": {
+    "home": "家",
+    "tools": "ツール"
+  },
+  "jsonLd": {
+    "name": "AI ツール ディレクトリ",
+    "description": "AI ツールの完全なディレクトリを参照してください。"
+  },
+  "badges": {
+    "featured": "注目の",
+    "new": "新しい",
+    "trending": "トレンド",
+    "popular": "人気のある",
+    "sponsored": "スポンサー付き"
+  },
+  "share": "共有",
+  "visits": "訪問",
+  "monthlyVisits": "月間推定訪問者数",
+  "visit": "訪問",
+  "actions": {
+    "save": "保存",
+    "saved": "保存されました",
+    "visit": "訪問",
+    "share": "共有",
+    "copyLink": "リンクをコピー",
+    "shareThisTool": "このツールを共有する"
+  },
+  "growth": "成長",
+  "pricing": {
+    "free": "無料"
+  }
+}

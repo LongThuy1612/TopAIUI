@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Alle AI-værktøjer - TopAICollection",
+    "description": "Gennemse vores komplette samling af AI-værktøjer. Filtrer efter kategori, popularitet, eller find de nyeste AI-innovationer.",
+    "archiveMonthTitle": "AI-værktøjer — {label} | TopAI TopAICollectionCollection",
+    "archiveMonthDescription": "Gennemse AI-værktøjer tilføjet i {label}.",
+    "archiveYearTitle": "AI-værktøjer — {year} | TopAI TopAICollectionCollection",
+    "archiveYearDescription": "Gennemse AI-værktøjer tilføjet i {year}.",
+    "categoryTitle": "{category} AI-værktøjer | TopAI TopAICollectionCollection",
+    "categoryDescription": "Udforsk de bedste {category} AI-værktøjer.",
+    "freeTitle": "Gratis AI-værktøjer | {title}",
+    "freeDescription": "Oplev de bedste gratis AI-værktøjer online. {description}",
+    "newestTitle": "Nyeste AI-værktøjer | {title}",
+    "newestDescription": "Tjek de seneste AI-værktøjer, der er føjet til vores samling."
+  },
+  "title": "Udforsk alle AI-værktøjer",
+  "subtitle": "Oplev den perfekte AI-løsning fra vores omfattende kollektion",
+  "filters": {
+    "all": "Alle værktøjer",
+    "today": "I dag",
+    "featured": "Udvalgte",
+    "new": "Lige lanceret",
+    "mostSaved": "Mest frelst",
+    "mostUsed": "Mest brugt",
+    "trending": "Nyheder",
+    "justLaunched": "Lige lanceret",
+    "title": "Filtre",
+    "category": "Kategori",
+    "allCategories": "Alle kategorier",
+    "type": "Indtast",
+    "popular": "Populær",
+    "newest": "Nyeste",
+    "name": "Navn",
+    "price": "Pris",
+    "free": "Gratis",
+    "paid": "Betalt",
+    "sortBy": "Sorter efter"
+  },
+  "sort": {
+    "label": "Sorter efter",
+    "popular": "Mest populær",
+    "trending": "Nyheder",
+    "newest": "Nyeste først",
+    "rating": "Højest vurderede",
+    "name": "Alfabetisk"
+  },
+  "categories": {
+    "title": "Kategorier",
+    "all": "Alle kategorier",
+    "showMore": "Vis mere →",
+    "toolCount": "{count} værktøjer"
+  },
+  "results": {
+    "showing": "Viser {start}-{end} af {total} værktøjer",
+    "error": "Fejl ved indlæsning af værktøjer. Prøv venligst igen.",
+    "noResults": "Ingen resultater fundet",
+    "tryDifferent": "Prøv venligst andre søgeord eller filtre."
+  },
+  "pagination": {
+    "next": "Næste",
+    "page": "Side {page}"
+  },
+  "sidebar": {
+    "trending": "Trending nu",
+    "noTools": "Ingen trendværktøjer",
+    "advertise": "Annoncer her",
+    "advertiseDesc": "Nå ud til mere end 5 millioner månedlige AI-entusiaster, og øg dine besøg",
+    "emailPlaceholder": "E-mailadresse"
+  },
+  "hero": {
+    "title": "Oplev de nyeste AI-værktøjer",
+    "subtitle": "27.955 AI'er og 459 kategorier",
+    "searchPlaceholder": "Søg AI-værktøjer...",
+    "search": "Søge"
+  },
+  "breadcrumb": {
+    "home": "Hjem",
+    "tools": "Værktøjer"
+  },
+  "jsonLd": {
+    "name": "AI-værktøjskatalog",
+    "description": "Gennemse vores komplette oversigt over AI-værktøjer."
+  },
+  "badges": {
+    "featured": "Udvalgte",
+    "new": "Ny",
+    "trending": "Nyheder",
+    "popular": "Populær",
+    "sponsored": "Sponsoreret"
+  },
+  "share": "Dele",
+  "visits": "Besøg",
+  "monthlyVisits": "Forventede månedlige besøg",
+  "visit": "Besøg",
+  "actions": {
+    "save": "Spare",
+    "saved": "Gemt",
+    "visit": "Besøg",
+    "share": "Dele",
+    "copyLink": "Kopiér link",
+    "shareThisTool": "Del dette værktøj"
+  },
+  "growth": "Vækst",
+  "pricing": {
+    "free": "Gratis"
+  }
+}

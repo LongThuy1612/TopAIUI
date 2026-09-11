@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Centre d'aide - Assistance TopAICollection",
+    "description": "Obtenez de l'aide avec TopAICollection. Trouvez des réponses aux questions courantes et contactez notre équipe d’assistance."
+  },
+  "title": "Centre d'aide",
+  "subtitle": "Comment pouvons-nous vous aider aujourd’hui ?",
+  "sections": {
+    "faq": {
+      "title": "FAQ",
+      "description": "Trouvez les réponses aux questions fréquemment posées.",
+      "link": "Voir la FAQ"
+    },
+    "contact": {
+      "title": "Contacter l'assistance",
+      "description": "Vous ne trouvez pas ce dont vous avez besoin ? Contactez-nous.",
+      "link": "Contactez-nous"
+    }
+  },
+  "commonTopics": {
+    "title": "Sujets communs",
+    "submitTool": "Comment soumettre mon outil d'IA ?",
+    "advertising": "Comment fonctionne la publicité ?",
+    "privacy": "Quelle est votre politique de confidentialité ?",
+    "terms": "Quelles sont vos conditions de service ?"
+  }
+}

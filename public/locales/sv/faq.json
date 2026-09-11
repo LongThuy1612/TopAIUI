@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Vanliga frågor - TopAICollection",
+    "description": "Hitta svar på vanliga frågor om TopAICollection och hur du använder vår AI-verktygskatalog."
+  },
+  "badge": "Hjälpcenter",
+  "title": "Vanliga frågor",
+  "subtitle": "Hitta svar på vanliga frågor om TopAICollection",
+  "categories": {
+    "general": "Allmänna frågor",
+    "tools": "Om AI-verktyg",
+    "submission": "Verktygsinlämning",
+    "account": "Konto & fakturering"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Vad är TopAICollection?",
+        "answer": "TopAICollection är en omfattande katalog över AI-verktyg och webbplatser. Vi hjälper användare att upptäcka de bästa AI-lösningarna för deras behov, från produktivitetsverktyg till kreativa applikationer."
+      },
+      "1": {
+        "question": "Hur hittar jag rätt AI-verktyg?",
+        "answer": "Du kan bläddra efter kategori, använda vår sökfunktion eller kolla våra utvalda och trendiga sektioner. Varje verktyg innehåller detaljerade beskrivningar, användarrecensioner och betyg som hjälper dig att fatta ett välgrundat beslut."
+      },
+      "2": {
+        "question": "Är TopAICollection gratis att använda?",
+        "answer": "Ja! Att bläddra och söka i vår katalog är helt gratis. Vissa listade verktyg kan ha sin egen prissättning, som tydligt anges på varje verktygs sida."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Hur väljs verktyg för katalogen?",
+        "answer": "Vi granskar noggrant varje inlämning för att säkerställa kvaliteten. Verktygen måste vara funktionella, ge användarna värde och följa våra riktlinjer. Vi tar också hänsyn till användarfeedback och betyg."
+      },
+      "1": {
+        "question": "Vilken information ges för varje verktyg?",
+        "answer": "Varje verktygslista innehåller en beskrivning, nyckelfunktioner, prisinformation, användarrecensioner, trafikanalys, kategorier och direktlänkar till verktygets webbplats."
+      },
+      "2": {
+        "question": "Hur ofta uppdateras katalogen?",
+        "answer": "Vår katalog uppdateras dagligen med nya verktyg och information. Vi övervakar kontinuerligt listade verktyg för att säkerställa noggrannhet och tar bort alla som inte längre är tillgängliga."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Hur kan jag skicka in mitt AI-verktyg?",
+        "answer": "Besök vår sida för inlämningsverktyg och fyll i inlämningsformuläret. Ge detaljerad information om ditt verktyg, inklusive dess funktioner, målgrupp och prissättning. Vi granskar alla inlämningar inom 48 timmar."
+      },
+      "1": {
+        "question": "Vilka är kraven för inlämning av verktyg?",
+        "answer": "Ditt verktyg måste vara funktionellt, ge tydligt värde för användarna, ha en professionell webbplats och uppfylla lagkrav. Vi accepterar inte verktyg som främjar olagliga aktiviteter eller kränker användarnas integritet."
+      },
+      "2": {
+        "question": "Hur mycket kostar det att lista ett verktyg?",
+        "answer": "Grundläggande listor är gratis. Vi erbjuder även utvalda och premiumannonser med ytterligare fördelar som prioriterad placering, reklamfunktioner och avancerad analys."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Behöver jag ett konto för att använda TopAICollection?",
+        "answer": "Inget konto krävs för att bläddra och söka i vår katalog. Genom att skapa ett konto kan du dock spara favoritverktyg, skriva recensioner och hantera verktygsinlämningar."
+      },
+      "1": {
+        "question": "Hur uppgraderar jag min verktygslista?",
+        "answer": "Logga in på ditt konto, gå till instrumentpanelen för verktygshantering och välj uppgraderingsalternativet. Du kan välja mellan utvalda eller premiumplaner med månatlig eller årlig fakturering."
+      },
+      "2": {
+        "question": "Kan jag avbryta min betalda annons när som helst?",
+        "answer": "Ja, du kan avbryta din betalda annons när som helst. Dina uppgifter kommer att finnas kvar till slutet av din nuvarande faktureringsperiod, och sedan återgå till en grundläggande lista."
+      }
+    }
+  },
+  "cta": {
+    "title": "Har du fortfarande frågor?",
+    "subtitle": "Vårt supportteam är här för att hjälpa till",
+    "button": "Kontakta support"
+  }
+}

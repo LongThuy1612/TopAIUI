@@ -1,0 +1,14 @@
+{
+  "title": "Search Results",
+  "resultsFor": "Results for \"{query}\"",
+  "filters": "Filters",
+  "typeFilters": "Type",
+  "categories": "Categories",
+  "noResults": "No results found",
+  "tryAgain": "Please try a different search term",
+  "placeholder": "Search AI tools...",
+  "button": "Search",
+  "loading": "Searching...",
+  "clearFilters": "Clear filters",
+  "categoryLabel": "Category"
+}

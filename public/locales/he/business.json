@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "פתרונות עסקיים - שותפו איתנו | TopAICollection",
+    "description": "חקור הזדמנויות לשותפות עסקית עם TopAICollection. פרסום, תוכן ממומן ועוד."
+  },
+  "title": "פתרונות עסקיים",
+  "subtitle": "שותף עם TopAICollection כדי להגיע לחובבי AI ברחבי העולם",
+  "contact": {
+    "title": "לְהִתְקַשֵׁר"
+  },
+  "offers": {
+    "ads": "הפעל מסעות פרסום ממוקדים",
+    "partnerships": "חקור שותפויות אסטרטגיות",
+    "growth": "האץ את צמיחת מוצרי הבינה המלאכותית שלך",
+    "consulting": "שירותי אינטגרציה של AI מותאמים אישית"
+  },
+  "form": {
+    "fullName": "שם מלא",
+    "workEmail": "אימייל לעבודה",
+    "companyName": "שם החברה",
+    "inquiryType": "סוג חקירה",
+    "selectType": "בחר סוג",
+    "message": "הוֹדָעָה",
+    "messagePlaceholder": "ספר לנו עוד על הצרכים שלך...",
+    "inquiryTypes": {
+      "advertise": "לְפַרְסֵם",
+      "guestPost": "פוסט אורח",
+      "partnership": "שׁוּתָפוּת",
+      "customDevelopment": "פיתוח מותאם אישית",
+      "other": "אַחֵר"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "פרסם את כלי הבינה המלאכותית שלך",
+      "description": "קבל את כלי הבינה המלאכותית שלך בולט בפלטפורמה שלנו.",
+      "link": "למידע נוסף"
+    },
+    "guestPost": {
+      "title": "פוסטים וקישורים אורחים",
+      "description": "פרסם תוכן או קבל קישורים נכנסים באתר בעל הסמכות הגבוהה שלנו.",
+      "link": "למידע נוסף"
+    },
+    "submitTool": {
+      "title": "שלח את הכלי שלך",
+      "description": "הוסף את כלי הבינה המלאכותית שלך לספרייה שלנו בחינם.",
+      "link": "שלח עכשיו"
+    },
+    "customSolutions": {
+      "title": "פתרונות מותאמים אישית",
+      "description": "צור איתנו קשר להזדמנויות שותפות מותאמות אישית.",
+      "link": "צור קשר"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100+ שותפים",
+    "partnerCountSub": "מהימן על ידי חברות AI מובילות",
+    "contactSupport": "צור קשר עם התמיכה"
+  },
+  "validation": {
+    "required": "שדה זה חובה",
+    "toolNameRequired": "נדרש שם הכלי",
+    "url": "כתובת אתר לא חוקית",
+    "descriptionMin": "התיאור חייב להיות באורך 10 תווים לפחות",
+    "categoryRequired": "אנא בחר קטגוריה",
+    "email": "כתובת אימייל לא חוקית",
+    "messageMin": "ההודעה חייבת להיות באורך 10 תווים לפחות"
+  },
+  "success": "שאלתך הוגשה בהצלחה!"
+}

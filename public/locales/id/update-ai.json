@@ -1,0 +1,118 @@
+{
+  "title": "Perbarui Alat AI Anda",
+  "description": "Selalu perbarui informasi alat AI Anda. Perbarui deskripsi, fitur, harga, atau detail lainnya untuk memastikan keakuratan.",
+  "hero": {
+    "title": "AI Anda di TopAICollection",
+    "subtitle": "TopAI dapat membantu Anda menjangkau jutaan pengguna AI dan calon pelanggan Anda di seluruh dunia."
+  },
+  "form": {
+    "toolLabel": "Alat",
+    "toolHint": "PS: Jika alatnya tidak dapat ditemukan, silakan kirimkan terlebih dahulu.",
+    "toolPlaceholder": "Telusuri alat Anda..."
+  },
+  "pricing": {
+    "title": "Perbarui Harga",
+    "price": "$49",
+    "period": "Suatu Saat",
+    "description": "Kami akan memperbarui untuk Anda dalam waktu 24 jam setelah pembayaran."
+  },
+  "updates": {
+    "title": "Jenis Pembaruan yang Didukung",
+    "types": [
+      {
+        "label": "Nama Alat",
+        "description": "Perbarui nama tampilan alat Anda"
+      },
+      {
+        "label": "Keterangan",
+        "description": "Revisi deskripsi singkat dan panjang alat Anda"
+      },
+      {
+        "label": "Kategori",
+        "description": "Ubah atau tambahkan kategori baru"
+      },
+      {
+        "label": "Daftar Fitur",
+        "description": "Perbarui sorotan fitur alat Anda"
+      },
+      {
+        "label": "Kasus Penggunaan",
+        "description": "Tambahkan atau perbarui contoh kasus penggunaan"
+      },
+      {
+        "label": "Info Harga",
+        "description": "Perbarui paket dan tingkatan harga"
+      },
+      {
+        "label": "FAQ",
+        "description": "Tambahkan atau ubah pertanyaan umum"
+      },
+      {
+        "label": "URL & Tautan",
+        "description": "Perbarui situs web, demo, atau tautan sosial"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Perlu diketahui",
+    "items": [
+      "Pembaruan diproses dalam waktu 24 jam setelah konfirmasi pembayaran.",
+      "Anda dapat memperbarui beberapa bidang dalam satu permintaan.",
+      "Tim kami akan meninjau dan mempublikasikan perubahan Anda.",
+      "Jika pembaruan memerlukan klarifikasi, kami akan menghubungi Anda melalui email.",
+      "Tangkapan layar/pembaruan media mungkin memerlukan waktu tambahan 24 jam."
+    ]
+  },
+  "faq": {
+    "title": "FAQ - Perbarui AI",
+    "items": [
+      {
+        "question": "Berapa lama waktu yang dibutuhkan untuk pembaruan?",
+        "answer": "Pembaruan biasanya diproses dalam waktu 24 jam setelah pembayaran. Perubahan yang kompleks mungkin memerlukan periode peninjauan tambahan."
+      },
+      {
+        "question": "Apa yang bisa saya perbarui?",
+        "answer": "Anda dapat memperbarui nama, deskripsi, kategori, fitur, kasus penggunaan, harga, FAQ, dan URL alat Anda."
+      },
+      {
+        "question": "Bisakah saya memperbarui banyak hal sekaligus?",
+        "answer": "Ya! Anda dapat meminta beberapa pembaruan dalam satu pengiriman. Semua perubahan sudah termasuk dalam biaya $49."
+      },
+      {
+        "question": "Bagaimana jika saya perlu melakukan koreksi setelah pembaruan?",
+        "answer": "Koreksi kecil terkait permintaan pembaruan awal Anda akan ditangani secara gratis dalam waktu 7 hari."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Mengapa Memperbarui Alat Anda?",
+    "reasons": [
+      "Jaga agar informasi tetap akurat dan terkini",
+      "Tingkatkan peringkat dan visibilitas pencarian",
+      "Perbarui harga dan perubahan fitur",
+      "Tambahkan tangkapan layar atau demo baru",
+      "Perbaiki informasi yang ketinggalan jaman",
+      "Sempurnakan deskripsi alat Anda"
+    ]
+  },
+  "meta": {
+    "title": "Perbarui Alat AI Anda - TopAICollection",
+    "description": "Selalu perbarui informasi alat AI Anda. Perbarui deskripsi, fitur, harga, atau detail lainnya untuk memastikan keakuratan."
+  },
+  "team": "Tim TopAICollection",
+  "validation": {
+    "required": "Bidang ini wajib diisi",
+    "selectTool": "Silakan pilih alat yang akan diperbarui",
+    "detailsTooShort": "Detail perubahan minimal harus 10 karakter",
+    "toolNameRequired": "Nama alat wajib diisi",
+    "url": "URL tidak valid",
+    "descriptionMin": "Deskripsi minimal harus 10 karakter",
+    "categoryRequired": "Silakan pilih kategori",
+    "email": "Alamat email tidak valid",
+    "messageMin": "Pesan minimal harus 10 karakter"
+  },
+  "sidebar": {
+    "updatedCount": "alat diperbarui",
+    "updatedCountSub": "bulan ini"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "welcome": "Velkommen, {name}!",
+  "welcomeDescription": "Udforsk vores kraftfulde funktioner og data for at opdage de seneste trends og muligheder i AI-industrien.",
+  "user": "Bruger",
+  "performanceOverview": "Præstationsoversigt",
+  "websiteInsightsQuota": "Hjemmesideindsigtskvote",
+  "socialListeningQueries": "Social lytning-kvote",
+  "stats": {
+    "organicClicks": "Organiske Klik",
+    "paidClicks": "Betalte Klik",
+    "totalClicks": "Samlede Klik",
+    "totalTools": "Samlede Værktøjer",
+    "totalViews": "Samlede Visninger",
+    "credits": "Kreditter"
+  },
+  "features": {
+    "websiteInsights": "Hjemmesideindsigt",
+    "socialListening": "Social lytning",
+    "prioritySupport": "Prioriteret support",
+    "advertising": "Annoncering",
+    "premiumSupport": "Premium-support"
+  },
+  "badgePopular": "Mest populær",
+  "title": "Social lytning-sporing",
+  "description": "Overvåg søgeord på tværs af TikTok og YouTube.",
+  "adCredits": "Annoncekreditter",
+  "postCredits": "Indlægskreditter",
+  "linkCredits": "Tilknyt kreditter",
+  "forSponsoredListings": "For sponsorerede opslag",
+  "forGuestArticles": "Til gæsteartikler",
+  "forLinkInsertions": "For linkindsættelser",
+  "buyCredits": "Køb kreditter",
+  "noOrders": "Ingen ordrer fundet.",
+  "orderHistory": "Ordrehistorik",
+  "orderId": "Ordre-id",
+  "amount": "Beløb",
+  "date": "Dato",
+  "type": "Skriv",
+  "invoice": "Faktura",
+  "currentPlan": "Nuværende plan",
+  "freeTier": "Gratis niveau",
+  "freeTierDesc": "Opgrader din plan for at låse op for flere funktioner og indsigt.",
+  "creditBalances": "Kreditsaldi",
+  "subscriptionDetails": "Abonnementsoplysninger",
+  "upgradePlan": "Opgraderingsplan",
+  "statusActive": "Aktiv",
+  "planMemberSince": "Medlem af denne plan",
+  "renewalDate": "Fornyer på",
+  "changePlan": "Skift plan",
+  "redirecting": "Omdirigerer...",
+  "credits": "Kreditter",
+  "managePortal": "Administrer faktureringsportal",
+  "subscribe": "Abonner nu",
+  "upgradeTitle": "Opgrader din forskningsplan",
+  "upgradeDesc": "Lås op for avanceret analyse, konkurrentindsigt og meget mere.",
+  "choosePlan": {
+    "title": "Vælg din forskningsplan",
+    "subtitle": "Få AI markedsintelligens og data til at drive beslutninger."
+  },
+  "billingIntervals": {
+    "monthly": "Månedlig",
+    "yearly": "Årligt"
+  },
+  "subtitle": "Administrer og spor ydeevnen af ​​dine indsendte AI-værktøjer.",
+  "create": "Opret kampagne",
+  "noCampaigns": "Ingen kampagner endnu",
+  "createFirst": "Opret din første kampagne for at begynde at promovere dine AI-værktøjer",
+  "getStarted": "Kom i gang",
+  "budget": "Økonomi",
+  "spent": "Brugt",
+  "startDate": "Startdato",
+  "endDate": "Slutdato",
+  "notSet": "Ikke indstillet",
+  "ongoing": "Løbende",
+  "pause": "Pause",
+  "resume": "Genoptage",
+  "viewDetails": "Se detaljer",
+  "clicks": "Klik",
+  "impressions": "Indtryk",
+  "rejectionReason": "Grund til afvisning",
+  "analytics": {
+    "title": "Kampagneanalyse",
+    "description": "Detaljeret oversigt over visninger og klik i løbet af de sidste 30 dage.",
+    "exportJson": "Eksporter JSON",
+    "dailyPerformance": "Daglig præstation",
+    "topLocales": "Topregioner (lokaliteter)"
+  },
+  "track": "Spore",
+  "noDomains": "Ingen domæner sporet endnu. Tilføj en ovenfor!",
+  "domain": "Domæne",
+  "monthlyVisits": "Månedlige besøg",
+  "rank": "Rang",
+  "topKeywords": "Top søgeord",
+  "added": "Tilføjet",
+  "tool": "Værktøj",
+  "organicClicks": "Organiske klik",
+  "paidClicks": "Betalte klik",
+  "totalClicks": "Samlet antal klik",
+  "addedOn": "Tilføjet på",
+  "noTools": "Ingen værktøjer sporet endnu.",
+  "empty": {
+    "title": "Ingen AI-værktøjer endnu",
+    "description": "Indsend dit AI-værktøj for at blive opdaget af millioner af brugere.",
+    "cta": "Indsend AI-værktøj"
+  },
+  "columns": {
+    "tool": "Værktøj",
+    "organic": "Økologisk trafik",
+    "paid": "Betalt trafik",
+    "impressions": "Indtryk",
+    "actions": "Handlinger",
+    "status": "Status"
+  },
+  "statusTooltip": {
+    "pending": "Afventer admin-godkendelse"
+  },
+  "submittedToast": "Dit værktøj er blevet indsendt og afventer gennemgang.",
+  "warnings": {
+    "pendingView": "Dette værktøj er stadig under revision og endnu ikke offentligt synligt.",
+    "confirmDelete": "Er du sikker på, at du vil slette dette AI-værktøj? Denne handling kan ikke fortrydes."
+  },
+  "gpt": {
+    "title": "Mine GPT'er",
+    "submitNew": "Indsend ny GPT",
+    "noGpts": "Ingen GPT'er fundet. Indsend din første!",
+    "noGptsDesc": "Ingen GPT'er indsendt endnu. Indsend din GPT for at blive opdaget.",
+    "columns": {
+      "name": "GPT navn",
+      "date": "Indsendt",
+      "url": "ChatGPT URL"
+    }
+  },
+  "updateAi": "Opdater AI",
+  "submitNew": "Send nyt",
+  "submitNewItem": "Indsend ny vare",
+  "linkInsert": {
+    "label": "Link Indsæt",
+    "submit": "Send linkindsæt",
+    "empty": {
+      "title": "Ingen link indsat endnu",
+      "description": "Du har ikke indsendt nogen linkindsættelser endnu."
+    }
+  },
+  "form": {
+    "type": "Skriv",
+    "targetUrl": "Mål-URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Titel / Ankertekst",
+    "anchorTextPlaceholder": "Artiklens titel ELLER Ankertekst til link",
+    "submitCredits": "Indsend (1 kredit)"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Sikkerhed",
+    "notifications": "Meddelelser"
+  },
+  "table": {
+    "platform": "Platforme",
+    "keyword": "Søgeord",
+    "videos": "Videoer",
+    "views": "Visninger",
+    "creators": "Skabere",
+    "status": "Status"
+  },
+  "updated": "Indstillingerne blev opdateret",
+  "password": {
+    "title": "Skift adgangskode",
+    "current": "Nuværende adgangskode",
+    "new": "Ny adgangskode",
+    "confirm": "Bekræft ny adgangskode",
+    "update": "Opdater adgangskode"
+  },
+  "notifications": {
+    "title": "Notifikationspræferencer",
+    "email": "E-mail-meddelelser",
+    "marketing": "Marketing e-mails"
+  },
+  "metrics": {
+    "monthlyQueries": "Månedlige forespørgsler",
+    "videosToday": "Videoer i dag",
+    "creatorsToday": "Skabere i dag"
+  },
+  "advertiseAi": "Annoncer AI",
+  "myAis": {
+    "title": "Mine AI'er",
+    "subtitle": "Administrer og spor ydeevnen af ​​dine indsendte AI-værktøjer.",
+    "empty": {
+      "cta": "Indsend AI-værktøj"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Afvisningsårsag"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Spor søgeordsplacering og ydeevne",
+    "socialListeningDesc": "Overvåg sociale omtaler og trends",
+    "researchReportDesc": "Generer omfattende markedsrapporter",
+    "aiAdvertisingLibrary": "AI-annonceringsbibliotek",
+    "aiAdvertisingDesc": "Analyser konkurrerende AI-annoncer",
+    "comingSoon": "Kommer snart"
+  },
+  "reports": {
+    "title": "Forskningsrapporter",
+    "description": "Få adgang til dybdegående analytiske rapporter om kunstig intelligens-industrien.",
+    "noReports": "Ingen tilgængelige rapporter",
+    "free": "Gratis",
+    "unlock": "Lås rapport op",
+    "noReportsDesc": "Vi er i øjeblikket ved at forberede ny indsigt.",
+    "readNow": "Læs rapporten",
+    "readerTitle": "Forskningsrapportlæser",
+    "unlockRequired": "Premium-indhold",
+    "unlockDesc": "Lås op for denne dybdegående forskningsrapport for at få fuld adgang til eksklusiv markedsanalyse, casestudier og brugbar indsigt.",
+    "unlockNow": "Lås op nu",
+    "related": "rapporter vedrørende ovenstående.",
+    "toc": "Hjælp på denne side",
+    "backToList": "Tilbage til Biblioteket",
+    "notFound": "Rapport ikke fundet",
+    "unlockSuccess": "Rapporten blev låst op!",
+    "unlockError": "Kunne ikke låse rapporten op.",
+    "searchPlaceholder": "Søge rapporter",
+    "download": "Download"
+  },
+  "toolPerformance": "Værktøjsydelse (realtid)",
+  "download": "Download"
+}

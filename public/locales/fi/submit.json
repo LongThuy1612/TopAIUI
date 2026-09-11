@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Lähetä tekoälytyökalusi - TopAICollection",
+    "description": "Lisää tekoälytyökalusi TopAICollection-hakemistoon ja tavoita miljoonia tekoälyratkaisuja etsiviä käyttäjiä."
+  },
+  "badge": "Luetteloi työkalusi",
+  "hero": {
+    "title": "Tee tekoälytyökalustasi tunnettu",
+    "subtitle": "Liity tuhansien tekoälytyökalujen joukkoon hakemistossamme ja tavoita miljoonia potentiaalisia käyttäjiä ympäri maailmaa."
+  },
+  "benefits": {
+    "title": "Miksi lisätä TopAICollectioniin?",
+    "traffic": {
+      "title": "Lisääntynyt liikenne",
+      "description": "Hanki suoraa liikennettä käyttäjiltä, ​​jotka etsivät aktiivisesti tekoälyratkaisuja"
+    },
+    "exposure": {
+      "title": "Globaali näkyvyys",
+      "description": "Tavoita käyttäjiä yli 20 kielellä, yli 100 maassa"
+    },
+    "credibility": {
+      "title": "Parempi uskottavuus",
+      "description": "Rakenna luottamusta vahvistetun listauksen ja käyttäjäarvostelujen avulla"
+    }
+  },
+  "pricing": {
+    "title": "Valitse suunnitelmasi",
+    "popular": "Suosituin",
+    "basic": {
+      "name": "Peruslistaus",
+      "price": "Ilmainen",
+      "features": {
+        "0": "Työkalun peruslistaus",
+        "1": "Kategoriasijoitus",
+        "2": "Yhteystiedot",
+        "3": "Perusanalytiikka"
+      }
+    },
+    "featured": {
+      "name": "Esittelylistaus",
+      "price": "99 dollaria/kk",
+      "features": {
+        "0": "Kaikki peruslistauksessa",
+        "1": "Esittelymerkki",
+        "2": "Etusija hakutuloksissa",
+        "3": "Sijoitus etusivulle",
+        "4": "Kehittynyt analytiikka",
+        "5": "Promootio sosiaalisessa mediassa"
+      }
+    },
+    "premium": {
+      "name": "Premium-listaus",
+      "price": "299 dollaria/kk",
+      "features": {
+        "0": "Kaikki esittelylistauksessa",
+        "1": "Ylin hakusijoitus",
+        "2": "Sisällyttäminen uutiskirjeeseen",
+        "3": "Blogiartikkelin arvostelu",
+        "4": "Video-esittely",
+        "5": "Omistettu tuki"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Työkalun nimi",
+    "namePlaceholder": "esim. ChatGPT, DALL-E, Midjourney",
+    "website": "Verkkosivuston URL",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "Kategoriat",
+    "selectCategory": "Valitse kategoria",
+    "price": "$49 kertamaksu",
+    "submit": "Lähetä työkalu",
+    "success": {
+      "title": "Lähetys onnistui!",
+      "description": "Työkalusi on lähetetty tarkastettavaksi.",
+      "redirecting": "Ohjataan maksuun..."
+    }
+  },
+  "form": {
+    "title": "Lähetä työkalusi",
+    "sections": {
+      "basic": "Perustiedot",
+      "categorization": "Kategoriat ja tunnisteet",
+      "media": "Mediasisältö",
+      "plan": "Valitse suunnitelma",
+      "contact": "Yhteystiedot"
+    },
+    "fields": {
+      "name": {
+        "label": "Työkalun nimi",
+        "placeholder": "Mahtava tekoälytyökaluni"
+      },
+      "url": {
+        "label": "Verkkosivun URL",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "Iskulause",
+        "placeholder": "Lyhyt kuvaus (enintään 100 merkkiä)"
+      },
+      "description": {
+        "label": "Kuvaus",
+        "placeholder": "Yksityiskohtainen kuvaus tekoälytyökalustasi (max 500 merkkiä)"
+      },
+      "category": {
+        "label": "Kategoria",
+        "placeholder": "Valitse kategoria",
+        "options": {
+          "productivity": "Tuottavuus",
+          "business": "Liiketoiminta",
+          "development": "Kehitys (Dev)",
+          "other": "Muu"
+        }
+      },
+      "tags": {
+        "label": "Tunnisteet",
+        "placeholder": "tekoäly, tuottavuus, automaatio (pilkulla erotettuna)",
+        "hint": "Erottele pilkuilla"
+      },
+      "logo": {
+        "label": "Logo",
+        "placeholder": "Napsauta ladataksesi tai vedä ja pudota",
+        "hint": "PNG tai JPG, maks. 2MB"
+      },
+      "plan": {
+        "label": "Luettelosuunnitelma",
+        "placeholder": "Valitse suunnitelma"
+      },
+      "terms": {
+        "label": "Hyväksyn käyttöehdot ja tietosuojakäytännön"
+      },
+      "contact_name": {
+        "label": "Nimesi",
+        "placeholder": "esim. John Doe"
+      },
+      "contact_email": {
+        "label": "Sähköpostiosoitteesi",
+        "placeholder": "esim. john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "Lähettämällä hyväksyt käyttöehtomme ja tietosuojakäytäntömme.",
+      "freeSubmission": "Ilmainen lähetys."
+    },
+    "submit": "Lähetä Työkalu",
+    "submitting": "Lähetetään...",
+    "success": {
+      "title": "Työkalu on lähetetty onnistuneesti!",
+      "description": "Tarkistamme lähetyksesi ja ilmoitamme sinulle 48 tunnin kuluessa."
+    },
+    "error": {
+      "title": "Lähetys epäonnistui",
+      "description": "Tarkista kaikki kentät ja yritä uudelleen.",
+      "noSettings": "Lähetysasetukset eivät ole käytettävissä. Yritä myöhemmin uudelleen."
+    },
+    "loginRequiredTitle": "Sisäänkirjautuminen vaaditaan",
+    "loginRequiredDesc": "Kirjaudu sisään lähettääksesi työkalun. Edistymistäsi ei tallenneta, ennen kuin todennat.",
+    "loginBtn": "Kirjaudu sisään"
+  },
+  "categoriesPage": {
+    "searchCategory": "Hae kategorioita…",
+    "noCategoryFound": "Kategorioita ei löytynyt."
+  },
+  "toolForm": {
+    "selectSubCategory": "Valitse alakategoria…",
+    "noSubCategory": "Ei alakategorioita."
+  },
+  "errors": {
+    "general": "Jotain meni pieleen. Yritä uudelleen."
+  },
+  "processing": "Käsitellään...",
+  "sidebar": {
+    "toolCount": "Yli 5000 tekoälytyökalua",
+    "toolCountSub": "Liity kasvavaan hakemistoomme",
+    "badgeDescription": "Työkalusi lähettäminen on ensimmäinen askel näkyvyyden hankkimiseen tekoälyyhteisössä."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Lähetyksen tietojen lataaminen epäonnistui.",
+      "noId": "Lähetystunnusta ei ole annettu.",
+      "notFound": "Lähetystä ei löydy."
+    },
+    "status": {
+      "paymentRequired": "Maksu vaaditaan",
+      "paymentRequiredDesc": "Suorita maksu loppuun jatkaaksesi tarkistusta.",
+      "underReview": "Tarkistuksessa",
+      "underReviewDesc": "Tiimimme tarkastaa lähetyksesi.",
+      "approved": "Hyväksytty",
+      "approvedDesc": "Lähetyksesi on hyväksytty ja julkaistu.",
+      "received": "Vastaanotettu",
+      "receivedDesc": "Olemme vastaanottaneet hakemuksesi."
+    },
+    "types": {
+      "submit": "Lähetä AI-työkalu",
+      "advertise": "Mainostaa",
+      "guestPost": "Vierasposti",
+      "updateAI": "Päivitä AI"
+    },
+    "paymentAlert": "Maksu vaaditaan lähetyksen viimeistelemiseksi.",
+    "actions": {
+      "viewDashboard": "Näytä hallintapaneeli"
+    }
+  },
+  "error": "Jotain meni pieleen. Yritä uudelleen.",
+  "backToHome": "Takaisin etusivulle",
+  "submissionSuccess": {
+    "title": "Otsikko",
+    "description": "Kuvaus"
+  },
+  "successTitle": "Onnistumisen otsikko",
+  "title": "Otsikko"
+}

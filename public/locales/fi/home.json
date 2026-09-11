@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Löydä parhaat tekoälytyökalut ja -sivustot",
+    "description": "Tutustu #1 AI-työkalujen hakemistolistaan. Tämä AI-työkalujen sanakirjasivusto auttaa sinua löytämään, vertailemaan ja ottamaan käyttöön ehdottomasti parhaat AI-ohjelmistot ILMAISEKSI."
+  },
+  "nav": {
+    "today": "Tänään",
+    "latestAI": "Uusin AI",
+    "mostSaved": "Eniten pelastuneita",
+    "mostUsed": "Eniten käytetty",
+    "browserPlugin": "Selainlaajennus",
+    "application": "Sovellus",
+    "discordOfAI": "AI:n ristiriita (Discord)",
+    "compareAI": "Vertaa AI",
+    "ariaLabel": "Päänavigointi"
+  },
+  "hero": {
+    "title": "Tutustu parhaisiin tekoälyverkkosivustoihin ja -työkaluihin",
+    "subtitle": "Löydä tarpeisiisi täydelliset tekoälytyökalut kattavasta hakemistostamme, jota päivitetään päivittäin uusimmilla tekoälyinnovaatioilla.",
+    "stats": {
+      "aiTools": "AI-työkalut",
+      "categories": "luokat",
+      "languages": "kieliä",
+      "and": "ja",
+      "supporting": "tukevat",
+      "description": "Kattava AI-kokoelma, jota päivitetään päivittäin uusimmilla innovaatioilla."
+    }
+  },
+  "search": {
+    "placeholder": "Etsi tekoälyn työkaluja, esim. Videon käännös AI -työkalu",
+    "button": "Haku"
+  },
+  "sections": {
+    "featured": {
+      "title": "Suositellut AI-työkalut",
+      "description": "Tutustu suosituimpiin ja tehokkaimpiin tekoälytyökaluihin",
+      "noTools": "Suositeltuja työkaluja ei ole tällä hetkellä saatavilla"
+    },
+    "justLaunched": {
+      "title": "Juuri käynnistetty",
+      "description": "Uusimmat tekoälytyökalut ja innovaatiot",
+      "noTools": "Uusia työkaluja ei ole tällä hetkellä saatavilla"
+    },
+    "categories": {
+      "title": "Selaa luokan mukaan",
+      "description": "Löydä tekoälytyökalut käyttötapausten ja toimialojen mukaan järjestettyinä"
+    },
+    "trending": {
+      "title": "Nousussa nyt",
+      "description": "Suosituimmat tekoälytyökalut tällä viikolla"
+    }
+  },
+  "cta": {
+    "title": "Listaa tekoälytyökalusi",
+    "description": "Tavoita miljoonia potentiaalisia käyttäjiä lisäämällä tekoälytyökalusi hakemistoomme.",
+    "button": "Lähetä työkalusi",
+    "features": {
+      "exposure": "Globaali altistuminen",
+      "traffic": "Lisääntynyt liikenne",
+      "seo": "SEO edut"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "AI-sovellukset",
+      "description": "Löydä parhaat tekoälysovellukset tuottavuuteen, luovuuteen ja muuhun."
+    },
+    "browserExtensions": {
+      "title": "AI-selainlaajennukset",
+      "description": "Tutustu parhaisiin tekoälyselainlaajennuksiin työnkulkusi tehostamiseksi."
+    },
+    "latestAi": {
+      "title": "Uusimmat AI-työkalut",
+      "description": "Tutustu uusimpiin tekoälytyökaluihin ja innovaatioihin, joita päivitetään päivittäin."
+    },
+    "mostSaved": {
+      "title": "Tallennetuimmat AI-työkalut",
+      "description": "Tutustu yhteisömme tallentamiin ja kirjanmerkkeihin merkityimpiin tekoälytyökaluihin."
+    },
+    "mostUsed": {
+      "title": "Eniten Käytetyt AI-työkalut",
+      "description": "Löydä yhteisömme suosituimmat ja eniten käytetyt AI-työkalut."
+    },
+    "discord": {
+      "title": "AI Discord -yhteisöt",
+      "description": "Löydä parhaat AI-Discord-yhteisöt ja yhdisty AI-harrastajien kanssa."
+    },
+    "today": {
+      "title": "Tänään Esitellyt AI-työkalut",
+      "description": "Löydä parhaat AI-työkalut, jotka on esitelty tänään TopAICollectionissa."
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "Tekstin luominen",
+          "Image Creation": "Kuvan luominen",
+          "Coding": "Koodaus",
+          "Video": "Video",
+          "Audio": "Audio",
+          "Productivity": "Tuottavuus"
+        },
+        "text": "Mihin haluat käyttää AI:ta?"
+      },
+      "budget": {
+        "options": {
+          "Free only": "Vain ilmaiset",
+          "Freemium": "Freemium",
+          "Paid is fine": "Maksullinen käy"
+        },
+        "text": "Mikä on budjettisi?"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "Aloittelija",
+          "Intermediate": "Keskitaso",
+          "Expert": "Asiantuntija"
+        },
+        "text": "Mikä on osaamistasosi?"
+      }
+    },
+    "title": "Henkilökohtaiset suosituksesi",
+    "viewTool": "Näytä työkalu",
+    "noTools": "Mikään työkalu ei vastannut tarkkoja kriteerejäsi. Kokeile laajentaa hakuasi!",
+    "startOver": "Aloita alusta",
+    "finding": "Etsitään sinulle parhaita AI-työkaluja...",
+    "questionLabel": "Kysymys {step} / {total}",
+    "completed": "{percentage}% valmis"
+  }
+}

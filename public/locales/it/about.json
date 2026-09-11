@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Chi siamo - TopAICollection",
+    "description": "Scopri la missione di TopAICollection per aiutarti a scoprire i migliori strumenti e siti Web di intelligenza artificiale per le tue esigenze."
+  },
+  "badge": "Chi siamo",
+  "hero": {
+    "title": "La tua porta d'accesso alla rivoluzione dell'intelligenza artificiale",
+    "subtitle": "La nostra missione è democratizzare l'accesso agli strumenti di intelligenza artificiale e aiutare tutti a sfruttare la potenza dell'intelligenza artificiale."
+  },
+  "stats": {
+    "tools": "Strumenti di intelligenza artificiale",
+    "categories": "Categorie",
+    "users": "Utenti mensili",
+    "languages": "Lingue"
+  },
+  "mission": {
+    "title": "La nostra missione",
+    "paragraph1": "Noi di TopAICollection crediamo che l'intelligenza artificiale dovrebbe essere accessibile a tutti. La nostra piattaforma funge da directory completa dei migliori strumenti e siti Web di intelligenza artificiale, consentendo agli utenti di scoprire e sfruttare facilmente l'intelligenza artificiale nel loro lavoro e nella vita quotidiana.",
+    "paragraph2": "Curiamo e esaminiamo attentamente ogni strumento della nostra raccolta, garantendo che i nostri utenti abbiano accesso solo a soluzioni AI della massima qualità. Il nostro team di esperti valuta gli strumenti in base a funzionalità, esperienza utente, prezzi e applicazioni reali.",
+    "paragraph3": "Che tu sia uno sviluppatore, un designer, un esperto di marketing, un educatore o un imprenditore, TopAICollection ti aiuta a trovare gli strumenti di intelligenza artificiale perfetti per migliorare la tua produttività e creatività."
+  },
+  "features": {
+    "title": "Perché scegliere TopAICollection",
+    "global": {
+      "title": "Portata globale",
+      "description": "Disponibile in oltre 20 lingue, al servizio di milioni di utenti in tutto il mondo"
+    },
+    "updated": {
+      "title": "Aggiornamenti quotidiani",
+      "description": "La nostra collezione viene aggiornata quotidianamente con le ultime innovazioni AI"
+    },
+    "community": {
+      "title": "Guidato dalla comunità",
+      "description": "Le recensioni e le valutazioni degli utenti ti aiutano a prendere decisioni informate"
+    },
+    "verified": {
+      "title": "Strumenti verificati",
+      "description": "Ogni strumento viene attentamente esaminato e verificato dal nostro team"
+    }
+  },
+  "cta": {
+    "title": "Inizia oggi il tuo viaggio nell'intelligenza artificiale",
+    "subtitle": "Esplora la nostra raccolta di strumenti IA o inviane uno tuo",
+    "browse": "Sfoglia Strumenti",
+    "submit": "Invia il tuo strumento"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Dien uw GPT in - Zorg dat uw GPT wordt uitgelicht | TopAITopAICollectionCollection",
+    "description": "Dien uw aangepaste GPT in, zodat deze in onze GPT-directory wordt opgenomen. Bereik duizenden AI-enthousiastelingen."
+  },
+  "title": "Dien uw GPT in",
+  "subtitle": "Zorg ervoor dat uw aangepaste GPT in onze directory wordt vermeld",
+  "loginRequired": "Inloggen vereist",
+  "submitButton": "GPT indienen",
+  "whySubmit": {
+    "title": "Waarom uw GPT indienen?"
+  },
+  "benefits": {
+    "audience": "Bereik dagelijks duizenden AI-enthousiastelingen",
+    "instant": "Directe vermelding na verificatie",
+    "global": "Wereldwijde bekendheid in alle talen",
+    "analytics": "Houd klikken en betrokkenheid bij"
+  },
+  "proTip": {
+    "title": "Pro-tip",
+    "desc": "Zorg ervoor dat uw GPT openbaar en toegankelijk is via een link voordat u deze indient."
+  },
+  "form": {
+    "gptName": "GPT-naam",
+    "gptNamePlaceholder": "bijv. Codewizard",
+    "gptUrl": "ChatGPT-URL",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "Icoon-URL",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Beschrijving / Instructies",
+    "gptDescriptionPlaceholder": "Beschrijf wat uw GPT doet..."
+  },
+  "validation": {
+    "required": "Dit veld is verplicht",
+    "invalidUrl": "Ongeldige ChatGPT-URL",
+    "nameTooShort": "Naam moet minimaal 2 tekens bevatten",
+    "descriptionTooShort": "Beschrijving moet minimaal 10 tekens lang zijn",
+    "toolNameRequired": "Gereedschapsnaam is vereist",
+    "url": "Ongeldige URL",
+    "descriptionMin": "Beschrijving moet minimaal 10 tekens lang zijn",
+    "categoryRequired": "Selecteer een categorie",
+    "email": "Ongeldig e-mailadres",
+    "messageMin": "Het bericht moet minimaal 10 tekens lang zijn"
+  },
+  "sidebar": {
+    "gptCount": "GPT's ingediend",
+    "gptCountSub": "en groeien"
+  },
+  "success": "Uw GPT is succesvol ingediend!"
+}

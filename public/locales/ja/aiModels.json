@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "AIモデルとデータセット | TopAICollection",
+    "description": "次のプロジェクトに向けて、最新のAIモデル、データセット、アーキテクチャを発見・探索しましょう。"
+  },
+  "title": "AIモデルライブラリ",
+  "subtitle": "AIモデル、ファインチューニング、データセットの最大コレクションを探索しましょう。",
+  "comingSoon": "近日公開！",
+  "comingSoonMessage": "現在、最高のAIモデルを精選しています。近日公開予定です。",
+  "searchPlaceholder": "AIモデルを検索...",
+  "allProviders": "全プロバイダー",
+  "noResults": "AIモデルが見つかりません",
+  "noResultsHint": "検索条件やフィルター条件を調整してみてください。",
+  "contextWindow": "コンテキストウィンドウ",
+  "parameters": "パラメータ数",
+  "provider": "プロバイダー",
+  "architecture": "アーキテクチャ",
+  "releaseDate": "リリース日",
+  "costPer1kTokens": "1Kトークンあたりコスト",
+  "free": "無料 / オープンソース",
+  "tokens": "トークン",
+  "viewWebsite": "ウェブサイトを見る",
+  "modelsCount": "{count}件のAIモデル",
+  "modelsCount_plural": "{count}件のAIモデル",
+  "modelsGridTitle": "AIモデル"
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Hubungi Kami - TopAICollection",
+    "description": "Hubungi tim TopAICollection. Kami siap membantu menjawab pertanyaan apa pun tentang alat AI."
+  },
+  "title": "Hubungi kami",
+  "subtitle": "Punya pertanyaan atau masukan? Kami ingin mendengar pendapat Anda. Tim kami biasanya merespons dalam waktu 24 jam.",
+  "form": {
+    "title": "Kirimkan pesan kepada kami",
+    "fields": {
+      "name": {
+        "label": "Nama Anda",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "label": "Alamat Surel",
+        "placeholder": "john@example.com"
+      },
+      "subject": {
+        "label": "Subjek",
+        "placeholder": "Pilih subjek",
+        "options": {
+          "general": "Pertanyaan Umum",
+          "support": "Dukungan Teknis",
+          "feedback": "Masukan",
+          "partnership": "Peluang Kemitraan",
+          "other": "Lainnya"
+        }
+      },
+      "message": {
+        "label": "Pesan",
+        "placeholder": "Beritahu kami apa yang ada dalam pikiran Anda..."
+      }
+    },
+    "submit": "Kirim Pesan",
+    "submitting": "Mengirim...",
+    "success": {
+      "title": "Pesan berhasil terkirim!",
+      "description": "Kami telah menerima pesan Anda dan akan segera menghubungi Anda kembali."
+    },
+    "error": {
+      "title": "Gagal mengirim pesan",
+      "description": "Ada yang tidak beres. Silakan coba lagi nanti."
+    }
+  },
+  "info": {
+    "title": "Hubungi kami",
+    "email": {
+      "title": "Email Kami",
+      "content": "dukungan@topaicollection.com"
+    },
+    "support": {
+      "title": "Jam Dukungan",
+      "content": "Tim dukungan kami tersedia Senin hingga Jumat"
+    },
+    "hours": {
+      "title": "Jam Kerja",
+      "content": "09.00 - 18.00 EST"
+    },
+    "location": {
+      "title": "Lokasi",
+      "content": "Melayani pengguna secara global dari tim terdistribusi kami"
+    }
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "q1": "Bagaimana cara mengirimkan alat AI saya?",
+    "a1": "Klik tombol Kirim Alat di navigasi dan isi formulir pengiriman.",
+    "q2": "Berapa lama waktu yang dibutuhkan untuk persetujuan?",
+    "a2": "Sebagian besar kiriman ditinjau dalam 1-3 hari kerja.",
+    "q3": "Bisakah saya memperbarui daftar alat saya?",
+    "a3": "Ya, masuk ke dashboard Anda dan gunakan fitur Update AI."
+  }
+}

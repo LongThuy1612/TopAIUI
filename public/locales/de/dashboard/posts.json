@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Beiträge & Links",
+    "description": "Verwalten Sie Ihre Gastbeiträge und Link-Einfügungen.",
+    "submitNewItem": "Neues Element einreichen",
+    "submitNew": "Neu einreichen",
+    "guestPost": "Gastbeitrag",
+    "linkInsert": "Link-Einfügung",
+    "type": "Typ",
+    "targetUrl": "Ziel-URL",
+    "targetUrlPlaceholder": "https://ihre-seite.com/...",
+    "anchorText": "Titel / Ankertext",
+    "anchorTextPlaceholder": "Titel des Artikels ODER Ankertext für Link",
+    "submitCredits": "Einreichen (1 Credit)",
+    "tabs": {
+      "guestPosts": "Gastbeiträge",
+      "linkInserts": "Link-Einfügungen"
+    },
+    "table": {
+      "title": "Titel",
+      "anchor": "Ankertext",
+      "url": "„URL“",
+      "status": "„Status“",
+      "date": "Datum"
+    },
+    "empty": {
+      "noGuestTitle": "Keine Gastbeiträge",
+      "noGuestDesc": "Sie haben noch keine Gastbeiträge eingereicht.",
+      "noGuestCta": "Gastbeitrag einreichen",
+      "noLinkTitle": "Keine Link-Einfügungen",
+      "noLinkDesc": "Sie haben noch keine Link-Einfügungen eingereicht.",
+      "noLinkCta": "Link-Einfügung einreichen"
+    },
+    "subtitle": "Verwalten Sie Ihre Gastbeiträge und Linkeinfügungen."
+  }
+}

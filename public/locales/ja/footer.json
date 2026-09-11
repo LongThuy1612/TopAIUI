@@ -1,0 +1,92 @@
+{
+  "about": "私たちについて",
+  "contact": "接触",
+  "blog": "ブログ",
+  "privacy": "プライバシーポリシー",
+  "terms": "利用規約",
+  "cookies": "クッキーポリシー",
+  "copyright": "© {year} TopAICollection.無断転載を禁じます。",
+  "sitemap": "サイトマップ",
+  "resources": "リソース",
+  "help": "ヘルプセンター",
+  "faq": "よくある質問",
+  "submitTool": "送信ツール",
+  "description": "TopAICollection は、最高の AI ツールと Web サイトを見つけるための究極のディレクトリです。",
+  "browseByAlphabet": "アルファベットで見る",
+  "topAITools": {
+    "title": "人気の AI ツール",
+    "items": {
+      "gpt4": "GPT -4",
+      "midjourney": "旅の途中",
+      "chatgpt": "チャットGPT ChatGPT",
+      "stableDiffusion": "安定した拡散",
+      "jasper": "碧玉"
+    }
+  },
+  "moreTools": {
+    "title": "その他のツール",
+    "items": {
+      "audio": "オーディオAI",
+      "video": "ビデオAI",
+      "writing": "AIを書く",
+      "image": "画像AI",
+      "coding": "コーディングAI"
+    }
+  },
+  "recommend": {
+    "title": "推薦する",
+    "items": {
+      "newest": "最新のツール",
+      "mostSaved": "最も保存された",
+      "trending": "今のトレンド",
+      "editorsChoice": "編集者の選択",
+      "featured": "注目の",
+      "leaderboard": "リーダーボード"
+    }
+  },
+  "readMore": {
+    "title": "続きを読む",
+    "items": {
+      "blog": "ブログ",
+      "news": "AIニュース",
+      "guides": "ガイド",
+      "tutorials": "チュートリアル",
+      "glossary": "AI用語集"
+    }
+  },
+  "company": {
+    "title": "について",
+    "items": {
+      "aboutUs": "私たちについて",
+      "contact": "業務連絡先",
+      "editorialGuidelines": "編集ガイドライン",
+      "reviewMethodology": "レビュー手法",
+      "submit": "送信",
+      "advertise": "広告掲載"
+    }
+  },
+  "chooseLanguage": "言語の選択",
+  "followUs": "私たちに従ってください",
+  "more": "もっと...",
+  "directory": {
+    "title": "AI ツール ディレクトリ アーカイブ"
+  },
+  "companyInfo": {
+    "name": "「株式会社TopAICollection」",
+    "address": "「シリコンバレーのテック地区」",
+    "city": "「カリフォルニア州サンフランシスコ 94107」",
+    "country": "「米国」",
+    "phone": "「+1 (555) 123-4567」",
+    "email": "「contact@topaicollection.com」"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "動画ジェネレーター",
+      "imageGenerators": "画像ジェネレーター",
+      "writers": "ライター",
+      "seoTools": "SEOツール",
+      "websiteBuilders": "ウェブサイトビルダー",
+      "chatbots": "チャットボット"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Alla AI-verktyg - TopAICollection",
+    "description": "Bläddra i vår kompletta samling av AI-verktyg. Filtrera efter kategori, popularitet eller hitta de senaste AI-innovationerna.",
+    "archiveMonthTitle": "AI-verktyg — {label} | TopAI TopAICollectionCollection",
+    "archiveMonthDescription": "Bläddra bland AI-verktyg som lagts till i {label}.",
+    "archiveYearTitle": "AI-verktyg — {year} | TopAI TopAICollectionCollection",
+    "archiveYearDescription": "Bläddra bland AI-verktyg som lades till under {year}.",
+    "categoryTitle": "{category} AI-verktyg | TopAI TopAICollectionCollection",
+    "categoryDescription": "Utforska de bästa {category} AI-verktygen.",
+    "freeTitle": "Gratis AI-verktyg | {title}",
+    "freeDescription": "Upptäck de bästa gratis AI-verktygen online. {description}",
+    "newestTitle": "Nyaste AI-verktyg | {title}",
+    "newestDescription": "Kolla in de senaste AI-verktygen som lagts till i vår samling."
+  },
+  "title": "Utforska alla AI-verktyg",
+  "subtitle": "Upptäck den perfekta AI-lösningen från vår omfattande samling",
+  "filters": {
+    "all": "Alla verktyg",
+    "today": "I dag",
+    "featured": "Utvalda",
+    "new": "Nyss lanserad",
+    "mostSaved": "Mest frälsta",
+    "mostUsed": "Mest använda",
+    "trending": "Trendigt",
+    "justLaunched": "Nyss lanserad",
+    "title": "Filter",
+    "category": "Kategori",
+    "allCategories": "Alla kategorier",
+    "type": "Typ",
+    "popular": "Populär",
+    "newest": "Nyaste",
+    "name": "Namn",
+    "price": "Pris",
+    "free": "Gratis",
+    "paid": "Betalt",
+    "sortBy": "Sortera efter"
+  },
+  "sort": {
+    "label": "Sortera efter",
+    "popular": "Mest populära",
+    "trending": "Trendigt",
+    "newest": "Nyaste först",
+    "rating": "Högst betyg",
+    "name": "Alfabetisk"
+  },
+  "categories": {
+    "title": "Kategorier",
+    "all": "Alla kategorier",
+    "showMore": "Visa mer →",
+    "toolCount": "{count} verktyg"
+  },
+  "results": {
+    "showing": "Visar {start}-{end} av {total} verktyg",
+    "error": "Det gick inte att ladda verktyg. Försök igen.",
+    "noResults": "Inga resultat hittades",
+    "tryDifferent": "Vänligen försök med andra nyckelord eller filter."
+  },
+  "pagination": {
+    "next": "Nästa",
+    "page": "Sida {page}"
+  },
+  "sidebar": {
+    "trending": "Trendigt nu",
+    "noTools": "Inga trendverktyg",
+    "advertise": "Annonsera här",
+    "advertiseDesc": "Nå över 5 miljoner månatliga AI-entusiaster och utöka dina besök",
+    "emailPlaceholder": "E-postadress"
+  },
+  "hero": {
+    "title": "Upptäck de senaste AI-verktygen",
+    "subtitle": "27 955 AI:er och 459 kategorier",
+    "searchPlaceholder": "Sök AI-verktyg...",
+    "search": "Söka"
+  },
+  "breadcrumb": {
+    "home": "Hem",
+    "tools": "Verktyg"
+  },
+  "jsonLd": {
+    "name": "AI-verktygskatalog",
+    "description": "Bläddra i vår kompletta katalog med AI-verktyg."
+  },
+  "badges": {
+    "featured": "Utvalda",
+    "new": "Ny",
+    "trending": "Trendigt",
+    "popular": "Populär",
+    "sponsored": "Sponsrad"
+  },
+  "share": "Dela",
+  "visits": "Besök",
+  "monthlyVisits": "Uppskattade månatliga besök",
+  "visit": "Besök",
+  "actions": {
+    "save": "Spara",
+    "saved": "Sparad",
+    "visit": "Besök",
+    "share": "Dela",
+    "copyLink": "Kopiera länk",
+    "shareThisTool": "Dela detta verktyg"
+  },
+  "growth": "Tillväxt",
+  "pricing": {
+    "free": "Gratis"
+  }
+}

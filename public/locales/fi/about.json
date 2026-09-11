@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Tietoja meistä - TopAICollection",
+    "description": "Opi TopAICollectionin tehtävästä auttaa sinua löytämään parhaat tekoälytyökalut ja -sivustot tarpeisiisi."
+  },
+  "badge": "Tietoja meistä",
+  "hero": {
+    "title": "Sinun portti tekoälyvallankumoukseen",
+    "subtitle": "Tehtävämme on demokratisoida tekoälytyökalujen saatavuus ja auttaa kaikkia hyödyntämään tekoälyn voimaa."
+  },
+  "stats": {
+    "tools": "AI-työkalut",
+    "categories": "Luokat",
+    "users": "Kuukausittaiset käyttäjät",
+    "languages": "Kielet"
+  },
+  "mission": {
+    "title": "Tehtävämme",
+    "paragraph1": "TopAICollectionissa uskomme, että tekoälyn tulisi olla kaikkien saatavilla. Alustamme toimii kattavana hakemistona parhaista tekoälytyökaluista ja -sivustoista, minkä ansiosta käyttäjien on helppo löytää ja hyödyntää tekoälyä työssään ja jokapäiväisessä elämässään.",
+    "paragraph2": "Kuroimme ja tarkistamme huolellisesti jokaisen kokoelmamme työkalun varmistaaksemme, että käyttäjillämme on pääsy vain korkealaatuisimpiin tekoälyratkaisuihin. Asiantuntijatiimimme arvioi työkaluja toimivuuden, käyttökokemuksen, hinnoittelun ja todellisten sovellusten perusteella.",
+    "paragraph3": "Olitpa kehittäjä, suunnittelija, markkinoija, kouluttaja tai yrityksen omistaja, TopAICollection auttaa sinua löytämään täydelliset tekoälytyökalut tuottavuuden ja luovuuden parantamiseksi."
+  },
+  "features": {
+    "title": "Miksi valita TopAICollection",
+    "global": {
+      "title": "Maailmanlaajuinen kattavuus",
+      "description": "Saatavilla yli 20 kielellä, ja se palvelee miljoonia käyttäjiä maailmanlaajuisesti"
+    },
+    "updated": {
+      "title": "Päivittäiset päivitykset",
+      "description": "Kokoelmaamme päivitetään päivittäin uusimmilla tekoälyinnovaatioilla"
+    },
+    "community": {
+      "title": "Yhteisölähtöinen",
+      "description": "Käyttäjien arvostelut ja arviot auttavat sinua tekemään tietoisia päätöksiä"
+    },
+    "verified": {
+      "title": "Vahvistetut työkalut",
+      "description": "Tiimimme tarkistaa ja vahvistaa jokaisen työkalun huolellisesti"
+    }
+  },
+  "cta": {
+    "title": "Aloita tekoälymatkasi tänään",
+    "subtitle": "Tutustu tekoälytyökaluvalikoimaamme tai lähetä omasi",
+    "browse": "Selaa työkaluja",
+    "submit": "Lähetä työkalusi"
+  }
+}

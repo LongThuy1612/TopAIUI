@@ -1,0 +1,20 @@
+{
+  "compare": {
+    "title": "Jämför AI-modeller"
+  },
+  "submissionSuccess": {
+    "title": "Sändningen lyckades - TopAICollection",
+    "description": "Ditt bidrag har tagits emot framgångsrikt"
+  },
+  "business": {
+    "title": "För affärer"
+  },
+  "submitGpt": {
+    "title": "Skicka anpassad GPT"
+  },
+  "layout": {
+    "defaultTitle": "Katalog över AI-verktyg: 1000+ verifierade gratis AI-verktyg",
+    "description": "Utforska den #1 kataloglistan över AI-verktyg. Denna ordbokswebbplats för AI-verktyg hjälper dig att hitta, jämföra och lansera den absolut bästa AI-programvaran GRATIS",
+    "keywords": "AI-verktyg, artificiell intelligens, AI-katalog, bästa AI-webbplatser, bästa AI-verktyg, AI-marknad"
+  }
+}

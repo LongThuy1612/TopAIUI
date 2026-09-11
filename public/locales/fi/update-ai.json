@@ -1,0 +1,118 @@
+{
+  "title": "Päivitä AI-työkalusi",
+  "description": "Pidä tekoälytyökalusi tiedot ajan tasalla. Päivitä kuvaukset, ominaisuudet, hinnat tai muut tiedot tarkkuuden varmistamiseksi.",
+  "hero": {
+    "title": "Tekoälysi on TopAICollectionissa",
+    "subtitle": "TopAI voi auttaa sinua tavoittamaan miljoonia tekoälykäyttäjiä ja potentiaalisia asiakkaita maailmanlaajuisesti."
+  },
+  "form": {
+    "toolLabel": "Työkalu",
+    "toolHint": "PS: Jos työkalua ei löydy, lähetä se ensin.",
+    "toolPlaceholder": "Etsi työkalusi..."
+  },
+  "pricing": {
+    "title": "Päivitä hinnoittelu",
+    "price": "49 dollaria",
+    "period": "Kerran",
+    "description": "Ilmoitamme sinulle 24 tunnin kuluessa maksusta."
+  },
+  "updates": {
+    "title": "Tuetut päivitystyypit",
+    "types": [
+      {
+        "label": "Työkalun nimi",
+        "description": "Päivitä työkalusi näyttönimi"
+      },
+      {
+        "label": "Kuvaus",
+        "description": "Tarkista työkalusi lyhyet ja pitkät kuvaukset"
+      },
+      {
+        "label": "Luokka",
+        "description": "Muuta tai lisää uusia luokkia"
+      },
+      {
+        "label": "Ominaisuusluettelo",
+        "description": "Päivitä työkalusi ominaisuuksien kohokohdat"
+      },
+      {
+        "label": "Käyttötapaukset",
+        "description": "Lisää tai päivitä käyttöesimerkkejä"
+      },
+      {
+        "label": "Hintatiedot",
+        "description": "Päivitä hinnoittelusuunnitelmat ja tasot"
+      },
+      {
+        "label": "UKK",
+        "description": "Lisää tai muokkaa usein kysyttyjä kysymyksiä"
+      },
+      {
+        "label": "URL-osoitteet ja linkit",
+        "description": "Päivitä verkkosivusto, demo tai sosiaaliset linkit"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Täytyy tietää",
+    "items": [
+      "Päivitykset käsitellään 24 tunnin sisällä maksun vahvistamisesta.",
+      "Voit päivittää useita kenttiä yhdellä pyynnöllä.",
+      "Tiimimme tarkistaa ja julkaisee muutokset.",
+      "Jos päivitys vaatii selvennystä, otamme yhteyttä sähköpostitse.",
+      "Kuvakaappaus/mediapäivitykset voivat kestää vielä 24 tuntia."
+    ]
+  },
+  "faq": {
+    "title": "FAQ - Päivitä AI",
+    "items": [
+      {
+        "question": "Kuinka kauan päivitys kestää?",
+        "answer": "Päivitykset käsitellään yleensä 24 tunnin kuluessa maksusta. Monimutkaiset muutokset voivat vaatia lisätarkistusjakson."
+      },
+      {
+        "question": "Mitä voin päivittää?",
+        "answer": "Voit päivittää työkalusi nimen, kuvauksen, luokan, ominaisuudet, käyttötapaukset, hinnoittelun, usein kysytyt kysymykset ja URL-osoitteet."
+      },
+      {
+        "question": "Voinko päivittää useita asioita kerralla?",
+        "answer": "Kyllä! Voit pyytää useita päivityksiä yhdellä lähetyksellä. Kaikki muutokset sisältyvät 49 dollarin maksuun."
+      },
+      {
+        "question": "Entä jos minun on tehtävä korjauksia päivityksen jälkeen?",
+        "answer": "Alkuperäiseen päivityspyyntöösi liittyvät pienet korjaukset käsitellään maksutta 7 päivän kuluessa."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Miksi päivittää työkalusi?",
+    "reasons": [
+      "Pidä tiedot oikein ja ajan tasalla",
+      "Paranna hakusijoitusta ja näkyvyyttä",
+      "Päivitä hintojen ja ominaisuuksien muutokset",
+      "Lisää uusia kuvakaappauksia tai demoja",
+      "Korjaa kaikki vanhentuneet tiedot",
+      "Paranna työkalusi kuvausta"
+    ]
+  },
+  "meta": {
+    "title": "Päivitä tekoälytyökalusi - TopAICollection",
+    "description": "Pidä tekoälytyökalusi tiedot ajan tasalla. Päivitä kuvaukset, ominaisuudet, hinnat tai muut tiedot tarkkuuden varmistamiseksi."
+  },
+  "team": "TopAICollection-tiimi",
+  "validation": {
+    "required": "Tämä kenttä on pakollinen",
+    "selectTool": "Valitse päivitettävä työkalu",
+    "detailsTooShort": "Muutostiedoissa on oltava vähintään 10 merkkiä",
+    "toolNameRequired": "Työkalun nimi vaaditaan",
+    "url": "Virheellinen URL-osoite",
+    "descriptionMin": "Kuvauksen tulee olla vähintään 10 merkkiä pitkä",
+    "categoryRequired": "Valitse luokka",
+    "email": "Virheellinen sähköpostiosoite",
+    "messageMin": "Viestin tulee olla vähintään 10 merkkiä pitkä"
+  },
+  "sidebar": {
+    "updatedCount": "työkalut päivitetty",
+    "updatedCountSub": "tässä kuussa"
+  }
+}

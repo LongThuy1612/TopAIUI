@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Descubra as melhores ferramentas e sites de IA",
+    "description": "Explore a lista de diretórios de ferramentas de AI nº 1. Este site de dicionário de ferramentas de AI ajuda a encontrar, comparar e lançar o melhor software de AI absoluto GRATUITAMENTE."
+  },
+  "nav": {
+    "today": "Hoje",
+    "latestAI": "IA mais recente",
+    "mostSaved": "Mais salvos",
+    "mostUsed": "Mais usado",
+    "browserPlugin": "Plug-in do navegador",
+    "application": "Aplicativo",
+    "discordOfAI": "Discordância da IA",
+    "compareAI": "Comparar IA",
+    "ariaLabel": "Navegação principal"
+  },
+  "hero": {
+    "title": "Descubra os melhores sites e ferramentas de IA",
+    "subtitle": "Encontre as ferramentas de IA perfeitas para suas necessidades em nosso diretório abrangente, atualizado diariamente com as mais recentes inovações em IA.",
+    "stats": {
+      "aiTools": "Ferramentas de IA",
+      "categories": "categorias",
+      "languages": "idiomas",
+      "and": "e",
+      "supporting": "apoiando",
+      "description": "Coleção abrangente de IA, atualizada diariamente com as mais recentes inovações."
+    }
+  },
+  "search": {
+    "placeholder": "Encontre ferramentas por IA, por ex. Ferramenta de IA para tradução de vídeo",
+    "button": "Procurar"
+  },
+  "sections": {
+    "featured": {
+      "title": "Ferramentas de IA em destaque",
+      "description": "Descubra as ferramentas de IA mais populares e eficazes",
+      "noTools": "Nenhuma ferramenta em destaque disponível no momento"
+    },
+    "justLaunched": {
+      "title": "Recém lançado",
+      "description": "Últimas ferramentas e inovações de IA",
+      "noTools": "Nenhuma nova ferramenta disponível no momento"
+    },
+    "categories": {
+      "title": "Navegar por categoria",
+      "description": "Encontre ferramentas de IA organizadas por caso de uso e setor"
+    },
+    "trending": {
+      "title": "Tendências agora",
+      "description": "Ferramentas de IA mais populares esta semana"
+    }
+  },
+  "cta": {
+    "title": "Liste sua ferramenta de IA",
+    "description": "Alcance milhões de usuários em potencial listando sua ferramenta de IA em nosso diretório.",
+    "button": "Envie sua ferramenta",
+    "features": {
+      "exposure": "Exposição Global",
+      "traffic": "Aumento do tráfego",
+      "seo": "Benefícios de SEO"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "Aplicações de IA",
+      "description": "Descubra os melhores aplicativos de IA para produtividade, criatividade e muito mais."
+    },
+    "browserExtensions": {
+      "title": "Extensões de navegador AI",
+      "description": "Descubra as melhores extensões de navegador de IA para turbinar seu fluxo de trabalho."
+    },
+    "latestAi": {
+      "title": "Últimas ferramentas de IA",
+      "description": "Descubra as mais novas ferramentas e inovações de IA, atualizadas diariamente."
+    },
+    "mostSaved": {
+      "title": "Ferramentas de IA mais salvas",
+      "description": "Descubra as ferramentas de IA mais salvas e marcadas pela nossa comunidade."
+    },
+    "mostUsed": {
+      "title": "Ferramentas de IA Mais Usadas",
+      "description": "Descubra as ferramentas de IA mais populares e amplamente utilizadas pela nossa comunidade."
+    },
+    "discord": {
+      "title": "Comunidades de IA no Discord",
+      "description": "Descubra as melhores comunidades Discord sobre IA e conecte-se com entusiastas."
+    },
+    "today": {
+      "title": "Ferramentas de IA em Destaque Hoje",
+      "description": "Descubra as melhores ferramentas de IA em destaque hoje no TopAICollection."
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "Geração de Texto",
+          "Image Creation": "Criação de Imagem",
+          "Coding": "Programação",
+          "Video": "Vídeo",
+          "Audio": "Áudio",
+          "Productivity": "Produtividade"
+        },
+        "text": "Para que você quer usar AI?"
+      },
+      "budget": {
+        "options": {
+          "Free only": "Apenas grátis",
+          "Freemium": "Freemium",
+          "Paid is fine": "Pode ser pago"
+        },
+        "text": "Qual é o seu orçamento?"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "Iniciante",
+          "Intermediate": "Intermediário",
+          "Expert": "Especialista"
+        },
+        "text": "Qual é o seu nível de experiência?"
+      }
+    },
+    "title": "Suas Recomendações Personalizadas",
+    "viewTool": "Ver Ferramenta",
+    "noTools": "Nenhuma ferramenta correspondeu aos seus critérios exatos. Tente ampliar sua busca!",
+    "startOver": "Começar de Novo",
+    "finding": "Encontrando as melhores ferramentas de AI para você...",
+    "questionLabel": "Pergunta {step} de {total}",
+    "completed": "{percentage}% Concluído"
+  }
+}

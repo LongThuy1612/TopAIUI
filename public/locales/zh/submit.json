@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "提交您的 AI 工具 - TopAICollection",
+    "description": "在 TopAICollection 目录中列出您的 AI 工具，接触数百万正在寻找 AI 解决方案的用户。"
+  },
+  "badge": "列出您的工具",
+  "hero": {
+    "title": "让您的 AI 工具被发现",
+    "subtitle": "加入我们目录中的数千个 AI 工具，接触全球数百万潜在用户"
+  },
+  "benefits": {
+    "title": "为什么在 TopAICollection 上列出？",
+    "traffic": {
+      "title": "增加流量",
+      "description": "从积极寻找 AI 解决方案的用户那里获得直接流量"
+    },
+    "exposure": {
+      "title": "全球曝光",
+      "description": "在 100 多个国家/地区以 20 多种语言接触用户"
+    },
+    "credibility": {
+      "title": "提高可信度",
+      "description": "通过经过验证的列表和用户评论建立信任"
+    }
+  },
+  "pricing": {
+    "title": "选择您的计划",
+    "popular": "最受欢迎",
+    "basic": {
+      "name": "基本列表",
+      "price": "免费",
+      "features": {
+        "0": "基本工具列表",
+        "1": "类别分类",
+        "2": "联系信息",
+        "3": "基本分析"
+      }
+    },
+    "featured": {
+      "name": "精选列表",
+      "price": "$99/月",
+      "features": {
+        "0": "基本计划中的所有内容",
+        "1": "精选徽章",
+        "2": "搜索结果中的优先排名",
+        "3": "主页展示",
+        "4": "高级分析",
+        "5": "社交媒体推广"
+      }
+    },
+    "premium": {
+      "name": "高级列表",
+      "price": "$299/月",
+      "features": {
+        "0": "精选计划中的所有内容",
+        "1": "顶部搜索展示",
+        "2": "时事通讯收录",
+        "3": "博客文章评论",
+        "4": "视频展示",
+        "5": "专属支持"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "工具名称",
+    "namePlaceholder": "例如ChatGPT、DALL-E、中途",
+    "website": "网站 URL",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "分类",
+    "selectCategory": "选择一个类别",
+    "price": "$49 一次性费用",
+    "submit": "提交工具",
+    "success": {
+      "title": "提交成功！",
+      "description": "您的工具已提交审核。",
+      "redirecting": "正在重定向到付款..."
+    }
+  },
+  "form": {
+    "title": "提交您的工具",
+    "sections": {
+      "basic": "基本信息",
+      "categorization": "分类与标签",
+      "media": "媒体资源",
+      "plan": "选择计划",
+      "contact": "联系信息"
+    },
+    "fields": {
+      "name": {
+        "label": "工具名称",
+        "placeholder": "我的超赞 AI 工具"
+      },
+      "url": {
+        "label": "网站 URL",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "标语",
+        "placeholder": "100 个字符以内的简短描述"
+      },
+      "description": {
+        "label": "描述",
+        "placeholder": "您的 AI 工具的详细描述（最多 500 个字符）"
+      },
+      "category": {
+        "label": "分类",
+        "placeholder": "选择一个分类",
+        "options": {
+          "productivity": "生产力",
+          "business": "商业",
+          "development": "开发 (Dev)",
+          "other": "其他"
+        }
+      },
+      "tags": {
+        "label": "标签",
+        "placeholder": "ai, 生产力, 自动化（用逗号分隔）",
+        "hint": "用逗号分隔"
+      },
+      "logo": {
+        "label": "徽标 (Logo)",
+        "placeholder": "点击上传或拖放",
+        "hint": "PNG 或 JPG，最大 2MB"
+      },
+      "plan": {
+        "label": "列表计划",
+        "placeholder": "选择一个计划"
+      },
+      "terms": {
+        "label": "我同意服务条款和隐私政策"
+      },
+      "contact_name": {
+        "label": "您的名字",
+        "placeholder": "例如：张三"
+      },
+      "contact_email": {
+        "label": "您的电子邮箱地址",
+        "placeholder": "例如： john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "提交即表示您同意我们的服务条款和隐私政策。",
+      "freeSubmission": "免费提交"
+    },
+    "submit": "提交工具",
+    "submitting": "提交中...",
+    "success": {
+      "title": "工具提交成功！",
+      "description": "我们将审核您的提交并在 48 小时内通知您。"
+    },
+    "error": {
+      "title": "提交失败",
+      "description": "请检查所有字段并重试。",
+      "noSettings": "提交设置不可用。请稍后重试。"
+    },
+    "loginRequiredTitle": "需要登录",
+    "loginRequiredDesc": "请登录以提交工具。在您进行身份验证之前，您的进度不会保存。",
+    "loginBtn": "登录"
+  },
+  "categoriesPage": {
+    "searchCategory": "搜索类别…",
+    "noCategoryFound": "未找到类别。"
+  },
+  "toolForm": {
+    "selectSubCategory": "选择子类别…",
+    "noSubCategory": "没有子类别。"
+  },
+  "errors": {
+    "general": "出了点问题，请重试。"
+  },
+  "processing": "处理中...",
+  "sidebar": {
+    "toolCount": "5,000+ 星级 AI 工具",
+    "toolCountSub": "加入我们不断增长的目录",
+    "badgeDescription": "提交您的工具是在 AI 社区中获得关注的第一步。"
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "无法加载提交详细信息。",
+      "noId": "未提供提交 ID。",
+      "notFound": "未找到提交内容。"
+    },
+    "status": {
+      "paymentRequired": "需要付款",
+      "paymentRequiredDesc": "完成付款以继续审核。",
+      "underReview": "正在审核中",
+      "underReviewDesc": "我们的团队正在审核您提交的内容。",
+      "approved": "得到正式认可的",
+      "approvedDesc": "您提交的内容已被批准并发布。",
+      "received": "已收到",
+      "receivedDesc": "我们已收到您提交的材料。"
+    },
+    "types": {
+      "submit": "提交人工智能工具",
+      "advertise": "广告",
+      "guestPost": "客座帖子",
+      "updateAI": "更新人工智能"
+    },
+    "paymentAlert": "需要付款才能完成您的提交。",
+    "actions": {
+      "viewDashboard": "查看仪表板"
+    }
+  },
+  "error": "出了点问题。请再试一次。",
+  "backToHome": "返回首页",
+  "submissionSuccess": {
+    "title": "标题",
+    "description": "描述"
+  },
+  "successTitle": "成功标题",
+  "title": "标题"
+}

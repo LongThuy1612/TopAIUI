@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Submit Your AI Tool - TopAICollection",
+    "description": "List your AI tool in TopAICollection directory and reach millions of users looking for AI solutions."
+  },
+  "badge": "List Your Tool",
+  "hero": {
+    "title": "Get Your AI Tool Discovered",
+    "subtitle": "Join thousands of AI tools in our directory and reach millions of potential users worldwide"
+  },
+  "benefits": {
+    "title": "Why List on TopAICollection?",
+    "traffic": {
+      "title": "Increased Traffic",
+      "description": "Get direct traffic from users actively searching for AI solutions"
+    },
+    "exposure": {
+      "title": "Global Exposure",
+      "description": "Reach users in 20+ languages across 100+ countries"
+    },
+    "credibility": {
+      "title": "Enhanced Credibility",
+      "description": "Build trust with verified listing and user reviews"
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "popular": "Most Popular",
+    "basic": {
+      "name": "Basic Listing",
+      "price": "Free",
+      "features": {
+        "0": "Basic tool listing",
+        "1": "Category placement",
+        "2": "Contact information",
+        "3": "Basic analytics"
+      }
+    },
+    "featured": {
+      "name": "Featured Listing",
+      "price": "$99/month",
+      "features": {
+        "0": "Everything in Basic",
+        "1": "Featured badge",
+        "2": "Priority in search results",
+        "3": "Homepage placement",
+        "4": "Advanced analytics",
+        "5": "Social media promotion"
+      }
+    },
+    "premium": {
+      "name": "Premium Listing",
+      "price": "$299/month",
+      "features": {
+        "0": "Everything in Featured",
+        "1": "Top search placement",
+        "2": "Newsletter inclusion",
+        "3": "Blog post review",
+        "4": "Video showcase",
+        "5": "Dedicated support"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Tool Name",
+    "namePlaceholder": "e.g. ChatGPT, DALL-E, Midjourney",
+    "website": "Website URL",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "Categories",
+    "selectCategory": "Select a category",
+    "price": "$49 one-time fee",
+    "submit": "Submit Tool",
+    "success": {
+      "title": "Submission Successful!",
+      "description": "Your tool has been submitted for review.",
+      "redirecting": "Redirecting to payment..."
+    }
+  },
+  "form": {
+    "title": "Submit Your Tool",
+    "sections": {
+      "basic": "Basic Information",
+      "categorization": "Category & Tags",
+      "media": "Media Assets",
+      "plan": "Select Plan",
+      "contact": "Contact Information"
+    },
+    "fields": {
+      "name": {
+        "label": "Tool Name",
+        "placeholder": "My Awesome AI Tool"
+      },
+      "url": {
+        "label": "Website URL",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "Tagline",
+        "placeholder": "Brief description in 100 characters or less"
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Detailed description of your AI tool (max 500 characters)"
+      },
+      "category": {
+        "label": "Category",
+        "placeholder": "Select a category",
+        "options": {
+          "productivity": "Productivity",
+          "business": "Business",
+          "development": "Development",
+          "other": "Other"
+        }
+      },
+      "tags": {
+        "label": "Tags",
+        "placeholder": "ai, productivity, automation (comma separated)",
+        "hint": "Box separated by commas"
+      },
+      "logo": {
+        "label": "Logo",
+        "placeholder": "Click to upload or drag and drop",
+        "hint": "PNG or JPG, max 2MB"
+      },
+      "plan": {
+        "label": "Listing Plan",
+        "placeholder": "Select a plan"
+      },
+      "contact_name": {
+        "label": "Your Name",
+        "placeholder": "e.g. John Doe"
+      },
+      "contact_email": {
+        "label": "Your Email",
+        "placeholder": "e.g. john@example.com"
+      },
+      "terms": {
+        "label": "I agree to the terms of service and privacy policy"
+      }
+    },
+    "terms": {
+      "disclaimer": "By submitting, you agree to our Terms of Service and Privacy Policy.",
+      "freeSubmission": "Free Submission."
+    },
+    "submit": "Submit Tool",
+    "submitting": "Submitting...",
+    "success": {
+      "title": "Tool submitted successfully!",
+      "description": "We'll review your submission and notify you within 48 hours."
+    },
+    "error": {
+      "title": "Submission failed",
+      "description": "Please check all fields and try again.",
+      "noSettings": "Submission settings are not available. Please try again later."
+    },
+    "loginRequiredTitle": "Login Required",
+    "loginRequiredDesc": "Please log in to submit a tool. Your progress will not be saved until you authenticate.",
+    "loginBtn": "Log in"
+  },
+  "categoriesPage": {
+    "searchCategory": "Search categories…",
+    "noCategoryFound": "No categories found."
+  },
+  "toolForm": {
+    "selectSubCategory": "Select a sub-category…",
+    "noSubCategory": "No sub-categories."
+  },
+  "errors": {
+    "general": "Something went wrong. Please try again."
+  },
+  "processing": "Processing...",
+  "sidebar": {
+    "toolCount": "5,000+ AI Tools",
+    "toolCountSub": "Join our growing directory",
+    "badgeDescription": "Submitting your tool is the first step to gaining visibility in the AI community."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Failed to load submission details.",
+      "noId": "No submission ID provided.",
+      "notFound": "Submission not found."
+    },
+    "status": {
+      "paymentRequired": "Payment Required",
+      "paymentRequiredDesc": "Complete your payment to proceed with the review.",
+      "underReview": "Under Review",
+      "underReviewDesc": "Your submission is being reviewed by our team.",
+      "approved": "Approved",
+      "approvedDesc": "Your submission has been approved and published.",
+      "received": "Received",
+      "receivedDesc": "We have received your submission."
+    },
+    "types": {
+      "submit": "Submit AI Tool",
+      "advertise": "Advertise",
+      "guestPost": "Guest Post",
+      "updateAI": "Update AI"
+    },
+    "paymentAlert": "Payment is required to complete your submission.",
+    "actions": {
+      "viewDashboard": "View Dashboard"
+    }
+  },
+  "error": "Something went wrong. Please try again.",
+  "backToHome": "Back to Home",
+  "submissionSuccess": {
+    "title": "Title",
+    "description": "Description"
+  },
+  "successTitle": "Success Title",
+  "title": "Title"
+}

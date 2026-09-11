@@ -1,0 +1,225 @@
+{
+  "welcome": "Chào mừng, {name}!",
+  "welcomeDescription": "Khám phá các tính năng và dữ liệu mạnh mẽ của chúng tôi để tìm ra các xu hướng và cơ hội mới nhất trong ngành công nghệ AI.",
+  "user": "Người dùng",
+  "performanceOverview": "Tổng quan hiệu suất",
+  "websiteInsightsQuota": "Hạn mức Website Insights",
+  "socialListeningQueries": "Hạn mức Social Listening",
+  "stats": {
+    "organicClicks": "Lượt nhấp tự nhiên",
+    "paidClicks": "Lượt nhấp trả phí",
+    "totalClicks": "Tổng lượt nhấp",
+    "totalTools": "Tổng số công cụ",
+    "totalViews": "Tổng lượt xem",
+    "credits": "Tín dụng"
+  },
+  "features": {
+    "websiteInsights": "Thông tin chi tiết về trang web",
+    "socialListening": "Lắng nghe xã hội",
+    "prioritySupport": "Hỗ trợ ưu tiên",
+    "advertising": "Quảng cáo",
+    "premiumSupport": "Hỗ trợ cao cấp"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Theo dõi thứ hạng từ khóa và hiệu suất",
+    "socialListeningDesc": "Theo dõi lượt đề cập và xu hướng trên mạng xã hội",
+    "researchReportDesc": "Tạo báo cáo thị trường toàn diện",
+    "aiAdvertisingLibrary": "Thư viện quảng cáo AI",
+    "aiAdvertisingDesc": "Phân tích quảng cáo AI của đối thủ",
+    "comingSoon": "Sắp ra mắt"
+  },
+  "badgePopular": "Phổ biến nhất",
+  "title": "Theo dõi Social Listening",
+  "description": "Giám sát các từ khóa trên TikTok và YouTube.",
+  "adCredits": "Tín dụng quảng cáo",
+  "postCredits": "Đăng tín dụng",
+  "linkCredits": "Tín dụng liên kết",
+  "forSponsoredListings": "Đối với danh sách được tài trợ",
+  "forGuestArticles": "Đối với bài viết của khách",
+  "forLinkInsertions": "Để chèn liên kết",
+  "buyCredits": "Mua tín dụng",
+  "noOrders": "Không tìm thấy đơn đặt hàng nào.",
+  "orderHistory": "Lịch sử đặt hàng",
+  "orderId": "ID đơn hàng",
+  "amount": "Số lượng",
+  "date": "Ngày",
+  "type": "Kiểu",
+  "invoice": "Hóa đơn",
+  "download": "Tải xuống",
+  "currentPlan": "Gói hiện tại",
+  "freeTier": "Bậc miễn phí",
+  "freeTierDesc": "Nâng cấp gói của bạn để mở khóa nhiều tính năng và thông tin chi tiết hơn.",
+  "creditBalances": "Số dư Tín dụng",
+  "subscriptionDetails": "Chi tiết đăng ký",
+  "upgradePlan": "Kế hoạch nâng cấp",
+  "statusActive": "Tích cực",
+  "planMemberSince": "Thành viên của kế hoạch này",
+  "renewalDate": "Gia hạn vào",
+  "changePlan": "Thay đổi kế hoạch",
+  "redirecting": "Đang chuyển hướng...",
+  "credits": "Tín dụng",
+  "managePortal": "Quản lý cổng thanh toán",
+  "subscribe": "Đăng ký ngay",
+  "upgradeTitle": "Nâng cấp kế hoạch nghiên cứu của bạn",
+  "upgradeDesc": "Mở khóa các phân tích nâng cao, hiểu biết sâu sắc về đối thủ cạnh tranh và hơn thế nữa.",
+  "choosePlan": {
+    "title": "Chọn kế hoạch nghiên cứu của bạn",
+    "subtitle": "Nhận thông tin và dữ liệu thị trường AI để đưa ra quyết định."
+  },
+  "billingIntervals": {
+    "monthly": "hàng tháng",
+    "yearly": "Hàng năm"
+  },
+  "subtitle": "Quản lý và theo dõi hiệu suất của các công cụ AI đã gửi của bạn.",
+  "create": "Tạo chiến dịch",
+  "noCampaigns": "Chưa có chiến dịch nào",
+  "createFirst": "Tạo chiến dịch đầu tiên của bạn để bắt đầu quảng cáo các công cụ AI của bạn",
+  "getStarted": "Bắt đầu",
+  "budget": "Ngân sách",
+  "spent": "Đã tiêu",
+  "startDate": "Ngày bắt đầu",
+  "endDate": "Ngày kết thúc",
+  "notSet": "Chưa đặt",
+  "ongoing": "Đang thực hiện",
+  "pause": "Tạm dừng",
+  "resume": "Bản tóm tắt",
+  "viewDetails": "Xem chi tiết",
+  "clicks": "Số nhấp chuột",
+  "impressions": "Số lần hiển thị",
+  "rejectionReason": "Lý do từ chối",
+  "analytics": {
+    "title": "Phân tích chiến dịch",
+    "description": "Phân tích chi tiết về số lần hiển thị và số lần nhấp chuột trong 30 ngày qua.",
+    "exportJson": "Xuất JSON",
+    "dailyPerformance": "Hiệu suất hàng ngày",
+    "topLocales": "Các khu vực hàng đầu (Địa phương)"
+  },
+  "track": "Theo dõi",
+  "noDomains": "Chưa có tên miền nào được theo dõi. Thêm một ở trên!",
+  "domain": "Lãnh địa",
+  "monthlyVisits": "Số lượt truy cập hàng tháng",
+  "rank": "Thứ hạng",
+  "topKeywords": "Từ khóa hàng đầu",
+  "added": "Đã thêm",
+  "tool": "Dụng cụ",
+  "organicClicks": "Số nhấp chuột không phải trả tiền",
+  "paidClicks": "Nhấp chuột trả phí",
+  "totalClicks": "Tổng số lần nhấp chuột",
+  "addedOn": "Đã thêm vào",
+  "noTools": "Chưa có công cụ nào được theo dõi.",
+  "empty": {
+    "title": "Chưa có công cụ AI nào",
+    "description": "Gửi công cụ AI của bạn để được hàng triệu người dùng khám phá.",
+    "cta": "Gửi công cụ AI"
+  },
+  "columns": {
+    "tool": "Dụng cụ",
+    "status": "Trạng thái",
+    "organic": "Lưu lượng truy cập không phải trả tiền",
+    "paid": "Lưu lượng truy cập phải trả tiền",
+    "impressions": "Số lần hiển thị",
+    "actions": "hành động"
+  },
+  "statusTooltip": {
+    "pending": "Đang chờ quản trị viên phê duyệt"
+  },
+  "submittedToast": "Công cụ của bạn đã được gửi và đang chờ xem xét.",
+  "warnings": {
+    "pendingView": "Công cụ này vẫn đang được xem xét và chưa hiển thị công khai.",
+    "confirmDelete": "Bạn có chắc chắn muốn xóa công cụ AI này không? Không thể hoàn tác hành động này."
+  },
+  "gpt": {
+    "title": "GPT của tôi",
+    "submitNew": "Gửi GPT mới",
+    "noGpts": "Không tìm thấy GPT nào. Gửi cái đầu tiên của bạn!",
+    "noGptsDesc": "Chưa có GPT nào được gửi. Gửi GPT của bạn để được khám phá.",
+    "columns": {
+      "name": "Tên GPT",
+      "url": "URL GPT trò chuyện",
+      "date": "Đã gửi"
+    }
+  },
+  "updateAi": "Cập nhật AI",
+  "submitNew": "Gửi mới",
+  "submitNewItem": "Gửi mục mới",
+  "linkInsert": {
+    "label": "Chèn liên kết",
+    "submit": "Gửi liên kết chèn",
+    "empty": {
+      "title": "Chưa có liên kết chèn nào",
+      "description": "Bạn chưa gửi bất kỳ phần chèn liên kết nào."
+    }
+  },
+  "form": {
+    "type": "Kiểu",
+    "targetUrl": "URL mục tiêu",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Tiêu đề/Văn bản neo",
+    "anchorTextPlaceholder": "Tiêu đề bài viết HOẶC Văn bản neo cho liên kết",
+    "submitCredits": "Nộp (1 tín chỉ)"
+  },
+  "tabs": {
+    "profile": "Hồ sơ",
+    "security": "Bảo vệ",
+    "notifications": "Thông báo"
+  },
+  "table": {
+    "platform": "Nền tảng",
+    "keyword": "Từ khóa",
+    "videos": "Video",
+    "views": "Lượt xem",
+    "creators": "Người sáng tạo",
+    "status": "Trạng thái"
+  },
+  "updated": "Đã cập nhật cài đặt thành công",
+  "password": {
+    "title": "Thay đổi mật khẩu",
+    "current": "Mật khẩu hiện tại",
+    "new": "Mật khẩu mới",
+    "confirm": "Xác nhận mật khẩu mới",
+    "update": "Cập nhật mật khẩu"
+  },
+  "notifications": {
+    "title": "Tùy chọn thông báo",
+    "email": "Thông báo qua email",
+    "marketing": "Email tiếp thị"
+  },
+  "metrics": {
+    "monthlyQueries": "Truy vấn hàng tháng",
+    "videosToday": "Video hôm nay",
+    "creatorsToday": "Người sáng tạo ngày nay"
+  },
+  "advertiseAi": "Quảng cáo AI",
+  "myAis": {
+    "title": "AI của tôi",
+    "subtitle": "Quản lý và theo dõi hiệu suất của các công cụ AI đã gửi của bạn.",
+    "empty": {
+      "cta": "Gửi công cụ AI"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Lý do từ chối"
+  },
+  "reports": {
+    "title": "Báo cáo nghiên cứu",
+    "description": "Truy cập các báo cáo phân tích chuyên sâu về ngành AI.",
+    "noReports": "Không có báo cáo nào",
+    "noReportsDesc": "Chúng tôi hiện đang chuẩn bị những hiểu biết mới.",
+    "free": "Miễn phí",
+    "readNow": "Đọc Báo cáo",
+    "download": "Tải xuống",
+    "unlock": "Mở khóa báo cáo",
+    "readerTitle": "Trình Xem Báo Cáo Nghiên Cứu",
+    "unlockRequired": "Nội Dung Cao Cấp",
+    "unlockDesc": "Mở khóa báo cáo nghiên cứu chuyên sâu này để có quyền truy cập đầy đủ vào các phân tích thị trường độc quyền, nghiên cứu tình huống và thông tin chuyên sâu có thể hành động.",
+    "unlockNow": "Mở Khóa Ngay",
+    "related": "Báo Cáo Liên Quan",
+    "toc": "Trên trang này",
+    "backToList": "Quay Lại Thư Viện",
+    "notFound": "Không tìm thấy báo cáo",
+    "unlockSuccess": "Đã mở khóa báo cáo thành công!",
+    "unlockError": "Mở khóa báo cáo thất bại.",
+    "searchPlaceholder": "Tìm kiếm báo cáo..."
+  },
+  "toolPerformance": "Hiệu suất công cụ (thời gian thực)"
+}

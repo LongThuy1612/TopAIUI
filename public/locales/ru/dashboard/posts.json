@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Статьи и ссылки",
+    "description": "Управляйте гостевыми статьями и размещением ссылок.",
+    "submitNewItem": "Добавить новый элемент",
+    "submitNew": "Добавить",
+    "guestPost": "Гостевая статья",
+    "linkInsert": "Размещение ссылки",
+    "type": "Тип",
+    "targetUrl": "Целевой URL",
+    "targetUrlPlaceholder": "https://vash-sait.ru/...",
+    "anchorText": "Заголовок / Анкор",
+    "anchorTextPlaceholder": "Заголовок статьи ИЛИ текст ссылки",
+    "submitCredits": "Добавить (1 кредит)",
+    "tabs": {
+      "guestPosts": "Гостевые статьи",
+      "linkInserts": "Размещение ссылок"
+    },
+    "table": {
+      "title": "Заголовок",
+      "anchor": "Анкор",
+      "url": "URL-адрес",
+      "status": "Статус",
+      "date": "Дата"
+    },
+    "empty": {
+      "noGuestTitle": "Нет гостевых статей",
+      "noGuestDesc": "Вы еще не отправляли гостевых статей.",
+      "noGuestCta": "Добавить гостевую статью",
+      "noLinkTitle": "Нет размещенных ссылок",
+      "noLinkDesc": "Вы еще не отправляли заявок на размещение ссылок.",
+      "noLinkCta": "Добавить ссылку"
+    },
+    "subtitle": "Управляйте гостевыми постами и вставками ссылок."
+  }
+}

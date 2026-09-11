@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Betaling og faktura",
+    "description": "Administrer kredittene dine og se ordrehistorikk.",
+    "adCredits": "Reklamekreditter",
+    "postCredits": "Innleggskreditter",
+    "linkCredits": "Lenkekreditter",
+    "forSponsoredListings": "For sponsede oppføringer",
+    "forGuestArticles": "For gjesteartikler",
+    "forLinkInsertions": "For lenkeplasseringer",
+    "buyCredits": "Kjøp kreditter",
+    "noOrders": "Ingen ordrer funnet.",
+    "orderHistory": "Ordrehistorikk",
+    "orderId": "Ordre-ID",
+    "amount": "Beløp",
+    "date": "Dato",
+    "type": "Skriv",
+    "invoice": "Faktura",
+    "download": "Last ned",
+    "currentPlan": "Nåværende plan",
+    "freeTier": "Gratis nivå",
+    "freeTierDesc": "Oppgrader planen din for å låse opp flere funksjoner og innsikt.",
+    "creditBalances": "Kredittsaldobalanse",
+    "subscriptionDetails": "Abonnementsopplysninger",
+    "upgradePlan": "Oppgrader plan",
+    "credits": "Kreditter",
+    "managePortal": "Administrer faktureringsportal",
+    "subscribe": "Abonner nå",
+    "statusActive": "Aktiv",
+    "planMemberSince": "Medlem av denne planen",
+    "renewalDate": "Fornyer på",
+    "changePlan": "Endre plan",
+    "redirecting": "Omdirigerer...",
+    "errorFetchingPortal": "Kunne ikke åpne faktureringsportalen",
+    "status": "Status"
+  },
+  "plans": {
+    "free": {
+      "name": "Gratis"
+    },
+    "professional": {
+      "name": "Profesjonell"
+    },
+    "enterprise": {
+      "name": "For Enterprise"
+    }
+  },
+  "transactions": {
+    "noDescription": "Dine annonsekreditttransaksjoner vises her."
+  }
+}

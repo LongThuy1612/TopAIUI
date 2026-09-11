@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Sekretesspolicy - TopAICollection",
+    "description": "Lär dig hur TopAICollection samlar in, använder och skyddar din personliga information."
+  },
+  "title": "Sekretesspolicy",
+  "lastUpdated": "Senast uppdaterad",
+  "introduction": "På TopAICollection tar vi din integritet på allvar. Denna integritetspolicy förklarar hur vi samlar in, använder, avslöjar och skyddar din information när du besöker vår webbplats.",
+  "sections": {
+    "collection": {
+      "title": "Information vi samlar in",
+      "content": [
+        "Personlig information du lämnar (namn, e-post, etc.)",
+        "Användningsdata (besökta sidor, använd tid, klick)",
+        "Enhetsinformation (webbläsartyp, IP-adress)",
+        "Cookies och liknande spårningstekniker"
+      ]
+    },
+    "usage": {
+      "title": "Hur vi använder din information",
+      "content": [
+        "För att tillhandahålla och underhålla vår tjänst",
+        "För att meddela dig om ändringar i vår tjänst",
+        "För att ge kundsupport",
+        "För att samla in analyser eller värdefull information för att förbättra vår tjänst",
+        "För att övervaka användningen av vår tjänst",
+        "För att upptäcka, förebygga och åtgärda tekniska problem"
+      ]
+    },
+    "cookies": {
+      "title": "Cookies och spårning",
+      "content": [
+        "Vi använder cookies för att spåra aktivitet och lagra viss information",
+        "Cookies hjälper oss att förstå användarpreferenser och förbättra upplevelsen",
+        "Du kan instruera din webbläsare att vägra alla cookies",
+        "Om du inte accepterar cookies kanske vissa delar av vår tjänst inte är tillgängliga"
+      ]
+    },
+    "security": {
+      "title": "Datasäkerhet",
+      "content": [
+        "Vi använder kommersiellt acceptabla metoder för att skydda din personliga information",
+        "Ingen överföringsmetod över Internet är 100 % säker",
+        "Vi kan inte garantera absolut säkerhet för dina uppgifter",
+        "Vi granskar regelbundet våra säkerhetsrutiner och uppdaterar vid behov"
+      ]
+    },
+    "sharing": {
+      "title": "Informationsdelning",
+      "content": [
+        "Vi säljer, handlar inte med eller hyr ut din personliga information",
+        "Vi kan komma att dela information med betrodda partners som hjälper oss",
+        "Vi kan komma att lämna ut information om det krävs enligt lag",
+        "Vid fusion eller förvärv kan dina uppgifter komma att överföras"
+      ]
+    },
+    "rights": {
+      "title": "Dina rättigheter",
+      "content": [
+        "Få tillgång till dina personuppgifter",
+        "Korrigera felaktiga uppgifter",
+        "Begär radering av dina uppgifter",
+        "Invända mot behandling av dina uppgifter",
+        "Begär dataportabilitet",
+        "Återkalla samtycke när som helst"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakta oss",
+    "content": "Om du har några frågor om denna integritetspolicy, vänligen kontakta oss på:"
+  }
+}

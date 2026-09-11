@@ -1,0 +1,294 @@
+{
+  "title": "פרסם את כלי הבינה המלאכותית שלך",
+  "description": "קבל מיקום פרימיום וחשיפה מקסימלית לכלי הבינה המלאכותית שלך. להגיע לאלפי משתמשים פוטנציאליים המחפשים באופן פעיל פתרונות AI.",
+  "hero": {
+    "title": "ה-AI שלך ב-TopAICollection",
+    "subtitle": "TopAI יכולה לעזור לך להגיע למיליוני משתמשי AI וללקוחות הפוטנציאליים שלך ברחבי העולם.",
+    "stats": {
+      "pageViews": "5 מיליון+",
+      "pageViewsLabel": "צפיות בדף",
+      "monthlyVisits": "3 מיליון+",
+      "monthlyVisitsLabel": "ביקורים חודשיים",
+      "subscribers": "100K+",
+      "subscribersLabel": "מנויים",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "משתמשי שולחן עבודה",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "משתמשים רשומים",
+      "avgTimeOnSite": "2.5 מ'",
+      "avgTimeOnSiteLabel": "זמן ממוצע באתר"
+    },
+    "benefits": [
+      "ספריית כלי AI המובילים",
+      "קישור חוזר של Dofollow",
+      "מבוא רב שפות",
+      "רישום ותנועה לנצח",
+      "ערך עבור מייסדים וסטארט-אפים"
+    ]
+  },
+  "tabs": {
+    "submit": "שלח AI",
+    "submitDesc": "שלח את כלי הבינה המלאכותית שלך, קבל תנועה",
+    "advertise": "פרסם בינה מלאכותית",
+    "advertiseDesc": "תשלום לקליק, קידום מכירות מוצג, מיקום אוטומטי של מודעות",
+    "guestPost": "פוסטים אורחים / הוספת קישור",
+    "guestPostDesc": "פוסטים אורחים/הוספת קישור ב-TopAI",
+    "updateAi": "עדכון AI",
+    "updateAiDesc": "עדכן את המידע של הכלי שלך",
+    "submitGpt": "שלח GPT",
+    "submitGptDesc": "שלח את ה-GPT שלך כדי שיותר אנשים יוכלו להשתמש",
+    "business": "עוד עסקים",
+    "businessDesc": "כגון: החלפת קישורים, פוסטים בטוויטר, סרטונים וכו'. Twitter"
+  },
+  "form": {
+    "toolLabel": "כְּלִי",
+    "toolHint": "נ.ב: אם לא ניתן למצוא את הכלי, אנא שלח אותו תחילה.",
+    "toolPlaceholder": "חפש את הכלי שלך...",
+    "adLandingLink": "קישור לנחיתה למודעה",
+    "urlTitle": "אנא הזן כתובת URL חוקית שמתחילה ב-http:// או https://",
+    "toolLandingPlaceholder": "/כְּלִי/...",
+    "websitePlaceholder": "https://example.com"
+  },
+  "clicks": {
+    "title": "בחר את מספר הקליקים שאתה צריך",
+    "numberOfClicks": "מספר הקלקות",
+    "total": "סַך הַכֹּל",
+    "payButton": "לְשַׁלֵם",
+    "submitButton": "לְהַגִישׁ"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "פרסם דוגמה לכלי",
+    "description": "אנו עושים אוטומציה מלאה של הצגת המודעה שלך בהתבסס על האלגוריתמים שלנו כדי להבטיח שתוכל לקבל לא פחות ממספר הקליקים שנרכשו, אך איננו יכולים להבטיח את איכות הקליקים.",
+    "note": "תעדוף עבורך לצרוך עלויות פרסום כדי לקבל במהירות קליקים והופעות באתר. אתה יכול: להשהות את המודעות, או להתחיל את המודעות.",
+    "typesTitle": "להלן מספר סוגי מודעות:",
+    "mostFrequently": "בתדירות הגבוהה ביותר",
+    "mostEffective": "הכי יעיל",
+    "standardDesc": "מופיע בדף הבית, ברשימות ובדפי הקטגוריות.",
+    "effectiveDesc": "מופיע בדפי המתחרים שלך, ובדפי הקטגוריה אליהם אתה שייך.",
+    "featured": "מוּבלָט*",
+    "featuredDesc1": "מיקום מוצג בדף הבית, בינה מלאכותית האחרונה, הכי בשימוש, הכי נשמר, דף תוצאות חיפוש, דף פרטי קטגוריה וכו'.",
+    "featuredDesc2": "בראש רוב הדפים תהיה עמדת חסות.",
+    "standard": "תֶקֶן",
+    "targeted": "ממוקד"
+  },
+  "faq": {
+    "title": "שאלות נפוצות - פרסם",
+    "items": [
+      {
+        "question": "איך עובד הפרסום?",
+        "answer": "אנו מציגים את הכלי שלך במיקומי פרימיום ברחבי הפלטפורמה שלנו. אתה משלם על כל קליק, ואנו מבטיחים שהמודעה שלך תקבל את מספר הקליקים שרכשת."
+      },
+      {
+        "question": "האם אוכל לרכוש קליקים מספר פעמים?",
+        "answer": "כן, אתה יכול לרכוש חבילות קליקים נוספות בכל עת כדי להגביר את הנראות של הכלי שלך."
+      },
+      {
+        "question": "האם אוכל להשהות את המודעות שלי?",
+        "answer": "כן, אתה יכול להשהות ולחדש את מסעות הפרסום שלך בכל עת ממרכז השליטה שלך."
+      },
+      {
+        "question": "איזה סוג של ניתוח אני מקבל?",
+        "answer": "תקבל נתונים מפורטים על קליקים אורגניים, קליקים בתשלום, סך כל הקליקים, הופעות וחיסכון."
+      }
+    ]
+  },
+  "whyAdvertise": "למה לפרסם?",
+  "customPackage": {
+    "title": "צריכים חבילה מותאמת אישית?",
+    "description": "פנו אלינו לקבלת פתרונות פרסום מותאמים המתאימים למטרות הספציפיות שלכם.",
+    "contactSales": "צור קשר עם מכירות",
+    "estimatedClicks": "קליקים משוערים",
+    "estimatedImpressions": "הופעות משוערות",
+    "estimatedViews": "צפיות משוערות",
+    "estimatedUnits": "יחידות משוערות",
+    "toolSlug": "שלולית כלי",
+    "landingUrl": "כתובת אתר נחיתה",
+    "campaignParameters": "פרמטרים של מסע פרסום",
+    "metricType": "סוג מדד",
+    "pacingType": "סוג קצב",
+    "basePrice": "מחיר בסיס",
+    "totalBudget": "תקציב כולל",
+    "startDate": "תאריך התחלה",
+    "endDate": "תאריך סיום",
+    "priorityBid": "הצעת עדיפות",
+    "estimation": "הערכה",
+    "cancel": "בטל",
+    "submitting": "מגיש",
+    "submitProposal": "שלח הצעה"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "מיקום פרימיום",
+      "description": "מקומות מומלצים בדף הבית ובדפי הקטגוריות"
+    },
+    "targetedAudience": {
+      "title": "קהל ממוקד",
+      "description": "להגיע למשתמשים המחפשים באופן פעיל כלי AI"
+    },
+    "analytics": {
+      "title": "אנליטיקס",
+      "description": "עקוב אחר ביצועים עם תובנות מפורטות"
+    }
+  },
+  "campaigns": {
+    "previous": "קוֹדֵם",
+    "pageOf": "עמוד {page} מתוך {total}",
+    "choosePlan": "בחר את התוכנית שלך",
+    "choosePlanDesc": "בחר תוכנית למטה כדי לחדש או לשדרג את מסע הפרסום שלך.",
+    "currentPlan": "תוכנית נוכחית",
+    "selectAgain": "בחר שוב",
+    "selectPlan": "בחר תוכנית"
+  },
+  "transactions": {
+    "noDescription": "עדיין לא רכשת קרדיטים למודעות. השלם את היתרה שלך כדי להתחיל להפעיל מסעות פרסום."
+  },
+  "meta": {
+    "title": "כלי פרסום בינה מלאכותית - TopAICollection",
+    "description": "פרסם את כלי הבינה המלאכותית שלך בפני מיליוני חובבי בינה מלאכותית."
+  },
+  "plans": {
+    "title": "תוכניות פרסום",
+    "subtitle": "הרחב את טווח ההגעה שלך",
+    "clickTarget": "יעד קליקים",
+    "toolRequired": "⚠ אנא הזן את שם הכלי למעלה לפני השליחה.",
+    "empty": "אין חבילות פרסום זמינות כרגע. בדוק שוב מאוחר יותר.",
+    "customPlanConfig": "תצורת תוכנית מותאמת אישית",
+    "basePrice": "מחיר בסיס ($)",
+    "adPlacements": "מיקומי מודעות",
+    "applyConfig": "החל Config",
+    "configured": "מוגדר",
+    "toolSlug": "שבלול כלים",
+    "landingUrl": "כתובת נחיתה",
+    "campaignParameters": "פרמטרים של קמפיין",
+    "metricType": "סוג מדד",
+    "pacingType": "סוג קצב",
+    "totalBudget": "תקציב כולל ($)",
+    "startDate": "מועד התחלה",
+    "endDate": "מועד סיום",
+    "priorityBid": "הצעה עדיפות",
+    "estimation": "אומדן",
+    "estimatedClicks": "קליקים משוערים",
+    "estimatedImpressions": "חשיפות משוערות",
+    "estimatedViews": "צפיות משוערות",
+    "estimatedUnits": "יחידות משוערות {metric}",
+    "submitProposal": "הגש הצעה מותאמת אישית",
+    "submitting": "שולח...",
+    "cancel": "בטל",
+    "customBid": {
+      "title": "מתן הצעות ביצועים מותאמות אישית",
+      "budgetLabel": "תקציב כולל ($)",
+      "budgetDescription": "הסכום הכולל שאתה רוצה להוציא.",
+      "priorityBidLabel": "מכפיל הצעות עדיפות",
+      "priorityBidDescription": "הצעת מחיר גבוהה יותר = תדירות הופעה גבוהה יותר.",
+      "minBudget": "התקציב המינימלי הוא $10",
+      "minBid": "הצעת המחיר המינימלית היא $0.01"
+    },
+    "placeholders": {
+      "toolSlug": "הכלי-המדהים שלי",
+      "landingUrl": "https://...",
+      "metricType": "מחיר לרכישה",
+      "pacingType": "אֲפִילוּ"
+    }
+  },
+  "submit": {
+    "button": "שלח בקשת קמפיין",
+    "submitting": "שולח…",
+    "error": "השליחה נכשלה. נסה שוב.",
+    "successTitle": "הקמפיין נשלח!",
+    "budgetLabel": "הגדרת תקציב קמפיין (דולר אמריקאי)",
+    "success": "הקמפיין נוצר בהצלחה!",
+    "untitled": "קמפיין ללא שם",
+    "missingTool": "נדרשת כתובת URL של כלי או יעד",
+    "loginRequiredTitle": "נדרשת הזדהות",
+    "loginRequiredDesc": "אנא התחבר כדי לשלוח כלי. ההתקדמות שלך לא תישמר עד שתאמת."
+  },
+  "sidebar": {
+    "pageViews": "צפיות בדף",
+    "pageViewsSub": "תנועת עמודים חודשית"
+  },
+  "details": "פרטי פרסום",
+  "duration": "משך (ימים)",
+  "selectDuration": "בחר משך",
+  "days": "{ספירה, רבים, =1 {1 day} אחר {# days}}",
+  "preferredPlacement": "מיקום מועדף",
+  "selectPlacement": "בחר מיקום",
+  "placements": {
+    "homepageBanner": "באנר של דף הבית",
+    "sidebar": "סרגל צד",
+    "categoryPage": "דף קטגוריה",
+    "newsletter": "ניוזלטר",
+    "HOME": "עמוד הבית",
+    "CATEGORY": "דף קטגוריה",
+    "SEARCH": "תוצאות חיפוש",
+    "TOOL_DETAIL": "דף פרטי הכלי"
+  },
+  "targetAudience": "קהל יעד",
+  "targetAudiencePlaceholder": "תאר את קהל היעד שלך",
+  "validation": {
+    "required": "שדה זה חובה",
+    "selectDuration": "אנא בחר משך מודעה",
+    "selectPlacement": "אנא בחר מיקום מודעה",
+    "targetAudienceMin": "קהל היעד חייב להיות לפחות 10 תווים",
+    "toolNameRequired": "נדרש שם הכלי",
+    "url": "כתובת אתר לא חוקית",
+    "descriptionMin": "התיאור חייב להיות באורך 10 תווים לפחות",
+    "categoryRequired": "אנא בחר קטגוריה",
+    "email": "כתובת אימייל לא חוקית",
+    "messageMin": "ההודעה חייבת להיות באורך 10 תווים לפחות"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "לכל קליק",
+      "CPM": "לכל אלף הופעות",
+      "CPV": "לכל צפייה",
+      "FLAT_RATE": "תעריף אחיד",
+      "CPC_LABEL": "מחיר לקליק",
+      "CPM_LABEL": "מחיר לאלף הופעות",
+      "CPV_LABEL": "מחיר לצפייה",
+      "FLAT_RATE_LABEL": "תעריף אחיד"
+    },
+    "units": {
+      "clicks": "קליקים",
+      "impressions": "רשמים",
+      "views": "צפיות",
+      "units": "יחידות"
+    }
+  },
+  "selected": "נבחר",
+  "summary": {
+    "selectedPlanLabel": "חבילת מודעות נבחרת",
+    "totalPriceLabel": "מחיר קבוע כולל",
+    "securityFooter": "תשלום מאובטח • הפעלה מיידית • ניתוח נתונים מלא"
+  },
+  "charts": {
+    "cpc": "מחיר לקליק ($)",
+    "cpm": "מחיר לאלף הופעות ($)",
+    "noData": "אין נתונים היסטוריים זמינים"
+  }
+}

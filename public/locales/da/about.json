@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Om os - TopAICollection",
+    "description": "Lær om TopAICollections mission for at hjælpe dig med at opdage de bedste AI-værktøjer og websteder til dine behov."
+  },
+  "badge": "Om os",
+  "hero": {
+    "title": "Din gateway til AI-revolutionen",
+    "subtitle": "Vi er på en mission for at demokratisere adgangen til AI-værktøjer og hjælpe alle med at udnytte kraften i kunstig intelligens."
+  },
+  "stats": {
+    "tools": "AI værktøjer",
+    "categories": "Kategorier",
+    "users": "Månedlige brugere",
+    "languages": "Sprog"
+  },
+  "mission": {
+    "title": "Vores Mission",
+    "paragraph1": "Hos TopAICollection mener vi, at kunstig intelligens skal være tilgængelig for alle. Vores platform fungerer som en omfattende oversigt over de bedste AI-værktøjer og websteder, hvilket gør det nemt for brugere at opdage og udnytte kunstig intelligens i deres arbejde og daglige liv.",
+    "paragraph2": "Vi kuraterer og gennemgår omhyggeligt hvert værktøj i vores samling og sikrer, at vores brugere kun har adgang til AI-løsninger af højeste kvalitet. Vores team af eksperter evaluerer værktøjer baseret på funktionalitet, brugeroplevelse, priser og applikationer fra den virkelige verden.",
+    "paragraph3": "Uanset om du er udvikler, designer, marketingmedarbejder, underviser eller virksomhedsejer, hjælper TopAICollection dig med at finde de perfekte AI-værktøjer til at forbedre din produktivitet og kreativitet."
+  },
+  "features": {
+    "title": "Hvorfor vælge TopAICollection",
+    "global": {
+      "title": "Global rækkevidde",
+      "description": "Tilgængelig på mere end 20 sprog og betjener millioner af brugere over hele verden"
+    },
+    "updated": {
+      "title": "Daglige opdateringer",
+      "description": "Vores samling opdateres dagligt med de seneste AI-innovationer"
+    },
+    "community": {
+      "title": "Fællesskabsdrevet",
+      "description": "Brugeranmeldelser og vurderinger hjælper dig med at træffe informerede beslutninger"
+    },
+    "verified": {
+      "title": "Verificerede værktøjer",
+      "description": "Hvert værktøj bliver omhyggeligt gennemgået og verificeret af vores team"
+    }
+  },
+  "cta": {
+    "title": "Start din AI-rejse i dag",
+    "subtitle": "Udforsk vores samling af AI-værktøjer, eller indsend dit eget",
+    "browse": "Gennemse værktøjer",
+    "submit": "Indsend dit værktøj"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "ビジネス ソリューション - パートナーになる |TopAICollection",
+    "description": "TopAICollection とのビジネス パートナーシップの機会を探ってください。広告、スポンサー付きコンテンツなど。"
+  },
+  "title": "ビジネスソリューション",
+  "subtitle": "TopAICollection と提携して、世界中の AI 愛好家にリーチしましょう",
+  "contact": {
+    "title": "お問い合わせ"
+  },
+  "offers": {
+    "ads": "ターゲットを絞った広告キャンペーン",
+    "partnerships": "戦略的パートナーシップの検討",
+    "growth": "AI 製品の成長を加速",
+    "consulting": "カスタム AI 統合サービス"
+  },
+  "form": {
+    "fullName": "フルネーム",
+    "workEmail": "仕事用メール",
+    "companyName": "会社名",
+    "inquiryType": "お問い合わせの種類",
+    "selectType": "タイプを選択してください",
+    "message": "メッセージ",
+    "messagePlaceholder": "あなたのニーズについて詳しく教えてください...",
+    "inquiryTypes": {
+      "advertise": "宣伝する",
+      "guestPost": "ゲスト投稿",
+      "partnership": "パートナーシップ",
+      "customDevelopment": "カスタム開発",
+      "other": "他の"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "AI ツールを宣伝する",
+      "description": "AI ツールをプラットフォーム全体で目立つように紹介します。",
+      "link": "もっと詳しく知る"
+    },
+    "guestPost": {
+      "title": "ゲストの投稿とリンク",
+      "description": "権威あるサイトでコンテンツを公開したり、バックリンクを取得したりできます。",
+      "link": "もっと詳しく知る"
+    },
+    "submitTool": {
+      "title": "ツールを提出する",
+      "description": "AI ツールをディレクトリに無料で追加します。",
+      "link": "今すぐ送信"
+    },
+    "customSolutions": {
+      "title": "カスタムソリューション",
+      "description": "カスタム パートナーシップの機会についてはお問い合わせください。",
+      "link": "お問い合わせ"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100 社以上のパートナー",
+    "partnerCountSub": "大手AI企業からの信頼",
+    "contactSupport": "サポートに連絡する"
+  },
+  "validation": {
+    "required": "この項目は必須です",
+    "toolNameRequired": "ツール名は必須です",
+    "url": "無効な URL",
+    "descriptionMin": "説明は 10 文字以上である必要があります",
+    "categoryRequired": "カテゴリを選択してください",
+    "email": "有効なメールアドレスを入力してください",
+    "messageMin": "メッセージは 10 文字以上である必要があります"
+  },
+  "success": "お問い合わせは正常に送信されました。"
+}

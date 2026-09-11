@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAI 컬렉션 - 최고의 AI 도구를 찾아보세요",
+    "description": "{totalTools}개 이상의 언어로 된 {totalCategories} 카테고리 전반에 걸쳐 {languagesCount}개 이상의 AI 도구를 살펴보세요."
+  },
+  "home": {
+    "visitWebsite": "웹사이트 방문",
+    "ranking": "순위"
+  },
+  "tool": {
+    "visitWebsite": "웹사이트 방문 →",
+    "useCases": "사용 사례",
+    "about": "{name} 소개",
+    "howToUse": "{name} 사용 방법",
+    "faq": "자주 묻는 질문"
+  }
+}

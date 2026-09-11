@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} AI-verktøy | Oppdag de beste {tagName}-løsningene",
+    "description": "Utforsk vår utvalgte samling av de beste {tagName} AI-verktøyene. Sammenlign funksjoner, priser og anmeldelser for å finne den perfekte {tagName}-programvaren for dine behov."
+  },
+  "notFound": {
+    "metaTitle": "Tag ikke funnet | TopAI TopAICollectionCollection",
+    "metaDescription": "Taggen eksisterer ikke. Oppdag andre AI-verktoy."
+  },
+  "breadcrumb": {
+    "home": "Hjem",
+    "tools": "Verktøy"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} AI-verktøy",
+    "collectionDescription": "Bla gjennom katalogen vår med {tagName} AI-verktøy."
+  }
+}

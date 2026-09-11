@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Pertanyaan yang Sering Diajukan - TopAICollection",
+    "description": "Temukan jawaban atas pertanyaan umum tentang TopAICollection dan cara menggunakan direktori alat AI kami."
+  },
+  "badge": "Pusat Bantuan",
+  "title": "Pertanyaan yang Sering Diajukan",
+  "subtitle": "Temukan jawaban atas pertanyaan umum tentang TopAICollection",
+  "categories": {
+    "general": "Pertanyaan Umum",
+    "tools": "Tentang Alat AI",
+    "submission": "Penyerahan Alat",
+    "account": "Akun & Penagihan"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Apa itu TopAICollection?",
+        "answer": "TopAICollection adalah direktori lengkap alat dan situs AI. Kami membantu pengguna menemukan solusi AI terbaik untuk kebutuhan mereka, mulai dari alat produktivitas hingga aplikasi kreatif."
+      },
+      "1": {
+        "question": "Bagaimana cara menemukan alat AI yang tepat?",
+        "answer": "Anda dapat menelusuri berdasarkan kategori, menggunakan fungsi pencarian kami, atau memeriksa bagian unggulan dan tren kami. Setiap alat mencakup deskripsi terperinci, ulasan pengguna, dan penilaian untuk membantu Anda membuat keputusan yang tepat."
+      },
+      "2": {
+        "question": "Apakah TopAICollection gratis untuk digunakan?",
+        "answer": "Ya! Menjelajah dan mencari direktori kami sepenuhnya gratis. Beberapa alat yang terdaftar mungkin memiliki harganya sendiri, yang ditunjukkan dengan jelas di halaman masing-masing alat."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Bagaimana alat dipilih untuk direktori?",
+        "answer": "Kami dengan cermat meninjau setiap kiriman untuk memastikan kualitas. Alat harus berfungsi, memberikan nilai kepada pengguna, dan mematuhi pedoman kami. Kami juga mempertimbangkan masukan dan penilaian pengguna."
+      },
+      "1": {
+        "question": "Informasi apa yang disediakan untuk setiap alat?",
+        "answer": "Setiap daftar alat mencakup deskripsi, fitur utama, informasi harga, ulasan pengguna, analisis lalu lintas, kategori, dan tautan langsung ke situs web alat tersebut."
+      },
+      "2": {
+        "question": "Seberapa sering direktori diperbarui?",
+        "answer": "Direktori kami diperbarui setiap hari dengan alat dan informasi baru. Kami terus memantau alat yang terdaftar untuk memastikan keakuratan dan menghapus alat yang tidak lagi tersedia."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Bagaimana cara mengirimkan alat AI saya?",
+        "answer": "Kunjungi halaman Alat Kirim kami dan isi formulir pengiriman. Berikan informasi mendetail tentang alat Anda, termasuk fiturnya, audiens target, dan harganya. Kami meninjau semua kiriman dalam waktu 48 jam."
+      },
+      "1": {
+        "question": "Apa saja persyaratan penyerahan alat?",
+        "answer": "Alat Anda harus berfungsi, memberikan nilai yang jelas kepada pengguna, memiliki situs web profesional, dan mematuhi persyaratan hukum. Kami tidak menerima alat yang mendorong aktivitas ilegal atau melanggar privasi pengguna."
+      },
+      "2": {
+        "question": "Berapa biaya untuk membuat daftar alat?",
+        "answer": "Daftar dasar gratis. Kami juga menawarkan listingan unggulan dan premium dengan manfaat tambahan seperti penempatan prioritas, fitur promosi, dan analisis lanjutan."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Apakah saya memerlukan akun untuk menggunakan TopAICollection?",
+        "answer": "Tidak diperlukan akun untuk menelusuri dan mencari direktori kami. Namun, membuat akun memungkinkan Anda menyimpan alat favorit, menulis ulasan, dan mengelola pengiriman alat."
+      },
+      "1": {
+        "question": "Bagaimana cara meningkatkan daftar alat saya?",
+        "answer": "Masuk ke akun Anda, buka dasbor manajemen alat Anda, dan pilih opsi peningkatan. Anda dapat memilih dari paket unggulan atau premium dengan tagihan bulanan atau tahunan."
+      },
+      "2": {
+        "question": "Bisakah saya membatalkan daftar berbayar saya kapan saja?",
+        "answer": "Ya, Anda dapat membatalkan daftar berbayar Anda kapan saja. Listingan Anda akan tetap ditampilkan hingga akhir periode penagihan saat ini, kemudian kembali ke listingan dasar."
+      }
+    }
+  },
+  "cta": {
+    "title": "Masih ada pertanyaan?",
+    "subtitle": "Tim dukungan kami siap membantu",
+    "button": "Hubungi Dukungan"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "الدفع والفواتير",
+    "description": "إدارة الرصيد وعرض سجل الطلبات.",
+    "adCredits": "رصيد الإعلانات",
+    "postCredits": "رصيد المقالات",
+    "linkCredits": "رصيد الروابط",
+    "forSponsoredListings": "للقوائم الممولة",
+    "forGuestArticles": "لمقالات الزوار",
+    "forLinkInsertions": "لإدراج الروابط",
+    "buyCredits": "شراء رصيد",
+    "noOrders": "لا توجد طلبات.",
+    "orderHistory": "سجل الطلبات",
+    "orderId": "رقم الطلب",
+    "amount": "المبلغ",
+    "status": "الحالة",
+    "date": "التاريخ",
+    "type": "النوع",
+    "invoice": "الفاتورة",
+    "download": "تحميل",
+    "currentPlan": "الخطة الحالية",
+    "freeTier": "المستوى المجاني",
+    "freeTierDesc": "قم بترقية خطتك لفتح المزيد من الميزات والرؤى.",
+    "creditBalances": "أرصدة المبالغ",
+    "subscriptionDetails": "تفاصيل الاشتراك",
+    "upgradePlan": "ترقية الخطة",
+    "credits": "رصيد",
+    "managePortal": "إدارة بوابة الفواتير",
+    "subscribe": "اشترك الآن",
+    "statusActive": "نشيط",
+    "planMemberSince": "عضو في هذه الخطة",
+    "renewalDate": "يتجدد على",
+    "changePlan": "تغيير الخطة",
+    "redirecting": "إعادة التوجيه...",
+    "errorFetchingPortal": "تعذر فتح بوابة الفوترة"
+  },
+  "plans": {
+    "free": {
+      "name": "مجاني"
+    },
+    "professional": {
+      "name": "احترافي"
+    },
+    "enterprise": {
+      "name": "مؤسسات"
+    }
+  },
+  "transactions": {
+    "noDescription": "سجل معاملات رصيد الإعلانات الخاص بك سيظهر هنا."
+  }
+}

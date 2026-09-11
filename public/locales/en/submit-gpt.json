@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Submit Your GPT - Get Your GPT Featured | TopAICollection",
+    "description": "Submit your custom GPT to be featured in our GPTs directory. Reach thousands of AI enthusiasts."
+  },
+  "title": "Submit Your GPT",
+  "subtitle": "Get your custom GPT featured in our directory",
+  "loginRequired": "Login Required",
+  "submitButton": "Submit GPT",
+  "whySubmit": {
+    "title": "Why Submit Your GPT?"
+  },
+  "benefits": {
+    "audience": "Reach thousands of AI enthusiasts daily",
+    "instant": "Instant listing upon verification",
+    "global": "Global exposure across all languages",
+    "analytics": "Track clicks and engagement"
+  },
+  "proTip": {
+    "title": "Pro Tip",
+    "desc": "Make sure your GPT is public and accessible via link before submitting."
+  },
+  "form": {
+    "gptName": "GPT Name",
+    "gptNamePlaceholder": "e.g. Code Wizard",
+    "gptUrl": "ChatGPT URL",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "Icon URL",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Description / Instructions",
+    "gptDescriptionPlaceholder": "Describe what your GPT does..."
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidUrl": "Invalid ChatGPT URL",
+    "nameTooShort": "Name must be at least 2 characters",
+    "descriptionTooShort": "Description must be at least 10 characters",
+    "toolNameRequired": "Tool name is required",
+    "url": "Invalid URL",
+    "descriptionMin": "Description must be at least 10 characters",
+    "categoryRequired": "Please select a category",
+    "email": "Invalid email address",
+    "messageMin": "Message must be at least 10 characters"
+  },
+  "sidebar": {
+    "gptCount": "GPTs submitted",
+    "gptCountSub": "and growing"
+  },
+  "success": "Your GPT has been submitted successfully!"
+}

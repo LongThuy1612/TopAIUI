@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "搜索 AI 工具...",
+    "categories": "分类",
+    "rankings": "排行榜",
+    "submit": "提交工具",
+    "admin": "管理员"
+  },
+  "hero": {
+    "titlePrefix": "发现最好的",
+    "titleHighlight": "AI 工具",
+    "subtitle": "按分类浏览数百款 AI 产品，比较价格，找到最适合你工作流程的工具。",
+    "searchPlaceholder": "搜索 AI 工具..."
+  },
+  "stats": {
+    "tools": "款 AI 工具",
+    "categories": "个分类",
+    "featured": "精选工具"
+  },
+  "tabs": {
+    "heading": "探索工具",
+    "newest": "最新",
+    "featured": "最受推荐",
+    "free": "免费",
+    "viewAll": "查看全部 →"
+  },
+  "announcement": {
+    "featured": "精选"
+  },
+  "sidebar": {
+    "featuredTools": "精选工具",
+    "topCategories": "热门分类"
+  },
+  "sections": {
+    "browseByCategory": "按分类浏览",
+    "newestTools": "最新工具",
+    "featuredTools": "精选工具",
+    "viewAll": "查看全部 →",
+    "justLaunched": "新上线",
+    "featuredThisWeek": "本周精选",
+    "featuredThisWeekSubtitle": "社区收藏和评分最高的工具。",
+    "updatedDaily": "每日更新",
+    "viewMore": "查看更多 →"
+  },
+  "cta": {
+    "title": "有 AI 工具想要分享？",
+    "subtitle": "让正在寻找同类工具的人看到它。",
+    "button": "提交你的工具"
+  },
+  "empty": {
+    "noTools": "暂无工具 — 请运行",
+    "noResults": "未找到工具"
+  },
+  "category": {
+    "breadcrumbHome": "首页",
+    "allTools": "所有工具",
+    "allToolsTitle": "所有 AI 工具",
+    "allPricing": "所有价格",
+    "sortNewest": "最新优先",
+    "sortFeatured": "精选优先",
+    "sortName": "名称 A–Z",
+    "toolsFound": "个工具 | 个工具",
+    "searchPlaceholder": "搜索工具...",
+    "filters": "筛选",
+    "viewGrid": "网格视图",
+    "viewList": "列表视图"
+  },
+  "pricing": {
+    "FREE": "免费",
+    "FREEMIUM": "免费增值",
+    "PAID": "付费"
+  },
+  "ranking": {
+    "title": "热门 AI 工具",
+    "subtitle": "根据我们目录中记录的流量和增长数据排名。",
+    "byGrowth1m": "1 个月增长",
+    "byGrowth3m": "3 个月增长",
+    "byGrowth6m": "6 个月增长",
+    "byTraffic": "月访问量",
+    "colRank": "排名",
+    "colTool": "工具",
+    "colVisits": "月访问量",
+    "colGrowth": "增长",
+    "colAuthority": "域名权重",
+    "colCategory": "分类",
+    "noData": "暂无排名数据。"
+  },
+  "tool": {
+    "openSite": "访问网站",
+    "save": "收藏",
+    "saved": "已收藏",
+    "featured": "精选",
+    "introduction": "简介",
+    "addedOn": "添加时间",
+    "monthlyVisitors": "月访问量",
+    "features": "主要功能",
+    "useCases": "使用场景",
+    "prosAndCons": "优缺点",
+    "pros": "优点",
+    "cons": "缺点",
+    "faq": "常见问题",
+    "alternatives": "的替代品",
+    "backToCategory": "返回",
+    "notFound": "未找到该工具",
+    "similarTools": "相似工具",
+    "tabProductInfo": "产品信息",
+    "tabPricing": "价格",
+    "tabReviews": "评价",
+    "tabAnalytics": "数据分析",
+    "tabAlternatives": "替代品",
+    "productInformationHeading": "{name} 产品信息",
+    "whatIs": "{name} 是什么？",
+    "howToUseHeading": "如何使用 {name}？",
+    "reviewsHeading": "{name} 评价（{count}）",
+    "ratingPrompt": "你会推荐 {name} 吗？留下评论",
+    "whatDoYouThink": "你怎么看？",
+    "loginToComment": "登录后评论",
+    "pricingHeading": "{name} 价格",
+    "noPricingYet": "暂无价格信息。",
+    "analyticsHeading": "{name} 数据分析",
+    "trafficAnalysis": "{name} 网站流量分析",
+    "visitOverTime": "访问趋势",
+    "monthlyVisits": "月访问量",
+    "avgVisitDuration": "平均访问时长",
+    "pagePerVisit": "每次访问页数",
+    "bounceRate": "跳出率",
+    "noTrafficYet": "暂无流量数据。",
+    "badgeVerified": "已认证",
+    "badgeJustLaunched": "新上线",
+    "badgeFreeTool": "免费工具",
+    "affiliateLink": "推广链接",
+    "couponCode": "优惠码",
+    "ratings": "评分",
+    "upvotes": "点赞",
+    "domainAuthority": "域名权重",
+    "trafficRank": "流量排名",
+    "viewCount": "浏览量"
+  },
+  "footer": {
+    "tagline": "发现、比较和分享最好的 AI 工具 — 基于 Nuxt 与 PostgreSQL 构建。",
+    "product": "产品",
+    "home": "首页",
+    "allTools": "所有工具",
+    "submit": "提交工具",
+    "categories": "分类",
+    "company": "公司",
+    "admin": "管理员登录",
+    "language": "语言",
+    "copyright": "保留所有权利。"
+  },
+  "language": {
+    "label": "语言"
+  }
+}

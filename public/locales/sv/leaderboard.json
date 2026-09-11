@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "Daglig topplista",
+      "title_long": "Daglig topplista över AI-verktyg"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "Månatlig Leaderboard",
+      "title_long": "Månadsvis topplista över AI-verktyg"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "Årlig Leaderboard",
+      "title_long": "Årlig topplista över AI-verktyg"
+    }
+  }
+}

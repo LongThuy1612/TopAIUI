@@ -1,0 +1,92 @@
+{
+  "about": "Tietoja meistä",
+  "contact": "Ota yhteyttä",
+  "blog": "Blogi",
+  "privacy": "Tietosuojakäytäntö",
+  "terms": "Palveluehdot",
+  "cookies": "Evästekäytäntö",
+  "copyright": "© {year} TopAICollection. Kaikki oikeudet pidätetään.",
+  "sitemap": "Sivustokartta",
+  "resources": "Resurssit",
+  "help": "Ohjekeskus",
+  "faq": "UKK",
+  "submitTool": "Lähetä työkalu",
+  "description": "TopAICollection on paras hakemisto parhaiden tekoälytyökalujen ja -sivustojen löytämiseen.",
+  "browseByAlphabet": "Selaa aakkosten mukaan",
+  "topAITools": {
+    "title": "Suosituimmat AI-työkalut",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "Keskimatka",
+      "stableDiffusion": "Vakaa diffuusio",
+      "jasper": "Jaspis",
+      "chatgpt": "ChatGPT"
+    }
+  },
+  "moreTools": {
+    "title": "Lisää työkaluja",
+    "items": {
+      "audio": "Audio-tekoäly",
+      "video": "Videon tekoäly",
+      "writing": "AI kirjoittaminen",
+      "image": "Kuva AI",
+      "coding": "Koodaus AI"
+    }
+  },
+  "recommend": {
+    "title": "Suositella",
+    "items": {
+      "newest": "Uusimmat työkalut",
+      "mostSaved": "Eniten pelastuneita",
+      "trending": "Nousussa nyt",
+      "editorsChoice": "Toimittajan valinta",
+      "featured": "Esittelyssä",
+      "leaderboard": "Tulostaulukko"
+    }
+  },
+  "readMore": {
+    "title": "Lue lisää",
+    "items": {
+      "blog": "Blogi",
+      "news": "AI-uutiset",
+      "guides": "Oppaat",
+      "tutorials": "Oppaat",
+      "glossary": "AI Sanasto"
+    }
+  },
+  "company": {
+    "title": "Noin",
+    "items": {
+      "aboutUs": "Tietoja meistä",
+      "contact": "Yritysten yhteystiedot",
+      "editorialGuidelines": "Toimitukselliset ohjeet",
+      "reviewMethodology": "Arviointimenetelmä",
+      "submit": "Lähetä",
+      "advertise": "Mainosta"
+    }
+  },
+  "chooseLanguage": "Valitse Kieli",
+  "followUs": "Seuraa meitä",
+  "more": "Lisää...",
+  "directory": {
+    "title": "AI-työkaluhakemistoarkisto"
+  },
+  "companyInfo": {
+    "address": "Teknologia-alue, Silicon Valley",
+    "country": "Yhdysvallat",
+    "name": "TopAICollection Inc.",
+    "city": "San Francisco, CA 94107",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Videogeneraattorit",
+      "imageGenerators": "Kuvageneraattorit",
+      "writers": "Kirjoittajat",
+      "seoTools": "SEO-työkalut",
+      "websiteBuilders": "Sivustonrakentajat",
+      "chatbots": "Chatbotit"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "about": "Tentang Kami",
+  "contact": "Kontak",
+  "blog": "blog",
+  "privacy": "Kebijakan Privasi",
+  "terms": "Ketentuan Layanan",
+  "cookies": "Kebijakan Cookie",
+  "copyright": "© {year} TopAICollection. Semua hak dilindungi undang-undang.",
+  "sitemap": "Peta Situs",
+  "resources": "Sumber daya",
+  "help": "Pusat Bantuan",
+  "faq": "Pertanyaan Umum",
+  "submitTool": "Kirim Alat",
+  "description": "TopAICollection adalah direktori utama untuk menemukan alat dan situs web AI terbaik.",
+  "browseByAlphabet": "Telusuri berdasarkan Alfabet",
+  "topAITools": {
+    "title": "Alat AI Teratas",
+    "items": {
+      "gpt4": "GPT -4",
+      "midjourney": "Tengah perjalanan",
+      "chatgpt": "ObrolanGPT ChatGPT",
+      "stableDiffusion": "Difusi Stabil",
+      "jasper": "jasper"
+    }
+  },
+  "moreTools": {
+    "title": "Alat Lainnya",
+    "items": {
+      "audio": "AI Audio",
+      "video": "AI Video",
+      "writing": "Menulis AI",
+      "image": "Gambar AI",
+      "coding": "Pengkodean AI"
+    }
+  },
+  "recommend": {
+    "title": "Menyarankan",
+    "items": {
+      "newest": "Alat Terbaru",
+      "mostSaved": "Paling Tersimpan",
+      "trending": "Sedang Tren Sekarang",
+      "editorsChoice": "Pilihan Editor",
+      "featured": "Unggulan",
+      "leaderboard": "Papan peringkat"
+    }
+  },
+  "readMore": {
+    "title": "Baca selengkapnya",
+    "items": {
+      "blog": "blog",
+      "news": "Berita AI",
+      "guides": "Panduan",
+      "tutorials": "Tutorial",
+      "glossary": "Glosarium AI"
+    }
+  },
+  "company": {
+    "title": "Tentang",
+    "items": {
+      "aboutUs": "Tentang Kami",
+      "contact": "Kontak Bisnis",
+      "editorialGuidelines": "Panduan Editorial",
+      "reviewMethodology": "Metodologi Ulasan",
+      "submit": "Kirim",
+      "advertise": "Beriklan"
+    }
+  },
+  "chooseLanguage": "Pilih Bahasa",
+  "followUs": "Ikuti Kami",
+  "more": "Lagi...",
+  "directory": {
+    "title": "Arsip Direktori Alat AI"
+  },
+  "companyInfo": {
+    "address": "Distrik Teknologi, Lembah Silikon",
+    "city": "San Fransisco, CA 94107",
+    "country": "Amerika Serikat",
+    "email": "kontak@topaicollection.com",
+    "name": "TopAICollection Inc.",
+    "phone": "+1 (555) 123-4567"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Generator Video",
+      "imageGenerators": "Generator Gambar",
+      "writers": "Penulis",
+      "seoTools": "Alat SEO",
+      "websiteBuilders": "Pembuat Website",
+      "chatbots": "Chatbot"
+    }
+  }
+}

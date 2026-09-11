@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "פוסטים וקישורים",
+    "description": "נהל את פוסטי האורח ושילובי הקישורים שלך.",
+    "submitNewItem": "שלח פריט חדש",
+    "submitNew": "שלח חדש",
+    "guestPost": "פוסט אורח",
+    "linkInsert": "שילוב קישור",
+    "type": "סוג",
+    "targetUrl": "כתובת יעד",
+    "targetUrlPlaceholder": "https://your-site.co.il/...",
+    "anchorText": "כותרת / טקסט עוגן",
+    "anchorTextPlaceholder": "כותרת המאמר או טקסט עוגן לקישור",
+    "submitCredits": "שלח (קרדיט 1)",
+    "tabs": {
+      "guestPosts": "פוסטי אורח",
+      "linkInserts": "שילובי קישורים"
+    },
+    "table": {
+      "title": "כותרת",
+      "anchor": "טקסט עוגן",
+      "url": "כתובת",
+      "status": "סטטוס",
+      "date": "תאריך"
+    },
+    "empty": {
+      "noGuestTitle": "אין פוסטי אורח",
+      "noGuestDesc": "טרם שלחת פוסטי אורח.",
+      "noGuestCta": "שלח פוסט אורח",
+      "noLinkTitle": "אין שילובי קישורים",
+      "noLinkDesc": "טרם שלחת שילובי קישורים.",
+      "noLinkCta": "שלח שילוב קישור"
+    },
+    "subtitle": "נהל את פוסטי האורחים שלך והכנסות קישורים."
+  }
+}

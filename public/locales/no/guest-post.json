@@ -1,0 +1,46 @@
+{
+  "title": "Gjesteinnlegg og lenkeinnsetting",
+  "description": "Del ekspertisen din med fellesskapet vårt gjennom gjesteinnlegg eller be om innsetting av strategiske koblinger i eksisterende innhold.",
+  "details": "Gjesteinnleggsdetaljer",
+  "postTitle": "Innleggstittel",
+  "postTitlePlaceholder": "Tittelen på gjesteinnlegget ditt",
+  "postContent": "Legg ut innhold eller detaljer",
+  "postContentPlaceholder": "Beskriv innholdet i gjesteinnlegget eller detaljer om lenkeinnsetting",
+  "features": {
+    "guestPosts": {
+      "title": "Gjesteinnlegg",
+      "description": "Del din kunnskap og innsikt om AI med fellesskapet vårt. Bygg autoritet og skap trafikk til nettstedet ditt."
+    },
+    "linkInsertion": {
+      "title": "Innsetting av lenke",
+      "description": "Be om strategisk plassering av koblingene dine i eksisterende, relevant innhold for maksimal SEO-verdi."
+    },
+    "seoBacklinks": {
+      "title": "SEO tilbakekoblinger",
+      "description": "Øk SEO-rangeringene dine med høykvalitets tilbakekoblinger fra vårt autoritative domene."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Retningslinjer for innhold",
+    "description": "Alle gjesteinnlegg må være originale, av høy kvalitet og relevante for AI. Vi godtar ikke AI-generert innhold uten menneskelig redigering."
+  },
+  "meta": {
+    "title": "Gjesteinnlegg og lenkeinnlegg | Topp AI-samling",
+    "description": "Del ekspertisen din med AI-fellesskapet vårt gjennom gjesteinnlegg eller be om innsetting av strategiske koblinger i eksisterende innhold."
+  },
+  "validation": {
+    "required": "Dette feltet er obligatorisk",
+    "titleTooShort": "Tittelen må være på minst 5 tegn",
+    "contentTooShort": "Innholdet må være på minst 20 tegn",
+    "toolNameRequired": "Verktøynavn er påkrevd",
+    "url": "Ugyldig URL",
+    "descriptionMin": "Beskrivelsen må inneholde minst 10 tegn",
+    "categoryRequired": "Velg en kategori",
+    "email": "Ugyldig e-postadresse",
+    "messageMin": "Meldingen må være på minst 10 tegn"
+  },
+  "sidebar": {
+    "articleCount": "1000+ artikler",
+    "articleCountSub": "Publisert av samfunnet vårt"
+  }
+}

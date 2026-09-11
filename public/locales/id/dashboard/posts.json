@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Postingan & Tautan",
+    "description": "Kelola postingan tamu dan penyisipan tautan Anda.",
+    "submitNewItem": "Kirim Item Baru",
+    "submitNew": "Kirim Baru",
+    "guestPost": "Postingan Tamu",
+    "linkInsert": "Penyisipan Tautan",
+    "type": "Tipe",
+    "targetUrl": "URL Target",
+    "targetUrlPlaceholder": "https://situs-anda.com/...",
+    "anchorText": "Judul / Teks Jangkar",
+    "anchorTextPlaceholder": "Judul artikel ATAU teks jangkar untuk tautan",
+    "submitCredits": "Kirim (1 Kredit)",
+    "tabs": {
+      "guestPosts": "Postingan Tamu",
+      "linkInserts": "Penyisipan Tautan"
+    },
+    "table": {
+      "title": "Judul",
+      "anchor": "Teks Jangkar",
+      "url": "URL",
+      "status": "Statusnya",
+      "date": "Tanggal"
+    },
+    "empty": {
+      "noGuestTitle": "Tidak Ada Postingan Tamu",
+      "noGuestDesc": "Anda belum mengirimkan postingan tamu apa pun.",
+      "noGuestCta": "Kirim Postingan Tamu",
+      "noLinkTitle": "Tidak Ada Penyisipan Tautan",
+      "noLinkDesc": "Anda belum mengirimkan penyisipan tautan apa pun.",
+      "noLinkCta": "Kirim Penyisipan Tautan"
+    },
+    "subtitle": "Kelola kiriman tamu dan penyisipan tautan Anda."
+  }
+}

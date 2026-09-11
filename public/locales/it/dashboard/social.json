@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Monitoraggio Social",
+    "description": "Monitora le parole chiave su TikTok e YouTube.",
+    "table": {
+      "platform": "Piattaforma",
+      "keyword": "Parola Chiave",
+      "videos": "Video",
+      "views": "Visualizzazioni",
+      "creators": "Creatori",
+      "status": "Stato"
+    },
+    "status": {
+      "active": "Attivo"
+    },
+    "monthlyQueries": "Query Mensili",
+    "videosToday": "Video Oggi",
+    "creatorsToday": "Creatori Oggi",
+    "metrics": {
+      "monthlyQueries": "Domande mensili",
+      "videosToday": "Video oggi",
+      "creatorsToday": "Creatori oggi"
+    }
+  },
+  "socialListeningTitle": "Monitoraggio Social",
+  "socialTable": {
+    "tool": "Strumento IA",
+    "noData": "Nessun dato trovato"
+  },
+  "allPlatforms": "Tutte le piattaforme"
+}

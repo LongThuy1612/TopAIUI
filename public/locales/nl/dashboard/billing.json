@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Betaling & Factuur",
+    "description": "Beheer uw credits en bekijk de bestelgeschiedenis.",
+    "adCredits": "Advertentie Credits",
+    "postCredits": "Artikel Credits",
+    "linkCredits": "Koppeltegoeden",
+    "forSponsoredListings": "Voor gesponsorde vermeldingen",
+    "forGuestArticles": "Voor gastartikelen",
+    "forLinkInsertions": "Voor linkplaatsingen",
+    "buyCredits": "Credits Kopen",
+    "noOrders": "Geen bestellingen gevonden.",
+    "orderHistory": "Bestelgeschiedenis",
+    "orderId": "Bestel ID",
+    "amount": "Bedrag",
+    "date": "Datum",
+    "type": "Typen",
+    "invoice": "Factuur",
+    "download": "Downloaden",
+    "currentPlan": "Huidig Plan",
+    "freeTier": "Gratis Niveau",
+    "freeTierDesc": "Upgrade uw plan om meer functies en inzichten te ontgrendelen.",
+    "creditBalances": "Credit Saldi",
+    "subscriptionDetails": "Abonnementsgegevens",
+    "upgradePlan": "Plan Upgraden",
+    "credits": "Kredieten",
+    "managePortal": "Facturatieportaal Beheren",
+    "subscribe": "Nu Abonneren",
+    "statusActive": "Actief",
+    "planMemberSince": "Lid van dit plan",
+    "renewalDate": "Verlengt aan",
+    "changePlan": "Plan wijzigen",
+    "redirecting": "Omleiden...",
+    "errorFetchingPortal": "Kan factureringsportaal niet openen",
+    "status": "Status"
+  },
+  "plans": {
+    "free": {
+      "name": "Gratis"
+    },
+    "professional": {
+      "name": "Professioneel"
+    },
+    "enterprise": {
+      "name": "Onderneming"
+    }
+  },
+  "transactions": {
+    "noDescription": "Uw advertentietegoedtransacties worden hier weergegeven."
+  }
+}

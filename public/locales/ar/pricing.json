@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "خطط التسعير - TopAICollection",
+    "description": "تسعير بسيط وشفاف لأبحاث الذكاء الاصطناعي والاستماع الاجتماعي."
+  },
+  "title": "تسعير بسيط وشفاف",
+  "subtitle": "ابدأ مجانًا وقم بالتوسع مع نموك. لا مفاجآت.",
+  "plans": {
+    "free": {
+      "name": "مجاني",
+      "banner": "ابدأ مجانًا — لا تحتاج إلى بطاقة ائتمانية."
+    },
+    "professional": {
+      "name": "احترافي"
+    },
+    "enterprise": {
+      "name": "مؤسسة"
+    },
+    "free-monthly": {
+      "name": "مجاني"
+    },
+    "free-yearly": {
+      "name": "مجاني"
+    },
+    "professional-monthly": {
+      "name": "احترافي"
+    },
+    "professional-yearly": {
+      "name": "احترافي"
+    },
+    "enterprise-monthly": {
+      "name": "مؤسسة"
+    },
+    "enterprise-yearly": {
+      "name": "مؤسسة"
+    }
+  },
+  "badge": {
+    "popular": "⭐ الأكثر شعبية"
+  },
+  "features": {
+    "websiteInsights": "رؤى الموقع",
+    "socialListening": "الاستماع الاجتماعي",
+    "prioritySupport": "دعم ذو أولوية",
+    "advertising": "إعلانات",
+    "premiumSupport": "دعم متميز"
+  },
+  "cta": {
+    "loading": "جاري المعالجة...",
+    "upgrade": "ابدأ الآن"
+  },
+  "comparison": {
+    "title": "مقارنة جميع الخطط",
+    "feature": "الميزة"
+  },
+  "billing": {
+    "monthly": "شهريا",
+    "yearly": "سنوي",
+    "discount20": "وفر 20%",
+    "suffixYearly": "/سنة",
+    "suffixMonthly": "/شهر",
+    "upgradeTitle": "قم بترقية خطة البحث الخاصة بك",
+    "upgradeDesc": "أطلق العنان للتحليلات المتقدمة ورؤى المنافسين والمزيد.",
+    "subscribe": "اشترك الآن"
+  },
+  "billingMonthly": "شهريا",
+  "billingYearly": "سنوي",
+  "billingBestValue": "وفر 20%",
+  "badgePopular": "الأكثر شعبية",
+  "billingPerMonth": "/ شهر",
+  "billingPerYear": "/ سنة"
+}

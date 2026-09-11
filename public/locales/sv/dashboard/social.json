@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Social Monitoring",
+    "description": "Övervaka sökord på TikTok och YouTube.",
+    "table": {
+      "platform": "Plattform",
+      "keyword": "Sökord",
+      "videos": "Videon",
+      "views": "Visningar",
+      "creators": "Skapare",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Aktiv"
+    },
+    "monthlyQueries": "Sökningar per månad",
+    "videosToday": "Videon idag",
+    "creatorsToday": "Skapare idag",
+    "metrics": {
+      "monthlyQueries": "Månatliga frågor",
+      "videosToday": "Videor idag",
+      "creatorsToday": "Skapare idag"
+    }
+  },
+  "socialListeningTitle": "Social Monitoring",
+  "socialTable": {
+    "tool": "AI-verktyg",
+    "noData": "Ingen data hittades"
+  },
+  "allPlatforms": "Alla plattformar"
+}

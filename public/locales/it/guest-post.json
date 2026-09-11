@@ -1,0 +1,46 @@
+{
+  "title": "Inserimento di post e link degli ospiti",
+  "description": "Condividi la tua esperienza con la nostra community tramite guest post o richiedi l'inserimento di link strategici nei contenuti esistenti.",
+  "details": "Dettagli del messaggio ospite",
+  "postTitle": "Titolo del messaggio",
+  "postTitlePlaceholder": "Il titolo del tuo post ospite",
+  "postContent": "Pubblica contenuto o dettagli",
+  "postContentPlaceholder": "Descrivi il contenuto del tuo post ospite o i dettagli di inserimento del collegamento",
+  "features": {
+    "guestPosts": {
+      "title": "Messaggi degli ospiti",
+      "description": "Condividi le tue conoscenze e approfondimenti sull'intelligenza artificiale con la nostra community. Costruisci autorità e indirizza traffico al tuo sito web."
+    },
+    "linkInsertion": {
+      "title": "Inserimento di collegamenti",
+      "description": "Richiedi il posizionamento strategico dei tuoi collegamenti in contenuti esistenti e pertinenti per il massimo valore SEO."
+    },
+    "seoBacklinks": {
+      "title": "Backlink SEO",
+      "description": "Migliora il tuo posizionamento SEO con backlink di alta qualità dal nostro dominio autorevole."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Linee guida sui contenuti",
+    "description": "Tutti i post degli ospiti devono essere originali, di alta qualità e pertinenti all'intelligenza artificiale. Non accettiamo contenuti generati dall'intelligenza artificiale senza modifiche umane."
+  },
+  "meta": {
+    "title": "Post degli ospiti e inserzioni di collegamenti | La migliore collezione di intelligenza artificiale",
+    "description": "Condividi la tua esperienza con la nostra community AI tramite guest post o richiedi l'inserimento di link strategici nei contenuti esistenti."
+  },
+  "validation": {
+    "required": "Questo campo è obbligatorio",
+    "titleTooShort": "Il titolo deve contenere almeno 5 caratteri",
+    "contentTooShort": "Il contenuto deve contenere almeno 20 caratteri",
+    "toolNameRequired": "Il nome dello strumento è obbligatorio",
+    "url": "URL non valido",
+    "descriptionMin": "La descrizione deve contenere almeno 10 caratteri",
+    "categoryRequired": "Seleziona una categoria",
+    "email": "Indirizzo e-mail non valido",
+    "messageMin": "Il messaggio deve contenere almeno 10 caratteri"
+  },
+  "sidebar": {
+    "articleCount": "Oltre1.000 articoli",
+    "articleCountSub": "Pubblicato dalla nostra community"
+  }
+}

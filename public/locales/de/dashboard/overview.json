@@ -1,0 +1,225 @@
+{
+  "welcome": "Willkommen, {name}!",
+  "welcomeDescription": "Entdecken Sie unsere leistungsstarken Funktionen und Daten, um die neuesten Trends und Möglichkeiten in der KI-Branche zu entdecken.",
+  "user": "Benutzer",
+  "performanceOverview": "Leistungsübersicht",
+  "websiteInsightsQuota": "Website-Insights-Kontingent",
+  "socialListeningQueries": "Social Listening Kontingent",
+  "stats": {
+    "organicClicks": "Organische Klicks",
+    "paidClicks": "Bezahlte Klicks",
+    "totalClicks": "Gesamtanzahl Klicks",
+    "totalTools": "Tools insgesamt",
+    "totalViews": "Aufrufe insgesamt",
+    "credits": "Leistungspunkte"
+  },
+  "features": {
+    "websiteInsights": "Website-Einblicke",
+    "socialListening": "Soziales Zuhören",
+    "prioritySupport": "Vorrangiger Support",
+    "advertising": "Werbung",
+    "premiumSupport": "Premium-Support"
+  },
+  "badgePopular": "Am beliebtesten",
+  "title": "Social-Listening-Tracking",
+  "description": "Überwachen Sie Schlüsselwörter auf TikTok und YouTube.",
+  "adCredits": "Werbenachweise",
+  "postCredits": "Beitragsnachweise",
+  "linkCredits": "Link-Credits",
+  "forSponsoredListings": "Für gesponserte Einträge",
+  "forGuestArticles": "Für Gastartikel",
+  "forLinkInsertions": "Für Linkeinfügungen",
+  "buyCredits": "Credits kaufen",
+  "noOrders": "Keine Bestellungen gefunden.",
+  "orderHistory": "Bestellhistorie",
+  "orderId": "Bestell-ID",
+  "amount": "Menge",
+  "date": "Datum",
+  "type": "Typ",
+  "invoice": "Rechnung",
+  "download": "Herunterladen",
+  "currentPlan": "Aktueller Plan",
+  "freeTier": "Kostenloses Kontingent",
+  "freeTierDesc": "Aktualisieren Sie Ihren Plan, um weitere Funktionen und Erkenntnisse freizuschalten.",
+  "creditBalances": "Guthaben",
+  "subscriptionDetails": "Abonnementdetails",
+  "upgradePlan": "Upgrade-Plan",
+  "statusActive": "Aktiv",
+  "planMemberSince": "Mitglied dieses Plans",
+  "renewalDate": "Verlängert sich am",
+  "changePlan": "Plan ändern",
+  "redirecting": "Weiterleitung...",
+  "credits": "Leistungspunkte",
+  "managePortal": "Abrechnungsportal verwalten",
+  "subscribe": "Jetzt abonnieren",
+  "upgradeTitle": "Aktualisieren Sie Ihren Forschungsplan",
+  "upgradeDesc": "Nutzen Sie erweiterte Analysen, Einblicke in die Konkurrenz und mehr.",
+  "choosePlan": {
+    "title": "Wählen Sie Ihren Forschungsplan",
+    "subtitle": "Erhalten Sie KI-Marktinformationen und -daten, um Entscheidungen voranzutreiben."
+  },
+  "billingIntervals": {
+    "monthly": "Monatlich",
+    "yearly": "Jährlich"
+  },
+  "subtitle": "Verwalten und verfolgen Sie die Leistung Ihrer eingereichten KI-Tools.",
+  "create": "Kampagne erstellen",
+  "noCampaigns": "Noch keine Kampagnen",
+  "createFirst": "Erstellen Sie Ihre erste Kampagne, um mit der Werbung für Ihre KI-Tools zu beginnen",
+  "getStarted": "Legen Sie los",
+  "budget": "„Haushalt“",
+  "spent": "Ausgegeben",
+  "startDate": "Startdatum",
+  "endDate": "Enddatum",
+  "notSet": "Nicht festgelegt",
+  "ongoing": "Laufend",
+  "pause": "„Pause“",
+  "resume": "Wieder aufnehmen",
+  "viewDetails": "Details anzeigen",
+  "clicks": "Klicks",
+  "impressions": "Eindrücke",
+  "rejectionReason": "Ablehnungsgrund",
+  "analytics": {
+    "title": "Kampagnenanalyse",
+    "description": "Detaillierte Aufschlüsselung der Impressionen und Klicks der letzten 30 Tage.",
+    "exportJson": "JSON exportieren",
+    "dailyPerformance": "Tägliche Leistung",
+    "topLocales": "Top-Regionen (Gebietsschemata)"
+  },
+  "track": "Schiene",
+  "noDomains": "Es wurden noch keine Domains erfasst. Fügen Sie oben eins hinzu!",
+  "domain": "„Domäne“",
+  "monthlyVisits": "Monatliche Besuche",
+  "rank": "Rang",
+  "topKeywords": "Top-Keywords",
+  "added": "Hinzugefügt",
+  "tool": "Werkzeug",
+  "organicClicks": "Organische Klicks",
+  "paidClicks": "Bezahlte Klicks",
+  "totalClicks": "Gesamtklicks",
+  "addedOn": "Hinzugefügt",
+  "noTools": "Noch keine Werkzeuge erfasst.",
+  "empty": {
+    "title": "Noch keine KI-Tools",
+    "description": "Reichen Sie Ihr KI-Tool ein, damit es von Millionen von Benutzern entdeckt wird.",
+    "cta": "KI-Tool einreichen"
+  },
+  "columns": {
+    "tool": "Werkzeug",
+    "status": "„Status“",
+    "organic": "Organischer Verkehr",
+    "paid": "Bezahlter Verkehr",
+    "impressions": "Eindrücke",
+    "actions": "Aktionen"
+  },
+  "statusTooltip": {
+    "pending": "Warten auf die Genehmigung durch den Administrator"
+  },
+  "submittedToast": "Ihr Tool wurde eingereicht und wartet auf die Überprüfung.",
+  "warnings": {
+    "pendingView": "Dieses Tool wird noch überprüft und ist noch nicht öffentlich sichtbar.",
+    "confirmDelete": "Möchten Sie dieses KI-Tool wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden."
+  },
+  "gpt": {
+    "title": "Meine GPTs",
+    "submitNew": "Neue GPT einreichen",
+    "noGpts": "Keine GPTs gefunden. Reichen Sie Ihr erstes ein!",
+    "noGptsDesc": "Noch keine GPTs eingereicht. Senden Sie Ihre GPT, um entdeckt zu werden.",
+    "columns": {
+      "name": "GPT-Name",
+      "url": "ChatGPT-URL",
+      "date": "Eingereicht"
+    }
+  },
+  "updateAi": "KI aktualisieren",
+  "submitNew": "Neu einreichen",
+  "submitNewItem": "Neuen Artikel einreichen",
+  "linkInsert": {
+    "label": "Link einfügen",
+    "submit": "Linkeinfügung senden",
+    "empty": {
+      "title": "Noch keine Linkeinfügungen",
+      "description": "Sie haben noch keine Linkeinfügungen übermittelt."
+    }
+  },
+  "form": {
+    "type": "Typ",
+    "targetUrl": "Ziel-URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Titel/Ankertext",
+    "anchorTextPlaceholder": "Titel des Artikels ODER Ankertext für den Link",
+    "submitCredits": "Senden (1 Credit)"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Sicherheit",
+    "notifications": "Benachrichtigungen"
+  },
+  "table": {
+    "platform": "Plattform",
+    "keyword": "Stichwort",
+    "videos": "videos",
+    "views": "Ansichten",
+    "creators": "Schöpfer",
+    "status": "„Status“"
+  },
+  "updated": "Einstellungen erfolgreich aktualisiert",
+  "password": {
+    "title": "Kennwort ändern",
+    "current": "Aktuelles Passwort",
+    "new": "Neues Passwort",
+    "confirm": "Bestätigen Sie das neue Passwort",
+    "update": "Passwort aktualisieren"
+  },
+  "notifications": {
+    "title": "Benachrichtigungseinstellungen",
+    "email": "E-Mail-Benachrichtigungen",
+    "marketing": "Marketing-E-Mails"
+  },
+  "metrics": {
+    "monthlyQueries": "Monatliche Abfragen",
+    "videosToday": "Videos heute",
+    "creatorsToday": "Schöpfer heute"
+  },
+  "advertiseAi": "Machen Sie Werbung für KI",
+  "myAis": {
+    "title": "Meine KIs",
+    "subtitle": "Verwalten und verfolgen Sie die Leistung Ihrer eingereichten KI-Tools.",
+    "empty": {
+      "cta": "KI-Tool einreichen"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Ablehnungsgrund"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Verfolgen Sie das Keyword-Ranking und die Leistung",
+    "socialListeningDesc": "Überwachen Sie soziale Erwähnungen und Trends",
+    "researchReportDesc": "Erstellen Sie umfassende Marktberichte",
+    "aiAdvertisingLibrary": "KI-Werbebibliothek",
+    "aiAdvertisingDesc": "Analysieren Sie die KI-Anzeigen der Konkurrenz",
+    "comingSoon": "Demnächst verfügbar"
+  },
+  "reports": {
+    "title": "Forschungsberichte",
+    "description": "Greifen Sie auf ausführliche Analyseberichte zur KI-Branche zu.",
+    "noReports": "Keine Berichte verfügbar",
+    "free": "Frei",
+    "download": "Herunterladen",
+    "unlock": "Bericht freischalten",
+    "noReportsDesc": "Aktuell bereiten wir neue Erkenntnisse vor.",
+    "readNow": "Bericht lesen",
+    "readerTitle": "Forschungsbericht-Leser",
+    "unlockRequired": "Premium Inhalt",
+    "unlockDesc": "Nutzen Sie diesen Deep-Dive-Forschungsbericht, um vollen Zugriff auf exklusive Marktanalysen, Fallstudien und umsetzbare Erkenntnisse zu erhalten.",
+    "unlockNow": "Jetzt beitreten",
+    "related": "Weitere Informationen:",
+    "toc": "Auf dieser Seite",
+    "backToList": "Zur Bibliothek",
+    "notFound": "Bericht nicht vorhanden",
+    "unlockSuccess": "Bericht erfolgreich freigeschaltet!",
+    "unlockError": "Fehler beim Entsperren des Berichts.",
+    "searchPlaceholder": "Reports suchen"
+  },
+  "toolPerformance": "„Werkzeugleistung (Echtzeit)“"
+}

@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Hjälpcenter - TopAICollection Support",
+    "description": "Få hjälp med TopAICollection. Hitta svar på vanliga frågor och kontakta vårt supportteam."
+  },
+  "title": "Hjälpcenter",
+  "subtitle": "Hur kan vi hjälpa dig idag?",
+  "sections": {
+    "faq": {
+      "title": "Vanliga frågor",
+      "description": "Hitta svar på vanliga frågor.",
+      "link": "Se FAQ"
+    },
+    "contact": {
+      "title": "Kontakta support",
+      "description": "Hittar du inte det du behöver? Kontakta oss.",
+      "link": "Kontakta oss"
+    }
+  },
+  "commonTopics": {
+    "title": "Vanliga ämnen",
+    "submitTool": "Hur skickar jag in mitt AI-verktyg?",
+    "advertising": "Hur fungerar reklam?",
+    "privacy": "Vad är din integritetspolicy?",
+    "terms": "Vilka är dina användarvillkor?"
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- AI ツールのレビューと分析"
+  },
+  "errors": {
+    "notFound": "ツールが見つかりません",
+    "notFoundDescription": "探しているツールは存在しません。",
+    "serverError": "内部サーバーエラー。",
+    "serverErrorDescription": "サーバーで予期しないエラーが発生しました。後でもう一度お試しください。"
+  },
+  "actions": {
+    "visit": "ウェブサイトにアクセス",
+    "save": "保存",
+    "saved": "保存されました",
+    "share": "共有",
+    "update": "このツールを更新する",
+    "advertise": "このツールを宣伝する",
+    "visitWebsite": "ウェブサイトにアクセス",
+    "readMore": "「もっと読む」",
+    "readLess": "「読む量を減らす」",
+    "openVideo": "「ビデオを開く」"
+  },
+  "cta": {
+    "visit": "サイトを開く",
+    "advertise": "このツールを宣伝する",
+    "update": "このツールを更新する"
+  },
+  "sidebar": {
+    "category": "カテゴリ",
+    "tags": "タグ"
+  },
+  "tabs": {
+    "socialListening": "ソーシャルリスニング",
+    "alternatives": "代替案"
+  },
+  "similar": {
+    "title": "同様のAIツール"
+  },
+  "stats": {
+    "monthlyVisits": "毎月の訪問数",
+    "growth": "成長",
+    "reviews": "レビュー",
+    "averageTime": "現場での平均滞在時間",
+    "pagesPerVisit": "訪問ごとのページ数",
+    "bounceRate": "直帰率",
+    "visits": "訪問",
+    "reviews_formatted": "「{rating} ({count} {label})」"
+  },
+  "sections": {
+    "overview": "概要",
+    "reviews": "レビュー",
+    "analytics": "分析",
+    "embed": "埋め込む",
+    "alternatives": "代替案",
+    "related": "関連ツール"
+  },
+  "details": {
+    "description": "ツールの紹介:",
+    "monthlyTraffic": "月間トラフィック:",
+    "socialMedia": "ソーシャルメディアと電子メール:",
+    "company": "会社",
+    "categories": "カテゴリー",
+    "tags": "タグ"
+  },
+  "content": {
+    "whatIs": "とは何ですか",
+    "howToUse": "使用方法",
+    "coreFeatures": "コア機能",
+    "useCases": "使用例",
+    "pricingPlans": "料金プラン",
+    "faqs": "よくある質問",
+    "relatedTools": "関連ツール",
+    "productInfo": "製品情報",
+    "writtenBy": "執筆・編集",
+    "factCheckedBy": "ファクトチェック"
+  },
+  "analytics": {
+    "title": "分析とトラフィックに関する洞察",
+    "subtitle": "の分析",
+    "latestTraffic": "最新の Web サイトのトラフィック",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Web サイトのトラフィック ソース",
+    "topKeywords": "人気のキーワード",
+    "keyword": "キーワード",
+    "traffic": "渋滞",
+    "trafficSubtitle": "ウェブトラフィックを改善するには",
+    "geoSubtitle": "検索エンジンのインジケーター",
+    "sourceSubtitle": "検索エンジンのインジケーター",
+    "keywordSubtitle": "検索エンジンのインジケーター",
+    "percentage": "パーセンテージ",
+    "source": "ソース",
+    "noChartData": "チャートデータがありません",
+    "noTrafficChartData": "交通図データがありません",
+    "desktopVsMobile": "デスクトップ vs モバイル",
+    "desktop": "デスクトップ",
+    "mobileWeb": "モバイルウェブ",
+    "similarSites": "類似サイト",
+    "globalRank": "グローバルランキング",
+    "founded": "設立",
+    "socialInfluence": "ソーシャルメディアの影響力",
+    "views": "ビュー",
+    "mentions": "言及",
+    "trendHistory": "トレンド履歴",
+    "trendSubtitle": "時間の経過に伴うトラフィック、ビュー、賛成票の傾向",
+    "upvotes": "賛成票"
+  },
+  "embed": {
+    "title": "ウェブサイトに埋め込む",
+    "description": "美しい埋め込みウィジェットを使用してこのツールをウェブサイトに追加します",
+    "preview": "プレビュー",
+    "code": "コードを埋め込む",
+    "copy": "コードをコピーする",
+    "copied": "コピーしました！",
+    "badgeAlt": "TopAICollectionバッジ TopAICollection",
+    "themes": {
+      "light": "ライト",
+      "neutral": "ニュートラル",
+      "dark": "ダーク"
+    }
+  },
+  "alternatives": {
+    "title": "代替案",
+    "description": "あなたが好むかもしれない同様のツール"
+  },
+  "pricing": {
+    "title": "料金プラン",
+    "subtitle": "最適なプランをお選びください",
+    "popular": "人気のある",
+    "getStarted": "始めましょう",
+    "disclaimer": "価格と機能は異なる場合があります。最新情報については、公式 Web サイトをご覧ください。",
+    "noPricingInfo": "価格情報はありません",
+    "free": "「無料」",
+    "moreFeatures": "「その他の機能」"
+  },
+  "charts": {
+    "trafficChart": "トラフィックチャート",
+    "comingSoon": "チャートの視覚化は近日公開予定"
+  },
+  "reviews": {
+    "title": "レビュー",
+    "pointsScale": "5つのうち",
+    "subtitle": "コミュニティの意見を確認する",
+    "writeTitle": "このツールをお勧めしますか?",
+    "placeholder": "このツールの使用経験を共有してください...",
+    "privacy": "プライバシーの保護",
+    "success": "レビューが正常に送信されました。",
+    "submit": "レビューを投稿する",
+    "loginToReview": "レビューを投稿するにはログインしてください",
+    "loginLink": "ログイン",
+    "noReviews": "まだレビューがありません。最初にレビューしてみましょう！",
+    "viewMore": "すべてのレビューを見る",
+    "allReviewsTitle": "すべてのレビュー：",
+    "reviewsPageTitle": "レビュー",
+    "by": "投稿者",
+    "verified": "認証済み",
+    "anonymous": "匿名ユーザー",
+    "ratingLabel": "評価",
+    "commentLabel": "コメント",
+    "dateLabel": "日付",
+    "page": "ページ",
+    "editReview": "レビューを編集",
+    "deleteReview": "レビューを削除",
+    "deleteConfirm": "レビューを削除してもよろしいですか？",
+    "editTitle": "レビューを編集する",
+    "updateSuccess": "レビューが正常に更新されました！",
+    "deleteSuccess": "レビューが正常に削除されました！",
+    "commentRequired": "レビューにコメントを入力してください。",
+    "ratingRequired": "評価を選択してください。",
+    "alreadyReviewed": "すでにこのツールをレビュー済みです。✏️ 編集ボタンでレビューを更新できます。",
+    "sort": {
+      "label": "並べ替え",
+      "newest": "新しい順",
+      "oldest": "古い順",
+      "highest": "最高評価",
+      "lowest": "最低評価"
+    },
+    "save": "保存",
+    "cancel": "キャンセル",
+    "close": "近い",
+    "userLabel": "ユーザー",
+    "unverify": "未検証",
+    "markVerified": "確認済みとしてマークを付ける",
+    "confirm": "確認する",
+    "noReviewsFound": "このツールに関するレビューは見つかりませんでした。",
+    "deleteError": "削除に失敗しました。",
+    "updateError": "更新に失敗しました。",
+    "pagination": {
+      "showing": "表示中",
+      "of": "の",
+      "reviews": "レビュー",
+      "prev": "前へ",
+      "next": "次へ"
+    },
+    "statusLabel": "ステータス",
+    "actionsLabel": "アクション"
+  },
+  "share": {
+    "title": "このツールを共有する"
+  },
+  "metrics": {
+    "monthlyVisits": "毎月の訪問数",
+    "growth": "成長"
+  },
+  "tags": "タグ",
+  "overview": "概要",
+  "howToUse": "使用方法",
+  "pricingPlans": "料金プラン",
+  "faqs": "よくある質問",
+  "geoChart": {
+    "noData": "利用可能な地理データがありません",
+    "loading": "地理データをロードしています..."
+  },
+  "introduction": "導入",
+  "description": "説明",
+  "coreFeatures": "コア機能",
+  "useCases": "使用例",
+  "screenshots": "スクリーンショット",
+  "companyInfo": {
+    "companyName": "会社名",
+    "contactEmail": "連絡先メールアドレス"
+  },
+  "nav": {
+    "scrollLeft": "左にスクロール",
+    "scrollRight": "右にスクロール",
+    "previous": "「前」",
+    "next": "「次へ」",
+    "imageSlide": "「画像 {index}」",
+    "videoSlide": "「ビデオスライド」"
+  },
+  "badges": {
+    "verifiedListing": "検証済みリスティング",
+    "freePlan": "無料プラン",
+    "paidPlans": "有料プランと価格"
+  },
+  "dummyReviews": {
+    "c1": "これは素晴らしいAIツールです！私のワークフローを完全に変えました。",
+    "c2": "非常に優れた機能で、使いやす��です。強くお勧めします。",
+    "c3": "多くの代替ツールを試してきましたが、これが群を抜いて最高です。",
+    "c4": "価格に対して非常に価値があります。無料プランも非常に寛大です。",
+    "c5": "素晴らしいUIと直感的なデザイン。時々少し遅いですが、全体的に素晴らしいです。",
+    "c6": "あらゆるプロフェッショナルにとって必須 of ツールです。毎週何時間も節約できます。",
+    "c7": "機能は良いですが、ある程度の学習曲線が必要です。"
+  }
+}

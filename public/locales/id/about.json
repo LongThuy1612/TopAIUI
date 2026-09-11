@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Tentang Kami - TopAICollection",
+    "description": "Pelajari misi TopAICollection untuk membantu Anda menemukan alat AI dan situs web terbaik untuk kebutuhan Anda."
+  },
+  "badge": "Tentang Kami",
+  "hero": {
+    "title": "Gerbang Anda menuju Revolusi AI",
+    "subtitle": "Misi kami adalah mendemokratisasikan akses terhadap alat AI dan membantu semua orang memanfaatkan kekuatan kecerdasan buatan."
+  },
+  "stats": {
+    "tools": "Alat AI",
+    "categories": "Kategori",
+    "users": "Pengguna Bulanan",
+    "languages": "Bahasa"
+  },
+  "mission": {
+    "title": "Misi kami",
+    "paragraph1": "Di TopAICollection, kami percaya bahwa AI harus dapat diakses oleh semua orang. Platform kami berfungsi sebagai direktori komprehensif berisi alat dan situs AI terbaik, sehingga memudahkan pengguna menemukan dan memanfaatkan kecerdasan buatan dalam pekerjaan dan kehidupan sehari-hari.",
+    "paragraph2": "Kami dengan cermat menyusun dan meninjau setiap alat dalam koleksi kami, memastikan bahwa pengguna kami hanya memiliki akses ke solusi AI dengan kualitas terbaik. Tim ahli kami mengevaluasi alat berdasarkan fungsionalitas, pengalaman pengguna, harga, dan aplikasi di dunia nyata.",
+    "paragraph3": "Baik Anda seorang pengembang, desainer, pemasar, pendidik, atau pemilik bisnis, TopAICollection membantu Anda menemukan alat AI yang sempurna untuk meningkatkan produktivitas dan kreativitas Anda."
+  },
+  "features": {
+    "title": "Mengapa Memilih TopAICollection",
+    "global": {
+      "title": "Jangkauan Global",
+      "description": "Tersedia dalam 20+ bahasa, melayani jutaan pengguna di seluruh dunia"
+    },
+    "updated": {
+      "title": "Pembaruan Harian",
+      "description": "Koleksi kami diperbarui setiap hari dengan inovasi AI terbaru"
+    },
+    "community": {
+      "title": "Berbasis Komunitas",
+      "description": "Ulasan dan penilaian pengguna membantu Anda membuat keputusan yang tepat"
+    },
+    "verified": {
+      "title": "Alat Terverifikasi",
+      "description": "Setiap alat ditinjau dan diverifikasi dengan cermat oleh tim kami"
+    }
+  },
+  "cta": {
+    "title": "Mulailah Perjalanan AI Anda Sekarang",
+    "subtitle": "Jelajahi koleksi alat AI kami atau kirimkan milik Anda",
+    "browse": "Telusuri Alat",
+    "submit": "Kirimkan Alat Anda"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Zahlungen & Rechnungen",
+    "description": "Verwalten Sie Ihre Credits und sehen Sie die Bestellhistorie ein.",
+    "adCredits": "Werbe-Credits",
+    "postCredits": "Beitrags-Credits",
+    "linkCredits": "Link-Credits",
+    "forSponsoredListings": "Für gesponserte Einträge",
+    "forGuestArticles": "Für Gastartikel",
+    "forLinkInsertions": "Für Link-Einfügungen",
+    "buyCredits": "Credits kaufen",
+    "noOrders": "Keine Bestellungen gefunden.",
+    "orderHistory": "Bestellhistorie",
+    "orderId": "Bestell-ID",
+    "amount": "Betrag",
+    "status": "„Status“",
+    "date": "Datum",
+    "type": "Typ",
+    "invoice": "Rechnung",
+    "download": "Herunterladen",
+    "currentPlan": "Aktueller Plan",
+    "freeTier": "Kostenlose Stufe",
+    "freeTierDesc": "Upgrade Ihres Plans, um mehr Funktionen und Insights freizuschalten.",
+    "creditBalances": "Credit-Guthaben",
+    "subscriptionDetails": "Abonnement-Details",
+    "upgradePlan": "Plan upgraden",
+    "credits": "Leistungspunkte",
+    "managePortal": "Abrechnungsportal verwalten",
+    "subscribe": "Jetzt abonnieren",
+    "statusActive": "Aktiv",
+    "planMemberSince": "Mitglied dieses Plans",
+    "renewalDate": "Verlängert sich am",
+    "changePlan": "Plan ändern",
+    "redirecting": "Weiterleitung...",
+    "errorFetchingPortal": "Das Abrechnungsportal konnte nicht geöffnet werden"
+  },
+  "plans": {
+    "free": {
+      "name": "Kostenlos"
+    },
+    "professional": {
+      "name": "Professionell"
+    },
+    "enterprise": {
+      "name": "Unternehmen"
+    }
+  },
+  "transactions": {
+    "noDescription": "Hier werden Ihre Werbeguthabentransaktionen angezeigt."
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Soumettez Votre Outil IA - TopAICollection",
+    "description": "Inscrivez votre outil d'IA dans le répertoire TopAICollection et touchez des millions d'utilisateurs à la recherche de solutions IA."
+  },
+  "badge": "Inscrivez Votre Outil",
+  "hero": {
+    "title": "Faites Découvrir Votre Outil IA",
+    "subtitle": "Rejoignez des milliers d'outils d'IA dans notre répertoire et touchez des millions d'utilisateurs potentiels dans le monde entier"
+  },
+  "benefits": {
+    "title": "Pourquoi s'inscrire sur TopAICollection ?",
+    "traffic": {
+      "title": "Trafic Accru",
+      "description": "Obtenez un trafic direct d'utilisateurs recherchant activement des solutions IA"
+    },
+    "exposure": {
+      "title": "Exposition Mondiale",
+      "description": "Touchez des utilisateurs dans plus de 20 langues à travers 100+ pays"
+    },
+    "credibility": {
+      "title": "Crédibilité Améliorée",
+      "description": "Gagnez la confiance grâce à une inscription vérifiée et aux avis des utilisateurs"
+    }
+  },
+  "pricing": {
+    "title": "Choisissez Votre Forfait",
+    "popular": "Le plus populaire",
+    "basic": {
+      "name": "Listing Basique",
+      "price": "Gratuit",
+      "features": {
+        "0": "Inscription de base",
+        "1": "Classement par catégorie",
+        "2": "Informations de contact",
+        "3": "Statistiques basiques"
+      }
+    },
+    "featured": {
+      "name": "Listing Mis en Avant",
+      "price": "99$/mois",
+      "features": {
+        "0": "Tout ce qui est dans l'Offre Basique",
+        "1": "Badge Mis en Avant",
+        "2": "Priorité dans les résultats de recherche",
+        "3": "Placement sur la page d'accueil",
+        "4": "Statistiques avancées",
+        "5": "Promotion sur les réseaux sociaux"
+      }
+    },
+    "premium": {
+      "name": "Listing Premium",
+      "price": "299 $/mois",
+      "features": {
+        "0": "Tout ce qui est dans Mis en Avant",
+        "1": "Placement de choix en recherche",
+        "2": "Inclusion dans la newsletter",
+        "3": "Article de blog dédié",
+        "4": "Présentation vidéo",
+        "5": "Support dédié"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Nom de l'Outil",
+    "namePlaceholder": "par ex. ChatGPT, DALL-E, Midjourney",
+    "website": "URL du Site Web",
+    "websitePlaceholder": "https://www.exemple.com",
+    "categories": "Catégories",
+    "selectCategory": "Sélectionner une catégorie",
+    "price": "Frais uniques de $49",
+    "submit": "Soumettre l'Outil",
+    "success": {
+      "title": "Soumission Réussie !",
+      "description": "Votre outil a été soumis pour examen.",
+      "redirecting": "Redirection vers le paiement..."
+    }
+  },
+  "form": {
+    "title": "Soumettez Votre Outil",
+    "sections": {
+      "basic": "Informations de Base",
+      "categorization": "Catégorie & Tags",
+      "media": "Contenus Médias",
+      "plan": "Sélectionner un Forfait",
+      "contact": "Informations de Contact"
+    },
+    "fields": {
+      "name": {
+        "label": "Nom de l'Outil",
+        "placeholder": "Mon Super Outil IA"
+      },
+      "url": {
+        "label": "URL du Site Web",
+        "placeholder": "https://exemple.com"
+      },
+      "tagline": {
+        "label": "Slogan",
+        "placeholder": "Brève description en 100 caractères ou moins"
+      },
+      "description": {
+        "placeholder": "Description détaillée de votre outil IA (max 500 caractères)",
+        "label": "Description"
+      },
+      "category": {
+        "label": "Catégorie",
+        "placeholder": "Sélectionnez une catégorie",
+        "options": {
+          "productivity": "Productivité",
+          "business": "Entreprise",
+          "development": "Développement",
+          "other": "Autres"
+        }
+      },
+      "tags": {
+        "label": "Balises",
+        "placeholder": "ia, productivité, automatisation (séparé par des virgules)",
+        "hint": "Champs séparés par des virgules"
+      },
+      "logo": {
+        "label": "Logo",
+        "placeholder": "Cliquez pour télécharger ou glissez-déposez",
+        "hint": "PNG ou JPG, max 2MB"
+      },
+      "plan": {
+        "label": "Forfait de Listing",
+        "placeholder": "Sélectionnez un forfait"
+      },
+      "terms": {
+        "label": "J'accepte les conditions d'utilisation et la politique de confidentialité"
+      },
+      "contact_name": {
+        "label": "Votre nom",
+        "placeholder": "ex: John Doe"
+      },
+      "contact_email": {
+        "label": "Votre Email",
+        "placeholder": "par exemple john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "En soumettant, vous acceptez nos Conditions d'Utilisation et notre Politique de Confidentialité.",
+      "freeSubmission": "Soumission Gratuite."
+    },
+    "submit": "Soumettre l'Outil",
+    "submitting": "Soumission en cours...",
+    "success": {
+      "title": "Outil soumis avec succès !",
+      "description": "Nous allons examiner votre soumission et vous informerons sous 48 heures."
+    },
+    "error": {
+      "title": "La soumission a échoué",
+      "description": "Veuillez vérifier tous les champs et réessayer.",
+      "noSettings": "Les paramètres de soumission ne sont pas disponibles. Veuillez réessayer plus tard."
+    },
+    "loginRequiredTitle": "Connexion requise",
+    "loginRequiredDesc": "Veuillez vous connecter pour soumettre un outil. Votre progression ne sera pas enregistrée tant que vous ne vous serez pas authentifié.",
+    "loginBtn": "Se connecter"
+  },
+  "categoriesPage": {
+    "searchCategory": "Rechercher des catégories…",
+    "noCategoryFound": "Aucune catégorie trouvée."
+  },
+  "toolForm": {
+    "selectSubCategory": "Sélectionner une sous-catégorie…",
+    "noSubCategory": "Aucune sous-catégorie."
+  },
+  "errors": {
+    "general": "Quelque chose s'est mal passé. Veuillez réessayer."
+  },
+  "processing": "Traitement en cours...",
+  "sidebar": {
+    "toolCount": "Plus de 5 000 outils IA",
+    "toolCountSub": "Rejoignez notre répertoire en pleine croissance",
+    "badgeDescription": "Soumettre votre outil est la première étape pour gagner en visibilité dans la communauté IA."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Échec du chargement des détails de la soumission.",
+      "noId": "Aucun identifiant de soumission fourni.",
+      "notFound": "Soumission introuvable."
+    },
+    "status": {
+      "paymentRequired": "Paiement requis",
+      "paymentRequiredDesc": "Complétez votre paiement pour procéder à l'examen.",
+      "underReview": "En cours de révision",
+      "underReviewDesc": "Votre soumission est en cours d’examen par notre équipe.",
+      "approved": "Approuvé",
+      "approvedDesc": "Votre soumission a été approuvée et publiée.",
+      "received": "Reçu",
+      "receivedDesc": "Nous avons reçu votre soumission."
+    },
+    "types": {
+      "submit": "Soumettre l'outil IA",
+      "advertise": "Annoncer",
+      "guestPost": "Message d'invité",
+      "updateAI": "Mettre à jour l'IA"
+    },
+    "paymentAlert": "Un paiement est requis pour finaliser votre soumission.",
+    "actions": {
+      "viewDashboard": "Afficher le tableau de bord"
+    }
+  },
+  "error": "Quelque chose s'est mal passé. Veuillez réessayer.",
+  "backToHome": "Retour à la maison",
+  "submissionSuccess": {
+    "title": "Titre",
+    "description": "Description"
+  },
+  "successTitle": "Titre de succès",
+  "title": "Titre"
+}

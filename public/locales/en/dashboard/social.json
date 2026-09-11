@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Social Listening",
+    "description": "Monitor keywords across TikTok and YouTube.",
+    "monthlyQueries": "Monthly Queries",
+    "videosToday": "Videos Today",
+    "creatorsToday": "Creators Today",
+    "table": {
+      "platform": "Platform",
+      "keyword": "Keyword",
+      "videos": "Videos",
+      "views": "Views",
+      "creators": "Creators",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Active"
+    },
+    "metrics": {
+      "monthlyQueries": "Monthly Queries",
+      "videosToday": "Videos Today",
+      "creatorsToday": "Creators Today"
+    }
+  },
+  "socialListeningTitle": "Social Listening Leaderboard",
+  "allPlatforms": "All Platforms",
+  "socialTable": {
+    "tool": "AI Tool",
+    "noData": "No data found"
+  }
+}

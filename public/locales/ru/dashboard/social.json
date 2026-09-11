@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Социальный мониторинг",
+    "description": "Отслеживайте ключевые слова в TikTok и YouTube.",
+    "table": {
+      "platform": "Платформа",
+      "keyword": "Ключевое слово",
+      "videos": "Видео",
+      "views": "Просмотры",
+      "creators": "Авторы",
+      "status": "Статус"
+    },
+    "status": {
+      "active": "Активно"
+    },
+    "monthlyQueries": "Запросы за месяц",
+    "videosToday": "Видео сегодня",
+    "creatorsToday": "Авторы сегодня",
+    "metrics": {
+      "monthlyQueries": "Ежемесячные запросы",
+      "videosToday": "Видео сегодня",
+      "creatorsToday": "Создатели сегодня"
+    }
+  },
+  "socialListeningTitle": "Социальный мониторинг",
+  "socialTable": {
+    "tool": "Инструмент искусственного интеллекта",
+    "noData": "Данные не найдены"
+  },
+  "allPlatforms": "«Все платформы»"
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Contactez-nous - TopAICollection",
+    "description": "Entrez en contact avec l’équipe TopAICollection. Nous sommes là pour répondre à toutes vos questions sur les outils d'IA."
+  },
+  "title": "Contactez-nous",
+  "subtitle": "Vous avez une question ou un commentaire ? Nous aimerions avoir de vos nouvelles. Notre équipe répond généralement dans les 24 heures.",
+  "form": {
+    "title": "Envoyez-nous un message",
+    "fields": {
+      "name": {
+        "label": "Votre nom",
+        "placeholder": "Nkomon Sergio"
+      },
+      "email": {
+        "label": "Adresse email",
+        "placeholder": "john@exemple.com"
+      },
+      "subject": {
+        "label": "Sujet",
+        "placeholder": "Sélectionnez un sujet",
+        "options": {
+          "general": "Enquête générale",
+          "support": "Assistance technique",
+          "feedback": "Retour",
+          "partnership": "Opportunité de partenariat",
+          "other": "Autre"
+        }
+      },
+      "message": {
+        "placeholder": "Dites-nous ce que vous pensez...",
+        "label": "Message"
+      }
+    },
+    "submit": "Envoyer un message",
+    "submitting": "Envoi...",
+    "success": {
+      "title": "Message envoyé avec succès !",
+      "description": "Nous avons reçu votre message et vous répondrons bientôt."
+    },
+    "error": {
+      "title": "Échec de l'envoi du message",
+      "description": "Quelque chose s'est mal passé. Veuillez réessayer plus tard."
+    }
+  },
+  "info": {
+    "title": "Entrer en contact",
+    "email": {
+      "title": "Envoyez-nous un courriel",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "Heures d'assistance",
+      "content": "Notre équipe d'assistance est disponible du lundi au vendredi"
+    },
+    "hours": {
+      "title": "Heures d'ouverture",
+      "content": "9h00 à 18h00 HNE"
+    },
+    "location": {
+      "title": "Emplacement",
+      "content": "Servir les utilisateurs du monde entier à partir de notre équipe distribuée"
+    }
+  },
+  "faq": {
+    "title": "Foire aux questions",
+    "q1": "Comment soumettre mon outil d'IA ?",
+    "a1": "Cliquez sur le bouton Outil de soumission dans la navigation et remplissez le formulaire de soumission.",
+    "q2": "Combien de temps prend l'approbation ?",
+    "a2": "La plupart des soumissions sont examinées dans un délai de 1 à 3 jours ouvrables.",
+    "q3": "Puis-je mettre à jour ma liste d'outils ?",
+    "a3": "Oui, connectez-vous à votre tableau de bord et utilisez la fonctionnalité Mettre à jour l'IA."
+  }
+}

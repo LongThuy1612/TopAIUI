@@ -1,0 +1,14 @@
+{
+  "title": "Suchergebnisse",
+  "resultsFor": "Ergebnisse für „{query}“",
+  "filters": "Filter",
+  "typeFilters": "Typ",
+  "categories": "Kategorien",
+  "noResults": "Keine Ergebnisse gefunden",
+  "tryAgain": "Bitte versuchen Sie es mit einem anderen Suchbegriff",
+  "placeholder": "KI-Tools durchsuchen...",
+  "button": "Suchen",
+  "loading": "Suche...",
+  "clearFilters": "Filter löschen",
+  "categoryLabel": "Kategorie"
+}

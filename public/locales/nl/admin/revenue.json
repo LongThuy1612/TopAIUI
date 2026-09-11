@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Inkomsten en financiële gezondheid",
+    "totalRevenue": "Totale omzet",
+    "mrr": "MRR (maandelijks terugkerend)",
+    "mrrDescription": "'Geschatte terugkerende omzet op basis van actieve abonnementen'",
+    "breakdown": "Inkomstenverdeling",
+    "revenueGrowth": "Omzetgroei (30 dagen)",
+    "noData": "Geen omzetgegevens beschikbaar",
+    "noTrendsData": "'Geen groeidata gevonden over de afgelopen 30 dagen'",
+    "comingSoon": "Binnenkort beschikbaar"
+  }
+}

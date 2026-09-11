@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "שם מלא",
+      "email": "כתובת אימייל",
+      "emailHelp": "לא ניתן לשנות אימייל",
+      "phone": "מספר טלפון",
+      "phonePlaceholder": "+972 (000) 000-0000",
+      "company": "חברה",
+      "country": "מדינה",
+      "website": "אתר אינטרנט",
+      "save": "שמור שינויים",
+      "saving": "שומר...",
+      "saveSuccess": "הפרופיל עודכן בהצלחה.",
+      "emailPlaceholder": "you@example.com"
+    },
+    "password": {
+      "title": "שנה סיסמה",
+      "current": "סיסמה נוכחית",
+      "new": "סיסמה חדשה",
+      "confirm": "אשר סיסמה חדשה",
+      "update": "עדכן סיסמה"
+    },
+    "notifications": {
+      "title": "העדפות התראה",
+      "email": "התראות אימייל",
+      "marketing": "אימיילים שיווקיים"
+    }
+  },
+  "profile": {
+    "title": "פּרוֹפִיל",
+    "fullName": "שם מלא",
+    "email": "כתובת אימייל",
+    "emailHelp": "אי אפשר לשנות אימייל",
+    "phone": "מספר טלפון",
+    "company": "חֶברָה",
+    "country": "מְדִינָה",
+    "website": "אֲתַר אִינטֶרנֶט",
+    "save": "שמור שינויים",
+    "saving": "חִסָכוֹן...",
+    "saveSuccess": "הפרופיל עודכן בהצלחה.",
+    "emailPlaceholder": "you@example.com",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "שנה סיסמה",
+    "current": "סיסמה נוכחית",
+    "new": "סיסמה חדשה",
+    "confirm": "אשר סיסמה חדשה",
+    "update": "עדכן סיסמה"
+  },
+  "notifications": {
+    "title": "העדפות הודעה",
+    "email": "הודעות אימייל",
+    "marketing": "מיילים שיווקיים"
+  },
+  "tabs": {
+    "profile": "פּרוֹפִיל",
+    "security": "בִּטָחוֹן",
+    "notifications": "התראות"
+  },
+  "updated": "ההגדרות עודכנו בהצלחה"
+}

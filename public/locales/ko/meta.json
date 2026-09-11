@@ -1,0 +1,20 @@
+{
+  "compare": {
+    "title": "AI 모델 비교"
+  },
+  "submissionSuccess": {
+    "title": "제출 성공 - TopAICollection",
+    "description": "제출물이 성공적으로 접수되었습니다"
+  },
+  "business": {
+    "title": "비즈니스용"
+  },
+  "submitGpt": {
+    "title": "커스텀 GPT 제출"
+  },
+  "layout": {
+    "defaultTitle": "AI 도구 디렉토리: 1000+ 검증된 무료 AI 도구",
+    "description": "#1 AI 도구 디렉토리 목록을 탐색해 보세요. 이 AI 도구 사전 웹사이트는 최고의 AI 소프트웨어를 무료로 찾고, 비교하고, 시작할 수 있��록 돕습니다.",
+    "keywords": "AI 도구, 인공 지능, AI 디렉토리, 최고의 AI 웹사이트, 최고의 AI 도구, AI 마켓플레이스"
+  }
+}

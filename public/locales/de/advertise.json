@@ -1,0 +1,294 @@
+{
+  "title": "Bewerben Sie Ihr KI-Tool",
+  "description": "Erhalten Sie erstklassige Platzierung und maximale Präsenz für Ihr KI-Tool. Erreichen Sie Tausende potenzieller Benutzer, die aktiv nach KI-Lösungen suchen.",
+  "hero": {
+    "title": "Ihre KIs auf TopAICollection",
+    "subtitle": "TopAI kann Ihnen dabei helfen, Millionen von KI-Nutzern und Ihre potenziellen Kunden weltweit zu erreichen.",
+    "stats": {
+      "pageViews": "5M+",
+      "pageViewsLabel": "Seitenaufrufe",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Monatliche Besuche",
+      "subscribers": "100.000+",
+      "subscribersLabel": "Abonnenten",
+      "desktopUsers": "55 %",
+      "desktopUsersLabel": "Desktop-Benutzer",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Registrierte Benutzer",
+      "avgTimeOnSite": "„2,5m“",
+      "avgTimeOnSiteLabel": "Durchschn. Verweildauer"
+    },
+    "benefits": [
+      "Top-KI-Tools-Verzeichnis",
+      "Dofollow-Backlink",
+      "Mehrsprachiges Intro",
+      "Listing und Traffic für immer",
+      "Mehrwert für Gründer und Startups"
+    ]
+  },
+  "tabs": {
+    "submit": "KI einreichen",
+    "submitDesc": "Reichen Sie Ihre KI-Tools ein, erhalten Sie Traffic",
+    "advertise": "Machen Sie Werbung für KI",
+    "advertiseDesc": "Pay-per-Click, vorgestellte Werbeaktionen, automatisierte Anzeigenplatzierung",
+    "guestPost": "Gastbeiträge / Linkeinfügung",
+    "guestPostDesc": "Gastbeiträge/Linkeinfügung auf TopAI",
+    "updateAi": "KI aktualisieren",
+    "updateAiDesc": "Aktualisieren Sie die Informationen Ihres Werkzeugs",
+    "submitGpt": "GPT einreichen",
+    "submitGptDesc": "Reichen Sie Ihr GPT ein, damit es von mehr Personen genutzt werden kann",
+    "business": "Mehr Geschäft",
+    "businessDesc": "Zum Beispiel: Linkaustausch, Twitter-Beiträge, Videos usw."
+  },
+  "form": {
+    "toolLabel": "Werkzeug",
+    "toolHint": "PS: Wenn das Tool nicht gefunden werden kann, senden Sie es bitte zuerst.",
+    "toolPlaceholder": "Suchen Sie nach Ihrem Werkzeug...",
+    "adLandingLink": "Ad-Landing-Link",
+    "urlTitle": "Bitte geben Sie eine gültige URL (inkl. http:// oder https://) ein.",
+    "toolLandingPlaceholder": "Werkzeug",
+    "websitePlaceholder": "https://example.com"
+  },
+  "clicks": {
+    "title": "Wählen Sie die Anzahl der Klicks aus, die Sie benötigen",
+    "numberOfClicks": "Anzahl der Klicks",
+    "total": "Gesamt",
+    "payButton": "Zahlen",
+    "submitButton": "Senden"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Bewerben Sie ein Tool-Beispiel",
+    "description": "Wir automatisieren die Anzeige Ihrer Werbung auf Basis unserer Algorithmen vollständig, um sicherzustellen, dass Sie nicht weniger als die Anzahl der gekauften Klicks erhalten. Für die Qualität der Klicks können wir jedoch keine Garantie übernehmen.",
+    "note": "Priorisieren Sie den Verbrauch von Werbekosten, um schnell Website-Klicks und Impressionen zu erhalten. Sie können: die Werbung pausieren oder die Werbung starten.",
+    "typesTitle": "Hier sind einige Arten von Anzeigen:",
+    "mostFrequently": "Am häufigsten",
+    "mostEffective": "Am effektivsten",
+    "standardDesc": "Erscheint auf der Startseite, in den Auflistungen und auf den Kategorieseiten.",
+    "effectiveDesc": "Erscheint auf den Seiten Ihrer Konkurrenten und auf den Kategorieseiten, zu denen Sie gehören.",
+    "featured": "Vorgestellt*",
+    "featuredDesc1": "Empfohlener Ort auf der Startseite, Neueste KI, Am häufigsten verwendet, Am häufigsten gespeichert, Suchergebnisseite, Kategoriedetailseite usw.",
+    "featuredDesc2": "Oben auf den meisten Seiten befindet sich eine Sponsorenposition.",
+    "standard": "„Standard“",
+    "targeted": "Gezielt"
+  },
+  "faq": {
+    "title": "FAQ - Werbung",
+    "items": [
+      {
+        "question": "Wie funktioniert Werbung?",
+        "answer": "Wir zeigen Ihr Werkzeug auf unserer Plattform an Premium-Positionen an. Sie zahlen pro Klick und wir stellen sicher, dass Ihre Anzeige die Anzahl der Klicks erhält, die Sie gekauft haben."
+      },
+      {
+        "question": "Kann ich Klicks mehrmals kaufen?",
+        "answer": "Ja, Sie können jederzeit zusätzliche Klickpakete erwerben, um die Sichtbarkeit Ihres Tools zu erhöhen."
+      },
+      {
+        "question": "Kann ich meine Anzeigen pausieren?",
+        "answer": "Ja, Sie können Ihre Werbekampagnen jederzeit über Ihr Dashboard pausieren und fortsetzen."
+      },
+      {
+        "question": "Welche Art von Analysen erhalte ich?",
+        "answer": "Sie erhalten detaillierte Daten zu organischen Klicks, bezahlten Klicks, Gesamtklicks, Impressionen und Einsparungen."
+      }
+    ]
+  },
+  "whyAdvertise": "Warum Werbung machen?",
+  "customPackage": {
+    "title": "Benötigen Sie ein individuelles Paket?",
+    "description": "Kontaktieren Sie uns für maßgeschneiderte Werbelösungen, die Ihren spezifischen Zielen entsprechen.",
+    "contactSales": "Kontaktieren Sie den Vertrieb",
+    "estimatedClicks": "Geschätzte Klicks",
+    "estimatedImpressions": "Geschätzte Impressionen",
+    "estimatedViews": "Geschätzte Aufrufe",
+    "estimatedUnits": "Geschätzte Einheiten",
+    "toolSlug": "Werkzeugschnecke",
+    "landingUrl": "Landing-URL",
+    "campaignParameters": "Kampagnenparameter",
+    "metricType": "Metriktyp",
+    "pacingType": "Stimulationstyp",
+    "basePrice": "Grundpreis",
+    "totalBudget": "Gesamtbudget",
+    "startDate": "Startdatum",
+    "endDate": "Enddatum",
+    "priorityBid": "Vorrangiges Gebot",
+    "estimation": "Schätzung",
+    "cancel": "Stornieren",
+    "submitting": "Einreichen",
+    "submitProposal": "Vorschlag einreichen"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Premium-Platzierung",
+      "description": "Hervorgehobene Stellen auf der Homepage und auf Kategorieseiten"
+    },
+    "targetedAudience": {
+      "title": "Zielgruppe",
+      "description": "Erreichen Sie Benutzer, die aktiv nach KI-Tools suchen"
+    },
+    "analytics": {
+      "title": "Analytik",
+      "description": "Verfolgen Sie die Leistung mit detaillierten Einblicken"
+    }
+  },
+  "campaigns": {
+    "previous": "Vorherige",
+    "pageOf": "Seite {page} von {total}",
+    "choosePlan": "Wähle deinen Plan",
+    "choosePlanDesc": "Wählen Sie unten einen Plan aus, um Ihre Kampagne zu verlängern oder zu aktualisieren.",
+    "currentPlan": "Aktueller Plan",
+    "selectAgain": "nochmal neu auswählen",
+    "selectPlan": "Mitgliedschaft auswählen"
+  },
+  "transactions": {
+    "noDescription": "Sie haben noch keine Werbeguthaben erworben. Laden Sie Ihr Guthaben auf, um mit der Durchführung von Kampagnen zu beginnen."
+  },
+  "meta": {
+    "title": "KI-Tool bewerben – TopAICollection",
+    "description": "Bewerben Sie Ihr KI-Tool bei Millionen von KI-Enthusiasten."
+  },
+  "plans": {
+    "title": "Werbepläne",
+    "subtitle": "Erweitern Sie Ihre Reichweite",
+    "clickTarget": "Klickziel",
+    "toolRequired": "⚠ Bitte geben Sie oben Ihren Tool-Namen ein, bevor Sie absenden.",
+    "empty": "Derzeit keine Werbepakete verfügbar. Bitte schauen Sie später wieder vorbei.",
+    "customPlanConfig": "Benutzerdefinierte Plankonfiguration",
+    "basePrice": "Startpreis",
+    "adPlacements": "Anzeigenplatzierungen",
+    "applyConfig": "Config anwenden",
+    "configured": "Konfiguriert",
+    "toolSlug": "Werkzeugschnecke",
+    "landingUrl": "Landing-URL",
+    "campaignParameters": "Kampagnenparameter",
+    "metricType": "Metrik-Typ:",
+    "pacingType": "Schrittmachertyp",
+    "totalBudget": "Gesamtbudget ",
+    "startDate": "Startdatum",
+    "endDate": "Enddatum",
+    "priorityBid": "Vorrangiges Gebot",
+    "estimation": "Einschätzung",
+    "estimatedClicks": "Geschätzte Klicks",
+    "estimatedImpressions": "Geschätzte Impressions:",
+    "estimatedViews": "Geschätzte Aufrufe",
+    "estimatedUnits": "Geschätzte {metric} Einheiten",
+    "submitProposal": "Benutzerdefiniertes Angebot einreichen",
+    "submitting": "Senden…",
+    "cancel": "Abbrechen",
+    "customBid": {
+      "title": "Benutzerdefinierte Leistungsgebote",
+      "budgetLabel": "Gesamtbudget ",
+      "budgetDescription": "Gesamtbetrag, den Sie ausgeben möchten.",
+      "priorityBidLabel": "Prioritätsgebotsmultiplikator",
+      "priorityBidDescription": "Höheres Gebot = höhere Erscheinungsfrequenz.",
+      "minBudget": "Das Mindestbudget beträgt 10 $",
+      "minBid": "Das Minimalgebot ist 0,01 € oder höher."
+    },
+    "placeholders": {
+      "toolSlug": "mein-tolles-Werkzeug",
+      "landingUrl": "https://...",
+      "metricType": "CPA ",
+      "pacingType": "SOGAR"
+    }
+  },
+  "submit": {
+    "button": "Kampagnenanfrage senden",
+    "submitting": "Wird gesendet…",
+    "error": "Übermittlung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "successTitle": "Kampagne eingereicht!",
+    "budgetLabel": "Kampagnenbudget festlegen ($ USD)",
+    "success": "Kampagne erfolgreich erstellt!",
+    "untitled": "Unbenannte Kampagne",
+    "missingTool": "Tool- oder Ziel-URL ist erforderlich",
+    "loginRequiredTitle": "Authentifizierung erforderlich",
+    "loginRequiredDesc": "Bitte melden Sie sich an, um ein Tool einzureichen. Ihr Fortschritt wird erst gespeichert, wenn Sie sich authentifizieren."
+  },
+  "sidebar": {
+    "pageViews": "Seitenaufrufe",
+    "pageViewsSub": "Monatlicher Seitenverkehr"
+  },
+  "details": "Anzeigendetails",
+  "duration": "Dauer (Tage)",
+  "selectDuration": "Dauer auswählen",
+  "days": "„{count, plural, =1 {1 day} other {# days}}“",
+  "preferredPlacement": "Bevorzugte Platzierung",
+  "selectPlacement": "Platzierung auswählen",
+  "placements": {
+    "homepageBanner": "Homepage-Banner",
+    "sidebar": "Seitenleiste",
+    "categoryPage": "Kategorieseite",
+    "newsletter": "„Newsletter“",
+    "HOME": "Startseite",
+    "CATEGORY": "Kategoriebeitrag",
+    "SEARCH": "Suchergebnisse",
+    "TOOL_DETAIL": "Detailseite"
+  },
+  "targetAudience": "Zielgruppe",
+  "targetAudiencePlaceholder": "Beschreiben Sie Ihre Zielgruppe",
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "selectDuration": "Bitte wählen Sie die Anzeigendauer aus",
+    "selectPlacement": "Bitte wählen Sie die Anzeigenplatzierung aus",
+    "targetAudienceMin": "Die Zielgruppe muss mindestens 10 Zeichen lang sein",
+    "toolNameRequired": "Werkzeugname ist erforderlich",
+    "url": "Ungültige URL",
+    "descriptionMin": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
+    "categoryRequired": "Bitte wählen Sie eine Kategorie aus",
+    "email": "Ungültige E-Mail-Adresse",
+    "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "Zahlung per Klick",
+      "CPM": "pro 1.000 Impressionen",
+      "CPV": "Pro Ansicht",
+      "FLAT_RATE": "□ pauschal",
+      "CPC_LABEL": "„CPC“",
+      "CPM_LABEL": "„CPM“",
+      "CPV_LABEL": "„CPV“",
+      "FLAT_RATE_LABEL": "Fixfahrten"
+    },
+    "units": {
+      "clicks": "Klicks",
+      "impressions": "Eindrücke",
+      "views": "Aufrufe",
+      "units": "Einheiten"
+    }
+  },
+  "selected": "Ausgewählt",
+  "summary": {
+    "selectedPlanLabel": "Ausgewähltes Anzeigenpaket",
+    "totalPriceLabel": "Ges. Festpreis",
+    "securityFooter": "Sichere Zahlung • Sofortige Aktivierung • Vollständige Analyse"
+  },
+  "charts": {
+    "cpc": "CPC",
+    "cpm": "CPM",
+    "noData": "Keine historischen Daten verfügbar"
+  }
+}

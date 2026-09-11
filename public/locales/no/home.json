@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Oppdag de beste AI-verktøyene og -nettstedene",
+    "description": "Utforsk #1-kataloglisten over AI-verktøy. Denne ordboknettsiden for AI-verktøy hjelper deg med å finne, sammenligne og lansere den absolutt beste AI-programvaren GRATIS."
+  },
+  "nav": {
+    "today": "I dag",
+    "latestAI": "Siste AI",
+    "mostSaved": "Mest frelste",
+    "mostUsed": "Mest brukt",
+    "browserPlugin": "Nettleserplugin",
+    "application": "Søknad",
+    "discordOfAI": "Uenighet om AI (Discord)",
+    "compareAI": "Sammenlign AI",
+    "ariaLabel": "Hovednavigasjon"
+  },
+  "hero": {
+    "title": "Oppdag de beste AI-nettstedene og -verktøyene",
+    "subtitle": "Finn de perfekte AI-verktøyene for dine behov fra vår omfattende katalog, som oppdateres daglig med de siste AI-innovasjonene.",
+    "stats": {
+      "aiTools": "AI-verktøy",
+      "categories": "kategorier",
+      "languages": "språk",
+      "and": "og",
+      "supporting": "støttende",
+      "description": "Omfattende AI-samling, oppdatert daglig med de siste innovasjonene."
+    }
+  },
+  "search": {
+    "placeholder": "Finn verktøy etter AI, f.eks. AI-verktøy for videooversettelse",
+    "button": "Søk"
+  },
+  "sections": {
+    "featured": {
+      "title": "Utvalgte AI-verktøy",
+      "description": "Oppdag de mest populære og effektive AI-verktøyene",
+      "noTools": "Ingen fremhevede verktøy tilgjengelig for øyeblikket"
+    },
+    "justLaunched": {
+      "title": "Nettopp lansert",
+      "description": "Siste AI-verktøy og innovasjoner",
+      "noTools": "Ingen nye verktøy tilgjengelig for øyeblikket"
+    },
+    "categories": {
+      "title": "Bla etter kategori",
+      "description": "Finn AI-verktøy organisert etter brukstilfelle og bransje"
+    },
+    "trending": {
+      "title": "Populært nå",
+      "description": "Mest populære AI-verktøy denne uken"
+    }
+  },
+  "cta": {
+    "title": "List opp AI-verktøyet ditt",
+    "description": "Nå ut til millioner av potensielle brukere ved å føre opp AI-verktøyet ditt i katalogen vår.",
+    "button": "Send inn verktøyet ditt",
+    "features": {
+      "exposure": "Global eksponering",
+      "traffic": "Økt trafikk",
+      "seo": "SEO-fordeler"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "AI-applikasjoner",
+      "description": "Oppdag de beste AI-applikasjonene for produktivitet, kreativitet og mer."
+    },
+    "browserExtensions": {
+      "title": "AI-nettleserutvidelser",
+      "description": "Oppdag de beste AI-nettleserutvidelsene for å forsterke arbeidsflyten din."
+    },
+    "latestAi": {
+      "title": "Siste AI-verktøy",
+      "description": "Oppdag de nyeste AI-verktøyene og innovasjonene, som oppdateres daglig."
+    },
+    "mostSaved": {
+      "title": "Mest lagrede AI-verktøy",
+      "description": "Oppdag de mest lagrede og bokmerkede AI-verktøyene av fellesskapet vårt."
+    },
+    "mostUsed": {
+      "title": "Mest Brukte AI-verktøy",
+      "description": "Oppdag de mest populære og mye brukte AI-verktøyene av samfunnet vårt."
+    },
+    "discord": {
+      "title": "AI Discord-fellesskap",
+      "description": "Oppdag de beste AI Discord-fellesskapene og koble deg til AI-entusiaster."
+    },
+    "today": {
+      "title": "AI-verktøy Fremhevet I Dag",
+      "description": "Oppdag de beste AI-verktøyene fremhevet i dag på TopAICollection."
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "Tekstgenerering",
+          "Image Creation": "Bildeoppretting",
+          "Coding": "Koding",
+          "Video": "Video",
+          "Audio": "Lyd",
+          "Productivity": "Produktivitet"
+        },
+        "text": "Hva vil du bruke AI til?"
+      },
+      "budget": {
+        "options": {
+          "Free only": "Kun gratis",
+          "Freemium": "Freemium",
+          "Paid is fine": "Betalt er greit"
+        },
+        "text": "Hva er budsjettet ditt?"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "Nybegynner",
+          "Intermediate": "Viderekommen",
+          "Expert": "Ekspert"
+        },
+        "text": "Hva er ditt kompetansenivå?"
+      }
+    },
+    "title": "Dine personlige anbefalinger",
+    "viewTool": "Se verktøy",
+    "noTools": "Ingen verktøy samsvarte med dine nøyaktige kriterier. Prøv å utvide søket!",
+    "startOver": "Start på nytt",
+    "finding": "Finner de beste AI-verktøyene for deg...",
+    "questionLabel": "Spørsmål {step} av {total}",
+    "completed": "{percentage}% fullført"
+  }
+}

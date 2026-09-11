@@ -1,0 +1,92 @@
+{
+  "about": "Chi siamo",
+  "contact": "Contatto",
+  "blog": "Blog",
+  "privacy": "politica sulla riservatezza",
+  "terms": "Termini di servizio",
+  "cookies": "Politica sui cookie",
+  "copyright": "© {year} TopAICollection. Tutti i diritti riservati.",
+  "sitemap": "Mappa del sito",
+  "resources": "Risorse",
+  "help": "Centro assistenza",
+  "faq": "Domande frequenti",
+  "submitTool": "Strumento Invia",
+  "description": "TopAICollection è la directory definitiva per scoprire i migliori strumenti e siti Web di intelligenza artificiale.",
+  "browseByAlphabet": "Sfoglia per alfabeto",
+  "topAITools": {
+    "title": "I migliori strumenti di intelligenza artificiale",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "Metà viaggio",
+      "chatgpt": "ChatGPT/",
+      "stableDiffusion": "Diffusione stabile",
+      "jasper": "Diaspro"
+    }
+  },
+  "moreTools": {
+    "title": "Più strumenti",
+    "items": {
+      "audio": "IA audio",
+      "video": "IA video",
+      "writing": "Scrivere l'intelligenza artificiale",
+      "image": "Immagine AI",
+      "coding": "Codifica dell'intelligenza artificiale"
+    }
+  },
+  "recommend": {
+    "title": "Consiglia",
+    "items": {
+      "newest": "Strumenti più recenti",
+      "mostSaved": "I più salvati",
+      "trending": "Di tendenza adesso",
+      "editorsChoice": "Scelta dell'editore",
+      "featured": "In primo piano",
+      "leaderboard": "Classifica"
+    }
+  },
+  "readMore": {
+    "title": "Per saperne di più",
+    "items": {
+      "blog": "Blog",
+      "news": "Notizie sull'AI",
+      "guides": "Guide",
+      "tutorials": "Tutorial",
+      "glossary": "Glossario dell'intelligenza artificiale"
+    }
+  },
+  "company": {
+    "title": "Di",
+    "items": {
+      "aboutUs": "Chi siamo",
+      "contact": "Contatto commerciale",
+      "editorialGuidelines": "Linee guida editoriali",
+      "reviewMethodology": "Metodologia di revisione",
+      "submit": "Invia",
+      "advertise": "Pubblicizza"
+    }
+  },
+  "chooseLanguage": "Seleziona lingua",
+  "followUs": "Seguici",
+  "more": "Di più...",
+  "directory": {
+    "title": "Archivio della directory degli strumenti AI"
+  },
+  "companyInfo": {
+    "address": "Distretto tecnologico, Silicon Valley",
+    "country": "Stati Uniti",
+    "email": "contatto@topaicollection.com",
+    "name": "TopAICollection Inc.",
+    "city": "San Francisco, CA 94107",
+    "phone": "+1 (555) 123-4567"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Generatori video",
+      "imageGenerators": "Generatori di immagini",
+      "writers": "Scrittori",
+      "seoTools": "Strumenti SEO",
+      "websiteBuilders": "Costruttori di siti web",
+      "chatbots": "Chatbot"
+    }
+  }
+}

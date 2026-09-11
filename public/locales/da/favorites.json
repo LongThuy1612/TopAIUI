@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Gemte værktøjer - TopAICollection",
+    "description": "Se og administrer dine gemte AI-værktøjer og websteder"
+  },
+  "title": "Gemte værktøjer",
+  "description": "Se og administrer dine gemte AI-værktøjer og websteder.",
+  "emptyState": {
+    "title": "Ingen gemte værktøjer endnu",
+    "description": "Begynd at udforske og gem dine foretrukne AI-værktøjer for nem adgang senere.",
+    "action": "Gennemse AI-værktøjer"
+  },
+  "stats": {
+    "lastUpdated": "Sidst opdateret {date}"
+  },
+  "filters": {
+    "all": "Alle",
+    "popular": "Mest populær",
+    "category": "Efter kategori"
+  },
+  "errors": {
+    "loadFailed": "Favoritter kunne ikke indlæses"
+  },
+  "noDescription": "Ingen beskrivelse",
+  "retry": "Prøv igen",
+  "actions": {
+    "addedToFavorites": "Tilføjet til favoritter",
+    "removeFromFavorites": "Fjern fra favoritter",
+    "removedFromFavorites": "Fjernet fra favoritter"
+  }
+}

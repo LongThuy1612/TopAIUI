@@ -1,0 +1,92 @@
+{
+  "about": "Về chúng tôi",
+  "contact": "Liên hệ kinh doanh",
+  "blog": "Blog",
+  "privacy": "Chính sách bảo mật",
+  "terms": "Điều khoản dịch vụ",
+  "cookies": "Chính sách Cookie",
+  "copyright": "© {year} TopAICollection. Tất cả các quyền được bảo lưu.",
+  "sitemap": "Sơ đồ trang web",
+  "resources": "Tài nguyên",
+  "help": "Trung tâm trợ giúp",
+  "faq": "Câu hỏi thường gặp",
+  "submitTool": "Gửi công cụ",
+  "description": "TopAICollection là thư mục tối ưu để khám phá các công cụ và trang web AI tốt nhất.",
+  "browseByAlphabet": "Duyệt theo bảng chữ cái",
+  "topAITools": {
+    "title": "Công cụ AI hàng đầu",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "giữa hành trình",
+      "chatgpt": "Trò chuyệnGPT ChatGPT",
+      "stableDiffusion": "Khuếch tán ổn định",
+      "jasper": "Jatpe"
+    }
+  },
+  "moreTools": {
+    "title": "Thêm công cụ",
+    "items": {
+      "audio": "AI Âm thanh",
+      "video": "AI Video",
+      "writing": "AI Viết lách",
+      "image": "AI Hình ảnh",
+      "coding": "AI Lập trình"
+    }
+  },
+  "recommend": {
+    "title": "Đề xuất",
+    "items": {
+      "newest": "Công cụ mới nhất",
+      "mostSaved": "Được lưu nhiều nhất",
+      "trending": "Đang thịnh hành",
+      "editorsChoice": "Lựa chọn của biên tập viên",
+      "featured": "Nổi bật",
+      "leaderboard": "Bảng xếp hạng"
+    }
+  },
+  "readMore": {
+    "title": "Đọc thêm",
+    "items": {
+      "blog": "Blog",
+      "news": "Tin tức AI",
+      "guides": "Hướng dẫn",
+      "tutorials": "Bài học",
+      "glossary": "Thuật ngữ AI"
+    }
+  },
+  "company": {
+    "title": "Giới thiệu",
+    "items": {
+      "aboutUs": "Về chúng tôi",
+      "contact": "Liên hệ kinh doanh",
+      "editorialGuidelines": "Hướng dẫn biên tập",
+      "reviewMethodology": "Phương pháp đánh giá",
+      "submit": "Gửi",
+      "advertise": "Quảng cáo"
+    }
+  },
+  "chooseLanguage": "Chọn ngôn ngữ",
+  "followUs": "Theo dõi chúng tôi",
+  "more": "Thêm...",
+  "directory": {
+    "title": "Lưu trữ thư mục công cụ AI"
+  },
+  "companyInfo": {
+    "address": "Khu công nghệ, Thung lũng Silicon",
+    "country": "Hoa Kỳ",
+    "name": "TopAICollection Inc.",
+    "city": "San Francisco, CA 94107",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Trình tạo video",
+      "imageGenerators": "Trình tạo hình ảnh",
+      "writers": "Trình viết",
+      "seoTools": "Công cụ SEO",
+      "websiteBuilders": "Trình tạo trang web",
+      "chatbots": "Chatbot"
+    }
+  }
+}

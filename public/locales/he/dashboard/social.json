@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "ניטור חברתי",
+    "description": "נטר מילות מפתח ב-TikTok וב-YouTube.",
+    "table": {
+      "platform": "פלטפורמה",
+      "keyword": "מילת מפתח",
+      "videos": "סרטונים",
+      "views": "צפיות",
+      "creators": "יוצרים",
+      "status": "סטטוס"
+    },
+    "status": {
+      "active": "פעיל"
+    },
+    "monthlyQueries": "שאילתות חודשיות",
+    "videosToday": "סרטונים היום",
+    "creatorsToday": "יוצרים היום",
+    "metrics": {
+      "monthlyQueries": "שאילתות חודשיות",
+      "videosToday": "סרטונים היום",
+      "creatorsToday": "יוצרים היום"
+    }
+  },
+  "socialListeningTitle": "ניטור חברתי",
+  "socialTable": {
+    "tool": "כלי AI",
+    "noData": "לא נמצאו נתונים"
+  },
+  "allPlatforms": "כל הפלטפורמות"
+}

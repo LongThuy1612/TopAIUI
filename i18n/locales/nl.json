@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "AI-tools zoeken...",
+    "categories": "Categorieën",
+    "rankings": "Ranglijsten",
+    "submit": "Tool indienen",
+    "admin": "Beheer"
+  },
+  "hero": {
+    "titlePrefix": "Ontdek de beste",
+    "titleHighlight": "AI-tools",
+    "subtitle": "Blader door honderden AI-producten per categorie, vergelijk prijzen en vind de juiste tool voor jouw workflow.",
+    "searchPlaceholder": "AI-tools zoeken..."
+  },
+  "stats": {
+    "tools": "AI-tools vermeld",
+    "categories": "Categorieën",
+    "featured": "Uitgelichte tools"
+  },
+  "tabs": {
+    "heading": "Tools verkennen",
+    "newest": "Nieuw",
+    "featured": "Meest uitgelicht",
+    "free": "Gratis",
+    "viewAll": "Alles bekijken →"
+  },
+  "announcement": {
+    "featured": "Uitgelicht"
+  },
+  "sidebar": {
+    "featuredTools": "Uitgelichte tools",
+    "topCategories": "Topcategorieën"
+  },
+  "sections": {
+    "browseByCategory": "Bladeren op categorie",
+    "newestTools": "Nieuwste tools",
+    "featuredTools": "Uitgelichte tools",
+    "viewAll": "Alles bekijken →",
+    "justLaunched": "Net gelanceerd",
+    "featuredThisWeek": "Uitgelicht deze week",
+    "featuredThisWeekSubtitle": "De tools die door onze community het meest zijn opgeslagen en beoordeeld.",
+    "updatedDaily": "Dagelijks bijgewerkt",
+    "viewMore": "Meer bekijken →"
+  },
+  "cta": {
+    "title": "Heb je een AI-tool om te delen?",
+    "subtitle": "Laat hem zien aan mensen die op zoek zijn naar tools zoals die van jou.",
+    "button": "Dien je tool in"
+  },
+  "empty": {
+    "noTools": "Nog geen tools — voer uit",
+    "noResults": "Geen tools gevonden"
+  },
+  "category": {
+    "breadcrumbHome": "Home",
+    "allTools": "Alle tools",
+    "allToolsTitle": "Alle AI-tools",
+    "allPricing": "Alle prijzen",
+    "sortNewest": "Nieuwste eerst",
+    "sortFeatured": "Uitgelicht eerst",
+    "sortName": "Naam A–Z",
+    "toolsFound": "tool gevonden | tools gevonden",
+    "searchPlaceholder": "Tools zoeken...",
+    "filters": "Filters",
+    "viewGrid": "Rasterweergave",
+    "viewList": "Lijstweergave"
+  },
+  "pricing": {
+    "FREE": "Gratis",
+    "FREEMIUM": "Freemium",
+    "PAID": "Betaald"
+  },
+  "ranking": {
+    "title": "Beste AI-tools",
+    "subtitle": "Gerangschikt op basis van verkeer- en groeigegevens die in onze directory zijn vastgelegd.",
+    "byGrowth1m": "Groei 1 maand",
+    "byGrowth3m": "Groei 3 maanden",
+    "byGrowth6m": "Groei 6 maanden",
+    "byTraffic": "Maandelijkse bezoeken",
+    "colRank": "Positie",
+    "colTool": "Tool",
+    "colVisits": "Maandelijkse bezoeken",
+    "colGrowth": "Groei",
+    "colAuthority": "Domeinautoriteit",
+    "colCategory": "Categorie",
+    "noData": "Nog geen ranglijstgegevens."
+  },
+  "tool": {
+    "openSite": "Site openen",
+    "save": "Opslaan",
+    "saved": "Opgeslagen",
+    "featured": "Uitgelicht",
+    "introduction": "Introductie",
+    "addedOn": "Toegevoegd op",
+    "monthlyVisitors": "Maandelijkse bezoekers",
+    "features": "Belangrijkste functies",
+    "useCases": "Toepassingen",
+    "prosAndCons": "Voor- en nadelen",
+    "pros": "Voordelen",
+    "cons": "Nadelen",
+    "faq": "Veelgestelde vragen",
+    "alternatives": "Alternatieven voor",
+    "backToCategory": "Terug naar",
+    "notFound": "Tool niet gevonden",
+    "similarTools": "Vergelijkbare tools",
+    "tabProductInfo": "Productinformatie",
+    "tabPricing": "Prijzen",
+    "tabReviews": "Reviews",
+    "tabAnalytics": "Analyse",
+    "tabAlternatives": "Alternatieven",
+    "productInformationHeading": "Productinformatie van {name}",
+    "whatIs": "Wat is {name}?",
+    "howToUseHeading": "Hoe gebruik je {name}?",
+    "reviewsHeading": "Reviews van {name} ({count})",
+    "ratingPrompt": "Zou je {name} aanraden? Laat een reactie achter",
+    "whatDoYouThink": "Wat vind jij ervan?",
+    "loginToComment": "Log in om te reageren",
+    "pricingHeading": "Prijzen van {name}",
+    "noPricingYet": "Nog geen prijsinformatie.",
+    "analyticsHeading": "Analyse van {name}",
+    "trafficAnalysis": "Websiteverkeeranalyse van {name}",
+    "visitOverTime": "Bezoeken over tijd",
+    "monthlyVisits": "Maandelijkse bezoeken",
+    "avgVisitDuration": "Gem. bezoekduur",
+    "pagePerVisit": "Pagina's per bezoek",
+    "bounceRate": "Bouncepercentage",
+    "noTrafficYet": "Nog geen verkeersgegevens vastgelegd.",
+    "badgeVerified": "Geverifieerd",
+    "badgeJustLaunched": "Net gelanceerd",
+    "badgeFreeTool": "Gratis tool",
+    "affiliateLink": "Affiliatelink",
+    "couponCode": "Kortingscode",
+    "ratings": "beoordelingen",
+    "upvotes": "upvotes",
+    "domainAuthority": "Domeinautoriteit",
+    "trafficRank": "Verkeerspositie",
+    "viewCount": "Paginaweergaven"
+  },
+  "footer": {
+    "tagline": "Ontdek, vergelijk en deel de beste AI-tools — gebouwd met Nuxt & PostgreSQL.",
+    "product": "Product",
+    "home": "Home",
+    "allTools": "Alle tools",
+    "submit": "Tool indienen",
+    "categories": "Categorieën",
+    "company": "Bedrijf",
+    "admin": "Beheerderslogin",
+    "language": "Taal",
+    "copyright": "Alle rechten voorbehouden."
+  },
+  "language": {
+    "label": "Taal"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "모든 AI 도구 - TopAICollection",
+    "description": "전체 AI 도구 컬렉션을 찾아보세요. 카테고리, 인기도별로 필터링하거나 최신 AI 혁신을 찾아보세요.",
+    "archiveMonthTitle": "AI 도구 — {label} | TopAICollection",
+    "archiveMonthDescription": "{label}에 추가된 AI 도구를 찾아보세요.",
+    "archiveYearTitle": "AI 도구 — {year} | TopAICollection",
+    "archiveYearDescription": "{year}에 추가된 AI 도구를 찾아보세요.",
+    "categoryTitle": "{category} AI 도구 | TopAICollection",
+    "categoryDescription": "최고의 {category} AI 도구를 살펴보세요.",
+    "freeTitle": "무료 AI 도구 | {title}",
+    "freeDescription": "온라인에서 최고의 무료 AI 도구를 찾아보세요. {description}",
+    "newestTitle": "최신 AI 도구 | {title}",
+    "newestDescription": "우리 컬렉션에 추가된 최신 AI 도구를 확인해 보세요."
+  },
+  "title": "모든 AI 도구 살펴보기",
+  "subtitle": "당사의 포괄적인 컬렉션에서 완벽한 AI 솔루션을 찾아보세요",
+  "filters": {
+    "all": "모든 도구",
+    "today": "오늘",
+    "featured": "추천",
+    "new": "방금 출시됨",
+    "mostSaved": "가장 많이 저장된",
+    "mostUsed": "가장 많이 사용됨",
+    "trending": "인기 급상승",
+    "justLaunched": "방금 출시됨",
+    "title": "필터",
+    "category": "범주",
+    "allCategories": "모든 카테고리",
+    "type": "유형",
+    "popular": "인기 있는",
+    "newest": "최신",
+    "name": "이름",
+    "price": "가격",
+    "free": "무료",
+    "paid": "유급의",
+    "sortBy": "정렬 기준"
+  },
+  "sort": {
+    "label": "정렬 기준",
+    "popular": "가장 인기있는",
+    "trending": "인기 급상승",
+    "newest": "최신순",
+    "rating": "최고 등급",
+    "name": "알파벳순"
+  },
+  "categories": {
+    "title": "카테고리",
+    "all": "모든 카테고리",
+    "showMore": "더보기 →",
+    "toolCount": "{count} 도구"
+  },
+  "results": {
+    "showing": "도구 {start}개 중 {end}-{total} 표시 중",
+    "error": "도구를 로드하는 중에 오류가 발생했습니다. 다시 시도해 주세요.",
+    "noResults": "결과가 없습니다",
+    "tryDifferent": "다른 키워드나 필터를 시도해 보세요."
+  },
+  "pagination": {
+    "next": "다음",
+    "page": "페이지 {page}"
+  },
+  "sidebar": {
+    "trending": "지금 인기 급상승",
+    "noTools": "인기 도구 없음",
+    "advertise": "여기에 광고하세요",
+    "advertiseDesc": "월간 500만 명 이상의 AI 애호가에게 다가가고 방문 횟수를 늘리세요.",
+    "emailPlaceholder": "이메일 주소"
+  },
+  "hero": {
+    "title": "최신 AI 도구 살펴보기",
+    "subtitle": "27,955개의 AI와 459개의 카테고리",
+    "searchPlaceholder": "AI 도구 검색...",
+    "search": "찾다"
+  },
+  "breadcrumb": {
+    "home": "집",
+    "tools": "도구"
+  },
+  "jsonLd": {
+    "name": "AI 도구 디렉토리",
+    "description": "AI 도구의 전체 디렉토리를 찾아보세요."
+  },
+  "badges": {
+    "featured": "추천",
+    "new": "새로운",
+    "trending": "인기 급상승",
+    "popular": "인기 있는",
+    "sponsored": "후원"
+  },
+  "share": "공유하다",
+  "visits": "방문",
+  "monthlyVisits": "예상 월간 방문수",
+  "visit": "방문하다",
+  "actions": {
+    "save": "구하다",
+    "saved": "저장됨",
+    "visit": "방문하다",
+    "share": "공유하다",
+    "copyLink": "링크 복사",
+    "shareThisTool": "이 도구를 공유하세요"
+  },
+  "growth": "성장",
+  "pricing": {
+    "free": "무료"
+  }
+}

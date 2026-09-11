@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "保存されたツール - TopAICollection",
+    "description": "保存した AI ツールと Web サイトを表示および管理する"
+  },
+  "title": "保存されたツール",
+  "description": "保存した AI ツールと Web サイトを表示および管理します。",
+  "emptyState": {
+    "title": "保存されたツールはまだありません",
+    "description": "探索を開始し、後で簡単にアクセスできるようにお気に入りの AI ツールを保存します。",
+    "action": "AI ツールを参照する"
+  },
+  "stats": {
+    "lastUpdated": "最終更新日 {date}"
+  },
+  "filters": {
+    "all": "全て",
+    "popular": "最も人気のある",
+    "category": "カテゴリ別"
+  },
+  "errors": {
+    "loadFailed": "お気に入りの読み込みに失敗しました"
+  },
+  "noDescription": "説明がありません",
+  "retry": "リトライ",
+  "actions": {
+    "addedToFavorites": "お気に入りに追加されました",
+    "removeFromFavorites": "お気に入りから削除",
+    "removedFromFavorites": "お気に入りから削除されました"
+  }
+}

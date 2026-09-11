@@ -1,0 +1,290 @@
+{
+  "title": "Advertise Your AI Tool",
+  "description": "Get premium placement and maximum exposure for your AI tool. Reach thousands of potential users actively searching for AI solutions.",
+  "hero": {
+    "title": "Your AIs on TopAICollection",
+    "subtitle": "TopAI can help you reach millions of AI users and your potential customers worldwide.",
+    "stats": {
+      "pageViews": "5M+",
+      "pageViewsLabel": "Page Views",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Monthly Visits",
+      "subscribers": "100K+",
+      "subscribersLabel": "Subscribers",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "Desktop Users",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Registered Users",
+      "avgTimeOnSite": "2.5m",
+      "avgTimeOnSiteLabel": "Avg. Time on Site"
+    },
+    "benefits": [
+      "Top AI Tools Directory",
+      "Dofollow backlink",
+      "Multi-language intro",
+      "Listing & Traffic forever",
+      "Value for Founders & Startups"
+    ]
+  },
+  "tabs": {
+    "submit": "Submit AI",
+    "submitDesc": "Submit your AI tools, get traffic",
+    "advertise": "Advertise AI",
+    "advertiseDesc": "Pay-per-click, featured promotions, automated ad placement",
+    "guestPost": "Guest Posts / Link Insert",
+    "guestPostDesc": "Guest posts/link insert on TopAI",
+    "updateAi": "Update AI",
+    "updateAiDesc": "Update your tool's information",
+    "submitGpt": "Submit GPT",
+    "submitGptDesc": "Submit your GPT for more people to use",
+    "business": "More Business",
+    "businessDesc": "Partnerships including link exchanges, social media promotion, and video features."
+  },
+  "form": {
+    "toolLabel": "Tool",
+    "toolHint": "Note: If your tool cannot be found, please submit it first.",
+    "toolPlaceholder": "Search for your tool...",
+    "adLandingLink": "Ad Landing Link",
+    "toolLandingPlaceholder": "/tool/...",
+    "websitePlaceholder": "https://example.com",
+    "urlTitle": "Please enter a valid URL starting with http:// or https://"
+  },
+  "clicks": {
+    "title": "Select the number of clicks you need",
+    "numberOfClicks": "Number of clicks",
+    "total": "Total",
+    "payButton": "Pay Now",
+    "submitButton": "Submit"
+  },
+  "packages": {
+    "500": {
+      "clicks": 500,
+      "price": 100
+    },
+    "1000": {
+      "clicks": 1000,
+      "price": 180
+    },
+    "5000": {
+      "clicks": 5000,
+      "price": 800
+    },
+    "10000": {
+      "clicks": 10000,
+      "price": 1400
+    },
+    "20000": {
+      "clicks": 20000,
+      "price": 2500
+    },
+    "50000": {
+      "clicks": 50000,
+      "price": 5000
+    }
+  },
+  "charts": {
+    "cpc": "CPC ($)",
+    "cpm": "CPM ($)",
+    "noData": "No historical data available"
+  },
+  "examples": {
+    "title": "Advertise a Tool Example",
+    "description": "We fully automate your ad display based on our algorithms to ensure that you can get no less than the number of clicks purchased, but we cannot guarantee the quality of the clicks.",
+    "note": "Your ad budget is prioritized to generate clicks and impressions as quickly as possible. You have full control to pause or resume your ads at any time.",
+    "typesTitle": "Here are a few types of ads:",
+    "mostFrequently": "Most Frequently",
+    "mostEffective": "Most Effective",
+    "standard": "Standard",
+    "targeted": "Targeted",
+    "standardDesc": "Appears on the home page, listings, and category pages.",
+    "effectiveDesc": "Appears on your competitors' pages, and in the category pages you belong to.",
+    "featured": "Featured*",
+    "featuredDesc1": "Featured placement on the Homepage, Latest AI, Most Used, Most Saved, Search Results, and Category pages.",
+    "featuredDesc2": "Sponsored positions appear at the top of most pages."
+  },
+  "faq": {
+    "title": "FAQ - advertise",
+    "items": [
+      {
+        "question": "How does advertising work?",
+        "answer": "We display your tool in premium positions across our platform. You pay per click, and we ensure your ad gets the number of clicks you purchased."
+      },
+      {
+        "question": "Can I purchase clicks multiple times?",
+        "answer": "Yes, you can purchase additional click packages at any time to boost your tool's visibility."
+      },
+      {
+        "question": "Can I pause my ads?",
+        "answer": "Yes, you can pause and resume your ad campaigns at any time from your dashboard."
+      },
+      {
+        "question": "What kind of analytics do I get?",
+        "answer": "You'll receive detailed data on organic clicks, paid clicks, total clicks, impressions, and saves."
+      }
+    ]
+  },
+  "whyAdvertise": "Why Advertise?",
+  "customPackage": {
+    "title": "Need Custom Package?",
+    "description": "Contact us for tailored advertising solutions that fit your specific goals.",
+    "contactSales": "Contact Sales",
+    "estimatedClicks": "Estimated Clicks",
+    "estimatedImpressions": "Estimated Impressions",
+    "estimatedViews": "Estimated Views",
+    "estimatedUnits": "Estimated Units",
+    "toolSlug": "Tool Slug",
+    "landingUrl": "Landing Url",
+    "campaignParameters": "Campaign Parameters",
+    "metricType": "Metric Type",
+    "pacingType": "Pacing Type",
+    "basePrice": "Base Price",
+    "totalBudget": "Total Budget",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "priorityBid": "Priority Bid",
+    "estimation": "Estimation",
+    "cancel": "Cancel",
+    "submitting": "Submitting",
+    "submitProposal": "Submit Proposal"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Premium Placement",
+      "description": "Featured spots on homepage and category pages"
+    },
+    "targetedAudience": {
+      "title": "Targeted Audience",
+      "description": "Reach users actively looking for AI tools"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Track performance with detailed insights"
+    }
+  },
+  "campaigns": {
+    "previous": "Previous",
+    "pageOf": "Page {page} of {total}",
+    "choosePlan": "Choose Your Plan",
+    "choosePlanDesc": "Select a plan below to renew or upgrade your campaign.",
+    "currentPlan": "Current Plan",
+    "selectAgain": "Select Again",
+    "selectPlan": "Select Plan"
+  },
+  "transactions": {
+    "noDescription": "You have not purchased any ad credits yet. Top up your balance to start running campaigns."
+  },
+  "meta": {
+    "title": "Advertise AI Tool - TopAICollection",
+    "description": "Advertise your AI tool to millions of AI enthusiasts."
+  },
+  "plans": {
+    "title": "Advertising Plans",
+    "subtitle": "Expand your reach",
+    "clickTarget": "Click target",
+    "toolRequired": "⚠ Please enter your tool name above before submitting.",
+    "empty": "No ad packages available right now. Please check back later.",
+    "customPlanConfig": "Custom Plan Configuration",
+    "basePrice": "Base Price ($)",
+    "adPlacements": "Ad Placements",
+    "applyConfig": "Apply Config",
+    "configured": "Configured",
+    "toolSlug": "Tool Slug",
+    "landingUrl": "Landing URL",
+    "campaignParameters": "Campaign Parameters",
+    "metricType": "Metric Type",
+    "pacingType": "Pacing Type",
+    "totalBudget": "Total Budget ($)",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "priorityBid": "Priority Bid",
+    "estimation": "Estimation",
+    "estimatedClicks": "Estimated Clicks",
+    "estimatedImpressions": "Estimated Impressions",
+    "estimatedViews": "Estimated Views",
+    "estimatedUnits": "Estimated {metric} Units",
+    "submitProposal": "Submit Custom Proposal",
+    "submitting": "Submitting...",
+    "cancel": "Cancel",
+    "customBid": {
+      "title": "Custom Performance Bidding",
+      "budgetLabel": "Total Budget ($)",
+      "budgetDescription": "Total amount you want to spend.",
+      "priorityBidLabel": "Priority Bid Multiplier",
+      "priorityBidDescription": "Higher bid = higher appearance frequency.",
+      "minBudget": "Minimum budget is $10",
+      "minBid": "Minimum bid is $0.01"
+    },
+    "placeholders": {
+      "toolSlug": "my-awesome-tool",
+      "landingUrl": "https://...",
+      "metricType": "CPA",
+      "pacingType": "EVEN"
+    }
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "per click",
+      "CPM": "per 1k impressions",
+      "CPV": "per view",
+      "FLAT_RATE": "flat rate",
+      "CPC_LABEL": "CPC",
+      "CPM_LABEL": "CPM",
+      "CPV_LABEL": "CPV",
+      "FLAT_RATE_LABEL": "Flat Rate"
+    },
+    "units": {
+      "clicks": "clicks",
+      "impressions": "impressions",
+      "views": "views",
+      "units": "units"
+    }
+  },
+  "submit": {
+    "button": "Submit Campaign Request",
+    "submitting": "Submitting…",
+    "error": "Submission failed. Please try again.",
+    "successTitle": "Campaign Submitted!",
+    "budgetLabel": "Set Campaign Budget ($ USD)",
+    "success": "Campaign created successfully!",
+    "untitled": "Untitled Campaign",
+    "missingTool": "Tool or Target URL is required",
+    "loginRequiredTitle": "Authentication Required",
+    "loginRequiredDesc": "Please log in to submit a tool. Your progress will not be saved until you authenticate."
+  },
+  "selected": "Selected",
+  "summary": {
+    "selectedPlanLabel": "Selected Ad Package",
+    "totalPriceLabel": "Total Fixed Price",
+    "securityFooter": "Secure payment • Instant activation • Full analytics"
+  },
+  "details": "Advertisement Details",
+  "duration": "Duration (days)",
+  "selectDuration": "Select duration",
+  "days": "{count, plural, =1 {1 day} other {# days}}",
+  "preferredPlacement": "Preferred Placement",
+  "selectPlacement": "Select placement",
+  "placements": {
+    "homepageBanner": "Homepage Banner",
+    "sidebar": "Sidebar",
+    "categoryPage": "Category Page",
+    "newsletter": "Newsletter",
+    "HOME": "Home Page",
+    "CATEGORY": "Category Page",
+    "SEARCH": "Search Results",
+    "TOOL_DETAIL": "Tool Detail Page"
+  },
+  "targetAudience": "Target Audience",
+  "targetAudiencePlaceholder": "Describe your target audience",
+  "validation": {
+    "required": "This field is required",
+    "selectDuration": "Please select ad duration",
+    "selectPlacement": "Please select ad placement",
+    "targetAudienceMin": "Target audience must be at least 10 characters",
+    "toolNameRequired": "Tool name is required",
+    "url": "Invalid URL",
+    "descriptionMin": "Description must be at least 10 characters",
+    "categoryRequired": "Please select a category",
+    "email": "Invalid email address",
+    "messageMin": "Message must be at least 10 characters"
+  }
+}

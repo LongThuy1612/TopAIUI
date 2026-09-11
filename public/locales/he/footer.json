@@ -1,0 +1,92 @@
+{
+  "about": "אודותינו",
+  "contact": "מַגָע",
+  "blog": "בלוג",
+  "privacy": "מדיניות פרטיות",
+  "terms": "תנאים והגבלות",
+  "cookies": "מדיניות עוגיות",
+  "copyright": "© {year} TopAICollection. כֹּל הַזְכוּיוֹת שְׁמוּרוֹת.",
+  "sitemap": "מפת אתר",
+  "resources": "אֶמְצָעִי",
+  "help": "מרכז העזרה",
+  "faq": "שאלות נפוצות",
+  "submitTool": "כלי הגשה",
+  "description": "הספרייה הטובה ביותר לכלי AI TopAICollection",
+  "browseByAlphabet": "דפדוף לפי אלפבית",
+  "topAITools": {
+    "title": "כלי AI מובילים",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "אמצע מסע",
+      "chatgpt": "צ&#39;אט GPT",
+      "stableDiffusion": "דיפוזיה יציבה",
+      "jasper": "יָשׁפֵה"
+    }
+  },
+  "moreTools": {
+    "title": "כלים נוספים",
+    "items": {
+      "audio": "אודיו AI",
+      "video": "וידאו AI",
+      "writing": "כתיבת AI",
+      "image": "תמונה AI",
+      "coding": "קידוד AI"
+    }
+  },
+  "recommend": {
+    "title": "לְהַמלִיץ",
+    "items": {
+      "newest": "הכלים החדשים ביותר",
+      "mostSaved": "הכי נשמר",
+      "trending": "פופולרי עכשיו",
+      "editorsChoice": "בחירת העורך",
+      "featured": "מוּבלָט",
+      "leaderboard": "לוח התוצאות המובילות"
+    }
+  },
+  "readMore": {
+    "title": "קרא עוד",
+    "items": {
+      "blog": "בלוג",
+      "news": "חדשות AI",
+      "guides": "מדריכים",
+      "tutorials": "הדרכות",
+      "glossary": "מילון AI"
+    }
+  },
+  "company": {
+    "title": "אוֹדוֹת",
+    "items": {
+      "aboutUs": "אודותינו",
+      "contact": "איש קשר עסקי",
+      "editorialGuidelines": "הנחיות עריכה",
+      "reviewMethodology": "מתודולוגיית סקירה",
+      "submit": "הגש",
+      "advertise": "פרסם"
+    }
+  },
+  "chooseLanguage": "בחר שפה",
+  "followUs": "עקוב אחרינו",
+  "more": "יוֹתֵר...",
+  "directory": {
+    "title": "ארכיון ספריות כלי בינה מלאכותית"
+  },
+  "companyInfo": {
+    "address": "מחוז הטכנולוגיה, עמק הסיליקון",
+    "city": "סן פרנסיסקו, קליפורניה 94107",
+    "country": "ארצות הברית",
+    "name": "TopAICollection Inc.",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "מחוללי וידאו",
+      "imageGenerators": "מחוללי תמונות",
+      "writers": "כותבים",
+      "seoTools": "כלי Seo",
+      "websiteBuilders": "בוני אתרים",
+      "chatbots": "צ'אטבוטים"
+    }
+  }
+}

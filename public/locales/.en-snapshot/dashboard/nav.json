@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Back to Dashboard",
+    "backToHome": "Back to Home",
+    "dashboard": "Dashboard",
+    "websiteInsights": "Website Insights",
+    "socialListening": "Social Listening",
+    "researchReport": "Research Report",
+    "myAis": "My AIs",
+    "favorites": "Favorites",
+    "profileSettings": "Profile Settings",
+    "advertise": "Advertise",
+    "postsLinks": "Posts/Links",
+    "paymentInvoice": "Payment & Invoice",
+    "overview": "Overview",
+    "myInquiries": "My Inquiries"
+  },
+  "logout": "Logout",
+  "logoutConfirmTitle": "Log Out",
+  "logoutConfirmDescription": "Are you sure you want to log out of your account?",
+  "upgrade": "Upgrade",
+  "sections": {
+    "research": "RESEARCH",
+    "management": "MANAGEMENT",
+    "business": "BUSINESS",
+    "admin": "ADMIN",
+    "guestPost": "Guest Posts",
+    "updateAi": "Update AI",
+    "myGpts": "My GPTs"
+  },
+  "help": "Help",
+  "close": "Close",
+  "status": {
+    "active": "Active"
+  },
+  "advertiseAi": "Advertise AI",
+  "myAis": {
+    "title": "My AIs",
+    "subtitle": "Manage and track performance of your submitted AI tools.",
+    "empty": {
+      "cta": "Submit AI Tool"
+    }
+  }
+}

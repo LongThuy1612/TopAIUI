@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Envie seu GPT - Obtenha seu GPT em destaque | TopAICollection",
+    "description": "Envie seu GPT personalizado para ser apresentado em nosso diretório de GPTs. Alcance milhares de entusiastas de IA."
+  },
+  "title": "Envie seu GPT",
+  "subtitle": "Obtenha seu GPT personalizado em destaque em nosso diretório",
+  "loginRequired": "Login obrigatório",
+  "submitButton": "Enviar GPT",
+  "whySubmit": {
+    "title": "Por que enviar seu GPT?"
+  },
+  "benefits": {
+    "audience": "Alcance milhares de entusiastas de IA diariamente",
+    "instant": "Listagem instantânea após verificação",
+    "global": "Exposição global em todos os idiomas",
+    "analytics": "Rastreie cliques e engajamento"
+  },
+  "proTip": {
+    "title": "Dica profissional",
+    "desc": "Certifique-se de que seu GPT seja público e acessível por meio de link antes de enviar."
+  },
+  "form": {
+    "gptName": "Nome da GPT",
+    "gptNamePlaceholder": "por exemplo Assistente de código",
+    "gptUrl": "URL do bate-papoGPT ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "URL do ícone",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Descrição/Instruções",
+    "gptDescriptionPlaceholder": "Descreva o que seu GPT faz..."
+  },
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "invalidUrl": "URL do ChatGPT inválido",
+    "nameTooShort": "O nome deve ter pelo menos 2 caracteres",
+    "descriptionTooShort": "A descrição deve ter pelo menos 10 caracteres",
+    "toolNameRequired": "O nome da ferramenta é obrigatório",
+    "url": "URL inválido",
+    "descriptionMin": "A descrição deve ter pelo menos 10 caracteres",
+    "categoryRequired": "Selecione uma categoria",
+    "email": "Endereço de e-mail inválido",
+    "messageMin": "A mensagem deve ter pelo menos 10 caracteres"
+  },
+  "sidebar": {
+    "gptCount": "GPTs enviados",
+    "gptCountSub": "e crescendo"
+  },
+  "success": "Seu GPT foi enviado com sucesso!"
+}

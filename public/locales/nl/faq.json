@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Veelgestelde vragen - TopAICollection",
+    "description": "Vind antwoorden op veelgestelde vragen over TopAICollection en hoe u onze directory met AI-tools kunt gebruiken."
+  },
+  "badge": "Helpcentrum",
+  "title": "Veelgestelde vragen",
+  "subtitle": "Vind antwoorden op veelgestelde vragen over TopAICollection",
+  "categories": {
+    "general": "Algemene vragen",
+    "tools": "Over AI-tools",
+    "submission": "Inzending van gereedschap",
+    "account": "Account en facturering"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Wat is TopAICollection?",
+        "answer": "TopAICollection is een uitgebreide directory met AI-tools en websites. We helpen gebruikers de beste AI-oplossingen voor hun behoeften te ontdekken, van productiviteitstools tot creatieve toepassingen."
+      },
+      "1": {
+        "question": "Hoe vind ik de juiste AI-tool?",
+        "answer": "U kunt op categorie bladeren, onze zoekfunctie gebruiken of onze aanbevolen en trending secties bekijken. Elke tool bevat gedetailleerde beschrijvingen, gebruikersrecensies en beoordelingen, zodat u een weloverwogen beslissing kunt nemen."
+      },
+      "2": {
+        "question": "Is TopAICollection gratis te gebruiken?",
+        "answer": "Ja! Bladeren en zoeken in onze directory is volledig gratis. Sommige vermelde tools hebben mogelijk hun eigen prijs, die duidelijk wordt aangegeven op de pagina van elke tool."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Hoe worden tools voor de directory geselecteerd?",
+        "answer": "We beoordelen elke inzending zorgvuldig om de kwaliteit te garanderen. Tools moeten functioneel zijn, waarde bieden aan gebruikers en voldoen aan onze richtlijnen. We houden ook rekening met gebruikersfeedback en beoordelingen."
+      },
+      "1": {
+        "question": "Welke informatie wordt voor elk hulpmiddel verstrekt?",
+        "answer": "Elke toollijst bevat een beschrijving, belangrijkste functies, prijsinformatie, gebruikersrecensies, verkeersanalyses, categorieën en directe links naar de website van de tool."
+      },
+      "2": {
+        "question": "Hoe vaak wordt de directory bijgewerkt?",
+        "answer": "Onze directory wordt dagelijks bijgewerkt met nieuwe tools en informatie. We controleren voortdurend de vermelde tools om de nauwkeurigheid te garanderen en verwijderen alle tools die niet langer beschikbaar zijn."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Hoe kan ik mijn AI-tool indienen?",
+        "answer": "Bezoek onze Verzendtool-pagina en vul het indieningsformulier in. Geef gedetailleerde informatie over uw tool, inclusief de functies, doelgroep en prijzen. Wij beoordelen alle inzendingen binnen 48 uur."
+      },
+      "1": {
+        "question": "Wat zijn de vereisten voor het indienen van een tool?",
+        "answer": "Uw tool moet functioneel zijn, een duidelijke meerwaarde bieden voor gebruikers, een professionele website hebben en voldoen aan de wettelijke eisen. We accepteren geen tools die illegale activiteiten promoten of de privacy van gebruikers schenden."
+      },
+      "2": {
+        "question": "Hoeveel kost het om een ​​tool te vermelden?",
+        "answer": "Basisvermeldingen zijn gratis. We bieden ook aanbevolen en premium vermeldingen met extra voordelen zoals prioriteitsplaatsing, promotiefuncties en geavanceerde analyses."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Heb ik een account nodig om TopAICollection te gebruiken?",
+        "answer": "Er is geen account vereist om door onze directory te bladeren en te zoeken. Als u echter een account aanmaakt, kunt u favoriete tools opslaan, recensies schrijven en inzendingen voor tools beheren."
+      },
+      "1": {
+        "question": "Hoe upgrade ik mijn gereedschapsoverzicht?",
+        "answer": "Log in op uw account, ga naar uw gereedschapsbeheerdashboard en selecteer de upgradeoptie. U kunt kiezen uit aanbevolen of premium abonnementen met maandelijkse of jaarlijkse facturering."
+      },
+      "2": {
+        "question": "Kan ik mijn betaalde vermelding op elk moment annuleren?",
+        "answer": "Ja, u kunt uw betaalde vermelding op elk gewenst moment annuleren. Uw vermelding blijft weergegeven tot het einde van uw huidige factureringsperiode en keert daarna terug naar een basisvermelding."
+      }
+    }
+  },
+  "cta": {
+    "title": "Heeft u nog vragen?",
+    "subtitle": "Ons ondersteuningsteam is hier om u te helpen",
+    "button": "Neem contact op met ondersteuning"
+  }
+}

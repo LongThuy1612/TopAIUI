@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Preguntas frecuentes - TopAICollection",
+    "description": "Encuentre respuestas a preguntas comunes sobre TopAICollection y cómo utilizar nuestro directorio de herramientas de IA."
+  },
+  "badge": "Centro de ayuda",
+  "title": "Preguntas frecuentes",
+  "subtitle": "Encuentre respuestas a preguntas comunes sobre TopAICollection",
+  "categories": {
+    "general": "Preguntas generales",
+    "tools": "Acerca de las herramientas de IA",
+    "submission": "Envío de herramientas",
+    "account": "Cuenta y facturación"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "¿Qué es TopAICollection?",
+        "answer": "TopAICollection es un directorio completo de sitios web y herramientas de inteligencia artificial. Ayudamos a los usuarios a descubrir las mejores soluciones de IA para sus necesidades, desde herramientas de productividad hasta aplicaciones creativas."
+      },
+      "1": {
+        "question": "¿Cómo encuentro la herramienta de IA adecuada?",
+        "answer": "Puede navegar por categoría, utilizar nuestra función de búsqueda o consultar nuestras secciones destacadas y de tendencias. Cada herramienta incluye descripciones detalladas, reseñas de usuarios y calificaciones para ayudarlo a tomar una decisión informada."
+      },
+      "2": {
+        "question": "¿TopAICollection es de uso gratuito?",
+        "answer": "¡Sí! Navegar y buscar en nuestro directorio es completamente gratuito. Algunas herramientas enumeradas pueden tener su propio precio, que se indica claramente en la página de cada herramienta."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "¿Cómo se seleccionan las herramientas para el directorio?",
+        "answer": "Revisamos cuidadosamente cada envío para garantizar la calidad. Las herramientas deben ser funcionales, aportar valor a los usuarios y cumplir con nuestras directrices. También consideramos los comentarios y calificaciones de los usuarios."
+      },
+      "1": {
+        "question": "¿Qué información se proporciona para cada herramienta?",
+        "answer": "Cada lista de herramientas incluye una descripción, funciones clave, información de precios, reseñas de usuarios, análisis de tráfico, categorías y enlaces directos al sitio web de la herramienta."
+      },
+      "2": {
+        "question": "¿Con qué frecuencia se actualiza el directorio?",
+        "answer": "Nuestro directorio se actualiza diariamente con nuevas herramientas e información. Supervisamos continuamente las herramientas enumeradas para garantizar la precisión y eliminar las que ya no están disponibles."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "¿Cómo puedo enviar mi herramienta de IA?",
+        "answer": "Visite nuestra página de herramienta de envío y complete el formulario de envío. Proporcione información detallada sobre su herramienta, incluidas sus características, público objetivo y precios. Revisamos todos los envíos dentro de las 48 horas."
+      },
+      "1": {
+        "question": "¿Cuáles son los requisitos para el envío de herramientas?",
+        "answer": "Tu herramienta debe ser funcional, aportar un valor claro a los usuarios, tener un sitio web profesional y cumplir con los requisitos legales. No aceptamos herramientas que promuevan actividades ilegales o violen la privacidad del usuario."
+      },
+      "2": {
+        "question": "¿Cuánto cuesta listar una herramienta?",
+        "answer": "Los listados básicos son gratuitos. También ofrecemos listados destacados y premium con beneficios adicionales como ubicación prioritaria, funciones promocionales y análisis avanzados."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "¿Necesito una cuenta para usar TopAICollection?",
+        "answer": "No se requiere ninguna cuenta para navegar y buscar en nuestro directorio. Sin embargo, crear una cuenta le permite guardar herramientas favoritas, escribir reseñas y administrar envíos de herramientas."
+      },
+      "1": {
+        "question": "¿Cómo actualizo mi lista de herramientas?",
+        "answer": "Inicie sesión en su cuenta, vaya al panel de administración de herramientas y seleccione la opción de actualización. Puede elegir entre planes destacados o premium con facturación mensual o anual."
+      },
+      "2": {
+        "question": "¿Puedo cancelar mi anuncio pago en cualquier momento?",
+        "answer": "Sí, puedes cancelar tu listado pago en cualquier momento. Su listado permanecerá destacado hasta el final de su período de facturación actual y luego volverá a ser un listado básico."
+      }
+    }
+  },
+  "cta": {
+    "title": "¿Aún tienes preguntas?",
+    "subtitle": "Nuestro equipo de soporte está aquí para ayudar",
+    "button": "Contactar con soporte"
+  }
+}

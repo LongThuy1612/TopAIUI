@@ -1,0 +1,294 @@
+{
+  "title": "宣传您的人工智能工具",
+  "description": "为您的 AI 工具获得优质展示位置和最大曝光度。吸引成千上万积极寻找人工智能解决方案的潜在用户。",
+  "hero": {
+    "title": "TopAICollection 上的您的 AI",
+    "subtitle": "TopAI 可以帮助您接触全球数百万人工智能用户和您的潜在客户。",
+    "stats": {
+      "pageViews": "5M+",
+      "pageViewsLabel": "页面浏览量",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "每月访问量",
+      "subscribers": "10万+",
+      "subscribersLabel": "订阅者",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "桌面用户",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "注册用户",
+      "avgTimeOnSite": "“2.5m”",
+      "avgTimeOnSiteLabel": "平均停留时间"
+    },
+    "benefits": [
+      "顶级人工智能工具目录",
+      "Dofollow反向链接",
+      "多语言介绍",
+      "永远的列表和流量",
+      "对创始人和初创公司的价值"
+    ]
+  },
+  "tabs": {
+    "submit": "提交人工智能",
+    "submitDesc": "提交你的AI工具，获取流量",
+    "advertise": "广告人工智能",
+    "advertiseDesc": "按点击付费、特色促销、自动广告投放",
+    "guestPost": "来宾帖子/链接插入",
+    "guestPostDesc": "TopAI 上的来宾帖子/链接插入",
+    "updateAi": "更新人工智能",
+    "updateAiDesc": "更新您的工具信息",
+    "submitGpt": "提交 GPT",
+    "submitGptDesc": "提交您的 GPT 以供更多人使用",
+    "business": "更多业务",
+    "businessDesc": "如：链接交换、Twitter 帖子、视频等。"
+  },
+  "form": {
+    "toolLabel": "工具",
+    "toolHint": "PS：如果找不到工具，请先提交。",
+    "toolPlaceholder": "搜索您的工具...",
+    "adLandingLink": "广告登陆链接",
+    "toolLandingPlaceholder": "/工具/...",
+    "websitePlaceholder": "https://example.com",
+    "urlTitle": "请输入以 http:// 或 https:// 开头的有效 URL"
+  },
+  "clicks": {
+    "title": "选择您需要的点击次数",
+    "numberOfClicks": "点击次数",
+    "total": "全部的",
+    "payButton": "支付",
+    "submitButton": "提交"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "宣传工具示例",
+    "description": "我们根据我们的算法完全自动化您的广告展示，以确保您获得不少于购买的点击次数，但我们无法保证点击的质量。",
+    "note": "优先让您消耗广告费用快速获得网站点击量和展示量。您可以：暂停广告，或启动广告。",
+    "typesTitle": "以下是几种类型的广告：",
+    "mostFrequently": "最频繁",
+    "mostEffective": "最有效",
+    "standardDesc": "显示在主页、列表和类别页面上。",
+    "effectiveDesc": "显示在您的竞争对手的页面以及您所属的类别页面中。",
+    "featured": "精选*",
+    "featuredDesc1": "主页上的特色位置、最新人工智能、最常用、最保存、搜索结果页面、类别详细信息页面等。",
+    "featuredDesc2": "大多数页面的顶部都会有一个赞助商位置。",
+    "standard": "标准",
+    "targeted": "有针对性"
+  },
+  "faq": {
+    "title": "常见问题解答 - 广告",
+    "items": [
+      {
+        "question": "广告是如何运作的？",
+        "answer": "我们在我们的平台上以优质的位置展示您的工具。您按每次点击付费，我们确保您的广告获得您购买的点击次数。"
+      },
+      {
+        "question": "我可以多次购买点击次数吗？",
+        "answer": "是的，您可以随时购买额外的点击套餐以提高工具的知名度。"
+      },
+      {
+        "question": "我可以暂停广告吗？",
+        "answer": "是的，您可以随时从仪表板暂停和恢复广告活动。"
+      },
+      {
+        "question": "我得到什么样的分析？",
+        "answer": "您将收到有关自然点击次数、付费点击次数、总点击次数、展示次数和保存次数的详细数据。"
+      }
+    ]
+  },
+  "whyAdvertise": "为什么要做广告？",
+  "customPackage": {
+    "title": "需要定制套餐吗？",
+    "description": "请联系我们，获取适合您特定目标的定制广告解决方案。",
+    "contactSales": "联系销售人员",
+    "estimatedClicks": "“预计点击次数”",
+    "estimatedImpressions": "“预计印象数”",
+    "estimatedViews": "“预计观看次数”",
+    "estimatedUnits": "“估计单位”",
+    "toolSlug": "《工具蛞蝓》",
+    "landingUrl": "“登陆网址”",
+    "campaignParameters": "“活动参数”",
+    "metricType": "“公制类型”",
+    "pacingType": "“起搏类型”",
+    "basePrice": "「基本价格」",
+    "totalBudget": "“总预算”",
+    "startDate": "“开始日期”",
+    "endDate": "“结束日期”",
+    "priorityBid": "“优先投标”",
+    "estimation": "「估计」",
+    "cancel": "“取消”",
+    "submitting": "「提交」",
+    "submitProposal": "「提交提案」"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "优质安置",
+      "description": "主页和类别页面上的特色景点"
+    },
+    "targetedAudience": {
+      "title": "目标受众",
+      "description": "吸引积极寻找人工智能工具的用户"
+    },
+    "analytics": {
+      "title": "分析",
+      "description": "通过详细的见解跟踪绩效"
+    }
+  },
+  "campaigns": {
+    "previous": "以前的",
+    "pageOf": "第 {page} 页，共 {total} 页",
+    "choosePlan": "选择您的计划",
+    "choosePlanDesc": "选择下面的计划来续订或升级您的广告系列。",
+    "currentPlan": "当前计划",
+    "selectAgain": "再次选择",
+    "selectPlan": "选择计划"
+  },
+  "transactions": {
+    "noDescription": "您尚未购买任何广告积分。充值您的余额以开始开展活动。"
+  },
+  "meta": {
+    "title": "广告 AI 工具 - TopAICollection",
+    "description": "向数百万人工智能爱好者宣传您的人工智能工具。"
+  },
+  "plans": {
+    "title": "广告计划",
+    "subtitle": "扩大您的影响范围",
+    "clickTarget": "点击目标",
+    "toolRequired": "⚠ 请在提交前在上方输入您的工具名称。",
+    "empty": "目前没有可用的广告套餐，请稍后再查看。",
+    "customPlanConfig": "自定义计划配置",
+    "basePrice": "基本价格（美元）",
+    "adPlacements": "广告展示位置",
+    "applyConfig": "应用配置",
+    "configured": "已配置",
+    "toolSlug": "工具弹头",
+    "landingUrl": "登陆网址",
+    "campaignParameters": "活动参数",
+    "metricType": "公制类型",
+    "pacingType": "起搏类型",
+    "totalBudget": "总预算（美元）",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "priorityBid": "优先投标",
+    "estimation": "预估",
+    "estimatedClicks": "预计点击次数",
+    "estimatedImpressions": "预计展示次数",
+    "estimatedViews": "预计观看次数",
+    "estimatedUnits": "估计的 {metric} 单位",
+    "submitProposal": "提交定制提案",
+    "submitting": "正在提交...",
+    "cancel": "取消",
+    "customBid": {
+      "title": "定制效果出价",
+      "budgetLabel": "总预算（美元）",
+      "budgetDescription": "您想要花费的总金额。",
+      "priorityBidLabel": "优先出价乘数",
+      "priorityBidDescription": "出价越高=出现频率越高。",
+      "minBudget": "最低预算为 10 美元",
+      "minBid": "最低出价为 0.01 美元"
+    },
+    "placeholders": {
+      "toolSlug": "我的很棒的工具",
+      "landingUrl": "https://...",
+      "metricType": "注册会计师",
+      "pacingType": "甚至"
+    }
+  },
+  "submit": {
+    "button": "提交活动申请",
+    "submitting": "提交中…",
+    "error": "提交失败，请重试。",
+    "successTitle": "活动已提交！",
+    "budgetLabel": "设置活动预算（ $ USD ）",
+    "success": "活动创建成功！",
+    "untitled": "无标题活动",
+    "missingTool": "需要工具或目标 URL",
+    "loginRequiredTitle": "需要身份验证",
+    "loginRequiredDesc": "请登录以提交工具。在您进行身份验证之前，您的进度不会保存。"
+  },
+  "sidebar": {
+    "pageViews": "页面浏览量",
+    "pageViewsSub": "每月页面流量"
+  },
+  "details": "广告详情",
+  "duration": "持续时间（天）",
+  "selectDuration": "选择持续时间",
+  "days": "“{计数，复数，=1 {1 day} 其他 {# days}}”",
+  "preferredPlacement": "首选安置",
+  "selectPlacement": "选择展示位置",
+  "placements": {
+    "homepageBanner": "主页横幅",
+    "sidebar": "侧边栏",
+    "categoryPage": "类别页",
+    "newsletter": "通讯",
+    "HOME": "主页",
+    "CATEGORY": "类别页",
+    "SEARCH": "搜索结果",
+    "TOOL_DETAIL": "工具详细信息页面"
+  },
+  "targetAudience": "目标受众",
+  "targetAudiencePlaceholder": "描述您的目标受众",
+  "validation": {
+    "required": "此字段是必需的",
+    "selectDuration": "请选择广告时长",
+    "selectPlacement": "请选择广告位",
+    "targetAudienceMin": "目标受众必须至少有 10 个字符",
+    "toolNameRequired": "工具名称为必填项",
+    "url": "无效网址",
+    "descriptionMin": "描述必须至少 10 个字符",
+    "categoryRequired": "请选择一个类别",
+    "email": "电子邮件地址无效",
+    "messageMin": "消息长度必须至少为 10 个字符"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "每次点击",
+      "CPM": "每 1000 次展示",
+      "CPV": "每次观看",
+      "FLAT_RATE": "扁平率",
+      "CPC_LABEL": "中国共产党",
+      "CPM_LABEL": "每千次展示费用",
+      "CPV_LABEL": "“CPV”",
+      "FLAT_RATE_LABEL": "统一费率"
+    },
+    "units": {
+      "clicks": "点击次数",
+      "impressions": "印象数",
+      "views": "意见",
+      "units": "单位"
+    }
+  },
+  "selected": "已选择",
+  "summary": {
+    "selectedPlanLabel": "选定的广告包",
+    "totalPriceLabel": "总固定价格",
+    "securityFooter": "安全支付•即时激活•全面分析"
+  },
+  "charts": {
+    "cpc": "CPC",
+    "cpm": "CPM",
+    "noData": "没有可用的历史数据"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Hasil Pencarian",
+  "resultsFor": "Hasil untuk \"{query}\"",
+  "filters": "Filter",
+  "typeFilters": "Jenis",
+  "categories": "Kategori",
+  "noResults": "Tidak ada hasil yang ditemukan",
+  "tryAgain": "Silakan coba istilah pencarian lain",
+  "placeholder": "Cari alat AI...",
+  "button": "Mencari",
+  "loading": "Mencari...",
+  "clearFilters": "Hapus filter",
+  "categoryLabel": "Kategori"
+}

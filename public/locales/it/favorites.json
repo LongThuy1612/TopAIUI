@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Strumenti salvati - TopAICollection",
+    "description": "Visualizza e gestisci gli strumenti e i siti Web AI salvati"
+  },
+  "title": "Strumenti salvati",
+  "description": "Visualizza e gestisci gli strumenti e i siti Web AI salvati.",
+  "emptyState": {
+    "title": "Nessuno strumento ancora salvato",
+    "description": "Inizia a esplorare e salva i tuoi strumenti IA preferiti per accedervi facilmente in seguito.",
+    "action": "Sfoglia gli strumenti AI"
+  },
+  "stats": {
+    "lastUpdated": "Ultimo aggiornamento {date}"
+  },
+  "filters": {
+    "all": "Tutto",
+    "popular": "Il più popolare",
+    "category": "Per categoria"
+  },
+  "errors": {
+    "loadFailed": "Impossibile caricare i preferiti"
+  },
+  "noDescription": "Nessuna descrizione disponibile",
+  "retry": "Riprova",
+  "actions": {
+    "addedToFavorites": "Aggiunto ai preferiti",
+    "removeFromFavorites": "Rimuovi dai preferiti",
+    "removedFromFavorites": "Rimosso dai preferiti"
+  }
+}

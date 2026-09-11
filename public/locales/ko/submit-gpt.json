@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "GPT 제출 - GPT 추천 받기 | TopAICollection",
+    "description": "GPT 디렉토리에 표시되도록 맞춤 GPT를 제출하세요. 수천 명의 AI 애호가에게 다가가세요."
+  },
+  "title": "GPT 제출",
+  "subtitle": "우리 디렉터리에 맞춤 GPT 기능을 추가하세요",
+  "loginRequired": "로그인 필요",
+  "submitButton": "GPT 제출",
+  "whySubmit": {
+    "title": "GPT를 제출하는 이유는 무엇입니까?"
+  },
+  "benefits": {
+    "audience": "매일 수천 명의 AI 애호가에게 다가가세요",
+    "instant": "인증 즉시 상장",
+    "global": "모든 언어에 대한 글로벌 노출",
+    "analytics": "클릭 및 참여 추적"
+  },
+  "proTip": {
+    "title": "프로 팁",
+    "desc": "제출하기 전에 GPT가 공개되어 있고 링크를 통해 액세스할 수 있는지 확인하세요."
+  },
+  "form": {
+    "gptName": "GPT 이름",
+    "gptNamePlaceholder": "예를 들어 코드 마법사",
+    "gptUrl": "채팅GPT URL ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "아이콘 URL",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "설명/지침",
+    "gptDescriptionPlaceholder": "GPT의 기능을 설명하세요..."
+  },
+  "validation": {
+    "required": "이 필드는 필수입니다",
+    "invalidUrl": "잘못된 ChatGPT URL",
+    "nameTooShort": "이름은 2자 이상이어야 합니다.",
+    "descriptionTooShort": "설명은 10자 이상이어야 합니다.",
+    "toolNameRequired": "도구 이름이 필요합니다",
+    "url": "잘못된 URL",
+    "descriptionMin": "설명은 10자 이상이어야 합니다.",
+    "categoryRequired": "카테고리를 선택해주세요",
+    "email": "잘못된 이메일 주소",
+    "messageMin": "메시지는 10자 이상이어야 합니다."
+  },
+  "sidebar": {
+    "gptCount": "제출된 GPT",
+    "gptCountSub": "그리고 성장하고 있다"
+  },
+  "success": "GPT가 성공적으로 제출되었습니다!"
+}

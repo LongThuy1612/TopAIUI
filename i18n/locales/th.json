@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "ค้นหาเครื่องมือ AI...",
+    "categories": "หมวดหมู่",
+    "rankings": "อันดับ",
+    "submit": "ส่งเครื่องมือ",
+    "admin": "ผู้ดูแลระบบ"
+  },
+  "hero": {
+    "titlePrefix": "ค้นพบ",
+    "titleHighlight": "เครื่องมือ AI ที่ดีที่สุด",
+    "subtitle": "เรียกดูผลิตภัณฑ์ AI หลายร้อยรายการตามหมวดหมู่ เปรียบเทียบราคา และค้นหาเครื่องมือที่เหมาะกับงานของคุณ",
+    "searchPlaceholder": "ค้นหาเครื่องมือ AI..."
+  },
+  "stats": {
+    "tools": "เครื่องมือ AI ที่ลงทะเบียน",
+    "categories": "หมวดหมู่",
+    "featured": "เครื่องมือแนะนำ"
+  },
+  "tabs": {
+    "heading": "สำรวจเครื่องมือ",
+    "newest": "ใหม่",
+    "featured": "แนะนำมากที่สุด",
+    "free": "ฟรี",
+    "viewAll": "ดูทั้งหมด →"
+  },
+  "announcement": {
+    "featured": "แนะนำ"
+  },
+  "sidebar": {
+    "featuredTools": "เครื่องมือแนะนำ",
+    "topCategories": "หมวดหมู่ยอดนิยม"
+  },
+  "sections": {
+    "browseByCategory": "เรียกดูตามหมวดหมู่",
+    "newestTools": "เครื่องมือล่าสุด",
+    "featuredTools": "เครื่องมือแนะนำ",
+    "viewAll": "ดูทั้งหมด →",
+    "justLaunched": "เพิ่งเปิดตัว",
+    "featuredThisWeek": "แนะนำสัปดาห์นี้",
+    "featuredThisWeekSubtitle": "เครื่องมือที่ชุมชนของเราบันทึกและให้คะแนนมากที่สุด",
+    "updatedDaily": "อัปเดตทุกวัน",
+    "viewMore": "ดูเพิ่มเติม →"
+  },
+  "cta": {
+    "title": "มีเครื่องมือ AI ที่อยากแบ่งปันไหม?",
+    "subtitle": "แสดงให้คนที่กำลังมองหาเครื่องมือแบบเดียวกันได้เห็น",
+    "button": "ส่งเครื่องมือของคุณ"
+  },
+  "empty": {
+    "noTools": "ยังไม่มีเครื่องมือ — รันคำสั่ง",
+    "noResults": "ไม่พบเครื่องมือ"
+  },
+  "category": {
+    "breadcrumbHome": "หน้าแรก",
+    "allTools": "เครื่องมือทั้งหมด",
+    "allToolsTitle": "เครื่องมือ AI ทั้งหมด",
+    "allPricing": "ราคาทั้งหมด",
+    "sortNewest": "ใหม่สุดก่อน",
+    "sortFeatured": "แนะนำก่อน",
+    "sortName": "ชื่อ A–Z",
+    "toolsFound": "พบเครื่องมือ | พบเครื่องมือ",
+    "searchPlaceholder": "ค้นหาเครื่องมือ...",
+    "filters": "ตัวกรอง",
+    "viewGrid": "มุมมองตาราง",
+    "viewList": "มุมมองรายการ"
+  },
+  "pricing": {
+    "FREE": "ฟรี",
+    "FREEMIUM": "ฟรีเมียม",
+    "PAID": "เสียเงิน"
+  },
+  "ranking": {
+    "title": "เครื่องมือ AI ยอดนิยม",
+    "subtitle": "จัดอันดับตามข้อมูลการเข้าชมและการเติบโตที่บันทึกไว้ในไดเรกทอรีของเรา",
+    "byGrowth1m": "การเติบโต 1 เดือน",
+    "byGrowth3m": "การเติบโต 3 เดือน",
+    "byGrowth6m": "การเติบโต 6 เดือน",
+    "byTraffic": "ยอดเข้าชมต่อเดือน",
+    "colRank": "อันดับ",
+    "colTool": "เครื่องมือ",
+    "colVisits": "ยอดเข้าชมต่อเดือน",
+    "colGrowth": "การเติบโต",
+    "colAuthority": "ความน่าเชื่อถือของโดเมน",
+    "colCategory": "หมวดหมู่",
+    "noData": "ยังไม่มีข้อมูลการจัดอันดับ"
+  },
+  "tool": {
+    "openSite": "เปิดเว็บไซต์",
+    "save": "บันทึก",
+    "saved": "บันทึกแล้ว",
+    "featured": "แนะนำ",
+    "introduction": "แนะนำเบื้องต้น",
+    "addedOn": "เพิ่มเมื่อ",
+    "monthlyVisitors": "ผู้เข้าชมต่อเดือน",
+    "features": "ฟีเจอร์หลัก",
+    "useCases": "กรณีการใช้งาน",
+    "prosAndCons": "ข้อดีและข้อเสีย",
+    "pros": "ข้อดี",
+    "cons": "ข้อเสีย",
+    "faq": "คำถามที่พบบ่อย",
+    "alternatives": "ทางเลือกอื่นสำหรับ",
+    "backToCategory": "กลับไปที่",
+    "notFound": "ไม่พบเครื่องมือ",
+    "similarTools": "เครื่องมือที่คล้ายกัน",
+    "tabProductInfo": "ข้อมูลผลิตภัณฑ์",
+    "tabPricing": "ราคา",
+    "tabReviews": "รีวิว",
+    "tabAnalytics": "การวิเคราะห์",
+    "tabAlternatives": "ทางเลือกอื่น",
+    "productInformationHeading": "ข้อมูลผลิตภัณฑ์ {name}",
+    "whatIs": "{name} คืออะไร?",
+    "howToUseHeading": "วิธีใช้ {name}?",
+    "reviewsHeading": "รีวิว {name} ({count})",
+    "ratingPrompt": "คุณจะแนะนำ {name} หรือไม่? แสดงความคิดเห็น",
+    "whatDoYouThink": "คุณคิดอย่างไร?",
+    "loginToComment": "เข้าสู่ระบบเพื่อแสดงความคิดเห็น",
+    "pricingHeading": "ราคาของ {name}",
+    "noPricingYet": "ยังไม่มีข้อมูลราคา",
+    "analyticsHeading": "การวิเคราะห์ {name}",
+    "trafficAnalysis": "การวิเคราะห์ปริมาณการเข้าชมเว็บไซต์ {name}",
+    "visitOverTime": "ยอดเข้าชมตามช่วงเวลา",
+    "monthlyVisits": "ยอดเข้าชมต่อเดือน",
+    "avgVisitDuration": "ระยะเวลาเข้าชมเฉลี่ย",
+    "pagePerVisit": "หน้าเว็บต่อการเข้าชม",
+    "bounceRate": "อัตราตีกลับ",
+    "noTrafficYet": "ยังไม่มีข้อมูลการเข้าชม",
+    "badgeVerified": "ยืนยันแล้ว",
+    "badgeJustLaunched": "เพิ่งเปิดตัว",
+    "badgeFreeTool": "เครื่องมือฟรี",
+    "affiliateLink": "ลิงก์พันธมิตร",
+    "couponCode": "รหัสส่วนลด",
+    "ratings": "การให้คะแนน",
+    "upvotes": "โหวต",
+    "domainAuthority": "ความน่าเชื่อถือของโดเมน",
+    "trafficRank": "อันดับการเข้าชม",
+    "viewCount": "ยอดเข้าชมหน้า"
+  },
+  "footer": {
+    "tagline": "ค้นพบ เปรียบเทียบ และแบ่งปันเครื่องมือ AI ที่ดีที่สุด — สร้างด้วย Nuxt และ PostgreSQL",
+    "product": "ผลิตภัณฑ์",
+    "home": "หน้าแรก",
+    "allTools": "เครื่องมือทั้งหมด",
+    "submit": "ส่งเครื่องมือ",
+    "categories": "หมวดหมู่",
+    "company": "บริษัท",
+    "admin": "เข้าสู่ระบบผู้ดูแล",
+    "language": "ภาษา",
+    "copyright": "สงวนลิขสิทธิ์"
+  },
+  "language": {
+    "label": "ภาษา"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Fulde Navn",
+      "email": "E-mailadresse",
+      "emailHelp": "E-mail kan ikke ændres",
+      "emailPlaceholder": "dig@eksempel.dk",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+45 (00) 00 00 00",
+      "company": "Firma",
+      "country": "Land",
+      "website": "Hjemmeside",
+      "save": "Gem Ændringer",
+      "saving": "Gemmer...",
+      "saveSuccess": "Profilen blev opdateret."
+    },
+    "password": {
+      "title": "Skift Adgangskode",
+      "current": "Nuværende Adgangskode",
+      "new": "Ny Adgangskode",
+      "confirm": "Bekræft Ny Adgangskode",
+      "update": "Opdater Adgangskode"
+    },
+    "notifications": {
+      "title": "Meddelelsesindstillinger",
+      "email": "E-mailmeddelelser",
+      "marketing": "Marketing E-mails"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "fullName": "Fuldt navn",
+    "email": "Email adresse",
+    "emailHelp": "E-mail kan ikke ændres",
+    "emailPlaceholder": "dig@eksempel.com",
+    "phone": "Telefonnummer",
+    "company": "Selskab",
+    "country": "Land",
+    "website": "Hjemmeside",
+    "save": "Gem ændringer",
+    "saving": "Gemmer...",
+    "saveSuccess": "Profilen blev opdateret.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Skift adgangskode",
+    "current": "Nuværende adgangskode",
+    "new": "Ny adgangskode",
+    "confirm": "Bekræft ny adgangskode",
+    "update": "Opdater adgangskode"
+  },
+  "notifications": {
+    "title": "Notifikationspræferencer",
+    "email": "E-mail-meddelelser",
+    "marketing": "Marketing e-mails"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Sikkerhed",
+    "notifications": "Meddelelser"
+  },
+  "updated": "Indstillingerne blev opdateret"
+}

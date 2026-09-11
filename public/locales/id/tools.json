@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Semua Alat AI - TopAICollection",
+    "description": "Jelajahi koleksi lengkap alat AI kami. Filter berdasarkan kategori, popularitas, atau temukan inovasi AI terbaru.",
+    "archiveMonthTitle": "Alat AI — {label} | TopAICollection",
+    "archiveMonthDescription": "Jelajahi alat AI yang ditambahkan di {label}.",
+    "archiveYearTitle": "Alat AI — {year} | TopAICollection",
+    "archiveYearDescription": "Telusuri alat AI yang ditambahkan pada {year}.",
+    "categoryTitle": "{category} Alat AI | TopAICollection",
+    "categoryDescription": "Jelajahi alat AI {category} terbaik.",
+    "freeTitle": "Alat AI Gratis | {title}",
+    "freeDescription": "Temukan alat AI gratis terbaik secara online. {description}",
+    "newestTitle": "Alat AI Terbaru | {title}",
+    "newestDescription": "Lihat alat AI terbaru yang ditambahkan ke koleksi kami."
+  },
+  "title": "Jelajahi Semua Alat AI",
+  "subtitle": "Temukan solusi AI sempurna dari koleksi lengkap kami",
+  "filters": {
+    "all": "Semua Alat",
+    "today": "Hari ini",
+    "featured": "Unggulan",
+    "new": "Baru Saja Diluncurkan",
+    "mostSaved": "Paling Tersimpan",
+    "mostUsed": "Paling Banyak Digunakan",
+    "trending": "Sedang tren",
+    "justLaunched": "Baru Saja Diluncurkan",
+    "title": "Filter",
+    "category": "Kategori",
+    "allCategories": "Semua Kategori",
+    "type": "Jenis",
+    "popular": "Populer",
+    "newest": "Terbaru",
+    "name": "Nama",
+    "price": "Harga",
+    "free": "Bebas",
+    "paid": "Dibayar",
+    "sortBy": "Urutkan Berdasarkan"
+  },
+  "sort": {
+    "label": "Urutkan berdasarkan",
+    "popular": "Paling Populer",
+    "trending": "Sedang tren",
+    "newest": "Terbaru Pertama",
+    "rating": "Nilai Tertinggi",
+    "name": "Alfabetis"
+  },
+  "categories": {
+    "title": "Kategori",
+    "all": "Semua Kategori",
+    "showMore": "Tampilkan Lebih Banyak →",
+    "toolCount": "alat {count}"
+  },
+  "results": {
+    "showing": "Menampilkan {start}-{end} dari {total} alat",
+    "error": "Terjadi kesalahan saat memuat alat. Silakan coba lagi.",
+    "noResults": "Tidak ada hasil yang ditemukan",
+    "tryDifferent": "Silakan coba kata kunci atau filter yang berbeda."
+  },
+  "pagination": {
+    "next": "Berikutnya",
+    "page": "Halaman {page}"
+  },
+  "sidebar": {
+    "trending": "Sedang Tren Sekarang",
+    "noTools": "Tidak ada alat yang sedang tren",
+    "advertise": "Beriklan di Sini",
+    "advertiseDesc": "Jangkau lebih dari 5 juta penggemar AI bulanan dan tingkatkan kunjungan Anda",
+    "emailPlaceholder": "Alamat email"
+  },
+  "hero": {
+    "title": "Temukan Alat AI Terbaru",
+    "subtitle": "27.955 AI dan 459 kategori",
+    "searchPlaceholder": "Cari alat AI...",
+    "search": "Mencari"
+  },
+  "breadcrumb": {
+    "home": "Rumah",
+    "tools": "Peralatan"
+  },
+  "jsonLd": {
+    "name": "Direktori Alat AI",
+    "description": "Jelajahi direktori lengkap alat AI kami."
+  },
+  "badges": {
+    "featured": "Unggulan",
+    "new": "Baru",
+    "trending": "Sedang tren",
+    "popular": "Populer",
+    "sponsored": "Disponsori"
+  },
+  "share": "Membagikan",
+  "visits": "Kunjungan",
+  "monthlyVisits": "Perkiraan Kunjungan Bulanan",
+  "visit": "Mengunjungi",
+  "actions": {
+    "save": "Menyimpan",
+    "saved": "Disimpan",
+    "visit": "Mengunjungi",
+    "share": "Membagikan",
+    "copyLink": "Salin tautan",
+    "shareThisTool": "Bagikan Alat Ini"
+  },
+  "growth": "Pertumbuhan",
+  "pricing": {
+    "free": "Bebas"
+  }
+}

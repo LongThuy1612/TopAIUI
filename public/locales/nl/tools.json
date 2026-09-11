@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Alle AI-tools - TopAICollection",
+    "description": "Blader door onze volledige collectie AI-tools. Filter op categorie, populariteit of vind de nieuwste AI-innovaties.",
+    "archiveMonthTitle": "AI-tools — {label} | TopAICollection",
+    "archiveMonthDescription": "Blader door AI-tools die zijn toegevoegd in {label}.",
+    "archiveYearTitle": "AI-tools — {year} | TopAICollection",
+    "archiveYearDescription": "Blader door AI-tools die in {year} zijn toegevoegd.",
+    "categoryTitle": "{category} AI-tools | TopAITopAICollectionCollection",
+    "categoryDescription": "Ontdek de beste AI-tools in {category}.",
+    "freeTitle": "Gratis AI-tools | {title}",
+    "freeDescription": "Ontdek de beste gratis AI-tools online. {description}",
+    "newestTitle": "Nieuwste AI-tools | {title}",
+    "newestDescription": "Bekijk de nieuwste AI-tools die aan onze collectie zijn toegevoegd."
+  },
+  "title": "Ontdek alle AI-tools",
+  "subtitle": "Ontdek de perfecte AI-oplossing uit onze uitgebreide collectie",
+  "filters": {
+    "all": "Alle gereedschappen",
+    "today": "Vandaag",
+    "featured": "Uitgelicht",
+    "new": "Net gelanceerd",
+    "mostSaved": "Meest opgeslagen",
+    "mostUsed": "Meest gebruikt",
+    "trending": "Populair",
+    "justLaunched": "Net gelanceerd",
+    "category": "Categorie",
+    "allCategories": "Alle categorieën",
+    "type": "Typen",
+    "popular": "Populair",
+    "newest": "Nieuwste",
+    "name": "Naam",
+    "price": "Prijs",
+    "free": "Vrij",
+    "paid": "Betaald",
+    "sortBy": "Sorteer op",
+    "title": "Filters"
+  },
+  "sort": {
+    "label": "Sorteer op",
+    "popular": "Meest populair",
+    "trending": "Populair",
+    "newest": "Nieuwste eerst",
+    "rating": "Hoogst gewaardeerd",
+    "name": "Alfabetisch"
+  },
+  "categories": {
+    "title": "Categorieën",
+    "all": "Alle categorieën",
+    "showMore": "Toon meer →",
+    "toolCount": "{count} gereedschappen"
+  },
+  "results": {
+    "showing": "Toont {start}-{end} van {total} gereedschappen",
+    "error": "Fout bij het laden van tools. Probeer het opnieuw.",
+    "noResults": "Geen resultaten gevonden",
+    "tryDifferent": "Probeer andere zoekwoorden of filters."
+  },
+  "pagination": {
+    "next": "Volgende",
+    "page": "Pagina {page}"
+  },
+  "sidebar": {
+    "trending": "Nu populair",
+    "noTools": "Geen trendingtools",
+    "advertise": "Adverteer hier",
+    "advertiseDesc": "Bereik maandelijks meer dan 5 miljoen AI-enthousiastelingen en laat uw bezoeken groeien",
+    "emailPlaceholder": "E-mailadres"
+  },
+  "hero": {
+    "title": "Ontdek de nieuwste AI-tools",
+    "subtitle": "27.955 AI's en 459 categorieën",
+    "searchPlaceholder": "AI-tools zoeken...",
+    "search": "Zoekopdracht"
+  },
+  "breadcrumb": {
+    "home": "Thuis",
+    "tools": "Hulpmiddelen"
+  },
+  "jsonLd": {
+    "name": "Directory met AI-hulpmiddelen",
+    "description": "Blader door onze volledige lijst met AI-tools."
+  },
+  "badges": {
+    "featured": "Uitgelicht",
+    "new": "Nieuw",
+    "trending": "Populair",
+    "popular": "Populair",
+    "sponsored": "Gesponsord"
+  },
+  "share": "Deel",
+  "visits": "Bezoeken",
+  "monthlyVisits": "Geschatte maandelijkse bezoeken",
+  "visit": "Bezoek",
+  "actions": {
+    "save": "Redden",
+    "saved": "Opgeslagen",
+    "visit": "Bezoek",
+    "share": "Deel",
+    "copyLink": "Kopieer link",
+    "shareThisTool": "Deel dit hulpmiddel"
+  },
+  "growth": "Groei",
+  "pricing": {
+    "free": "Vrij"
+  }
+}

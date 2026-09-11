@@ -1,0 +1,46 @@
+{
+  "title": "Posting Tamu & Penyisipan Tautan",
+  "description": "Bagikan keahlian Anda dengan komunitas kami melalui postingan tamu atau minta penyisipan tautan strategis di konten yang ada.",
+  "details": "Detail Posting Tamu",
+  "postTitle": "Judul Postingan",
+  "postTitlePlaceholder": "Judul postingan tamu Anda",
+  "postContent": "Posting Konten atau Detail",
+  "postContentPlaceholder": "Jelaskan konten kiriman tamu Anda atau detail penyisipan tautan",
+  "features": {
+    "guestPosts": {
+      "title": "Postingan Tamu",
+      "description": "Bagikan pengetahuan dan wawasan Anda tentang AI dengan komunitas kami. Bangun otoritas dan arahkan lalu lintas ke situs web Anda."
+    },
+    "linkInsertion": {
+      "title": "Penyisipan Tautan",
+      "description": "Minta penempatan strategis tautan Anda di konten yang ada dan relevan untuk nilai SEO maksimal."
+    },
+    "seoBacklinks": {
+      "title": "Tautan Balik SEO",
+      "description": "Tingkatkan peringkat SEO Anda dengan backlink berkualitas tinggi dari domain resmi kami."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Pedoman Konten",
+    "description": "Semua postingan tamu harus asli, berkualitas tinggi, dan relevan dengan AI. Kami tidak menerima konten yang dibuat oleh AI tanpa pengeditan manusia."
+  },
+  "meta": {
+    "title": "Kiriman Tamu & Penyisipan Tautan | TopAICollection",
+    "description": "Bagikan keahlian Anda dengan komunitas AI kami melalui postingan tamu atau minta penyisipan tautan strategis di konten yang ada."
+  },
+  "validation": {
+    "required": "Bidang ini wajib diisi",
+    "titleTooShort": "Judul minimal harus 5 karakter",
+    "contentTooShort": "Konten harus minimal 20 karakter",
+    "toolNameRequired": "Nama alat wajib diisi",
+    "url": "URL tidak valid",
+    "descriptionMin": "Deskripsi minimal harus 10 karakter",
+    "categoryRequired": "Silakan pilih kategori",
+    "email": "Alamat email tidak valid",
+    "messageMin": "Pesan minimal harus 10 karakter"
+  },
+  "sidebar": {
+    "articleCount": "1.000+ Artikel",
+    "articleCountSub": "Diterbitkan oleh komunitas kami"
+  }
+}

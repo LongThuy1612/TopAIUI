@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Cookiepolitik - TopAICollection",
+    "description": "Lær om, hvordan TopAICollection bruger cookies og lignende teknologier."
+  },
+  "title": "Cookiepolitik",
+  "lastUpdated": "Sidst opdateret",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Hvad er cookies",
+      "description": "Cookies er små tekstfiler, der gemmes på din computer eller mobilenhed, når du besøger vores hjemmeside. De hjælper os med at give dig en bedre oplevelse ved at huske dine præferencer og forstå, hvordan du bruger vores side."
+    },
+    "howWeUse": {
+      "title": "Hvordan vi bruger cookies",
+      "intro": "Vi bruger cookies til følgende formål:",
+      "essential": "Væsentlige cookies: Nødvendig for at hjemmesiden fungerer korrekt, inklusive godkendelse og sikkerhed.",
+      "analytics": "Analytics-cookies: Hjælp os med at forstå, hvordan besøgende interagerer med vores hjemmeside.",
+      "preference": "Præferencecookies: Husk dine indstillinger og præferencer, såsom sprog og lokalitet.",
+      "marketing": "Marketingcookies: Bruges til at levere relevante annoncer og spore kampagnens ydeevne."
+    },
+    "managing": {
+      "title": "Håndtering af cookies",
+      "intro": "De fleste webbrowsere giver dig mulighed for at kontrollere cookies gennem deres indstillinger. Du kan vælge at:",
+      "blockAll": "Bloker alle cookies",
+      "acceptAll": "Accepter alle cookies",
+      "beNotified": "Få besked, når en cookie er sat",
+      "deleteExisting": "Slet cookies, der allerede er indstillet",
+      "note": "Bemærk venligst, at blokering af visse cookies kan påvirke din oplevelse på vores hjemmeside."
+    },
+    "thirdParty": {
+      "title": "Tredjepartscookies",
+      "intro": "Nogle cookies på vores websted er sat af tredjepartstjenester, vi bruger, herunder:",
+      "googleAnalytics": "Google Analytics (analyse)",
+      "vercel": "Vercel (hosting og analyse)"
+    },
+    "contact": {
+      "title": "Kontakt os",
+      "message": "Hvis du har spørgsmål til vores brug af cookies, bedes du venligst",
+      "contactLink": "kontakt os"
+    }
+  }
+}

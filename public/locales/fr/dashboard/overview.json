@@ -1,0 +1,225 @@
+{
+  "welcome": "Bienvenue, {name} !",
+  "welcomeDescription": "Explorez nos fonctionnalités et données puissantes pour découvrir les dernières tendances et opportunités dans l'industrie de l'IA.",
+  "user": "Utilisateur",
+  "performanceOverview": "Aperçu des Performances",
+  "websiteInsightsQuota": "Quota d'Analyse de Site Web",
+  "socialListeningQueries": "Quota de veille sociale",
+  "stats": {
+    "organicClicks": "Clics Organiques",
+    "paidClicks": "Clics Payants",
+    "totalClicks": "Total des Clics",
+    "totalTools": "Total des Outils",
+    "totalViews": "Total des Vues",
+    "credits": "Crédits"
+  },
+  "features": {
+    "websiteInsights": "Informations sur le site Web",
+    "socialListening": "Écoute sociale",
+    "prioritySupport": "Assistance prioritaire",
+    "advertising": "Publicité",
+    "premiumSupport": "Assistance Premium"
+  },
+  "badgePopular": "Les plus populaires",
+  "title": "Suivi de veille sociale",
+  "description": "Surveillez les mots-clés sur TikTok et YouTube.",
+  "adCredits": "Crédits publicitaires",
+  "postCredits": "Crédits de publication",
+  "linkCredits": "Crédits de lien",
+  "forSponsoredListings": "Pour les annonces sponsorisées",
+  "forGuestArticles": "Pour les articles invités",
+  "forLinkInsertions": "Pour les insertions de liens",
+  "buyCredits": "Acheter des crédits",
+  "noOrders": "Aucune commande trouvée.",
+  "orderHistory": "Historique des commandes",
+  "orderId": "Numéro de commande",
+  "amount": "Montant",
+  "date": "Rendez-vous",
+  "type": "Taper",
+  "invoice": "Facture",
+  "download": "Télécharger",
+  "currentPlan": "Forfait actuel",
+  "freeTier": "Niveau gratuit",
+  "freeTierDesc": "Mettez à niveau votre forfait pour débloquer plus de fonctionnalités et d'informations.",
+  "creditBalances": "Soldes créditeurs",
+  "subscriptionDetails": "Détails de l'abonnement",
+  "upgradePlan": "Plan de mise à niveau",
+  "statusActive": "Actif",
+  "planMemberSince": "Membre de ce régime",
+  "renewalDate": "Renouvelle le",
+  "changePlan": "Changer de forfait",
+  "redirecting": "Redirection...",
+  "credits": "Crédits",
+  "managePortal": "Gérer le portail de facturation",
+  "subscribe": "Abonnez-vous maintenant",
+  "upgradeTitle": "Améliorez votre plan de recherche",
+  "upgradeDesc": "Bénéficiez d’analyses avancées, d’informations sur les concurrents et bien plus encore.",
+  "choosePlan": {
+    "title": "Choisissez votre plan de recherche",
+    "subtitle": "Obtenez des informations et des données sur le marché de l’IA pour prendre des décisions."
+  },
+  "billingIntervals": {
+    "monthly": "Mensuel",
+    "yearly": "Annuel"
+  },
+  "subtitle": "Gérez et suivez les performances de vos outils d'IA soumis.",
+  "create": "Créer une campagne",
+  "noCampaigns": "Aucune campagne pour l'instant",
+  "createFirst": "Créez votre première campagne pour commencer à promouvoir vos outils d'IA",
+  "getStarted": "Commencer",
+  "spent": "Dépensé",
+  "startDate": "Date de début",
+  "endDate": "Date de fin",
+  "notSet": "Non défini",
+  "ongoing": "En cours",
+  "pause": "Mettre en pause",
+  "resume": "CV",
+  "viewDetails": "Afficher les détails",
+  "clicks": "Clics",
+  "impressions": "Vues",
+  "rejectionReason": "Motif du refus",
+  "analytics": {
+    "title": "Analyse de campagne",
+    "description": "Répartition détaillée des impressions et des clics au cours des 30 derniers jours.",
+    "exportJson": "Exporter JSON",
+    "dailyPerformance": "Performances quotidiennes",
+    "topLocales": "Principales régions (locales)"
+  },
+  "track": "Piste",
+  "noDomains": "Aucun domaine suivi pour le moment. Ajoutez-en un ci-dessus !",
+  "domain": "Domaine",
+  "monthlyVisits": "Visites mensuelles",
+  "rank": "Rang",
+  "topKeywords": "Mots-clés principaux",
+  "added": "Ajouté",
+  "tool": "Outil",
+  "organicClicks": "Clics organiques",
+  "paidClicks": "Clics payants",
+  "totalClicks": "Nombre total de clics",
+  "addedOn": "Ajouté",
+  "noTools": "Aucun outil suivi pour l'instant.",
+  "empty": {
+    "title": "Aucun outil d'IA pour l'instant",
+    "description": "Soumettez votre outil d'IA pour qu'il soit découvert par des millions d'utilisateurs.",
+    "cta": "Soumettre l'outil IA"
+  },
+  "columns": {
+    "tool": "Outil",
+    "status": "Statut",
+    "organic": "Trafic organique",
+    "paid": "Trafic payant",
+    "impressions": "Vues",
+    "actions": "Actes"
+  },
+  "statusTooltip": {
+    "pending": "En attente de l'approbation de l'administrateur"
+  },
+  "submittedToast": "Votre outil a été soumis et est en attente d'examen.",
+  "warnings": {
+    "pendingView": "Cet outil est toujours en cours de révision et n'est pas encore visible publiquement.",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer cet outil d'IA ? Cette action ne peut pas être annulée."
+  },
+  "gpt": {
+    "title": "Mes GPT",
+    "submitNew": "Soumettre un nouveau GPT",
+    "noGpts": "Aucun GPT trouvé. Soumettez votre premier !",
+    "noGptsDesc": "Aucun GPT soumis pour l'instant. Soumettez votre GPT pour être découvert.",
+    "columns": {
+      "name": "Nom GPT",
+      "url": "URL ChatGPT",
+      "date": "Soumis"
+    }
+  },
+  "updateAi": "Mettre à jour l'IA",
+  "submitNew": "Soumettre nouveau",
+  "submitNewItem": "Soumettre un nouvel article",
+  "linkInsert": {
+    "label": "Insertion de lien",
+    "submit": "Soumettre l'insertion du lien",
+    "empty": {
+      "title": "Aucun lien inséré pour l'instant",
+      "description": "Vous n'avez pas encore soumis d'insertions de lien."
+    }
+  },
+  "form": {
+    "type": "Taper",
+    "targetUrl": "URL cible",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Titre / Texte d'ancrage",
+    "anchorTextPlaceholder": "Titre de l'article OU Texte d'ancrage pour le lien",
+    "submitCredits": "Soumettre (1 crédit)"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Sécurité",
+    "notifications": "Notifications"
+  },
+  "table": {
+    "platform": "Plate-forme",
+    "keyword": "Mot clé",
+    "videos": "Vidéos",
+    "views": "Vues",
+    "creators": "Créateurs",
+    "status": "Statut"
+  },
+  "updated": "Paramètres mis à jour avec succès",
+  "password": {
+    "title": "Changer le mot de passe",
+    "current": "Mot de passe actuel",
+    "new": "Nouveau mot de passe",
+    "confirm": "Confirmer le nouveau mot de passe",
+    "update": "Mettre à jour le mot de passe"
+  },
+  "notifications": {
+    "title": "Préférences de notifications",
+    "email": "Notifications par courrier électronique",
+    "marketing": "E-mails marketing"
+  },
+  "metrics": {
+    "monthlyQueries": "Requêtes mensuelles",
+    "videosToday": "Vidéos aujourd'hui",
+    "creatorsToday": "Créateurs aujourd'hui"
+  },
+  "advertiseAi": "Faire de la publicité pour l'IA",
+  "myAis": {
+    "title": "Mes IA",
+    "subtitle": "Gérez et suivez les performances de vos outils d'IA soumis.",
+    "empty": {
+      "cta": "Soumettre l'outil IA"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Motif du rejet"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Suivez le classement et les performances des mots clés",
+    "socialListeningDesc": "Surveiller les mentions et les tendances sociales",
+    "researchReportDesc": "Générez des rapports de marché complets",
+    "aiAdvertisingLibrary": "Bibliothèque de publicité IA",
+    "aiAdvertisingDesc": "Analyser les publicités IA des concurrents",
+    "comingSoon": "À venir"
+  },
+  "reports": {
+    "title": "Rapports de recherche",
+    "description": "Accédez à des rapports analytiques approfondis sur l’industrie de l’IA.",
+    "noReports": "Aucun rapport disponible",
+    "free": "Gratuit",
+    "download": "Télécharger",
+    "unlock": "Rapport de déverrouillage",
+    "noReportsDesc": "Nous préparons actuellement de nouvelles informations.",
+    "readNow": "Consulter le rapport",
+    "readerTitle": "Lecteur de rapport de recherche",
+    "unlockRequired": "Contenu premium",
+    "unlockDesc": "Débloquez ce rapport de recherche approfondi pour obtenir un accès complet à des analyses de marché exclusives, des études de cas et des informations exploitables.",
+    "unlockNow": "Débloquer maintenant",
+    "related": "Rapports associés",
+    "toc": "Sur cette page",
+    "backToList": "Retour à la Bibliothèque",
+    "notFound": "Rapport non trouvé",
+    "unlockSuccess": "Rapport déverrouillé avec succès !",
+    "unlockError": "Impossible de déverrouiller le rapport.",
+    "searchPlaceholder": "Rechercher des rapports"
+  },
+  "toolPerformance": "Performances des outils (en temps réel)",
+  "budget": "Budget"
+}

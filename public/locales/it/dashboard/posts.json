@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Articoli e Link",
+    "description": "Gestisci i tuoi articoli ospite e l'inserimento di link.",
+    "submitNewItem": "Invia Nuovo Elemento",
+    "submitNew": "Invia Nuovo",
+    "guestPost": "Articolo Ospite",
+    "linkInsert": "Inserimento Link",
+    "type": "Tipo",
+    "targetUrl": "URL di Destinazione",
+    "targetUrlPlaceholder": "https://tuosito.com/...",
+    "anchorText": "Titolo / Testo Ancora",
+    "anchorTextPlaceholder": "Titolo dell'articolo O testo ancora per il link",
+    "submitCredits": "Invia (1 Credito)",
+    "tabs": {
+      "guestPosts": "Articoli Ospite",
+      "linkInserts": "Inserimento Link"
+    },
+    "table": {
+      "title": "Titolo",
+      "anchor": "Testo Ancora",
+      "url": "URL",
+      "status": "Stato",
+      "date": "Data"
+    },
+    "empty": {
+      "noGuestTitle": "Nessun Articolo Ospite",
+      "noGuestDesc": "Non hai ancora inviato alcun articolo ospite.",
+      "noGuestCta": "Invia Articolo Ospite",
+      "noLinkTitle": "Nessun Inserimento Link",
+      "noLinkDesc": "Non hai ancora inviato alcun inserimento link.",
+      "noLinkCta": "Invia Inserimento Link"
+    },
+    "subtitle": "Gestisci i tuoi guest post e gli inserimenti di link."
+  }
+}

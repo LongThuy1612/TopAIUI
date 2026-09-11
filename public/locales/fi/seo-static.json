@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection - Löydä parhaat tekoälytyökalut",
+    "description": "Tutustu {totalTools}+ tekoälytyökaluun {totalCategories} luokassa yli {languagesCount} kielellä"
+  },
+  "home": {
+    "visitWebsite": "Vieraile verkkosivustolla",
+    "ranking": "Sijoitus"
+  },
+  "tool": {
+    "visitWebsite": "Vieraile verkkosivustolla →",
+    "useCases": "Käyttötapaukset",
+    "about": "Tietoja {name}",
+    "howToUse": "Kuinka käyttää {name}",
+    "faq": "Usein kysytyt kysymykset"
+  }
+}

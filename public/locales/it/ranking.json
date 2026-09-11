@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Classifica dei migliori strumenti AI",
+    "description": "Scopri gli strumenti AI più visitati al mondo basati su dati di traffico reali.",
+    "subtitle": "Scopri gli strumenti AI più visitati al mondo basati su dati di traffico reali."
+  },
+  "trending": {
+    "title": "Strumenti di intelligenza artificiale di tendenza",
+    "description": "Gli strumenti di intelligenza artificiale in più rapida crescita nell'ultimo mese.",
+    "subtitle": "Gli strumenti di intelligenza artificiale in più rapida crescita nell'ultimo mese."
+  },
+  "category": "Categoria",
+  "noTools": "Nessuno strumento trovato.",
+  "noToolsInCategory": "Nessuno strumento trovato in questa categoria.",
+  "loading": "Caricamento...",
+  "favorite": "Aggiungi ai preferiti",
+  "unfavorite": "Rimuovi dai preferiti",
+  "visitWebsite": "Visita il sito web",
+  "errors": {
+    "general": "Impossibile caricare i dati della classifica."
+  },
+  "topAI": "La migliore intelligenza artificiale",
+  "trendingAI": "Tendenza",
+  "period": "Periodo",
+  "last7Days": "Ultimi 7 giorni",
+  "lastMonth": "Il mese scorso",
+  "last3Months": "Ultimi 3 mesi",
+  "lastYear": "L'anno scorso",
+  "allCategories": "Tutte le categorie",
+  "selectPeriod": "Seleziona Periodo",
+  "rank": "Rango",
+  "tool": "Attrezzo",
+  "visits": "Visite",
+  "growth": "Crescita",
+  "actions": "Azioni",
+  "leaderboard": {
+    "header": {
+      "title": "Classifica degli strumenti AI",
+      "description": "Scopri gli strumenti IA più votati dalla community.",
+      "dailyTitle": "I migliori strumenti IA del giorno",
+      "monthlyTitle": "I migliori strumenti di intelligenza artificiale di {date}",
+      "yearlyTitle": "I migliori strumenti di intelligenza artificiale di {date}",
+      "tabs": {
+        "daily": "Quotidiano",
+        "monthly": "Mensile",
+        "yearly": "Annuale"
+      },
+      "prevPeriod": "Periodo precedente",
+      "nextPeriod": "Prossimo periodo",
+      "pickDate": "Scegli data",
+      "pickMonth": "Scegli il mese"
+    },
+    "empty": {
+      "title": "Nessuno strumento lanciato oggi",
+      "description": "Non ci sono strumenti registrati per questa data specifica. Prova a passare a un altro giorno.",
+      "showMore": "Mostra più strumenti",
+      "loadingMore": "Caricamento di altri strumenti...",
+      "toolsListTitle": "Strumenti in primo piano"
+    },
+    "card": {
+      "visitWebsite": "Visita il sito web",
+      "loginToUpvote": "Effettua il login per votare gli strumenti"
+    },
+    "page": {
+      "errorLoading": "Impossibile caricare i dati della classifica."
+    },
+    "sidebar": {
+      "launchArchive": "Avvia Archivio",
+      "topCategories": "Categorie principali"
+    }
+  },
+  "categoryAI": "Categoria",
+  "regionAI": "Regione",
+  "region": "Regione",
+  "allRegions": "Globale",
+  "channelAI": "Canale",
+  "channel": "Canale",
+  "allChannels": "Tutte le fonti",
+  "incomeAI": "Sociale/Reddito",
+  "socialMetrics": "Valore sociale",
+  "channelVisits": "Visite alla fonte",
+  "maxResultsHint": "Limita il numero massimo di risultati.",
+  "regions": {
+    "us": "Stati Uniti",
+    "gb": "Regno Unito",
+    "in": "India",
+    "ph": "Filippine",
+    "ca": "Canada",
+    "vn": "Vietnam"
+  },
+  "channels": {
+    "search": "Cerca",
+    "direct": "Diretto",
+    "social": "Sociale",
+    "referrals": "Riferimenti"
+  },
+  "viewDetails": "Visualizza dettagli"
+}

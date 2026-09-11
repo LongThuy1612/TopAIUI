@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Social Lytning - Overvåg AI-tendenser | TopAICollection",
+    "description": "Overvåg AI-tendenser på sociale medier.",
+    "detailTitle": "{name} Social Lytning — TopAI",
+    "detailDescription": "Social lytning-analyser for {name}.",
+    "notFoundTitle": "Værktøj ikke fundet - Social lytning"
+  },
+  "title": "Social Lytning",
+  "subtitle": "Spor videopræstationer for AI-værktøjer. Twitter",
+  "leaderboardTitle": "Ledertavle",
+  "leaderboardSubtitle": "Øjeblikkelig sporing. Twitter",
+  "table": {
+    "aiTool": "AI-værktøj",
+    "introduce": "Introduktion",
+    "videoCount": "Videoer",
+    "creatorsCount": "Skabere",
+    "monthlyTraffic": "Månedstrafik",
+    "avgViews": "Gn. visninger",
+    "avgInteractions": "Gn. interaktioner",
+    "totalViews": "Samlede visn.",
+    "totalInteractions": "Samlede inter.",
+    "emptyState": "Ingen data fundet",
+    "pageIndicator": "Side {page} af {lastPage}",
+    "updatedAt": "Opdateringsdato",
+    "totalEngagement": "Samlet engagement"
+  },
+  "search": {
+    "placeholder": "Indtast værktøjsnavn eller domæne"
+  },
+  "detail": {
+    "viewTool": "Vis værktøjsdetaljer",
+    "tabs": {
+      "socialListening": "Social Lytning"
+    },
+    "stats": {
+      "monthlyVisits": "Månedlige besøg",
+      "growth": "Vækst",
+      "growthRate": "Vækstrate",
+      "socialVideos": "Sociale videoer",
+      "newLastWeek": "Nye denne uge"
+    },
+    "metrics": {
+      "avgViews": "Gn. visninger",
+      "totalVideos": "Samlede videoer",
+      "totalCreators": "Samlede skabere",
+      "totalViews": "Samlede vis. / Gn.",
+      "totalLikes": "Likes / Gn.",
+      "totalComments": "Komm. / Gn.",
+      "totalShares": "Samlede delinger",
+      "totalCollects": "Samlede gemte",
+      "totalQuotes": "Samlede citater",
+      "totalReposts": "Samlede gendelinger"
+    },
+    "platforms": {
+      "all": "Alle"
+    },
+    "feed": {
+      "unlockCta": "Lås op for at se mere",
+      "unlockDesc": "Log ind for at se fulde videoanalyser",
+      "viewNow": "Se nu →",
+      "sortBy": "Sortér efter",
+      "sortViews": "Visninger",
+      "sortLikes": "Synes godt om",
+      "sortDate": "Dato",
+      "loadMore": "Indlæs mere",
+      "searchPlaceholder": "Søg efter titel eller skaber...",
+      "emptyState": "Ingen indlæg fundet. Kun videoindlæg vises her.",
+      "untitledPost": "Indlæg uden titel",
+      "metrics": {
+        "views": "Visninger",
+        "likes": "Synes godt om",
+        "shares": "Delinger",
+        "replies": "Svar",
+        "comments": "Kommentarer",
+        "quotes": "Citater",
+        "saves": "Gemt",
+        "collects": "Samlinger",
+        "upvotes": "Stemmer op",
+        "follows": "Følgere",
+        "retweets": "Retweets"
+      },
+      "sortComments": "Kommentarer",
+      "sortShares": "Aktier",
+      "title": "Socialt foder"
+    },
+    "traffic": {
+      "bounceRate": "Afvisningsrate",
+      "pagesPerVisit": "Sider / Besøg",
+      "avgVisitDuration": "Gn. besøgsvarighed",
+      "globalRanking": "Global rangering",
+      "category": "Kategori",
+      "categoryRanking": "Kategorirangering",
+      "deviceSplit": "Desktop vs. Mobil",
+      "desktop": "Skrivebord",
+      "mobile": "Mobil",
+      "trafficSources": "Trafikkilder",
+      "topRegions": "Topp lande",
+      "processingMsg": "Trafikdata behandles. Vend tilbage senere.",
+      "monthlyTrafficTrend": "Månedlig trafiktendens",
+      "monthlyTrafficTrendDesc": "Globale historiske besøg i løbet af de sidste 30 dage",
+      "sourceWebsiteInsight": "Kilde: Website Insight Global"
+    },
+    "pricing": {
+      "notDocumented": "Prisplaner er ikke dokumenteret endnu.",
+      "checkWebsite": "Tjek officielt websted",
+      "visitWebsite": "Besøg websted",
+      "month": "måned"
+    },
+    "lastUpdated": "Sidst opdateret",
+    "influencers": {
+      "title": "Top influencers",
+      "name": "Skaber",
+      "platform": "Platforme",
+      "videos": "Videoer",
+      "reach": "Est. Nå"
+    },
+    "filterInteraction": "Filter interaktion"
+  },
+  "platforms": {
+    "all": "Alle platforme"
+  },
+  "monitors": {
+    "title": "Dine skærme",
+    "subtitle": "Spor specifikke søgeord på tværs af sociale platforme",
+    "inputPlaceholder": "Indtast søgeord (f.eks. ChatGPT, Midjourney)",
+    "addButton": "Start sporing",
+    "emptyTitle": "Ingen aktive skærme",
+    "emptyDesc": "Tilføj et søgeord ovenfor for at begynde at overvåge sociale omtaler og følelser.",
+    "keyword": "Søgeord",
+    "platform": "Platforme",
+    "lastActive": "Sidst aktive",
+    "addSuccess": "Skærm tilføjet med succes!",
+    "addError": "Kunne ikke tilføje skærm",
+    "statusTracking": "Sporing",
+    "status": "Status"
+  },
+  "socialListeningTitle": "Leaderboard for social lytning",
+  "pagination": {
+    "prev": "Forrige",
+    "next": "Næste",
+    "page": "Side"
+  },
+  "nav": {
+    "overview": "Oversigt",
+    "traffic": "Trafik",
+    "pricing": "Prissætning",
+    "social": "Social"
+  },
+  "locked": {
+    "quotaTitle": "Funktion låst",
+    "quotaDesc": "Du har nået din kvote for social listening. Opgrader for at låse op for flere indsigter.",
+    "upgradeBtn": "Opgrader nu",
+    "overlayTitle": "Premium-funktion",
+    "overlayDesc": "Denne funktion kræver et aktivt premium-abonnement.",
+    "unlockBtn": "Lås op for Premium"
+  }
+}

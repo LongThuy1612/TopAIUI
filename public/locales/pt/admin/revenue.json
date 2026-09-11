@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Receita e Saúde Financeira",
+    "totalRevenue": "Receita Total",
+    "mrr": "MRR (recorrente mensal)",
+    "mrrDescription": "Receita recorrente estimada com base em assinaturas ativas",
+    "breakdown": "Detalhamento da receita",
+    "revenueGrowth": "Crescimento da receita (30 dias)",
+    "noData": "Não há dados de receita disponíveis",
+    "noTrendsData": "Nenhum dado de crescimento encontrado nos últimos 30 dias",
+    "comingSoon": "Em breve"
+  }
+}

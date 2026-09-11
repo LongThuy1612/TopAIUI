@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Personvernerklæring - TopAICollection",
+    "description": "Lær hvordan TopAICollection samler inn, bruker og beskytter din personlige informasjon."
+  },
+  "title": "Personvernerklæring",
+  "lastUpdated": "Sist oppdatert",
+  "introduction": "Hos TopAICollection tar vi personvernet ditt på alvor. Denne personvernerklæringen forklarer hvordan vi samler inn, bruker, avslører og beskytter informasjonen din når du besøker nettstedet vårt.",
+  "sections": {
+    "collection": {
+      "title": "Informasjon vi samler inn",
+      "content": [
+        "Personlig informasjon du oppgir (navn, e-post osv.)",
+        "Bruksdata (besøkte sider, brukt tid, klikk)",
+        "Enhetsinformasjon (nettlesertype, IP-adresse)",
+        "Informasjonskapsler og lignende sporingsteknologier"
+      ]
+    },
+    "usage": {
+      "title": "Hvordan vi bruker informasjonen din",
+      "content": [
+        "For å tilby og vedlikeholde tjenesten vår",
+        "For å varsle deg om endringer i tjenesten vår",
+        "For å gi kundestøtte",
+        "For å samle analyser eller verdifull informasjon for å forbedre tjenesten vår",
+        "For å overvåke bruken av tjenesten vår",
+        "For å oppdage, forhindre og løse tekniske problemer"
+      ]
+    },
+    "cookies": {
+      "title": "Informasjonskapsler og sporing",
+      "content": [
+        "Vi bruker informasjonskapsler for å spore aktivitet og lagre visse opplysninger",
+        "Informasjonskapsler hjelper oss å forstå brukerpreferanser og forbedre opplevelsen",
+        "Du kan instruere nettleseren din til å nekte alle informasjonskapsler",
+        "Hvis du ikke godtar informasjonskapsler, kan det hende at noen deler av tjenesten vår ikke er tilgjengelig"
+      ]
+    },
+    "security": {
+      "title": "Datasikkerhet",
+      "content": [
+        "Vi bruker kommersielt akseptable midler for å beskytte din personlige informasjon",
+        "Ingen overføringsmetode over Internett er 100 % sikker",
+        "Vi kan ikke garantere absolutt sikkerhet for dataene dine",
+        "Vi gjennomgår regelmessig sikkerhetsrutinene våre og oppdaterer etter behov"
+      ]
+    },
+    "sharing": {
+      "title": "Informasjonsdeling",
+      "content": [
+        "Vi selger, bytter eller leier ikke ut personopplysningene dine",
+        "Vi kan dele informasjon med pålitelige partnere som hjelper oss",
+        "Vi kan utlevere informasjon dersom loven krever det",
+        "Ved fusjon eller oppkjøp kan dataene dine bli overført"
+      ]
+    },
+    "rights": {
+      "title": "Dine rettigheter",
+      "content": [
+        "Få tilgang til dine personlige data",
+        "Korriger unøyaktige data",
+        "Be om sletting av dataene dine",
+        "protestere mot behandling av dine data",
+        "Be om dataportabilitet",
+        "Trekk tilbake samtykket når som helst"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakt oss",
+    "content": "Hvis du har spørsmål om denne personvernerklæringen, vennligst kontakt oss på:"
+  }
+}

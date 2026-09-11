@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} AI-tools | Ontdek de beste {tagName}-oplossingen",
+    "description": "Ontdek onze samengestelde verzameling van de beste {tagName} AI-tools. Vergelijk functies, prijzen en recensies om de perfecte {tagName}-software voor uw behoeften te vinden."
+  },
+  "notFound": {
+    "metaTitle": "Tag niet gevonden | TopAITopAICollectionCollection",
+    "metaDescription": "De tag die je zoekt bestaat niet. Ontdek andere AI-tools."
+  },
+  "breadcrumb": {
+    "home": "Thuis",
+    "tools": "Hulpmiddelen"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} AI-tools",
+    "collectionDescription": "Blader door onze directory met {tagName} AI-tools."
+  }
+}

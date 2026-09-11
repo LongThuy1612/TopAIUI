@@ -8,14 +8,18 @@ export default <Partial<Config>>{
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Manrope', 'Helvetica', 'Arial', 'sans-serif']
+      },
       colors: {
+        // Pink/rose brand identity — primary #BE185D, gradient db2777 → e11d48
         brand: {
-          50: '#eef4ff', 100: '#dbe8ff', 200: '#b8d1ff', 300: '#8ab2ff',
-          400: '#5a8cff', 500: '#2f66f5', 600: '#204ed6', 700: '#1a3fac'
+          50: '#FDF2F8', 100: '#FCE7F3', 200: '#FBCFE8', 300: '#F5B8CD',
+          400: '#DB2777', 500: '#BE185D', 600: '#9F1239', 700: '#831843', 800: '#4C0519'
         },
         ink: {
-          900: '#0f1420', 800: '#1a2133', 600: '#4a5468',
-          400: '#8892a4', 200: '#dfe3ea', 100: '#eef1f5'
+          900: '#20080F', 800: '#3B3238', 700: '#4B3F45', 600: '#6B5F66',
+          500: '#7A6570', 400: '#9C8890', 200: '#EDE5E9', 100: '#F5EEF1'
         }
       }
     }

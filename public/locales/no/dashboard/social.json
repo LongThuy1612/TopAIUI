@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Sosial overvåkning",
+    "description": "Overvåk nøkkelord på TikTok og YouTube.",
+    "table": {
+      "platform": "Plattform",
+      "keyword": "Nøkkelord",
+      "videos": "Videoer",
+      "views": "Visninger",
+      "creators": "Skapere",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Aktiv"
+    },
+    "monthlyQueries": "Månedlige søk",
+    "videosToday": "Videoer i dag",
+    "creatorsToday": "Skapere i dag",
+    "metrics": {
+      "monthlyQueries": "Månedlige spørringer",
+      "videosToday": "Videoer i dag",
+      "creatorsToday": "Skapere i dag"
+    }
+  },
+  "socialListeningTitle": "Sosial overvåkning",
+  "socialTable": {
+    "tool": "AI-verktøy",
+    "noData": "Ingen data funnet"
+  },
+  "allPlatforms": "Alle plattformer"
+}

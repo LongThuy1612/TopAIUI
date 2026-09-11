@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Tillbaka till instrumentpanelen",
+    "backToHome": "Tillbaka till hem",
+    "dashboard": "Översikt",
+    "websiteInsights": "Webbplatsinsikter",
+    "socialListening": "Social lyssning",
+    "researchReport": "Forskningsrapport",
+    "myAis": "Mina AI",
+    "favorites": "Favoriter",
+    "profileSettings": "Profilinställningar",
+    "advertise": "Annonsera",
+    "postsLinks": "Inlägg & länkar",
+    "paymentInvoice": "Betalning & Faktura",
+    "overview": "Översikt",
+    "myInquiries": "Mina förfrågningar"
+  },
+  "logout": "Logga ut",
+  "logoutConfirmTitle": "Logga ut",
+  "logoutConfirmDescription": "Är du säker på att du vill logga ut?",
+  "upgrade": "Uppgradera",
+  "sections": {
+    "research": "FORSKNING",
+    "management": "HANTERING",
+    "business": "AFFÄRER",
+    "admin": "ADMINISTRATION",
+    "guestPost": "Gästinlägg",
+    "updateAi": "Uppdatera AI",
+    "myGpts": "Mina GPT:er"
+  },
+  "help": "Hjälp",
+  "close": "Stäng",
+  "status": {
+    "active": "Aktiv"
+  },
+  "advertiseAi": "Annonsera AI",
+  "myAis": {
+    "title": "Mina AI:er",
+    "subtitle": "Hantera och spåra prestanda för dina inskickade AI-verktyg.",
+    "empty": {
+      "cta": "Skicka in AI-verktyg"
+    }
+  }
+}

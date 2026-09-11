@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Kaikki AI-työkalut - TopAICollection",
+    "description": "Selaa täydellistä tekoälytyökalujen kokoelmaamme. Suodata luokan, suosion mukaan tai löydä uusimmat tekoälyinnovaatiot.",
+    "archiveMonthTitle": "AI-työkalut — {label} | TopAICollection",
+    "archiveMonthDescription": "Selaa AI-työkaluja, jotka on lisätty kohteeseen {label}.",
+    "archiveYearTitle": "Tekoälytyökalut – {year} | TopAICollection",
+    "archiveYearDescription": "Selaa {year}ssa lisättyjä tekoälytyökaluja.",
+    "categoryTitle": "{category} AI-työkalut | TopAICollection",
+    "categoryDescription": "Tutustu parhaisiin {category} AI-työkaluihin.",
+    "freeTitle": "Ilmaiset AI-työkalut | {title}",
+    "freeDescription": "Tutustu parhaisiin ilmaisiin tekoälytyökaluihin verkossa. {description}",
+    "newestTitle": "Uusimmat AI-työkalut | {title}",
+    "newestDescription": "Tutustu uusimpiin kokoelmaamme lisättyihin tekoälytyökaluihin."
+  },
+  "title": "Tutustu kaikkiin tekoälytyökaluihin",
+  "subtitle": "Löydä täydellinen tekoälyratkaisu kattavasta kokoelmastamme",
+  "filters": {
+    "all": "Kaikki työkalut",
+    "today": "Tänään",
+    "featured": "Esittelyssä",
+    "new": "Juuri käynnistetty",
+    "mostSaved": "Eniten pelastuneita",
+    "mostUsed": "Eniten käytetty",
+    "trending": "Trendaavat",
+    "justLaunched": "Juuri käynnistetty",
+    "title": "Suodattimet",
+    "category": "Luokka",
+    "allCategories": "Kaikki luokat",
+    "type": "Tyyppi",
+    "popular": "Suosittu",
+    "newest": "Uusin",
+    "name": "Nimi",
+    "price": "Hinta",
+    "free": "Ilmainen",
+    "paid": "Maksettu",
+    "sortBy": "Lajitteluperuste"
+  },
+  "sort": {
+    "label": "Lajitteluperuste",
+    "popular": "Suosituin",
+    "trending": "Trendaavat",
+    "newest": "Uusin ensin",
+    "rating": "Korkein arvioitu",
+    "name": "Aakkosjärjestyksessä"
+  },
+  "categories": {
+    "title": "Luokat",
+    "all": "Kaikki luokat",
+    "showMore": "Näytä lisää →",
+    "toolCount": "{count} työkalua"
+  },
+  "results": {
+    "showing": "Näytetään {start}-{end}/{total} työkalusta",
+    "error": "Virhe ladattaessa työkaluja. Yritä uudelleen.",
+    "noResults": "Ei tuloksia",
+    "tryDifferent": "Kokeile eri hakusanoja tai suodattimia."
+  },
+  "pagination": {
+    "next": "Seuraavaksi",
+    "page": "Sivu {page}"
+  },
+  "sidebar": {
+    "trending": "Nousussa nyt",
+    "noTools": "Ei trendikkäitä työkaluja",
+    "advertise": "Mainosta täällä",
+    "advertiseDesc": "Tavoita yli 5 miljoonaa AI-harrastajaa kuukausittain ja kasvata käyntien määrää",
+    "emailPlaceholder": "Sähköpostiosoite"
+  },
+  "hero": {
+    "title": "Tutustu uusimpiin tekoälytyökaluihin",
+    "subtitle": "27 955 tekoälyä ja 459 luokkaa",
+    "searchPlaceholder": "Hae tekoälytyökaluja...",
+    "search": "Haku"
+  },
+  "breadcrumb": {
+    "home": "Kotiin",
+    "tools": "Työkalut"
+  },
+  "jsonLd": {
+    "name": "AI-työkalujen hakemisto",
+    "description": "Selaa täydellistä tekoälytyökalujen hakemistoamme."
+  },
+  "badges": {
+    "featured": "Esittelyssä",
+    "new": "Uusi",
+    "trending": "Trendaavat",
+    "popular": "Suosittu",
+    "sponsored": "Sponsoroitu"
+  },
+  "share": "Jakaa",
+  "visits": "Vierailut",
+  "monthlyVisits": "Arvioidut kuukausittaiset käynnit",
+  "visit": "Vierailla",
+  "actions": {
+    "save": "Tallentaa",
+    "saved": "Tallennettu",
+    "visit": "Vierailla",
+    "share": "Jakaa",
+    "copyLink": "Kopioi linkki",
+    "shareThisTool": "Jaa tämä työkalu"
+  },
+  "growth": "Kasvu",
+  "pricing": {
+    "free": "Ilmainen"
+  }
+}

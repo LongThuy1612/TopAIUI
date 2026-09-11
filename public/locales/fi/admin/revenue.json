@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Tulot ja taloudellinen terveys",
+    "totalRevenue": "Kokonaistulot",
+    "mrr": "MRR (kuukausittain toistuva)",
+    "mrrDescription": "Arvioidut toistuvat tulot aktiivisten tilausten perusteella",
+    "breakdown": "Tulojen erittely",
+    "revenueGrowth": "Tulojen kasvu (30 päivää)",
+    "noData": "Tuottotietoja ei ole saatavilla",
+    "noTrendsData": "Kasvutietoja ei löytynyt viimeisten 30 päivän ajalta",
+    "comingSoon": "Tulee pian"
+  }
+}

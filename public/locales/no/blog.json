@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "AI-blogg og nyheter - TopAICollection",
+    "description": "Hold deg oppdatert med de siste AI-nyhetene, veiledningene, anmeldelser og innsikt fra kunstig intelligens."
+  },
+  "badge": "AI-innsikt",
+  "title": "AI-blogg og nyheter",
+  "subtitle": "Hold deg oppdatert med de siste trendene, veiledningene og innsiktene fra AI-verdenen",
+  "search": {
+    "placeholder": "Søk i artikler..."
+  },
+  "categories": {
+    "title": "Kategorier",
+    "all": "Alle artikler",
+    "news": "AI Nyheter",
+    "tutorials": "Veiledninger",
+    "reviews": "Verktøyanmeldelser",
+    "industry": "Bransjeinnsikt",
+    "guides": "Veiledninger"
+  },
+  "newsletter": {
+    "title": "Hold deg oppdatert",
+    "subtitle": "Få de siste AI-nyhetene levert til innboksen din",
+    "placeholder": "Skriv inn e-postadressen din",
+    "button": "Abonner"
+  },
+  "article": {
+    "readTime": "{minutes} min lest",
+    "published": "Publisert {date}",
+    "writtenBy": "Written & Edited by:",
+    "factCheckedBy": "Fact Checked By:"
+  },
+  "pagination": {
+    "next": "Neste",
+    "page": "Side {page} av {total}"
+  },
+  "relatedTools": "Relaterte verktøy",
+  "backToBlog": "Tilbake til bloggen",
+  "errors": {
+    "notFound": "Innlegg ikke funnet"
+  },
+  "sort": {
+    "latest": "Nyeste",
+    "oldest": "Eldste",
+    "popular": "Populære"
+  },
+  "filter": {
+    "allAuthors": "Alle forfattere",
+    "sortBy": "Sorter etter"
+  },
+  "relatedPosts": "Relaterte innlegg",
+  "faqs": "Ofte stilte spørsmål"
+}

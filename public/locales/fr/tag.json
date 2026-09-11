@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} Outils d'IA | Découvrez les meilleures solutions {tagName}",
+    "description": "Découvrez notre collection des meilleurs outils d'IA {tagName}. Comparez les fonctionnalités, les prix et les avis pour trouver le logiciel {tagName} parfait pour vos besoins."
+  },
+  "notFound": {
+    "metaTitle": "Balise introuvable | TopAICollection",
+    "metaDescription": "L étiquette que vous recherchez n existe pas. Decouvrez d autres outils IA."
+  },
+  "breadcrumb": {
+    "home": "Maison",
+    "tools": "Outils"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} Outils d'IA",
+    "collectionDescription": "Parcourez notre répertoire d'outils d'IA {tagName}."
+  }
+}

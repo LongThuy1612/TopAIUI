@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Planos de Preços - TopAICollection",
+    "description": "Preços simples e transparentes para pesquisa de IA e escuta social."
+  },
+  "title": "Preços simples e transparentes",
+  "subtitle": "Comece gratuitamente e escale à medida que cresce. Sem surpresas.",
+  "plans": {
+    "free": {
+      "name": "Grátis",
+      "banner": "Comece de graça — sem necessidade de cartão."
+    },
+    "professional": {
+      "name": "Profissional"
+    },
+    "enterprise": {
+      "name": "Empresa"
+    },
+    "free-monthly": {
+      "name": "Grátis"
+    },
+    "free-yearly": {
+      "name": "Grátis"
+    },
+    "professional-monthly": {
+      "name": "Profissional"
+    },
+    "professional-yearly": {
+      "name": "Profissional"
+    },
+    "enterprise-monthly": {
+      "name": "Empresa"
+    },
+    "enterprise-yearly": {
+      "name": "Empresa"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Mais popular"
+  },
+  "features": {
+    "websiteInsights": "Informações do site",
+    "socialListening": "Escuta social",
+    "prioritySupport": "Suporte prioritário",
+    "advertising": "Publicidade",
+    "premiumSupport": "Suporte premium"
+  },
+  "cta": {
+    "loading": "Processando...",
+    "upgrade": "Começar"
+  },
+  "comparison": {
+    "title": "Todos os planos comparados",
+    "feature": "Recurso"
+  },
+  "billing": {
+    "monthly": "Mensal",
+    "yearly": "Anual",
+    "discount20": "Economize 20%",
+    "suffixYearly": "/ano",
+    "suffixMonthly": "/mês",
+    "upgradeTitle": "Atualize seu plano de pesquisa",
+    "upgradeDesc": "Desbloqueie análises avançadas, insights sobre concorrentes e muito mais.",
+    "subscribe": "Assine agora"
+  },
+  "billingMonthly": "Mensal",
+  "billingYearly": "Anual",
+  "billingBestValue": "Economize 20%",
+  "badgePopular": "Mais populares",
+  "billingPerMonth": "/ mês",
+  "billingPerYear": "/ ano"
+}

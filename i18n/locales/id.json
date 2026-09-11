@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "Cari alat AI...",
+    "categories": "Kategori",
+    "rankings": "Peringkat",
+    "submit": "Kirim alat",
+    "admin": "Admin"
+  },
+  "hero": {
+    "titlePrefix": "Temukan",
+    "titleHighlight": "alat AI terbaik",
+    "subtitle": "Jelajahi ratusan produk AI berdasarkan kategori, bandingkan harga, dan temukan alat yang tepat untuk alur kerja Anda.",
+    "searchPlaceholder": "Cari alat AI..."
+  },
+  "stats": {
+    "tools": "alat AI terdaftar",
+    "categories": "Kategori",
+    "featured": "Alat unggulan"
+  },
+  "tabs": {
+    "heading": "Jelajahi alat",
+    "newest": "Terbaru",
+    "featured": "Paling direkomendasikan",
+    "free": "Gratis",
+    "viewAll": "Lihat semua →"
+  },
+  "announcement": {
+    "featured": "Unggulan"
+  },
+  "sidebar": {
+    "featuredTools": "Alat unggulan",
+    "topCategories": "Kategori teratas"
+  },
+  "sections": {
+    "browseByCategory": "Jelajahi berdasarkan kategori",
+    "newestTools": "Alat terbaru",
+    "featuredTools": "Alat unggulan",
+    "viewAll": "Lihat semua →",
+    "justLaunched": "Baru diluncurkan",
+    "featuredThisWeek": "Unggulan minggu ini",
+    "featuredThisWeekSubtitle": "Alat yang paling banyak disimpan dan dinilai oleh komunitas kami.",
+    "updatedDaily": "Diperbarui setiap hari",
+    "viewMore": "Lihat lebih banyak →"
+  },
+  "cta": {
+    "title": "Punya alat AI yang ingin dibagikan?",
+    "subtitle": "Tampilkan kepada orang-orang yang mencari alat seperti milikmu.",
+    "button": "Kirim alatmu"
+  },
+  "empty": {
+    "noTools": "Belum ada alat — jalankan",
+    "noResults": "Tidak ada alat ditemukan"
+  },
+  "category": {
+    "breadcrumbHome": "Beranda",
+    "allTools": "Semua alat",
+    "allToolsTitle": "Semua alat AI",
+    "allPricing": "Semua harga",
+    "sortNewest": "Terbaru lebih dulu",
+    "sortFeatured": "Unggulan lebih dulu",
+    "sortName": "Nama A–Z",
+    "toolsFound": "alat ditemukan | alat ditemukan",
+    "searchPlaceholder": "Cari alat...",
+    "filters": "Filter",
+    "viewGrid": "Tampilan kisi",
+    "viewList": "Tampilan daftar"
+  },
+  "pricing": {
+    "FREE": "Gratis",
+    "FREEMIUM": "Freemium",
+    "PAID": "Berbayar"
+  },
+  "ranking": {
+    "title": "Alat AI terbaik",
+    "subtitle": "Diperingkat berdasarkan data trafik dan pertumbuhan yang tercatat di direktori kami.",
+    "byGrowth1m": "Pertumbuhan 1 bulan",
+    "byGrowth3m": "Pertumbuhan 3 bulan",
+    "byGrowth6m": "Pertumbuhan 6 bulan",
+    "byTraffic": "Kunjungan bulanan",
+    "colRank": "Peringkat",
+    "colTool": "Alat",
+    "colVisits": "Kunjungan bulanan",
+    "colGrowth": "Pertumbuhan",
+    "colAuthority": "Otoritas domain",
+    "colCategory": "Kategori",
+    "noData": "Belum ada data peringkat."
+  },
+  "tool": {
+    "openSite": "Buka situs",
+    "save": "Simpan",
+    "saved": "Tersimpan",
+    "featured": "Unggulan",
+    "introduction": "Pengantar",
+    "addedOn": "Ditambahkan pada",
+    "monthlyVisitors": "Pengunjung bulanan",
+    "features": "Fitur utama",
+    "useCases": "Kasus penggunaan",
+    "prosAndCons": "Kelebihan dan kekurangan",
+    "pros": "Kelebihan",
+    "cons": "Kekurangan",
+    "faq": "Pertanyaan yang sering diajukan",
+    "alternatives": "Alternatif untuk",
+    "backToCategory": "Kembali ke",
+    "notFound": "Alat tidak ditemukan",
+    "similarTools": "Alat serupa",
+    "tabProductInfo": "Informasi produk",
+    "tabPricing": "Harga",
+    "tabReviews": "Ulasan",
+    "tabAnalytics": "Analitik",
+    "tabAlternatives": "Alternatif",
+    "productInformationHeading": "Informasi produk {name}",
+    "whatIs": "Apa itu {name}?",
+    "howToUseHeading": "Bagaimana cara menggunakan {name}?",
+    "reviewsHeading": "Ulasan {name} ({count})",
+    "ratingPrompt": "Apakah Anda merekomendasikan {name}? Tinggalkan komentar",
+    "whatDoYouThink": "Apa pendapat Anda?",
+    "loginToComment": "Masuk untuk berkomentar",
+    "pricingHeading": "Harga {name}",
+    "noPricingYet": "Belum ada informasi harga.",
+    "analyticsHeading": "Analitik {name}",
+    "trafficAnalysis": "Analisis trafik situs {name}",
+    "visitOverTime": "Kunjungan dari waktu ke waktu",
+    "monthlyVisits": "Kunjungan bulanan",
+    "avgVisitDuration": "Rata-rata durasi kunjungan",
+    "pagePerVisit": "Halaman per kunjungan",
+    "bounceRate": "Tingkat pentalan",
+    "noTrafficYet": "Belum ada data trafik.",
+    "badgeVerified": "Terverifikasi",
+    "badgeJustLaunched": "Baru diluncurkan",
+    "badgeFreeTool": "Alat gratis",
+    "affiliateLink": "Tautan afiliasi",
+    "couponCode": "Kode kupon",
+    "ratings": "penilaian",
+    "upvotes": "suara positif",
+    "domainAuthority": "Otoritas domain",
+    "trafficRank": "Peringkat trafik",
+    "viewCount": "Tampilan halaman"
+  },
+  "footer": {
+    "tagline": "Temukan, bandingkan, dan bagikan alat AI terbaik — dibangun dengan Nuxt & PostgreSQL.",
+    "product": "Produk",
+    "home": "Beranda",
+    "allTools": "Semua alat",
+    "submit": "Kirim alat",
+    "categories": "Kategori",
+    "company": "Perusahaan",
+    "admin": "Masuk admin",
+    "language": "Bahasa",
+    "copyright": "Semua hak dilindungi."
+  },
+  "language": {
+    "label": "Bahasa"
+  }
+}

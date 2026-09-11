@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} AI Tools | Discover the Best {tagName} Solutions",
+    "description": "Explore our curated collection of the best {tagName} AI tools. Compare features, pricing, and reviews to find the perfect {tagName} software for your needs."
+  },
+  "notFound": {
+    "metaTitle": "Tag Not Found | TopAICollection",
+    "metaDescription": "The tag you are looking for does not exist. Discover other AI tools in our collection."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} AI Tools",
+    "collectionDescription": "Browse our directory of {tagName} AI tools."
+  }
+}

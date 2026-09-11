@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Geschäftslösungen – Arbeiten Sie mit uns | TopAICollection",
+    "description": "Entdecken Sie Möglichkeiten für Geschäftspartnerschaften mit TopAICollection. Werbung, gesponserte Inhalte und mehr."
+  },
+  "title": "Geschäftslösungen",
+  "subtitle": "Arbeiten Sie mit TopAICollection zusammen, um KI-Interessierte weltweit zu erreichen",
+  "contact": {
+    "title": "Kontaktieren Sie uns"
+  },
+  "offers": {
+    "ads": "Gezielte Werbekampagnen",
+    "partnerships": "Strategische Partnerschaften",
+    "growth": "Beschleunigen Sie das Wachstum Ihres KI-Produkts",
+    "consulting": "Kundenspezifische KI-Integrationsdienste"
+  },
+  "form": {
+    "fullName": "Vollständiger Name",
+    "workEmail": "Arbeits-E-Mail",
+    "companyName": "Name der Firma",
+    "inquiryType": "Anfragetyp",
+    "selectType": "Typ auswählen",
+    "message": "Nachricht",
+    "messagePlaceholder": "Erzählen Sie uns mehr über Ihre Bedürfnisse...",
+    "inquiryTypes": {
+      "advertise": "Werben",
+      "guestPost": "Gastbeitrag",
+      "partnership": "Partnerschaft",
+      "customDevelopment": "Kundenspezifische Entwicklung",
+      "other": "Andere"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Bewerben Sie Ihr KI-Tool",
+      "description": "Sorgen Sie dafür, dass Ihr KI-Tool auf unserer Plattform prominent präsentiert wird.",
+      "link": "Erfahren Sie mehr"
+    },
+    "guestPost": {
+      "title": "Gastbeiträge und Links",
+      "description": "Veröffentlichen Sie Inhalte oder erhalten Sie Backlinks auf unserer Website mit hoher Autorität.",
+      "link": "Erfahren Sie mehr"
+    },
+    "submitTool": {
+      "title": "Senden Sie Ihr Werkzeug",
+      "description": "Fügen Sie Ihr KI-Tool kostenlos zu unserem Verzeichnis hinzu.",
+      "link": "Jetzt einreichen"
+    },
+    "customSolutions": {
+      "title": "Maßgeschneiderte Lösungen",
+      "description": "Kontaktieren Sie uns für individuelle Partnerschaftsmöglichkeiten.",
+      "link": "Kontaktieren Sie uns"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "Über 100 Partner",
+    "partnerCountSub": "Führende KI-Unternehmen vertrauen darauf",
+    "contactSupport": "Kontaktieren Sie den Support"
+  },
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "toolNameRequired": "Werkzeugname ist erforderlich",
+    "url": "Ungültige URL",
+    "descriptionMin": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
+    "categoryRequired": "Bitte wählen Sie eine Kategorie aus",
+    "email": "Ungültige E-Mail-Adresse",
+    "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+  },
+  "success": "Ihre Anfrage wurde erfolgreich übermittelt!"
+}

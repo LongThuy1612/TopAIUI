@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Paket Harga - TopAICollection",
+    "description": "Harga sederhana dan transparan untuk riset AI dan pemantauan media sosial."
+  },
+  "title": "Harga Sederhana & Transparan",
+  "subtitle": "Mulai gratis dan kembangkan seiring pertumbuhan Anda. Tanpa kejutan.",
+  "plans": {
+    "free": {
+      "name": "Gratis",
+      "banner": "Mulai gratis — tidak perlu kartu kredit."
+    },
+    "professional": {
+      "name": "Profesional"
+    },
+    "enterprise": {
+      "name": "Perusahaan"
+    },
+    "free-monthly": {
+      "name": "Gratis"
+    },
+    "free-yearly": {
+      "name": "Gratis"
+    },
+    "professional-monthly": {
+      "name": "Profesional"
+    },
+    "professional-yearly": {
+      "name": "Profesional"
+    },
+    "enterprise-monthly": {
+      "name": "Perusahaan"
+    },
+    "enterprise-yearly": {
+      "name": "Perusahaan"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Paling Populer"
+  },
+  "features": {
+    "websiteInsights": "Wawasan Situs Web",
+    "socialListening": "Mendengarkan Sosial",
+    "prioritySupport": "Dukungan Prioritas",
+    "advertising": "Periklanan",
+    "premiumSupport": "Dukungan Premium"
+  },
+  "cta": {
+    "loading": "Memproses...",
+    "upgrade": "Mulai Sekarang"
+  },
+  "comparison": {
+    "title": "Semua Paket Dibandingkan",
+    "feature": "Fitur"
+  },
+  "billing": {
+    "monthly": "Bulanan",
+    "yearly": "Tahunan",
+    "discount20": "Hemat 20%",
+    "suffixYearly": "/tahun",
+    "suffixMonthly": "/bulan",
+    "upgradeTitle": "Tingkatkan Rencana Penelitian Anda",
+    "upgradeDesc": "Dapatkan analisis tingkat lanjut, wawasan pesaing, dan banyak lagi.",
+    "subscribe": "Berlangganan Sekarang"
+  },
+  "billingMonthly": "Bulanan",
+  "billingYearly": "Tahunan",
+  "billingBestValue": "Hemat 20%",
+  "badgePopular": "Paling Populer",
+  "billingPerMonth": "/ bulan",
+  "billingPerYear": "/ tahun"
+}

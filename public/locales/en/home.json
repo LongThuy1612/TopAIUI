@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "AI Tools Directory: 1000+ Verified Free AI Tools",
+    "description": "Explore the #1 AI tools directory list. This AI tools dictionary website helps you find, compare, and launch the absolute best AI software for FREE."
+  },
+  "nav": {
+    "today": "Today",
+    "latestAI": "Latest AI",
+    "mostSaved": "Most Saved",
+    "mostUsed": "Most Used",
+    "browserPlugin": "Browser Plugin",
+    "application": "Application",
+    "discordOfAI": "Discord of AI",
+    "compareAI": "Compare AI",
+    "ariaLabel": "Main navigation"
+  },
+  "hero": {
+    "title": "Discover The Best AI Websites & Tools",
+    "subtitle": "Find the perfect AI tools for your needs from our comprehensive directory, updated daily with the latest AI innovations.",
+    "stats": {
+      "aiTools": "AI tools",
+      "categories": "categories",
+      "languages": "languages",
+      "and": "and",
+      "supporting": "supporting",
+      "description": "Comprehensive AI collection, updated daily with the latest innovations."
+    }
+  },
+  "search": {
+    "placeholder": "Find tools by AI, e.g. Video Translation AI Tool",
+    "button": "Search"
+  },
+  "sections": {
+    "featured": {
+      "title": "Featured AI Tools",
+      "description": "Discover the most popular and effective AI tools",
+      "noTools": "No featured tools available at the moment"
+    },
+    "justLaunched": {
+      "title": "Just Launched",
+      "description": "Latest AI tools and innovations",
+      "noTools": "No new tools available at the moment"
+    },
+    "categories": {
+      "title": "Browse by Category",
+      "description": "Find AI tools organized by use case and industry"
+    },
+    "trending": {
+      "title": "Trending Now",
+      "description": "Most popular AI tools this week"
+    }
+  },
+  "cta": {
+    "title": "List Your AI Tool",
+    "description": "Reach millions of potential users by listing your AI tool in our directory.",
+    "button": "Submit Your Tool",
+    "features": {
+      "exposure": "Global Exposure",
+      "traffic": "Increased Traffic",
+      "seo": "SEO Benefits"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "AI Applications",
+      "description": "Discover the best AI applications for productivity, creativity, and more."
+    },
+    "browserExtensions": {
+      "title": "AI Browser Extensions",
+      "description": "Discover the best AI browser extensions to supercharge your workflow."
+    },
+    "latestAi": {
+      "title": "Latest AI Tools",
+      "description": "Discover the newest AI tools and innovations, updated daily."
+    },
+    "mostSaved": {
+      "title": "Most Saved AI Tools",
+      "description": "Discover the most saved and bookmarked AI tools by our community."
+    },
+    "mostUsed": {
+      "title": "Most Used AI Tools",
+      "description": "Discover the most popular and widely used AI tools by our community."
+    },
+    "discord": {
+      "title": "AI Discord Communities",
+      "description": "Discover the best AI Discord communities and connect with AI enthusiasts."
+    },
+    "today": {
+      "title": "Featured AI Tools Today",
+      "description": "Discover the best AI tools featured today on TopAICollection."
+    }
+  },
+  "findMyAi": {
+    "title": "Your Personalized Recommendations",
+    "viewTool": "View Tool",
+    "noTools": "No tools matched your exact criteria. Try broadening your search!",
+    "startOver": "Start Over",
+    "finding": "Finding the best AI tools for you...",
+    "questionLabel": "Question {step} of {total}",
+    "completed": "{percentage}% Completed",
+    "questions": {
+      "category": {
+        "text": "What do you want to use AI for?",
+        "options": {
+          "Text Generation": "Text Generation",
+          "Image Creation": "Image Creation",
+          "Coding": "Coding",
+          "Video": "Video",
+          "Audio": "Audio",
+          "Productivity": "Productivity"
+        }
+      },
+      "budget": {
+        "text": "What is your budget?",
+        "options": {
+          "Free only": "Free only",
+          "Freemium": "Freemium",
+          "Paid is fine": "Paid is fine"
+        }
+      },
+      "expertise": {
+        "text": "What is your expertise level?",
+        "options": {
+          "Beginner": "Beginner",
+          "Intermediate": "Intermediate",
+          "Expert": "Expert"
+        }
+      }
+    }
+  }
+}

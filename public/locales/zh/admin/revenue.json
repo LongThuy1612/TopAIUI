@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "“收入与财务健康”",
+    "totalRevenue": "「总收入」",
+    "mrr": "“MRR（每月定期）”",
+    "mrrDescription": "“根据活跃订阅量估算的经常性收入”",
+    "breakdown": "《收入明细》",
+    "revenueGrowth": "“收入增长（30 天）”",
+    "noData": "“没有可用的收入数据”",
+    "noTrendsData": "“未找到最近 30 天内的增长数据”",
+    "comingSoon": "“即将推出”"
+  }
+}

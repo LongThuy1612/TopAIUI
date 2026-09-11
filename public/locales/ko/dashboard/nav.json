@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "대시보드로 돌아가기",
+    "backToHome": "홈으로 돌아가기",
+    "dashboard": "대시보드",
+    "websiteInsights": "웹사이트 분석",
+    "socialListening": "소셜 리스닝",
+    "researchReport": "조사 보고서",
+    "myAis": "나의 AI",
+    "favorites": "즐겨찾기",
+    "profileSettings": "프로필 설정",
+    "advertise": "광고하기",
+    "postsLinks": "게시물 및 링크",
+    "paymentInvoice": "결제 및 청구서",
+    "overview": "개요",
+    "myInquiries": "나의 문의사항"
+  },
+  "logout": "로그아웃",
+  "logoutConfirmTitle": "로그아웃",
+  "logoutConfirmDescription": "계정에서 로그아웃하시겠습니까?",
+  "upgrade": "업그레이드",
+  "sections": {
+    "research": "연구",
+    "management": "관리",
+    "business": "비즈니스",
+    "admin": "관리자",
+    "guestPost": "게스트 게시물",
+    "updateAi": "AI 업데이트",
+    "myGpts": "내 GPT"
+  },
+  "help": "도움말",
+  "close": "닫기",
+  "status": {
+    "active": "활성"
+  },
+  "advertiseAi": "AI 광고",
+  "myAis": {
+    "title": "내 AI",
+    "subtitle": "제출된 AI 도구의 성능을 관리하고 추적하세요.",
+    "empty": {
+      "cta": "AI 도구 제출"
+    }
+  }
+}

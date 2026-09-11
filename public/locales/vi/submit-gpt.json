@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Gửi GPT Của Bạn - Đưa GPT Của Bạn Lên Trang Chủ | TopAICollection",
+    "description": "Gửi GPT tùy chỉnh của bạn để được giới thiệu trong thư mục GPT của chúng tôi. Tiếp cận hàng nghìn người đam mê AI."
+  },
+  "title": "Gửi GPT Của Bạn",
+  "subtitle": "Đưa GPT tùy chỉnh của bạn lên thư mục của chúng tôi",
+  "loginRequired": "Yêu Cầu Đăng Nhập",
+  "submitButton": "Gửi GPT",
+  "whySubmit": {
+    "title": "Tại Sao Nên Gửi GPT Của Bạn?"
+  },
+  "benefits": {
+    "audience": "Tiếp cận hàng nghìn người đam mê AI mỗi ngày",
+    "instant": "Đăng tải ngay sau khi xác minh",
+    "global": "Tiếp cận toàn cầu trên tất cả các ngôn ngữ",
+    "analytics": "Theo dõi lượt click và tương tác"
+  },
+  "proTip": {
+    "title": "Mẹo Hay",
+    "desc": "Đảm bảo GPT của bạn đã được công khai và có thể truy cập qua liên kết trước khi gửi."
+  },
+  "form": {
+    "gptName": "Tên GPT",
+    "gptNamePlaceholder": "v.d. Pháp sư Code",
+    "gptUrl": "URL ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "URL Icon",
+    "gptIconPlaceholder": "Tải lên Icon",
+    "gptDescription": "Mô tả / Hướng dẫn",
+    "gptDescriptionPlaceholder": "Mô tả GPT của bạn làm gì..."
+  },
+  "validation": {
+    "required": "Trường này là bắt buộc",
+    "invalidUrl": "URL ChatGPT không hợp lệ",
+    "nameTooShort": "Tên phải có ít nhất 2 ký tự",
+    "descriptionTooShort": "Mô tả phải có ít nhất 10 ký tự",
+    "toolNameRequired": "Tên công cụ là bắt buộc",
+    "url": "URL không hợp lệ",
+    "descriptionMin": "Mô tả phải có ít nhất 10 ký tự",
+    "categoryRequired": "Vui lòng chọn danh mục",
+    "email": "Email không hợp lệ",
+    "messageMin": "Tin nhắn phải có ít nhất 10 ký tự"
+  },
+  "sidebar": {
+    "gptCount": "GPT đã gửi",
+    "gptCountSub": "và đang phát triển"
+  },
+  "success": "GPT của bạn đã được gửi thành công!"
+}

@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Topranglijst AI-tools",
+    "description": "Ontdek de meest bezochte AI-tools ter wereld op basis van echte verkeersgegevens.",
+    "subtitle": "Ontdek de meest bezochte AI-tools ter wereld op basis van echte verkeersgegevens."
+  },
+  "trending": {
+    "title": "Populaire AI-tools",
+    "description": "De snelst groeiende AI-tools van de afgelopen maand.",
+    "subtitle": "De snelst groeiende AI-tools van de afgelopen maand."
+  },
+  "category": "Categorie",
+  "noTools": "Geen gereedschap gevonden.",
+  "noToolsInCategory": "Er zijn geen tools gevonden in deze categorie.",
+  "loading": "Laden...",
+  "favorite": "Toevoegen aan favorieten",
+  "unfavorite": "Verwijderen uit favorieten",
+  "visitWebsite": "Bezoek website",
+  "errors": {
+    "general": "Kan rangschikkingsgegevens niet laden."
+  },
+  "topAI": "Top-AI",
+  "trendingAI": "Populair",
+  "period": "Periode",
+  "last7Days": "Laatste 7 dagen",
+  "lastMonth": "Vorige maand",
+  "last3Months": "Laatste 3 maanden",
+  "lastYear": "Vorig jaar",
+  "allCategories": "Alle categorieën",
+  "selectPeriod": "Selecteer Periode",
+  "rank": "Rang",
+  "tool": "Hulpmiddel",
+  "visits": "Bezoeken",
+  "growth": "Groei",
+  "actions": "Acties",
+  "leaderboard": {
+    "header": {
+      "title": "AI Tools-klassement",
+      "description": "Ontdek de meest gewaardeerde AI-tools van de community.",
+      "dailyTitle": "Top AI-tools van de dag",
+      "monthlyTitle": "Beste AI-tools van {date}",
+      "yearlyTitle": "Beste AI-tools van {date}",
+      "tabs": {
+        "daily": "Dagelijks",
+        "monthly": "Maandelijks",
+        "yearly": "Jaarlijks"
+      },
+      "prevPeriod": "Vorige periode",
+      "nextPeriod": "Volgende periode",
+      "pickDate": "Kies datum",
+      "pickMonth": "Kies maand"
+    },
+    "empty": {
+      "title": "Er zijn vandaag geen tools gelanceerd",
+      "description": "Er zijn geen gereedschappen geregistreerd voor deze specifieke datum. Probeer naar een andere dag te navigeren.",
+      "showMore": "Toon meer gereedschap",
+      "loadingMore": "Meer tools laden...",
+      "toolsListTitle": "Uitgelichte hulpmiddelen"
+    },
+    "card": {
+      "visitWebsite": "Bezoek website",
+      "loginToUpvote": "Log in om tools te kunnen stemmen"
+    },
+    "page": {
+      "errorLoading": "Kan scorebordgegevens niet laden."
+    },
+    "sidebar": {
+      "launchArchive": "Start Archief",
+      "topCategories": "Topcategorieën"
+    }
+  },
+  "categoryAI": "Categorie",
+  "regionAI": "Regio",
+  "region": "Regio",
+  "allRegions": "Wereldwijd",
+  "channelAI": "Kanaal",
+  "channel": "Kanaal",
+  "allChannels": "Alle bronnen",
+  "incomeAI": "sociaal inkomen",
+  "socialMetrics": "sociale waarde",
+  "channelVisits": "Bronbezoeken",
+  "maxResultsHint": "Beperk het maximum aantal resultaten.",
+  "regions": {
+    "us": "Verenigde Staten",
+    "gb": "Verenigd Koninkrijk",
+    "in": "India",
+    "ph": "Filippijnen",
+    "ca": "Canada",
+    "vn": "Vietnam"
+  },
+  "channels": {
+    "search": "Zoeken",
+    "social": "Sociaal",
+    "referrals": "Verwijzingen",
+    "direct": "Direct"
+  },
+  "viewDetails": "Details bekijken"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Søgeresultater",
+  "resultsFor": "Resultater for \"{query}\"",
+  "filters": "Filtre",
+  "typeFilters": "Indtast",
+  "categories": "Kategorier",
+  "noResults": "Ingen resultater fundet",
+  "tryAgain": "Prøv venligst en anden søgeterm",
+  "placeholder": "Søg AI-værktøjer...",
+  "button": "Søge",
+  "loading": "Søger...",
+  "clearFilters": "Ryd filtre",
+  "categoryLabel": "Kategori"
+}

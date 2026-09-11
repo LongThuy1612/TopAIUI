@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Pagos y Facturas",
+    "description": "Gestiona tus créditos y consulta el historial de pedidos.",
+    "adCredits": "Créditos de Anuncios",
+    "postCredits": "Créditos de Artículos",
+    "linkCredits": "Créditos de Enlaces",
+    "forSponsoredListings": "Para listados patrocinados",
+    "forGuestArticles": "Para artículos de invitado",
+    "forLinkInsertions": "Para inserciones de enlaces",
+    "buyCredits": "Comprar Créditos",
+    "noOrders": "No se encontraron pedidos.",
+    "orderHistory": "Historial de Pedidos",
+    "orderId": "ID de Pedido",
+    "amount": "Cantidad",
+    "status": "Estado",
+    "date": "Fecha",
+    "type": "Tipo",
+    "invoice": "Factura",
+    "download": "Descargar",
+    "currentPlan": "Plan Actual",
+    "freeTier": "Nivel Gratuito",
+    "freeTierDesc": "Mejora tu plan para desbloquear más funciones y análisis.",
+    "creditBalances": "Saldos de Créditos",
+    "subscriptionDetails": "Detalles de Suscripción",
+    "upgradePlan": "Mejorar Plan",
+    "credits": "Créditos",
+    "managePortal": "Gestionar Portal de Facturación",
+    "subscribe": "Suscribirse Ahora",
+    "statusActive": "Activo",
+    "planMemberSince": "Miembro de este plan",
+    "renewalDate": "Renueva el",
+    "changePlan": "Plan de cambio",
+    "redirecting": "Redirigiendo...",
+    "errorFetchingPortal": "No se pudo abrir el portal de facturación"
+  },
+  "plans": {
+    "free": {
+      "name": "Gratis"
+    },
+    "professional": {
+      "name": "Profesional"
+    },
+    "enterprise": {
+      "name": "Empresa"
+    }
+  },
+  "transactions": {
+    "noDescription": "Sus transacciones de crédito publicitario aparecerán aquí."
+  }
+}

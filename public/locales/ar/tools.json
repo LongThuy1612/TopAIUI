@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "جميع أدوات الذكاء الاصطناعي - TopAICollection",
+    "description": "تصفح مجموعتنا الكاملة من أدوات الذكاء الاصطناعي. قم بالتصفية حسب الفئة أو الشعبية أو ابحث عن أحدث ابتكارات الذكاء الاصطناعي.",
+    "archiveMonthTitle": "أدوات الذكاء الاصطناعي — {label} | TopAICollection",
+    "archiveMonthDescription": "تصفح أدوات الذكاء الاصطناعي المضافة في {label}.",
+    "archiveYearTitle": "أدوات الذكاء الاصطناعي — {year} | TopAICollection",
+    "archiveYearDescription": "تصفح أدوات الذكاء الاصطناعي المضافة في {year}.",
+    "categoryTitle": "{category} أدوات الذكاء الاصطناعي | TopAICollection",
+    "categoryDescription": "اكتشف أفضل أدوات الذكاء الاصطناعي {category}.",
+    "freeTitle": "أدوات الذكاء الاصطناعي المجانية | {title}",
+    "freeDescription": "اكتشف أفضل أدوات الذكاء الاصطناعي المجانية عبر الإنترنت. {description}",
+    "newestTitle": "أحدث أدوات الذكاء الاصطناعي | {title}",
+    "newestDescription": "تحقق من أحدث أدوات الذكاء الاصطناعي المضافة إلى مجموعتنا."
+  },
+  "title": "استكشف جميع أدوات الذكاء الاصطناعي",
+  "subtitle": "اكتشف الحل المثالي للذكاء الاصطناعي من مجموعتنا الشاملة",
+  "filters": {
+    "all": "جميع الأدوات",
+    "today": "اليوم",
+    "featured": "مميز",
+    "new": "أطلقت للتو",
+    "mostSaved": "الأكثر حفظًا",
+    "mostUsed": "الأكثر استخداما",
+    "trending": "تتجه",
+    "justLaunched": "أطلقت للتو",
+    "title": "المرشحات",
+    "category": "فئة",
+    "allCategories": "جميع الفئات",
+    "type": "يكتب",
+    "popular": "شائع",
+    "newest": "الأحدث",
+    "name": "اسم",
+    "price": "سعر",
+    "free": "حر",
+    "paid": "مدفوع",
+    "sortBy": "فرز حسب"
+  },
+  "sort": {
+    "label": "الترتيب حسب",
+    "popular": "الأكثر شعبية",
+    "trending": "تتجه",
+    "newest": "الأحدث أولا",
+    "rating": "الأعلى تقييمًا",
+    "name": "أبجديا"
+  },
+  "categories": {
+    "title": "فئات",
+    "all": "جميع الفئات",
+    "showMore": "عرض المزيد →",
+    "toolCount": "أدوات {count}."
+  },
+  "results": {
+    "showing": "عرض {start}-{end} من إجمالي {total}.",
+    "error": "خطأ في تحميل الأدوات. يرجى المحاولة مرة أخرى.",
+    "noResults": "لا توجد نتائج",
+    "tryDifferent": "يرجى تجربة كلمات رئيسية أو عوامل تصفية مختلفة."
+  },
+  "pagination": {
+    "next": "التالي",
+    "page": "الصفحة {page}"
+  },
+  "sidebar": {
+    "trending": "تتجه الآن",
+    "noTools": "لا توجد أدوات تتجه",
+    "advertise": "أعلن هنا",
+    "advertiseDesc": "يمكنك الوصول إلى أكثر من 5 ملايين من عشاق الذكاء الاصطناعي شهريًا وزيادة زياراتك",
+    "emailPlaceholder": "عنوان البريد الإلكتروني"
+  },
+  "hero": {
+    "title": "اكتشف أحدث أدوات الذكاء الاصطناعي",
+    "subtitle": "27,955 الذكاء الاصطناعي و459 فئة",
+    "searchPlaceholder": "البحث في أدوات الذكاء الاصطناعي...",
+    "search": "يبحث"
+  },
+  "breadcrumb": {
+    "home": "بيت",
+    "tools": "أدوات"
+  },
+  "jsonLd": {
+    "name": "دليل أدوات الذكاء الاصطناعي",
+    "description": "تصفح دليلنا الكامل لأدوات الذكاء الاصطناعي."
+  },
+  "badges": {
+    "featured": "مميز",
+    "new": "جديد",
+    "trending": "تتجه",
+    "popular": "شائع",
+    "sponsored": "برعاية"
+  },
+  "share": "يشارك",
+  "visits": "الزيارات",
+  "monthlyVisits": "الزيارات الشهرية المقدرة",
+  "visit": "يزور",
+  "actions": {
+    "save": "يحفظ",
+    "saved": "أنقذ",
+    "visit": "يزور",
+    "share": "يشارك",
+    "copyLink": "نسخ الوصلة",
+    "shareThisTool": "شارك هذه الأداة"
+  },
+  "growth": "نمو",
+  "pricing": {
+    "free": "حر"
+  }
+}

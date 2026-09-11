@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Temukan Alat & Situs Web AI Terbaik",
+    "description": "Jelajahi daftar direktori alat AI #1. Situs web kamus alat AI ini membantu Anda menemukan, membandingkan, dan meluncurkan perangkat lunak AI terbaik secara GRATIS."
+  },
+  "nav": {
+    "today": "Hari ini",
+    "latestAI": "AI terbaru",
+    "mostSaved": "Paling Tersimpan",
+    "mostUsed": "Paling Banyak Digunakan",
+    "browserPlugin": "Pengaya Peramban",
+    "application": "Aplikasi",
+    "discordOfAI": "Perselisihan AI (Discord)",
+    "compareAI": "Bandingkan AI",
+    "ariaLabel": "Navigasi utama"
+  },
+  "hero": {
+    "title": "Temukan Situs Web & Alat AI Terbaik",
+    "subtitle": "Temukan alat AI yang sempurna untuk kebutuhan Anda dari direktori komprehensif kami, yang diperbarui setiap hari dengan inovasi AI terbaru.",
+    "stats": {
+      "aiTools": "alat AI",
+      "categories": "kategori",
+      "languages": "bahasa",
+      "and": "Dan",
+      "supporting": "mendukung",
+      "description": "Koleksi AI yang komprehensif, diperbarui setiap hari dengan inovasi terkini."
+    }
+  },
+  "search": {
+    "placeholder": "Temukan alat dengan AI, mis. Alat AI Terjemahan Video",
+    "button": "Mencari"
+  },
+  "sections": {
+    "featured": {
+      "title": "Alat AI Unggulan",
+      "description": "Temukan alat AI paling populer dan efektif",
+      "noTools": "Tidak ada alat unggulan yang tersedia saat ini"
+    },
+    "justLaunched": {
+      "title": "Baru Saja Diluncurkan",
+      "description": "Alat dan inovasi AI terbaru",
+      "noTools": "Tidak ada alat baru yang tersedia saat ini"
+    },
+    "categories": {
+      "title": "Jelajahi berdasarkan Kategori",
+      "description": "Temukan alat AI yang diatur berdasarkan kasus penggunaan dan industri"
+    },
+    "trending": {
+      "title": "Sedang Tren Sekarang",
+      "description": "Alat AI paling populer minggu ini"
+    }
+  },
+  "cta": {
+    "title": "Cantumkan Alat AI Anda",
+    "description": "Jangkau jutaan pengguna potensial dengan mencantumkan alat AI Anda di direktori kami.",
+    "button": "Kirimkan Alat Anda",
+    "features": {
+      "exposure": "Paparan Global",
+      "traffic": "Peningkatan Lalu Lintas",
+      "seo": "Manfaat SEO"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "Aplikasi AI",
+      "description": "Temukan aplikasi AI terbaik untuk produktivitas, kreativitas, dan banyak lagi."
+    },
+    "browserExtensions": {
+      "title": "Ekstensi Peramban AI",
+      "description": "Temukan ekstensi browser AI terbaik untuk meningkatkan alur kerja Anda."
+    },
+    "latestAi": {
+      "title": "Alat AI Terbaru",
+      "description": "Temukan alat dan inovasi AI terbaru, yang diperbarui setiap hari."
+    },
+    "mostSaved": {
+      "title": "Alat AI Paling Tersimpan",
+      "description": "Temukan alat AI yang paling banyak disimpan dan ditandai oleh komunitas kami."
+    },
+    "mostUsed": {
+      "title": "Alat AI yang Paling Banyak Digunakan",
+      "description": "Temukan alat AI paling populer dan paling banyak digunakan oleh komunitas kami."
+    },
+    "discord": {
+      "title": "Komunitas Discord AI",
+      "description": "Temukan komunitas Discord AI terbaik dan terhubung dengan para penggemar AI."
+    },
+    "today": {
+      "title": "Alat AI Unggulan Hari Ini",
+      "description": "Temukan alat AI terbaik yang disorot hari ini di TopAICollection."
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "Pembuatan Teks",
+          "Image Creation": "Pembuatan Gambar",
+          "Coding": "Pemrograman",
+          "Video": "Video",
+          "Audio": "Audio",
+          "Productivity": "Produktivitas"
+        },
+        "text": "Untuk apa Anda ingin menggunakan AI?"
+      },
+      "budget": {
+        "options": {
+          "Free only": "Hanya gratis",
+          "Freemium": "Freemium",
+          "Paid is fine": "Berbayar tidak apa-apa"
+        },
+        "text": "Berapa anggaran Anda?"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "Pemula",
+          "Intermediate": "Menengah",
+          "Expert": "Ahli"
+        },
+        "text": "Apa tingkat keahlian Anda?"
+      }
+    },
+    "title": "Rekomendasi Personalisasi Anda",
+    "viewTool": "Lihat Alat",
+    "noTools": "Tidak ada alat yang cocok dengan kriteria persis Anda. Coba perluas pencarian Anda!",
+    "startOver": "Mulai Dari Awal",
+    "finding": "Mencari alat AI terbaik untuk Anda...",
+    "questionLabel": "Pertanyaan {step} dari {total}",
+    "completed": "{percentage}% Selesai"
+  }
+}

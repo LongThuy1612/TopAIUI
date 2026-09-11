@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- Granskning och analys av AI-verktyg"
+  },
+  "errors": {
+    "notFound": "Verktyget hittades inte",
+    "notFoundDescription": "Verktyget du letar efter finns inte.",
+    "serverError": "Internt serverfel.",
+    "serverErrorDescription": "Ett oväntat fel inträffade på servern. Vänligen försök igen senare."
+  },
+  "actions": {
+    "visit": "Besök webbplatsen",
+    "save": "Spara",
+    "saved": "Sparad",
+    "share": "Dela",
+    "update": "Uppdatera det här verktyget",
+    "advertise": "Annonsera detta verktyg",
+    "visitWebsite": "Besök webbplatsen",
+    "readMore": "Läs mer",
+    "readLess": "Läs mindre",
+    "openVideo": "Öppna video"
+  },
+  "cta": {
+    "visit": "Öppna webbplats",
+    "advertise": "Annonsera detta verktyg",
+    "update": "Uppdatera det här verktyget"
+  },
+  "sidebar": {
+    "category": "Kategori",
+    "tags": "Taggar"
+  },
+  "tabs": {
+    "socialListening": "Socialt lyssnande",
+    "alternatives": "Alternativ"
+  },
+  "similar": {
+    "title": "Liknande AI-verktyg"
+  },
+  "stats": {
+    "monthlyVisits": "Månatliga besök",
+    "growth": "Tillväxt",
+    "reviews": "recensioner",
+    "averageTime": "Genomsnittlig tid på plats",
+    "pagesPerVisit": "Sidor per besök",
+    "bounceRate": "Avvisningsfrekvens",
+    "visits": "Besök",
+    "reviews_formatted": "{rating} ({count} recensioner)"
+  },
+  "sections": {
+    "overview": "Översikt",
+    "reviews": "Recensioner",
+    "analytics": "Statistik",
+    "embed": "Bädda in",
+    "alternatives": "Alternativ",
+    "related": "Relaterade verktyg"
+  },
+  "details": {
+    "description": "Verktygsintroduktion:",
+    "monthlyTraffic": "Månadstrafik:",
+    "socialMedia": "Sociala medier och e-post:",
+    "company": "Företag",
+    "categories": "Kategorier",
+    "tags": "Taggar"
+  },
+  "content": {
+    "whatIs": "Vad är",
+    "howToUse": "Hur man använder",
+    "coreFeatures": "Kärnfunktioner",
+    "useCases": "Användningsfall",
+    "pricingPlans": "Prissättningsplaner",
+    "faqs": "Vanliga frågor",
+    "relatedTools": "Relaterade verktyg",
+    "productInfo": "Produktinformation",
+    "writtenBy": "Skrivet & redigerat av",
+    "factCheckedBy": "Faktagranskat av"
+  },
+  "analytics": {
+    "title": "Analytics och trafikinsikter",
+    "subtitle": "Analys av",
+    "latestTraffic": "Senaste webbplatstrafik",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Trafikkällor till webbplatsen",
+    "topKeywords": "Bästa sökorden",
+    "keyword": "Nyckelord",
+    "traffic": "Trafik",
+    "trafficSubtitle": "för att förbättra webbtrafiken",
+    "geoSubtitle": "sökmotorindikatorer",
+    "sourceSubtitle": "sökmotorindikatorer",
+    "keywordSubtitle": "sökmotorindikatorer",
+    "percentage": "Procentsats",
+    "source": "Källa",
+    "noChartData": "Inga diagramdata",
+    "noTrafficChartData": "Inga trafikdiagramdata",
+    "desktopVsMobile": "Dator vs Mobil",
+    "desktop": "Dator",
+    "mobileWeb": "Mobil",
+    "similarSites": "Liknande webbplatser",
+    "globalRank": "Global rankning",
+    "founded": "Grundat",
+    "socialInfluence": "Inflytande på sociala medier",
+    "views": "vyer",
+    "mentions": "nämner",
+    "trendHistory": "Trendhistorik",
+    "trendSubtitle": "Trafik, vyer och uppåtgående trender över tid",
+    "upvotes": "Röster för"
+  },
+  "embed": {
+    "title": "Bädda in på din webbplats",
+    "description": "Lägg till det här verktyget på din webbplats med en vacker inbäddningswidget",
+    "preview": "Förhandsvisning",
+    "code": "Bädda in kod",
+    "copy": "Kopiera kod",
+    "copied": "Kopierade!",
+    "badgeAlt": "TopAICkollektionsmärke",
+    "themes": {
+      "light": "Ljust",
+      "neutral": "Neutralt",
+      "dark": "Mörkt"
+    }
+  },
+  "alternatives": {
+    "title": "Alternativ",
+    "description": "Liknande verktyg du kanske gillar"
+  },
+  "pricing": {
+    "title": "Prissättningsplaner",
+    "subtitle": "Välj den plan som fungerar bäst för dig",
+    "popular": "Populär",
+    "getStarted": "Kom igång",
+    "disclaimer": "Priser och funktioner kan variera. Besök den officiella webbplatsen för den senaste informationen.",
+    "noPricingInfo": "Ingen prisinformation tillgänglig",
+    "free": "gratis",
+    "moreFeatures": "Fler funktioner"
+  },
+  "charts": {
+    "trafficChart": "Trafikdiagram",
+    "comingSoon": "Diagramvisualisering kommer snart"
+  },
+  "reviews": {
+    "title": "Recensioner",
+    "pointsScale": "av 5",
+    "subtitle": "Se vad samhället tycker",
+    "writeTitle": "Rekommenderar du detta verktyg?",
+    "placeholder": "Dela dina erfarenheter av det här verktyget...",
+    "privacy": "Integritetsskyddad",
+    "success": "Recensionen har skickats!",
+    "submit": "Post recension",
+    "loginToReview": "Logga in för att skicka en recension",
+    "loginLink": "Logga in",
+    "noReviews": "Inga recensioner ännu. Bli den första att recensera det här verktyget!",
+    "viewMore": "Visa alla recensioner",
+    "allReviewsTitle": "Alla recensioner för",
+    "reviewsPageTitle": "Recensioner",
+    "by": "av",
+    "verified": "Verifierad",
+    "anonymous": "Anonym användare",
+    "ratingLabel": "Betyg",
+    "commentLabel": "Kommentar",
+    "dateLabel": "Datum",
+    "page": "Sida",
+    "editReview": "Redigera recension",
+    "deleteReview": "Ta bort recension",
+    "deleteConfirm": "Är du säker på att du vill ta bort din recension?",
+    "editTitle": "Redigera din recension",
+    "updateSuccess": "Recension uppdaterad!",
+    "deleteSuccess": "Recension borttagen!",
+    "commentRequired": "Lägg till en kommentar till din recension.",
+    "ratingRequired": "Välj ett betyg.",
+    "alreadyReviewed": "Du har redan granskat det här verktyget. Använd ✏️ redigera-knappen på din recension för att uppdatera den.",
+    "sort": {
+      "label": "Sortera efter",
+      "newest": "Nyaste först",
+      "oldest": "Äldst först",
+      "highest": "Högsta betyg",
+      "lowest": "Lägsta betyg"
+    },
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "close": "Nära",
+    "userLabel": "Användare",
+    "unverify": "Ta bort verifiering",
+    "markVerified": "Markera som verifierad",
+    "confirm": "Godkänn",
+    "noReviewsFound": "Inga recensioner hittades för det här verktyget.",
+    "deleteError": "Kunde inte ta bort.",
+    "updateError": "Kunde inte uppdatera.",
+    "pagination": {
+      "showing": "Visar",
+      "of": "av",
+      "reviews": "recensioner",
+      "prev": "Föregående",
+      "next": "Nästa"
+    },
+    "actionsLabel": "Åtgärder",
+    "statusLabel": "Status"
+  },
+  "share": {
+    "title": "Dela detta verktyg"
+  },
+  "metrics": {
+    "monthlyVisits": "Månatliga besök",
+    "growth": "Tillväxt"
+  },
+  "tags": "Taggar",
+  "overview": "Översikt",
+  "howToUse": "Hur man använder",
+  "pricingPlans": "Prissättningsplaner",
+  "faqs": "Vanliga frågor",
+  "geoChart": {
+    "noData": "Inga geografiska data tillgängliga",
+    "loading": "Laddar geografisk data..."
+  },
+  "introduction": "Introduktion",
+  "description": "Beskrivning",
+  "coreFeatures": "Kärnfunktioner",
+  "useCases": "Användningsfall",
+  "screenshots": "Skärmdumpar",
+  "companyInfo": {
+    "companyName": "Företagsnamn",
+    "contactEmail": "Kontakt E-post"
+  },
+  "nav": {
+    "scrollLeft": "Bläddra åt vänster",
+    "scrollRight": "Bläddra åt höger",
+    "previous": "Föregående",
+    "next": "Nästa",
+    "imageSlide": "Bild {index}",
+    "videoSlide": "Videobild"
+  },
+  "badges": {
+    "verifiedListing": "Verifierad annons",
+    "freePlan": "Gratisplan",
+    "paidPlans": "Betalplaner & pris"
+  },
+  "dummyReviews": {
+    "c1": "Detta är ett fantastiskt AI-verktyg! Det förändrade mitt arbetsflöde helt.",
+    "c2": "Mycket bra funktioner och enkel att använda. Rekommenderas starkt.",
+    "c3": "Jag har provat många alternativ, men det här är det absolut bästa.",
+    "c4": "Utmärkt värde för priset. Gratisplanen är också mycket generös.",
+    "c5": "Bra UI och intuitiv design. Ibland lite långsamt, men överlag fantastiskt.",
+    "c6": "Ett måste-verktyg för alla professionella. Sparar mig timmar varje vecka.",
+    "c7": "Bra funktionalitet men kräver en viss inlärningskurva."
+  }
+}

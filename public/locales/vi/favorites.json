@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Công cụ đã lưu - TopAICollection",
+    "description": "Xem và quản lý các công cụ AI và trang web đã lưu của bạn"
+  },
+  "title": "Công cụ đã lưu",
+  "description": "Xem và quản lý các công cụ AI và trang web đã lưu của bạn.",
+  "emptyState": {
+    "title": "Chưa có công cụ nào được lưu",
+    "description": "Bắt đầu khám phá và lưu các công cụ AI yêu thích của bạn để dễ dàng truy cập sau này.",
+    "action": "Duyệt qua các công cụ AI"
+  },
+  "stats": {
+    "lastUpdated": "Cập nhật lần cuối {date}"
+  },
+  "filters": {
+    "all": "Tất cả",
+    "popular": "Phổ biến nhất",
+    "category": "Theo danh mục"
+  },
+  "errors": {
+    "loadFailed": "Lỗi tải danh sách yêu thích"
+  },
+  "noDescription": "Không có mô tả nào",
+  "retry": "Thử lại",
+  "actions": {
+    "addedToFavorites": "Đã thêm vào mục yêu thích",
+    "removeFromFavorites": "Xóa khỏi mục yêu thích",
+    "removedFromFavorites": "Đã xóa khỏi mục yêu thích"
+  }
+}

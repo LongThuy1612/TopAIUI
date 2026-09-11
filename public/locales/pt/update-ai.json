@@ -1,0 +1,118 @@
+{
+  "title": "Atualize sua ferramenta de IA",
+  "description": "Mantenha as informações da sua ferramenta de IA atualizadas. Atualize descrições, recursos, preços ou quaisquer outros detalhes para garantir a precisão.",
+  "hero": {
+    "title": "Suas IAs no TopAICollection",
+    "subtitle": "TopAI pode ajudá-lo a alcançar milhões de usuários de IA e seus clientes potenciais em todo o mundo."
+  },
+  "form": {
+    "toolLabel": "Ferramenta",
+    "toolHint": "PS: Se a ferramenta não for encontrada, envie-a primeiro.",
+    "toolPlaceholder": "Procure sua ferramenta..."
+  },
+  "pricing": {
+    "title": "Atualizar preços",
+    "price": "$49",
+    "period": "Uma vez",
+    "description": "Atualizaremos para você dentro de 24 horas após o pagamento."
+  },
+  "updates": {
+    "title": "Tipos de atualização suportados",
+    "types": [
+      {
+        "label": "Nome da ferramenta",
+        "description": "Atualize o nome de exibição da sua ferramenta"
+      },
+      {
+        "label": "Descrição",
+        "description": "Revise as descrições curtas e longas da sua ferramenta"
+      },
+      {
+        "label": "Categoria",
+        "description": "Alterar ou adicionar novas categorias"
+      },
+      {
+        "label": "Lista de recursos",
+        "description": "Atualize os destaques dos recursos da sua ferramenta"
+      },
+      {
+        "label": "Casos de uso",
+        "description": "Adicionar ou atualizar exemplos de casos de uso"
+      },
+      {
+        "label": "Informações sobre preços",
+        "description": "Atualizar planos e níveis de preços"
+      },
+      {
+        "label": "Perguntas frequentes",
+        "description": "Adicione ou modifique perguntas frequentes"
+      },
+      {
+        "label": "URLs e links",
+        "description": "Atualizar site, demonstração ou links sociais"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Precisa saber",
+    "items": [
+      "As atualizações são processadas em até 24 horas após a confirmação do pagamento.",
+      "Você pode atualizar vários campos em uma única solicitação.",
+      "Nossa equipe analisará e publicará suas alterações.",
+      "Se a atualização exigir esclarecimentos, entraremos em contato por e-mail.",
+      "As atualizações de captura de tela/mídia podem levar mais 24 horas."
+    ]
+  },
+  "faq": {
+    "title": "Perguntas frequentes - Atualizar IA",
+    "items": [
+      {
+        "question": "Quanto tempo leva uma atualização?",
+        "answer": "As atualizações normalmente são processadas dentro de 24 horas após o pagamento. Mudanças complexas podem exigir um período de revisão adicional."
+      },
+      {
+        "question": "O que posso atualizar?",
+        "answer": "Você pode atualizar o nome, a descrição, a categoria, os recursos, os casos de uso, os preços, as perguntas frequentes e os URLs da sua ferramenta."
+      },
+      {
+        "question": "Posso atualizar várias coisas de uma vez?",
+        "answer": "Sim! Você pode solicitar diversas atualizações em um único envio. Todas as alterações estão incluídas na taxa de US$ 49."
+      },
+      {
+        "question": "E se eu precisar fazer correções após a atualização?",
+        "answer": "Pequenas correções relacionadas à sua solicitação de atualização original serão tratadas gratuitamente dentro de 7 dias."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Por que atualizar sua ferramenta?",
+    "reasons": [
+      "Mantenha as informações precisas e atuais",
+      "Melhore a classificação e a visibilidade da pesquisa",
+      "Atualizar preços e alterações de recursos",
+      "Adicione novas capturas de tela ou demonstrações",
+      "Corrija qualquer informação desatualizada",
+      "Aprimore a descrição da sua ferramenta"
+    ]
+  },
+  "meta": {
+    "title": "Atualize sua ferramenta de IA - TopAICollection",
+    "description": "Mantenha as informações da sua ferramenta de IA atualizadas. Atualize descrições, recursos, preços ou quaisquer outros detalhes para garantir a precisão."
+  },
+  "team": "Equipe TopAICollection",
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "selectTool": "Selecione uma ferramenta para atualizar",
+    "detailsTooShort": "Os detalhes da alteração devem ter pelo menos 10 caracteres",
+    "toolNameRequired": "O nome da ferramenta é obrigatório",
+    "url": "URL inválido",
+    "descriptionMin": "A descrição deve ter pelo menos 10 caracteres",
+    "categoryRequired": "Selecione uma categoria",
+    "email": "Endereço de e-mail inválido",
+    "messageMin": "A mensagem deve ter pelo menos 10 caracteres"
+  },
+  "sidebar": {
+    "updatedCount": "ferramentas atualizadas",
+    "updatedCountSub": "este mês"
+  }
+}

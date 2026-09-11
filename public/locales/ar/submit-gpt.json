@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "أرسل GPT الخاص بك - احصل على GPT المميز | TopAICollection",
+    "description": "قم بإرسال GPT المخصص الخاص بك ليتم عرضه في دليل GPTs الخاص بنا. الوصول إلى الآلاف من عشاق الذكاء الاصطناعي."
+  },
+  "title": "أرسل GPT الخاص بك",
+  "subtitle": "احصل على GPT المخصص الخاص بك في دليلنا",
+  "loginRequired": "تسجيل الدخول مطلوب",
+  "submitButton": "إرسال GPT",
+  "whySubmit": {
+    "title": "لماذا ترسل GPT الخاص بك؟"
+  },
+  "benefits": {
+    "audience": "يمكنك الوصول إلى الآلاف من عشاق الذكاء الاصطناعي يوميًا",
+    "instant": "الإدراج الفوري عند التحقق",
+    "global": "التعرض العالمي عبر جميع اللغات",
+    "analytics": "تتبع النقرات والتفاعل"
+  },
+  "proTip": {
+    "title": "نصيحة للمحترفين",
+    "desc": "تأكد من أن GPT الخاص بك عام ويمكن الوصول إليه عبر الرابط قبل الإرسال."
+  },
+  "form": {
+    "gptName": "اسم GPT",
+    "gptNamePlaceholder": "على سبيل المثال معالج الكود",
+    "gptUrl": "عنوان URL للدردشةGPT ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "عنوان URL للرمز",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "الوصف / التعليمات",
+    "gptDescriptionPlaceholder": "قم بوصف ما يفعله GPT الخاص بك..."
+  },
+  "validation": {
+    "required": "هذه الخانة مطلوبه",
+    "invalidUrl": "عنوان URL الخاص بـ ChatGPT غير صالح",
+    "nameTooShort": "يجب أن يتكون الاسم من حرفين على الأقل",
+    "descriptionTooShort": "يجب أن يكون الوصف 10 أحرف على الأقل",
+    "toolNameRequired": "اسم الأداة مطلوب",
+    "url": "عنوان URL غير صالح",
+    "descriptionMin": "يجب أن يكون الوصف 10 أحرف على الأقل",
+    "categoryRequired": "الرجاء تحديد فئة",
+    "email": "عنوان البريد الإلكتروني غير صالح",
+    "messageMin": "يجب أن تكون الرسالة 10 أحرف على الأقل"
+  },
+  "sidebar": {
+    "gptCount": "تم إرسال نتائج GPT",
+    "gptCountSub": "ومتنامية"
+  },
+  "success": "لقد تم إرسال GPT الخاص بك بنجاح!"
+}

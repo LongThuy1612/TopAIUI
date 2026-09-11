@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "尚无 AI 工具",
+      "description": "提交您的 AI 工具，让数百万用户发现它。",
+      "cta": "提交 AI 工具"
+    },
+    "columns": {
+      "tool": "工具",
+      "status": "状态",
+      "organic": "自然流量",
+      "paid": "付费流量",
+      "impressions": "展示次数",
+      "actions": "操作"
+    },
+    "statusTooltip": {
+      "pending": "等待管理员批准"
+    },
+    "submittedToast": "您的工具已提交，正在等待审核。",
+    "warnings": {
+      "pendingView": "该工具仍在审查中，尚未公开可见。",
+      "confirmDelete": "您确定要删除此 AI 工具吗？此操作无法撤消。"
+    },
+    "submit": {
+      "tool": "提交人工智能工具",
+      "update": "更新人工智能",
+      "name": "GPT 名称",
+      "url": "聊天GPT URL",
+      "category": "类别",
+      "description": "描述",
+      "gpt": {
+        "title": "提交您的 GPT",
+        "label": "提交 GPT",
+        "description": "提交您的自定义 GPT 以被数千名用户发现。"
+      }
+    }
+  },
+  "submissions": {
+    "title": "意见书",
+    "deleteSuccess": "提交删除成功。",
+    "deleteError": "删除提交失败。",
+    "noSubmissions": "还没有访客帖子",
+    "untitled": "无标题提交",
+    "confirmDelete": "您确定要删除此提交吗？此操作无法撤消。",
+    "columns": {
+      "subject": "主题",
+      "status": "地位",
+      "date": "日期",
+      "actions": "行动"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Lähetä GPT - Hanki GPT-suositus | TopAICollection",
+    "description": "Lähetä mukautettu GPT nähdäksesi GPT-hakemistossamme. Tavoita tuhansia tekoälyn harrastajia."
+  },
+  "title": "Lähetä GPT",
+  "subtitle": "Saat mukautetun GPT:n esille hakemistossamme",
+  "loginRequired": "Kirjautuminen vaaditaan",
+  "submitButton": "Lähetä GPT",
+  "whySubmit": {
+    "title": "Miksi lähettää GPT?"
+  },
+  "benefits": {
+    "audience": "Tavoita tuhansia tekoälyn harrastajia päivittäin",
+    "instant": "Välitön listaus vahvistuksen jälkeen",
+    "global": "Globaali näkyvyys kaikilla kielillä",
+    "analytics": "Seuraa klikkauksia ja sitoutumista"
+  },
+  "proTip": {
+    "title": "Provinkki",
+    "desc": "Varmista ennen lähettämistä, että GPT on julkinen ja käytettävissä linkin kautta."
+  },
+  "form": {
+    "gptName": "GPT-nimi",
+    "gptNamePlaceholder": "esim. Ohjattu kooditoiminto",
+    "gptUrl": "ChatGPT URL-osoite",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "Kuvakkeen URL-osoite",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Kuvaus / ohjeet",
+    "gptDescriptionPlaceholder": "Kuvaile mitä GPT tekee..."
+  },
+  "validation": {
+    "required": "Tämä kenttä on pakollinen",
+    "invalidUrl": "Virheellinen ChatGPT-URL-osoite",
+    "nameTooShort": "Nimessä on oltava vähintään 2 merkkiä",
+    "descriptionTooShort": "Kuvauksen tulee olla vähintään 10 merkkiä pitkä",
+    "toolNameRequired": "Työkalun nimi vaaditaan",
+    "url": "Virheellinen URL-osoite",
+    "descriptionMin": "Kuvauksen tulee olla vähintään 10 merkkiä pitkä",
+    "categoryRequired": "Valitse luokka",
+    "email": "Virheellinen sähköpostiosoite",
+    "messageMin": "Viestin tulee olla vähintään 10 merkkiä pitkä"
+  },
+  "sidebar": {
+    "gptCount": "GPT:t lähetetty",
+    "gptCountSub": "ja kasvaa"
+  },
+  "success": "GPT on lähetetty onnistuneesti!"
+}

@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Kebijakan Privasi - TopAICollection",
+    "description": "Pelajari bagaimana TopAICollection mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda."
+  },
+  "title": "Kebijakan Privasi",
+  "lastUpdated": "Terakhir diperbarui",
+  "introduction": "Di TopAICollection, kami menjaga privasi Anda dengan serius. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan menjaga informasi Anda ketika Anda mengunjungi situs web kami.",
+  "sections": {
+    "collection": {
+      "title": "Informasi yang Kami Kumpulkan",
+      "content": [
+        "Informasi pribadi yang Anda berikan (nama, email, dll.)",
+        "Data penggunaan (halaman yang dikunjungi, waktu yang dihabiskan, klik)",
+        "Informasi perangkat (jenis browser, alamat IP)",
+        "Cookie dan teknologi pelacakan serupa"
+      ]
+    },
+    "usage": {
+      "title": "Bagaimana Kami Menggunakan Informasi Anda",
+      "content": [
+        "Untuk menyediakan dan memelihara layanan kami",
+        "Untuk memberi tahu Anda tentang perubahan pada layanan kami",
+        "Untuk memberikan dukungan pelanggan",
+        "Untuk mengumpulkan analisis atau informasi berharga untuk meningkatkan layanan kami",
+        "Untuk memantau penggunaan layanan kami",
+        "Untuk mendeteksi, mencegah dan mengatasi masalah teknis"
+      ]
+    },
+    "cookies": {
+      "title": "Cookie dan Pelacakan",
+      "content": [
+        "Kami menggunakan cookie untuk melacak aktivitas dan menyimpan informasi tertentu",
+        "Cookie membantu kami memahami preferensi pengguna dan meningkatkan pengalaman",
+        "Anda dapat menginstruksikan browser Anda untuk menolak semua cookie",
+        "Jika Anda tidak menerima cookie, beberapa bagian dari layanan kami mungkin tidak tersedia"
+      ]
+    },
+    "security": {
+      "title": "Keamanan Data",
+      "content": [
+        "Kami menggunakan cara yang dapat diterima secara komersial untuk melindungi informasi pribadi Anda",
+        "Tidak ada metode transmisi melalui Internet yang 100% aman",
+        "Kami tidak dapat menjamin keamanan absolut data Anda",
+        "Kami meninjau praktik keamanan kami secara berkala dan memperbaruinya bila diperlukan"
+      ]
+    },
+    "sharing": {
+      "title": "Berbagi Informasi",
+      "content": [
+        "Kami tidak menjual, memperdagangkan, atau menyewakan informasi pribadi Anda",
+        "Kami dapat berbagi informasi dengan mitra tepercaya yang membantu kami",
+        "Kami dapat mengungkapkan informasi jika diwajibkan oleh hukum",
+        "Jika terjadi merger atau akuisisi, data Anda dapat ditransfer"
+      ]
+    },
+    "rights": {
+      "title": "Hak Anda",
+      "content": [
+        "Akses data pribadi Anda",
+        "Memperbaiki data yang tidak akurat",
+        "Minta penghapusan data Anda",
+        "Keberatan terhadap pemrosesan data Anda",
+        "Minta portabilitas data",
+        "Tarik persetujuan kapan saja"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Hubungi kami",
+    "content": "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami di:"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Tilbage til Kontrolpanel",
+    "backToHome": "Tilbage til Hjem",
+    "dashboard": "Oversigt",
+    "websiteInsights": "Websiteindsigter",
+    "socialListening": "Social lytning",
+    "researchReport": "Forskningsrapport",
+    "myAis": "Mine AI-værktøjer",
+    "favorites": "Favoritter",
+    "profileSettings": "Profilindstillinger",
+    "advertise": "Annoncer",
+    "postsLinks": "Indlæg & Links",
+    "paymentInvoice": "Betaling & Faktura",
+    "overview": "Oversigt",
+    "myInquiries": "Mine forespørgsler"
+  },
+  "logout": "Log ud",
+  "logoutConfirmTitle": "Log ud",
+  "logoutConfirmDescription": "Er du sikker på, at du vil logge ud?",
+  "upgrade": "Opgrader",
+  "sections": {
+    "research": "FORSKNING",
+    "management": "ADMINISTRATION",
+    "business": "FORRETNING",
+    "admin": "Administrator",
+    "guestPost": "Gæsteindlæg",
+    "updateAi": "Opdater AI",
+    "myGpts": "Mine GPT'er"
+  },
+  "help": "Hjælp",
+  "close": "Luk",
+  "status": {
+    "active": "Aktiv"
+  },
+  "advertiseAi": "Annoncer AI",
+  "myAis": {
+    "title": "Mine AI'er",
+    "subtitle": "Administrer og spor ydeevnen af ​​dine indsendte AI-værktøjer.",
+    "empty": {
+      "cta": "Indsend AI-værktøj"
+    }
+  }
+}

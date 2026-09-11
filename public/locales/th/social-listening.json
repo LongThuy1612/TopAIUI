@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "การฟังทางโซเชียล - ติดตามเทรนด์ AI | TopAICollection",
+    "description": "ติดตามเทรนด์ AI บนโซเชียลมีเดีย",
+    "detailTitle": "{name} การฟังทางโซเชียล — TopAI",
+    "detailDescription": "การวิเคราะห์การฟังทางโซเชียลสำหรับ {name}",
+    "notFoundTitle": "ไม่พบเครื่องมือ - การฟังทางสังคม"
+  },
+  "title": "การฟังทางโซเชียล",
+  "subtitle": "ติดตามประสิทธิภาพวิดีโอของเครื่องมือ AI Twitter",
+  "leaderboardTitle": "กระดานผู้นำโซเชียล",
+  "leaderboardSubtitle": "ติดตามทันที Twitter",
+  "table": {
+    "aiTool": "เครื่องมือ AI",
+    "introduce": "แนะนำ",
+    "videoCount": "จำนวนวิดีโอ",
+    "creatorsCount": "จำนวนผู้สร้าง",
+    "monthlyTraffic": "การเข้าชมรายเดือน",
+    "avgViews": "ยอดชมเฉลี่ย",
+    "avgInteractions": "การโต้ตอบเฉลี่ย",
+    "totalViews": "ยอดชมทั้งหมด",
+    "totalInteractions": "การโต้ตอบทั้งหมด",
+    "emptyState": "ไม่พบข้อมูล",
+    "pageIndicator": "หน้า {page} จาก {lastPage}",
+    "updatedAt": "วันที่อัปเดต",
+    "totalEngagement": "การมีส่วนร่วมทั้งหมด"
+  },
+  "search": {
+    "placeholder": "ระบุชื่อเครื่องมือหรือโดเมน"
+  },
+  "detail": {
+    "viewTool": "ดูรายละเอียดเครื่องมือ",
+    "tabs": {
+      "socialListening": "การฟังโซเชียล"
+    },
+    "stats": {
+      "monthlyVisits": "เข้าชมรายเดือน",
+      "growth": "การเติบโต",
+      "growthRate": "อัตราการเติบโต",
+      "socialVideos": "วิดีโอโซเชียล",
+      "newLastWeek": "ใหม่สัปดาห์นี้"
+    },
+    "metrics": {
+      "avgViews": "ชมเฉลี่ย",
+      "totalVideos": "วิดีโอทั้งหมด",
+      "totalCreators": "ผู้สร้างทั้งหมด",
+      "totalViews": "ทั้งหมด / เฉลี่ย",
+      "totalLikes": "ถูกใจ / เฉลี่ย",
+      "totalComments": "ความเห็น / เฉลี่ย",
+      "totalShares": "แชร์ทั้งหมด",
+      "totalCollects": "บันทึกทั้งหมด",
+      "totalQuotes": "อ้างอิงทั้งหมด",
+      "totalReposts": "รีโพสต์ทั้งหมด"
+    },
+    "platforms": {
+      "all": "ทั้งหมด"
+    },
+    "feed": {
+      "unlockCta": "ปลดล็อกเพื่อดูเพิ่มเติม",
+      "unlockDesc": "เข้าสู่ระบบเพื่อดูบทวิเคราะห์วิดีโอ",
+      "viewNow": "ดูเดี๋ยวนี้ →",
+      "sortBy": "เรียงตาม",
+      "sortViews": "ยอดชม",
+      "sortLikes": "ถูกใจ",
+      "sortDate": "วันที่",
+      "loadMore": "โหลดเพิ่มเติม",
+      "searchPlaceholder": "ค้นหาตามชื่อเรื่องหรือผู้สร้าง...",
+      "emptyState": "ไม่พบโพสต์ แสดงเฉพาะโพสต์วิดีโอ",
+      "untitledPost": "โพสต์ไม่มีชื่อ",
+      "metrics": {
+        "views": "ยอดดู",
+        "likes": "ถูกใจ",
+        "retweets": "รีทวีต",
+        "shares": "แชร์",
+        "replies": "ตอบกลับ",
+        "comments": "ความคิดเห็น",
+        "quotes": "อ้างอิง",
+        "saves": "บันทึก",
+        "collects": "คอลเล็กชัน",
+        "upvotes": "โหวตเห็นด้วย",
+        "follows": "ผู้ติดตาม"
+      },
+      "sortComments": "ความคิดเห็น",
+      "sortShares": "หุ้น",
+      "title": "ฟีดโซเชียล"
+    },
+    "traffic": {
+      "bounceRate": "อัตราการดีดออก",
+      "pagesPerVisit": "หน้า / การเข้าชม",
+      "avgVisitDuration": "ระยะเวลาเข้าชมเฉลี่ย",
+      "globalRanking": "อันดับโลก",
+      "category": "หมวดหมู่",
+      "categoryRanking": "อันดับหมวดหมู่",
+      "deviceSplit": "เดสก์ท็อป vs มือถือ",
+      "desktop": "เดสก์ท็อป",
+      "mobile": "มือถือ",
+      "trafficSources": "แหล่งที่มาของการเข้าชม",
+      "topRegions": "ประเทศอันดับต้น",
+      "processingMsg": "กำลังประมวลผลข้อมูลการเข้าชม โปรดตรวจสอบอีกครั้ง",
+      "monthlyTrafficTrend": "แนวโน้มการเข้าชมรายเดือน",
+      "monthlyTrafficTrendDesc": "การเข้าชมประวัติศาสตร์ทั่วโลกในช่วง 30 วันที่ผ่านมา",
+      "sourceWebsiteInsight": "“ที่มา: เว็บไซต์ Insight Global”"
+    },
+    "pricing": {
+      "notDocumented": "ยังไม่มีแผนราคาให้ตรวจสอบ",
+      "checkWebsite": "ดูเว็บไซต์ทางการ",
+      "visitWebsite": "เข้าสู่เว็บไซต์",
+      "month": "เดือน"
+    },
+    "lastUpdated": "อัปเดตล่าสุด",
+    "influencers": {
+      "title": "อินฟลูเอนเซอร์ยอดนิยม",
+      "name": "ผู้สร้าง",
+      "platform": "แพลตฟอร์ม",
+      "videos": "วิดีโอ",
+      "reach": "ประมาณ เข้าถึง"
+    },
+    "filterInteraction": "ปฏิสัมพันธ์ของตัวกรอง"
+  },
+  "platforms": {
+    "all": "แพลตฟอร์มทั้งหมด"
+  },
+  "monitors": {
+    "title": "จอภาพของคุณ",
+    "subtitle": "ติดตามคำสำคัญเฉพาะบนแพลตฟอร์มโซเชียล",
+    "inputPlaceholder": "ป้อนคำหลัก (เช่น ChatGPT, Midjourney)",
+    "addButton": "เริ่มการติดตาม",
+    "emptyTitle": "ไม่มีจอภาพที่ใช้งานอยู่",
+    "emptyDesc": "เพิ่มคำหลักด้านบนเพื่อเริ่มติดตามการกล่าวถึงและความรู้สึกทางสังคม",
+    "keyword": "คำสำคัญ",
+    "platform": "แพลตฟอร์ม",
+    "status": "สถานะ",
+    "lastActive": "ใช้งานครั้งล่าสุด",
+    "addSuccess": "เพิ่มการตรวจสอบเรียบร้อยแล้ว!",
+    "addError": "ไม่สามารถเพิ่มจอภาพ",
+    "statusTracking": "การติดตาม"
+  },
+  "socialListeningTitle": "กระดานผู้นำการฟังทางสังคม",
+  "pagination": {
+    "prev": "ก่อนหน้า",
+    "next": "ต่อไป",
+    "page": "หน้าหนังสือ"
+  },
+  "nav": {
+    "overview": "ภาพรวม",
+    "social": "สังคม",
+    "traffic": "การจราจร",
+    "pricing": "ราคา"
+  },
+  "locked": {
+    "quotaTitle": "ฟีเจอร์ถูกล็อก",
+    "quotaDesc": "คุณใช้โควตาการฟังโซเชียลครบแล้ว อัปเกรดเพื่อปลดล็อกข้อมูลเชิงลึกเพิ่มเติม",
+    "upgradeBtn": "อัปเกรดตอนนี้",
+    "overlayTitle": "ฟีเจอร์พรีเมียม",
+    "overlayDesc": "ฟีเจอร์นี้จำเป็นต้องมีการสมัครสมาชิกแบบพรีเมียมที่ยังใช้งานได้อยู่",
+    "unlockBtn": "ปลดล็อกพรีเมียม"
+  }
+}

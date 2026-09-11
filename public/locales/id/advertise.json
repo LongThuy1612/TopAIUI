@@ -1,0 +1,294 @@
+{
+  "title": "Iklankan AI Anda",
+  "description": "Dapatkan penempatan premium dan eksposur maksimum untuk alat AI Anda. Jangkau ribuan pengguna potensial yang aktif mencari solusi AI.",
+  "hero": {
+    "title": "AI Anda di TopAICollection",
+    "subtitle": "TopAI dapat membantu Anda menjangkau jutaan pengguna AI dan calon pelanggan Anda di seluruh dunia.",
+    "stats": {
+      "pageViews": "5 juta+",
+      "pageViewsLabel": "Tampilan Halaman",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Kunjungan Bulanan",
+      "subscribers": "100K+",
+      "subscribersLabel": "Pelanggan",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "Pengguna Desktop",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Pengguna Terdaftar",
+      "avgTimeOnSite": "2,5m",
+      "avgTimeOnSiteLabel": "Rata-rata Waktu di Situs"
+    },
+    "benefits": [
+      "Direktori Alat AI Teratas",
+      "Tautan balik dofollow",
+      "Pengantar multi-bahasa",
+      "Daftar & Lalu Lintas selamanya",
+      "Nilai untuk Pendiri & Startup"
+    ]
+  },
+  "tabs": {
+    "submit": "Kirimkan AI",
+    "submitDesc": "Kirimkan alat AI Anda, dapatkan lalu lintas",
+    "advertise": "Iklankan AI",
+    "advertiseDesc": "Bayar per klik, promosi unggulan, penempatan iklan otomatis",
+    "guestPost": "Posting Tamu / Sisipan Tautan",
+    "guestPostDesc": "Posting tamu/penyisipan tautan di TopAI",
+    "updateAi": "Perbarui AI",
+    "updateAiDesc": "Perbarui informasi alat Anda",
+    "submitGpt": "Kirim GPT",
+    "submitGptDesc": "Kirimkan GPT Anda agar dapat digunakan lebih banyak orang",
+    "business": "Lebih Banyak Bisnis",
+    "businessDesc": "Seperti: pertukaran tautan, postingan Twitter, video, dll."
+  },
+  "form": {
+    "toolLabel": "Alat",
+    "toolHint": "PS: Jika alatnya tidak dapat ditemukan, silakan kirimkan terlebih dahulu.",
+    "toolPlaceholder": "Telusuri alat Anda...",
+    "adLandingLink": "Tautan Pendaratan Iklan",
+    "urlTitle": "Masukkan URL yang valid dimulai dengan http :// atau https ://",
+    "toolLandingPlaceholder": "/alat/...",
+    "websitePlaceholder": "https://example.com"
+  },
+  "clicks": {
+    "title": "Pilih jumlah klik yang Anda perlukan",
+    "numberOfClicks": "Jumlah klik",
+    "total": "Jumlah",
+    "payButton": "Membayar",
+    "submitButton": "Kirim"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Iklankan Contoh Alat",
+    "description": "Kami sepenuhnya mengotomatiskan tampilan iklan Anda berdasarkan algoritme kami untuk memastikan bahwa Anda bisa mendapatkan tidak kurang dari jumlah klik yang dibeli, namun kami tidak dapat menjamin kualitas klik tersebut.",
+    "note": "Prioritaskan bagi Anda untuk mengeluarkan biaya iklan agar cepat mendapatkan klik dan impresi website. Anda dapat: menjeda iklan, atau memulai iklan.",
+    "typesTitle": "Berikut beberapa jenis iklan:",
+    "mostFrequently": "Paling Sering",
+    "mostEffective": "Paling Efektif",
+    "standardDesc": "Muncul di halaman beranda, daftar, dan halaman kategori.",
+    "effectiveDesc": "Muncul di halaman pesaing Anda, dan di halaman kategori tempat Anda berada.",
+    "featured": "Unggulan*",
+    "featuredDesc1": "Lokasi unggulan di Beranda, AI Terbaru, Paling Banyak Digunakan, Paling Banyak Disimpan, Halaman Hasil Pencarian, Halaman Detail Kategori, dll.",
+    "featuredDesc2": "Di bagian atas sebagian besar halaman, akan ada posisi sponsor.",
+    "standard": "Standar",
+    "targeted": "Ditargetkan"
+  },
+  "faq": {
+    "title": "FAQ - beriklan",
+    "items": [
+      {
+        "question": "Bagaimana cara kerja periklanan?",
+        "answer": "Kami menampilkan alat Anda di posisi premium di seluruh platform kami. Anda membayar per klik, dan kami memastikan iklan Anda mendapatkan jumlah klik yang Anda beli."
+      },
+      {
+        "question": "Bisakah saya membeli klik beberapa kali?",
+        "answer": "Ya, Anda dapat membeli paket klik tambahan kapan saja untuk meningkatkan visibilitas alat Anda."
+      },
+      {
+        "question": "Bisakah saya menjeda iklan saya?",
+        "answer": "Ya, Anda dapat menjeda dan melanjutkan kampanye iklan Anda kapan saja dari dasbor Anda."
+      },
+      {
+        "question": "Analisis seperti apa yang saya dapatkan?",
+        "answer": "Anda akan menerima data terperinci tentang klik organik, klik berbayar, total klik, tayangan, dan penyimpanan."
+      }
+    ]
+  },
+  "whyAdvertise": "Mengapa Beriklan?",
+  "customPackage": {
+    "title": "Butuh Paket Khusus?",
+    "description": "Hubungi kami untuk solusi periklanan yang disesuaikan dengan tujuan spesifik Anda.",
+    "contactSales": "Hubungi Penjualan",
+    "estimatedClicks": "Perkiraan Klik",
+    "estimatedImpressions": "Perkiraan Tayangan",
+    "estimatedViews": "Perkiraan Penayangan",
+    "estimatedUnits": "Perkiraan Satuan",
+    "toolSlug": "Alat Siput",
+    "landingUrl": "Url Pendaratan",
+    "campaignParameters": "Parameter Kampanye",
+    "metricType": "Jenis Metrik",
+    "pacingType": "Tipe Kecepatan",
+    "basePrice": "Harga Dasar",
+    "totalBudget": "Jumlah Anggaran",
+    "startDate": "Tanggal Mulai",
+    "endDate": "Tanggal Berakhir",
+    "priorityBid": "Tawaran Prioritas",
+    "estimation": "Estimasi",
+    "cancel": "Batalkan",
+    "submitting": "Mengirimkan",
+    "submitProposal": "Kirim Proposal"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Penempatan Premium",
+      "description": "Tempat unggulan di halaman beranda dan kategori"
+    },
+    "targetedAudience": {
+      "title": "Pemirsa yang Ditargetkan",
+      "description": "Jangkau pengguna yang aktif mencari alat AI"
+    },
+    "analytics": {
+      "title": "Analisis",
+      "description": "Lacak kinerja dengan wawasan mendetail"
+    }
+  },
+  "campaigns": {
+    "previous": "Sebelumnya",
+    "pageOf": "Halaman {page} dari {total}",
+    "choosePlan": "Pilih Paket Anda",
+    "choosePlanDesc": "Pilih rencana di bawah untuk memperbarui atau meningkatkan kampanye Anda.",
+    "currentPlan": "Rencana Saat Ini",
+    "selectAgain": "Pilih Lagi",
+    "selectPlan": "Pilih Paket"
+  },
+  "transactions": {
+    "noDescription": "Anda belum membeli kredit iklan apa pun. Isi ulang saldo Anda untuk mulai menjalankan kampanye."
+  },
+  "meta": {
+    "title": "Iklankan Alat AI - TopAICollection",
+    "description": "Iklankan alat AI Anda kepada jutaan penggemar AI."
+  },
+  "plans": {
+    "title": "Rencana Periklanan",
+    "subtitle": "Perluas jangkauan Anda",
+    "clickTarget": "Target klik",
+    "toolRequired": "⚠ Harap masukkan nama alat Anda di atas sebelum mengirim.",
+    "empty": "Tidak ada paket iklan yang tersedia saat ini. Periksa kembali nanti.",
+    "customPlanConfig": "Konfigurasi Paket Kustom",
+    "basePrice": "Harga Dasar ($)",
+    "adPlacements": "Penempatan Iklan",
+    "applyConfig": "Terapkan Konfigurasi",
+    "configured": "dikonfigurasi",
+    "toolSlug": "Slug Alat",
+    "landingUrl": "URL Landing",
+    "campaignParameters": "Parameter Kampanye",
+    "metricType": "Jenis Metrik",
+    "pacingType": "Tipe Pacing",
+    "totalBudget": "Total Anggaran",
+    "startDate": "Tanggal Mulai",
+    "endDate": "Tanggal Berakhir",
+    "priorityBid": "Penawaran Prioritas",
+    "estimation": "Estimasi",
+    "estimatedClicks": "Perkiraan Klik",
+    "estimatedImpressions": "Perkiraan Tayangan",
+    "estimatedViews": "Perkiraan Tampilan",
+    "estimatedUnits": "Perkiraan {metric} Unit",
+    "submitProposal": "Kirim Proposal Kustom",
+    "submitting": "Mensubmit...",
+    "cancel": "Batal",
+    "customBid": {
+      "title": "Penawaran Kinerja Kustom",
+      "budgetLabel": "Jumlah Anggaran ($)",
+      "budgetDescription": "Jumlah total yang ingin Anda belanjakan.",
+      "priorityBidLabel": "Pengganda Tawaran Prioritas",
+      "priorityBidDescription": "Tawaran lebih tinggi = frekuensi kemunculan lebih tinggi.",
+      "minBudget": "Anggaran minimum adalah $10",
+      "minBid": "Tawaran minimum adalah $0,01"
+    },
+    "placeholders": {
+      "toolSlug": "alat-saya yang luar biasa",
+      "landingUrl": "https://...",
+      "metricType": "BPA",
+      "pacingType": "BAHKAN"
+    }
+  },
+  "submit": {
+    "button": "Kirim Permintaan Kampanye",
+    "submitting": "Mengirim…",
+    "error": "Pengiriman gagal. Silakan coba lagi.",
+    "successTitle": "Kampanye Terkirim!",
+    "budgetLabel": "Tetapkan Anggaran Kampanye ($ USD)",
+    "success": "Kampanye berhasil dibuat!",
+    "untitled": "Kampanye Tanpa Judul",
+    "missingTool": "URL Alat atau Target diperlukan",
+    "loginRequiredTitle": "Otentikasi Diperlukan",
+    "loginRequiredDesc": "Silakan masuk untuk mengirimkan alat. Kemajuan Anda tidak akan disimpan sampai Anda mengautentikasi."
+  },
+  "sidebar": {
+    "pageViews": "Tampilan Halaman",
+    "pageViewsSub": "Lalu lintas halaman bulanan"
+  },
+  "details": "Detail Iklan",
+  "duration": "Durasi (hari)",
+  "selectDuration": "Pilih durasi",
+  "days": "{hitungan, jamak, =1 {1 day} lainnya {# days}}",
+  "preferredPlacement": "Penempatan Pilihan",
+  "selectPlacement": "Pilih penempatan",
+  "placements": {
+    "homepageBanner": "Spanduk Beranda",
+    "sidebar": "Bilah samping",
+    "categoryPage": "Halaman Kategori",
+    "newsletter": "Buletin",
+    "HOME": "Halaman Beranda",
+    "CATEGORY": "Halaman Kategori",
+    "SEARCH": "Hasil Pencarian",
+    "TOOL_DETAIL": "Halaman Detail Alat"
+  },
+  "targetAudience": "Target Pemirsa",
+  "targetAudiencePlaceholder": "Jelaskan target audiens Anda",
+  "validation": {
+    "required": "Bidang ini wajib diisi",
+    "selectDuration": "Silakan pilih durasi iklan",
+    "selectPlacement": "Silakan pilih penempatan iklan",
+    "targetAudienceMin": "Target audiens minimal harus 10 karakter",
+    "toolNameRequired": "Nama alat wajib diisi",
+    "url": "URL tidak valid",
+    "descriptionMin": "Deskripsi minimal harus 10 karakter",
+    "categoryRequired": "Silakan pilih kategori",
+    "email": "Alamat email tidak valid",
+    "messageMin": "Pesan minimal harus 10 karakter"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "per klik",
+      "CPM": "per 1 ribu tayangan",
+      "CPV": "per tampilan",
+      "FLAT_RATE": "tarif tetap",
+      "CPC_LABEL": "BPK",
+      "CPM_LABEL": "BPS",
+      "CPV_LABEL": "Biaya Per Tayangan",
+      "FLAT_RATE_LABEL": "Tarif Tetap"
+    },
+    "units": {
+      "clicks": "klik",
+      "impressions": "tayangan",
+      "views": "dilihat",
+      "units": "unit"
+    }
+  },
+  "selected": "Terpilih",
+  "summary": {
+    "selectedPlanLabel": "Paket Iklan yang Dipilih",
+    "totalPriceLabel": "Total Harga Tetap",
+    "securityFooter": "Pembayaran aman • Aktivasi instan • Analisis lengkap"
+  },
+  "charts": {
+    "cpc": "BPK ($)",
+    "cpm": "BPS ($)",
+    "noData": "Tidak ada data historis yang tersedia"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Ei vielä AI-työkaluja",
+      "description": "Lähetä AI-työkalusi miljoonien käyttäjien löydettäväksi.",
+      "cta": "Lähetä AI-työkalu"
+    },
+    "columns": {
+      "tool": "Työkalu",
+      "status": "Tila",
+      "organic": "Orgaaninen liikenne",
+      "paid": "Maksettu liikenne",
+      "impressions": "Näyttökerrat",
+      "actions": "Toiminnot"
+    },
+    "statusTooltip": {
+      "pending": "Odottaa ylläpitäjän hyväksyntää"
+    },
+    "submittedToast": "Työkalusi on lähetetty ja se odottaa tarkistusta.",
+    "warnings": {
+      "pendingView": "Tämä työkalu on edelleen tarkistettavana, eikä se ole vielä näkyvissä julkisesti.",
+      "confirmDelete": "Haluatko varmasti poistaa tämän tekoälytyökalun? Tätä toimintoa ei voi kumota."
+    },
+    "submit": {
+      "tool": "Lähetä AI-työkalu",
+      "update": "Päivitä AI",
+      "name": "GPT nimi",
+      "url": "ChatGPT URL-osoite",
+      "category": "Luokka",
+      "description": "Kuvaus",
+      "gpt": {
+        "title": "Lähetä GPT",
+        "label": "Lähetä GPT",
+        "description": "Lähetä mukautettu GPT, jotta tuhannet käyttäjät löytävät sinut."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Lähetykset",
+    "deleteSuccess": "Lähetyksen poistaminen onnistui.",
+    "deleteError": "Lähetyksen poistaminen epäonnistui.",
+    "noSubmissions": "Vieraspostauksia ei vielä ole",
+    "untitled": "Nimetön lähetys",
+    "confirmDelete": "Haluatko varmasti poistaa tämän lähetyksen? Tätä toimintoa ei voi kumota.",
+    "columns": {
+      "subject": "Aihe",
+      "status": "Tila",
+      "date": "Päivämäärä",
+      "actions": "Toiminnot"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Ofte stillede spørgsmål - TopAICollection",
+    "description": "Find svar på almindelige spørgsmål om TopAICollection, og hvordan du bruger vores AI-værktøjskatalog."
+  },
+  "badge": "Hjælpecenter",
+  "title": "Ofte stillede spørgsmål",
+  "subtitle": "Find svar på almindelige spørgsmål om TopAICollection",
+  "categories": {
+    "general": "Generelle spørgsmål",
+    "tools": "Om AI-værktøjer",
+    "submission": "Indsendelse af værktøj",
+    "account": "Konto og fakturering"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Hvad er TopAICollection?",
+        "answer": "TopAICollection er en omfattende oversigt over AI-værktøjer og websteder. Vi hjælper brugere med at finde de bedste AI-løsninger til deres behov, fra produktivitetsværktøjer til kreative applikationer."
+      },
+      "1": {
+        "question": "Hvordan finder jeg det rigtige AI-værktøj?",
+        "answer": "Du kan browse efter kategori, bruge vores søgefunktion eller tjekke vores udvalgte og trending sektioner. Hvert værktøj indeholder detaljerede beskrivelser, brugeranmeldelser og vurderinger for at hjælpe dig med at træffe en informeret beslutning."
+      },
+      "2": {
+        "question": "Er TopAICollection gratis at bruge?",
+        "answer": "Ja! Det er helt gratis at gennemse og søge i vores bibliotek. Nogle anførte værktøjer kan have deres egen prissætning, som tydeligt er angivet på hvert værktøjs side."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Hvordan vælges værktøjer til mappen?",
+        "answer": "Vi gennemgår omhyggeligt hver indsendelse for at sikre kvaliteten. Værktøjer skal være funktionelle, give værdi til brugerne og overholde vores retningslinjer. Vi overvejer også brugerfeedback og vurderinger."
+      },
+      "1": {
+        "question": "Hvilke oplysninger gives for hvert værktøj?",
+        "answer": "Hver værktøjsliste indeholder en beskrivelse, nøglefunktioner, prisoplysninger, brugeranmeldelser, trafikanalyse, kategorier og direkte links til værktøjets websted."
+      },
+      "2": {
+        "question": "Hvor ofte opdateres mappen?",
+        "answer": "Vores bibliotek opdateres dagligt med nye værktøjer og information. Vi overvåger løbende de listede værktøjer for at sikre nøjagtighed og fjerne alle, der ikke længere er tilgængelige."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Hvordan kan jeg indsende mit AI-værktøj?",
+        "answer": "Besøg vores Submit Tool-side og udfyld indsendelsesformularen. Angiv detaljerede oplysninger om dit værktøj, herunder dets funktioner, målgruppe og priser. Vi gennemgår alle indsendelser inden for 48 timer."
+      },
+      "1": {
+        "question": "Hvad er kravene til indsendelse af værktøj?",
+        "answer": "Dit værktøj skal være funktionelt, give klar værdi for brugerne, have en professionel hjemmeside og overholde lovkrav. Vi accepterer ikke værktøjer, der promoverer ulovlige aktiviteter eller krænker brugernes privatliv."
+      },
+      "2": {
+        "question": "Hvor meget koster det at liste et værktøj?",
+        "answer": "Grundlæggende lister er gratis. Vi tilbyder også fremhævede og premium-fortegnelser med yderligere fordele såsom prioriteret placering, salgsfremmende funktioner og avancerede analyser."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Skal jeg have en konto for at bruge TopAICollection?",
+        "answer": "Der kræves ingen konto for at gennemse og søge i vores bibliotek. Men ved at oprette en konto kan du gemme yndlingsværktøjer, skrive anmeldelser og administrere værktøjsindsendelser."
+      },
+      "1": {
+        "question": "Hvordan opgraderer jeg min værktøjsfortegnelse?",
+        "answer": "Log ind på din konto, gå til dit værktøjsstyringsdashboard, og vælg opgraderingsindstillingen. Du kan vælge mellem udvalgte eller premium-planer med månedlig eller årlig fakturering."
+      },
+      "2": {
+        "question": "Kan jeg annullere min betalte fortegnelse når som helst?",
+        "answer": "Ja, du kan til enhver tid annullere din betalte fortegnelse. Din fortegnelse vil forblive fremhævet indtil udgangen af ​​din nuværende faktureringsperiode, og derefter vende tilbage til en grundlæggende fortegnelse."
+      }
+    }
+  },
+  "cta": {
+    "title": "Har du stadig spørgsmål?",
+    "subtitle": "Vores supportteam er her for at hjælpe",
+    "button": "Kontakt support"
+  }
+}

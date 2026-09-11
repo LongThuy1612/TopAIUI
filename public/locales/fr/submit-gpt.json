@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Soumettez votre GPT - Mettez votre GPT en vedette | TopAICollection",
+    "description": "Soumettez votre GPT personnalisé pour figurer dans notre répertoire GPT. Atteignez des milliers de passionnés d’IA."
+  },
+  "title": "Soumettez votre GPT",
+  "subtitle": "Obtenez votre GPT personnalisé présenté dans notre annuaire",
+  "loginRequired": "Connexion requise",
+  "submitButton": "Soumettre un tag GPT",
+  "whySubmit": {
+    "title": "Pourquoi soumettre votre GPT ?"
+  },
+  "benefits": {
+    "audience": "Touchez quotidiennement des milliers de passionnés d’IA",
+    "instant": "Annonce instantanée après vérification",
+    "global": "Exposition mondiale dans toutes les langues",
+    "analytics": "Suivez les clics et l'engagement"
+  },
+  "proTip": {
+    "title": "Conseil de pro",
+    "desc": "Assurez-vous que votre GPT est public et accessible via un lien avant de le soumettre."
+  },
+  "form": {
+    "gptName": "Nom GPT",
+    "gptNamePlaceholder": "par ex. Assistant de code",
+    "gptUrl": "URL ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "URL de l'icône",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Descriptif/Instructions",
+    "gptDescriptionPlaceholder": "Décrivez ce que fait votre GPT..."
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "invalidUrl": "URL ChatGPT invalide",
+    "nameTooShort": "Le nom doit comporter au moins 2 caractères",
+    "descriptionTooShort": "La description doit comporter au moins 10 caractères",
+    "toolNameRequired": "Le nom de l'outil est obligatoire",
+    "url": "URL invalide",
+    "descriptionMin": "La description doit comporter au moins 10 caractères",
+    "categoryRequired": "Veuillez sélectionner une catégorie",
+    "email": "Adresse e-mail invalide",
+    "messageMin": "Le message doit contenir au moins 10 caractères"
+  },
+  "sidebar": {
+    "gptCount": "GPT soumis",
+    "gptCountSub": "et en pleine croissance"
+  },
+  "success": "Votre GPT a été soumis avec succès !"
+}

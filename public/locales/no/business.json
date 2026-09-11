@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Forretningsløsninger - samarbeid med oss ​​| TopAI TopAICollectionCollection",
+    "description": "Utforsk muligheter for forretningspartnerskap med TopAICollection. Reklame, sponset innhold og mer."
+  },
+  "title": "Forretningsløsninger",
+  "subtitle": "Partner med TopAICollection for å nå AI-entusiaster over hele verden",
+  "contact": {
+    "title": "Ta kontakt"
+  },
+  "offers": {
+    "ads": "Kjør målrettede annonsekampanjer",
+    "partnerships": "Utforsk strategiske partnerskap",
+    "growth": "Få fart på veksten av AI-produktet",
+    "consulting": "Tilpassede AI-integrasjonstjenester"
+  },
+  "form": {
+    "fullName": "Fullt navn",
+    "workEmail": "E-post på jobb",
+    "companyName": "Firmanavn",
+    "inquiryType": "Forespørselstype",
+    "selectType": "Velg type",
+    "message": "Beskjed",
+    "messagePlaceholder": "Fortell oss mer om dine behov...",
+    "inquiryTypes": {
+      "advertise": "Reklamere",
+      "guestPost": "Gjesteinnlegg",
+      "partnership": "Samarbeid",
+      "customDevelopment": "Tilpasset utvikling",
+      "other": "Annen"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Annonser ditt AI-verktøy",
+      "description": "Få AI-verktøyet ditt fremtredende på plattformen vår.",
+      "link": "Lær mer"
+    },
+    "guestPost": {
+      "title": "Gjesteinnlegg og lenker",
+      "description": "Publiser innhold eller få tilbakekoblinger på nettstedet vårt med høy autoritet.",
+      "link": "Lær mer"
+    },
+    "submitTool": {
+      "title": "Send inn verktøyet ditt",
+      "description": "Legg til AI-verktøyet ditt gratis i katalogen vår.",
+      "link": "Send inn nå"
+    },
+    "customSolutions": {
+      "title": "Tilpassede løsninger",
+      "description": "Kontakt oss for tilpassede partnerskapsmuligheter.",
+      "link": "Kontakt oss"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100+ partnere",
+    "partnerCountSub": "Stolt på av ledende AI-selskaper",
+    "contactSupport": "Kontakt kundestøtte"
+  },
+  "validation": {
+    "required": "Dette feltet er obligatorisk",
+    "toolNameRequired": "Verktøynavn er påkrevd",
+    "url": "Ugyldig URL",
+    "descriptionMin": "Beskrivelsen må inneholde minst 10 tegn",
+    "categoryRequired": "Velg en kategori",
+    "email": "Ugyldig e-postadresse",
+    "messageMin": "Meldingen må være på minst 10 tegn"
+  },
+  "success": "Din forespørsel er sendt!"
+}

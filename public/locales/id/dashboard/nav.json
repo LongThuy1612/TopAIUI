@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Kembali ke Dasbor",
+    "backToHome": "Kembali ke Home",
+    "dashboard": "Dasbor",
+    "websiteInsights": "Wawasan Situs",
+    "socialListening": "Pemantauan Sosial",
+    "researchReport": "Laporan Riset",
+    "myAis": "AI Saya",
+    "favorites": "Favorit",
+    "profileSettings": "Pengaturan Profil",
+    "advertise": "Pasang Iklan",
+    "postsLinks": "Postingan & Tautan",
+    "paymentInvoice": "Pembayaran & Faktur",
+    "overview": "Ringkasan",
+    "myInquiries": "Pertanyaan Saya"
+  },
+  "logout": "Keluar",
+  "logoutConfirmTitle": "Keluar",
+  "logoutConfirmDescription": "Apakah Anda yakin muốn keluar từ tài khoản Anda?",
+  "upgrade": "Tingkatkan",
+  "sections": {
+    "research": "RISET",
+    "management": "MANAJEMEN",
+    "business": "BISNIS",
+    "admin": "Admin",
+    "guestPost": "Postingan Tamu",
+    "updateAi": "Perbarui AI",
+    "myGpts": "GPT saya"
+  },
+  "help": "Bantuan",
+  "close": "Tutup",
+  "status": {
+    "active": "Aktif"
+  },
+  "advertiseAi": "Iklankan AI",
+  "myAis": {
+    "title": "AI saya",
+    "subtitle": "Kelola dan lacak kinerja alat AI yang Anda kirimkan.",
+    "empty": {
+      "cta": "Kirim Alat AI"
+    }
+  }
+}

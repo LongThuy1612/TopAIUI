@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "Søk etter AI-verktøy...",
+    "categories": "Kategorier",
+    "rankings": "Rangeringer",
+    "submit": "Send inn et verktøy",
+    "admin": "Admin"
+  },
+  "hero": {
+    "titlePrefix": "Finn de beste",
+    "titleHighlight": "AI-verktøyene",
+    "subtitle": "Bla gjennom hundrevis av AI-produkter etter kategori, sammenlign priser, og finn det rette verktøyet for arbeidsflyten din.",
+    "searchPlaceholder": "Søk etter AI-verktøy..."
+  },
+  "stats": {
+    "tools": "AI-verktøy registrert",
+    "categories": "Kategorier",
+    "featured": "Utvalgte verktøy"
+  },
+  "tabs": {
+    "heading": "Utforsk verktøy",
+    "newest": "Nye",
+    "featured": "Mest fremhevet",
+    "free": "Gratis",
+    "viewAll": "Se alle →"
+  },
+  "announcement": {
+    "featured": "Fremhevet"
+  },
+  "sidebar": {
+    "featuredTools": "Utvalgte verktøy",
+    "topCategories": "Toppkategorier"
+  },
+  "sections": {
+    "browseByCategory": "Bla gjennom etter kategori",
+    "newestTools": "Nyeste verktøy",
+    "featuredTools": "Utvalgte verktøy",
+    "viewAll": "Se alle →",
+    "justLaunched": "Nettopp lansert",
+    "featuredThisWeek": "Fremhevet denne uken",
+    "featuredThisWeekSubtitle": "Verktøyene fellesskapet vårt har lagret og vurdert mest.",
+    "updatedDaily": "Oppdateres daglig",
+    "viewMore": "Se mer →"
+  },
+  "cta": {
+    "title": "Har du et AI-verktøy du vil dele?",
+    "subtitle": "Vis det til folk som leter etter verktøy som ditt.",
+    "button": "Send inn verktøyet ditt"
+  },
+  "empty": {
+    "noTools": "Ingen verktøy ennå — kjør",
+    "noResults": "Ingen verktøy funnet"
+  },
+  "category": {
+    "breadcrumbHome": "Hjem",
+    "allTools": "Alle verktøy",
+    "allToolsTitle": "Alle AI-verktøy",
+    "allPricing": "Alle priser",
+    "sortNewest": "Nyeste først",
+    "sortFeatured": "Fremhevet først",
+    "sortName": "Navn A–Z",
+    "toolsFound": "verktøy funnet | verktøy funnet",
+    "searchPlaceholder": "Søk etter verktøy...",
+    "filters": "Filtre",
+    "viewGrid": "Rutenettvisning",
+    "viewList": "Listevisning"
+  },
+  "pricing": {
+    "FREE": "Gratis",
+    "FREEMIUM": "Freemium",
+    "PAID": "Betalt"
+  },
+  "ranking": {
+    "title": "Beste AI-verktøy",
+    "subtitle": "Rangert etter trafikk- og vekstdata registrert i katalogen vår.",
+    "byGrowth1m": "Vekst 1 måned",
+    "byGrowth3m": "Vekst 3 måneder",
+    "byGrowth6m": "Vekst 6 måneder",
+    "byTraffic": "Månedlige besøk",
+    "colRank": "Plassering",
+    "colTool": "Verktøy",
+    "colVisits": "Månedlige besøk",
+    "colGrowth": "Vekst",
+    "colAuthority": "Domeneautoritet",
+    "colCategory": "Kategori",
+    "noData": "Ingen rangeringsdata ennå."
+  },
+  "tool": {
+    "openSite": "Åpne nettsted",
+    "save": "Lagre",
+    "saved": "Lagret",
+    "featured": "Fremhevet",
+    "introduction": "Introduksjon",
+    "addedOn": "Lagt til",
+    "monthlyVisitors": "Månedlige besøkende",
+    "features": "Viktigste funksjoner",
+    "useCases": "Brukstilfeller",
+    "prosAndCons": "Fordeler og ulemper",
+    "pros": "Fordeler",
+    "cons": "Ulemper",
+    "faq": "Ofte stilte spørsmål",
+    "alternatives": "Alternativer til",
+    "backToCategory": "Tilbake til",
+    "notFound": "Verktøy ikke funnet",
+    "similarTools": "Lignende verktøy",
+    "tabProductInfo": "Produktinformasjon",
+    "tabPricing": "Priser",
+    "tabReviews": "Anmeldelser",
+    "tabAnalytics": "Analyse",
+    "tabAlternatives": "Alternativer",
+    "productInformationHeading": "Produktinformasjon for {name}",
+    "whatIs": "Hva er {name}?",
+    "howToUseHeading": "Hvordan bruke {name}?",
+    "reviewsHeading": "Anmeldelser av {name} ({count})",
+    "ratingPrompt": "Ville du anbefalt {name}? Legg igjen en kommentar",
+    "whatDoYouThink": "Hva tenker du?",
+    "loginToComment": "Logg inn for å kommentere",
+    "pricingHeading": "Priser for {name}",
+    "noPricingYet": "Ingen prisinformasjon ennå.",
+    "analyticsHeading": "Analyse av {name}",
+    "trafficAnalysis": "Trafikkanalyse for {name}",
+    "visitOverTime": "Besøk over tid",
+    "monthlyVisits": "Månedlige besøk",
+    "avgVisitDuration": "Gj.snittlig besøkstid",
+    "pagePerVisit": "Sider per besøk",
+    "bounceRate": "Avvisningsfrekvens",
+    "noTrafficYet": "Ingen trafikkdata registrert ennå.",
+    "badgeVerified": "Verifisert",
+    "badgeJustLaunched": "Nettopp lansert",
+    "badgeFreeTool": "Gratis verktøy",
+    "affiliateLink": "Affiliate-lenke",
+    "couponCode": "Rabattkode",
+    "ratings": "vurderinger",
+    "upvotes": "oppstemmer",
+    "domainAuthority": "Domeneautoritet",
+    "trafficRank": "Trafikkrangering",
+    "viewCount": "Sidevisninger"
+  },
+  "footer": {
+    "tagline": "Finn, sammenlign og del de beste AI-verktøyene — bygget med Nuxt & PostgreSQL.",
+    "product": "Produkt",
+    "home": "Hjem",
+    "allTools": "Alle verktøy",
+    "submit": "Send inn et verktøy",
+    "categories": "Kategorier",
+    "company": "Firma",
+    "admin": "Admin-innlogging",
+    "language": "Språk",
+    "copyright": "Med enerett."
+  },
+  "language": {
+    "label": "Språk"
+  }
+}

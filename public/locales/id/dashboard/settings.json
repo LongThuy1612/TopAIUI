@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Nama Lengkap",
+      "email": "Alamat Email",
+      "emailHelp": "Email tidak dapat diubah",
+      "emailPlaceholder": "anda@contoh.com",
+      "phone": "Nomor Telepon",
+      "phonePlaceholder": "+62 (000) 000-0000",
+      "company": "Perusahaan",
+      "country": "Negara",
+      "website": "Situs Web",
+      "save": "Simpan Perubahan",
+      "saving": "Menyimpan...",
+      "saveSuccess": "Profil berhasil diperbarui."
+    },
+    "password": {
+      "title": "Ubah Kata Sandi",
+      "current": "Kata Sandi Saat Ini",
+      "new": "Kata Sandi Baru",
+      "confirm": "Konfirmasi Kata Sandi Baru",
+      "update": "Perbarui Kata Sandi"
+    },
+    "notifications": {
+      "title": "Preferensi Notifikasi",
+      "email": "Notifikasi Email",
+      "marketing": "Email Pemasaran"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "fullName": "Nama Lengkap",
+    "email": "Alamat Surel",
+    "emailHelp": "Email tidak dapat diubah",
+    "emailPlaceholder": "kamu@example.com",
+    "phone": "Nomor telepon",
+    "company": "Perusahaan",
+    "country": "Negara",
+    "website": "Situs web",
+    "save": "Simpan Perubahan",
+    "saving": "Penghematan...",
+    "saveSuccess": "Profil berhasil diperbarui.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Ubah Kata Sandi",
+    "current": "Kata Sandi Saat Ini",
+    "new": "Kata Sandi Baru",
+    "confirm": "Konfirmasi Kata Sandi Baru",
+    "update": "Perbarui Kata Sandi"
+  },
+  "notifications": {
+    "title": "Preferensi Pemberitahuan",
+    "email": "Pemberitahuan Email",
+    "marketing": "Email Pemasaran"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Keamanan",
+    "notifications": "Pemberitahuan"
+  },
+  "updated": "Pengaturan berhasil diperbarui"
+}

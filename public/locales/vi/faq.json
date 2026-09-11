@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Câu hỏi thường gặp - TopAICollection",
+    "description": "Tìm câu trả lời cho các câu hỏi phổ biến về TopAICollection và cách sử dụng thư mục công cụ AI của chúng tôi."
+  },
+  "badge": "Trung tâm trợ giúp",
+  "title": "Câu hỏi thường gặp",
+  "subtitle": "Tìm câu trả lời cho các câu hỏi phổ biến về TopAICollection",
+  "categories": {
+    "general": "Câu hỏi chung",
+    "tools": "Về công cụ AI",
+    "submission": "Gửi công cụ",
+    "account": "Tài khoản & Thanh toán"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "TopAICollection là gì?",
+        "answer": "TopAICollection là thư mục toàn diện về các công cụ và trang web AI. Chúng tôi giúp người dùng khám phá các giải pháp AI tốt nhất cho nhu cầu của họ, từ công cụ năng suất đến ứng dụng sáng tạo."
+      },
+      "1": {
+        "question": "Làm thế nào để tìm công cụ AI phù hợp?",
+        "answer": "Bạn có thể duyệt theo danh mục, sử dụng chức năng tìm kiếm hoặc kiểm tra các phần nổi bật và xu hướng. Mỗi công cụ bao gồm mô tả chi tiết, đánh giá và xếp hạng của người dùng để giúp bạn đưa ra quyết định sáng suốt."
+      },
+      "2": {
+        "question": "TopAICollection có miễn phí không?",
+        "answer": "Có! Duyệt và tìm kiếm thư mục của chúng tôi hoàn toàn miễn phí. Một số công cụ được liệt kê có thể có giá riêng, được chỉ rõ trên trang của mỗi công cụ."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Công cụ được chọn cho thư mục như thế nào?",
+        "answer": "Chúng tôi xem xét cẩn thận từng bài gửi để đảm bảo chất lượng. Công cụ phải hoạt động tốt, mang lại giá trị cho người dùng và tuân thủ hướng dẫn của chúng tôi. Chúng tôi cũng xem xét phản hồi và xếp hạng của người dùng."
+      },
+      "1": {
+        "question": "Thông tin nào được cung cấp cho mỗi công cụ?",
+        "answer": "Mỗi danh sách công cụ bao gồm mô tả, tính năng chính, thông tin giá, đánh giá của người dùng, phân tích lưu lượng, danh mục và liên kết trực tiếp đến trang web của công cụ."
+      },
+      "2": {
+        "question": "Thư mục được cập nhật bao lâu một lần?",
+        "answer": "Thư mục của chúng tôi được cập nhật hàng ngày với các công cụ và thông tin mới. Chúng tôi liên tục theo dõi các công cụ được liệt kê để đảm bảo độ chính xác và loại bỏ bất kỳ công cụ nào không còn khả dụng."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Làm thế nào để gửi công cụ AI của tôi?",
+        "answer": "Truy cập trang Gửi công cụ và điền vào biểu mẫu gửi. Cung cấp thông tin chi tiết về công cụ của bạn, bao gồm các tính năng, đối tượng mục tiêu và giá cả. Chúng tôi xem xét tất cả các bài gửi trong vòng 48 giờ."
+      },
+      "1": {
+        "question": "Yêu cầu để gửi công cụ là gì?",
+        "answer": "Công cụ của bạn phải hoạt động tốt, mang lại giá trị rõ ràng cho người dùng, có trang web chuyên nghiệp và tuân thủ các yêu cầu pháp lý. Chúng tôi không chấp nhận các công cụ quảng bá hoạt động bất hợp pháp hoặc vi phạm quyền riêng tư của người dùng."
+      },
+      "2": {
+        "question": "Chi phí để liệt kê công cụ là bao nhiêu?",
+        "answer": "Danh sách cơ bản là miễn phí. Chúng tôi cũng cung cấp danh sách nổi bật và cao cấp với các lợi ích bổ sung như vị trí ưu tiên, tính năng quảng cáo và phân tích nâng cao."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Tôi có cần tài khoản để sử dụng TopAICollection không?",
+        "answer": "Không cần tài khoản để duyệt và tìm kiếm thư mục của chúng tôi. Tuy nhiên, tạo tài khoản cho phép bạn lưu các công cụ yêu thích, viết đánh giá và quản lý các bài gửi công cụ."
+      },
+      "1": {
+        "question": "Làm thế nào để nâng cấp danh sách công cụ của tôi?",
+        "answer": "Đăng nhập vào tài khoản của bạn, vào bảng điều khiển quản lý công cụ và chọn tùy chọn nâng cấp. Bạn có thể chọn từ các gói nổi bật hoặc cao cấp với thanh toán hàng tháng hoặc hàng năm."
+      },
+      "2": {
+        "question": "Tôi có thể hủy danh sách trả phí bất cứ lúc nào không?",
+        "answer": "Có, bạn có thể hủy danh sách trả phí của mình bất cứ lúc nào. Danh sách của bạn sẽ vẫn được nổi bật cho đến khi kết thúc kỳ thanh toán hiện tại, sau đó sẽ chuyển về danh sách cơ bản."
+      }
+    }
+  },
+  "cta": {
+    "title": "Vẫn còn câu hỏi?",
+    "subtitle": "Đội ngũ hỗ trợ của chúng tôi sẵn sàng giúp đỡ",
+    "button": "Liên hệ hỗ trợ"
+  }
+}

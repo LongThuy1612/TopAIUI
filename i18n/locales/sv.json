@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "Sök AI-verktyg...",
+    "categories": "Kategorier",
+    "rankings": "Rankningar",
+    "submit": "Skicka in ett verktyg",
+    "admin": "Admin"
+  },
+  "hero": {
+    "titlePrefix": "Upptäck de bästa",
+    "titleHighlight": "AI-verktygen",
+    "subtitle": "Bläddra bland hundratals AI-produkter per kategori, jämför priser och hitta rätt verktyg för ditt arbetsflöde.",
+    "searchPlaceholder": "Sök AI-verktyg..."
+  },
+  "stats": {
+    "tools": "AI-verktyg listade",
+    "categories": "Kategorier",
+    "featured": "Utvalda verktyg"
+  },
+  "tabs": {
+    "heading": "Utforska verktyg",
+    "newest": "Nytt",
+    "featured": "Mest omtalade",
+    "free": "Gratis",
+    "viewAll": "Visa alla →"
+  },
+  "announcement": {
+    "featured": "Utvald"
+  },
+  "sidebar": {
+    "featuredTools": "Utvalda verktyg",
+    "topCategories": "Toppkategorier"
+  },
+  "sections": {
+    "browseByCategory": "Bläddra efter kategori",
+    "newestTools": "Senaste verktygen",
+    "featuredTools": "Utvalda verktyg",
+    "viewAll": "Visa alla →",
+    "justLaunched": "Nyss lanserat",
+    "featuredThisWeek": "Utvalt denna vecka",
+    "featuredThisWeekSubtitle": "Verktygen som vår community sparat och betygsatt mest.",
+    "updatedDaily": "Uppdateras dagligen",
+    "viewMore": "Visa mer →"
+  },
+  "cta": {
+    "title": "Har du ett AI-verktyg att dela?",
+    "subtitle": "Visa det för människor som letar efter verktyg som ditt.",
+    "button": "Skicka in ditt verktyg"
+  },
+  "empty": {
+    "noTools": "Inga verktyg ännu — köra",
+    "noResults": "Inga verktyg hittades"
+  },
+  "category": {
+    "breadcrumbHome": "Hem",
+    "allTools": "Alla verktyg",
+    "allToolsTitle": "Alla AI-verktyg",
+    "allPricing": "Alla priser",
+    "sortNewest": "Nyaste först",
+    "sortFeatured": "Utvalda först",
+    "sortName": "Namn A–Z",
+    "toolsFound": "verktyg hittades | verktyg hittades",
+    "searchPlaceholder": "Sök verktyg...",
+    "filters": "Filter",
+    "viewGrid": "Rutnätsvy",
+    "viewList": "Listvy"
+  },
+  "pricing": {
+    "FREE": "Gratis",
+    "FREEMIUM": "Freemium",
+    "PAID": "Betald"
+  },
+  "ranking": {
+    "title": "Bästa AI-verktygen",
+    "subtitle": "Rankade utifrån trafik- och tillväxtdata registrerade i vår katalog.",
+    "byGrowth1m": "Tillväxt 1 månad",
+    "byGrowth3m": "Tillväxt 3 månader",
+    "byGrowth6m": "Tillväxt 6 månader",
+    "byTraffic": "Månatliga besök",
+    "colRank": "Placering",
+    "colTool": "Verktyg",
+    "colVisits": "Månatliga besök",
+    "colGrowth": "Tillväxt",
+    "colAuthority": "Domänauktoritet",
+    "colCategory": "Kategori",
+    "noData": "Ingen rankningsdata ännu."
+  },
+  "tool": {
+    "openSite": "Öppna webbplats",
+    "save": "Spara",
+    "saved": "Sparad",
+    "featured": "Utvald",
+    "introduction": "Introduktion",
+    "addedOn": "Tillagd",
+    "monthlyVisitors": "Månatliga besökare",
+    "features": "Huvudfunktioner",
+    "useCases": "Användningsområden",
+    "prosAndCons": "För- och nackdelar",
+    "pros": "Fördelar",
+    "cons": "Nackdelar",
+    "faq": "Vanliga frågor",
+    "alternatives": "Alternativ till",
+    "backToCategory": "Tillbaka till",
+    "notFound": "Verktyget hittades inte",
+    "similarTools": "Liknande verktyg",
+    "tabProductInfo": "Produktinformation",
+    "tabPricing": "Priser",
+    "tabReviews": "Recensioner",
+    "tabAnalytics": "Analys",
+    "tabAlternatives": "Alternativ",
+    "productInformationHeading": "Produktinformation för {name}",
+    "whatIs": "Vad är {name}?",
+    "howToUseHeading": "Hur använder man {name}?",
+    "reviewsHeading": "Recensioner av {name} ({count})",
+    "ratingPrompt": "Skulle du rekommendera {name}? Lämna en kommentar",
+    "whatDoYouThink": "Vad tycker du?",
+    "loginToComment": "Logga in för att kommentera",
+    "pricingHeading": "Priser för {name}",
+    "noPricingYet": "Ingen prisinformation ännu.",
+    "analyticsHeading": "Analys av {name}",
+    "trafficAnalysis": "Trafikanalys för {name}",
+    "visitOverTime": "Besök över tid",
+    "monthlyVisits": "Månatliga besök",
+    "avgVisitDuration": "Genomsnittlig besökstid",
+    "pagePerVisit": "Sidor per besök",
+    "bounceRate": "Avvisningsfrekvens",
+    "noTrafficYet": "Ingen trafikdata registrerad ännu.",
+    "badgeVerified": "Verifierad",
+    "badgeJustLaunched": "Nyss lanserat",
+    "badgeFreeTool": "Gratis verktyg",
+    "affiliateLink": "Affiliatelänk",
+    "couponCode": "Rabattkod",
+    "ratings": "betyg",
+    "upvotes": "uppröstningar",
+    "domainAuthority": "Domänauktoritet",
+    "trafficRank": "Trafikranking",
+    "viewCount": "Sidvisningar"
+  },
+  "footer": {
+    "tagline": "Upptäck, jämför och dela de bästa AI-verktygen — byggt med Nuxt & PostgreSQL.",
+    "product": "Produkt",
+    "home": "Hem",
+    "allTools": "Alla verktyg",
+    "submit": "Skicka in ett verktyg",
+    "categories": "Kategorier",
+    "company": "Företag",
+    "admin": "Adminlogin",
+    "language": "Språk",
+    "copyright": "Alla rättigheter förbehållna."
+  },
+  "language": {
+    "label": "Språk"
+  }
+}

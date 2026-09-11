@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Politica sui cookie - TopAICollection",
+    "description": "Scopri come TopAICollection utilizza i cookie e tecnologie simili."
+  },
+  "title": "Politica sui cookie",
+  "lastUpdated": "Ultimo aggiornamento",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Cosa sono i cookie",
+      "description": "I cookie sono piccoli file di testo che vengono memorizzati sul tuo computer o dispositivo mobile quando visiti il ​​nostro sito web. Ci aiutano a fornirti un'esperienza migliore ricordando le tue preferenze e comprendendo come utilizzi il nostro sito."
+    },
+    "howWeUse": {
+      "title": "Come utilizziamo i cookie",
+      "intro": "Utilizziamo i cookie per i seguenti scopi:",
+      "essential": "Cookie essenziali: necessari per il corretto funzionamento del sito Web, comprese l'autenticazione e la sicurezza.",
+      "analytics": "Cookie analitici: aiutaci a capire come i visitatori interagiscono con il nostro sito web.",
+      "preference": "Cookie di preferenza: ricordano le tue impostazioni e preferenze, come lingua e impostazioni locali.",
+      "marketing": "Cookie di marketing: utilizzati per fornire annunci pubblicitari pertinenti e monitorare le prestazioni della campagna."
+    },
+    "managing": {
+      "title": "Gestione dei cookie",
+      "intro": "La maggior parte dei browser web ti consente di controllare i cookie attraverso le loro impostazioni. Puoi scegliere di:",
+      "blockAll": "Blocca tutti i cookie",
+      "acceptAll": "Accetta tutti i cookie",
+      "beNotified": "Ricevi una notifica quando viene impostato un cookie",
+      "deleteExisting": "Elimina i cookie che sono già stati impostati",
+      "note": "Tieni presente che il blocco di alcuni cookie potrebbe influire sulla tua esperienza sul nostro sito web."
+    },
+    "thirdParty": {
+      "title": "Cookie di terze parti",
+      "intro": "Alcuni cookie sul nostro sito sono impostati da servizi di terze parti che utilizziamo, tra cui:",
+      "googleAnalytics": "Google Analytics (analisi)",
+      "vercel": "Vercel (hosting e analisi)"
+    },
+    "contact": {
+      "title": "Contattaci",
+      "message": "Se hai domande sul nostro utilizzo dei cookie, per favore",
+      "contactLink": "contattaci"
+    }
+  }
+}

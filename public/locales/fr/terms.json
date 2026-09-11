@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Conditions d'utilisation - TopAICollection",
+    "description": "Lisez les termes et conditions d'utilisation des services et du site Web de TopAICollection."
+  },
+  "title": "Conditions d'utilisation",
+  "lastUpdated": "Dernière mise à jour",
+  "introduction": "Ces conditions d'utilisation régissent votre utilisation du site Web et des services TopAICollection. En accédant ou en utilisant notre service, vous acceptez d'être lié par ces conditions.",
+  "sections": {
+    "acceptance": {
+      "title": "Acceptation des conditions",
+      "content": "En accédant et en utilisant ce site Web, vous acceptez d'être lié par les termes et dispositions de cet accord."
+    },
+    "use": {
+      "title": "Utilisation du Service",
+      "content": [
+        "Vous devez avoir au moins 13 ans pour utiliser notre service",
+        "Vous êtes responsable du maintien de la confidentialité de votre compte",
+        "Vous acceptez de ne pas utiliser le service à des fins illégales ou non autorisées",
+        "Vous ne devez transmettre aucun vers, virus ou code malveillant"
+      ]
+    },
+    "content": {
+      "title": "Contenu utilisateur",
+      "content": [
+        "Vous conservez la propriété du contenu que vous soumettez",
+        "Vous nous accordez une licence pour utiliser, modifier et afficher votre contenu",
+        "Vous êtes responsable du contenu que vous publiez",
+        "Nous nous réservons le droit de supprimer le contenu qui viole ces conditions"
+      ]
+    },
+    "intellectual": {
+      "title": "Propriété intellectuelle",
+      "content": "Le service ainsi que son contenu, ses caractéristiques et ses fonctionnalités originales sont et resteront la propriété exclusive de TopAICollection et de ses concédants de licence."
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "content": "Votre utilisation de notre service est également régie par notre Politique de confidentialité. Veuillez consulter notre politique de confidentialité, qui régit également le site et informe les utilisateurs de nos pratiques de collecte de données."
+    },
+    "disclaimers": {
+      "title": "Avis de non-responsabilité",
+      "content": [
+        "Le service est fourni « tel quel » et « selon disponibilité ».",
+        "Nous ne garantissons pas que le service sera ininterrompu ou sans erreur",
+        "Nous ne sommes pas responsables des outils tiers répertoriés dans notre annuaire",
+        "L'utilisation des outils d'IA est à vos propres risques"
+      ]
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "content": "En aucun cas TopAICollection, ni ses directeurs, employés, partenaires, agents, fournisseurs ou sociétés affiliées, ne pourront être tenus responsables de tout dommage indirect, accessoire, spécial, consécutif ou punitif."
+    },
+    "governing": {
+      "title": "Loi applicable",
+      "content": "Ces conditions seront régies et interprétées conformément aux lois de la juridiction dans laquelle TopAICollection opère, sans égard à ses dispositions en matière de conflit de lois."
+    }
+  },
+  "contact": {
+    "title": "Coordonnées",
+    "content": "Si vous avez des questions concernant ces conditions d'utilisation, veuillez nous contacter à l'adresse suivante :"
+  }
+}

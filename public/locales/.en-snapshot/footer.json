@@ -1,0 +1,92 @@
+{
+  "about": "About Us",
+  "contact": "Contact",
+  "blog": "Blog",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Service",
+  "cookies": "Cookie Policy",
+  "copyright": "© {year} TopAICollection. All rights reserved.",
+  "sitemap": "Sitemap",
+  "resources": "Resources",
+  "help": "Help Center",
+  "faq": "FAQ",
+  "submitTool": "Submit Tool",
+  "description": "TopAICollection is the ultimate directory for discovering the best AI tools and websites.",
+  "browseByAlphabet": "Browse by Alphabet",
+  "topAITools": {
+    "title": "Top AI Tools",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "Midjourney",
+      "chatgpt": "ChatGPT",
+      "stableDiffusion": "Stable Diffusion",
+      "jasper": "Jasper"
+    }
+  },
+  "moreTools": {
+    "title": "More Tools",
+    "items": {
+      "audio": "Audio AI",
+      "video": "Video AI",
+      "writing": "Writing AI",
+      "image": "Image AI",
+      "coding": "Coding AI"
+    }
+  },
+  "recommend": {
+    "title": "Recommend",
+    "items": {
+      "newest": "Newest Tools",
+      "mostSaved": "Most Saved",
+      "trending": "Trending Now",
+      "editorsChoice": "Editor's Choice",
+      "featured": "Featured",
+      "leaderboard": "Leaderboard"
+    }
+  },
+  "readMore": {
+    "title": "Read more",
+    "items": {
+      "blog": "Blog",
+      "news": "AI News",
+      "guides": "Guides",
+      "tutorials": "Tutorials",
+      "glossary": "AI Glossary"
+    }
+  },
+  "company": {
+    "title": "About",
+    "items": {
+      "aboutUs": "About Us",
+      "contact": "Business Contact",
+      "editorialGuidelines": "Editorial Guidelines",
+      "reviewMethodology": "Review Methodology",
+      "submit": "Submit",
+      "advertise": "Advertise"
+    }
+  },
+  "chooseLanguage": "Select Language",
+  "followUs": "Follow Us",
+  "more": "More...",
+  "directory": {
+    "title": "AI Tool Directory Archive"
+  },
+  "companyInfo": {
+    "name": "TopAICollection Inc.",
+    "address": "Tech District, Silicon Valley",
+    "city": "San Francisco, CA 94107",
+    "country": "United States",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Video Generators",
+      "imageGenerators": "Image Generators",
+      "writers": "Writers",
+      "seoTools": "Seo Tools",
+      "websiteBuilders": "Website Builders",
+      "chatbots": "Chatbots"
+    }
+  }
+}

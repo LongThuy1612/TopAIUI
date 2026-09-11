@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Terug naar Dashboard",
+    "backToHome": "Terug naar Home",
+    "dashboard": "Gösterge Paneli",
+    "websiteInsights": "Website-inzichten",
+    "socialListening": "Sociaal luisteren",
+    "researchReport": "Onderzoeksrapport",
+    "myAis": "Mijn AI's",
+    "favorites": "Favorieten",
+    "profileSettings": "Profielinstellingen",
+    "advertise": "Adverteren",
+    "postsLinks": "Berichten & Links",
+    "paymentInvoice": "Betaling & Factuur",
+    "overview": "Overzicht",
+    "myInquiries": "Mijn vragen"
+  },
+  "logout": "Uitloggen",
+  "logoutConfirmTitle": "Uitloggen",
+  "logoutConfirmDescription": "Weet je zeker dat je wilt uitloggen?",
+  "upgrade": "Upgraden",
+  "sections": {
+    "research": "ONDERZOEK",
+    "management": "BEHEER",
+    "business": "ZAKELIJK",
+    "admin": "BEHEERDER",
+    "guestPost": "Gastberichten",
+    "updateAi": "AI bijwerken",
+    "myGpts": "Mijn GPT's"
+  },
+  "help": "Hulp",
+  "close": "Sluiten",
+  "status": {
+    "active": "Actief"
+  },
+  "advertiseAi": "Adverteer AI",
+  "myAis": {
+    "title": "Mijn AI's",
+    "subtitle": "Beheer en volg de prestaties van uw ingediende AI-tools.",
+    "empty": {
+      "cta": "Verzend AI-tool"
+    }
+  }
+}

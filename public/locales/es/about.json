@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Sobre nosotros - TopAICollection",
+    "description": "Conozca la misión de TopAICollection de ayudarlo a descubrir las mejores herramientas de inteligencia artificial y sitios web para sus necesidades."
+  },
+  "badge": "Sobre nosotros",
+  "hero": {
+    "title": "Su puerta de entrada a la revolución de la IA",
+    "subtitle": "Tenemos la misión de democratizar el acceso a las herramientas de IA y ayudar a todos a aprovechar el poder de la inteligencia artificial."
+  },
+  "stats": {
+    "tools": "Herramientas de IA",
+    "categories": "Categorías",
+    "users": "Usuarios mensuales",
+    "languages": "Idiomas"
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "paragraph1": "En TopAICollection creemos que la IA debería ser accesible para todos. Nuestra plataforma sirve como un directorio completo de las mejores herramientas y sitios web de IA, lo que facilita a los usuarios descubrir y aprovechar la inteligencia artificial en su trabajo y vida diaria.",
+    "paragraph2": "Seleccionamos y revisamos cuidadosamente cada herramienta de nuestra colección, asegurando que nuestros usuarios tengan acceso solo a soluciones de IA de la más alta calidad. Nuestro equipo de expertos evalúa herramientas en función de la funcionalidad, la experiencia del usuario, los precios y las aplicaciones del mundo real.",
+    "paragraph3": "Ya sea desarrollador, diseñador, comercializador, educador o propietario de un negocio, TopAICollection lo ayuda a encontrar las herramientas de inteligencia artificial perfectas para mejorar su productividad y creatividad."
+  },
+  "features": {
+    "title": "Por qué elegir TopAICollection",
+    "global": {
+      "title": "Alcance global",
+      "description": "Disponible en más de 20 idiomas y brinda servicio a millones de usuarios en todo el mundo."
+    },
+    "updated": {
+      "title": "Actualizaciones diarias",
+      "description": "Nuestra colección se actualiza diariamente con las últimas innovaciones en IA."
+    },
+    "community": {
+      "title": "Impulsado por la comunidad",
+      "description": "Las reseñas y calificaciones de los usuarios lo ayudan a tomar decisiones informadas"
+    },
+    "verified": {
+      "title": "Herramientas verificadas",
+      "description": "Cada herramienta es cuidadosamente revisada y verificada por nuestro equipo."
+    }
+  },
+  "cta": {
+    "title": "Comience su viaje hacia la IA hoy",
+    "subtitle": "Explore nuestra colección de herramientas de IA o envíe la suya propia",
+    "browse": "Explorar herramientas",
+    "submit": "Envíe su herramienta"
+  }
+}

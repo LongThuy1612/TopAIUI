@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} Công cụ AI | Khám phá những giải pháp {tagName} tốt nhất",
+    "description": "Khám phá bộ sưu tập những công cụ AI {tagName} tốt nhất. So sánh tính năng, giá cả và đánh giá để tìm phần mềm {tagName} phù hợp với nhu cầu của bạn."
+  },
+  "notFound": {
+    "metaTitle": "Không tìm thấy thẻ | TopAICollection",
+    "metaDescription": "Thẻ bạn tìm kiếm không tồn tại. Khám phá các công cụ AI khác."
+  },
+  "breadcrumb": {
+    "home": "Trang chủ",
+    "tools": "Công cụ"
+  },
+  "jsonLd": {
+    "collectionName": "Công cụ AI {tagName}",
+    "collectionDescription": "Duyệt qua danh mục công cụ AI {tagName} của chúng tôi."
+  }
+}

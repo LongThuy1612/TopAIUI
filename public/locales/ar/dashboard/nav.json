@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "العودة إلى لوحة القيادة",
+    "backToHome": "العودة إلى الصفحة الرئيسية",
+    "dashboard": "لوحة القيادة",
+    "websiteInsights": "تحليلات الموقع",
+    "socialListening": "الاستماع الاجتماعي",
+    "researchReport": "تقرير البحث",
+    "myAis": "أدواتي الذكية",
+    "favorites": "المفضلات",
+    "profileSettings": "إعدادات الملف الشخصي",
+    "advertise": "أعلن معنا",
+    "postsLinks": "المقالات والروابط",
+    "paymentInvoice": "الدفع والفواتير",
+    "overview": "نظرة عامة",
+    "myInquiries": "طلباتي"
+  },
+  "logout": "تسجيل الخروج",
+  "logoutConfirmTitle": "تسجيل الخروج",
+  "logoutConfirmDescription": "هل أنت متأكد من رغبتك في تسجيل الخروج؟",
+  "upgrade": "ترقية",
+  "sections": {
+    "research": "الأبحاث",
+    "management": "الإدارة",
+    "business": "الأعمال",
+    "admin": "المسؤول",
+    "guestPost": "مشاركات الضيف",
+    "updateAi": "تحديث الذكاء الاصطناعي",
+    "myGpts": "نقاط GPT الخاصة بي"
+  },
+  "help": "مساعدة",
+  "close": "إغلاق",
+  "status": {
+    "active": "نشط"
+  },
+  "advertiseAi": "الإعلان بالذكاء الاصطناعي",
+  "myAis": {
+    "title": "الذكاء الاصطناعي الخاص بي",
+    "subtitle": "إدارة وتتبع أداء أدوات الذكاء الاصطناعي المقدمة.",
+    "empty": {
+      "cta": "إرسال أداة الذكاء الاصطناعي"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAI コレクション - 最高の AI ツールを発見",
+    "description": "{totalTools} + 言語の {totalCategories} カテゴリにわたる {languagesCount} + AI ツールを探索する"
+  },
+  "home": {
+    "visitWebsite": "ウェブサイトにアクセス",
+    "ranking": "ランキング"
+  },
+  "tool": {
+    "visitWebsite": "ウェブサイトにアクセス →",
+    "useCases": "使用例",
+    "about": "{name}について",
+    "howToUse": "{name}の使用方法",
+    "faq": "よくある質問"
+  }
+}

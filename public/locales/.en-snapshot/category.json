@@ -1,0 +1,7 @@
+{
+  "notFound": {
+    "title": "Category not found",
+    "message": "The category you are looking for does not exist."
+  },
+  "title": "AI Tools by Category"
+}

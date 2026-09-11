@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Analyses de Site Web",
+    "subtitle": "Suivez le trafic et les mots-clés de la concurrence.",
+    "track": "Suivre",
+    "noDomains": "Aucun domaine suivi pour le moment. Ajoutez-en un ci-dessus !",
+    "domain": "Domaine",
+    "monthlyVisits": "Visites Mensuelles",
+    "rank": "Rang",
+    "topKeywords": "Mots-clés Principaux",
+    "added": "Ajouté",
+    "tool": "Outil",
+    "organicClicks": "Clics organiques",
+    "paidClicks": "Clics payants",
+    "totalClicks": "Nombre total de clics",
+    "addedOn": "Ajouté",
+    "noTools": "Aucun outil suivi pour l'instant.",
+    "addDomainDesc": "Ajoutez votre premier domaine ci-dessus pour commencer à suivre les informations.",
+    "deleteSuccess": "Domaine supprimé du suivi",
+    "confirmDelete": "Êtes-vous sûr de vouloir arrêter le suivi de ce domaine ?",
+    "quota": "Contingent",
+    "limitReachedDesc": "Vous avez atteint votre limite mensuelle d'insights. Mettez à niveau pour suivre plus de domaines.",
+    "upgradeNow": "Mettre à niveau maintenant",
+    "usage": "Utilisation",
+    "searchPlaceholder": "Rechercher des domaines suivis...",
+    "advancedFilter": "Filtres avancés",
+    "bulkOpen": "Ouverture en masse",
+    "export": "Exporter des données",
+    "aiTool": "Outil d'IA",
+    "rankChange": "Changement de rang",
+    "globalRank": "Classement mondial",
+    "traffic": "Trafic",
+    "audience": "Public",
+    "updateDate": "Date de mise à jour",
+    "limitReachedTitle": "Vous avez atteint votre limite",
+    "limitReachedBody": "Vous avez atteint votre limite de recherches gratuites. Mettez à niveau pour obtenir un accès illimité.",
+    "upgradePro": "Passer au forfait Pro",
+    "actions": "Actes",
+    "viewSocial": "Voir les réseaux sociaux",
+    "filters": {
+      "months": {
+        "feb2026": "Février 2026",
+        "jan2026": "janvier 2026"
+      },
+      "sources": {
+        "search": "Rechercher",
+        "direct": "Directement",
+        "social": "Social"
+      },
+      "regions": {
+        "us": "Nous",
+        "vn": "Viêt Nam"
+      },
+      "categories": {
+        "llm": "LLM",
+        "image": "Image",
+        "productivity": "Productivité"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100 000",
+        "1m": "1 m"
+      },
+      "timePeriod": "Période de temps",
+      "selectMonth": "Sélectionner le mois",
+      "trafficSource": "Source de trafic",
+      "allSources": "Toutes les sources",
+      "region": "Région",
+      "category": "Catégorie",
+      "trafficThreshold": "Seuil de trafic",
+      "minVisits": "Visites minimales"
+    },
+    "exportSuccess": "Exporté avec succès.",
+    "exportFailed": "Échec de l'exportation.",
+    "exportData": "Exporter des données",
+    "exportDesc": "Exportez ce rapport pour le partager ou l'analyser localement.",
+    "exportLimit": "Limite d'exportation",
+    "rows": "Lignes",
+    "creditsCost": "Coût des crédits",
+    "availableAfter": "Disponible après",
+    "confirmExport": "Confirmer l'exportation",
+    "notEnoughCredits": "Pas assez de crédits",
+    "removeFailed": "Échec de la suppression.",
+    "direct": "Directement",
+    "sortDefault": "Par défaut",
+    "sortTraffic": "Trafic"
+  },
+  "common": {
+    "global": "Mondial",
+    "allCategories": "Toutes les catégories"
+  },
+  "table": {
+    "column": {
+      "tool": "Outil",
+      "organic": "Clics organiques",
+      "paid": "Clics payants",
+      "total": "Total des clics",
+      "trend": "Tendance",
+      "growth": "Croissance"
+    },
+    "searchPlaceholder": "Rechercher des domaines suivis...",
+    "showingResults": "Affichage des résultats {count}",
+    "empty": "Aucun domaine suivi pour l'instant."
+  }
+}

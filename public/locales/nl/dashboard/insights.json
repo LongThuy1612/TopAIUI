@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Website-inzichten",
+    "subtitle": "Volg verkeer en trefwoorden van concurrenten.",
+    "track": "Volgen",
+    "noDomains": "Nog geen domeinen gevolgd. Voeg er hierboven een toe!",
+    "domain": "Domein",
+    "monthlyVisits": "Maandelijkse Bezoeken",
+    "rank": "Rang",
+    "topKeywords": "Belangrijkste Trefwoorden",
+    "added": "Toegevoegd",
+    "tool": "Hulpmiddel",
+    "organicClicks": "Organische klikken",
+    "paidClicks": "Betaalde klikken",
+    "totalClicks": "Totaal aantal klikken",
+    "addedOn": "Toegevoegd op",
+    "noTools": "Er zijn nog geen tools bijgehouden.",
+    "addDomainDesc": "Voeg hierboven uw eerste domein toe om inzichten bij te houden.",
+    "deleteSuccess": "Domein verwijderd uit tracking",
+    "confirmDelete": "Weet u zeker dat u het volgen van dit domein wilt stopzetten?",
+    "quota": "Quotum",
+    "limitReachedDesc": "U heeft uw maandelijkse inzichtenlimiet bereikt. Upgrade om meer domeinen bij te houden.",
+    "upgradeNow": "Upgrade nu",
+    "usage": "Gebruik",
+    "searchPlaceholder": "Gevolgde domeinen zoeken...",
+    "advancedFilter": "Geavanceerde filters",
+    "bulkOpen": "Bulk-open",
+    "export": "Gegevens exporteren",
+    "aiTool": "AI-tool",
+    "rankChange": "Rang verandering",
+    "globalRank": "Mondiale rang",
+    "traffic": "Verkeer",
+    "audience": "Publiek",
+    "updateDate": "Updatedatum",
+    "limitReachedTitle": "Je hebt je limiet bereikt",
+    "limitReachedBody": "U heeft uw limiet aan gratis zoekopdrachten bereikt. Upgrade om onbeperkte toegang te krijgen.",
+    "upgradePro": "Upgrade naar Pro-abonnement",
+    "actions": "Acties",
+    "viewSocial": "Bekijk Sociaal",
+    "filters": {
+      "months": {
+        "feb2026": "Februari 2026",
+        "jan2026": "Jan 2026"
+      },
+      "sources": {
+        "search": "Zoeken",
+        "social": "Sociaal",
+        "direct": "Direct"
+      },
+      "regions": {
+        "us": "Wij",
+        "vn": "Vn"
+      },
+      "categories": {
+        "llm": "LLM",
+        "image": "Afbeelding",
+        "productivity": "Productiviteit"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100k",
+        "1m": "1m"
+      },
+      "timePeriod": "Tijdsperiode",
+      "selectMonth": "Selecteer maand",
+      "trafficSource": "Verkeersbron",
+      "allSources": "Alle bronnen",
+      "region": "Regio",
+      "category": "Categorie",
+      "trafficThreshold": "Verkeersdrempel",
+      "minVisits": "Min. bezoeken"
+    },
+    "exportSuccess": "Succesvol geëxporteerd.",
+    "exportFailed": "Exporteren mislukt.",
+    "exportData": "Gegevens exporteren",
+    "exportDesc": "Exporteer dit rapport om lokaal te delen of te analyseren.",
+    "exportLimit": "Exportlimiet",
+    "rows": "Rijen",
+    "creditsCost": "Kredietkosten",
+    "availableAfter": "Beschikbaar na",
+    "confirmExport": "Bevestig exporteren",
+    "notEnoughCredits": "Niet genoeg kredieten",
+    "removeFailed": "Verwijderen mislukt.",
+    "sortDefault": "Standaard",
+    "sortTraffic": "Verkeer",
+    "direct": "Direct"
+  },
+  "common": {
+    "global": "Globaal",
+    "allCategories": "Alle categorieën"
+  },
+  "table": {
+    "column": {
+      "tool": "Gereedschap",
+      "organic": "Organische klikken",
+      "paid": "Betaalde klikken",
+      "total": "Totaal aantal klikken",
+      "trend": "Trend",
+      "growth": "Groei"
+    },
+    "searchPlaceholder": "Zoek bijgehouden domeinen...",
+    "showingResults": "Toon {count} resultaten",
+    "empty": "Er zijn nog geen domeinen bijgehouden."
+  }
+}

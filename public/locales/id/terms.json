@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Ketentuan Layanan - TopAICollection",
+    "description": "Baca syarat dan ketentuan penggunaan layanan dan website TopAICollection."
+  },
+  "title": "Ketentuan Layanan",
+  "lastUpdated": "Terakhir diperbarui",
+  "introduction": "Ketentuan Layanan ini mengatur penggunaan Anda atas situs web dan layanan TopAICollection. Dengan mengakses atau menggunakan layanan kami, Anda setuju untuk terikat dengan ketentuan ini.",
+  "sections": {
+    "acceptance": {
+      "title": "Penerimaan Persyaratan",
+      "content": "Dengan mengakses dan menggunakan situs ini, Anda menerima dan menyetujui untuk terikat pada syarat dan ketentuan perjanjian ini."
+    },
+    "use": {
+      "title": "Penggunaan Layanan",
+      "content": [
+        "Anda harus berusia minimal 13 tahun untuk menggunakan layanan kami",
+        "Anda bertanggung jawab untuk menjaga kerahasiaan akun Anda",
+        "Anda setuju untuk tidak menggunakan layanan ini untuk tujuan ilegal atau tidak sah",
+        "Anda tidak boleh menularkan worm, virus, atau kode berbahaya apa pun"
+      ]
+    },
+    "content": {
+      "title": "Konten Pengguna",
+      "content": [
+        "Anda mempertahankan kepemilikan atas konten yang Anda kirimkan",
+        "Anda memberi kami lisensi untuk menggunakan, memodifikasi, dan menampilkan konten Anda",
+        "Anda bertanggung jawab atas konten yang Anda posting",
+        "Kami berhak menghapus konten yang melanggar ketentuan ini"
+      ]
+    },
+    "intellectual": {
+      "title": "Kekayaan Intelektual",
+      "content": "Layanan dan konten aslinya, fitur, dan fungsinya adalah dan akan tetap menjadi milik eksklusif TopAICollection dan pemberi lisensinya."
+    },
+    "privacy": {
+      "title": "Pribadi",
+      "content": "Penggunaan Anda atas layanan kami juga diatur oleh Kebijakan Privasi kami. Harap tinjau Kebijakan Privasi kami, yang juga mengatur situs dan memberi tahu pengguna tentang praktik pengumpulan data kami."
+    },
+    "disclaimers": {
+      "title": "Penafian",
+      "content": [
+        "Layanan ini disediakan atas dasar 'sebagaimana adanya' dan 'sebagaimana tersedia'",
+        "Kami tidak menjamin bahwa layanan ini tidak akan terganggu atau bebas dari kesalahan",
+        "Kami tidak bertanggung jawab atas alat pihak ketiga yang tercantum dalam direktori kami",
+        "Risiko penggunaan alat AI adalah risiko Anda sendiri"
+      ]
+    },
+    "liability": {
+      "title": "Batasan Tanggung Jawab",
+      "content": "Dalam keadaan apa pun TopAICollection, maupun direktur, karyawan, mitra, agen, pemasok, atau afiliasinya, tidak bertanggung jawab atas segala kerugian tidak langsung, insidental, khusus, konsekuensial, atau hukuman."
+    },
+    "governing": {
+      "title": "Hukum yang Mengatur",
+      "content": "Ketentuan ini akan diatur dan ditafsirkan sesuai dengan hukum yurisdiksi tempat TopAICollection beroperasi, tanpa memperhatikan pertentangan ketentuan hukum."
+    }
+  },
+  "contact": {
+    "title": "Informasi Kontak",
+    "content": "Jika Anda memiliki pertanyaan tentang Ketentuan Layanan ini, silakan hubungi kami di:"
+  }
+}

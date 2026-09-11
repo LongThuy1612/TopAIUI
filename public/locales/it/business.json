@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Soluzioni aziendali: collabora con noi | TopAICollection",
+    "description": "Esplora le opportunità di partnership commerciale con TopAICollection. Pubblicità, contenuti sponsorizzati e altro ancora."
+  },
+  "title": "Soluzioni aziendali",
+  "subtitle": "Collabora con TopAICollection per raggiungere gli appassionati di intelligenza artificiale in tutto il mondo",
+  "contact": {
+    "title": "Mettiti in contatto"
+  },
+  "offers": {
+    "ads": "Esegui campagne pubblicitarie mirate",
+    "partnerships": "Esplora le partnership strategiche",
+    "growth": "Accelera la crescita dei tuoi prodotti IA",
+    "consulting": "Servizi di integrazione AI personalizzati"
+  },
+  "form": {
+    "fullName": "Nome e cognome",
+    "workEmail": "E-mail di lavoro",
+    "companyName": "Nome dell'azienda",
+    "inquiryType": "Tipo di richiesta",
+    "selectType": "Seleziona il tipo",
+    "message": "Messaggio",
+    "messagePlaceholder": "Raccontaci di più sulle tue esigenze...",
+    "inquiryTypes": {
+      "advertise": "Pubblicizza",
+      "guestPost": "Messaggio ospite",
+      "partnership": "Partenariato",
+      "customDevelopment": "Sviluppo personalizzato",
+      "other": "Altro"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Pubblicizza il tuo strumento AI",
+      "description": "Metti in evidenza il tuo strumento AI sulla nostra piattaforma.",
+      "link": "Saperne di più"
+    },
+    "guestPost": {
+      "title": "Post e collegamenti degli ospiti",
+      "description": "Pubblica contenuti o ottieni backlink sul nostro sito ad alta autorità.",
+      "link": "Saperne di più"
+    },
+    "submitTool": {
+      "title": "Invia il tuo strumento",
+      "description": "Aggiungi gratuitamente il tuo strumento AI alla nostra directory.",
+      "link": "Invia ora"
+    },
+    "customSolutions": {
+      "title": "Soluzioni personalizzate",
+      "description": "Contattaci per opportunità di partnership personalizzate.",
+      "link": "Contattaci"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "Oltre 100 partner",
+    "partnerCountSub": "Scelto dalle principali aziende di intelligenza artificiale",
+    "contactSupport": "Contatta l'assistenza"
+  },
+  "validation": {
+    "required": "Questo campo è obbligatorio",
+    "toolNameRequired": "Il nome dello strumento è obbligatorio",
+    "url": "URL non valido",
+    "descriptionMin": "La descrizione deve contenere almeno 10 caratteri",
+    "categoryRequired": "Seleziona una categoria",
+    "email": "Indirizzo e-mail non valido",
+    "messageMin": "Il messaggio deve contenere almeno 10 caratteri"
+  },
+  "success": "La tua richiesta è stata inviata con successo!"
+}

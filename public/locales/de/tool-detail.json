@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- Überprüfung und Analyse von KI-Tools"
+  },
+  "errors": {
+    "notFound": "Werkzeug nicht gefunden",
+    "notFoundDescription": "Das von Ihnen gesuchte Tool existiert nicht.",
+    "serverError": "Interner Serverfehler.",
+    "serverErrorDescription": "Ein unerwarteter Fehler ist auf dem Server aufgetreten. Bitte versuchen Sie es später noch einmal."
+  },
+  "actions": {
+    "visit": "Besuchen Sie die Website",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "share": "Aktie",
+    "update": "Aktualisieren Sie dieses Tool",
+    "advertise": "Bewerben Sie dieses Tool",
+    "visitWebsite": "Besuchen Sie die Website",
+    "readMore": "„Weiterlesen“",
+    "readLess": "„Weniger lesen“",
+    "openVideo": "„Video öffnen“"
+  },
+  "cta": {
+    "visit": "Website öffnen",
+    "advertise": "Bewerben Sie dieses Tool",
+    "update": "Aktualisieren Sie dieses Tool"
+  },
+  "sidebar": {
+    "category": "Kategorie",
+    "tags": "Schlagworte"
+  },
+  "tabs": {
+    "socialListening": "Soziales Zuhören",
+    "alternatives": "Alternativen"
+  },
+  "similar": {
+    "title": "Ähnliche KI-Tools"
+  },
+  "stats": {
+    "monthlyVisits": "Monatliche Besuche",
+    "growth": "Wachstum",
+    "reviews": "Bewertungen",
+    "averageTime": "Durchschnittliche Zeit vor Ort",
+    "pagesPerVisit": "Seiten pro Besuch",
+    "bounceRate": "Absprungrate",
+    "visits": "Besuche",
+    "reviews_formatted": "„{rating} ({count} {label})“"
+  },
+  "sections": {
+    "overview": "Überblick",
+    "reviews": "Rezensionen",
+    "analytics": "Analytik",
+    "embed": "Einbetten",
+    "alternatives": "Alternativen",
+    "related": "Verwandte Tools"
+  },
+  "details": {
+    "description": "Werkzeugeinführung:",
+    "monthlyTraffic": "Monatlicher Verkehr:",
+    "socialMedia": "Soziale Medien und E-Mail:",
+    "company": "Unternehmen",
+    "categories": "Kategorien",
+    "tags": "Schlagworte"
+  },
+  "content": {
+    "whatIs": "Was ist",
+    "howToUse": "Verwendung",
+    "coreFeatures": "Kernfunktionen",
+    "useCases": "Anwendungsfälle",
+    "pricingPlans": "Preispläne",
+    "faqs": "Häufig gestellte Fragen",
+    "relatedTools": "Verwandte Tools",
+    "productInfo": "Produktinformationen",
+    "writtenBy": "Geschrieben & bearbeitet von",
+    "factCheckedBy": "Faktengeprüft von"
+  },
+  "analytics": {
+    "title": "Analysen und Traffic-Einblicke",
+    "subtitle": "Analyse von",
+    "latestTraffic": "Aktueller Website-Verkehr",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Website-Traffic-Quellen",
+    "topKeywords": "Top-Keywords",
+    "keyword": "Stichwort",
+    "traffic": "Verkehr",
+    "trafficSubtitle": "um den Webverkehr zu verbessern",
+    "geoSubtitle": "Suchmaschinenindikatoren",
+    "sourceSubtitle": "Suchmaschinenindikatoren",
+    "keywordSubtitle": "Suchmaschinenindikatoren",
+    "percentage": "Prozentsatz",
+    "source": "Quelle",
+    "noChartData": "Keine Diagrammdaten",
+    "noTrafficChartData": "Keine Verkehrsdiagrammdaten",
+    "desktopVsMobile": "Desktop vs. Mobil",
+    "desktop": "„Desktop“",
+    "mobileWeb": "Mobil",
+    "similarSites": "Ähnliche Seiten",
+    "globalRank": "Globales Ranking",
+    "founded": "Gegründet",
+    "socialInfluence": "Einfluss sozialer Medien",
+    "views": "Ansichten",
+    "mentions": "Erwähnungen",
+    "trendHistory": "Trendverlauf",
+    "trendSubtitle": "Traffic, Aufrufe und Upvotes-Trends im Laufe der Zeit",
+    "upvotes": "Positive Bewertungen"
+  },
+  "embed": {
+    "title": "Auf Ihrer Website einbetten",
+    "description": "Fügen Sie dieses Tool mit einem schönen Einbettungs-Widget zu Ihrer Website hinzu",
+    "preview": "Vorschau",
+    "code": "Code einbetten",
+    "copy": "Code kopieren",
+    "copied": "Kopiert!",
+    "badgeAlt": "TopAICollection-Abzeichen",
+    "themes": {
+      "light": "Hell",
+      "neutral": "Neutral",
+      "dark": "Dunkel"
+    }
+  },
+  "alternatives": {
+    "title": "Alternativen",
+    "description": "Ähnliche Tools, die Ihnen gefallen könnten"
+  },
+  "pricing": {
+    "title": "Preispläne",
+    "subtitle": "Wählen Sie den Plan, der für Sie am besten geeignet ist",
+    "popular": "Beliebt",
+    "getStarted": "Legen Sie los",
+    "disclaimer": "Preise und Ausstattung können variieren. Besuchen Sie die offizielle Website für die aktuellsten Informationen.",
+    "noPricingInfo": "Keine Preisinformationen verfügbar",
+    "free": "„Kostenlos“",
+    "moreFeatures": "„Weitere Funktionen“"
+  },
+  "charts": {
+    "trafficChart": "Verkehrsdiagramm",
+    "comingSoon": "Diagrammvisualisierung folgt bald"
+  },
+  "reviews": {
+    "title": "Rezensionen",
+    "pointsScale": "von 5",
+    "subtitle": "Sehen Sie, was die Community denkt",
+    "writeTitle": "Empfehlen Sie dieses Tool?",
+    "placeholder": "Teilen Sie Ihre Erfahrungen mit diesem Tool...",
+    "privacy": "Privatsphäre geschützt",
+    "success": "Bewertung erfolgreich eingereicht!",
+    "submit": "Beitragsbewertung",
+    "loginToReview": "Bitte melden Sie sich an, um eine Bewertung abzugeben",
+    "loginLink": "Anmelden",
+    "noReviews": "Noch keine Bewertungen. Seien Sie die erste Person, die dieses Tool bewertet!",
+    "viewMore": "Alle Bewertungen anzeigen",
+    "allReviewsTitle": "Alle Bewertungen für",
+    "reviewsPageTitle": "Bewertungen",
+    "by": "von",
+    "verified": "Verifiziert",
+    "anonymous": "Anonymer Benutzer",
+    "ratingLabel": "Bewertung",
+    "commentLabel": "Kommentar",
+    "dateLabel": "Datum",
+    "page": "Seite",
+    "editReview": "Bewertung bearbeiten",
+    "deleteReview": "Bewertung löschen",
+    "deleteConfirm": "Möchten Sie Ihre Bewertung wirklich löschen?",
+    "editTitle": "Ihre Bewertung bearbeiten",
+    "updateSuccess": "Bewertung erfolgreich aktualisiert!",
+    "deleteSuccess": "Bewertung erfolgreich gelöscht!",
+    "commentRequired": "Bitte fügen Sie einen Kommentar zu Ihrer Bewertung hinzu.",
+    "ratingRequired": "Bitte wählen Sie eine Bewertung aus.",
+    "alreadyReviewed": "Sie haben dieses Tool bereits bewertet. Verwenden Sie die ✏️ Bearbeitenschaltfläche, um Ihre Bewertung zu aktualisieren.",
+    "sort": {
+      "label": "Sortieren nach",
+      "newest": "Das Neueste zuerst",
+      "oldest": "Älteste zuerst",
+      "highest": "Höchste Bewertung",
+      "lowest": "Niedrigste Bewertung"
+    },
+    "save": "Speichern",
+    "cancel": "Stornieren",
+    "close": "Schließen",
+    "userLabel": "Benutzer",
+    "unverify": "Unverifiziert",
+    "markVerified": "Als bestätigt markieren",
+    "confirm": "Bestätigen",
+    "noReviewsFound": "Keine Bewertungen für dieses Tool gefunden.",
+    "deleteError": "Löschen fehlgeschlagen.",
+    "updateError": "Aktualisierung fehlgeschlagen.",
+    "pagination": {
+      "showing": "Anzeigen",
+      "of": "von",
+      "reviews": "Bewertungen",
+      "prev": "Zurück",
+      "next": "Weiter"
+    },
+    "actionsLabel": "Aktionen",
+    "statusLabel": "Status"
+  },
+  "share": {
+    "title": "Teilen Sie dieses Tool"
+  },
+  "metrics": {
+    "monthlyVisits": "Monatliche Besuche",
+    "growth": "Wachstum"
+  },
+  "tags": "Schlagworte",
+  "overview": "Überblick",
+  "howToUse": "Verwendung",
+  "pricingPlans": "Preispläne",
+  "faqs": "„FAQs“",
+  "geoChart": {
+    "noData": "Keine geografischen Daten verfügbar",
+    "loading": "Geografische Daten werden geladen..."
+  },
+  "introduction": "Einführung",
+  "description": "Beschreibung",
+  "coreFeatures": "Kernfunktionen",
+  "useCases": "Anwendungsfälle",
+  "screenshots": "„Screenshots“",
+  "companyInfo": {
+    "companyName": "Name der Firma",
+    "contactEmail": "Kontakt-E-Mail"
+  },
+  "nav": {
+    "scrollLeft": "Scrollen Sie nach links",
+    "scrollRight": "Scrollen Sie nach rechts",
+    "previous": "„Vorherige“",
+    "next": "„Weiter“",
+    "imageSlide": "„Bild {index}“",
+    "videoSlide": "„Videofolie“"
+  },
+  "badges": {
+    "verifiedListing": "Verifizierter Eintrag",
+    "freePlan": "Kostenloser Plan",
+    "paidPlans": "Kostenpflichtige Pläne & Preise"
+  },
+  "dummyReviews": {
+    "c1": "Das ist ein fantastisches AI-Tool! Es hat meinen Workflow komplett verändert.",
+    "c2": "Sehr gute Funktionen und einfach zu bedienen. Sehr zu empfehlen.",
+    "c3": "Ich habe viele Alternativen ausprobiert, aber diese ist mit Abstand die beste.",
+    "c4": "Hervorragendes Preis-Leistungs-Verhältnis. Der kostenlose Plan ist ebenfalls sehr großzügig.",
+    "c5": "Großartige UI und intuitives Design. Manchmal etwas langsam, aber insgesamt fantastisch.",
+    "c6": "Ein unverzichtbares Tool für jeden Profi. Spart mir jede Woche Stunden.",
+    "c7": "Gute Funktionalität, erfordert aber eine gewisse Lernkurve."
+  }
+}

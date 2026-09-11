@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Pembayaran & Faktur",
+    "description": "Kelola kredit Anda dan lihat riwayat pesanan.",
+    "adCredits": "Kredit Iklan",
+    "postCredits": "Kredit Postingan",
+    "linkCredits": "Kredit Tautan",
+    "forSponsoredListings": "Untuk daftar sponsor",
+    "forGuestArticles": "Untuk artikel tamu",
+    "forLinkInsertions": "Untuk penyisipan tautan",
+    "buyCredits": "Beli Kredit",
+    "noOrders": "Pesanan tidak ditemukan.",
+    "orderHistory": "Riwayat Pesanan",
+    "orderId": "ID Pesanan",
+    "amount": "Jumlah",
+    "status": "Statusnya",
+    "date": "Tanggal",
+    "type": "Tipe",
+    "invoice": "Faktur",
+    "download": "Unduh",
+    "currentPlan": "Rencana Saat Ini",
+    "freeTier": "Tingkat Gratis",
+    "freeTierDesc": "Tingkatkan rencana Anda untuk membuka lebih banyak fitur dan wawasan.",
+    "creditBalances": "Saldo Kredit",
+    "subscriptionDetails": "Detail Langganan",
+    "upgradePlan": "Tingkatkan Rencana",
+    "credits": "Kredit",
+    "managePortal": "Kelola Portal Penagihan",
+    "subscribe": "Berlangganan Sekarang",
+    "statusActive": "Aktif",
+    "planMemberSince": "Anggota rencana ini",
+    "renewalDate": "Memperbarui",
+    "changePlan": "Ubah Rencana",
+    "redirecting": "Mengarahkan...",
+    "errorFetchingPortal": "Tidak dapat membuka portal penagihan"
+  },
+  "plans": {
+    "free": {
+      "name": "Gratis"
+    },
+    "professional": {
+      "name": "Profesional"
+    },
+    "enterprise": {
+      "name": "Perusahaan"
+    }
+  },
+  "transactions": {
+    "noDescription": "Transaksi kredit iklan Anda akan muncul di sini."
+  }
+}

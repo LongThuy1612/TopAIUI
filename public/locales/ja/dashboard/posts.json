@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "投稿とリンク",
+    "description": "ゲスト投稿とリンク挿入を管理します。",
+    "submitNewItem": "新しいアイテムを送信",
+    "submitNew": "新しく送信",
+    "guestPost": "ゲスト投稿",
+    "linkInsert": "リンク挿入",
+    "type": "タイプ",
+    "targetUrl": "ターゲットURL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "タイトル / アンカーテキスト",
+    "anchorTextPlaceholder": "記事のタイトル、またはリンクのアンカーテキスト",
+    "submitCredits": "送信（1クレジット）",
+    "tabs": {
+      "guestPosts": "ゲスト投稿",
+      "linkInserts": "リンク挿入"
+    },
+    "table": {
+      "title": "タイトル",
+      "anchor": "アンカーテキスト",
+      "url": "「URL」",
+      "status": "ステータス",
+      "date": "日付"
+    },
+    "empty": {
+      "noGuestTitle": "ゲスト投稿はありません",
+      "noGuestDesc": "ゲスト投稿はまだ送信されていません。",
+      "noGuestCta": "ゲスト投稿を送信",
+      "noLinkTitle": "リンク挿入はありません",
+      "noLinkDesc": "リンク挿入はまだ送信されていません。",
+      "noLinkCta": "リンク挿入を送信"
+    },
+    "subtitle": "ゲストの投稿とリンクの挿入を管理します。"
+  }
+}

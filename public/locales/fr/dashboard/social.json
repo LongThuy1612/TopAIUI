@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Écoute Sociale",
+    "description": "Surveillez les mots-clés sur TikTok et YouTube.",
+    "table": {
+      "platform": "Plateforme",
+      "keyword": "Mot-clé",
+      "videos": "Vidéos",
+      "views": "Vues",
+      "creators": "Créateurs",
+      "status": "Statut"
+    },
+    "status": {
+      "active": "Actif"
+    },
+    "monthlyQueries": "Requêtes Mensuelles",
+    "videosToday": "Vidéos Aujourd'hui",
+    "creatorsToday": "Créateurs Aujourd'hui",
+    "metrics": {
+      "monthlyQueries": "Requêtes mensuelles",
+      "videosToday": "Vidéos aujourd'hui",
+      "creatorsToday": "Créateurs aujourd'hui"
+    }
+  },
+  "socialListeningTitle": "Écoute Sociale",
+  "socialTable": {
+    "tool": "Outil d'IA",
+    "noData": "Aucune donnée trouvée"
+  },
+  "allPlatforms": "Toutes les plateformes"
+}

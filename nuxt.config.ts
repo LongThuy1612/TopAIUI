@@ -5,13 +5,42 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/icon'],
   css: ['~/assets/css/main.css'],
 
+  app: {
+    head: {
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap' }
+      ]
+    }
+  },
+
   i18n: {
     lazy: true,
     langDir: 'locales/',
     defaultLocale: 'en',
+    fallbackLocale: 'en',
     strategy: 'no_prefix',
     locales: [
       { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'zh', name: '中文', file: 'zh.json' },
+      { code: 'es', name: 'Español', file: 'es.json' },
+      { code: 'de', name: 'Deutsch', file: 'de.json' },
+      { code: 'ja', name: '日本語', file: 'ja.json' },
+      { code: 'fr', name: 'Français', file: 'fr.json' },
+      { code: 'ko', name: '한국어', file: 'ko.json' },
+      { code: 'it', name: 'Italiano', file: 'it.json' },
+      { code: 'nl', name: 'Nederlands', file: 'nl.json' },
+      { code: 'ru', name: 'Русский', file: 'ru.json' },
+      { code: 'pt', name: 'Português', file: 'pt.json' },
+      { code: 'sv', name: 'Svenska', file: 'sv.json' },
+      { code: 'da', name: 'Dansk', file: 'da.json' },
+      { code: 'no', name: 'Norsk', file: 'no.json' },
+      { code: 'fi', name: 'Suomi', file: 'fi.json' },
+      { code: 'ar', name: 'العربية', file: 'ar.json', dir: 'rtl' },
+      { code: 'he', name: 'עברית', file: 'he.json', dir: 'rtl' },
+      { code: 'th', name: 'ภาษาไทย', file: 'th.json' },
+      { code: 'id', name: 'Bahasa Indonesia', file: 'id.json' },
       { code: 'vi', name: 'Tiếng Việt', file: 'vi.json' }
     ],
     detectBrowserLanguage: {

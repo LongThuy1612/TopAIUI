@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "「デイリーリーダーボード」",
+      "title_long": "「デイリー AI ツール リーダーボード」"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "「月間リーダーボード」",
+      "title_long": "「月刊 AI ツール リーダーボード」"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "「年間リーダーボード」",
+      "title_long": "「年間 AI ツール リーダーボード」"
+    }
+  }
+}

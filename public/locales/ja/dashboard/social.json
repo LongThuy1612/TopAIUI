@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "ソーシャルリスニング",
+    "description": "TikTokやYouTubeでキーワードを監視します。",
+    "table": {
+      "platform": "プラットフォーム",
+      "keyword": "キーワード",
+      "videos": "動画",
+      "views": "視聴数",
+      "creators": "クリエイター",
+      "status": "ステータス"
+    },
+    "status": {
+      "active": "アクティブ"
+    },
+    "monthlyQueries": "月間クエリ",
+    "videosToday": "今日の動画",
+    "creatorsToday": "今日のクリエイター",
+    "metrics": {
+      "monthlyQueries": "月次クエリ",
+      "videosToday": "今日のビデオ",
+      "creatorsToday": "今日のクリエイター"
+    }
+  },
+  "socialListeningTitle": "ソーシャルリスニング",
+  "socialTable": {
+    "tool": "AIツール",
+    "noData": "データが見つかりませんでした"
+  },
+  "allPlatforms": "「すべてのプラットフォーム」"
+}

@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "Bảng xếp hạng hàng ngày",
+      "title_long": "Bảng xếp hạng công cụ AI hàng ngày"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "Bảng xếp hạng hàng tháng",
+      "title_long": "Bảng xếp hạng công cụ AI hàng tháng"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "Bảng xếp hạng hàng năm",
+      "title_long": "Bảng xếp hạng công cụ AI hàng năm"
+    }
+  }
+}

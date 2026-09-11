@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "תובנות אתר",
+    "subtitle": "עקוב אחר תנועה ומילות מפתח של מתחרים.",
+    "track": "עקוב",
+    "noDomains": "טרם נוספו דומיינים למעקב. הוסף אחד למעלה!",
+    "domain": "דומיין",
+    "monthlyVisits": "ביקורים חודשיים",
+    "rank": "דירוג",
+    "topKeywords": "מילות מפתח מובילות",
+    "added": "נוסף",
+    "tool": "כְּלִי",
+    "organicClicks": "קליקים אורגניים",
+    "paidClicks": "קליקים בתשלום",
+    "totalClicks": "סך כל הקליקים",
+    "addedOn": "נוסף ב-",
+    "noTools": "עדיין אין מעקב אחר כלים.",
+    "addDomainDesc": "הוסף את הדומיין הראשון שלך למעלה כדי להתחיל לעקוב אחר תובנות.",
+    "deleteSuccess": "הדומיין הוסר מהמעקב",
+    "confirmDelete": "האם אתה בטוח שברצונך להפסיק לעקוב אחר הדומיין הזה?",
+    "quota": "מִכסָה",
+    "limitReachedDesc": "הגעת למגבלת התובנות החודשיות שלך. שדרג כדי לעקוב אחר דומיינים נוספים.",
+    "upgradeNow": "שדרג עכשיו",
+    "usage": "נוֹהָג",
+    "searchPlaceholder": "חפש דומיינים במעקב...",
+    "advancedFilter": "מסננים מתקדמים",
+    "bulkOpen": "פתיחה בכמות גדולה",
+    "export": "ייצוא נתונים",
+    "aiTool": "כלי AI",
+    "rankChange": "שינוי דירוג",
+    "globalRank": "דירוג גלובלי",
+    "traffic": "תְנוּעָה",
+    "audience": "קהל",
+    "updateDate": "תאריך עדכון",
+    "limitReachedTitle": "הגעת לגבול שלך",
+    "limitReachedBody": "הגעת למגבלה של חיפושים בחינם. שדרג כדי לקבל גישה בלתי מוגבלת.",
+    "upgradePro": "שדרג לתוכנית Pro",
+    "actions": "פעולות",
+    "viewSocial": "הצג חברתי",
+    "filters": {
+      "months": {
+        "feb2026": "פברואר 2026",
+        "jan2026": "ינואר 2026"
+      },
+      "sources": {
+        "search": "חפש",
+        "direct": "ישיר",
+        "social": "חברתי"
+      },
+      "regions": {
+        "us": "אנחנו",
+        "vn": "וייטנאמית"
+      },
+      "categories": {
+        "llm": "למ\"ה",
+        "image": "תמונה",
+        "productivity": "פרודוקטיביות"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100 אלף",
+        "1m": "1 מטר"
+      },
+      "timePeriod": "תקופת זמן",
+      "selectMonth": "בחר חודש",
+      "trafficSource": "מקור תנועה",
+      "allSources": "כל המקורות",
+      "region": "אזור",
+      "category": "קטגוריה",
+      "trafficThreshold": "סף תנועה",
+      "minVisits": "מינימום ביקורים"
+    },
+    "exportSuccess": "הייצוא בוצע בהצלחה.",
+    "exportFailed": "הייצוא נכשל.",
+    "exportData": "ייצוא נתונים",
+    "exportDesc": "ייצוא דו\"ח זה לצורך שיתוף או ניתוח מקומי.",
+    "exportLimit": "מגבלת ייצוא",
+    "rows": "שורות",
+    "creditsCost": "עלות אשראי",
+    "availableAfter": "זמין לאחר",
+    "confirmExport": "אשר ייצוא",
+    "notEnoughCredits": "אין מספיק קרדיטים",
+    "removeFailed": "ההסרה נכשלה.",
+    "direct": "ישיר",
+    "sortDefault": "ברירת מחדל",
+    "sortTraffic": "תנועה"
+  },
+  "common": {
+    "global": "עולמי",
+    "allCategories": "כל הקטגוריות"
+  },
+  "table": {
+    "column": {
+      "tool": "כלי",
+      "organic": "קליקים אורגניים",
+      "paid": "קליקים בתשלום",
+      "total": "סה\"כ קליקים",
+      "trend": "טרנד",
+      "growth": "צמיחה"
+    },
+    "searchPlaceholder": "חפש דומיינים במעקב...",
+    "showingResults": "מציג {count} תוצאות",
+    "empty": "אין עדיין מעקב אחר דומיינים."
+  }
+}

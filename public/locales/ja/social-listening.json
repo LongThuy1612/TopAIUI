@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "ソーシャルリスニング - AIトレンドを監視 | TopAICollection",
+    "description": "ソーシャルメディアでAIトレンドを追跡します。",
+    "detailTitle": "{name} ソーシャルリスニング — TopAI",
+    "detailDescription": "{name}のソーシャルリスニング分析。",
+    "notFoundTitle": "ツールが見つかりません - ソーシャルリスニング"
+  },
+  "title": "ソーシャルリスニング",
+  "subtitle": "AIツールの動画パフォーマンスを追跡。 Twitter",
+  "leaderboardTitle": "リーダーボード",
+  "leaderboardSubtitle": "動画パフォーマンスを瞬時に追跡。 Twitter",
+  "table": {
+    "aiTool": "AIツール",
+    "introduce": "紹介",
+    "videoCount": "動画数",
+    "creatorsCount": "クリエイター数",
+    "monthlyTraffic": "月間トラフィック",
+    "avgViews": "平均視聴数",
+    "avgInteractions": "平均エンゲージメント",
+    "totalViews": "総視聴数",
+    "totalInteractions": "総エンゲージメント",
+    "emptyState": "データが見つかりません",
+    "pageIndicator": "{page} / {lastPage} ページ",
+    "updatedAt": "更新日",
+    "totalEngagement": "トータルエンゲージメント"
+  },
+  "search": {
+    "placeholder": "ツール名またはドメインを入力"
+  },
+  "detail": {
+    "viewTool": "ツールの詳細を見る",
+    "tabs": {
+      "socialListening": "ソーシャルリスニング"
+    },
+    "stats": {
+      "monthlyVisits": "月間訪問数",
+      "growth": "成長",
+      "growthRate": "成長率",
+      "socialVideos": "SNS動画",
+      "newLastWeek": "先週の新規"
+    },
+    "metrics": {
+      "avgViews": "平均視聴",
+      "totalVideos": "動画合計",
+      "totalCreators": "クリエイター合計",
+      "totalViews": "総視聴 / 平均",
+      "totalLikes": "総いいね / 平均",
+      "totalComments": "総コメント / 平均",
+      "totalShares": "総シェア数",
+      "totalCollects": "総コレクト数",
+      "totalQuotes": "総引用数",
+      "totalReposts": "総リポスト数"
+    },
+    "platforms": {
+      "all": "すべて"
+    },
+    "feed": {
+      "unlockCta": "ロック解除して表示",
+      "unlockDesc": "ログインして完全な分析を表示",
+      "viewNow": "今すぐ見る →",
+      "sortBy": "並べ替え",
+      "sortViews": "視聴数",
+      "sortLikes": "いいね",
+      "sortDate": "日付",
+      "loadMore": "もっと読む",
+      "searchPlaceholder": "タイトルまたはクリエイターで検索...",
+      "emptyState": "投稿が見つかりませんでした。動画投稿のみ表示されます。",
+      "untitledPost": "無題の投稿",
+      "metrics": {
+        "views": "再生回数",
+        "likes": "いいね",
+        "retweets": "リツイート",
+        "shares": "シェア",
+        "replies": "返信",
+        "comments": "コメント",
+        "quotes": "引用",
+        "saves": "保存",
+        "collects": "コレクション",
+        "upvotes": "賛成",
+        "follows": "フォロー"
+      },
+      "sortComments": "コメント",
+      "sortShares": "株式",
+      "title": "ソーシャルフィード"
+    },
+    "traffic": {
+      "bounceRate": "直帰率",
+      "pagesPerVisit": "ページ / 訪問",
+      "avgVisitDuration": "平均訪問時間",
+      "globalRanking": "世界ランキング",
+      "category": "カテゴリー",
+      "categoryRanking": "カテゴリランキング",
+      "deviceSplit": "デスクトップ vs モバイル",
+      "desktop": "デスクトップ",
+      "mobile": "モバイル",
+      "trafficSources": "トラフィックソース",
+      "topRegions": "上位の国",
+      "processingMsg": "アクセス解析データを処理中です。後でもう一度ご確認ください。",
+      "monthlyTrafficTrend": "月次トラフィック傾向",
+      "monthlyTrafficTrendDesc": "「過去 30 日間の世界の歴史的訪問数」",
+      "sourceWebsiteInsight": "「出典: ウェブサイト インサイト グローバル」"
+    },
+    "pricing": {
+      "notDocumented": "価格プランは未登録です。",
+      "checkWebsite": "公式サイトを確認",
+      "visitWebsite": "公式サイトへ",
+      "month": "月"
+    },
+    "lastUpdated": "最終更新日",
+    "influencers": {
+      "title": "トップインフルエンサー",
+      "name": "クリエイター",
+      "platform": "プラットフォーム",
+      "videos": "動画",
+      "reach": "EST（東部基準時。到着"
+    },
+    "filterInteraction": "「フィルターインタラクション」"
+  },
+  "platforms": {
+    "all": "すべてのプラットフォーム"
+  },
+  "monitors": {
+    "title": "モニター",
+    "subtitle": "ソーシャル プラットフォーム全体で特定のキーワードを追跡する",
+    "inputPlaceholder": "キーワードを入力してください (例: ChatGPT、Midjourney)",
+    "addButton": "追跡を開始する",
+    "emptyTitle": "アクティブなモニターがありません",
+    "emptyDesc": "上にキーワードを追加して、ソーシャル言及とセンチメントの監視を開始します。",
+    "keyword": "キーワード",
+    "platform": "プラットフォーム",
+    "status": "状態",
+    "lastActive": "最終アクティブ",
+    "addSuccess": "モニターが正常に追加されました。",
+    "addError": "モニターの追加に失敗しました",
+    "statusTracking": "トラッキング"
+  },
+  "socialListeningTitle": "ソーシャルリスニングリーダーボード",
+  "pagination": {
+    "prev": "前へ",
+    "next": "次",
+    "page": "ページ"
+  },
+  "nav": {
+    "overview": "「概要」",
+    "social": "「ソーシャル」",
+    "traffic": "「交通」",
+    "pricing": "「価格設定」"
+  },
+  "locked": {
+    "quotaTitle": "機能制限",
+    "quotaDesc": "ソーシャルリスニングのクォータ（割り当て）上限に達しました。アップグレードして、さらに多くのインサイトをアンロックしましょう。",
+    "upgradeBtn": "今すぐアップグレード",
+    "overlayTitle": "プレミアム機能",
+    "overlayDesc": "この機能を利用するには、有効なプレミアムサブスクリプションが必要です。",
+    "unlockBtn": "プレミアムをアンロック"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "אין עדיין כלי AI",
+      "description": "שלח את כלי ה-AI שלך כדי שמיליוני משתמשים יגלו אותו.",
+      "cta": "שלח כלי AI"
+    },
+    "columns": {
+      "tool": "כלי",
+      "status": "סטטוס",
+      "organic": "תנועה אורגנית",
+      "paid": "תנועה ממומנת",
+      "impressions": "חשיפות",
+      "actions": "פעולות"
+    },
+    "statusTooltip": {
+      "pending": "ממתין לאישור מנהל"
+    },
+    "submittedToast": "הכלי שלך נשלח וממתין לבדיקה.",
+    "warnings": {
+      "pendingView": "הכלי הזה עדיין בבדיקה ועדיין אינו גלוי לציבור.",
+      "confirmDelete": "האם אתה בטוח שברצונך למחוק את כלי הבינה המלאכותית הזה? לא ניתן לבטל פעולה זו."
+    },
+    "submit": {
+      "tool": "שלח כלי AI",
+      "update": "עדכון AI",
+      "name": "שם GPT",
+      "url": "כתובת URL של ChatGPT",
+      "category": "קָטֵגוֹרִיָה",
+      "description": "תֵאוּר",
+      "gpt": {
+        "title": "שלח את ה-GPT שלך",
+        "label": "שלח GPT",
+        "description": "שלח את ה-GPT המותאם אישית שלך כדי להתגלות על ידי אלפי משתמשים."
+      }
+    }
+  },
+  "submissions": {
+    "title": "הגשות",
+    "deleteSuccess": "ההגשה נמחקה בהצלחה.",
+    "deleteError": "מחיקת ההגשה נכשלה.",
+    "noSubmissions": "עדיין אין פוסטים אורחים",
+    "untitled": "הגשה ללא כותרת",
+    "confirmDelete": "האם אתה בטוח שברצונך למחוק את ההגשה הזו? לא ניתן לבטל פעולה זו.",
+    "columns": {
+      "subject": "נוֹשֵׂא",
+      "status": "סטָטוּס",
+      "date": "תַאֲרִיך",
+      "actions": "פעולות"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Tên đầy đủ",
+      "email": "Địa chỉ email",
+      "emailHelp": "Email không thể thay đổi",
+      "emailPlaceholder": "bạn@example.com",
+      "phone": "Số điện thoại",
+      "company": "Công ty",
+      "country": "Quốc gia",
+      "website": "Trang web",
+      "save": "Lưu thay đổi",
+      "saving": "Đang lưu...",
+      "saveSuccess": "Hồ sơ được cập nhật thành công.",
+      "phonePlaceholder": "+1 (000) 000-0000"
+    },
+    "password": {
+      "title": "Thay đổi mật khẩu",
+      "current": "Mật khẩu hiện tại",
+      "new": "Mật khẩu mới",
+      "confirm": "Xác nhận mật khẩu mới",
+      "update": "Cập nhật mật khẩu"
+    },
+    "notifications": {
+      "title": "Tùy chọn thông báo",
+      "email": "Thông báo qua email",
+      "marketing": "Email tiếp thị"
+    }
+  },
+  "profile": {
+    "title": "Hồ sơ",
+    "fullName": "Tên đầy đủ",
+    "email": "Địa chỉ email",
+    "emailHelp": "Email không thể thay đổi",
+    "emailPlaceholder": "bạn@example.com",
+    "phone": "Số điện thoại",
+    "company": "Công ty",
+    "country": "Quốc gia",
+    "website": "Trang web",
+    "save": "Lưu thay đổi",
+    "saving": "Đang lưu...",
+    "saveSuccess": "Hồ sơ được cập nhật thành công.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Thay đổi mật khẩu",
+    "current": "Mật khẩu hiện tại",
+    "new": "Mật khẩu mới",
+    "confirm": "Xác nhận mật khẩu mới",
+    "update": "Cập nhật mật khẩu"
+  },
+  "notifications": {
+    "title": "Tùy chọn thông báo",
+    "email": "Thông báo qua email",
+    "marketing": "Email tiếp thị"
+  },
+  "tabs": {
+    "profile": "Hồ sơ",
+    "security": "Bảo vệ",
+    "notifications": "Thông báo"
+  },
+  "updated": "Đã cập nhật cài đặt thành công"
+}

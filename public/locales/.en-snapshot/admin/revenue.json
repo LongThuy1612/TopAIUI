@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Revenue & Financial Health",
+    "totalRevenue": "Total Revenue",
+    "mrr": "MRR (Monthly Recurring)",
+    "mrrDescription": "Estimated recurring revenue based on active subscriptions",
+    "breakdown": "Revenue Breakdown",
+    "revenueGrowth": "Revenue Growth (30 Days)",
+    "noData": "No revenue data available",
+    "noTrendsData": "No growth data found for the last 30 days",
+    "comingSoon": "Coming Soon"
+  }
+}

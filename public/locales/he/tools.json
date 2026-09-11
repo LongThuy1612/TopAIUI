@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "כל כלי הבינה המלאכותית - TopAICollection",
+    "description": "עיין באוסף המלא שלנו של כלי AI. סנן לפי קטגוריה, פופולריות או מצא את חידושי הבינה המלאכותית החדשים ביותר.",
+    "archiveMonthTitle": "כלי AI — {label} | TopAICollection",
+    "archiveMonthDescription": "עיין בכלי AI שנוספו ב-{label}.",
+    "archiveYearTitle": "כלי AI — {year} | TopAICollection",
+    "archiveYearDescription": "עיין בכלי AI שנוספו ב-{year}.",
+    "categoryTitle": "{category} כלי בינה מלאכותית | TopAICollection",
+    "categoryDescription": "חקור את כלי הבינה המלאכותית הטובים ביותר של {category}.",
+    "freeTitle": "כלי AI בחינם | {title}",
+    "freeDescription": "גלה את כלי הבינה המלאכותית הטובים ביותר בחינם באינטרנט. {description}",
+    "newestTitle": "כלי AI החדשים ביותר | {title}",
+    "newestDescription": "בדוק את כלי הבינה המלאכותית האחרונים שנוספו לאוסף שלנו."
+  },
+  "title": "חקור את כל כלי הבינה המלאכותית",
+  "subtitle": "גלה את פתרון הבינה המלאכותית המושלם מהאוסף המקיף שלנו",
+  "filters": {
+    "all": "כל הכלים",
+    "today": "הַיוֹם",
+    "featured": "מוּבלָט",
+    "new": "זה עתה הושק",
+    "mostSaved": "הכי נשמר",
+    "mostUsed": "הכי בשימוש",
+    "trending": "מגמות",
+    "justLaunched": "זה עתה הושק",
+    "title": "מסננים",
+    "category": "קָטֵגוֹרִיָה",
+    "allCategories": "כל הקטגוריות",
+    "type": "סוּג",
+    "popular": "פּוֹפּוּלָרִי",
+    "newest": "הכי חדש",
+    "name": "שֵׁם",
+    "price": "מְחִיר",
+    "free": "לְשַׁחְרֵר",
+    "paid": "בתשלום",
+    "sortBy": "מיין לפי"
+  },
+  "sort": {
+    "label": "מיין לפי",
+    "popular": "הכי פופולרי",
+    "trending": "מגמות",
+    "newest": "הכי חדש ראשון",
+    "rating": "הדירוג הגבוה ביותר",
+    "name": "אָלֶף בֵּיתִי"
+  },
+  "categories": {
+    "title": "קטגוריות",
+    "all": "כל הקטגוריות",
+    "showMore": "הצג עוד ←",
+    "toolCount": "{count} כלים"
+  },
+  "results": {
+    "showing": "מציג {start}-{end} מתוך {total} כלים",
+    "error": "שגיאה בטעינת כלים. אנא נסה שוב.",
+    "noResults": "לא נמצאו תוצאות",
+    "tryDifferent": "אנא נסה מילות מפתח או מסננים שונים."
+  },
+  "pagination": {
+    "next": "הַבָּא",
+    "page": "עמוד {page}"
+  },
+  "sidebar": {
+    "trending": "פופולרי עכשיו",
+    "noTools": "אין כלים טרנדיים",
+    "advertise": "פרסם כאן",
+    "advertiseDesc": "הגע ל-5 מיליון+ חובבי AI חודשיים והגדל את הביקורים שלך",
+    "emailPlaceholder": "כתובת אימייל"
+  },
+  "hero": {
+    "title": "גלה את כלי הבינה המלאכותית העדכניים ביותר",
+    "subtitle": "27,955 AI ו-459 קטגוריות",
+    "searchPlaceholder": "חיפוש כלי AI...",
+    "search": "לְחַפֵּשׂ"
+  },
+  "breadcrumb": {
+    "home": "בַּיִת",
+    "tools": "כְּלֵי עֲבוֹדָה"
+  },
+  "jsonLd": {
+    "name": "ספריית כלי AI",
+    "description": "עיין בספרייה המלאה שלנו של כלי AI."
+  },
+  "badges": {
+    "featured": "מוּבלָט",
+    "new": "חָדָשׁ",
+    "trending": "מגמות",
+    "popular": "פּוֹפּוּלָרִי",
+    "sponsored": "ממומן"
+  },
+  "share": "לַחֲלוֹק",
+  "visits": "ביקורים",
+  "monthlyVisits": "ביקורים חודשיים משוערים",
+  "visit": "לְבַקֵר",
+  "actions": {
+    "save": "לְהַצִיל",
+    "saved": "נשמר",
+    "visit": "לְבַקֵר",
+    "share": "לַחֲלוֹק",
+    "copyLink": "העתק קישור",
+    "shareThisTool": "שתף את הכלי הזה"
+  },
+  "growth": "צְמִיחָה",
+  "pricing": {
+    "free": "לְשַׁחְרֵר"
+  }
+}

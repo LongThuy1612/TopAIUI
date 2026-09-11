@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Trung Tâm Trợ Giúp - Hỗ Trợ TopAICollection",
+    "description": "Nhận trợ giúp với TopAICollection. Tìm câu trả lời cho các câu hỏi thường gặp và liên hệ với đội ngũ hỗ trợ của chúng tôi."
+  },
+  "title": "Trung Tâm Trợ Giúp",
+  "subtitle": "Chúng tôi có thể giúp gì cho bạn hôm nay?",
+  "sections": {
+    "faq": {
+      "title": "Câu Hỏi Thường Gặp",
+      "description": "Tìm câu trả lời cho các câu hỏi thường gặp.",
+      "link": "Xem FAQ"
+    },
+    "contact": {
+      "title": "Liên Hệ Hỗ Trợ",
+      "description": "Không tìm thấy thông tin bạn cần? Hãy liên hệ với chúng tôi.",
+      "link": "Liên Hệ"
+    }
+  },
+  "commonTopics": {
+    "title": "Chủ Đề Thường Gặp",
+    "submitTool": "Làm thế nào để gửi công cụ AI của tôi?",
+    "advertising": "Quảng cáo hoạt động như thế nào?",
+    "privacy": "Chính sách quyền riêng tư của bạn là gì?",
+    "terms": "Điều khoản dịch vụ của bạn là gì?"
+  }
+}

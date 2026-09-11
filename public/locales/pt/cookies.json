@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Política de Cookies - TopAICollection",
+    "description": "Saiba como TopAICollection usa cookies e tecnologias semelhantes."
+  },
+  "title": "Política de Cookies",
+  "lastUpdated": "Última atualização",
+  "sections": {
+    "whatAreCookies": {
+      "title": "O que são biscoitos",
+      "description": "Cookies são pequenos arquivos de texto que são armazenados no seu computador ou dispositivo móvel quando você visita nosso site. Eles nos ajudam a fornecer a você uma experiência melhor, lembrando suas preferências e entendendo como você usa nosso site."
+    },
+    "howWeUse": {
+      "title": "Como usamos cookies",
+      "intro": "Utilizamos cookies para os seguintes fins:",
+      "essential": "Cookies essenciais: Necessários para o bom funcionamento do site, incluindo autenticação e segurança.",
+      "analytics": "Cookies analíticos: ajudam-nos a compreender como os visitantes interagem com o nosso website.",
+      "preference": "Cookies de preferência: lembram suas configurações e preferências, como idioma e localidade.",
+      "marketing": "Cookies de Marketing: Usados ​​para exibir anúncios relevantes e monitorar o desempenho da campanha."
+    },
+    "managing": {
+      "title": "Gerenciando Cookies",
+      "intro": "A maioria dos navegadores permitem que você controle os cookies através de suas configurações. Você pode escolher:",
+      "blockAll": "Bloquear todos os cookies",
+      "acceptAll": "Aceite todos os cookies",
+      "beNotified": "Seja notificado quando um cookie for definido",
+      "deleteExisting": "Exclua cookies que já foram definidos",
+      "note": "Tenha em atenção que o bloqueio de determinados cookies pode afetar a sua experiência no nosso website."
+    },
+    "thirdParty": {
+      "title": "Cookies de terceiros",
+      "intro": "Alguns cookies em nosso site são definidos por serviços de terceiros que utilizamos, incluindo:",
+      "googleAnalytics": "Google Analytics (análise)",
+      "vercel": "Vercel (hospedagem e análise)"
+    },
+    "contact": {
+      "title": "Contate-nos",
+      "message": "Se você tiver dúvidas sobre nosso uso de cookies, por favor",
+      "contactLink": "Contate-nos"
+    }
+  }
+}

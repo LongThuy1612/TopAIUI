@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "Поиск AI-инструментов...",
+    "categories": "Категории",
+    "rankings": "Рейтинги",
+    "submit": "Добавить инструмент",
+    "admin": "Админ"
+  },
+  "hero": {
+    "titlePrefix": "Найдите лучшие",
+    "titleHighlight": "AI-инструменты",
+    "subtitle": "Просматривайте сотни AI-продуктов по категориям, сравнивайте цены и находите подходящий инструмент для своей работы.",
+    "searchPlaceholder": "Поиск AI-инструментов..."
+  },
+  "stats": {
+    "tools": "AI-инструментов в каталоге",
+    "categories": "Категорий",
+    "featured": "Рекомендуемые инструменты"
+  },
+  "tabs": {
+    "heading": "Изучить инструменты",
+    "newest": "Новые",
+    "featured": "Самые рекомендуемые",
+    "free": "Бесплатные",
+    "viewAll": "Смотреть все →"
+  },
+  "announcement": {
+    "featured": "Рекомендуем"
+  },
+  "sidebar": {
+    "featuredTools": "Рекомендуемые инструменты",
+    "topCategories": "Популярные категории"
+  },
+  "sections": {
+    "browseByCategory": "Обзор по категориям",
+    "newestTools": "Новые инструменты",
+    "featuredTools": "Рекомендуемые инструменты",
+    "viewAll": "Смотреть все →",
+    "justLaunched": "Только что запущено",
+    "featuredThisWeek": "Рекомендуем на этой неделе",
+    "featuredThisWeekSubtitle": "Инструменты, которые сообщество чаще всего сохраняло и оценивало.",
+    "updatedDaily": "Обновляется ежедневно",
+    "viewMore": "Показать больше →"
+  },
+  "cta": {
+    "title": "Есть AI-инструмент, которым хотите поделиться?",
+    "subtitle": "Покажите его людям, которые ищут что-то похожее.",
+    "button": "Добавить свой инструмент"
+  },
+  "empty": {
+    "noTools": "Пока нет инструментов — выполните",
+    "noResults": "Инструменты не найдены"
+  },
+  "category": {
+    "breadcrumbHome": "Главная",
+    "allTools": "Все инструменты",
+    "allToolsTitle": "Все AI-инструменты",
+    "allPricing": "Все цены",
+    "sortNewest": "Сначала новые",
+    "sortFeatured": "Сначала рекомендуемые",
+    "sortName": "По имени A–Z",
+    "toolsFound": "инструмент найден | инструментов найдено",
+    "searchPlaceholder": "Поиск инструментов...",
+    "filters": "Фильтры",
+    "viewGrid": "Вид сеткой",
+    "viewList": "Вид списком"
+  },
+  "pricing": {
+    "FREE": "Бесплатно",
+    "FREEMIUM": "Freemium",
+    "PAID": "Платно"
+  },
+  "ranking": {
+    "title": "Лучшие AI-инструменты",
+    "subtitle": "Рейтинг составлен на основе данных о трафике и росте в нашем каталоге.",
+    "byGrowth1m": "Рост за 1 месяц",
+    "byGrowth3m": "Рост за 3 месяца",
+    "byGrowth6m": "Рост за 6 месяцев",
+    "byTraffic": "Посещений в месяц",
+    "colRank": "Позиция",
+    "colTool": "Инструмент",
+    "colVisits": "Посещений в месяц",
+    "colGrowth": "Рост",
+    "colAuthority": "Авторитетность домена",
+    "colCategory": "Категория",
+    "noData": "Данных рейтинга пока нет."
+  },
+  "tool": {
+    "openSite": "Открыть сайт",
+    "save": "Сохранить",
+    "saved": "Сохранено",
+    "featured": "Рекомендуем",
+    "introduction": "Описание",
+    "addedOn": "Добавлено",
+    "monthlyVisitors": "Посетителей в месяц",
+    "features": "Ключевые функции",
+    "useCases": "Варианты использования",
+    "prosAndCons": "Плюсы и минусы",
+    "pros": "Плюсы",
+    "cons": "Минусы",
+    "faq": "Часто задаваемые вопросы",
+    "alternatives": "Альтернативы",
+    "backToCategory": "Назад к",
+    "notFound": "Инструмент не найден",
+    "similarTools": "Похожие инструменты",
+    "tabProductInfo": "Информация о продукте",
+    "tabPricing": "Цены",
+    "tabReviews": "Отзывы",
+    "tabAnalytics": "Аналитика",
+    "tabAlternatives": "Альтернативы",
+    "productInformationHeading": "Информация о продукте {name}",
+    "whatIs": "Что такое {name}?",
+    "howToUseHeading": "Как использовать {name}?",
+    "reviewsHeading": "Отзывы о {name} ({count})",
+    "ratingPrompt": "Порекомендовали бы вы {name}? Оставьте комментарий",
+    "whatDoYouThink": "Что вы думаете?",
+    "loginToComment": "Войдите, чтобы оставить комментарий",
+    "pricingHeading": "Цены на {name}",
+    "noPricingYet": "Информации о ценах пока нет.",
+    "analyticsHeading": "Аналитика {name}",
+    "trafficAnalysis": "Анализ трафика сайта {name}",
+    "visitOverTime": "Посещения за период",
+    "monthlyVisits": "Посещений в месяц",
+    "avgVisitDuration": "Средняя продолжительность визита",
+    "pagePerVisit": "Страниц за визит",
+    "bounceRate": "Показатель отказов",
+    "noTrafficYet": "Данных о трафике пока нет.",
+    "badgeVerified": "Проверено",
+    "badgeJustLaunched": "Только что запущено",
+    "badgeFreeTool": "Бесплатный инструмент",
+    "affiliateLink": "Партнёрская ссылка",
+    "couponCode": "Промокод",
+    "ratings": "оценок",
+    "upvotes": "голосов",
+    "domainAuthority": "Авторитетность домена",
+    "trafficRank": "Рейтинг трафика",
+    "viewCount": "Просмотров страницы"
+  },
+  "footer": {
+    "tagline": "Находите, сравнивайте и делитесь лучшими AI-инструментами — на основе Nuxt и PostgreSQL.",
+    "product": "Продукт",
+    "home": "Главная",
+    "allTools": "Все инструменты",
+    "submit": "Добавить инструмент",
+    "categories": "Категории",
+    "company": "Компания",
+    "admin": "Вход для админа",
+    "language": "Язык",
+    "copyright": "Все права защищены."
+  },
+  "language": {
+    "label": "Язык"
+  }
+}

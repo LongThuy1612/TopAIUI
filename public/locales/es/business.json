@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Soluciones empresariales: asóciese con nosotros | TopAICollection",
+    "description": "Explore oportunidades de asociación comercial con TopAICollection. Publicidad, contenido patrocinado y más."
+  },
+  "title": "Soluciones empresariales",
+  "subtitle": "Asóciese con TopAICollection para llegar a entusiastas de la IA en todo el mundo",
+  "contact": {
+    "title": "Póngase en contacto"
+  },
+  "offers": {
+    "ads": "Campañas de publicidad dirigida",
+    "partnerships": "Alianzas estratégicas",
+    "growth": "Acelere el crecimiento de su producto de IA",
+    "consulting": "Servicios personalizados de integración de IA"
+  },
+  "form": {
+    "fullName": "Nombre completo",
+    "workEmail": "Correo electrónico del trabajo",
+    "companyName": "nombre de empresa",
+    "inquiryType": "Tipo de consulta",
+    "selectType": "Seleccionar tipo",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntanos más sobre tus necesidades...",
+    "inquiryTypes": {
+      "advertise": "Anunciar",
+      "guestPost": "Publicación de invitado",
+      "partnership": "Asociación",
+      "customDevelopment": "Desarrollo personalizado",
+      "other": "Otro"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Anuncie su herramienta de inteligencia artificial",
+      "description": "Haga que su herramienta de IA destaque de forma destacada en nuestra plataforma.",
+      "link": "Más información"
+    },
+    "guestPost": {
+      "title": "Publicaciones y enlaces de invitados",
+      "description": "Publique contenido u obtenga vínculos de retroceso en nuestro sitio de alta autoridad.",
+      "link": "Más información"
+    },
+    "submitTool": {
+      "title": "Envíe su herramienta",
+      "description": "Agregue su herramienta de IA a nuestro directorio de forma gratuita.",
+      "link": "Enviar ahora"
+    },
+    "customSolutions": {
+      "title": "Soluciones personalizadas",
+      "description": "Contáctenos para oportunidades de asociación personalizadas.",
+      "link": "Contáctenos"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "Más de 100 socios",
+    "partnerCountSub": "Con la confianza de las principales empresas de IA",
+    "contactSupport": "Contactar con soporte"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "toolNameRequired": "El nombre de la herramienta es obligatorio.",
+    "url": "URL no válida",
+    "descriptionMin": "La descripción debe tener al menos 10 caracteres.",
+    "categoryRequired": "Por favor seleccione una categoría",
+    "email": "Dirección de correo electrónico no válida",
+    "messageMin": "El mensaje debe tener al menos 10 caracteres."
+  },
+  "success": "¡Su consulta ha sido enviada exitosamente!"
+}

@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "社交监听",
+    "description": "监控 TikTok 和 YouTube 上的关键词。",
+    "table": {
+      "platform": "平台",
+      "keyword": "关键词",
+      "videos": "视频",
+      "views": "观看次数",
+      "creators": "创作者",
+      "status": "状态"
+    },
+    "status": {
+      "active": "活动中"
+    },
+    "monthlyQueries": "每月查询量",
+    "videosToday": "今日视频",
+    "creatorsToday": "今日创作者",
+    "metrics": {
+      "monthlyQueries": "每月查询",
+      "videosToday": "今日视频",
+      "creatorsToday": "今日创作者"
+    }
+  },
+  "socialListeningTitle": "社交监听",
+  "socialTable": {
+    "tool": "人工智能工具",
+    "noData": "没有找到数据"
+  },
+  "allPlatforms": "“全平台”"
+}

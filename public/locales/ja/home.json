@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "最高の AI ツールと Web サイトを発見する",
+    "description": "#1のAIツールディレクトリリストを探索しましょう。このAIツール辞書ウェブサイトは、最高のAIソフトウェアを無料で検索、比較、ローンチするのに役立ちます。"
+  },
+  "nav": {
+    "today": "今日",
+    "latestAI": "最新のAI",
+    "mostSaved": "最も保存された",
+    "mostUsed": "最もよく使われる",
+    "browserPlugin": "ブラウザプラグイン",
+    "application": "応用",
+    "discordOfAI": "AIのDiscord",
+    "compareAI": "AIを比較する",
+    "ariaLabel": "メインナビゲーション"
+  },
+  "hero": {
+    "title": "最高の AI Web サイトとツールを発見する",
+    "subtitle": "最新の AI イノベーションで毎日更新される包括的なディレクトリから、ニーズに最適な AI ツールを見つけてください。",
+    "stats": {
+      "aiTools": "AIツール",
+      "categories": "カテゴリ",
+      "languages": "言語",
+      "and": "そして",
+      "supporting": "サポートする",
+      "description": "最新のイノベーションで毎日更新される包括的な AI コレクション。"
+    }
+  },
+  "search": {
+    "placeholder": "AI によるツールの検索 (例:動画翻訳AIツール",
+    "button": "検索"
+  },
+  "sections": {
+    "featured": {
+      "title": "注目の AI ツール",
+      "description": "最も人気があり効果的な AI ツールを発見する",
+      "noTools": "現時点では利用可能な注目ツールはありません"
+    },
+    "justLaunched": {
+      "title": "発売されたばかり",
+      "description": "最新の AI ツールとイノベーション",
+      "noTools": "現時点では新しいツールは利用できません"
+    },
+    "categories": {
+      "title": "カテゴリ別に参照",
+      "description": "ユースケースと業界別に整理された AI ツールを見つける"
+    },
+    "trending": {
+      "title": "今のトレンド",
+      "description": "今週最も人気のある AI ツール"
+    }
+  },
+  "cta": {
+    "title": "AI ツールをリストアップする",
+    "description": "AI ツールをディレクトリに掲載することで、何百万人もの潜在的なユーザーにリーチできます。",
+    "button": "ツールを提出する",
+    "features": {
+      "exposure": "世界的な暴露",
+      "traffic": "トラフィックの増加",
+      "seo": "SEOのメリット"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "AI アプリケーション",
+      "description": "生産性や創造性などに最適な AI アプリケーションを見つけてください。"
+    },
+    "browserExtensions": {
+      "title": "AI ブラウザ拡張機能",
+      "description": "ワークフローを強化する最適な AI ブラウザ拡張機能を見つけてください。"
+    },
+    "latestAi": {
+      "title": "最新のAIツール",
+      "description": "毎日更新される最新の AI ツールとイノベーションを発見してください。"
+    },
+    "mostSaved": {
+      "title": "最も保存された AI ツール",
+      "description": "私たちのコミュニティで最も保存されブックマークされている AI ツールを見つけてください。"
+    },
+    "mostUsed": {
+      "title": "最もよく使われるAIツール",
+      "description": "コミュニティで最も人気があり、広く使用されているAIツールをご覧ください。"
+    },
+    "discord": {
+      "title": "AI Discordコミュニティ",
+      "description": "最高のAI Discordコミュニティを見つけ、AIの愛好家とつながりましょう。"
+    },
+    "today": {
+      "title": "今日のおすすめAIツール",
+      "description": "TopAICollectionで今日注目されている最高のAIツールをご覧ください。"
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "テキスト生成",
+          "Image Creation": "画像生成",
+          "Coding": "コーディング",
+          "Video": "動画",
+          "Audio": "音声",
+          "Productivity": "生産性"
+        },
+        "text": "AIをどのような目的で使用しますか？"
+      },
+      "budget": {
+        "options": {
+          "Free only": "無料のみ",
+          "Freemium": "フリーミアム",
+          "Paid is fine": "有料でも可"
+        },
+        "text": "予算はどのくらいですか？"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "初心者",
+          "Intermediate": "中級者",
+          "Expert": "上級者"
+        },
+        "text": "スキルレベルはどのくらいですか？"
+      }
+    },
+    "title": "あなたに合わせたおすすめ",
+    "viewTool": "ツールを表示",
+    "noTools": "条件に一致するツールが見つかりませんでした。検索条件を広げてみてください！",
+    "startOver": "最初からやり直す",
+    "finding": "あなたに最適なAIツールを探しています...",
+    "questionLabel": "質問 {step} / {total}",
+    "completed": "{percentage}% 完了"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "رؤى الموقع",
+    "subtitle": "تتبع حركة المرور والكلمات المفتاحية للمنافسين.",
+    "track": "تتبع",
+    "noDomains": "لا توجد نطاقات متبعة بعد. أضف نطاقاً أعلاه!",
+    "domain": "النطاق",
+    "monthlyVisits": "الزيارات الشهرية",
+    "rank": "الترتيب",
+    "topKeywords": "أهم الكلمات المفتاحية",
+    "added": "تمت الإضافة",
+    "tool": "أداة",
+    "organicClicks": "النقرات العضوية",
+    "paidClicks": "النقرات المدفوعة",
+    "totalClicks": "إجمالي النقرات",
+    "addedOn": "تمت الإضافة على",
+    "noTools": "لم يتم تعقب أي أدوات حتى الآن.",
+    "addDomainDesc": "أضف نطاقك الأول أعلاه لبدء تتبع الرؤى.",
+    "deleteSuccess": "تمت إزالة النطاق من التتبع",
+    "confirmDelete": "هل أنت متأكد أنك تريد إيقاف تتبع هذا النطاق ؟",
+    "quota": "الحصة",
+    "limitReachedDesc": "لقد وصلت إلى الحد الأقصى للرؤى الشهرية. قم بالترقية لتتبع المزيد من النطاقات.",
+    "upgradeNow": "رقي الآن",
+    "usage": "الاستخدام",
+    "searchPlaceholder": "البحث في النطاقات المتعقبة...",
+    "advancedFilter": "مرشحات متقدمة",
+    "bulkOpen": "السائبة مفتوحة",
+    "export": "تصدير البيانات",
+    "aiTool": "أداة الذكاء الاصطناعي",
+    "rankChange": "تغيير الرتبة",
+    "globalRank": "المرتبة العالمية",
+    "traffic": "مرور",
+    "audience": "جمهور",
+    "updateDate": "تاريخ التحديث",
+    "limitReachedTitle": "لقد وصلت إلى الحد الخاص بك",
+    "limitReachedBody": "لقد وصلت إلى الحد المسموح به من عمليات البحث المجانية. الترقية للحصول على وصول غير محدود.",
+    "upgradePro": "الترقية إلى الخطة الاحترافية",
+    "actions": "الإجراءات",
+    "viewSocial": "عرض الاجتماعية",
+    "exportSuccess": "تم التصدير بنجاح.",
+    "exportFailed": "فشل التصدير.",
+    "exportData": "تصدير البيانات",
+    "exportDesc": "تصدير هذا التقرير للمشاركة أو التحليل محلياً.",
+    "exportLimit": "حد التصدير",
+    "rows": "الصفوف",
+    "creditsCost": "تكلفة الاعتمادات",
+    "availableAfter": "متاح بعد",
+    "confirmExport": "تأكيد التصدير",
+    "notEnoughCredits": "الاعتمادات ليست كافية",
+    "filters": {
+      "timePeriod": "الفترة الزمنية",
+      "selectMonth": "اختر الشهر",
+      "months": {
+        "feb2026": "فبراير 2026",
+        "jan2026": "يناير 2026"
+      },
+      "trafficSource": "مصدر المرور",
+      "allSources": "جميع المصادر",
+      "sources": {
+        "search": "يبحث",
+        "direct": "مباشر",
+        "social": "اجتماعي"
+      },
+      "region": "منطقة",
+      "regions": {
+        "us": "نحن",
+        "vn": "ن"
+      },
+      "category": "فئة",
+      "categories": {
+        "llm": "ماجستير",
+        "image": "صورة",
+        "productivity": "إنتاجية"
+      },
+      "trafficThreshold": "عتبة المرور",
+      "minVisits": "الحد الأدنى من الزيارات",
+      "thresholds": {
+        "0": "0",
+        "100k": "100 ألف",
+        "1m": "1 م"
+      }
+    },
+    "removeFailed": "فشلت الإزالة.",
+    "direct": "مباشر",
+    "sortDefault": "افتراضي",
+    "sortTraffic": "حركة المرور"
+  },
+  "common": {
+    "global": "عالمي",
+    "allCategories": "جميع الفئات"
+  },
+  "table": {
+    "column": {
+      "tool": "أداة",
+      "organic": "النقرات العضوية",
+      "paid": "النقرات المدفوعة",
+      "total": "إجمالي النقرات",
+      "trend": "الاتجاه",
+      "growth": "النمو"
+    },
+    "searchPlaceholder": "البحث في المجالات المتعقبة...",
+    "showingResults": "عرض نتائج {count}",
+    "empty": "لم يتم تعقب أي نطاقات حتى الآن."
+  }
+}

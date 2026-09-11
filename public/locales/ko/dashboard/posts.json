@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "게시물 및 링크",
+    "description": "게스트 게시물 및 링크 삽입을 관리하세요.",
+    "submitNewItem": "새 항목 제출",
+    "submitNew": "새로 제출",
+    "guestPost": "게스트 게시물",
+    "linkInsert": "링크 삽입",
+    "type": "유형",
+    "targetUrl": "대상 URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "제목 / 앵커 텍스트",
+    "anchorTextPlaceholder": "기사 제목 또는 링크 앵커 텍스트",
+    "submitCredits": "제출 (1 크레딧)",
+    "tabs": {
+      "guestPosts": "게스트 게시물",
+      "linkInserts": "링크 삽입"
+    },
+    "table": {
+      "title": "제목",
+      "anchor": "앵커 텍스트",
+      "url": "URL",
+      "status": "상태",
+      "date": "날짜"
+    },
+    "empty": {
+      "noGuestTitle": "게스트 게시물 없음",
+      "noGuestDesc": "아직 제출된 게스트 게시물이 없습니다.",
+      "noGuestCta": "게스트 게시물 제출",
+      "noLinkTitle": "링크 삽입 없음",
+      "noLinkDesc": "아직 제출된 링크 삽입이 없습니다.",
+      "noLinkCta": "링크 삽입 제출"
+    },
+    "subtitle": "게스트 게시물과 링크 삽입을 관리하세요."
+  }
+}

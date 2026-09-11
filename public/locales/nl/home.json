@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Ontdek de beste AI-tools en websites",
+    "description": "Ontdek de #1 AI-tools directorylijst. Deze AI-tools woordenboekwebsite helpt u de absolute beste AI-software GRATIS te vinden, vergelijken en lanceren."
+  },
+  "nav": {
+    "today": "Vandaag",
+    "latestAI": "Nieuwste AI",
+    "mostSaved": "Meest opgeslagen",
+    "mostUsed": "Meest gebruikt",
+    "browserPlugin": "Browser-plug-in",
+    "application": "Sollicitatie",
+    "discordOfAI": "Onenigheid van AI (Discord)",
+    "compareAI": "Vergelijk AI",
+    "ariaLabel": "Hoofdnavigatie"
+  },
+  "hero": {
+    "title": "Ontdek de beste AI-websites en -tools",
+    "subtitle": "Vind de perfecte AI-tools voor uw behoeften in onze uitgebreide directory, die dagelijks wordt bijgewerkt met de nieuwste AI-innovaties.",
+    "stats": {
+      "aiTools": "AI-hulpmiddelen",
+      "categories": "categorieën",
+      "languages": "talen",
+      "and": "En",
+      "supporting": "ondersteunen",
+      "description": "Uitgebreide AI-collectie, dagelijks bijgewerkt met de nieuwste innovaties."
+    }
+  },
+  "search": {
+    "placeholder": "Vind tools door AI, b.v. AI-tool voor videovertaling",
+    "button": "Zoekopdracht"
+  },
+  "sections": {
+    "featured": {
+      "title": "Uitgelichte AI-tools",
+      "description": "Ontdek de meest populaire en effectieve AI-tools",
+      "noTools": "Er zijn momenteel geen aanbevolen tools beschikbaar"
+    },
+    "justLaunched": {
+      "title": "Net gelanceerd",
+      "description": "Nieuwste AI-tools en innovaties",
+      "noTools": "Er zijn momenteel geen nieuwe tools beschikbaar"
+    },
+    "categories": {
+      "title": "Blader op categorie",
+      "description": "Vind AI-tools geordend op gebruiksscenario en branche"
+    },
+    "trending": {
+      "title": "Nu populair",
+      "description": "Meest populaire AI-tools deze week"
+    }
+  },
+  "cta": {
+    "title": "Maak een lijst van uw AI-tool",
+    "description": "Bereik miljoenen potentiële gebruikers door uw AI-tool in onze directory op te nemen.",
+    "button": "Dien uw hulpmiddel in",
+    "features": {
+      "exposure": "Mondiale blootstelling",
+      "traffic": "Meer verkeer",
+      "seo": "SEO-voordelen"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "AI-toepassingen",
+      "description": "Ontdek de beste AI-toepassingen voor productiviteit, creativiteit en meer."
+    },
+    "browserExtensions": {
+      "title": "AI-browserextensies",
+      "description": "Ontdek de beste AI-browserextensies om uw workflow een boost te geven."
+    },
+    "latestAi": {
+      "title": "Nieuwste AI-tools",
+      "description": "Ontdek de nieuwste AI-tools en innovaties, dagelijks bijgewerkt."
+    },
+    "mostSaved": {
+      "title": "Meest opgeslagen AI-tools",
+      "description": "Ontdek de meest opgeslagen en gebookmarkte AI-tools van onze community."
+    },
+    "mostUsed": {
+      "title": "Meest Gebruikte AI-tools",
+      "description": "Ontdek de meest populaire en veelgebruikte AI-tools door onze community."
+    },
+    "discord": {
+      "title": "AI Discord-gemeenschappen",
+      "description": "Ontdek de beste AI Discord-gemeenschappen en maak contact met AI-enthousiastelingen."
+    },
+    "today": {
+      "title": "Uitgelichte AI-tools Vandaag",
+      "description": "Ontdek de beste AI-tools die vandaag worden uitgelicht op TopAICollection."
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "Tekstgeneratie",
+          "Image Creation": "Afbeeldingen maken",
+          "Coding": "Coderen",
+          "Video": "Video",
+          "Audio": "Audio",
+          "Productivity": "Productiviteit"
+        },
+        "text": "Waar wil je AI voor gebruiken?"
+      },
+      "budget": {
+        "options": {
+          "Free only": "Alleen gratis",
+          "Freemium": "Freemium",
+          "Paid is fine": "Betaald is prima"
+        },
+        "text": "Wat is je budget?"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "Beginner",
+          "Intermediate": "Gemiddeld",
+          "Expert": "Expert"
+        },
+        "text": "Wat is je expertiseniveau?"
+      }
+    },
+    "title": "Jouw gepersonaliseerde aanbevelingen",
+    "viewTool": "Bekijk tool",
+    "noTools": "Geen tools voldeden aan je exacte criteria. Probeer je zoekopdracht te verbreden!",
+    "startOver": "Opnieuw beginnen",
+    "finding": "De beste AI-tools voor je zoeken...",
+    "questionLabel": "Vraag {step} van {total}",
+    "completed": "{percentage}% voltooid"
+  }
+}

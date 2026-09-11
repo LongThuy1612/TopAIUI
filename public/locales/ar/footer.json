@@ -1,0 +1,92 @@
+{
+  "about": "معلومات عنا",
+  "contact": "اتصال",
+  "blog": "مدونة",
+  "privacy": "سياسة الخصوصية",
+  "terms": "شروط الخدمة",
+  "cookies": "سياسة ملفات تعريف الارتباط",
+  "copyright": "© {year} TopAICollection. جميع الحقوق محفوظة.",
+  "sitemap": "خريطة الموقع",
+  "resources": "موارد",
+  "help": "مركز المساعدة",
+  "faq": "التعليمات",
+  "submitTool": "أداة الإرسال",
+  "description": "TopAICollection هو الدليل النهائي لاكتشاف أفضل أدوات ومواقع الذكاء الاصطناعي.",
+  "browseByAlphabet": "تصفح حسب الأبجدية",
+  "topAITools": {
+    "title": "أفضل أدوات الذكاء الاصطناعي",
+    "items": {
+      "gpt4": "جي بي تي-4",
+      "midjourney": "منتصف الرحلة",
+      "chatgpt": "شات جي بي تي ChatGPT",
+      "stableDiffusion": "انتشار مستقر",
+      "jasper": "يشب"
+    }
+  },
+  "moreTools": {
+    "title": "المزيد من الأدوات",
+    "items": {
+      "audio": "الذكاء الاصطناعي الصوتي",
+      "video": "فيديو الذكاء الاصطناعي",
+      "writing": "كتابة الذكاء الاصطناعي",
+      "image": "صورة الذكاء الاصطناعي",
+      "coding": "ترميز الذكاء الاصطناعي"
+    }
+  },
+  "recommend": {
+    "title": "يوصي",
+    "items": {
+      "newest": "أحدث الأدوات",
+      "mostSaved": "الأكثر حفظًا",
+      "trending": "تتجه الآن",
+      "editorsChoice": "اختيار المحرر",
+      "featured": "مميز",
+      "leaderboard": "المتصدرين"
+    }
+  },
+  "readMore": {
+    "title": "اقرأ المزيد",
+    "items": {
+      "blog": "مدونة",
+      "news": "أخبار الذكاء الاصطناعي",
+      "guides": "أدلة",
+      "tutorials": "دروس",
+      "glossary": "مسرد الذكاء الاصطناعي"
+    }
+  },
+  "company": {
+    "title": "عن",
+    "items": {
+      "aboutUs": "معلومات عنا",
+      "contact": "الاتصال التجاري",
+      "editorialGuidelines": "إرشادات تحريرية",
+      "reviewMethodology": "منهجية المراجعة",
+      "submit": "إرسال",
+      "advertise": "إعلان"
+    }
+  },
+  "chooseLanguage": "اختر اللغة",
+  "followUs": "تابعنا",
+  "more": "أكثر...",
+  "directory": {
+    "title": "أرشيف دليل أدوات الذكاء الاصطناعي"
+  },
+  "companyInfo": {
+    "name": "TopAICollection شركة.",
+    "address": "منطقة التكنولوجيا، وادي السيليكون",
+    "city": "سان فرانسيسكو، كاليفورنيا 94107",
+    "country": "الولايات المتحدة",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "مولدات الفيديو",
+      "imageGenerators": "مولدات الصور",
+      "writers": "كتّاب",
+      "seoTools": "أدوات Seo",
+      "websiteBuilders": "منشئو المواقع",
+      "chatbots": "روبوتات الدردشة"
+    }
+  }
+}

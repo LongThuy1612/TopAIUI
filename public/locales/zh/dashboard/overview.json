@@ -1,0 +1,225 @@
+{
+  "welcome": "欢迎，{name}！",
+  "welcomeDescription": "探索我们强大的功能和数据，发现 AI 行业的最新趋势和机遇。",
+  "user": "用户",
+  "performanceOverview": "性能概览",
+  "websiteInsightsQuota": "网站洞察配额",
+  "socialListeningQueries": "社交监听配额",
+  "stats": {
+    "organicClicks": "自然点击",
+    "paidClicks": "付费点击",
+    "totalClicks": "总点击次数",
+    "totalTools": "总工具数",
+    "totalViews": "总观看次数",
+    "credits": "点数"
+  },
+  "features": {
+    "websiteInsights": "网站洞察",
+    "socialListening": "社交聆听",
+    "prioritySupport": "优先支持",
+    "advertising": "广告",
+    "premiumSupport": "高级支持"
+  },
+  "badgePopular": "最受欢迎",
+  "title": "社交监听追踪",
+  "description": "监控 TikTok 和 YouTube 上的关键字。",
+  "adCredits": "广告积分",
+  "postCredits": "发布积分",
+  "linkCredits": "链接积分",
+  "forSponsoredListings": "对于赞助列表",
+  "forGuestArticles": "对于客座文章",
+  "forLinkInsertions": "用于链接插入",
+  "buyCredits": "购买积分",
+  "noOrders": "没有找到订单。",
+  "orderHistory": "订单记录",
+  "orderId": "订单号",
+  "amount": "数量",
+  "date": "日期",
+  "type": "类型",
+  "invoice": "发票",
+  "download": "下载",
+  "currentPlan": "当前计划",
+  "freeTier": "免费套餐",
+  "freeTierDesc": "升级您的计划以解锁更多功能和见解。",
+  "creditBalances": "贷方余额",
+  "subscriptionDetails": "订阅详情",
+  "upgradePlan": "升级计划",
+  "statusActive": "积极的",
+  "planMemberSince": "本计划成员",
+  "renewalDate": "续订于",
+  "changePlan": "变更计划",
+  "redirecting": "正在重定向...",
+  "credits": "制作人员",
+  "managePortal": "管理计费门户",
+  "subscribe": "立即订阅",
+  "upgradeTitle": "升级您的研究计划",
+  "upgradeDesc": "解锁高级分析、竞争对手洞察等。",
+  "choosePlan": {
+    "title": "选择您的研究计划",
+    "subtitle": "获取人工智能市场情报和数据来推动决策。"
+  },
+  "billingIntervals": {
+    "monthly": "每月",
+    "yearly": "每年"
+  },
+  "subtitle": "管理和跟踪您提交的人工智能工具的性能。",
+  "create": "创建营销活动",
+  "noCampaigns": "还没有活动",
+  "createFirst": "创建您的第一个活动来开始推广您的 AI 工具",
+  "getStarted": "开始使用",
+  "budget": "预算",
+  "spent": "花费",
+  "startDate": "开始日期",
+  "endDate": "结束日期",
+  "notSet": "未设置",
+  "ongoing": "进行中",
+  "pause": "暂停",
+  "resume": "恢复",
+  "viewDetails": "查看详情",
+  "clicks": "点击次数",
+  "impressions": "印象数",
+  "rejectionReason": "拒绝原因",
+  "analytics": {
+    "title": "活动分析",
+    "description": "过去 30 天内展示次数和点击次数的详细细分。",
+    "exportJson": "导出 JSON",
+    "dailyPerformance": "日常表现",
+    "topLocales": "热门地区（区域设置）"
+  },
+  "track": "追踪",
+  "noDomains": "尚未跟踪任何域。上面加一个！",
+  "domain": "领域",
+  "monthlyVisits": "每月访问量",
+  "rank": "秩",
+  "topKeywords": "热门关键词",
+  "added": "额外",
+  "tool": "工具",
+  "organicClicks": "自然点击",
+  "paidClicks": "付费点击",
+  "totalClicks": "总点击次数",
+  "addedOn": "已添加",
+  "noTools": "尚未跟踪任何工具。",
+  "empty": {
+    "title": "还没有人工智能工具",
+    "description": "提交您的 AI 工具，让数百万用户发现。",
+    "cta": "提交人工智能工具"
+  },
+  "columns": {
+    "tool": "工具",
+    "status": "地位",
+    "organic": "有机流量",
+    "paid": "付费流量",
+    "impressions": "印象数",
+    "actions": "行动"
+  },
+  "statusTooltip": {
+    "pending": "等待管理员批准"
+  },
+  "submittedToast": "您的工具已提交，正在等待审核。",
+  "warnings": {
+    "pendingView": "该工具仍在审查中，尚未公开可见。",
+    "confirmDelete": "您确定要删除此 AI 工具吗？此操作无法撤消。"
+  },
+  "gpt": {
+    "title": "我的 GPT",
+    "submitNew": "提交新的 GPT",
+    "noGpts": "未找到 GPT。提交您的第一个！",
+    "noGptsDesc": "尚未提交 GPT。提交您的 GPT 以被发现。",
+    "columns": {
+      "name": "GPT 名称",
+      "url": "聊天GPT URL",
+      "date": "已提交"
+    }
+  },
+  "updateAi": "更新人工智能",
+  "submitNew": "提交新内容",
+  "submitNewItem": "提交新项目",
+  "linkInsert": {
+    "label": "链接插入",
+    "submit": "提交链接插入",
+    "empty": {
+      "title": "尚未插入链接",
+      "description": "您尚未提交任何链接插入。"
+    }
+  },
+  "form": {
+    "type": "类型",
+    "targetUrl": "目标网址",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "标题/锚文本",
+    "anchorTextPlaceholder": "文章标题或链接的锚文本",
+    "submitCredits": "提交（1 学分）"
+  },
+  "tabs": {
+    "profile": "轮廓",
+    "security": "安全",
+    "notifications": "通知"
+  },
+  "table": {
+    "platform": "平台",
+    "keyword": "关键词",
+    "videos": "视频",
+    "views": "意见",
+    "creators": "创作者",
+    "status": "地位"
+  },
+  "updated": "设置更新成功",
+  "password": {
+    "title": "更改密码",
+    "current": "当前密码",
+    "new": "新密码",
+    "confirm": "确认新密码",
+    "update": "更新密码"
+  },
+  "notifications": {
+    "title": "通知首选项",
+    "email": "电子邮件通知",
+    "marketing": "营销电子邮件"
+  },
+  "metrics": {
+    "monthlyQueries": "每月查询",
+    "videosToday": "今日视频",
+    "creatorsToday": "今日创作者"
+  },
+  "advertiseAi": "广告人工智能",
+  "myAis": {
+    "title": "我的人工智能",
+    "subtitle": "管理和跟踪您提交的人工智能工具的性能。",
+    "empty": {
+      "cta": "提交人工智能工具"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "拒绝原因"
+  },
+  "feature": {
+    "websiteInsightsDesc": "跟踪关键词排名和效果",
+    "socialListeningDesc": "监控社交提及和趋势",
+    "researchReportDesc": "生成全面的市场报告",
+    "aiAdvertisingLibrary": "人工智能广告库",
+    "aiAdvertisingDesc": "分析竞争对手的人工智能广告",
+    "comingSoon": "即将推出"
+  },
+  "reports": {
+    "title": "研究报告",
+    "description": "访问有关人工智能行业的深入分析报告。",
+    "noReports": "无可用报告",
+    "free": "自由的",
+    "download": "下载",
+    "unlock": "解锁报告",
+    "noReportsDesc": "我们目前正在准备新的见解。",
+    "readNow": "阅读报告",
+    "readerTitle": "研究报告阅读器",
+    "unlockRequired": "优质内容",
+    "unlockDesc": "解锁这份深入研究报告，全面了解独家市场分析、案例研究和可行的见解。",
+    "unlockNow": "立即解锁",
+    "related": "相关报道",
+    "toc": "在此页面上",
+    "backToList": "返回图书馆",
+    "notFound": "未找到报告",
+    "unlockSuccess": "报告解锁成功！",
+    "unlockError": "无法解锁报告。",
+    "searchPlaceholder": "搜索报告..."
+  },
+  "toolPerformance": "“工具性能（实时）”"
+}

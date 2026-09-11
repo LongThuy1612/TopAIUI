@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Về chúng tôi - TopAICollection",
+    "description": "Tìm hiểu về sứ mệnh của TopAICollection trong việc giúp bạn khám phá các công cụ và trang web AI tốt nhất cho nhu cầu của bạn."
+  },
+  "badge": "Về chúng tôi",
+  "hero": {
+    "title": "Cửa ngõ của bạn đến cuộc cách mạng AI",
+    "subtitle": "Chúng tôi có sứ mệnh dân chủ hóa quyền truy cập vào các công cụ AI và giúp mọi người khai thác sức mạnh của trí tuệ nhân tạo."
+  },
+  "stats": {
+    "tools": "Công cụ AI",
+    "categories": "Danh mục",
+    "users": "Người dùng hàng tháng",
+    "languages": "Ngôn ngữ"
+  },
+  "mission": {
+    "title": "Sứ mệnh của chúng tôi",
+    "paragraph1": "Tại TopAICollection, chúng tôi tin rằng AI nên được mọi người tiếp cận. Nền tảng của chúng tôi đóng vai trò là thư mục toàn diện về các công cụ và trang web AI tốt nhất, giúp người dùng dễ dàng khám phá và tận dụng trí tuệ nhân tạo trong công việc và cuộc sống hàng ngày.",
+    "paragraph2": "Chúng tôi cẩn thận tuyển chọn và đánh giá từng công cụ trong bộ sưu tập của mình, đảm bảo rằng người dùng của chúng tôi có quyền truy cập vào các giải pháp AI chất lượng cao nhất. Đội ngũ chuyên gia của chúng tôi đánh giá các công cụ dựa trên chức năng, trải nghiệm người dùng, giá cả và ứng dụng thực tế.",
+    "paragraph3": "Cho dù bạn là nhà phát triển, nhà thiết kế, nhà tiếp thị, nhà giáo dục hay chủ doanh nghiệp, TopAICollection giúp bạn tìm các công cụ AI hoàn hảo để nâng cao năng suất và sáng tạo của bạn."
+  },
+  "features": {
+    "title": "Tại sao chọn TopAICollection",
+    "global": {
+      "title": "Phạm vi toàn cầu",
+      "description": "Có sẵn bằng hơn 20 ngôn ngữ, phục vụ hàng triệu người dùng trên toàn thế giới"
+    },
+    "updated": {
+      "title": "Cập nhật hàng ngày",
+      "description": "Bộ sưu tập của chúng tôi được cập nhật hàng ngày với những đổi mới AI mới nhất"
+    },
+    "community": {
+      "title": "Cộng đồng điều khiển",
+      "description": "Đánh giá và xếp hạng của người dùng giúp bạn đưa ra quyết định sáng suốt"
+    },
+    "verified": {
+      "title": "Công cụ đã xác minh",
+      "description": "Mọi công cụ đều được nhóm của chúng tôi xem xét và xác minh cẩn thận"
+    }
+  },
+  "cta": {
+    "title": "Bắt đầu hành trình AI của bạn ngay hôm nay",
+    "subtitle": "Khám phá bộ sưu tập công cụ AI của chúng tôi hoặc gửi công cụ của riêng bạn",
+    "browse": "Duyệt công cụ",
+    "submit": "Gửi công cụ của bạn"
+  }
+}

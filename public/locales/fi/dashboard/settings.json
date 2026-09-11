@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Koko nimi",
+      "email": "Sähköpostiosoite",
+      "emailHelp": "Sähköpostia ei voi muuttaa",
+      "emailPlaceholder": "sinä@esimerkki.fi",
+      "phone": "Puhelinnumero",
+      "phonePlaceholder": "+358 (00) 000 0000",
+      "company": "Yritys",
+      "country": "Maa",
+      "website": "Verkkosivusto",
+      "save": "Tallenna muutokset",
+      "saving": "Tallennetaan...",
+      "saveSuccess": "Profiilin päivitys onnistui."
+    },
+    "password": {
+      "title": "Vaihda salasana",
+      "current": "Nykyinen salasana",
+      "new": "Uusi salasana",
+      "confirm": "Vahvista uusi salasana",
+      "update": "Päivitä salasana"
+    },
+    "notifications": {
+      "title": "Ilmoitusasetukset",
+      "email": "Sähköposti-ilmoitukset",
+      "marketing": "Markkinointisähköpostit"
+    }
+  },
+  "profile": {
+    "title": "Profiili",
+    "fullName": "Koko nimi",
+    "email": "Sähköpostiosoite",
+    "emailHelp": "Sähköpostiosoitetta ei voi muuttaa",
+    "emailPlaceholder": "sinä@esimerkki.fi",
+    "phone": "Puhelinnumero",
+    "company": "Yritys",
+    "country": "Maa",
+    "website": "Verkkosivusto",
+    "save": "Tallenna muutokset",
+    "saving": "Tallennetaan...",
+    "saveSuccess": "Profiilin päivitys onnistui.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Vaihda salasana",
+    "current": "Nykyinen salasana",
+    "new": "Uusi salasana",
+    "confirm": "Vahvista uusi salasana",
+    "update": "Päivitä salasana"
+  },
+  "notifications": {
+    "title": "Ilmoitusasetukset",
+    "email": "Sähköposti-ilmoitukset",
+    "marketing": "Markkinointisähköpostit"
+  },
+  "tabs": {
+    "profile": "Profiili",
+    "security": "Turvallisuus",
+    "notifications": "Ilmoitukset"
+  },
+  "updated": "Asetukset päivitetty onnistuneesti"
+}

@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Herramientas guardadas - TopAICollection",
+    "description": "Vea y administre sus sitios web y herramientas de IA guardados"
+  },
+  "title": "Herramientas guardadas",
+  "description": "Vea y administre sus sitios web y herramientas de IA guardados.",
+  "emptyState": {
+    "title": "Aún no hay herramientas guardadas",
+    "description": "Comience a explorar y guarde sus herramientas de IA favoritas para acceder fácilmente más adelante.",
+    "action": "Explorar herramientas de IA"
+  },
+  "stats": {
+    "lastUpdated": "Última actualización {date}"
+  },
+  "filters": {
+    "all": "Todo",
+    "popular": "Más Popular",
+    "category": "Por categoría"
+  },
+  "errors": {
+    "loadFailed": "No se pudieron cargar favoritos"
+  },
+  "noDescription": "No hay descripción disponible",
+  "retry": "Rever",
+  "actions": {
+    "addedToFavorites": "Añadido a favoritos",
+    "removeFromFavorites": "Quitar de favoritos",
+    "removedFromFavorites": "Eliminado de favoritos"
+  }
+}

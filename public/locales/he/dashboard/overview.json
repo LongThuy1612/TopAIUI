@@ -1,0 +1,225 @@
+{
+  "welcome": "ברוך הבא, {name}!",
+  "welcomeDescription": "חקור את התכונות והנתונים החזקים שלנו כדי לגלות את המגמות וההזדמנויות האחרונות בתעשיית ה-AI.",
+  "user": "משתמש",
+  "performanceOverview": "סקירת ביצועים",
+  "websiteInsightsQuota": "מכסת תובנות אתר",
+  "socialListeningQueries": "מכסת ניטור חברתי",
+  "stats": {
+    "organicClicks": "קליקים אורגניים",
+    "paidClicks": "קליקים ממומנים",
+    "totalClicks": "סה\"כ קליקים",
+    "totalTools": "סה\"כ כלים",
+    "totalViews": "סה\"כ צפיות",
+    "credits": "קרדיטים"
+  },
+  "features": {
+    "websiteInsights": "תובנות באתר",
+    "socialListening": "הקשבה חברתית",
+    "prioritySupport": "תמיכה בעדיפות",
+    "advertising": "פִּרסוּם",
+    "premiumSupport": "תמיכת פרימיום"
+  },
+  "badgePopular": "הכי פופולרי",
+  "title": "מעקב ניטור חברתי",
+  "description": "עקוב אחר מילות מפתח בכל TikTok ו-YouTube.",
+  "adCredits": "קרדיטים למודעות",
+  "postCredits": "פוסט קרדיטים",
+  "linkCredits": "קישור קרדיטים",
+  "forSponsoredListings": "לרישומים ממומנים",
+  "forGuestArticles": "למאמרי אורח",
+  "forLinkInsertions": "להכנסת קישורים",
+  "buyCredits": "קנה קרדיטים",
+  "noOrders": "לא נמצאו הזמנות.",
+  "orderHistory": "היסטוריית הזמנות",
+  "orderId": "מזהה הזמנה",
+  "amount": "סְכוּם",
+  "date": "תַאֲרִיך",
+  "type": "סוּג",
+  "invoice": "חֶשׁבּוֹנִית",
+  "download": "הורד",
+  "currentPlan": "תוכנית נוכחית",
+  "freeTier": "דרג חינם",
+  "freeTierDesc": "שדרג את התוכנית שלך כדי לפתוח עוד תכונות ותובנות.",
+  "creditBalances": "יתרות אשראי",
+  "subscriptionDetails": "פרטי מנוי",
+  "upgradePlan": "תוכנית שדרוג",
+  "statusActive": "פָּעִיל",
+  "planMemberSince": "חבר בתוכנית זו",
+  "renewalDate": "מתחדש ב",
+  "changePlan": "שנה תוכנית",
+  "redirecting": "מפנה מחדש...",
+  "credits": "קרדיטים",
+  "managePortal": "נהל את פורטל החיובים",
+  "subscribe": "הירשם עכשיו",
+  "upgradeTitle": "שדרג את תוכנית המחקר שלך",
+  "upgradeDesc": "פתח ניתוחים מתקדמים, תובנות מתחרים ועוד.",
+  "choosePlan": {
+    "title": "בחר את תוכנית המחקר שלך",
+    "subtitle": "קבל מודיעין שוק AI ונתונים כדי להניע החלטות."
+  },
+  "billingIntervals": {
+    "monthly": "יַרחוֹן",
+    "yearly": "שְׁנָתִי"
+  },
+  "subtitle": "נהל ועקוב אחר הביצועים של כלי ה-AI שהוגשו.",
+  "create": "צור מסע פרסום",
+  "noCampaigns": "עדיין אין קמפיינים",
+  "createFirst": "צור את מסע הפרסום הראשון שלך כדי להתחיל לקדם את כלי הבינה המלאכותית שלך",
+  "getStarted": "התחל",
+  "budget": "תַקצִיב",
+  "spent": "מוּתַשׁ",
+  "startDate": "תאריך התחלה",
+  "endDate": "תאריך סיום",
+  "notSet": "לא מוגדר",
+  "ongoing": "מתמשך",
+  "pause": "הַפסָקָה",
+  "resume": "קוֹרוֹת חַיִים",
+  "viewDetails": "הצג פרטים",
+  "clicks": "קליקים",
+  "impressions": "הופעות",
+  "rejectionReason": "סיבת דחייה",
+  "analytics": {
+    "title": "ניתוח מסע פרסום",
+    "description": "פירוט מפורט של הופעות וקליקים במהלך 30 הימים האחרונים.",
+    "exportJson": "ייצא JSON",
+    "dailyPerformance": "הופעה יומית",
+    "topLocales": "אזורים מובילים (מקומיים)"
+  },
+  "track": "מַסלוּל",
+  "noDomains": "אין עדיין מעקב אחר דומיינים. הוסף אחד למעלה!",
+  "domain": "תְחוּם",
+  "monthlyVisits": "ביקורים חודשיים",
+  "rank": "דַרגָה",
+  "topKeywords": "מילות מפתח מובילות",
+  "added": "נוסף",
+  "tool": "כְּלִי",
+  "organicClicks": "קליקים אורגניים",
+  "paidClicks": "קליקים בתשלום",
+  "totalClicks": "סה\"כ קליקים",
+  "addedOn": "נוסף ב-",
+  "noTools": "עדיין אין מעקב אחר כלים.",
+  "empty": {
+    "title": "עדיין אין כלי AI",
+    "description": "שלח את כלי הבינה המלאכותית שלך כדי להתגלות על ידי מיליוני משתמשים.",
+    "cta": "שלח כלי AI"
+  },
+  "columns": {
+    "tool": "כְּלִי",
+    "status": "סטָטוּס",
+    "organic": "תנועה אורגנית",
+    "paid": "תנועה בתשלום",
+    "impressions": "הופעות",
+    "actions": "פעולות"
+  },
+  "statusTooltip": {
+    "pending": "ממתין לאישור מנהל"
+  },
+  "submittedToast": "הכלי שלך נשלח והוא ממתין לבדיקה.",
+  "warnings": {
+    "pendingView": "הכלי הזה עדיין בבדיקה ועדיין אינו גלוי לציבור.",
+    "confirmDelete": "האם אתה בטוח שברצונך למחוק כלי AI זה? לא ניתן לבטל פעולה זו."
+  },
+  "gpt": {
+    "title": "ה-GPT שלי",
+    "submitNew": "שלח GPT חדש",
+    "noGpts": "לא נמצאו GPTs. שלח את הראשון שלך!",
+    "noGptsDesc": "עדיין לא הוגשו GPTs. שלח את ה-GPT שלך כדי להתגלות.",
+    "columns": {
+      "name": "שם GPT",
+      "url": "כתובת URL של ChatGPT",
+      "date": "הוגש"
+    }
+  },
+  "updateAi": "עדכון AI",
+  "submitNew": "שלח חדש",
+  "submitNewItem": "שלח פריט חדש",
+  "linkInsert": {
+    "label": "הוספת קישור",
+    "submit": "שלח הוספת קישור",
+    "empty": {
+      "title": "עדיין לא הוכנס קישור",
+      "description": "עדיין לא שלחת הוספת קישורים."
+    }
+  },
+  "form": {
+    "type": "סוּג",
+    "targetUrl": "כתובת אתר יעד",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "כותרת / טקסט עוגן",
+    "anchorTextPlaceholder": "כותרת המאמר או טקסט עוגן לקישור",
+    "submitCredits": "שלח (קרדיט אחד)"
+  },
+  "tabs": {
+    "profile": "פּרוֹפִיל",
+    "security": "בִּטָחוֹן",
+    "notifications": "התראות"
+  },
+  "table": {
+    "platform": "פּלַטפוֹרמָה",
+    "keyword": "מילת מפתח",
+    "videos": "סרטונים",
+    "views": "צפיות",
+    "creators": "יוצרים",
+    "status": "סטָטוּס"
+  },
+  "updated": "ההגדרות עודכנו בהצלחה",
+  "password": {
+    "title": "שנה סיסמה",
+    "current": "סיסמה נוכחית",
+    "new": "סיסמה חדשה",
+    "confirm": "אשר סיסמה חדשה",
+    "update": "עדכן סיסמה"
+  },
+  "notifications": {
+    "title": "העדפות הודעה",
+    "email": "הודעות אימייל",
+    "marketing": "מיילים שיווקיים"
+  },
+  "metrics": {
+    "monthlyQueries": "שאילתות חודשיות",
+    "videosToday": "סרטונים היום",
+    "creatorsToday": "יוצרים היום"
+  },
+  "advertiseAi": "פרסם בינה מלאכותית",
+  "myAis": {
+    "title": "ה-AI שלי",
+    "subtitle": "נהל ועקוב אחר הביצועים של כלי ה-AI שהוגשו.",
+    "empty": {
+      "cta": "שלח כלי AI"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "סיבת הדחייה"
+  },
+  "feature": {
+    "websiteInsightsDesc": "עקוב אחר דירוג מילות מפתח וביצועים",
+    "socialListeningDesc": "עקוב אחר אזכורים ומגמות חברתיות",
+    "researchReportDesc": "הפקת דוחות שוק מקיפים",
+    "aiAdvertisingLibrary": "ספריית פרסום בינה מלאכותית",
+    "aiAdvertisingDesc": "נתח מודעות AI מתחרות",
+    "comingSoon": "בקרוב"
+  },
+  "reports": {
+    "title": "דוחות מחקר",
+    "description": "גישה לדוחות אנליטיים מעמיקים על תעשיית הבינה המלאכותית.",
+    "noReports": "אין דוחות זמינים",
+    "free": "לְשַׁחְרֵר",
+    "download": "הורד",
+    "unlock": "ביטול נעילה של דוח",
+    "noReportsDesc": "אנו מכינים כעת תובנות חדשות.",
+    "readNow": "קרא דוח",
+    "readerTitle": "קורא דוחות מחקר",
+    "unlockRequired": "תוכן פרימיום",
+    "unlockDesc": "פתחו את דוח המחקר המעמיק הזה כדי לקבל גישה מלאה לניתוח שוק בלעדי, מקרי בוחן ותובנות מעשיות.",
+    "unlockNow": "בטלו את הנעילה עכשיו!",
+    "related": "דוחות קשורים",
+    "toc": "בדף זה",
+    "backToList": "חזרה לספרייה",
+    "notFound": "הדוח לא נמצא",
+    "unlockSuccess": "הדוח נפתח בהצלחה!",
+    "unlockError": "נכשלה פעולת פתיחת הדוח.",
+    "searchPlaceholder": "חיפוש דוחות"
+  },
+  "toolPerformance": "ביצועי הכלים (בזמן אמת)"
+}

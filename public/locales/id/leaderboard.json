@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "Papan Peringkat Harian",
+      "title_long": "Papan Peringkat Alat AI Harian"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "Papan Peringkat Bulanan",
+      "title_long": "Papan Peringkat Alat AI Bulanan"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "Papan Peringkat Tahunan",
+      "title_long": "Papan Peringkat Alat AI Tahunan"
+    }
+  }
+}

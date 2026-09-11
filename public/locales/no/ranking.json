@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Topp rangering av AI-verktøy",
+    "description": "Oppdag de mest besøkte AI-verktøyene i verden basert på ekte trafikkdata.",
+    "subtitle": "Oppdag de mest besøkte AI-verktøyene i verden basert på ekte trafikkdata."
+  },
+  "trending": {
+    "title": "Trendende AI-verktøy",
+    "description": "De raskest voksende AI-verktøyene den siste måneden.",
+    "subtitle": "De raskest voksende AI-verktøyene den siste måneden."
+  },
+  "category": "Kategori",
+  "noTools": "Ingen verktøy funnet.",
+  "noToolsInCategory": "Ingen verktøy funnet i denne kategorien.",
+  "loading": "Laster inn...",
+  "favorite": "Legg til i favoritter",
+  "unfavorite": "Fjern fra favoritter",
+  "visitWebsite": "Besøk nettsiden",
+  "errors": {
+    "general": "Kunne ikke laste inn rangeringsdata."
+  },
+  "topAI": "Topp AI",
+  "trendingAI": "På vei opp",
+  "period": "Periode",
+  "last7Days": "Siste 7 dager",
+  "lastMonth": "Siste måned",
+  "last3Months": "Siste 3 måneder",
+  "lastYear": "I fjor",
+  "allCategories": "Alle kategorier",
+  "selectPeriod": "Velg Periode",
+  "rank": "Rang",
+  "tool": "Verktøy",
+  "visits": "Besøk",
+  "growth": "Vekst",
+  "actions": "Handlinger",
+  "leaderboard": {
+    "header": {
+      "title": "Toppliste for AI-verktøy",
+      "description": "Oppdag de mest populære AI-verktøyene fra fellesskapet.",
+      "dailyTitle": "Dagens beste AI-verktøy",
+      "monthlyTitle": "Beste AI-verktøy fra {date}",
+      "yearlyTitle": "Beste AI-verktøy fra {date}",
+      "tabs": {
+        "daily": "Daglig",
+        "monthly": "Månedlig",
+        "yearly": "Årlig"
+      },
+      "prevPeriod": "Forrige periode",
+      "nextPeriod": "Neste periode",
+      "pickDate": "Velg dato",
+      "pickMonth": "Velg måned"
+    },
+    "empty": {
+      "title": "Ingen verktøy lansert i dag",
+      "description": "Det er ingen verktøy registrert for denne spesifikke datoen. Prøv å navigere til en annen dag.",
+      "showMore": "Vis flere verktøy",
+      "loadingMore": "Laster inn flere verktøy ...",
+      "toolsListTitle": "Utvalgte verktøy"
+    },
+    "card": {
+      "visitWebsite": "Besøk nettstedet",
+      "loginToUpvote": "Vennligst logg inn for å stemme opp verktøy"
+    },
+    "page": {
+      "errorLoading": "Kunne ikke laste poengoversiktsdata."
+    },
+    "sidebar": {
+      "launchArchive": "Start Arkiv",
+      "topCategories": "Toppkategorier"
+    }
+  },
+  "categoryAI": "Kategori",
+  "allRegions": "Globalt",
+  "channelAI": "Kanal",
+  "channel": "Kanal",
+  "allChannels": "Alle kjelder",
+  "incomeAI": "Sosial/Inntekt",
+  "socialMetrics": "Sosial verdi",
+  "channelVisits": "Kilde besøk",
+  "maxResultsHint": "Begrens det maksimale antallet resultater.",
+  "regions": {
+    "us": "USA",
+    "gb": "Storbritannia",
+    "in": "India",
+    "ph": "Filippinene",
+    "ca": "Canada",
+    "vn": "Vietnam"
+  },
+  "channels": {
+    "search": "Søk",
+    "direct": "Direkte",
+    "social": "sosial",
+    "referrals": "Henvisninger"
+  },
+  "viewDetails": "Se detaljer",
+  "regionAI": "Region",
+  "region": "Region"
+}

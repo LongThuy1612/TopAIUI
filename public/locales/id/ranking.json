@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Peringkat Alat AI Teratas",
+    "description": "Temukan alat AI yang paling banyak dikunjungi di dunia berdasarkan data lalu lintas nyata.",
+    "subtitle": "Temukan alat AI yang paling banyak dikunjungi di dunia berdasarkan data lalu lintas nyata."
+  },
+  "trending": {
+    "title": "Alat AI yang sedang tren",
+    "description": "Alat AI dengan pertumbuhan tercepat dalam sebulan terakhir.",
+    "subtitle": "Alat AI dengan pertumbuhan tercepat dalam sebulan terakhir."
+  },
+  "category": "Kategori",
+  "noTools": "Tidak ada alat yang ditemukan.",
+  "noToolsInCategory": "Tidak ada alat yang ditemukan dalam kategori ini.",
+  "loading": "Memuat...",
+  "favorite": "Tambahkan ke favorit",
+  "unfavorite": "Hapus dari favorit",
+  "visitWebsite": "Kunjungi situs web",
+  "errors": {
+    "general": "Gagal memuat data peringkat."
+  },
+  "topAI": "AI teratas",
+  "trendingAI": "Sedang tren",
+  "period": "Periode",
+  "last7Days": "7 Hari Terakhir",
+  "lastMonth": "Bulan Lalu",
+  "last3Months": "3 Bulan Terakhir",
+  "lastYear": "Tahun Lalu",
+  "allCategories": "Semua Kategori",
+  "selectPeriod": "Pilih Periode",
+  "rank": "Pangkat",
+  "tool": "Alat",
+  "visits": "Kunjungan",
+  "growth": "Pertumbuhan",
+  "actions": "Tindakan",
+  "leaderboard": {
+    "header": {
+      "title": "Papan Peringkat Alat AI",
+      "description": "Temukan alat AI yang paling banyak dipilih oleh komunitas.",
+      "dailyTitle": "Alat AI Terbaik Hari Ini",
+      "monthlyTitle": "Alat AI Terbaik {date}",
+      "yearlyTitle": "Alat AI Terbaik {date}",
+      "tabs": {
+        "daily": "Sehari-hari",
+        "monthly": "Bulanan",
+        "yearly": "Tahunan"
+      },
+      "prevPeriod": "Periode Sebelumnya",
+      "nextPeriod": "Periode Berikutnya",
+      "pickDate": "Pilih Tanggal",
+      "pickMonth": "Pilih Bulan"
+    },
+    "empty": {
+      "title": "Tidak ada alat yang diluncurkan hari ini",
+      "description": "Tidak ada alat yang dicatat untuk tanggal tertentu ini. Coba navigasikan ke hari lain.",
+      "showMore": "Tampilkan lebih banyak alat",
+      "loadingMore": "Memuat alat lainnya...",
+      "toolsListTitle": "Alat Unggulan"
+    },
+    "card": {
+      "visitWebsite": "Kunjungi Situs Web",
+      "loginToUpvote": "Silakan masuk ke alat upvote"
+    },
+    "page": {
+      "errorLoading": "Gagal memuat data papan peringkat."
+    },
+    "sidebar": {
+      "launchArchive": "Luncurkan Arsip",
+      "topCategories": "Kategori Teratas"
+    }
+  },
+  "categoryAI": "Kategori",
+  "regionAI": "Kawasan",
+  "region": "Kawasan",
+  "channelAI": "Kanal",
+  "channel": "Kanal",
+  "allChannels": "all sources.",
+  "incomeAI": "Sosial/Pendapatan",
+  "socialMetrics": "Nilai Sosial",
+  "channelVisits": "Kunjungan Sumber",
+  "maxResultsHint": "Batasi jumlah hasil maksimum.",
+  "regions": {
+    "us": "Amerika Serikat",
+    "ca": "Kanada",
+    "gb": "Inggris Raya",
+    "in": "India",
+    "ph": "Filipina",
+    "vn": "Vietnam"
+  },
+  "channels": {
+    "search": "Cari",
+    "direct": "Langsung",
+    "social": "Sosial",
+    "referrals": "Referensi"
+  },
+  "viewDetails": "Lihat Detail",
+  "allRegions": "Global"
+}

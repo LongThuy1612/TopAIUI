@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Kirimkan Alat AI Anda - TopAICollection",
+    "description": "Daftarkan alat kecerdasan buatan Anda di direktori TopAICollection dan jangkau jutaan pengguna yang mencari solusi AI."
+  },
+  "badge": "Daftarkan Alat Anda",
+  "hero": {
+    "title": "Buat Alat AI Anda Ditemukan",
+    "subtitle": "Bergabunglah dengan ribuan alat AI di direktori kami dan jangkau jutaan pengguna potensial di seluruh dunia"
+  },
+  "benefits": {
+    "title": "Mengapa mendaftar di TopAICollection?",
+    "traffic": {
+      "title": "Peningkatan Lalu Lintas",
+      "description": "Dapatkan lalu lintas langsung dari pengguna yang secara aktif mencari solusi AI"
+    },
+    "exposure": {
+      "title": "Eksposur Global",
+      "description": "Jangkau pengguna dalam lebih dari 20 bahasa di lebih dari 100 negara"
+    },
+    "credibility": {
+      "title": "Peningkatan Kredibilitas",
+      "description": "Bangun kepercayaan dengan daftar yang diverifikasi dan ulasan pengguna"
+    }
+  },
+  "pricing": {
+    "title": "Pilih Paket Anda",
+    "popular": "Paling Populer",
+    "basic": {
+      "name": "Daftar Dasar",
+      "price": "Gratis",
+      "features": {
+        "0": "Daftar alat dasar",
+        "1": "Penempatan kategori",
+        "2": "Informasi kontak",
+        "3": "Analitik dasar"
+      }
+    },
+    "featured": {
+      "name": "Daftar Unggulan",
+      "price": "$99/bulan",
+      "features": {
+        "0": "Semua fitur di paket Dasar",
+        "1": "Lencana Unggulan",
+        "2": "Prioritas di hasil pencarian",
+        "3": "Penempatan halaman utama",
+        "4": "Analitik lanjutan",
+        "5": "Promosi di media sosial"
+      }
+    },
+    "premium": {
+      "name": "Daftar Premium",
+      "price": "$299/bulan",
+      "features": {
+        "0": "Semua fitur di paket Unggulan",
+        "1": "Penempatan pencarian teratas",
+        "2": "Dimasukkan ke dalam buletin",
+        "3": "Ulasan pada postingan blog",
+        "4": "Etalase video",
+        "5": "Dukungan khusus"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Nama Alat",
+    "namePlaceholder": "misalnya ObrolanGPT, DALL-E, Tengah perjalanan",
+    "website": "URL Situs Web",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "Kategori",
+    "selectCategory": "Pilih Kategori",
+    "price": "Biaya satu kali pemotongan sebesar $49",
+    "submit": "Kirim Alat",
+    "success": {
+      "title": "Pengajuan Berhasil!",
+      "description": "Alat Anda telah dikirim untuk ditinjau.",
+      "redirecting": "Mengarahkan ke pembayaran..."
+    }
+  },
+  "form": {
+    "title": "Kirimkan Alat Anda",
+    "sections": {
+      "basic": "Informasi Dasar",
+      "categorization": "Kategori & Tag",
+      "media": "Aset Media",
+      "plan": "Pilih Paket",
+      "contact": "Informasi Kontak"
+    },
+    "fields": {
+      "name": {
+        "label": "Nama Alat",
+        "placeholder": "Alat AI Keren Saya"
+      },
+      "url": {
+        "label": "URL Situs Web",
+        "placeholder": "https://contoh.com"
+      },
+      "tagline": {
+        "label": "Slogan",
+        "placeholder": "Deskripsi singkat maksimum 100 karakter"
+      },
+      "description": {
+        "label": "Deskripsi",
+        "placeholder": "Deskripsi lengkap alat AI Anda (maks. 500 karakter)"
+      },
+      "category": {
+        "label": "Kategori",
+        "placeholder": "Pilih kategori",
+        "options": {
+          "productivity": "Produktivitas",
+          "business": "Bisnis",
+          "development": "Pengembangan (Dev)",
+          "other": "Lainnya"
+        }
+      },
+      "tags": {
+        "label": "Tag",
+        "placeholder": "AI, produktivitas, otomatisasi (pisahkan dengan koma)",
+        "hint": "Pisahkan dengan tanda koma"
+      },
+      "logo": {
+        "label": "logo",
+        "placeholder": "Klik untuk mengunggah atau seret dan lepas",
+        "hint": "PNG atau JPG, maksimal 2MB"
+      },
+      "plan": {
+        "label": "Paket Listing",
+        "placeholder": "Pilih Paket"
+      },
+      "terms": {
+        "label": "Saya setuju dengan persyaratan layanan dan kebijakan privasi"
+      },
+      "contact_name": {
+        "label": "Nama Anda",
+        "placeholder": "ex: Desak Lestari"
+      },
+      "contact_email": {
+        "label": "Email Anda",
+        "placeholder": "misalnya john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "Dengan ini, Anda menyetujui Ketentuan Layanan dan Kebijakan Privasi kami.",
+      "freeSubmission": "Pengajuan Gratis."
+    },
+    "submit": "Kirim Alat",
+    "submitting": "Mengirimkan...",
+    "success": {
+      "title": "Alat berhasil dikirim!",
+      "description": "Kami akan meninjau alat Anda dan akan memberi tahu dalam 48 jam ke depan."
+    },
+    "error": {
+      "title": "Pengajuan Gagal",
+      "description": "Silakan periksa semua informasi yang terisi lalu coba kembali.",
+      "noSettings": "Pengaturan pengiriman tidak tersedia. Silakan coba lagi nanti."
+    },
+    "loginRequiredTitle": "Log Masuk Diperlukan",
+    "loginRequiredDesc": "Silakan masuk untuk mengirimkan alat. Kemajuan Anda tidak akan disimpan sampai Anda mengautentikasi.",
+    "loginBtn": "Masuk"
+  },
+  "categoriesPage": {
+    "searchCategory": "Pencarian Kategori…",
+    "noCategoryFound": "Kategori tidak dapat ditemukan."
+  },
+  "toolForm": {
+    "selectSubCategory": "Pilih subkategori…",
+    "noSubCategory": "Subkategori kosong."
+  },
+  "errors": {
+    "general": "Sepertinya terjadi kesalahan. Coba lagi!"
+  },
+  "processing": "Memproses data...",
+  "sidebar": {
+    "toolCount": "5,000+ Alat AI",
+    "toolCountSub": "Bergabunglah hari ini juga di direktori kami",
+    "badgeDescription": "Mengirimkan Alat AI Anda adalah pintu pembuka menuju pengakuan dari berbagai komunitas AI secara luas."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Gagal memuat detail pengiriman.",
+      "noId": "Tidak ada ID pengiriman yang diberikan.",
+      "notFound": "Pengiriman tidak ditemukan."
+    },
+    "status": {
+      "paymentRequired": "Diperlukan Pembayaran",
+      "paymentRequiredDesc": "Selesaikan pembayaran Anda untuk melanjutkan peninjauan.",
+      "underReview": "Sedang Ditinjau",
+      "underReviewDesc": "Kiriman Anda sedang ditinjau oleh tim kami.",
+      "approved": "Disetujui",
+      "approvedDesc": "Kiriman Anda telah disetujui dan dipublikasikan.",
+      "received": "Diterima",
+      "receivedDesc": "Kami telah menerima kiriman Anda."
+    },
+    "types": {
+      "submit": "Kirim Alat AI",
+      "advertise": "Mengiklankan",
+      "guestPost": "Postingan Tamu",
+      "updateAI": "Perbarui AI"
+    },
+    "paymentAlert": "Pembayaran diperlukan untuk menyelesaikan kiriman Anda.",
+    "actions": {
+      "viewDashboard": "Lihat Dasbor"
+    }
+  },
+  "error": "Ada yang tidak beres. Silakan coba lagi.",
+  "backToHome": "Kembali ke Rumah",
+  "submissionSuccess": {
+    "title": "Judul",
+    "description": "Deskripsi"
+  },
+  "successTitle": "Judul Sukses",
+  "title": "Judul"
+}

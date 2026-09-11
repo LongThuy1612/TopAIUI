@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "문의하기 - TopAICollection",
+    "description": "TopAICollection 팀에 문의하세요. AI 도구에 관한 모든 질문에 도움을 드리겠습니다."
+  },
+  "title": "문의하기",
+  "subtitle": "질문이나 의견이 있으신가요? 우리는 당신의 의견을 듣고 싶습니다. 우리 팀은 일반적으로 24시간 이내에 응답합니다.",
+  "form": {
+    "title": "메시지 보내기",
+    "fields": {
+      "name": {
+        "label": "당신의 이름",
+        "placeholder": "존 도"
+      },
+      "email": {
+        "label": "이메일 주소",
+        "placeholder": "존@example.com"
+      },
+      "subject": {
+        "label": "주제",
+        "placeholder": "과목을 선택하세요",
+        "options": {
+          "general": "일반문의",
+          "support": "기술지원",
+          "feedback": "피드백",
+          "partnership": "파트너십 기회",
+          "other": "다른"
+        }
+      },
+      "message": {
+        "label": "메시지",
+        "placeholder": "무슨 생각인지 말해 보세요..."
+      }
+    },
+    "submit": "메시지 보내기",
+    "submitting": "배상...",
+    "success": {
+      "title": "메시지가 성공적으로 전송되었습니다!",
+      "description": "귀하의 메시지가 접수되었으며 곧 연락드리겠습니다."
+    },
+    "error": {
+      "title": "메시지를 보내지 못했습니다.",
+      "description": "문제가 발생했습니다. 나중에 다시 시도해 주세요."
+    }
+  },
+  "info": {
+    "title": "연락하세요",
+    "email": {
+      "title": "이메일을 보내주세요",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "지원시간",
+      "content": "우리 지원팀은 월요일부터 금요일까지 연락 가능합니다"
+    },
+    "hours": {
+      "title": "영업시간",
+      "content": "오전 9시 - 오후 6시(동부 표준시)"
+    },
+    "location": {
+      "title": "위치",
+      "content": "분산된 팀에서 전 세계 사용자에게 서비스 제공"
+    }
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "q1": "AI 도구를 어떻게 제출하나요?",
+    "a1": "탐색 메뉴에서 도구 제출 버튼을 클릭하고 제출 양식을 작성하세요.",
+    "q2": "승인은 얼마나 걸리나요?",
+    "a2": "대부분의 제출물은 영업일 기준 1~3일 이내에 검토됩니다.",
+    "q3": "내 도구 목록을 업데이트할 수 있나요?",
+    "a3": "예, 대시보드에 로그인하여 AI 업데이트 기능을 사용하세요."
+  }
+}

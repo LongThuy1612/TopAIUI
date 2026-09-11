@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Business Solutions - yhteistyökumppanimme | TopAICollection",
+    "description": "Tutustu liikekumppanuusmahdollisuuksiin TopAICollectionin avulla. Mainonta, sponsoroitu sisältö ja paljon muuta."
+  },
+  "title": "Yritysratkaisut",
+  "subtitle": "Tee yhteistyötä TopAICollectionin kanssa tavoittaaksesi tekoälyn harrastajat maailmanlaajuisesti",
+  "contact": {
+    "title": "Ota yhteyttä"
+  },
+  "offers": {
+    "ads": "Suorita kohdennettuja mainoskampanjoita",
+    "partnerships": "Tutustu strategisiin kumppanuuksiin",
+    "growth": "Nopeuta tekoälytuotteesi kasvua",
+    "consulting": "Mukautetut AI-integraatiopalvelut"
+  },
+  "form": {
+    "fullName": "Koko nimi",
+    "workEmail": "Työsähköposti",
+    "companyName": "Yrityksen nimi",
+    "inquiryType": "Kyselyn tyyppi",
+    "selectType": "Valitse tyyppi",
+    "message": "Viesti",
+    "messagePlaceholder": "Kerro meille lisää tarpeistasi...",
+    "inquiryTypes": {
+      "advertise": "Mainostaa",
+      "guestPost": "Vierasposti",
+      "partnership": "Kumppanuus",
+      "customDevelopment": "Mukautettu kehitys",
+      "other": "Muut"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Mainosta tekoälytyökaluasi",
+      "description": "Tuo tekoälytyökalusi näkyvästi esille alustallamme.",
+      "link": "Lisätietoja"
+    },
+    "guestPost": {
+      "title": "Vierasviestit ja linkit",
+      "description": "Julkaise sisältöä tai hanki käänteisiä linkkejä korkean tason sivustollemme.",
+      "link": "Lisätietoja"
+    },
+    "submitTool": {
+      "title": "Lähetä työkalusi",
+      "description": "Lisää tekoälytyökalusi hakemistoomme ilmaiseksi.",
+      "link": "Lähetä nyt"
+    },
+    "customSolutions": {
+      "title": "Mukautetut ratkaisut",
+      "description": "Ota yhteyttä räätälöityihin kumppanuusmahdollisuuksiin.",
+      "link": "Ota yhteyttä"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "Yli 100 yhteistyökumppania",
+    "partnerCountSub": "Johtavien tekoälyyritysten luottama",
+    "contactSupport": "Ota yhteyttä tukeen"
+  },
+  "validation": {
+    "required": "Tämä kenttä on pakollinen",
+    "toolNameRequired": "Työkalun nimi vaaditaan",
+    "url": "Virheellinen URL-osoite",
+    "descriptionMin": "Kuvauksen tulee olla vähintään 10 merkkiä pitkä",
+    "categoryRequired": "Valitse luokka",
+    "email": "Virheellinen sähköpostiosoite",
+    "messageMin": "Viestin tulee olla vähintään 10 merkkiä pitkä"
+  },
+  "success": "Kyselysi on lähetetty onnistuneesti!"
+}

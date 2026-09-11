@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "ウェブサイトインサイト",
+    "subtitle": "競合他社のトラフィックとキーワードを追跡します。",
+    "track": "追跡",
+    "noDomains": "追跡されているドメインはありません。上から追加してください！",
+    "domain": "ドメイン",
+    "monthlyVisits": "月間訪問数",
+    "rank": "ランク",
+    "topKeywords": "上位キーワード",
+    "added": "追加済み",
+    "tool": "道具",
+    "organicClicks": "オーガニッククリック",
+    "paidClicks": "有料クリック数",
+    "totalClicks": "合計クリック数",
+    "addedOn": "追加日",
+    "noTools": "まだ追跡されているツールはありません。",
+    "addDomainDesc": "上に最初のドメインを追加して、分析情報の追跡を開始します。",
+    "deleteSuccess": "ドメインが追跡から削除されました",
+    "confirmDelete": "このドメインの追跡を停止してもよろしいですか?",
+    "quota": "クォータ",
+    "limitReachedDesc": "毎月のインサイトの制限に達しました。より多くのドメインを追跡するにはアップグレードしてください。",
+    "upgradeNow": "今すぐアップグレード",
+    "usage": "使用法",
+    "searchPlaceholder": "追跡されているドメインを検索...",
+    "advancedFilter": "高度なフィルター",
+    "bulkOpen": "一括オープン",
+    "export": "データのエクスポート",
+    "aiTool": "AIツール",
+    "rankChange": "ランク変更",
+    "globalRank": "グローバルランク",
+    "traffic": "渋滞",
+    "audience": "観客",
+    "updateDate": "更新日",
+    "limitReachedTitle": "限界に達しました",
+    "limitReachedBody": "無料検索の制限に達しました。アップグレードすると、無制限にアクセスできるようになります。",
+    "upgradePro": "プロプランにアップグレード",
+    "actions": "アクション",
+    "viewSocial": "ソーシャルを見る",
+    "filters": {
+      "months": {
+        "feb2026": "「2026年2月」",
+        "jan2026": "「2026年1月」"
+      },
+      "sources": {
+        "search": "「検索」",
+        "direct": "「ダイレクト」",
+        "social": "「ソーシャル」"
+      },
+      "regions": {
+        "us": "「私たち」",
+        "vn": "「ヴン」"
+      },
+      "categories": {
+        "llm": "「ルム」",
+        "image": "「イメージ」",
+        "productivity": "「生産性」"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "「100k」",
+        "1m": "「1メートル」"
+      },
+      "timePeriod": "「期間」",
+      "selectMonth": "「月を選択」",
+      "trafficSource": "「トラフィックソース」",
+      "allSources": "「すべてのソース」",
+      "region": "「地域」",
+      "category": "「カテゴリー」",
+      "trafficThreshold": "「トラフィックしきい値」",
+      "minVisits": "「最小訪問数」"
+    },
+    "exportSuccess": "エクスポートに成功しました。",
+    "exportFailed": "エクスポートに失敗しました。",
+    "exportData": "「データのエクスポート」",
+    "exportDesc": "このレポートをエクスポートして、共有またはローカルで分析します。",
+    "exportLimit": "「輸出制限」",
+    "rows": "「行」",
+    "creditsCost": "「クレジットコスト」",
+    "availableAfter": "「その後利用可能」",
+    "confirmExport": "「エクスポートの確認」",
+    "notEnoughCredits": "「クレジットが足りません」",
+    "removeFailed": "削除に失敗しました。",
+    "direct": "「ダイレクト」",
+    "sortDefault": "デフォルト",
+    "sortTraffic": "トラフィック"
+  },
+  "common": {
+    "global": "「グローバル」",
+    "allCategories": "「すべてのカテゴリー」"
+  },
+  "table": {
+    "column": {
+      "tool": "「ツール」",
+      "organic": "「オーガニッククリック」",
+      "paid": "「有料クリック数」",
+      "total": "「合計クリック数」",
+      "trend": "「トレンド」",
+      "growth": "成長"
+    },
+    "searchPlaceholder": "「追跡されているドメインを検索...」",
+    "showingResults": "「{count} の結果を表示中」",
+    "empty": "「まだ追跡されているドメインはありません。」"
+  }
+}

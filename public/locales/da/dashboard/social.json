@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Social Overvågning",
+    "description": "Overvåg nøgleord på TikTok og YouTube.",
+    "table": {
+      "platform": "Platforme",
+      "keyword": "Nøgleord",
+      "videos": "Videoer",
+      "views": "Visninger",
+      "creators": "Skabere",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Aktiv"
+    },
+    "monthlyQueries": "Månedlige Søgninger",
+    "videosToday": "Videoer i Dag",
+    "creatorsToday": "Skabere i Dag",
+    "metrics": {
+      "monthlyQueries": "Månedlige forespørgsler",
+      "videosToday": "Videoer i dag",
+      "creatorsToday": "Skabere i dag"
+    }
+  },
+  "socialListeningTitle": "Social Overvågning",
+  "socialTable": {
+    "tool": "AI værktøj",
+    "noData": "Ingen data fundet"
+  },
+  "allPlatforms": "Alle platforme"
+}

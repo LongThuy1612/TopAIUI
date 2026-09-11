@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Foire aux questions - TopAICollection",
+    "description": "Trouvez des réponses aux questions courantes sur TopAICollection et comment utiliser notre répertoire d'outils d'IA."
+  },
+  "badge": "Centre d'aide",
+  "title": "Foire aux questions",
+  "subtitle": "Trouvez des réponses aux questions courantes sur TopAICollection",
+  "categories": {
+    "general": "Questions générales",
+    "tools": "À propos des outils d'IA",
+    "submission": "Soumission d'outils",
+    "account": "Compte et facturation"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Qu'est-ce que TopAICollection ?",
+        "answer": "TopAICollection est un répertoire complet d'outils et de sites Web d'IA. Nous aidons les utilisateurs à découvrir les meilleures solutions d'IA adaptées à leurs besoins, des outils de productivité aux applications créatives."
+      },
+      "1": {
+        "question": "Comment trouver le bon outil d’IA ?",
+        "answer": "Vous pouvez parcourir par catégorie, utiliser notre fonction de recherche ou consulter nos sections en vedette et tendances. Chaque outil comprend des descriptions détaillées, des avis d'utilisateurs et des notes pour vous aider à prendre une décision éclairée."
+      },
+      "2": {
+        "question": "L'utilisation de TopAICollection est-elle gratuite ?",
+        "answer": "Oui! La navigation et la recherche dans notre annuaire sont entièrement gratuites. Certains outils répertoriés peuvent avoir leur propre prix, qui est clairement indiqué sur la page de chaque outil."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Comment les outils sont-ils sélectionnés pour le répertoire ?",
+        "answer": "Nous examinons attentivement chaque soumission pour garantir la qualité. Les outils doivent être fonctionnels, apporter de la valeur aux utilisateurs et être conformes à nos directives. Nous prenons également en compte les commentaires et les évaluations des utilisateurs."
+      },
+      "1": {
+        "question": "Quelles informations sont fournies pour chaque outil ?",
+        "answer": "Chaque liste d'outils comprend une description, des fonctionnalités clés, des informations sur les prix, des avis d'utilisateurs, des analyses de trafic, des catégories et des liens directs vers le site Web de l'outil."
+      },
+      "2": {
+        "question": "À quelle fréquence l'annuaire est-il mis à jour ?",
+        "answer": "Notre annuaire est mis à jour quotidiennement avec de nouveaux outils et informations. Nous surveillons en permanence les outils répertoriés pour garantir leur exactitude et supprimons ceux qui ne sont plus disponibles."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Comment puis-je soumettre mon outil d'IA ?",
+        "answer": "Visitez notre page Outil de soumission et remplissez le formulaire de soumission. Fournissez des informations détaillées sur votre outil, y compris ses fonctionnalités, son public cible et ses tarifs. Nous examinons toutes les soumissions dans les 48 heures."
+      },
+      "1": {
+        "question": "Quelles sont les exigences pour la soumission des outils ?",
+        "answer": "Votre outil doit être fonctionnel, apporter une valeur claire aux utilisateurs, disposer d'un site Web professionnel et être conforme aux exigences légales. Nous n'acceptons pas les outils qui favorisent des activités illégales ou violent la vie privée des utilisateurs."
+      },
+      "2": {
+        "question": "Combien coûte le référencement d’un outil ?",
+        "answer": "Les inscriptions de base sont gratuites. Nous proposons également des annonces vedettes et premium avec des avantages supplémentaires tels que le placement prioritaire, des fonctionnalités promotionnelles et des analyses avancées."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Ai-je besoin d’un compte pour utiliser TopAICollection ?",
+        "answer": "Aucun compte n'est requis pour parcourir et rechercher notre annuaire. Cependant, la création d'un compte vous permet d'enregistrer vos outils favoris, de rédiger des critiques et de gérer les soumissions d'outils."
+      },
+      "1": {
+        "question": "Comment puis-je mettre à jour ma liste d'outils ?",
+        "answer": "Connectez-vous à votre compte, accédez au tableau de bord de gestion de vos outils et sélectionnez l'option de mise à niveau. Vous pouvez choisir parmi des forfaits vedettes ou premium avec une facturation mensuelle ou annuelle."
+      },
+      "2": {
+        "question": "Puis-je annuler mon annonce payante à tout moment ?",
+        "answer": "Oui, vous pouvez annuler votre annonce payante à tout moment. Votre annonce restera en vedette jusqu'à la fin de votre période de facturation actuelle, puis reviendra à une annonce de base."
+      }
+    }
+  },
+  "cta": {
+    "title": "Vous avez encore des questions ?",
+    "subtitle": "Notre équipe d'assistance est là pour vous aider",
+    "button": "Contacter l'assistance"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "welcome": "ようこそ、{name}さん！",
+  "welcomeDescription": "当社の強力な機能とデータを活用して、AI業界の最新トレンドとチャンスを見つけましょう。",
+  "user": "ユーザー",
+  "performanceOverview": "パフォーマンス概要",
+  "websiteInsightsQuota": "ウェブサイトインサイト使用枠",
+  "socialListeningQueries": "ソーシャルリスニングのクォータ",
+  "stats": {
+    "organicClicks": "オーガニッククリック",
+    "paidClicks": "有料クリック",
+    "totalClicks": "合計クリック数",
+    "totalTools": "合計ツール数",
+    "totalViews": "合計視聴数",
+    "credits": "クレジット"
+  },
+  "features": {
+    "websiteInsights": "ウェブサイトのインサイト",
+    "socialListening": "ソーシャルリスニング",
+    "prioritySupport": "優先サポート",
+    "advertising": "広告",
+    "premiumSupport": "プレミアムサポート"
+  },
+  "badgePopular": "最も人気のある",
+  "title": "ソーシャルリスニングのトラッキング",
+  "description": "TikTok と YouTube のキーワードを監視します。",
+  "adCredits": "広告クレジット",
+  "postCredits": "ポストクレジット",
+  "linkCredits": "リンククレジット",
+  "forSponsoredListings": "スポンサー付きリスティングの場合",
+  "forGuestArticles": "ゲスト記事について",
+  "forLinkInsertions": "リンク挿入用",
+  "buyCredits": "クレジットを購入する",
+  "noOrders": "注文が見つかりませんでした。",
+  "orderHistory": "注文履歴",
+  "orderId": "注文ID",
+  "amount": "額",
+  "date": "日付",
+  "type": "タイプ",
+  "invoice": "請求書",
+  "download": "ダウンロード",
+  "currentPlan": "現在の計画",
+  "freeTier": "無料利用枠",
+  "freeTierDesc": "プランをアップグレードすると、より多くの機能と洞察が得られます。",
+  "creditBalances": "クレジット残高",
+  "subscriptionDetails": "サブスクリプションの詳細",
+  "upgradePlan": "アップグレードプラン",
+  "statusActive": "アクティブ",
+  "planMemberSince": "このプランのメンバー",
+  "renewalDate": "更新日",
+  "changePlan": "計画の変更",
+  "redirecting": "リダイレクト中...",
+  "credits": "クレジット",
+  "managePortal": "請求ポータルの管理",
+  "subscribe": "今すぐ購読する",
+  "upgradeTitle": "研究計画をアップグレードする",
+  "upgradeDesc": "高度な分析、競合他社の洞察などを活用します。",
+  "choosePlan": {
+    "title": "研究計画を選択してください",
+    "subtitle": "AI 市場のインテリジェンスとデータを取得して意思決定を推進します。"
+  },
+  "billingIntervals": {
+    "monthly": "毎月",
+    "yearly": "毎年"
+  },
+  "subtitle": "提出した AI ツールのパフォーマンスを管理および追跡します。",
+  "create": "キャンペーンの作成",
+  "noCampaigns": "まだキャンペーンはありません",
+  "createFirst": "最初のキャンペーンを作成して AI ツールの宣伝を開始します",
+  "getStarted": "始めましょう",
+  "budget": "予算",
+  "spent": "過ごした",
+  "startDate": "開始日",
+  "endDate": "終了日",
+  "notSet": "未設定",
+  "ongoing": "進行中",
+  "pause": "一時停止",
+  "resume": "再開する",
+  "viewDetails": "詳細を見る",
+  "clicks": "クリック数",
+  "impressions": "感想",
+  "rejectionReason": "拒否理由",
+  "analytics": {
+    "title": "キャンペーン分析",
+    "description": "過去 30 日間のインプレッション数とクリック数の詳細な内訳。",
+    "exportJson": "JSONのエクスポート",
+    "dailyPerformance": "日々のパフォーマンス",
+    "topLocales": "上位地域 (ロケール)"
+  },
+  "track": "追跡",
+  "noDomains": "まだ追跡されているドメインはありません。上に1つ追加してください！",
+  "domain": "ドメイン",
+  "monthlyVisits": "毎月の訪問数",
+  "rank": "ランク",
+  "topKeywords": "人気のキーワード",
+  "added": "追加した",
+  "tool": "道具",
+  "organicClicks": "オーガニッククリック",
+  "paidClicks": "有料クリック数",
+  "totalClicks": "合計クリック数",
+  "addedOn": "追加日",
+  "noTools": "まだ追跡されているツールはありません。",
+  "empty": {
+    "title": "AI ツールはまだ存在しない",
+    "description": "AI ツールを送信して、何百万人ものユーザーに発見してもらいましょう。",
+    "cta": "AI ツールを送信する"
+  },
+  "columns": {
+    "tool": "道具",
+    "status": "状態",
+    "organic": "オーガニックトラフィック",
+    "paid": "有料トラフィック",
+    "impressions": "感想",
+    "actions": "アクション"
+  },
+  "statusTooltip": {
+    "pending": "管理者の承認を待っています"
+  },
+  "submittedToast": "ツールは送信され、審査待ちです。",
+  "warnings": {
+    "pendingView": "このツールはまだ検討中であり、まだ公開されていません。",
+    "confirmDelete": "この AI ツールを削除してもよろしいですか?この操作は元に戻すことができません。"
+  },
+  "gpt": {
+    "title": "私の GPT",
+    "submitNew": "新しい GPT を送信する",
+    "noGpts": "GPT が見つかりません。最初の 1 つを提出してください。",
+    "noGptsDesc": "GPT はまだ送信されていません。 GPT を送信して発見してもらいましょう。",
+    "columns": {
+      "name": "GPT 名",
+      "url": "「ChatGPT URL」",
+      "date": "提出済み"
+    }
+  },
+  "updateAi": "AIをアップデートする",
+  "submitNew": "新規送信",
+  "submitNewItem": "新しいアイテムを送信する",
+  "linkInsert": {
+    "label": "リンク挿入",
+    "submit": "リンク挿入を送信",
+    "empty": {
+      "title": "リンク挿入はまだありません",
+      "description": "まだリンク挿入を送信していません。"
+    }
+  },
+  "form": {
+    "type": "タイプ",
+    "targetUrl": "ターゲット URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "タイトル/アンカーテキスト",
+    "anchorTextPlaceholder": "記事のタイトルまたはリンクのアンカーテキスト",
+    "submitCredits": "提出（1クレジット）"
+  },
+  "tabs": {
+    "profile": "プロフィール",
+    "security": "安全",
+    "notifications": "通知"
+  },
+  "table": {
+    "platform": "プラットフォーム",
+    "keyword": "キーワード",
+    "videos": "動画",
+    "views": "ビュー",
+    "creators": "クリエイター",
+    "status": "状態"
+  },
+  "updated": "設定が正常に更新されました",
+  "password": {
+    "title": "パスワードを変更する",
+    "current": "現在のパスワード",
+    "new": "新しいパスワード",
+    "confirm": "新しいパスワードを確認する",
+    "update": "パスワードを更新する"
+  },
+  "notifications": {
+    "title": "通知設定",
+    "email": "電子メール通知",
+    "marketing": "マーケティングメール"
+  },
+  "metrics": {
+    "monthlyQueries": "月次クエリ",
+    "videosToday": "今日のビデオ",
+    "creatorsToday": "今日のクリエイター"
+  },
+  "advertiseAi": "AIを宣伝する",
+  "myAis": {
+    "title": "私のAI",
+    "subtitle": "提出した AI ツールのパフォーマンスを管理および追跡します。",
+    "empty": {
+      "cta": "AI ツールを送信する"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "拒否理由"
+  },
+  "feature": {
+    "websiteInsightsDesc": "キーワードのランキングとパフォーマンスを追跡する",
+    "socialListeningDesc": "ソーシャルでの言及とトレンドを監視する",
+    "researchReportDesc": "包括的な市場レポートを生成する",
+    "aiAdvertisingLibrary": "AI広告ライブラリ",
+    "aiAdvertisingDesc": "競合他社の AI 広告を分析する",
+    "comingSoon": "近日公開"
+  },
+  "reports": {
+    "title": "研究報告書",
+    "description": "AI 業界に関する詳細な分析レポートにアクセスします。",
+    "noReports": "利用可能なレポートがありません",
+    "free": "無料",
+    "download": "ダウンロード",
+    "unlock": "ロック解除レポート",
+    "noReportsDesc": "現在、新たな知見を準備中です。",
+    "readNow": "レポートを読む",
+    "readerTitle": "研究レポートリーダー",
+    "unlockRequired": "プレミアムコンテンツ",
+    "unlockDesc": "この詳細な調査レポートを利用して、独自の市場分析、ケーススタディ、実用的な洞察に完全にアクセスできます。",
+    "unlockNow": "今すぐロックを解除する",
+    "related": "関連レポート",
+    "toc": "このページでは",
+    "backToList": "ライブラリに戻る",
+    "notFound": "レポートが見つかりません",
+    "unlockSuccess": "レポートのロックが正常に解除されました。",
+    "unlockError": "レポートのロックを解除できませんでした。",
+    "searchPlaceholder": "レポートを検索..."
+  },
+  "toolPerformance": "「ツールパフォーマンス（リアルタイム）」"
+}

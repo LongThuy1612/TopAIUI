@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "AI 도구 검색...",
+    "categories": "카테고리",
+    "rankings": "랭킹",
+    "submit": "도구 등록",
+    "admin": "관리자"
+  },
+  "hero": {
+    "titlePrefix": "최고의",
+    "titleHighlight": "AI 도구",
+    "subtitle": "수백 개의 AI 제품을 카테고리별로 살펴보고, 가격을 비교하고, 워크플로우에 맞는 도구를 찾아보세요.",
+    "searchPlaceholder": "AI 도구 검색..."
+  },
+  "stats": {
+    "tools": "개의 AI 도구 등록됨",
+    "categories": "개의 카테고리",
+    "featured": "추천 도구"
+  },
+  "tabs": {
+    "heading": "도구 탐색",
+    "newest": "신규",
+    "featured": "최다 추천",
+    "free": "무료",
+    "viewAll": "전체 보기 →"
+  },
+  "announcement": {
+    "featured": "추천"
+  },
+  "sidebar": {
+    "featuredTools": "추천 도구",
+    "topCategories": "인기 카테고리"
+  },
+  "sections": {
+    "browseByCategory": "카테고리별 보기",
+    "newestTools": "최신 도구",
+    "featuredTools": "추천 도구",
+    "viewAll": "전체 보기 →",
+    "justLaunched": "신규 출시",
+    "featuredThisWeek": "이번 주 추천",
+    "featuredThisWeekSubtitle": "커뮤니티에서 가장 많이 저장하고 평가한 도구입니다.",
+    "updatedDaily": "매일 업데이트",
+    "viewMore": "더 보기 →"
+  },
+  "cta": {
+    "title": "공유하고 싶은 AI 도구가 있나요?",
+    "subtitle": "당신의 도구와 비슷한 것을 찾는 사람들에게 소개하세요.",
+    "button": "도구 등록하기"
+  },
+  "empty": {
+    "noTools": "아직 도구가 없습니다 — 다음을 실행하세요",
+    "noResults": "도구를 찾을 수 없습니다"
+  },
+  "category": {
+    "breadcrumbHome": "홈",
+    "allTools": "모든 도구",
+    "allToolsTitle": "모든 AI 도구",
+    "allPricing": "모든 가격대",
+    "sortNewest": "최신순",
+    "sortFeatured": "추천순",
+    "sortName": "이름 A–Z",
+    "toolsFound": "개의 도구 발견 | 개의 도구 발견",
+    "searchPlaceholder": "도구 검색...",
+    "filters": "필터",
+    "viewGrid": "그리드 보기",
+    "viewList": "목록 보기"
+  },
+  "pricing": {
+    "FREE": "무료",
+    "FREEMIUM": "프리미엄",
+    "PAID": "유료"
+  },
+  "ranking": {
+    "title": "인기 AI 도구",
+    "subtitle": "디렉토리에 기록된 트래픽 및 성장 데이터를 기준으로 순위를 매겼습니다.",
+    "byGrowth1m": "1개월 성장률",
+    "byGrowth3m": "3개월 성장률",
+    "byGrowth6m": "6개월 성장률",
+    "byTraffic": "월간 방문 수",
+    "colRank": "순위",
+    "colTool": "도구",
+    "colVisits": "월간 방문 수",
+    "colGrowth": "성장률",
+    "colAuthority": "도메인 권위",
+    "colCategory": "카테고리",
+    "noData": "아직 랭킹 데이터가 없습니다."
+  },
+  "tool": {
+    "openSite": "사이트 열기",
+    "save": "저장",
+    "saved": "저장됨",
+    "featured": "추천",
+    "introduction": "소개",
+    "addedOn": "등록일",
+    "monthlyVisitors": "월간 방문자 수",
+    "features": "주요 기능",
+    "useCases": "사용 사례",
+    "prosAndCons": "장단점",
+    "pros": "장점",
+    "cons": "단점",
+    "faq": "자주 묻는 질문",
+    "alternatives": "의 대안",
+    "backToCategory": "돌아가기:",
+    "notFound": "도구를 찾을 수 없습니다",
+    "similarTools": "유사한 도구",
+    "tabProductInfo": "제품 정보",
+    "tabPricing": "가격",
+    "tabReviews": "리뷰",
+    "tabAnalytics": "분석",
+    "tabAlternatives": "대안",
+    "productInformationHeading": "{name} 제품 정보",
+    "whatIs": "{name}이란 무엇인가요?",
+    "howToUseHeading": "{name} 사용 방법은?",
+    "reviewsHeading": "{name} 리뷰 ({count}개)",
+    "ratingPrompt": "{name}을 추천하시나요? 댓글을 남겨주세요",
+    "whatDoYouThink": "어떻게 생각하시나요?",
+    "loginToComment": "댓글을 남기려면 로그인하세요",
+    "pricingHeading": "{name} 가격",
+    "noPricingYet": "아직 가격 정보가 없습니다.",
+    "analyticsHeading": "{name} 분석",
+    "trafficAnalysis": "{name} 웹사이트 트래픽 분석",
+    "visitOverTime": "시간별 방문 추이",
+    "monthlyVisits": "월간 방문 수",
+    "avgVisitDuration": "평균 방문 시간",
+    "pagePerVisit": "방문당 페이지 수",
+    "bounceRate": "이탈률",
+    "noTrafficYet": "아직 트래픽 데이터가 없습니다.",
+    "badgeVerified": "인증됨",
+    "badgeJustLaunched": "신규 출시",
+    "badgeFreeTool": "무료 도구",
+    "affiliateLink": "제휴 링크",
+    "couponCode": "쿠폰 코드",
+    "ratings": "개의 평가",
+    "upvotes": "개의 추천",
+    "domainAuthority": "도메인 권위",
+    "trafficRank": "트래픽 순위",
+    "viewCount": "페이지 조회수"
+  },
+  "footer": {
+    "tagline": "최고의 AI 도구를 발견하고, 비교하고, 공유하세요 — Nuxt & PostgreSQL로 구축.",
+    "product": "제품",
+    "home": "홈",
+    "allTools": "모든 도구",
+    "submit": "도구 등록",
+    "categories": "카테고리",
+    "company": "회사",
+    "admin": "관리자 로그인",
+    "language": "언어",
+    "copyright": "모든 권리 보유."
+  },
+  "language": {
+    "label": "언어"
+  }
+}

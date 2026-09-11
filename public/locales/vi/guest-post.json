@@ -1,0 +1,46 @@
+{
+  "title": "Bài viết khách & Chèn liên kết",
+  "description": "Chia sẻ chuyên môn của bạn với cộng đồng của chúng tôi thông qua bài viết khách hoặc yêu cầu chèn liên kết chiến lược trong nội dung hiện có.",
+  "details": "Chi tiết bài viết khách",
+  "postTitle": "Tiêu đề bài viết",
+  "postTitlePlaceholder": "Tiêu đề bài viết khách của bạn",
+  "postContent": "Nội dung hoặc chi tiết bài viết",
+  "postContentPlaceholder": "Mô tả nội dung bài viết khách hoặc chi tiết chèn liên kết của bạn",
+  "features": {
+    "guestPosts": {
+      "title": "Bài viết khách",
+      "description": "Chia sẻ kiến thức và hiểu biết của bạn về AI với cộng đồng của chúng tôi. Xây dựng uy tín và thu hút lưu lượng truy cập đến trang web của bạn."
+    },
+    "linkInsertion": {
+      "title": "Chèn liên kết",
+      "description": "Yêu cầu đặt liên kết chiến lược của bạn trong nội dung hiện có, có liên quan để đạt giá trị SEO tối đa."
+    },
+    "seoBacklinks": {
+      "title": "Backlink SEO",
+      "description": "Nâng cao thứ hạng SEO của bạn với các backlink chất lượng cao từ tên miền uy tín của chúng tôi."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Hướng dẫn nội dung",
+    "description": "Tất cả bài viết khách phải là nội dung gốc, chất lượng cao và liên quan đến AI. Chúng tôi không chấp nhận nội dung do AI tạo ra mà không có sự chỉnh sửa của con người."
+  },
+  "meta": {
+    "title": "Bài viết khách & Chèn liên kết | Top AI Collection",
+    "description": "Chia sẻ chuyên môn với cộng đồng AI thông qua bài viết hoặc chèn liên kết vào các bài đã đăng."
+  },
+  "validation": {
+    "required": "Trường này là bắt buộc",
+    "titleTooShort": "Tiêu đề phải có ít nhất 5 ký tự",
+    "contentTooShort": "Nội dung phải có ít nhất 20 ký tự",
+    "toolNameRequired": "Tên công cụ là bắt buộc",
+    "url": "URL không hợp lệ",
+    "descriptionMin": "Mô tả phải có ít nhất 10 ký tự",
+    "categoryRequired": "Vui lòng chọn danh mục",
+    "email": "Email không hợp lệ",
+    "messageMin": "Tin nhắn phải có ít nhất 10 ký tự"
+  },
+  "sidebar": {
+    "articleCount": "Hơn 1.000 bài viết",
+    "articleCountSub": "Được xuất bản bởi cộng đồng"
+  }
+}

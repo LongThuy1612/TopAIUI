@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} Strumenti IA | Scopri le migliori soluzioni per {tagName}",
+    "description": "Esplora la nostra raccolta curata dei migliori strumenti IA di {tagName}. Confronta funzionalità, prezzi e recensioni per trovare il software {tagName} perfetto per le tue esigenze."
+  },
+  "notFound": {
+    "metaTitle": "Etichetta non trovata | TopAICollection",
+    "metaDescription": "Il tag che stai cercando non esiste. Scopri altri strumenti AI."
+  },
+  "breadcrumb": {
+    "home": "Casa",
+    "tools": "Utensili"
+  },
+  "jsonLd": {
+    "collectionName": "Strumenti di intelligenza artificiale di {tagName}",
+    "collectionDescription": "Sfoglia la nostra directory di strumenti AI di {tagName}."
+  }
+}

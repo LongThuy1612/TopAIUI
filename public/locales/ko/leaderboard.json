@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "일일 리더보드",
+      "title_long": "일일 AI 도구 리더보드"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "월간 리더보드",
+      "title_long": "월간 AI 도구 리더보드"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "연간 리더보드",
+      "title_long": "연간 AI 도구 리더보드"
+    }
+  }
+}

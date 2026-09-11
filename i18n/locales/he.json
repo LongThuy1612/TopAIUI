@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "חיפוש כלי בינה מלאכותית...",
+    "categories": "קטגוריות",
+    "rankings": "דירוגים",
+    "submit": "הוספת כלי",
+    "admin": "מנהל"
+  },
+  "hero": {
+    "titlePrefix": "גלה את",
+    "titleHighlight": "כלי הבינה המלאכותית הטובים ביותר",
+    "subtitle": "עיין במאות מוצרי בינה מלאכותית לפי קטגוריה, השווה מחירים ומצא את הכלי המתאים לתהליך העבודה שלך.",
+    "searchPlaceholder": "חיפוש כלי בינה מלאכותית..."
+  },
+  "stats": {
+    "tools": "כלי בינה מלאכותית ברשימה",
+    "categories": "קטגוריות",
+    "featured": "כלים מומלצים"
+  },
+  "tabs": {
+    "heading": "גלה כלים",
+    "newest": "חדש",
+    "featured": "המומלצים ביותר",
+    "free": "חינם",
+    "viewAll": "צפה בהכול ←"
+  },
+  "announcement": {
+    "featured": "מומלץ"
+  },
+  "sidebar": {
+    "featuredTools": "כלים מומלצים",
+    "topCategories": "קטגוריות מובילות"
+  },
+  "sections": {
+    "browseByCategory": "עיון לפי קטגוריה",
+    "newestTools": "הכלים החדשים ביותר",
+    "featuredTools": "כלים מומלצים",
+    "viewAll": "צפה בהכול ←",
+    "justLaunched": "עלה לאחרונה",
+    "featuredThisWeek": "מומלץ השבוע",
+    "featuredThisWeekSubtitle": "הכלים שהקהילה שלנו שמרה ודירגה הכי הרבה.",
+    "updatedDaily": "מתעדכן מדי יום",
+    "viewMore": "הצג עוד ←"
+  },
+  "cta": {
+    "title": "יש לך כלי בינה מלאכותית לשתף?",
+    "subtitle": "הצג אותו בפני אנשים המחפשים כלים כמו שלך.",
+    "button": "הוסף את הכלי שלך"
+  },
+  "empty": {
+    "noTools": "עדיין אין כלים — הפעל",
+    "noResults": "לא נמצאו כלים"
+  },
+  "category": {
+    "breadcrumbHome": "בית",
+    "allTools": "כל הכלים",
+    "allToolsTitle": "כל כלי הבינה המלאכותית",
+    "allPricing": "כל טווחי המחיר",
+    "sortNewest": "החדש ביותר קודם",
+    "sortFeatured": "המומלץ קודם",
+    "sortName": "שם א–ת",
+    "toolsFound": "כלי נמצא | כלים נמצאו",
+    "searchPlaceholder": "חיפוש כלים...",
+    "filters": "מסננים",
+    "viewGrid": "תצוגת רשת",
+    "viewList": "תצוגת רשימה"
+  },
+  "pricing": {
+    "FREE": "חינם",
+    "FREEMIUM": "פרימיום חלקי",
+    "PAID": "בתשלום"
+  },
+  "ranking": {
+    "title": "כלי הבינה המלאכותית המובילים",
+    "subtitle": "מדורגים לפי נתוני תנועה וצמיחה שנרשמו בקטלוג שלנו.",
+    "byGrowth1m": "צמיחה של חודש",
+    "byGrowth3m": "צמיחה של 3 חודשים",
+    "byGrowth6m": "צמיחה של 6 חודשים",
+    "byTraffic": "ביקורים חודשיים",
+    "colRank": "דירוג",
+    "colTool": "כלי",
+    "colVisits": "ביקורים חודשיים",
+    "colGrowth": "צמיחה",
+    "colAuthority": "סמכות דומיין",
+    "colCategory": "קטגוריה",
+    "noData": "אין עדיין נתוני דירוג."
+  },
+  "tool": {
+    "openSite": "פתח אתר",
+    "save": "שמור",
+    "saved": "נשמר",
+    "featured": "מומלץ",
+    "introduction": "הקדמה",
+    "addedOn": "נוסף בתאריך",
+    "monthlyVisitors": "מבקרים חודשיים",
+    "features": "תכונות עיקריות",
+    "useCases": "מקרי שימוש",
+    "prosAndCons": "יתרונות וחסרונות",
+    "pros": "יתרונות",
+    "cons": "חסרונות",
+    "faq": "שאלות נפוצות",
+    "alternatives": "חלופות ל־",
+    "backToCategory": "חזרה אל",
+    "notFound": "הכלי לא נמצא",
+    "similarTools": "כלים דומים",
+    "tabProductInfo": "מידע על המוצר",
+    "tabPricing": "תמחור",
+    "tabReviews": "ביקורות",
+    "tabAnalytics": "אנליטיקה",
+    "tabAlternatives": "חלופות",
+    "productInformationHeading": "מידע על מוצר {name}",
+    "whatIs": "מהו {name}?",
+    "howToUseHeading": "כיצד להשתמש ב-{name}?",
+    "reviewsHeading": "ביקורות על {name} ({count})",
+    "ratingPrompt": "האם היית ממליץ על {name}? השאר תגובה",
+    "whatDoYouThink": "מה דעתך?",
+    "loginToComment": "התחבר כדי להגיב",
+    "pricingHeading": "תמחור {name}",
+    "noPricingYet": "אין עדיין מידע על תמחור.",
+    "analyticsHeading": "אנליטיקה של {name}",
+    "trafficAnalysis": "ניתוח תנועת האתר של {name}",
+    "visitOverTime": "ביקורים לאורך זמן",
+    "monthlyVisits": "ביקורים חודשיים",
+    "avgVisitDuration": "משך ביקור ממוצע",
+    "pagePerVisit": "עמודים לביקור",
+    "bounceRate": "שיעור נטישה",
+    "noTrafficYet": "אין עדיין נתוני תנועה.",
+    "badgeVerified": "מאומת",
+    "badgeJustLaunched": "עלה לאחרונה",
+    "badgeFreeTool": "כלי חינמי",
+    "affiliateLink": "קישור שותפים",
+    "couponCode": "קוד קופון",
+    "ratings": "דירוגים",
+    "upvotes": "לייקים",
+    "domainAuthority": "סמכות דומיין",
+    "trafficRank": "דירוג תנועה",
+    "viewCount": "צפיות בעמוד"
+  },
+  "footer": {
+    "tagline": "גלה, השווה ושתף את כלי הבינה המלאכותית הטובים ביותר — נבנה עם Nuxt ו-PostgreSQL.",
+    "product": "מוצר",
+    "home": "בית",
+    "allTools": "כל הכלים",
+    "submit": "הוספת כלי",
+    "categories": "קטגוריות",
+    "company": "חברה",
+    "admin": "כניסת מנהל",
+    "language": "שפה",
+    "copyright": "כל הזכויות שמורות."
+  },
+  "language": {
+    "label": "שפה"
+  }
+}

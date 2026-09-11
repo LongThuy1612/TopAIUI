@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Help Center - TopAICollection Support",
+    "description": "Get help with TopAICollection. Find answers to common questions and contact our support team."
+  },
+  "title": "Help Center",
+  "subtitle": "How can we help you today?",
+  "sections": {
+    "faq": {
+      "title": "FAQ",
+      "description": "Find answers to frequently asked questions.",
+      "link": "View FAQ"
+    },
+    "contact": {
+      "title": "Contact Support",
+      "description": "Can't find what you need? Reach out to us.",
+      "link": "Contact Us"
+    }
+  },
+  "commonTopics": {
+    "title": "Common Topics",
+    "submitTool": "How do I submit my AI tool?",
+    "advertising": "How does advertising work?",
+    "privacy": "What is your privacy policy?",
+    "terms": "What are your terms of service?"
+  }
+}

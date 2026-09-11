@@ -35,7 +35,12 @@
     "browseByCategory": "Duyệt theo danh mục",
     "newestTools": "Công cụ mới nhất",
     "featuredTools": "Công cụ nổi bật",
-    "viewAll": "Xem tất cả →"
+    "viewAll": "Xem tất cả →",
+    "justLaunched": "Mới ra mắt",
+    "featuredThisWeek": "Nổi bật tuần này",
+    "featuredThisWeekSubtitle": "Những công cụ được cộng đồng lưu và đánh giá nhiều nhất.",
+    "updatedDaily": "Cập nhật hàng ngày",
+    "viewMore": "Xem thêm →"
   },
   "cta": {
     "title": "Bạn có công cụ AI muốn chia sẻ?",

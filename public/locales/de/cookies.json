@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Cookie-Richtlinie – TopAICollection",
+    "description": "Erfahren Sie, wie TopAICollection Cookies und ähnliche Technologien verwendet."
+  },
+  "title": "Cookie-Richtlinie",
+  "lastUpdated": "Zuletzt aktualisiert",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Was sind Cookies?",
+      "description": "Cookies sind kleine Textdateien, die auf Ihrem Computer oder Mobilgerät gespeichert werden, wenn Sie unsere Website besuchen. Sie helfen uns, Ihnen ein besseres Erlebnis zu bieten, indem sie sich an Ihre Präferenzen erinnern und verstehen, wie Sie unsere Website nutzen."
+    },
+    "howWeUse": {
+      "title": "Wie wir Cookies verwenden",
+      "intro": "Wir verwenden Cookies für folgende Zwecke:",
+      "essential": "Wesentliche Cookies: Erforderlich, damit die Website ordnungsgemäß funktioniert, einschließlich Authentifizierung und Sicherheit.",
+      "analytics": "Analyse-Cookies: Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren.",
+      "preference": "Präferenz-Cookies: Merken sich Ihre Einstellungen und Präferenzen, wie z. B. Sprache und Gebietsschema.",
+      "marketing": "Marketing-Cookies: Werden verwendet, um relevante Werbung bereitzustellen und die Kampagnenleistung zu verfolgen."
+    },
+    "managing": {
+      "title": "Cookies verwalten",
+      "intro": "Bei den meisten Webbrowsern können Sie Cookies über ihre Einstellungen steuern. Sie können wählen zwischen:",
+      "blockAll": "Blockieren Sie alle Cookies",
+      "acceptAll": "Akzeptieren Sie alle Cookies",
+      "beNotified": "Werden Sie benachrichtigt, wenn ein Cookie gesetzt wird",
+      "deleteExisting": "Bereits gesetzte Cookies löschen",
+      "note": "Bitte beachten Sie, dass das Blockieren bestimmter Cookies Ihr Erlebnis auf unserer Website beeinträchtigen kann."
+    },
+    "thirdParty": {
+      "title": "Cookies von Drittanbietern",
+      "intro": "Einige Cookies auf unserer Website werden von den von uns genutzten Drittanbieterdiensten gesetzt, darunter:",
+      "googleAnalytics": "Google Analytics (Analyse)",
+      "vercel": "Vercel (Hosting und Analyse)"
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "message": "Wenn Sie Fragen zu unserer Verwendung von Cookies haben, wenden Sie sich bitte an uns",
+      "contactLink": "Kontaktieren Sie uns"
+    }
+  }
+}

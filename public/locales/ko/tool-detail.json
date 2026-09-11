@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- AI 도구 검토 및 분석"
+  },
+  "errors": {
+    "notFound": "도구를 찾을 수 없습니다",
+    "notFoundDescription": "찾고 있는 도구가 존재하지 않습니다.",
+    "serverError": "내부 서버 오류입니다.",
+    "serverErrorDescription": "서버에서 예기치 않은 오류가 발생했습니다. 나중에 다시 시도해 주세요."
+  },
+  "actions": {
+    "visit": "웹사이트 방문",
+    "save": "구하다",
+    "saved": "저장됨",
+    "share": "공유하다",
+    "update": "이 도구 업데이트",
+    "advertise": "이 도구를 광고하세요",
+    "visitWebsite": "웹사이트 방문",
+    "readMore": "더 읽어보기",
+    "readLess": "덜 읽으세요",
+    "openVideo": "비디오 열기"
+  },
+  "cta": {
+    "visit": "사이트 열기",
+    "advertise": "이 도구를 광고하세요",
+    "update": "이 도구 업데이트"
+  },
+  "sidebar": {
+    "category": "범주",
+    "tags": "태그"
+  },
+  "tabs": {
+    "socialListening": "소셜 리스닝",
+    "alternatives": "대안"
+  },
+  "similar": {
+    "title": "유사한 AI 도구"
+  },
+  "stats": {
+    "monthlyVisits": "월간 방문",
+    "growth": "성장",
+    "reviews": "리뷰",
+    "averageTime": "사이트에 머문 평균 시간",
+    "pagesPerVisit": "방문당 페이지",
+    "bounceRate": "이탈률",
+    "visits": "방문",
+    "reviews_formatted": "{rating}({count} {label})"
+  },
+  "sections": {
+    "overview": "개요",
+    "reviews": "리뷰",
+    "analytics": "해석학",
+    "embed": "포함시키다",
+    "alternatives": "대안",
+    "related": "관련 도구"
+  },
+  "details": {
+    "description": "도구 소개:",
+    "monthlyTraffic": "월간 트래픽:",
+    "socialMedia": "소셜 미디어 및 이메일:",
+    "company": "회사",
+    "categories": "카테고리",
+    "tags": "태그"
+  },
+  "content": {
+    "whatIs": "무엇인가요",
+    "howToUse": "사용방법",
+    "coreFeatures": "핵심 기능",
+    "useCases": "사용 사례",
+    "pricingPlans": "가격 계획",
+    "faqs": "자주 묻는 질문",
+    "relatedTools": "관련 도구",
+    "productInfo": "제품정보",
+    "writtenBy": "작성 및 편집자:",
+    "factCheckedBy": "팩트체크:"
+  },
+  "analytics": {
+    "title": "분석 및 교통 통계",
+    "subtitle": "분석",
+    "latestTraffic": "최신 웹사이트 트래픽",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "웹사이트 트래픽 소스",
+    "topKeywords": "인기 키워드",
+    "keyword": "예어",
+    "traffic": "교통",
+    "trafficSubtitle": "웹 트래픽을 개선하기 위해",
+    "geoSubtitle": "검색 엔진 표시기",
+    "sourceSubtitle": "검색 엔진 표시기",
+    "keywordSubtitle": "검색 엔진 표시기",
+    "percentage": "백분율",
+    "source": "원천",
+    "noChartData": "차트 데이터 없음",
+    "noTrafficChartData": "교통 차트 데이터 없음",
+    "desktopVsMobile": "데스크탑 vs 모바일",
+    "desktop": "데스크탑",
+    "mobileWeb": "모바일 웹",
+    "similarSites": "유사한 사이트",
+    "globalRank": "글로벌 순위",
+    "founded": "설립",
+    "socialInfluence": "소셜 미디어 영향",
+    "views": "조회수",
+    "mentions": "언급하다",
+    "trendHistory": "트렌드 히스토리",
+    "trendSubtitle": "시간 경과에 따른 트래픽, 조회수, 찬성표 추세",
+    "upvotes": "찬성표"
+  },
+  "embed": {
+    "title": "웹사이트에 삽입",
+    "description": "아름다운 내장 위젯을 사용하여 웹사이트에 이 도구를 추가하세요.",
+    "preview": "시사",
+    "code": "코드 삽입",
+    "copy": "코드 복사",
+    "copied": "복사되었습니다!",
+    "badgeAlt": "TopAICollection 뱃지 TopAICollection",
+    "themes": {
+      "light": "라이트",
+      "neutral": "뉴트럴",
+      "dark": "다크"
+    }
+  },
+  "alternatives": {
+    "title": "대안",
+    "description": "당신이 좋아할 만한 유사한 도구"
+  },
+  "pricing": {
+    "title": "가격 계획",
+    "subtitle": "귀하에게 가장 적합한 플랜을 선택하세요",
+    "popular": "인기 있는",
+    "getStarted": "시작하기",
+    "disclaimer": "가격과 기능은 다를 수 있습니다. 최신 정보를 확인하려면 공식 웹사이트를 방문하세요.",
+    "noPricingInfo": "가격 정보가 없습니다.",
+    "free": "무료",
+    "moreFeatures": "더 많은 기능"
+  },
+  "charts": {
+    "trafficChart": "교통 차트",
+    "comingSoon": "차트 시각화가 곧 제공될 예정입니다."
+  },
+  "reviews": {
+    "title": "리뷰",
+    "pointsScale": "5개 중",
+    "subtitle": "커뮤니티의 생각을 확인하세요",
+    "writeTitle": "이 도구를 추천하시나요?",
+    "placeholder": "이 도구에 대한 경험을 공유하십시오...",
+    "privacy": "개인 정보 보호",
+    "success": "리뷰가 성공적으로 제출되었습니다!",
+    "submit": "포스트 리뷰",
+    "loginToReview": "리뷰를 작성하려면 로그인하세요",
+    "loginLink": "로그인",
+    "noReviews": "아직 리뷰가 없습니다. 이 도구를 처음으로 리뷰해보세요!",
+    "viewMore": "모든 리뷰 보기",
+    "allReviewsTitle": "모든 리뷰:",
+    "reviewsPageTitle": "리뷰",
+    "by": "작성자",
+    "verified": "인증됨",
+    "anonymous": "익명 사용자",
+    "ratingLabel": "평점",
+    "commentLabel": "댓글",
+    "dateLabel": "날짜",
+    "page": "페이지",
+    "editReview": "리뷰 수정",
+    "deleteReview": "리뷰 삭제",
+    "deleteConfirm": "리뷰를 삭제하시겠습니까?",
+    "editTitle": "리뷰 수정하기",
+    "updateSuccess": "리뷰가 성공적으로 업데이트되었습니다!",
+    "deleteSuccess": "리뷰가 성공적으로 삭제되었습니다!",
+    "commentRequired": "리뷰에 댓글을 입력해 주세요.",
+    "ratingRequired": "평점을 선택해 주세요.",
+    "alreadyReviewed": "이미 이 도구를 리뷰했습니다. 리뷰의 ✏️ 편집 버튼을 사용하여 업데이트하세요.",
+    "sort": {
+      "label": "정렬 기준",
+      "newest": "최신순",
+      "oldest": "오래된 것부터",
+      "highest": "최고 평점",
+      "lowest": "최저 등급"
+    },
+    "save": "구하다",
+    "cancel": "취소",
+    "close": "닫다",
+    "userLabel": "사용자",
+    "unverify": "확인 취소",
+    "markVerified": "확인됨으로 표시",
+    "confirm": "확인하다",
+    "noReviewsFound": "이 도구에 대한 리뷰를 찾을 수 없습니다.",
+    "deleteError": "삭제에 실패했습니다.",
+    "updateError": "업데이트에 실패했습니다.",
+    "pagination": {
+      "showing": "표시 중",
+      "of": "중",
+      "reviews": "리뷰",
+      "prev": "이전",
+      "next": "다음"
+    },
+    "statusLabel": "상태",
+    "actionsLabel": "작업"
+  },
+  "share": {
+    "title": "이 도구를 공유하세요"
+  },
+  "metrics": {
+    "monthlyVisits": "월간 방문",
+    "growth": "성장"
+  },
+  "tags": "태그",
+  "overview": "개요",
+  "howToUse": "사용방법",
+  "pricingPlans": "가격 계획",
+  "faqs": "자주 묻는 질문",
+  "geoChart": {
+    "noData": "사용 가능한 지역 데이터가 없습니다.",
+    "loading": "지리 데이터 로드 중..."
+  },
+  "introduction": "소개",
+  "description": "설명",
+  "coreFeatures": "핵심 기능",
+  "useCases": "사용 사례",
+  "screenshots": "스크린샷",
+  "companyInfo": {
+    "companyName": "회사명",
+    "contactEmail": "연락처 이메일"
+  },
+  "nav": {
+    "scrollLeft": "왼쪽으로 스크롤",
+    "scrollRight": "오른쪽으로 스크롤",
+    "previous": "이전",
+    "next": "다음",
+    "imageSlide": "이미지 {index}",
+    "videoSlide": "비디오 슬라이드"
+  },
+  "badges": {
+    "verifiedListing": "인증된 목록",
+    "freePlan": "무료 플랜",
+    "paidPlans": "유료 플랜 및 가격"
+  },
+  "dummyReviews": {
+    "c1": "이것은 놀라운 AI 툴입니다! 제 워크플로우를 완전히 바꾸어 놓았습니다.",
+    "c2": "매우 훌륭한 기능과 쉬운 사용법. 강력히 추천합���다.",
+    "c3": "많은 대안들을 시도해 보았지만, 단연코 이것이 최고입니다.",
+    "c4": "가격 대비 가치가 매우 뛰어납니다. 무료 플랜도 매우 넉넉합니다.",
+    "c5": "훌륭한 UI와 직관적인 디자인. 때로는 조금 느리지만 전반적으로 환상적입니다.",
+    "c6": "모든 전문가를 위한 필수 툴입니다. 매주 몇 시간을 절약해 줍니다.",
+    "c7": "좋은 기능이지만 어느 정도 학습 곡선이 있습니다."
+  }
+}

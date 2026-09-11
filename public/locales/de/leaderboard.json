@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "„Tägliche Bestenliste“",
+      "title_long": "„Tägliche KI-Tools-Bestenliste“"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "„Monatliche Bestenliste“",
+      "title_long": "„Monatliche KI-Tools-Bestenliste“"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "„Jährliche Bestenliste“",
+      "title_long": "„Jährliches AI Tools Leaderboard“"
+    }
+  }
+}

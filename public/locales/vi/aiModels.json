@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Mô Hình AI & Dữ Liệu | TopAICollection",
+    "description": "Khám phá các mô hình AI, bộ dữ liệu và kiến trúc mới nhất cho dự án của bạn."
+  },
+  "title": "Thư Viện Mô Hình AI",
+  "subtitle": "Khám phá bộ sưu tập mô hình AI, tinh chỉnh và dữ liệu lớn nhất.",
+  "comingSoon": "Sắp Ra Mắt!",
+  "comingSoonMessage": "Chúng tôi đang tuyển chọn các mô hình AI tốt nhất. Hãy quay lại sớm.",
+  "searchPlaceholder": "Tìm kiếm mô hình AI...",
+  "allProviders": "Tất cả nhà cung cấp",
+  "noResults": "Không tìm thấy mô hình AI",
+  "noResultsHint": "Hãy thử điều chỉnh tiêu chí tìm kiếm hoặc lọc.",
+  "contextWindow": "Cửa Sổ Ngữ Cảnh",
+  "parameters": "Tham Số",
+  "provider": "Nhà Cung Cấp",
+  "architecture": "Kiến Trúc",
+  "releaseDate": "Ngày Phát Hành",
+  "costPer1kTokens": "Chi Phí / 1K token",
+  "free": "Miễn phí / Mã nguồn mở",
+  "tokens": "token",
+  "viewWebsite": "Truy Cập Website",
+  "modelsCount": "{count} mô hình AI",
+  "modelsCount_plural": "{count} mô hình AI",
+  "modelsGridTitle": "Mô hình AI"
+}

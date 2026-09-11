@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Quay lại Bảng điều khiển",
+    "backToHome": "Quay lại Trang chủ",
+    "dashboard": "Bảng điều khiển",
+    "websiteInsights": "Thông tin Website",
+    "socialListening": "Lắng nghe Xã hội",
+    "researchReport": "Báo cáo Nghiên cứu",
+    "myAis": "AI của tôi",
+    "favorites": "Yêu thích",
+    "profileSettings": "Thiết lập Hồ sơ",
+    "advertise": "Quảng cáo",
+    "postsLinks": "Bài viết & Liên kết",
+    "paymentInvoice": "Thanh toán & Hóa đơn",
+    "overview": "Tổng quan",
+    "myInquiries": "Yêu cầu của tôi"
+  },
+  "logout": "Đăng xuất",
+  "logoutConfirmTitle": "Đăng xuất",
+  "logoutConfirmDescription": "Bạn có chắc chắn muốn đăng xuất khỏi tài khoản của mình không?",
+  "upgrade": "Nâng cấp",
+  "sections": {
+    "research": "NGHIÊN CỨU",
+    "management": "QUẢN LÝ",
+    "business": "Trang doanh nghiệp",
+    "admin": "QUẢN TRỊ",
+    "guestPost": "Bài viết khách",
+    "updateAi": "Cập nhật AI",
+    "myGpts": "GPT của tôi"
+  },
+  "help": "Giúp đỡ",
+  "close": "Đóng",
+  "status": {
+    "active": "Hoạt động"
+  },
+  "advertiseAi": "Quảng cáo AI",
+  "myAis": {
+    "title": "AI của tôi",
+    "subtitle": "Quản lý và theo dõi hiệu suất của các công cụ AI đã gửi của bạn.",
+    "empty": {
+      "cta": "Gửi công cụ AI"
+    }
+  }
+}

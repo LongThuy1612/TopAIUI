@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Ofte stilte spørsmål - TopAICollection",
+    "description": "Finn svar på vanlige spørsmål om TopAICollection og hvordan du bruker katalogen vår for AI-verktøy."
+  },
+  "badge": "Hjelpesenter",
+  "title": "Ofte stilte spørsmål",
+  "subtitle": "Finn svar på vanlige spørsmål om TopAICollection",
+  "categories": {
+    "general": "Generelle spørsmål",
+    "tools": "Om AI-verktøy",
+    "submission": "Innlevering av verktøy",
+    "account": "Konto og fakturering"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Hva er TopAICollection?",
+        "answer": "TopAICollection er en omfattende katalog over AI-verktøy og nettsteder. Vi hjelper brukere med å finne de beste AI-løsningene for deres behov, fra produktivitetsverktøy til kreative applikasjoner."
+      },
+      "1": {
+        "question": "Hvordan finner jeg det riktige AI-verktøyet?",
+        "answer": "Du kan bla etter kategori, bruke søkefunksjonen vår, eller sjekke våre fremhevede og trendende seksjoner. Hvert verktøy inkluderer detaljerte beskrivelser, brukeranmeldelser og vurderinger for å hjelpe deg med å ta en informert beslutning."
+      },
+      "2": {
+        "question": "Er TopAICollection gratis å bruke?",
+        "answer": "Ja! Bla gjennom og søke i katalogen vår er helt gratis. Noen oppførte verktøy kan ha sin egen prissetting, som er tydelig angitt på hvert verktøys side."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Hvordan velges verktøy for katalogen?",
+        "answer": "Vi vurderer hver innsending nøye for å sikre kvalitet. Verktøy må være funksjonelle, gi verdi til brukerne og overholde våre retningslinjer. Vi vurderer også brukertilbakemeldinger og vurderinger."
+      },
+      "1": {
+        "question": "Hvilken informasjon er gitt for hvert verktøy?",
+        "answer": "Hver verktøyoppføring inkluderer en beskrivelse, nøkkelfunksjoner, prisinformasjon, brukeranmeldelser, trafikkanalyse, kategorier og direkte lenker til verktøyets nettside."
+      },
+      "2": {
+        "question": "Hvor ofte oppdateres katalogen?",
+        "answer": "Katalogen vår oppdateres daglig med nye verktøy og informasjon. Vi overvåker kontinuerlig oppførte verktøy for å sikre nøyaktighet og fjerne alle som ikke lenger er tilgjengelige."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Hvordan kan jeg sende inn AI-verktøyet mitt?",
+        "answer": "Besøk siden vår for innsendingsverktøy og fyll ut innsendingsskjemaet. Gi detaljert informasjon om verktøyet ditt, inkludert funksjoner, målgruppe og priser. Vi vurderer alle innleveringer innen 48 timer."
+      },
+      "1": {
+        "question": "Hva er kravene for innlevering av verktøy?",
+        "answer": "Verktøyet ditt må være funksjonelt, gi tydelig verdi til brukerne, ha et profesjonelt nettsted og overholde lovkrav. Vi godtar ikke verktøy som fremmer ulovlige aktiviteter eller krenker brukernes personvern."
+      },
+      "2": {
+        "question": "Hvor mye koster det å liste et verktøy?",
+        "answer": "Grunnleggende oppføringer er gratis. Vi tilbyr også utvalgte og premium-oppføringer med tilleggsfordeler som prioritert plassering, kampanjefunksjoner og avanserte analyser."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Trenger jeg en konto for å bruke TopAICollection?",
+        "answer": "Ingen konto er nødvendig for å bla gjennom og søke i katalogen vår. Oppretting av en konto lar deg imidlertid lagre favorittverktøy, skrive anmeldelser og administrere verktøyinnsendinger."
+      },
+      "1": {
+        "question": "Hvordan oppgraderer jeg verktøyoppføringen min?",
+        "answer": "Logg på kontoen din, gå til instrumentpanelet for verktøyadministrasjon og velg oppgraderingsalternativet. Du kan velge mellom utvalgte eller premium-planer med månedlig eller årlig fakturering."
+      },
+      "2": {
+        "question": "Kan jeg kansellere min betalte oppføring når som helst?",
+        "answer": "Ja, du kan kansellere din betalte oppføring når som helst. Oppføringen din forblir frem til slutten av gjeldende faktureringsperiode, og går deretter tilbake til en grunnleggende oppføring."
+      }
+    }
+  },
+  "cta": {
+    "title": "Har du fortsatt spørsmål?",
+    "subtitle": "Vårt støtteteam er her for å hjelpe",
+    "button": "Kontakt kundestøtte"
+  }
+}

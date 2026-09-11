@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection - ค้นพบเครื่องมือ AI ที่ดีที่สุด",
+    "description": "สำรวจ {totalTools}+ เครื่องมือ AI ใน {totalCategories} หมวดหมู่ใน {languagesCount}+ ภาษา"
+  },
+  "home": {
+    "visitWebsite": "เยี่ยมชมเว็บไซต์",
+    "ranking": "การจัดอันดับ"
+  },
+  "tool": {
+    "visitWebsite": "เยี่ยมชมเว็บไซต์ →",
+    "useCases": "ใช้กรณี",
+    "about": "เกี่ยวกับ {name}",
+    "howToUse": "วิธีใช้ {name}",
+    "faq": "คำถามที่พบบ่อย"
+  }
+}

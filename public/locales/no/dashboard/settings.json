@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Fullt navn",
+      "email": "E-postadresse",
+      "emailHelp": "E-post kan ikke endres",
+      "emailPlaceholder": "deg@eksempel.no",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+47 (000) 00 000",
+      "company": "Firma",
+      "country": "Land",
+      "website": "Nettsted",
+      "save": "Lagre endringer",
+      "saving": "Lagrer...",
+      "saveSuccess": "Profilen ble oppdatert."
+    },
+    "password": {
+      "title": "Endre passord",
+      "current": "Nåværende passord",
+      "new": "Nytt passord",
+      "confirm": "Bekreft nytt passord",
+      "update": "Oppdater passord"
+    },
+    "notifications": {
+      "title": "Varslingsinnstillinger",
+      "email": "E-postvarsler",
+      "marketing": "Markedsføringse-poster"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "fullName": "Fullt navn",
+    "email": "E-postadresse",
+    "emailHelp": "E-post kan ikke endres",
+    "emailPlaceholder": "du@eksempel.com",
+    "phone": "Telefonnummer",
+    "company": "Bedrift",
+    "country": "Land",
+    "website": "Nettsted",
+    "save": "Lagre endringer",
+    "saving": "Lagrer...",
+    "saveSuccess": "Profilen ble oppdatert.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Endre passord",
+    "current": "Gjeldende passord",
+    "new": "Nytt passord",
+    "confirm": "Bekreft nytt passord",
+    "update": "Oppdater passord"
+  },
+  "notifications": {
+    "title": "Varslingsinnstillinger",
+    "email": "E-postvarsler",
+    "marketing": "Markedsførings-e-poster"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Sikkerhet",
+    "notifications": "Varsler"
+  },
+  "updated": "Innstillingene ble oppdatert"
+}

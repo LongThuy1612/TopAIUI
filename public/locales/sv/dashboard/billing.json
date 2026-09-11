@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Betalning & Faktura",
+    "description": "Hantera dina krediter och se orderhistorik.",
+    "adCredits": "Annonskrediter",
+    "postCredits": "Inläggskrediter",
+    "linkCredits": "Länkkrediter",
+    "forSponsoredListings": "För sponsrade listningar",
+    "forGuestArticles": "För gästartiklar",
+    "forLinkInsertions": "För länkplaceringar",
+    "buyCredits": "Köp krediter",
+    "noOrders": "Inga ordrar hittades.",
+    "orderHistory": "Orderhistorik",
+    "orderId": "Order-ID",
+    "amount": "Belopp",
+    "date": "Datum",
+    "type": "Typ",
+    "invoice": "Faktura",
+    "download": "Ladda ner",
+    "currentPlan": "Nuvarande plan",
+    "freeTier": "Gratisnivå",
+    "freeTierDesc": "Uppgradera din plan för att låsa upp fler funktioner och insikter.",
+    "creditBalances": "Kreditsaldo",
+    "subscriptionDetails": "Prenumerationsdetaljer",
+    "upgradePlan": "Uppgradera plan",
+    "credits": "Krediter",
+    "managePortal": "Hantera betalningsportal",
+    "subscribe": "Prenumerera nu",
+    "statusActive": "Aktiv",
+    "planMemberSince": "Medlem av denna plan",
+    "renewalDate": "Förnyar på",
+    "changePlan": "Ändra plan",
+    "redirecting": "Omdirigerar...",
+    "errorFetchingPortal": "Det gick inte att öppna faktureringsportalen",
+    "status": "Status"
+  },
+  "plans": {
+    "free": {
+      "name": "Gratis"
+    },
+    "professional": {
+      "name": "Professionell"
+    },
+    "enterprise": {
+      "name": "Företag"
+    }
+  },
+  "transactions": {
+    "noDescription": "Dina annonskredittransaktioner visas här."
+  }
+}

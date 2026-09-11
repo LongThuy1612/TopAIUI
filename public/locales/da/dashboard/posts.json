@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Indlæg & Links",
+    "description": "Administrer dine gæsteindlæg og linkplaceringer.",
+    "submitNewItem": "Indsend Nyt Punkt",
+    "submitNew": "Indsend Nyt",
+    "guestPost": "Gæsteindlæg",
+    "linkInsert": "Linkplacering",
+    "type": "Skriv",
+    "targetUrl": "Mål URL",
+    "targetUrlPlaceholder": "https://dit-site.dk/...",
+    "anchorText": "Titel / Ankertekst",
+    "anchorTextPlaceholder": "Artikeltitel ELLER ankertekst for linket",
+    "submitCredits": "Indsend (1 Kredit)",
+    "tabs": {
+      "guestPosts": "Gæsteindlæg",
+      "linkInserts": "Linkplaceringer"
+    },
+    "table": {
+      "title": "Titel",
+      "anchor": "Ankertekst",
+      "url": "URL",
+      "date": "Dato",
+      "status": "Status"
+    },
+    "empty": {
+      "noGuestTitle": "Ingen Gæsteindlæg",
+      "noGuestDesc": "Du har endnu ikke indsendt nogen gæsteindlæg.",
+      "noGuestCta": "Indsend Gæsteindlæg",
+      "noLinkTitle": "Ingen Linkplaceringer",
+      "noLinkDesc": "Du har endnu ikke indsendt nogen linkplaceringer.",
+      "noLinkCta": "Indsend Linkplacering"
+    },
+    "subtitle": "Administrer dine gæsteindlæg og linkindsættelser."
+  }
+}

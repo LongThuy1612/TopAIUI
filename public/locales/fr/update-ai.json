@@ -1,0 +1,118 @@
+{
+  "title": "Mettez à jour votre outil d'IA",
+  "description": "Gardez les informations de votre outil d'IA à jour. Mettez à jour les descriptions, les fonctionnalités, les prix ou tout autre détail pour garantir l'exactitude.",
+  "hero": {
+    "title": "Vos IA sur TopAICollection",
+    "subtitle": "TopAI peut vous aider à atteindre des millions d'utilisateurs d'IA et vos clients potentiels dans le monde entier."
+  },
+  "form": {
+    "toolLabel": "Outil",
+    "toolHint": "PS : Si l'outil est introuvable, veuillez d'abord le soumettre.",
+    "toolPlaceholder": "Recherchez votre outil..."
+  },
+  "pricing": {
+    "title": "Mettre à jour les prix",
+    "price": "49 $",
+    "period": "Une fois",
+    "description": "Nous mettrons à jour pour vous dans les 24 heures suivant le paiement."
+  },
+  "updates": {
+    "title": "Types de mises à jour pris en charge",
+    "types": [
+      {
+        "label": "Nom de l'outil",
+        "description": "Mettez à jour le nom d'affichage de votre outil"
+      },
+      {
+        "description": "Révisez les descriptions courtes et longues de votre outil",
+        "label": "Description"
+      },
+      {
+        "label": "Catégorie",
+        "description": "Modifier ou ajouter de nouvelles catégories"
+      },
+      {
+        "label": "Liste des fonctionnalités",
+        "description": "Mettez à jour les fonctionnalités principales de votre outil"
+      },
+      {
+        "label": "Cas d'utilisation",
+        "description": "Ajouter ou mettre à jour des exemples de cas d'utilisation"
+      },
+      {
+        "label": "Informations sur les prix",
+        "description": "Mettre à jour les plans tarifaires et les niveaux"
+      },
+      {
+        "label": "FAQ",
+        "description": "Ajouter ou modifier des questions fréquemment posées"
+      },
+      {
+        "label": "URL et liens",
+        "description": "Mettre à jour le site Web, la démo ou les liens sociaux"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Besoin de savoir",
+    "items": [
+      "Les mises à jour sont traitées dans les 24 heures suivant la confirmation du paiement.",
+      "Vous pouvez mettre à jour plusieurs champs en une seule demande.",
+      "Notre équipe examinera et publiera vos modifications.",
+      "Si la mise à jour nécessite des éclaircissements, nous vous contacterons par e-mail.",
+      "Les mises à jour des captures d'écran et des médias peuvent prendre 24 heures supplémentaires."
+    ]
+  },
+  "faq": {
+    "title": "FAQ - Mettre à jour l'IA",
+    "items": [
+      {
+        "question": "Combien de temps prend une mise à jour ?",
+        "answer": "Les mises à jour sont généralement traitées dans les 24 heures suivant le paiement. Les changements complexes peuvent nécessiter une période d’examen supplémentaire."
+      },
+      {
+        "question": "Que puis-je mettre à jour ?",
+        "answer": "Vous pouvez mettre à jour le nom, la description, la catégorie, les fonctionnalités, les cas d'utilisation, les tarifs, les FAQ et les URL de votre outil."
+      },
+      {
+        "question": "Puis-je mettre à jour plusieurs éléments à la fois ?",
+        "answer": "Oui! Vous pouvez demander plusieurs mises à jour en une seule soumission. Tous les changements sont inclus dans les frais de 49 $."
+      },
+      {
+        "question": "Que faire si je dois apporter des corrections après la mise à jour ?",
+        "answer": "Les corrections mineures liées à votre demande de mise à jour initiale seront traitées gratuitement dans un délai de 7 jours."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Pourquoi mettre à jour votre outil ?",
+    "reasons": [
+      "Gardez les informations exactes et à jour",
+      "Améliorer le classement et la visibilité dans les recherches",
+      "Mettre à jour les changements de prix et de fonctionnalités",
+      "Ajouter de nouvelles captures d'écran ou démos",
+      "Corrigez toute information obsolète",
+      "Améliorez la description de votre outil"
+    ]
+  },
+  "meta": {
+    "title": "Mettez à jour votre outil d'IA - TopAICollection",
+    "description": "Gardez les informations de votre outil d'IA à jour. Mettez à jour les descriptions, les fonctionnalités, les prix ou tout autre détail pour garantir l'exactitude."
+  },
+  "team": "Équipe TopAICollection",
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "selectTool": "Veuillez sélectionner un outil à mettre à jour",
+    "detailsTooShort": "Les détails de la modification doivent comporter au moins 10 caractères",
+    "toolNameRequired": "Le nom de l'outil est obligatoire",
+    "url": "URL invalide",
+    "descriptionMin": "La description doit comporter au moins 10 caractères",
+    "categoryRequired": "Veuillez sélectionner une catégorie",
+    "email": "Adresse e-mail invalide",
+    "messageMin": "Le message doit contenir au moins 10 caractères"
+  },
+  "sidebar": {
+    "updatedCount": "outils mis à jour",
+    "updatedCountSub": "ce mois-ci"
+  }
+}

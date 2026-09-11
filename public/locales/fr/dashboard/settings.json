@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Nom Complet",
+      "email": "Adresse Email",
+      "emailHelp": "L'email ne peut pas être modifié",
+      "emailPlaceholder": "vous@exemple.com",
+      "phone": "Numéro de Téléphone",
+      "company": "Compagnie",
+      "country": "Pays",
+      "website": "Site Web",
+      "save": "Enregistrer",
+      "saving": "Enregistrement...",
+      "saveSuccess": "Profil mis à jour avec succès.",
+      "phonePlaceholder": "+1 (000) 000-0000"
+    },
+    "password": {
+      "title": "Changer le Mot de Passe",
+      "current": "Mot de Passe Actuel",
+      "new": "Nouveau Mot de Passe",
+      "confirm": "Confirmer le Nouveau Mot de Passe",
+      "update": "Mettre à jour le Mot de Passe"
+    },
+    "notifications": {
+      "title": "Préférences de Notification",
+      "email": "Notifications par Email",
+      "marketing": "Emails Marketing"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "fullName": "Nom et prénom",
+    "email": "Adresse email",
+    "emailHelp": "L'e-mail ne peut pas être modifié",
+    "emailPlaceholder": "vous@exemple.com",
+    "phone": "Numéro de téléphone",
+    "company": "Entreprise",
+    "country": "Pays",
+    "website": "Site web",
+    "save": "Enregistrer les modifications",
+    "saving": "Économie...",
+    "saveSuccess": "Profil mis à jour avec succès.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Changer le mot de passe",
+    "current": "Mot de passe actuel",
+    "new": "Nouveau mot de passe",
+    "confirm": "Confirmer le nouveau mot de passe",
+    "update": "Mettre à jour le mot de passe"
+  },
+  "notifications": {
+    "title": "Préférences de notifications",
+    "email": "Notifications par courrier électronique",
+    "marketing": "E-mails marketing"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Sécurité",
+    "notifications": "Notifications"
+  },
+  "updated": "Paramètres mis à jour avec succès"
+}

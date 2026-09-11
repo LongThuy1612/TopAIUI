@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection - Découvrez les meilleurs outils d'IA",
+    "description": "Explorez {totalTools}+ outils d'IA dans {totalCategories} catégories dans {languagesCount}+ langues"
+  },
+  "home": {
+    "visitWebsite": "Visitez le site Web",
+    "ranking": "Classement"
+  },
+  "tool": {
+    "visitWebsite": "Visitez le site Web →",
+    "useCases": "Cas d'utilisation",
+    "about": "À propos de {name}",
+    "howToUse": "Comment utiliser {name}",
+    "faq": "Foire aux questions"
+  }
+}

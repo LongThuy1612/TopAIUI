@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "דירוג כלי AI מוביל",
+    "description": "גלה את כלי הבינה המלאכותית המבוקרים ביותר בעולם בהתבסס על נתוני תעבורה אמיתיים.",
+    "subtitle": "גלה את כלי הבינה המלאכותית המבוקרים ביותר בעולם בהתבסס על נתוני תעבורה אמיתיים."
+  },
+  "trending": {
+    "title": "כלי AI פופולריים",
+    "description": "כלי הבינה המלאכותית הצומחים ביותר בחודש האחרון.",
+    "subtitle": "כלי הבינה המלאכותית הצומחים ביותר בחודש האחרון."
+  },
+  "category": "קָטֵגוֹרִיָה",
+  "noTools": "לא נמצאו כלים.",
+  "noToolsInCategory": "לא נמצאו כלים בקטגוריה זו.",
+  "loading": "טְעִינָה...",
+  "favorite": "הוסף למועדפים",
+  "unfavorite": "הסר מהמועדפים",
+  "visitWebsite": "בקר באתר",
+  "errors": {
+    "general": "טעינת נתוני הדירוג נכשלה."
+  },
+  "topAI": "AI מוביל",
+  "trendingAI": "מגמות",
+  "period": "תְקוּפָה",
+  "last7Days": "7 הימים האחרונים",
+  "lastMonth": "חודש שעבר",
+  "last3Months": "3 חודשים אחרונים",
+  "lastYear": "אֶשׁתָקַד",
+  "allCategories": "כל הקטגוריות",
+  "selectPeriod": "בחר תקופה",
+  "rank": "דַרגָה",
+  "tool": "כְּלִי",
+  "visits": "ביקורים",
+  "growth": "צְמִיחָה",
+  "actions": "פעולות",
+  "leaderboard": {
+    "header": {
+      "title": "טבלת מובילים של כלי בינה מלאכותית",
+      "description": "גלה את כלי הבינה המלאכותית המועדפים ביותר על ידי הקהילה.",
+      "dailyTitle": "כלי הבינה המלאכותית המובילים של היום",
+      "monthlyTitle": "כלי הבינה המלאכותית הטובים ביותר של {date}",
+      "yearlyTitle": "כלי הבינה המלאכותית הטובים ביותר של {date}",
+      "tabs": {
+        "daily": "יוֹמִי",
+        "monthly": "יַרחוֹן",
+        "yearly": "שְׁנָתִי"
+      },
+      "prevPeriod": "תקופה קודמת",
+      "nextPeriod": "התקופה הבאה",
+      "pickDate": "בחר תאריך",
+      "pickMonth": "בחור חודש"
+    },
+    "empty": {
+      "title": "לא הושקו כלים היום",
+      "description": "לא נרשמו כלים לתאריך הספציפי הזה. נסה לנווט ליום אחר.",
+      "showMore": "הצג כלים נוספים",
+      "loadingMore": "טוען כלים נוספים...",
+      "toolsListTitle": "כלים מומלצים"
+    },
+    "card": {
+      "visitWebsite": "בקר באתר",
+      "loginToUpvote": "אנא התחבר כדי להצביע בעד כלי"
+    },
+    "page": {
+      "errorLoading": "טעינת נתוני Leaderboard נכשלה."
+    },
+    "sidebar": {
+      "launchArchive": "הפעל את ארכיון",
+      "topCategories": "קטגוריות מובילות"
+    }
+  },
+  "categoryAI": "קטגוריה",
+  "regionAI": "איזור",
+  "region": "איזור",
+  "allRegions": "גלובלי",
+  "channelAI": "ערוץ",
+  "channel": "ערוץ",
+  "allChannels": "כל המוצרים",
+  "incomeAI": "חברתי/הכנסה",
+  "socialMetrics": "&lt;b&gt;ערך חברתי&lt;/b&gt; ",
+  "channelVisits": "ביקורי מקור",
+  "maxResultsHint": "הגבל את מספר התוצאות המקסימלי.",
+  "regions": {
+    "us": "ארצות הברית",
+    "ca": "קנדה",
+    "gb": "בריטניה",
+    "in": "הודו",
+    "ph": "פיליפינים",
+    "vn": "וייטנאם"
+  },
+  "channels": {
+    "search": "חפש",
+    "direct": "ישיר",
+    "social": "חברתי",
+    "referrals": "הפניות"
+  },
+  "viewDetails": "הצג פרטים"
+}

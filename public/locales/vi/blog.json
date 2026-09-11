@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Blog & Tin tức AI - TopAICollection",
+    "description": "Cập nhật tin tức AI mới nhất, hướng dẫn, đánh giá và thông tin chi tiết từ thế giới trí tuệ nhân tạo."
+  },
+  "badge": "Thông tin AI",
+  "title": "Blog & Tin tức AI",
+  "subtitle": "Luôn cập nhật với các xu hướng, hướng dẫn và thông tin chi tiết mới nhất từ thế giới AI",
+  "search": {
+    "placeholder": "Tìm kiếm bài viết..."
+  },
+  "sort": {
+    "latest": "Mới nhất",
+    "oldest": "Cũ nhất",
+    "popular": "Phổ biến"
+  },
+  "filter": {
+    "allAuthors": "Tất cả tác giả",
+    "sortBy": "Sắp xếp theo"
+  },
+  "categories": {
+    "title": "Danh mục",
+    "all": "Tất cả bài viết",
+    "news": "Tin tức AI",
+    "tutorials": "Hướng dẫn",
+    "reviews": "Đánh giá công cụ",
+    "industry": "Thông tin ngành",
+    "guides": "Hướng dẫn cách làm"
+  },
+  "newsletter": {
+    "title": "Luôn cập nhật",
+    "subtitle": "Nhận tin tức AI mới nhất vào hộp thư của bạn",
+    "placeholder": "Nhập email của bạn",
+    "button": "Đăng ký"
+  },
+  "article": {
+    "readTime": "{minutes} phút đọc",
+    "published": "Đăng ngày {date}",
+    "writtenBy": "Viết & Biên tập bởi:",
+    "factCheckedBy": "Kiểm chứng bởi:"
+  },
+  "pagination": {
+    "next": "Tiếp theo",
+    "page": "Trang {page} / {total}"
+  },
+  "relatedTools": "Công cụ liên quan",
+  "backToBlog": "Quay lại blog",
+  "errors": {
+    "notFound": "Không tìm thấy bài viết"
+  },
+  "relatedPosts": "Bài viết liên quan",
+  "faqs": "Câu hỏi thường gặp"
+}

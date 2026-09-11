@@ -1,0 +1,92 @@
+{
+  "about": "Over ons",
+  "blog": "Bloggen",
+  "privacy": "Privacybeleid",
+  "terms": "Servicevoorwaarden",
+  "cookies": "Cookiebeleid",
+  "copyright": "© {year} TopAICollection. Alle rechten voorbehouden. TopAICollection",
+  "resources": "Bronnen",
+  "help": "Helpcentrum",
+  "faq": "Veelgestelde vragen",
+  "submitTool": "Hulpmiddel voor indienen",
+  "description": "TopAICollection is de ultieme directory voor het ontdekken van de beste AI-tools en websites.",
+  "browseByAlphabet": "Blader op alfabet",
+  "topAITools": {
+    "title": "Top AI-tools",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "Halverwege de reis",
+      "stableDiffusion": "Stabiele diffusie",
+      "jasper": "Jaspis",
+      "chatgpt": "ChatGPT"
+    }
+  },
+  "moreTools": {
+    "title": "Meer hulpmiddelen",
+    "items": {
+      "audio": "Audio-AI",
+      "video": "Video-AI",
+      "writing": "AI schrijven",
+      "image": "Beeld-AI",
+      "coding": "Codering van AI"
+    }
+  },
+  "recommend": {
+    "title": "Aanbevelen",
+    "items": {
+      "newest": "Nieuwste hulpmiddelen",
+      "mostSaved": "Meest opgeslagen",
+      "trending": "Nu populair",
+      "editorsChoice": "Keuze van de redactie",
+      "featured": "Uitgelicht",
+      "leaderboard": "Leiderbord"
+    }
+  },
+  "readMore": {
+    "title": "Lees meer",
+    "items": {
+      "blog": "Bloggen",
+      "news": "AI-nieuws",
+      "guides": "Gidsen",
+      "tutorials": "Handleidingen",
+      "glossary": "AI-woordenlijst"
+    }
+  },
+  "company": {
+    "title": "Over",
+    "items": {
+      "aboutUs": "Over ons",
+      "contact": "Zakelijk contact",
+      "editorialGuidelines": "Redactionele richtlijnen",
+      "reviewMethodology": "Beoordelingsmethodologie",
+      "submit": "Verzenden",
+      "advertise": "Adverteren"
+    }
+  },
+  "chooseLanguage": "Selecteer Taal",
+  "followUs": "Volg ons",
+  "more": "Meer...",
+  "directory": {
+    "title": "AI Tool Directory-archief"
+  },
+  "companyInfo": {
+    "address": "Techdistrict, Silicon Valley",
+    "country": "Verenigde Staten",
+    "name": "TopAICollection Inc.",
+    "city": "San Francisco, CA 94107",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "contact": "Contact",
+  "sitemap": "Sitemap",
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Videogeneratoren",
+      "imageGenerators": "Afbeeldingsgeneratoren",
+      "writers": "Schrijvers",
+      "seoTools": "Seo-tools",
+      "websiteBuilders": "Websitebouwers",
+      "chatbots": "Chatbots"
+    }
+  }
+}

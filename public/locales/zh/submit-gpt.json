@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "提交您的 GPT - 让您的 GPT 成为特色 |TopAICollection",
+    "description": "提交您的自定义 GPT，使其出现在我们的 GPT 目录中。接触成千上万的人工智能爱好者。"
+  },
+  "title": "提交您的 GPT",
+  "subtitle": "在我们的目录中获取您的自定义 GPT",
+  "loginRequired": "需要登录",
+  "submitButton": "提交 GPT",
+  "whySubmit": {
+    "title": "为什么要提交 GPT？"
+  },
+  "benefits": {
+    "audience": "每天接触数千名人工智能爱好者",
+    "instant": "验证后立即列出",
+    "global": "跨所有语言的全球曝光",
+    "analytics": "跟踪点击次数和参与度"
+  },
+  "proTip": {
+    "title": "专业提示",
+    "desc": "提交之前，请确保您的 GPT 是公开的并且可以通过链接访问。"
+  },
+  "form": {
+    "gptName": "GPT 名称",
+    "gptNamePlaceholder": "例如代码向导",
+    "gptUrl": "聊天GPT URL ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "图标网址",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "描述/说明",
+    "gptDescriptionPlaceholder": "描述一下您的 GPT 的作用..."
+  },
+  "validation": {
+    "required": "此字段是必需的",
+    "invalidUrl": "ChatGPT URL 无效",
+    "nameTooShort": "名称必须至少有 2 个字符",
+    "descriptionTooShort": "描述必须至少 10 个字符",
+    "toolNameRequired": "工具名称为必填项",
+    "url": "无效网址",
+    "descriptionMin": "描述必须至少 10 个字符",
+    "categoryRequired": "请选择一个类别",
+    "email": "电子邮件地址无效",
+    "messageMin": "消息长度必须至少为 10 个字符"
+  },
+  "sidebar": {
+    "gptCount": "已提交 GPT",
+    "gptCountSub": "并不断成长"
+  },
+  "success": "您的 GPT 已成功提交！"
+}

@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "AIツールを送信 - TopAICollection",
+    "description": "TopAICollectionディレクトリにAIツールを掲載し、AIソリューションを探している何百万人ものユーザーにリーチしましょう。"
+  },
+  "badge": "ツールを掲載する",
+  "hero": {
+    "title": "あなたのAIツールを世界に",
+    "subtitle": "数千ものAIツールが集まるディレクトリに参加し、世界中の数百万人の潜在的なユーザーに届けましょう"
+  },
+  "benefits": {
+    "title": "TopAICollectionに掲載する理由",
+    "traffic": {
+      "title": "トラフィックの増加",
+      "description": "AIソリューションを積極的に探しているユーザーから直接トラフィックを獲得します"
+    },
+    "exposure": {
+      "title": "グローバルな露出",
+      "description": "100カ国以上、20以上の言語でユーザーにリーチします"
+    },
+    "credibility": {
+      "title": "信頼性の向上",
+      "description": "検証済みの掲載とユーザーレビューで信頼を築きます"
+    }
+  },
+  "pricing": {
+    "title": "プランを選択",
+    "popular": "一番人気",
+    "basic": {
+      "name": "基本リスト",
+      "price": "無料",
+      "features": {
+        "0": "基本的なツールの掲載",
+        "1": "カテゴリー分け",
+        "2": "連絡先情報",
+        "3": "基本的な分析"
+      }
+    },
+    "featured": {
+      "name": "注目のリスト",
+      "price": "$99/月",
+      "features": {
+        "0": "基本リストのすべて",
+        "1": "注目のバッジ",
+        "2": "検索結果での優先表示",
+        "3": "ホームページへの掲載",
+        "4": "高度な分析",
+        "5": "ソーシャルメディアでのプロモーション"
+      }
+    },
+    "premium": {
+      "name": "プレミアムリスト",
+      "price": "$299/月",
+      "features": {
+        "0": "注目のリストのすべて",
+        "1": "検索での最上位表示",
+        "2": "ニュースレターへの掲載",
+        "3": "ブログ記事でのレビュー",
+        "4": "ビデオ紹介",
+        "5": "専用サポート"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "ツール名",
+    "namePlaceholder": "例えばChatGPT、DALL-E、ミッドジャーニー",
+    "website": "ウェブサイトURL",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "カテゴリー",
+    "selectCategory": "カテゴリーを選択",
+    "price": "一回限りの料金 $49",
+    "submit": "ツールを送信",
+    "success": {
+      "title": "送信成功！",
+      "description": "あなたのツールは審査のために送信されました。",
+      "redirecting": "支払いページにリダイレクトしています..."
+    }
+  },
+  "form": {
+    "title": "あなたのツールを送信",
+    "sections": {
+      "basic": "基本情報",
+      "categorization": "カテゴリーとタグ",
+      "media": "メディアコンテンツ",
+      "plan": "プランを選択",
+      "contact": "連絡先情報"
+    },
+    "fields": {
+      "name": {
+        "label": "ツール名",
+        "placeholder": "私の素晴らしいAIツール"
+      },
+      "url": {
+        "label": "ウェブサイトURL",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "キャッチフレーズ",
+        "placeholder": "100文字以内の簡単な説明"
+      },
+      "description": {
+        "label": "説明",
+        "placeholder": "AIツールの詳細な説明（最大500文字）"
+      },
+      "category": {
+        "label": "カテゴリ",
+        "placeholder": "カテゴリーを選択",
+        "options": {
+          "productivity": "生産性",
+          "business": "ビジネス",
+          "development": "開発",
+          "other": "その他"
+        }
+      },
+      "tags": {
+        "label": "タグ",
+        "placeholder": "ai, 生産性, 自動化（カンマ区切り）",
+        "hint": "カンマで区切られたボックス"
+      },
+      "logo": {
+        "label": "ロゴ",
+        "placeholder": "クリックしてアップロード、またはドラッグ＆ドロップ",
+        "hint": "PNGまたはJPG、最大2MB"
+      },
+      "plan": {
+        "label": "掲載プラン",
+        "placeholder": "プランを選択"
+      },
+      "terms": {
+        "label": "利用規約とプライバシーポリシーに同意します"
+      },
+      "contact_name": {
+        "label": "お名前",
+        "placeholder": "例・山田太郎"
+      },
+      "contact_email": {
+        "label": "メールアドレス",
+        "placeholder": "例） john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "送信することで、利用規約とプライバシーポリシーに同意したことになります。",
+      "freeSubmission": "無料送信"
+    },
+    "submit": "ツールを送信",
+    "submitting": "送信中...",
+    "success": {
+      "title": "ツールの送信に成功しました！",
+      "description": "私たちはあなたの提出物を審査し、48時間以内にお知らせします。"
+    },
+    "error": {
+      "title": "送信に失敗しました",
+      "description": "すべてのフィールドを確認して、もう一度やり直してください。",
+      "noSettings": "送信設定は利用できません。後でもう一度試してください。"
+    },
+    "loginRequiredTitle": "ログインが必要です",
+    "loginRequiredDesc": "ツールを送信するにはログインしてください。認証するまで進行状況は保存されません。",
+    "loginBtn": "ログイン"
+  },
+  "categoriesPage": {
+    "searchCategory": "カテゴリーを検索…",
+    "noCategoryFound": "カテゴリーが見つかりませんでした。"
+  },
+  "toolForm": {
+    "selectSubCategory": "サブカテゴリーを選択…",
+    "noSubCategory": "サブカテゴリーはありません。"
+  },
+  "errors": {
+    "general": "問題が発生しました。もう一度やり直してください。"
+  },
+  "processing": "処理中...",
+  "sidebar": {
+    "toolCount": "5,000以上のAIツール",
+    "toolCountSub": "成長する私たちのディレクトリに参加しましょう",
+    "badgeDescription": "ツールを送信することは、AIコミュニティで可視性を得るための第一歩です。"
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "提出物の詳細をロードできませんでした。",
+      "noId": "提出IDが提供されていません。",
+      "notFound": "提出物が見つかりません。"
+    },
+    "status": {
+      "paymentRequired": "支払いが必要です",
+      "paymentRequiredDesc": "支払いを完了してレビューを進めてください。",
+      "underReview": "検討中",
+      "underReviewDesc": "あなたの提出物は私たちのチームによって審査されています。",
+      "approved": "承認された",
+      "approvedDesc": "あなたの提出物は承認され、公開されました。",
+      "received": "受け取った",
+      "receivedDesc": "あなたの提出物を受け取りました。"
+    },
+    "types": {
+      "submit": "AI ツールを送信する",
+      "advertise": "宣伝する",
+      "guestPost": "ゲスト投稿",
+      "updateAI": "AIをアップデートする"
+    },
+    "paymentAlert": "提出を完了するには支払いが必要です。",
+    "actions": {
+      "viewDashboard": "ダッシュボードを表示する"
+    }
+  },
+  "error": "何か問題が発生しました。もう一度試してください。",
+  "backToHome": "ホームに戻る",
+  "submissionSuccess": {
+    "title": "タイトル",
+    "description": "説明"
+  },
+  "successTitle": "成功タイトル",
+  "title": "タイトル"
+}

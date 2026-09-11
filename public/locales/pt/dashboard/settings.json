@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Nome Completo",
+      "email": "Endereço de E-mail",
+      "emailHelp": "O e-mail não pode ser alterado",
+      "emailPlaceholder": "voce@exemplo.com",
+      "phone": "Número de Telefone",
+      "phonePlaceholder": "+351 (000) 000-000",
+      "company": "Empresa",
+      "country": "País",
+      "website": "Site",
+      "save": "Guardar Alterações",
+      "saving": "A guardar...",
+      "saveSuccess": "Perfil atualizado com sucesso."
+    },
+    "password": {
+      "title": "Alterar Palavra-passe",
+      "current": "Palavra-passe Atual",
+      "new": "Nova Palavra-passe",
+      "confirm": "Confirmar Nova Palavra-passe",
+      "update": "Atualizar Palavra-passe"
+    },
+    "notifications": {
+      "title": "Preferências de Notificação",
+      "email": "Notificações por E-mail",
+      "marketing": "E-mails de Marketing"
+    }
+  },
+  "profile": {
+    "title": "Perfil",
+    "fullName": "Nome completo",
+    "email": "Endereço de email",
+    "emailHelp": "O e-mail não pode ser alterado",
+    "emailPlaceholder": "você@exemplo.com",
+    "phone": "Número de telefone",
+    "company": "Empresa",
+    "country": "País",
+    "website": "Site",
+    "save": "Salvar alterações",
+    "saving": "Salvando...",
+    "saveSuccess": "Perfil atualizado com sucesso.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Alterar a senha",
+    "current": "Senha atual",
+    "new": "Nova Senha",
+    "confirm": "Confirme a nova senha",
+    "update": "Atualizar senha"
+  },
+  "notifications": {
+    "title": "Preferências de notificação",
+    "email": "Notificações por e-mail",
+    "marketing": "E-mails de marketing"
+  },
+  "tabs": {
+    "profile": "Perfil",
+    "security": "Segurança",
+    "notifications": "Notificações"
+  },
+  "updated": "Configurações atualizadas com sucesso"
+}

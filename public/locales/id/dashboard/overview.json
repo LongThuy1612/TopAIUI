@@ -1,0 +1,225 @@
+{
+  "welcome": "Selamat datang, {name}!",
+  "welcomeDescription": "Jelajahi fitur dan data canggih kami untuk menemukan tren dan peluang terbaru di industri AI.",
+  "user": "Pengguna",
+  "performanceOverview": "Ikhtisar Performa",
+  "websiteInsightsQuota": "Kuota Wawasan Situs Web",
+  "socialListeningQueries": "Kuota Social Listening",
+  "stats": {
+    "organicClicks": "Klik Organik",
+    "paidClicks": "Klik Berbayar",
+    "totalClicks": "Total Klik",
+    "totalTools": "Total Alat",
+    "totalViews": "Total Tayangan",
+    "credits": "Kredit"
+  },
+  "features": {
+    "websiteInsights": "Wawasan Situs Web",
+    "socialListening": "Mendengarkan Sosial",
+    "prioritySupport": "Dukungan Prioritas",
+    "advertising": "Periklanan",
+    "premiumSupport": "Dukungan Premium"
+  },
+  "badgePopular": "Paling Populer",
+  "title": "Pelacakan Social Listening",
+  "description": "Pantau kata kunci di TikTok dan YouTube.",
+  "adCredits": "Kredit Iklan",
+  "postCredits": "Kredit Posting",
+  "linkCredits": "Tautan Kredit",
+  "forSponsoredListings": "Untuk daftar sponsor",
+  "forGuestArticles": "Untuk artikel tamu",
+  "forLinkInsertions": "Untuk penyisipan tautan",
+  "buyCredits": "Beli Kredit",
+  "noOrders": "Tidak ada pesanan yang ditemukan.",
+  "orderHistory": "Riwayat Pesanan",
+  "orderId": "ID Pesanan",
+  "amount": "Jumlah",
+  "date": "Tanggal",
+  "type": "Jenis",
+  "invoice": "Faktur",
+  "download": "Unduh",
+  "currentPlan": "Rencana Saat Ini",
+  "freeTier": "Tingkat Gratis",
+  "freeTierDesc": "Tingkatkan paket Anda untuk membuka lebih banyak fitur dan wawasan.",
+  "creditBalances": "Saldo Kredit",
+  "subscriptionDetails": "Detail Langganan",
+  "upgradePlan": "Paket Peningkatan",
+  "statusActive": "Aktif",
+  "planMemberSince": "Anggota rencana ini",
+  "renewalDate": "Memperbarui",
+  "changePlan": "Ubah Rencana",
+  "redirecting": "Mengarahkan...",
+  "credits": "Kredit",
+  "managePortal": "Kelola Portal Penagihan",
+  "subscribe": "Berlangganan Sekarang",
+  "upgradeTitle": "Tingkatkan Rencana Penelitian Anda",
+  "upgradeDesc": "Dapatkan analisis tingkat lanjut, wawasan pesaing, dan banyak lagi.",
+  "choosePlan": {
+    "title": "Pilih Rencana Penelitian Anda",
+    "subtitle": "Dapatkan intelijen pasar dan data AI untuk mendorong keputusan."
+  },
+  "billingIntervals": {
+    "monthly": "Bulanan",
+    "yearly": "Tahunan"
+  },
+  "subtitle": "Kelola dan lacak kinerja alat AI yang Anda kirimkan.",
+  "create": "Buat Kampanye",
+  "noCampaigns": "Belum ada kampanye",
+  "createFirst": "Buat kampanye pertama Anda untuk mulai mempromosikan alat AI Anda",
+  "getStarted": "Memulai",
+  "budget": "Anggaran",
+  "spent": "Dihabiskan",
+  "startDate": "Tanggal Mulai",
+  "endDate": "Tanggal Berakhir",
+  "notSet": "Tidak disetel",
+  "ongoing": "Sedang berlangsung",
+  "pause": "Berhenti sebentar",
+  "resume": "Melanjutkan",
+  "viewDetails": "Lihat Detail",
+  "clicks": "Klik",
+  "impressions": "Tayangan",
+  "rejectionReason": "Alasan penolakan",
+  "analytics": {
+    "title": "Analisis Kampanye",
+    "description": "Perincian terperinci mengenai tayangan dan klik selama 30 hari terakhir.",
+    "exportJson": "Ekspor JSON",
+    "dailyPerformance": "Kinerja Harian",
+    "topLocales": "Wilayah Teratas (Lokal)"
+  },
+  "track": "Melacak",
+  "noDomains": "Belum ada domain yang dilacak. Tambahkan satu di atas!",
+  "monthlyVisits": "Kunjungan Bulanan",
+  "rank": "Pangkat",
+  "topKeywords": "Kata Kunci Teratas",
+  "added": "Ditambahkan",
+  "tool": "Alat",
+  "organicClicks": "Klik Organik",
+  "paidClicks": "Klik Berbayar",
+  "totalClicks": "Jumlah Klik",
+  "addedOn": "Ditambahkan",
+  "noTools": "Belum ada alat yang terlacak.",
+  "empty": {
+    "title": "Belum Ada Alat AI",
+    "description": "Kirimkan alat AI Anda agar ditemukan oleh jutaan pengguna.",
+    "cta": "Kirim Alat AI"
+  },
+  "columns": {
+    "tool": "Alat",
+    "status": "Statusnya",
+    "organic": "Lalu Lintas Organik",
+    "paid": "Lalu Lintas Berbayar",
+    "impressions": "Tayangan",
+    "actions": "Tindakan"
+  },
+  "statusTooltip": {
+    "pending": "Menunggu persetujuan admin"
+  },
+  "submittedToast": "Alat Anda telah dikirimkan dan menunggu peninjauan.",
+  "warnings": {
+    "pendingView": "Alat ini masih dalam peninjauan dan belum dapat dilihat publik.",
+    "confirmDelete": "Apakah Anda yakin ingin menghapus alat AI ini? Tindakan ini tidak dapat dibatalkan."
+  },
+  "gpt": {
+    "title": "GPT saya",
+    "submitNew": "Kirim GPT Baru",
+    "noGpts": "Tidak ada GPT yang ditemukan. Kirimkan yang pertama Anda!",
+    "noGptsDesc": "Belum ada GPT yang dikirimkan. Kirimkan GPT Anda agar mudah ditemukan.",
+    "columns": {
+      "name": "Nama GPT",
+      "url": "URL ObrolanGPT",
+      "date": "Dikirim"
+    }
+  },
+  "updateAi": "Perbarui AI",
+  "submitNew": "Kirim Baru",
+  "submitNewItem": "Kirim Barang Baru",
+  "linkInsert": {
+    "label": "Sisipkan Tautan",
+    "submit": "Kirim Tautan Sisipkan",
+    "empty": {
+      "title": "Belum Ada Sisipan Tautan",
+      "description": "Anda belum mengirimkan penyisipan tautan apa pun."
+    }
+  },
+  "form": {
+    "type": "Jenis",
+    "targetUrl": "URL sasaran",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Judul/Anchor Text",
+    "anchorTextPlaceholder": "Judul artikel ATAU Teks jangkar untuk tautan",
+    "submitCredits": "Kirim (1 SKS)"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Keamanan",
+    "notifications": "Pemberitahuan"
+  },
+  "table": {
+    "keyword": "Kata kunci",
+    "videos": "Video",
+    "views": "Tampilan",
+    "creators": "Pencipta",
+    "status": "Statusnya",
+    "platform": "Platform"
+  },
+  "updated": "Pengaturan berhasil diperbarui",
+  "password": {
+    "title": "Ubah Kata Sandi",
+    "current": "Kata Sandi Saat Ini",
+    "new": "Kata Sandi Baru",
+    "confirm": "Konfirmasi Kata Sandi Baru",
+    "update": "Perbarui Kata Sandi"
+  },
+  "notifications": {
+    "title": "Preferensi Pemberitahuan",
+    "email": "Pemberitahuan Email",
+    "marketing": "Email Pemasaran"
+  },
+  "metrics": {
+    "monthlyQueries": "Pertanyaan Bulanan",
+    "videosToday": "Video Hari Ini",
+    "creatorsToday": "Pembuat Konten Hari Ini"
+  },
+  "advertiseAi": "Iklankan AI",
+  "myAis": {
+    "title": "AI saya",
+    "subtitle": "Kelola dan lacak kinerja alat AI yang Anda kirimkan.",
+    "empty": {
+      "cta": "Kirim Alat AI"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Alasan Penolakan"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Lacak peringkat dan kinerja kata kunci",
+    "socialListeningDesc": "Pantau sebutan dan tren sosial",
+    "researchReportDesc": "Menghasilkan laporan pasar yang komprehensif",
+    "aiAdvertisingLibrary": "Perpustakaan Periklanan AI",
+    "aiAdvertisingDesc": "Analisis iklan AI pesaing",
+    "comingSoon": "Segera hadir"
+  },
+  "reports": {
+    "title": "Laporan Penelitian",
+    "description": "Akses laporan analitis mendalam tentang industri AI.",
+    "noReports": "Tidak Ada Laporan Tersedia",
+    "free": "Bebas",
+    "download": "Unduh",
+    "unlock": "Buka Kunci Laporan",
+    "noReportsDesc": "Saat ini kami sedang mempersiapkan wawasan baru.",
+    "readNow": "Baca Laporan",
+    "readerTitle": "Pembaca Laporan Penelitian",
+    "unlockRequired": "Konten Premium",
+    "unlockDesc": "Buka laporan penelitian mendalam ini untuk mendapatkan akses penuh ke analisis pasar eksklusif, studi kasus, dan wawasan yang dapat ditindaklanjuti.",
+    "unlockNow": "Buka Kunci Sekarang",
+    "related": "Laporan Terkait",
+    "toc": "Di halaman ini",
+    "backToList": "Kembali ke Perpustakaan",
+    "notFound": "Laporan tidak ditemukan",
+    "unlockSuccess": "Laporan berhasil dibuka kuncinya!",
+    "unlockError": "Gagal membuka kunci laporan.",
+    "searchPlaceholder": "Laporan pencarian..."
+  },
+  "toolPerformance": "Performa Alat (Waktu Nyata)",
+  "domain": "Domain"
+}

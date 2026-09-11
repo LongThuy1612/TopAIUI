@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Aún no hay herramientas de IA",
+      "description": "Envía tu herramienta de IA para que sea descubierta por millones de usuarios.",
+      "cta": "Enviar Herramienta de IA"
+    },
+    "columns": {
+      "tool": "Herramienta",
+      "status": "Estado",
+      "organic": "Tráfico Orgánico",
+      "paid": "Tráfico Pagado",
+      "impressions": "Impresiones",
+      "actions": "Acciones"
+    },
+    "statusTooltip": {
+      "pending": "A la espera de aprobación administrativa"
+    },
+    "submittedToast": "Tu herramienta ha sido enviada y está pendiente de revisión.",
+    "warnings": {
+      "pendingView": "Esta herramienta aún está bajo revisión y aún no es visible públicamente.",
+      "confirmDelete": "¿Estás seguro de que deseas eliminar esta herramienta de IA? Esta acción no se puede deshacer."
+    },
+    "submit": {
+      "tool": "Enviar herramienta de IA",
+      "update": "Actualizar IA",
+      "name": "Nombre GPT",
+      "url": "URL de ChatGPT",
+      "category": "Categoría",
+      "description": "Descripción",
+      "gpt": {
+        "title": "Envíe su GPT",
+        "label": "Enviar GPT",
+        "description": "Envíe su GPT personalizado para que miles de usuarios lo descubran."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Envíos",
+    "deleteSuccess": "Envío eliminado exitosamente.",
+    "deleteError": "No se pudo eliminar el envío.",
+    "noSubmissions": "Aún no hay publicaciones de invitados",
+    "untitled": "Envío sin título",
+    "confirmDelete": "¿Está seguro de que desea eliminar este envío? Esta acción no se puede deshacer.",
+    "columns": {
+      "subject": "Sujeto",
+      "status": "Estado",
+      "date": "Fecha",
+      "actions": "Comportamiento"
+    }
+  }
+}

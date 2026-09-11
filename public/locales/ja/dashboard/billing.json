@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "お支払いと請求書",
+    "description": "クレジットの管理と注文履歴の確認ができます。",
+    "adCredits": "広告クレジット",
+    "postCredits": "投稿クレジット",
+    "linkCredits": "リンククレジット",
+    "forSponsoredListings": "スポンサーリスト用",
+    "forGuestArticles": "ゲスト記事用",
+    "forLinkInsertions": "リンク挿入用",
+    "buyCredits": "クレジットを購入",
+    "noOrders": "注文が見つかりません。",
+    "orderHistory": "注文履歴",
+    "orderId": "注文ID",
+    "amount": "金額",
+    "status": "ステータス",
+    "date": "日付",
+    "type": "タイプ",
+    "invoice": "請求書",
+    "download": "ダウンロード",
+    "currentPlan": "現在のプラン",
+    "freeTier": "無料プラン",
+    "freeTierDesc": "プランをアップグレードして、より多くの機能やインサイトを解放しましょう。",
+    "creditBalances": "クレジット残高",
+    "subscriptionDetails": "サブスクリプション詳細",
+    "upgradePlan": "プランをアップグレード",
+    "credits": "クレジット",
+    "managePortal": "請求ポータルの管理",
+    "subscribe": "今すぐ購読",
+    "statusActive": "アクティブ",
+    "planMemberSince": "このプランのメンバー",
+    "renewalDate": "更新日",
+    "changePlan": "計画の変更",
+    "redirecting": "リダイレクト中...",
+    "errorFetchingPortal": "請求ポータルを開けませんでした"
+  },
+  "plans": {
+    "free": {
+      "name": "無料"
+    },
+    "professional": {
+      "name": "プロフェッショナル"
+    },
+    "enterprise": {
+      "name": "エンタープライズ"
+    }
+  },
+  "transactions": {
+    "noDescription": "広告クレジットのトランザクションがここに表示されます。"
+  }
+}

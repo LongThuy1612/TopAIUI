@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Retour au Tableau de Bord",
+    "backToHome": "Retour à l'Accueil",
+    "dashboard": "Tableau de bord",
+    "websiteInsights": "Analyses Web",
+    "socialListening": "Écoute Sociale",
+    "researchReport": "Rapport de Recherche",
+    "myAis": "Mes IA",
+    "favorites": "Favoris",
+    "profileSettings": "Paramètres du Profil",
+    "advertise": "Annoncer",
+    "postsLinks": "Articles & Liens",
+    "paymentInvoice": "Paiement & Facture",
+    "overview": "Vue d'ensemble",
+    "myInquiries": "Mes demandes de renseignements"
+  },
+  "logout": "Déconnexion",
+  "logoutConfirmTitle": "Déconnexion",
+  "logoutConfirmDescription": "Êtes-vous sûr de vouloir vous déconnecter?",
+  "upgrade": "Améliorer",
+  "sections": {
+    "research": "RECHERCHE",
+    "management": "GESTION",
+    "business": "AFFAIRES",
+    "admin": "ADMINISTRATEUR",
+    "guestPost": "Messages d'invités",
+    "updateAi": "Mettre à jour l'IA",
+    "myGpts": "Mes GPT"
+  },
+  "help": "Aide",
+  "close": "Fermer",
+  "status": {
+    "active": "Actif"
+  },
+  "advertiseAi": "Faire de la publicité pour l'IA",
+  "myAis": {
+    "title": "Mes IA",
+    "subtitle": "Gérez et suivez les performances de vos outils d'IA soumis.",
+    "empty": {
+      "cta": "Soumettre l'outil IA"
+    }
+  }
+}

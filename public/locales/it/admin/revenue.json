@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Entrate e salute finanziaria",
+    "totalRevenue": "Entrate totali",
+    "mrr": "MRR (ricorrente mensile)",
+    "mrrDescription": "Entrate ricorrenti stimate in base agli abbonamenti attivi",
+    "breakdown": "Ripartizione dei ricavi",
+    "revenueGrowth": "Crescita dei ricavi (30 giorni)",
+    "noData": "Nessun dato sulle entrate disponibile",
+    "noTrendsData": "Nessun dato sulla crescita trovato negli ultimi 30 giorni",
+    "comingSoon": "Prossimamente"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Gästinlägg & länkinfogning",
+  "description": "Dela din expertis med vår community genom gästinlägg eller begär strategiska länkinfogningar i befintligt innehåll.",
+  "details": "Information om gästinlägg",
+  "postTitle": "Inläggets titel",
+  "postTitlePlaceholder": "Titeln på ditt gästinlägg",
+  "postContent": "Inlägg innehåll eller detaljer",
+  "postContentPlaceholder": "Beskriv innehållet i ditt gästinlägg eller info om länkar",
+  "features": {
+    "guestPosts": {
+      "title": "Gästinlägg",
+      "description": "Dela dina kunskaper och insikter om AI med vår community. Bygg auktoritet och driv trafik till din webbplats."
+    },
+    "linkInsertion": {
+      "title": "Länkinsättning",
+      "description": "Begär strategisk placering av dina länkar i befintligt, relevant innehåll för maximalt SEO-värde."
+    },
+    "seoBacklinks": {
+      "title": "SEO bakåtlänkar",
+      "description": "Öka din SEO-rankning med högkvalitativa bakåtlänkar från vår auktoritativa domän."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Riktlinjer för innehåll",
+    "description": "Alla gästinlägg måste vara originella, högkvalitativa och relevanta för AI. Vi accepterar inte AI-genererat innehåll utan mänsklig redigering."
+  },
+  "meta": {
+    "title": "Gästinlägg & länkinlägg | Topp AI-samling",
+    "description": "Dela din expertis med vår AI-gemenskap genom gästinlägg eller begär strategiska länkinfogningar i befintligt innehåll."
+  },
+  "validation": {
+    "required": "Detta fält är obligatoriskt",
+    "titleTooShort": "Rubriken måste bestå av minst 5 tecken",
+    "contentTooShort": "Innehållet måste vara minst 20 tecken",
+    "toolNameRequired": "Verktygsnamn krävs",
+    "url": "Ogiltig webbadress",
+    "descriptionMin": "Beskrivningen måste bestå av minst 10 tecken",
+    "categoryRequired": "Välj en kategori",
+    "email": "Ogiltig e-postadress",
+    "messageMin": "Meddelandet måste bestå av minst 10 tecken"
+  },
+  "sidebar": {
+    "articleCount": "1 000+ artiklar",
+    "articleCountSub": "Publicerad av vår community"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Tutti gli strumenti AI - TopAICollection",
+    "description": "Sfoglia la nostra raccolta completa di strumenti IA. Filtra per categoria, popolarità o trova le innovazioni più recenti dell'intelligenza artificiale.",
+    "archiveMonthTitle": "Strumenti AI — {label} | TopAICollection",
+    "archiveMonthDescription": "Sfoglia gli strumenti AI aggiunti in {label}.",
+    "archiveYearTitle": "Strumenti AI — {year} | TopAICollection",
+    "archiveYearDescription": "Sfoglia gli strumenti AI aggiunti in {year}.",
+    "categoryTitle": "{category} Strumenti AI | TopAICollection",
+    "categoryDescription": "Esplora i migliori strumenti di intelligenza artificiale di {category}.",
+    "freeTitle": "Strumenti AI gratuiti | {title}",
+    "freeDescription": "Scopri i migliori strumenti IA gratuiti online. {description}",
+    "newestTitle": "Strumenti AI più recenti | {title}",
+    "newestDescription": "Scopri gli ultimi strumenti AI aggiunti alla nostra raccolta."
+  },
+  "title": "Esplora tutti gli strumenti AI",
+  "subtitle": "Scopri la soluzione AI perfetta dalla nostra collezione completa",
+  "filters": {
+    "all": "Tutti gli strumenti",
+    "today": "Oggi",
+    "featured": "In primo piano",
+    "new": "Appena lanciato",
+    "mostSaved": "I più salvati",
+    "mostUsed": "Più usato",
+    "trending": "Tendenza",
+    "justLaunched": "Appena lanciato",
+    "title": "Filtri",
+    "category": "Categoria",
+    "allCategories": "Tutte le categorie",
+    "type": "Tipo",
+    "popular": "Popolare",
+    "newest": "Più recente",
+    "name": "Nome",
+    "price": "Prezzo",
+    "free": "Gratuito",
+    "paid": "Pagato",
+    "sortBy": "Ordina per"
+  },
+  "sort": {
+    "label": "Ordina per",
+    "popular": "Il più popolare",
+    "trending": "Tendenza",
+    "newest": "Prima il più recente",
+    "rating": "Voto più alto",
+    "name": "Alfabetico"
+  },
+  "categories": {
+    "title": "Categorie",
+    "all": "Tutte le categorie",
+    "showMore": "Mostra altro →",
+    "toolCount": "{count} strumenti"
+  },
+  "results": {
+    "showing": "Visualizzazione di {start}-{end} di {total} strumenti",
+    "error": "Errore durante il caricamento degli strumenti. Per favore riprova.",
+    "noResults": "Nessun risultato trovato",
+    "tryDifferent": "Si prega di provare parole chiave o filtri diversi."
+  },
+  "pagination": {
+    "next": "Prossimo",
+    "page": "Pagina {page}"
+  },
+  "sidebar": {
+    "trending": "Di tendenza adesso",
+    "noTools": "Nessuno strumento di tendenza",
+    "advertise": "Fai pubblicità qui",
+    "advertiseDesc": "Raggiungi oltre 5 milioni di appassionati di intelligenza artificiale al mese e aumenta le tue visite",
+    "emailPlaceholder": "Indirizzo e-mail"
+  },
+  "hero": {
+    "title": "Scopri gli ultimi strumenti di intelligenza artificiale",
+    "subtitle": "27.955 IA e 459 categorie",
+    "searchPlaceholder": "Cerca strumenti AI...",
+    "search": "Ricerca"
+  },
+  "breadcrumb": {
+    "home": "Casa",
+    "tools": "Utensili"
+  },
+  "jsonLd": {
+    "name": "Directory degli strumenti AI",
+    "description": "Sfoglia la nostra directory completa di strumenti AI."
+  },
+  "badges": {
+    "featured": "In primo piano",
+    "new": "Nuovo",
+    "trending": "Tendenza",
+    "popular": "Popolare",
+    "sponsored": "Sponsorizzato"
+  },
+  "share": "Condividere",
+  "visits": "Visite",
+  "monthlyVisits": "Visite mensili stimate",
+  "visit": "Visita",
+  "actions": {
+    "save": "Salva",
+    "saved": "Salvato",
+    "visit": "Visita",
+    "share": "Condividere",
+    "copyLink": "Copia collegamento",
+    "shareThisTool": "Condividi questo strumento"
+  },
+  "growth": "Crescita",
+  "pricing": {
+    "free": "Gratuito"
+  }
+}

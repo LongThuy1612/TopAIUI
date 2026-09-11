@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Pendapatan & Kesehatan Finansial",
+    "totalRevenue": "Total Pendapatan",
+    "mrr": "MRR (Berulang Bulanan)",
+    "mrrDescription": "Perkiraan pendapatan berulang berdasarkan langganan aktif",
+    "breakdown": "Rincian Pendapatan",
+    "revenueGrowth": "Pertumbuhan Pendapatan (30 Hari)",
+    "noData": "Data pendapatan tidak tersedia",
+    "noTrendsData": "Tidak ditemukan data pertumbuhan selama 30 hari terakhir",
+    "comingSoon": "Segera Hadir"
+  }
+}

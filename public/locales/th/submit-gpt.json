@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "ส่ง GPT ของคุณ - รับ GPT ของคุณที่โดดเด่น | TopAICollection",
+    "description": "ส่ง GPT ที่กำหนดเองของคุณเพื่อให้แสดงในไดเรกทอรี GPT ของเรา เข้าถึงผู้ที่ชื่นชอบ AI หลายพันคน"
+  },
+  "title": "ส่ง GPT ของคุณ",
+  "subtitle": "รับ GPT ที่กำหนดเองของคุณในไดเรกทอรีของเรา",
+  "loginRequired": "ต้องเข้าสู่ระบบ",
+  "submitButton": "ส่ง GPT",
+  "whySubmit": {
+    "title": "ทำไมต้องส่ง GPT ของคุณ?"
+  },
+  "benefits": {
+    "audience": "เข้าถึงผู้ที่ชื่นชอบ AI หลายพันคนทุกวัน",
+    "instant": "รายการทันทีเมื่อมีการตรวจสอบ",
+    "global": "การเปิดรับทั่วโลกในทุกภาษา",
+    "analytics": "ติดตามการคลิกและการมีส่วนร่วม"
+  },
+  "proTip": {
+    "title": "เคล็ดลับมือโปร",
+    "desc": "ตรวจสอบให้แน่ใจว่า GPT ของคุณเป็นแบบสาธารณะและเข้าถึงได้ผ่านลิงก์ก่อนส่ง"
+  },
+  "form": {
+    "gptName": "ชื่อจีพีที",
+    "gptNamePlaceholder": "เช่น ตัวช่วยสร้างรหัส",
+    "gptUrl": "URL ของ ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "URL ไอคอน",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "คำอธิบาย/คำแนะนำ",
+    "gptDescriptionPlaceholder": "อธิบายว่า GPT ของคุณทำอะไร..."
+  },
+  "validation": {
+    "required": "ต้องระบุข้อมูลในช่องนี้",
+    "invalidUrl": "URL ของ ChatGPT ไม่ถูกต้อง",
+    "nameTooShort": "ชื่อต้องมีอย่างน้อย 2 ตัวอักษร",
+    "descriptionTooShort": "คำอธิบายต้องมีอักขระอย่างน้อย 10 ตัว",
+    "toolNameRequired": "ต้องระบุชื่อเครื่องมือ",
+    "url": "URL ไม่ถูกต้อง",
+    "descriptionMin": "คำอธิบายต้องมีอักขระอย่างน้อย 10 ตัว",
+    "categoryRequired": "กรุณาเลือกหมวดหมู่",
+    "email": "ที่อยู่อีเมลไม่ถูกต้อง",
+    "messageMin": "ข้อความต้องมีอย่างน้อย 10 ตัวอักษร"
+  },
+  "sidebar": {
+    "gptCount": "ส่ง GPT แล้ว",
+    "gptCountSub": "และการเติบโต"
+  },
+  "success": "ส่ง GPT ของคุณเรียบร้อยแล้ว!"
+}

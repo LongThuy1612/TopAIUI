@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "料金プラン - TopAICollection",
+    "description": "AIリサーチとソーシャルリスニングのためのシンプルで透明性の高い料金体系。"
+  },
+  "title": "シンプルで透明性の高い料金体系",
+  "subtitle": "無料で開始し、成長に合わせて拡張します。追加費用はありません。",
+  "plans": {
+    "free": {
+      "name": "無料",
+      "banner": "�� 無料で始めましょう — クレジットカード不要。"
+    },
+    "professional": {
+      "name": "プロフェッショナル"
+    },
+    "enterprise": {
+      "name": "エンタープライズ"
+    },
+    "free-monthly": {
+      "name": "無料"
+    },
+    "free-yearly": {
+      "name": "無料"
+    },
+    "professional-monthly": {
+      "name": "プロフェッショナル"
+    },
+    "professional-yearly": {
+      "name": "プロフェッショナル"
+    },
+    "enterprise-monthly": {
+      "name": "エンタープライズ"
+    },
+    "enterprise-yearly": {
+      "name": "エンタープライズ"
+    }
+  },
+  "badge": {
+    "popular": "⭐ 最も人気"
+  },
+  "features": {
+    "websiteInsights": "ウェブサイトインサイト",
+    "socialListening": "ソーシャルリスニング",
+    "prioritySupport": "優先サポート",
+    "advertising": "広告掲載",
+    "premiumSupport": "プレミアムサポート"
+  },
+  "cta": {
+    "loading": "処理中...",
+    "upgrade": "今すぐ開始"
+  },
+  "comparison": {
+    "title": "すべてのプランの比較",
+    "feature": "機能"
+  },
+  "billing": {
+    "monthly": "毎月",
+    "yearly": "毎年",
+    "discount20": "20% 割引",
+    "suffixYearly": "/年",
+    "suffixMonthly": "/月",
+    "upgradeTitle": "研究計画をアップグレードする",
+    "upgradeDesc": "高度な分析、競合他社の洞察などを活用します。",
+    "subscribe": "今すぐ購読する"
+  },
+  "billingMonthly": "毎月",
+  "billingYearly": "毎年",
+  "billingBestValue": "20% 割引",
+  "badgePopular": "最も人気のある",
+  "billingPerMonth": "/ 月",
+  "billingPerYear": "/ 年"
+}

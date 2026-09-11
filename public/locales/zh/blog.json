@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "人工智能博客和新闻 - TopAICollection",
+    "description": "随时了解人工智能世界的最新人工智能新闻、教程、评论和见解。"
+  },
+  "badge": "人工智能洞察",
+  "title": "人工智能博客和新闻",
+  "subtitle": "随时了解人工智能世界的最新趋势、教程和见解",
+  "search": {
+    "placeholder": "搜索文章..."
+  },
+  "categories": {
+    "title": "类别",
+    "all": "所有文章",
+    "news": "人工智能新闻",
+    "tutorials": "教程",
+    "reviews": "工具评论",
+    "industry": "行业洞察",
+    "guides": "操作指南"
+  },
+  "newsletter": {
+    "title": "保持更新",
+    "subtitle": "将最新的人工智能新闻发送到您的收件箱",
+    "placeholder": "输入您的电子邮件",
+    "button": "订阅"
+  },
+  "article": {
+    "readTime": "{minutes}分钟阅读",
+    "published": "发布于{date}",
+    "writtenBy": "撰写与编辑：",
+    "factCheckedBy": "事实核查："
+  },
+  "pagination": {
+    "next": "下一个",
+    "page": "第 {page} 页，共 {total} 页"
+  },
+  "relatedTools": "「相关工具」",
+  "backToBlog": "“返回博客”",
+  "errors": {
+    "notFound": "“找不到帖子”"
+  },
+  "sort": {
+    "latest": "最新",
+    "oldest": "最早",
+    "popular": "热门"
+  },
+  "filter": {
+    "allAuthors": "所有作者",
+    "sortBy": "排序方式"
+  },
+  "relatedPosts": "相关文章",
+  "faqs": "常见问题"
+}

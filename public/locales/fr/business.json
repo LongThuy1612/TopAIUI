@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Solutions d'affaires - Devenez partenaire avec nous | TopAICollection",
+    "description": "Explorez les opportunités de partenariat commercial avec TopAICollection. Publicité, contenu sponsorisé et bien plus encore."
+  },
+  "title": "Solutions d'entreprise",
+  "subtitle": "Partenariat avec TopAICollection pour toucher les passionnés d'IA du monde entier",
+  "contact": {
+    "title": "Contactez-nous"
+  },
+  "offers": {
+    "ads": "Campagnes publicitaires ciblées",
+    "partnerships": "Partenariats stratégiques",
+    "growth": "Accélérez la croissance de votre produit IA",
+    "consulting": "Services d'intégration IA sur mesure"
+  },
+  "form": {
+    "fullName": "Nom et prénom",
+    "workEmail": "E-mail professionnel",
+    "companyName": "Nom de l'entreprise",
+    "inquiryType": "Type de demande",
+    "selectType": "Sélectionnez le type",
+    "messagePlaceholder": "Parlez-nous de vos besoins...",
+    "inquiryTypes": {
+      "advertise": "Annoncer",
+      "guestPost": "Message d'invité",
+      "partnership": "Partenariat",
+      "customDevelopment": "Développement personnalisé",
+      "other": "Autre"
+    },
+    "message": "Message"
+  },
+  "sections": {
+    "advertise": {
+      "title": "Annoncez votre outil d'IA",
+      "description": "Mettez votre outil d’IA en évidence sur notre plateforme.",
+      "link": "Apprendre encore plus"
+    },
+    "guestPost": {
+      "title": "Messages et liens d'invités",
+      "description": "Publiez du contenu ou obtenez des backlinks sur notre site de haute autorité.",
+      "link": "Apprendre encore plus"
+    },
+    "submitTool": {
+      "title": "Soumettez votre outil",
+      "description": "Ajoutez gratuitement votre outil d'IA à notre annuaire.",
+      "link": "Soumettre maintenant"
+    },
+    "customSolutions": {
+      "title": "Solutions personnalisées",
+      "description": "Contactez-nous pour des opportunités de partenariat personnalisées.",
+      "link": "Contactez-nous"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100+ partenaires",
+    "partnerCountSub": "Approuvé par les principales sociétés d'IA",
+    "contactSupport": "Contacter l'assistance"
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "toolNameRequired": "Le nom de l'outil est obligatoire",
+    "url": "URL invalide",
+    "descriptionMin": "La description doit comporter au moins 10 caractères",
+    "categoryRequired": "Veuillez sélectionner une catégorie",
+    "email": "Adresse e-mail invalide",
+    "messageMin": "Le message doit contenir au moins 10 caractères"
+  },
+  "success": "Votre demande a été soumise avec succès !"
+}

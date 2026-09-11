@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Chưa có công cụ AI nào",
+      "description": "Gửi công cụ AI của bạn để được hàng triệu người dùng khám phá.",
+      "cta": "Gửi công cụ AI"
+    },
+    "columns": {
+      "tool": "Công cụ",
+      "status": "Trạng thái",
+      "organic": "Lượt truy cập tự nhiên",
+      "paid": "Lượt truy cập trả phí",
+      "impressions": "Lượt hiển thị",
+      "actions": "Hành động"
+    },
+    "statusTooltip": {
+      "pending": "Đang chờ quản trị viên phê duyệt"
+    },
+    "submittedToast": "Công cụ của bạn đã được gửi và đang chờ xem xét.",
+    "warnings": {
+      "pendingView": "Công cụ này vẫn đang được xem xét và chưa hiển thị công khai.",
+      "confirmDelete": "Bạn có chắc chắn muốn xóa công cụ AI này không? Không thể hoàn tác hành động này."
+    },
+    "submit": {
+      "tool": "Gửi công cụ AI",
+      "update": "Cập nhật AI",
+      "name": "Tên GPT",
+      "url": "URL GPT trò chuyện",
+      "category": "Loại",
+      "description": "Sự miêu tả",
+      "gpt": {
+        "title": "Gửi GPT của bạn",
+        "label": "Gửi GPT",
+        "description": "Gửi GPT tùy chỉnh của bạn để được hàng nghìn người dùng khám phá."
+      }
+    }
+  },
+  "submissions": {
+    "title": "bài nộp",
+    "deleteSuccess": "Đã xóa bài gửi thành công.",
+    "deleteError": "Không thể xóa nội dung gửi.",
+    "noSubmissions": "Chưa có bài viết của khách",
+    "untitled": "Bài nộp không có tiêu đề",
+    "confirmDelete": "Bạn có chắc chắn muốn xóa bài gửi này không? Không thể hoàn tác hành động này.",
+    "columns": {
+      "subject": "Chủ thể",
+      "status": "Trạng thái",
+      "date": "Ngày",
+      "actions": "hành động"
+    }
+  }
+}

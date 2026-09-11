@@ -1,0 +1,14 @@
+{
+  "title": "검색결과",
+  "resultsFor": "\"{query}\"에 대한 결과",
+  "filters": "필터",
+  "typeFilters": "유형",
+  "categories": "카테고리",
+  "noResults": "검색결과가 없습니다",
+  "tryAgain": "다른 검색어를 사용해 보세요.",
+  "placeholder": "AI 도구 검색...",
+  "button": "찾다",
+  "loading": "수색...",
+  "clearFilters": "필터 지우기",
+  "categoryLabel": "카테고리"
+}

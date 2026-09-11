@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- AI Tool Review & Analysis"
+  },
+  "errors": {
+    "notFound": "Tool not found",
+    "notFoundDescription": "The tool you are looking for does not exist.",
+    "serverError": "Internal server error.",
+    "serverErrorDescription": "An unexpected error occurred on the server. Please try again later."
+  },
+  "actions": {
+    "visit": "Visit Website",
+    "save": "Save",
+    "saved": "Saved",
+    "share": "Share",
+    "update": "Update this tool",
+    "advertise": "Advertise this tool",
+    "visitWebsite": "Visit Website",
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "openVideo": "Open Video"
+  },
+  "cta": {
+    "visit": "Open site",
+    "advertise": "Advertise this tool",
+    "update": "Update this tool"
+  },
+  "sidebar": {
+    "category": "Category",
+    "tags": "Tags"
+  },
+  "tabs": {
+    "socialListening": "Social Listening",
+    "alternatives": "Alternatives"
+  },
+  "similar": {
+    "title": "Similar AI Tools"
+  },
+  "stats": {
+    "monthlyVisits": "Monthly Visits",
+    "growth": "Growth",
+    "reviews": "reviews",
+    "reviews_formatted": "{rating} ({count} {label})",
+    "averageTime": "Average time on site",
+    "pagesPerVisit": "Pages per visit",
+    "bounceRate": "Bounce rate",
+    "visits": "Visits"
+  },
+  "sections": {
+    "overview": "Overview",
+    "reviews": "Reviews",
+    "analytics": "Analytics",
+    "embed": "Embed",
+    "alternatives": "Alternatives",
+    "related": "Related Tools"
+  },
+  "details": {
+    "description": "Tool Introduction:",
+    "monthlyTraffic": "Monthly Traffic:",
+    "socialMedia": "Social Media and Email:",
+    "company": "Company",
+    "categories": "Categories",
+    "tags": "Tags"
+  },
+  "content": {
+    "whatIs": "What is {name}?",
+    "howToUse": "How to Use",
+    "coreFeatures": "Core Features",
+    "useCases": "Use Cases",
+    "pricingPlans": "Pricing Plans",
+    "faqs": "Frequently Asked Questions",
+    "relatedTools": "Related Tools",
+    "productInfo": "{name} Product Information",
+    "writtenBy": "Written & Edited by",
+    "factCheckedBy": "Fact-checked by"
+  },
+  "analytics": {
+    "title": "Analytics & Traffic Insights",
+    "subtitle": "Analysis of",
+    "latestTraffic": "Latest website traffic",
+    "topCountries": "Top visiting countries",
+    "trafficSources": "Website traffic sources",
+    "topKeywords": "Top Keywords",
+    "keyword": "Keyword",
+    "traffic": "Traffic",
+    "trafficSubtitle": "to improve web traffic",
+    "geoSubtitle": "search engine indicators",
+    "sourceSubtitle": "search engine indicators",
+    "keywordSubtitle": "search engine indicators",
+    "percentage": "Percentage",
+    "source": "Source",
+    "noChartData": "No chart data",
+    "noTrafficChartData": "No traffic chart data",
+    "desktopVsMobile": "Desktop vs Mobile",
+    "desktop": "Desktop",
+    "mobileWeb": "Mobile Web",
+    "similarSites": "Similar Sites",
+    "globalRank": "Global Rank",
+    "founded": "Founded",
+    "socialInfluence": "Social Media Influence",
+    "views": "views",
+    "mentions": "mentions",
+    "trendHistory": "Trend History",
+    "trendSubtitle": "Traffic, views, and upvotes trends over time",
+    "upvotes": "upvotes"
+  },
+  "embed": {
+    "title": "Embed on your website",
+    "description": "Add this tool to your website with a beautiful embed widget",
+    "preview": "Preview",
+    "code": "Embed Code",
+    "copy": "Copy Code",
+    "copied": "Copied!",
+    "badgeAlt": "TopAICollection Badge",
+    "themes": {
+      "light": "Light",
+      "neutral": "Neutral",
+      "dark": "Dark"
+    }
+  },
+  "badges": {
+    "verifiedListing": "Verified Listing",
+    "freePlan": "Free Plan",
+    "paidPlans": "Paid Plans & Price"
+  },
+  "alternatives": {
+    "title": "Alternatives",
+    "description": "Similar tools you might like"
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "subtitle": "Choose the plan that works best for you",
+    "popular": "Popular",
+    "getStarted": "Get Started",
+    "disclaimer": "Prices and features may vary. Visit the official website for the most up-to-date information.",
+    "noPricingInfo": "No pricing information available",
+    "free": "Free",
+    "moreFeatures": "+ {count} more features"
+  },
+  "charts": {
+    "trafficChart": "Traffic Chart",
+    "comingSoon": "Chart visualization coming soon"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "pointsScale": "out of 5",
+    "subtitle": "See what the community thinks",
+    "writeTitle": "Do you recommend this tool?",
+    "placeholder": "Share your experience with this tool...",
+    "privacy": "Privacy Protected",
+    "success": "Review submitted successfully!",
+    "submit": "Post Review",
+    "loginToReview": "Please log in to submit a review",
+    "loginLink": "Log in",
+    "noReviews": "No reviews yet. Be the first to review this tool!",
+    "viewMore": "View All Reviews",
+    "allReviewsTitle": "All Reviews for",
+    "reviewsPageTitle": "Reviews",
+    "by": "by",
+    "verified": "Verified",
+    "anonymous": "Anonymous User",
+    "ratingLabel": "Rating",
+    "commentLabel": "Comment",
+    "dateLabel": "Date",
+    "page": "Page",
+    "editReview": "Edit Review",
+    "deleteReview": "Delete Review",
+    "deleteConfirm": "Are you sure you want to delete your review?",
+    "editTitle": "Edit Your Review",
+    "updateSuccess": "Review updated successfully!",
+    "deleteSuccess": "Review deleted successfully!",
+    "commentRequired": "Please provide a comment for your review.",
+    "ratingRequired": "Please select a rating.",
+    "alreadyReviewed": "You've already reviewed this tool. Use the ✏️ edit button on your review to update it.",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "sort": {
+      "label": "Sort by",
+      "newest": "Newest first",
+      "oldest": "Oldest first",
+      "highest": "Highest rating",
+      "lowest": "Lowest rating"
+    },
+    "userLabel": "User",
+    "unverify": "Unverify",
+    "markVerified": "Mark Verified",
+    "confirm": "Confirm",
+    "noReviewsFound": "No reviews found for this tool.",
+    "deleteError": "Failed to delete.",
+    "updateError": "Failed to update.",
+    "statusLabel": "Status",
+    "actionsLabel": "Actions",
+    "pagination": {
+      "showing": "Showing",
+      "of": "of",
+      "reviews": "reviews",
+      "prev": "Prev",
+      "next": "Next"
+    }
+  },
+  "share": {
+    "title": "Share this tool"
+  },
+  "metrics": {
+    "monthlyVisits": "Monthly Visits",
+    "growth": "Growth"
+  },
+  "tags": "Tags",
+  "overview": "Overview",
+  "howToUse": "How to Use",
+  "pricingPlans": "Pricing Plans",
+  "faqs": "FAQs",
+  "geoChart": {
+    "noData": "No geographic data available",
+    "loading": "Loading geographic data..."
+  },
+  "introduction": "Introduction",
+  "description": "Description",
+  "coreFeatures": "Core Features",
+  "useCases": "Use Cases",
+  "screenshots": "Screenshots",
+  "companyInfo": {
+    "companyName": "Company Name",
+    "contactEmail": "Contact Email"
+  },
+  "nav": {
+    "scrollLeft": "Scroll left",
+    "scrollRight": "Scroll right",
+    "previous": "Previous",
+    "next": "Next",
+    "imageSlide": "Image {index}",
+    "videoSlide": "Video slide"
+  },
+  "dummyReviews": {
+    "c1": "This is an amazing AI tool! It completely changed my workflow.",
+    "c2": "Very good features and easy to use. Highly recommended.",
+    "c3": "I've tried many alternatives, but this one is the best by far.",
+    "c4": "Excellent value for the price. The free plan is also very generous.",
+    "c5": "Great UI and intuitive design. Sometimes a bit slow, but overall fantastic.",
+    "c6": "A must-have tool for any professional. Saves me hours every week.",
+    "c7": "Good functionality but requires some learning curve."
+  }
+}

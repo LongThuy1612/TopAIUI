@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Zend je AI Tool In - TopAICollection",
+    "description": "Plaats uw AI-tool in de TopAICollection-directory en bereik miljoenen gebruikers die op zoek zijn naar AI-oplossingen."
+  },
+  "badge": "Lijst Je Tool",
+  "hero": {
+    "title": "Laat Uw AI Tool Ontdekken",
+    "subtitle": "Sluit u aan bij duizenden AI-tools in onze directory en bereik wereldwijd miljoenen potentiële gebruikers"
+  },
+  "benefits": {
+    "title": "Waarom op TopAICollection plaatsen?",
+    "traffic": {
+      "title": "Verhoogd Verkeer",
+      "description": "Krijg direct verkeer van gebruikers die actief zoeken naar AI-oplossingen"
+    },
+    "exposure": {
+      "title": "Wereldwijde Blootstelling",
+      "description": "Bereik gebruikers in 20+ talen in 100+ landen"
+    },
+    "credibility": {
+      "title": "Verbeterde Geloofwaardigheid",
+      "description": "Bouw vertrouwen op met een geverifieerde vermelding en gebruikersrecensies"
+    }
+  },
+  "pricing": {
+    "title": "Kies Je Plan",
+    "popular": "Meest Populair",
+    "basic": {
+      "name": "Basis Vermelding",
+      "price": "Gratis",
+      "features": {
+        "0": "Basis tool vermelding",
+        "1": "Categorie plaatsing",
+        "2": "Contactinformatie",
+        "3": "Basis analytics"
+      }
+    },
+    "featured": {
+      "name": "Aanbevolen Vermelding",
+      "price": "$ 99/maand",
+      "features": {
+        "0": "Alles van Basis",
+        "1": "Aanbevolen badge",
+        "2": "Prioriteit in zoekresultaten",
+        "3": "Plaatsing op de startpagina",
+        "4": "Geavanceerde analytics",
+        "5": "Promotie op sociale media"
+      }
+    },
+    "premium": {
+      "name": "Premium Vermelding",
+      "price": "$ 299/maand",
+      "features": {
+        "0": "Alles van Aanbevolen",
+        "1": "Top zoekplaatsing",
+        "2": "Opname in de nieuwsbrief",
+        "3": "Review in blogpost",
+        "4": "Video-showcase",
+        "5": "Toegewijde ondersteuning"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Tool Naam",
+    "namePlaceholder": "bijv. ChatGPT, DALL-E, Midjourney",
+    "website": "Website-URL",
+    "websitePlaceholder": "https://www.voorbeeld.com",
+    "categories": "Categorieën",
+    "selectCategory": "Selecteer een categorie",
+    "price": "$49 eenmalige kosten",
+    "submit": "Tool Indienen",
+    "success": {
+      "title": "Indiening Succesvol!",
+      "description": "Je tool is ingediend ter beoordeling.",
+      "redirecting": "Omleiden naar betaling..."
+    }
+  },
+  "form": {
+    "title": "Dien je Tool In",
+    "sections": {
+      "basic": "Basisinformatie",
+      "categorization": "Categorie & Tags",
+      "media": "Media Bestanden",
+      "plan": "Selecteer een Plan",
+      "contact": "Contactinformatie"
+    },
+    "fields": {
+      "name": {
+        "label": "Tool Naam",
+        "placeholder": "Mijn Geweldige AI Tool"
+      },
+      "url": {
+        "label": "Website-URL",
+        "placeholder": "https://voorbeeld.com"
+      },
+      "tagline": {
+        "label": "Slogan",
+        "placeholder": "Korte beschrijving van 100 tekens of minder"
+      },
+      "description": {
+        "label": "Beschrijving",
+        "placeholder": "Gedetailleerde beschrijving van uw AI tool (max 500 tekens)"
+      },
+      "category": {
+        "label": "Categorie",
+        "placeholder": "Selecteer een categorie",
+        "options": {
+          "productivity": "Productiviteit",
+          "business": "Zakelijk",
+          "development": "Ontwikkeling (Dev)",
+          "other": "Anders"
+        }
+      },
+      "tags": {
+        "label": "Labels",
+        "placeholder": "ai, productiviteit, automatisering (gescheiden door komma's)",
+        "hint": "Velden gescheiden door komma's"
+      },
+      "logo": {
+        "label": "Logo",
+        "placeholder": "Klik om te uploaden of sleep en zet neer",
+        "hint": "PNG of JPG, max 2MB"
+      },
+      "plan": {
+        "label": "Vermeldingsplan",
+        "placeholder": "Selecteer een plan"
+      },
+      "terms": {
+        "label": "Ik ga akkoord met de servicevoorwaarden en het privacybeleid"
+      },
+      "contact_name": {
+        "label": "Je naam",
+        "placeholder": "Bijv. Jan Jansen"
+      },
+      "contact_email": {
+        "label": "E-mailadres",
+        "placeholder": "bijv. john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "Door in te dienen, gaat u akkoord met onze Servicevoorwaarden en ons Privacybeleid.",
+      "freeSubmission": "Gratis Inzending."
+    },
+    "submit": "Tool Indienen",
+    "submitting": "Wordt verzonden...",
+    "success": {
+      "title": "Tool succesvol ingediend!",
+      "description": "We zullen je inzending beoordelen en binnen 48 uur contact met je opnemen."
+    },
+    "error": {
+      "title": "Inzending mislukt",
+      "description": "Controleer alle velden en probeer het opnieuw.",
+      "noSettings": "Instellingen voor verzending zijn niet beschikbaar. Probeer het later opnieuw."
+    },
+    "loginRequiredTitle": "Inloggen vereist",
+    "loginRequiredDesc": "Log in om een ​​tool in te dienen. Uw voortgang wordt pas opgeslagen nadat u zich heeft geverifieerd.",
+    "loginBtn": "Inloggen"
+  },
+  "categoriesPage": {
+    "searchCategory": "Categoriën zoeken…",
+    "noCategoryFound": "Geen categorieën gevonden."
+  },
+  "toolForm": {
+    "selectSubCategory": "Kies subcategorieën…",
+    "noSubCategory": "Geen subcategorieën aanwezig."
+  },
+  "errors": {
+    "general": "Er ging wat mis. Probeer het opnieuw."
+  },
+  "processing": "Verwerken...",
+  "sidebar": {
+    "toolCount": "5.000+ AI-tools",
+    "toolCountSub": "Doe mee aan onze groeiende directory",
+    "badgeDescription": "Je tool indienen is de eerste stap naar zichtbaarheid binnen de AI-community."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Kan de inzendingsgegevens niet laden.",
+      "noId": "Er is geen inzendings-ID opgegeven.",
+      "notFound": "Inzending niet gevonden."
+    },
+    "status": {
+      "paymentRequired": "Betaling vereist",
+      "paymentRequiredDesc": "Voltooi uw betaling om door te gaan met de beoordeling.",
+      "underReview": "Onder beoordeling",
+      "underReviewDesc": "Uw inzending wordt beoordeeld door ons team.",
+      "approved": "Goedgekeurd",
+      "approvedDesc": "Uw inzending is goedgekeurd en gepubliceerd.",
+      "received": "Ontvangen",
+      "receivedDesc": "Wij hebben uw inzending ontvangen."
+    },
+    "types": {
+      "submit": "Verzend AI-tool",
+      "advertise": "Adverteren",
+      "guestPost": "Gastpost",
+      "updateAI": "AI bijwerken"
+    },
+    "paymentAlert": "Om uw inzending te voltooien, is betaling vereist.",
+    "actions": {
+      "viewDashboard": "Dashboard bekijken"
+    }
+  },
+  "error": "Er is iets misgegaan. Probeer het opnieuw.",
+  "backToHome": "Terug naar Thuis",
+  "submissionSuccess": {
+    "title": "Titel",
+    "description": "Beschrijving"
+  },
+  "successTitle": "Succestitel",
+  "title": "Titel"
+}

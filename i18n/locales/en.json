@@ -35,7 +35,12 @@
     "browseByCategory": "Browse by category",
     "newestTools": "Newest tools",
     "featuredTools": "Featured tools",
-    "viewAll": "View all →"
+    "viewAll": "View all →",
+    "justLaunched": "Just launched",
+    "featuredThisWeek": "Featured this week",
+    "featuredThisWeekSubtitle": "The tools our community saved and rated most.",
+    "updatedDaily": "Updated daily",
+    "viewMore": "View more →"
   },
   "cta": {
     "title": "Have an AI tool to share?",

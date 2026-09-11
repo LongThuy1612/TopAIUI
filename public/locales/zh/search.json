@@ -1,0 +1,14 @@
+{
+  "title": "搜索结果",
+  "resultsFor": "“{query}”的结果",
+  "filters": "过滤器",
+  "typeFilters": "类型",
+  "categories": "类别",
+  "noResults": "没有找到结果",
+  "tryAgain": "请尝试不同的搜索词",
+  "placeholder": "搜索人工智能工具...",
+  "button": "搜索",
+  "loading": "正在寻找...",
+  "clearFilters": "清除过滤器",
+  "categoryLabel": "分类"
+}

@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Modelli AI e Dataset | TopAICollection",
+    "description": "Scopri ed esplora i modelli di IA, dataset e architetture più recenti per il tuo prossimo progetto."
+  },
+  "title": "Libreria dei Modelli IA",
+  "subtitle": "Esplora la più grande collezione di modelli di IA, affinamenti e dataset.",
+  "comingSoon": "Prossimamente!",
+  "comingSoonMessage": "Stiamo attualmente selezionando i migliori modelli di IA. Torna presto.",
+  "searchPlaceholder": "Cerca modelli IA...",
+  "allProviders": "Tutti i fornitori",
+  "noResults": "Nessun modello IA trovato",
+  "noResultsHint": "Prova a modificare i tuoi criteri di ricerca o filtro.",
+  "contextWindow": "Finestra di Contesto",
+  "parameters": "Parametri",
+  "provider": "Fornitore",
+  "architecture": "Architettura",
+  "releaseDate": "Data di Rilascio",
+  "costPer1kTokens": "Costo / 1K token",
+  "free": "Gratuito / Open Source",
+  "tokens": "token",
+  "viewWebsite": "Visita il Sito",
+  "modelsCount": "{count} modello IA",
+  "modelsCount_plural": "{count} modelli IA",
+  "modelsGridTitle": "Modelli di intelligenza artificiale"
+}

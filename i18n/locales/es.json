@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "Buscar herramientas de IA...",
+    "categories": "Categorías",
+    "rankings": "Rankings",
+    "submit": "Enviar una herramienta",
+    "admin": "Administrador"
+  },
+  "hero": {
+    "titlePrefix": "Descubre las mejores",
+    "titleHighlight": "herramientas de IA",
+    "subtitle": "Explora cientos de productos de IA por categoría, compara precios y encuentra la herramienta adecuada para tu flujo de trabajo.",
+    "searchPlaceholder": "Buscar herramientas de IA..."
+  },
+  "stats": {
+    "tools": "herramientas de IA listadas",
+    "categories": "Categorías",
+    "featured": "Herramientas destacadas"
+  },
+  "tabs": {
+    "heading": "Explorar herramientas",
+    "newest": "Nuevo",
+    "featured": "Más destacadas",
+    "free": "Gratis",
+    "viewAll": "Ver todo →"
+  },
+  "announcement": {
+    "featured": "Destacado"
+  },
+  "sidebar": {
+    "featuredTools": "Herramientas destacadas",
+    "topCategories": "Categorías principales"
+  },
+  "sections": {
+    "browseByCategory": "Explorar por categoría",
+    "newestTools": "Herramientas más recientes",
+    "featuredTools": "Herramientas destacadas",
+    "viewAll": "Ver todo →",
+    "justLaunched": "Recién lanzadas",
+    "featuredThisWeek": "Destacadas esta semana",
+    "featuredThisWeekSubtitle": "Las herramientas que nuestra comunidad más guardó y valoró.",
+    "updatedDaily": "Actualizado a diario",
+    "viewMore": "Ver más →"
+  },
+  "cta": {
+    "title": "¿Tienes una herramienta de IA para compartir?",
+    "subtitle": "Publícala frente a personas que buscan herramientas como la tuya.",
+    "button": "Envía tu herramienta"
+  },
+  "empty": {
+    "noTools": "Aún no hay herramientas — ejecuta",
+    "noResults": "No se encontraron herramientas"
+  },
+  "category": {
+    "breadcrumbHome": "Inicio",
+    "allTools": "Todas las herramientas",
+    "allToolsTitle": "Todas las herramientas de IA",
+    "allPricing": "Todos los precios",
+    "sortNewest": "Más recientes primero",
+    "sortFeatured": "Destacadas primero",
+    "sortName": "Nombre A–Z",
+    "toolsFound": "herramienta encontrada | herramientas encontradas",
+    "searchPlaceholder": "Buscar herramientas...",
+    "filters": "Filtros",
+    "viewGrid": "Vista de cuadrícula",
+    "viewList": "Vista de lista"
+  },
+  "pricing": {
+    "FREE": "Gratis",
+    "FREEMIUM": "Freemium",
+    "PAID": "De pago"
+  },
+  "ranking": {
+    "title": "Mejores herramientas de IA",
+    "subtitle": "Clasificadas según los datos de tráfico y crecimiento registrados en nuestro directorio.",
+    "byGrowth1m": "Crecimiento en 1 mes",
+    "byGrowth3m": "Crecimiento en 3 meses",
+    "byGrowth6m": "Crecimiento en 6 meses",
+    "byTraffic": "Visitas mensuales",
+    "colRank": "Posición",
+    "colTool": "Herramienta",
+    "colVisits": "Visitas mensuales",
+    "colGrowth": "Crecimiento",
+    "colAuthority": "Autoridad de dominio",
+    "colCategory": "Categoría",
+    "noData": "Aún no hay datos de clasificación."
+  },
+  "tool": {
+    "openSite": "Abrir sitio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "featured": "Destacado",
+    "introduction": "Introducción",
+    "addedOn": "Añadido el",
+    "monthlyVisitors": "Visitantes mensuales",
+    "features": "Funciones clave",
+    "useCases": "Casos de uso",
+    "prosAndCons": "Pros y contras",
+    "pros": "Ventajas",
+    "cons": "Desventajas",
+    "faq": "Preguntas frecuentes",
+    "alternatives": "Alternativas a",
+    "backToCategory": "Volver a",
+    "notFound": "Herramienta no encontrada",
+    "similarTools": "Herramientas similares",
+    "tabProductInfo": "Información del producto",
+    "tabPricing": "Precios",
+    "tabReviews": "Opiniones",
+    "tabAnalytics": "Analítica",
+    "tabAlternatives": "Alternativas",
+    "productInformationHeading": "Información del producto {name}",
+    "whatIs": "¿Qué es {name}?",
+    "howToUseHeading": "¿Cómo usar {name}?",
+    "reviewsHeading": "Opiniones de {name} ({count})",
+    "ratingPrompt": "¿Recomendarías {name}? Deja un comentario",
+    "whatDoYouThink": "¿Qué opinas?",
+    "loginToComment": "Inicia sesión para comentar",
+    "pricingHeading": "Precios de {name}",
+    "noPricingYet": "Aún no hay información de precios.",
+    "analyticsHeading": "Analítica de {name}",
+    "trafficAnalysis": "Análisis de tráfico del sitio {name}",
+    "visitOverTime": "Visitas a lo largo del tiempo",
+    "monthlyVisits": "Visitas mensuales",
+    "avgVisitDuration": "Duración media de la visita",
+    "pagePerVisit": "Páginas por visita",
+    "bounceRate": "Tasa de rebote",
+    "noTrafficYet": "Aún no hay datos de tráfico.",
+    "badgeVerified": "Verificado",
+    "badgeJustLaunched": "Recién lanzado",
+    "badgeFreeTool": "Herramienta gratuita",
+    "affiliateLink": "Enlace de afiliado",
+    "couponCode": "Código de descuento",
+    "ratings": "valoraciones",
+    "upvotes": "votos positivos",
+    "domainAuthority": "Autoridad de dominio",
+    "trafficRank": "Clasificación de tráfico",
+    "viewCount": "Visualizaciones"
+  },
+  "footer": {
+    "tagline": "Descubre, compara y comparte las mejores herramientas de IA — creado con Nuxt y PostgreSQL.",
+    "product": "Producto",
+    "home": "Inicio",
+    "allTools": "Todas las herramientas",
+    "submit": "Enviar una herramienta",
+    "categories": "Categorías",
+    "company": "Empresa",
+    "admin": "Acceso de administrador",
+    "language": "Idioma",
+    "copyright": "Todos los derechos reservados."
+  },
+  "language": {
+    "label": "Idioma"
+  }
+}

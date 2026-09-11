@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Contáctenos - TopAICollection",
+    "description": "Póngase en contacto con el equipo de TopAICollection. Estamos aquí para ayudarle con cualquier pregunta sobre las herramientas de IA."
+  },
+  "title": "Contáctenos",
+  "subtitle": "¿Tiene alguna pregunta o comentario? Nos encantaría saber de usted. Nuestro equipo normalmente responde dentro de las 24 horas.",
+  "form": {
+    "title": "Envíanos un mensaje",
+    "fields": {
+      "name": {
+        "label": "Su nombre",
+        "placeholder": "Juan Pérez"
+      },
+      "email": {
+        "label": "Dirección de correo electrónico",
+        "placeholder": "juan@ejemplo.com"
+      },
+      "subject": {
+        "label": "Sujeto",
+        "placeholder": "Seleccione un tema",
+        "options": {
+          "general": "Consulta general",
+          "support": "Apoyo técnico",
+          "feedback": "Comentario",
+          "partnership": "Oportunidad de asociación",
+          "other": "Otro"
+        }
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Cuéntanos qué tienes en mente..."
+      }
+    },
+    "submit": "Enviar mensaje",
+    "submitting": "Envío...",
+    "success": {
+      "title": "¡Mensaje enviado exitosamente!",
+      "description": "Hemos recibido su mensaje y nos comunicaremos con usted pronto."
+    },
+    "error": {
+      "title": "No se pudo enviar el mensaje",
+      "description": "Algo salió mal. Inténtelo de nuevo más tarde."
+    }
+  },
+  "info": {
+    "title": "Ponte en contacto",
+    "email": {
+      "title": "Envíenos un correo electrónico",
+      "content": "soporte@topaicollection.com"
+    },
+    "support": {
+      "title": "Horas de soporte",
+      "content": "Nuestro equipo de soporte está disponible de lunes a viernes."
+    },
+    "hours": {
+      "title": "Horario comercial",
+      "content": "9:00 a. m. - 6:00 p. m. hora del Este"
+    },
+    "location": {
+      "title": "Ubicación",
+      "content": "Sirviendo a los usuarios globalmente desde nuestro equipo distribuido"
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Cómo envío mi herramienta de IA?",
+    "a1": "Haga clic en el botón Enviar herramienta en la navegación y complete el formulario de envío.",
+    "q2": "¿Cuánto tiempo lleva la aprobación?",
+    "a2": "La mayoría de los envíos se revisan en un plazo de 1 a 3 días hábiles.",
+    "q3": "¿Puedo actualizar mi listado de herramientas?",
+    "a3": "Sí, inicie sesión en su panel y use la función Actualizar IA."
+  }
+}

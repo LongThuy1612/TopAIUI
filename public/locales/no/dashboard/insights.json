@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Nettstedsinnsikt",
+    "subtitle": "Spor konkurrenters trafikk og nøkkelord.",
+    "track": "Spor",
+    "noDomains": "Ingen domener spores ennå. Legg til en over!",
+    "domain": "Domene",
+    "monthlyVisits": "Månedlige besøk",
+    "rank": "Rangering",
+    "topKeywords": "Topp nøkkelord",
+    "added": "Lagt til",
+    "tool": "Verktøy",
+    "organicClicks": "Organiske klikk",
+    "paidClicks": "Betalt klikk",
+    "totalClicks": "Totalt antall klikk",
+    "addedOn": "Lagt til",
+    "noTools": "Ingen verktøy sporet ennå.",
+    "addDomainDesc": "Legg til ditt første domene ovenfor for å begynne å spore innsikt.",
+    "deleteSuccess": "Domene fjernet fra sporing",
+    "confirmDelete": "Er du sikker på at du vil slutte å spore dette domenet?",
+    "aiTool": "AI-verktøy",
+    "rankChange": "Rangeringsendring",
+    "globalRank": "Global rangering",
+    "traffic": "Trafikk",
+    "audience": "Publikum",
+    "updateDate": "Oppdateringsdato",
+    "quota": "Kvote",
+    "limitReachedDesc": "Du har nådd grensen for månedlig innsikt. Oppgrader for å spore flere domener.",
+    "limitReachedTitle": "Du har nådd grensen din",
+    "limitReachedBody": "Du har nådd grensen for gratis søk. Oppgrader for å få ubegrenset tilgang.",
+    "upgradePro": "Oppgrader til Pro-plan",
+    "upgradeNow": "Oppgrader nå",
+    "usage": "Bruk",
+    "searchPlaceholder": "Søk etter sporede domener...",
+    "advancedFilter": "Avanserte filtre",
+    "bulkOpen": "Bulk åpen",
+    "export": "Eksporter data",
+    "actions": "Handlinger",
+    "viewSocial": "Se Sosialt",
+    "filters": {
+      "months": {
+        "feb2026": "februar 2026",
+        "jan2026": "Jan 2026"
+      },
+      "sources": {
+        "search": "Søk",
+        "direct": "Direkte",
+        "social": "sosial"
+      },
+      "regions": {
+        "us": "oss",
+        "vn": "Vn"
+      },
+      "categories": {
+        "llm": "LLM",
+        "image": "Bilde",
+        "productivity": "Produktivitet"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100k",
+        "1m": "1m"
+      },
+      "timePeriod": "Tidsperiode",
+      "selectMonth": "Velg måned",
+      "trafficSource": "Trafikkkilde",
+      "allSources": "Alle kilder",
+      "category": "Kategori",
+      "trafficThreshold": "Trafikkterskel",
+      "minVisits": "Min. besøk",
+      "region": "Region"
+    },
+    "exportSuccess": "Vellykket eksport.",
+    "exportFailed": "Eksport mislyktes.",
+    "exportData": "Eksporter data",
+    "exportDesc": "Eksporter denne rapporten for deling eller analyse lokalt.",
+    "exportLimit": "Eksportgrense",
+    "rows": "rader",
+    "creditsCost": "Kredittkostnad",
+    "availableAfter": "Tilgjengelig etter",
+    "confirmExport": "Bekreft eksport",
+    "notEnoughCredits": "Ikke nok kreditter",
+    "removeFailed": "Fjerning mislyktes.",
+    "direct": "Direkte",
+    "sortDefault": "Standard",
+    "sortTraffic": "Trafikk"
+  },
+  "common": {
+    "allCategories": "Alle kategorier",
+    "global": "Global"
+  },
+  "table": {
+    "column": {
+      "tool": "Verktøy",
+      "organic": "Organiske klikk",
+      "paid": "Betalte klikk",
+      "total": "«Totalt antall klikk»",
+      "trend": "Trend",
+      "growth": "Vekst"
+    },
+    "searchPlaceholder": "Søk etter sporede domener ...",
+    "showingResults": "Viser {count} resultater",
+    "empty": "Ingen domener sporet ennå."
+  }
+}

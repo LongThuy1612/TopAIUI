@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} AI-työkalut | Löydä parhaat {tagName} -ratkaisut",
+    "description": "Tutustu valikoituun kokoelmaamme parhaista {tagName} AI-työkaluista. Vertaile ominaisuuksia, hintoja ja arvosteluja löytääksesi täydellisen {tagName}-ohjelmiston tarpeisiisi."
+  },
+  "notFound": {
+    "metaTitle": "Tunnistetta ei löydy | TopAICollection",
+    "metaDescription": "Etsimääsi tagia ei ole. Löydä muita tekoälytyökaluja."
+  },
+  "breadcrumb": {
+    "home": "Kotiin",
+    "tools": "Työkalut"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} AI-työkalut",
+    "collectionDescription": "Selaa {tagName} AI-työkalujen hakemistoamme."
+  }
+}

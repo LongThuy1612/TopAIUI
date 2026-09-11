@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Cookie Policy - TopAICollection",
+    "description": "Learn about how TopAICollection uses cookies and similar technologies."
+  },
+  "title": "Cookie Policy",
+  "lastUpdated": "Last updated",
+  "sections": {
+    "whatAreCookies": {
+      "title": "What Are Cookies",
+      "description": "Cookies are small text files that are stored on your computer or mobile device when you visit our website. They help us provide you with a better experience by remembering your preferences and understanding how you use our site."
+    },
+    "howWeUse": {
+      "title": "How We Use Cookies",
+      "intro": "We use cookies for the following purposes:",
+      "essential": "Essential Cookies: Required for the website to function properly, including authentication and security.",
+      "analytics": "Analytics Cookies: Help us understand how visitors interact with our website.",
+      "preference": "Preference Cookies: Remember your settings and preferences, such as language and locale.",
+      "marketing": "Marketing Cookies: Used to deliver relevant advertisements and track campaign performance."
+    },
+    "managing": {
+      "title": "Managing Cookies",
+      "intro": "Most web browsers allow you to control cookies through their settings. You can choose to:",
+      "blockAll": "Block all cookies",
+      "acceptAll": "Accept all cookies",
+      "beNotified": "Be notified when a cookie is set",
+      "deleteExisting": "Delete cookies that have already been set",
+      "note": "Please note that blocking certain cookies may impact your experience on our website."
+    },
+    "thirdParty": {
+      "title": "Third-Party Cookies",
+      "intro": "Some cookies on our site are set by third-party services we use, including:",
+      "googleAnalytics": "Google Analytics (analytics)",
+      "vercel": "Vercel (hosting and analytics)"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "message": "If you have questions about our use of cookies, please",
+      "contactLink": "contact us"
+    }
+  }
+}

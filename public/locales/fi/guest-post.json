@@ -1,0 +1,46 @@
+{
+  "title": "Vierasviesti ja linkin lisäys",
+  "description": "Jaa asiantuntemuksesi yhteisömme kanssa vierailevien viestien kautta tai pyydä strategisten linkkien lisäämistä olemassa olevaan sisältöön.",
+  "details": "Vierasviestin tiedot",
+  "postTitle": "Viestin otsikko",
+  "postTitlePlaceholder": "Vierasviestisi otsikko",
+  "postContent": "Lähetä sisältö tai tiedot",
+  "postContentPlaceholder": "Kuvaile vierasviestisi sisältöä tai linkin lisäystietoja",
+  "features": {
+    "guestPosts": {
+      "title": "Vierasviestit",
+      "description": "Jaa tietosi ja näkemyksesi tekoälystä yhteisömme kanssa. Rakenna auktoriteettia ja ohjaa liikennettä verkkosivustollesi."
+    },
+    "linkInsertion": {
+      "title": "Linkin lisäys",
+      "description": "Pyydä linkkien strategista sijoittamista olemassa olevaan asiaankuuluvaan sisältöön saadaksesi maksimaalisen SEO-arvon."
+    },
+    "seoBacklinks": {
+      "title": "SEO käänteiset linkit",
+      "description": "Paranna SEO-sijoituksiasi laadukkailla käänteislinkeillä arvovaltaisesta verkkotunnuksestamme."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Sisältösäännöt",
+    "description": "Kaikkien vierasviestien on oltava alkuperäisiä, laadukkaita ja tekoälyn kannalta osuvia. Emme hyväksy tekoälyn luomaa sisältöä ilman ihmisen muokkaamaa sisältöä."
+  },
+  "meta": {
+    "title": "Vierasviestit ja linkkien lisäykset | Suosituin AI-kokoelma",
+    "description": "Jaa asiantuntemuksesi tekoälyyhteisömme kanssa vierailevien viestien avulla tai pyydä strategisten linkkien lisäämistä olemassa olevaan sisältöön."
+  },
+  "validation": {
+    "required": "Tämä kenttä on pakollinen",
+    "titleTooShort": "Otsikon on oltava vähintään 5 merkkiä pitkä",
+    "contentTooShort": "Sisällön tulee olla vähintään 20 merkkiä pitkä",
+    "toolNameRequired": "Työkalun nimi vaaditaan",
+    "url": "Virheellinen URL-osoite",
+    "descriptionMin": "Kuvauksen tulee olla vähintään 10 merkkiä pitkä",
+    "categoryRequired": "Valitse luokka",
+    "email": "Virheellinen sähköpostiosoite",
+    "messageMin": "Viestin tulee olla vähintään 10 merkkiä pitkä"
+  },
+  "sidebar": {
+    "articleCount": "Yli 1 000 artikkelia",
+    "articleCountSub": "Yhteisömme julkaisema"
+  }
+}

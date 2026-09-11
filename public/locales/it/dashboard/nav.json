@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Torna alla Dashboard",
+    "backToHome": "Torna alla Home",
+    "dashboard": "Cruscotto",
+    "websiteInsights": "Analisi Sito",
+    "socialListening": "Ascolto sociale",
+    "researchReport": "Rapporto di Ricerca",
+    "myAis": "Le mie IA",
+    "favorites": "Preferiti",
+    "profileSettings": "Impostazioni Profilo",
+    "advertise": "Pubblicità",
+    "postsLinks": "Post & Link",
+    "paymentInvoice": "Pagamento & Fattura",
+    "overview": "Panoramica",
+    "myInquiries": "Le mie domande"
+  },
+  "logout": "Esci",
+  "logoutConfirmTitle": "Disconnetti",
+  "logoutConfirmDescription": "Sei sicuro di voler disconnetterti?",
+  "upgrade": "Migliora",
+  "sections": {
+    "research": "RICERCA",
+    "management": "GESTIONE",
+    "business": "ATTIVITA",
+    "admin": "AMMINISTRATORE",
+    "guestPost": "Messaggi degli ospiti",
+    "updateAi": "Aggiorna l'IA",
+    "myGpts": "I miei GPT"
+  },
+  "help": "Aiuto",
+  "close": "Chiudi",
+  "status": {
+    "active": "Attivo"
+  },
+  "advertiseAi": "Pubblicizza l'intelligenza artificiale",
+  "myAis": {
+    "title": "Le mie IA",
+    "subtitle": "Gestisci e monitora le prestazioni degli strumenti AI inviati.",
+    "empty": {
+      "cta": "Invia strumento AI"
+    }
+  }
+}

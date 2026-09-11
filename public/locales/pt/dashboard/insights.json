@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Insights do Website",
+    "subtitle": "Acompanhe o tráfego e as palavras-chave da concorrência.",
+    "track": "Acompanhar",
+    "noDomains": "Nenhum domínio acompanhado ainda. Adicione um acima!",
+    "domain": "Domínio",
+    "monthlyVisits": "Visitas Mensais",
+    "rank": "Classificação",
+    "topKeywords": "Palavras-chave Principais",
+    "added": "Adicionado",
+    "tool": "Ferramenta",
+    "organicClicks": "Cliques orgânicos",
+    "paidClicks": "Cliques pagos",
+    "totalClicks": "Total de cliques",
+    "addedOn": "Adicionado em",
+    "noTools": "Nenhuma ferramenta rastreada ainda.",
+    "addDomainDesc": "Adicione seu primeiro domínio acima para começar a rastrear insights.",
+    "deleteSuccess": "Domínio removido do rastreamento",
+    "confirmDelete": "Tem certeza de que deseja parar de rastrear este domínio?",
+    "aiTool": "Ferramenta de IA",
+    "rankChange": "Mudança de classificação",
+    "globalRank": "Classificação Global",
+    "traffic": "Tráfego",
+    "audience": "Público",
+    "updateDate": "Data de atualização",
+    "quota": "Contingente",
+    "limitReachedDesc": "Você atingiu seu limite mensal de insights. Atualize para rastrear mais domínios.",
+    "limitReachedTitle": "Você atingiu seu limite",
+    "limitReachedBody": "Você atingiu seu limite de pesquisas gratuitas. Atualize para obter acesso ilimitado.",
+    "upgradePro": "Atualize para o plano Pro",
+    "upgradeNow": "Atualize agora",
+    "usage": "Uso",
+    "searchPlaceholder": "Pesquisar domínios rastreados...",
+    "advancedFilter": "Filtros Avançados",
+    "bulkOpen": "Abertura em massa",
+    "export": "Exportar dados",
+    "actions": "Ações",
+    "viewSocial": "Ver redes sociais",
+    "filters": {
+      "months": {
+        "feb2026": "fevereiro de 2026",
+        "jan2026": "Janeiro de 2026"
+      },
+      "sources": {
+        "social": "Sociais",
+        "search": "Pesquisar",
+        "direct": "Direto"
+      },
+      "regions": {
+        "us": "Nós",
+        "vn": "Vietnã"
+      },
+      "categories": {
+        "llm": "Lm",
+        "image": "Imagem",
+        "productivity": "Produtividade"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100 mil",
+        "1m": "1 mês"
+      },
+      "timePeriod": "Período de Tempo",
+      "selectMonth": "Selecionar Mês",
+      "trafficSource": "Fonte de tráfego",
+      "allSources": "Todas as fontes",
+      "region": "Região",
+      "category": "Categoria",
+      "trafficThreshold": "Limite de tráfego",
+      "minVisits": "Visitas mínimas"
+    },
+    "exportSuccess": "Exportado com sucesso.",
+    "exportFailed": "A exportação falhou.",
+    "exportData": "Exportar dados",
+    "exportDesc": "Exporte este relatório para compartilhar ou analisar localmente.",
+    "exportLimit": "Limite de exportação",
+    "rows": "Filas",
+    "creditsCost": "“Custo de Créditos”",
+    "availableAfter": "Disponível depois",
+    "confirmExport": "Confirmar exportação",
+    "notEnoughCredits": "Créditos insuficientes",
+    "removeFailed": "A remoção falhou.",
+    "direct": "Direto",
+    "sortDefault": "Padrão",
+    "sortTraffic": "Tráfego"
+  },
+  "common": {
+    "allCategories": "Todas as categorias",
+    "global": "Global"
+  },
+  "table": {
+    "column": {
+      "tool": "Ferramenta",
+      "organic": "Cliques Orgânicos",
+      "paid": "Cliques pagos",
+      "total": "Total de cliques",
+      "trend": "Tendência",
+      "growth": "Crescimento"
+    },
+    "searchPlaceholder": "Pesquisar domínios rastreados...",
+    "showingResults": "Mostrando resultados {count}",
+    "empty": "Nenhum domínio rastreado ainda."
+  }
+}

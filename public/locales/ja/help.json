@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "ヘルプセンター - TopAICollection サポート",
+    "description": "TopAICollection のヘルプを参照してください。よくある質問に対する回答を見つけて、サポート チームにお問い合わせください。"
+  },
+  "title": "ヘルプセンター",
+  "subtitle": "今日はどのようにお手伝いできるでしょうか?",
+  "sections": {
+    "faq": {
+      "title": "よくある質問",
+      "description": "よくある質問への回答を見つけます。",
+      "link": "よくある質問を見る"
+    },
+    "contact": {
+      "title": "サポートに連絡する",
+      "description": "必要なものが見つかりませんか?ご連絡ください。",
+      "link": "お問い合わせ"
+    }
+  },
+  "commonTopics": {
+    "title": "よくあるトピック",
+    "submitTool": "AI ツールを提出するにはどうすればよいですか?",
+    "advertising": "広告はどのように機能するのでしょうか?",
+    "privacy": "あなたのプライバシーポリシーは何ですか?",
+    "terms": "利用規約は何ですか?"
+  }
+}

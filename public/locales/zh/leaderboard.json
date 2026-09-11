@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "《每日排行榜》",
+      "title_long": "《每日AI工具排行榜》"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "《每月排行榜》",
+      "title_long": "《每月AI工具排行榜》"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "《年度排行榜》",
+      "title_long": "《年度人工智能工具排行榜》"
+    }
+  }
+}

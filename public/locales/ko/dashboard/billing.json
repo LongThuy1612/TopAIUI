@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "결제 및 송장",
+    "description": "크레딧을 관리하고 주문 내역을 확인하세요.",
+    "adCredits": "광고 크레딧",
+    "postCredits": "게시물 크레딧",
+    "linkCredits": "링크 크레딧",
+    "forSponsoredListings": "스폰서 등록용",
+    "forGuestArticles": "게스트 기사용",
+    "forLinkInsertions": "링크 삽입용",
+    "buyCredits": "크레딧 구매",
+    "noOrders": "주문 내역이 없습니다.",
+    "orderHistory": "주문 내역",
+    "orderId": "주문 ID",
+    "amount": "금액",
+    "status": "상태",
+    "date": "날짜",
+    "type": "유형",
+    "invoice": "송장",
+    "download": "다운로드",
+    "currentPlan": "현재 플랜",
+    "freeTier": "무료 티어",
+    "freeTierDesc": "더 많은 기능과 인사이트를 위해 플랜을 업그레이드하세요.",
+    "creditBalances": "크레딧 잔액",
+    "subscriptionDetails": "구독 정보",
+    "upgradePlan": "플랜 업그레이드",
+    "credits": "크레딧",
+    "managePortal": "결제 포털 관리",
+    "subscribe": "지금 구독",
+    "statusActive": "활동적인",
+    "planMemberSince": "이 플랜의 회원",
+    "renewalDate": "갱신 날짜",
+    "changePlan": "계획 변경",
+    "redirecting": "리디렉션 중...",
+    "errorFetchingPortal": "결제 포털을 열 수 없습니다."
+  },
+  "plans": {
+    "free": {
+      "name": "무료"
+    },
+    "professional": {
+      "name": "프로페셔널"
+    },
+    "enterprise": {
+      "name": "엔터프라이즈"
+    }
+  },
+  "transactions": {
+    "noDescription": "광고 크레딧 거래가 여기에 표시됩니다."
+  }
+}

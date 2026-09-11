@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "所有人工智能工具 - TopAICollection",
+    "description": "浏览我们完整的人工智能工具集。按类别、受欢迎程度进行过滤，或查找最新的人工智能创新。",
+    "archiveMonthTitle": "人工智能工具 — {label} |TopAICollection",
+    "archiveMonthDescription": "浏览{label}中添加的AI工具。",
+    "archiveYearTitle": "人工智能工具 — {year} |TopAICollection",
+    "archiveYearDescription": "浏览 {year} 添加的 AI 工具。",
+    "categoryTitle": "{category} 人工智能工具 |TopAICollection",
+    "categoryDescription": "探索最好的{category}人工智能工具。",
+    "freeTitle": "免费人工智能工具 | {title}",
+    "freeDescription": "在线发现最好的免费人工智能工具。 {description}",
+    "newestTitle": "最新的人工智能工具 | {title}",
+    "newestDescription": "查看我们收藏中添加的最新人工智能工具。"
+  },
+  "title": "探索所有人工智能工具",
+  "subtitle": "从我们全面的产品系列中发现完美的人工智能解决方案",
+  "filters": {
+    "all": "所有工具",
+    "today": "今天",
+    "featured": "精选",
+    "new": "刚刚推出",
+    "mostSaved": "最得救",
+    "mostUsed": "最常用",
+    "trending": "流行趋势",
+    "justLaunched": "刚刚推出",
+    "title": "过滤器",
+    "category": "类别",
+    "allCategories": "所有类别",
+    "type": "类型",
+    "popular": "受欢迎的",
+    "newest": "最新",
+    "name": "姓名",
+    "price": "价格",
+    "free": "自由的",
+    "paid": "有薪酬的",
+    "sortBy": "排序方式"
+  },
+  "sort": {
+    "label": "排序方式",
+    "popular": "最受欢迎",
+    "trending": "流行趋势",
+    "newest": "最新第一",
+    "rating": "最高评价",
+    "name": "按字母顺序"
+  },
+  "categories": {
+    "title": "类别",
+    "all": "所有类别",
+    "showMore": "显示更多 →",
+    "toolCount": "{count} 个工具"
+  },
+  "results": {
+    "showing": "显示 {start}-{end} 个工具（共 {total} 个）",
+    "error": "加载工具时出错。请再试一次。",
+    "noResults": "未找到结果",
+    "tryDifferent": "请尝试不同的关键词或过滤条件。"
+  },
+  "pagination": {
+    "next": "下一个",
+    "page": "页{page}"
+  },
+  "sidebar": {
+    "trending": "现在流行",
+    "noTools": "没有趋势工具",
+    "advertise": "在这里做广告",
+    "advertiseDesc": "每月覆盖超过 500 万人工智能爱好者并增加您的访问量",
+    "emailPlaceholder": "电子邮件"
+  },
+  "hero": {
+    "title": "发现最新的人工智能工具",
+    "subtitle": "27,955 个 AI 和 459 个类别",
+    "searchPlaceholder": "搜索人工智能工具...",
+    "search": "搜索"
+  },
+  "breadcrumb": {
+    "home": "家",
+    "tools": "工具"
+  },
+  "jsonLd": {
+    "name": "人工智能工具目录",
+    "description": "浏览我们完整的人工智能工具目录。"
+  },
+  "badges": {
+    "featured": "精选",
+    "new": "新的",
+    "trending": "流行趋势",
+    "popular": "受欢迎的",
+    "sponsored": "赞助"
+  },
+  "share": "分享",
+  "visits": "访问量",
+  "monthlyVisits": "预计每月访问量",
+  "visit": "访问",
+  "actions": {
+    "save": "节省",
+    "saved": "已保存",
+    "visit": "访问",
+    "share": "分享",
+    "copyLink": "复制链接",
+    "shareThisTool": "分享这个工具"
+  },
+  "growth": "生长",
+  "pricing": {
+    "free": "自由的"
+  }
+}

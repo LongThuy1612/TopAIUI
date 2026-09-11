@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "Daglig ledertavle",
+      "title_long": "Daglig lederliste for AI-verktøy"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "Månedlig ledertavle",
+      "title_long": "Månedlig lederliste for AI-verktøy"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "Årlig ledertavle",
+      "title_long": "Årlig AI Tools Leaderboard"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "about": "О нас",
+  "contact": "Контакт",
+  "blog": "Блог",
+  "privacy": "политика конфиденциальности",
+  "terms": "Условия использования",
+  "cookies": "Политика использования файлов cookie",
+  "copyright": "© {year} TopAICollection. Все права защищены.",
+  "sitemap": "Карта сайта",
+  "resources": "Ресурсы",
+  "help": "Справочный центр",
+  "faq": "Часто задаваемые вопросы",
+  "submitTool": "Отправить инструмент",
+  "description": "TopAICollection — это идеальный каталог для поиска лучших инструментов и веб-сайтов искусственного интеллекта.",
+  "browseByAlphabet": "Просмотр по алфавиту",
+  "topAITools": {
+    "title": "Лучшие инструменты искусственного интеллекта",
+    "items": {
+      "gpt4": "ГПТ-4",
+      "midjourney": "Середина пути",
+      "chatgpt": "ЧатGPT ChatGPT",
+      "stableDiffusion": "Стабильная диффузия",
+      "jasper": "Джаспер"
+    }
+  },
+  "moreTools": {
+    "title": "Дополнительные инструменты",
+    "items": {
+      "audio": "Аудио ИИ",
+      "video": "Видео ИИ",
+      "writing": "Написание ИИ",
+      "image": "Изображение AI",
+      "coding": "Кодирование ИИ"
+    }
+  },
+  "recommend": {
+    "title": "Рекомендовать",
+    "items": {
+      "newest": "Новейшие инструменты",
+      "mostSaved": "Самый сохраненный",
+      "trending": "В тренде сейчас",
+      "editorsChoice": "Выбор редакции",
+      "featured": "Рекомендуемые",
+      "leaderboard": "Таблица лидеров"
+    }
+  },
+  "readMore": {
+    "title": "Читать далее",
+    "items": {
+      "blog": "Блог",
+      "news": "Новости ИИ",
+      "guides": "Путеводители",
+      "tutorials": "Учебники",
+      "glossary": "Глоссарий ИИ"
+    }
+  },
+  "company": {
+    "title": "О",
+    "items": {
+      "aboutUs": "О нас",
+      "contact": "Деловой контакт",
+      "editorialGuidelines": "Редакционные рекомендации",
+      "reviewMethodology": "Методология обзора",
+      "submit": "Отправить",
+      "advertise": "Реклама"
+    }
+  },
+  "chooseLanguage": "Выберите язык",
+  "followUs": "Подписывайтесь на нас",
+  "more": "Более...",
+  "directory": {
+    "title": "Архив каталога инструментов AI"
+  },
+  "companyInfo": {
+    "name": "ТопАИКоллекция Инк.",
+    "address": "«Технический район Силиконовой долины»",
+    "city": "«Сан-Франциско, Калифорния 94107»",
+    "country": "«Соединенные Штаты»",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Генераторы видео",
+      "imageGenerators": "Генераторы изображений",
+      "writers": "Писатели",
+      "seoTools": "Seo-инструменты",
+      "websiteBuilders": "Конструкторы сайтов",
+      "chatbots": "Чат-боты"
+    }
+  }
+}

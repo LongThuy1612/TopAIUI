@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Đăng Công Cụ AI Của Bạn - TopAICollection",
+    "description": "Đưa công cụ AI của bạn lên danh bạ TopAICollection và tiếp cận hàng triệu người dùng đang tìm kiếm giải pháp AI."
+  },
+  "badge": "Đăng Công Cụ Của Bạn",
+  "hero": {
+    "title": "Giúp Công Cụ AI Của Bạn Được Khám Phá",
+    "subtitle": "Tham gia cùng hàng ngàn công cụ AI trong danh bạ của chúng tôi và tiếp cận hàng triệu người dùng tiềm năng trên toàn thế giới"
+  },
+  "benefits": {
+    "title": "Tại sao nên đăng trên TopAICollection?",
+    "traffic": {
+      "title": "Tăng Lượng Truy Cập",
+      "description": "Nhận lượng truy cập trực tiếp từ những người dùng đang tích cực tìm kiếm giải pháp AI"
+    },
+    "exposure": {
+      "title": "Tiếp Cận Toàn Cầu",
+      "description": "Tiếp cận người dùng bằng hơn 20 ngôn ngữ tại hơn 100 quốc gia"
+    },
+    "credibility": {
+      "title": "Nâng Cao Uy Tín",
+      "description": "Xây dựng lòng tin với danh sách đã xác minh và đánh giá từ người dùng"
+    }
+  },
+  "pricing": {
+    "title": "Chọn Gói Của Bạn",
+    "popular": "Phổ biến nhất",
+    "basic": {
+      "name": "Gói Cơ Bản",
+      "price": "Miễn phí",
+      "features": {
+        "0": "Đăng công cụ cơ bản",
+        "1": "Xếp vào danh mục",
+        "2": "Thông tin liên hệ",
+        "3": "Thông kê cơ bản"
+      }
+    },
+    "featured": {
+      "name": "Gói Nổi Bật",
+      "price": "$99/tháng",
+      "features": {
+        "0": "Tất cả tính năng của Gói Cơ Bản",
+        "1": "Huy hiệu Nổi Bật",
+        "2": "Ưu tiên trong kết quả tìm kiếm",
+        "3": "Hiển thị trên trang chủ",
+        "4": "Thống kê nâng cao",
+        "5": "Quảng bá trên mạng xã hội"
+      }
+    },
+    "premium": {
+      "name": "Gói Cao Cấp",
+      "price": "$299/tháng",
+      "features": {
+        "0": "Tất cả tính năng của Gói Nổi Bật",
+        "1": "Vị trí tìm kiếm hàng đầu",
+        "2": "Đưa vào bản tin email",
+        "3": "Được đánh giá qua bài viết blog",
+        "4": "Video giới thiệu",
+        "5": "Hỗ trợ chuyên dụng"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Tên Công Cụ",
+    "namePlaceholder": "ví dụ. ChatGPT, DALL-E, Giữa cuộc hành trình",
+    "website": "URL Trang Web",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "Danh mục",
+    "selectCategory": "Chọn một danh mục",
+    "price": "Phí một lần $49",
+    "submit": "Đăng Công Cụ",
+    "success": {
+      "title": "Đăng Công Cụ Thành Công!",
+      "description": "Công cụ của bạn đã được gửi để xem xét.",
+      "redirecting": "Đang chuyển hướng đến trang thanh toán..."
+    }
+  },
+  "form": {
+    "title": "Đăng Công Cụ Của Bạn",
+    "sections": {
+      "basic": "Thông Tin Cơ Bản",
+      "categorization": "Danh Mục & Thẻ",
+      "media": "Phương Tiện Truyền Thông",
+      "plan": "Chọn Gói",
+      "contact": "Thông Tin Liên Hệ"
+    },
+    "fields": {
+      "name": {
+        "label": "Tên Công Cụ",
+        "placeholder": "Công Cụ AI Tuyệt Vời Của Tôi"
+      },
+      "url": {
+        "label": "URL Trang Web",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "Khẩu Hiệu",
+        "placeholder": "Mô tả ngắn gọn trong vòng 100 ký tự"
+      },
+      "description": {
+        "label": "Mô Tả",
+        "placeholder": "Mô tả chi tiết về công cụ AI của bạn (tối đa 500 ký tự)"
+      },
+      "category": {
+        "label": "Danh mục",
+        "placeholder": "Chọn một danh mục",
+        "options": {
+          "productivity": "Năng suất",
+          "business": "Kinh doanh",
+          "development": "Phát triển (Dev)",
+          "other": "Khác"
+        }
+      },
+      "tags": {
+        "label": "Thẻ",
+        "placeholder": "ai, năng suất, tự động hóa (phân cách bằng dấu phẩy)",
+        "hint": "Các mục phân cách bằng dấu phẩy"
+      },
+      "logo": {
+        "label": "biểu tượng",
+        "placeholder": "Nhấp để tải lên hoặc kéo thả",
+        "hint": "PNG hoặc JPG, tối đa 2MB"
+      },
+      "plan": {
+        "label": "Gói Đăng",
+        "placeholder": "Chọn một gói"
+      },
+      "contact_name": {
+        "label": "Tên Của Bạn",
+        "placeholder": "Ví dụ: Nguyễn Văn A"
+      },
+      "contact_email": {
+        "label": "Email Của Bạn",
+        "placeholder": "Ví dụ: nguyen@example.com"
+      },
+      "terms": {
+        "label": "Tôi đồng ý với các điều khoản dịch vụ và chính sách bảo mật"
+      }
+    },
+    "terms": {
+      "disclaimer": "Bằng việc gửi biểu mẫu, bạn đồng ý với Điều khoản Dịch vụ và Chính sách Bảo mật của chúng tôi.",
+      "freeSubmission": "Đăng bài miễn phí."
+    },
+    "submit": "Đăng Công Cụ",
+    "submitting": "Đang gửi...",
+    "success": {
+      "title": "Gửi công cụ thành công!",
+      "description": "Chúng tôi sẽ xem xét hồ sơ của bạn và thông báo trong vòng 48 giờ."
+    },
+    "error": {
+      "title": "Gửi thất bại",
+      "description": "Vui lòng kiểm tra lại tất cả các trường và thử lại.",
+      "noSettings": "Cài đặt gửi không có sẵn. Vui lòng thử lại sau."
+    },
+    "loginRequiredTitle": "Yêu Cầu Đăng Nhập",
+    "loginRequiredDesc": "Vui lòng đăng nhập để tiếp tục. Tiến trình của bạn sẽ không được lưu cho đến khi bạn xác thực.",
+    "loginBtn": "Đăng nhập"
+  },
+  "categoriesPage": {
+    "searchCategory": "Tìm kiếm danh mục…",
+    "noCategoryFound": "Không tìm thấy danh mục."
+  },
+  "toolForm": {
+    "selectSubCategory": "Chọn một danh mục con…",
+    "noSubCategory": "Không có danh mục con."
+  },
+  "errors": {
+    "general": "Đã có lỗi xảy ra. Vui lòng thử lại."
+  },
+  "processing": "Đang xử lý...",
+  "sidebar": {
+    "toolCount": "5,000+ Công Cụ AI",
+    "toolCountSub": "Tham gia danh bạ ngày càng phát triển của chúng tôi",
+    "badgeDescription": "Đăng công cụ của bạn là bước đầu tiên để giành được sự chú ý trong cộng đồng AI."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Không thể tải chi tiết gửi.",
+      "noId": "Không có ID gửi được cung cấp.",
+      "notFound": "Không tìm thấy bài nộp."
+    },
+    "status": {
+      "paymentRequired": "Yêu cầu thanh toán",
+      "paymentRequiredDesc": "Hoàn tất thanh toán của bạn để tiến hành xem xét.",
+      "underReview": "Đang được xem xét",
+      "underReviewDesc": "Nội dung gửi của bạn đang được nhóm của chúng tôi xem xét.",
+      "approved": "Tán thành",
+      "approvedDesc": "Nội dung gửi của bạn đã được phê duyệt và xuất bản.",
+      "received": "Đã nhận",
+      "receivedDesc": "Chúng tôi đã nhận được hồ sơ của bạn."
+    },
+    "types": {
+      "submit": "Gửi công cụ AI",
+      "advertise": "Quảng cáo",
+      "guestPost": "Bài đăng của khách",
+      "updateAI": "Cập nhật AI"
+    },
+    "paymentAlert": "Thanh toán là cần thiết để hoàn thành việc gửi của bạn.",
+    "actions": {
+      "viewDashboard": "Xem trang tổng quan"
+    }
+  },
+  "error": "Đã xảy ra lỗi. Vui lòng thử lại.",
+  "backToHome": "Quay lại trang chủ",
+  "submissionSuccess": {
+    "title": "Tiêu đề",
+    "description": "Mô tả"
+  },
+  "successTitle": "Tiêu đề thành công",
+  "title": "Tiêu đề"
+}

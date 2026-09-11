@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection - Khám phá những công cụ AI tốt nhất",
+    "description": "Khám phá {totalTools}+ công cụ AI trên {totalCategories} danh mục bằng {languagesCount}+ ngôn ngữ"
+  },
+  "home": {
+    "visitWebsite": "Truy cập trang web",
+    "ranking": "Bảng xếp hạng"
+  },
+  "tool": {
+    "visitWebsite": "Truy cập trang web →",
+    "useCases": "Trường hợp sử dụng",
+    "about": "Về {name}",
+    "howToUse": "Cách sử dụng {name}",
+    "faq": "Câu hỏi thường gặp"
+  }
+}

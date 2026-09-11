@@ -1,0 +1,14 @@
+{
+  "title": "Sökresultat",
+  "resultsFor": "Resultat för \"{query}\"",
+  "filters": "Filter",
+  "typeFilters": "Typ",
+  "categories": "Kategorier",
+  "noResults": "Inga resultat hittades",
+  "tryAgain": "Försök med en annan sökterm",
+  "placeholder": "Sök AI-verktyg...",
+  "button": "Söka",
+  "loading": "Sökande...",
+  "clearFilters": "Rensa filter",
+  "categoryLabel": "Kategori"
+}

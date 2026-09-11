@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "Dagelijks klassement",
+      "title_long": "Dagelijks AI Tools-klassement"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "Maandelijks klassement",
+      "title_long": "Maandelijks AI Tools-klassement"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "Jaarlijks klassement",
+      "title_long": "Jaarlijks AI Tools-klassement"
+    }
+  }
+}

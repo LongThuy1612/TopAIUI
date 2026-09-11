@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Servicevoorwaarden - TopAICollection",
+    "description": "Lees de voorwaarden voor het gebruik van de diensten en website van TopAICollection."
+  },
+  "title": "Servicevoorwaarden",
+  "lastUpdated": "Laatst bijgewerkt",
+  "introduction": "Deze Servicevoorwaarden zijn van toepassing op uw gebruik van de TopAICollection-website en -diensten. Door onze service te openen of te gebruiken, gaat u ermee akkoord gebonden te zijn aan deze voorwaarden.",
+  "sections": {
+    "acceptance": {
+      "title": "Acceptatie van voorwaarden",
+      "content": "Door deze website te bezoeken en te gebruiken, aanvaardt u en gaat u ermee akkoord gebonden te zijn aan de voorwaarden en bepalingen van deze overeenkomst."
+    },
+    "use": {
+      "title": "Gebruik van de dienst",
+      "content": [
+        "Om van onze dienst gebruik te kunnen maken, moet u minimaal 13 jaar oud zijn",
+        "U bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van uw account",
+        "U gaat ermee akkoord de service niet te gebruiken voor illegale of ongeoorloofde doeleinden",
+        "U mag geen wormen, virussen of kwaadaardige code verzenden"
+      ]
+    },
+    "content": {
+      "title": "Gebruikersinhoud",
+      "content": [
+        "U behoudt het eigendom van de inhoud die u indient",
+        "U verleent ons een licentie om uw inhoud te gebruiken, aan te passen en weer te geven",
+        "U bent verantwoordelijk voor de inhoud die u plaatst",
+        "Wij behouden ons het recht voor om inhoud te verwijderen die deze voorwaarden schendt"
+      ]
+    },
+    "intellectual": {
+      "title": "Intellectueel eigendom",
+      "content": "De dienst en de originele inhoud, kenmerken en functionaliteit zijn en blijven het exclusieve eigendom van TopAICollection en haar licentiegevers."
+    },
+    "privacy": {
+      "content": "Uw gebruik van onze service valt ook onder ons privacybeleid. Lees ons privacybeleid, dat ook van toepassing is op de site en gebruikers informeert over onze praktijken voor gegevensverzameling.",
+      "title": "Privacy"
+    },
+    "disclaimers": {
+      "title": "Disclaimer",
+      "content": [
+        "De dienst wordt geleverd op een ‘as is’ en ‘asavailable’ basis",
+        "Wij garanderen niet dat de service ononderbroken of foutloos zal zijn",
+        "Wij zijn niet verantwoordelijk voor tools van derden die in onze directory worden vermeld",
+        "Het gebruik van AI-tools is op eigen risico"
+      ]
+    },
+    "liability": {
+      "title": "Beperking van aansprakelijkheid",
+      "content": "In geen geval zal TopAICollection, noch haar directeuren, werknemers, partners, agenten, leveranciers of gelieerde ondernemingen, aansprakelijk zijn voor enige indirecte, incidentele, speciale, gevolg- of punitieve schade."
+    },
+    "governing": {
+      "title": "Toepasselijk recht",
+      "content": "Deze voorwaarden worden beheerst en geïnterpreteerd in overeenstemming met de wetten van het rechtsgebied waarin TopAICollection actief is, zonder rekening te houden met conflicterende wettelijke bepalingen."
+    }
+  },
+  "contact": {
+    "title": "Contactgegevens",
+    "content": "Als u vragen heeft over deze Servicevoorwaarden, kunt u contact met ons opnemen via:"
+  }
+}

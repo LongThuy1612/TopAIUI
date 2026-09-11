@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Maksu ja lasku",
+    "description": "Hallitse krediittejäsi ja tarkastele tilaushistoriaa.",
+    "adCredits": "Mainoskrediitit",
+    "postCredits": "Julkaisukrediitit",
+    "linkCredits": "Linkkikrediitit",
+    "forSponsoredListings": "Sponsoroituihin listauksiin",
+    "forGuestArticles": "Vierasartikkeleihin",
+    "forLinkInsertions": "Linkkien lisäyksiin",
+    "buyCredits": "Osta krediittejä",
+    "noOrders": "Tilauksia ei löytynyt.",
+    "orderHistory": "Tilaushistoria",
+    "orderId": "Tilaustunnus",
+    "amount": "Summa",
+    "status": "Tila",
+    "date": "Päivämäärä",
+    "type": "Tyyppi",
+    "invoice": "Lasku",
+    "download": "Lataa",
+    "currentPlan": "Nykyinen sopimus",
+    "freeTier": "Ilmaistaso",
+    "freeTierDesc": "Päivitä sopimuksesi avataksesi lisää ominaisuuksia ja näkymiä.",
+    "creditBalances": "Krediittisaldot",
+    "subscriptionDetails": "Tilauksen tiedot",
+    "upgradePlan": "Päivitä sopimus",
+    "credits": "Krediitit",
+    "managePortal": "Hallitse maksuportaalia",
+    "subscribe": "Tilaa nyt",
+    "statusActive": "Aktiivinen",
+    "planMemberSince": "Tämän suunnitelman jäsen",
+    "renewalDate": "Uusitaan päälle",
+    "changePlan": "Muuta suunnitelmaa",
+    "redirecting": "Uudelleenohjataan...",
+    "errorFetchingPortal": "Laskutusportaalia ei voitu avata"
+  },
+  "plans": {
+    "free": {
+      "name": "Ilmainen"
+    },
+    "professional": {
+      "name": "Ammattilainen"
+    },
+    "enterprise": {
+      "name": "Yritys"
+    }
+  },
+  "transactions": {
+    "noDescription": "Mainoshyvitystapahtumasi näkyvät täällä."
+  }
+}

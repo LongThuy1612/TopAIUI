@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "תשלום וחשבוניות",
+    "description": "נהל את הקרדיטים שלך וצפה בהיסטוריית הזמנות.",
+    "adCredits": "קרדיטים לפרסום",
+    "postCredits": "קרדיטים לפוסטים",
+    "linkCredits": "קרדיטים לקישורים",
+    "forSponsoredListings": "עבור רישומים ממומנים",
+    "forGuestArticles": "עבור מאמרי אורח",
+    "forLinkInsertions": "עבור שילובי קישורים",
+    "buyCredits": "קנה קרדיטים",
+    "noOrders": "לא נמצאו הזמנות.",
+    "orderHistory": "היסטוריית הזמנות",
+    "orderId": "מזהה הזמנה",
+    "amount": "סכום",
+    "status": "סטטוס",
+    "date": "תאריך",
+    "type": "סוג",
+    "invoice": "חשבונית",
+    "download": "הורדה",
+    "currentPlan": "תוכנית נוכחית",
+    "freeTier": "דרגה חינמית",
+    "freeTierDesc": "שדרג את התוכנית שלך כדי לפתוח תכונות ותובנות נוספות.",
+    "creditBalances": "יתרת קרדיטים",
+    "subscriptionDetails": "פרטי מנוי",
+    "upgradePlan": "שדרג תוכנית",
+    "credits": "קרדיטים",
+    "managePortal": "נהל פורטל חיוב",
+    "subscribe": "הירשם עכשיו",
+    "statusActive": "פָּעִיל",
+    "planMemberSince": "חבר בתוכנית זו",
+    "renewalDate": "מתחדש ב",
+    "changePlan": "שנה תוכנית",
+    "redirecting": "מפנה מחדש...",
+    "errorFetchingPortal": "לא ניתן היה לפתוח את פורטל החיובים"
+  },
+  "plans": {
+    "free": {
+      "name": "חינם"
+    },
+    "professional": {
+      "name": "מקצועי"
+    },
+    "enterprise": {
+      "name": "ארגוני"
+    }
+  },
+  "transactions": {
+    "noDescription": "עסקאות אשראי המודעה שלך יופיעו כאן."
+  }
+}

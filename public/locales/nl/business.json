@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Zakelijke oplossingen - werk met ons samen | TopAITopAICollectionCollection",
+    "description": "Ontdek de mogelijkheden voor zakelijke partnerschappen met TopAICollection. Advertenties, gesponsorde inhoud en meer."
+  },
+  "title": "Zakelijke oplossingen",
+  "subtitle": "Werk samen met TopAICollection om AI-enthousiastelingen over de hele wereld te bereiken",
+  "contact": {
+    "title": "Neem contact op"
+  },
+  "offers": {
+    "ads": "Voer gerichte advertentiecampagnes uit",
+    "partnerships": "Ontdek strategische partnerschappen",
+    "growth": "Versnel de groei van uw AI-producten",
+    "consulting": "Aangepaste AI-integratieservices"
+  },
+  "form": {
+    "fullName": "Volledige naam",
+    "workEmail": "Werk e-mail",
+    "companyName": "Bedrijfsnaam",
+    "inquiryType": "Onderzoekstype",
+    "selectType": "Selecteer soort",
+    "message": "Bericht",
+    "messagePlaceholder": "Vertel ons meer over uw behoeften...",
+    "inquiryTypes": {
+      "advertise": "Adverteren",
+      "guestPost": "Gastpost",
+      "partnership": "Partnerschap",
+      "customDevelopment": "Aangepaste ontwikkeling",
+      "other": "Ander"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Maak reclame voor uw AI-tool",
+      "description": "Zorg ervoor dat uw AI-tool prominent aanwezig is op ons platform.",
+      "link": "Meer informatie"
+    },
+    "guestPost": {
+      "title": "Gastberichten en links",
+      "description": "Publiceer inhoud of ontvang backlinks op onze site met hoge autoriteit.",
+      "link": "Meer informatie"
+    },
+    "submitTool": {
+      "title": "Dien uw hulpmiddel in",
+      "description": "Voeg uw AI-tool gratis toe aan onze directory.",
+      "link": "Nu indienen"
+    },
+    "customSolutions": {
+      "title": "Aangepaste oplossingen",
+      "description": "Neem contact met ons op voor samenwerkingsmogelijkheden op maat.",
+      "link": "Neem contact met ons op"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100+ partners",
+    "partnerCountSub": "Vertrouwd door toonaangevende AI-bedrijven",
+    "contactSupport": "Neem contact op met ondersteuning"
+  },
+  "validation": {
+    "required": "Dit veld is verplicht",
+    "toolNameRequired": "Gereedschapsnaam is vereist",
+    "url": "Ongeldige URL",
+    "descriptionMin": "Beschrijving moet minimaal 10 tekens lang zijn",
+    "categoryRequired": "Selecteer een categorie",
+    "email": "Ongeldig e-mailadres",
+    "messageMin": "Het bericht moet minimaal 10 tekens lang zijn"
+  },
+  "success": "Uw aanvraag is succesvol verzonden!"
+}

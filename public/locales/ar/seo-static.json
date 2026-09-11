@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection - اكتشف أفضل أدوات الذكاء الاصطناعي",
+    "description": "استكشف {totalTools}+ أدوات الذكاء الاصطناعي عبر فئات {totalCategories} بأكثر من {languagesCount} من اللغات"
+  },
+  "home": {
+    "visitWebsite": "زيارة الموقع",
+    "ranking": "تصنيف"
+  },
+  "tool": {
+    "visitWebsite": "زيارة الموقع →",
+    "useCases": "حالات الاستخدام",
+    "about": "حول {name}",
+    "howToUse": "كيفية استخدام {name}",
+    "faq": "الأسئلة المتداولة"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "AI 도구 제출 - TopAICollection",
+    "description": "TopAICollection 디렉토리에 AI 도구를 나열하고 AI 솔루션을 찾는 수백만 명의 사용자에게 도달하세요."
+  },
+  "badge": "도구 등록하기",
+  "hero": {
+    "title": "당신의 AI 도구를 널리 알리세요",
+    "subtitle": "우리 디렉토리의 수천 개의 AI 도구와 함께하여 전 세계 수백만 명의 잠재 사용자에게 도달하세요"
+  },
+  "benefits": {
+    "title": "왜 TopAICollection에 등록해야 하나요?",
+    "traffic": {
+      "title": "트래픽 증가",
+      "description": "AI 솔루션을 적극적으로 찾는 사용자로부터 직접적인 트래픽을 얻으세요"
+    },
+    "exposure": {
+      "title": "글로벌 노출",
+      "description": "100개 이상의 국가에서 20개 이상의 언어로 사용자에게 도달하세요"
+    },
+    "credibility": {
+      "title": "신뢰성 향상",
+      "description": "검증된 목록과 사용자 리뷰로 신뢰를 구축하세요"
+    }
+  },
+  "pricing": {
+    "title": "플랜 선택",
+    "popular": "가장 인기있는",
+    "basic": {
+      "name": "기본 목록",
+      "price": "무료",
+      "features": {
+        "0": "기본 도구 목록",
+        "1": "카테고리 배치",
+        "2": "연락처 정보",
+        "3": "기본 분석"
+      }
+    },
+    "featured": {
+      "name": "추천 목록",
+      "price": "$99/월",
+      "features": {
+        "0": "기본 플랜의 모든 기능",
+        "1": "추천 배지",
+        "2": "검색 결과 우선 순위",
+        "3": "홈페이지 노출",
+        "4": "고급 분석",
+        "5": "소셜 미디어 홍보"
+      }
+    },
+    "premium": {
+      "name": "프리미엄 목록",
+      "price": "$299/월",
+      "features": {
+        "0": "추천 플랜의 모든 기능",
+        "1": "최상단 검색 배치",
+        "2": "뉴스레터 포함",
+        "3": "블로그 게시물 리뷰",
+        "4": "비디오 쇼케이스",
+        "5": "전담 지원"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "도구 이름",
+    "namePlaceholder": "예를 들어 ChatGPT, DALL-E, Midjourney",
+    "website": "웹사이트 URL",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "카테고리",
+    "selectCategory": "카테고리 선택",
+    "price": "$49 일회성 수수료",
+    "submit": "도구 제출",
+    "success": {
+      "title": "제출 성공!",
+      "description": "도구가 검토를 위해 제출되었습니다.",
+      "redirecting": "결제 페이지로 리디렉션 중..."
+    }
+  },
+  "form": {
+    "title": "도구 제출하기",
+    "sections": {
+      "basic": "기본 정보",
+      "categorization": "카테고리 및 태그",
+      "media": "미디어 에셋",
+      "plan": "플랜 선택",
+      "contact": "연락처 정보"
+    },
+    "fields": {
+      "name": {
+        "label": "도구 이름",
+        "placeholder": "나의 멋진 AI 도구"
+      },
+      "url": {
+        "label": "웹사이트 URL",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "태그라인",
+        "placeholder": "100자 이하의 짧은 설명"
+      },
+      "description": {
+        "label": "설명",
+        "placeholder": "AI 도구에 대한 자세한 설명 (최대 500자)"
+      },
+      "category": {
+        "label": "카테고리",
+        "placeholder": "카테고리 선택",
+        "options": {
+          "productivity": "생산성",
+          "business": "비즈니스",
+          "development": "개발",
+          "other": "기타"
+        }
+      },
+      "tags": {
+        "label": "태그",
+        "placeholder": "ai, 생산성, 자동화 (쉼표로 구분)",
+        "hint": "쉼표로 구분하여 입력"
+      },
+      "logo": {
+        "label": "로고",
+        "placeholder": "클릭하여 업로드하거나 드래그 앤 드롭하세요",
+        "hint": "PNG 또는 JPG, 최대 2MB"
+      },
+      "plan": {
+        "label": "목록 플랜",
+        "placeholder": "플랜 선택"
+      },
+      "terms": {
+        "label": "서비스 약관 및 개인정보 보호정책에 동의합니다"
+      },
+      "contact_name": {
+        "label": "이름",
+        "placeholder": "예) 모아영"
+      },
+      "contact_email": {
+        "label": "이메일",
+        "placeholder": "예: john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "제출함으로써 서비스 약관 및 개인정보 보호정책에 동의하게 됩니다.",
+      "freeSubmission": "무료 제출."
+    },
+    "submit": "도구 제출",
+    "submitting": "제출 중...",
+    "success": {
+      "title": "도구가 성공적으로 제출되었습니다!",
+      "description": "제출물을 검토한 후 48시간 이내에 알려드리겠습니다."
+    },
+    "error": {
+      "title": "제출 실패",
+      "description": "모든 필드를 확인하고 다시 시도하세요.",
+      "noSettings": "제출 설정을 사용할 수 없습니다. 나중에 다시 시도해 주세요."
+    },
+    "loginRequiredTitle": "로그인 필요",
+    "loginRequiredDesc": "도구를 제출하려면 로그인하세요. 인증할 때까지 진행 상황은 저장되지 않습니다.",
+    "loginBtn": "로그인"
+  },
+  "categoriesPage": {
+    "searchCategory": "카테고리 검색…",
+    "noCategoryFound": "카테고리를 찾을 수 없습니다."
+  },
+  "toolForm": {
+    "selectSubCategory": "하위 카테고리 선택…",
+    "noSubCategory": "하위 카테고리가 없습니다."
+  },
+  "errors": {
+    "general": "문제가 발생했습니다. 다시 시도해 주세요."
+  },
+  "processing": "처리 중...",
+  "sidebar": {
+    "toolCount": "5,000+ AI 도구",
+    "toolCountSub": "점점 커지는 디렉토리에 참여하세요",
+    "badgeDescription": "도구를 제출하는 것은 AI 커뮤니티에서 인지도를 얻기 위한 첫 걸음입니다."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "제출 세부정보를 로드하지 못했습니다.",
+      "noId": "제공된 제출 ID가 없습니다.",
+      "notFound": "제출물을 찾을 수 없습니다."
+    },
+    "status": {
+      "paymentRequired": "결제 필요",
+      "paymentRequiredDesc": "검토를 진행하려면 결제를 완료하세요.",
+      "underReview": "검토중",
+      "underReviewDesc": "귀하의 제출물은 우리 팀에서 검토 중입니다.",
+      "approved": "승인됨",
+      "approvedDesc": "귀하의 제출물이 승인되어 게시되었습니다.",
+      "received": "받았다",
+      "receivedDesc": "귀하의 제출물이 접수되었습니다."
+    },
+    "types": {
+      "submit": "AI 도구 제출",
+      "advertise": "공시 하다",
+      "guestPost": "게스트 포스트",
+      "updateAI": "AI 업데이트"
+    },
+    "paymentAlert": "제출을 완료하려면 결제가 필요합니다.",
+    "actions": {
+      "viewDashboard": "대시보드 보기"
+    }
+  },
+  "error": "문제가 발생했습니다. 다시 시도해 주세요.",
+  "backToHome": "홈으로 돌아가기",
+  "submissionSuccess": {
+    "title": "제목",
+    "description": "설명"
+  },
+  "successTitle": "성공 제목",
+  "title": "제목"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "תוצאות חיפוש",
+  "resultsFor": "תוצאות עבור \"{query}\"",
+  "filters": "מסננים",
+  "typeFilters": "סוּג",
+  "categories": "קטגוריות",
+  "noResults": "לא נמצאו תוצאות",
+  "tryAgain": "אנא נסה מונח חיפוש אחר",
+  "placeholder": "חיפוש כלי AI...",
+  "button": "לְחַפֵּשׂ",
+  "loading": "מחפש...",
+  "clearFilters": "נקה מסננים",
+  "categoryLabel": "קטגוריה"
+}

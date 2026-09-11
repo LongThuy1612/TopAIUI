@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "AI 블로그 및 뉴스 - TopAICollection",
+    "description": "인공 지능 세계의 최신 AI 뉴스, 튜토리얼, 리뷰 및 통찰력을 통해 최신 정보를 받아보세요."
+  },
+  "badge": "AI 인사이트",
+  "title": "AI 블로그 및 뉴스",
+  "subtitle": "AI 세계의 최신 동향, 튜토리얼 및 통찰력을 받아보세요.",
+  "search": {
+    "placeholder": "기사 검색..."
+  },
+  "categories": {
+    "title": "카테고리",
+    "all": "모든 기사",
+    "news": "AI 뉴스",
+    "tutorials": "튜토리얼",
+    "reviews": "도구 리뷰",
+    "industry": "업계 통찰",
+    "guides": "방법 가이드"
+  },
+  "newsletter": {
+    "title": "최신 정보 유지",
+    "subtitle": "받은 편지함으로 전달되는 최신 AI 뉴스를 받아보세요",
+    "placeholder": "이메일을 입력하세요",
+    "button": "구독하다"
+  },
+  "article": {
+    "readTime": "{minutes}분 읽음",
+    "published": "{date}에 게시됨",
+    "writtenBy": "작성 및 편집:",
+    "factCheckedBy": "사실 확��:"
+  },
+  "pagination": {
+    "next": "다음",
+    "page": "페이지 {page}/{total}"
+  },
+  "relatedTools": "관련 도구",
+  "backToBlog": "블로그로 돌아가기",
+  "errors": {
+    "notFound": "게시물을 찾을 수 없습니다."
+  },
+  "sort": {
+    "latest": "최신순",
+    "oldest": "오래된순",
+    "popular": "인기순"
+  },
+  "filter": {
+    "allAuthors": "모든 작성자",
+    "sortBy": "정렬 기준"
+  },
+  "relatedPosts": "관련 포스트",
+  "faqs": "자주 묻는 질문"
+}

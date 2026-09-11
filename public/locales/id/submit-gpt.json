@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Kirimkan GPT Anda - Dapatkan GPT Anda Unggulan | TopAICollection",
+    "description": "Kirimkan GPT khusus Anda untuk ditampilkan di direktori GPT kami. Jangkau ribuan penggemar AI."
+  },
+  "title": "Kirimkan GPT Anda",
+  "subtitle": "Dapatkan fitur GPT khusus Anda di direktori kami",
+  "loginRequired": "Diperlukan Masuk",
+  "submitButton": "Kirim GPT",
+  "whySubmit": {
+    "title": "Mengapa Mengirimkan GPT Anda?"
+  },
+  "benefits": {
+    "audience": "Jangkau ribuan penggemar AI setiap hari",
+    "instant": "Daftar instan setelah verifikasi",
+    "global": "Paparan global dalam semua bahasa",
+    "analytics": "Lacak klik dan keterlibatan"
+  },
+  "proTip": {
+    "title": "Kiat Pro",
+    "desc": "Pastikan GPT Anda bersifat publik dan dapat diakses melalui link sebelum mengirimkan."
+  },
+  "form": {
+    "gptName": "Nama GPT",
+    "gptNamePlaceholder": "misalnya Penyihir Kode",
+    "gptUrl": "URL ObrolanGPT ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "URL Ikon",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Deskripsi / Petunjuk",
+    "gptDescriptionPlaceholder": "Jelaskan apa yang dilakukan GPT Anda..."
+  },
+  "validation": {
+    "required": "Bidang ini wajib diisi",
+    "invalidUrl": "URL ChatGPT tidak valid",
+    "nameTooShort": "Nama harus terdiri dari minimal 2 karakter",
+    "descriptionTooShort": "Deskripsi minimal harus 10 karakter",
+    "toolNameRequired": "Nama alat wajib diisi",
+    "url": "URL tidak valid",
+    "descriptionMin": "Deskripsi minimal harus 10 karakter",
+    "categoryRequired": "Silakan pilih kategori",
+    "email": "Alamat email tidak valid",
+    "messageMin": "Pesan minimal harus 10 karakter"
+  },
+  "sidebar": {
+    "gptCount": "GPT dikirimkan",
+    "gptCountSub": "dan berkembang"
+  },
+  "success": "GPT Anda telah berhasil dikirimkan!"
+}

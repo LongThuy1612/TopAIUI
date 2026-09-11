@@ -1,0 +1,14 @@
+{
+  "title": "Søkeresultater",
+  "resultsFor": "Resultater for «{query}»",
+  "filters": "Filtre",
+  "typeFilters": "Skriv",
+  "categories": "Kategorier",
+  "noResults": "Ingen resultater funnet",
+  "tryAgain": "Prøv et annet søkeord",
+  "placeholder": "Søk etter AI-verktøy...",
+  "button": "Søk",
+  "loading": "Søker...",
+  "clearFilters": "Tøm filtre",
+  "categoryLabel": "Kategori"
+}

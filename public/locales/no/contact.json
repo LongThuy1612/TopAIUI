@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Kontakt oss - TopAICollection",
+    "description": "Ta kontakt med TopAICollection-teamet. Vi er her for å hjelpe med spørsmål om AI-verktøy."
+  },
+  "title": "Kontakt oss",
+  "subtitle": "Har du et spørsmål eller tilbakemelding? Vi vil gjerne høre fra deg. Teamet vårt svarer vanligvis innen 24 timer.",
+  "form": {
+    "title": "Send oss ​​en melding",
+    "fields": {
+      "name": {
+        "label": "Ditt navn",
+        "placeholder": "Ola Nordmann"
+      },
+      "email": {
+        "label": "E-postadresse",
+        "placeholder": "ola@eksempel.com"
+      },
+      "subject": {
+        "label": "Tema",
+        "placeholder": "Velg et emne",
+        "options": {
+          "general": "Generell henvendelse",
+          "support": "Teknisk støtte",
+          "feedback": "Tilbakemelding",
+          "partnership": "Partnerskapsmulighet",
+          "other": "Annen"
+        }
+      },
+      "message": {
+        "label": "Beskjed",
+        "placeholder": "Fortell oss hva du tenker på..."
+      }
+    },
+    "submit": "Send melding",
+    "submitting": "Sender...",
+    "success": {
+      "title": "Meldingen ble sendt!",
+      "description": "Vi har mottatt meldingen din og kommer tilbake til deg snart."
+    },
+    "error": {
+      "title": "Kunne ikke sende melding",
+      "description": "Noe gikk galt. Prøv igjen senere."
+    }
+  },
+  "info": {
+    "title": "Ta kontakt",
+    "email": {
+      "title": "Send oss ​​en e-post",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "Support timer",
+      "content": "Supportteamet vårt er tilgjengelig mandag til fredag"
+    },
+    "hours": {
+      "title": "Åpningstider",
+      "content": "9:00–18:00 EST"
+    },
+    "location": {
+      "title": "Sted",
+      "content": "Betjener brukere globalt fra vårt distribuerte team"
+    }
+  },
+  "faq": {
+    "title": "Ofte stilte spørsmål",
+    "q1": "Hvordan sender jeg inn AI-verktøyet mitt?",
+    "a1": "Klikk på Submit Tool-knappen i navigasjonen og fyll ut innsendingsskjemaet.",
+    "q2": "Hvor lang tid tar godkjenningen?",
+    "a2": "De fleste innsendinger gjennomgås innen 1–3 virkedager.",
+    "q3": "Kan jeg oppdatere verktøyoppføringen min?",
+    "a3": "Ja, logg på dashbordet og bruk funksjonen Oppdater AI."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Social Monitoring",
+    "description": "Monitor trefwoorden op TikTok en YouTube.",
+    "table": {
+      "keyword": "Trefwoord",
+      "videos": "Video's",
+      "views": "Weergaven",
+      "creators": "Makers",
+      "status": "Status",
+      "platform": "Platform"
+    },
+    "status": {
+      "active": "Actief"
+    },
+    "monthlyQueries": "Maandelijkse Zoekopdrachten",
+    "videosToday": "Video's Vandaag",
+    "creatorsToday": "Makers Vandaag",
+    "metrics": {
+      "monthlyQueries": "Maandelijkse vragen",
+      "videosToday": "Video's vandaag",
+      "creatorsToday": "Makers vandaag"
+    }
+  },
+  "socialListeningTitle": "Social Monitoring",
+  "socialTable": {
+    "tool": "AI-tool",
+    "noData": "Geen gegevens gevonden"
+  },
+  "allPlatforms": "Alle platforms"
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Reichen Sie Ihr GPT ein – Holen Sie sich Ihr GPT ins Rampenlicht | TopAICollection",
+    "description": "Reichen Sie Ihr benutzerdefiniertes GPT ein, damit es in unserem GPT-Verzeichnis aufgeführt wird. Erreichen Sie Tausende von KI-Enthusiasten."
+  },
+  "title": "Senden Sie Ihr GPT",
+  "subtitle": "Holen Sie sich Ihr individuelles GPT in unser Verzeichnis",
+  "loginRequired": "Anmeldung erforderlich",
+  "submitButton": "GPT einreichen",
+  "whySubmit": {
+    "title": "Warum sollten Sie Ihr GPT einreichen?"
+  },
+  "benefits": {
+    "audience": "Erreichen Sie täglich Tausende von KI-Enthusiasten",
+    "instant": "Sofortige Auflistung nach Bestätigung",
+    "global": "Globale Präsenz in allen Sprachen",
+    "analytics": "Verfolgen Sie Klicks und Engagement"
+  },
+  "proTip": {
+    "title": "Profi-Tipp",
+    "desc": "Stellen Sie vor dem Absenden sicher, dass Ihr GPT öffentlich und über einen Link zugänglich ist."
+  },
+  "form": {
+    "gptName": "GPT-Name",
+    "gptNamePlaceholder": "z.B. Code-Assistent",
+    "gptUrl": "ChatGPT-URL",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "Symbol-URL",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Beschreibung/Anleitung",
+    "gptDescriptionPlaceholder": "Beschreiben Sie, was Ihr GPT tut ..."
+  },
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "invalidUrl": "Ungültige ChatGPT-URL",
+    "nameTooShort": "Der Name muss mindestens 2 Zeichen lang sein",
+    "descriptionTooShort": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
+    "toolNameRequired": "Werkzeugname ist erforderlich",
+    "url": "Ungültige URL",
+    "descriptionMin": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
+    "categoryRequired": "Bitte wählen Sie eine Kategorie aus",
+    "email": "Ungültige E-Mail-Adresse",
+    "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+  },
+  "sidebar": {
+    "gptCount": "GPTs eingereicht",
+    "gptCountSub": "und wächst"
+  },
+  "success": "Ihr GPT wurde erfolgreich übermittelt!"
+}

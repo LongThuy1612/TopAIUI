@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "KI-Modelle & Datensätze | TopAICollection",
+    "description": "Entdecken Sie die neuesten KI-Modelle, Datensätze und Architekturen für Ihr nächstes Projekt."
+  },
+  "title": "KI-Modell-Bibliothek",
+  "subtitle": "Entdecken Sie die größte Sammlung von KI-Modellen, Feinabstimmungen und Datensätzen.",
+  "comingSoon": "Demnächst!",
+  "comingSoonMessage": "Wir kuratieren derzeit die besten KI-Modelle. Schauen Sie bald wieder vorbei.",
+  "searchPlaceholder": "KI-Modelle suchen...",
+  "allProviders": "Alle Anbieter",
+  "noResults": "Keine KI-Modelle gefunden",
+  "noResultsHint": "Versuchen Sie, Ihre Such- oder Filterkriterien anzupassen.",
+  "contextWindow": "Kontextfenster",
+  "parameters": "Parameter",
+  "provider": "Anbieter",
+  "architecture": "Architektur",
+  "releaseDate": "Veröffentlichungsdatum",
+  "costPer1kTokens": "Kosten / 1K Token",
+  "free": "Kostenlos / Open Source",
+  "tokens": "Tokens",
+  "viewWebsite": "Website besuchen",
+  "modelsCount": "{count} KI-Modell",
+  "modelsCount_plural": "{count} KI-Modelle",
+  "modelsGridTitle": "KI-Modelle"
+}

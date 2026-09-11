@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "בלוג וחדשות בינה מלאכותית - TopAICollection",
+    "description": "הישאר מעודכן עם החדשות האחרונות של AI, הדרכות, ביקורות ותובנות מעולם הבינה המלאכותית."
+  },
+  "badge": "תובנות AI",
+  "title": "בלוג וחדשות בינה מלאכותית",
+  "subtitle": "הישאר מעודכן עם הטרנדים האחרונים, ההדרכות והתובנות מעולם הבינה המלאכותית",
+  "search": {
+    "placeholder": "חפש מאמרים..."
+  },
+  "categories": {
+    "title": "קטגוריות",
+    "all": "כל המאמרים",
+    "news": "חדשות AI",
+    "tutorials": "הדרכות",
+    "reviews": "סקירות של כלים",
+    "industry": "תובנות תעשייה",
+    "guides": "מדריכי איך לעשות"
+  },
+  "newsletter": {
+    "title": "הישאר מעודכן",
+    "subtitle": "קבל את החדשות העדכניות ביותר של AI לתיבת הדואר הנכנס שלך",
+    "placeholder": "הזן את המייל שלך",
+    "button": "הירשם"
+  },
+  "article": {
+    "readTime": "{minutes} דקות קריאה",
+    "published": "פורסם בתאריך {date}",
+    "writtenBy": "נכתב ונערך על ידי:",
+    "factCheckedBy": "נבדק עובדתית על ידי:"
+  },
+  "pagination": {
+    "next": "הַבָּא",
+    "page": "עמוד {page} מתוך {total}"
+  },
+  "relatedTools": "כלים קשורים",
+  "backToBlog": "חזרה לבלוג",
+  "errors": {
+    "notFound": "הפוסט לא נמצא"
+  },
+  "sort": {
+    "latest": "חדש ביותר",
+    "oldest": "ישן ביותר",
+    "popular": "פופולרי"
+  },
+  "filter": {
+    "allAuthors": "כל המחברים",
+    "sortBy": "מיין לפי"
+  },
+  "relatedPosts": "פוסטים קשורים",
+  "faqs": "שאלות נפוצות"
+}

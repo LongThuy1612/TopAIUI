@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "الاستماع الاجتماعي - مراقبة اتجاهات الذكاء الاصطناعي | TopAICollection",
+    "description": "تتبع اتجاهات الذكاء الاصطناعي على منصات التواصل الاجتماعي.",
+    "detailTitle": "{name} الاستماع الاجتماعي — TopAI",
+    "detailDescription": "تحليلات الاستماع الاجتماعي لـ {name}.",
+    "notFoundTitle": "لم يتم العثور على الأداة - الاستماع الاجتماعي"
+  },
+  "title": "الاستماع الاجتماعي",
+  "subtitle": "تتبع أداء الفيديو لأدوات الذكاء الاصطناعي. Twitter",
+  "leaderboardTitle": "لوحة الصدارة",
+  "leaderboardSubtitle": "تتبع فوري لأداء الفيديو. Twitter",
+  "table": {
+    "aiTool": "الأداة",
+    "introduce": "مقدمة",
+    "videoCount": "الفيديوهات",
+    "creatorsCount": "المنشئون",
+    "monthlyTraffic": "الزيارات",
+    "avgViews": "متوسط المشاهدات",
+    "avgInteractions": "متوسط التفاعل",
+    "totalViews": "إجمالي المشاهدات",
+    "totalInteractions": "إجمالي التفاعلات",
+    "emptyState": "لا يوجد بيانات",
+    "pageIndicator": "صفحة {page} من {lastPage}",
+    "updatedAt": "تاريخ التحديث",
+    "totalEngagement": "المشاركة الكاملة"
+  },
+  "search": {
+    "placeholder": "أدخل اسم الأداة أو النطاق"
+  },
+  "detail": {
+    "viewTool": "عرض تفاصيل الأداة",
+    "tabs": {
+      "socialListening": "الاستماع الاجتماعي"
+    },
+    "stats": {
+      "monthlyVisits": "الزيارات الشهرية",
+      "growth": "النمو",
+      "growthRate": "معدل النمو",
+      "socialVideos": "الفيديوهات الاجتماعية",
+      "newLastWeek": "جديد هذا الأسبوع"
+    },
+    "metrics": {
+      "avgViews": "متوسط المشاهدات",
+      "totalVideos": "إجمالي الفيديوهات",
+      "totalCreators": "إجمالي المنشئين",
+      "totalViews": "إجمالي المشاهدات / متوسط",
+      "totalLikes": "إعجابات / متوسط",
+      "totalComments": "تعليقات / متوسط",
+      "totalShares": "إجمالي المشاركات",
+      "totalCollects": "إجمالي التحفظات",
+      "totalQuotes": "إجمالي الاقتباسات",
+      "totalReposts": "إجمالي إعادة النشر"
+    },
+    "platforms": {
+      "all": "الكل"
+    },
+    "feed": {
+      "unlockCta": "إلغاء القفل لعرض المزيد",
+      "unlockDesc": "سجل الدخول لرؤية تحليلات الفيديو الكاملة",
+      "viewNow": "عرض الآن ←",
+      "sortBy": "ترتيب حسب",
+      "sortViews": "المشاهدات",
+      "sortLikes": "الإعجابات",
+      "sortDate": "التاريخ",
+      "loadMore": "تحميل المزيد",
+      "searchPlaceholder": "بحث بالعنوان أو المنشئ...",
+      "emptyState": "لم يتم العثور على منشورات. فقط منشورات الفيديو تظهر هنا.",
+      "untitledPost": "منشور بدون عنوان",
+      "metrics": {
+        "views": "مشاهدات",
+        "likes": "إعجابات",
+        "retweets": "إعادة تغريد",
+        "shares": "مشاركات",
+        "replies": "ردود",
+        "comments": "تعليقات",
+        "quotes": "اقتباسات",
+        "saves": "حفظ",
+        "collects": "مجموعات",
+        "upvotes": "تصويتات",
+        "follows": "متابعة"
+      },
+      "sortComments": "تعليقات",
+      "sortShares": "أسهم",
+      "title": "تغذية الاجتماعية"
+    },
+    "traffic": {
+      "bounceRate": "معدل الارتداد",
+      "pagesPerVisit": "صفحات لكل زيارة",
+      "avgVisitDuration": "متوسط مدة الزيارة",
+      "globalRanking": "التصنيف العالمي",
+      "category": "الفئة",
+      "categoryRanking": "تصنيف الفئة",
+      "deviceSplit": "سطح المكتب مقابل الجوال",
+      "desktop": "سطح المكتب",
+      "mobile": "الجوال",
+      "trafficSources": "مصادر الزيارات",
+      "topRegions": "أهم الدول",
+      "processingMsg": "بيانات حركة المرور قيد المعالجة. يرجى المراجعة لاحقاً.",
+      "monthlyTrafficTrend": "اتجاه حركة المرور الشهرية",
+      "monthlyTrafficTrendDesc": "الزيارات التاريخية العالمية خلال الثلاثين يومًا الماضية",
+      "sourceWebsiteInsight": "المصدر: موقع انسايت العالمي"
+    },
+    "pricing": {
+      "notDocumented": "خطط التسعير غير موثقة بعد.",
+      "checkWebsite": "تحقق من الموقع الرسمي",
+      "visitWebsite": "زيارة الموقع",
+      "month": "شهر"
+    },
+    "lastUpdated": "آخر تحديث",
+    "influencers": {
+      "title": "كبار المؤثرين",
+      "name": "الخالق",
+      "platform": "منصة",
+      "videos": "فيديوهات",
+      "reach": "EST. يصل"
+    },
+    "filterInteraction": "تفاعل التصفية"
+  },
+  "platforms": {
+    "all": "جميع المنصات"
+  },
+  "monitors": {
+    "title": "الشاشات الخاصة بك",
+    "subtitle": "تتبع كلمات رئيسية محددة عبر منصات التواصل الاجتماعي",
+    "inputPlaceholder": "أدخل الكلمة الرئيسية (على سبيل المثال، ChatGPT، Midjourney)",
+    "addButton": "ابدأ التتبع",
+    "emptyTitle": "لا يوجد مراقبين نشطين",
+    "emptyDesc": "أضف كلمة رئيسية أعلاه لبدء مراقبة الإشارات والمشاعر الاجتماعية.",
+    "keyword": "الكلمة الرئيسية",
+    "platform": "منصة",
+    "status": "حالة",
+    "lastActive": "آخر نشاط",
+    "addSuccess": "تمت إضافة المراقبة بنجاح!",
+    "addError": "فشلت إضافة جهاز العرض",
+    "statusTracking": "التتبع"
+  },
+  "socialListeningTitle": "لوحة المتصدرين للاستماع الاجتماعي",
+  "pagination": {
+    "prev": "السابق",
+    "next": "التالي",
+    "page": "صفحة"
+  },
+  "nav": {
+    "overview": "ملخص",
+    "traffic": "مرور",
+    "social": "اجتماعي",
+    "pricing": "التسعير"
+  },
+  "locked": {
+    "quotaTitle": "الميزة مقفلة",
+    "quotaDesc": "لقد وصلت إلى حصتك المحددة للاستماع الاجتماعي. قم بالترقية لفتح المزيد من الرؤى.",
+    "upgradeBtn": "قم بالترقية الآن",
+    "overlayTitle": "ميزة مميزة",
+    "overlayDesc": "تتطلب هذه الميزة اشتراكاً مميزاً نشطاً.",
+    "unlockBtn": "فتح الميزة المميزة"
+  }
+}

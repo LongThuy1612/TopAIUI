@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "חזרה ללוח הבקרה",
+    "backToHome": "חזרה לדף הבית",
+    "dashboard": "לוּחַ מַחווָנִים",
+    "websiteInsights": "תובנות באתר",
+    "socialListening": "הקשבה חברתית",
+    "researchReport": "דוח מחקר",
+    "myAis": "ה-AI שלי",
+    "favorites": "מועדפים",
+    "profileSettings": "הגדרות פרופיל",
+    "advertise": "לְפַרְסֵם",
+    "postsLinks": "פוסטים/קישורים",
+    "paymentInvoice": "תשלום וחשבונית",
+    "overview": "סקירה כללית",
+    "myInquiries": "הפניות שלי"
+  },
+  "logout": "התנתק",
+  "logoutConfirmTitle": "התנתקות",
+  "logoutConfirmDescription": "האם אתה בטוח שברצונך להתנתק מהחשבון?",
+  "upgrade": "שדרוג",
+  "sections": {
+    "research": "מחקר",
+    "management": "ניהול",
+    "business": "עסקים",
+    "admin": "ניהול מערכת",
+    "guestPost": "פוסטים אורחים",
+    "updateAi": "עדכון AI",
+    "myGpts": "ה-GPT שלי"
+  },
+  "help": "עזרה",
+  "close": "סגור",
+  "status": {
+    "active": "פָּעִיל"
+  },
+  "advertiseAi": "פרסם בינה מלאכותית",
+  "myAis": {
+    "title": "ה-AI שלי",
+    "subtitle": "נהל ועקוב אחר הביצועים של כלי ה-AI שהוגשו.",
+    "empty": {
+      "cta": "שלח כלי AI"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Social Listening - Monitor AI Trends | TopAICollection",
+    "description": "Monitor AI trends across social media platforms. Track mentions, sentiment, and emerging AI tools.",
+    "detailTitle": "{name} Social Listening — TopAI",
+    "detailDescription": "Social listening analytics for {name}.",
+    "notFoundTitle": "Tool Not Found - Social Listening"
+  },
+  "title": "Social Listening",
+  "subtitle": "Track social video performance of AI tools across TikTok, YouTube, and Twitter.",
+  "leaderboardTitle": "Social Listening Leaderboard",
+  "leaderboardSubtitle": "Instantly track the social video performance of any AI tool on YouTube, TikTok, and Twitter.",
+  "table": {
+    "aiTool": "AI Tool",
+    "introduce": "Description",
+    "videoCount": "Video Count",
+    "creatorsCount": "Creator Count",
+    "monthlyTraffic": "Monthly Traffic",
+    "avgViews": "Average Views",
+    "avgInteractions": "Average Interactions",
+    "totalViews": "Total Views",
+    "totalInteractions": "Total Interactions",
+    "totalEngagement": "Total Engagement",
+    "emptyState": "No data found",
+    "pageIndicator": "Page {page} of {lastPage}",
+    "updatedAt": "Updated Date"
+  },
+  "search": {
+    "placeholder": "Enter the tool name or domain"
+  },
+  "pagination": {
+    "prev": "Prev",
+    "next": "Next",
+    "page": "Page"
+  },
+  "detail": {
+    "viewTool": "View Tool details",
+    "filterInteraction": "Filter by Engagement",
+    "tabs": {
+      "socialListening": "Social Listening"
+    },
+    "stats": {
+      "monthlyVisits": "Monthly Visits",
+      "growth": "Growth",
+      "growthRate": "Growth Rate",
+      "socialVideos": "Social Media Videos",
+      "newLastWeek": "New Videos Last Week"
+    },
+    "metrics": {
+      "avgViews": "Average Views",
+      "totalVideos": "Total Videos",
+      "totalCreators": "Total Creators",
+      "totalViews": "Total Views",
+      "totalLikes": "Total Likes",
+      "totalComments": "Total Comments",
+      "totalShares": "Total Shares",
+      "totalCollects": "Total Collects",
+      "totalQuotes": "Total Quotes",
+      "totalReposts": "Total Reposts"
+    },
+    "platforms": {
+      "all": "All"
+    },
+    "influencers": {
+      "title": "Top Influencers",
+      "name": "Creator",
+      "platform": "Platform",
+      "videos": "Videos",
+      "reach": "Est. Reach"
+    },
+    "feed": {
+      "title": "Social Feed",
+      "unlockCta": "Unlock to view more",
+      "unlockDesc": "Sign in to see full video analytics and trends",
+      "viewNow": "View Now →",
+      "sortBy": "Sort by",
+      "sortViews": "Views",
+      "sortLikes": "Likes",
+      "sortDate": "Date",
+      "loadMore": "Load More",
+      "searchPlaceholder": "Search by title or creator...",
+      "emptyState": "No posts found. Only video posts appear here.",
+      "untitledPost": "Untitled Post",
+      "metrics": {
+        "views": "Views",
+        "likes": "Likes",
+        "retweets": "Retweets",
+        "shares": "Shares",
+        "replies": "Replies",
+        "comments": "Comments",
+        "quotes": "Quotes",
+        "saves": "Saves",
+        "collects": "Collects",
+        "upvotes": "Upvotes",
+        "follows": "Follows"
+      },
+      "sortComments": "Comments",
+      "sortShares": "Shares"
+    },
+    "traffic": {
+      "bounceRate": "Bounce Rate",
+      "pagesPerVisit": "Pages / Visit",
+      "avgVisitDuration": "Avg. Visit Duration",
+      "globalRanking": "Global Ranking",
+      "category": "Category",
+      "categoryRanking": "Category Ranking",
+      "deviceSplit": "Desktop vs Mobile",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "trafficSources": "Traffic Sources",
+      "topRegions": "Top Countries",
+      "processingMsg": "Deep traffic demographics and origin data are currently being processed. Check back later for complete country and traffic source metrics.",
+      "monthlyTrafficTrend": "Monthly Traffic Trend",
+      "monthlyTrafficTrendDesc": "Global historical visits over the last 30 days",
+      "sourceWebsiteInsight": "Source: Website Insight Global"
+    },
+    "pricing": {
+      "notDocumented": "Pricing plans are not documented yet.",
+      "checkWebsite": "Check official website",
+      "visitWebsite": "Visit Website",
+      "month": "month"
+    },
+    "lastUpdated": "Last updated"
+  },
+  "platforms": {
+    "all": "All Platforms"
+  },
+  "monitors": {
+    "title": "Your Monitors",
+    "subtitle": "Track specific keywords across social platforms",
+    "inputPlaceholder": "Enter keyword (e.g. ChatGPT, Midjourney)",
+    "addButton": "Start Tracking",
+    "emptyTitle": "No active monitors",
+    "emptyDesc": "Add a keyword above to start monitoring social mentions and sentiment.",
+    "keyword": "Keyword",
+    "platform": "Platform",
+    "status": "Status",
+    "statusTracking": "Tracking",
+    "lastActive": "Last Active",
+    "addSuccess": "Monitor added successfully!",
+    "addError": "Failed to add monitor"
+  },
+  "socialListeningTitle": "Social Listening Leaderboard",
+  "nav": {
+    "overview": "Overview",
+    "traffic": "Traffic",
+    "social": "Social",
+    "pricing": "Pricing"
+  },
+  "locked": {
+    "quotaTitle": "Feature Locked",
+    "quotaDesc": "You have reached your social listening quota. Upgrade to unlock more insights.",
+    "upgradeBtn": "Upgrade Now",
+    "overlayTitle": "Premium Feature",
+    "overlayDesc": "This feature requires an active premium subscription.",
+    "unlockBtn": "Unlock Premium"
+  }
+}

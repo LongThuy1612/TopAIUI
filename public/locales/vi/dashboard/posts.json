@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Bài đăng & Liên kết",
+    "description": "Quản lý bài viết khách và chèn liên kết của bạn.",
+    "submitNewItem": "Gửi mục mới",
+    "submitNew": "Gửi mới",
+    "guestPost": "Bài viết khách",
+    "linkInsert": "Chèn liên kết",
+    "type": "Loại",
+    "targetUrl": "URL đích",
+    "targetUrlPlaceholder": "https://trang-cua-ban.com/...",
+    "anchorText": "Tiêu đề / Anchor Text",
+    "anchorTextPlaceholder": "Tiêu đề bài viết HOẶC Anchor text cho liên kết",
+    "submitCredits": "Gửi (1 Tín dụng)",
+    "tabs": {
+      "guestPosts": "Bài viết khách",
+      "linkInserts": "Chèn liên kết"
+    },
+    "table": {
+      "title": "Tiêu đề",
+      "anchor": "Văn bản neo",
+      "url": "URL",
+      "status": "Trạng thái",
+      "date": "Ngày"
+    },
+    "empty": {
+      "noGuestTitle": "Không có bài viết khách",
+      "noGuestDesc": "Bạn chưa gửi bài viết khách nào.",
+      "noGuestCta": "Gửi bài viết khách",
+      "noLinkTitle": "Không có liên kết được chèn",
+      "noLinkDesc": "Bạn chưa gửi liên kết nào.",
+      "noLinkCta": "Gửi liên kết"
+    },
+    "subtitle": "Quản lý bài đăng của khách và chèn liên kết."
+  }
+}

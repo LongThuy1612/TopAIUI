@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "AI Blog & Nieuws - TopAICollection",
+    "description": "Blijf op de hoogte van het laatste AI-nieuws, tutorials, recensies en inzichten uit de wereld van kunstmatige intelligentie."
+  },
+  "badge": "AI-inzichten",
+  "title": "AI-blog en nieuws",
+  "subtitle": "Blijf op de hoogte van de nieuwste trends, tutorials en inzichten uit de AI-wereld",
+  "search": {
+    "placeholder": "Artikelen zoeken..."
+  },
+  "categories": {
+    "title": "Categorieën",
+    "all": "Alle artikelen",
+    "news": "AI-nieuws",
+    "tutorials": "Handleidingen",
+    "reviews": "Gereedschapsrecensies",
+    "industry": "Industrie-inzichten",
+    "guides": "Handleidingen"
+  },
+  "newsletter": {
+    "title": "Blijf op de hoogte",
+    "subtitle": "Ontvang het laatste AI-nieuws in uw inbox",
+    "placeholder": "Voer uw e-mailadres in",
+    "button": "Abonneren"
+  },
+  "article": {
+    "readTime": "{minutes} min gelezen",
+    "published": "Gepubliceerd op {date}",
+    "writtenBy": "Written & Edited by:",
+    "factCheckedBy": "Fact Checked By:"
+  },
+  "pagination": {
+    "next": "Volgende",
+    "page": "Pagina {page} van {total}"
+  },
+  "relatedTools": "Gerelateerde hulpmiddelen",
+  "backToBlog": "Terug naar blog",
+  "errors": {
+    "notFound": "Bericht niet gevonden"
+  },
+  "sort": {
+    "latest": "Nieuwste",
+    "oldest": "Oudste",
+    "popular": "Populair"
+  },
+  "filter": {
+    "allAuthors": "Alle auteurs",
+    "sortBy": "Sorteren op"
+  },
+  "relatedPosts": "Gerelateerde berichten",
+  "faqs": "Veelgestelde vragen"
+}

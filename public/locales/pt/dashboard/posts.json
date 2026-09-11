@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Publicações e Links",
+    "description": "Gira os seus guest posts e inserções de links.",
+    "submitNewItem": "Enviar Novo Item",
+    "submitNew": "Enviar Novo",
+    "guestPost": "Postagem de convidado",
+    "linkInsert": "Inserção de Link",
+    "type": "Tipo",
+    "targetUrl": "URL de Destino",
+    "targetUrlPlaceholder": "https://o-seu-site.com/...",
+    "anchorText": "Título / Texto âncora",
+    "anchorTextPlaceholder": "Título do artigo OU Texto âncora para o link",
+    "submitCredits": "Enviar (1 Crédito)",
+    "tabs": {
+      "guestPosts": "Postagens de convidados",
+      "linkInserts": "Inserções de Links"
+    },
+    "table": {
+      "title": "Título",
+      "anchor": "Texto âncora",
+      "url": "URL",
+      "status": "Estado",
+      "date": "Data"
+    },
+    "empty": {
+      "noGuestTitle": "Sem Guest Posts",
+      "noGuestDesc": "Ainda não enviou nenhum guest post.",
+      "noGuestCta": "Enviar Guest Post",
+      "noLinkTitle": "Sem Inserções de Links",
+      "noLinkDesc": "Ainda não enviou nenhuma inserção de link.",
+      "noLinkCta": "Enviar Inserção de Link"
+    },
+    "subtitle": "Gerencie suas postagens de convidados e inserções de links."
+  }
+}

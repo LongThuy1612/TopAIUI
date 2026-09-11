@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Тарифные планы - TopAICollection",
+    "description": "Простое и прозрачное ценообразование для исследований в области ИИ и социального мониторинга."
+  },
+  "title": "Простое и прозрачное ценообразование",
+  "subtitle": "Начните бесплатно и масштабируйтесь по мере роста. Без сюрпризов.",
+  "plans": {
+    "free": {
+      "name": "Бесплатно",
+      "banner": "Начните бесплатно — карта не нужна."
+    },
+    "professional": {
+      "name": "Профессиональный"
+    },
+    "enterprise": {
+      "name": "Корпоративный"
+    },
+    "free-monthly": {
+      "name": "Бесплатно"
+    },
+    "free-yearly": {
+      "name": "Бесплатно"
+    },
+    "professional-monthly": {
+      "name": "Профессиональный"
+    },
+    "professional-yearly": {
+      "name": "Профессиональный"
+    },
+    "enterprise-monthly": {
+      "name": "Корпоративный"
+    },
+    "enterprise-yearly": {
+      "name": "Корпоративный"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Самый популярный"
+  },
+  "features": {
+    "websiteInsights": "Аналитика сайта",
+    "socialListening": "Мониторинг соцсетей",
+    "prioritySupport": "Приоритетная поддержка",
+    "advertising": "Реклама",
+    "premiumSupport": "Премиум поддержка"
+  },
+  "cta": {
+    "loading": "Обработка...",
+    "upgrade": "Начать"
+  },
+  "comparison": {
+    "title": "Сравнение всех тарифов",
+    "feature": "Функция"
+  },
+  "billing": {
+    "monthly": "Ежемесячно",
+    "yearly": "Ежегодно",
+    "discount20": "Сэкономьте 20%",
+    "suffixYearly": "/год",
+    "suffixMonthly": "/месяц",
+    "upgradeTitle": "Обновите свой план исследований",
+    "upgradeDesc": "Разблокируйте расширенную аналитику, информацию о конкурентах и ​​многое другое.",
+    "subscribe": "Подпишитесь сейчас"
+  },
+  "billingMonthly": "Ежемесячно",
+  "billingYearly": "Ежегодно",
+  "billingBestValue": "Сэкономьте 20%",
+  "badgePopular": "Самый популярный",
+  "billingPerMonth": "/ месяц",
+  "billingPerYear": "/ год"
+}

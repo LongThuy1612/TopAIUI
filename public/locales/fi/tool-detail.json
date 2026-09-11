@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- AI-työkalun tarkistus ja analyysi"
+  },
+  "errors": {
+    "notFound": "Työkalua ei löydy",
+    "notFoundDescription": "Etsimääsi työkalua ei ole olemassa.",
+    "serverError": "Sisäinen palvelinvirhe.",
+    "serverErrorDescription": "Palvelimella tapahtui odottamaton virhe. Yritä myöhemmin uudelleen."
+  },
+  "actions": {
+    "visit": "Vieraile verkkosivustolla",
+    "save": "Tallentaa",
+    "saved": "Tallennettu",
+    "share": "Jakaa",
+    "update": "Päivitä tämä työkalu",
+    "advertise": "Mainosta tätä työkalua",
+    "visitWebsite": "Vieraile verkkosivustolla",
+    "readMore": "Lue lisää",
+    "readLess": "Lue vähemmän",
+    "openVideo": "Avaa video"
+  },
+  "cta": {
+    "visit": "Avaa sivusto",
+    "advertise": "Mainosta tätä työkalua",
+    "update": "Päivitä tämä työkalu"
+  },
+  "sidebar": {
+    "category": "Luokka",
+    "tags": "Tunnisteet"
+  },
+  "tabs": {
+    "socialListening": "Sosiaalinen kuuntelu",
+    "alternatives": "Vaihtoehtoja"
+  },
+  "similar": {
+    "title": "Samanlaisia ​​AI-työkaluja"
+  },
+  "stats": {
+    "monthlyVisits": "Kuukausittaiset vierailut",
+    "growth": "Kasvu",
+    "reviews": "arvosteluja",
+    "averageTime": "Keskimääräinen aika paikan päällä",
+    "pagesPerVisit": "Sivuja per käynti",
+    "bounceRate": "Poistumisprosentti",
+    "visits": "Vierailut",
+    "reviews_formatted": "{rating} ({count} arvostelua)"
+  },
+  "sections": {
+    "overview": "Yleiskatsaus",
+    "reviews": "Arvostelut",
+    "analytics": "Analyysi",
+    "embed": "Upottaa",
+    "alternatives": "Vaihtoehtoja",
+    "related": "Aiheeseen liittyvät työkalut"
+  },
+  "details": {
+    "description": "Työkalun esittely:",
+    "monthlyTraffic": "Kuukausittainen liikenne:",
+    "socialMedia": "Sosiaalinen media ja sähköposti:",
+    "company": "Yritys",
+    "categories": "Luokat",
+    "tags": "Tunnisteet"
+  },
+  "content": {
+    "whatIs": "Mikä on",
+    "howToUse": "Kuinka käyttää",
+    "coreFeatures": "Ydinominaisuudet",
+    "useCases": "Käyttötapaukset",
+    "pricingPlans": "Hinnoittelusuunnitelmat",
+    "faqs": "Usein kysytyt kysymykset",
+    "relatedTools": "Aiheeseen liittyvät työkalut",
+    "productInfo": "Tuotetiedot",
+    "writtenBy": "Kirjoittanut ja toimittanut",
+    "factCheckedBy": "Faktantarkistaja"
+  },
+  "analytics": {
+    "title": "Analytiikka ja liikennetiedot",
+    "subtitle": "Analyysi",
+    "latestTraffic": "Viimeisin verkkosivuliikenne",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Verkkosivuston liikenteen lähteet",
+    "topKeywords": "Suosituimmat avainsanat",
+    "keyword": "avainsana",
+    "traffic": "Liikenne",
+    "trafficSubtitle": "parantaaksesi verkkoliikennettä",
+    "geoSubtitle": "hakukoneindikaattorit",
+    "sourceSubtitle": "hakukoneindikaattorit",
+    "keywordSubtitle": "hakukoneindikaattorit",
+    "percentage": "Prosenttiosuus",
+    "source": "Lähde",
+    "noChartData": "Ei kaaviotietoja",
+    "noTrafficChartData": "Ei liikennekaaviotietoja",
+    "desktopVsMobile": "Pöytäkone vs. Mobiili",
+    "desktop": "Pöytäkone",
+    "mobileWeb": "Mobiili",
+    "similarSites": "Vastaavat sivustot",
+    "globalRank": "Globaali sijoitus",
+    "founded": "Perustettu",
+    "socialInfluence": "Sosiaalisen median vaikutus",
+    "views": "näkymät",
+    "mentions": "mainitsee",
+    "trendHistory": "Trendihistoria",
+    "trendSubtitle": "Liikenne, katselukerrat ja plus-äänetrendit ajan mittaan",
+    "upvotes": "plus-ääniä"
+  },
+  "embed": {
+    "title": "Upota verkkosivustollesi",
+    "description": "Lisää tämä työkalu verkkosivustollesi kauniilla upotuswidgetillä",
+    "preview": "Esikatselu",
+    "code": "Upota koodi",
+    "copy": "Kopioi koodi",
+    "copied": "Kopioitu!",
+    "badgeAlt": "TopAICollection -merkki",
+    "themes": {
+      "light": "Vaalea",
+      "neutral": "Neutraali",
+      "dark": "Tumma"
+    }
+  },
+  "alternatives": {
+    "title": "Vaihtoehtoja",
+    "description": "Samanlaisia ​​työkaluja saatat pitää"
+  },
+  "pricing": {
+    "title": "Hinnoittelusuunnitelmat",
+    "subtitle": "Valitse sinulle parhaiten sopiva suunnitelma",
+    "popular": "Suosittu",
+    "getStarted": "Aloita",
+    "disclaimer": "Hinnat ja ominaisuudet voivat vaihdella. Vieraile virallisella verkkosivustolla saadaksesi ajantasaisimmat tiedot.",
+    "noPricingInfo": "Hintatietoja ei ole saatavilla",
+    "free": "ilmainen",
+    "moreFeatures": "Lisää ominaisuuksia"
+  },
+  "charts": {
+    "trafficChart": "Liikennekaavio",
+    "comingSoon": "Kaavion visualisointi tulossa pian"
+  },
+  "reviews": {
+    "title": "Arvostelut",
+    "pointsScale": "viidestä",
+    "subtitle": "Katso mitä yhteisö ajattelee",
+    "writeTitle": "Suositteletko tätä työkalua?",
+    "placeholder": "Jaa kokemuksesi tästä työkalusta...",
+    "privacy": "Yksityisyys suojattu",
+    "success": "Arvostelu lähetetty onnistuneesti!",
+    "submit": "Lähetä arvostelu",
+    "loginToReview": "Kirjaudu sisään lähettääksesi arvostelun",
+    "loginLink": "Kirjaudu sisään",
+    "noReviews": "Ei vielä arvosteluja. Ole ensimmäinen, joka arvostelee tämän työkalun!",
+    "viewMore": "Näytä kaikki arvostelut",
+    "allReviewsTitle": "Kaikki arvostelut:",
+    "reviewsPageTitle": "Arvostelut",
+    "by": "käyttäjältä",
+    "verified": "Vahvistettu",
+    "anonymous": "Anonyymi käyttäjä",
+    "ratingLabel": "Arvosana",
+    "commentLabel": "Kommentti",
+    "dateLabel": "Päivämäärä",
+    "page": "Sivu",
+    "editReview": "Muokkaa arvostelua",
+    "deleteReview": "Poista arvostelu",
+    "deleteConfirm": "Haluatko varmasti poistaa arvostelusi?",
+    "editTitle": "Muokkaa arvostelua",
+    "updateSuccess": "Arvostelu päivitetty onnistuneesti!",
+    "deleteSuccess": "Arvostelu poistettu onnistuneesti!",
+    "commentRequired": "Anna arvostelullesi kommentti.",
+    "ratingRequired": "Valitse arvosana.",
+    "alreadyReviewed": "Olet jo arvioinut tämän työkalun. Päivitä arvostelusi ✏️muokkaa-painikkeella.",
+    "sort": {
+      "label": "Lajitteluperuste",
+      "newest": "Uusin ensin",
+      "oldest": "Vanhin ensin",
+      "highest": "Korkein arvosana",
+      "lowest": "Alin arvosana"
+    },
+    "save": "Tallentaa",
+    "cancel": "Peruuttaa",
+    "close": "Lähellä",
+    "userLabel": "Käyttäjä",
+    "unverify": "Peruuta vahvistus",
+    "markVerified": "Merkitse vahvistetuksi",
+    "confirm": "Vahvistaa",
+    "noReviewsFound": "Tästä työkalusta ei löytynyt arvosteluja.",
+    "deleteError": "Poistaminen epäonnistui.",
+    "updateError": "Päivittäminen epäonnistui.",
+    "pagination": {
+      "showing": "Näytetään",
+      "of": "/",
+      "reviews": "arvostelut",
+      "prev": "Edellinen",
+      "next": "Seuraava"
+    },
+    "statusLabel": "Tila",
+    "actionsLabel": "Toiminnot"
+  },
+  "share": {
+    "title": "Jaa tämä työkalu"
+  },
+  "metrics": {
+    "monthlyVisits": "Kuukausittaiset vierailut",
+    "growth": "Kasvu"
+  },
+  "tags": "Tunnisteet",
+  "overview": "Yleiskatsaus",
+  "howToUse": "Kuinka käyttää",
+  "pricingPlans": "Hinnoittelusuunnitelmat",
+  "faqs": "UKK",
+  "geoChart": {
+    "noData": "Maantieteellisiä tietoja ei ole saatavilla",
+    "loading": "Ladataan maantieteellisiä tietoja..."
+  },
+  "introduction": "Johdanto",
+  "description": "Kuvaus",
+  "coreFeatures": "Ydinominaisuudet",
+  "useCases": "Käyttötapaukset",
+  "screenshots": "Kuvakaappaukset",
+  "companyInfo": {
+    "companyName": "Yrityksen nimi",
+    "contactEmail": "Yhteydenotto Sähköposti"
+  },
+  "nav": {
+    "scrollLeft": "Vieritä vasemmalle",
+    "scrollRight": "Vieritä oikealle",
+    "previous": "edellinen",
+    "next": "Seuraava",
+    "imageSlide": "Kuva {index}",
+    "videoSlide": "Videodia"
+  },
+  "badges": {
+    "verifiedListing": "Vahvistettu listaus",
+    "freePlan": "Ilmainen suunnitelma",
+    "paidPlans": "Maksulliset suunnitelmat ja hinta"
+  },
+  "dummyReviews": {
+    "c1": "Tämä on upea AI-työkalu! Se muutti työnkulkuni täysin.",
+    "c2": "Erittäin hyvät ominaisuudet ja helppokäyttöinen. Erittäin suositeltava.",
+    "c3": "Olen kokeillut monia vaihtoehtoja, mutta tämä on ylivoimaisesti paras.",
+    "c4": "Erinomainen vastine hinnalle. Ilmaispaketti on myös erittäin antelias.",
+    "c5": "Loistava UI ja intuitiivinen muotoilu. Joskus hieman hidas, mutta kaiken kaikkiaan mahtava.",
+    "c6": "Pakollinen työkalu jokaiselle ammattilaiselle. Säästää minulta tunteja joka viikko.",
+    "c7": "Hyvä toiminnallisuus, mutta vaatii jonkin verran opettelua."
+  }
+}

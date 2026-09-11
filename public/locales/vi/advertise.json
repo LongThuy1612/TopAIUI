@@ -1,0 +1,294 @@
+{
+  "title": "Quảng cáo công cụ AI của bạn",
+  "description": "Nhận vị trí cao cấp và tiếp cận tối đa cho công cụ AI của bạn.",
+  "hero": {
+    "title": "Công cụ AI của bạn trên TopAICollection",
+    "subtitle": "TopAI giúp bạn tiếp cận hàng triệu người dùng AI và khách hàng tiềm năng trên toàn thế giới.",
+    "stats": {
+      "pageViews": "5 triệu+",
+      "pageViewsLabel": "Lượt xem trang",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Lượt truy cập/tháng",
+      "subscribers": "100K+",
+      "subscribersLabel": "Người đăng ký",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "Người dùng Desktop",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Người dùng đăng ký",
+      "avgTimeOnSite": "2,5m",
+      "avgTimeOnSiteLabel": "Thời gian trên trang TB"
+    },
+    "benefits": [
+      "Danh mục công cụ AI hàng đầu",
+      "Liên kết ngược Dofollow",
+      "Giới thiệu đa ngôn ngữ",
+      "Danh sách & Lưu lượng truy cập mãi mãi",
+      "Giá trị dành cho người sáng lập và khởi nghiệp"
+    ]
+  },
+  "tabs": {
+    "submit": "Gửi AI",
+    "submitDesc": "Gửi công cụ AI, nhận lưu lượng",
+    "advertise": "Quảng cáo AI",
+    "advertiseDesc": "Trả tiền theo lượt nhấp, quảng bá nổi bật, vị trí tự động",
+    "guestPost": "Guest Post / Chèn Link",
+    "guestPostDesc": "Guest post/chèn link trên TopAI",
+    "updateAi": "Cập nhật AI",
+    "updateAiDesc": "Cập nhật thông tin công cụ của bạn",
+    "submitGpt": "Gửi GPT",
+    "submitGptDesc": "Gửi GPT để nhiều người sử dụng hơn",
+    "business": "Kinh doanh thêm",
+    "businessDesc": "Trao đổi link, bài đăng Twitter, video, v.v."
+  },
+  "form": {
+    "toolLabel": "Công cụ",
+    "toolHint": "Lưu ý: Nếu không tìm thấy công cụ, vui lòng gửi trước.",
+    "toolPlaceholder": "Tìm kiếm công cụ của bạn...",
+    "adLandingLink": "Link quảng cáo",
+    "toolLandingPlaceholder": "/dụng cụ/...",
+    "websitePlaceholder": "https://example.com",
+    "urlTitle": "Vui lòng nhập một URL hợp lệ bắt đầu bằng http:// hoặc https://"
+  },
+  "clicks": {
+    "title": "Chọn số lượt nhấp bạn cần",
+    "numberOfClicks": "Số lượt nhấp",
+    "total": "Tổng cộng",
+    "payButton": "Thanh toán",
+    "submitButton": "Gửi yêu cầu"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Ví dụ quảng cáo công cụ",
+    "description": "Chúng tôi tự động hiển thị quảng cáo dựa trên thuật toán để đảm bảo bạn nhận được không ít hơn số lượt nhấp đã mua.",
+    "note": "Ưu tiên tiêu thụ chi phí quảng cáo để nhanh chóng có lượt nhấp và hiển thị. Bạn có thể tạm dừng hoặc bắt đầu quảng cáo.",
+    "typesTitle": "Các loại quảng cáo:",
+    "mostFrequently": "Phổ biến nhất",
+    "mostEffective": "Hiệu quả nhất",
+    "standard": "Tiêu chuẩn",
+    "targeted": "Mục tiêu",
+    "standardDesc": "Xuất hiện trên trang chủ, danh sách và trang danh mục.",
+    "effectiveDesc": "Xuất hiện trên trang đối thủ và trong trang danh mục của bạn.",
+    "featured": "Nổi bật*",
+    "featuredDesc1": "Vị trí nổi bật trên Trang chủ, AI Mới nhất, Dùng nhiều nhất, Lưu nhiều nhất, Kết quả tìm kiếm, v.v.",
+    "featuredDesc2": "Ở đầu hầu hết các trang sẽ có vị trí nhà tài trợ."
+  },
+  "faq": {
+    "title": "FAQ - Quảng cáo",
+    "items": [
+      {
+        "question": "Quảng cáo hoạt động như thế nào?",
+        "answer": "Chúng tôi hiển thị công cụ của bạn ở các vị trí cao cấp trên nền tảng của chúng tôi. Bạn trả tiền cho mỗi lần nhấp chuột và chúng tôi đảm bảo quảng cáo của bạn nhận được số lần nhấp chuột mà bạn đã mua."
+      },
+      {
+        "question": "Tôi có thể mua số lần nhấp chuột nhiều lần không?",
+        "answer": "Có, bạn có thể mua các gói nhấp chuột bổ sung bất kỳ lúc nào để tăng khả năng hiển thị cho công cụ của mình."
+      },
+      {
+        "question": "Tôi có thể tạm dừng quảng cáo của mình không?",
+        "answer": "Có, bạn có thể tạm dừng và tiếp tục các chiến dịch quảng cáo của mình bất kỳ lúc nào từ trang tổng quan của mình."
+      },
+      {
+        "question": "Tôi nhận được loại phân tích nào?",
+        "answer": "Bạn sẽ nhận được dữ liệu chi tiết về số lần nhấp không phải trả tiền, số lần nhấp có trả tiền, tổng số lần nhấp, số lần hiển thị và số lượt lưu."
+      }
+    ]
+  },
+  "whyAdvertise": "Tại sao nên quảng cáo?",
+  "customPackage": {
+    "title": "Cần gói tùy chỉnh?",
+    "description": "Liên hệ với chúng tôi để có giải pháp quảng cáo phù hợp.",
+    "contactSales": "Liên hệ kinh doanh",
+    "estimatedClicks": "Số nhấp chuột ước tính",
+    "estimatedImpressions": "Số lần hiển thị ước tính",
+    "estimatedViews": "Số lượt xem ước tính",
+    "estimatedUnits": "Đơn vị ước tính",
+    "toolSlug": "Sên công cụ",
+    "landingUrl": "Url đích",
+    "campaignParameters": "Thông số chiến dịch",
+    "metricType": "Loại số liệu",
+    "pacingType": "Loại nhịp độ",
+    "basePrice": "“Giá cơ sở”",
+    "totalBudget": "Tổng ngân sách",
+    "startDate": "Ngày bắt đầu",
+    "endDate": "Ngày kết thúc",
+    "priorityBid": "Ưu tiên đấu thầu",
+    "estimation": "Ước tính",
+    "cancel": "Hủy",
+    "submitting": "Đang gửi",
+    "submitProposal": "Gửi đề xuất"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Vị trí cao cấp",
+      "description": "Vị trí nổi bật trên trang chủ và trang danh mục"
+    },
+    "targetedAudience": {
+      "title": "Đối tượng mục tiêu",
+      "description": "Tiếp cận người dùng đang tích cực tìm kiếm công cụ AI"
+    },
+    "analytics": {
+      "title": "Phân tích",
+      "description": "Theo dõi hiệu suất với thông tin chi tiết"
+    }
+  },
+  "campaigns": {
+    "previous": "Trước",
+    "pageOf": "Trang {page}/{total}",
+    "choosePlan": "Chọn gói quảng cáo",
+    "choosePlanDesc": "Vui lòng chọn gói dưới đây để gia hạn hoặc nâng cấp chiến dịch của bạn.",
+    "currentPlan": "Gói hiện tại",
+    "selectAgain": "Chọn lại",
+    "selectPlan": "Chọn gói"
+  },
+  "transactions": {
+    "noDescription": "Bạn chưa mua gói quảng cáo nào. Nạp tiền để bắt đầu chạy chiến dịch."
+  },
+  "meta": {
+    "title": "Quảng cáo Công cụ AI - TopAICollection",
+    "description": "Quảng cáo công cụ AI của bạn tới hàng triệu người đam mê AI."
+  },
+  "plans": {
+    "title": "Gói quảng cáo",
+    "subtitle": "Mở rộng phạm vi tiếp cận",
+    "clickTarget": "Mục tiêu nhấp",
+    "toolRequired": "⚠ Vui lòng nhập tên công cụ ở trên trước khi gửi.",
+    "empty": "Không có gói quảng cáo nào hiện tại. Vui lòng kiểm tra lại sau.",
+    "customPlanConfig": "Cấu hình gói tùy chỉnh",
+    "basePrice": "Giá cơ bản ($)",
+    "adPlacements": "Vị trí quảng cáo",
+    "applyConfig": "Áp dụng cấu hình",
+    "configured": "Đã cấu hình",
+    "toolSlug": "Đường dẫn công cụ",
+    "landingUrl": "URL trang đích",
+    "campaignParameters": "Tham số chiến dịch",
+    "metricType": "Loại chỉ số",
+    "pacingType": "Loại phân phối",
+    "totalBudget": "Tổng ngân sách ($)",
+    "startDate": "Ngày bắt đầu",
+    "endDate": "Ngày kết thúc",
+    "priorityBid": "Giá thầu ưu tiên",
+    "estimation": "Ước tính",
+    "estimatedClicks": "Lượt click ước tính",
+    "estimatedImpressions": "Lượt hiển thị ước tính",
+    "estimatedViews": "Lượt xem ước tính",
+    "estimatedUnits": "Đơn vị {metric} ước tính",
+    "submitProposal": "Gửi đề xuất tùy chỉnh",
+    "submitting": "Đang gửi...",
+    "cancel": "Hủy",
+    "customBid": {
+      "title": "Đấu thầu hiệu suất tùy chỉnh",
+      "budgetLabel": "Tổng ngân sách ($)",
+      "budgetDescription": "Tổng số tiền bạn muốn chi tiêu.",
+      "priorityBidLabel": "Hệ số thầu ưu tiên",
+      "priorityBidDescription": "Giá thầu cao hơn = tần suất xuất hiện cao hơn.",
+      "minBudget": "Ngân sách tối thiểu là $10",
+      "minBid": "Giá thầu tối thiểu là $0.01"
+    },
+    "placeholders": {
+      "toolSlug": "công cụ tuyệt vời của tôi",
+      "landingUrl": "https://...",
+      "metricType": "Chi phí mỗi chuyển đổi",
+      "pacingType": "THẬM CHÍ"
+    }
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "mỗi lượt nhấp",
+      "CPM": "mỗi 1k hiển thị",
+      "CPV": "mỗi lượt xem",
+      "FLAT_RATE": "giá cố định",
+      "CPC_LABEL": "BLTTDS",
+      "CPM_LABEL": "Chi phí mỗi nghìn lượt hiển thị",
+      "CPV_LABEL": "(CPV)",
+      "FLAT_RATE_LABEL": "Đồng giá"
+    },
+    "units": {
+      "clicks": "lượt nhấp",
+      "impressions": "lượt hiển thị",
+      "views": "lượt xem",
+      "units": "đơn vị"
+    }
+  },
+  "submit": {
+    "button": "Gửi yêu cầu chiến dịch",
+    "submitting": "Đang gửi…",
+    "error": "Gửi thất bại. Vui lòng thử lại.",
+    "successTitle": "Chiến dịch đã được gửi!",
+    "budgetLabel": "Đặt Ngân sách Chiến dịch ($ USD)",
+    "success": "Chiến dịch đã được tạo thành công!",
+    "untitled": "Chiến dịch chưa đặt tên",
+    "missingTool": "Yêu cầu phải có Công cụ hoặc URL mục tiêu",
+    "loginRequiredTitle": "Yêu Cầu Đăng Nhập",
+    "loginRequiredDesc": "Vui lòng đăng nhập để gửi công cụ. Tiến trình của bạn sẽ không được lưu cho đến khi bạn xác thực."
+  },
+  "selected": "Đã chọn",
+  "summary": {
+    "selectedPlanLabel": "Gói quảng cáo đã chọn",
+    "totalPriceLabel": "Tổng chi phí cố định",
+    "securityFooter": "Thanh toán an toàn • Kích hoạt tức thì • Phân tích đầy đủ"
+  },
+  "sidebar": {
+    "pageViews": "Lượt xem trang",
+    "pageViewsSub": "Lưu lượng trang hàng tháng"
+  },
+  "details": "Chi tiết quảng cáo",
+  "duration": "Thời hạn (ngày)",
+  "selectDuration": "Chọn thời hạn",
+  "days": "{đếm, số nhiều, =1 {1 day} other {# days}}",
+  "preferredPlacement": "Vị trí ưu tiên",
+  "selectPlacement": "Chọn vị trí",
+  "placements": {
+    "homepageBanner": "Banner Trang chủ",
+    "sidebar": "Thanh bên",
+    "categoryPage": "Trang danh mục",
+    "newsletter": "Bản tin",
+    "HOME": "Trang chủ",
+    "CATEGORY": "Trang danh mục",
+    "SEARCH": "Kết quả tìm kiếm",
+    "TOOL_DETAIL": "Trang chi tiết công cụ"
+  },
+  "targetAudience": "Đối tượng mục tiêu",
+  "targetAudiencePlaceholder": "Mô tả đối tượng mục tiêu của bạn",
+  "validation": {
+    "required": "Trường này là bắt buộc",
+    "selectDuration": "Vui lòng chọn thời gian quảng cáo",
+    "selectPlacement": "Vui lòng chọn vị trí quảng cáo",
+    "targetAudienceMin": "Đối tượng mục tiêu phải có ít nhất 10 ký tự",
+    "toolNameRequired": "Tên công cụ là bắt buộc",
+    "url": "URL không hợp lệ",
+    "descriptionMin": "Mô tả phải có ít nhất 10 ký tự",
+    "categoryRequired": "Vui lòng chọn danh mục",
+    "email": "Email không hợp lệ",
+    "messageMin": "Tin nhắn phải có ít nhất 10 ký tự"
+  },
+  "charts": {
+    "cpc": "BLTTDS",
+    "cpm": "CPM",
+    "noData": "Không có dữ liệu lịch sử"
+  }
+}

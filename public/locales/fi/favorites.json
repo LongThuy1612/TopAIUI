@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Tallennetut työkalut - TopAICollection",
+    "description": "Tarkastele ja hallinnoi tallennettuja tekoälytyökalujasi ja verkkosivustojasi"
+  },
+  "title": "Tallennetut työkalut",
+  "description": "Tarkastele ja hallinnoi tallennettuja tekoälytyökalujasi ja verkkosivustojasi.",
+  "emptyState": {
+    "title": "Ei vielä tallennettuja työkaluja",
+    "description": "Aloita tutkiminen ja tallenna suosikki tekoälytyökalusi, jotta voit käyttää niitä myöhemmin.",
+    "action": "Selaa AI-työkaluja"
+  },
+  "stats": {
+    "lastUpdated": "Viimeksi päivitetty {date}"
+  },
+  "filters": {
+    "all": "Kaikki",
+    "popular": "Suosituin",
+    "category": "Kategorian mukaan"
+  },
+  "errors": {
+    "loadFailed": "Suosikkien lataaminen epäonnistui"
+  },
+  "noDescription": "Kuvausta ei ole saatavilla",
+  "retry": "Yritä uudelleen",
+  "actions": {
+    "addedToFavorites": "Lisätty suosikkeihin",
+    "removeFromFavorites": "Poista suosikeista",
+    "removedFromFavorites": "Poistettu suosikeista"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Privatlivspolitik - TopAICollection",
+    "description": "Lær, hvordan TopAICollection indsamler, bruger og beskytter dine personlige oplysninger."
+  },
+  "title": "Privatlivspolitik",
+  "lastUpdated": "Sidst opdateret",
+  "introduction": "Hos TopAICollection tager vi dit privatliv seriøst. Denne privatlivspolitik forklarer, hvordan vi indsamler, bruger, videregiver og beskytter dine oplysninger, når du besøger vores hjemmeside.",
+  "sections": {
+    "collection": {
+      "title": "Oplysninger, vi indsamler",
+      "content": [
+        "Personlige oplysninger, du angiver (navn, e-mail osv.)",
+        "Brugsdata (besøgte sider, brugt tid, klik)",
+        "Enhedsoplysninger (browsertype, IP-adresse)",
+        "Cookies og lignende sporingsteknologier"
+      ]
+    },
+    "usage": {
+      "title": "Hvordan vi bruger dine oplysninger",
+      "content": [
+        "At levere og vedligeholde vores service",
+        "For at give dig besked om ændringer i vores service",
+        "At yde kundesupport",
+        "At indsamle analyser eller værdifuld information for at forbedre vores service",
+        "For at overvåge brugen af ​​vores service",
+        "For at opdage, forebygge og løse tekniske problemer"
+      ]
+    },
+    "cookies": {
+      "title": "Cookies og sporing",
+      "content": [
+        "Vi bruger cookies til at spore aktivitet og opbevare visse oplysninger",
+        "Cookies hjælper os med at forstå brugerpræferencer og forbedre oplevelsen",
+        "Du kan instruere din browser til at afvise alle cookies",
+        "Hvis du ikke accepterer cookies, er nogle dele af vores service muligvis ikke tilgængelige"
+      ]
+    },
+    "security": {
+      "title": "Datasikkerhed",
+      "content": [
+        "Vi bruger kommercielt acceptable midler til at beskytte dine personlige oplysninger",
+        "Ingen transmissionsmetode over internettet er 100 % sikker",
+        "Vi kan ikke garantere absolut sikkerhed for dine data",
+        "Vi gennemgår regelmæssigt vores sikkerhedspraksis og opdaterer efter behov"
+      ]
+    },
+    "sharing": {
+      "title": "Informationsdeling",
+      "content": [
+        "Vi sælger, bytter eller udlejer ikke dine personlige oplysninger",
+        "Vi deler muligvis oplysninger med betroede partnere, der hjælper os",
+        "Vi kan videregive oplysninger, hvis loven kræver det",
+        "I tilfælde af fusion eller opkøb kan dine data blive overført"
+      ]
+    },
+    "rights": {
+      "title": "Dine rettigheder",
+      "content": [
+        "Få adgang til dine personlige data",
+        "Ret unøjagtige data",
+        "Anmod om sletning af dine data",
+        "Indsigelse mod behandling af dine data",
+        "Anmod om dataportabilitet",
+        "Træk samtykke tilbage til enhver tid"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakt os",
+    "content": "Hvis du har spørgsmål om denne privatlivspolitik, bedes du kontakte os på:"
+  }
+}

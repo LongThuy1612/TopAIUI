@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Tekoälymallit & Tietojoukot | TopAICollection",
+    "description": "Löydä ja tutki uusimmat tekoälymallit, tietojoukot ja arkkitehtuurit seuraavaan projektiisi."
+  },
+  "title": "Tekoälymallien Kirjasto",
+  "subtitle": "Tutki suurinta tekoälymallien, hienosäätöjen ja tietojoukkojen kokoelmaa.",
+  "comingSoon": "Tulossa pian!",
+  "comingSoonMessage": "Kokoamme parhaillaan parhaita tekoälymalleja. Palaa pian uudelleen.",
+  "searchPlaceholder": "Hae tekoälymalleja...",
+  "allProviders": "Kaikki tarjoajat",
+  "noResults": "Tekoälymalleja ei löydetty",
+  "noResultsHint": "Kokeile muuttaa hakuasi tai suodatuskriteereitäsi.",
+  "contextWindow": "Kontekstiikkuna",
+  "parameters": "Parametrit",
+  "provider": "Tarjoaja",
+  "architecture": "Arkkitehtuuri",
+  "releaseDate": "Julkaisupäivä",
+  "costPer1kTokens": "Hinta / 1K tokenia",
+  "free": "Ilmainen / Avoin lähdekoodi",
+  "tokens": "tokenia",
+  "viewWebsite": "Vieraile verkkosivustolla",
+  "modelsCount": "{count} tekoälymalli",
+  "modelsCount_plural": "{count} tekoälymallia",
+  "modelsGridTitle": "AI mallit"
+}

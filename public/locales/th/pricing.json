@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "แผนราคา - TopAICollection",
+    "description": "ราคาที่เรียบง่ายและโปร่งใสสำหรับการวิจัย AI และการฟังโซเชียล"
+  },
+  "title": "ราคาที่เรียบง่ายและโปร่งใส",
+  "subtitle": "เริ่มต้นฟรีและขยายขนาดตามที่คุณเติบโต ไม่มีความประหลาดใจ",
+  "plans": {
+    "free": {
+      "name": "ฟรี",
+      "banner": "เริ่มใช้ฟรี — ไม่ต้องใช้บัตรเครดิต"
+    },
+    "professional": {
+      "name": "มืออาชีพ"
+    },
+    "enterprise": {
+      "name": "องค์กร"
+    },
+    "free-monthly": {
+      "name": "ฟรี"
+    },
+    "free-yearly": {
+      "name": "ฟรี"
+    },
+    "professional-monthly": {
+      "name": "มืออาชีพ"
+    },
+    "professional-yearly": {
+      "name": "มืออาชีพ"
+    },
+    "enterprise-monthly": {
+      "name": "องค์กร"
+    },
+    "enterprise-yearly": {
+      "name": "องค์กร"
+    }
+  },
+  "badge": {
+    "popular": "⭐ ยอดนิยมที่สุด"
+  },
+  "features": {
+    "websiteInsights": "ข้อมูลเชิงลึกเว็บไซต์",
+    "socialListening": "การฟังโซเชียล",
+    "prioritySupport": "การสนับสนุนที่ได้รับความสำคัญ",
+    "advertising": "การโฆษณา",
+    "premiumSupport": "การสนับสนุนระดับพรีเมียม"
+  },
+  "cta": {
+    "loading": "กำลังดำเนินการ...",
+    "upgrade": "เริ่มต้นใช้งาน"
+  },
+  "comparison": {
+    "title": "เปรียบเทียบทุกแผน",
+    "feature": "คุณสมบัติ"
+  },
+  "billing": {
+    "monthly": "รายเดือน",
+    "yearly": "เป็นประจำทุกปี",
+    "discount20": "ประหยัด 20%",
+    "suffixYearly": "/ปี",
+    "suffixMonthly": "/เดือน",
+    "upgradeTitle": "อัปเกรดแผนการวิจัยของคุณ",
+    "upgradeDesc": "ปลดล็อกการวิเคราะห์ขั้นสูง ข้อมูลเชิงลึกของคู่แข่ง และอื่นๆ",
+    "subscribe": "สมัครสมาชิกตอนนี้"
+  },
+  "billingMonthly": "รายเดือน",
+  "billingYearly": "เป็นประจำทุกปี",
+  "billingBestValue": "ประหยัด 20%",
+  "badgePopular": "ยอดนิยมที่สุด",
+  "billingPerMonth": "/ เดือน",
+  "billingPerYear": "/ ปี"
+}

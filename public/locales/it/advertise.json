@@ -1,0 +1,294 @@
+{
+  "title": "Pubblicizza il tuo strumento AI",
+  "description": "Ottieni un posizionamento premium e la massima visibilità per il tuo strumento AI. Raggiungi migliaia di potenziali utenti che cercano attivamente soluzioni AI.",
+  "hero": {
+    "title": "Le tue IA su TopAICollection",
+    "subtitle": "TopAI può aiutarti a raggiungere milioni di utenti AI e i tuoi potenziali clienti in tutto il mondo.",
+    "stats": {
+      "pageViews": "5M+",
+      "pageViewsLabel": "Visualizzazioni di pagina",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Visite mensili",
+      "subscribers": "100K+",
+      "subscribersLabel": "Abbonati",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "Utenti desktop",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Utenti registrati",
+      "avgTimeOnSite": "2,5 metri",
+      "avgTimeOnSiteLabel": "Tempo medio sul sito"
+    },
+    "benefits": [
+      "Principali directory degli strumenti AI",
+      "Segui il backlink",
+      "Introduzione multilingue",
+      "Elenco e traffico per sempre",
+      "Valore per fondatori e startup"
+    ]
+  },
+  "tabs": {
+    "submit": "Invia AI",
+    "submitDesc": "Invia i tuoi strumenti di intelligenza artificiale e ottieni traffico",
+    "advertise": "Pubblicizza l'intelligenza artificiale",
+    "advertiseDesc": "Pay-per-click, promozioni in primo piano, posizionamento automatizzato degli annunci",
+    "guestPost": "Messaggi degli ospiti/Inserimento di collegamenti",
+    "guestPostDesc": "Guest post/inserimento link su TopAI",
+    "updateAi": "Aggiorna l'IA",
+    "updateAiDesc": "Aggiorna le informazioni del tuo strumento",
+    "submitGpt": "Invia GPT",
+    "submitGptDesc": "Invia il tuo GPT affinché più persone possano utilizzarlo",
+    "business": "Più affari",
+    "businessDesc": "Ad esempio: scambi di link, post su Twitter, video, ecc."
+  },
+  "form": {
+    "toolLabel": "Attrezzo",
+    "toolHint": "PS: se non è possibile trovare lo strumento, inviarlo prima.",
+    "toolPlaceholder": "Cerca il tuo strumento...",
+    "adLandingLink": "Link di destinazione dell'annuncio",
+    "urlTitle": "Inserisci un URL valido che inizi con http:// o https://",
+    "toolLandingPlaceholder": "/attrezzo/...",
+    "websitePlaceholder": "https://example.com"
+  },
+  "clicks": {
+    "title": "Seleziona il numero di clic di cui hai bisogno",
+    "numberOfClicks": "Numero di clic",
+    "total": "Totale",
+    "payButton": "Paga",
+    "submitButton": "Invia"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Pubblicizza un esempio di strumento",
+    "description": "Automatizziamo completamente la visualizzazione degli annunci in base ai nostri algoritmi per garantire che tu possa ottenere non meno del numero di clic acquistati, ma non possiamo garantire la qualità dei clic.",
+    "note": "Dai la priorità all'utilizzo dei costi pubblicitari per ottenere rapidamente clic e impressioni sul sito web. Puoi: mettere in pausa gli annunci o avviarli.",
+    "typesTitle": "Ecco alcuni tipi di annunci:",
+    "mostFrequently": "Più frequentemente",
+    "mostEffective": "Più efficace",
+    "standardDesc": "Appare nella home page, negli elenchi e nelle pagine delle categorie.",
+    "effectiveDesc": "Appare sulle pagine dei tuoi concorrenti e nelle pagine delle categorie a cui appartieni.",
+    "featured": "In primo piano*",
+    "featuredDesc1": "Posizione in primo piano su Home, Ultima intelligenza artificiale, Più utilizzati, Più salvati, Pagina dei risultati di ricerca, Pagina dei dettagli della categoria, ecc.",
+    "featuredDesc2": "Nella parte superiore della maggior parte delle pagine sarà presente la posizione dello sponsor.",
+    "targeted": "Mirato",
+    "standard": "Standard"
+  },
+  "faq": {
+    "title": "Domande frequenti: pubblicizza",
+    "items": [
+      {
+        "question": "Come funziona la pubblicità?",
+        "answer": "Mostriamo il tuo strumento in posizioni premium sulla nostra piattaforma. Paghi per clic e noi ci assicuriamo che il tuo annuncio ottenga il numero di clic che hai acquistato."
+      },
+      {
+        "question": "Posso acquistare clic più volte?",
+        "answer": "Sì, puoi acquistare pacchetti di clic aggiuntivi in ​​qualsiasi momento per aumentare la visibilità del tuo strumento."
+      },
+      {
+        "question": "Posso mettere in pausa i miei annunci?",
+        "answer": "Sì, puoi mettere in pausa e riprendere le tue campagne pubblicitarie in qualsiasi momento dalla tua dashboard."
+      },
+      {
+        "question": "Che tipo di analisi ottengo?",
+        "answer": "Riceverai dati dettagliati su clic organici, clic a pagamento, clic totali, impressioni e salvataggi."
+      }
+    ]
+  },
+  "whyAdvertise": "Perché fare pubblicità?",
+  "customPackage": {
+    "title": "Hai bisogno di un pacchetto personalizzato?",
+    "description": "Contattaci per soluzioni pubblicitarie su misura adatte ai tuoi obiettivi specifici.",
+    "contactSales": "Contatta l'ufficio vendite",
+    "estimatedClicks": "Clic stimati",
+    "estimatedImpressions": "Impressioni stimate",
+    "estimatedViews": "Visualizzazioni stimate",
+    "estimatedUnits": "Unità stimate",
+    "toolSlug": "Lumaca di strumento",
+    "landingUrl": "URL di destinazione",
+    "campaignParameters": "Parametri della campagna",
+    "metricType": "Tipo metrico",
+    "pacingType": "Tipo di stimolazione",
+    "basePrice": "Prezzo base",
+    "totalBudget": "Budget totale",
+    "startDate": "Data di inizio",
+    "endDate": "Data di fine",
+    "priorityBid": "Offerta prioritaria",
+    "estimation": "Stima",
+    "cancel": "Annulla",
+    "submitting": "Invio",
+    "submitProposal": "Invia proposta"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Posizionamento premium",
+      "description": "Spot in primo piano sulla home page e sulle pagine delle categorie"
+    },
+    "targetedAudience": {
+      "title": "Pubblico mirato",
+      "description": "Raggiungi gli utenti che cercano attivamente strumenti di intelligenza artificiale"
+    },
+    "analytics": {
+      "title": "Analitica",
+      "description": "Tieni traccia delle prestazioni con approfondimenti dettagliati"
+    }
+  },
+  "campaigns": {
+    "previous": "Precedente",
+    "pageOf": "Pagina {page} di {total}",
+    "choosePlan": "Scegli il tuo piano",
+    "choosePlanDesc": "Seleziona un piano qui sotto per rinnovare o aggiornare la tua campagna.",
+    "currentPlan": "Piano attuale",
+    "selectAgain": "Seleziona di nuovo",
+    "selectPlan": "Seleziona Piano"
+  },
+  "transactions": {
+    "noDescription": "Non hai ancora acquistato alcun credito pubblicitario. Ricarica il tuo saldo per iniziare a pubblicare campagne."
+  },
+  "meta": {
+    "title": "Pubblicizza lo strumento AI - TopAICollection",
+    "description": "Pubblicizza il tuo strumento di intelligenza artificiale a milioni di appassionati di intelligenza artificiale."
+  },
+  "plans": {
+    "title": "Piani pubblicitari",
+    "subtitle": "Espandi la tua portata",
+    "clickTarget": "Obiettivo clic",
+    "toolRequired": "⚠ Inserisci il nome del tuo strumento sopra prima di inviare.",
+    "empty": "Nessun pacchetto pubblicitario disponibile al momento. Ricontrollare più tardi.",
+    "customPlanConfig": "Configurazione del piano personalizzato",
+    "basePrice": "Prezzo base ($)",
+    "adPlacements": "Posizionamenti degli annunci",
+    "applyConfig": "Applica configurazione",
+    "configured": "Configurata",
+    "toolSlug": "Slug utensile",
+    "landingUrl": "SBARCO",
+    "campaignParameters": "Parametri della campagna",
+    "metricType": "Tipo di metrica",
+    "pacingType": "Tipo di stimolazione",
+    "totalBudget": "Budget totale ",
+    "startDate": "Data di inizio",
+    "endDate": "Data di fine",
+    "priorityBid": "Offerta prioritaria",
+    "estimation": "Stima",
+    "estimatedClicks": "Clic stimati",
+    "estimatedImpressions": "Impressioni stimate",
+    "estimatedViews": "Visualizzazioni stimate",
+    "estimatedUnits": "{metric} unità stimate",
+    "submitProposal": "Invia proposta personalizzata",
+    "submitting": "Invia",
+    "cancel": "Annulla",
+    "customBid": {
+      "title": "Offerte basate sul rendimento personalizzate",
+      "budgetLabel": "Budget totale ($)",
+      "budgetDescription": "Importo totale che desideri spendere.",
+      "priorityBidLabel": "Moltiplicatore di offerta prioritario",
+      "priorityBidDescription": "Offerta più alta = frequenza di apparizione più alta.",
+      "minBudget": "Il budget minimo è $ 10",
+      "minBid": "L'offerta minima è $ 0,01"
+    },
+    "placeholders": {
+      "toolSlug": "il mio fantastico strumento",
+      "landingUrl": "https://...",
+      "metricType": "CPAP",
+      "pacingType": "ANCHE"
+    }
+  },
+  "submit": {
+    "button": "Invia richiesta di campagna",
+    "submitting": "Invio in corso…",
+    "error": "Invio fallito. Riprova.",
+    "successTitle": "Campagna inviata!",
+    "budgetLabel": "Imposta budget campagna ($ USD)",
+    "success": "Campagna creata con successo!",
+    "untitled": "Campagna senza titolo",
+    "missingTool": "L'URL dello strumento o di destinazione è obbligatorio",
+    "loginRequiredTitle": "Autenticazione richiesta",
+    "loginRequiredDesc": "Effettua il login per inviare uno strumento. I tuoi progressi non verranno salvati finché non ti autentichi."
+  },
+  "sidebar": {
+    "pageViews": "Visualizzazioni di pagina",
+    "pageViewsSub": "Traffico mensile delle pagine"
+  },
+  "details": "Dettagli della pubblicità",
+  "duration": "Durata (giorni)",
+  "selectDuration": "Seleziona la durata",
+  "days": "{conteggio, plurale, =1 {1 day} altro {# days}}",
+  "preferredPlacement": "Posizionamento preferito",
+  "selectPlacement": "Seleziona il posizionamento",
+  "placements": {
+    "homepageBanner": "Banner della home page",
+    "sidebar": "Barra laterale",
+    "categoryPage": "Pagina categoria",
+    "newsletter": "Notiziario",
+    "HOME": "Pagina iniziale",
+    "CATEGORY": "Pagina di categoria",
+    "SEARCH": "Risultati della ricerca",
+    "TOOL_DETAIL": "Pagina dettagli"
+  },
+  "targetAudience": "Pubblico target",
+  "targetAudiencePlaceholder": "Descrivi il tuo pubblico di destinazione",
+  "validation": {
+    "required": "Questo campo è obbligatorio",
+    "selectDuration": "Seleziona la durata dell'annuncio",
+    "selectPlacement": "Seleziona il posizionamento dell'annuncio",
+    "targetAudienceMin": "Il pubblico di destinazione deve contenere almeno 10 caratteri",
+    "toolNameRequired": "Il nome dello strumento è obbligatorio",
+    "url": "URL non valido",
+    "descriptionMin": "La descrizione deve contenere almeno 10 caratteri",
+    "categoryRequired": "Seleziona una categoria",
+    "email": "Indirizzo e-mail non valido",
+    "messageMin": "Il messaggio deve contenere almeno 10 caratteri"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "per clic",
+      "CPM": "per 1.000 impressioni",
+      "CPV": "per vista",
+      "FLAT_RATE": "forfettario",
+      "CPC_LABEL": "PCC",
+      "CPM_LABEL": "CPM",
+      "CPV_LABEL": "CPV",
+      "FLAT_RATE_LABEL": "Forfettario"
+    },
+    "units": {
+      "clicks": "clic",
+      "impressions": "impressioni",
+      "views": "viste",
+      "units": "unità"
+    }
+  },
+  "selected": "Selezionate",
+  "summary": {
+    "selectedPlanLabel": "Pacchetto di annunci selezionato",
+    "totalPriceLabel": "Totale a corpo",
+    "securityFooter": "Pagamento sicuro • Attivazione istantanea • Analisi completa"
+  },
+  "charts": {
+    "noData": "Nessun dato storico disponibile",
+    "cpc": "CPC ($)",
+    "cpm": "CPM ($)"
+  }
+}

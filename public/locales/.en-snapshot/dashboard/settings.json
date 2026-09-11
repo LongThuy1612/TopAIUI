@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "emailHelp": "Email cannot be changed",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 (000) 000-0000",
+      "company": "Company",
+      "country": "Country",
+      "website": "Website",
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "saveSuccess": "Profile updated successfully."
+    },
+    "password": {
+      "title": "Change Password",
+      "current": "Current Password",
+      "new": "New Password",
+      "confirm": "Confirm New Password",
+      "update": "Update Password"
+    },
+    "notifications": {
+      "title": "Notification Preferences",
+      "email": "Email Notifications",
+      "marketing": "Marketing Emails"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "emailHelp": "Email cannot be changed",
+    "emailPlaceholder": "you@example.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+1 (000) 000-0000",
+    "company": "Company",
+    "country": "Country",
+    "website": "Website",
+    "save": "Save Changes",
+    "saving": "Saving...",
+    "saveSuccess": "Profile updated successfully."
+  },
+  "password": {
+    "title": "Change Password",
+    "current": "Current Password",
+    "new": "New Password",
+    "confirm": "Confirm New Password",
+    "update": "Update Password"
+  },
+  "notifications": {
+    "title": "Notification Preferences",
+    "email": "Email Notifications",
+    "marketing": "Marketing Emails"
+  },
+  "tabs": {
+    "profile": "Profile",
+    "security": "Security",
+    "notifications": "Notifications"
+  },
+  "updated": "Settings updated successfully"
+}

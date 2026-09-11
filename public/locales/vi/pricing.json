@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Bảng Giá - TopAICollection",
+    "description": "Bảng giá đơn giản và minh bạch cho nghiên cứu AI và theo dõi mạng xã hội."
+  },
+  "title": "Bảng giá Đơn giản & Minh bạch",
+  "subtitle": "Bắt đầu miễn phí và mở rộng khi bạn phát triển. Không có bất ngờ.",
+  "plans": {
+    "free": {
+      "name": "Miễn phí",
+      "banner": "🎉 Bắt đầu miễn phí — không cần thẻ tín dụng."
+    },
+    "professional": {
+      "name": "Chuyên nghiệp"
+    },
+    "enterprise": {
+      "name": "Doanh nghiệp"
+    },
+    "free-monthly": {
+      "name": "Miễn phí"
+    },
+    "free-yearly": {
+      "name": "Miễn phí"
+    },
+    "professional-monthly": {
+      "name": "Chuyên nghiệp"
+    },
+    "professional-yearly": {
+      "name": "Chuyên nghiệp"
+    },
+    "enterprise-monthly": {
+      "name": "Doanh nghiệp"
+    },
+    "enterprise-yearly": {
+      "name": "Doanh nghiệp"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Phổ biến nhất"
+  },
+  "features": {
+    "websiteInsights": "Thông tin Website",
+    "socialListening": "Lắng nghe mạng xã hội",
+    "prioritySupport": "Hỗ trợ ưu tiên",
+    "advertising": "Quảng cáo",
+    "premiumSupport": "Hỗ trợ nâng cao"
+  },
+  "cta": {
+    "loading": "Đang xử lý...",
+    "upgrade": "Bắt đầu ngay"
+  },
+  "comparison": {
+    "title": "So sánh tất cả các gói",
+    "feature": "Tính năng"
+  },
+  "billing": {
+    "monthly": "hàng tháng",
+    "yearly": "Hàng năm",
+    "discount20": "Tiết kiệm 20%",
+    "suffixYearly": "/năm",
+    "suffixMonthly": "/tháng",
+    "upgradeTitle": "Nâng cấp kế hoạch nghiên cứu của bạn",
+    "upgradeDesc": "Mở khóa các phân tích nâng cao, hiểu biết sâu sắc về đối thủ cạnh tranh và hơn thế nữa.",
+    "subscribe": "Đăng ký ngay"
+  },
+  "billingMonthly": "hàng tháng",
+  "billingYearly": "Hàng năm",
+  "billingBestValue": "Tiết kiệm 20%",
+  "badgePopular": "Phổ biến nhất",
+  "billingPerMonth": "/ tháng",
+  "billingPerYear": "/ năm"
+}

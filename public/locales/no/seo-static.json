@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection - Oppdag de beste AI-verktøyene",
+    "description": "Utforsk {totalTools}+ AI-verktøy på tvers av {totalCategories} kategorier på {languagesCount}+ språk"
+  },
+  "home": {
+    "visitWebsite": "Besøk nettstedet",
+    "ranking": "Rangering"
+  },
+  "tool": {
+    "visitWebsite": "Besøk nettstedet →",
+    "useCases": "Brukssaker",
+    "about": "Om {name}",
+    "howToUse": "Slik bruker du {name}",
+    "faq": "Ofte stilte spørsmål"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Resultados de la búsqueda",
+  "resultsFor": "Resultados para \"{query}\"",
+  "filters": "Filtros",
+  "typeFilters": "Tipo",
+  "categories": "Categorías",
+  "noResults": "No se encontraron resultados",
+  "tryAgain": "Por favor intente con un término de búsqueda diferente",
+  "placeholder": "Buscar herramientas de IA...",
+  "button": "Buscar",
+  "loading": "Búsqueda...",
+  "clearFilters": "Limpiar filtros",
+  "categoryLabel": "Categoría"
+}

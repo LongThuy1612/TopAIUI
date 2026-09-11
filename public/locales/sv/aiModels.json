@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "AI-Modeller & Datamängder | TopAICollection",
+    "description": "Upptäck och utforska de senaste AI-modellerna, datamängderna och arkitekturerna för ditt nästa projekt."
+  },
+  "title": "AI-Modellbibliotek",
+  "subtitle": "Utforska den största samlingen av AI-modeller, finjusteringar och datamängder.",
+  "comingSoon": "Kommer snart!",
+  "comingSoonMessage": "Vi sammanställer för närvarande de bästa AI-modellerna. Kom tillbaka snart.",
+  "searchPlaceholder": "Sök AI-modeller...",
+  "allProviders": "Alla leverantörer",
+  "noResults": "Inga AI-modeller hittades",
+  "noResultsHint": "Försök att justera dina sök- eller filterkriterier.",
+  "contextWindow": "Kontextfönster",
+  "parameters": "Parametrar",
+  "provider": "Leverantör",
+  "architecture": "Arkitektur",
+  "releaseDate": "Utgivningsdatum",
+  "costPer1kTokens": "Kostnad / 1K tokens",
+  "free": "Gratis / Öppen källkod",
+  "tokens": "polletter",
+  "viewWebsite": "Besök webbplats",
+  "modelsCount": "{count} AI-modell",
+  "modelsCount_plural": "{count} AI-modeller",
+  "modelsGridTitle": "AI-modeller"
+}

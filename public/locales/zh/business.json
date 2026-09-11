@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "业务解决方案 - 与我们合作 |TopAICollection",
+    "description": "探索与 TopAICollection 的业务合作机会。广告、赞助内容等等。"
+  },
+  "title": "商务解决方案",
+  "subtitle": "与 TopAICollection 合作，触达全球 AI 爱好者",
+  "contact": {
+    "title": "联系我们"
+  },
+  "offers": {
+    "ads": "投放有针对性的广告系列",
+    "partnerships": "探索战略合作伙伴关系",
+    "growth": "加速您的 AI 产品增长",
+    "consulting": "定制 AI 集成服务"
+  },
+  "form": {
+    "fullName": "姓名",
+    "workEmail": "工作邮箱",
+    "companyName": "公司名称",
+    "inquiryType": "查询类型",
+    "selectType": "选择类型",
+    "message": "信息",
+    "messagePlaceholder": "告诉我们更多关于您的需求...",
+    "inquiryTypes": {
+      "advertise": "广告",
+      "guestPost": "客座帖子",
+      "partnership": "合伙",
+      "customDevelopment": "定制开发",
+      "other": "其他"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "宣传您的人工智能工具",
+      "description": "让您的人工智能工具在我们的平台上占据显着位置。",
+      "link": "了解更多"
+    },
+    "guestPost": {
+      "title": "来宾帖子和链接",
+      "description": "在我们的高权威网站上发布内容或获取反向链接。",
+      "link": "了解更多"
+    },
+    "submitTool": {
+      "title": "提交您的工具",
+      "description": "免费将您的 AI 工具添加到我们的目录中。",
+      "link": "立即提交"
+    },
+    "customSolutions": {
+      "title": "定制解决方案",
+      "description": "联系我们获取定制合作机会。",
+      "link": "联系我们"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100+合作伙伴",
+    "partnerCountSub": "受到领先人工智能公司的信赖",
+    "contactSupport": "联系支持人员"
+  },
+  "validation": {
+    "required": "此字段必填",
+    "toolNameRequired": "工具名称为必填项",
+    "url": "无效网址",
+    "descriptionMin": "描述必须至少 10 个字符",
+    "categoryRequired": "请选择一个类别",
+    "email": "电子邮件地址无效",
+    "messageMin": "消息长度必须至少为 10 个字符"
+  },
+  "success": "您的询价已成功提交！"
+}

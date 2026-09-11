@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "โมเดล AI และชุดข้อมูล | TopAICollection",
+    "description": "ค้นพบและสำรวจโมเดล AI ชุดข้อมูล และสถาปัตยกรรมล่าสุดสำหรับโครงการถัดไปของคุณ"
+  },
+  "title": "ห้องสมุดโมเดล AI",
+  "subtitle": "สำรวจคอลเลกชันโมเดล AI การปรับแต่ง และชุดข้อมูลที่ใหญ่ที่สุด",
+  "comingSoon": "เร็วๆ นี้!",
+  "comingSoonMessage": "เรากำลังคัดสรรโมเดล AI ที่ดีที่สุด โปรดกลับมาตรวจสอบในเร็วๆ นี้",
+  "searchPlaceholder": "ค้นหาโมเดล AI...",
+  "allProviders": "ผู้ให้บริการทั้งหมด",
+  "noResults": "ไม่พบโมเดล AI",
+  "noResultsHint": "ลองปรับเกณฑ์การค้นหาหรือกรองของคุณ",
+  "contextWindow": "หน้าต่างบริบท",
+  "parameters": "พารามิเตอร์",
+  "provider": "ผู้ให้บริการ",
+  "architecture": "สถาปัตยกรรม",
+  "releaseDate": "วันที่เผยแพร่",
+  "costPer1kTokens": "ค่าใช้จ่าย / 1K โทเค็น",
+  "free": "ฟรี / โอเพ่นซอร์ส",
+  "tokens": "โทเค็น",
+  "viewWebsite": "เยี่ยมชมเว็บไซต์",
+  "modelsCount": "{count} โมเดล AI",
+  "modelsCount_plural": "{count} โมเดล AI",
+  "modelsGridTitle": "โมเดลเอไอ"
+}

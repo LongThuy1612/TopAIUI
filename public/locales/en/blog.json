@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "AI Blog & News - TopAICollection",
+    "description": "Stay updated with the latest AI news, tutorials, reviews, and insights from the world of artificial intelligence."
+  },
+  "badge": "AI Insights",
+  "title": "AI Blog & News",
+  "subtitle": "Stay informed with the latest trends, tutorials, and insights from the AI world",
+  "search": {
+    "placeholder": "Search articles..."
+  },
+  "sort": {
+    "latest": "Latest",
+    "oldest": "Oldest",
+    "popular": "Popular"
+  },
+  "filter": {
+    "allAuthors": "All Authors",
+    "sortBy": "Sort By"
+  },
+  "categories": {
+    "title": "Categories",
+    "all": "All Articles",
+    "news": "AI News",
+    "tutorials": "Tutorials",
+    "reviews": "Tool Reviews",
+    "industry": "Industry Insights",
+    "guides": "How-to Guides"
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "subtitle": "Get the latest AI news delivered to your inbox",
+    "placeholder": "Enter your email",
+    "button": "Subscribe"
+  },
+  "article": {
+    "readTime": "{minutes} min read",
+    "published": "Published on {date}",
+    "writtenBy": "Written & Edited by:",
+    "factCheckedBy": "Fact Checked By:"
+  },
+  "pagination": {
+    "next": "Next",
+    "page": "Page {page} of {total}"
+  },
+  "relatedTools": "Related Tools",
+  "backToBlog": "Back To Blog",
+  "errors": {
+    "notFound": "Post not found"
+  },
+  "relatedPosts": "Related Posts",
+  "faqs": "FAQs"
+}

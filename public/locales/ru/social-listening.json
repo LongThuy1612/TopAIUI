@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Социальное Прослушивание - Мониторинг ИИ | TopAICollection",
+    "description": "Отслеживайте тенденции ИИ в социальных сетях.",
+    "detailTitle": "{name} Социальное Прослушивание — TopAI",
+    "detailDescription": "Аналитика прослушивания для {name}.",
+    "notFoundTitle": "Инструмент не найден – социальное прослушивание"
+  },
+  "title": "Социальное Прослушивание",
+  "subtitle": "Отслеживайте производительность видео инструментов ИИ. Twitter",
+  "leaderboardTitle": "Социальный Рейтинг",
+  "leaderboardSubtitle": "Мгновенное отслеживание. Twitter",
+  "table": {
+    "aiTool": "Инструмент ИИ",
+    "introduce": "Введение",
+    "videoCount": "Видео",
+    "creatorsCount": "Авторы",
+    "monthlyTraffic": "Месячный трафик",
+    "avgViews": "Ср. просмотры",
+    "avgInteractions": "Ср. взаимодействия",
+    "totalViews": "Всего просмотров",
+    "totalInteractions": "Всего взаимод.",
+    "emptyState": "Данные не найдены",
+    "pageIndicator": "Стр. {page} из {lastPage}",
+    "updatedAt": "Дата обновления",
+    "totalEngagement": "Полная вовлеченность"
+  },
+  "search": {
+    "placeholder": "Введите название инструмента или домен"
+  },
+  "detail": {
+    "viewTool": "Просмотреть сведения об инструменте",
+    "tabs": {
+      "socialListening": "Прослушивание"
+    },
+    "stats": {
+      "monthlyVisits": "Месячные визиты",
+      "growth": "Рост",
+      "growthRate": "Темп роста",
+      "socialVideos": "Социальные видео",
+      "newLastWeek": "Новые на этой неделе"
+    },
+    "metrics": {
+      "avgViews": "Ср. просмотры",
+      "totalVideos": "Всего видео",
+      "totalCreators": "Всего авторов",
+      "totalViews": "Всего / Среднее",
+      "totalLikes": "Лайки / Среднее",
+      "totalComments": "Комм. / Среднее",
+      "totalShares": "Всего поделившись",
+      "totalCollects": "Всего сохранений",
+      "totalQuotes": "Всего цитат",
+      "totalReposts": "Всего репостов"
+    },
+    "platforms": {
+      "all": "Все"
+    },
+    "feed": {
+      "unlockCta": "Разблокировать для просмотра",
+      "unlockDesc": "Войдите для полной аналитики видео",
+      "viewNow": "Смотреть сейчас →",
+      "sortBy": "Сортировать по",
+      "sortViews": "Просмотры",
+      "sortLikes": "Лайки",
+      "sortDate": "Дата",
+      "loadMore": "Загрузить ещё",
+      "searchPlaceholder": "Поиск по названию или автору...",
+      "emptyState": "Публикаций не найдено. Здесь отображаются только видео.",
+      "untitledPost": "Безымянная публикация",
+      "metrics": {
+        "views": "Просмотры",
+        "likes": "Нравится",
+        "retweets": "Ретвиты",
+        "shares": "Поделились",
+        "replies": "Ответы",
+        "comments": "Комментарии",
+        "quotes": "Цитаты",
+        "saves": "Сохранения",
+        "collects": "Коллекции",
+        "upvotes": "Голоса за",
+        "follows": "Подписки"
+      },
+      "sortComments": "Комментарии",
+      "sortShares": "Акции",
+      "title": "Социальная лента"
+    },
+    "traffic": {
+      "bounceRate": "Показатель отказов",
+      "pagesPerVisit": "Страниц / Визит",
+      "avgVisitDuration": "Ср. продолжительность",
+      "globalRanking": "Глобальный рейтинг",
+      "category": "Категория",
+      "categoryRanking": "Рейтинг категории",
+      "deviceSplit": "ПК vs Мобильный",
+      "desktop": "ПК",
+      "mobile": "Мобильный",
+      "trafficSources": "Источники трафика",
+      "topRegions": "Ведущие страны",
+      "processingMsg": "Данные трафика обрабатываются. Проверьте позже.",
+      "monthlyTrafficTrend": "Ежемесячный тренд трафика",
+      "monthlyTrafficTrendDesc": "«Глобальные исторические посещения за последние 30 дней»",
+      "sourceWebsiteInsight": "«Источник: Website Insight Global»"
+    },
+    "pricing": {
+      "notDocumented": "Тарифные планы ещё не задокументированы.",
+      "checkWebsite": "Проверить официальный сайт",
+      "visitWebsite": "Посетить сайт",
+      "month": "мес"
+    },
+    "lastUpdated": "Последнее обновление",
+    "influencers": {
+      "title": "Лучшие влиятельные лица",
+      "name": "Создатель",
+      "platform": "Платформа",
+      "videos": "Видео",
+      "reach": "Стандартное восточное время. Достигать"
+    },
+    "filterInteraction": "«Фильтр взаимодействия»"
+  },
+  "platforms": {
+    "all": "Все платформы"
+  },
+  "monitors": {
+    "title": "Ваши мониторы",
+    "subtitle": "Отслеживайте конкретные ключевые слова на социальных платформах",
+    "inputPlaceholder": "Введите ключевое слово (например, ChatGPT, Midjourney)",
+    "addButton": "Начать отслеживание",
+    "emptyTitle": "Нет активных мониторов",
+    "emptyDesc": "Добавьте ключевое слово выше, чтобы начать отслеживать упоминания и настроения в социальных сетях.",
+    "keyword": "Ключевое слово",
+    "platform": "Платформа",
+    "status": "Статус",
+    "lastActive": "Последняя активность",
+    "addSuccess": "Монитор успешно добавлен!",
+    "addError": "Не удалось добавить монитор",
+    "statusTracking": "«Отслеживание»"
+  },
+  "socialListeningTitle": "Таблица лидеров социального прослушивания",
+  "pagination": {
+    "prev": "Предыдущий",
+    "next": "Следующий",
+    "page": "Страница"
+  },
+  "nav": {
+    "overview": "«Обзор»",
+    "social": "Социальный",
+    "traffic": "«Трафик»",
+    "pricing": "«Ценообразование»"
+  },
+  "locked": {
+    "quotaTitle": "Функция заблокирована",
+    "quotaDesc": "Вы достигли своей квоты на социальный мониторинг. Обновите тарифный план, чтобы получить больше аналитики.",
+    "upgradeBtn": "Обновить сейчас",
+    "overlayTitle": "Премиум-функция",
+    "overlayDesc": "Для доступа к этой функции требуется активная премиум-подписка.",
+    "unlockBtn": "Разблокировать премиум"
+  }
+}

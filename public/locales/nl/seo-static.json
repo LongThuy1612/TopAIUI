@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAI-collectie - Ontdek de beste AI-tools",
+    "description": "Ontdek {totalTools}+ AI-tools in {totalCategories} categorieën in {languagesCount}+ talen"
+  },
+  "home": {
+    "visitWebsite": "Bezoek website",
+    "ranking": "Ranglijst"
+  },
+  "tool": {
+    "visitWebsite": "Bezoek website →",
+    "useCases": "Gebruiksscenario's",
+    "about": "Over {name}",
+    "howToUse": "Hoe gebruik je {name}",
+    "faq": "Veelgestelde vragen"
+  }
+}

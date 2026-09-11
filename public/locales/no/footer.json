@@ -1,0 +1,92 @@
+{
+  "about": "Om oss",
+  "contact": "Kontakt",
+  "blog": "Blogg",
+  "privacy": "Personvernerklæring",
+  "terms": "Vilkår for bruk",
+  "cookies": "Retningslinjer for informasjonskapsler",
+  "copyright": "© {year} TopAICollection. Alle rettigheter forbeholdt.",
+  "sitemap": "Nettstedskart",
+  "resources": "Ressurser",
+  "help": "Hjelpesenter",
+  "faq": "Ofte stilte spørsmål",
+  "submitTool": "Send inn verktøy",
+  "description": "TopAICollection er den ultimate katalogen for å oppdage de beste AI-verktøyene og nettstedene.",
+  "browseByAlphabet": "Bla etter alfabet",
+  "topAITools": {
+    "title": "Topp AI-verktøy",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "Midtveis",
+      "stableDiffusion": "Stabil diffusjon",
+      "chatgpt": "ChatGPT",
+      "jasper": "Jasper"
+    }
+  },
+  "moreTools": {
+    "title": "Flere verktøy",
+    "items": {
+      "audio": "Lyd AI",
+      "video": "Video-AI",
+      "writing": "Å skrive AI",
+      "image": "Bilde AI",
+      "coding": "Koding av AI"
+    }
+  },
+  "recommend": {
+    "title": "Anbefale",
+    "items": {
+      "newest": "Nyeste verktøy",
+      "mostSaved": "Mest frelste",
+      "trending": "Populært nå",
+      "editorsChoice": "Redaktørens valg",
+      "featured": "Utvalgte",
+      "leaderboard": "Toppliste"
+    }
+  },
+  "readMore": {
+    "title": "Les mer",
+    "items": {
+      "blog": "Blogg",
+      "news": "AI Nyheter",
+      "guides": "Guider",
+      "tutorials": "Veiledninger",
+      "glossary": "AI-ordliste"
+    }
+  },
+  "company": {
+    "title": "Om",
+    "items": {
+      "aboutUs": "Om oss",
+      "contact": "Bedriftskontakt",
+      "editorialGuidelines": "Redaksjonelle retningslinjer",
+      "reviewMethodology": "Vurderingsmetodikk",
+      "submit": "Send inn",
+      "advertise": "Annonser"
+    }
+  },
+  "chooseLanguage": "Velg Språk",
+  "followUs": "Følg oss",
+  "more": "Flere...",
+  "directory": {
+    "title": "Arkiv for katalog over AI-verktøy"
+  },
+  "companyInfo": {
+    "address": "Teknologidistriktet, Silicon Valley",
+    "country": "USA",
+    "name": "TopAICollection Inc.",
+    "city": "San Francisco, CA 94107",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Videogeneratorer",
+      "imageGenerators": "Bildegeneratorer",
+      "writers": "Skribenter",
+      "seoTools": "Seo-verktøy",
+      "websiteBuilders": "Nettsidebyggere",
+      "chatbots": "Chatboter"
+    }
+  }
+}

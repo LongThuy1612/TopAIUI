@@ -1,0 +1,294 @@
+{
+  "title": "AI ツールを宣伝する",
+  "description": "AI ツールのプレミアムな掲載と最大限の露出を実現します。 AI ソリューションを積極的に探している何千もの潜在的なユーザーにリーチします。",
+  "hero": {
+    "title": "TopAICollection 上のあなたの AI",
+    "subtitle": "TopAI は、世界中の何百万もの AI ユーザーと潜在的な顧客にリーチするのに役立ちます。",
+    "stats": {
+      "pageViews": "500万以上",
+      "pageViewsLabel": "ページビュー",
+      "monthlyVisits": "300万以上",
+      "monthlyVisitsLabel": "毎月の訪問数",
+      "subscribers": "10万以上",
+      "subscribersLabel": "購読者",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "デスクトップユーザー",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "登録ユーザー",
+      "avgTimeOnSite": "「2.5メートル」",
+      "avgTimeOnSiteLabel": "平均滞在時間"
+    },
+    "benefits": [
+      "AI ツールのトップ ディレクトリ",
+      "バックリンクをフォローする",
+      "多言語のイントロ",
+      "リスティングとトラフィックを永久に",
+      "創業者とスタートアップにとっての価値"
+    ]
+  },
+  "tabs": {
+    "submit": "AIを提出する",
+    "submitDesc": "AI ツールを送信してトラフィックを獲得する",
+    "advertise": "AIを宣伝する",
+    "advertiseDesc": "クリック課金制、注目のプロモーション、自動広告掲載",
+    "guestPost": "ゲスト投稿 / リンクの挿入",
+    "guestPostDesc": "TopAI へのゲスト投稿/リンクの挿入",
+    "updateAi": "AIをアップデートする",
+    "updateAiDesc": "ツールの情報を更新する",
+    "submitGpt": "GPTを送信する",
+    "submitGptDesc": "より多くの人が使用できるように GPT を送信してください",
+    "business": "さらなるビジネス",
+    "businessDesc": "例: リンク交換、Twitter 投稿、ビデオなど。"
+  },
+  "form": {
+    "toolLabel": "道具",
+    "toolHint": "PS: ツールが見つからない場合は、まずツールを送信してください。",
+    "toolPlaceholder": "ツールを検索してください...",
+    "adLandingLink": "広告ランディングリンク",
+    "toolLandingPlaceholder": "ツールを使用します。",
+    "websitePlaceholder": "https://example.com",
+    "urlTitle": "Http ://またはhttps ://で始まる有効なURLを入力してください"
+  },
+  "clicks": {
+    "title": "必要なクリック数を選択してください",
+    "numberOfClicks": "クリック数",
+    "total": "合計",
+    "payButton": "支払う",
+    "submitButton": "提出する"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "ツールの例をアドバタイズする",
+    "description": "弊社のアルゴリズムに基づいて広告表示を完全に自動化し、購入されたクリック数以上の獲得が保証されますが、クリックの品質は保証できません。",
+    "note": "ウェブサイトのクリックとインプレッションを迅速に獲得するために、広告コストを優先的に消費します。広告を一時停止したり、広告を開始したりできます。",
+    "typesTitle": "いくつかの種類の広告を次に示します。",
+    "mostFrequently": "最も頻繁に",
+    "mostEffective": "最も効果的",
+    "standardDesc": "ホーム ページ、リスト、カテゴリ ページに表示されます。",
+    "effectiveDesc": "競合他社のページと、あなたが属するカテゴリ ページに表示されます。",
+    "featured": "注目*",
+    "featuredDesc1": "ホーム上の注目の場所、最新の AI、最も使用されているページ、最も保存されているページ、検索結果ページ、カテゴリ詳細ページなど。",
+    "featuredDesc2": "ほとんどのページの上部にはスポンサーの位置があります。",
+    "standard": "標準",
+    "targeted": "狭義"
+  },
+  "faq": {
+    "title": "FAQ - 広告",
+    "items": [
+      {
+        "question": "広告はどのように機能するのでしょうか?",
+        "answer": "当社のプラットフォーム全体で貴社のツールを優先順位の高い位置に表示します。クリックごとに支払いが行われ、購入したクリック数に応じて広告が確実に獲得されるようになります。"
+      },
+      {
+        "question": "クリックを複数回購入できますか?",
+        "answer": "はい、いつでも追加のクリック パッケージを購入して、ツールの可視性を高めることができます。"
+      },
+      {
+        "question": "広告を一時停止できますか?",
+        "answer": "はい、ダッシュボードからいつでも広告キャンペーンを一時停止したり再開したりできます。"
+      },
+      {
+        "question": "どのような分析が得られますか?",
+        "answer": "オーガニック クリック、有料クリック、合計クリック数、インプレッション数、保存数に関する詳細なデータを受け取ります。"
+      }
+    ]
+  },
+  "whyAdvertise": "なぜ宣伝するのか？",
+  "customPackage": {
+    "title": "カスタムパッケージが必要ですか?",
+    "description": "お客様の特定の目標に合わせてカスタマイズされた広告ソリューションについては、お問い合わせください。",
+    "contactSales": "営業担当者へのお問い合わせ",
+    "estimatedClicks": "「推定クリック数」",
+    "estimatedImpressions": "「推定インプレッション数」",
+    "estimatedViews": "「推定視聴回数」",
+    "estimatedUnits": "「推定単位」",
+    "toolSlug": "「ツールスラッグ」",
+    "landingUrl": "「ランディングURL」",
+    "campaignParameters": "「キャンペーンパラメータ」",
+    "metricType": "「メトリックタイプ」",
+    "pacingType": "「ペーシングタイプ」",
+    "basePrice": "「基本価格」",
+    "totalBudget": "「総予算」",
+    "startDate": "「開始日」",
+    "endDate": "「終了日」",
+    "priorityBid": "「優先入札」",
+    "estimation": "「見積もり」",
+    "cancel": "「キャンセル」",
+    "submitting": "「提出する」",
+    "submitProposal": "「提案書を提出する」"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "プレミアムプレースメント",
+      "description": "ホームページやカテゴリーページの注目スポット"
+    },
+    "targetedAudience": {
+      "title": "対象読者",
+      "description": "AI ツールを積極的に探しているユーザーにリーチする"
+    },
+    "analytics": {
+      "title": "分析",
+      "description": "詳細な洞察でパフォーマンスを追跡する"
+    }
+  },
+  "campaigns": {
+    "previous": "前の",
+    "pageOf": "ページ {page} / {total}",
+    "choosePlan": "プランを選択してください",
+    "choosePlanDesc": "キャンペーンを更新またはアップグレードするには、以下のプランを選択してください。",
+    "currentPlan": "現在の計画",
+    "selectAgain": "もう一度選択してください",
+    "selectPlan": "プランを選択"
+  },
+  "transactions": {
+    "noDescription": "まだ広告クレジットを購入していません。残高をチャージしてキャンペーンを開始してください。"
+  },
+  "meta": {
+    "title": "広告AIツール - TopAICollection",
+    "description": "あなたの AI ツールを何百万人もの AI 愛好家に宣伝します。"
+  },
+  "plans": {
+    "title": "広告計画",
+    "subtitle": "範囲を拡大する",
+    "clickTarget": "クリック目標",
+    "toolRequired": "⚠ 送信前に上のツール名を入力してください。",
+    "empty": "現在利用可能な広告パッケージはありません。後でご確認ください。",
+    "customPlanConfig": "カスタムプラン構成",
+    "basePrice": "基本価格 ($)",
+    "adPlacements": "広告の配置",
+    "applyConfig": "構成の適用",
+    "configured": "設定済",
+    "toolSlug": "ツールスラッグ",
+    "landingUrl": "ランディングページのURL",
+    "campaignParameters": "キャンペーンパラメータ",
+    "metricType": "メトリックタイプ",
+    "pacingType": "ペーシングタイプ",
+    "totalBudget": "合計予算 ",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "priorityBid": "優先入札",
+    "estimation": "見積書",
+    "estimatedClicks": "推定クリック数",
+    "estimatedImpressions": "推定インプレッション数",
+    "estimatedViews": "推定表示回数",
+    "estimatedUnits": "推定{metric}単位",
+    "submitProposal": "カスタム提案書を送信",
+    "submitting": "送信中…",
+    "cancel": "取り消す",
+    "customBid": {
+      "title": "カスタムパフォーマンスビディング",
+      "budgetLabel": "合計予算 ",
+      "budgetDescription": "利用したい合計金額。",
+      "priorityBidLabel": "優先入札マルチプライヤー",
+      "priorityBidDescription": "より高い入札単価=より高い出現頻度。",
+      "minBudget": "最小予算は ",
+      "minBid": "最低入札額は$ 0.01です"
+    },
+    "placeholders": {
+      "toolSlug": "私の素晴らしいツール",
+      "landingUrl": "https://...",
+      "metricType": "公認会計士",
+      "pacingType": "平"
+    }
+  },
+  "submit": {
+    "button": "キャンペーンリクエストを送信",
+    "submitting": "送信中…",
+    "error": "送信に失敗しました。もう一度お試しください。",
+    "successTitle": "キャンペーンを送信しました！",
+    "budgetLabel": "キャンペーン予算を設定（ $ USD ）",
+    "success": "キャンペーンの作成に成功",
+    "untitled": "無題のキャンペーン",
+    "missingTool": "ツールまたはターゲットURLが必要です",
+    "loginRequiredTitle": "認証が必要です",
+    "loginRequiredDesc": "ツールを送信するにはログインしてください。認証するまで進行状況は保存されません。"
+  },
+  "sidebar": {
+    "pageViews": "ページビュー",
+    "pageViewsSub": "月間ページトラフィック"
+  },
+  "details": "広告の詳細",
+  "duration": "期間 (日)",
+  "selectDuration": "期間を選択してください",
+  "days": "「{数、複数、=1 {1 day} その他 {# days}}」",
+  "preferredPlacement": "優先配置",
+  "selectPlacement": "配置の選択",
+  "placements": {
+    "homepageBanner": "ホームページのバナー",
+    "sidebar": "サイドバー",
+    "categoryPage": "カテゴリページ",
+    "newsletter": "ニュースレター",
+    "HOME": "ホームページ",
+    "CATEGORY": "カテゴリページ",
+    "SEARCH": "検索結果",
+    "TOOL_DETAIL": "ツールの詳細ページ"
+  },
+  "targetAudience": "対象者",
+  "targetAudiencePlaceholder": "対象ユーザーについて説明する",
+  "validation": {
+    "required": "この項目は必須です",
+    "selectDuration": "広告期間を選択してください",
+    "selectPlacement": "広告の配置を選択してください",
+    "targetAudienceMin": "対象読者は 10 文字以上である必要があります",
+    "toolNameRequired": "ツール名は必須です",
+    "url": "無効な URL",
+    "descriptionMin": "説明は 10 文字以上である必要があります",
+    "categoryRequired": "カテゴリを選択してください",
+    "email": "無効なメールアドレス",
+    "messageMin": "メッセージは 10 文字以上である必要があります"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "クリックごとに",
+      "CPM": "1,000 インプレッションあたり",
+      "CPV": "ビューごとに",
+      "FLAT_RATE": "定額制料金",
+      "CPC_LABEL": "クリック単価",
+      "CPM_LABEL": "「CPM」",
+      "CPV_LABEL": "「CPV」",
+      "FLAT_RATE_LABEL": "定額制料金"
+    },
+    "units": {
+      "clicks": "クリック数",
+      "impressions": "印象",
+      "views": "ビュー",
+      "units": "単位"
+    }
+  },
+  "selected": "選択済み",
+  "summary": {
+    "selectedPlanLabel": "選択した広告パッケージ",
+    "totalPriceLabel": "合計固定価格",
+    "securityFooter": "安全な支払い•即時アクティベーション•完全な分析"
+  },
+  "charts": {
+    "cpc": "クリック単価 ($)",
+    "cpm": "インプレッション単価 ($)",
+    "noData": "利用可能な履歴データはありません"
+  }
+}

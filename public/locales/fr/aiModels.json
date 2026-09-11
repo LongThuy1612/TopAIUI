@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Modèles IA & Jeux de Données | TopAICollection",
+    "description": "Découvrez et explorez les derniers modèles d'IA, jeux de données et architectures pour votre prochain projet."
+  },
+  "title": "Bibliothèque des Modèles IA",
+  "subtitle": "Explorez la plus grande collection de modèles d'IA, d'ajustements et de jeux de données.",
+  "comingSoon": "Bientôt disponible!",
+  "comingSoonMessage": "Nous sélectionnons actuellement les meilleurs modèles d'IA. Revenez bientôt.",
+  "searchPlaceholder": "Chercher des modèles IA...",
+  "allProviders": "Tous les fournisseurs",
+  "noResults": "Aucun modèle IA trouvé",
+  "noResultsHint": "Essayez d'ajuster vos critères de recherche ou de filtrage.",
+  "contextWindow": "Fenêtre de contexte",
+  "parameters": "Paramètres",
+  "provider": "Fournisseur",
+  "releaseDate": "Date de sortie",
+  "costPer1kTokens": "Coût / 1K tokens",
+  "free": "Gratuit / Open Source",
+  "tokens": "jetons",
+  "viewWebsite": "Visiter le site",
+  "modelsCount": "{count} modèle IA",
+  "modelsCount_plural": "{count} modèles IA",
+  "modelsGridTitle": "Modèles d'IA",
+  "architecture": "Architecture"
+}

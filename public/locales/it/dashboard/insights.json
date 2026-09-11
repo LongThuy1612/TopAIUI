@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Analisi del Sito Web",
+    "subtitle": "Traccia il traffico e le parole chiave della concorrenza.",
+    "track": "Traccia",
+    "noDomains": "Nessun dominio ancora tracciato. Aggiungine uno sopra!",
+    "domain": "Dominio",
+    "monthlyVisits": "Visite Mensili",
+    "rank": "Classifica",
+    "topKeywords": "Parole Chiave Principali",
+    "added": "Aggiunto",
+    "tool": "Attrezzo",
+    "organicClicks": "Clic organici",
+    "paidClicks": "Clic a pagamento",
+    "totalClicks": "Clic totali",
+    "addedOn": "Aggiunto il",
+    "noTools": "Nessuno strumento ancora tracciato.",
+    "addDomainDesc": "Aggiungi il tuo primo dominio qui sopra per iniziare a monitorare i dati statistici.",
+    "deleteSuccess": "Dominio rimosso dal monitoraggio",
+    "confirmDelete": "Sei sicuro di voler interrompere il monitoraggio di questo dominio?",
+    "quota": "Quota",
+    "limitReachedDesc": "Hai raggiunto il limite mensile di approfondimenti. Esegui l'upgrade per monitorare più domini.",
+    "upgradeNow": "Aggiorna ora",
+    "usage": "Utilizzo",
+    "searchPlaceholder": "Cerca domini monitorati...",
+    "advancedFilter": "Filtri avanzati",
+    "bulkOpen": "Apertura in blocco",
+    "export": "Esporta dati",
+    "aiTool": "Strumento IA",
+    "rankChange": "Cambio di grado",
+    "globalRank": "Classifica globale",
+    "traffic": "Traffico",
+    "audience": "Pubblico",
+    "updateDate": "Data di aggiornamento",
+    "limitReachedTitle": "Hai raggiunto il tuo limite",
+    "limitReachedBody": "Hai raggiunto il limite di ricerche gratuite. Esegui l'upgrade per ottenere un accesso illimitato.",
+    "upgradePro": "Passa al piano Pro",
+    "actions": "Azioni",
+    "viewSocial": "Visualizza Social",
+    "filters": {
+      "months": {
+        "feb2026": "febbraio 2026",
+        "jan2026": "Gen2026"
+      },
+      "sources": {
+        "search": "Cerca",
+        "direct": "Diretto",
+        "social": "Sociale"
+      },
+      "regions": {
+        "us": "Noi",
+        "vn": "Vn"
+      },
+      "categories": {
+        "llm": "Lm",
+        "image": "Immagine",
+        "productivity": "Produttività"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100k",
+        "1m": "1m"
+      },
+      "timePeriod": "Periodo di tempo",
+      "selectMonth": "Seleziona mese",
+      "trafficSource": "Sorgente di traffico",
+      "allSources": "Tutte le fonti",
+      "region": "Regione",
+      "category": "Categoria",
+      "trafficThreshold": "Soglia di traffico",
+      "minVisits": "Visite minime"
+    },
+    "exportSuccess": "Esportato con successo.",
+    "exportFailed": "Esportazione fallita.",
+    "exportData": "Esporta dati",
+    "exportDesc": "Esporta questo report per condividerlo o analizzarlo localmente.",
+    "exportLimit": "Limite di esportazione",
+    "rows": "Righe",
+    "creditsCost": "Costo dei crediti",
+    "availableAfter": "Disponibile dopo",
+    "confirmExport": "Conferma esportazione",
+    "notEnoughCredits": "Crediti insufficienti",
+    "removeFailed": "Rimozione fallita.",
+    "direct": "Diretto",
+    "sortDefault": "Predefinito",
+    "sortTraffic": "Traffico"
+  },
+  "common": {
+    "global": "Globale",
+    "allCategories": "Tutte le categorie"
+  },
+  "table": {
+    "column": {
+      "tool": "Strumento",
+      "organic": "Clic organici",
+      "paid": "Clic a pagamento",
+      "total": "Clic totali",
+      "trend": "Tendenza",
+      "growth": "Crescita"
+    },
+    "searchPlaceholder": "Cerca domini tracciati...",
+    "showingResults": "Visualizzazione dei risultati {count}",
+    "empty": "Nessun dominio ancora tracciato."
+  }
+}

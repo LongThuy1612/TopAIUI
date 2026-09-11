@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Điều khoản dịch vụ - TopAICollection",
+    "description": "Đọc các điều khoản và điều kiện để sử dụng dịch vụ và trang web của TopAICollection."
+  },
+  "title": "Điều khoản dịch vụ",
+  "lastUpdated": "Cập nhật lần cuối",
+  "introduction": "Các Điều khoản dịch vụ này điều chỉnh việc sử dụng trang web và dịch vụ TopAICollection của bạn. Bằng cách truy cập hoặc sử dụng dịch vụ của chúng tôi, bạn đồng ý bị ràng buộc bởi các điều khoản này.",
+  "sections": {
+    "acceptance": {
+      "title": "Chấp nhận điều khoản",
+      "content": "Bằng cách truy cập và sử dụng trang web này, bạn chấp nhận và đồng ý bị ràng buộc bởi các điều khoản và điều khoản của thỏa thuận này."
+    },
+    "use": {
+      "title": "Sử dụng dịch vụ",
+      "content": [
+        "Bạn phải ít nhất 13 tuổi để sử dụng dịch vụ của chúng tôi",
+        "Bạn có trách nhiệm duy trì tính bảo mật của tài khoản của mình",
+        "Bạn đồng ý không sử dụng dịch vụ cho bất kỳ mục đích bất hợp pháp hoặc trái phép nào",
+        "Bạn không được truyền bất kỳ sâu, vi-rút hoặc mã độc nào"
+      ]
+    },
+    "content": {
+      "title": "Nội dung người dùng",
+      "content": [
+        "Bạn giữ quyền sở hữu nội dung bạn gửi",
+        "Bạn cấp cho chúng tôi giấy phép sử dụng, sửa đổi và hiển thị nội dung của bạn",
+        "Bạn chịu trách nhiệm về nội dung bạn đăng",
+        "Chúng tôi có quyền xóa nội dung vi phạm các điều khoản này"
+      ]
+    },
+    "intellectual": {
+      "title": "Sở hữu trí tuệ",
+      "content": "Dịch vụ và nội dung gốc, tính năng và chức năng của nó là và sẽ vẫn là tài sản độc quyền của TopAICollection và các bên cấp phép của nó."
+    },
+    "privacy": {
+      "title": "Quyền riêng tư",
+      "content": "Việc sử dụng dịch vụ của chúng tôi cũng được điều chỉnh bởi Chính sách bảo mật của chúng tôi. Vui lòng xem xét Chính sách bảo mật của chúng tôi, cũng điều chỉnh trang web và thông báo cho người dùng về các hoạt động thu thập dữ liệu của chúng tôi."
+    },
+    "disclaimers": {
+      "title": "Tuyên bố từ chối trách nhiệm",
+      "content": [
+        "Dịch vụ được cung cấp trên cơ sở 'nguyên trạng' và 'có sẵn'",
+        "Chúng tôi không đảm bảo rằng dịch vụ sẽ không bị gián đoạn hoặc không có lỗi",
+        "Chúng tôi không chịu trách nhiệm về các công cụ của bên thứ ba được liệt kê trong thư mục của chúng tôi",
+        "Việc sử dụng các công cụ AI có nguy cơ của riêng bạn"
+      ]
+    },
+    "liability": {
+      "title": "Giới hạn trách nhiệm",
+      "content": "Trong mọi trường hợp, TopAICollection, cũng như các giám đốc, nhân viên, đối tác, đại lý, nhà cung cấp hoặc chi nhánh của nó, sẽ không chịu trách nhiệm về bất kỳ thiệt hại gián tiếp, ngẫu nhiên, đặc biệt, hậu quả hoặc trừng phạt nào."
+    },
+    "governing": {
+      "title": "Luật điều chỉnh",
+      "content": "Các điều khoản này sẽ được điều chỉnh và hiểu theo luật pháp của khu vực tài phán nơi TopAICollection hoạt động, không quan tâm đến các điều khoản xung đột pháp luật của nó."
+    }
+  },
+  "contact": {
+    "title": "Thông tin liên hệ",
+    "content": "Nếu bạn có bất kỳ câu hỏi nào về Điều khoản dịch vụ này, vui lòng liên hệ với chúng tôi tại:"
+  }
+}

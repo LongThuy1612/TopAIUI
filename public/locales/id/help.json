@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Pusat Bantuan - Dukungan TopAICollection",
+    "description": "Dapatkan bantuan dengan TopAICollection. Temukan jawaban atas pertanyaan umum dan hubungi tim dukungan kami."
+  },
+  "title": "Pusat Bantuan",
+  "subtitle": "Apa yang bisa kami bantu hari ini?",
+  "sections": {
+    "faq": {
+      "title": "Pertanyaan Umum",
+      "description": "Temukan jawaban atas pertanyaan yang sering diajukan.",
+      "link": "Lihat FAQ"
+    },
+    "contact": {
+      "title": "Hubungi Dukungan",
+      "description": "Tidak dapat menemukan apa yang Anda butuhkan? Hubungi kami.",
+      "link": "Hubungi kami"
+    }
+  },
+  "commonTopics": {
+    "title": "Topik Umum",
+    "submitTool": "Bagaimana cara mengirimkan alat AI saya?",
+    "advertising": "Bagaimana cara kerja periklanan?",
+    "privacy": "Apa kebijakan privasi Anda?",
+    "terms": "Apa persyaratan layanan Anda?"
+  }
+}

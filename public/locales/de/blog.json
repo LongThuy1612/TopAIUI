@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "KI-Blog und Neuigkeiten – TopAICollection",
+    "description": "Bleiben Sie auf dem Laufenden mit den neuesten KI-Nachrichten, Tutorials, Rezensionen und Erkenntnissen aus der Welt der künstlichen Intelligenz."
+  },
+  "badge": "KI-Einblicke",
+  "title": "KI-Blog und Neuigkeiten",
+  "subtitle": "Bleiben Sie mit den neuesten Trends, Tutorials und Erkenntnissen aus der KI-Welt auf dem Laufenden",
+  "search": {
+    "placeholder": "Artikel durchsuchen..."
+  },
+  "categories": {
+    "title": "Kategorien",
+    "all": "Alle Artikel",
+    "news": "KI-Nachrichten",
+    "tutorials": "Anleitungen",
+    "reviews": "Werkzeugbewertungen",
+    "industry": "Brancheneinblicke",
+    "guides": "Anleitungen"
+  },
+  "newsletter": {
+    "title": "Bleiben Sie auf dem Laufenden",
+    "subtitle": "Erhalten Sie die neuesten KI-Nachrichten in Ihren Posteingang",
+    "placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "button": "Abonnieren"
+  },
+  "article": {
+    "readTime": "{minutes} Minuten gelesen",
+    "published": "Veröffentlicht am {date}",
+    "writtenBy": "Geschrieben & editiert von:",
+    "factCheckedBy": "Faktengeprüft von:"
+  },
+  "pagination": {
+    "next": "Nächste",
+    "page": "Seite {page} von {total}"
+  },
+  "relatedTools": "Verwandte Tools",
+  "backToBlog": "Zurück zum Blog",
+  "errors": {
+    "notFound": "„Beitrag nicht gefunden“"
+  },
+  "sort": {
+    "latest": "Neueste",
+    "oldest": "Älteste",
+    "popular": "Beliebt"
+  },
+  "filter": {
+    "allAuthors": "Alle Autoren",
+    "sortBy": "Sortieren nach"
+  },
+  "relatedPosts": "Verwandte Beiträge",
+  "faqs": "FAQs"
+}

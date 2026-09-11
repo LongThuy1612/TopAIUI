@@ -1,0 +1,46 @@
+{
+  "title": "Gastpost en linkinvoeging",
+  "description": "Deel uw expertise met onze community via gastposts of vraag om strategische linkinvoegingen in bestaande inhoud.",
+  "details": "Details van gastpost",
+  "postTitle": "Berichttitel",
+  "postTitlePlaceholder": "De titel van uw gastpost",
+  "postContent": "Plaats inhoud of details",
+  "postContentPlaceholder": "Beschrijf de inhoud van uw gastpost of details over het invoegen van links",
+  "features": {
+    "guestPosts": {
+      "title": "Gastberichten",
+      "description": "Deel uw kennis en inzichten over AI met onze community. Bouw autoriteit op en genereer verkeer naar uw website."
+    },
+    "linkInsertion": {
+      "title": "Link invoegen",
+      "description": "Vraag om strategische plaatsing van uw links in bestaande, relevante inhoud voor maximale SEO-waarde."
+    },
+    "seoBacklinks": {
+      "title": "SEO-backlinks",
+      "description": "Verbeter uw SEO-ranking met hoogwaardige backlinks van ons gezaghebbende domein."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Richtlijnen voor inhoud",
+    "description": "Alle gastposts moeten origineel, van hoge kwaliteit en relevant voor AI zijn. We accepteren geen door AI gegenereerde inhoud zonder menselijke bewerking."
+  },
+  "meta": {
+    "title": "Gastberichten en linkinvoegingen | Top AI-collectie",
+    "description": "Deel uw expertise met onze AI-gemeenschap via gastposts of vraag om strategische linkinvoegingen in bestaande inhoud."
+  },
+  "validation": {
+    "required": "Dit veld is verplicht",
+    "titleTooShort": "Titel moet minimaal 5 tekens bevatten",
+    "contentTooShort": "De inhoud moet minimaal 20 tekens lang zijn",
+    "toolNameRequired": "Gereedschapsnaam is vereist",
+    "url": "Ongeldige URL",
+    "descriptionMin": "Beschrijving moet minimaal 10 tekens lang zijn",
+    "categoryRequired": "Selecteer een categorie",
+    "email": "Ongeldig e-mailadres",
+    "messageMin": "Het bericht moet minimaal 10 tekens lang zijn"
+  },
+  "sidebar": {
+    "articleCount": "1.000+ artikelen",
+    "articleCountSub": "Gepubliceerd door onze gemeenschap"
+  }
+}

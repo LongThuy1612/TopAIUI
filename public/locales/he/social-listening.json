@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "האזנה חברתית - מעקב אחר מגמות AI | TopAICollection",
+    "description": "עקוב אחר מגמות AI ברשתות חברתיות.",
+    "detailTitle": "{name} האזנה חברתית — TopAI",
+    "detailDescription": "ניתוחי האזנה חברתית עבור {name}.",
+    "notFoundTitle": "כלי לא נמצא - האזנה חברתית"
+  },
+  "title": "האזנה חברתית",
+  "subtitle": "עקוב אחר ביצועי סרטונים של כלי AI. Twitter",
+  "leaderboardTitle": "טבלת מובילים",
+  "leaderboardSubtitle": "מעקב מיידי. Twitter",
+  "table": {
+    "aiTool": "כלי AI",
+    "introduce": "מבוא",
+    "videoCount": "סרטונים",
+    "creatorsCount": "יוצרים",
+    "monthlyTraffic": "תנועה חודשית",
+    "avgViews": "ממוצע צפיות",
+    "avgInteractions": "ממוצע אינטראקציות",
+    "totalViews": "סה\"כ צפיות",
+    "totalInteractions": "סה\"כ אינטראקציות",
+    "emptyState": "לא נמצאו נתונים",
+    "pageIndicator": "עמוד {page} מ-{lastPage}",
+    "updatedAt": "תאריך עדכון",
+    "totalEngagement": "מעורבות מוחלטת"
+  },
+  "search": {
+    "placeholder": "הזן שם כלי או דומיין"
+  },
+  "detail": {
+    "viewTool": "הצג פרטי כלי",
+    "tabs": {
+      "socialListening": "האזנה חברתית"
+    },
+    "stats": {
+      "monthlyVisits": "ביקורים חודשיים",
+      "growth": "צמיחה",
+      "growthRate": "קצב צמיחה",
+      "socialVideos": "סרטונים חברתיים",
+      "newLastWeek": "חדשים השבוע"
+    },
+    "metrics": {
+      "avgViews": "ממוצע צפיות",
+      "totalVideos": "סה\"כ סרטונים",
+      "totalCreators": "סה\"כ יוצרים",
+      "totalViews": "סה\"כ / ממוצע",
+      "totalLikes": "לייקים / ממוצע",
+      "totalComments": "תגובות / ממוצע",
+      "totalShares": "סך שיתופים",
+      "totalCollects": "סך שמירות",
+      "totalQuotes": "סך ציטוטים",
+      "totalReposts": "סך פרסומים חוזרים"
+    },
+    "platforms": {
+      "all": "הכל"
+    },
+    "feed": {
+      "unlockCta": "פתח לצפייה בעוד",
+      "unlockDesc": "התחבר לצפייה בניתוחי וידאו מלאים",
+      "viewNow": "צפה עכשיו →",
+      "sortBy": "מיין לפי",
+      "sortViews": "צפיות",
+      "sortLikes": "לייקים",
+      "sortDate": "תאריך",
+      "loadMore": "טען עוד",
+      "searchPlaceholder": "חפש לפי כותרת או יוצר...",
+      "emptyState": "לא נמצאו פוסטים. כאן מוצגים רק סרטונים.",
+      "untitledPost": "פוסט ללא כותרת",
+      "metrics": {
+        "views": "צפיות",
+        "likes": "לייקים",
+        "retweets": "ציוצים מחדש",
+        "shares": "שיתופים",
+        "replies": "תגובות",
+        "comments": "תגובות",
+        "quotes": "ציטוטים",
+        "saves": "שמורים",
+        "collects": "אוספים",
+        "upvotes": "הצבעות",
+        "follows": "עוקבים"
+      },
+      "sortComments": "הערות",
+      "sortShares": "מניות",
+      "title": "עדכון חברתי"
+    },
+    "traffic": {
+      "bounceRate": "שיעור יציאה",
+      "pagesPerVisit": "עמודים לביקור",
+      "avgVisitDuration": "משך ביקור ממוצע",
+      "globalRanking": "דירוג גלובלי",
+      "category": "קטגוריה",
+      "categoryRanking": "דירוג קטגוריה",
+      "deviceSplit": "מחשב לעומת נייד",
+      "desktop": "מחשב שולחני",
+      "mobile": "נייד",
+      "trafficSources": "מקורות תנועה",
+      "topRegions": "מדינות מובילות",
+      "processingMsg": "נתוני תנועה בעיבוד. בדוק מאוחר יותר.",
+      "monthlyTrafficTrend": "מגמת תנועה חודשית",
+      "monthlyTrafficTrendDesc": "ביקורים היסטוריים גלובליים במהלך 30 הימים האחרונים",
+      "sourceWebsiteInsight": "מקור: Website Insight Global"
+    },
+    "pricing": {
+      "notDocumented": "תוכניות התמחור טרם תועדו.",
+      "checkWebsite": "בדוק אתר רשמי",
+      "visitWebsite": "בקר באתר",
+      "month": "חודש"
+    },
+    "lastUpdated": "עודכן לאחrona",
+    "influencers": {
+      "title": "משפיענים מובילים",
+      "name": "יוֹצֵר",
+      "platform": "פּלַטפוֹרמָה",
+      "videos": "סרטונים",
+      "reach": "הערכה לְהַגִיעַ"
+    },
+    "filterInteraction": "אינטראקציה מסנן"
+  },
+  "platforms": {
+    "all": "כל הפלטפורמות"
+  },
+  "monitors": {
+    "title": "המסכים שלך",
+    "subtitle": "עקוב אחר מילות מפתח ספציפיות בפלטפורמות חברתיות",
+    "inputPlaceholder": "הזן מילת מפתח (למשל ChatGPT, Midjourney)",
+    "addButton": "התחל במעקב",
+    "emptyTitle": "אין מוניטורים פעילים",
+    "emptyDesc": "הוסף מילת מפתח למעלה כדי להתחיל לעקוב אחר אזכורים וסנטימנטים חברתיים.",
+    "keyword": "מילת מפתח",
+    "platform": "פּלַטפוֹרמָה",
+    "status": "סטָטוּס",
+    "lastActive": "פעיל אחרון",
+    "addSuccess": "צג נוסף בהצלחה!",
+    "addError": "הוספת צג נכשלה",
+    "statusTracking": "מַעֲקָב"
+  },
+  "socialListeningTitle": "Leaderboard להאזנה חברתית",
+  "pagination": {
+    "prev": "הקודם",
+    "next": "הַבָּא",
+    "page": "עַמוּד"
+  },
+  "nav": {
+    "overview": "סקירה כללית",
+    "social": "חברתי",
+    "traffic": "תנועה",
+    "pricing": "תמחור"
+  },
+  "locked": {
+    "quotaTitle": "תכונה נעולה",
+    "quotaDesc": "הגעת למכסת ההקשבה החברתית שלך. שדרג כדי לפתוח תובנות נוספות.",
+    "upgradeBtn": "שדרג כעת",
+    "overlayTitle": "תכונת פרימיום",
+    "overlayDesc": "תכונה זו דורשת מנוי פרימיום פעיל.",
+    "unlockBtn": "פתח את הפרימיום"
+  }
+}

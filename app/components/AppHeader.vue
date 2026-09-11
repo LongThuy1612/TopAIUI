@@ -7,18 +7,18 @@ function onSearch(q: string) {
 </script>
 
 <template>
-  <header class="sticky top-0 z-40 border-b border-ink-100 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
-      <NuxtLink to="/" class="flex shrink-0 items-center gap-2">
-        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-sm font-extrabold text-white">T</span>
-        <span class="text-lg font-extrabold tracking-tight text-ink-900">TopAICollection</span>
+  <header class="sticky top-0 z-40 border-b border-ink-200 bg-white">
+    <div class="mx-auto flex h-[72px] max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
+      <NuxtLink to="/" class="flex shrink-0 items-center gap-2.5">
+        <span class="inline-flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-[linear-gradient(135deg,#db2777,#e11d48)] text-sm font-extrabold text-white">T</span>
+        <span class="text-[22px] font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
       </NuxtLink>
 
       <nav class="hidden shrink-0 items-center gap-1 lg:flex">
-        <NuxtLink to="/category/all" class="rounded-lg px-3 py-2 text-sm font-medium text-ink-600 hover:bg-ink-100/60 hover:text-brand-600">
+        <NuxtLink to="/category/all" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
           {{ t('header.categories') }}
         </NuxtLink>
-        <NuxtLink to="/ranking" class="rounded-lg px-3 py-2 text-sm font-medium text-ink-600 hover:bg-ink-100/60 hover:text-brand-600">
+        <NuxtLink to="/ranking" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
           {{ t('header.rankings') }}
         </NuxtLink>
       </nav>
@@ -27,12 +27,9 @@ function onSearch(q: string) {
         <SearchBar :placeholder="t('header.searchPlaceholder')" dense @submit="onSearch" />
       </div>
 
-      <nav class="ml-auto flex shrink-0 items-center gap-3">
+      <nav class="ml-auto flex shrink-0 items-center gap-3.5">
         <LanguageSwitcher class="hidden sm:block" />
-        <NuxtLink to="/submit" class="hidden text-sm font-medium text-ink-600 hover:text-brand-600 sm:block">
-          {{ t('header.submit') }}
-        </NuxtLink>
-        <NuxtLink to="/admin/login" class="rounded-full border border-ink-200 px-3 py-1.5 text-sm font-semibold text-ink-600 hover:border-brand-300 hover:text-brand-600">
+        <NuxtLink to="/admin/login" class="rounded-full border border-ink-200 px-3.5 py-1.5 text-sm font-semibold text-ink-800 hover:border-brand-300 hover:text-brand-500">
           {{ t('header.admin') }}
         </NuxtLink>
       </nav>

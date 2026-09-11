@@ -1,0 +1,225 @@
+{
+  "welcome": "Välkommen, {name}!",
+  "welcomeDescription": "Utforska våra kraftfulla funktioner och data för att upptäcka de senaste trenderna och möjligheterna inom AI-branschen.",
+  "user": "Användare",
+  "performanceOverview": "Prestationsöversikt",
+  "websiteInsightsQuota": "Webbplatsinsiktskvot",
+  "socialListeningQueries": "Social Listening-kvot",
+  "stats": {
+    "organicClicks": "Organiska klick",
+    "paidClicks": "Betalda klick",
+    "totalClicks": "Totala klick",
+    "totalTools": "Totala verktyg",
+    "totalViews": "Totala visningar",
+    "credits": "Krediter"
+  },
+  "features": {
+    "websiteInsights": "Webbplatsinsikter",
+    "socialListening": "Socialt lyssnande",
+    "prioritySupport": "Prioriterad support",
+    "advertising": "Reklam",
+    "premiumSupport": "Premiumsupport"
+  },
+  "badgePopular": "Mest populära",
+  "title": "Social Listening-spårning",
+  "description": "Övervaka sökord på TikTok och YouTube.",
+  "adCredits": "Annonskrediter",
+  "postCredits": "Posta krediter",
+  "linkCredits": "Länka krediter",
+  "forSponsoredListings": "För sponsrade listor",
+  "forGuestArticles": "För gästartiklar",
+  "forLinkInsertions": "För länkinfogningar",
+  "buyCredits": "Köp krediter",
+  "noOrders": "Inga beställningar hittades.",
+  "orderHistory": "Beställningshistorik",
+  "orderId": "Beställnings-ID",
+  "amount": "Belopp",
+  "date": "Datum",
+  "type": "Typ",
+  "invoice": "Faktura",
+  "download": "Ladda ner",
+  "currentPlan": "Nuvarande plan",
+  "freeTier": "Gratis nivå",
+  "freeTierDesc": "Uppgradera din plan för att låsa upp fler funktioner och insikter.",
+  "creditBalances": "Kredittillgodohavanden",
+  "subscriptionDetails": "Prenumerationsinformation",
+  "upgradePlan": "Uppgraderingsplan",
+  "statusActive": "Aktiv",
+  "planMemberSince": "Medlem av denna plan",
+  "renewalDate": "Förnyar på",
+  "changePlan": "Ändra plan",
+  "redirecting": "Omdirigerar...",
+  "credits": "Krediter",
+  "managePortal": "Hantera faktureringsportal",
+  "subscribe": "Prenumerera nu",
+  "upgradeTitle": "Uppgradera din forskningsplan",
+  "upgradeDesc": "Lås upp avancerad analys, konkurrentinsikter och mer.",
+  "choosePlan": {
+    "title": "Välj din forskningsplan",
+    "subtitle": "Skaffa AI-marknadsinformation och data för att styra beslut."
+  },
+  "billingIntervals": {
+    "monthly": "Månatlig",
+    "yearly": "Årlig"
+  },
+  "subtitle": "Hantera och spåra prestanda för dina inskickade AI-verktyg.",
+  "create": "Skapa kampanj",
+  "noCampaigns": "Inga kampanjer ännu",
+  "createFirst": "Skapa din första kampanj för att börja marknadsföra dina AI-verktyg",
+  "getStarted": "Kom igång",
+  "spent": "Spenderat",
+  "startDate": "Startdatum",
+  "endDate": "Slutdatum",
+  "notSet": "Inte inställt",
+  "ongoing": "Pågående",
+  "pause": "Paus",
+  "resume": "Fortsätt",
+  "viewDetails": "Visa detaljer",
+  "clicks": "Klick",
+  "impressions": "Intryck",
+  "rejectionReason": "Orsak till avslag",
+  "analytics": {
+    "title": "Kampanjanalys",
+    "description": "Detaljerad uppdelning av visningar och klick under de senaste 30 dagarna.",
+    "exportJson": "Exportera JSON",
+    "dailyPerformance": "Daglig prestation",
+    "topLocales": "Toppregioner (lokaler)"
+  },
+  "track": "Spåra",
+  "noDomains": "Inga domäner spårade ännu. Lägg till en ovan!",
+  "domain": "Domän",
+  "monthlyVisits": "Månatliga besök",
+  "rank": "Rang",
+  "topKeywords": "Bästa sökorden",
+  "added": "Tillagd",
+  "tool": "Verktyg",
+  "organicClicks": "Organiska klick",
+  "paidClicks": "Betald klick",
+  "totalClicks": "Totalt antal klick",
+  "addedOn": "Tillagd på",
+  "noTools": "Inga verktyg spårade ännu.",
+  "empty": {
+    "title": "Inga AI-verktyg än",
+    "description": "Skicka in ditt AI-verktyg för att bli upptäckt av miljontals användare.",
+    "cta": "Skicka in AI-verktyg"
+  },
+  "columns": {
+    "tool": "Verktyg",
+    "organic": "Organisk trafik",
+    "paid": "Betald trafik",
+    "impressions": "Intryck",
+    "actions": "Åtgärder",
+    "status": "Status"
+  },
+  "statusTooltip": {
+    "pending": "Väntar på administratörsgodkännande"
+  },
+  "submittedToast": "Ditt verktyg har skickats och väntar på granskning.",
+  "warnings": {
+    "pendingView": "Det här verktyget är fortfarande under granskning och inte offentligt ännu.",
+    "confirmDelete": "Är du säker på att du vill ta bort det här AI-verktyget? Denna åtgärd kan inte ångras."
+  },
+  "gpt": {
+    "title": "Mina GPT:er",
+    "submitNew": "Skicka in ny GPT",
+    "noGpts": "Inga GPT:er hittades. Skicka in din första!",
+    "noGptsDesc": "Inga GPT har skickats in än. Skicka in din GPT för att bli upptäckt.",
+    "columns": {
+      "name": "GPT-namn",
+      "url": "ChatGPT-URL",
+      "date": "Inlämnad"
+    }
+  },
+  "updateAi": "Uppdatera AI",
+  "submitNew": "Skicka nytt",
+  "submitNewItem": "Skicka in nytt objekt",
+  "linkInsert": {
+    "label": "Infoga länk",
+    "submit": "Skicka länkinfoga",
+    "empty": {
+      "title": "Ingen länk infogas ännu",
+      "description": "Du har inte skickat in några länkinfogningar än."
+    }
+  },
+  "form": {
+    "type": "Typ",
+    "targetUrl": "Måladress",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Titel / Ankare Text",
+    "anchorTextPlaceholder": "Artikelns titel ELLER Ankartext för länk",
+    "submitCredits": "Skicka (1 poäng)"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Säkerhet",
+    "notifications": "Aviseringar"
+  },
+  "table": {
+    "platform": "Plattform",
+    "keyword": "Nyckelord",
+    "videos": "Videor",
+    "views": "Visningar",
+    "creators": "Skapare",
+    "status": "Status"
+  },
+  "updated": "Inställningarna har uppdaterats",
+  "password": {
+    "title": "Ändra lösenord",
+    "current": "Aktuellt lösenord",
+    "new": "Nytt lösenord",
+    "confirm": "Bekräfta nytt lösenord",
+    "update": "Uppdatera lösenord"
+  },
+  "notifications": {
+    "title": "Aviseringsinställningar",
+    "email": "E-postmeddelanden",
+    "marketing": "Marknadsföringsmail"
+  },
+  "metrics": {
+    "monthlyQueries": "Månatliga frågor",
+    "videosToday": "Videor idag",
+    "creatorsToday": "Skapare idag"
+  },
+  "advertiseAi": "Annonsera AI",
+  "myAis": {
+    "title": "Mina AI:er",
+    "subtitle": "Hantera och spåra prestanda för dina inskickade AI-verktyg.",
+    "empty": {
+      "cta": "Skicka in AI-verktyg"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Orsak för avslag"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Spåra sökordsrankning och resultat",
+    "socialListeningDesc": "Övervaka sociala omnämnanden och trender",
+    "researchReportDesc": "Generera omfattande marknadsrapporter",
+    "aiAdvertisingLibrary": "AI-reklambibliotek",
+    "aiAdvertisingDesc": "Analysera konkurrerande AI-annonser",
+    "comingSoon": "Kommer snart"
+  },
+  "reports": {
+    "title": "Forskningsrapporter",
+    "description": "Få tillgång till djupgående analytiska rapporter om AI-branschen.",
+    "noReports": "Inga rapporter tillgängliga",
+    "free": "Gratis",
+    "download": "Ladda ner",
+    "unlock": "Lås upp rapport",
+    "noReportsDesc": "Vi förbereder just nu nya insikter.",
+    "readNow": "Läs Rapport",
+    "readerTitle": "Forskningsrapportläsare",
+    "unlockRequired": "Premiuminnehåll",
+    "unlockDesc": "Lås upp denna djupgående forskningsrapport för att få full tillgång till exklusiva marknadsanalyser, fallstudier och praktiska insikter.",
+    "unlockNow": "Lås upp nu",
+    "related": "Relaterade rapporter",
+    "toc": "På den här sidan",
+    "backToList": "Tillbaka till biblioteket",
+    "notFound": "Rapporten hittades inte",
+    "unlockSuccess": "Rapporten har låsts upp!",
+    "unlockError": "Det gick inte att låsa upp rapporten.",
+    "searchPlaceholder": "Sök i rapporter..."
+  },
+  "toolPerformance": "Verktygsprestanda (realtid)",
+  "budget": "Budget"
+}

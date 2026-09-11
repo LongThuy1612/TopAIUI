@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection – Entdecken Sie die besten KI-Tools",
+    "description": "Entdecken Sie {totalTools}+ KI-Tools in {totalCategories} Kategorien in {languagesCount}+ Sprachen"
+  },
+  "home": {
+    "visitWebsite": "Besuchen Sie die Website",
+    "ranking": "Rang"
+  },
+  "tool": {
+    "visitWebsite": "Besuchen Sie die Website →",
+    "useCases": "Anwendungsfälle",
+    "about": "Über {name}",
+    "howToUse": "So verwenden Sie {name}",
+    "faq": "Häufig gestellte Fragen"
+  }
+}

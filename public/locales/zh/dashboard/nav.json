@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "返回仪表板",
+    "backToHome": "返回主页",
+    "dashboard": "仪表板",
+    "websiteInsights": "网站分析",
+    "socialListening": "社交监听",
+    "researchReport": "研究报告",
+    "myAis": "我的AI",
+    "favorites": "收藏夹",
+    "profileSettings": "基本设置",
+    "advertise": "发布广告",
+    "postsLinks": "帖子与链接",
+    "paymentInvoice": "付款与发票",
+    "overview": "概述",
+    "myInquiries": "我的询问"
+  },
+  "logout": "登出",
+  "logoutConfirmTitle": "退出登录",
+  "logoutConfirmDescription": "您确定要退出登录吗？",
+  "upgrade": "升级",
+  "sections": {
+    "research": "研究",
+    "management": "管理",
+    "business": "商业",
+    "admin": "管理后台",
+    "guestPost": "来宾帖子",
+    "updateAi": "更新人工智能",
+    "myGpts": "我的 GPT"
+  },
+  "help": "帮助",
+  "close": "关闭",
+  "status": {
+    "active": "激活"
+  },
+  "advertiseAi": "广告人工智能",
+  "myAis": {
+    "title": "我的人工智能",
+    "subtitle": "管理和跟踪您提交的人工智能工具的性能。",
+    "empty": {
+      "cta": "提交人工智能工具"
+    }
+  }
+}

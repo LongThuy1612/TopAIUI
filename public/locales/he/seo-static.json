@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection - גלה את כלי הבינה המלאכותית הטובים ביותר",
+    "description": "חקור {totalTools}+ כלי בינה מלאכותית בקטגוריות {totalCategories} ב-{languagesCount}+ שפות"
+  },
+  "home": {
+    "visitWebsite": "בקר באתר",
+    "ranking": "דירוג"
+  },
+  "tool": {
+    "visitWebsite": "בקר באתר →",
+    "useCases": "מקרי שימוש",
+    "about": "על {name}",
+    "howToUse": "כיצד להשתמש ב-{name}",
+    "faq": "שאלות נפוצות"
+  }
+}

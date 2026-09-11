@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "À propos de nous - TopAICollection",
+    "description": "Découvrez la mission de TopAICollection : vous aider à découvrir les meilleurs outils et sites Web d'IA pour vos besoins."
+  },
+  "badge": "À propos de nous",
+  "hero": {
+    "title": "Votre passerelle vers la révolution de l'IA",
+    "subtitle": "Nous avons pour mission de démocratiser l'accès aux outils d'IA et d'aider chacun à exploiter la puissance de l'intelligence artificielle."
+  },
+  "stats": {
+    "tools": "Outils d'IA",
+    "categories": "Catégories",
+    "users": "Utilisateurs mensuels",
+    "languages": "Langues"
+  },
+  "mission": {
+    "title": "Notre Mission",
+    "paragraph1": "Chez TopAICollection, nous pensons que l'IA doit être accessible à tous. Notre plateforme sert de répertoire complet des meilleurs outils et sites Web d'IA, permettant aux utilisateurs de découvrir et d'exploiter facilement l'intelligence artificielle dans leur travail et leur vie quotidienne.",
+    "paragraph2": "Nous sélectionnons et examinons soigneusement chaque outil de notre collection, garantissant que nos utilisateurs n'ont accès qu'à des solutions d'IA de la plus haute qualité. Notre équipe d'experts évalue les outils en fonction de leurs fonctionnalités, de leur expérience utilisateur, de leur prix et de leurs applications réelles.",
+    "paragraph3": "Que vous soyez développeur, concepteur, spécialiste du marketing, éducateur ou propriétaire d'entreprise, TopAICollection vous aide à trouver les outils d'IA parfaits pour améliorer votre productivité et votre créativité."
+  },
+  "features": {
+    "title": "Pourquoi choisir TopAICollection",
+    "global": {
+      "title": "Portée mondiale",
+      "description": "Disponible dans plus de 20 langues, au service de millions d'utilisateurs dans le monde"
+    },
+    "updated": {
+      "title": "Mises à jour quotidiennes",
+      "description": "Notre collection est mise à jour quotidiennement avec les dernières innovations en matière d'IA"
+    },
+    "community": {
+      "title": "Axé sur la communauté",
+      "description": "Les avis et évaluations des utilisateurs vous aident à prendre des décisions éclairées"
+    },
+    "verified": {
+      "title": "Outils vérifiés",
+      "description": "Chaque outil est soigneusement examiné et vérifié par notre équipe"
+    }
+  },
+  "cta": {
+    "title": "Commencez votre voyage vers l'IA dès aujourd'hui",
+    "subtitle": "Explorez notre collection d'outils d'IA ou soumettez la vôtre",
+    "browse": "Parcourir les outils",
+    "submit": "Soumettez votre outil"
+  }
+}

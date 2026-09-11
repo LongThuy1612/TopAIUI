@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} เครื่องมือ AI | ค้นพบโซลูชัน {tagName} ที่ดีที่สุด",
+    "description": "สำรวจคอลเล็กชันเครื่องมือ AI ที่ดีที่สุด {tagName} ที่คัดสรรมาของเรา เปรียบเทียบคุณลักษณะ ราคา และบทวิจารณ์เพื่อค้นหาซอฟต์แวร์ {tagName} ที่เหมาะกับความต้องการของคุณ"
+  },
+  "notFound": {
+    "metaTitle": "ไม่พบแท็ก | TopAICollection",
+    "metaDescription": "แท็กที่คุณมองหาไม่มีอยู่ ค้นพบเครื่องมือ AI อื่นๆ"
+  },
+  "breadcrumb": {
+    "home": "บ้าน",
+    "tools": "เครื่องมือ"
+  },
+  "jsonLd": {
+    "collectionName": "เครื่องมือ AI ของ {tagName}",
+    "collectionDescription": "เรียกดูไดเรกทอรีเครื่องมือ AI ของ {tagName}"
+  }
+}

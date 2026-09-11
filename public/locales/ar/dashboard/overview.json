@@ -1,0 +1,225 @@
+{
+  "welcome": "أهلاً بك يا {name}!",
+  "welcomeDescription": "استكشف ميزاتنا وبياناتنا القوية لاكتشاف أحدث التوجهات والفرص في صناعة الذكاء الاصطناعي.",
+  "user": "المستخدم",
+  "performanceOverview": "نظرة عامة على الأداء",
+  "websiteInsightsQuota": "حصة رؤى الموقع",
+  "socialListeningQueries": "حصة الاستماع الاجتماعي",
+  "stats": {
+    "organicClicks": "نقرات طبيعية",
+    "paidClicks": "نقرات مدفوعة",
+    "totalClicks": "إجمالي النقرات",
+    "totalTools": "إجمالي الأدوات",
+    "totalViews": "إجمالي المشاهدات",
+    "credits": "الرصيد"
+  },
+  "features": {
+    "websiteInsights": "رؤى الموقع الإلكتروني",
+    "socialListening": "الاستماع الاجتماعي",
+    "prioritySupport": "أولوية الدعم",
+    "advertising": "الإعلانات",
+    "premiumSupport": "دعم مميز"
+  },
+  "badgePopular": "الأكثر شعبية",
+  "title": "تتبع الاستماع الاجتماعي",
+  "description": "راقب الكلمات الرئيسية عبر TikTok وYouTube.",
+  "adCredits": "أرصدة الإعلانات",
+  "postCredits": "أرصدة ما بعد النشر",
+  "linkCredits": "أرصدة الرابط",
+  "forSponsoredListings": "للمساكن الممولة",
+  "forGuestArticles": "لمقالات الضيوف",
+  "forLinkInsertions": "لإدراج الرابط",
+  "buyCredits": "شراء الوحدات",
+  "noOrders": "لم يتم العثور على أي طلبات.",
+  "orderHistory": "سجل الطلبات",
+  "orderId": "مُعرّف الطلب",
+  "amount": "المبلغ",
+  "date": "التاريخ",
+  "type": "النوع",
+  "invoice": "الفاتورة",
+  "download": "تحميل",
+  "currentPlan": "الباقة الحالية",
+  "freeTier": "طبقة مجانية",
+  "freeTierDesc": "قم بترقية خطتك لفتح المزيد من الميزات والرؤى.",
+  "creditBalances": "أرصدة دائنة",
+  "subscriptionDetails": "تفاصيل الاشتراك",
+  "upgradePlan": "خطه الترقية",
+  "statusActive": "نشط",
+  "planMemberSince": "عضو في هذه الخطة",
+  "renewalDate": "يتم التجديد في",
+  "changePlan": "تغيير الخطة",
+  "redirecting": "إعادة توجيه...",
+  "credits": "النقاط",
+  "managePortal": "إدارة بوابة الفوترة",
+  "subscribe": "اشترك الآن",
+  "upgradeTitle": "ترقية خطة البحث الخاصة بك",
+  "upgradeDesc": "افتح التحليلات المتقدمة ورؤى المنافسين والمزيد.",
+  "choosePlan": {
+    "title": "اختيار خطة البحث الخاصة بك",
+    "subtitle": "احصل على معلومات وبيانات سوق الذكاء الاصطناعي لاتخاذ القرارات."
+  },
+  "billingIntervals": {
+    "monthly": "شهرياً",
+    "yearly": "سنويًا"
+  },
+  "subtitle": "إدارة وتتبع أداء أدوات الذكاء الاصطناعي المقدمة.",
+  "create": "إنشاء حملة",
+  "noCampaigns": "لا توجد حملات إعلانية حتى الآن",
+  "createFirst": "أنشئ حملتك الأولى لبدء الترويج لأدوات الذكاء الاصطناعي الخاصة بك",
+  "getStarted": "التسجيل بالمنصة",
+  "budget": "إدارة الميزانية",
+  "spent": "مصروف",
+  "startDate": "تاريخ البدء",
+  "endDate": "تاريخ الانتهاء",
+  "notSet": "لم يتم التعيين",
+  "ongoing": "قيد التنفيذ",
+  "pause": "إيقاف مؤقت",
+  "resume": "استئناف",
+  "viewDetails": "عرض التفاصيل",
+  "clicks": "النقرات",
+  "impressions": "عدد مرات الظهور",
+  "rejectionReason": "سبب الرفض",
+  "analytics": {
+    "title": "تحليلات الحملة",
+    "description": "تحليل مفصل لمرات الظهور والنقرات على مدار الثلاثين يومًا الماضية.",
+    "exportJson": "تصدير JSON",
+    "dailyPerformance": "نموذج القيافة اليومي",
+    "topLocales": "أفضل المناطق (المحلية)"
+  },
+  "track": "التتبع:",
+  "noDomains": "لا توجد نطاقات تم تتبعها حتى الآن. أضف واحدًا أعلاه!",
+  "domain": "المجال",
+  "monthlyVisits": "الزيارات الشهرية",
+  "rank": "الترتيب",
+  "topKeywords": "أهم الكلمات المفتاحية",
+  "added": "إضافة",
+  "tool": "الأداة",
+  "organicClicks": "النقرات العضوية",
+  "paidClicks": "النقرات المدفوعة",
+  "totalClicks": "اجمالى النقرات",
+  "addedOn": "تمت الإضافة في",
+  "noTools": "لا توجد أدوات تم تتبعها حتى الآن.",
+  "empty": {
+    "title": "لا توجد أدوات ذكاء اصطناعي حتى",
+    "description": "أرسل أداة الذكاء الاصطناعي الخاصة بك ليكتشفها ملايين المستخدمين.",
+    "cta": "إرسال أداة الذكاء الاصطناعي"
+  },
+  "columns": {
+    "tool": "الأداة",
+    "status": "الحالة",
+    "organic": "حركة المرور العضوية",
+    "paid": "غرامة المرور المدفوعة",
+    "impressions": "عدد مرات الظهور",
+    "actions": "الإجراءات"
+  },
+  "statusTooltip": {
+    "pending": "في انتظار موافقة المسؤول على البريد الإلكتروني"
+  },
+  "submittedToast": "تم إرسال أداتك وهي في انتظار المراجعة.",
+  "warnings": {
+    "pendingView": "لا تزال هذه الأداة قيد المراجعة ولم تظهر للجمهور بعد.",
+    "confirmDelete": "هل أنت متأكد من أنك تريد حذف هذه الخطة؟ لا يمكن التراجع عن هذا الإجراء."
+  },
+  "gpt": {
+    "title": "GPTs الخاص بي",
+    "submitNew": "إرسال جديد",
+    "noGpts": "لم يتم العثور على GPTs. أرسل أول واحد لك!",
+    "noGptsDesc": "لم يتم إرسال GPTs حتى الآن. أرسل GPT الخاص بك ليتم اكتشافه.",
+    "columns": {
+      "name": "اسم GPT",
+      "url": "رابط ChatGPT",
+      "date": "مُقَدَّم"
+    }
+  },
+  "updateAi": "تحديث الذكاء الاصطناعي",
+  "submitNew": "إرسال جديد",
+  "submitNewItem": "إرسال عنصر جديد: الاسم",
+  "linkInsert": {
+    "label": "الرابط: [INSERT]",
+    "submit": "إرسال إدراج الرابط",
+    "empty": {
+      "title": "لا توجد إدراجات روابط حتى الآن",
+      "description": "لم ترسل أي إدراج للرابط حتى الآن."
+    }
+  },
+  "form": {
+    "type": "النوع",
+    "targetUrl": "الرابط المُستهدف",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "العنوان /نص المرساة",
+    "anchorTextPlaceholder": "عنوان المقالة أو نص الربط للرابط",
+    "submitCredits": "إرسال (رصيد واحد)"
+  },
+  "tabs": {
+    "profile": "ملف تعريفي",
+    "security": "الأمان",
+    "notifications": "إشعارات"
+  },
+  "table": {
+    "platform": "منصة",
+    "keyword": "الكلمة الرئيسية",
+    "videos": "فيديوهات",
+    "views": "وجهات النظر",
+    "creators": "المبدعين",
+    "status": "حالة"
+  },
+  "updated": "تم تحديث الإعدادات بنجاح",
+  "password": {
+    "title": "تغيير كلمة المرور",
+    "current": "كلمة المرور الحالية",
+    "new": "كلمة المرور الجديدة",
+    "confirm": "تأكيد كلمة المرور الجديدة",
+    "update": "تحديث كلمة المرور"
+  },
+  "notifications": {
+    "title": "تفضيلات الإخطار",
+    "email": "إشعارات البريد الإلكتروني",
+    "marketing": "رسائل البريد الإلكتروني التسويقية"
+  },
+  "metrics": {
+    "monthlyQueries": "الاستعلامات الشهرية",
+    "videosToday": "فيديوهات اليوم",
+    "creatorsToday": "المبدعين اليوم"
+  },
+  "advertiseAi": "أعلن عن الذكاء الاصطناعي",
+  "myAis": {
+    "title": "الذكاء الاصطناعي الخاص بي",
+    "subtitle": "إدارة وتتبع أداء أدوات الذكاء الاصطناعي المقدمة.",
+    "empty": {
+      "cta": "إرسال أداة الذكاء الاصطناعي"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "سبب الرفض"
+  },
+  "feature": {
+    "websiteInsightsDesc": "تتبع تصنيف الكلمات الرئيسية وأدائها",
+    "socialListeningDesc": "مراقبة الإشارات والاتجاهات الاجتماعية",
+    "researchReportDesc": "إنشاء تقارير سوقية شاملة",
+    "aiAdvertisingLibrary": "مكتبة إعلانات الذكاء الاصطناعي",
+    "aiAdvertisingDesc": "تحليل إعلانات الذكاء الاصطناعي للمنافسين",
+    "comingSoon": "قريباً"
+  },
+  "reports": {
+    "title": "تقارير البحوث",
+    "description": "الوصول إلى تقارير تحليلية متعمقة حول صناعة الذكاء الاصطناعي.",
+    "noReports": "لا توجد تقارير متاحة",
+    "free": "حر",
+    "download": "تحميل",
+    "unlock": "فتح التقرير",
+    "noReportsDesc": "نحن نقوم حاليًا بإعداد رؤى جديدة.",
+    "readNow": "قراءه التقرير ➝",
+    "readerTitle": "قارئ التقرير البحثي",
+    "unlockRequired": "محتوى غير مجاني",
+    "unlockDesc": "افتح هذا التقرير البحثي المتعمق للوصول الكامل إلى تحليل السوق الحصري ودراسات الحالة والرؤى القابلة للتنفيذ.",
+    "unlockNow": "افتح الآن!",
+    "related": "التقارير ذات الصلة",
+    "toc": "في هذه الصفحة",
+    "backToList": "العودة إلى المكتبة",
+    "notFound": "لم يتم العثور على التقرير",
+    "unlockSuccess": "تم إلغاء قفل التقرير بنجاح!",
+    "unlockError": "فشل إلغاء قفل التقرير.",
+    "searchPlaceholder": "البحث عن تقرير"
+  },
+  "toolPerformance": "أداء الأداة (في الوقت الحقيقي)"
+}

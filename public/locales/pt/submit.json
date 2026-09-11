@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Envie Sua Ferramenta de IA - TopAICollection",
+    "description": "Liste sua ferramenta de IA no diretório TopAICollection e alcance milhões de usuários procurando por soluções em IA."
+  },
+  "badge": "Liste Sua Ferramenta",
+  "hero": {
+    "title": "Faça Sua Ferramenta de IA Ser Descoberta",
+    "subtitle": "Junte-se a milhares de ferramentas de IA em nosso diretório e alcance milhões de usuários em potencial pelo mundo todo"
+  },
+  "benefits": {
+    "title": "Por que listar no TopAICollection?",
+    "traffic": {
+      "title": "Aumento no Tráfego",
+      "description": "Receba tráfego direto de usuários buscando ativamente por soluções de IA"
+    },
+    "exposure": {
+      "title": "Exposição Global",
+      "description": "Alcance usuários em mais de 20 idiomas por mais de 100 países"
+    },
+    "credibility": {
+      "title": "Credibilidade Ampliada",
+      "description": "Construa confiança através da listagem verificada e avaliações dos usuários"
+    }
+  },
+  "pricing": {
+    "title": "Escolha Seu Plano",
+    "popular": "Mais Popular",
+    "basic": {
+      "name": "Listagem Básica",
+      "price": "Grátis",
+      "features": {
+        "0": "Listagem básica da ferramenta",
+        "1": "Posicionamento na categoria",
+        "2": "Informações de contato",
+        "3": "Análise básica de dados"
+      }
+    },
+    "featured": {
+      "name": "Listagem em Destaque",
+      "price": "US$ 99/mês",
+      "features": {
+        "0": "Tudo que há no Básico",
+        "1": "Selo de Destaque",
+        "2": "Prioridade nos resultados de busca",
+        "3": "Aparecer na página principal",
+        "4": "Análise de dados avançada",
+        "5": "Promoção em redes sociais"
+      }
+    },
+    "premium": {
+      "name": "Listagem Premium",
+      "price": "US$ 299/mês",
+      "features": {
+        "0": "Tudo que há em Destaque",
+        "1": "Posição no topo das buscas",
+        "2": "Inclusão na nossa Newsletter",
+        "3": "Análise recomendada por artigo de blog",
+        "4": "Showcase de vídeo",
+        "5": "Suporte dedicado"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Nome da Ferramenta",
+    "namePlaceholder": "por exemplo ChatGPT, DALL-E, Meio da Jornada",
+    "website": "URL do Site",
+    "websitePlaceholder": "https://www.exemplo.com",
+    "categories": "Categorias",
+    "selectCategory": "Selecione uma categoria",
+    "price": "Taxa única de $49",
+    "submit": "Enviar Ferramenta",
+    "success": {
+      "title": "Envio Realizado com Sucesso!",
+      "description": "Sua ferramenta foi enviada para análise.",
+      "redirecting": "Redirecionando para a área de pagamento..."
+    }
+  },
+  "form": {
+    "title": "Entre com a Sua Ferramenta",
+    "sections": {
+      "basic": "Informações Básicas",
+      "categorization": "Categoria & Tags",
+      "media": "Arquivos de Mídia",
+      "plan": "Selecionar Plano",
+      "contact": "Informações de Contato"
+    },
+    "fields": {
+      "name": {
+        "label": "Nome da Ferramenta",
+        "placeholder": "Minha Incrível Ferramenta IA"
+      },
+      "url": {
+        "label": "URL do Website",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "Slogan",
+        "placeholder": "Breve descrição em 100 caracteres ou menos"
+      },
+      "description": {
+        "label": "Descrição",
+        "placeholder": "Descrição detalhada de sua ferramenta IA (máx. 500 caracteres)"
+      },
+      "category": {
+        "label": "Categoria",
+        "placeholder": "Selecione uma categoria",
+        "options": {
+          "productivity": "Produtividade",
+          "business": "Negócios",
+          "development": "Desenvolvimento (Dev)",
+          "other": "Outros"
+        }
+      },
+      "tags": {
+        "label": "Etiquetas",
+        "placeholder": "ia, produtividade, automação (separados por vírgula)",
+        "hint": "Adicione as tags separando por vírgula"
+      },
+      "logo": {
+        "label": "Logotipo",
+        "placeholder": "Clique para carregar ou arraste",
+        "hint": "PNG ou JPG, max 2MB"
+      },
+      "plan": {
+        "label": "Plano Desejado",
+        "placeholder": "Selecione um plano"
+      },
+      "terms": {
+        "label": "Eu concordo com os Termos de Serviço e Política de Privacidade"
+      },
+      "contact_name": {
+        "label": "Seu Nome",
+        "placeholder": "por exemplo, John Doe"
+      },
+      "contact_email": {
+        "label": "Email",
+        "placeholder": "por exemplo, john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "Ao fazer o envio, você concorda explicitamente com nossos Termos de Serviço e Política de  Privacidade.",
+      "freeSubmission": "Envio Gratuito."
+    },
+    "submit": "Enviar Ferramenta",
+    "submitting": "Enviando...",
+    "success": {
+      "title": "Ferramenta enviada com sucesso!",
+      "description": "Iremos revisar seu envio e notificá-lo dentro de 48 horas."
+    },
+    "error": {
+      "title": "Falha no envio",
+      "description": "Por favor, cheque as informações inseridas e tente de novo.",
+      "noSettings": "As configurações de envio não estão disponíveis. Por favor, tente novamente mais tarde."
+    },
+    "loginRequiredTitle": "Login obrigatório",
+    "loginRequiredDesc": "Faça login para enviar uma ferramenta. Seu progresso não será salvo até que você se autentique.",
+    "loginBtn": "Conecte-se"
+  },
+  "categoriesPage": {
+    "searchCategory": "Buscar categorias…",
+    "noCategoryFound": "Nenhuma categoria foi encontrada."
+  },
+  "toolForm": {
+    "selectSubCategory": "Selecione uma subcategoria…",
+    "noSubCategory": "Nenhuma subcategoria disponível."
+  },
+  "errors": {
+    "general": "Algo de errado aconteceu. Por favor, tente de novo."
+  },
+  "processing": "Processando...",
+  "sidebar": {
+    "toolCount": "Mais de 5.000 Ferramentas de IA",
+    "toolCountSub": "Junte-se ao nosso diretório em constante crescimento",
+    "badgeDescription": "Apresentar sua própria ferramenta de IA pela plataforma é dar aquele primeiro passo para sua comunidade de negócios ganhar forte visibilidade."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Falha ao carregar detalhes do envio.",
+      "noId": "Nenhum ID de envio fornecido.",
+      "notFound": "Envio não encontrado."
+    },
+    "status": {
+      "paymentRequired": "Pagamento obrigatório",
+      "paymentRequiredDesc": "Conclua seu pagamento para prosseguir com a revisão.",
+      "underReview": "Em revisão",
+      "underReviewDesc": "Seu envio está sendo analisado por nossa equipe.",
+      "approved": "Aprovado",
+      "approvedDesc": "Seu envio foi aprovado e publicado.",
+      "received": "Recebido",
+      "receivedDesc": "Recebemos seu envio."
+    },
+    "types": {
+      "submit": "Enviar ferramenta de IA",
+      "advertise": "Anunciar",
+      "guestPost": "Postagem de convidado",
+      "updateAI": "Atualizar IA"
+    },
+    "paymentAlert": "O pagamento é necessário para concluir seu envio.",
+    "actions": {
+      "viewDashboard": "Ver painel"
+    }
+  },
+  "error": "Algo deu errado. Por favor, tente novamente.",
+  "backToHome": "De volta para casa",
+  "submissionSuccess": {
+    "title": "Título",
+    "description": "Descrição"
+  },
+  "successTitle": "Título de Sucesso",
+  "title": "Título"
+}

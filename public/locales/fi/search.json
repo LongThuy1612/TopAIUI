@@ -1,0 +1,14 @@
+{
+  "title": "Hakutulokset",
+  "resultsFor": "Tulokset haulle \"{query}\"",
+  "filters": "Suodattimet",
+  "typeFilters": "Tyyppi",
+  "categories": "Luokat",
+  "noResults": "Tuloksia ei löytynyt",
+  "tryAgain": "Kokeile toista hakutermiä",
+  "placeholder": "Hae tekoälytyökaluja...",
+  "button": "Haku",
+  "loading": "Haetaan...",
+  "clearFilters": "Selkeät suodattimet",
+  "categoryLabel": "Kategoria"
+}

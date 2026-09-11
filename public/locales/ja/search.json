@@ -1,0 +1,14 @@
+{
+  "title": "検索結果",
+  "resultsFor": "「{query}」の結果",
+  "filters": "フィルター",
+  "typeFilters": "タイプ",
+  "categories": "カテゴリー",
+  "noResults": "結果が見つかりませんでした",
+  "tryAgain": "別の検索語を試してください",
+  "placeholder": "AI ツールを検索...",
+  "button": "検索",
+  "loading": "検索中...",
+  "clearFilters": "フィルターをクリアする",
+  "categoryLabel": "カテゴリ"
+}

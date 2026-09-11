@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Top AI Tools Ranking",
+    "description": "Discover the most visited AI tools in the world based on real traffic data.",
+    "subtitle": "Discover the most visited AI tools in the world based on real traffic data."
+  },
+  "trending": {
+    "title": "Trending AI Tools",
+    "description": "The fastest growing AI tools in the last month.",
+    "subtitle": "The fastest growing AI tools in the last month."
+  },
+  "category": "Category",
+  "noTools": "No tools found.",
+  "noToolsInCategory": "No tools found in this category.",
+  "loading": "Loading...",
+  "favorite": "Add to favorites",
+  "unfavorite": "Remove from favorites",
+  "visitWebsite": "Visit website",
+  "errors": {
+    "general": "Failed to load ranking data."
+  },
+  "topAI": "Top AI",
+  "trendingAI": "Trending",
+  "categoryAI": "Category",
+  "regionAI": "Region",
+  "region": "Region",
+  "allRegions": "Global",
+  "channelAI": "Channel",
+  "channel": "Channel",
+  "allChannels": "All Sources",
+  "regions": {
+    "us": "United States",
+    "ca": "Canada",
+    "gb": "United Kingdom",
+    "in": "India",
+    "ph": "Philippines",
+    "vn": "Vietnam"
+  },
+  "channels": {
+    "search": "Search",
+    "direct": "Direct",
+    "social": "Social",
+    "referrals": "Referrals"
+  },
+  "incomeAI": "Social/Income",
+  "socialMetrics": "Social Value",
+  "channelVisits": "Source Visits",
+  "period": "Period",
+  "last7Days": "Last 7 Days",
+  "lastMonth": "Last Month",
+  "last3Months": "Last 3 Months",
+  "lastYear": "Last Year",
+  "allCategories": "All Categories",
+  "selectPeriod": "Select Period",
+  "rank": "Rank",
+  "tool": "Tool",
+  "visits": "Visits",
+  "growth": "Growth",
+  "actions": "Actions",
+  "leaderboard": {
+    "header": {
+      "title": "AI Tools Leaderboard",
+      "description": "Discover the most upvoted AI tools by the community.",
+      "dailyTitle": "Top AI Tools of the Day",
+      "monthlyTitle": "Best AI Tools of {date}",
+      "yearlyTitle": "Best AI Tools of {date}",
+      "tabs": {
+        "daily": "Daily",
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      },
+      "prevPeriod": "Previous Period",
+      "nextPeriod": "Next Period",
+      "pickDate": "Pick Date",
+      "pickMonth": "Pick Month"
+    },
+    "empty": {
+      "title": "No tools launched today",
+      "description": "There are no tools recorded for this specific date. Try navigating to another day.",
+      "showMore": "Show more tools",
+      "loadingMore": "Loading more tools...",
+      "toolsListTitle": "Featured Tools"
+    },
+    "card": {
+      "visitWebsite": "Visit Website",
+      "loginToUpvote": "Please login to upvote tools"
+    },
+    "page": {
+      "errorLoading": "Failed to load leaderboard data."
+    },
+    "sidebar": {
+      "launchArchive": "Launch Archive",
+      "topCategories": "Top Categories"
+    }
+  },
+  "maxResultsHint": "Limit the maximum number of results.",
+  "viewDetails": "View Details"
+}

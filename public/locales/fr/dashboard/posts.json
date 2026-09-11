@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Articles & Liens",
+    "description": "Gérez vos articles invités et vos insertions de liens.",
+    "submitNewItem": "Soumettre un Nouvel Élément",
+    "submitNew": "Soumettre Nouveau",
+    "guestPost": "Article Invité",
+    "linkInsert": "Insertion de Lien",
+    "type": "Taper",
+    "targetUrl": "URL Cible",
+    "targetUrlPlaceholder": "https://votre-site.com/...",
+    "anchorText": "Titre / Texte d'Ancrage",
+    "anchorTextPlaceholder": "Titre de l'article OU Texte d'ancrage pour le lien",
+    "submitCredits": "Soumettre (1 Crédit)",
+    "tabs": {
+      "guestPosts": "Articles Invités",
+      "linkInserts": "Insertions de Liens"
+    },
+    "table": {
+      "title": "Titre",
+      "anchor": "Texte d'Ancrage",
+      "url": "URL",
+      "status": "Statut",
+      "date": "Rendez-vous"
+    },
+    "empty": {
+      "noGuestTitle": "Pas d'Articles Invités",
+      "noGuestDesc": "Vous n'avez pas encore soumis d'articles invités.",
+      "noGuestCta": "Soumettre un Article Invité",
+      "noLinkTitle": "Pas d'Insertions de Liens",
+      "noLinkDesc": "Vous n'avez pas encore soumis d'insertions de liens.",
+      "noLinkCta": "Soumettre une Insertion de Lien"
+    },
+    "subtitle": "Gérez vos publications d'invités et vos insertions de liens."
+  }
+}

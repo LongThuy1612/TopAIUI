@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Ota yhteyttä - TopAICollection",
+    "description": "Ota yhteyttä TopAICollection-tiimiin. Autamme kaikissa tekoälytyökaluihin liittyvissä kysymyksissä."
+  },
+  "title": "Ota yhteyttä",
+  "subtitle": "Onko sinulla kysyttävää tai palautetta? Haluaisimme kuulla sinusta. Tiimimme vastaa yleensä 24 tunnin kuluessa.",
+  "form": {
+    "title": "Lähetä meille viesti",
+    "fields": {
+      "name": {
+        "label": "Nimesi",
+        "placeholder": "Matti Meikäläinen"
+      },
+      "email": {
+        "label": "Sähköpostiosoite",
+        "placeholder": "mikko@mallikas.fi"
+      },
+      "subject": {
+        "label": "Aihe",
+        "placeholder": "Valitse aihe",
+        "options": {
+          "general": "Yleinen tiedustelu",
+          "support": "Tekninen tuki",
+          "feedback": "Palaute",
+          "partnership": "Yhteistyömahdollisuus",
+          "other": "Muut"
+        }
+      },
+      "message": {
+        "label": "Viesti",
+        "placeholder": "Kerro meille mitä ajattelet..."
+      }
+    },
+    "submit": "Lähetä Viesti",
+    "submitting": "Lähetetään...",
+    "success": {
+      "title": "Viesti lähetetty onnistuneesti!",
+      "description": "Olemme vastaanottaneet viestisi ja palaamme asiaan pian."
+    },
+    "error": {
+      "title": "Viestin lähettäminen epäonnistui",
+      "description": "Jotain meni pieleen. Yritä myöhemmin uudelleen."
+    }
+  },
+  "info": {
+    "title": "Ota yhteyttä",
+    "email": {
+      "title": "Lähetä meille sähköpostia",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "Tukitunnit",
+      "content": "Tukitiimimme on tavoitettavissa maanantaista perjantaihin"
+    },
+    "hours": {
+      "title": "Aukioloajat",
+      "content": "9.00–18.00 EST"
+    },
+    "location": {
+      "title": "Sijainti",
+      "content": "Palvelemme käyttäjiä maailmanlaajuisesti hajautetun tiimimme kautta"
+    }
+  },
+  "faq": {
+    "title": "Usein kysytyt kysymykset",
+    "q1": "Kuinka lähetän tekoälytyökaluni?",
+    "a1": "Napsauta Submit Tool -painiketta navigointipalkissa ja täytä lähetyslomake.",
+    "q2": "Kuinka kauan hyväksyminen kestää?",
+    "a2": "Suurin osa lähetyksistä tarkistetaan 1–3 arkipäivän kuluessa.",
+    "q3": "Voinko päivittää työkaluluetteloni?",
+    "a3": "Kyllä, kirjaudu sisään kojelautaan ja käytä Päivitä AI -ominaisuutta."
+  }
+}

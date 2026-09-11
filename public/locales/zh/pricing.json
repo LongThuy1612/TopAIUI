@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "定价计划 - TopAICollection",
+    "description": "为AI研究和社媒监听提供简单、透明的定价。"
+  },
+  "title": "简单、透明的定价",
+  "subtitle": "免费开始，随业务增长而扩展。无隐藏费用。",
+  "plans": {
+    "free": {
+      "name": "免费",
+      "banner": "🎉 免费开始 — 无需信用卡。"
+    },
+    "professional": {
+      "name": "专业版"
+    },
+    "enterprise": {
+      "name": "企业版"
+    },
+    "free-monthly": {
+      "name": "免费"
+    },
+    "free-yearly": {
+      "name": "免费"
+    },
+    "professional-monthly": {
+      "name": "专业版"
+    },
+    "professional-yearly": {
+      "name": "专业版"
+    },
+    "enterprise-monthly": {
+      "name": "企业版"
+    },
+    "enterprise-yearly": {
+      "name": "企业版"
+    }
+  },
+  "badge": {
+    "popular": "⭐ 最受欢迎"
+  },
+  "features": {
+    "websiteInsights": "网站洞察",
+    "socialListening": "社媒监听",
+    "prioritySupport": "优先支持",
+    "advertising": "广告服务",
+    "premiumSupport": "尊享支持"
+  },
+  "cta": {
+    "loading": "处理中...",
+    "upgrade": "立即开始"
+  },
+  "comparison": {
+    "title": "所有计划对比",
+    "feature": "功能"
+  },
+  "billing": {
+    "monthly": "每月",
+    "yearly": "每年",
+    "discount20": "节省 20%",
+    "suffixYearly": "/年",
+    "suffixMonthly": "/月",
+    "upgradeTitle": "升级您的研究计划",
+    "upgradeDesc": "解锁高级分析、竞争对手洞察等。",
+    "subscribe": "立即订阅"
+  },
+  "billingMonthly": "每月",
+  "billingYearly": "每年",
+  "billingBestValue": "节省 20%",
+  "badgePopular": "最受欢迎",
+  "billingPerMonth": "/ 月",
+  "billingPerYear": "/ 年"
+}

@@ -1,0 +1,294 @@
+{
+  "title": "Annonser ditt AI-verktøy",
+  "description": "Få førsteklasses plassering og maksimal eksponering for AI-verktøyet ditt. Nå ut til tusenvis av potensielle brukere som aktivt søker etter AI-løsninger.",
+  "hero": {
+    "title": "Dine AI-er på TopAICollection",
+    "subtitle": "TopAI kan hjelpe deg å nå millioner av AI-brukere og dine potensielle kunder over hele verden.",
+    "stats": {
+      "pageViews": "5M+",
+      "pageViewsLabel": "Sidevisninger",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Månedlige besøk",
+      "subscribers": "100K+",
+      "subscribersLabel": "Abonnenter",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "Desktop-brukere",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Registrerte brukere",
+      "avgTimeOnSite": "2,5m",
+      "avgTimeOnSiteLabel": "Gjennomsnittlig tid på nettstedet"
+    },
+    "benefits": [
+      "Topp AI-verktøykatalog",
+      "Dofollow tilbakekobling",
+      "Flerspråklig intro",
+      "Oppføring og trafikk for alltid",
+      "Verdi for grunnleggere og oppstarter"
+    ]
+  },
+  "tabs": {
+    "submit": "Send inn AI",
+    "submitDesc": "Send inn AI-verktøyene dine, få trafikk",
+    "advertise": "Annonser AI",
+    "advertiseDesc": "Betal per klikk, fremhevede kampanjer, automatisert annonseplassering",
+    "guestPost": "Gjesteinnlegg / Link Insert",
+    "guestPostDesc": "Gjesteinnlegg/lenkeinnlegg på TopAI",
+    "updateAi": "Oppdater AI",
+    "updateAiDesc": "Oppdater verktøyets informasjon",
+    "submitGpt": "Send inn GPT",
+    "submitGptDesc": "Send inn GPT-en din slik at flere kan bruke",
+    "business": "Mer Business",
+    "businessDesc": "Slik som: lenkeutveksling, Twitter-innlegg, videoer, etc."
+  },
+  "form": {
+    "toolLabel": "Verktøy",
+    "toolHint": "PS: Hvis verktøyet ikke blir funnet, vennligst send det inn først.",
+    "toolPlaceholder": "Søk etter verktøyet ditt...",
+    "adLandingLink": "Annonselandingslenke",
+    "toolLandingPlaceholder": "/verktøy/...",
+    "websitePlaceholder": "https://example.com",
+    "urlTitle": "Vennligst skriv inn en gyldig URL som starter med http:// eller https://"
+  },
+  "clicks": {
+    "title": "Velg antall klikk du trenger",
+    "numberOfClicks": "Antall klikk",
+    "total": "Totalt",
+    "payButton": "Betale",
+    "submitButton": "Send inn"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Annonser et verktøyeksempel",
+    "description": "Vi fullautomatiserer annonsevisningen din basert på våre algoritmer for å sikre at du ikke kan få mindre enn antall kjøpte klikk, men vi kan ikke garantere kvaliteten på klikkene.",
+    "note": "Prioriter for at du skal forbruke annonseringskostnader for raskt å få nettstedklikk og -visninger. Du kan: sette annonsene på pause, eller starte annonsene.",
+    "typesTitle": "Her er noen typer annonser:",
+    "mostFrequently": "Oftest",
+    "mostEffective": "Mest effektiv",
+    "standardDesc": "Vises på hjemmesiden, oppføringer og kategorisider.",
+    "effectiveDesc": "Vises på dine konkurrenters sider, og i kategorisidene du tilhører.",
+    "featured": "Fremhevet*",
+    "featuredDesc1": "Utvalgt plassering på Hjem, Siste AI, Mest brukt, Mest lagret, Søkeresultatside, Kategoridetaljer-side, etc.",
+    "featuredDesc2": "Øverst på de fleste sidene vil det være en sponsorposisjon.",
+    "targeted": "Målrettet",
+    "standard": "Standard"
+  },
+  "faq": {
+    "title": "FAQ - annonsere",
+    "items": [
+      {
+        "question": "Hvordan fungerer reklame?",
+        "answer": "Vi viser verktøyet ditt i premiumposisjoner på tvers av plattformen vår. Du betaler per klikk, og vi sørger for at annonsen din får det antallet klikk du har kjøpt."
+      },
+      {
+        "question": "Kan jeg kjøpe klikk flere ganger?",
+        "answer": "Ja, du kan kjøpe flere klikkpakker når som helst for å øke verktøyets synlighet."
+      },
+      {
+        "question": "Kan jeg sette annonsene mine på pause?",
+        "answer": "Ja, du kan pause og gjenoppta annonsekampanjene dine når som helst fra oversikten."
+      },
+      {
+        "question": "Hva slags analyser får jeg?",
+        "answer": "Du vil motta detaljerte data om organiske klikk, betalte klikk, totalt antall klikk, visninger og sparinger."
+      }
+    ]
+  },
+  "whyAdvertise": "Hvorfor annonsere?",
+  "customPackage": {
+    "title": "Trenger du tilpasset pakke?",
+    "description": "Kontakt oss for skreddersydde annonseløsninger som passer dine spesifikke mål.",
+    "contactSales": "Ta kontakt med salg",
+    "pacingType": "Tempotype",
+    "estimatedClicks": "Anslåtte klikk",
+    "estimatedImpressions": "Anslåtte visninger",
+    "estimatedViews": "Anslått visninger",
+    "estimatedUnits": "Estimerte enheter",
+    "toolSlug": "Verktøysnegl",
+    "landingUrl": "Landingsadresse",
+    "campaignParameters": "Kampanjeparametre",
+    "metricType": "Beregningstype",
+    "basePrice": "Basispris",
+    "totalBudget": "Totalt budsjett",
+    "startDate": "Startdato",
+    "endDate": "Sluttdato",
+    "priorityBid": "Prioritetsbud",
+    "estimation": "Estimat",
+    "cancel": "Avbryt",
+    "submitting": "Sender inn",
+    "submitProposal": "Send inn forslag"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Premium plassering",
+      "description": "Utvalgte plasser på hjemmesiden og kategorisidene"
+    },
+    "targetedAudience": {
+      "title": "Målrettet publikum",
+      "description": "Nå brukere som aktivt leter etter AI-verktøy"
+    },
+    "analytics": {
+      "title": "Analyser",
+      "description": "Spor ytelse med detaljert innsikt"
+    }
+  },
+  "campaigns": {
+    "previous": "Tidligere",
+    "pageOf": "Side {page} av {total}",
+    "choosePlan": "Velg din plan",
+    "choosePlanDesc": "Velg en plan nedenfor for å fornye eller oppgradere kampanjen din.",
+    "currentPlan": "Nåværende plan",
+    "selectAgain": "Velg om",
+    "selectPlan": "Velg program"
+  },
+  "transactions": {
+    "noDescription": "Du har ikke kjøpt noen annonsekreditt ennå. Fyll på saldoen for å begynne å kjøre kampanjer."
+  },
+  "meta": {
+    "title": "Annonser AI-verktøy - TopAICollection",
+    "description": "Annonser AI-verktøyet ditt til millioner av AI-entusiaster."
+  },
+  "plans": {
+    "title": "Annonseplaner",
+    "subtitle": "Utvid rekkevidden din",
+    "clickTarget": "Klikkemål",
+    "toolRequired": "⚠ Vennligst skriv inn verktøynavnet ovenfor før du sender inn.",
+    "empty": "Ingen annonsepakker tilgjengelig nå. Sjekk tilbake senere.",
+    "customPlanConfig": "Tilpasset plankonfigurasjon",
+    "basePrice": "Grunnpris ($)",
+    "adPlacements": "Annonseplasseringer",
+    "applyConfig": "Bruk Config",
+    "configured": "Konfigurert",
+    "toolSlug": "Verktøysnegl",
+    "landingUrl": "Landingsadresse",
+    "campaignParameters": "Kampanjeparametre",
+    "metricType": "Metrisk type",
+    "pacingType": "Pacingtype",
+    "totalBudget": "Totalbudsjett ($)",
+    "startDate": "Startdato",
+    "endDate": "Sluttdato",
+    "priorityBid": "Prioritert bud",
+    "estimation": "Estimering",
+    "estimatedClicks": "Anslåtte klikk",
+    "estimatedImpressions": "Anslåtte visninger",
+    "estimatedViews": "Anslått visninger",
+    "estimatedUnits": "Anslåtte {metric} enheter",
+    "submitProposal": "Send inn tilpasset forslag",
+    "submitting": "Sender inn...",
+    "cancel": "Kansellere",
+    "customBid": {
+      "title": "Tilpasset ytelsesbudgivning",
+      "budgetLabel": "Totalbudsjett ($)",
+      "budgetDescription": "Totalt beløp du ønsker å bruke.",
+      "priorityBidLabel": "Multiplikator for prioritert bud",
+      "priorityBidDescription": "Høyere bud = høyere visningsfrekvens.",
+      "minBudget": "Minimumsbudsjettet er $10",
+      "minBid": "Minimumsbud er $0,01"
+    },
+    "placeholders": {
+      "toolSlug": "mitt-fantastiske-verktøy",
+      "landingUrl": "https://...",
+      "metricType": "CPA",
+      "pacingType": "Lik"
+    }
+  },
+  "submit": {
+    "button": "Send kampanjeforespørsel",
+    "submitting": "Sender…",
+    "error": "Innsending mislyktes. Vennligst prøv igjen.",
+    "successTitle": "Kampanje sendt!",
+    "budgetLabel": "Angi kampanjebudsjett ($ USD)",
+    "success": "Kampanjen ble opprettet!",
+    "untitled": "Kampanje uten tittel",
+    "missingTool": "Verktøy eller mål-URL er nødvendig",
+    "loginRequiredTitle": "Autentisering kreves",
+    "loginRequiredDesc": "Please log in to submit a tool. Fremdriften din vil ikke bli lagret før du autentiserer."
+  },
+  "sidebar": {
+    "pageViews": "Sidevisninger",
+    "pageViewsSub": "Månedlig sidetrafikk"
+  },
+  "details": "Annonsedetaljer",
+  "duration": "Varighet (dager)",
+  "selectDuration": "Velg varighet",
+  "days": "{count, plural, =1 {1 dag} other {# dager}}",
+  "preferredPlacement": "Foretrukket plassering",
+  "selectPlacement": "Velg plassering",
+  "placements": {
+    "homepageBanner": "Hjemmesidebanner",
+    "sidebar": "Sidefelt",
+    "categoryPage": "Kategoriside",
+    "newsletter": "Nyhetsbrev",
+    "HOME": "Hjemmeside",
+    "CATEGORY": "Kategoriside",
+    "SEARCH": "Søkeresultater",
+    "TOOL_DETAIL": "Verktøy detaljside"
+  },
+  "targetAudience": "Målgruppe",
+  "targetAudiencePlaceholder": "Beskriv målgruppen din",
+  "validation": {
+    "required": "Dette feltet er obligatorisk",
+    "selectDuration": "Velg annonsevarighet",
+    "selectPlacement": "Velg annonseplassering",
+    "targetAudienceMin": "Målgruppen må være på minst 10 tegn",
+    "toolNameRequired": "Verktøynavn er påkrevd",
+    "url": "Ugyldig URL",
+    "descriptionMin": "Beskrivelsen må inneholde minst 10 tegn",
+    "categoryRequired": "Velg en kategori",
+    "email": "Ugyldig e-postadresse",
+    "messageMin": "Meldingen må være på minst 10 tegn"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "per klikk",
+      "CPM": "per 1k visninger",
+      "CPV": "per visning",
+      "FLAT_RATE": "flat sats",
+      "CPC_LABEL": "CPC",
+      "CPM_LABEL": "CPM",
+      "CPV_LABEL": "Kapp Verde",
+      "FLAT_RATE_LABEL": "Fastpris"
+    },
+    "units": {
+      "clicks": "klikker",
+      "impressions": "inntrykk",
+      "views": "visninger",
+      "units": "enheter"
+    }
+  },
+  "selected": "Valgt",
+  "summary": {
+    "selectedPlanLabel": "Valgt annonsepakke",
+    "totalPriceLabel": "Total fast pris",
+    "securityFooter": "Sikker betaling • Øyeblikkelig aktivering • Full analyse"
+  },
+  "charts": {
+    "cpm": "CPM",
+    "noData": "Ingen historiske data tilgjengelig",
+    "cpc": "CPC ($)"
+  }
+}

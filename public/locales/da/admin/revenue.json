@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Omsætning og finansiel sundhed",
+    "totalRevenue": "Samlet omsætning",
+    "mrr": "MRR (månedlig tilbagevendende)",
+    "mrrDescription": "Estimeret tilbagevendende omsætning baseret på aktive abonnementer",
+    "breakdown": "Omsætningsfordeling",
+    "revenueGrowth": "Omsætningsvækst (30 dage)",
+    "noData": "Ingen omsætningsdata tilgængelige",
+    "noTrendsData": "Ingen vækstdata fundet for de sidste 30 dage",
+    "comingSoon": "Kommer snart"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Envíe su GPT - Obtenga su GPT destacado | TopAICollection",
+    "description": "Envíe su GPT personalizado para que aparezca en nuestro directorio de GPT. Llegue a miles de entusiastas de la IA."
+  },
+  "title": "Envíe su GPT",
+  "subtitle": "Haga que su GPT personalizado aparezca en nuestro directorio",
+  "loginRequired": "Iniciar sesión requerido",
+  "submitButton": "Enviar GPT",
+  "whySubmit": {
+    "title": "¿Por qué enviar su GPT?"
+  },
+  "benefits": {
+    "audience": "Llegue a miles de entusiastas de la IA diariamente",
+    "instant": "Listado instantáneo tras la verificación",
+    "global": "Exposición global en todos los idiomas",
+    "analytics": "Seguimiento de clics y participación"
+  },
+  "proTip": {
+    "title": "Consejo profesional",
+    "desc": "Asegúrese de que su GPT sea público y accesible mediante un enlace antes de enviarlo."
+  },
+  "form": {
+    "gptName": "Nombre GPT",
+    "gptNamePlaceholder": "p.ej. Asistente de código",
+    "gptUrl": "URL de ChatGPT",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "URL del icono",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Descripción / Instrucciones",
+    "gptDescriptionPlaceholder": "Describe lo que hace tu GPT..."
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "invalidUrl": "URL de ChatGPT no válida",
+    "nameTooShort": "El nombre debe tener al menos 2 caracteres.",
+    "descriptionTooShort": "La descripción debe tener al menos 10 caracteres.",
+    "toolNameRequired": "El nombre de la herramienta es obligatorio.",
+    "url": "URL no válida",
+    "descriptionMin": "La descripción debe tener al menos 10 caracteres.",
+    "categoryRequired": "Por favor seleccione una categoría",
+    "email": "Dirección de correo electrónico no válida",
+    "messageMin": "El mensaje debe tener al menos 10 caracteres."
+  },
+  "sidebar": {
+    "gptCount": "GPT enviados",
+    "gptCountSub": "y creciendo"
+  },
+  "success": "¡Su GPT se ha enviado correctamente!"
+}

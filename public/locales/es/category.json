@@ -1,0 +1,7 @@
+{
+  "notFound": {
+    "title": "Categoría no encontrada",
+    "message": "La categoría que busca no existe."
+  },
+  "title": "Título"
+}

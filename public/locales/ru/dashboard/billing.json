@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "Оплата и счета",
+    "description": "Управляйте кредитами и просматривайте историю заказов.",
+    "adCredits": "Рекламные кредиты",
+    "postCredits": "Кредиты на статьи",
+    "linkCredits": "Кредиты на ссылки",
+    "forSponsoredListings": "Для спонсорского размещения",
+    "forGuestArticles": "Для гостевых статей",
+    "forLinkInsertions": "Для размещения ссылок",
+    "buyCredits": "Купить кредиты",
+    "noOrders": "Заказы не найдены.",
+    "orderHistory": "История заказов",
+    "orderId": "ID заказа",
+    "amount": "Сумма",
+    "status": "Статус",
+    "date": "Дата",
+    "type": "Тип",
+    "invoice": "Счет",
+    "download": "Скачать",
+    "currentPlan": "Текущий тариф",
+    "freeTier": "Бесплатный уровень",
+    "freeTierDesc": "Улучшите тариф, чтобы открыть больше функций и данных.",
+    "creditBalances": "Баланс кредитов",
+    "subscriptionDetails": "Детали подписки",
+    "upgradePlan": "Сменить тариф",
+    "credits": "Кредиты",
+    "managePortal": "Управление биллингом",
+    "subscribe": "Подписаться сейчас",
+    "statusActive": "Активный",
+    "planMemberSince": "Участник этого плана",
+    "renewalDate": "Продлевается",
+    "changePlan": "Изменить план",
+    "redirecting": "Перенаправление...",
+    "errorFetchingPortal": "Не удалось открыть платежный портал"
+  },
+  "plans": {
+    "free": {
+      "name": "Бесплатно"
+    },
+    "professional": {
+      "name": "Профи"
+    },
+    "enterprise": {
+      "name": "Бизнес"
+    }
+  },
+  "transactions": {
+    "noDescription": "Здесь будут отображаться ваши транзакции по рекламным кредитам."
+  }
+}

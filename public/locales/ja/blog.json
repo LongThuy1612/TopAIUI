@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "AI ブログとニュース - TopAICollection",
+    "description": "人工知能の世界から最新の AI ニュース、チュートリアル、レビュー、洞察を入手して最新情報を入手してください。"
+  },
+  "badge": "AI の洞察",
+  "title": "AI のブログとニュース",
+  "subtitle": "AI の世界からの最新のトレンド、チュートリアル、洞察を常に入手してください",
+  "search": {
+    "placeholder": "記事を検索..."
+  },
+  "categories": {
+    "title": "カテゴリー",
+    "all": "すべての記事",
+    "news": "AIニュース",
+    "tutorials": "チュートリアル",
+    "reviews": "ツールのレビュー",
+    "industry": "業界の洞察",
+    "guides": "ハウツーガイド"
+  },
+  "newsletter": {
+    "title": "最新情報を入手",
+    "subtitle": "最新の AI ニュースを受信箱に届けます",
+    "placeholder": "メールアドレスを入力してください",
+    "button": "購読する"
+  },
+  "article": {
+    "readTime": "{minutes} 分で読みました",
+    "published": "{date}に公開",
+    "writtenBy": "執筆・編集：",
+    "factCheckedBy": "ファクトチェック："
+  },
+  "pagination": {
+    "next": "次",
+    "page": "ページ {page} / {total}"
+  },
+  "relatedTools": "「関連ツール」",
+  "backToBlog": "「ブログに戻る」",
+  "errors": {
+    "notFound": "「投稿が見つかりません」"
+  },
+  "sort": {
+    "latest": "最新",
+    "oldest": "古い順",
+    "popular": "人気"
+  },
+  "filter": {
+    "allAuthors": "すべての著者",
+    "sortBy": "並べ替え"
+  },
+  "relatedPosts": "関連記事",
+  "faqs": "よくある質問"
+}

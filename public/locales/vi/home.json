@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Danh bạ Công cụ AI: Hơn 1000+ Công cụ AI Miễn phí đã Xác minh",
+    "description": "Khám ph�� danh sách thư mục công cụ AI #1. Trang web từ điển công cụ AI này giúp bạn tìm kiếm, so sánh và khởi chạy phần mềm AI tốt nhất hoàn toàn MIỄN PHÍ."
+  },
+  "nav": {
+    "today": "Hôm nay",
+    "latestAI": "AI mới nhất",
+    "mostSaved": "Được lưu nhiều nhất",
+    "mostUsed": "Được dùng nhiều nhất",
+    "browserPlugin": "Plugin trình duyệt",
+    "application": "Ứng dụng",
+    "discordOfAI": "Cộng đồng Discord AI",
+    "compareAI": "So sánh AI",
+    "ariaLabel": "Điều hướng chính"
+  },
+  "hero": {
+    "title": "Khám Phá Các Trang Web & Công Cụ AI Tốt Nhất",
+    "subtitle": "Tìm các công cụ AI hoàn hảo cho nhu cầu của bạn từ thư mục toàn diện của chúng tôi, được cập nhật hàng ngày với những đổi mới AI mới nhất.",
+    "stats": {
+      "aiTools": "công cụ AI",
+      "categories": "danh mục",
+      "languages": "ngôn ngữ",
+      "and": "và",
+      "supporting": "hỗ trợ",
+      "description": "Bộ sưu tập AI toàn diện, được cập nhật hàng ngày với những đổi mới mới nhất."
+    }
+  },
+  "search": {
+    "placeholder": "Tìm công cụ theo AI, ví dụ: Công cụ AI dịch video",
+    "button": "Tìm kiếm"
+  },
+  "sections": {
+    "featured": {
+      "title": "Công Cụ AI Nổi Bật",
+      "description": "Khám phá các công cụ AI phổ biến và hiệu quả nhất",
+      "noTools": "Hiện tại chưa có công cụ nổi bật nào"
+    },
+    "justLaunched": {
+      "title": "Vừa Ra Mắt",
+      "description": "Các công cụ AI và đổi mới mới nhất",
+      "noTools": "Hiện tại chưa có công cụ mới nào"
+    },
+    "categories": {
+      "title": "Duyệt theo Danh mục",
+      "description": "Tìm các công cụ AI được tổ chức theo trường hợp sử dụng và ngành"
+    },
+    "trending": {
+      "title": "Xu Hướng Hiện Tại",
+      "description": "Các công cụ AI phổ biến nhất tuần này"
+    }
+  },
+  "cta": {
+    "title": "Đăng ký Công Cụ AI Của Bạn",
+    "description": "Tiếp cận hàng triệu người dùng tiềm năng bằng cách liệt kê công cụ AI của bạn trong thư mục của chúng tôi.",
+    "button": "Đăng Ký Công Cụ Của Bạn",
+    "features": {
+      "exposure": "Tiếp cận toàn cầu",
+      "traffic": "Tăng lưu lượng",
+      "seo": "Lợi ích SEO"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "Ứng dụng AI",
+      "description": "Khám phá các ứng dụng AI tốt nhất cho năng suất, sáng tạo và nhiều lĩnh vực khác."
+    },
+    "browserExtensions": {
+      "title": "Tiện ích trình duyệt AI",
+      "description": "Khám phá các tiện ích trình duyệt AI tốt nhất để tăng cường quy trình làm việc của bạn."
+    },
+    "latestAi": {
+      "title": "Công cụ AI mới nhất",
+      "description": "Khám phá các công cụ AI mới nhất và những đổi mới, được cập nhật hàng ngày."
+    },
+    "mostSaved": {
+      "title": "Công cụ AI được lưu nhiều nhất",
+      "description": "Khám phá các công cụ AI được lưu và đánh dấu nhiều nhất bởi cộng đồng của chúng tôi."
+    },
+    "mostUsed": {
+      "title": "Công Cụ AI Được Dùng Nhiều Nhất",
+      "description": "Khám phá những công cụ AI phổ biến và được sử dụng nhiều nhất bởi cộng đồng."
+    },
+    "discord": {
+      "title": "Cộng Đồng AI Trên Discord",
+      "description": "Khám phá các cộng đồng Discord tốt nhất về AI và kết nối với những người đam mê."
+    },
+    "today": {
+      "title": "Công Cụ AI Nổi Bật Hôm Nay",
+      "description": "Khám phá những công cụ AI nổi bật nhất hôm nay trên TopAICollection."
+    }
+  },
+  "findMyAi": {
+    "title": "Đề Xuất Cá Nhân Hóa Của Bạn",
+    "viewTool": "Xem Công Cụ",
+    "noTools": "Không có công cụ nào hoàn toàn khớp với tiêu chí của bạn. Hãy thử mở rộng phạm vi tìm kiếm!",
+    "startOver": "Làm Lại",
+    "finding": "Đang tìm kiếm các công cụ AI tốt nhất cho bạn...",
+    "questionLabel": "Câu hỏi {step} / {total}",
+    "completed": "Hoàn thành {percentage}%",
+    "questions": {
+      "category": {
+        "text": "Bạn muốn sử dụng AI cho mục đích gì?",
+        "options": {
+          "Text Generation": "Tạo Văn Bản",
+          "Image Creation": "Tạo Hình Ảnh",
+          "Coding": "Lập Trình",
+          "Video": "Video",
+          "Audio": "Âm Thanh",
+          "Productivity": "Năng Suất"
+        }
+      },
+      "budget": {
+        "text": "Ngân sách của bạn là bao nhiêu?",
+        "options": {
+          "Free only": "Chỉ Miễn phí",
+          "Freemium": "Freemium",
+          "Paid is fine": "Có Thể Trả Phí"
+        }
+      },
+      "expertise": {
+        "text": "Mức độ chuyên môn của bạn?",
+        "options": {
+          "Beginner": "Người Mới Bắt Đầu",
+          "Intermediate": "Trung Cấp",
+          "Expert": "Chuyên Gia"
+        }
+      }
+    }
+  }
+}

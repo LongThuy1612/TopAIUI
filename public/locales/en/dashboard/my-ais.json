@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "submit": {
+      "tool": "Submit AI Tool",
+      "update": "Update AI",
+      "name": "GPT Name",
+      "url": "ChatGPT URL",
+      "category": "Category",
+      "description": "Description",
+      "gpt": {
+        "title": "Submit Your GPT",
+        "label": "Submit GPT",
+        "description": "Submit your custom GPT to get discovered by thousands of users."
+      }
+    },
+    "empty": {
+      "title": "No AI Tools Yet",
+      "description": "Submit your AI tool to get discovered by millions of users.",
+      "cta": "Submit AI Tool"
+    },
+    "columns": {
+      "tool": "Tool",
+      "status": "Status",
+      "organic": "Organic Traffic",
+      "paid": "Paid Traffic",
+      "impressions": "Impressions",
+      "actions": "Actions"
+    },
+    "statusTooltip": {
+      "pending": "Awaiting admin approval"
+    },
+    "submittedToast": "Your tool has been submitted and is pending review.",
+    "warnings": {
+      "pendingView": "This tool is still under review and not publicly visible yet.",
+      "confirmDelete": "Are you sure you want to delete this AI tool? This action cannot be undone."
+    }
+  },
+  "submissions": {
+    "title": "Submissions",
+    "deleteSuccess": "Submission deleted successfully.",
+    "deleteError": "Failed to delete submission.",
+    "noSubmissions": "No guest posts yet",
+    "untitled": "Untitled submission",
+    "confirmDelete": "Are you sure you want to delete this submission? This action cannot be undone.",
+    "columns": {
+      "subject": "Subject",
+      "status": "Status",
+      "date": "Date",
+      "actions": "Actions"
+    }
+  }
+}

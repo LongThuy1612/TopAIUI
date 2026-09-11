@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Noch keine KI-Tools",
+      "description": "Reichen Sie Ihr KI-Tool ein, um von Millionen von Benutzern entdeckt zu werden.",
+      "cta": "KI-Tool einreichen"
+    },
+    "columns": {
+      "tool": "Werkzeug",
+      "status": "„Status“",
+      "organic": "Organischer Traffic",
+      "paid": "Bezahlter Traffic",
+      "impressions": "Impressionen",
+      "actions": "Aktionen"
+    },
+    "statusTooltip": {
+      "pending": "Wartet auf Genehmigung durch den Administrator"
+    },
+    "submittedToast": "Ihr Tool wurde eingereicht und wird überprüft.",
+    "warnings": {
+      "pendingView": "Dieses Tool wird noch überprüft und ist noch nicht öffentlich sichtbar.",
+      "confirmDelete": "Möchten Sie dieses KI-Tool wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden."
+    },
+    "submit": {
+      "tool": "KI-Tool einreichen",
+      "update": "KI aktualisieren",
+      "name": "GPT-Name",
+      "url": "ChatGPT-URL",
+      "category": "Kategorie",
+      "description": "Beschreibung",
+      "gpt": {
+        "title": "Senden Sie Ihr GPT",
+        "label": "GPT einreichen",
+        "description": "Reichen Sie Ihr benutzerdefiniertes GPT ein, damit es von Tausenden von Benutzern entdeckt wird."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Einsendungen",
+    "deleteSuccess": "Einreichung erfolgreich gelöscht.",
+    "deleteError": "Die Übermittlung konnte nicht gelöscht werden.",
+    "noSubmissions": "Noch keine Gastbeiträge",
+    "untitled": "Unbenannte Einreichung",
+    "confirmDelete": "Sind Sie sicher, dass Sie diese Übermittlung löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "columns": {
+      "subject": "Thema",
+      "status": "„Status“",
+      "date": "Datum",
+      "actions": "Aktionen"
+    }
+  }
+}

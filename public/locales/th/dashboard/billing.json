@@ -1,0 +1,51 @@
+{
+  "billing": {
+    "title": "การชำระเงินและใบแจ้งหนี้",
+    "description": "จัดการเครดิตของคุณและดูประวัติการสั่งซื้อ",
+    "adCredits": "เครดิตการโฆษณา",
+    "postCredits": "เครดิตโพสต์",
+    "linkCredits": "เครดิตลิงก์",
+    "forSponsoredListings": "สำหรับรายการที่ได้รับการสนับสนุน",
+    "forGuestArticles": "สำหรับบทความรับเชิญ",
+    "forLinkInsertions": "สำหรับการแทรกลิงก์",
+    "buyCredits": "ซื้อเครดิต",
+    "noOrders": "ไม่พบคำสั่งซื้อ",
+    "orderHistory": "ประวัติการสั่งซื้อ",
+    "orderId": "เลขที่คำสั่งซื้อ",
+    "amount": "จำนวนเงิน",
+    "status": "สถานะ",
+    "date": "วันที่",
+    "type": "ประเภท",
+    "invoice": "ใบแจ้งหนี้",
+    "download": "ดาวน์โหลด",
+    "currentPlan": "แผนปัจจุบัน",
+    "freeTier": "ระดับฟรี",
+    "freeTierDesc": "อัปเกรดแผนของคุณเพื่อปลดล็อกคุณสมบัติและข้อมูลเชิงลึกเพิ่มเติม",
+    "creditBalances": "ยอดเครดิตคงเหลือ",
+    "subscriptionDetails": "รายละเอียดการสมัครสมาชิก",
+    "upgradePlan": "อัปเกรดแผน",
+    "credits": "เครดิต",
+    "managePortal": "จัดการพอร์ทัลการเรียกเก็บเงิน",
+    "subscribe": "สมัครสมาชิกตอนนี้",
+    "statusActive": "คล่องแคล่ว",
+    "planMemberSince": "สมาชิกของแผนนี้",
+    "renewalDate": "ต่ออายุเมื่อ",
+    "changePlan": "เปลี่ยนแผน",
+    "redirecting": "กำลังเปลี่ยนเส้นทาง...",
+    "errorFetchingPortal": "ไม่สามารถเปิดพอร์ทัลการเรียกเก็บเงินได้"
+  },
+  "plans": {
+    "free": {
+      "name": "ฟรี"
+    },
+    "professional": {
+      "name": "มืออาชีพ"
+    },
+    "enterprise": {
+      "name": "องค์กร"
+    }
+  },
+  "transactions": {
+    "noDescription": "ธุรกรรมเครดิตโฆษณาของคุณจะปรากฏที่นี่"
+  }
+}

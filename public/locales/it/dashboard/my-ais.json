@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Ancora nessun Strumento IA",
+      "description": "Invia il tuo strumento IA per farti scoprire da milioni di utenti.",
+      "cta": "Invia Strumento IA"
+    },
+    "columns": {
+      "tool": "Strumento",
+      "status": "Stato",
+      "organic": "Traffico Organico",
+      "paid": "Traffico a Pagamento",
+      "impressions": "Impressioni",
+      "actions": "Azioni"
+    },
+    "statusTooltip": {
+      "pending": "In attesa di approvazione da parte dell'amministratore"
+    },
+    "submittedToast": "Il tuo strumento è stato inviato ed è in attesa di revisione.",
+    "warnings": {
+      "pendingView": "Questo strumento è ancora in fase di revisione e non è ancora visibile pubblicamente.",
+      "confirmDelete": "Sei sicuro di voler eliminare questo strumento AI? Questa azione non può essere annullata."
+    },
+    "submit": {
+      "tool": "Invia strumento AI",
+      "update": "Aggiorna l'IA",
+      "name": "Nome GPT",
+      "url": "URL ChatGPT",
+      "category": "Categoria",
+      "description": "Descrizione",
+      "gpt": {
+        "title": "Invia il tuo GPT",
+        "label": "Invia GPT",
+        "description": "Invia il tuo GPT personalizzato per farti scoprire da migliaia di utenti."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Presentazioni",
+    "deleteSuccess": "Invio eliminato con successo.",
+    "deleteError": "Impossibile eliminare l'invio.",
+    "noSubmissions": "Nessun post ospite ancora",
+    "untitled": "Invio senza titolo",
+    "confirmDelete": "Sei sicuro di voler eliminare questo invio? Questa azione non può essere annullata.",
+    "columns": {
+      "subject": "Soggetto",
+      "status": "Stato",
+      "date": "Data",
+      "actions": "Azioni"
+    }
+  }
+}

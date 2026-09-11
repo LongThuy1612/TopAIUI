@@ -1,0 +1,20 @@
+{
+  "compare": {
+    "title": "Vertaa tekoälymalleja"
+  },
+  "submissionSuccess": {
+    "title": "Lähetys onnistui - TopAICollection",
+    "description": "Toimituksesi on vastaanotettu onnistuneesti"
+  },
+  "business": {
+    "title": "Yrityksille"
+  },
+  "submitGpt": {
+    "title": "Lähetä mukautettu GPT"
+  },
+  "layout": {
+    "defaultTitle": "AI-työkaluhakemisto: 1000+ vahvistettua ilmaista AI-työkalua",
+    "description": "Tutustu #1 AI-työkalujen hakemistolistaan. Tämä AI-työkalujen sanakirjasivusto auttaa sinua löytämään, vertailemaan ja ottamaan käyttöön aivan parhaat AI-ohjelmistot ILMAISEKSI",
+    "keywords": "AI-työkalut, tekoäly, AI-hakemisto, suosituimmat tekoälysivustot, parhaat tekoälytyökalut, tekoälymarkkinapaikka"
+  }
+}

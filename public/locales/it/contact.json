@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Contattaci - TopAICollection",
+    "description": "Entra in contatto con il team di TopAICollection. Siamo qui per aiutarti con qualsiasi domanda sugli strumenti di intelligenza artificiale."
+  },
+  "title": "Contattaci",
+  "subtitle": "Hai una domanda o un feedback? Ci piacerebbe sentire la tua opinione. Il nostro team generalmente risponde entro 24 ore.",
+  "form": {
+    "title": "Mandaci un messaggio",
+    "fields": {
+      "name": {
+        "label": "Il tuo nome",
+        "placeholder": "John Do"
+      },
+      "email": {
+        "label": "Indirizzo e-mail",
+        "placeholder": "giovanni@esempio.com"
+      },
+      "subject": {
+        "label": "Soggetto",
+        "placeholder": "Seleziona un argomento",
+        "options": {
+          "general": "Inchiesta generale",
+          "support": "Supporto tecnico",
+          "feedback": "Commenti",
+          "partnership": "Opportunità di partenariato",
+          "other": "Altro"
+        }
+      },
+      "message": {
+        "label": "Messaggio",
+        "placeholder": "Raccontaci cosa hai in mente..."
+      }
+    },
+    "submit": "Invia messaggio",
+    "submitting": "Invio...",
+    "success": {
+      "title": "Messaggio inviato con successo!",
+      "description": "Abbiamo ricevuto il tuo messaggio e ti ricontatteremo presto."
+    },
+    "error": {
+      "title": "Impossibile inviare il messaggio",
+      "description": "Qualcosa è andato storto. Per favore riprova più tardi."
+    }
+  },
+  "info": {
+    "title": "Mettiti in contatto",
+    "email": {
+      "title": "Inviaci un'e-mail",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "Orari di supporto",
+      "content": "Il nostro team di supporto è disponibile dal lunedì al venerdì"
+    },
+    "hours": {
+      "title": "Orari di lavoro",
+      "content": "9:00 - 18:00 EST"
+    },
+    "location": {
+      "title": "Posizione",
+      "content": "Servire gli utenti a livello globale dal nostro team distribuito"
+    }
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "q1": "Come posso inviare il mio strumento AI?",
+    "a1": "Fai clic sul pulsante Strumento di invio nella navigazione e compila il modulo di invio.",
+    "q2": "Quanto tempo occorre per l'approvazione?",
+    "a2": "La maggior parte degli invii viene esaminata entro 1-3 giorni lavorativi.",
+    "q3": "Posso aggiornare l'elenco dei miei strumenti?",
+    "a3": "Sì, accedi alla tua dashboard e utilizza la funzione Aggiorna AI."
+  }
+}

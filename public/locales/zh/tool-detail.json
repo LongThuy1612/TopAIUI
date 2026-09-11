@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- AI工具回顾与分析"
+  },
+  "errors": {
+    "notFound": "找不到工具",
+    "notFoundDescription": "您正在寻找的工具不存在。",
+    "serverError": "内部服务器错误。",
+    "serverErrorDescription": "服务器发生了意外错误。请稍后再试。"
+  },
+  "actions": {
+    "visit": "访问网站",
+    "save": "节省",
+    "saved": "已保存",
+    "share": "分享",
+    "update": "更新这个工具",
+    "advertise": "宣传这个工具",
+    "visitWebsite": "访问网站",
+    "readMore": "“阅读更多”",
+    "readLess": "“少读书”",
+    "openVideo": "“打开视频”"
+  },
+  "cta": {
+    "visit": "打开站点",
+    "advertise": "宣传这个工具",
+    "update": "更新这个工具"
+  },
+  "sidebar": {
+    "category": "类别",
+    "tags": "标签"
+  },
+  "tabs": {
+    "socialListening": "社交聆听",
+    "alternatives": "替代方案"
+  },
+  "similar": {
+    "title": "类似的人工智能工具"
+  },
+  "stats": {
+    "monthlyVisits": "每月访问量",
+    "growth": "生长",
+    "reviews": "评论",
+    "averageTime": "平均现场时间",
+    "pagesPerVisit": "每次访问的页数",
+    "bounceRate": "跳出率",
+    "visits": "访问量",
+    "reviews_formatted": "“{rating}（{count} {label}）”"
+  },
+  "sections": {
+    "overview": "概述",
+    "reviews": "评论",
+    "analytics": "分析",
+    "embed": "嵌入",
+    "alternatives": "替代方案",
+    "related": "相关工具"
+  },
+  "details": {
+    "description": "工具介绍：",
+    "monthlyTraffic": "每月流量：",
+    "socialMedia": "社交媒体和电子邮件：",
+    "company": "公司",
+    "categories": "类别",
+    "tags": "标签"
+  },
+  "content": {
+    "whatIs": "什么是",
+    "howToUse": "如何使用",
+    "coreFeatures": "核心特点",
+    "useCases": "使用案例",
+    "pricingPlans": "定价计划",
+    "faqs": "常见问题解答",
+    "relatedTools": "相关工具",
+    "productInfo": "产品信息",
+    "writtenBy": "撰写与编辑",
+    "factCheckedBy": "事实核查"
+  },
+  "analytics": {
+    "title": "分析和流量洞察",
+    "subtitle": "分析",
+    "latestTraffic": "最新网站流量",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "网站流量来源",
+    "topKeywords": "热门关键词",
+    "keyword": "关键词",
+    "traffic": "交通",
+    "trafficSubtitle": "改善网络流量",
+    "geoSubtitle": "搜索引擎指标",
+    "sourceSubtitle": "搜索引擎指标",
+    "keywordSubtitle": "搜索引擎指标",
+    "percentage": "百分比",
+    "source": "来源",
+    "noChartData": "无图表数据",
+    "noTrafficChartData": "无流量图表数据",
+    "desktopVsMobile": "桌面端 vs 移动端",
+    "desktop": "桌面端",
+    "mobileWeb": "移动网络",
+    "similarSites": "相似网站",
+    "globalRank": "全球排名",
+    "founded": "成立于",
+    "socialInfluence": "社交媒体影响力",
+    "views": "意见",
+    "mentions": "提及",
+    "trendHistory": "趋势历史记录",
+    "trendSubtitle": "随着时间的推移，流量、视图和投票趋势",
+    "upvotes": "支持"
+  },
+  "embed": {
+    "title": "嵌入您的网站",
+    "description": "使用漂亮的嵌入小部件将此工具添加到您的网站",
+    "preview": "预览",
+    "code": "嵌入代码",
+    "copy": "复制代码",
+    "copied": "复制了！",
+    "badgeAlt": "TopAICollection 徽章",
+    "themes": {
+      "light": "浅色",
+      "neutral": "中性",
+      "dark": "深色"
+    }
+  },
+  "alternatives": {
+    "title": "替代方案",
+    "description": "您可能喜欢的类似工具"
+  },
+  "pricing": {
+    "title": "定价计划",
+    "subtitle": "选择最适合您的计划",
+    "popular": "受欢迎的",
+    "getStarted": "开始使用",
+    "disclaimer": "价格和功能可能有所不同。访问官方网站以获取最新信息。",
+    "noPricingInfo": "没有可用的定价信息",
+    "free": "“免费”",
+    "moreFeatures": "“更多功能”"
+  },
+  "charts": {
+    "trafficChart": "交通图",
+    "comingSoon": "图表可视化即将推出"
+  },
+  "reviews": {
+    "title": "评论",
+    "pointsScale": "满分 5",
+    "subtitle": "看看社区的想法",
+    "writeTitle": "你推荐这个工具吗？",
+    "placeholder": "分享您使用此工具的经验...",
+    "privacy": "隐私保护",
+    "success": "审核提交成功！",
+    "submit": "事后审查",
+    "loginToReview": "请登录后提交评论",
+    "loginLink": "登录",
+    "noReviews": "暂无评论，成为第一个评论此工具的人吧！",
+    "viewMore": "查看所有评论",
+    "allReviewsTitle": "所有评论：",
+    "reviewsPageTitle": "评论",
+    "by": "发布者",
+    "verified": "已验证",
+    "anonymous": "匿名用户",
+    "ratingLabel": "评分",
+    "commentLabel": "评论",
+    "dateLabel": "日期",
+    "page": "页面",
+    "editReview": "编辑评价",
+    "deleteReview": "删除评价",
+    "deleteConfirm": "您确定要删除您的评价吗？",
+    "editTitle": "编辑您的评价",
+    "updateSuccess": "评价更新成功！",
+    "deleteSuccess": "评价删除成功！",
+    "commentRequired": "请为您的评价提供评论。",
+    "ratingRequired": "请选择评分。",
+    "alreadyReviewed": "您已经评价过此工具。请使用您评价上的 ✏️ 编辑按钮进行更新。",
+    "sort": {
+      "label": "排序方式",
+      "newest": "最新的优先",
+      "oldest": "最老的在前",
+      "highest": "最高评价",
+      "lowest": "最低评级"
+    },
+    "save": "确认保存",
+    "cancel": "取消",
+    "close": "关闭",
+    "userLabel": "用户",
+    "unverify": "取消认证",
+    "markVerified": "标记已验证",
+    "confirm": "確認",
+    "noReviewsFound": "未找到此工具的评论。",
+    "deleteError": "删除失败。",
+    "updateError": "更新失败。",
+    "pagination": {
+      "showing": "显示",
+      "of": "的",
+      "reviews": "评价",
+      "prev": "上一页",
+      "next": "下一页"
+    },
+    "statusLabel": "状态",
+    "actionsLabel": "操作"
+  },
+  "share": {
+    "title": "分享这个工具"
+  },
+  "metrics": {
+    "monthlyVisits": "每月访问量",
+    "growth": "生长"
+  },
+  "tags": "标签",
+  "overview": "概述",
+  "howToUse": "如何使用",
+  "pricingPlans": "定价计划",
+  "faqs": "常见问题解答",
+  "geoChart": {
+    "noData": "没有可用的地理数据",
+    "loading": "正在加载地理数据..."
+  },
+  "introduction": "介绍",
+  "description": "描述",
+  "coreFeatures": "核心特点",
+  "useCases": "使用案例",
+  "screenshots": "截图",
+  "companyInfo": {
+    "companyName": "公司名称",
+    "contactEmail": "联系邮箱"
+  },
+  "nav": {
+    "scrollLeft": "向左滚动",
+    "scrollRight": "向右滚动",
+    "previous": "“上一个”",
+    "next": "“下一个”",
+    "imageSlide": "“图片{index}”",
+    "videoSlide": "“视频幻灯片”"
+  },
+  "badges": {
+    "verifiedListing": "已核实项目",
+    "freePlan": "免费计划",
+    "paidPlans": "付费计划与价格"
+  },
+  "dummyReviews": {
+    "c1": "这是一款令人惊叹的AI工具！它彻底改变了我的工作流程。",
+    "c2": "非常好的功能，且易于使用。强烈推荐。",
+    "c3": "我尝试过许多替代方案，但到目前为止这款是最好的。",
+    "c4": "性价比极高。免费计划也非常慷慨。",
+    "c5": "出色的UI和直观的设计。有时有点慢，但总体来说非常棒。",
+    "c6": "任何专业人士的必备工具。每周都为我节省数小时。",
+    "c7": "功能不错，但需要一定的学习曲线。"
+  }
+}

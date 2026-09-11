@@ -1,0 +1,46 @@
+{
+  "title": "Guest Post & Link Insertion",
+  "description": "Share your expertise with our community through guest posts or request strategic link insertions in existing content.",
+  "details": "Guest Post Details",
+  "postTitle": "Post Title",
+  "postTitlePlaceholder": "Your guest post title",
+  "postContent": "Post Content or Details",
+  "postContentPlaceholder": "Describe your guest post content or link insertion details",
+  "features": {
+    "guestPosts": {
+      "title": "Guest Posts",
+      "description": "Share your knowledge and insights about AI with our community. Build authority and drive traffic to your website."
+    },
+    "linkInsertion": {
+      "title": "Link Insertion",
+      "description": "Request strategic placement of your links in existing, relevant content for maximum SEO value."
+    },
+    "seoBacklinks": {
+      "title": "SEO Backlinks",
+      "description": "Boost your SEO rankings with high-quality backlinks from our authoritative domain."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Content Guidelines",
+    "description": "All guest posts must be original, high-quality, and relevant to AI. We do not accept AI-generated content without human editing."
+  },
+  "meta": {
+    "title": "Guest Posts & Link Insertions | Top AI Collection",
+    "description": "Share your expertise with our AI community through guest posts or request strategic link insertions in existing content."
+  },
+  "validation": {
+    "required": "This field is required",
+    "titleTooShort": "Title must be at least 5 characters",
+    "contentTooShort": "Content must be at least 20 characters",
+    "toolNameRequired": "Tool name is required",
+    "url": "Invalid URL",
+    "descriptionMin": "Description must be at least 10 characters",
+    "categoryRequired": "Please select a category",
+    "email": "Invalid email address",
+    "messageMin": "Message must be at least 10 characters"
+  },
+  "sidebar": {
+    "articleCount": "1,000+ Articles",
+    "articleCountSub": "Published by our community"
+  }
+}

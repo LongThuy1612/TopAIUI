@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Oplev de bedste AI-værktøjer og websteder",
+    "description": "Udforsk den #1 AI-værktøjskatalogliste. Denne AI-værktøjsordbog-hjemmeside hjælper dig med at finde, sammenligne og lancere den absolut bedste AI-software GRATIS."
+  },
+  "nav": {
+    "today": "I dag",
+    "latestAI": "Seneste AI",
+    "mostSaved": "Mest frelst",
+    "mostUsed": "Mest brugt",
+    "browserPlugin": "Browser plugin",
+    "application": "Anvendelse",
+    "discordOfAI": "Discord mellem AI",
+    "compareAI": "Sammenlign AI",
+    "ariaLabel": "Hovednavigation"
+  },
+  "hero": {
+    "title": "Oplev de bedste AI-websteder og -værktøjer",
+    "subtitle": "Find de perfekte AI-værktøjer til dine behov fra vores omfattende bibliotek, der opdateres dagligt med de seneste AI-innovationer.",
+    "stats": {
+      "aiTools": "AI værktøjer",
+      "categories": "kategorier",
+      "languages": "sprog",
+      "and": "og",
+      "supporting": "støttende",
+      "description": "Omfattende AI-samling, opdateret dagligt med de seneste innovationer."
+    }
+  },
+  "search": {
+    "placeholder": "Find værktøjer ved AI, f.eks. AI-værktøj til videooversættelse",
+    "button": "Søge"
+  },
+  "sections": {
+    "featured": {
+      "title": "Udvalgte AI-værktøjer",
+      "description": "Oplev de mest populære og effektive AI-værktøjer",
+      "noTools": "Der er ingen tilgængelige værktøjer i øjeblikket"
+    },
+    "justLaunched": {
+      "title": "Lige lanceret",
+      "description": "Seneste AI-værktøjer og innovationer",
+      "noTools": "Ingen nye værktøjer tilgængelige i øjeblikket"
+    },
+    "categories": {
+      "title": "Gennemse efter kategori",
+      "description": "Find AI-værktøjer organiseret efter use case og branche"
+    },
+    "trending": {
+      "title": "Trending nu",
+      "description": "Mest populære AI-værktøjer i denne uge"
+    }
+  },
+  "cta": {
+    "title": "List dit AI-værktøj",
+    "description": "Nå ud til millioner af potentielle brugere ved at angive dit AI-værktøj i vores bibliotek.",
+    "button": "Indsend dit værktøj",
+    "features": {
+      "exposure": "Global eksponering",
+      "traffic": "Øget trafik",
+      "seo": "SEO fordele"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "AI-applikationer",
+      "description": "Oplev de bedste AI-applikationer til produktivitet, kreativitet og mere."
+    },
+    "browserExtensions": {
+      "title": "AI-browserudvidelser",
+      "description": "Oplev de bedste AI-browserudvidelser til at overlade dit arbejdsflow."
+    },
+    "latestAi": {
+      "title": "Seneste AI-værktøjer",
+      "description": "Oplev de nyeste AI-værktøjer og innovationer, der opdateres dagligt."
+    },
+    "mostSaved": {
+      "title": "Mest gemte AI-værktøjer",
+      "description": "Oplev de mest gemte og bogmærkede AI-værktøjer fra vores fællesskab."
+    },
+    "mostUsed": {
+      "title": "Mest Brugte AI-værktøjer",
+      "description": "Opdag de mest populære og udbredte AI-værktøjer i vores fællesskab."
+    },
+    "discord": {
+      "title": "AI Discord-fællesskaber",
+      "description": "Opdag de bedste AI Discord-fællesskaber og forbind med AI-entusiaster."
+    },
+    "today": {
+      "title": "Fremhævede AI-værktøjer I Dag",
+      "description": "Opdag de bedste AI-værktøjer fremhævet i dag på TopAICollection."
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "Tekstgenerering",
+          "Image Creation": "Billedoprettelse",
+          "Coding": "Kodning",
+          "Video": "Video",
+          "Audio": "Lyd",
+          "Productivity": "Produktivitet"
+        },
+        "text": "Hvad vil du bruge AI til?"
+      },
+      "budget": {
+        "options": {
+          "Free only": "Kun gratis",
+          "Freemium": "Freemium",
+          "Paid is fine": "Betalt er fint"
+        },
+        "text": "Hvad er dit budget?"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "Begynder",
+          "Intermediate": "Øvet",
+          "Expert": "Ekspert"
+        },
+        "text": "Hvad er dit ekspertiseniveau?"
+      }
+    },
+    "title": "Dine personlige anbefalinger",
+    "viewTool": "Vis værktøj",
+    "noTools": "Ingen værktøjer matchede dine nøjagtige kriterier. Prøv at udvide din søgning!",
+    "startOver": "Start forfra",
+    "finding": "Finder de bedste AI-værktøjer til dig...",
+    "questionLabel": "Spørgsmål {step} af {total}",
+    "completed": "{percentage}% fuldført"
+  }
+}

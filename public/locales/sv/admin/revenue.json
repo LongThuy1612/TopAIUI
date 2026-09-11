@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Intäkter och finansiell hälsa",
+    "totalRevenue": "Totala intäkter",
+    "mrr": "MRR (månatlig återkommande)",
+    "mrrDescription": "Uppskattade återkommande intäkter baserat på aktiva prenumerationer",
+    "breakdown": "Intäktsfördelning",
+    "revenueGrowth": "Intäktstillväxt (30 dagar)",
+    "noData": "Ingen intäktsdata tillgänglig",
+    "noTrendsData": "Inga tillväxtdata hittades för de senaste 30 dagarna",
+    "comingSoon": "Kommer snart"
+  }
+}

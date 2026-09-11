@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} Ferramentas de IA | Descubra as melhores soluções da {tagName}",
+    "description": "Explore nossa coleção selecionada das melhores ferramentas de IA da {tagName}. Compare recursos, preços e avaliações para encontrar o software {tagName} perfeito para suas necessidades."
+  },
+  "notFound": {
+    "metaTitle": "Etiqueta não encontrada | TopAICollection",
+    "metaDescription": "A tag que você procura não existe. Descubra outras ferramentas de IA."
+  },
+  "breadcrumb": {
+    "home": "Lar",
+    "tools": "Ferramentas"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} Ferramentas de IA",
+    "collectionDescription": "Navegue em nosso diretório de ferramentas de IA da {tagName}."
+  }
+}

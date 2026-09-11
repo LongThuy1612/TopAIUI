@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Termini di servizio - TopAICollection",
+    "description": "Leggi i termini e le condizioni per l'utilizzo dei servizi e del sito web di TopAICollection."
+  },
+  "title": "Termini di servizio",
+  "lastUpdated": "Ultimo aggiornamento",
+  "introduction": "I presenti Termini di servizio regolano l'utilizzo del sito Web e dei servizi TopAICollection. Accedendo o utilizzando il nostro servizio, accetti di essere vincolato da questi termini.",
+  "sections": {
+    "acceptance": {
+      "title": "Accettazione dei Termini",
+      "content": "Accedendo e utilizzando questo sito Web, accetti e accetti di essere vincolato dai termini e dalle disposizioni del presente accordo."
+    },
+    "use": {
+      "title": "Utilizzo del servizio",
+      "content": [
+        "Devi avere almeno 13 anni per utilizzare il nostro servizio",
+        "Sei responsabile del mantenimento della riservatezza del tuo account",
+        "Accetti di non utilizzare il servizio per scopi illegali o non autorizzati",
+        "Non devi trasmettere worm, virus o codici dannosi"
+      ]
+    },
+    "content": {
+      "title": "Contenuto dell'utente",
+      "content": [
+        "Mantieni la proprietà dei contenuti che invii",
+        "Ci concedi una licenza per utilizzare, modificare e visualizzare i tuoi contenuti",
+        "Sei responsabile del contenuto che pubblichi",
+        "Ci riserviamo il diritto di rimuovere i contenuti che violano questi termini"
+      ]
+    },
+    "intellectual": {
+      "title": "Proprietà intellettuale",
+      "content": "Il servizio e i suoi contenuti, caratteristiche e funzionalità originali sono e rimarranno di proprietà esclusiva di TopAICollection e dei suoi concessori di licenza."
+    },
+    "privacy": {
+      "content": "L'utilizzo del nostro servizio è regolato anche dalla nostra Informativa sulla privacy. Si prega di rivedere la nostra Informativa sulla privacy, che regola anche il sito e informa gli utenti delle nostre pratiche di raccolta dei dati.",
+      "title": "Privacy"
+    },
+    "disclaimers": {
+      "title": "Disclaimer",
+      "content": [
+        "Il servizio viene fornito \"così com'è\" e \"come disponibile\".",
+        "Non garantiamo che il servizio sarà ininterrotto o privo di errori",
+        "Non siamo responsabili per gli strumenti di terze parti elencati nella nostra directory",
+        "L'uso degli strumenti di intelligenza artificiale è a tuo rischio e pericolo"
+      ]
+    },
+    "liability": {
+      "title": "Limitazione di responsabilità",
+      "content": "In nessun caso TopAICollection, né i suoi direttori, dipendenti, partner, agenti, fornitori o affiliati, saranno responsabili per eventuali danni indiretti, incidentali, speciali, consequenziali o punitivi."
+    },
+    "governing": {
+      "title": "Legge applicabile",
+      "content": "I presenti termini saranno regolati e interpretati in conformità con le leggi della giurisdizione in cui opera TopAICollection, indipendentemente dalle disposizioni sui conflitti di legge."
+    }
+  },
+  "contact": {
+    "title": "Informazioni sui contatti",
+    "content": "In caso di domande sui presenti Termini di servizio, contattaci all'indirizzo:"
+  }
+}

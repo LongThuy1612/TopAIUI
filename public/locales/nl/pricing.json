@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Prijsplannen - TopAICollection",
+    "description": "Eenvoudige, transparante prijzen voor AI-onderzoek en social listening."
+  },
+  "title": "Eenvoudige, transparante prijzen",
+  "subtitle": "Begin gratis en schaal mee terwijl je groeit. Geen verrassingen.",
+  "plans": {
+    "free": {
+      "name": "Gratis",
+      "banner": "Begin gratis — geen creditcard vereist."
+    },
+    "professional": {
+      "name": "Professioneel"
+    },
+    "enterprise": {
+      "name": "Onderneming"
+    },
+    "free-monthly": {
+      "name": "Gratis"
+    },
+    "free-yearly": {
+      "name": "Gratis"
+    },
+    "professional-monthly": {
+      "name": "Professioneel"
+    },
+    "professional-yearly": {
+      "name": "Professioneel"
+    },
+    "enterprise-monthly": {
+      "name": "Onderneming"
+    },
+    "enterprise-yearly": {
+      "name": "Onderneming"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Meest populair"
+  },
+  "features": {
+    "websiteInsights": "Website-inzichten",
+    "socialListening": "Social listening",
+    "prioritySupport": "Prioriteitsondersteuning",
+    "advertising": "Adverteren",
+    "premiumSupport": "Premium ondersteuning"
+  },
+  "cta": {
+    "loading": "Verwerken...",
+    "upgrade": "Aan de slag"
+  },
+  "comparison": {
+    "title": "Alle plannen vergeleken",
+    "feature": "Functie"
+  },
+  "billing": {
+    "monthly": "Maandelijks",
+    "yearly": "Jaarlijks",
+    "discount20": "Bespaar 20%",
+    "suffixYearly": "/jaar",
+    "suffixMonthly": "/maand",
+    "upgradeTitle": "Upgrade uw onderzoeksplan",
+    "upgradeDesc": "Ontgrendel geavanceerde analyses, inzichten van concurrenten en meer.",
+    "subscribe": "Abonneer je nu"
+  },
+  "billingMonthly": "Maandelijks",
+  "billingYearly": "Jaarlijks",
+  "billingBestValue": "Bespaar 20%",
+  "badgePopular": "Meest populair",
+  "billingPerMonth": "/ maand",
+  "billingPerYear": "/ jaar"
+}

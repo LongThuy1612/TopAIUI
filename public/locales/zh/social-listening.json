@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "社交倾听 - 监控 AI 趋势 | TopAICollection",
+    "description": "在社交媒体平台上监控 AI 趋势。",
+    "detailTitle": "{name} 社交倾听 — TopAI",
+    "detailDescription": "{name} 的社交倾听分析。",
+    "notFoundTitle": "未找到工具 - 社交聆听"
+  },
+  "title": "社交倾听",
+  "subtitle": "监控 AI 工具在 TikTok、YouTube 和 Twitter 上的视频表现。",
+  "leaderboardTitle": "社交排行榜",
+  "leaderboardSubtitle": "即时追踪视频表现。 Twitter",
+  "table": {
+    "aiTool": "AI 工具",
+    "introduce": "介绍",
+    "videoCount": "视频数",
+    "creatorsCount": "创作者数",
+    "monthlyTraffic": "月流量",
+    "avgViews": "平均观看量",
+    "avgInteractions": "平均互动",
+    "totalViews": "总观看量",
+    "totalInteractions": "总互动",
+    "emptyState": "未找到数据",
+    "pageIndicator": "第 {page} 页，共 {lastPage} 页",
+    "updatedAt": "更新日期",
+    "totalEngagement": "全面参与"
+  },
+  "search": {
+    "placeholder": "输入工具名或域名"
+  },
+  "detail": {
+    "viewTool": "查看工具详情",
+    "tabs": {
+      "socialListening": "社交倾听"
+    },
+    "stats": {
+      "monthlyVisits": "月访问量",
+      "growth": "增长",
+      "growthRate": "增长率",
+      "socialVideos": "社交视频",
+      "newLastWeek": "上周新增"
+    },
+    "metrics": {
+      "avgViews": "平均观看",
+      "totalVideos": "视频总计",
+      "totalCreators": "创作者总计",
+      "totalViews": "总观看 / 平均",
+      "totalLikes": "总点赞 / 平均",
+      "totalComments": "总评论 / 平均",
+      "totalShares": "总分享数",
+      "totalCollects": "总收藏数",
+      "totalQuotes": "总引用数",
+      "totalReposts": "总转发数"
+    },
+    "platforms": {
+      "all": "全部"
+    },
+    "feed": {
+      "unlockCta": "解锁查看更多",
+      "unlockDesc": "登录以查看完整视频分析",
+      "viewNow": "现在查看 →",
+      "sortBy": "排序方式",
+      "sortViews": "观看量",
+      "sortLikes": "点赞数",
+      "sortDate": "日期",
+      "loadMore": "加载更多",
+      "searchPlaceholder": "按标题或创作者搜索...",
+      "emptyState": "未找到帖子。此处仅显示视频帖子。",
+      "untitledPost": "未命名帖子",
+      "metrics": {
+        "views": "观看量",
+        "likes": "点赞",
+        "retweets": "转推",
+        "shares": "分享",
+        "replies": "回复",
+        "comments": "评论",
+        "quotes": "引用",
+        "saves": "保存",
+        "collects": "收藏",
+        "upvotes": "赞成",
+        "follows": "关注"
+      },
+      "sortComments": "评论",
+      "sortShares": "股份",
+      "title": "社交动态"
+    },
+    "traffic": {
+      "bounceRate": "跳出率",
+      "pagesPerVisit": "页面 / 访问",
+      "avgVisitDuration": "平均访问时长",
+      "globalRanking": "全球排名",
+      "category": "类别",
+      "categoryRanking": "分类排名",
+      "deviceSplit": "桌面 vs 移动端",
+      "desktop": "桌面端",
+      "mobile": "移动端",
+      "trafficSources": "流量来源",
+      "topRegions": "热门国家",
+      "processingMsg": "流量数据处理中。请稍后再试。",
+      "monthlyTrafficTrend": "每月流量趋势",
+      "monthlyTrafficTrendDesc": "“过去30天的全球历史性访问”",
+      "sourceWebsiteInsight": "“来源：网站洞察全球”"
+    },
+    "pricing": {
+      "notDocumented": "价格方案暂无更新。",
+      "checkWebsite": "查看官方网站",
+      "visitWebsite": "访问网站",
+      "month": "月"
+    },
+    "lastUpdated": "最后更新",
+    "influencers": {
+      "title": "顶级影响者",
+      "name": "创作者",
+      "platform": "平台",
+      "videos": "视频",
+      "reach": "预计。抵达"
+    },
+    "filterInteraction": "《滤镜互动》"
+  },
+  "platforms": {
+    "all": "所有平台"
+  },
+  "monitors": {
+    "title": "您的显示器",
+    "subtitle": "跨社交平台跟踪特定关键字",
+    "inputPlaceholder": "输入关键字（例如 ChatGPT、Midjourney）",
+    "addButton": "开始追踪",
+    "emptyTitle": "没有活动监视器",
+    "emptyDesc": "在上面添加关键字以开始监控社交提及和情绪。",
+    "keyword": "关键词",
+    "platform": "平台",
+    "status": "地位",
+    "lastActive": "最后活跃",
+    "addSuccess": "监视器添加成功！",
+    "addError": "添加监视器失败",
+    "statusTracking": "“追踪”"
+  },
+  "socialListeningTitle": "社交听力排行榜",
+  "pagination": {
+    "prev": "上一篇",
+    "next": "下一个",
+    "page": "页"
+  },
+  "nav": {
+    "overview": "「概览」",
+    "social": "“社交”",
+    "traffic": "「交通」",
+    "pricing": "「定价」"
+  },
+  "locked": {
+    "quotaTitle": "功能已锁定",
+    "quotaDesc": "您已达到社交监听配额。升级以解锁更多洞察。",
+    "upgradeBtn": "立即升级",
+    "overlayTitle": "高级功能",
+    "overlayDesc": "此功能需要有效的高级订阅。",
+    "unlockBtn": "解锁高级版"
+  }
+}

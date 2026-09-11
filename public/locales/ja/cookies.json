@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "クッキーポリシー - TopAICollection",
+    "description": "TopAICollection が Cookie および同様のテクノロジーをどのように使用するかについて説明します。"
+  },
+  "title": "クッキーポリシー",
+  "lastUpdated": "最終更新日",
+  "sections": {
+    "whatAreCookies": {
+      "title": "クッキーとは",
+      "description": "Cookie は、お客様が当社の Web サイトにアクセスしたときにコンピューターまたはモバイル デバイスに保存される小さなテキスト ファイルです。これらは、お客様の設定を記憶し、お客様による当社サイトの使用方法を理解することで、より良いエクスペリエンスを提供するのに役立ちます。"
+    },
+    "howWeUse": {
+      "title": "クッキーの使用方法",
+      "intro": "当社は Cookie を次の目的で使用します。",
+      "essential": "必須 Cookie: 認証やセキュリティなど、Web サイトが適切に機能するために必要です。",
+      "analytics": "分析 Cookie: 訪問者が当社 Web サイトとどのようにやり取りするかを理解するのに役立ちます。",
+      "preference": "設定 Cookie: 言語やロケールなどの設定と好みを記憶します。",
+      "marketing": "マーケティング Cookie: 関連する広告を配信し、キャンペーンのパフォーマンスを追跡するために使用されます。"
+    },
+    "managing": {
+      "title": "Cookieの管理",
+      "intro": "ほとんどの Web ブラウザでは、設定を通じて Cookie を制御できます。次のことを選択できます。",
+      "blockAll": "すべての Cookie をブロックする",
+      "acceptAll": "すべての Cookie を受け入れる",
+      "beNotified": "Cookieが設定されたときに通知を受け取る",
+      "deleteExisting": "すでに設定されているCookieを削除する",
+      "note": "特定の Cookie をブロックすると、当社の Web サイトでのエクスペリエンスに影響が出る可能性があることに注意してください。"
+    },
+    "thirdParty": {
+      "title": "サードパーティCookie",
+      "intro": "当社サイトの一部の Cookie は、当社が使用する次のようなサードパーティ サービスによって設定されます。",
+      "googleAnalytics": "Googleアナリティクス（分析）",
+      "vercel": "Vercel (ホスティングと分析)"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "message": "Cookie の使用についてご質問がある場合は、お問い合わせください。",
+      "contactLink": "お問い合わせ"
+    }
+  }
+}

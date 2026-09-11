@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "„Umsatz und finanzielle Gesundheit“",
+    "totalRevenue": "„Gesamtumsatz“",
+    "mrr": "„MRR (monatlich wiederkehrend)“",
+    "mrrDescription": "„Geschätzter wiederkehrender Umsatz basierend auf aktiven Abonnements“",
+    "breakdown": "„Aufschlüsselung der Einnahmen“",
+    "revenueGrowth": "„Umsatzwachstum (30 Tage)“",
+    "noData": "„Keine Umsatzdaten verfügbar“",
+    "noTrendsData": "„Keine Wachstumsdaten für die letzten 30 Tage gefunden“",
+    "comingSoon": "„Kommt bald“"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Doanh thu & Sức khỏe tài chính",
+    "totalRevenue": "Tổng doanh thu",
+    "mrr": "MRR (Định kỳ hàng tháng)",
+    "mrrDescription": "Doanh thu định kỳ ước tính dựa trên các đăng ký đang hoạt động",
+    "breakdown": "Cơ cấu doanh thu",
+    "revenueGrowth": "Tăng trưởng doanh thu (30 ngày)",
+    "noData": "Không có dữ liệu doanh thu",
+    "noTrendsData": "Không tìm thấy dữ liệu tăng trưởng trong 30 ngày qua",
+    "comingSoon": "Sắp ra mắt"
+  }
+}

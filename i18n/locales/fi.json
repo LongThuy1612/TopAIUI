@@ -1,0 +1,154 @@
+{
+  "header": {
+    "searchPlaceholder": "Hae tekoälytyökaluja...",
+    "categories": "Kategoriat",
+    "rankings": "Ranking-listat",
+    "submit": "Lähetä työkalu",
+    "admin": "Ylläpito"
+  },
+  "hero": {
+    "titlePrefix": "Löydä parhaat",
+    "titleHighlight": "tekoälytyökalut",
+    "subtitle": "Selaa satoja tekoälytuotteita kategorioittain, vertaile hintoja ja löydä oikea työkalu työnkulkuusi.",
+    "searchPlaceholder": "Hae tekoälytyökaluja..."
+  },
+  "stats": {
+    "tools": "tekoälytyökalua listattu",
+    "categories": "Kategoriat",
+    "featured": "Suositellut työkalut"
+  },
+  "tabs": {
+    "heading": "Selaa työkaluja",
+    "newest": "Uudet",
+    "featured": "Suosituimmat",
+    "free": "Ilmainen",
+    "viewAll": "Näytä kaikki →"
+  },
+  "announcement": {
+    "featured": "Suositeltu"
+  },
+  "sidebar": {
+    "featuredTools": "Suositellut työkalut",
+    "topCategories": "Suosituimmat kategoriat"
+  },
+  "sections": {
+    "browseByCategory": "Selaa kategorioittain",
+    "newestTools": "Uusimmat työkalut",
+    "featuredTools": "Suositellut työkalut",
+    "viewAll": "Näytä kaikki →",
+    "justLaunched": "Juuri julkaistu",
+    "featuredThisWeek": "Viikon suositellut",
+    "featuredThisWeekSubtitle": "Työkalut, jotka yhteisömme on tallentanut ja arvioinut eniten.",
+    "updatedDaily": "Päivittyy päivittäin",
+    "viewMore": "Näytä lisää →"
+  },
+  "cta": {
+    "title": "Onko sinulla tekoälytyökalu, jonka haluat jakaa?",
+    "subtitle": "Näytä se ihmisille, jotka etsivät samankaltaisia työkaluja.",
+    "button": "Lähetä työkalusi"
+  },
+  "empty": {
+    "noTools": "Ei vielä työkaluja — suorita",
+    "noResults": "Työkaluja ei löytynyt"
+  },
+  "category": {
+    "breadcrumbHome": "Etusivu",
+    "allTools": "Kaikki työkalut",
+    "allToolsTitle": "Kaikki tekoälytyökalut",
+    "allPricing": "Kaikki hinnat",
+    "sortNewest": "Uusimmat ensin",
+    "sortFeatured": "Suositellut ensin",
+    "sortName": "Nimi A–Ö",
+    "toolsFound": "työkalu löytyi | työkalua löytyi",
+    "searchPlaceholder": "Hae työkaluja...",
+    "filters": "Suodattimet",
+    "viewGrid": "Ruudukkonäkymä",
+    "viewList": "Listanäkymä"
+  },
+  "pricing": {
+    "FREE": "Ilmainen",
+    "FREEMIUM": "Freemium",
+    "PAID": "Maksullinen"
+  },
+  "ranking": {
+    "title": "Parhaat tekoälytyökalut",
+    "subtitle": "Järjestetty hakemistoomme kertyneiden liikenne- ja kasvutietojen perusteella.",
+    "byGrowth1m": "Kasvu 1 kk",
+    "byGrowth3m": "Kasvu 3 kk",
+    "byGrowth6m": "Kasvu 6 kk",
+    "byTraffic": "Käyntejä kuukaudessa",
+    "colRank": "Sija",
+    "colTool": "Työkalu",
+    "colVisits": "Käyntejä kuukaudessa",
+    "colGrowth": "Kasvu",
+    "colAuthority": "Verkkotunnuksen arvovalta",
+    "colCategory": "Kategoria",
+    "noData": "Ei vielä ranking-tietoja."
+  },
+  "tool": {
+    "openSite": "Avaa sivusto",
+    "save": "Tallenna",
+    "saved": "Tallennettu",
+    "featured": "Suositeltu",
+    "introduction": "Esittely",
+    "addedOn": "Lisätty",
+    "monthlyVisitors": "Kävijöitä kuukaudessa",
+    "features": "Keskeiset ominaisuudet",
+    "useCases": "Käyttötapaukset",
+    "prosAndCons": "Hyvät ja huonot puolet",
+    "pros": "Hyvät puolet",
+    "cons": "Huonot puolet",
+    "faq": "Usein kysytyt kysymykset",
+    "alternatives": "Vaihtoehdot työkalulle",
+    "backToCategory": "Takaisin",
+    "notFound": "Työkalua ei löytynyt",
+    "similarTools": "Samankaltaiset työkalut",
+    "tabProductInfo": "Tuotetiedot",
+    "tabPricing": "Hinnoittelu",
+    "tabReviews": "Arvostelut",
+    "tabAnalytics": "Analytiikka",
+    "tabAlternatives": "Vaihtoehdot",
+    "productInformationHeading": "{name} — tuotetiedot",
+    "whatIs": "Mikä on {name}?",
+    "howToUseHeading": "Miten käyttää {name}?",
+    "reviewsHeading": "{name} arvostelut ({count})",
+    "ratingPrompt": "Suosittelisitko {name}? Jätä kommentti",
+    "whatDoYouThink": "Mitä mieltä olet?",
+    "loginToComment": "Kirjaudu sisään kommentoidaksesi",
+    "pricingHeading": "{name} hinnoittelu",
+    "noPricingYet": "Ei vielä hinnoittelutietoja.",
+    "analyticsHeading": "{name} analytiikka",
+    "trafficAnalysis": "{name} verkkosivuston liikenneanalyysi",
+    "visitOverTime": "Käynnit ajan myötä",
+    "monthlyVisits": "Käyntejä kuukaudessa",
+    "avgVisitDuration": "Keskim. käynnin kesto",
+    "pagePerVisit": "Sivuja per käynti",
+    "bounceRate": "Poistumisprosentti",
+    "noTrafficYet": "Ei vielä liikennetietoja.",
+    "badgeVerified": "Vahvistettu",
+    "badgeJustLaunched": "Juuri julkaistu",
+    "badgeFreeTool": "Ilmainen työkalu",
+    "affiliateLink": "Kumppanuuslinkki",
+    "couponCode": "Alennuskoodi",
+    "ratings": "arviota",
+    "upvotes": "ääntä",
+    "domainAuthority": "Verkkotunnuksen arvovalta",
+    "trafficRank": "Liikennesija",
+    "viewCount": "Sivunäyttöjä"
+  },
+  "footer": {
+    "tagline": "Löydä, vertaile ja jaa parhaat tekoälytyökalut — rakennettu Nuxtilla ja PostgreSQL:llä.",
+    "product": "Tuote",
+    "home": "Etusivu",
+    "allTools": "Kaikki työkalut",
+    "submit": "Lähetä työkalu",
+    "categories": "Kategoriat",
+    "company": "Yritys",
+    "admin": "Ylläpidon kirjautuminen",
+    "language": "Kieli",
+    "copyright": "Kaikki oikeudet pidätetään."
+  },
+  "language": {
+    "label": "Kieli"
+  }
+}

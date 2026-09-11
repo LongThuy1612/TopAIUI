@@ -1,0 +1,294 @@
+{
+  "title": "Annonsera ditt AI-verktyg",
+  "description": "Få premiumplacering och maximal exponering för ditt AI-verktyg. Nå tusentals potentiella användare som aktivt söker efter AI-lösningar.",
+  "hero": {
+    "title": "Dina AI på TopAICollection",
+    "subtitle": "TopAI kan hjälpa dig att nå miljontals AI-användare och dina potentiella kunder över hela världen.",
+    "stats": {
+      "pageViews": "5 miljoner+",
+      "pageViewsLabel": "Sidvisningar",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Månatliga besök",
+      "subscribers": "100K+",
+      "subscribersLabel": "Prenumeranter",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "Desktop-användare",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Registrerade användare",
+      "avgTimeOnSite": "2,5 m",
+      "avgTimeOnSiteLabel": "Genomsnittlig tid på webbplatsen"
+    },
+    "benefits": [
+      "Topp AI-verktygskatalog",
+      "Dofollow bakåtlänk",
+      "Flerspråkig intro",
+      "Lista & trafik för alltid",
+      "Värde för grundare och nystartade företag"
+    ]
+  },
+  "tabs": {
+    "submit": "Skicka AI",
+    "submitDesc": "Skicka in dina AI-verktyg, få trafik",
+    "advertise": "Annonsera AI",
+    "advertiseDesc": "Betala per klick, utvalda kampanjer, automatisk annonsplacering",
+    "guestPost": "Gästinlägg / länkinlägg",
+    "guestPostDesc": "Gästinlägg/länkinlägg på TopAI",
+    "updateAi": "Uppdatera AI",
+    "updateAiDesc": "Uppdatera ditt verktygs information",
+    "submitGpt": "Skicka in GPT",
+    "submitGptDesc": "Skicka in din GPT så att fler kan använda den",
+    "business": "Mer affärer",
+    "businessDesc": "Såsom: länkutbyte, Twitter-inlägg, videor, etc."
+  },
+  "form": {
+    "toolLabel": "Verktyg",
+    "toolHint": "PS: Om verktyget inte kan hittas, skicka in det först.",
+    "toolPlaceholder": "Sök efter ditt verktyg...",
+    "adLandingLink": "Annonslandningslänk",
+    "toolLandingPlaceholder": "/verktyg/...",
+    "websitePlaceholder": "https://example.com",
+    "urlTitle": "Ange en giltig webbadress som börjar med http:// eller https://"
+  },
+  "clicks": {
+    "title": "Välj antalet klick du behöver",
+    "numberOfClicks": "Antal klick",
+    "total": "Iznos",
+    "payButton": "Betala",
+    "submitButton": "Överlämna"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Annonsera ett verktygsexempel",
+    "description": "Vi helt automatiserar din annonsvisning baserat på våra algoritmer för att säkerställa att du inte kan få mindre än antalet köpta klick, men vi kan inte garantera kvaliteten på klicken.",
+    "note": "Prioritera för dig att konsumera annonseringskostnader för att snabbt få webbplatsklick och visningar. Du kan: pausa annonserna eller starta annonserna.",
+    "typesTitle": "Här är några typer av annonser:",
+    "mostFrequently": "Oftast",
+    "mostEffective": "Mest effektiva",
+    "standardDesc": "Visas på startsidan, listor och kategorisidor.",
+    "effectiveDesc": "Visas på dina konkurrenters sidor och på de kategorisidor du tillhör.",
+    "featured": "Utvalda*",
+    "featuredDesc1": "Utvald plats på Hem, Senaste AI, Mest använda, Mest sparade, Sökresultatsida, Kategoriinformationssida, etc.",
+    "featuredDesc2": "Överst på de flesta sidor kommer det att finnas en sponsorposition.",
+    "targeted": "Målinriktad",
+    "standard": "Standard"
+  },
+  "faq": {
+    "title": "FAQ - annonsera",
+    "items": [
+      {
+        "question": "Hur fungerar reklam?",
+        "answer": "Vi visar ditt verktyg i premiumpositioner över hela vår plattform. Du betalar per klick och vi ser till att din annons får det antal klick du köpt."
+      },
+      {
+        "question": "Kan jag köpa klick flera gånger?",
+        "answer": "Ja, du kan köpa ytterligare klickpaket när som helst för att öka ditt verktygs synlighet."
+      },
+      {
+        "question": "Kan jag pausa mina annonser?",
+        "answer": "Ja, du kan pausa och återuppta dina annonskampanjer när som helst från din instrumentpanel."
+      },
+      {
+        "question": "Vilken typ av analys får jag?",
+        "answer": "Du får detaljerad information om organiska klick, betalda klick, totalt antal klick, visningar och besparingar."
+      }
+    ]
+  },
+  "whyAdvertise": "Varför annonsera?",
+  "customPackage": {
+    "title": "Behöver du anpassat paket?",
+    "description": "Kontakta oss för skräddarsydda annonslösningar som passar dina specifika mål.",
+    "contactSales": "Kontakta försäljning",
+    "estimatedClicks": "Uppskattade klick",
+    "estimatedImpressions": "Uppskattade visningar",
+    "estimatedViews": "Uppskattade visningar",
+    "estimatedUnits": "Beräknade enheter",
+    "toolSlug": "Verktygssnäcka",
+    "landingUrl": "Landningsadress",
+    "campaignParameters": "Kampanjparametrar",
+    "metricType": "Metrisk typ",
+    "pacingType": "Pacing typ",
+    "basePrice": "Baspris",
+    "totalBudget": "Total budget",
+    "startDate": "Startdatum",
+    "endDate": "Slutdatum",
+    "priorityBid": "Prioritetsbud",
+    "estimation": "Uppskattning",
+    "cancel": "Avbryt",
+    "submitting": "Skicka in",
+    "submitProposal": "Skicka in förslag"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Premiumplacering",
+      "description": "Utvalda platser på hemsidan och kategorisidor"
+    },
+    "targetedAudience": {
+      "title": "Målgrupp",
+      "description": "Nå användare som aktivt letar efter AI-verktyg"
+    },
+    "analytics": {
+      "title": "Statistik",
+      "description": "Spåra prestanda med detaljerade insikter"
+    }
+  },
+  "campaigns": {
+    "previous": "Tidigare",
+    "pageOf": "Sida {page} av {total}",
+    "choosePlan": "Välj din plan",
+    "choosePlanDesc": "Välj en plan nedan för att förnya eller uppgradera din kampanj.",
+    "currentPlan": "Nuvarande plan",
+    "selectAgain": "Välj igen",
+    "selectPlan": "Välj Plan"
+  },
+  "transactions": {
+    "noDescription": "Du har inte köpt några annonskrediter än. Fyll på ditt saldo för att börja köra kampanjer."
+  },
+  "meta": {
+    "title": "Annonsera AI-verktyg - TopAICollection",
+    "description": "Annonsera ditt AI-verktyg för miljontals AI-entusiaster."
+  },
+  "plans": {
+    "title": "Reklamplaner",
+    "subtitle": "Utöka din räckvidd",
+    "clickTarget": "Klickmål",
+    "toolRequired": "⚠ Ange ditt verktygnamn ovan innan du skickar.",
+    "empty": "Inga annonspaket tillgängliga just nu. Kom tillbaka senare.",
+    "customPlanConfig": "Anpassad plankonfiguration",
+    "basePrice": "Baspris ($)",
+    "adPlacements": "Annonsplaceringar",
+    "applyConfig": "Använd Config",
+    "configured": "Konfigurerad",
+    "toolSlug": "Verktygssnäcka",
+    "landingUrl": "Landningsadress",
+    "campaignParameters": "Kampanjparametrar",
+    "metricType": "Metrisk typ",
+    "pacingType": "Pacing Typ",
+    "totalBudget": "Total budget ($)",
+    "startDate": "Startdatum",
+    "endDate": "Slutdatum",
+    "priorityBid": "Prioriterat bud",
+    "estimation": "Uppskattning",
+    "estimatedClicks": "Uppskattade klick",
+    "estimatedImpressions": "Uppskattade visningar",
+    "estimatedViews": "Uppskattade visningar",
+    "estimatedUnits": "Uppskattade {metric} enheter",
+    "submitProposal": "Skicka in anpassat förslag",
+    "submitting": "Skickar...",
+    "cancel": "Avboka",
+    "customBid": {
+      "title": "Anpassad prestandabudgivning",
+      "budgetLabel": "Total budget ($)",
+      "budgetDescription": "Totalt belopp du vill spendera.",
+      "priorityBidLabel": "Multiplikator för prioriterade bud",
+      "priorityBidDescription": "Högre bud = högre visningsfrekvens.",
+      "minBudget": "Minsta budget är $10",
+      "minBid": "Lägsta bud är 0,01 USD"
+    },
+    "placeholders": {
+      "toolSlug": "mitt-häftiga-verktyg",
+      "landingUrl": "https://...",
+      "metricType": "Kostnad per förvärv",
+      "pacingType": "JÄMN  "
+    }
+  },
+  "submit": {
+    "button": "Skicka kampanjförfrågan",
+    "submitting": "Skickar…",
+    "error": "Sändning misslyckades. Försök igen.",
+    "successTitle": "Kampanj skickad!",
+    "budgetLabel": "Ange kampanjbudget ($ USD)",
+    "success": "Kampanjen har skapats framgångsrikt!",
+    "untitled": "Namnlös kampanj",
+    "missingTool": "Verktyg eller måladress krävs",
+    "loginRequiredTitle": "Autentisering krävs",
+    "loginRequiredDesc": "Logga in för att skicka ett verktyg. Dina framsteg kommer inte att sparas förrän du har autentiserat dig."
+  },
+  "sidebar": {
+    "pageViews": "Sidvisningar",
+    "pageViewsSub": "Månatlig sidtrafik"
+  },
+  "details": "Annonsdetaljer",
+  "duration": "Varaktighet (dagar)",
+  "selectDuration": "Välj varaktighet",
+  "days": "{count, plural, =1 {1 day} annan {# days}}",
+  "preferredPlacement": "Önskad placering",
+  "selectPlacement": "Välj placering",
+  "placements": {
+    "homepageBanner": "Hemsida banner",
+    "sidebar": "Sidofält",
+    "categoryPage": "Kategorisida",
+    "newsletter": "Nyhetsbrev",
+    "HOME": "Hemsida",
+    "CATEGORY": "Kategorisida",
+    "SEARCH": "Sökresultat",
+    "TOOL_DETAIL": "Verktygets detaljsida"
+  },
+  "targetAudience": "Målgrupp",
+  "targetAudiencePlaceholder": "Beskriv din målgrupp",
+  "validation": {
+    "required": "Detta fält är obligatoriskt",
+    "selectDuration": "Välj annonslängd",
+    "selectPlacement": "Vänligen välj annonsplacering",
+    "targetAudienceMin": "Målgrupp måste vara minst 10 tecken",
+    "toolNameRequired": "Verktygsnamn krävs",
+    "url": "Ogiltig URL",
+    "descriptionMin": "Beskrivningen måste bestå av minst 10 tecken",
+    "categoryRequired": "Välj en kategori",
+    "email": "Ogiltig e-postadress",
+    "messageMin": "Meddelandet måste bestå av minst 10 tecken"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "per klick",
+      "CPM": "per 1k visningar",
+      "CPV": "per visning",
+      "FLAT_RATE": "schablonbelopp",
+      "CPC_LABEL": "CPC",
+      "CPM_LABEL": "Kostnad per tusen",
+      "CPV_LABEL": "64230",
+      "FLAT_RATE_LABEL": "Fast pris"
+    },
+    "units": {
+      "clicks": "klickar",
+      "impressions": "intryck",
+      "views": "vyer",
+      "units": "enheter"
+    }
+  },
+  "selected": "Vald",
+  "summary": {
+    "selectedPlanLabel": "Valt annonspaket",
+    "totalPriceLabel": "Totalt fast pris",
+    "securityFooter": "Säker betalning • Omedelbar aktivering • Fullständig analys"
+  },
+  "charts": {
+    "cpc": "CPC",
+    "cpm": "CPM",
+    "noData": "Inga historiska data tillgängliga"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "AI-Modeller & Datasett | TopAICollection",
+    "description": "Oppdag og utforsk de nyeste AI-modellene, datasettene og arkitekturene for ditt neste prosjekt."
+  },
+  "title": "AI-Modellbibliotek",
+  "subtitle": "Utforsk den største samlingen av AI-modeller, finjusteringer og datasett.",
+  "comingSoon": "Kommer snart!",
+  "comingSoonMessage": "Vi samler for øyeblikket de beste AI-modellene. Kom tilbake snart.",
+  "searchPlaceholder": "Søk AI-modeller...",
+  "allProviders": "Alle leverandører",
+  "noResults": "Ingen AI-modeller funnet",
+  "noResultsHint": "Prøv å justere søke- eller filterkriteriene dine.",
+  "contextWindow": "Kontekstvindu",
+  "parameters": "Parametere",
+  "provider": "Leverandør",
+  "architecture": "Arkitektur",
+  "releaseDate": "Utgivelsesdato",
+  "costPer1kTokens": "Kostnad / 1K tokens",
+  "free": "Gratis / Åpen kildekode",
+  "tokens": "Tokens",
+  "viewWebsite": "Besøk nettsted",
+  "modelsCount": "{count} AI-modell",
+  "modelsCount_plural": "{count} AI-modeller",
+  "modelsGridTitle": "AI-modeller"
+}

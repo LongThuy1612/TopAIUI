@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Tarifs - TopAICollection",
+    "description": "Une tarification simple et transparente pour la recherche IA et l'écoute sociale."
+  },
+  "title": "Une tarification simple et transparente",
+  "subtitle": "Commencez gratuitement et évoluez-en même temps que vous. Aucune surprise.",
+  "plans": {
+    "free": {
+      "name": "Gratuit",
+      "banner": "Commencez gratuitement — aucune carte requise."
+    },
+    "professional": {
+      "name": "Professionnel"
+    },
+    "enterprise": {
+      "name": "Entreprise"
+    },
+    "free-monthly": {
+      "name": "Gratuit"
+    },
+    "free-yearly": {
+      "name": "Gratuit"
+    },
+    "professional-monthly": {
+      "name": "Professionnel"
+    },
+    "professional-yearly": {
+      "name": "Professionnel"
+    },
+    "enterprise-monthly": {
+      "name": "Entreprise"
+    },
+    "enterprise-yearly": {
+      "name": "Entreprise"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Le plus populaire"
+  },
+  "features": {
+    "websiteInsights": "Aperçu du site",
+    "socialListening": "Écoute sociale",
+    "prioritySupport": "Support prioritaire",
+    "advertising": "Publicité",
+    "premiumSupport": "Support premium"
+  },
+  "cta": {
+    "loading": "Traitement en cours...",
+    "upgrade": "Commencer"
+  },
+  "comparison": {
+    "title": "Comparaison de tous les plans",
+    "feature": "Fonctionnalité"
+  },
+  "billing": {
+    "monthly": "Mensuel",
+    "yearly": "Annuel",
+    "discount20": "Économisez 20 %",
+    "suffixYearly": "/année",
+    "suffixMonthly": "/mois",
+    "upgradeTitle": "Améliorez votre plan de recherche",
+    "upgradeDesc": "Bénéficiez d’analyses avancées, d’informations sur les concurrents et bien plus encore.",
+    "subscribe": "Abonnez-vous maintenant"
+  },
+  "billingMonthly": "Mensuel",
+  "billingYearly": "Annuel",
+  "billingBestValue": "Économisez 20 %",
+  "badgePopular": "Les plus populaires",
+  "billingPerMonth": "/ mois",
+  "billingPerYear": "/ année"
+}

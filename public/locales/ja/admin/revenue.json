@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "「収益と財務の健全性」",
+    "totalRevenue": "「総収益」",
+    "mrr": "「MRR（毎月定期）」",
+    "mrrDescription": "「アクティブなサブスクリプションに基づく推定経常収益」",
+    "breakdown": "「収益の内訳」",
+    "revenueGrowth": "「収益の増加 (30 日間)」",
+    "noData": "「収益データがありません」",
+    "noTrendsData": "「過去 30 日間の成長データは見つかりませんでした」",
+    "comingSoon": "「もうすぐ」"
+  }
+}

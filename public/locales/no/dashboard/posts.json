@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Innlegg og lenker",
+    "description": "Administrer dine gjesteinnlegg og lenkeplasseringer.",
+    "submitNewItem": "Send inn nytt element",
+    "submitNew": "Send inn ny",
+    "guestPost": "Gjesteinnlegg",
+    "linkInsert": "Lenkeplassering",
+    "type": "Skriv",
+    "targetUrl": "Mål-URL",
+    "targetUrlPlaceholder": "https://ditt-nettsted.no/...",
+    "anchorText": "Tittel / Ankertekst",
+    "anchorTextPlaceholder": "Artikkeltittel ELLER ankertekst for lenken",
+    "submitCredits": "Send inn (1 kreditt)",
+    "tabs": {
+      "guestPosts": "Gjesteinnlegg",
+      "linkInserts": "Lenkeplasseringer"
+    },
+    "table": {
+      "title": "Tittel",
+      "anchor": "Ankertekst",
+      "url": "URL",
+      "date": "Dato",
+      "status": "Status"
+    },
+    "empty": {
+      "noGuestTitle": "Ingen gjesteinnlegg",
+      "noGuestDesc": "Du har ennå ikke sendt inn noen gjesteinnlegg.",
+      "noGuestCta": "Send inn gjesteinnlegg",
+      "noLinkTitle": "Ingen lenkeplasseringer",
+      "noLinkDesc": "Du har ennå ikke sendt inn noen lenkeplasseringer.",
+      "noLinkCta": "Send inn lenkeplassering"
+    },
+    "subtitle": "Administrer gjesteinnleggene dine og koblingsinnsettinger."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Über uns - TopAICollection",
+    "description": "Erfahren Sie mehr über die Mission von TopAICollection, Ihnen dabei zu helfen, die besten KI-Tools und Websites für Ihre Bedürfnisse zu finden."
+  },
+  "badge": "Über uns",
+  "hero": {
+    "title": "Ihr Tor zur KI-Revolution",
+    "subtitle": "Unser Ziel ist es, den Zugang zu KI-Tools zu demokratisieren und allen dabei zu helfen, die Leistungsfähigkeit der künstlichen Intelligenz zu nutzen."
+  },
+  "stats": {
+    "tools": "KI-Tools",
+    "categories": "Kategorien",
+    "users": "Monatliche Benutzer",
+    "languages": "Sprachen"
+  },
+  "mission": {
+    "title": "Unsere Mission",
+    "paragraph1": "Wir bei TopAICollection glauben, dass KI für jeden zugänglich sein sollte. Unsere Plattform dient als umfassendes Verzeichnis der besten KI-Tools und Websites und macht es Benutzern leicht, künstliche Intelligenz in ihrer Arbeit und ihrem täglichen Leben zu entdecken und zu nutzen.",
+    "paragraph2": "Wir kuratieren und überprüfen jedes Tool in unserer Sammlung sorgfältig und stellen so sicher, dass unsere Benutzer nur Zugriff auf KI-Lösungen höchster Qualität haben. Unser Expertenteam bewertet Tools auf der Grundlage von Funktionalität, Benutzererfahrung, Preisgestaltung und realen Anwendungen.",
+    "paragraph3": "Ob Sie Entwickler, Designer, Vermarkter, Pädagoge oder Geschäftsinhaber sind, TopAICollection hilft Ihnen dabei, die perfekten KI-Tools zu finden, um Ihre Produktivität und Kreativität zu steigern."
+  },
+  "features": {
+    "title": "Warum sollten Sie sich für TopAICollection entscheiden?",
+    "global": {
+      "title": "Globale Reichweite",
+      "description": "Verfügbar in über 20 Sprachen, für Millionen von Benutzern weltweit"
+    },
+    "updated": {
+      "title": "Tägliche Updates",
+      "description": "Unsere Sammlung wird täglich mit den neuesten KI-Innovationen aktualisiert"
+    },
+    "community": {
+      "title": "Community-orientiert",
+      "description": "Benutzerrezensionen und -bewertungen helfen Ihnen, fundierte Entscheidungen zu treffen"
+    },
+    "verified": {
+      "title": "Verifizierte Tools",
+      "description": "Jedes Werkzeug wird von unserem Team sorgfältig geprüft und verifiziert"
+    }
+  },
+  "cta": {
+    "title": "Beginnen Sie noch heute Ihre KI-Reise",
+    "subtitle": "Entdecken Sie unsere Sammlung von KI-Tools oder reichen Sie Ihre eigenen ein",
+    "browse": "Durchsuchen Sie Tools",
+    "submit": "Senden Sie Ihr Werkzeug"
+  }
+}

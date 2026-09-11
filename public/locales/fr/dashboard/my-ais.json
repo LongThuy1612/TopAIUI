@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Pas encore d'Outils d'IA",
+      "description": "Soumettez votre outil d'IA pour être découvert par des millions d'utilisateurs.",
+      "cta": "Soumettre un Outil d'IA"
+    },
+    "columns": {
+      "tool": "Outil",
+      "status": "Statut",
+      "organic": "Trafic Organique",
+      "paid": "Trafic Payant",
+      "impressions": "Vues",
+      "actions": "Actes"
+    },
+    "statusTooltip": {
+      "pending": "En attente d'approbation par l'administrateur"
+    },
+    "submittedToast": "Votre outil a été soumis et est en attente d'examen.",
+    "warnings": {
+      "pendingView": "Cet outil est toujours en cours de révision et n'est pas encore visible publiquement.",
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer cet outil d'IA ? Cette action ne peut pas être annulée."
+    },
+    "submit": {
+      "tool": "Soumettre l'outil IA",
+      "update": "Mettre à jour l'IA",
+      "name": "Nom GPT",
+      "url": "URL ChatGPT",
+      "category": "Catégorie",
+      "gpt": {
+        "title": "Soumettez votre GPT",
+        "label": "Soumettre un tag GPT",
+        "description": "Soumettez votre GPT personnalisé pour être découvert par des milliers d'utilisateurs."
+      },
+      "description": "Description"
+    }
+  },
+  "submissions": {
+    "title": "Soumissions",
+    "deleteSuccess": "Soumission supprimée avec succès.",
+    "deleteError": "Échec de la suppression de la soumission.",
+    "noSubmissions": "Aucun message d'invité pour l'instant",
+    "untitled": "Soumission sans titre",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette soumission ? Cette action ne peut pas être annulée.",
+    "columns": {
+      "subject": "Sujet",
+      "status": "Statut",
+      "date": "Rendez-vous",
+      "actions": "Actes"
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- סקירה וניתוח של כלי בינה מלאכותית"
+  },
+  "errors": {
+    "notFound": "הכלי לא נמצא",
+    "notFoundDescription": "הכלי שאתה מחפש לא קיים.",
+    "serverError": "שגיאת שרת פנימית.",
+    "serverErrorDescription": "אירעה שגיאה בלתי צפויה בשרת. אנא נסה שוב מאוחר יותר."
+  },
+  "actions": {
+    "visit": "בקר באתר",
+    "save": "לְהַצִיל",
+    "saved": "נשמר",
+    "share": "לַחֲלוֹק",
+    "update": "עדכן את הכלי הזה",
+    "advertise": "פרסם את הכלי הזה",
+    "visitWebsite": "בקר באתר",
+    "readMore": "קרא עוד",
+    "readLess": "קרא פחות",
+    "openVideo": "פתח וידאו"
+  },
+  "cta": {
+    "visit": "פתח אתר",
+    "advertise": "פרסם את הכלי הזה",
+    "update": "עדכן את הכלי הזה"
+  },
+  "sidebar": {
+    "category": "קָטֵגוֹרִיָה",
+    "tags": "תגים"
+  },
+  "tabs": {
+    "socialListening": "הקשבה חברתית",
+    "alternatives": "אלטרנטיבות"
+  },
+  "similar": {
+    "title": "כלי AI דומים"
+  },
+  "stats": {
+    "monthlyVisits": "ביקורים חודשיים",
+    "growth": "צְמִיחָה",
+    "reviews": "ביקורות",
+    "averageTime": "זמן ממוצע באתר",
+    "pagesPerVisit": "דפים לכל ביקור",
+    "bounceRate": "שיעור יציאה מדף הכניסה",
+    "visits": "ביקורים",
+    "reviews_formatted": "{rating} ({count} {label})"
+  },
+  "sections": {
+    "overview": "סקירה כללית",
+    "reviews": "ביקורות",
+    "analytics": "אנליטיקס",
+    "embed": "לְשַׁבֵּץ",
+    "alternatives": "אלטרנטיבות",
+    "related": "כלים קשורים"
+  },
+  "details": {
+    "description": "מבוא לכלי:",
+    "monthlyTraffic": "תנועה חודשית:",
+    "socialMedia": "מדיה חברתית ודואר אלקטרוני:",
+    "company": "חֶברָה",
+    "categories": "קטגוריות",
+    "tags": "תגים"
+  },
+  "content": {
+    "whatIs": "מה זה",
+    "howToUse": "כיצד להשתמש",
+    "coreFeatures": "תכונות ליבה",
+    "useCases": "מקרי שימוש",
+    "pricingPlans": "תוכניות תמחור",
+    "faqs": "שאלות נפוצות",
+    "relatedTools": "כלים קשורים",
+    "productInfo": "מידע על המוצר",
+    "writtenBy": "נכתב וערוך על ידי",
+    "factCheckedBy": "נבדק עובדתית על ידי"
+  },
+  "analytics": {
+    "title": "אנליטיקה ותובנות תנועה",
+    "subtitle": "ניתוח של",
+    "latestTraffic": "התנועה האחרונה באתר",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "מקורות תנועה לאתר",
+    "topKeywords": "מילות מפתח מובילות",
+    "keyword": "מילת מפתח",
+    "traffic": "תְנוּעָה",
+    "trafficSubtitle": "לשיפור תעבורת האינטרנט",
+    "geoSubtitle": "מחוונים למנועי חיפוש",
+    "sourceSubtitle": "מחוונים למנועי חיפוש",
+    "keywordSubtitle": "מחוונים למנועי חיפוש",
+    "percentage": "אֲחוּזִים",
+    "source": "מָקוֹר",
+    "noChartData": "אין נתוני תרשים",
+    "noTrafficChartData": "אין נתוני תרשים תנועה",
+    "desktopVsMobile": "שולחן עבודה לעומת נייד",
+    "desktop": "שולחן עבודה",
+    "mobileWeb": "אינטרנט נייד",
+    "similarSites": "אתרים דומים",
+    "globalRank": "דירוג עולמי",
+    "founded": "נוסד",
+    "socialInfluence": "השפעת מדיה חברתית",
+    "views": "צפיות",
+    "mentions": "מזכירים",
+    "trendHistory": "היסטוריית מגמות",
+    "trendSubtitle": "תנועה, צפייה והצבעות על מגמות לאורך זמן",
+    "upvotes": "הצבעות בעד"
+  },
+  "embed": {
+    "title": "הטמע באתר שלך",
+    "description": "הוסף את הכלי הזה לאתר שלך עם ווידג'ט להטמעה יפהפה",
+    "preview": "תצוגה מקדימה",
+    "code": "הטמע קוד",
+    "copy": "העתק קוד",
+    "copied": "מוּעֲתָק!",
+    "badgeAlt": "תג TopAICollection",
+    "themes": {
+      "light": "בהיר",
+      "neutral": "נייטרלי",
+      "dark": "כהה"
+    }
+  },
+  "alternatives": {
+    "title": "אלטרנטיבות",
+    "description": "כלים דומים שאולי תאהב"
+  },
+  "pricing": {
+    "title": "תוכניות תמחור",
+    "subtitle": "בחר את התוכנית המתאימה לך ביותר",
+    "popular": "פּוֹפּוּלָרִי",
+    "getStarted": "התחל",
+    "disclaimer": "המחירים והתכונות עשויים להשתנות. בקר באתר הרשמי לקבלת המידע העדכני ביותר.",
+    "noPricingInfo": "אין מידע על תמחור זמין",
+    "free": "חינם",
+    "moreFeatures": "תכונות נוספות"
+  },
+  "charts": {
+    "trafficChart": "תרשים תנועה",
+    "comingSoon": "הצגת תרשים בקרוב"
+  },
+  "reviews": {
+    "title": "ביקורות",
+    "pointsScale": "מתוך 5",
+    "subtitle": "תראה מה הקהילה חושבת",
+    "writeTitle": "האם אתה ממליץ על הכלי הזה?",
+    "placeholder": "שתף את החוויה שלך עם הכלי הזה...",
+    "privacy": "מוגן על פרטיות",
+    "success": "הביקורת נשלחה בהצלחה!",
+    "submit": "פוסט ביקורת",
+    "loginToReview": "אנא התחבר כדי לשלוח ביקורת",
+    "loginLink": "התחבר",
+    "noReviews": "עדיין אין ביקורות. היה הראשון לסקור את הכלי הזה!",
+    "viewMore": "הצג את כל הביקורות",
+    "allReviewsTitle": "כל הביקורות עבור",
+    "reviewsPageTitle": "ביקורות",
+    "by": "מאת",
+    "verified": "מאומת",
+    "anonymous": "משתמש אנונימי",
+    "ratingLabel": "דירוג",
+    "commentLabel": "הערה",
+    "dateLabel": "תאריך",
+    "page": "עמוד",
+    "editReview": "ערוך ביקורת",
+    "deleteReview": "מחק ביקורת",
+    "deleteConfirm": "האם אתה בטוח שברצונך למחוק את הביקורת שלך?",
+    "editTitle": "ערוך את הביקורת שלך",
+    "updateSuccess": "הביקורת עודכנה בהצלחה!",
+    "deleteSuccess": "הביקורת נמחקה בהצלחה!",
+    "commentRequired": "אנא כתוב תגובה לביקורתך.",
+    "ratingRequired": "אנא בחר דירוג.",
+    "alreadyReviewed": "כבר בדקתם את הכלי הזה. השתמש בלחצן העריכה ✏️ בביקורת שלך כדי לעדכן אותה.",
+    "sort": {
+      "label": "מיין לפי",
+      "newest": "הכי חדש ראשון",
+      "oldest": "המבוגר ביותר ראשון",
+      "highest": "הדירוג הגבוה ביותר",
+      "lowest": "הדירוג הנמוך ביותר"
+    },
+    "save": "לְהַצִיל",
+    "cancel": "לְבַטֵל",
+    "close": "לִסְגוֹר",
+    "userLabel": "מִשׁתַמֵשׁ",
+    "unverify": "בטל את האימות",
+    "markVerified": "סמן מאומת",
+    "confirm": "לְאַשֵׁר",
+    "noReviewsFound": "לא נמצאו ביקורות עבור כלי זה.",
+    "deleteError": "המחיקה נכשלה.",
+    "updateError": "העדכון נכשל.",
+    "pagination": {
+      "showing": "מוצג",
+      "of": "מתוך",
+      "reviews": "ביקורות",
+      "prev": "קודם",
+      "next": "הבא"
+    },
+    "statusLabel": "סטטוס",
+    "actionsLabel": "פעולות"
+  },
+  "share": {
+    "title": "שתף את הכלי הזה"
+  },
+  "metrics": {
+    "monthlyVisits": "ביקורים חודשיים",
+    "growth": "צְמִיחָה"
+  },
+  "tags": "תגים",
+  "overview": "סקירה כללית",
+  "howToUse": "כיצד להשתמש",
+  "pricingPlans": "תוכניות תמחור",
+  "faqs": "שאלות נפוצות",
+  "geoChart": {
+    "noData": "אין נתונים גיאוגרפיים זמינים",
+    "loading": "טוען נתונים גיאוגרפיים..."
+  },
+  "introduction": "מָבוֹא",
+  "description": "תֵאוּר",
+  "coreFeatures": "תכונות ליבה",
+  "useCases": "מקרי שימוש",
+  "screenshots": "צילומי מסך",
+  "companyInfo": {
+    "companyName": "שם החברה",
+    "contactEmail": "אימייל ליצירת קשר"
+  },
+  "nav": {
+    "scrollLeft": "גלול שמאלה",
+    "scrollRight": "גלול ימינה",
+    "previous": "הקודם",
+    "next": "הבא",
+    "imageSlide": "תמונה {index}",
+    "videoSlide": "שקופית וידאו"
+  },
+  "badges": {
+    "verifiedListing": "רישום מאומת",
+    "freePlan": "תוכנית חינמית",
+    "paidPlans": "תוכניות בתשלום ומחיר"
+  },
+  "dummyReviews": {
+    "c1": "זהו כלי AI מדהים! הוא שינה לחל��טין את זרימת העבודה שלי.",
+    "c2": "תכונות טובות מאוד וקל לשימוש. מומלץ בחום.",
+    "c3": "ניסיתי חלופות רבות, אך זו הטובה ביותר בפער גדול.",
+    "c4": "תמורה מצוינת למחיר. התוכנית החינמית גם נדיבה מאוד.",
+    "c5": "UI נהדר ועיצוב אינטואיטיבי. לפעמים קצת איטי, אבל בסך הכל פנטסטי.",
+    "c6": "כלי חובה לכל איש מקצוע. חוסך לי שעות בכל שבוע.",
+    "c7": "פונקציונליות טובה אך דורשת עקומת למידה מסוימת."
+  }
+}

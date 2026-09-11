@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Belum Ada Alat AI",
+      "description": "Kirimkan alat AI Anda agar ditemukan oleh jutaan pengguna.",
+      "cta": "Kirim Alat AI"
+    },
+    "columns": {
+      "tool": "Alat",
+      "status": "Statusnya",
+      "organic": "Lalu Lintas Organik",
+      "paid": "Lalu Lintas Berbayar",
+      "impressions": "Impresi",
+      "actions": "Tindakan"
+    },
+    "statusTooltip": {
+      "pending": "Menunggu persetujuan admin"
+    },
+    "submittedToast": "Alat Anda telah dikirimkan dan sedang dalam peninjauan.",
+    "warnings": {
+      "pendingView": "Alat ini masih dalam peninjauan dan belum dapat dilihat publik.",
+      "confirmDelete": "Apakah Anda yakin ingin menghapus alat AI ini? Tindakan ini tidak dapat dibatalkan."
+    },
+    "submit": {
+      "tool": "Kirim Alat AI",
+      "update": "Perbarui AI",
+      "name": "Nama GPT",
+      "url": "URL ObrolanGPT",
+      "category": "Kategori",
+      "description": "Keterangan",
+      "gpt": {
+        "title": "Kirimkan GPT Anda",
+        "label": "Kirim GPT",
+        "description": "Kirimkan GPT khusus Anda agar ditemukan oleh ribuan pengguna."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Kiriman",
+    "deleteSuccess": "Pengiriman berhasil dihapus.",
+    "deleteError": "Gagal menghapus kiriman.",
+    "noSubmissions": "Belum ada kiriman tamu",
+    "untitled": "Pengiriman tanpa judul",
+    "confirmDelete": "Apakah Anda yakin ingin menghapus kiriman ini? Tindakan ini tidak dapat dibatalkan.",
+    "columns": {
+      "subject": "Subjek",
+      "status": "Statusnya",
+      "date": "Tanggal",
+      "actions": "Tindakan"
+    }
+  }
+}

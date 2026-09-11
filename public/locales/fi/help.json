@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Ohjekeskus - TopAICollection-tuki",
+    "description": "Hanki apua TopAICollectionin kanssa. Löydä vastauksia yleisiin kysymyksiin ja ota yhteyttä tukitiimiimme."
+  },
+  "title": "Ohjekeskus",
+  "subtitle": "Kuinka voimme auttaa sinua tänään?",
+  "sections": {
+    "faq": {
+      "title": "UKK",
+      "description": "Etsi vastauksia usein kysyttyihin kysymyksiin.",
+      "link": "Näytä UKK"
+    },
+    "contact": {
+      "title": "Ota yhteyttä tukeen",
+      "description": "Etkö löydä tarvitsemaasi? Ota yhteyttä meihin.",
+      "link": "Ota yhteyttä"
+    }
+  },
+  "commonTopics": {
+    "title": "Yleisiä aiheita",
+    "submitTool": "Kuinka lähetän tekoälytyökaluni?",
+    "advertising": "Miten mainonta toimii?",
+    "privacy": "Mikä on tietosuojakäytäntösi?",
+    "terms": "Mitkä ovat käyttöehtosi?"
+  }
+}

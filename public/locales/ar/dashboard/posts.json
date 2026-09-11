@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "المقالات والروابط",
+    "description": "إدارة مقالات الزوار وإدراج الروابط الخاصة بك.",
+    "submitNewItem": "تقديم عنصر جديد",
+    "submitNew": "تقديم جديد",
+    "guestPost": "مقال زائر",
+    "linkInsert": "إدراج رابط",
+    "type": "النوع",
+    "targetUrl": "الرابط المستهدف",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "العنوان / نص الرابط",
+    "anchorTextPlaceholder": "عنوان المقال أو نص الرابط",
+    "submitCredits": "تقديم (1 رصيد)",
+    "tabs": {
+      "guestPosts": "مقالات الزوار",
+      "linkInserts": "إدراج الروابط"
+    },
+    "table": {
+      "title": "العنوان",
+      "anchor": "نص الرابط",
+      "url": "الرابط",
+      "status": "الحالة",
+      "date": "التاريخ"
+    },
+    "empty": {
+      "noGuestTitle": "لا توجد مقالات زوار",
+      "noGuestDesc": "لم تقم بتقديم أي مقالات زوار بعد.",
+      "noGuestCta": "تقديم مقال زائر",
+      "noLinkTitle": "لا توجد روابط مدرجة",
+      "noLinkDesc": "لم تقم بتقديم أي طلبات إدراج روابط بعد.",
+      "noLinkCta": "تقديم إدراج رابط"
+    },
+    "subtitle": "إدارة مشاركات الضيوف وإدراج الروابط."
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Ascolto Social - Monitorare tendenze AI | TopAICollection",
+    "description": "Monitora le tendenze AI sulle piattaforme social.",
+    "detailTitle": "{name} Ascolto Social — TopAI",
+    "detailDescription": "Analisi ascolto social per {name}.",
+    "notFoundTitle": "Strumento non trovato - Ascolto sociale"
+  },
+  "title": "Ascolto Social",
+  "subtitle": "Monitora le performance video degli strumenti AI. Twitter",
+  "leaderboardTitle": "Classifica Social",
+  "leaderboardSubtitle": "Monitoraggio istantaneo. Twitter",
+  "table": {
+    "aiTool": "Strumento AI",
+    "introduce": "Introduzione",
+    "videoCount": "Video",
+    "creatorsCount": "Creator",
+    "monthlyTraffic": "Traffico mensile",
+    "avgViews": "Media viste",
+    "avgInteractions": "Media interaz.",
+    "totalViews": "Viste totali",
+    "totalInteractions": "Interaz. totali",
+    "emptyState": "Nessun dato trovato",
+    "pageIndicator": "Pagina {page} di {lastPage}",
+    "updatedAt": "Data di aggiornamento",
+    "totalEngagement": "Coinvolgimento totale"
+  },
+  "search": {
+    "placeholder": "Inserisci nome o dominio"
+  },
+  "detail": {
+    "viewTool": "Visualizza dettagli dello strumento",
+    "tabs": {
+      "socialListening": "Ascolto Social"
+    },
+    "stats": {
+      "monthlyVisits": "Visite mensili",
+      "growth": "Crescita",
+      "growthRate": "Tasso di crescita",
+      "socialVideos": "Video social",
+      "newLastWeek": "Nuovi questa settimana"
+    },
+    "metrics": {
+      "avgViews": "Media viste",
+      "totalVideos": "Total video",
+      "totalCreators": "Total creator",
+      "totalViews": "Viste / Media",
+      "totalLikes": "Like / Media",
+      "totalComments": "Comm. / Media",
+      "totalShares": "Condivisioni totali",
+      "totalCollects": "Collezioni totali",
+      "totalQuotes": "Citazioni totali",
+      "totalReposts": "Repost totali"
+    },
+    "platforms": {
+      "all": "Tutti"
+    },
+    "feed": {
+      "unlockCta": "Sblocca per vedere di più",
+      "unlockDesc": "Accedi per vedere le analisi video complete",
+      "viewNow": "Vedi ora →",
+      "sortBy": "Ordina per",
+      "sortViews": "Viste",
+      "sortLikes": "Like",
+      "sortDate": "Data",
+      "loadMore": "Carica altro",
+      "searchPlaceholder": "Cerca per titolo o creatore...",
+      "emptyState": "Nessun post trovato. Qui appaiono solo i post video.",
+      "untitledPost": "Post senza titolo",
+      "metrics": {
+        "views": "Visualizzazioni",
+        "likes": "Mi piace",
+        "retweets": "Retweet",
+        "shares": "Condivisioni",
+        "replies": "Risposte",
+        "comments": "Commenti",
+        "quotes": "Citazioni",
+        "saves": "Salvataggi",
+        "collects": "Raccolte",
+        "upvotes": "Voti favorevoli",
+        "follows": "Seguiti"
+      },
+      "sortComments": "Commenti",
+      "sortShares": "Azioni",
+      "title": "Alimentazione sociale"
+    },
+    "traffic": {
+      "bounceRate": "Frequenza di rimbalzo",
+      "pagesPerVisit": "Pagine / Visita",
+      "avgVisitDuration": "Durata media visita",
+      "globalRanking": "Classifica globale",
+      "category": "Categoria",
+      "categoryRanking": "Classifica categoria",
+      "deviceSplit": "Desktop vs. Mobile",
+      "desktop": "Tavolo",
+      "mobile": "Mobilità",
+      "trafficSources": "Fonti di traffico",
+      "topRegions": "Paesi principali",
+      "processingMsg": "Dati di traffico in elaborazione. Ricontrolla più tardi.",
+      "monthlyTrafficTrend": "Andamento mensile del traffico",
+      "monthlyTrafficTrendDesc": "Visite storiche globali negli ultimi 30 giorni",
+      "sourceWebsiteInsight": "Fonte: Website Insight Global"
+    },
+    "pricing": {
+      "notDocumented": "I piani tariffari non sono ancora documentati.",
+      "checkWebsite": "Controlla il sito ufficiale",
+      "visitWebsite": "Visita il sito web",
+      "month": "mese"
+    },
+    "lastUpdated": "Ultimo aggiornamento",
+    "influencers": {
+      "title": "I migliori influencer",
+      "name": "Creatore",
+      "platform": "Piattaforma",
+      "videos": "Video",
+      "reach": "Est. Portata"
+    },
+    "filterInteraction": "Interazione filtro"
+  },
+  "platforms": {
+    "all": "Tutte le piattaforme"
+  },
+  "monitors": {
+    "title": "I tuoi monitor",
+    "subtitle": "Tieni traccia di parole chiave specifiche su piattaforme social",
+    "inputPlaceholder": "Inserisci la parola chiave (ad esempio ChatGPT, Midjourney)",
+    "addButton": "Inizia il monitoraggio",
+    "emptyTitle": "Nessun monitor attivo",
+    "emptyDesc": "Aggiungi una parola chiave qui sopra per iniziare a monitorare le menzioni e il sentiment sui social.",
+    "keyword": "Parola chiave",
+    "platform": "Piattaforma",
+    "status": "Stato",
+    "lastActive": "Ultimo attivo",
+    "addSuccess": "Monitor aggiunto con successo!",
+    "addError": "Impossibile aggiungere il monitor",
+    "statusTracking": "Tracciamento"
+  },
+  "socialListeningTitle": "Classifica dell'ascolto sociale",
+  "pagination": {
+    "prev": "Prec",
+    "next": "Prossimo",
+    "page": "Pagina"
+  },
+  "nav": {
+    "overview": "Panoramica",
+    "social": "Sociale",
+    "traffic": "Traffico",
+    "pricing": "Prezzi"
+  },
+  "locked": {
+    "quotaTitle": "Funzionalità bloccata",
+    "quotaDesc": "Hai raggiunto la tua quota di ascolto social. Esegui l'upgrade per sbloccare ulteriori approfondimenti.",
+    "upgradeBtn": "Esegui l'upgrade ora",
+    "overlayTitle": "Funzionalità Premium",
+    "overlayDesc": "Questa funzionalità richiede un abbonamento premium attivo.",
+    "unlockBtn": "Sblocca Premium"
+  }
+}

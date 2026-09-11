@@ -1,0 +1,118 @@
+{
+  "title": "更新您的人工智能工具",
+  "description": "保持您的 AI 工具信息最新。更新描述、功能、定价或任何其他详细信息以确保准确性。",
+  "hero": {
+    "title": "TopAICollection 上的您的 AI",
+    "subtitle": "TopAI 可以帮助您接触全球数百万人工智能用户和您的潜在客户。"
+  },
+  "form": {
+    "toolLabel": "工具",
+    "toolHint": "PS：如果找不到工具，请先提交。",
+    "toolPlaceholder": "搜索您的工具..."
+  },
+  "pricing": {
+    "title": "更新定价",
+    "price": "$49",
+    "period": "一度",
+    "description": "我们将在付款后24小时内为您更新。"
+  },
+  "updates": {
+    "title": "支持的更新类型",
+    "types": [
+      {
+        "label": "工具名称",
+        "description": "更新工具的显示名称"
+      },
+      {
+        "label": "描述",
+        "description": "修改工具的简短和详细描述"
+      },
+      {
+        "label": "类别",
+        "description": "更改或添加新类别"
+      },
+      {
+        "label": "功能列表",
+        "description": "更新您的工具的功能亮点"
+      },
+      {
+        "label": "使用案例",
+        "description": "添加或更新用例示例"
+      },
+      {
+        "label": "定价信息",
+        "description": "更新定价计划和等级"
+      },
+      {
+        "label": "常见问题解答",
+        "description": "添加或修改常见问题"
+      },
+      {
+        "label": "网址和链接",
+        "description": "更新网站、演示或社交链接"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "需要知道",
+    "items": [
+      "付款确认后 24 小时内处理更新。",
+      "您可以在单个请求中更新多个字段。",
+      "我们的团队将审核并发布您的更改。",
+      "如果更新需要澄清，我们将通过电子邮件与您联系。",
+      "屏幕截图/媒体更新可能还需要 24 小时。"
+    ]
+  },
+  "faq": {
+    "title": "常见问题解答 - 更新 AI",
+    "items": [
+      {
+        "question": "更新需要多长时间？",
+        "answer": "更新通常会在付款后 24 小时内处理。复杂的变更可能需要额外的审查期。"
+      },
+      {
+        "question": "我可以更新什么？",
+        "answer": "您可以更新工具的名称、描述、类别、功能、用例、定价、常见问题解答和 URL。"
+      },
+      {
+        "question": "我可以一次更新多个内容吗？",
+        "answer": "是的！您可以在一次提交中请求多项更新。所有变更均包含在 49 美元的费用中。"
+      },
+      {
+        "question": "更新后如果需要修改怎么办？",
+        "answer": "与您原始更新请求相关的小幅更正将在 7 天内免费处理。"
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "为什么要更新您的工具？",
+    "reasons": [
+      "保持信息准确和最新",
+      "提高搜索排名和可见度",
+      "更新定价和功能更改",
+      "添加新的屏幕截图或演示",
+      "更正任何过时的信息",
+      "增强您的工具描述"
+    ]
+  },
+  "meta": {
+    "title": "更新您的 AI 工具 - TopAICollection",
+    "description": "保持您的 AI 工具信息最新。更新描述、功能、定价或任何其他详细信息以确保准确性。"
+  },
+  "team": "TopAI采集团队 TopAICollection",
+  "validation": {
+    "required": "此字段是必需的",
+    "selectTool": "请选择要更新的工具",
+    "detailsTooShort": "更改详细信息必须至少 10 个字符",
+    "toolNameRequired": "工具名称为必填项",
+    "url": "无效网址",
+    "descriptionMin": "描述必须至少 10 个字符",
+    "categoryRequired": "请选择一个类别",
+    "email": "电子邮件地址无效",
+    "messageMin": "消息长度必须至少为 10 个字符"
+  },
+  "sidebar": {
+    "updatedCount": "工具已更新",
+    "updatedCountSub": "本月"
+  }
+}

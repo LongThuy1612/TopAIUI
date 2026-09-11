@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Modelos de IA e Conjuntos de Dados | TopAICollection",
+    "description": "Descubra e explore os últimos modelos de IA, conjuntos de dados e arquiteturas para o seu próximo projeto."
+  },
+  "title": "Biblioteca de Modelos de IA",
+  "subtitle": "Explore a maior coleção de modelos de IA, ajustes finos e conjuntos de dados.",
+  "comingSoon": "Em Breve!",
+  "comingSoonMessage": "Estamos a selecionar os melhores modelos de IA. Volte em breve.",
+  "searchPlaceholder": "Pesquisar modelos de IA...",
+  "allProviders": "Todos os fornecedores",
+  "noResults": "Nenhum modelo de IA encontrado",
+  "noResultsHint": "Tente ajustar seus critérios de pesquisa ou filtro.",
+  "contextWindow": "Janela de Contexto",
+  "parameters": "Parâmetros",
+  "provider": "Fornecedor",
+  "architecture": "Arquitetura",
+  "releaseDate": "Data de Lançamento",
+  "costPer1kTokens": "Custo / 1K tokens",
+  "free": "Gratuito / Código Aberto",
+  "tokens": "fichas",
+  "viewWebsite": "Visitar o Site",
+  "modelsCount": "{count} modelo de IA",
+  "modelsCount_plural": "{count} modelos de IA",
+  "modelsGridTitle": "Modelos de IA"
+}

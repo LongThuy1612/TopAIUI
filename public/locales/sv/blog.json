@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "AI-blogg och nyheter - TopAICollection",
+    "description": "Håll dig uppdaterad med de senaste AI-nyheterna, handledningarna, recensionerna och insikterna från världen av artificiell intelligens."
+  },
+  "badge": "Blogg",
+  "title": "AI-blogg och nyheter",
+  "subtitle": "Håll dig informerad om de senaste trenderna, handledningarna och insikterna från AI-världen",
+  "search": {
+    "placeholder": "Sök artiklar..."
+  },
+  "categories": {
+    "title": "Kategorier",
+    "all": "Alla artiklar",
+    "news": "AI Nyheter",
+    "tutorials": "Handledningar",
+    "reviews": "Verktygsrecensioner",
+    "industry": "Branschinsikter",
+    "guides": "Hur-man-guider"
+  },
+  "newsletter": {
+    "title": "Håll dig uppdaterad",
+    "subtitle": "Få de senaste AI-nyheterna levererade till din inkorg",
+    "placeholder": "Ange din e-postadress",
+    "button": "Prenumerera"
+  },
+  "article": {
+    "readTime": "{minutes} min läst",
+    "published": "Publicerad den {date}",
+    "writtenBy": "Skriven & redigerad av:",
+    "factCheckedBy": "Faktagranskad av:"
+  },
+  "pagination": {
+    "next": "Nästa",
+    "page": "Sida {page} av {total}"
+  },
+  "relatedTools": "Relaterade verktyg",
+  "backToBlog": "Tillbaka till bloggen",
+  "errors": {
+    "notFound": "Inlägg hittades inte"
+  },
+  "sort": {
+    "latest": "Senaste",
+    "oldest": "Äldsta",
+    "popular": "Populära"
+  },
+  "filter": {
+    "allAuthors": "Alla författare",
+    "sortBy": "Sortera efter"
+  },
+  "relatedPosts": "Relaterade inlägg",
+  "faqs": "Vanliga frågor"
+}

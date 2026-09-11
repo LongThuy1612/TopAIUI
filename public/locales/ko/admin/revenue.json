@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "수익 및 재무 건전성",
+    "totalRevenue": "총 수익",
+    "mrr": "MRR(매월 반복)",
+    "mrrDescription": "활성 구독을 기반으로 한 예상 반복 수익",
+    "breakdown": "수익 내역",
+    "revenueGrowth": "수익 성장(30일)",
+    "noData": "'수익 데이터가 없습니다.'",
+    "noTrendsData": "지난 30일 동안의 성장 데이터가 없습니다.",
+    "comingSoon": "곧"
+  }
+}

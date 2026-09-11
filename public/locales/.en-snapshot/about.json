@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "About Us - TopAICollection",
+    "description": "Learn about TopAICollection's mission to help you discover the best AI tools and websites for your needs."
+  },
+  "badge": "About Us",
+  "hero": {
+    "title": "Your Gateway to the AI Revolution",
+    "subtitle": "We're on a mission to democratize access to AI tools and help everyone harness the power of artificial intelligence."
+  },
+  "stats": {
+    "tools": "AI Tools",
+    "categories": "Categories",
+    "users": "Monthly Users",
+    "languages": "Languages"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "paragraph1": "At TopAICollection, we believe that AI should be accessible to everyone. Our platform serves as a comprehensive directory of the best AI tools and websites, making it easy for users to discover and leverage artificial intelligence in their work and daily lives.",
+    "paragraph2": "We carefully curate and review each tool in our collection, ensuring that our users have access to only the highest quality AI solutions. Our team of experts evaluates tools based on functionality, user experience, pricing, and real-world applications.",
+    "paragraph3": "Whether you're a developer, designer, marketer, educator, or business owner, TopAICollection helps you find the perfect AI tools to enhance your productivity and creativity."
+  },
+  "features": {
+    "title": "Why Choose TopAICollection",
+    "global": {
+      "title": "Global Reach",
+      "description": "Available in 20+ languages, serving millions of users worldwide"
+    },
+    "updated": {
+      "title": "Daily Updates",
+      "description": "Our collection is updated daily with the latest AI innovations"
+    },
+    "community": {
+      "title": "Community Driven",
+      "description": "User reviews and ratings help you make informed decisions"
+    },
+    "verified": {
+      "title": "Verified Tools",
+      "description": "Every tool is carefully reviewed and verified by our team"
+    }
+  },
+  "cta": {
+    "title": "Start Your AI Journey Today",
+    "subtitle": "Explore our collection of AI tools or submit your own",
+    "browse": "Browse Tools",
+    "submit": "Submit Your Tool"
+  }
+}

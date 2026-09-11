@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Pemantauan Sosial - Pantau Tren AI | TopAICollection",
+    "description": "Pantau tren AI di platform media sosial.",
+    "detailTitle": "{name} Pemantauan Sosial — TopAI",
+    "detailDescription": "Analitik pemantauan sosial untuk {name}.",
+    "notFoundTitle": "Alat Tidak Ditemukan - Mendengarkan Sosial"
+  },
+  "title": "Pemantauan Sosial",
+  "subtitle": "Lacak performa video alat AI. Twitter",
+  "leaderboardTitle": "Papan Peringkat",
+  "leaderboardSubtitle": "Pelacakan instan. Twitter",
+  "table": {
+    "aiTool": "Alat AI",
+    "introduce": "Pengenalan",
+    "videoCount": "Video",
+    "creatorsCount": "Kreator",
+    "monthlyTraffic": "Lalu lintas bulanan",
+    "avgViews": "Rata-rata tayangan",
+    "avgInteractions": "Rata-rata interaksi",
+    "totalViews": "Total tayangan",
+    "totalInteractions": "Total interaksi",
+    "emptyState": "Tidak ada data",
+    "pageIndicator": "Halaman {page} dari {lastPage}",
+    "updatedAt": "Tanggal cập nhật",
+    "totalEngagement": "Keterlibatan Total"
+  },
+  "search": {
+    "placeholder": "Masukkan nama alat atau domain"
+  },
+  "detail": {
+    "viewTool": "Lihat detail alat",
+    "tabs": {
+      "socialListening": "Pemantauan Sosial"
+    },
+    "stats": {
+      "monthlyVisits": "Kunjungan bulanan",
+      "growth": "Pertumbuhan",
+      "growthRate": "Tingkat pertumbuhan",
+      "socialVideos": "Video sosial",
+      "newLastWeek": "Baru minggu ini"
+    },
+    "metrics": {
+      "avgViews": "Rata-rata tayangan",
+      "totalVideos": "Total video",
+      "totalCreators": "Total kreator",
+      "totalViews": "Total / Rata-rata",
+      "totalLikes": "Suka / Rata-rata",
+      "totalComments": "Komentar / Rata-rata",
+      "totalShares": "Total berbagi",
+      "totalCollects": "Total koleksi",
+      "totalQuotes": "Total kutipan",
+      "totalReposts": "Total repost"
+    },
+    "platforms": {
+      "all": "Semua"
+    },
+    "feed": {
+      "unlockCta": "Buka kunci untuk melihat lebih",
+      "unlockDesc": "Masuk untuk melihat analitik video lengkap",
+      "viewNow": "Lihat sekarang →",
+      "sortBy": "Urutkan berdasarkan",
+      "sortViews": "Tayangan",
+      "sortLikes": "Suka",
+      "sortDate": "Tanggal",
+      "loadMore": "Muat lebih banyak",
+      "searchPlaceholder": "Cari berdasarkan judul atau kreator...",
+      "emptyState": "Tidak ada kiriman. Hanya kiriman video yang muncul di sini.",
+      "untitledPost": "Kiriman tanpa judul",
+      "metrics": {
+        "views": "Tontonan",
+        "likes": "Suka",
+        "retweets": "Retweet",
+        "shares": "Penyebaran",
+        "replies": "Balasan",
+        "comments": "Komentar",
+        "quotes": "Kutipan",
+        "saves": "Tersimpan",
+        "collects": "Koleksi",
+        "upvotes": "Upvote",
+        "follows": "Pengikut"
+      },
+      "sortComments": "Komentar",
+      "sortShares": "Bagikan",
+      "title": "Umpan Sosial"
+    },
+    "traffic": {
+      "bounceRate": "Tingkat pentalan",
+      "pagesPerVisit": "Halaman / Kunjungan",
+      "avgVisitDuration": "Durasi kunjungan rata-rata",
+      "globalRanking": "Peringkat global",
+      "category": "Kategori",
+      "categoryRanking": "Peringkat kategori",
+      "deviceSplit": "Desktop vs. Mobile",
+      "mobile": "Seluler",
+      "trafficSources": "Sumber lalu lintas",
+      "topRegions": "Negara teratas",
+      "processingMsg": "Data trafik sedang diproses. Periksa kembali nanti.",
+      "monthlyTrafficTrend": "Tren Lalu Lintas Bulanan",
+      "monthlyTrafficTrendDesc": "Kunjungan bersejarah global selama 30 hari terakhir",
+      "sourceWebsiteInsight": "Sumber: Wawasan Situs Web Global",
+      "desktop": "Desktop"
+    },
+    "pricing": {
+      "notDocumented": "Paket harga belum terdokumentasi.",
+      "checkWebsite": "Periksa situs resmi",
+      "visitWebsite": "Kunjungi situs web",
+      "month": "bulan"
+    },
+    "lastUpdated": "Terakhir diperbarui",
+    "influencers": {
+      "title": "Influencer Teratas",
+      "name": "Pencipta",
+      "videos": "Video",
+      "reach": "Perkiraan. Mencapai",
+      "platform": "Platform"
+    },
+    "filterInteraction": "Filter Interaksi"
+  },
+  "platforms": {
+    "all": "Semua Platform"
+  },
+  "monitors": {
+    "title": "Monitor Anda",
+    "subtitle": "Lacak kata kunci tertentu di seluruh platform sosial",
+    "inputPlaceholder": "Masukkan kata kunci (misalnya ChatGPT, Midjourney)",
+    "addButton": "Mulai Pelacakan",
+    "emptyTitle": "Tidak ada monitor aktif",
+    "emptyDesc": "Tambahkan kata kunci di atas untuk mulai memantau sebutan dan sentimen sosial.",
+    "keyword": "Kata kunci",
+    "status": "Statusnya",
+    "lastActive": "Terakhir Aktif",
+    "addSuccess": "Monitor berhasil ditambahkan!",
+    "addError": "Gagal menambahkan monitor",
+    "statusTracking": "Pelacakan",
+    "platform": "Platform"
+  },
+  "socialListeningTitle": "Papan Peringkat Mendengarkan Sosial",
+  "pagination": {
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "page": "Halaman"
+  },
+  "nav": {
+    "overview": "Ikhtisar",
+    "social": "Sosial",
+    "traffic": "Lalu Lintas",
+    "pricing": "Harga"
+  },
+  "locked": {
+    "quotaTitle": "Fitur Terkunci",
+    "quotaDesc": "Anda telah mencapai kuota social listening Anda. Tingkatkan paket untuk membuka lebih banyak wawasan.",
+    "upgradeBtn": "Tingkatkan Sekarang",
+    "overlayTitle": "Fitur Premium",
+    "overlayDesc": "Fitur ini memerlukan langganan premium yang aktif.",
+    "unlockBtn": "Buka Premium"
+  }
+}

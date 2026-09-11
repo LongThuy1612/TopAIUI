@@ -1,0 +1,14 @@
+{
+  "title": "Zoekresultaten",
+  "resultsFor": "Resultaten voor \"{query}\"",
+  "typeFilters": "Typen",
+  "categories": "Categorieën",
+  "noResults": "Geen resultaten gevonden",
+  "tryAgain": "Probeer een andere zoekterm",
+  "placeholder": "AI-tools zoeken...",
+  "button": "Zoekopdracht",
+  "loading": "Zoeken...",
+  "clearFilters": "Wis filters",
+  "categoryLabel": "Categorie",
+  "filters": "Filters"
+}

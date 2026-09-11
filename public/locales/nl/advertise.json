@@ -1,0 +1,294 @@
+{
+  "title": "Maak reclame voor uw AI-tool",
+  "description": "Krijg premium plaatsing en maximale zichtbaarheid voor uw AI-tool. Bereik duizenden potentiële gebruikers die actief op zoek zijn naar AI-oplossingen.",
+  "hero": {
+    "title": "Uw AI's op TopAICollection",
+    "subtitle": "TopAI kan u helpen miljoenen AI-gebruikers en uw potentiële klanten wereldwijd te bereiken.",
+    "stats": {
+      "pageViews": "5M+",
+      "pageViewsLabel": "Paginaweergaven",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Maandelijkse bezoeken",
+      "subscribers": "100K+",
+      "subscribersLabel": "Abonnees",
+      "desktopUsers": "55%",
+      "desktopUsersLabel": "Desktopgebruikers",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Geregistreerde gebruikers",
+      "avgTimeOnSite": "2,5 m",
+      "avgTimeOnSiteLabel": "Gem. tijd op site"
+    },
+    "benefits": [
+      "Toplijst met AI-hulpmiddelen",
+      "Dofollow-backlink",
+      "Meertalige inleiding",
+      "Lijst en verkeer voor altijd",
+      "Waarde voor oprichters en startups"
+    ]
+  },
+  "tabs": {
+    "submit": "AI indienen",
+    "submitDesc": "Dien uw AI-tools in, genereer verkeer",
+    "advertise": "Adverteer AI",
+    "advertiseDesc": "Pay-per-click, aanbevolen promoties, geautomatiseerde advertentieplaatsing",
+    "guestPost": "Gastberichten / Linkinvoegsel",
+    "guestPostDesc": "Gastposts/linkinvoeging op TopAI",
+    "updateAi": "AI bijwerken",
+    "updateAiDesc": "Update de informatie van uw gereedschap",
+    "submitGpt": "GPT indienen",
+    "submitGptDesc": "Dien uw GPT in zodat meer mensen deze kunnen gebruiken",
+    "business": "Meer zaken",
+    "businessDesc": "Zoals: linkuitwisselingen, Twitter-berichten, video's, etc."
+  },
+  "form": {
+    "toolLabel": "Hulpmiddel",
+    "toolHint": "PS: Als de tool niet kan worden gevonden, dien deze dan eerst in.",
+    "toolPlaceholder": "Zoek uw gereedschap...",
+    "adLandingLink": "Landingslink voor advertentie",
+    "toolLandingPlaceholder": "/hulpmiddel/...",
+    "websitePlaceholder": "https://example.com",
+    "urlTitle": "Voer een geldige URL in die begint met http:// of https://"
+  },
+  "clicks": {
+    "title": "Selecteer het aantal klikken dat u nodig heeft",
+    "numberOfClicks": "Aantal klikken",
+    "total": "Totaal",
+    "payButton": "Betalen",
+    "submitButton": "Indienen"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Adverteer een toolvoorbeeld",
+    "description": "We automatiseren uw advertentieweergave volledig op basis van onze algoritmen om ervoor te zorgen dat u niet minder dan het aantal gekochte klikken kunt krijgen, maar we kunnen de kwaliteit van de klikken niet garanderen.",
+    "note": "Geef prioriteit aan het verbruiken van advertentiekosten om snel websiteklikken en vertoningen te genereren. U kunt: de advertenties pauzeren of de advertenties starten.",
+    "typesTitle": "Hier volgen enkele soorten advertenties:",
+    "mostFrequently": "Meest frequent",
+    "mostEffective": "Meest effectief",
+    "standardDesc": "Verschijnt op de startpagina, vermeldingen en categoriepagina's.",
+    "effectiveDesc": "Verschijnt op de pagina's van uw concurrenten en op de categoriepagina's waartoe u behoort.",
+    "featured": "Uitgelicht*",
+    "featuredDesc1": "Uitgelichte locatie op Home, Nieuwste AI, Meest gebruikt, Meest opgeslagen, Pagina met zoekresultaten, Pagina met categoriedetails, enz.",
+    "featuredDesc2": "Bovenaan de meeste pagina's staat een sponsorpositie.",
+    "standard": "Standaard",
+    "targeted": "Gericht"
+  },
+  "faq": {
+    "title": "Veelgestelde vragen - adverteren",
+    "items": [
+      {
+        "question": "Hoe werkt adverteren?",
+        "answer": "We tonen uw tool op premiumposities op ons platform. U betaalt per klik en wij zorgen ervoor dat uw advertentie het aantal klikken krijgt dat u heeft gekocht."
+      },
+      {
+        "question": "Kan ik meerdere keren klikken kopen?",
+        "answer": "Ja, u kunt op elk moment extra klikpakketten aanschaffen om de zichtbaarheid van uw tool te vergroten."
+      },
+      {
+        "question": "Kan ik mijn advertenties onderbreken?",
+        "answer": "Ja, u kunt uw advertentiecampagnes op elk gewenst moment vanaf uw dashboard onderbreken en hervatten."
+      },
+      {
+        "question": "Wat voor analyses krijg ik?",
+        "answer": "U ontvangt gedetailleerde gegevens over organische klikken, betaalde klikken, totaal aantal klikken, vertoningen en opgeslagen klikken."
+      }
+    ]
+  },
+  "whyAdvertise": "Waarom adverteren?",
+  "customPackage": {
+    "title": "Maatwerkpakket nodig?",
+    "description": "Neem contact met ons op voor op maat gemaakte advertentieoplossingen die passen bij uw specifieke doelen.",
+    "contactSales": "Neem contact op met Verkoop",
+    "estimatedClicks": "'Geschatte klikken'",
+    "estimatedImpressions": "'Geschatte vertoningen'",
+    "estimatedViews": "Geschatte weergaven",
+    "estimatedUnits": "Geschatte eenheden",
+    "toolSlug": "Gereedschapsslak",
+    "landingUrl": "Landings-URL",
+    "campaignParameters": "Campagneparameters",
+    "metricType": "Metrisch type",
+    "pacingType": "Tempotype",
+    "basePrice": "Basisprijs",
+    "totalBudget": "Totaal budget",
+    "startDate": "Startdatum",
+    "endDate": "Einddatum",
+    "priorityBid": "Prioriteitsbod",
+    "estimation": "Schatting",
+    "cancel": "Annuleren",
+    "submitting": "Verzenden",
+    "submitProposal": "Voorstel indienen"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Premium plaatsing",
+      "description": "Uitgelichte plekken op de startpagina en categoriepagina's"
+    },
+    "targetedAudience": {
+      "title": "Gericht publiek",
+      "description": "Bereik gebruikers die actief op zoek zijn naar AI-tools"
+    },
+    "analytics": {
+      "title": "Analyse",
+      "description": "Houd de prestaties bij met gedetailleerde inzichten"
+    }
+  },
+  "campaigns": {
+    "previous": "Vorig",
+    "pageOf": "Pagina {page} van {total}",
+    "choosePlan": "Kies uw abonnement",
+    "choosePlanDesc": "Selecteer hieronder een plan om uw campagne te verlengen of te upgraden.",
+    "currentPlan": "Huidig ​​abonnement",
+    "selectAgain": "Selecteer Opnieuw",
+    "selectPlan": "Selecteer Abonnement"
+  },
+  "transactions": {
+    "noDescription": "U heeft nog geen advertentietegoeden gekocht. Vul uw saldo aan om campagnes te starten."
+  },
+  "meta": {
+    "title": "Adverteer AI-tool - TopAICollection",
+    "description": "Maak reclame voor uw AI-tool bij miljoenen AI-enthousiastelingen."
+  },
+  "plans": {
+    "title": "Advertentieplannen",
+    "subtitle": "Vergroot uw bereik",
+    "clickTarget": "Klikdoel",
+    "toolRequired": "⚠ Voer hierboven uw toolnaam in voordat u verzendt.",
+    "empty": "Er zijn momenteel geen advertentiepakketten beschikbaar. Kom later terug.",
+    "customPlanConfig": "Aangepaste planconfiguratie",
+    "basePrice": "Basisprijs ($)",
+    "adPlacements": "Advertentieplaatsingen",
+    "applyConfig": "Configuratie toepassen",
+    "configured": "Geconfigureerd",
+    "toolSlug": "Gereedschapsslak",
+    "landingUrl": "Landings-URL",
+    "campaignParameters": "Campagneparameters",
+    "metricType": "Metrisch type",
+    "pacingType": "Pacingtype",
+    "totalBudget": "Totaal budget ($)",
+    "startDate": "Startdatum",
+    "endDate": "Einddatum",
+    "priorityBid": "Prioriteitsbod",
+    "estimation": "Schatting",
+    "estimatedClicks": "Geschatte klikken",
+    "estimatedImpressions": "Geschatte vertoningen",
+    "estimatedViews": "Geschatte weergaven",
+    "estimatedUnits": "Geschatte {metric} eenheden",
+    "submitProposal": "Dien een aangepast voorstel in",
+    "submitting": "Verzenden...",
+    "cancel": "Annuleren",
+    "customBid": {
+      "title": "Aangepaste prestatiebiedingen",
+      "budgetLabel": "Totaal budget ($)",
+      "budgetDescription": "Totaalbedrag dat u wilt uitgeven.",
+      "priorityBidLabel": "Multiplier voor prioriteitsbod",
+      "priorityBidDescription": "Hoger bod = hogere verschijningsfrequentie.",
+      "minBudget": "Het minimale budget is $ 10",
+      "minBid": "Het minimumbod is $ 0,01"
+    },
+    "placeholders": {
+      "toolSlug": "mijn-geweldige-tool",
+      "landingUrl": "https://...",
+      "metricType": "CPA",
+      "pacingType": "ZELFS"
+    }
+  },
+  "submit": {
+    "button": "Campagneverzoek indienen",
+    "submitting": "Verzenden…",
+    "error": "Verzenden mislukt. Probeer het opnieuw.",
+    "successTitle": "Campagne ingediend!",
+    "budgetLabel": "Campagnebudget instellen ($ USD)",
+    "success": "Campagne succesvol gemaakt!",
+    "untitled": "Naamloze campagne",
+    "missingTool": "Tool- of doel-URL is vereist",
+    "loginRequiredTitle": "Authenticatie vereist",
+    "loginRequiredDesc": "Please log in to submit a tool. Uw voortgang wordt pas opgeslagen nadat u zich heeft geverifieerd."
+  },
+  "sidebar": {
+    "pageViews": "Paginaweergaven",
+    "pageViewsSub": "Maandelijks paginaverkeer"
+  },
+  "details": "Advertentiedetails",
+  "duration": "Duur (dagen)",
+  "selectDuration": "Selecteer duur",
+  "days": "{telling, meervoud, =1 {1 day} andere {# days}}",
+  "preferredPlacement": "Voorkeursplaatsing",
+  "selectPlacement": "Selecteer plaatsing",
+  "placements": {
+    "homepageBanner": "Homepagina-banner",
+    "sidebar": "Zijbalk",
+    "categoryPage": "Categoriepagina",
+    "newsletter": "Nieuwsbrief",
+    "HOME": "Startpagina",
+    "CATEGORY": "Categoriepagina",
+    "SEARCH": "Zoekresultaten",
+    "TOOL_DETAIL": "Gereedschapsdetailpagina"
+  },
+  "targetAudience": "Doelgroep",
+  "targetAudiencePlaceholder": "Beschrijf uw doelgroep",
+  "validation": {
+    "required": "Dit veld is verplicht",
+    "selectDuration": "Selecteer de advertentieduur",
+    "selectPlacement": "Selecteer advertentieplaatsing",
+    "targetAudienceMin": "Doelgroep moet minimaal 10 tekens lang zijn",
+    "toolNameRequired": "Gereedschapsnaam is vereist",
+    "url": "Ongeldige URL",
+    "descriptionMin": "Beschrijving moet minimaal 10 tekens lang zijn",
+    "categoryRequired": "Selecteer een categorie",
+    "email": "Ongeldig e-mailadres",
+    "messageMin": "Het bericht moet minimaal 10 tekens lang zijn"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "per klik",
+      "CPM": "per 1k vertoningen",
+      "CPV": "per weergave",
+      "FLAT_RATE": "vast tarief",
+      "CPC_LABEL": "CPC",
+      "CPM_LABEL": "CPM",
+      "CPV_LABEL": "CPV",
+      "FLAT_RATE_LABEL": "Vast tarief"
+    },
+    "units": {
+      "clicks": "klikken",
+      "impressions": "indrukken",
+      "views": "bekeken",
+      "units": "eenheden"
+    }
+  },
+  "selected": "Gekozen",
+  "summary": {
+    "selectedPlanLabel": "Geselecteerd advertentiepakket",
+    "totalPriceLabel": "Totale vaste prijs",
+    "securityFooter": "Veilige betaling • Onmiddellijke activering • Volledige analyses"
+  },
+  "charts": {
+    "cpc": "'CPC ($)'",
+    "cpm": "'CPM ($)'",
+    "noData": "Geen historische gegevens beschikbaar"
+  }
+}

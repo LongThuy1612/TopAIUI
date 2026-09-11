@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Hintasuunnitelmat - TopAICollection",
+    "description": "Yksinkertainen, läpinäkyvä hinnoittelu tekoälytutkimukseen ja sosiaaliseen kuunteluun."
+  },
+  "title": "Yksinkertainen, läpinäkyvä hinnoittelu",
+  "subtitle": "Aloita ilmaiseksi ja laajenna kasvaessasi. Ei yllätyksiä.",
+  "plans": {
+    "free": {
+      "name": "Ilmainen",
+      "banner": "Aloita ilmaiseksi — ei luottokorttia tarvita."
+    },
+    "professional": {
+      "name": "Ammattilainen"
+    },
+    "enterprise": {
+      "name": "Yritys"
+    },
+    "free-monthly": {
+      "name": "Ilmainen"
+    },
+    "free-yearly": {
+      "name": "Ilmainen"
+    },
+    "professional-monthly": {
+      "name": "Ammattilainen"
+    },
+    "professional-yearly": {
+      "name": "Ammattilainen"
+    },
+    "enterprise-monthly": {
+      "name": "Yritys"
+    },
+    "enterprise-yearly": {
+      "name": "Yritys"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Suosituin"
+  },
+  "features": {
+    "websiteInsights": "Verkkosivuston tiedot",
+    "socialListening": "Sosiaalinen kuuntelu",
+    "prioritySupport": "Priorisoitu tuki",
+    "advertising": "Mainonta",
+    "premiumSupport": "Premium-tuki"
+  },
+  "cta": {
+    "loading": "Käsitellään...",
+    "upgrade": "Aloita"
+  },
+  "comparison": {
+    "title": "Kaikkien suunnitelmien vertailu",
+    "feature": "Ominaisuus"
+  },
+  "billing": {
+    "monthly": "Kuukausittain",
+    "yearly": "Vuosittain",
+    "discount20": "säästä 20 %",
+    "suffixYearly": "/vuosi",
+    "suffixMonthly": "/kuukausi",
+    "upgradeTitle": "Päivitä tutkimussuunnitelmasi",
+    "upgradeDesc": "Hyödynnä edistynyt analytiikka, kilpailijoiden oivalluksia ja paljon muuta.",
+    "subscribe": "Tilaa nyt"
+  },
+  "billingMonthly": "Kuukausittain",
+  "billingYearly": "Vuosittain",
+  "billingBestValue": "säästä 20 %",
+  "badgePopular": "Suosituin",
+  "billingPerMonth": "/ kuukausi",
+  "billingPerYear": "/ vuosi"
+}

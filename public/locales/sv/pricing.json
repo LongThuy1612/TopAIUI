@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Prisplaner - TopAICollection",
+    "description": "Enkel, transparent prissättning för AI-forskning och social lyssning."
+  },
+  "title": "Enkel, transparent prissättning",
+  "subtitle": "Börja gratis och skala allt eftersom du växer. Inga överraskningar.",
+  "plans": {
+    "free": {
+      "name": "Gratis",
+      "banner": "Kom igång gratis — inget kreditkort krävs."
+    },
+    "professional": {
+      "name": "Professionell"
+    },
+    "enterprise": {
+      "name": "Företag"
+    },
+    "free-monthly": {
+      "name": "Gratis"
+    },
+    "free-yearly": {
+      "name": "Gratis"
+    },
+    "professional-monthly": {
+      "name": "Professionell"
+    },
+    "professional-yearly": {
+      "name": "Professionell"
+    },
+    "enterprise-monthly": {
+      "name": "Företag"
+    },
+    "enterprise-yearly": {
+      "name": "Företag"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Mest populär"
+  },
+  "features": {
+    "websiteInsights": "Webbplatsinsikter",
+    "socialListening": "Social lyssning",
+    "prioritySupport": "Prioriterad support",
+    "advertising": "Annonsering",
+    "premiumSupport": "Premium support"
+  },
+  "cta": {
+    "loading": "Bearbetar...",
+    "upgrade": "Kom igång"
+  },
+  "comparison": {
+    "title": "Alla planer jämförda",
+    "feature": "Funktion"
+  },
+  "billing": {
+    "monthly": "Månatlig",
+    "yearly": "Årlig",
+    "discount20": "Spara 20 %",
+    "suffixYearly": "/år",
+    "suffixMonthly": "/månad",
+    "upgradeTitle": "Uppgradera din forskningsplan",
+    "upgradeDesc": "Lås upp avancerad analys, konkurrentinsikter och mer.",
+    "subscribe": "Prenumerera nu"
+  },
+  "billingMonthly": "Månatlig",
+  "billingYearly": "Årlig",
+  "billingBestValue": "Spara 20 %",
+  "badgePopular": "Mest populära",
+  "billingPerMonth": "/ månad",
+  "billingPerYear": "/ år"
+}

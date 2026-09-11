@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "المراقبة الاجتماعية",
+    "description": "مراقبة الكلمات المفتاحية على TikTok و YouTube.",
+    "table": {
+      "platform": "المنصة",
+      "keyword": "الكلمة المفتاحية",
+      "videos": "الفيديوهات",
+      "views": "المشاهدات",
+      "creators": "صناع المحتوى",
+      "status": "الحالة"
+    },
+    "status": {
+      "active": "نشط"
+    },
+    "monthlyQueries": "الاستعلامات الشهرية",
+    "videosToday": "فيديوهات اليوم",
+    "creatorsToday": "صناع محتوى اليوم",
+    "metrics": {
+      "monthlyQueries": "الاستعلامات الشهرية",
+      "videosToday": "فيديوهات اليوم",
+      "creatorsToday": "المبدعين اليوم"
+    }
+  },
+  "socialListeningTitle": "المراقبة الاجتماعية",
+  "socialTable": {
+    "tool": "أداة الذكاء الاصطناعي",
+    "noData": "لم يتم العثور على بيانات"
+  },
+  "allPlatforms": "جميع المنصات"
+}

@@ -1,0 +1,225 @@
+{
+  "welcome": "환영합니다, {name}님!",
+  "welcomeDescription": "강력한 기능과 데이터를 탐색하여 AI 산업의 최신 트렌드와 기회를 발견해 보세요.",
+  "user": "사용자",
+  "performanceOverview": "실적 개요",
+  "websiteInsightsQuota": "웹사이트 인사이트 할당량",
+  "socialListeningQueries": "소셜 리스닝 할당량",
+  "stats": {
+    "organicClicks": "유기적 클릭",
+    "paidClicks": "유료 클릭",
+    "totalClicks": "총 클릭수",
+    "totalTools": "총 도구 수",
+    "totalViews": "총 조회수",
+    "credits": "크레딧"
+  },
+  "features": {
+    "websiteInsights": "웹사이트 인사이트",
+    "socialListening": "소셜 리스닝",
+    "prioritySupport": "우선 지원",
+    "advertising": "광고",
+    "premiumSupport": "프리미엄 지원"
+  },
+  "badgePopular": "가장 인기있는",
+  "title": "소셜 리스닝 추적",
+  "description": "TikTok 및 YouTube에서 키워드를 모니터링하세요.",
+  "adCredits": "광고 크레딧",
+  "postCredits": "포스트 크레딧",
+  "linkCredits": "링크 크레딧",
+  "forSponsoredListings": "스폰서 목록의 경우",
+  "forGuestArticles": "게스트 기사의 경우",
+  "forLinkInsertions": "링크 삽입의 경우",
+  "buyCredits": "크레딧 구매",
+  "noOrders": "주문을 찾을 수 없습니다.",
+  "orderHistory": "주문 내역",
+  "orderId": "주문 ID",
+  "amount": "양",
+  "date": "날짜",
+  "type": "유형",
+  "invoice": "송장",
+  "download": "다운로드",
+  "currentPlan": "현재 계획",
+  "freeTier": "프리 티어",
+  "freeTierDesc": "더 많은 기능과 통찰력을 얻으려면 계획을 업그레이드하세요.",
+  "creditBalances": "신용 잔액",
+  "subscriptionDetails": "구독 세부정보",
+  "upgradePlan": "업그레이드 계획",
+  "statusActive": "활동적인",
+  "planMemberSince": "이 플랜의 회원",
+  "renewalDate": "갱신 날짜",
+  "changePlan": "계획 변경",
+  "redirecting": "리디렉션 중...",
+  "credits": "크레딧",
+  "managePortal": "청구 포털 관리",
+  "subscribe": "지금 구독하세요",
+  "upgradeTitle": "연구 계획을 업그레이드하세요",
+  "upgradeDesc": "고급 분석, 경쟁사 통찰력 등을 활용해 보세요.",
+  "choosePlan": {
+    "title": "연구 계획을 선택하세요",
+    "subtitle": "AI 시장 인텔리전스와 데이터를 활용하여 의사 결정을 내리세요."
+  },
+  "billingIntervals": {
+    "monthly": "월간 간행물",
+    "yearly": "매년"
+  },
+  "subtitle": "제출된 AI 도구의 성능을 관리하고 추적하세요.",
+  "create": "캠페인 만들기",
+  "noCampaigns": "아직 캠페인이 없습니다.",
+  "createFirst": "AI 도구 홍보를 시작하려면 첫 번째 캠페인을 만드세요.",
+  "getStarted": "시작하기",
+  "budget": "예산",
+  "spent": "지출",
+  "startDate": "시작일",
+  "endDate": "종료일",
+  "notSet": "설정되지 않음",
+  "ongoing": "전진",
+  "pause": "정지시키다",
+  "resume": "재개하다",
+  "viewDetails": "세부정보 보기",
+  "clicks": "클릭수",
+  "impressions": "노출수",
+  "rejectionReason": "거부 이유",
+  "analytics": {
+    "title": "캠페인 분석",
+    "description": "지난 30일 동안의 노출수 및 클릭수에 대한 자세한 분석입니다.",
+    "exportJson": "JSON 내보내기",
+    "dailyPerformance": "일일 실적",
+    "topLocales": "상위 지역(로케일)"
+  },
+  "track": "길",
+  "noDomains": "아직 추적된 도메인이 없습니다. 위에 하나 추가!",
+  "domain": "도메인",
+  "monthlyVisits": "월간 방문",
+  "rank": "계급",
+  "topKeywords": "인기 키워드",
+  "added": "추가됨",
+  "tool": "도구",
+  "organicClicks": "유기적 클릭",
+  "paidClicks": "유료 클릭수",
+  "totalClicks": "총 클릭수",
+  "addedOn": "추가 날짜",
+  "noTools": "아직 추적된 도구가 없습니다.",
+  "empty": {
+    "title": "아직 AI 도구 없음",
+    "description": "수백만 명의 사용자가 발견할 수 있도록 AI 도구를 제출하세요.",
+    "cta": "AI 도구 제출"
+  },
+  "columns": {
+    "tool": "도구",
+    "status": "상태",
+    "organic": "유기적 트래픽",
+    "paid": "유료 트래픽",
+    "impressions": "노출수",
+    "actions": "행위"
+  },
+  "statusTooltip": {
+    "pending": "관리자 승인을 기다리는 중"
+  },
+  "submittedToast": "귀하의 도구가 제출되었으며 검토 대기 중입니다.",
+  "warnings": {
+    "pendingView": "이 도구는 아직 검토 중이며 아직 공개되지 않았습니다.",
+    "confirmDelete": "이 AI 도구를 삭제하시겠습니까? 이 작업은 취소할 수 없습니다."
+  },
+  "gpt": {
+    "title": "내 GPT",
+    "submitNew": "새 GPT 제출",
+    "noGpts": "GPT를 찾을 수 없습니다. 첫 번째 것을 제출하세요!",
+    "noGptsDesc": "아직 제출된 GPT가 없습니다. 발견되려면 GPT를 제출하세요.",
+    "columns": {
+      "name": "GPT 이름",
+      "url": "채팅GPT URL",
+      "date": "제출된"
+    }
+  },
+  "updateAi": "AI 업데이트",
+  "submitNew": "새로 제출",
+  "submitNewItem": "새 항목 제출",
+  "linkInsert": {
+    "label": "링크 삽입",
+    "submit": "링크 삽입 제출",
+    "empty": {
+      "title": "아직 링크 삽입이 없습니다.",
+      "description": "아직 링크 삽입을 제출하지 않았습니다."
+    }
+  },
+  "form": {
+    "type": "유형",
+    "targetUrl": "타겟 URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "제목/앵커 텍스트",
+    "anchorTextPlaceholder": "기사 제목 또는 링크의 앵커 텍스트",
+    "submitCredits": "제출(1학점)"
+  },
+  "tabs": {
+    "profile": "윤곽",
+    "security": "보안",
+    "notifications": "알림"
+  },
+  "table": {
+    "platform": "플랫폼",
+    "keyword": "예어",
+    "videos": "비디오",
+    "views": "조회수",
+    "creators": "크리에이터",
+    "status": "상태"
+  },
+  "updated": "설정이 업데이트되었습니다.",
+  "password": {
+    "title": "비밀번호 변경",
+    "current": "현재 비밀번호",
+    "new": "새 비밀번호",
+    "confirm": "새 비밀번호 확인",
+    "update": "비밀번호 업데이트"
+  },
+  "notifications": {
+    "title": "알림 환경설정",
+    "email": "이메일 알림",
+    "marketing": "마케팅 이메일"
+  },
+  "metrics": {
+    "monthlyQueries": "월별 쿼리",
+    "videosToday": "오늘의 동영상",
+    "creatorsToday": "오늘날의 크리에이터"
+  },
+  "advertiseAi": "AI 광고",
+  "myAis": {
+    "title": "내 AI",
+    "subtitle": "제출된 AI 도구의 성능을 관리하고 추적하세요.",
+    "empty": {
+      "cta": "AI 도구 제출"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "거부 이유"
+  },
+  "feature": {
+    "websiteInsightsDesc": "키워드 순위 및 성과 추적",
+    "socialListeningDesc": "소셜 언급 및 동향 모니터링",
+    "researchReportDesc": "포괄적인 시장 보고서 생성",
+    "aiAdvertisingLibrary": "AI 광고 라이브러리",
+    "aiAdvertisingDesc": "경쟁사 AI 광고 분석",
+    "comingSoon": "출시 예정"
+  },
+  "reports": {
+    "title": "연구 보고서",
+    "description": "AI 산업에 대한 심층 분석 보고서에 액세스하세요.",
+    "noReports": "사용 가능한 보고서가 없습니다.",
+    "free": "무료",
+    "download": "다운로드",
+    "unlock": "보고서 잠금해제",
+    "noReportsDesc": "우리는 현재 새로운 통찰력을 준비하고 있습니다.",
+    "readNow": "보고서 읽기",
+    "readerTitle": "연구 보고서 리더",
+    "unlockRequired": "프리미엄 콘텐츠",
+    "unlockDesc": "독점적인 시장 분석, 사례 연구 및 실행 가능한 통찰력에 대한 전체 액세스를 얻으려면 이 심층 연구 보고서를 잠금 해제하세요.",
+    "unlockNow": "지금 잠금 해제",
+    "related": "관련 보고서",
+    "toc": "이 페이지에서",
+    "backToList": "도서관으로 돌아가기",
+    "notFound": "보고서를 찾을 수 없습니다.",
+    "unlockSuccess": "보고서가 잠금 해제되었습니다!",
+    "unlockError": "보고서를 잠금 해제하지 못했습니다.",
+    "searchPlaceholder": "보고서 검색..."
+  },
+  "toolPerformance": "도구 성능(실시간)"
+}

@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "Classificação das principais ferramentas de IA",
+    "description": "Descubra as ferramentas de IA mais visitadas do mundo com base em dados reais de tráfego.",
+    "subtitle": "Descubra as ferramentas de IA mais visitadas do mundo com base em dados reais de tráfego."
+  },
+  "trending": {
+    "title": "Tendências de ferramentas de IA",
+    "description": "As ferramentas de IA que mais cresceram no último mês.",
+    "subtitle": "As ferramentas de IA que mais cresceram no último mês."
+  },
+  "category": "Categoria",
+  "noTools": "Nenhuma ferramenta encontrada.",
+  "noToolsInCategory": "Nenhuma ferramenta encontrada nesta categoria.",
+  "loading": "Carregando...",
+  "favorite": "Adicionar aos favoritos",
+  "unfavorite": "Remover dos favoritos",
+  "visitWebsite": "Visite o site",
+  "errors": {
+    "general": "Falha ao carregar dados de classificação."
+  },
+  "topAI": "IA superior",
+  "trendingAI": "Tendências",
+  "period": "Período",
+  "last7Days": "Últimos 7 dias",
+  "lastMonth": "Mês passado",
+  "last3Months": "Últimos 3 meses",
+  "lastYear": "Ano passado",
+  "allCategories": "Todas as categorias",
+  "selectPeriod": "Selecione o período",
+  "rank": "Classificação",
+  "tool": "Ferramenta",
+  "visits": "Visitas",
+  "growth": "Crescimento",
+  "actions": "Ações",
+  "leaderboard": {
+    "header": {
+      "title": "Tabela de classificação de ferramentas de IA",
+      "description": "Descubra as ferramentas de IA mais votadas pela comunidade.",
+      "dailyTitle": "Principais ferramentas de IA do dia",
+      "monthlyTitle": "Melhores ferramentas de IA de {date}",
+      "yearlyTitle": "Melhores ferramentas de IA de {date}",
+      "tabs": {
+        "daily": "Diário",
+        "monthly": "Mensal",
+        "yearly": "Anual"
+      },
+      "prevPeriod": "Período anterior",
+      "nextPeriod": "Próximo período",
+      "pickDate": "Escolher Data",
+      "pickMonth": "Escolha o mês"
+    },
+    "empty": {
+      "title": "Nenhuma ferramenta lançada hoje",
+      "description": "Não há ferramentas registradas para esta data específica. Tente navegar para outro dia.",
+      "showMore": "Mostrar mais ferramentas",
+      "loadingMore": "Carregando mais ferramentas...",
+      "toolsListTitle": "Ferramentas em destaque"
+    },
+    "card": {
+      "visitWebsite": "Visite o site",
+      "loginToUpvote": "Faça login para acessar as ferramentas de votação positiva"
+    },
+    "page": {
+      "errorLoading": "Falha ao carregar os dados do placar."
+    },
+    "sidebar": {
+      "launchArchive": "Arquivo de lançamento",
+      "topCategories": "Principais categorias"
+    }
+  },
+  "categoryAI": "Categoria",
+  "regionAI": "Oriental",
+  "region": "Oriental",
+  "channelAI": "Canal",
+  "channel": "Canal",
+  "allChannels": "Todas as Fontes",
+  "incomeAI": "Social/Renda",
+  "socialMetrics": "&lt;b&gt;Valor Social&lt;/b&gt;",
+  "channelVisits": "Visitas de origem",
+  "maxResultsHint": "Limite o número máximo de resultados.",
+  "regions": {
+    "us": "Estados Unidos",
+    "ca": "Canadá",
+    "gb": "Reino Unido",
+    "in": "Índia",
+    "ph": "Filipinas",
+    "vn": "Vietnã"
+  },
+  "channels": {
+    "search": "Pesquisar",
+    "direct": "Direto",
+    "social": "Sociais",
+    "referrals": "Referências"
+  },
+  "viewDetails": "Ver detalhes",
+  "allRegions": "Global"
+}

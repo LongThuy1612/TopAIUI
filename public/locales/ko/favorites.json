@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "저장된 도구 - TopAICollection",
+    "description": "저장된 AI 도구 및 웹사이트 보기 및 관리"
+  },
+  "title": "저장된 도구",
+  "description": "저장된 AI 도구와 웹사이트를 보고 관리하세요.",
+  "emptyState": {
+    "title": "아직 저장된 도구가 없습니다.",
+    "description": "나중에 쉽게 액세스할 수 있도록 즐겨 사용하는 AI 도구를 탐색하고 저장하세요.",
+    "action": "AI 도구 찾아보기"
+  },
+  "stats": {
+    "lastUpdated": "마지막 업데이트: {date}"
+  },
+  "filters": {
+    "all": "모두",
+    "popular": "가장 인기있는",
+    "category": "카테고리별"
+  },
+  "errors": {
+    "loadFailed": "즐겨찾기를 로드하지 못했습니다."
+  },
+  "noDescription": "설명이 없습니다.",
+  "retry": "다시 해 보다",
+  "actions": {
+    "addedToFavorites": "즐겨찾기에 추가됨",
+    "removeFromFavorites": "즐겨찾기에서 제거",
+    "removedFromFavorites": "즐겨찾기에서 삭제됨"
+  }
+}

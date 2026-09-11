@@ -1,0 +1,118 @@
+{
+  "title": "Oppdater AI-verktøyet ditt",
+  "description": "Hold informasjonen om AI-verktøyet oppdatert. Oppdater beskrivelser, funksjoner, priser eller andre detaljer for å sikre nøyaktighet.",
+  "hero": {
+    "title": "Dine AI-er på TopAICollection",
+    "subtitle": "TopAI kan hjelpe deg å nå millioner av AI-brukere og dine potensielle kunder over hele verden."
+  },
+  "form": {
+    "toolLabel": "Verktøy",
+    "toolHint": "PS: Hvis verktøyet ikke blir funnet, vennligst send det inn først.",
+    "toolPlaceholder": "Søk etter verktøyet ditt..."
+  },
+  "pricing": {
+    "title": "Oppdater priser",
+    "price": "$49",
+    "period": "En gang",
+    "description": "Vi oppdaterer for deg innen 24 timer etter betaling."
+  },
+  "updates": {
+    "title": "Støttede oppdateringstyper",
+    "types": [
+      {
+        "label": "Verktøynavn",
+        "description": "Oppdater visningsnavnet til verktøyet ditt"
+      },
+      {
+        "label": "Beskrivelse",
+        "description": "Revider verktøyets korte og lange beskrivelser"
+      },
+      {
+        "label": "Kategori",
+        "description": "Endre eller legg til nye kategorier"
+      },
+      {
+        "label": "Funksjonsliste",
+        "description": "Oppdater verktøyets funksjonshøydepunkter"
+      },
+      {
+        "label": "Brukssaker",
+        "description": "Legg til eller oppdater brukseksempler"
+      },
+      {
+        "label": "Prisinformasjon",
+        "description": "Oppdater prisplaner og nivåer"
+      },
+      {
+        "label": "Vanlige spørsmål",
+        "description": "Legg til eller endre vanlige spørsmål"
+      },
+      {
+        "label": "URLer og lenker",
+        "description": "Oppdater nettsted, demo eller sosiale lenker"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Trenger å vite",
+    "items": [
+      "Oppdateringer behandles innen 24 timer etter betalingsbekreftelse.",
+      "Du kan oppdatere flere felt i en enkelt forespørsel.",
+      "Teamet vårt vil gjennomgå og publisere endringene dine.",
+      "Hvis oppdateringen krever avklaring, tar vi kontakt via e-post.",
+      "Skjermbilde/medieoppdateringer kan ta ytterligere 24 timer."
+    ]
+  },
+  "faq": {
+    "title": "FAQ - Oppdater AI",
+    "items": [
+      {
+        "question": "Hvor lang tid tar en oppdatering?",
+        "answer": "Oppdateringer behandles vanligvis innen 24 timer etter betaling. Komplekse endringer kan kreve en ekstra vurderingsperiode."
+      },
+      {
+        "question": "Hva kan jeg oppdatere?",
+        "answer": "Du kan oppdatere verktøyets navn, beskrivelse, kategori, funksjoner, brukstilfeller, priser, vanlige spørsmål og URL-er."
+      },
+      {
+        "question": "Kan jeg oppdatere flere ting samtidig?",
+        "answer": "Ja! Du kan be om flere oppdateringer i en enkelt innsending. Alle endringer er inkludert i avgiften på $49."
+      },
+      {
+        "question": "Hva om jeg trenger å gjøre korrigeringer etter oppdateringen?",
+        "answer": "Mindre rettelser knyttet til den opprinnelige oppdateringsforespørselen din vil bli håndtert gratis innen 7 dager."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Hvorfor oppdatere verktøyet ditt?",
+    "reasons": [
+      "Hold informasjon nøyaktig og oppdatert",
+      "Forbedre søkerangering og synlighet",
+      "Oppdater priser og funksjonsendringer",
+      "Legg til nye skjermbilder eller demoer",
+      "Korriger eventuell utdatert informasjon",
+      "Forbedre verktøybeskrivelsen"
+    ]
+  },
+  "meta": {
+    "title": "Oppdater AI-verktøyet ditt - TopAICollection",
+    "description": "Hold informasjonen om AI-verktøyet oppdatert. Oppdater beskrivelser, funksjoner, priser eller andre detaljer for å sikre nøyaktighet."
+  },
+  "team": "Team TopAICollection",
+  "validation": {
+    "required": "Dette feltet er obligatorisk",
+    "selectTool": "Velg et verktøy for å oppdatere",
+    "detailsTooShort": "Endringsdetaljer må være på minst 10 tegn",
+    "toolNameRequired": "Verktøynavn er påkrevd",
+    "url": "Ugyldig URL",
+    "descriptionMin": "Beskrivelsen må inneholde minst 10 tegn",
+    "categoryRequired": "Velg en kategori",
+    "email": "Ugyldig e-postadresse",
+    "messageMin": "Meldingen må være på minst 10 tegn"
+  },
+  "sidebar": {
+    "updatedCount": "verktøy oppdatert",
+    "updatedCountSub": "denne måneden"
+  }
+}

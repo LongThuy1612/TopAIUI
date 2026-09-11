@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Tilbake til dashbord",
+    "backToHome": "Tilbake til hjem",
+    "dashboard": "Oversikt",
+    "websiteInsights": "Nettstedsinnsikt",
+    "socialListening": "Sosial lytting",
+    "researchReport": "Forskningsrapport",
+    "myAis": "Mine AI-verktøy",
+    "favorites": "Favoritter",
+    "profileSettings": "Profilinnstillinger",
+    "advertise": "Annonsere",
+    "postsLinks": "Innlegg & Lenker",
+    "paymentInvoice": "Betaling & Faktura",
+    "overview": "Oversikt",
+    "myInquiries": "Mine henvendelser"
+  },
+  "logout": "Logg ut",
+  "logoutConfirmTitle": "Logg ut",
+  "logoutConfirmDescription": "Er du sikker på at du vil logge ut?",
+  "upgrade": "Oppgrader",
+  "sections": {
+    "research": "FORSKNING",
+    "management": "ADMINISTRASJON",
+    "business": "VIRKSOMHET",
+    "admin": "ADMINISTRATOR",
+    "guestPost": "Gjesteinnlegg",
+    "updateAi": "Oppdater AI",
+    "myGpts": "Mine GPT-er"
+  },
+  "help": "Hjelp",
+  "close": "Lukk",
+  "status": {
+    "active": "Aktiv"
+  },
+  "advertiseAi": "Annonser AI",
+  "myAis": {
+    "title": "Mine AIer",
+    "subtitle": "Administrer og spor ytelsen til dine innsendte AI-verktøy.",
+    "empty": {
+      "cta": "Send inn AI-verktøy"
+    }
+  }
+}

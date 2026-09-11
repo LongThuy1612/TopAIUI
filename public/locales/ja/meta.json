@@ -1,0 +1,20 @@
+{
+  "compare": {
+    "title": "「AIモデルの比較」"
+  },
+  "submissionSuccess": {
+    "title": "「送信に成功しました - TopAICollection」",
+    "description": "「あなたの提出物は正常に受信されました」"
+  },
+  "business": {
+    "title": "「ビジネス向け」"
+  },
+  "submitGpt": {
+    "title": "「カスタム GPT を送信」"
+  },
+  "layout": {
+    "defaultTitle": "AIツールディレ���トリ: 1000以上の検証済み無料AIツール",
+    "description": "#1のAIツールディレクトリリストを探索しましょう。このAIツール辞書ウェブサイトは、最高のAIソフトウェアを無料で見つけ、比較し、利用開始するのに役立ちます。",
+    "keywords": "「AI ツール、人工知能、AI ディレクトリ、トップ AI Web サイト、最高の AI ツール、AI マーケットプレイス」"
+  }
+}

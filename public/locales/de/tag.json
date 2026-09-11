@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} KI-Tools | Entdecken Sie die besten {tagName}-Lösungen",
+    "description": "Entdecken Sie unsere kuratierte Sammlung der besten {tagName}-KI-Tools. Vergleichen Sie Funktionen, Preise und Rezensionen, um die perfekte {tagName}-Software für Ihre Anforderungen zu finden."
+  },
+  "notFound": {
+    "metaTitle": "Tag nicht gefunden | TopAICollection",
+    "metaDescription": "Das gesuchte Tag existiert nicht. Entdecke andere KI-Tools."
+  },
+  "breadcrumb": {
+    "home": "Heim",
+    "tools": "Werkzeuge"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} KI-Tools",
+    "collectionDescription": "Durchsuchen Sie unser Verzeichnis der {tagName} KI-Tools."
+  }
+}

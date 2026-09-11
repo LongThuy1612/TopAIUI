@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Datenschutzrichtlinie – TopAICollection",
+    "description": "Erfahren Sie, wie TopAICollection Ihre persönlichen Daten sammelt, verwendet und schützt."
+  },
+  "title": "Datenschutzrichtlinie",
+  "lastUpdated": "Zuletzt aktualisiert",
+  "introduction": "Bei TopAICollection nehmen wir Ihre Privatsphäre ernst. In dieser Datenschutzrichtlinie wird erläutert, wie wir Ihre Daten erfassen, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen.",
+  "sections": {
+    "collection": {
+      "title": "Informationen, die wir sammeln",
+      "content": [
+        "Persönliche Informationen, die Sie angeben (Name, E-Mail usw.)",
+        "Nutzungsdaten (besuchte Seiten, Verweildauer, Klicks)",
+        "Geräteinformationen (Browsertyp, IP-Adresse)",
+        "Cookies und ähnliche Tracking-Technologien"
+      ]
+    },
+    "usage": {
+      "title": "Wie wir Ihre Informationen verwenden",
+      "content": [
+        "Um unseren Service bereitzustellen und aufrechtzuerhalten",
+        "Um Sie über Änderungen an unserem Service zu informieren",
+        "Zur Bereitstellung von Kundensupport",
+        "Um Analysen oder wertvolle Informationen zu sammeln, um unseren Service zu verbessern",
+        "Um die Nutzung unseres Dienstes zu überwachen",
+        "Um technische Probleme zu erkennen, zu verhindern und zu beheben"
+      ]
+    },
+    "cookies": {
+      "title": "Cookies und Tracking",
+      "content": [
+        "Wir verwenden Cookies, um Aktivitäten zu verfolgen und bestimmte Informationen zu speichern",
+        "Cookies helfen uns, Benutzerpräferenzen zu verstehen und das Erlebnis zu verbessern",
+        "Sie können Ihren Browser anweisen, alle Cookies abzulehnen",
+        "Wenn Sie keine Cookies akzeptieren, sind einige Teile unseres Dienstes möglicherweise nicht verfügbar"
+      ]
+    },
+    "security": {
+      "title": "Datensicherheit",
+      "content": [
+        "Wir nutzen kommerziell akzeptable Mittel, um Ihre personenbezogenen Daten zu schützen",
+        "Keine Übertragungsmethode über das Internet ist 100 % sicher",
+        "Eine absolute Sicherheit Ihrer Daten können wir nicht garantieren",
+        "Wir überprüfen unsere Sicherheitspraktiken regelmäßig und aktualisieren sie bei Bedarf"
+      ]
+    },
+    "sharing": {
+      "title": "Informationsaustausch",
+      "content": [
+        "Wir verkaufen, handeln oder vermieten Ihre persönlichen Daten nicht",
+        "Wir können Informationen an vertrauenswürdige Partner weitergeben, die uns unterstützen",
+        "Wir können Informationen offenlegen, wenn dies gesetzlich vorgeschrieben ist",
+        "Im Falle einer Fusion oder Übernahme können Ihre Daten übertragen werden"
+      ]
+    },
+    "rights": {
+      "title": "Ihre Rechte",
+      "content": [
+        "Greifen Sie auf Ihre persönlichen Daten zu",
+        "Korrigieren Sie ungenaue Daten",
+        "Fordern Sie die Löschung Ihrer Daten an",
+        "Widerspruch gegen die Verarbeitung Ihrer Daten einlegen",
+        "Fordern Sie Datenportabilität an",
+        "Einwilligung jederzeit widerrufen"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte unter:"
+  }
+}

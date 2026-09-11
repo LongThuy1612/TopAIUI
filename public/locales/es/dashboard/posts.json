@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Publicaciones y Enlaces",
+    "description": "Gestiona tus artículos de invitado e inserciones de enlaces.",
+    "submitNewItem": "Enviar Nuevo Ítem",
+    "submitNew": "Enviar Nuevo",
+    "guestPost": "Artículo de Invitado",
+    "linkInsert": "Inserción de Enlace",
+    "type": "Tipo",
+    "targetUrl": "URL de Destino",
+    "targetUrlPlaceholder": "https://tu-sitio.com/...",
+    "anchorText": "Título / Texto de Anclaje",
+    "anchorTextPlaceholder": "Título del artículo O texto de anclaje para el enlace",
+    "submitCredits": "Enviar (1 Crédito)",
+    "tabs": {
+      "guestPosts": "Artículos de Invitado",
+      "linkInserts": "Inserciones de Enlace"
+    },
+    "table": {
+      "title": "Título",
+      "anchor": "Texto de Anclaje",
+      "url": "URL",
+      "status": "Estado",
+      "date": "Fecha"
+    },
+    "empty": {
+      "noGuestTitle": "No hay artículos de invitado",
+      "noGuestDesc": "Aún no has enviado ningún artículo de invitado.",
+      "noGuestCta": "Enviar Artículo de Invitado",
+      "noLinkTitle": "No hay inserciones de enlace",
+      "noLinkDesc": "Aún no has enviado ninguna inserción de enlace.",
+      "noLinkCta": "Enviar Inserción de Enlace"
+    },
+    "subtitle": "Administre sus publicaciones de invitados e inserciones de enlaces."
+  }
+}

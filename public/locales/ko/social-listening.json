@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "소셜 리스닝 - AI 트렌드 모니터링 | TopAICollection",
+    "description": "소셜 미디어에서 AI 트렌드를 추적하세요.",
+    "detailTitle": "{name} 소셜 리스닝 — TopAI",
+    "detailDescription": "{name}의 소셜 리스닝 분석.",
+    "notFoundTitle": "도구를 찾을 수 없음 - 소셜 리스닝"
+  },
+  "title": "소셜 리스닝",
+  "subtitle": "AI 도구의 영상 성과를 추적하세요. Twitter",
+  "leaderboardTitle": "소셜 리더보드",
+  "leaderboardSubtitle": "즉각적인 영상 추적. Twitter",
+  "table": {
+    "aiTool": "AI 도구",
+    "introduce": "소개",
+    "videoCount": "영상 수",
+    "creatorsCount": "창작자 수",
+    "monthlyTraffic": "월 트래픽",
+    "avgViews": "평균 조회 수",
+    "avgInteractions": "평균 상호작용",
+    "totalViews": "총 조회 수",
+    "totalInteractions": "총 상호작용",
+    "emptyState": "데이터를 찾지 못했습니다",
+    "pageIndicator": "{page} / {lastPage} 페이지",
+    "updatedAt": "업데이트 날짜",
+    "totalEngagement": "총 참여"
+  },
+  "search": {
+    "placeholder": "도구 이름 또는 도메인 입력"
+  },
+  "detail": {
+    "viewTool": "도구 세부 정보 보기",
+    "tabs": {
+      "socialListening": "소셜 리스닝"
+    },
+    "stats": {
+      "monthlyVisits": "월 방문수",
+      "growth": "성장",
+      "growthRate": "성장률",
+      "socialVideos": "소셜 영상",
+      "newLastWeek": "지난 주 신규"
+    },
+    "metrics": {
+      "avgViews": "평균 조회",
+      "totalVideos": "영상 합계",
+      "totalCreators": "창작자 합계",
+      "totalViews": "조회 / 평균",
+      "totalLikes": "좋아요 / 평균",
+      "totalComments": "댓글 / 평균",
+      "totalShares": "총 공유",
+      "totalCollects": "총 저장",
+      "totalQuotes": "총 인용",
+      "totalReposts": "총 리포스트"
+    },
+    "platforms": {
+      "all": "전체"
+    },
+    "feed": {
+      "unlockCta": "더 보려면 잠금 해제",
+      "unlockDesc": "로그인하여 전체 영상 분석 보기",
+      "viewNow": "지금 보기 →",
+      "sortBy": "정렬 기준",
+      "sortViews": "조회 수",
+      "sortLikes": "좋아요",
+      "sortDate": "날짜",
+      "loadMore": "더 보기",
+      "searchPlaceholder": "제목 또는 크리에이터 검색...",
+      "emptyState": "게시물을 찾지 못했습니다. 여기에는 영상 게시물만 표시됩니다.",
+      "untitledPost": "제목 없는 게시물",
+      "metrics": {
+        "views": "조회수",
+        "likes": "좋아요",
+        "retweets": "리트윗",
+        "shares": "공유",
+        "replies": "답글",
+        "comments": "댓글",
+        "quotes": "인용",
+        "saves": "저장",
+        "collects": "수집",
+        "upvotes": "추천",
+        "follows": "팔로우"
+      },
+      "sortComments": "댓글",
+      "sortShares": "주식",
+      "title": "소셜 피드"
+    },
+    "traffic": {
+      "bounceRate": "이탈률",
+      "pagesPerVisit": "페이지 / 방문",
+      "avgVisitDuration": "평균 방문 시간",
+      "globalRanking": "글로벌 순위",
+      "category": "카테고리",
+      "categoryRanking": "카테고리 순위",
+      "deviceSplit": "데스크톱 vs 모바일",
+      "desktop": "데스크톱",
+      "mobile": "모바일",
+      "trafficSources": "트래픽 소스",
+      "topRegions": "상위 국가",
+      "processingMsg": "트래픽 데이터 처리 중입니다. 나중에 다시 확인하세요.",
+      "monthlyTrafficTrend": "월별 트래픽 동향",
+      "monthlyTrafficTrendDesc": "지난 30일 동안의 전 세계 방문 기록",
+      "sourceWebsiteInsight": "출처: 웹사이트 인사이트 글로벌"
+    },
+    "pricing": {
+      "notDocumented": "아직 가격 요금제가 등록되지 않았습니다.",
+      "checkWebsite": "공식 사이트 확인",
+      "visitWebsite": "사이트 방문",
+      "month": "월"
+    },
+    "lastUpdated": "최종 업데이트",
+    "influencers": {
+      "title": "최고 영향력자",
+      "name": "창조자",
+      "platform": "플랫폼",
+      "videos": "비디오",
+      "reach": "예상 도달하다"
+    },
+    "filterInteraction": "필터 상호 작용"
+  },
+  "platforms": {
+    "all": "모든 플랫폼"
+  },
+  "monitors": {
+    "title": "모니터",
+    "subtitle": "소셜 플랫폼 전반에서 특정 키워드를 추적하세요.",
+    "inputPlaceholder": "키워드 입력(예: ChatGPT, Midjourney)",
+    "addButton": "추적 시작",
+    "emptyTitle": "활성 모니터 없음",
+    "emptyDesc": "소셜 멘션 및 감정 모니터링을 시작하려면 위에 키워드를 추가하세요.",
+    "keyword": "예어",
+    "platform": "플랫폼",
+    "status": "상태",
+    "lastActive": "마지막 활성",
+    "addSuccess": "모니터가 성공적으로 추가되었습니다!",
+    "addError": "모니터를 추가하지 못했습니다.",
+    "statusTracking": "추적"
+  },
+  "socialListeningTitle": "소셜 리스닝 리더보드",
+  "pagination": {
+    "prev": "이전",
+    "next": "다음",
+    "page": "페이지"
+  },
+  "nav": {
+    "overview": "개요",
+    "social": "소셜",
+    "traffic": "교통",
+    "pricing": "가격"
+  },
+  "locked": {
+    "quotaTitle": "기능 잠김",
+    "quotaDesc": "소셜 리스닝 할당량에 도달했습니다. 더 많은 인사이트를 얻으려면 업그레이드하세요.",
+    "upgradeBtn": "지금 업그레이드",
+    "overlayTitle": "프리미엄 기능",
+    "overlayDesc": "이 기능을 사용하려면 활성 프리미엄 구독이 필요합니다.",
+    "unlockBtn": "프리미엄 잠금 해제"
+  }
+}

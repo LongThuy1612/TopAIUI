@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "TopAICollection - 发现最好的人工智能工具",
+    "description": "探索 {totalTools} 个类别的 {totalCategories}+ 个 AI 工具（使用 {languagesCount}+ 种语言）"
+  },
+  "home": {
+    "visitWebsite": "访问网站",
+    "ranking": "排行"
+  },
+  "tool": {
+    "visitWebsite": "访问网站 →",
+    "useCases": "使用案例",
+    "about": "关于{name}",
+    "howToUse": "如何使用{name}",
+    "faq": "常见问题解答"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compare": {
+    "title": "Compare AI Models"
+  },
+  "submissionSuccess": {
+    "title": "Submission Successful - TopAICollection",
+    "description": "Your submission has been received successfully"
+  },
+  "business": {
+    "title": "For Business"
+  },
+  "submitGpt": {
+    "title": "Submit Custom GPT"
+  },
+  "layout": {
+    "defaultTitle": "AI Tools Directory: 1000+ Verified Free AI Tools",
+    "description": "Explore the #1 AI tools directory list. This AI tools dictionary website helps you find, compare, and launch the absolute best AI software for FREE",
+    "keywords": "AI tools, artificial intelligence, AI directory, top AI websites, best AI tools, AI marketplace"
+  }
+}

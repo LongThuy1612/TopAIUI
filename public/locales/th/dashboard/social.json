@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "การตรวจสอบโซเชียล",
+    "description": "ตรวจสอบคำสำคัญบน TikTok และ YouTube",
+    "table": {
+      "platform": "แพลตฟอร์ม",
+      "keyword": "คำสำคัญ",
+      "videos": "วิดีโอ",
+      "views": "ยอดวิว",
+      "creators": "ครีเอเตอร์",
+      "status": "สถานะ"
+    },
+    "status": {
+      "active": "ใช้งานอยู่"
+    },
+    "monthlyQueries": "คำถามรายเดือน",
+    "videosToday": "วิดีโอวันนี้",
+    "creatorsToday": "ครีเอเตอร์วันนี้",
+    "metrics": {
+      "monthlyQueries": "แบบสอบถามรายเดือน",
+      "videosToday": "วิดีโอวันนี้",
+      "creatorsToday": "ผู้สร้างวันนี้"
+    }
+  },
+  "socialListeningTitle": "การตรวจสอบโซเชียล",
+  "socialTable": {
+    "tool": "เครื่องมือเอไอ",
+    "noData": "ไม่พบข้อมูล"
+  },
+  "allPlatforms": "“ทุกแพลตฟอร์ม”"
+}

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Om oss - TopAICollection",
+    "description": "Lär dig om TopAICollections uppdrag att hjälpa dig att upptäcka de bästa AI-verktygen och webbplatserna för dina behov."
+  },
+  "badge": "Om oss",
+  "hero": {
+    "title": "Din port till AI-revolutionen",
+    "subtitle": "Vi har ett uppdrag att demokratisera tillgången till AI-verktyg och hjälpa alla att utnyttja kraften i artificiell intelligens."
+  },
+  "stats": {
+    "tools": "AI-verktyg",
+    "categories": "Kategorier",
+    "users": "Månatliga användare",
+    "languages": "Språk"
+  },
+  "mission": {
+    "title": "Vårt uppdrag",
+    "paragraph1": "På TopAICollection anser vi att AI ska vara tillgängligt för alla. Vår plattform fungerar som en omfattande katalog över de bästa AI-verktygen och webbplatserna, vilket gör det enkelt för användare att upptäcka och utnyttja artificiell intelligens i deras arbete och dagliga liv.",
+    "paragraph2": "Vi sammanställer och granskar noggrant varje verktyg i vår samling, för att säkerställa att våra användare endast har tillgång till AI-lösningar av högsta kvalitet. Vårt team av experter utvärderar verktyg baserat på funktionalitet, användarupplevelse, prissättning och verkliga applikationer.",
+    "paragraph3": "Oavsett om du är en utvecklare, designer, marknadsförare, utbildare eller företagsägare, hjälper TopAICollection dig att hitta de perfekta AI-verktygen för att förbättra din produktivitet och kreativitet."
+  },
+  "features": {
+    "title": "Varför välja TopAICollection",
+    "global": {
+      "title": "Global räckvidd",
+      "description": "Tillgänglig på 20+ språk, betjänar miljontals användare över hela världen"
+    },
+    "updated": {
+      "title": "Dagliga uppdateringar",
+      "description": "Vår samling uppdateras dagligen med de senaste AI-innovationerna"
+    },
+    "community": {
+      "title": "Gemenskapsdriven",
+      "description": "Användarrecensioner och betyg hjälper dig att fatta välgrundade beslut"
+    },
+    "verified": {
+      "title": "Verifierade verktyg",
+      "description": "Varje verktyg granskas noggrant och verifieras av vårt team"
+    }
+  },
+  "cta": {
+    "title": "Starta din AI-resa idag",
+    "subtitle": "Utforska vår samling av AI-verktyg eller skicka in dina egna",
+    "browse": "Bläddra verktyg",
+    "submit": "Skicka in ditt verktyg"
+  }
+}

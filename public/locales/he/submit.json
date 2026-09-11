@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "הגש את כלי ה-AI שלך - TopAICollection",
+    "description": "הכנס את כלי הבינה המלאכותית שלך בספריית TopAICollection והגע למיליוני משתמשים שמחפשים פתרונות AI."
+  },
+  "badge": "רשום את הכלי שלך",
+  "hero": {
+    "title": "גרום לכלי ה-AI שלך להתגלות",
+    "subtitle": "הצטרף לאלפי כלי AI בספרייה שלנו והגע למיליוני משתמשים פוטנציאליים ברחבי העולם."
+  },
+  "benefits": {
+    "title": "מדוע להירשם ב- TopAICollection?",
+    "traffic": {
+      "title": "עלייה בתנועה",
+      "description": "קבל תנועה ישירה ממשתמשים שמחפשים באופן פעיל פתרונות AI."
+    },
+    "exposure": {
+      "title": "חשיפה גלובלית",
+      "description": "הגע למשתמשים בלמעלה מ-20 שפות במעל ל-100 מדינות."
+    },
+    "credibility": {
+      "title": "אמינות משופרת",
+      "description": "בנה אמון עם רישום מאומת וביקורות משתמשים."
+    }
+  },
+  "pricing": {
+    "title": "בחר את התוכנית שלך",
+    "popular": "הפופולרי ביותר",
+    "basic": {
+      "name": "רישום בסיסי",
+      "price": "חינם",
+      "features": {
+        "0": "רישום כלי בסיסי",
+        "1": "מיקום בקטגוריה",
+        "2": "פרטי התקשרות",
+        "3": "אנליטיקה בסיסית"
+      }
+    },
+    "featured": {
+      "name": "רישום מומלץ",
+      "price": "99 דולר לחודש",
+      "features": {
+        "0": "הכל בתוכנית הבסיסית",
+        "1": "תג מומלץ",
+        "2": "עדיפות בתוצאות החיפוש",
+        "3": "הופעה בעמוד הבית",
+        "4": "אנליטיקה מתקדמת",
+        "5": "קידום במדיה החברתית"
+      }
+    },
+    "premium": {
+      "name": "רישום פרימיום",
+      "price": "$299 לחודש",
+      "features": {
+        "0": "הכל בתוכנית המומלצת",
+        "1": "מיקום פרימיום בתוצאות החיפוש",
+        "2": "הכללה בניוזלטר",
+        "3": "סקירה בבלוג",
+        "4": "וידאו להצגה",
+        "5": "תמיכה ייעודית"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "שם הכלי",
+    "namePlaceholder": "לְמָשָׁל ChatGPT, DALL-E, Midjourney",
+    "website": "כתובת אתר (URL)",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "קטגוריות",
+    "selectCategory": "בחר קטגוריה",
+    "price": "$49 תשלום חד פעמי",
+    "submit": "הגש את הכלי",
+    "success": {
+      "title": "ההגשה הצליחה!",
+      "description": "הכלי שלך הוגש לבדיקה בהצלחה.",
+      "redirecting": "מעביר לתשלום..."
+    }
+  },
+  "form": {
+    "title": "הגש את הכלי שלך",
+    "sections": {
+      "basic": "מידע בסיסי",
+      "categorization": "קטגוריה ותגיות",
+      "media": "נכסי מדיה",
+      "plan": "בחר תוכנית",
+      "contact": "פרטי התקשרות"
+    },
+    "fields": {
+      "name": {
+        "label": "שם הכלי",
+        "placeholder": "כלי ה-AI המדהים שלי"
+      },
+      "url": {
+        "label": "כתובת אתר",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "סלוגן",
+        "placeholder": "תיאור קצר עד 100 תווים"
+      },
+      "description": {
+        "label": "תיאור",
+        "placeholder": "תיאור מפורט של כלי ה-AI שלך (עד 500 תווים)"
+      },
+      "category": {
+        "label": "קטגוריה",
+        "placeholder": "בחר קטגוריה",
+        "options": {
+          "productivity": "פרודוקטיביות",
+          "business": "עסקים",
+          "development": "פיתוח",
+          "other": "אחר"
+        }
+      },
+      "tags": {
+        "label": "תגיות",
+        "placeholder": "ai, פרודוקטיביות, אוטומציה (מופרד בפסיקים)",
+        "hint": "תיבות מופרדות בפסיקים"
+      },
+      "logo": {
+        "label": "לוגו",
+        "placeholder": "לחץ להעלאה או גרור ושחרר",
+        "hint": "PNG או JPG, מקסימום 2MB"
+      },
+      "plan": {
+        "label": "תוכנית רישום",
+        "placeholder": "בחר תוכנית"
+      },
+      "terms": {
+        "label": "אני מסכים/ה לתנאי השירות ולמדיניות הפרטיות"
+      },
+      "contact_name": {
+        "label": "שם מלא",
+        "placeholder": "פלוני אלמוני"
+      },
+      "contact_email": {
+        "label": "כתובת המייל שלך",
+        "placeholder": "לדוגמה john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "בעצם ההגשה, אתה מסכים לתנאי השירות ולמדיניות הפרטיות שלנו.",
+      "freeSubmission": "הגשה בחינם."
+    },
+    "submit": "הגשה למערכת",
+    "submitting": "מגיש...",
+    "success": {
+      "title": "הכלי הוגש בהצלחה!",
+      "description": "אנו נבדוק את ההגשה שלך ונודיע לך בתוך 48 שעות."
+    },
+    "error": {
+      "title": "השליחה נכשלה",
+      "description": "אנא בדוק את כל השדות ונסה שוב.",
+      "noSettings": "הגדרות הגשה אינן זמינות. אנא נסה שוב מאוחר יותר."
+    },
+    "loginRequiredTitle": "נדרשת התחברות",
+    "loginRequiredDesc": "אנא התחבר כדי לשלוח כלי. ההתקדמות שלך לא תישמר עד שתאמת.",
+    "loginBtn": "התחברות"
+  },
+  "categoriesPage": {
+    "searchCategory": "חפש בקטגוריות…",
+    "noCategoryFound": "לא נמצאו קטגוריות."
+  },
+  "toolForm": {
+    "selectSubCategory": "בחר קטגוריית משנה…",
+    "noSubCategory": "אין תת קטגוריות."
+  },
+  "errors": {
+    "general": "משהו השתבש. אנא נסה שוב."
+  },
+  "processing": "מעבד...",
+  "sidebar": {
+    "toolCount": "למעלה מ-5000 כלי בינה מלאכותית",
+    "toolCountSub": "הצטרפו למדריך ההולך וגדל שלנו",
+    "badgeDescription": "הגשת הכלי שלך היא הצעד הראשון להשגת נראות בקהילת ה-AI."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "טעינת פרטי ההגשה נכשלה.",
+      "noId": "לא סופק מזהה הגשה.",
+      "notFound": "ההגשה לא נמצאה."
+    },
+    "status": {
+      "paymentRequired": "נדרש תשלום",
+      "paymentRequiredDesc": "השלם את התשלום שלך כדי להמשיך בבדיקה.",
+      "underReview": "בבדיקה",
+      "underReviewDesc": "הגשתך נבדקת על ידי הצוות שלנו.",
+      "approved": "מְאוּשָׁר",
+      "approvedDesc": "הגשתך אושרה ופורסמה.",
+      "received": "התקבל",
+      "receivedDesc": "קיבלנו את ההגשה שלך."
+    },
+    "types": {
+      "submit": "שלח כלי AI",
+      "advertise": "לְפַרְסֵם",
+      "guestPost": "פוסט אורח",
+      "updateAI": "עדכון AI"
+    },
+    "paymentAlert": "נדרש תשלום כדי להשלים את הגשתך.",
+    "actions": {
+      "viewDashboard": "הצג את לוח המחוונים"
+    }
+  },
+  "error": "משהו השתבש. אנא נסה שוב.",
+  "backToHome": "חזרה לבית",
+  "submissionSuccess": {
+    "title": "כותרת",
+    "description": "תיאור"
+  },
+  "successTitle": "כותרת הצלחה",
+  "title": "כותרת"
+}

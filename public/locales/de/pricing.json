@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Preispläne - TopAICollection",
+    "description": "Einfache, transparente Preisgestaltung für KI-Forschung und Social Listening."
+  },
+  "title": "Einfache, transparente Preise",
+  "subtitle": "Kostenlos starten und mit dem Wachstum skalieren. Keine Überraschungen.",
+  "plans": {
+    "free": {
+      "name": "Kostenlos",
+      "banner": "Jetzt kostenlos starten — keine Kreditkarte erforderlich."
+    },
+    "professional": {
+      "name": "Profi"
+    },
+    "enterprise": {
+      "name": "Unternehmen"
+    },
+    "free-monthly": {
+      "name": "Kostenlos"
+    },
+    "free-yearly": {
+      "name": "Kostenlos"
+    },
+    "professional-monthly": {
+      "name": "Profi"
+    },
+    "professional-yearly": {
+      "name": "Profi"
+    },
+    "enterprise-monthly": {
+      "name": "Unternehmen"
+    },
+    "enterprise-yearly": {
+      "name": "Unternehmen"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Am beliebtesten"
+  },
+  "features": {
+    "websiteInsights": "Website-Insights",
+    "socialListening": "Soziales Zuhören",
+    "prioritySupport": "Priorisierter Support",
+    "advertising": "Werbung",
+    "premiumSupport": "Premium-Support"
+  },
+  "cta": {
+    "loading": "Verarbeitung...",
+    "upgrade": "Jetzt starten"
+  },
+  "comparison": {
+    "title": "Alle Pläne im Vergleich",
+    "feature": "Funktion"
+  },
+  "billing": {
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "discount20": "Sparen Sie 20 %",
+    "suffixYearly": "/Jahr",
+    "suffixMonthly": "/Monat",
+    "upgradeTitle": "Aktualisieren Sie Ihren Forschungsplan",
+    "upgradeDesc": "Nutzen Sie erweiterte Analysen, Einblicke in die Konkurrenz und mehr.",
+    "subscribe": "Jetzt abonnieren"
+  },
+  "billingMonthly": "Monatlich",
+  "billingYearly": "Jährlich",
+  "billingBestValue": "Sparen Sie 20 %",
+  "badgePopular": "Am beliebtesten",
+  "billingPerMonth": "/ Monat",
+  "billingPerYear": "/ Jahr"
+}

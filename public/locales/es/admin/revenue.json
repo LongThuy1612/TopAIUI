@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Ingresos y salud financiera",
+    "totalRevenue": "Ingresos totales",
+    "mrr": "MRR (mensual recurrente)",
+    "mrrDescription": "Ingresos recurrentes estimados basados en suscripciones activas",
+    "breakdown": "Desglose de ingresos",
+    "revenueGrowth": "Crecimiento de ingresos (30 días)",
+    "noData": "No hay datos de ingresos disponibles",
+    "noTrendsData": "No se encontraron datos de crecimiento durante los últimos 30 días",
+    "comingSoon": "Próximamente"
+  }
+}

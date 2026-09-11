@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Lắng nghe mạng xã hội - Theo dõi xu hướng AI | TopAICollection",
+    "description": "Theo dõi xu hướng AI trên các nền tảng mạng xã hội. Theo dõi lượt đề cập, tương tác và các công cụ AI mới nổi.",
+    "detailTitle": "{name} - Phân tích mạng xã hội — TopAI",
+    "detailDescription": "Số liệu phân tích lắng nghe mạng xã hội cho {name}.",
+    "notFoundTitle": "Không tìm thấy công cụ - Social Listen"
+  },
+  "title": "Lắng nghe mạng xã hội",
+  "subtitle": "Theo dõi hiệu suất video của các công cụ AI trên TikTok, YouTube và Twitter.",
+  "leaderboardTitle": "Bảng xếp hạng hiệu suất",
+  "leaderboardSubtitle": "Theo dõi lập tức hiệu suất video xã hội của bất kỳ công cụ AI nào trên YouTube, TikTok và Twitter.",
+  "table": {
+    "aiTool": "Công cụ AI",
+    "introduce": "Giới thiệu",
+    "videoCount": "Số video",
+    "creatorsCount": "Số người sáng tạo",
+    "monthlyTraffic": "Lưu lượng truy cập",
+    "avgViews": "Lượt xem trung bình",
+    "avgInteractions": "Tương tác trung bình",
+    "totalViews": "Tổng lượt xem",
+    "totalInteractions": "Tổng tương tác",
+    "emptyState": "Không tìm thấy dữ liệu",
+    "pageIndicator": "Trang {page} / {lastPage}",
+    "updatedAt": "Ngày cập nhật",
+    "totalEngagement": "Tổng số lượt tương tác"
+  },
+  "search": {
+    "placeholder": "Nhập tên công cụ hoặc tên miền"
+  },
+  "detail": {
+    "viewTool": "Xem chi tiết công cụ",
+    "tabs": {
+      "socialListening": "Lắng nghe MXH"
+    },
+    "stats": {
+      "monthlyVisits": "Truy cập hàng tháng",
+      "growth": "Tăng trưởng",
+      "growthRate": "Tỷ lệ tăng trưởng",
+      "socialVideos": "Video trên MXH",
+      "newLastWeek": "Video trong tuần qua"
+    },
+    "metrics": {
+      "avgViews": "Lượt xem trung bình",
+      "totalVideos": "Tổng số video",
+      "totalCreators": "Tổng số người tạo",
+      "totalViews": "Lượt xem / Trung bình",
+      "totalLikes": "Lượt thích / Trung bình",
+      "totalComments": "Bình luận / Trung bình",
+      "totalShares": "Lượt chia sẻ",
+      "totalCollects": "Lượt lưu",
+      "totalQuotes": "Lượt trích dẫn",
+      "totalReposts": "Lượt đăng lại"
+    },
+    "platforms": {
+      "all": "Tất cả"
+    },
+    "feed": {
+      "unlockCta": "Đăng nhập để xem thêm",
+      "unlockDesc": "Đăng nhập để xem đầy đủ phân tích video và xu hướng",
+      "viewNow": "Xem Ngay →",
+      "sortBy": "Sắp xếp",
+      "sortViews": "Lượt xem",
+      "sortLikes": "Lượt thích",
+      "sortDate": "Ngày đăng",
+      "loadMore": "Tải thêm",
+      "searchPlaceholder": "Tìm theo tiêu đề hoặc tên tác giả...",
+      "emptyState": "Không có bài đăng nào. Chỉ bài đăng video mới hiển thị ở đây.",
+      "untitledPost": "Bài đăng không tên",
+      "metrics": {
+        "views": "Lượt xem",
+        "likes": "Lượt thích",
+        "retweets": "Đăng lại",
+        "shares": "Chia sẻ",
+        "replies": "Trả lời",
+        "comments": "Bình luận",
+        "quotes": "Trích dẫn",
+        "saves": "Đã lưu",
+        "collects": "Thu thập",
+        "upvotes": "Ủng hộ",
+        "follows": "Theo dõi"
+      },
+      "sortComments": "Bình luận",
+      "sortShares": "Chia sẻ",
+      "title": "Nguồn cấp dữ liệu xã hội"
+    },
+    "traffic": {
+      "bounceRate": "Tỷ lệ thoát",
+      "pagesPerVisit": "Trang / Lượt truy cập",
+      "avgVisitDuration": "Thời gian truy cập TB",
+      "globalRanking": "Xếp hạng toàn cầu",
+      "category": "Danh mục",
+      "categoryRanking": "Xếp hạng danh mục",
+      "deviceSplit": "Máy tính / Di động",
+      "desktop": "Máy tính",
+      "mobile": "Di động",
+      "trafficSources": "Nguồn truy cập",
+      "topRegions": "Quốc gia hàng đầu",
+      "processingMsg": "Dữ liệu độ tuổi và nguồn truy cập đang được xử lý. Vui lòng quay lại sau để xem đầy đủ chỉ số quốc gia và nguồn truy cập.",
+      "monthlyTrafficTrend": "Xu hướng lưu lượng truy cập hàng tháng",
+      "monthlyTrafficTrendDesc": "Lượt truy cập lịch sử toàn cầu trong 30 ngày qua",
+      "sourceWebsiteInsight": "Nguồn: Website Insight Global"
+    },
+    "pricing": {
+      "notDocumented": "Bảng giá chưa được cập nhật.",
+      "checkWebsite": "Kiểm tra trang web chính thức",
+      "visitWebsite": "Truy cập Website",
+      "month": "tháng"
+    },
+    "lastUpdated": "Cập nhật lần cuối",
+    "influencers": {
+      "title": "Những người có ảnh hưởng hàng đầu",
+      "name": "Người sáng tạo",
+      "platform": "Nền tảng",
+      "videos": "Video",
+      "reach": "Ước tính. Với tới"
+    },
+    "filterInteraction": "Lọc tương tác"
+  },
+  "platforms": {
+    "all": "Tất cả nền tảng"
+  },
+  "monitors": {
+    "title": "Màn hình của bạn",
+    "subtitle": "Theo dõi các từ khóa cụ thể trên các nền tảng xã hội",
+    "inputPlaceholder": "Nhập từ khóa (ví dụ: ChatGPT, Midjourney)",
+    "addButton": "Bắt đầu theo dõi",
+    "emptyTitle": "Không có màn hình hoạt động",
+    "emptyDesc": "Thêm từ khóa ở trên để bắt đầu theo dõi các đề cập và cảm xúc trên mạng xã hội.",
+    "keyword": "Từ khóa",
+    "platform": "Nền tảng",
+    "status": "Trạng thái",
+    "lastActive": "Hoạt động lần cuối",
+    "addSuccess": "Đã thêm màn hình thành công!",
+    "addError": "Không thêm được màn hình",
+    "statusTracking": "Theo dõi"
+  },
+  "socialListeningTitle": "Bảng xếp hạng lắng nghe xã hội",
+  "pagination": {
+    "prev": "Trước đó",
+    "next": "Kế tiếp",
+    "page": "Trang"
+  },
+  "nav": {
+    "overview": "Tổng quan",
+    "social": "Mạng xã hội",
+    "traffic": "Lưu lượng truy cập",
+    "pricing": "Bảng giá"
+  },
+  "locked": {
+    "quotaTitle": "Tính năng bị khóa",
+    "quotaDesc": "Bạn đã đạt đến hạn mức lắng nghe mạng xã hội. Hãy nâng cấp để mở khóa thêm thông tin chi tiết.",
+    "upgradeBtn": "Nâng cấp ngay",
+    "overlayTitle": "Tính năng cao cấp",
+    "overlayDesc": "Tính năng này yêu cầu gói đăng ký cao cấp đang hoạt động.",
+    "unlockBtn": "Mở khóa Premium"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "최고의 AI 도구 순위",
+    "description": "실제 교통 데이터를 기반으로 전 세계에서 가장 많이 방문하는 AI 도구를 알아보세요.",
+    "subtitle": "실제 교통 데이터를 기반으로 전 세계에서 가장 많이 방문하는 AI 도구를 알아보세요."
+  },
+  "trending": {
+    "title": "최신 AI 도구",
+    "description": "지난 달 가장 빠르게 성장한 AI 도구입니다.",
+    "subtitle": "지난 달 가장 빠르게 성장한 AI 도구입니다."
+  },
+  "category": "범주",
+  "noTools": "도구를 찾을 수 없습니다.",
+  "noToolsInCategory": "이 카테고리에는 도구가 없습니다.",
+  "loading": "로드 중...",
+  "favorite": "즐겨찾기에 추가",
+  "unfavorite": "즐겨찾기에서 제거",
+  "visitWebsite": "웹사이트 방문",
+  "errors": {
+    "general": "순위 데이터를 로드하지 못했습니다."
+  },
+  "topAI": "최고의 AI",
+  "trendingAI": "인기 급상승",
+  "period": "기간",
+  "last7Days": "지난 7일",
+  "lastMonth": "전달",
+  "last3Months": "지난 3개월",
+  "lastYear": "작년",
+  "allCategories": "모든 카테고리",
+  "selectPeriod": "기간 선택",
+  "rank": "계급",
+  "tool": "도구",
+  "visits": "방문",
+  "growth": "성장",
+  "actions": "행위",
+  "leaderboard": {
+    "header": {
+      "title": "AI 도구 리더보드",
+      "description": "커뮤니티에서 가장 많은 지지를 받은 AI 도구를 알아보세요.",
+      "dailyTitle": "오늘의 최고 AI 도구",
+      "monthlyTitle": "{date} 최고의 AI 도구",
+      "yearlyTitle": "{date} 최고의 AI 도구",
+      "tabs": {
+        "daily": "일일",
+        "monthly": "월간 간행물",
+        "yearly": "매년"
+      },
+      "prevPeriod": "이전 기간",
+      "nextPeriod": "다음 기간",
+      "pickDate": "날짜 선택",
+      "pickMonth": "월 선택"
+    },
+    "empty": {
+      "title": "오늘 출시된 도구가 없습니다.",
+      "description": "이 특정 날짜에 기록된 도구가 없습니다. 다른 날짜로 이동해 보세요.",
+      "showMore": "더 많은 도구 보기",
+      "loadingMore": "더 많은 도구를 로드하는 중...",
+      "toolsListTitle": "주요 도구"
+    },
+    "card": {
+      "visitWebsite": "웹사이트 방문",
+      "loginToUpvote": "찬성 투표 도구를 사용하려면 로그인하세요"
+    },
+    "page": {
+      "errorLoading": "리더보드 데이터를 로드하지 못했습니다."
+    },
+    "sidebar": {
+      "launchArchive": "아카이브 실행",
+      "topCategories": "상위 카테고리"
+    }
+  },
+  "categoryAI": "카테고리",
+  "regionAI": "지역",
+  "region": "지역",
+  "allRegions": "전 세계",
+  "channelAI": "채널",
+  "channel": "채널",
+  "allChannels": "전체 소스",
+  "incomeAI": "사회/소득",
+  "socialMetrics": "소셜 가치",
+  "channelVisits": "소스 방문",
+  "maxResultsHint": "결과의 최대 개수를 제한하세요.",
+  "regions": {
+    "us": "미국",
+    "ca": "캐나다",
+    "gb": "영국",
+    "in": "인도",
+    "ph": "필리핀",
+    "vn": "베트남"
+  },
+  "channels": {
+    "search": "검색",
+    "direct": "직접",
+    "social": "소셜",
+    "referrals": "추천"
+  },
+  "viewDetails": "세부정보 보기"
+}

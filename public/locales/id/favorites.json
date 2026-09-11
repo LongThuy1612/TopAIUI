@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Alat Tersimpan - TopAICollection",
+    "description": "Lihat dan kelola alat dan situs AI yang Anda simpan"
+  },
+  "title": "Alat Tersimpan",
+  "description": "Lihat dan kelola alat dan situs AI yang Anda simpan.",
+  "emptyState": {
+    "title": "Belum ada alat yang disimpan",
+    "description": "Mulai jelajahi dan simpan alat AI favorit Anda untuk memudahkan akses nanti.",
+    "action": "Telusuri Alat AI"
+  },
+  "stats": {
+    "lastUpdated": "Terakhir diperbarui pada tanggal {date}"
+  },
+  "filters": {
+    "all": "Semua",
+    "popular": "Paling Populer",
+    "category": "Berdasarkan Kategori"
+  },
+  "errors": {
+    "loadFailed": "Gagal memuat favorit"
+  },
+  "noDescription": "Tidak ada deskripsi yang tersedia",
+  "retry": "Mencoba kembali",
+  "actions": {
+    "addedToFavorites": "Ditambahkan ke favorit",
+    "removeFromFavorites": "Hapus dari favorit",
+    "removedFromFavorites": "Dihapus dari favorit"
+  }
+}

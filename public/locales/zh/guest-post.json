@@ -1,0 +1,46 @@
+{
+  "title": "访客帖子和链接插入",
+  "description": "通过来宾帖子与我们的社区分享您的专业知识或请求在现有内容中插入战略链接。",
+  "details": "来宾帖子详细信息",
+  "postTitle": "帖子标题",
+  "postTitlePlaceholder": "您的来宾帖子标题",
+  "postContent": "发布内容或详细信息",
+  "postContentPlaceholder": "描述您的访客帖子内容或链接插入详细信息",
+  "features": {
+    "guestPosts": {
+      "title": "来宾帖子",
+      "description": "与我们的社区分享您有关人工智能的知识和见解。建立权威并增加网站流量。"
+    },
+    "linkInsertion": {
+      "title": "链接插入",
+      "description": "请求将您的链接战略性地放置在现有的相关内容中，以获得最大的 SEO 价值。"
+    },
+    "seoBacklinks": {
+      "title": "搜索引擎优化反向链接",
+      "description": "通过我们权威域名的高质量反向链接提高您的 SEO 排名。"
+    }
+  },
+  "contentGuidelines": {
+    "title": "内容指南",
+    "description": "所有来宾帖子必须原创、高质量且与人工智能相关。我们不接受未经人工编辑的人工智能生成的内容。"
+  },
+  "meta": {
+    "title": "来宾帖子和链接插入|顶级人工智能合集",
+    "description": "通过来宾帖子或请求在现有内容中插入战略链接，与我们的人工智能社区分享您的专业知识。"
+  },
+  "validation": {
+    "required": "此字段是必需的",
+    "titleTooShort": "标题必须至少 5 个字符",
+    "contentTooShort": "内容必须至少 20 个字符",
+    "toolNameRequired": "工具名称为必填项",
+    "url": "无效网址",
+    "descriptionMin": "描述必须至少 10 个字符",
+    "categoryRequired": "请选择一个类别",
+    "email": "电子邮件地址无效",
+    "messageMin": "消息长度必须至少为 10 个字符"
+  },
+  "sidebar": {
+    "articleCount": "1,000 多篇文章",
+    "articleCountSub": "由我们的社区发布"
+  }
+}

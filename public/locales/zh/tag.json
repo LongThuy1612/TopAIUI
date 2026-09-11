@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "{tagName} 人工智能工具 |发现最佳的{tagName}解决方案",
+    "description": "探索我们精选的最佳 {tagName} AI 工具集合。比较功能、价格和评论，找到最适合您需求的 {tagName} 软件。"
+  },
+  "notFound": {
+    "metaTitle": "未找到标签 |TopAICollection",
+    "metaDescription": "您正在查找的标签不存在。在我们的收藏中发现其他AI工具。"
+  },
+  "breadcrumb": {
+    "home": "家",
+    "tools": "工具"
+  },
+  "jsonLd": {
+    "collectionName": "{tagName} 人工智能工具",
+    "collectionDescription": "浏览我们的 {tagName} AI 工具目录。"
+  }
+}

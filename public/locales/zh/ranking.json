@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "热门人工智能工具排名",
+    "description": "根据真实流量数据发现世界上访问量最大的人工智能工具。",
+    "subtitle": "根据真实流量数据发现世界上访问量最大的人工智能工具。"
+  },
+  "trending": {
+    "title": "流行的人工智能工具",
+    "description": "上个月增长最快的人工智能工具。",
+    "subtitle": "上个月增长最快的人工智能工具。"
+  },
+  "category": "类别",
+  "noTools": "没有找到工具。",
+  "noToolsInCategory": "此类别中未找到任何工具。",
+  "loading": "加载中...",
+  "favorite": "添加到收藏夹",
+  "unfavorite": "从收藏夹中删除",
+  "visitWebsite": "访问网站",
+  "errors": {
+    "general": "无法加载排名数据。"
+  },
+  "topAI": "顶尖人工智能",
+  "trendingAI": "流行趋势",
+  "period": "时期",
+  "last7Days": "过去 7 天",
+  "lastMonth": "上个月",
+  "last3Months": "过去 3 个月",
+  "lastYear": "去年",
+  "allCategories": "所有类别",
+  "selectPeriod": "选择期间",
+  "rank": "秩",
+  "tool": "工具",
+  "visits": "访问量",
+  "growth": "生长",
+  "actions": "行动",
+  "leaderboard": {
+    "header": {
+      "title": "人工智能工具排行榜",
+      "description": "发现社区最受好评的人工智能工具。",
+      "dailyTitle": "当今顶级人工智能工具",
+      "monthlyTitle": "{date}的最佳人工智能工具",
+      "yearlyTitle": "{date}的最佳人工智能工具",
+      "tabs": {
+        "daily": "日常的",
+        "monthly": "每月",
+        "yearly": "每年"
+      },
+      "prevPeriod": "上期",
+      "nextPeriod": "下一期",
+      "pickDate": "「选择日期」",
+      "pickMonth": "《选择月份》"
+    },
+    "empty": {
+      "title": "今天没有推出任何工具",
+      "description": "没有记录该特定日期的工具。尝试导航到另一天。",
+      "showMore": "显示更多工具",
+      "loadingMore": "正在加载更多工具...",
+      "toolsListTitle": "特色工具"
+    },
+    "card": {
+      "visitWebsite": "访问网站",
+      "loginToUpvote": "请登录使用投票工具"
+    },
+    "page": {
+      "errorLoading": "无法加载排行榜数据。"
+    },
+    "sidebar": {
+      "launchArchive": "启动存档",
+      "topCategories": "热门类别"
+    }
+  },
+  "categoryAI": "类型",
+  "regionAI": "区域",
+  "region": "区域",
+  "allRegions": "全球",
+  "channelAI": "渠道",
+  "channel": "渠道",
+  "allChannels": "所有起源",
+  "incomeAI": "社会收入",
+  "socialMetrics": "社会价值",
+  "channelVisits": "来源访问量",
+  "maxResultsHint": "限制结果的最大数量。",
+  "regions": {
+    "us": "“美国”",
+    "ca": "“加拿大”",
+    "gb": "“英国”",
+    "in": "“印度”",
+    "ph": "“菲律宾”",
+    "vn": "“越南”"
+  },
+  "channels": {
+    "search": "“搜索”",
+    "direct": "“直接”",
+    "social": "“社交”",
+    "referrals": "“推荐”"
+  },
+  "viewDetails": "「查看详情」"
+}

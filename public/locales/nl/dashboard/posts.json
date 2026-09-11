@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Artikelen & Links",
+    "description": "Beheer uw gastartikelen en linkplaatsingen.",
+    "submitNewItem": "Nieuw Item Inzenden",
+    "submitNew": "Nieuwe Inzenden",
+    "guestPost": "Gastartikel",
+    "linkInsert": "Linkplaatsing",
+    "type": "Typen",
+    "targetUrl": "Doel URL",
+    "targetUrlPlaceholder": "https://uw-site.nl/...",
+    "anchorText": "Titel / Ankertekst",
+    "anchorTextPlaceholder": "Artikeltitel OF ankertekst voor de link",
+    "submitCredits": "Inzenden (1 Credit)",
+    "tabs": {
+      "guestPosts": "Gastartikelen",
+      "linkInserts": "Linkplaatsingen"
+    },
+    "table": {
+      "title": "Titel",
+      "anchor": "Ankertekst",
+      "url": "URL",
+      "date": "Datum",
+      "status": "Status"
+    },
+    "empty": {
+      "noGuestTitle": "Geen Gastartikelen",
+      "noGuestDesc": "U heeft nog geen gastartikelen ingezonden.",
+      "noGuestCta": "Gastartikel Inzenden",
+      "noLinkTitle": "Geen Linkplaatsingen",
+      "noLinkDesc": "U heeft nog geen linkplaatsingen ingezonden.",
+      "noLinkCta": "Linkplaatsing Inzenden"
+    },
+    "subtitle": "Beheer uw gastposts en linkinvoegingen."
+  }
+}

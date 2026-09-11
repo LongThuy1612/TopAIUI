@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Gespeicherte Tools – TopAICollection",
+    "description": "Zeigen Sie Ihre gespeicherten KI-Tools und Websites an und verwalten Sie sie"
+  },
+  "title": "Gespeicherte Werkzeuge",
+  "description": "Zeigen Sie Ihre gespeicherten KI-Tools und Websites an und verwalten Sie sie.",
+  "emptyState": {
+    "title": "Noch keine gespeicherten Werkzeuge",
+    "description": "Beginnen Sie mit der Erkundung und speichern Sie Ihre bevorzugten KI-Tools für den späteren einfachen Zugriff.",
+    "action": "Durchsuchen Sie KI-Tools"
+  },
+  "stats": {
+    "lastUpdated": "Zuletzt aktualisiert am {date}"
+  },
+  "filters": {
+    "all": "Alle",
+    "popular": "Am beliebtesten",
+    "category": "Nach Kategorie"
+  },
+  "errors": {
+    "loadFailed": "Die Favoriten konnten nicht geladen werden"
+  },
+  "noDescription": "Keine Beschreibung verfügbar",
+  "retry": "Wiederholen",
+  "actions": {
+    "addedToFavorites": "Zu den Favoriten hinzugefügt",
+    "removeFromFavorites": "Aus Favoriten entfernen",
+    "removedFromFavorites": "Aus den Favoriten entfernt"
+  }
+}

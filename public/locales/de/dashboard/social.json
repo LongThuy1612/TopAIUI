@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Soziales Zuhören",
+    "description": "Überwachen Sie Keywords auf TikTok und YouTube.",
+    "table": {
+      "platform": "Plattform",
+      "keyword": "Stichwort",
+      "videos": "videos",
+      "views": "Aufrufe",
+      "creators": "Ersteller",
+      "status": "„Status“"
+    },
+    "status": {
+      "active": "Aktiv"
+    },
+    "monthlyQueries": "Monatliche Anfragen",
+    "videosToday": "Videos heute",
+    "creatorsToday": "Ersteller heute",
+    "metrics": {
+      "monthlyQueries": "Monatliche Abfragen",
+      "videosToday": "Videos heute",
+      "creatorsToday": "Schöpfer heute"
+    }
+  },
+  "socialListeningTitle": "Soziales Zuhören",
+  "socialTable": {
+    "tool": "KI-Tool",
+    "noData": "Keine Daten gefunden"
+  },
+  "allPlatforms": "„Alle Plattformen“"
+}

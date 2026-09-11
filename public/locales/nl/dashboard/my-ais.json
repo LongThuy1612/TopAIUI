@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Nog Geen AI-tools",
+      "description": "Zend uw AI-tool in om ontdekt te worden door miljoenen gebruikers.",
+      "cta": "AI Tool Inzenden"
+    },
+    "columns": {
+      "tool": "Hulpmiddel",
+      "organic": "Organisch Verkeer",
+      "paid": "Betaald Verkeer",
+      "impressions": "Impressies",
+      "actions": "Acties",
+      "status": "Status"
+    },
+    "statusTooltip": {
+      "pending": "Wachten op goedkeuring door beheerder"
+    },
+    "submittedToast": "Uw tool is ingezonden en wordt beoordeeld.",
+    "warnings": {
+      "pendingView": "Deze tool wordt nog beoordeeld en is nog niet publiekelijk zichtbaar.",
+      "confirmDelete": "Weet u zeker dat u deze AI-tool wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+    },
+    "submit": {
+      "tool": "Verzend AI-tool",
+      "update": "AI bijwerken",
+      "name": "GPT-naam",
+      "url": "ChatGPT-URL",
+      "category": "Categorie",
+      "description": "Beschrijving",
+      "gpt": {
+        "title": "Dien uw GPT in",
+        "label": "GPT indienen",
+        "description": "Dien uw aangepaste GPT in, zodat deze door duizenden gebruikers wordt ontdekt."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Inzendingen",
+    "deleteSuccess": "Inzending is succesvol verwijderd.",
+    "deleteError": "Kan inzending niet verwijderen.",
+    "noSubmissions": "Nog geen gastposts",
+    "untitled": "Inzending zonder titel",
+    "confirmDelete": "Weet u zeker dat u deze inzending wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+    "columns": {
+      "subject": "Onderwerp",
+      "date": "Datum",
+      "actions": "Acties",
+      "status": "Status"
+    }
+  }
+}

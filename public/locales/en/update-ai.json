@@ -1,0 +1,118 @@
+{
+  "title": "Update Your AI Tool",
+  "description": "Keep your AI tool information up-to-date. Update descriptions, features, pricing, or any other details to ensure accuracy.",
+  "hero": {
+    "title": "Your AIs on TopAICollection",
+    "subtitle": "TopAI can help you reach millions of AI users and your potential customers worldwide."
+  },
+  "form": {
+    "toolLabel": "Tool",
+    "toolHint": "PS: If the tool cannot be found, please submit it first.",
+    "toolPlaceholder": "Search for your tool..."
+  },
+  "pricing": {
+    "title": "Update Pricing",
+    "price": "$49",
+    "period": "One Time",
+    "description": "We will update for you within 24 hours of payment."
+  },
+  "updates": {
+    "title": "Supported Update Types",
+    "types": [
+      {
+        "label": "Tool Name",
+        "description": "Update the display name of your tool"
+      },
+      {
+        "label": "Description",
+        "description": "Revise your tool's short and long descriptions"
+      },
+      {
+        "label": "Category",
+        "description": "Change or add new categories"
+      },
+      {
+        "label": "Feature List",
+        "description": "Update your tool's feature highlights"
+      },
+      {
+        "label": "Use Cases",
+        "description": "Add or update use case examples"
+      },
+      {
+        "label": "Pricing Info",
+        "description": "Update pricing plans and tiers"
+      },
+      {
+        "label": "FAQs",
+        "description": "Add or modify frequently asked questions"
+      },
+      {
+        "label": "URLs & Links",
+        "description": "Update website, demo, or social links"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Need to Know",
+    "items": [
+      "Updates are processed within 24 hours of payment confirmation.",
+      "You can update multiple fields in a single request.",
+      "Our team will review and publish your changes.",
+      "If the update requires clarification, we will reach out via email.",
+      "Screenshot/media updates may take an additional 24 hours."
+    ]
+  },
+  "faq": {
+    "title": "FAQ - Update AI",
+    "items": [
+      {
+        "question": "Why should I update my AI tool listing?",
+        "answer": "Keeping your listing up to date ensures users have the latest information about your tool."
+      },
+      {
+        "question": "How long does the update review take?",
+        "answer": "Updates are typically reviewed within 1-3 business days."
+      },
+      {
+        "question": "Is there a fee to update my listing?",
+        "answer": "Basic updates are free. Premium updates may require credits."
+      },
+      {
+        "question": "What information can I update?",
+        "answer": "You can update the description, pricing, features, screenshots, and other details."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Why Update Your Tool?",
+    "reasons": [
+      "Keep information accurate and current",
+      "Improve search ranking and visibility",
+      "Update pricing and feature changes",
+      "Add new screenshots or demos",
+      "Correct any outdated information",
+      "Enhance your tool description"
+    ]
+  },
+  "meta": {
+    "title": "Update Your AI Tool - TopAICollection",
+    "description": "Keep your AI tool information up-to-date. Update descriptions, features, pricing, or any other details to ensure accuracy."
+  },
+  "team": "TopAICollection Team",
+  "validation": {
+    "required": "This field is required",
+    "selectTool": "Please select a tool to update",
+    "detailsTooShort": "Change details must be at least 10 characters",
+    "toolNameRequired": "Tool name is required",
+    "url": "Invalid URL",
+    "descriptionMin": "Description must be at least 10 characters",
+    "categoryRequired": "Please select a category",
+    "email": "Invalid email address",
+    "messageMin": "Message must be at least 10 characters"
+  },
+  "sidebar": {
+    "updatedCount": "tools updated",
+    "updatedCountSub": "this month"
+  }
+}

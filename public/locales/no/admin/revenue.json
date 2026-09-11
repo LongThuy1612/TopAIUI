@@ -1,0 +1,13 @@
+{
+  "revenue": {
+    "title": "Inntekter og finansiell helse",
+    "totalRevenue": "Total inntekt",
+    "mrr": "MRR (månedlig tilbakevendende)",
+    "mrrDescription": "Estimert gjentakende inntekt basert på aktive abonnementer",
+    "breakdown": "Inntektsfordeling",
+    "revenueGrowth": "Inntektsvekst (30 dager)",
+    "noData": "Ingen inntektsdata tilgjengelig",
+    "noTrendsData": "Ingen vekstdata funnet for de siste 30 dagene",
+    "comingSoon": "Kommer snart"
+  }
+}

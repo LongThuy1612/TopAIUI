@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Volledige Naam",
+      "email": "E-mailadres",
+      "emailHelp": "E-mail kan niet worden gewijzigd",
+      "emailPlaceholder": "u@voorbeeld.nl",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "+31 (000) 000-0000",
+      "company": "Bedrijf",
+      "country": "Land",
+      "save": "Wijzigingen Opslaan",
+      "saving": "Opslaan...",
+      "saveSuccess": "Profiel is succesvol bijgewerkt.",
+      "website": "Website"
+    },
+    "password": {
+      "title": "Wachtwoord Wijzigen",
+      "current": "Huidig Wachtwoord",
+      "new": "Nieuw Wachtwoord",
+      "confirm": "Bevestig Nieuw Wachtwoord",
+      "update": "Wachtwoord Bijwerken"
+    },
+    "notifications": {
+      "title": "Meldingsvoorkeuren",
+      "email": "E-mailmeldingen",
+      "marketing": "Marketing E-mails"
+    }
+  },
+  "profile": {
+    "title": "Profiel",
+    "fullName": "Volledige naam",
+    "email": "E-mailadres",
+    "emailHelp": "E-mail kan niet worden gewijzigd",
+    "emailPlaceholder": "jij@voorbeeld.com",
+    "phone": "Telefoonnummer",
+    "company": "Bedrijf",
+    "country": "Land",
+    "save": "Wijzigingen opslaan",
+    "saving": "Besparing...",
+    "saveSuccess": "Profiel is succesvol bijgewerkt.",
+    "website": "Website",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Wachtwoord wijzigen",
+    "current": "Huidig ​​wachtwoord",
+    "new": "Nieuw wachtwoord",
+    "confirm": "Bevestig nieuw wachtwoord",
+    "update": "Wachtwoord bijwerken"
+  },
+  "notifications": {
+    "title": "Meldingsvoorkeuren",
+    "email": "E-mailmeldingen",
+    "marketing": "Marketing-e-mails"
+  },
+  "tabs": {
+    "profile": "Profiel",
+    "security": "Beveiliging",
+    "notifications": "Meldingen"
+  },
+  "updated": "Instellingen zijn succesvol bijgewerkt"
+}

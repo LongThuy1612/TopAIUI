@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Invia il Tuo Strumento AI - TopAICollection",
+    "description": "Inserisci il tuo strumento di intelligenza artificiale nella directory TopAICollection e raggiungi milioni di utenti alla ricerca di soluzioni AI."
+  },
+  "badge": "Aggiungi il Tuo Strumento",
+  "hero": {
+    "title": "Fai Scoprire il Tuo Strumento AI",
+    "subtitle": "Unisciti a migliaia di strumenti IA nella nostra directory e raggiungi milioni di potenziali utenti in tutto il mondo"
+  },
+  "benefits": {
+    "title": "Perché inserirti in TopAICollection?",
+    "traffic": {
+      "title": "Aumento del Traffico",
+      "description": "Ottieni traffico diretto da utenti che cercano attivamente soluzioni AI"
+    },
+    "exposure": {
+      "title": "Esposizione Globale",
+      "description": "Raggiungi utenti in oltre 20 lingue e in più di 100 paesi"
+    },
+    "credibility": {
+      "title": "Credibilità Migliorata",
+      "description": "Costruisci fiducia grazie alla quotazione verificata e alle recensioni degli utenti"
+    }
+  },
+  "pricing": {
+    "title": "Scegli il tuo Piano",
+    "popular": "Più Popolare",
+    "basic": {
+      "name": "Elenco di Base",
+      "price": "Gratis",
+      "features": {
+        "0": "Inserimento di base dello strumento",
+        "1": "Assegnazione in categoria",
+        "2": "Informazioni di contatto",
+        "3": "Analisi basilari"
+      }
+    },
+    "featured": {
+      "name": "Elenco in Evidenza",
+      "price": "$99/mese",
+      "features": {
+        "0": "Tutto quello del piano di Base",
+        "1": "Badge in evidenza",
+        "2": "Priorità nei risultati di ricerca",
+        "3": "Esposizione in homepage",
+        "4": "Analisi avanzate",
+        "5": "Promozione sui social media"
+      }
+    },
+    "premium": {
+      "name": "Elenco Premium",
+      "price": "$ 299/mese",
+      "features": {
+        "0": "Tutto quello del piano In Evidenza",
+        "1": "Prima posizione nelle ricerche",
+        "2": "Inclusione nella newsletter",
+        "3": "Recensione su articoli del blog",
+        "4": "Presentazione video",
+        "5": "Supporto dedicato"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Nome dello Strumento",
+    "namePlaceholder": "per esempio. ChatGPT, DALL-E, metà viaggio",
+    "website": "URL del Sito",
+    "websitePlaceholder": "https://www.esempio.com",
+    "categories": "Categorie",
+    "selectCategory": "Seleziona una categoria",
+    "price": "Tariffa unica di $49",
+    "submit": "Invia Strumento",
+    "success": {
+      "title": "Invio Completato con Successo!",
+      "description": "Il tuo strumento è stato inviato per la revisione.",
+      "redirecting": "Reindirizzamento al pagamento in corso..."
+    }
+  },
+  "form": {
+    "title": "Invia il tuo Strumento",
+    "sections": {
+      "basic": "Informazioni di Base",
+      "categorization": "Categoria e Tag",
+      "media": "Contenuto Multimediale",
+      "plan": "Seleziona il Piano",
+      "contact": "Informazioni di Contatto"
+    },
+    "fields": {
+      "name": {
+        "label": "Nome dello Strumento",
+        "placeholder": "Il mio Stupendo Strumento AI"
+      },
+      "url": {
+        "label": "URL del Sito",
+        "placeholder": "https://esempio.com"
+      },
+      "tagline": {
+        "label": "Slogan",
+        "placeholder": "Breve descrizione di massimo 100 caratteri"
+      },
+      "description": {
+        "label": "Descrizione",
+        "placeholder": "Descrizione dettagliata del tuo strumento AI (max 500 caratteri)"
+      },
+      "category": {
+        "label": "Categoria",
+        "placeholder": "Seleziona una categoria",
+        "options": {
+          "productivity": "Produttività",
+          "business": "Attività commerciale",
+          "development": "Sviluppo",
+          "other": "Altro"
+        }
+      },
+      "tags": {
+        "label": "Tag",
+        "placeholder": "intelligenza artificiale, produttività, automazione (separati da virgola)",
+        "hint": "Campi separati da virgole"
+      },
+      "logo": {
+        "label": "Logo",
+        "placeholder": "Clicca per caricare o trascina il file",
+        "hint": "PNG o JPG, max 2MB"
+      },
+      "plan": {
+        "label": "Piano di Annuncio",
+        "placeholder": "Seleziona un piano"
+      },
+      "terms": {
+        "label": "Accetto i Termini di Servizio e l'Informativa sulla Privacy"
+      },
+      "contact_name": {
+        "label": "Il tuo nome e cognome",
+        "placeholder": "ad es. Mario Rossi"
+      },
+      "contact_email": {
+        "label": "La tua Email",
+        "placeholder": "es: john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "Inviando la richiesta, accetti i nostri Termini di Servizio e l'Informativa sulla Privacy.",
+      "freeSubmission": "Invio Gratuito."
+    },
+    "submit": "Invia Strumento",
+    "submitting": "Invio in corso...",
+    "success": {
+      "title": "Strumento inviato con successo!",
+      "description": "Verificheremo il tuo invio e ti informeremo entro 48 ore."
+    },
+    "error": {
+      "title": "Invio fallito",
+      "description": "Controlla tutti i campi e riprova.",
+      "noSettings": "Le impostazioni di invio non sono disponibili. Per favore riprova più tardi."
+    },
+    "loginRequiredTitle": "Accesso richiesto",
+    "loginRequiredDesc": "Effettua il login per inviare uno strumento. I tuoi progressi non verranno salvati finché non ti autentichi.",
+    "loginBtn": "Login"
+  },
+  "categoriesPage": {
+    "searchCategory": "Cerca categorie…",
+    "noCategoryFound": "Nessuna categoria trovata."
+  },
+  "toolForm": {
+    "selectSubCategory": "Seleziona una sottocategoria…",
+    "noSubCategory": "Nessuna sottocategoria trovata."
+  },
+  "errors": {
+    "general": "Qualcosa è andato storto. Riprova per favore."
+  },
+  "processing": "Elaborazione in corso...",
+  "sidebar": {
+    "toolCount": "Più di 5.000 Strumenti AI",
+    "toolCountSub": "Unisciti alla nostra directory in crescita",
+    "badgeDescription": "Inviare il tuo strumento è il primo passo per ottenere visibilità nella comunità AI."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Impossibile caricare i dettagli di invio.",
+      "noId": "Nessun ID di invio fornito.",
+      "notFound": "Invio non trovato."
+    },
+    "status": {
+      "paymentRequired": "Pagamento richiesto",
+      "paymentRequiredDesc": "Completa il pagamento per procedere con la revisione.",
+      "underReview": "In fase di revisione",
+      "underReviewDesc": "La tua richiesta è in fase di revisione da parte del nostro team.",
+      "approved": "Approvato",
+      "approvedDesc": "La tua proposta è stata approvata e pubblicata.",
+      "received": "Ricevuto",
+      "receivedDesc": "Abbiamo ricevuto la tua richiesta."
+    },
+    "types": {
+      "submit": "Invia strumento AI",
+      "advertise": "Pubblicizza",
+      "guestPost": "Messaggio ospite",
+      "updateAI": "Aggiorna l'IA"
+    },
+    "paymentAlert": "Per completare l'invio è necessario il pagamento.",
+    "actions": {
+      "viewDashboard": "Visualizza dashboard"
+    }
+  },
+  "error": "Qualcosa è andato storto. Per favore riprova.",
+  "backToHome": "Ritorno a casa",
+  "submissionSuccess": {
+    "title": "Titolo",
+    "description": "Descrizione"
+  },
+  "successTitle": "Titolo di successo",
+  "title": "Titolo"
+}

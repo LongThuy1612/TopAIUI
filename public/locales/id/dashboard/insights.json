@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Wawasan Situs Web",
+    "subtitle": "Lacak lalu lintas dan kata kunci pesaing.",
+    "track": "Lacak",
+    "noDomains": "Belum ada domain yang dilacak. Tambahkan satu di atas!",
+    "monthlyVisits": "Kunjungan Bulanan",
+    "rank": "Peringkat",
+    "topKeywords": "Kata Kunci Teratas",
+    "added": "Ditambahkan",
+    "tool": "Alat",
+    "organicClicks": "Klik Organik",
+    "paidClicks": "Klik Berbayar",
+    "totalClicks": "Jumlah Klik",
+    "addedOn": "Ditambahkan",
+    "noTools": "Belum ada alat yang terlacak.",
+    "addDomainDesc": "Tambahkan domain pertama Anda di atas untuk mulai melacak wawasan.",
+    "deleteSuccess": "Domain dihapus dari pelacakan",
+    "confirmDelete": "Apakah Anda yakin ingin berhenti melacak domain ini?",
+    "quota": "Kuota",
+    "limitReachedDesc": "Anda telah mencapai batas wawasan bulanan. Tingkatkan versi untuk melacak lebih banyak domain.",
+    "upgradeNow": "Tingkatkan Sekarang",
+    "usage": "Penggunaan",
+    "searchPlaceholder": "Telusuri domain yang dilacak...",
+    "advancedFilter": "Filter Tingkat Lanjut",
+    "bulkOpen": "Buka Massal",
+    "export": "Ekspor Data",
+    "aiTool": "Alat AI",
+    "rankChange": "Perubahan Peringkat",
+    "globalRank": "Peringkat Global",
+    "traffic": "Lalu lintas",
+    "audience": "Hadirin",
+    "updateDate": "Tanggal Pembaruan",
+    "limitReachedTitle": "Anda telah mencapai batas Anda",
+    "limitReachedBody": "Anda telah mencapai batas pencarian gratis. Tingkatkan untuk mendapatkan akses tanpa batas.",
+    "upgradePro": "Tingkatkan ke paket Pro",
+    "actions": "Tindakan",
+    "viewSocial": "Lihat Sosial",
+    "filters": {
+      "months": {
+        "feb2026": "Februari 2026",
+        "jan2026": "Jan 2026"
+      },
+      "sources": {
+        "search": "Cari",
+        "direct": "Langsung",
+        "social": "Sosial"
+      },
+      "regions": {
+        "us": "Kami",
+        "vn": "Vietnam"
+      },
+      "categories": {
+        "llm": "Hmm",
+        "image": "Gambar",
+        "productivity": "Produktivitas"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100rb",
+        "1m": "1jt"
+      },
+      "timePeriod": "Periode Waktu",
+      "selectMonth": "Pilih Bulan",
+      "trafficSource": "Sumber Lalu Lintas",
+      "allSources": "Semua Sumber",
+      "region": "Wilayah",
+      "category": "Kategori",
+      "trafficThreshold": "Ambang Lalu Lintas",
+      "minVisits": "Minimal Kunjungan"
+    },
+    "exportSuccess": "Berhasil diekspor.",
+    "exportFailed": "Gagal mengekspor.",
+    "exportData": "Ekspor Data",
+    "exportDesc": "Ekspor laporan ini untuk dibagikan atau dianalisis secara lokal.",
+    "exportLimit": "Batas Ekspor",
+    "rows": "Baris",
+    "creditsCost": "Biaya Kredit",
+    "availableAfter": "Tersedia Setelahnya",
+    "confirmExport": "Konfirmasi Ekspor",
+    "notEnoughCredits": "Kredit Tidak Cukup",
+    "removeFailed": "Gagal menghapus.",
+    "direct": "Langsung",
+    "sortDefault": "Bawaan",
+    "sortTraffic": "Lalu lintas",
+    "domain": "Domain"
+  },
+  "common": {
+    "allCategories": "Semua Kategori",
+    "global": "Global"
+  },
+  "table": {
+    "column": {
+      "tool": "Alat",
+      "organic": "Klik Organik",
+      "paid": "Klik Berbayar",
+      "total": "Jumlah Klik",
+      "trend": "Tren",
+      "growth": "Pertumbuhan"
+    },
+    "searchPlaceholder": "Cari domain yang dilacak...",
+    "showingResults": "Menampilkan hasil {count}",
+    "empty": "Belum ada domain yang dilacak."
+  }
+}

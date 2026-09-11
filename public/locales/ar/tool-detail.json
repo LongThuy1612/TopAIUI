@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- مراجعة وتحليل أداة الذكاء الاصطناعي"
+  },
+  "errors": {
+    "notFound": "لم يتم العثور على الأداة",
+    "notFoundDescription": "الأداة التي تبحث عنها غير موجودة.",
+    "serverError": "خطأ داخلي في الخادم.",
+    "serverErrorDescription": "حدث خطأ غير متوقع على الخادم. يرجى المحاولة مرة أخرى لاحقاً."
+  },
+  "actions": {
+    "visit": "زيارة الموقع",
+    "save": "يحفظ",
+    "saved": "أنقذ",
+    "share": "يشارك",
+    "update": "قم بتحديث هذه الأداة",
+    "advertise": "أعلن عن هذه الأداة",
+    "visitWebsite": "زيارة الموقع",
+    "readMore": "اقرأ المزيد",
+    "readLess": "اقرأ أقل",
+    "openVideo": "فتح الفيديو"
+  },
+  "cta": {
+    "visit": "افتح الموقع",
+    "advertise": "أعلن عن هذه الأداة",
+    "update": "قم بتحديث هذه الأداة"
+  },
+  "sidebar": {
+    "category": "فئة",
+    "tags": "العلامات"
+  },
+  "tabs": {
+    "socialListening": "الاستماع الاجتماعي",
+    "alternatives": "البدائل"
+  },
+  "similar": {
+    "title": "أدوات الذكاء الاصطناعي المشابهة"
+  },
+  "stats": {
+    "monthlyVisits": "الزيارات الشهرية",
+    "growth": "نمو",
+    "reviews": "المراجعات",
+    "averageTime": "متوسط ​​الوقت في الموقع",
+    "pagesPerVisit": "الصفحات لكل زيارة",
+    "bounceRate": "معدل الارتداد",
+    "visits": "الزيارات",
+    "reviews_formatted": "{rating} ({count} {label})"
+  },
+  "sections": {
+    "overview": "ملخص",
+    "reviews": "التعليقات",
+    "analytics": "التحليلات",
+    "embed": "تضمين",
+    "alternatives": "البدائل",
+    "related": "الأدوات ذات الصلة"
+  },
+  "details": {
+    "description": "مقدمة الأداة:",
+    "monthlyTraffic": "حركة المرور الشهرية:",
+    "socialMedia": "وسائل التواصل الاجتماعي والبريد الإلكتروني:",
+    "company": "شركة",
+    "categories": "فئات",
+    "tags": "العلامات"
+  },
+  "content": {
+    "whatIs": "ما هو",
+    "howToUse": "كيفية الاستخدام",
+    "coreFeatures": "الميزات الأساسية",
+    "useCases": "حالات الاستخدام",
+    "pricingPlans": "خطط التسعير",
+    "faqs": "الأسئلة المتداولة",
+    "relatedTools": "الأدوات ذات الصلة",
+    "productInfo": "معلومات المنتج",
+    "writtenBy": "كتب وحرر بواسطة",
+    "factCheckedBy": "تدقيق الحقائق بواسطة"
+  },
+  "analytics": {
+    "title": "التحليلات ورؤى حركة المرور",
+    "subtitle": "تحليل",
+    "latestTraffic": "أحدث حركة المرور على الموقع",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "مصادر حركة المرور على الموقع",
+    "topKeywords": "أهم الكلمات الرئيسية",
+    "keyword": "الكلمة الرئيسية",
+    "traffic": "مرور",
+    "trafficSubtitle": "لتحسين حركة المرور على شبكة الإنترنت",
+    "geoSubtitle": "مؤشرات محرك البحث",
+    "sourceSubtitle": "مؤشرات محرك البحث",
+    "keywordSubtitle": "مؤشرات محرك البحث",
+    "percentage": "نسبة مئوية",
+    "source": "مصدر",
+    "noChartData": "لا توجد بيانات الرسم البياني",
+    "noTrafficChartData": "لا توجد بيانات مخطط حركة المرور",
+    "desktopVsMobile": "سطح المكتب مقابل الجوال",
+    "desktop": "سطح المكتب",
+    "mobileWeb": "الجوال",
+    "similarSites": "مواقع مشابهة",
+    "globalRank": "الترتيب العالمي",
+    "founded": "تأسست",
+    "socialInfluence": "تأثير وسائل التواصل الاجتماعي",
+    "views": "وجهات النظر",
+    "mentions": "يذكر",
+    "trendHistory": "تاريخ الاتجاه",
+    "trendSubtitle": "اتجاهات حركة المرور والآراء والتصويت الإيجابي بمرور الوقت",
+    "upvotes": "تصويتات إيجابية"
+  },
+  "embed": {
+    "title": "تضمين على موقع الويب الخاص بك",
+    "description": "أضف هذه الأداة إلى موقع الويب الخاص بك باستخدام أداة تضمين جميلة",
+    "preview": "معاينة",
+    "code": "تضمين التعليمات البرمجية",
+    "copy": "نسخ الرمز",
+    "copied": "منسوخ!",
+    "badgeAlt": "شارة TopAICollection",
+    "themes": {
+      "light": "فاتح",
+      "neutral": "حيادي",
+      "dark": "داكن"
+    }
+  },
+  "alternatives": {
+    "title": "البدائل",
+    "description": "أدوات مماثلة قد تعجبك"
+  },
+  "pricing": {
+    "title": "خطط التسعير",
+    "subtitle": "اختر الخطة التي تناسبك بشكل أفضل",
+    "popular": "شائع",
+    "getStarted": "ابدأ",
+    "disclaimer": "قد تختلف الأسعار والميزات. قم بزيارة الموقع الرسمي للحصول على أحدث المعلومات.",
+    "noPricingInfo": "لا توجد معلومات التسعير المتاحة",
+    "free": "مجاني",
+    "moreFeatures": "المزيد من الميزات"
+  },
+  "charts": {
+    "trafficChart": "مخطط المرور",
+    "comingSoon": "التصور الرسم البياني قريبا"
+  },
+  "reviews": {
+    "title": "التعليقات",
+    "pointsScale": "من أصل 5",
+    "subtitle": "انظر ماذا يفكر المجتمع",
+    "writeTitle": "هل تنصح بهذه الأداة؟",
+    "placeholder": "شارك تجربتك مع هذه الأداة...",
+    "privacy": "الخصوصية محمية",
+    "success": "تم إرسال المراجعة بنجاح!",
+    "submit": "مراجعة ما بعد",
+    "loginToReview": "يرجى تسجيل الدخول لإرسال مراجعة",
+    "loginLink": "تسجيل الدخول",
+    "noReviews": "لا توجد مراجعات حتى الآن. كن أول من يراجع هذه الأداة!",
+    "viewMore": "عرض جميع المراجعات",
+    "allReviewsTitle": "جميع المراجعات لـ",
+    "reviewsPageTitle": "المراجعات",
+    "by": "بواسطة",
+    "verified": "تم التحقق",
+    "anonymous": "مستخدم مجهول",
+    "ratingLabel": "التقييم",
+    "commentLabel": "التعليق",
+    "dateLabel": "التاريخ",
+    "page": "صفحة",
+    "editReview": "تعديل المراجعة",
+    "deleteReview": "حذف المراجعة",
+    "deleteConfirm": "هل أنت متأكد أنك تريد حذف مراجعتك؟",
+    "editTitle": "تعديل مراجعتك",
+    "updateSuccess": "تم تحديث المراجعة بنجاح!",
+    "deleteSuccess": "تم حذف المراجعة بنجاح!",
+    "commentRequired": "يرجى تقديم تعليق على مراجعتك.",
+    "ratingRequired": "يرجى تحديد تقييم.",
+    "alreadyReviewed": "لقد راجعت هذه الأداة بالفعل. استخدم زر ✏️ تعديل على مراجعتك لتحديثها.",
+    "sort": {
+      "label": "الترتيب حسب",
+      "newest": "الأحدث أولاً",
+      "oldest": "الأقدم أولاً",
+      "highest": "أعلى تصنيف",
+      "lowest": "أدنى تصنيف"
+    },
+    "save": "يحفظ",
+    "cancel": "يلغي",
+    "close": "يغلق",
+    "userLabel": "[ترجمة المصطلح: User]",
+    "unverify": "غير محقق",
+    "markVerified": "تعيين متحقق منه",
+    "confirm": "أكّد العملية",
+    "noReviewsFound": "لم يتم العثور على مراجعات لهذه الأداة.",
+    "deleteError": "فشل الحذف.",
+    "updateError": "فشل التحديث.",
+    "pagination": {
+      "showing": "عرض",
+      "of": "من",
+      "reviews": "مراجعات",
+      "prev": "السابق",
+      "next": "التالي"
+    },
+    "statusLabel": "الحالة",
+    "actionsLabel": "الإجراءات"
+  },
+  "share": {
+    "title": "شارك هذه الأداة"
+  },
+  "metrics": {
+    "monthlyVisits": "الزيارات الشهرية",
+    "growth": "نمو"
+  },
+  "tags": "العلامات",
+  "overview": "ملخص",
+  "howToUse": "كيفية الاستخدام",
+  "pricingPlans": "خطط التسعير",
+  "faqs": "الأسئلة الشائعة",
+  "geoChart": {
+    "noData": "لا توجد بيانات جغرافية متاحة",
+    "loading": "جارٍ تحميل البيانات الجغرافية..."
+  },
+  "introduction": "مقدمة",
+  "description": "وصف",
+  "coreFeatures": "الميزات الأساسية",
+  "useCases": "حالات الاستخدام",
+  "screenshots": "لقطات الشاشة",
+  "companyInfo": {
+    "companyName": "اسم الشركة",
+    "contactEmail": "البريد الإلكتروني للاتصال"
+  },
+  "nav": {
+    "scrollLeft": "قم بالتمرير إلى اليسار",
+    "scrollRight": "قم بالتمرير إلى اليمين",
+    "previous": "السابق",
+    "next": "التالي",
+    "imageSlide": "الصورة {index}",
+    "videoSlide": "شريحة فيديو"
+  },
+  "badges": {
+    "verifiedListing": "قائمة موثقة",
+    "freePlan": "خطة مجانية",
+    "paidPlans": "الخطط المدفوعة والأسعار"
+  },
+  "dummyReviews": {
+    "c1": "هذه أداة AI مذهلة! لقد غيرت سير ع��لي بالكامل.",
+    "c2": "ميزات جيدة جدًا وسهلة الاستخدام. موصى بها بشدة.",
+    "c3": "لقد جربت العديد من البدائل، ولكن هذا هو الأفضل بفارق كبير.",
+    "c4": "قيمة ممتازة مقابل السعر. الخطة المجانية سخية جدًا أيضًا.",
+    "c5": "UI رائعة وتصميم بديهي. بطيء بعض الشيء أحيانًا، ولكنه رائع بشكل عام.",
+    "c6": "أداة لا بد منها لأي محترف. توفر لي ساعات كل أسبوع.",
+    "c7": "وظائف جيدة ولكنها تتطلب بعض منحنى التعلم."
+  }
+}

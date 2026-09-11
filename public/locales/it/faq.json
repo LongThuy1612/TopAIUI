@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Domande frequenti - TopAICollection",
+    "description": "Trova le risposte alle domande più comuni su TopAICollection e su come utilizzare la nostra directory degli strumenti AI."
+  },
+  "badge": "Centro assistenza",
+  "title": "Domande frequenti",
+  "subtitle": "Trova le risposte alle domande più comuni su TopAICollection",
+  "categories": {
+    "general": "Domande generali",
+    "tools": "Informazioni sugli strumenti AI",
+    "submission": "Invio dello strumento",
+    "account": "Conto e fatturazione"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Cos'è TopAICollection?",
+        "answer": "TopAICollection è una directory completa di strumenti e siti Web di intelligenza artificiale. Aiutiamo gli utenti a scoprire le migliori soluzioni di intelligenza artificiale per le loro esigenze, dagli strumenti di produttività alle applicazioni creative."
+      },
+      "1": {
+        "question": "Come faccio a trovare lo strumento AI giusto?",
+        "answer": "Puoi navigare per categoria, utilizzare la nostra funzione di ricerca o controllare le nostre sezioni in primo piano e di tendenza. Ogni strumento include descrizioni dettagliate, recensioni degli utenti e valutazioni per aiutarti a prendere una decisione informata."
+      },
+      "2": {
+        "question": "TopAICollection è gratuito?",
+        "answer": "SÌ! La navigazione e la ricerca nella nostra directory sono completamente gratuite. Alcuni strumenti elencati potrebbero avere i propri prezzi, chiaramente indicati nella pagina di ciascuno strumento."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Come vengono selezionati gli strumenti per la directory?",
+        "answer": "Esaminiamo attentamente ogni invio per garantirne la qualità. Gli strumenti devono essere funzionali, fornire valore agli utenti e rispettare le nostre linee guida. Consideriamo anche il feedback e le valutazioni degli utenti."
+      },
+      "1": {
+        "question": "Quali informazioni vengono fornite per ciascuno strumento?",
+        "answer": "L'elenco di ogni strumento include una descrizione, funzionalità chiave, informazioni sui prezzi, recensioni degli utenti, analisi del traffico, categorie e collegamenti diretti al sito Web dello strumento."
+      },
+      "2": {
+        "question": "Con quale frequenza viene aggiornata la directory?",
+        "answer": "La nostra directory viene aggiornata quotidianamente con nuovi strumenti e informazioni. Monitoriamo continuamente gli strumenti elencati per garantirne la precisione e rimuovere quelli che non sono più disponibili."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Come posso inviare il mio strumento AI?",
+        "answer": "Visita la nostra pagina Strumento di invio e compila il modulo di invio. Fornisci informazioni dettagliate sul tuo strumento, comprese le sue funzionalità, il pubblico di destinazione e i prezzi. Esaminiamo tutti gli invii entro 48 ore."
+      },
+      "1": {
+        "question": "Quali sono i requisiti per l'invio dello strumento?",
+        "answer": "Il tuo strumento deve essere funzionale, fornire un valore chiaro agli utenti, avere un sito Web professionale e rispettare i requisiti legali. Non accettiamo strumenti che promuovono attività illegali o violano la privacy degli utenti."
+      },
+      "2": {
+        "question": "Quanto costa mettere in vendita uno strumento?",
+        "answer": "Gli elenchi di base sono gratuiti. Offriamo anche elenchi in primo piano e premium con vantaggi aggiuntivi come posizionamento prioritario, funzionalità promozionali e analisi avanzate."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Ho bisogno di un account per utilizzare TopAICollection?",
+        "answer": "Non è richiesto alcun account per navigare ed effettuare ricerche nella nostra directory. Tuttavia, la creazione di un account ti consente di salvare gli strumenti preferiti, scrivere recensioni e gestire gli invii di strumenti."
+      },
+      "1": {
+        "question": "Come posso aggiornare l'elenco dei miei strumenti?",
+        "answer": "Accedi al tuo account, vai alla dashboard di gestione degli strumenti e seleziona l'opzione di aggiornamento. Puoi scegliere tra piani in evidenza o premium con fatturazione mensile o annuale."
+      },
+      "2": {
+        "question": "Posso cancellare la mia inserzione a pagamento in qualsiasi momento?",
+        "answer": "Sì, puoi cancellare la tua inserzione a pagamento in qualsiasi momento. La tua inserzione rimarrà in primo piano fino alla fine del periodo di fatturazione corrente, quindi tornerà ad essere un'inserzione di base."
+      }
+    }
+  },
+  "cta": {
+    "title": "Hai ancora domande?",
+    "subtitle": "Il nostro team di supporto è qui per aiutarti",
+    "button": "Contatta l'assistenza"
+  }
+}

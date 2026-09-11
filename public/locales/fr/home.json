@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Découvrez les meilleurs outils et sites Web d'IA",
+    "description": "Explorez la liste d'annuaires d'outils AI #1. Ce site web de dictionnaire d'outils AI vous aide à trouver, comparer et lancer les tout meilleurs logiciels AI GRATUITEMENT."
+  },
+  "nav": {
+    "today": "Aujourd'hui",
+    "latestAI": "Dernière IA",
+    "mostSaved": "Les plus sauvegardés",
+    "mostUsed": "Les plus utilisés",
+    "browserPlugin": "Plugin de navigateur",
+    "application": "Candidature",
+    "discordOfAI": "Discorde de l'IA",
+    "compareAI": "Comparez l'IA",
+    "ariaLabel": "Navigation principale"
+  },
+  "hero": {
+    "title": "Découvrez les meilleurs sites Web et outils d'IA",
+    "subtitle": "Trouvez les outils d'IA parfaits pour vos besoins dans notre répertoire complet, mis à jour quotidiennement avec les dernières innovations en matière d'IA.",
+    "stats": {
+      "aiTools": "Outils d'IA",
+      "categories": "catégories",
+      "languages": "langues",
+      "and": "et",
+      "supporting": "justificatif",
+      "description": "Collection complète d'IA, mise à jour quotidiennement avec les dernières innovations."
+    }
+  },
+  "search": {
+    "placeholder": "Recherchez des outils par IA, par ex. Outil d'IA de traduction vidéo",
+    "button": "Recherche"
+  },
+  "sections": {
+    "featured": {
+      "title": "Outils d'IA en vedette",
+      "description": "Découvrez les outils d'IA les plus populaires et les plus efficaces",
+      "noTools": "Aucun outil en vedette disponible pour le moment"
+    },
+    "justLaunched": {
+      "title": "Vient d'être lancé",
+      "description": "Derniers outils et innovations d’IA",
+      "noTools": "Aucun nouvel outil disponible pour le moment"
+    },
+    "categories": {
+      "title": "Parcourir par catégorie",
+      "description": "Trouvez des outils d'IA organisés par cas d'utilisation et par secteur d'activité"
+    },
+    "trending": {
+      "title": "Tendance actuelle",
+      "description": "Outils d'IA les plus populaires cette semaine"
+    }
+  },
+  "cta": {
+    "title": "Listez votre outil d'IA",
+    "description": "Atteignez des millions d'utilisateurs potentiels en inscrivant votre outil d'IA dans notre annuaire.",
+    "button": "Soumettez votre outil",
+    "features": {
+      "exposure": "Exposition mondiale",
+      "traffic": "Augmentation du trafic",
+      "seo": "Avantages du référencement"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "Applications d'IA",
+      "description": "Découvrez les meilleures applications d'IA pour la productivité, la créativité et bien plus encore."
+    },
+    "browserExtensions": {
+      "title": "Extensions de navigateur IA",
+      "description": "Découvrez les meilleures extensions de navigateur IA pour dynamiser votre flux de travail."
+    },
+    "latestAi": {
+      "title": "Derniers outils d'IA",
+      "description": "Découvrez les derniers outils et innovations d'IA, mis à jour quotidiennement."
+    },
+    "mostSaved": {
+      "title": "Outils d'IA les plus enregistrés",
+      "description": "Découvrez les outils d'IA les plus sauvegardés et mis en favoris par notre communauté."
+    },
+    "mostUsed": {
+      "title": "Outils IA Les Plus Utilisés",
+      "description": "Découvrez les outils IA les plus populaires et les plus utilisés par notre communauté."
+    },
+    "discord": {
+      "title": "Communautés IA sur Discord",
+      "description": "Découvrez les meilleures communautés Discord sur l'IA et connectez-vous avec des passionnés."
+    },
+    "today": {
+      "title": "Outils IA Mis en Avant Aujourd'hui",
+      "description": "Découvrez les meilleurs outils IA mis en avant aujourd'hui sur TopAICollection."
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "Génération de texte",
+          "Image Creation": "Création d'images",
+          "Coding": "Codage",
+          "Video": "Vidéo",
+          "Audio": "Audio",
+          "Productivity": "Productivité"
+        },
+        "text": "Pourquoi souhaitez-vous utiliser l'AI ?"
+      },
+      "budget": {
+        "options": {
+          "Free only": "Gratuit uniquement",
+          "Freemium": "Freemium",
+          "Paid is fine": "Payant convient"
+        },
+        "text": "Quel est votre budget ?"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "Débutant",
+          "Intermediate": "Intermédiaire",
+          "Expert": "Expert"
+        },
+        "text": "Quel est votre niveau d'expertise ?"
+      }
+    },
+    "title": "Vos recommandations personnalisées",
+    "viewTool": "Voir l'outil",
+    "noTools": "Aucun outil ne correspond à vos critères précis. Essayez d'élargir votre recherche !",
+    "startOver": "Recommencer",
+    "finding": "Recherche des meilleurs outils AI pour vous...",
+    "questionLabel": "Question {step} sur {total}",
+    "completed": "{percentage}% terminé"
+  }
+}

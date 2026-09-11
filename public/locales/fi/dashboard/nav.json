@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "Takaisin hallintapaneeliin",
+    "backToHome": "Takaisin kotiin",
+    "dashboard": "Ohjauspaneeli",
+    "websiteInsights": "Verkkosivuanalyysi",
+    "socialListening": "Sosiaalinen seuranta",
+    "researchReport": "Tutkimusraportti",
+    "myAis": "Omat AI-työkalut",
+    "favorites": "Suosikit",
+    "profileSettings": "Profiiliasetukset",
+    "advertise": "Mainosta",
+    "postsLinks": "Viestit & Linkit",
+    "paymentInvoice": "Maksut & Laskut",
+    "overview": "Yleiskatsaus",
+    "myInquiries": "Omat tiedustelut"
+  },
+  "logout": "Kirjaudu ulos",
+  "logoutConfirmTitle": "Kirjaudu ulos",
+  "logoutConfirmDescription": "Oletko varma, että haluat kirjautua ulos?",
+  "upgrade": "Päivitä",
+  "sections": {
+    "research": "TUTKIMUS",
+    "management": "HALLINTA",
+    "business": "LIIKETOIMINTA",
+    "admin": "YLLÄPITO",
+    "guestPost": "Vierasviestit",
+    "updateAi": "Päivitä AI",
+    "myGpts": "Minun GPT:ni"
+  },
+  "help": "Apua",
+  "close": "Sulje",
+  "status": {
+    "active": "Aktiivinen"
+  },
+  "advertiseAi": "Mainosta tekoälyä",
+  "myAis": {
+    "title": "Minun tekoälyni",
+    "subtitle": "Hallitse ja seuraa lähettämiesi tekoälytyökalujen suorituskykyä.",
+    "empty": {
+      "cta": "Lähetä AI-työkalu"
+    }
+  }
+}

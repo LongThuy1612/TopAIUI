@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Blog & Berita AI - TopAICollection",
+    "description": "Ikuti terus berita, tutorial, ulasan, dan wawasan AI terbaru dari dunia kecerdasan buatan."
+  },
+  "badge": "Wawasan AI",
+  "title": "Blog & Berita AI",
+  "subtitle": "Terus ikuti perkembangan tren, tutorial, dan wawasan terkini dari dunia AI",
+  "search": {
+    "placeholder": "Cari artikel..."
+  },
+  "categories": {
+    "title": "Kategori",
+    "all": "Semua Artikel",
+    "news": "Berita AI",
+    "tutorials": "Tutorial",
+    "reviews": "Ulasan Alat",
+    "industry": "Wawasan Industri",
+    "guides": "Panduan Cara"
+  },
+  "newsletter": {
+    "title": "Tetap Diperbarui",
+    "subtitle": "Dapatkan berita AI terkini dikirimkan ke kotak masuk Anda",
+    "placeholder": "Masukkan email Anda",
+    "button": "Berlangganan"
+  },
+  "article": {
+    "readTime": "{minutes} menit dibaca",
+    "published": "Diterbitkan pada tanggal {date}",
+    "writtenBy": "Ditulis & Diedit oleh:",
+    "factCheckedBy": "Diperiksa Faktanya oleh:"
+  },
+  "pagination": {
+    "next": "Berikutnya",
+    "page": "Halaman {page} dari {total}"
+  },
+  "relatedTools": "Alat Terkait",
+  "backToBlog": "Kembali ke Blog",
+  "errors": {
+    "notFound": "Postingan tidak ditemukan"
+  },
+  "sort": {
+    "latest": "Terbaru",
+    "oldest": "Terlama",
+    "popular": "Populer"
+  },
+  "filter": {
+    "allAuthors": "Semua Penulis",
+    "sortBy": "Urutkan Berdasarkan"
+  },
+  "relatedPosts": "Postingan Terkait",
+  "faqs": "Pertanyaan yang Sering Diajukan"
+}

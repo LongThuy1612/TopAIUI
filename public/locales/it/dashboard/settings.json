@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Nome Completo",
+      "email": "Indirizzo Email",
+      "emailHelp": "L'email non può essere modificata",
+      "emailPlaceholder": "tuo@esempio.com",
+      "phone": "Numero di Telefono",
+      "phonePlaceholder": "+39 (000) 000-0000",
+      "company": "Azienda",
+      "country": "Paese",
+      "website": "Sito Web",
+      "save": "Salva Modifiche",
+      "saving": "Salvataggio...",
+      "saveSuccess": "Profilo aggiornato con successo."
+    },
+    "password": {
+      "title": "Cambia Password",
+      "current": "Password Attuale",
+      "new": "Nuova Password",
+      "confirm": "Conferma Nuova Password",
+      "update": "Aggiorna Password"
+    },
+    "notifications": {
+      "title": "Preferenze Notifiche",
+      "email": "Notifiche Email",
+      "marketing": "Email di Marketing"
+    }
+  },
+  "profile": {
+    "title": "Profilo",
+    "fullName": "Nome e cognome",
+    "email": "Indirizzo e-mail",
+    "emailHelp": "L'e-mail non può essere modificata",
+    "emailPlaceholder": "tu@esempio.com",
+    "phone": "Numero di telefono",
+    "company": "Azienda",
+    "country": "Paese",
+    "website": "Sito web",
+    "save": "Salva modifiche",
+    "saving": "Risparmio...",
+    "saveSuccess": "Profilo aggiornato con successo.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Cambiare la password",
+    "current": "password attuale",
+    "new": "Nuova parola d'ordine",
+    "confirm": "Conferma nuova password",
+    "update": "Aggiorna password"
+  },
+  "notifications": {
+    "title": "Preferenze di notifica",
+    "email": "Notifiche e-mail",
+    "marketing": "E-mail di marketing"
+  },
+  "tabs": {
+    "profile": "Profilo",
+    "security": "Sicurezza",
+    "notifications": "Notifiche"
+  },
+  "updated": "Impostazioni aggiornate con successo"
+}

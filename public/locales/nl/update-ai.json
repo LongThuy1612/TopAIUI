@@ -1,0 +1,118 @@
+{
+  "title": "Update uw AI-tool",
+  "description": "Houd de informatie over uw AI-tool up-to-date. Update beschrijvingen, functies, prijzen of andere details om nauwkeurigheid te garanderen.",
+  "hero": {
+    "title": "Uw AI's op TopAICollection",
+    "subtitle": "TopAI kan u helpen miljoenen AI-gebruikers en uw potentiële klanten wereldwijd te bereiken."
+  },
+  "form": {
+    "toolLabel": "Hulpmiddel",
+    "toolHint": "PS: Als de tool niet kan worden gevonden, dien deze dan eerst in.",
+    "toolPlaceholder": "Zoek uw gereedschap..."
+  },
+  "pricing": {
+    "title": "Prijzen bijwerken",
+    "price": "$49",
+    "period": "Eén keer",
+    "description": "We zullen binnen 24 uur na betaling een update voor u uitvoeren."
+  },
+  "updates": {
+    "title": "Ondersteunde updatetypen",
+    "types": [
+      {
+        "label": "Gereedschapsnaam",
+        "description": "Update de weergavenaam van uw tool"
+      },
+      {
+        "label": "Beschrijving",
+        "description": "Herzie de korte en lange beschrijvingen van uw gereedschap"
+      },
+      {
+        "label": "Categorie",
+        "description": "Wijzig of voeg nieuwe categorieën toe"
+      },
+      {
+        "label": "Functielijst",
+        "description": "Update de functiehoogtepunten van uw tool"
+      },
+      {
+        "label": "Gebruiksscenario's",
+        "description": "Gebruiksvoorbeelden toevoegen of bijwerken"
+      },
+      {
+        "label": "Prijsinformatie",
+        "description": "Update prijsplannen en niveaus"
+      },
+      {
+        "label": "Veelgestelde vragen",
+        "description": "Veelgestelde vragen toevoegen of wijzigen"
+      },
+      {
+        "label": "URL's en links",
+        "description": "Update website, demo of sociale links"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Moet het weten",
+    "items": [
+      "Updates worden binnen 24 uur na betalingsbevestiging verwerkt.",
+      "U kunt meerdere velden in één verzoek bijwerken.",
+      "Ons team zal uw wijzigingen beoordelen en publiceren.",
+      "Als de update verduidelijking vereist, nemen we contact met u op via e-mail.",
+      "Screenshot-/media-updates kunnen nog eens 24 uur duren."
+    ]
+  },
+  "faq": {
+    "title": "Veelgestelde vragen - AI bijwerken",
+    "items": [
+      {
+        "question": "Hoe lang duurt een update?",
+        "answer": "Updates worden doorgaans binnen 24 uur na betaling verwerkt. Bij complexe wijzigingen kan een extra beoordelingsperiode nodig zijn."
+      },
+      {
+        "question": "Wat kan ik updaten?",
+        "answer": "U kunt de naam, beschrijving, categorie, functies, gebruiksscenario's, prijzen, veelgestelde vragen en URL's van uw tool bijwerken."
+      },
+      {
+        "question": "Kan ik meerdere dingen tegelijk updaten?",
+        "answer": "Ja! U kunt in één inzending meerdere updates aanvragen. Alle wijzigingen zijn inbegrepen in de kosten van $ 49."
+      },
+      {
+        "question": "Wat moet ik doen als ik na de update correcties moet aanbrengen?",
+        "answer": "Kleine correcties gerelateerd aan uw oorspronkelijke updateverzoek worden binnen 7 dagen kosteloos afgehandeld."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Waarom uw tool updaten?",
+    "reasons": [
+      "Houd informatie accuraat en actueel",
+      "Verbeter de zoekresultaten en zichtbaarheid",
+      "Update prijzen en functiewijzigingen",
+      "Voeg nieuwe screenshots of demo's toe",
+      "Corrigeer verouderde informatie",
+      "Verbeter uw gereedschapsbeschrijving"
+    ]
+  },
+  "meta": {
+    "title": "Update uw AI-tool - TopAICollection",
+    "description": "Houd de informatie over uw AI-tool up-to-date. Update beschrijvingen, functies, prijzen of andere details om nauwkeurigheid te garanderen."
+  },
+  "team": "TopAICollection-team",
+  "validation": {
+    "required": "Dit veld is verplicht",
+    "selectTool": "Selecteer een tool om te updaten",
+    "detailsTooShort": "Wijzigingsdetails moeten minimaal 10 tekens lang zijn",
+    "toolNameRequired": "Gereedschapsnaam is vereist",
+    "url": "Ongeldige URL",
+    "descriptionMin": "Beschrijving moet minimaal 10 tekens lang zijn",
+    "categoryRequired": "Selecteer een categorie",
+    "email": "Ongeldig e-mailadres",
+    "messageMin": "Het bericht moet minimaal 10 tekens lang zijn"
+  },
+  "sidebar": {
+    "updatedCount": "gereedschappen bijgewerkt",
+    "updatedCountSub": "deze maand"
+  }
+}

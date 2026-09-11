@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Solusi Bisnis - Bermitra Dengan Kami | TopAICollection",
+    "description": "Jelajahi peluang kemitraan bisnis dengan TopAICollection. Iklan, konten bersponsor, dan banyak lagi."
+  },
+  "title": "Solusi Bisnis",
+  "subtitle": "Bermitra dengan TopAICollection untuk menjangkau penggemar AI di seluruh dunia",
+  "contact": {
+    "title": "Hubungi Kami"
+  },
+  "offers": {
+    "ads": "Jalankan kampanye iklan bertarget",
+    "partnerships": "Jelajahi kemitraan strategis",
+    "growth": "Percepat pertumbuhan produk AI Anda",
+    "consulting": "Layanan integrasi AI khusus"
+  },
+  "form": {
+    "fullName": "Nama Lengkap",
+    "workEmail": "Email Kerja",
+    "companyName": "Nama perusahaan",
+    "inquiryType": "Jenis Permintaan",
+    "selectType": "Pilih jenis",
+    "message": "Pesan",
+    "messagePlaceholder": "Beritahu kami lebih banyak tentang kebutuhan Anda...",
+    "inquiryTypes": {
+      "advertise": "Mengiklankan",
+      "guestPost": "Postingan Tamu",
+      "partnership": "Kemitraan",
+      "customDevelopment": "Pengembangan Kustom",
+      "other": "Lainnya"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Iklankan Alat AI Anda",
+      "description": "Tampilkan alat AI Anda secara menonjol di seluruh platform kami.",
+      "link": "Pelajari Lebih Lanjut"
+    },
+    "guestPost": {
+      "title": "Kiriman & Tautan Tamu",
+      "description": "Publikasikan konten atau dapatkan tautan balik di situs otoritas tinggi kami.",
+      "link": "Pelajari Lebih Lanjut"
+    },
+    "submitTool": {
+      "title": "Kirimkan Alat Anda",
+      "description": "Tambahkan alat AI Anda ke direktori kami secara gratis.",
+      "link": "Kirim Sekarang"
+    },
+    "customSolutions": {
+      "title": "Solusi Khusus",
+      "description": "Hubungi kami untuk peluang kemitraan khusus.",
+      "link": "Hubungi kami"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100+ Mitra",
+    "partnerCountSub": "Dipercaya oleh perusahaan AI terkemuka",
+    "contactSupport": "Hubungi Dukungan"
+  },
+  "validation": {
+    "required": "Bidang ini wajib diisi",
+    "toolNameRequired": "Nama alat wajib diisi",
+    "url": "URL tidak valid",
+    "descriptionMin": "Deskripsi minimal harus 10 karakter",
+    "categoryRequired": "Silakan pilih kategori",
+    "email": "Alamat email tidak valid",
+    "messageMin": "Pesan minimal harus 10 karakter"
+  },
+  "success": "Permintaan Anda telah berhasil dikirimkan!"
+}

@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Verkkosivun näkymät",
+    "subtitle": "Seuraa kilpailijoiden liikennettä ja avainsanoja.",
+    "track": "Seuraa",
+    "noDomains": "Ei vielä seurattavia verkkotunnuksia. Lisää yksi ylhäältä!",
+    "domain": "Verkkotunnus",
+    "monthlyVisits": "Kuukausittaiset käynnit",
+    "rank": "Sijoitus",
+    "topKeywords": "Tärkeimmät avainsanat",
+    "added": "Lisätty",
+    "tool": "Työkalu",
+    "organicClicks": "Orgaaniset napsautukset",
+    "paidClicks": "Maksulliset napsautukset",
+    "totalClicks": "Napsautukset yhteensä",
+    "addedOn": "Lisätty",
+    "noTools": "Työkaluja ei ole vielä jäljitetty.",
+    "addDomainDesc": "Lisää ensimmäinen verkkotunnuksesi yllä, jotta voit alkaa seurata tilastoja.",
+    "deleteSuccess": "Verkkotunnus poistettu seurannasta",
+    "confirmDelete": "Haluatko varmasti lopettaa tämän verkkotunnuksen seurannan?",
+    "quota": "Kiintiö",
+    "limitReachedDesc": "Olet saavuttanut kuukausittaisten havaintojen rajan. Päivitä seurataksesi useampia verkkotunnuksia.",
+    "upgradeNow": "Päivitä nyt",
+    "usage": "Käyttö",
+    "searchPlaceholder": "Hae seurattuja verkkotunnuksia...",
+    "advancedFilter": "Edistyneet suodattimet",
+    "bulkOpen": "Bulk Avaa",
+    "export": "Vie tiedot",
+    "aiTool": "AI-työkalu",
+    "rankChange": "Sijoituksen muutos",
+    "globalRank": "Globaali sijoitus",
+    "traffic": "Liikenne",
+    "audience": "Yleisö",
+    "updateDate": "Päivityspäivämäärä",
+    "limitReachedTitle": "Olet saavuttanut rajasi",
+    "limitReachedBody": "Olet saavuttanut ilmaisten hakujen rajan. Päivitä saadaksesi rajoittamattoman pääsyn.",
+    "upgradePro": "Päivitä Pro-suunnitelmaan",
+    "actions": "Toiminnot",
+    "viewSocial": "Näytä Social",
+    "filters": {
+      "months": {
+        "feb2026": "helmikuu 2026",
+        "jan2026": "tammikuu 2026"
+      },
+      "sources": {
+        "search": "Hae",
+        "direct": "Suora",
+        "social": "Sosiaalinen"
+      },
+      "regions": {
+        "us": "me",
+        "vn": "vietnam"
+      },
+      "categories": {
+        "llm": "LLM",
+        "image": "Kuva",
+        "productivity": "Tuottavuus"
+      },
+      "thresholds": {
+        "0": "0",
+        "100k": "100 tuhatta",
+        "1m": "1 m"
+      },
+      "timePeriod": "Aikajakso",
+      "selectMonth": "Valitse kuukausi",
+      "trafficSource": "Liikenteen lähde",
+      "allSources": "Kaikki lähteet",
+      "region": "Alue",
+      "category": "luokka",
+      "trafficThreshold": "Liikenteen kynnys",
+      "minVisits": "Mini vierailut"
+    },
+    "exportSuccess": "Vienti onnistui.",
+    "exportFailed": "Vienti epäonnistui.",
+    "exportData": "Vie tiedot",
+    "exportDesc": "Vie tämä raportti jaettavaksi tai analysoitavaksi paikallisesti.",
+    "exportLimit": "Vientirajoitus",
+    "rows": "Rivit",
+    "creditsCost": "Luottokustannukset",
+    "availableAfter": "Saatavilla jälkeen",
+    "confirmExport": "Vahvista vienti",
+    "notEnoughCredits": "Ei tarpeeksi krediittejä",
+    "removeFailed": "Poistaminen epäonnistui.",
+    "direct": "Suora",
+    "sortDefault": "Oletus",
+    "sortTraffic": "Liikenne"
+  },
+  "common": {
+    "global": "Globaali",
+    "allCategories": "Kaikki kategoriat"
+  },
+  "table": {
+    "column": {
+      "tool": "Työkalu",
+      "organic": "Orgaaniset napsautukset",
+      "paid": "Maksulliset napsautukset",
+      "total": "Klikkaukset yhteensä",
+      "trend": "trendi",
+      "growth": "Kasvu"
+    },
+    "searchPlaceholder": "Hae seurattuja verkkotunnuksia...",
+    "showingResults": "Näytetään {count} tulokset",
+    "empty": "Ei verkkotunnuksia vielä seurattu."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Helpcentrum - TopAICollection-ondersteuning",
+    "description": "Krijg hulp bij TopAICollection. Vind antwoorden op veelgestelde vragen en neem contact op met ons ondersteuningsteam."
+  },
+  "title": "Helpcentrum",
+  "subtitle": "Hoe kunnen wij u vandaag helpen?",
+  "sections": {
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "description": "Vind antwoorden op veelgestelde vragen.",
+      "link": "Bekijk veelgestelde vragen"
+    },
+    "contact": {
+      "title": "Neem contact op met ondersteuning",
+      "description": "Kunt u niet vinden wat u nodig heeft? Neem contact met ons op.",
+      "link": "Neem contact met ons op"
+    }
+  },
+  "commonTopics": {
+    "title": "Veelvoorkomende onderwerpen",
+    "submitTool": "Hoe dien ik mijn AI-tool in?",
+    "advertising": "Hoe werkt adverteren?",
+    "privacy": "Wat is uw privacybeleid?",
+    "terms": "Wat zijn uw servicevoorwaarden?"
+  }
+}

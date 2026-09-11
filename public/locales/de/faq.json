@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Häufig gestellte Fragen – TopAICollection",
+    "description": "Finden Sie Antworten auf häufige Fragen zu TopAICollection und zur Verwendung unseres KI-Tools-Verzeichnisses."
+  },
+  "badge": "Hilfecenter",
+  "title": "Häufig gestellte Fragen",
+  "subtitle": "Finden Sie Antworten auf häufig gestellte Fragen zu TopAICollection",
+  "categories": {
+    "general": "Allgemeine Fragen",
+    "tools": "Über KI-Tools",
+    "submission": "Tool-Einreichung",
+    "account": "Konto und Abrechnung"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "Was ist TopAICollection?",
+        "answer": "TopAICollection ist ein umfassendes Verzeichnis von KI-Tools und Websites. Wir helfen Benutzern dabei, die besten KI-Lösungen für ihre Anforderungen zu finden, von Produktivitätstools bis hin zu kreativen Anwendungen."
+      },
+      "1": {
+        "question": "Wie finde ich das richtige KI-Tool?",
+        "answer": "Sie können nach Kategorien stöbern, unsere Suchfunktion verwenden oder unsere Rubriken „Featured“ und „Trends“ durchsehen. Jedes Tool enthält detaillierte Beschreibungen, Benutzerrezensionen und Bewertungen, die Ihnen helfen, eine fundierte Entscheidung zu treffen."
+      },
+      "2": {
+        "question": "Ist die Nutzung von TopAICollection kostenlos?",
+        "answer": "Ja! Das Durchsuchen und Durchsuchen unseres Verzeichnisses ist völlig kostenlos. Für einige der aufgeführten Tools gelten möglicherweise eigene Preise, die auf der jeweiligen Tool-Seite deutlich angegeben sind."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "Wie werden die Tools für das Verzeichnis ausgewählt?",
+        "answer": "Wir prüfen jede Einreichung sorgfältig, um die Qualität sicherzustellen. Werkzeuge müssen funktionsfähig sein, den Benutzern einen Mehrwert bieten und unseren Richtlinien entsprechen. Wir berücksichtigen auch Benutzerfeedback und Bewertungen."
+      },
+      "1": {
+        "question": "Welche Informationen werden für jedes Tool bereitgestellt?",
+        "answer": "Jede Tool-Liste enthält eine Beschreibung, wichtige Funktionen, Preisinformationen, Benutzerbewertungen, Verkehrsanalysen, Kategorien und direkte Links zur Website des Tools."
+      },
+      "2": {
+        "question": "Wie oft wird das Verzeichnis aktualisiert?",
+        "answer": "Unser Verzeichnis wird täglich mit neuen Tools und Informationen aktualisiert. Wir überwachen die aufgeführten Tools kontinuierlich, um ihre Richtigkeit sicherzustellen, und entfernen alle nicht mehr verfügbaren Tools."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "Wie kann ich mein KI-Tool einreichen?",
+        "answer": "Besuchen Sie unsere Submit-Tool-Seite und füllen Sie das Submit-Formular aus. Geben Sie detaillierte Informationen zu Ihrem Tool an, einschließlich seiner Funktionen, Zielgruppe und Preise. Wir prüfen alle Einsendungen innerhalb von 48 Stunden."
+      },
+      "1": {
+        "question": "Was sind die Voraussetzungen für die Werkzeugeinreichung?",
+        "answer": "Ihr Tool muss funktionsfähig sein, den Benutzern einen klaren Mehrwert bieten, über eine professionelle Website verfügen und den gesetzlichen Anforderungen entsprechen. Wir akzeptieren keine Tools, die illegale Aktivitäten fördern oder die Privatsphäre der Benutzer verletzen."
+      },
+      "2": {
+        "question": "Wie viel kostet es, ein Werkzeug aufzulisten?",
+        "answer": "Basiseinträge sind kostenlos. Wir bieten außerdem Sonder- und Premium-Einträge mit zusätzlichen Vorteilen wie vorrangiger Platzierung, Werbefunktionen und erweiterten Analysen."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Benötige ich ein Konto, um TopAICollection nutzen zu können?",
+        "answer": "Zum Durchsuchen und Durchsuchen unseres Verzeichnisses ist kein Konto erforderlich. Wenn Sie jedoch ein Konto erstellen, können Sie Ihre bevorzugten Tools speichern, Rezensionen schreiben und Tool-Einsendungen verwalten."
+      },
+      "1": {
+        "question": "Wie aktualisiere ich meine Werkzeugliste?",
+        "answer": "Melden Sie sich bei Ihrem Konto an, gehen Sie zu Ihrem Tool-Management-Dashboard und wählen Sie die Upgrade-Option. Sie können zwischen Feature- oder Premium-Plänen mit monatlicher oder jährlicher Abrechnung wählen."
+      },
+      "2": {
+        "question": "Kann ich meinen kostenpflichtigen Eintrag jederzeit kündigen?",
+        "answer": "Ja, Sie können Ihren kostenpflichtigen Eintrag jederzeit kündigen. Ihr Eintrag bleibt bis zum Ende Ihres aktuellen Abrechnungszeitraums erhalten und wird dann wieder zu einem Basiseintrag."
+      }
+    }
+  },
+  "cta": {
+    "title": "Sie haben noch Fragen?",
+    "subtitle": "Unser Support-Team ist für Sie da",
+    "button": "Kontaktieren Sie den Support"
+  }
+}

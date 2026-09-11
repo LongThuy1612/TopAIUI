@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Cookiebeleid - TopAICollection",
+    "description": "Lees meer over hoe TopAICollection cookies en vergelijkbare technologieën gebruikt."
+  },
+  "title": "Cookiebeleid",
+  "lastUpdated": "Laatst bijgewerkt",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Wat zijn cookies",
+      "description": "Cookies zijn kleine tekstbestanden die op uw computer of mobiele apparaat worden opgeslagen wanneer u onze website bezoekt. Ze helpen ons u een betere ervaring te bieden door uw voorkeuren te onthouden en te begrijpen hoe u onze site gebruikt."
+    },
+    "howWeUse": {
+      "title": "Hoe wij cookies gebruiken",
+      "intro": "Wij gebruiken cookies voor de volgende doeleinden:",
+      "essential": "Essentiële cookies: vereist om de website goed te laten functioneren, inclusief authenticatie en beveiliging.",
+      "analytics": "Analytische cookies: helpen ons te begrijpen hoe bezoekers omgaan met onze website.",
+      "preference": "Voorkeurscookies: Onthoud uw instellingen en voorkeuren, zoals taal en landinstelling.",
+      "marketing": "Marketingcookies: worden gebruikt om relevante advertenties weer te geven en de campagneprestaties bij te houden."
+    },
+    "managing": {
+      "title": "Cookies beheren",
+      "intro": "Met de meeste webbrowsers kunt u cookies beheren via hun instellingen. U kunt ervoor kiezen om:",
+      "blockAll": "Blokkeer alle cookies",
+      "acceptAll": "Accepteer alle cookies",
+      "beNotified": "Ontvang een melding wanneer er een cookie wordt geplaatst",
+      "deleteExisting": "Verwijder cookies die al zijn ingesteld",
+      "note": "Houd er rekening mee dat het blokkeren van bepaalde cookies uw ervaring op onze website kan beïnvloeden."
+    },
+    "thirdParty": {
+      "title": "Cookies van derden",
+      "intro": "Sommige cookies op onze site worden geplaatst door diensten van derden die wij gebruiken, waaronder:",
+      "googleAnalytics": "Google Analytics (analyse)",
+      "vercel": "Vercel (hosting en analyse)"
+    },
+    "contact": {
+      "title": "Neem contact met ons op",
+      "message": "Als u vragen heeft over ons gebruik van cookies, neem dan contact met ons op",
+      "contactLink": "neem contact met ons op"
+    }
+  }
+}

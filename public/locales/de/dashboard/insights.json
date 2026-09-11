@@ -1,0 +1,105 @@
+{
+  "insights": {
+    "title": "Website-Insights",
+    "subtitle": "Verfolgen Sie Konkurrenz-Traffic und Keywords.",
+    "track": "Verfolgen",
+    "noDomains": "Noch keine Domains verfolgt. Fügen Sie oben eine hinzu!",
+    "domain": "„Domäne“",
+    "monthlyVisits": "Monatliche Besuche",
+    "rank": "Rang",
+    "topKeywords": "Top-Keywords",
+    "added": "Hinzugefügt",
+    "tool": "Werkzeug",
+    "organicClicks": "Organische Klicks",
+    "paidClicks": "Bezahlte Klicks",
+    "totalClicks": "Gesamtklicks",
+    "addedOn": "Hinzugefügt",
+    "noTools": "Noch keine Werkzeuge erfasst.",
+    "addDomainDesc": "Fügen Sie oben Ihre erste Domain hinzu, um mit der Verfolgung von Erkenntnissen zu beginnen.",
+    "deleteSuccess": "Domain aus dem Tracking entfernt",
+    "confirmDelete": "Sind Sie sicher, dass Sie das Tracking dieser Domain stoppen möchten?",
+    "quota": "Quote",
+    "limitReachedDesc": "Sie haben Ihr monatliches Insights-Limit erreicht. Führen Sie ein Upgrade durch, um mehr Domains zu verfolgen.",
+    "upgradeNow": "Jetzt upgraden",
+    "usage": "Verwendung",
+    "searchPlaceholder": "Nachverfolgte Domains durchsuchen...",
+    "advancedFilter": "Erweiterte Filter",
+    "bulkOpen": "Massenöffnung",
+    "export": "Daten exportieren",
+    "aiTool": "KI-Tool",
+    "rankChange": "Rangwechsel",
+    "globalRank": "Globaler Rang",
+    "traffic": "Verkehr",
+    "audience": "Publikum",
+    "updateDate": "Aktualisierungsdatum",
+    "limitReachedTitle": "Sie haben Ihr Limit erreicht",
+    "limitReachedBody": "Sie haben Ihr Limit an kostenlosen Suchen erreicht. Upgraden Sie, um unbegrenzten Zugriff zu erhalten.",
+    "upgradePro": "Upgrade auf den Pro-Plan",
+    "actions": "Aktionen",
+    "viewSocial": "Soziale Netzwerke anzeigen",
+    "exportSuccess": "Erfolgreich exportiert.",
+    "exportFailed": "Export fehlgeschlagen.",
+    "exportData": "Daten exportieren",
+    "exportDesc": "Exportieren Sie diesen Bericht, um ihn lokal zu teilen oder zu analysieren.",
+    "exportLimit": "Exportlimit",
+    "rows": "Reihen",
+    "creditsCost": "Credits-Kosten",
+    "availableAfter": "Verfügbar nach",
+    "confirmExport": "Bestätigen Sie den Export",
+    "notEnoughCredits": "Nicht genügend Credits",
+    "filters": {
+      "timePeriod": "Zeitraum",
+      "selectMonth": "Wählen Sie Monat aus",
+      "months": {
+        "feb2026": "Februar 2026",
+        "jan2026": "Jan. 2026"
+      },
+      "trafficSource": "Verkehrsquelle",
+      "allSources": "Alle Quellen",
+      "sources": {
+        "search": "Suchen",
+        "direct": "Direkt",
+        "social": "Sozial"
+      },
+      "region": "„Region“",
+      "regions": {
+        "us": "Uns",
+        "vn": "„Vn“"
+      },
+      "category": "Kategorie",
+      "categories": {
+        "llm": "„Llm“",
+        "image": "Bild",
+        "productivity": "Produktivität"
+      },
+      "trafficThreshold": "Verkehrsschwelle",
+      "minVisits": "Min. Besuche",
+      "thresholds": {
+        "0": "0",
+        "100k": "100.000",
+        "1m": "„1m“"
+      }
+    },
+    "removeFailed": "Entfernen fehlgeschlagen.",
+    "direct": "Direkt",
+    "sortDefault": "Standard",
+    "sortTraffic": "Datenverkehr"
+  },
+  "common": {
+    "global": "„Global“",
+    "allCategories": "Alle Kategorien"
+  },
+  "table": {
+    "column": {
+      "tool": "„Werkzeug“",
+      "organic": "„Organische Klicks“",
+      "paid": "„Bezahlte Klicks“",
+      "total": "„Klicks insgesamt“",
+      "trend": "„Trend“",
+      "growth": "Wachstum"
+    },
+    "searchPlaceholder": "„Suche nach verfolgten Domains…“",
+    "showingResults": "„Zeige {count} Ergebnisse“",
+    "empty": "„Noch keine Domains erfasst.“"
+  }
+}

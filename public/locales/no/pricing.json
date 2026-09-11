@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Prisplaner - TopAICollection",
+    "description": "Enkel, gjennomsiktig prising for AI-forskning og sosial lytting."
+  },
+  "title": "Enkel, gjennomsiktig prising",
+  "subtitle": "Start gratis og skaler etter hvert som du vokser. Ingen overraskelser.",
+  "plans": {
+    "free": {
+      "name": "Gratis",
+      "banner": "Kom i gang gratis — trenger ikke kredittkort."
+    },
+    "professional": {
+      "name": "Profesjonell"
+    },
+    "enterprise": {
+      "name": "For Enterprise"
+    },
+    "free-monthly": {
+      "name": "Gratis"
+    },
+    "free-yearly": {
+      "name": "Gratis"
+    },
+    "professional-monthly": {
+      "name": "Profesjonell"
+    },
+    "professional-yearly": {
+      "name": "Profesjonell"
+    },
+    "enterprise-monthly": {
+      "name": "For Enterprise"
+    },
+    "enterprise-yearly": {
+      "name": "For Enterprise"
+    }
+  },
+  "badge": {
+    "popular": "⭐ Mest populær"
+  },
+  "features": {
+    "websiteInsights": "Nettstedinnsikt",
+    "socialListening": "Sosial lytting",
+    "prioritySupport": "Prioritert støtte",
+    "advertising": "Annonsering",
+    "premiumSupport": "Premium støtte"
+  },
+  "cta": {
+    "loading": "Behandler...",
+    "upgrade": "Kom i gang"
+  },
+  "comparison": {
+    "title": "Sammenligning av alle planer",
+    "feature": "Funksjon"
+  },
+  "billing": {
+    "monthly": "Månedlig",
+    "yearly": "Årlig",
+    "discount20": "Spar 20 %",
+    "suffixYearly": "/år",
+    "suffixMonthly": "/måned",
+    "upgradeTitle": "Oppgrader forskningsplanen din",
+    "upgradeDesc": "Lås opp avanserte analyser, konkurrentinnsikt og mer.",
+    "subscribe": "Abonner nå"
+  },
+  "billingMonthly": "Månedlig",
+  "billingYearly": "Årlig",
+  "billingBestValue": "Spar 20 %",
+  "badgePopular": "Mest populær",
+  "billingPerMonth": "/ måned",
+  "billingPerYear": "/ år"
+}

@@ -1,0 +1,225 @@
+{
+  "welcome": "Welcome, {name}!",
+  "welcomeDescription": "Explore our powerful features and data to discover the latest trends and opportunities in the AI industry.",
+  "user": "User",
+  "performanceOverview": "Overall Click Distribution",
+  "toolPerformance": "Tool Performance (Real-time)",
+  "websiteInsightsQuota": "Website Insights Quota",
+  "socialListeningQueries": "Social Listening Quota",
+  "stats": {
+    "organicClicks": "Organic Clicks",
+    "paidClicks": "Paid Clicks",
+    "totalClicks": "Total Clicks",
+    "totalTools": "Total Tools",
+    "totalViews": "Total Views",
+    "credits": "Credits"
+  },
+  "features": {
+    "websiteInsights": "Website Insights",
+    "socialListening": "Social Listening",
+    "prioritySupport": "Priority Support",
+    "advertising": "Advertising",
+    "premiumSupport": "Premium Support"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Track keyword ranking and performance",
+    "socialListeningDesc": "Monitor social mentions and trends",
+    "researchReportDesc": "Generate comprehensive market reports",
+    "aiAdvertisingLibrary": "AI Advertising Library",
+    "aiAdvertisingDesc": "Analyze competitor AI ads",
+    "comingSoon": "Coming Soon"
+  },
+  "badgePopular": "Most Popular",
+  "title": "Social Listening Tracking",
+  "description": "Monitor keywords across TikTok and YouTube.",
+  "adCredits": "Ad Credits",
+  "postCredits": "Post Credits",
+  "linkCredits": "Link Credits",
+  "forSponsoredListings": "For sponsored listings",
+  "forGuestArticles": "For guest articles",
+  "forLinkInsertions": "For link insertions",
+  "buyCredits": "Buy Credits",
+  "noOrders": "No orders found.",
+  "orderHistory": "Order History",
+  "orderId": "Order ID",
+  "amount": "Amount",
+  "date": "Date",
+  "type": "Type",
+  "invoice": "Invoice",
+  "download": "Download",
+  "currentPlan": "Current Plan",
+  "freeTier": "Free Tier",
+  "freeTierDesc": "Upgrade your plan to unlock more features and insights.",
+  "creditBalances": "Credit Balances",
+  "subscriptionDetails": "Subscription Details",
+  "upgradePlan": "Upgrade Plan",
+  "statusActive": "Active",
+  "planMemberSince": "Member of this plan",
+  "renewalDate": "Renews on",
+  "changePlan": "Change Plan",
+  "redirecting": "Redirecting...",
+  "credits": "Credits",
+  "managePortal": "Manage Billing Portal",
+  "subscribe": "Subscribe Now",
+  "upgradeTitle": "Upgrade your Research Plan",
+  "upgradeDesc": "Unlock advanced analytics, competitor insights, and more.",
+  "choosePlan": {
+    "title": "Choose Your Research Plan",
+    "subtitle": "Get AI market intelligence and data to drive decisions."
+  },
+  "billingIntervals": {
+    "monthly": "Monthly",
+    "yearly": "Yearly"
+  },
+  "subtitle": "Manage and track performance of your submitted AI tools.",
+  "create": "Create Campaign",
+  "noCampaigns": "No campaigns yet",
+  "createFirst": "Create your first campaign to start promoting your AI tools",
+  "getStarted": "Get Started",
+  "budget": "Budget",
+  "spent": "Spent",
+  "startDate": "Start Date",
+  "endDate": "End Date",
+  "notSet": "Not set",
+  "ongoing": "Ongoing",
+  "pause": "Pause",
+  "resume": "Resume",
+  "viewDetails": "View Details",
+  "clicks": "Clicks",
+  "impressions": "Impressions",
+  "rejectionReason": "Rejection reason",
+  "analytics": {
+    "title": "Campaign Analytics",
+    "description": "Detailed breakdown of impressions and clicks over the last 30 days.",
+    "exportJson": "Export JSON",
+    "dailyPerformance": "Daily Performance",
+    "topLocales": "Top Regions (Locales)"
+  },
+  "track": "Track",
+  "noDomains": "No domains tracked yet. Add one above!",
+  "domain": "Domain",
+  "monthlyVisits": "Monthly Visits",
+  "rank": "Rank",
+  "topKeywords": "Top Keywords",
+  "added": "Added",
+  "tool": "Tool",
+  "organicClicks": "Organic Clicks",
+  "paidClicks": "Paid Clicks",
+  "totalClicks": "Total Clicks",
+  "addedOn": "Added On",
+  "noTools": "No tools tracked yet.",
+  "empty": {
+    "title": "No AI Tools Yet",
+    "description": "Submit your AI tool to get discovered by millions of users.",
+    "cta": "Submit AI Tool"
+  },
+  "columns": {
+    "tool": "Tool",
+    "status": "Status",
+    "organic": "Organic Traffic",
+    "paid": "Paid Traffic",
+    "impressions": "Impressions",
+    "actions": "Actions"
+  },
+  "statusTooltip": {
+    "pending": "Awaiting admin approval"
+  },
+  "submittedToast": "Your tool has been submitted and is pending review.",
+  "warnings": {
+    "pendingView": "This tool is still under review and not publicly visible yet.",
+    "confirmDelete": "Are you sure you want to delete this AI tool? This action cannot be undone."
+  },
+  "gpt": {
+    "title": "My GPTs",
+    "submitNew": "Submit New GPT",
+    "noGpts": "No GPTs found. Submit your first one!",
+    "noGptsDesc": "No GPTs submitted yet. Submit your GPT to get discovered.",
+    "columns": {
+      "name": "GPT Name",
+      "url": "ChatGPT URL",
+      "date": "Submitted"
+    }
+  },
+  "updateAi": "Update AI",
+  "submitNew": "Submit New",
+  "submitNewItem": "Submit New Item",
+  "linkInsert": {
+    "label": "Link Insert",
+    "submit": "Submit Link Insert",
+    "empty": {
+      "title": "No Link Inserts Yet",
+      "description": "You haven't submitted any link insertions yet."
+    }
+  },
+  "form": {
+    "type": "Type",
+    "targetUrl": "Target URL",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Title / Anchor Text",
+    "anchorTextPlaceholder": "Title of the article OR Anchor text for link",
+    "submitCredits": "Submit (1 Credit)"
+  },
+  "tabs": {
+    "profile": "Profile",
+    "security": "Security",
+    "notifications": "Notifications"
+  },
+  "table": {
+    "platform": "Platform",
+    "keyword": "Keyword",
+    "videos": "Videos",
+    "views": "Views",
+    "creators": "Creators",
+    "status": "Status"
+  },
+  "updated": "Settings updated successfully",
+  "password": {
+    "title": "Change Password",
+    "current": "Current Password",
+    "new": "New Password",
+    "confirm": "Confirm New Password",
+    "update": "Update Password"
+  },
+  "notifications": {
+    "title": "Notification Preferences",
+    "email": "Email Notifications",
+    "marketing": "Marketing Emails"
+  },
+  "metrics": {
+    "monthlyQueries": "Monthly Queries",
+    "videosToday": "Videos Today",
+    "creatorsToday": "Creators Today"
+  },
+  "advertiseAi": "Advertise AI",
+  "myAis": {
+    "title": "My AIs",
+    "subtitle": "Manage and track performance of your submitted AI tools.",
+    "empty": {
+      "cta": "Submit AI Tool"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Rejection Reason"
+  },
+  "reports": {
+    "title": "Research Reports",
+    "description": "Access in-depth analytical reports on the AI industry.",
+    "noReports": "No Reports Available",
+    "noReportsDesc": "We are currently preparing new insights.",
+    "free": "Free",
+    "readNow": "Read Report",
+    "download": "Download",
+    "unlock": "Unlock Report",
+    "readerTitle": "Research Report Reader",
+    "unlockRequired": "Premium Content",
+    "unlockDesc": "Unlock this deep-dive research report to gain full access to exclusive market analysis, case studies, and actionable insights.",
+    "unlockNow": "Unlock Now",
+    "related": "Related Reports",
+    "toc": "On this page",
+    "backToList": "Back to Library",
+    "notFound": "Report not found",
+    "unlockSuccess": "Report unlocked successfully!",
+    "unlockError": "Failed to unlock the report.",
+    "searchPlaceholder": "Search reports..."
+  }
+}

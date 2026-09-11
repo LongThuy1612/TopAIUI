@@ -1,0 +1,31 @@
+{
+  "socialListening": {
+    "title": "Pemantauan Sosial",
+    "description": "Pantau kata kunci di TikTok dan YouTube.",
+    "table": {
+      "keyword": "Kata Kunci",
+      "videos": "Video",
+      "views": "Tayangan",
+      "creators": "Kreator",
+      "status": "Statusnya",
+      "platform": "Platform"
+    },
+    "status": {
+      "active": "Aktif"
+    },
+    "monthlyQueries": "Kueri Bulanan",
+    "videosToday": "Video Hari Ini",
+    "creatorsToday": "Kreator Hari Ini",
+    "metrics": {
+      "monthlyQueries": "Pertanyaan Bulanan",
+      "videosToday": "Video Hari Ini",
+      "creatorsToday": "Pembuat Konten Hari Ini"
+    }
+  },
+  "socialListeningTitle": "Pemantauan Sosial",
+  "socialTable": {
+    "tool": "Alat AI",
+    "noData": "Tidak ada data yang ditemukan"
+  },
+  "allPlatforms": "Semua Platform"
+}

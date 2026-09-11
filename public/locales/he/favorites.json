@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "כלים שמורים - TopAICollection",
+    "description": "הצג ונהל את הכלים ואתרי ה-AI השמורים שלך"
+  },
+  "title": "כלים שמורים",
+  "description": "הצג ונהל את הכלים ואתרי ה-AI השמורים שלך.",
+  "emptyState": {
+    "title": "עדיין אין כלים שמורים",
+    "description": "התחל לחקור ושמור את כלי הבינה המלאכותית המועדפים עליך לגישה קלה מאוחר יותר.",
+    "action": "עיין בכלי AI"
+  },
+  "stats": {
+    "lastUpdated": "עודכן לאחרונה {date}"
+  },
+  "filters": {
+    "all": "כֹּל",
+    "popular": "הכי פופולרי",
+    "category": "לפי קטגוריה"
+  },
+  "errors": {
+    "loadFailed": "טעינת המועדפים נכשלה"
+  },
+  "noDescription": "אין תיאור זמין",
+  "retry": "נסה שוב",
+  "actions": {
+    "addedToFavorites": "נוסף למועדפים",
+    "removeFromFavorites": "הסר מהמועדפים",
+    "removedFromFavorites": "הוסר מהמועדפים"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Política de privacidad - TopAICollection",
+    "description": "Descubra cómo TopAICollection recopila, utiliza y protege su información personal."
+  },
+  "title": "política de privacidad",
+  "lastUpdated": "Última actualización",
+  "introduction": "En TopAICollection, nos tomamos en serio su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y salvaguardamos su información cuando visita nuestro sitio web.",
+  "sections": {
+    "collection": {
+      "title": "Información que recopilamos",
+      "content": [
+        "Información personal que usted proporciona (nombre, correo electrónico, etc.)",
+        "Datos de uso (páginas visitadas, tiempo invertido, clics)",
+        "Información del dispositivo (tipo de navegador, dirección IP)",
+        "Cookies y tecnologías de seguimiento similares"
+      ]
+    },
+    "usage": {
+      "title": "Cómo utilizamos su información",
+      "content": [
+        "Para proporcionar y mantener nuestro servicio.",
+        "Para notificarle sobre cambios en nuestro servicio.",
+        "Para brindar atención al cliente",
+        "Para recopilar análisis o información valiosa para mejorar nuestro servicio.",
+        "Para monitorear el uso de nuestro servicio.",
+        "Detectar, prevenir y abordar problemas técnicos."
+      ]
+    },
+    "cookies": {
+      "title": "Cookies y seguimiento",
+      "content": [
+        "Utilizamos cookies para rastrear la actividad y conservar cierta información.",
+        "Las cookies nos ayudan a comprender las preferencias del usuario y mejorar la experiencia.",
+        "Puede indicarle a su navegador que rechace todas las cookies.",
+        "Si no acepta las cookies, es posible que algunas partes de nuestro servicio no estén disponibles"
+      ]
+    },
+    "security": {
+      "title": "Seguridad de datos",
+      "content": [
+        "Utilizamos medios comercialmente aceptables para proteger su información personal.",
+        "Ningún método de transmisión por Internet es 100% seguro",
+        "No podemos garantizar la seguridad absoluta de sus datos.",
+        "Revisamos periódicamente nuestras prácticas de seguridad y las actualizamos según sea necesario."
+      ]
+    },
+    "sharing": {
+      "title": "Intercambio de información",
+      "content": [
+        "No vendemos, comercializamos ni alquilamos su información personal.",
+        "Podemos compartir información con socios confiables que nos ayudan.",
+        "Podemos revelar información si así lo exige la ley.",
+        "En caso de fusión o adquisición, sus datos podrán ser transferidos"
+      ]
+    },
+    "rights": {
+      "title": "Tus derechos",
+      "content": [
+        "Accede a tus datos personales",
+        "Corregir datos inexactos",
+        "Solicitar la eliminación de tus datos",
+        "Oponerse al tratamiento de sus datos",
+        "Solicitar portabilidad de datos",
+        "Retirar el consentimiento en cualquier momento"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "content": "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en:"
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "- Gennemgang og analyse af AI-værktøj"
+  },
+  "errors": {
+    "notFound": "Værktøj ikke fundet",
+    "notFoundDescription": "Det værktøj, du leder efter, findes ikke.",
+    "serverError": "Intern serverfejl.",
+    "serverErrorDescription": "Der opstod en uventet fejl på serveren. Prøv venligst igen senere."
+  },
+  "actions": {
+    "visit": "Besøg hjemmesiden",
+    "save": "Spare",
+    "saved": "Gemt",
+    "share": "Dele",
+    "update": "Opdater dette værktøj",
+    "advertise": "Annoncer dette værktøj",
+    "visitWebsite": "Besøg hjemmesiden",
+    "readMore": "Læs mere",
+    "readLess": "Læs mindre",
+    "openVideo": "Åbn video"
+  },
+  "cta": {
+    "visit": "Åbn websted",
+    "advertise": "Annoncer dette værktøj",
+    "update": "Opdater dette værktøj"
+  },
+  "sidebar": {
+    "category": "Kategori",
+    "tags": "Tags"
+  },
+  "tabs": {
+    "socialListening": "Social lytning",
+    "alternatives": "Alternativer"
+  },
+  "similar": {
+    "title": "Lignende AI-værktøjer"
+  },
+  "stats": {
+    "monthlyVisits": "Månedlige besøg",
+    "growth": "Vækst",
+    "reviews": "anmeldelser",
+    "averageTime": "Gennemsnitlig tid på stedet",
+    "pagesPerVisit": "Sider pr. besøg",
+    "bounceRate": "Afvisningsprocent",
+    "visits": "Besøg",
+    "reviews_formatted": "{rating} ({count} {label})"
+  },
+  "sections": {
+    "overview": "Oversigt",
+    "reviews": "Anmeldelser",
+    "analytics": "Analyse",
+    "embed": "Integrer",
+    "alternatives": "Alternativer",
+    "related": "Relaterede værktøjer"
+  },
+  "details": {
+    "description": "Værktøjsintroduktion:",
+    "monthlyTraffic": "Månedlig trafik:",
+    "socialMedia": "Sociale medier og e-mail:",
+    "company": "Selskab",
+    "categories": "Kategorier",
+    "tags": "Tags"
+  },
+  "content": {
+    "whatIs": "Hvad er",
+    "howToUse": "Sådan bruges",
+    "coreFeatures": "Kernefunktioner",
+    "useCases": "Brug Cases",
+    "pricingPlans": "Prisplaner",
+    "faqs": "Ofte stillede spørgsmål",
+    "relatedTools": "Relaterede værktøjer",
+    "productInfo": "Produktinformation",
+    "writtenBy": "Skrevet & redigeret af",
+    "factCheckedBy": "Faktatjekket af"
+  },
+  "analytics": {
+    "title": "Analytics og trafikindsigt",
+    "subtitle": "Analyse af",
+    "latestTraffic": "Seneste hjemmesidetrafik",
+    "topCountries": "Top 5 Countries",
+    "trafficSources": "Website trafikkilder",
+    "topKeywords": "Top søgeord",
+    "keyword": "Søgeord",
+    "traffic": "Trafik",
+    "trafficSubtitle": "at forbedre webtrafikken",
+    "geoSubtitle": "søgemaskine indikatorer",
+    "sourceSubtitle": "søgemaskine indikatorer",
+    "keywordSubtitle": "søgemaskine indikatorer",
+    "percentage": "Procent",
+    "source": "Kilde",
+    "noChartData": "Ingen diagramdata",
+    "noTrafficChartData": "Ingen trafikkortdata",
+    "desktopVsMobile": "Desktop vs. Mobil",
+    "desktop": "Skrivebord",
+    "mobileWeb": "Mobil",
+    "similarSites": "Lignende websteder",
+    "globalRank": "Global rangering",
+    "founded": "Grundlagt",
+    "socialInfluence": "Indflydelse på sociale medier",
+    "views": "visninger",
+    "mentions": "nævner",
+    "trendHistory": "Trendhistorik",
+    "trendSubtitle": "Trafik, visninger og opstemmer tendenser over tid",
+    "upvotes": "Stemmer"
+  },
+  "embed": {
+    "title": "Integrer på din hjemmeside",
+    "description": "Føj dette værktøj til din hjemmeside med en smuk indlejret widget",
+    "preview": "Forhåndsvisning",
+    "code": "Integrer kode",
+    "copy": "Kopiér kode",
+    "copied": "Kopieret!",
+    "badgeAlt": "TopAICkollektionskort",
+    "themes": {
+      "light": "Lys",
+      "neutral": "Neutral",
+      "dark": "Mørk"
+    }
+  },
+  "alternatives": {
+    "title": "Alternativer",
+    "description": "Lignende værktøjer, du måske kunne lide"
+  },
+  "pricing": {
+    "title": "Prisplaner",
+    "subtitle": "Vælg den plan, der fungerer bedst for dig",
+    "popular": "Populær",
+    "getStarted": "Kom i gang",
+    "disclaimer": "Priser og funktioner kan variere. Besøg den officielle hjemmeside for at få den mest opdaterede information.",
+    "noPricingInfo": "Ingen prisoplysninger tilgængelige",
+    "free": "gratis",
+    "moreFeatures": "Flere funktioner"
+  },
+  "charts": {
+    "trafficChart": "Trafikkort",
+    "comingSoon": "Diagramvisualisering kommer snart"
+  },
+  "reviews": {
+    "title": "Anmeldelser",
+    "pointsScale": "ud af 5",
+    "subtitle": "Se, hvad samfundet synes",
+    "writeTitle": "Anbefaler du dette værktøj?",
+    "placeholder": "Del din oplevelse med dette værktøj...",
+    "privacy": "Beskyttet privatliv",
+    "success": "Anmeldelsen blev sendt!",
+    "submit": "Post anmeldelse",
+    "loginToReview": "Log ind for at indsende en anmeldelse",
+    "loginLink": "Log ind",
+    "noReviews": "Endnu ingen anmeldelser. Vær den første til at anmelde dette værktøj!",
+    "viewMore": "Se alle anmeldelser",
+    "allReviewsTitle": "Alle anmeldelser af",
+    "reviewsPageTitle": "Anmeldelser",
+    "by": "af",
+    "verified": "Verificeret",
+    "anonymous": "Anonym bruger",
+    "ratingLabel": "Vurdering",
+    "commentLabel": "Kommentar",
+    "dateLabel": "Dato",
+    "page": "Side",
+    "editReview": "Rediger anmeldelse",
+    "deleteReview": "Slet anmeldelse",
+    "deleteConfirm": "Er du sikker på, at du vil slette din anmeldelse?",
+    "editTitle": "Rediger din anmeldelse",
+    "updateSuccess": "Anmeldelse opdateret!",
+    "deleteSuccess": "Anmeldelse slettet!",
+    "commentRequired": "Tilføj venligst en kommentar til din anmeldelse.",
+    "ratingRequired": "Vælg venligst en bedømmelse.",
+    "alreadyReviewed": "Du har allerede anmeldt dette værktøj. Brug ✏️ rediger-knappen på din anmeldelse for at opdatere den.",
+    "sort": {
+      "label": "Sorter efter",
+      "newest": "Nyeste først",
+      "oldest": "Ældste først",
+      "highest": "Højeste vurdering",
+      "lowest": "Laveste vurdering"
+    },
+    "save": "Spare",
+    "cancel": "Ophæve",
+    "close": "Tæt",
+    "userLabel": "Bruger",
+    "unverify": "Fjern bekræftelse",
+    "markVerified": "Markér bekræftet",
+    "confirm": "Bekræft",
+    "noReviewsFound": "Der blev ikke fundet nogen omtaler for dette værktøj.",
+    "deleteError": "Kunne ikke slette.",
+    "updateError": "Kunne ikke opdatere.",
+    "pagination": {
+      "showing": "Viser",
+      "of": "af",
+      "reviews": "anmeldelser",
+      "prev": "Forrige",
+      "next": "Næste"
+    },
+    "actionsLabel": "Handlinger",
+    "statusLabel": "Status"
+  },
+  "share": {
+    "title": "Del dette værktøj"
+  },
+  "metrics": {
+    "monthlyVisits": "Månedlige besøg",
+    "growth": "Vækst"
+  },
+  "tags": "Tags",
+  "overview": "Oversigt",
+  "howToUse": "Sådan bruges",
+  "pricingPlans": "Prisplaner",
+  "faqs": "Ofte stillede spørgsmål",
+  "geoChart": {
+    "noData": "Ingen tilgængelige geografiske data",
+    "loading": "Indlæser geografiske data..."
+  },
+  "introduction": "Indledning",
+  "description": "Beskrivelse",
+  "coreFeatures": "Kernefunktioner",
+  "useCases": "Brug Cases",
+  "screenshots": "Skærmbilleder",
+  "companyInfo": {
+    "companyName": "Firmanavn",
+    "contactEmail": "Kontakt email"
+  },
+  "nav": {
+    "scrollLeft": "Rul til venstre",
+    "scrollRight": "Rul til højre",
+    "previous": "Forrige",
+    "next": "Næste",
+    "imageSlide": "Billede {index}",
+    "videoSlide": "Video dias"
+  },
+  "badges": {
+    "verifiedListing": "Verificeret opslag",
+    "freePlan": "Gratis plan",
+    "paidPlans": "Betalte planer & pris"
+  },
+  "dummyReviews": {
+    "c1": "Dette er et fantastisk AI-værktøj! Det ændrede fuldstændig mit workflow.",
+    "c2": "Rigtig gode funktioner og nemt at bruge. Varmt anbefalet.",
+    "c3": "Jeg har prøvet mange alternativer, men denne er langt den bedste.",
+    "c4": "Fremragende værdi for prisen. Den gratis plan er også meget generøs.",
+    "c5": "God UI og intuitivt design. Nogle gange lidt langsomt, men generelt fantastisk.",
+    "c6": "Et must-have-værktøj for enhver professionel. Sparer mig for timer hver uge.",
+    "c7": "God funktionalitet, men kræver en vis indlæringskurve."
+  }
+}

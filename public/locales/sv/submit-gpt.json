@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Skicka in din GPT - Få din GPT presenterad | TopAI TopAICollectionCollection",
+    "description": "Skicka in din anpassade GPT så att den visas i vår GPT-katalog. Nå tusentals AI-entusiaster."
+  },
+  "title": "Skicka in din GPT",
+  "subtitle": "Få din anpassade GPT med i vår katalog",
+  "loginRequired": "Inloggning krävs",
+  "submitButton": "Skicka in GPT",
+  "whySubmit": {
+    "title": "Varför skicka in din GPT?"
+  },
+  "benefits": {
+    "audience": "Nå tusentals AI-entusiaster dagligen",
+    "instant": "Omedelbar notering vid verifiering",
+    "global": "Global exponering över alla språk",
+    "analytics": "Spåra klick och engagemang"
+  },
+  "proTip": {
+    "title": "Proffs tips",
+    "desc": "Se till att din GPT är offentlig och tillgänglig via länk innan du skickar in."
+  },
+  "form": {
+    "gptName": "GPT-namn",
+    "gptNamePlaceholder": "till exempel Kodguiden",
+    "gptUrl": "ChatGPT-URL",
+    "gptUrlPlaceholder": "https://chat.openai.com/g/g-...",
+    "gptIcon": "Ikon URL",
+    "gptIconPlaceholder": "https://...",
+    "gptDescription": "Beskrivning / Instruktioner",
+    "gptDescriptionPlaceholder": "Beskriv vad din GPT gör..."
+  },
+  "validation": {
+    "required": "Detta fält är obligatoriskt",
+    "invalidUrl": "Ogiltig webbadress för ChatGPT",
+    "nameTooShort": "Namnet måste bestå av minst 2 tecken",
+    "descriptionTooShort": "Beskrivningen måste bestå av minst 10 tecken",
+    "toolNameRequired": "Verktygsnamn krävs",
+    "url": "Ogiltig URL",
+    "descriptionMin": "Beskrivningen måste bestå av minst 10 tecken",
+    "categoryRequired": "Välj en kategori",
+    "email": "Ogiltig e-postadress",
+    "messageMin": "Meddelandet måste bestå av minst 10 tecken"
+  },
+  "sidebar": {
+    "gptCount": "GPT inskickade",
+    "gptCountSub": "och växer"
+  },
+  "success": "Din GPT har skickats!"
+}

@@ -1,0 +1,225 @@
+{
+  "welcome": "Bem-vindo, {name}!",
+  "welcomeDescription": "Explore as nossas poderosas funcionalidades e dados para descobrir as últimas tendências e oportunidades na indústria da IA.",
+  "user": "Utilizador",
+  "performanceOverview": "Visão Geral de Desempenho",
+  "websiteInsightsQuota": "Quota de Insights do Website",
+  "socialListeningQueries": "Cota de Monitoramento Social",
+  "stats": {
+    "organicClicks": "Cliques Orgânicos",
+    "paidClicks": "Cliques Pagos",
+    "totalClicks": "Total de Cliques",
+    "totalTools": "Total de Ferramentas",
+    "totalViews": "Total de Visualizações",
+    "credits": "Créditos"
+  },
+  "features": {
+    "websiteInsights": "Informações do site",
+    "socialListening": "Escuta Social",
+    "prioritySupport": "Suporte Prioritário",
+    "advertising": "Anúncio",
+    "premiumSupport": "Suporte Premium"
+  },
+  "badgePopular": "Mais populares",
+  "title": "Rastreamento de Monitoramento Social",
+  "description": "Monitore palavras-chave no TikTok e no YouTube.",
+  "adCredits": "Créditos de publicidade",
+  "postCredits": "Pós créditos",
+  "linkCredits": "Créditos de link",
+  "forSponsoredListings": "Para listagens patrocinadas",
+  "forGuestArticles": "Para artigos de convidados",
+  "forLinkInsertions": "Para inserções de links",
+  "buyCredits": "Comprar créditos",
+  "noOrders": "Nenhum pedido encontrado.",
+  "orderHistory": "Histórico de pedidos",
+  "orderId": "ID do pedido",
+  "amount": "Quantia",
+  "date": "Data",
+  "type": "Tipo",
+  "invoice": "Fatura",
+  "download": "Descarregar",
+  "currentPlan": "Plano Atual",
+  "freeTier": "Nível gratuito",
+  "freeTierDesc": "Atualize seu plano para desbloquear mais recursos e insights.",
+  "creditBalances": "Saldos de crédito",
+  "subscriptionDetails": "Detalhes da assinatura",
+  "upgradePlan": "Plano de atualização",
+  "statusActive": "Ativo",
+  "planMemberSince": "Membro deste plano",
+  "renewalDate": "Renova em",
+  "changePlan": "Plano de mudança",
+  "redirecting": "Redirecionando...",
+  "credits": "Créditos",
+  "managePortal": "Gerenciar portal de cobrança",
+  "subscribe": "Assine agora",
+  "upgradeTitle": "Atualize seu plano de pesquisa",
+  "upgradeDesc": "Desbloqueie análises avançadas, insights sobre concorrentes e muito mais.",
+  "choosePlan": {
+    "title": "Escolha seu plano de pesquisa",
+    "subtitle": "Obtenha inteligência de mercado e dados de IA para orientar decisões."
+  },
+  "billingIntervals": {
+    "monthly": "Mensal",
+    "yearly": "Anual"
+  },
+  "subtitle": "Gerencie e acompanhe o desempenho das ferramentas de IA enviadas.",
+  "create": "Criar campanha",
+  "noCampaigns": "Nenhuma campanha ainda",
+  "createFirst": "Crie sua primeira campanha para começar a promover suas ferramentas de IA",
+  "getStarted": "Comece",
+  "budget": "Orçamento",
+  "spent": "Gasto",
+  "startDate": "Data de início",
+  "endDate": "Data de término",
+  "notSet": "Não definido",
+  "ongoing": "Em andamento",
+  "pause": "Pausa",
+  "resume": "Retomar",
+  "viewDetails": "Ver detalhes",
+  "clicks": "Cliques",
+  "impressions": "Impressões",
+  "rejectionReason": "Motivo da rejeição",
+  "analytics": {
+    "title": "Análise de campanha",
+    "description": "Detalhamento detalhado de impressões e cliques nos últimos 30 dias.",
+    "exportJson": "Exportar JSON",
+    "dailyPerformance": "Desempenho Diário",
+    "topLocales": "Principais regiões (locais)"
+  },
+  "track": "Acompanhar",
+  "noDomains": "Nenhum domínio rastreado ainda. Adicione um acima!",
+  "domain": "Domínio",
+  "monthlyVisits": "Visitas Mensais",
+  "rank": "Classificação",
+  "topKeywords": "Principais palavras-chave",
+  "added": "Adicionado",
+  "tool": "Ferramenta",
+  "organicClicks": "Cliques orgânicos",
+  "paidClicks": "Cliques pagos",
+  "totalClicks": "Total de cliques",
+  "addedOn": "Adicionado",
+  "noTools": "Nenhuma ferramenta rastreada ainda.",
+  "empty": {
+    "title": "Ainda não há ferramentas de IA",
+    "description": "Envie sua ferramenta de IA para ser descoberta por milhões de usuários.",
+    "cta": "Enviar ferramenta de IA"
+  },
+  "columns": {
+    "tool": "Ferramenta",
+    "status": "Estado",
+    "organic": "Tráfego Orgânico",
+    "paid": "Tráfego Pago",
+    "impressions": "Impressões",
+    "actions": "Ações"
+  },
+  "statusTooltip": {
+    "pending": "Aguardando aprovação do administrador"
+  },
+  "submittedToast": "Sua ferramenta foi enviada e está com revisão pendente.",
+  "warnings": {
+    "pendingView": "Esta ferramenta ainda está em revisão e ainda não está visível publicamente.",
+    "confirmDelete": "Tem certeza de que deseja excluir esta ferramenta de IA? Esta ação não pode ser desfeita."
+  },
+  "gpt": {
+    "title": "Meus GPTs",
+    "submitNew": "Enviar novo GPT",
+    "noGpts": "Nenhum GPT encontrado. Envie o seu primeiro!",
+    "noGptsDesc": "Nenhum GPT enviado ainda. Envie seu GPT para ser descoberto.",
+    "columns": {
+      "name": "Nome da GPT",
+      "url": "URL do bate-papoGPT",
+      "date": "Enviado"
+    }
+  },
+  "updateAi": "Atualizar IA",
+  "submitNew": "Enviar novo",
+  "submitNewItem": "Enviar novo item",
+  "linkInsert": {
+    "label": "Inserção de link",
+    "submit": "Enviar inserção de link",
+    "empty": {
+      "title": "Ainda não há inserções de link",
+      "description": "Você ainda não enviou nenhuma inserção de link."
+    }
+  },
+  "form": {
+    "type": "Tipo",
+    "targetUrl": "URL de destino",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "Título/Texto Âncora",
+    "anchorTextPlaceholder": "Título do artigo OU texto âncora do link",
+    "submitCredits": "Enviar (1 crédito)"
+  },
+  "tabs": {
+    "profile": "Perfil",
+    "security": "Segurança",
+    "notifications": "Notificações"
+  },
+  "table": {
+    "platform": "Plataforma",
+    "keyword": "Palavra-chave",
+    "videos": "Vídeos",
+    "views": "Visualizações",
+    "creators": "Criadores",
+    "status": "Estado"
+  },
+  "updated": "Configurações atualizadas com sucesso",
+  "password": {
+    "title": "Alterar a senha",
+    "current": "Senha atual",
+    "new": "Nova Senha",
+    "confirm": "Confirme a nova senha",
+    "update": "Atualizar senha"
+  },
+  "notifications": {
+    "title": "Preferências de notificação",
+    "email": "Notificações por e-mail",
+    "marketing": "E-mails de marketing"
+  },
+  "metrics": {
+    "monthlyQueries": "Consultas mensais",
+    "videosToday": "Vídeos hoje",
+    "creatorsToday": "Criadores hoje"
+  },
+  "advertiseAi": "Anuncie IA",
+  "myAis": {
+    "title": "Minhas IAs",
+    "subtitle": "Gerencie e acompanhe o desempenho das ferramentas de IA enviadas.",
+    "empty": {
+      "cta": "Enviar ferramenta de IA"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "Motivo da rejeição"
+  },
+  "feature": {
+    "websiteInsightsDesc": "Acompanhe a classificação e o desempenho das palavras-chave",
+    "socialListeningDesc": "Monitore menções e tendências sociais",
+    "researchReportDesc": "Gere relatórios de mercado abrangentes",
+    "aiAdvertisingLibrary": "Biblioteca de publicidade de IA",
+    "aiAdvertisingDesc": "Analise anúncios de IA do concorrente",
+    "comingSoon": "Em breve"
+  },
+  "reports": {
+    "title": "Relatórios de pesquisa",
+    "description": "Acesse relatórios analíticos detalhados sobre a indústria de IA.",
+    "noReports": "Nenhum relatório disponível",
+    "free": "Livre",
+    "download": "Descarregar",
+    "unlock": "Relatório de desbloqueio",
+    "noReportsDesc": "No momento, estamos preparando novos insights.",
+    "readNow": "Ler relatório",
+    "readerTitle": "Leitor de relatório de pesquisa",
+    "unlockRequired": "Conteúdo Premium",
+    "unlockDesc": "Desbloqueie este relatório de pesquisa aprofundado para obter acesso total a análises de mercado exclusivas, estudos de caso e insights acionáveis.",
+    "unlockNow": "Desbloquear agora",
+    "related": "Relatórios relacionados",
+    "toc": "Nesta página",
+    "backToList": "Voltar para a biblioteca",
+    "notFound": "Relatório não encontrado",
+    "unlockSuccess": "Relatório desbloqueado com sucesso!",
+    "unlockError": "Falha ao desbloquear o relatório.",
+    "searchPlaceholder": "Pesquisar relatórios..."
+  },
+  "toolPerformance": "Desempenho da ferramenta (tempo real)"
+}

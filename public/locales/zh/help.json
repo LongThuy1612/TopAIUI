@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "帮助中心 - TopAICollection 支持",
+    "description": "获取有关 TopAICollection 的帮助。查找常见问题的答案并联系我们的支持团队。"
+  },
+  "title": "帮助中心",
+  "subtitle": "今天我们能为您提供什么帮助？",
+  "sections": {
+    "faq": {
+      "title": "常问问题",
+      "description": "查找常见问题的答案。",
+      "link": "查看常见问题解答"
+    },
+    "contact": {
+      "title": "联系支持人员",
+      "description": "找不到您需要的东西？联系我们。",
+      "link": "联系我们"
+    }
+  },
+  "commonTopics": {
+    "title": "常见主题",
+    "submitTool": "如何提交我的 AI 工具？",
+    "advertising": "广告是如何运作的？",
+    "privacy": "您的隐私政策是什么？",
+    "terms": "你们的服务条款是什么？"
+  }
+}

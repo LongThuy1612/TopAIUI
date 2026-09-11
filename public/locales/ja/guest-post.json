@@ -1,0 +1,46 @@
+{
+  "title": "ゲスト投稿とリンクの挿入",
+  "description": "ゲスト投稿を通じてコミュニティと専門知識を共有したり、既存のコンテンツへの戦略的なリンクの挿入をリクエストしたりできます。",
+  "details": "ゲスト投稿の詳細",
+  "postTitle": "投稿タイトル",
+  "postTitlePlaceholder": "ゲスト投稿のタイトル",
+  "postContent": "投稿の内容または詳細",
+  "postContentPlaceholder": "ゲスト投稿のコンテンツまたはリンク挿入の詳細を説明します",
+  "features": {
+    "guestPosts": {
+      "title": "ゲストの投稿",
+      "description": "AI に関する知識や洞察をコミュニティと共有してください。権威を築き、Web サイトへのトラフィックを促進します。"
+    },
+    "linkInsertion": {
+      "title": "リンクの挿入",
+      "description": "SEO の価値を最大限に高めるために、既存の関連コンテンツ内にリンクを戦略的に配置するようリクエストします。"
+    },
+    "seoBacklinks": {
+      "title": "SEOのバックリンク",
+      "description": "当社の信頼できるドメインからの高品質のバックリンクで SEO ランキングを向上させます。"
+    }
+  },
+  "contentGuidelines": {
+    "title": "コンテンツガイドライン",
+    "description": "すべてのゲスト投稿はオリジナルで高品質であり、AI に関連するものでなければなりません。人間による編集を行わずに AI によって生成されたコンテンツは受け入れられません。"
+  },
+  "meta": {
+    "title": "ゲスト投稿とリンクの挿入 |トップ AI コレクション",
+    "description": "ゲスト投稿を通じて AI コミュニティと専門知識を共有したり、既存のコンテンツへの戦略的なリンクの挿入をリクエストしたりできます。"
+  },
+  "validation": {
+    "required": "この項目は必須です",
+    "titleTooShort": "タイトルは5文字以上である必要があります",
+    "contentTooShort": "内容は20文字以上である必要があります",
+    "toolNameRequired": "ツール名は必須です",
+    "url": "無効な URL",
+    "descriptionMin": "説明は 10 文字以上である必要があります",
+    "categoryRequired": "カテゴリを選択してください",
+    "email": "無効なメールアドレス",
+    "messageMin": "メッセージは 10 文字以上である必要があります"
+  },
+  "sidebar": {
+    "articleCount": "1,000件以上の記事",
+    "articleCountSub": "コミュニティによって公開されました"
+  }
+}

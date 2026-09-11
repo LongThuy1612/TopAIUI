@@ -1,0 +1,46 @@
+{
+  "title": "Publicación de invitado e inserción de enlaces",
+  "description": "Comparta su experiencia con nuestra comunidad a través de publicaciones de invitados o solicite inserciones de enlaces estratégicos en contenido existente.",
+  "details": "Detalles de la publicación de invitado",
+  "postTitle": "Título de la publicación",
+  "postTitlePlaceholder": "Título de tu publicación de invitado",
+  "postContent": "Publicar contenido o detalles",
+  "postContentPlaceholder": "Describe el contenido de tu publicación de invitado o los detalles de inserción del enlace.",
+  "features": {
+    "guestPosts": {
+      "title": "Publicaciones de invitados",
+      "description": "Comparta sus conocimientos y opiniones sobre la IA con nuestra comunidad. Genere autoridad y dirija el tráfico a su sitio web."
+    },
+    "linkInsertion": {
+      "title": "Inserción de enlaces",
+      "description": "Solicite la ubicación estratégica de sus enlaces en contenido relevante existente para obtener el máximo valor de SEO."
+    },
+    "seoBacklinks": {
+      "title": "Vínculos de retroceso SEO",
+      "description": "Mejore su clasificación SEO con vínculos de retroceso de alta calidad de nuestro dominio autorizado."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Pautas de contenido",
+    "description": "Todas las publicaciones de invitados deben ser originales, de alta calidad y relevantes para la IA. No aceptamos contenido generado por IA sin edición humana."
+  },
+  "meta": {
+    "title": "Publicaciones de invitados e inserciones de enlaces | Colección superior de IA",
+    "description": "Comparta su experiencia con nuestra comunidad de IA a través de publicaciones de invitados o solicite inserciones de enlaces estratégicos en el contenido existente."
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "titleTooShort": "El título debe tener al menos 5 caracteres.",
+    "contentTooShort": "El contenido debe tener al menos 20 caracteres.",
+    "toolNameRequired": "El nombre de la herramienta es obligatorio.",
+    "url": "URL no válida",
+    "descriptionMin": "La descripción debe tener al menos 10 caracteres.",
+    "categoryRequired": "Por favor seleccione una categoría",
+    "email": "Dirección de correo electrónico no válida",
+    "messageMin": "El mensaje debe tener al menos 10 caracteres."
+  },
+  "sidebar": {
+    "articleCount": "Más de1000 artículos",
+    "articleCountSub": "Publicado por nuestra comunidad"
+  }
+}

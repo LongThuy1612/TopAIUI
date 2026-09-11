@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "AI模型与数据集 | TopAICollection",
+    "description": "探索最新的AI模型、数据集和架构，助力您的下一个项目。"
+  },
+  "title": "AI模型库",
+  "subtitle": "探索最大的AI模型、微调模型和数据集集合。",
+  "comingSoon": "即将推出！",
+  "comingSoonMessage": "我们正在精心整理最佳AI模型，敬请期待。",
+  "searchPlaceholder": "搜索AI模型...",
+  "allProviders": "所有提供商",
+  "noResults": "未找到AI模型",
+  "noResultsHint": "请尝试调整您的搜索或筛选条件。",
+  "contextWindow": "上下文窗口",
+  "parameters": "参数量",
+  "provider": "提供商",
+  "architecture": "架构",
+  "releaseDate": "发布日期",
+  "costPer1kTokens": "每千词元费用",
+  "free": "免费 / 开源",
+  "tokens": "词元",
+  "viewWebsite": "访问网站",
+  "modelsCount": "{count} 个AI模型",
+  "modelsCount_plural": "{count} 个AI模型",
+  "modelsGridTitle": "人工智能模型"
+}

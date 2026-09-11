@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "요금제 - TopAICollection",
+    "description": "AI 연구 및 소셜 리스닝을 위한 단순하고 투명한 가격 정책."
+  },
+  "title": "단순하고 투명한 가격 정책",
+  "subtitle": "무료로 시작하고 성장함에 따라 확장하세요. 놀라움은 없습니다.",
+  "plans": {
+    "free": {
+      "name": "무료",
+      "banner": "🎉 무료로 시작하세요 — 신용카드 불필요."
+    },
+    "professional": {
+      "name": "전문가"
+    },
+    "enterprise": {
+      "name": "기업"
+    },
+    "free-monthly": {
+      "name": "무료"
+    },
+    "free-yearly": {
+      "name": "무료"
+    },
+    "professional-monthly": {
+      "name": "전문가"
+    },
+    "professional-yearly": {
+      "name": "전문가"
+    },
+    "enterprise-monthly": {
+      "name": "기업"
+    },
+    "enterprise-yearly": {
+      "name": "기업"
+    }
+  },
+  "badge": {
+    "popular": "⭐ 가장 인기 있음"
+  },
+  "features": {
+    "websiteInsights": "웹사이트 인사이트",
+    "socialListening": "소셜 리스닝",
+    "prioritySupport": "우선 지원",
+    "advertising": "광고",
+    "premiumSupport": "프리미엄 지원"
+  },
+  "cta": {
+    "loading": "처리 중...",
+    "upgrade": "시작하기"
+  },
+  "comparison": {
+    "title": "모든 요금제 비교",
+    "feature": "기능"
+  },
+  "billing": {
+    "monthly": "월간 간행물",
+    "yearly": "매년",
+    "discount20": "20% 할인",
+    "suffixYearly": "/년도",
+    "suffixMonthly": "/월",
+    "upgradeTitle": "연구 계획을 업그레이드하세요",
+    "upgradeDesc": "고급 분석, 경쟁사 통찰력 등을 활용해 보세요.",
+    "subscribe": "지금 구독하세요"
+  },
+  "billingMonthly": "월간 간행물",
+  "billingYearly": "매년",
+  "billingBestValue": "20% 할인",
+  "badgePopular": "가장 인기있는",
+  "billingPerMonth": "/ 월",
+  "billingPerYear": "/ 년도"
+}

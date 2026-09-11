@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Skicka in ditt AI-verktyg - TopAICollection",
+    "description": "Lista ditt AI-verktyg i TopAICollection-katalogen och nå miljoner användare som letar efter AI-lösningar."
+  },
+  "badge": "Lägg till ditt verktyg",
+  "hero": {
+    "title": "Låt ditt AI-verktyg upptäckas",
+    "subtitle": "Gå med i tusentals AI-verktyg i vår katalog och nå miljontals potentiella användare över hela världen"
+  },
+  "benefits": {
+    "title": "Varför lägga till på TopAICollection?",
+    "traffic": {
+      "title": "Ökad trafik",
+      "description": "Få direkt trafik från användare som aktivt söker efter AI-lösningar"
+    },
+    "exposure": {
+      "title": "Global exponering",
+      "description": "Nå användare på över 20 språk i mer än 100 länder"
+    },
+    "credibility": {
+      "title": "Förbättrad trovärdighet",
+      "description": "Bygg förtroende med en verifierad företagsuppgift och användarrecensioner"
+    }
+  },
+  "pricing": {
+    "title": "Välj din plan",
+    "popular": "Mest populär",
+    "basic": {
+      "name": "Grundläggande presentation",
+      "price": "Gratis",
+      "features": {
+        "0": "Grundläggande verktygspresentation",
+        "1": "Kategoriplacering",
+        "2": "Kontaktinformation",
+        "3": "Grundläggande analys"
+      }
+    },
+    "featured": {
+      "name": "Utvald presentation",
+      "price": "$99/månad",
+      "features": {
+        "0": "Allt i Grundläggande",
+        "1": "Utvald badge",
+        "2": "Prioritet i sökresultat",
+        "3": "Placering på hemsidan",
+        "4": "Avancerad analys",
+        "5": "Kampanjer på sociala medier"
+      }
+    },
+    "premium": {
+      "name": "Premium-presentation",
+      "price": "$299/månad",
+      "features": {
+        "0": "Allt i Utvald",
+        "1": "Högsta sökplacering",
+        "2": "Inkludering i nyhetsbrev",
+        "3": "Granskning på blogginlägg",
+        "4": "Video presentation",
+        "5": "Dedikerad support"
+      }
+    }
+  },
+  "submitTool": {
+    "name": "Verktygets namn",
+    "namePlaceholder": "till exempel ChatGPT, DALL-E, Midjourney",
+    "website": "Hemsidans URL",
+    "websitePlaceholder": "https://www.example.com",
+    "categories": "Kategorier",
+    "selectCategory": "Välj en kategori",
+    "price": "Engångsavgift på $49",
+    "submit": "Skicka in verktyget",
+    "success": {
+      "title": "Inlämning lyckades!",
+      "description": "Ditt verktyg har skickats in för granskning.",
+      "redirecting": "Omdirigerar till betalning..."
+    }
+  },
+  "form": {
+    "title": "Skicka in ditt verktyg",
+    "sections": {
+      "basic": "Grundläggande information",
+      "categorization": "Kategori och taggar",
+      "media": "Mediafiler",
+      "plan": "Välj Plan",
+      "contact": "Kontaktinformation"
+    },
+    "fields": {
+      "name": {
+        "label": "Verktygets namn",
+        "placeholder": "Mitt grymma AI-verktyg"
+      },
+      "url": {
+        "label": "Webbadress",
+        "placeholder": "https://example.com"
+      },
+      "tagline": {
+        "label": "Slogan / Tagline",
+        "placeholder": "Kort beskrivning (max 100 tecken)"
+      },
+      "description": {
+        "label": "Beskrivning",
+        "placeholder": "Detaljerad beskrivning av ditt AI-verktyg (max 500 tecken)"
+      },
+      "category": {
+        "label": "Kategori",
+        "placeholder": "Välj kategori",
+        "options": {
+          "productivity": "Produktivitet",
+          "business": "Affärer",
+          "development": "Utveckling",
+          "other": "Övrigt"
+        }
+      },
+      "tags": {
+        "label": "Taggar",
+        "placeholder": "ai, produktivitet, automatisering (kommaseparerat)",
+        "hint": "Separera med kommatecken"
+      },
+      "logo": {
+        "label": "Logotyp",
+        "placeholder": "Klicka för att ladda upp eller dra och släpp",
+        "hint": "PNG eller JPG, max 2 MB"
+      },
+      "plan": {
+        "label": "Abonnemangsplan",
+        "placeholder": "Välj en plan"
+      },
+      "terms": {
+        "label": "Jag godkänner användarvillkoren och sekretesspolicyn"
+      },
+      "contact_name": {
+        "label": "Ditt namn",
+        "placeholder": "t.ex. John Doe"
+      },
+      "contact_email": {
+        "label": "Din e-mailadress",
+        "placeholder": "t.ex. john@example.com"
+      }
+    },
+    "terms": {
+      "disclaimer": "Genom att skicka in godkänner du våra användarvillkor och sekretesspolicy.",
+      "freeSubmission": "Gratis inlämning."
+    },
+    "submit": "Skicka In",
+    "submitting": "Skickar in...",
+    "success": {
+      "title": "Verktyget skickades in framgångsrikt!",
+      "description": "Vi kommer att granska din inlämning och meddela dig inom 48 timmar."
+    },
+    "error": {
+      "title": "Inlämningen misslyckades",
+      "description": "Kontrollera alla fält och försök igen.",
+      "noSettings": "Inlämningsinställningar är inte tillgängliga. Försök igen senare."
+    },
+    "loginRequiredTitle": "Inloggning krävs",
+    "loginRequiredDesc": "Logga in för att skicka ett verktyg. Dina framsteg kommer inte att sparas förrän du har autentiserat dig.",
+    "loginBtn": "Logga in"
+  },
+  "categoriesPage": {
+    "searchCategory": "Sök kategorier…",
+    "noCategoryFound": "Inga kategorier hittades."
+  },
+  "toolForm": {
+    "selectSubCategory": "Välj en underkategori…",
+    "noSubCategory": "Inga underkategorier."
+  },
+  "errors": {
+    "general": "Något gick fel. Vänligen försök igen."
+  },
+  "processing": "Behandlar...",
+  "sidebar": {
+    "toolCount": "Över 5000 AI-verktyg",
+    "toolCountSub": "Gå med i vår växande katalog",
+    "badgeDescription": "Att skicka in ditt verktyg är det första steget mot synlighet i AI-samhället."
+  },
+  "submission": {
+    "errors": {
+      "loadFailed": "Det gick inte att läsa in inlämningsuppgifter.",
+      "noId": "Inget inlämnings-ID har angetts.",
+      "notFound": "Inlämningen hittades inte."
+    },
+    "status": {
+      "paymentRequired": "Betalning krävs",
+      "paymentRequiredDesc": "Slutför din betalning för att fortsätta med granskningen.",
+      "underReview": "Under granskning",
+      "underReviewDesc": "Ditt bidrag granskas av vårt team.",
+      "approved": "Godkänd",
+      "approvedDesc": "Ditt bidrag har godkänts och publicerats.",
+      "received": "Mottagen",
+      "receivedDesc": "Vi har tagit emot din anmälan."
+    },
+    "types": {
+      "submit": "Skicka in AI-verktyg",
+      "advertise": "Annonsera",
+      "guestPost": "Gästinlägg",
+      "updateAI": "Uppdatera AI"
+    },
+    "paymentAlert": "Betalning krävs för att slutföra din inlämning.",
+    "actions": {
+      "viewDashboard": "Visa instrumentpanelen"
+    }
+  },
+  "error": "Något gick fel. Försök igen.",
+  "backToHome": "Tillbaka till hemmet",
+  "submissionSuccess": {
+    "title": "Titel",
+    "description": "Beskrivning"
+  },
+  "successTitle": "Framgångstitel",
+  "title": "Titel"
+}

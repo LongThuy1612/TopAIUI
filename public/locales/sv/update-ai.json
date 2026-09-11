@@ -1,0 +1,118 @@
+{
+  "title": "Uppdatera ditt AI-verktyg",
+  "description": "Håll informationen om ditt AI-verktyg uppdaterad. Uppdatera beskrivningar, funktioner, priser eller andra detaljer för att säkerställa noggrannhet.",
+  "hero": {
+    "title": "Dina AI på TopAICollection",
+    "subtitle": "TopAI kan hjälpa dig att nå miljontals AI-användare och dina potentiella kunder över hela världen."
+  },
+  "form": {
+    "toolLabel": "Verktyg",
+    "toolHint": "PS: Om verktyget inte kan hittas, skicka in det först.",
+    "toolPlaceholder": "Sök efter ditt verktyg..."
+  },
+  "pricing": {
+    "title": "Uppdatera prissättning",
+    "price": "$49",
+    "period": "En gång",
+    "description": "Vi kommer att uppdatera åt dig inom 24 timmar efter betalning."
+  },
+  "updates": {
+    "title": "Uppdateringstyper som stöds",
+    "types": [
+      {
+        "label": "Verktygets namn",
+        "description": "Uppdatera visningsnamnet för ditt verktyg"
+      },
+      {
+        "label": "Beskrivning",
+        "description": "Revidera ditt verktygs korta och långa beskrivningar"
+      },
+      {
+        "label": "Kategori",
+        "description": "Ändra eller lägg till nya kategorier"
+      },
+      {
+        "label": "Funktionslista",
+        "description": "Uppdatera verktygets funktionshöjdpunkter"
+      },
+      {
+        "label": "Användningsfall",
+        "description": "Lägg till eller uppdatera exempel på användningsfall"
+      },
+      {
+        "label": "Prisinformation",
+        "description": "Uppdatera prisplaner och nivåer"
+      },
+      {
+        "label": "Vanliga frågor",
+        "description": "Lägg till eller ändra vanliga frågor"
+      },
+      {
+        "label": "URL:er och länkar",
+        "description": "Uppdatera webbplats, demo eller sociala länkar"
+      }
+    ]
+  },
+  "needToKnow": {
+    "title": "Behöver veta",
+    "items": [
+      "Uppdateringar behandlas inom 24 timmar efter betalningsbekräftelse.",
+      "Du kan uppdatera flera fält i en enda begäran.",
+      "Vårt team kommer att granska och publicera dina ändringar.",
+      "Om uppdateringen kräver förtydligande kontaktar vi oss via e-post.",
+      "Skärmdump/mediauppdateringar kan ta ytterligare 24 timmar."
+    ]
+  },
+  "faq": {
+    "title": "FAQ - Uppdatera AI",
+    "items": [
+      {
+        "question": "Hur lång tid tar en uppdatering?",
+        "answer": "Uppdateringar behandlas vanligtvis inom 24 timmar efter betalning. Komplexa ändringar kan kräva en extra granskningsperiod."
+      },
+      {
+        "question": "Vad kan jag uppdatera?",
+        "answer": "Du kan uppdatera ditt verktygs namn, beskrivning, kategori, funktioner, användningsfall, priser, vanliga frågor och webbadresser."
+      },
+      {
+        "question": "Kan jag uppdatera flera saker samtidigt?",
+        "answer": "Ja! Du kan begära flera uppdateringar i en enda inlämning. Alla ändringar ingår i avgiften på $49."
+      },
+      {
+        "question": "Vad händer om jag behöver göra korrigeringar efter uppdateringen?",
+        "answer": "Mindre korrigeringar relaterade till din ursprungliga uppdateringsbegäran kommer att hanteras kostnadsfritt inom 7 dagar."
+      }
+    ]
+  },
+  "whyUpdate": {
+    "title": "Varför uppdatera ditt verktyg?",
+    "reasons": [
+      "Håll informationen korrekt och aktuell",
+      "Förbättra sökrankning och synlighet",
+      "Uppdatera prissättning och funktionsändringar",
+      "Lägg till nya skärmdumpar eller demos",
+      "Korrigera eventuell föråldrad information",
+      "Förbättra din verktygsbeskrivning"
+    ]
+  },
+  "meta": {
+    "title": "Uppdatera ditt AI-verktyg - TopAICollection",
+    "description": "Håll informationen om ditt AI-verktyg uppdaterad. Uppdatera beskrivningar, funktioner, priser eller andra detaljer för att säkerställa noggrannhet."
+  },
+  "team": "Team TopAICollection",
+  "validation": {
+    "required": "Detta fält är obligatoriskt",
+    "selectTool": "Välj ett verktyg att uppdatera",
+    "detailsTooShort": "Ändringsinformation måste vara minst 10 tecken",
+    "toolNameRequired": "Verktygsnamn krävs",
+    "url": "Ogiltig webbadress",
+    "descriptionMin": "Beskrivningen måste bestå av minst 10 tecken",
+    "categoryRequired": "Välj en kategori",
+    "email": "Ogiltig e-postadress",
+    "messageMin": "Meddelandet måste bestå av minst 10 tecken"
+  },
+  "sidebar": {
+    "updatedCount": "verktyg uppdaterade",
+    "updatedCountSub": "denna månad"
+  }
+}

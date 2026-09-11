@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Retningslinjer for informasjonskapsler - TopAICollection",
+    "description": "Lær om hvordan TopAICollection bruker informasjonskapsler og lignende teknologier."
+  },
+  "title": "Retningslinjer for informasjonskapsler",
+  "lastUpdated": "Sist oppdatert",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Hva er informasjonskapsler",
+      "description": "Informasjonskapsler er små tekstfiler som lagres på din datamaskin eller mobilenhet når du besøker nettstedet vårt. De hjelper oss å gi deg en bedre opplevelse ved å huske preferansene dine og forstå hvordan du bruker nettstedet vårt."
+    },
+    "howWeUse": {
+      "title": "Hvordan vi bruker informasjonskapsler",
+      "intro": "Vi bruker informasjonskapsler til følgende formål:",
+      "essential": "Viktige informasjonskapsler: Nødvendig for at nettstedet skal fungere skikkelig, inkludert autentisering og sikkerhet.",
+      "analytics": "Analytics-informasjonskapsler: Hjelp oss å forstå hvordan besøkende samhandler med nettstedet vårt.",
+      "preference": "Preferanseinformasjonskapsler: Husk innstillingene og preferansene dine, for eksempel språk og lokalitet.",
+      "marketing": "Markedsføringsinformasjonskapsler: Brukes til å levere relevante annonser og spore kampanjeytelse."
+    },
+    "managing": {
+      "title": "Administrere informasjonskapsler",
+      "intro": "De fleste nettlesere lar deg kontrollere informasjonskapsler gjennom innstillingene deres. Du kan velge å:",
+      "blockAll": "Blokker alle informasjonskapsler",
+      "acceptAll": "Godta alle informasjonskapsler",
+      "beNotified": "Bli varslet når en informasjonskapsel er satt",
+      "deleteExisting": "Slett informasjonskapsler som allerede er satt",
+      "note": "Vær oppmerksom på at blokkering av visse informasjonskapsler kan påvirke opplevelsen din på nettstedet vårt."
+    },
+    "thirdParty": {
+      "title": "Tredjeparts informasjonskapsler",
+      "intro": "Noen informasjonskapsler på nettstedet vårt settes av tredjepartstjenester vi bruker, inkludert:",
+      "googleAnalytics": "Google Analytics (analyse)",
+      "vercel": "Vercel (hosting og analyse)"
+    },
+    "contact": {
+      "title": "Kontakt oss",
+      "message": "Hvis du har spørsmål om vår bruk av informasjonskapsler, vennligst",
+      "contactLink": "kontakt oss"
+    }
+  }
+}

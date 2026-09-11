@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "AI-modellen en datasets | TopAICollection",
+    "description": "Ontdek en verken de nieuwste AI-modellen, datasets en architecturen voor uw volgende project."
+  },
+  "title": "AI-Modellenbibliotheek",
+  "subtitle": "Verken de grootste verzameling AI-modellen, fine-tunes en datasets.",
+  "comingSoon": "Binnenkort beschikbaar!",
+  "comingSoonMessage": "We zijn momenteel bezig met het samenstellen van de beste AI-modellen. Kom snel terug.",
+  "searchPlaceholder": "AI-modellen zoeken...",
+  "allProviders": "Alle aanbieders",
+  "noResults": "Geen AI-modellen gevonden",
+  "noResultsHint": "Pas uw zoek- of filtercriteria aan.",
+  "contextWindow": "Contextvenster",
+  "provider": "Aanbieder",
+  "architecture": "Architectuur",
+  "releaseDate": "Releasedatum",
+  "costPer1kTokens": "Kosten / 1K tokens",
+  "free": "Gratis / Open Source",
+  "tokens": "munteenheden",
+  "viewWebsite": "Website bezoeken",
+  "modelsCount": "{count} AI-model",
+  "modelsCount_plural": "{count} AI-modellen",
+  "modelsGridTitle": "AI-modellen",
+  "parameters": "Parameters"
+}

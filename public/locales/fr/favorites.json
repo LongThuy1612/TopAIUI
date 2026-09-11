@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Outils enregistrés - TopAICollection",
+    "description": "Affichez et gérez vos outils et sites Web d'IA enregistrés"
+  },
+  "title": "Outils enregistrés",
+  "description": "Affichez et gérez vos outils et sites Web d'IA enregistrés.",
+  "emptyState": {
+    "title": "Aucun outil enregistré pour l'instant",
+    "description": "Commencez à explorer et enregistrez vos outils d’IA préférés pour y accéder facilement plus tard.",
+    "action": "Parcourir les outils d'IA"
+  },
+  "stats": {
+    "lastUpdated": "Dernière mise à jour {date}"
+  },
+  "filters": {
+    "all": "Tous",
+    "popular": "Les plus populaires",
+    "category": "Par catégorie"
+  },
+  "errors": {
+    "loadFailed": "Échec du chargement des favoris"
+  },
+  "noDescription": "Aucune description disponible",
+  "retry": "Réessayer",
+  "actions": {
+    "addedToFavorites": "Ajouté aux favoris",
+    "removeFromFavorites": "Supprimer des favoris",
+    "removedFromFavorites": "Supprimé des favoris"
+  }
+}

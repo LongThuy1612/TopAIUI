@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "Daily Leaderboard",
+      "title_long": "Daily AI Tools Leaderboard"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "Monthly Leaderboard",
+      "title_long": "Monthly AI Tools Leaderboard"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "Yearly Leaderboard",
+      "title_long": "Yearly AI Tools Leaderboard"
+    }
+  }
+}

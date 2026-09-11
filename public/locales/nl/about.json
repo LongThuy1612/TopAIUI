@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Over ons - TopAICollection",
+    "description": "Lees meer over de missie van TopAICollection om u te helpen de beste AI-tools en websites voor uw behoeften te ontdekken."
+  },
+  "badge": "Over ons",
+  "hero": {
+    "title": "Uw toegangspoort tot de AI-revolutie",
+    "subtitle": "We zijn op een missie om de toegang tot AI-tools te democratiseren en iedereen te helpen de kracht van kunstmatige intelligentie te benutten."
+  },
+  "stats": {
+    "tools": "AI-hulpmiddelen",
+    "categories": "Categorieën",
+    "users": "Maandelijkse gebruikers",
+    "languages": "Talen"
+  },
+  "mission": {
+    "title": "Onze missie",
+    "paragraph1": "Bij TopAICollection zijn wij van mening dat AI voor iedereen toegankelijk moet zijn. Ons platform fungeert als een uitgebreide directory van de beste AI-tools en websites, waardoor het voor gebruikers gemakkelijk wordt om kunstmatige intelligentie te ontdekken en te gebruiken in hun werk en dagelijks leven.",
+    "paragraph2": "We beheren en beoordelen elke tool in onze collectie zorgvuldig, zodat onze gebruikers alleen toegang hebben tot AI-oplossingen van de hoogste kwaliteit. Ons team van experts evalueert tools op basis van functionaliteit, gebruikerservaring, prijzen en toepassingen uit de echte wereld.",
+    "paragraph3": "Of u nu een ontwikkelaar, ontwerper, marketeer, docent of bedrijfseigenaar bent, TopAICollection helpt u de perfecte AI-tools te vinden om uw productiviteit en creativiteit te verbeteren."
+  },
+  "features": {
+    "title": "Waarom kiezen voor TopAICollection",
+    "global": {
+      "title": "Mondiaal bereik",
+      "description": "Beschikbaar in meer dan 20 talen en bedient miljoenen gebruikers wereldwijd"
+    },
+    "updated": {
+      "title": "Dagelijkse updates",
+      "description": "Onze collectie wordt dagelijks bijgewerkt met de nieuwste AI-innovaties"
+    },
+    "community": {
+      "title": "Gemeenschapsgedreven",
+      "description": "Gebruikersrecensies en beoordelingen helpen u weloverwogen beslissingen te nemen"
+    },
+    "verified": {
+      "title": "Geverifieerde hulpmiddelen",
+      "description": "Elk gereedschap wordt zorgvuldig beoordeeld en geverifieerd door ons team"
+    }
+  },
+  "cta": {
+    "title": "Begin vandaag nog met uw AI-reis",
+    "subtitle": "Ontdek onze verzameling AI-tools of dien uw eigen tools in",
+    "browse": "Blader door hulpmiddelen",
+    "submit": "Dien uw hulpmiddel in"
+  }
+}

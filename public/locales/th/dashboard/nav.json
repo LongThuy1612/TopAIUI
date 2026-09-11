@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "backToDashboard": "กลับไปที่แดชบอร์ด",
+    "backToHome": "กลับสู่หน้าหลัก",
+    "dashboard": "แดชบอร์ด",
+    "websiteInsights": "ข้อมูลเชิงลึกเว็บไซต์",
+    "socialListening": "การฟังเสียงจากสังคมออนไลน์",
+    "researchReport": "รายงานการวิจัย",
+    "myAis": "AI ของฉัน",
+    "favorites": "รายการโปรด",
+    "profileSettings": "ตั้งค่าโปรไฟล์",
+    "advertise": "โฆษณา",
+    "postsLinks": "โพสต์และลิงก์",
+    "paymentInvoice": "การชำระเงินและใบแจ้งหนี้",
+    "overview": "ภาพรวม",
+    "myInquiries": "คำถามของฉัน"
+  },
+  "logout": "ออกจากระบบ",
+  "logoutConfirmTitle": "ออกจากระบบ",
+  "logoutConfirmDescription": "คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ?",
+  "upgrade": "อัปเกรด",
+  "sections": {
+    "research": "การวิจัย",
+    "management": "การจัดการ",
+    "business": "ธุรกิจ",
+    "admin": "แอดมิน",
+    "guestPost": "โพสต์ของแขก",
+    "updateAi": "อัพเดตเอไอ",
+    "myGpts": "GPT ของฉัน"
+  },
+  "help": "ช่วยเหลือ",
+  "close": "ปิด",
+  "status": {
+    "active": "เปิดใช้งาน"
+  },
+  "advertiseAi": "โฆษณาเอไอ",
+  "myAis": {
+    "title": "AI ของฉัน",
+    "subtitle": "จัดการและติดตามประสิทธิภาพของเครื่องมือ AI ที่คุณส่งมา",
+    "empty": {
+      "cta": "ส่งเครื่องมือ AI"
+    }
+  }
+}

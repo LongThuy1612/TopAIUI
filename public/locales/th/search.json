@@ -1,0 +1,14 @@
+{
+  "title": "ผลการค้นหา",
+  "resultsFor": "ผลลัพธ์สำหรับ \"{query}\"",
+  "filters": "ตัวกรอง",
+  "typeFilters": "พิมพ์",
+  "categories": "หมวดหมู่",
+  "noResults": "ไม่พบผลลัพธ์",
+  "tryAgain": "โปรดลองใช้คำค้นหาอื่น",
+  "placeholder": "ค้นหาเครื่องมือ AI...",
+  "button": "ค้นหา",
+  "loading": "กำลังค้นหา...",
+  "clearFilters": "ล้างตัวกรอง",
+  "categoryLabel": "หมวดหมู่"
+}

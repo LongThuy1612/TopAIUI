@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Ingen AI-værktøjer Endnu",
+      "description": "Indsend dit AI-værktøj for at blive opdaget af millioner af brugere.",
+      "cta": "Indsend AI-værktøj"
+    },
+    "columns": {
+      "tool": "Værktøj",
+      "organic": "Organisk Trafik",
+      "paid": "Betalt Trafik",
+      "impressions": "Eksponeringer",
+      "actions": "Handlinger",
+      "status": "Status"
+    },
+    "statusTooltip": {
+      "pending": "Afventer godkendelse fra administrator"
+    },
+    "submittedToast": "Dit værktøj er blevet indsendt og afventer gennemgang.",
+    "warnings": {
+      "pendingView": "Dette værktøj er stadig under gennemgang og endnu ikke offentligt synligt.",
+      "confirmDelete": "Er du sikker på, at du vil slette dette AI-værktøj? Denne handling kan ikke fortrydes."
+    },
+    "submit": {
+      "tool": "Indsend AI-værktøj",
+      "update": "Opdater AI",
+      "name": "GPT navn",
+      "category": "Kategori",
+      "description": "Beskrivelse",
+      "gpt": {
+        "title": "Indsend din GPT",
+        "label": "Indsend GPT",
+        "description": "Indsend din tilpassede GPT for at blive opdaget af tusindvis af brugere."
+      },
+      "url": "ChatGPT URL"
+    }
+  },
+  "submissions": {
+    "title": "Indsendelser",
+    "deleteSuccess": "Indsendelsen blev slettet.",
+    "deleteError": "Indsendelsen kunne ikke slettes.",
+    "noSubmissions": "Ingen gæsteindlæg endnu",
+    "untitled": "Unavngivet aflevering",
+    "confirmDelete": "Er du sikker på, at du vil slette denne indsendelse? Denne handling kan ikke fortrydes.",
+    "columns": {
+      "subject": "Emne",
+      "date": "Dato",
+      "actions": "Handlinger",
+      "status": "Status"
+    }
+  }
+}

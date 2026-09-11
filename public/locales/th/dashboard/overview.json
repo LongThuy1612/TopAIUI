@@ -1,0 +1,225 @@
+{
+  "welcome": "ยินดีต้อนรับ, {name}!",
+  "welcomeDescription": "สำรวจคุณสมบัติและข้อมูลอันทรงพลังของเราเพื่อค้นหาเทรนด์และโอกาสล่าสุดในอุตสาหกรรม AI",
+  "user": "ผู้ใช้",
+  "performanceOverview": "ภาพรวมประสิทธิภาพ",
+  "websiteInsightsQuota": "โควต้าข้อมูลเชิงลึกของเว็บไซต์",
+  "socialListeningQueries": "โควตา Social Listening",
+  "stats": {
+    "organicClicks": "คลิกแบบออร์แกนิก",
+    "paidClicks": "คลิกแบบจ่ายเงิน",
+    "totalClicks": "คลิกรวม",
+    "totalTools": "เครื่องมือรวม",
+    "totalViews": "ยอดวิวรวม",
+    "credits": "เครดิต"
+  },
+  "features": {
+    "websiteInsights": "ข้อมูลเชิงลึกของเว็บไซต์",
+    "socialListening": "การฟังทางสังคม",
+    "prioritySupport": "การสนับสนุนลำดับความสำคัญ",
+    "advertising": "การโฆษณา",
+    "premiumSupport": "การสนับสนุนระดับพรีเมียม"
+  },
+  "badgePopular": "ยอดนิยมที่สุด",
+  "title": "การติดตาม Social Listening",
+  "description": "ตรวจสอบคำหลักใน TikTok และ YouTube",
+  "adCredits": "เครดิตโฆษณา",
+  "postCredits": "เครดิตโพสต์",
+  "linkCredits": "เครดิตลิงค์",
+  "forSponsoredListings": "สำหรับรายการที่ได้รับการสนับสนุน",
+  "forGuestArticles": "สำหรับบทความรับเชิญ",
+  "forLinkInsertions": "สำหรับการแทรกลิงค์",
+  "buyCredits": "ซื้อเครดิต",
+  "noOrders": "ไม่พบคำสั่งซื้อ",
+  "orderHistory": "ประวัติการสั่งซื้อ",
+  "orderId": "รหัสคำสั่งซื้อ",
+  "amount": "จำนวน",
+  "date": "วันที่",
+  "type": "พิมพ์",
+  "invoice": "ใบแจ้งหนี้",
+  "download": "ดาวน์โหลด",
+  "currentPlan": "แผนปัจจุบัน",
+  "freeTier": "ฟรีเทียร์",
+  "freeTierDesc": "อัปเกรดแผนของคุณเพื่อปลดล็อกฟีเจอร์และข้อมูลเชิงลึกเพิ่มเติม",
+  "creditBalances": "ยอดเครดิต",
+  "subscriptionDetails": "รายละเอียดการสมัครสมาชิก",
+  "upgradePlan": "อัพเกรดแผน",
+  "statusActive": "คล่องแคล่ว",
+  "planMemberSince": "สมาชิกของแผนนี้",
+  "renewalDate": "ต่ออายุเมื่อ",
+  "changePlan": "เปลี่ยนแผน",
+  "redirecting": "กำลังเปลี่ยนเส้นทาง...",
+  "credits": "เครดิต",
+  "managePortal": "จัดการพอร์ทัลการเรียกเก็บเงิน",
+  "subscribe": "สมัครสมาชิกตอนนี้",
+  "upgradeTitle": "อัปเกรดแผนการวิจัยของคุณ",
+  "upgradeDesc": "ปลดล็อกการวิเคราะห์ขั้นสูง ข้อมูลเชิงลึกของคู่แข่ง และอื่นๆ",
+  "choosePlan": {
+    "title": "เลือกแผนการวิจัยของคุณ",
+    "subtitle": "รับข้อมูลและข้อมูลตลาด AI เพื่อขับเคลื่อนการตัดสินใจ"
+  },
+  "billingIntervals": {
+    "monthly": "รายเดือน",
+    "yearly": "เป็นประจำทุกปี"
+  },
+  "subtitle": "จัดการและติดตามประสิทธิภาพของเครื่องมือ AI ที่คุณส่งมา",
+  "create": "สร้างแคมเปญ",
+  "noCampaigns": "ยังไม่มีแคมเปญ",
+  "createFirst": "สร้างแคมเปญแรกของคุณเพื่อเริ่มโปรโมตเครื่องมือ AI ของคุณ",
+  "getStarted": "เริ่มต้นเลย",
+  "budget": "งบประมาณ",
+  "spent": "ค่าใช้จ่าย",
+  "startDate": "วันที่เริ่มต้น",
+  "endDate": "วันที่สิ้นสุด",
+  "notSet": "ไม่ได้ตั้งค่า",
+  "ongoing": "กำลังดำเนินการอยู่",
+  "pause": "หยุดชั่วคราว",
+  "resume": "ประวัติย่อ",
+  "viewDetails": "ดูรายละเอียด",
+  "clicks": "จำนวนคลิก",
+  "impressions": "การแสดงผล",
+  "rejectionReason": "เหตุผลในการปฏิเสธ",
+  "analytics": {
+    "title": "การวิเคราะห์แคมเปญ",
+    "description": "รายละเอียดการแสดงผลและการคลิกในช่วง 30 วันที่ผ่านมา",
+    "exportJson": "ส่งออก JSON",
+    "dailyPerformance": "ประสิทธิภาพรายวัน",
+    "topLocales": "ภูมิภาคยอดนิยม (สถานที่)"
+  },
+  "track": "ติดตาม",
+  "noDomains": "ยังไม่มีการติดตามโดเมน เพิ่มหนึ่งอันด้านบน!",
+  "domain": "โดเมน",
+  "monthlyVisits": "การเข้าชมรายเดือน",
+  "rank": "อันดับ",
+  "topKeywords": "คำหลักยอดนิยม",
+  "added": "เพิ่มแล้ว",
+  "tool": "เครื่องมือ",
+  "organicClicks": "การคลิกทั่วไป",
+  "paidClicks": "คลิกที่จ่ายเงิน",
+  "totalClicks": "จำนวนคลิกทั้งหมด",
+  "addedOn": "เพิ่มเมื่อ",
+  "noTools": "ยังไม่มีการติดตามเครื่องมือ",
+  "empty": {
+    "title": "ยังไม่มีเครื่องมือ AI",
+    "description": "ส่งเครื่องมือ AI ของคุณเพื่อให้ผู้ใช้นับล้านค้นพบ",
+    "cta": "ส่งเครื่องมือ AI"
+  },
+  "columns": {
+    "tool": "เครื่องมือ",
+    "status": "สถานะ",
+    "organic": "การเข้าชมแบบออร์แกนิก",
+    "paid": "การเข้าชมที่เสียค่าใช้จ่าย",
+    "impressions": "การแสดงผล",
+    "actions": "การดำเนินการ"
+  },
+  "statusTooltip": {
+    "pending": "รอการอนุมัติจากผู้ดูแลระบบ"
+  },
+  "submittedToast": "เครื่องมือของคุณถูกส่งไปแล้วและกำลังรอการตรวจสอบ",
+  "warnings": {
+    "pendingView": "เครื่องมือนี้ยังอยู่ระหว่างการตรวจสอบและยังไม่ปรากฏต่อสาธารณะ",
+    "confirmDelete": "คุณแน่ใจหรือไม่ว่าต้องการลบเครื่องมือ AI นี้ การดำเนินการนี้ไม่สามารถยกเลิกได้"
+  },
+  "gpt": {
+    "title": "GPT ของฉัน",
+    "submitNew": "ส่ง GPT ใหม่",
+    "noGpts": "ไม่พบ GPT ส่งอันแรกของคุณ!",
+    "noGptsDesc": "ยังไม่มีการส่ง GPT ส่ง GPT ของคุณเพื่อให้ถูกค้นพบ",
+    "columns": {
+      "name": "ชื่อจีพีที",
+      "url": "URL ของ ChatGPT",
+      "date": "ส่งแล้ว"
+    }
+  },
+  "updateAi": "อัพเดตเอไอ",
+  "submitNew": "ยื่นใหม่",
+  "submitNewItem": "ส่งสินค้าใหม่",
+  "linkInsert": {
+    "label": "ลิงค์แทรก",
+    "submit": "ส่งลิงค์แทรก",
+    "empty": {
+      "title": "ยังไม่มีการแทรกลิงก์",
+      "description": "คุณยังไม่ได้ส่งการแทรกลิงก์ใดๆ"
+    }
+  },
+  "form": {
+    "type": "พิมพ์",
+    "targetUrl": "URL เป้าหมาย",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "ชื่อเรื่อง / ข้อความจุดยึด",
+    "anchorTextPlaceholder": "ชื่อบทความ หรือ Anchor text สำหรับลิงค์",
+    "submitCredits": "ส่ง (1 เครดิต)"
+  },
+  "tabs": {
+    "profile": "ประวัติโดยย่อ",
+    "security": "ความปลอดภัย",
+    "notifications": "การแจ้งเตือน"
+  },
+  "table": {
+    "platform": "แพลตฟอร์ม",
+    "keyword": "คำสำคัญ",
+    "videos": "วิดีโอ",
+    "views": "จำนวนการดู",
+    "creators": "ผู้สร้าง",
+    "status": "สถานะ"
+  },
+  "updated": "อัปเดตการตั้งค่าเรียบร้อยแล้ว",
+  "password": {
+    "title": "เปลี่ยนรหัสผ่าน",
+    "current": "รหัสผ่านปัจจุบัน",
+    "new": "รหัสผ่านใหม่",
+    "confirm": "ยืนยันรหัสผ่านใหม่",
+    "update": "อัปเดตรหัสผ่าน"
+  },
+  "notifications": {
+    "title": "การตั้งค่าการแจ้งเตือน",
+    "email": "การแจ้งเตือนทางอีเมล",
+    "marketing": "อีเมลการตลาด"
+  },
+  "metrics": {
+    "monthlyQueries": "แบบสอบถามรายเดือน",
+    "videosToday": "วิดีโอวันนี้",
+    "creatorsToday": "ผู้สร้างวันนี้"
+  },
+  "advertiseAi": "โฆษณาเอไอ",
+  "myAis": {
+    "title": "AI ของฉัน",
+    "subtitle": "จัดการและติดตามประสิทธิภาพของเครื่องมือ AI ที่คุณส่งมา",
+    "empty": {
+      "cta": "ส่งเครื่องมือ AI"
+    }
+  },
+  "campaigns": {
+    "rejectionReason": "เหตุผลในการปฏิเสธ"
+  },
+  "feature": {
+    "websiteInsightsDesc": "ติดตามการจัดอันดับคำหลักและประสิทธิภาพ",
+    "socialListeningDesc": "ติดตามการกล่าวถึงและแนวโน้มทางสังคม",
+    "researchReportDesc": "สร้างรายงานตลาดที่ครอบคลุม",
+    "aiAdvertisingLibrary": "ห้องสมุดโฆษณา AI",
+    "aiAdvertisingDesc": "วิเคราะห์โฆษณา AI ของคู่แข่ง",
+    "comingSoon": "เร็วๆ นี้"
+  },
+  "reports": {
+    "title": "รายงานการวิจัย",
+    "description": "เข้าถึงรายงานการวิเคราะห์เชิงลึกเกี่ยวกับอุตสาหกรรม AI",
+    "noReports": "ไม่มีรายงาน",
+    "free": "ฟรี",
+    "download": "ดาวน์โหลด",
+    "unlock": "ปลดล็อครายงาน",
+    "noReportsDesc": "ขณะนี้เรากำลังเตรียมข้อมูลเชิงลึกใหม่ๆ",
+    "readNow": "อ่านรายงาน",
+    "readerTitle": "ผู้อ่านรายงานการวิจัย",
+    "unlockRequired": "เนื้อหาพรีเมี่ยม",
+    "unlockDesc": "ปลดล็อกรายงานการวิจัยเชิงลึกนี้เพื่อเข้าถึงการวิเคราะห์ตลาด กรณีศึกษา และข้อมูลเชิงลึกที่นำไปปฏิบัติได้อย่างเต็มที่",
+    "unlockNow": "ปลดล็อคตอนนี้",
+    "related": "รายงานที่เกี่ยวข้อง",
+    "toc": "บนหน้านี้",
+    "backToList": "กลับไปที่ห้องสมุด",
+    "notFound": "ไม่พบรายงาน",
+    "unlockSuccess": "ปลดล็อครายงานเรียบร้อยแล้ว!",
+    "unlockError": "ไม่สามารถปลดล็อกรายงานได้",
+    "searchPlaceholder": "ค้นหารายงาน..."
+  },
+  "toolPerformance": "ประสิทธิภาพของเครื่องมือ (เรียลไทม์)"
+}

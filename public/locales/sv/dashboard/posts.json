@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "Inlägg & Länkar",
+    "description": "Hantera dina gästinlägg och länkplaceringar.",
+    "submitNewItem": "Skicka in nytt objekt",
+    "submitNew": "Skicka in nytt",
+    "guestPost": "Gästinlägg",
+    "linkInsert": "Länkplacering",
+    "type": "Typ",
+    "targetUrl": "Mål-URL",
+    "targetUrlPlaceholder": "https://din-sajt.se/...",
+    "anchorText": "Titel / Ankartext",
+    "anchorTextPlaceholder": "Artikeltitel ELLER ankartext för länken",
+    "submitCredits": "Skicka in (1 kredit)",
+    "tabs": {
+      "guestPosts": "Gästinlägg",
+      "linkInserts": "Länkplaceringar"
+    },
+    "table": {
+      "title": "Titel",
+      "anchor": "Ankartext",
+      "url": "URL",
+      "date": "Datum",
+      "status": "Status"
+    },
+    "empty": {
+      "noGuestTitle": "Inga gästinlägg",
+      "noGuestDesc": "Du har inte skickat in några gästinlägg ännu.",
+      "noGuestCta": "Skicka in gästinlägg",
+      "noLinkTitle": "Inga länkplaceringar",
+      "noLinkDesc": "Du har inte skickat in några länkplaceringar ännu.",
+      "noLinkCta": "Skicka in länkplacering"
+    },
+    "subtitle": "Hantera dina gästinlägg och länkinfogningar."
+  }
+}

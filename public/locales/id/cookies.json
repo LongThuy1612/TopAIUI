@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Kebijakan Cookie - TopAICollection",
+    "description": "Pelajari tentang bagaimana TopAICollection menggunakan cookie dan teknologi serupa."
+  },
+  "title": "Kebijakan Cookie",
+  "lastUpdated": "Terakhir diperbarui",
+  "sections": {
+    "whatAreCookies": {
+      "title": "Apa Itu Cookie",
+      "description": "Cookies adalah file teks kecil yang disimpan di komputer atau perangkat seluler Anda saat Anda mengunjungi situs web kami. Mereka membantu kami memberi Anda pengalaman yang lebih baik dengan mengingat preferensi Anda dan memahami cara Anda menggunakan situs kami."
+    },
+    "howWeUse": {
+      "title": "Bagaimana Kami Menggunakan Cookie",
+      "intro": "Kami menggunakan cookie untuk tujuan berikut:",
+      "essential": "Cookie Penting: Diperlukan agar situs web berfungsi dengan baik, termasuk otentikasi dan keamanan.",
+      "analytics": "Cookie Analytics: Membantu kami memahami bagaimana pengunjung berinteraksi dengan situs web kami.",
+      "preference": "Cookie Preferensi: Ingat pengaturan dan preferensi Anda, seperti bahasa dan lokal.",
+      "marketing": "Cookie Pemasaran: Digunakan untuk menayangkan iklan yang relevan dan melacak kinerja kampanye."
+    },
+    "managing": {
+      "title": "Mengelola Cookie",
+      "intro": "Sebagian besar browser web mengizinkan Anda mengontrol cookie melalui pengaturannya. Anda dapat memilih untuk:",
+      "blockAll": "Blokir semua cookie",
+      "acceptAll": "Terima semua cookie",
+      "beNotified": "Diberitahu ketika cookie disetel",
+      "deleteExisting": "Hapus cookie yang sudah disetel",
+      "note": "Harap diperhatikan bahwa memblokir cookie tertentu dapat memengaruhi pengalaman Anda di situs web kami."
+    },
+    "thirdParty": {
+      "title": "Cookie Pihak Ketiga",
+      "intro": "Beberapa cookie di situs kami disetel oleh layanan pihak ketiga yang kami gunakan, termasuk:",
+      "googleAnalytics": "Google Analytics (analitik)",
+      "vercel": "Vercel (hosting dan analitik)"
+    },
+    "contact": {
+      "title": "Hubungi kami",
+      "message": "Jika Anda memiliki pertanyaan tentang penggunaan cookie kami, silakan",
+      "contactLink": "Hubungi kami"
+    }
+  }
+}

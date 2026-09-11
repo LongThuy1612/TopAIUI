@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "保存的工具 - TopAICollection",
+    "description": "查看和管理您保存的 AI 工具和网站"
+  },
+  "title": "已保存的工具",
+  "description": "查看和管理您保存的 AI 工具和网站。",
+  "emptyState": {
+    "title": "尚未保存工具",
+    "description": "开始探索并保存您最喜欢的 AI 工具，以便以后轻松访问。",
+    "action": "浏览人工智能工具"
+  },
+  "stats": {
+    "lastUpdated": "最后更新日期：{date}"
+  },
+  "filters": {
+    "all": "全部",
+    "popular": "最受欢迎",
+    "category": "按类别"
+  },
+  "errors": {
+    "loadFailed": "无法加载收藏夹"
+  },
+  "noDescription": "无可用描述",
+  "retry": "重试",
+  "actions": {
+    "addedToFavorites": "已添加至收藏夹",
+    "removeFromFavorites": "从收藏夹中删除",
+    "removedFromFavorites": "已从收藏夹中删除"
+  }
+}

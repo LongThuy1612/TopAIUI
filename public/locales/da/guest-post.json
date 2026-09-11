@@ -1,0 +1,46 @@
+{
+  "title": "Gæsteindlæg og linkindsættelse",
+  "description": "Del din ekspertise med vores fællesskab gennem gæsteindlæg eller anmod om strategiske linkindsættelser i eksisterende indhold.",
+  "details": "Oplysninger om gæsteindlæg",
+  "postTitle": "Indlægs titel",
+  "postTitlePlaceholder": "Dit gæsteindlægs titel",
+  "postContent": "Indlæg indhold eller detaljer",
+  "postContentPlaceholder": "Beskriv indholdet af dit gæsteindlæg eller detaljer om linkindsættelse",
+  "features": {
+    "guestPosts": {
+      "title": "Gæsteindlæg",
+      "description": "Del din viden og indsigt om AI med vores fællesskab. Opbyg autoritet og drev trafik til din hjemmeside."
+    },
+    "linkInsertion": {
+      "title": "Link indsættelse",
+      "description": "Anmod om strategisk placering af dine links i eksisterende, relevant indhold for maksimal SEO-værdi."
+    },
+    "seoBacklinks": {
+      "title": "SEO backlinks",
+      "description": "Boost dine SEO-placeringer med backlinks af høj kvalitet fra vores autoritative domæne."
+    }
+  },
+  "contentGuidelines": {
+    "title": "Retningslinjer for indhold",
+    "description": "Alle gæsteindlæg skal være originale, af høj kvalitet og relevante for kunstig intelligens. Vi accepterer ikke AI-genereret indhold uden menneskelig redigering."
+  },
+  "meta": {
+    "title": "Gæsteindlæg og linkindsættelser | Top AI-samling",
+    "description": "Del din ekspertise med vores AI-fællesskab gennem gæsteindlæg eller anmod om strategiske linkindsættelser i eksisterende indhold."
+  },
+  "validation": {
+    "required": "Dette felt er påkrævet",
+    "titleTooShort": "Titlen skal være på mindst 5 tegn",
+    "contentTooShort": "Indholdet skal være på mindst 20 tegn",
+    "toolNameRequired": "Værktøjsnavn er påkrævet",
+    "url": "Ugyldig URL",
+    "descriptionMin": "Beskrivelsen skal være på mindst 10 tegn",
+    "categoryRequired": "Vælg venligst en kategori",
+    "email": "Ugyldig e-mailadresse",
+    "messageMin": "Beskeden skal være på mindst 10 tegn"
+  },
+  "sidebar": {
+    "articleCount": "1.000+ artikler",
+    "articleCountSub": "Udgivet af vores fællesskab"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Inga AI-verktyg ännu",
+      "description": "Skicka in ditt AI-verktyg för att bli upptäckt av miljontals användare.",
+      "cta": "Skicka in AI-verktyg"
+    },
+    "columns": {
+      "tool": "Verktyg",
+      "organic": "Organisk trafik",
+      "paid": "Betald trafik",
+      "impressions": "Exponeringar",
+      "actions": "Åtgärder",
+      "status": "Status"
+    },
+    "statusTooltip": {
+      "pending": "Väntar på godkännande av administratör"
+    },
+    "submittedToast": "Ditt verktyg har skickats in och väntar på granskning.",
+    "warnings": {
+      "pendingView": "Det här verktyget är fortfarande under granskning och inte offentligt ännu.",
+      "confirmDelete": "Är du säker på att du vill ta bort det här AI-verktyget? Denna åtgärd kan inte ångras."
+    },
+    "submit": {
+      "tool": "Skicka in AI-verktyg",
+      "update": "Uppdatera AI",
+      "name": "GPT-namn",
+      "url": "ChatGPT-URL",
+      "category": "Kategori",
+      "description": "Beskrivning",
+      "gpt": {
+        "title": "Skicka in din GPT",
+        "label": "Skicka in GPT",
+        "description": "Skicka in din anpassade GPT för att bli upptäckt av tusentals användare."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Inlämningar",
+    "deleteSuccess": "Inlämningen har raderats.",
+    "deleteError": "Det gick inte att ta bort inlämningen.",
+    "noSubmissions": "Inga gästinlägg än",
+    "untitled": "Namnlös inlämning",
+    "confirmDelete": "Är du säker på att du vill ta bort detta bidrag? Denna åtgärd kan inte ångras.",
+    "columns": {
+      "subject": "Ämne",
+      "date": "Datum",
+      "actions": "Åtgärder",
+      "status": "Status"
+    }
+  }
+}

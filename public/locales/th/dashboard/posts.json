@@ -1,0 +1,36 @@
+{
+  "posts": {
+    "title": "โพสต์และลิงก์",
+    "description": "จัดการโพสต์รับเชิญและการแทรกลิงก์ของคุณ",
+    "submitNewItem": "ส่งรายการใหม่",
+    "submitNew": "ส่งใหม่",
+    "guestPost": "โพสต์รับเชิญ",
+    "linkInsert": "แทรกลิงก์",
+    "type": "ประเภท",
+    "targetUrl": "URL เป้าหมาย",
+    "targetUrlPlaceholder": "https://your-site.com/...",
+    "anchorText": "หัวข้อ / ข้อความลิงก์ (Anchor)",
+    "anchorTextPlaceholder": "ชื่อบทความ หรือ ข้อความลิงก์",
+    "submitCredits": "ส่ง (ใช้ 1 เครดิต)",
+    "tabs": {
+      "guestPosts": "โพสต์รับเชิญ",
+      "linkInserts": "แทรกลิงก์"
+    },
+    "table": {
+      "title": "หัวข้อ",
+      "anchor": "ข้อความลิงก์",
+      "url": "ที่อยู่เว็บไซต์",
+      "status": "สถานะ",
+      "date": "วันที่"
+    },
+    "empty": {
+      "noGuestTitle": "ไม่มีโพสต์รับเชิญ",
+      "noGuestDesc": "คุณยังไม่ได้ส่งโพสต์รับเชิญใดๆ",
+      "noGuestCta": "ส่งโพสต์รับเชิญ",
+      "noLinkTitle": "ไม่มีลิงก์ที่แทรก",
+      "noLinkDesc": "คุณยังไม่ได้ส่งการแทรกลิงก์ใดๆ",
+      "noLinkCta": "ส่งการแทรกลิงก์"
+    },
+    "subtitle": "จัดการโพสต์ของผู้เยี่ยมชมและการแทรกลิงก์"
+  }
+}

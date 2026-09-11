@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Neem contact met ons op - TopAICollection",
+    "description": "Neem contact op met het TopAICollection-team. We zijn er om u te helpen met eventuele vragen over AI-tools."
+  },
+  "title": "Neem contact met ons op",
+  "subtitle": "Heeft u een vraag of feedback? Wij horen graag van u. Ons team reageert doorgaans binnen 24 uur.",
+  "form": {
+    "title": "Stuur ons een bericht",
+    "fields": {
+      "name": {
+        "label": "Jouw naam",
+        "placeholder": "Voornaam Achternaam"
+      },
+      "email": {
+        "label": "E-mailadres",
+        "placeholder": "john@voorbeeld.com"
+      },
+      "subject": {
+        "label": "Onderwerp",
+        "placeholder": "Selecteer een onderwerp",
+        "options": {
+          "general": "Algemeen onderzoek",
+          "support": "Technische ondersteuning",
+          "partnership": "Partnerschapsmogelijkheid",
+          "other": "Ander",
+          "feedback": "Feedback"
+        }
+      },
+      "message": {
+        "label": "Bericht",
+        "placeholder": "Vertel ons waar u aan denkt..."
+      }
+    },
+    "submit": "Bericht verzenden",
+    "submitting": "Verzenden...",
+    "success": {
+      "title": "Bericht succesvol verzonden!",
+      "description": "Wij hebben uw bericht ontvangen en nemen spoedig contact met u op."
+    },
+    "error": {
+      "title": "Kan bericht niet verzenden",
+      "description": "Er is iets misgegaan. Probeer het later opnieuw."
+    }
+  },
+  "info": {
+    "title": "Neem contact op",
+    "email": {
+      "title": "E-mail ons",
+      "content": "support@topaicollection.com"
+    },
+    "support": {
+      "title": "Ondersteuningsuren",
+      "content": "Ons ondersteuningsteam is beschikbaar van maandag tot en met vrijdag"
+    },
+    "hours": {
+      "title": "Kantooruren",
+      "content": "09:00 - 18:00 uur EST"
+    },
+    "location": {
+      "title": "Locatie",
+      "content": "Gebruikers wereldwijd bedienen vanuit ons gedistribueerde team"
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "q1": "Hoe dien ik mijn AI-tool in?",
+    "a1": "Klik op de knop Verzendtool in de navigatie en vul het indieningsformulier in.",
+    "q2": "Hoe lang duurt de goedkeuring?",
+    "a2": "De meeste inzendingen worden binnen één tot drie werkdagen beoordeeld.",
+    "q3": "Kan ik mijn gereedschapsoverzicht bijwerken?",
+    "a3": "Ja, log in op uw dashboard en gebruik de Update AI-functie."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "发现最好的人工智能工具和网站",
+    "description": "探索排名第一的 AI 工具目录列表。该 AI 工具词典网站可帮助您免费查找、对比和启动绝对最佳的 AI 软件。"
+  },
+  "nav": {
+    "today": "今天",
+    "latestAI": "最新人工智能",
+    "mostSaved": "最得救",
+    "mostUsed": "最常用",
+    "browserPlugin": "浏览器插件",
+    "application": "应用",
+    "discordOfAI": "人工智能的不和谐 (Discord)",
+    "compareAI": "比较人工智能",
+    "ariaLabel": "主导航"
+  },
+  "hero": {
+    "title": "发现最好的人工智能网站和工具",
+    "subtitle": "从我们的综合目录中找到满足您需求的完美人工智能工具，该目录每天都会更新最新的人工智能创新。",
+    "stats": {
+      "aiTools": "人工智能工具",
+      "categories": "类别",
+      "languages": "语言",
+      "and": "和",
+      "supporting": "支持",
+      "description": "全面的人工智能集合，每天更新最新的创新成果。"
+    }
+  },
+  "search": {
+    "placeholder": "通过 AI 查找工具，例如视频翻译人工智能工具",
+    "button": "搜索"
+  },
+  "sections": {
+    "featured": {
+      "title": "特色人工智能工具",
+      "description": "发现最流行、最有效的人工智能工具",
+      "noTools": "目前没有可用的特色工具"
+    },
+    "justLaunched": {
+      "title": "刚刚推出",
+      "description": "最新的人工智能工具和创新",
+      "noTools": "目前没有可用的新工具"
+    },
+    "categories": {
+      "title": "按类别浏览",
+      "description": "查找按用例和行业组织的人工智能工具"
+    },
+    "trending": {
+      "title": "现在流行",
+      "description": "本周最流行的人工智能工具"
+    }
+  },
+  "cta": {
+    "title": "列出您的人工智能工具",
+    "description": "通过在我们的目录中列出您的 AI 工具来吸引数百万潜在用户。",
+    "button": "提交您的工具",
+    "features": {
+      "exposure": "全球曝光",
+      "traffic": "流量增加",
+      "seo": "搜索引擎优化的好处"
+    }
+  },
+  "seo": {
+    "applications": {
+      "title": "人工智能应用",
+      "description": "探索提高生产力、创造力等方面的最佳人工智能应用程序。"
+    },
+    "browserExtensions": {
+      "title": "人工智能浏览器扩展",
+      "description": "发现最好的 AI 浏览器扩展来增强您的工作流程。"
+    },
+    "latestAi": {
+      "title": "最新的人工智能工具",
+      "description": "发现每日更新的最新人工智能工具和创新。"
+    },
+    "mostSaved": {
+      "title": "最保存的人工智能工具",
+      "description": "发现我们社区保存最多和添加书签最多的 AI 工具。"
+    },
+    "mostUsed": {
+      "title": "最常用的AI工具",
+      "description": "发现我们社区中最受欢迎和广泛使用的AI工具。"
+    },
+    "discord": {
+      "title": "AI Discord社区",
+      "description": "发现最佳AI Discord社区，与AI爱好者建立连接。"
+    },
+    "today": {
+      "title": "今日精选AI工具",
+      "description": "发现今天在TopAICollection上精选推荐的最佳AI工具。"
+    }
+  },
+  "findMyAi": {
+    "questions": {
+      "category": {
+        "options": {
+          "Text Generation": "文本生成",
+          "Image Creation": "图像生成",
+          "Coding": "编程",
+          "Video": "视频",
+          "Audio": "音频",
+          "Productivity": "生产力"
+        },
+        "text": "您想用 AI 做什么？"
+      },
+      "budget": {
+        "options": {
+          "Free only": "仅限免费",
+          "Freemium": "免费增值",
+          "Paid is fine": "��费也可以"
+        },
+        "text": "您的预算是多少？"
+      },
+      "expertise": {
+        "options": {
+          "Beginner": "初学者",
+          "Intermediate": "中级",
+          "Expert": "专家"
+        },
+        "text": "您的专业水平如何？"
+      }
+    },
+    "title": "您的个性化推荐",
+    "viewTool": "查看工具",
+    "noTools": "没有完全符合您条件的工具。请尝试扩大搜索范围！",
+    "startOver": "重新开始",
+    "finding": "正在为您寻找最佳 AI 工具...",
+    "questionLabel": "第 {step} 个问题，共 {total} 个",
+    "completed": "已完成 {percentage}%"
+  }
+}

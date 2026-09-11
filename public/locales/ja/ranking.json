@@ -1,0 +1,98 @@
+{
+  "top": {
+    "title": "トップAIツールランキング",
+    "description": "実際の交通データに基づいて、世界で最もアクセス数の多い AI ツールを発見します。",
+    "subtitle": "実際の交通データに基づいて、世界で最もアクセス数の多い AI ツールを発見します。"
+  },
+  "trending": {
+    "title": "トレンドの AI ツール",
+    "description": "先月で最も急速に成長した AI ツール。",
+    "subtitle": "先月で最も急速に成長した AI ツール。"
+  },
+  "category": "カテゴリ",
+  "noTools": "ツールが見つかりません。",
+  "noToolsInCategory": "このカテゴリにはツールが見つかりません。",
+  "loading": "読み込み中...",
+  "favorite": "お気に入りに追加",
+  "unfavorite": "お気に入りから削除",
+  "visitWebsite": "ウェブサイトにアクセス",
+  "errors": {
+    "general": "ランキングデータの読み込みに失敗しました。"
+  },
+  "topAI": "トップAI",
+  "trendingAI": "トレンド",
+  "period": "期間",
+  "last7Days": "過去 7 日間",
+  "lastMonth": "先月",
+  "last3Months": "過去 3 か月",
+  "lastYear": "去年",
+  "allCategories": "すべてのカテゴリ",
+  "selectPeriod": "期間を選択してください",
+  "rank": "ランク",
+  "tool": "道具",
+  "visits": "訪問",
+  "growth": "成長",
+  "actions": "アクション",
+  "leaderboard": {
+    "header": {
+      "title": "AI ツール リーダーボード",
+      "description": "コミュニティから最も支持されている AI ツールを見つけてください。",
+      "dailyTitle": "今日のトップ AI ツール",
+      "monthlyTitle": "{date} のベスト AI ツール",
+      "yearlyTitle": "{date} のベスト AI ツール",
+      "tabs": {
+        "daily": "毎日",
+        "monthly": "毎月",
+        "yearly": "毎年"
+      },
+      "prevPeriod": "前の期間",
+      "nextPeriod": "次期",
+      "pickDate": "「日付を選択してください」",
+      "pickMonth": "「月を選ぶ」"
+    },
+    "empty": {
+      "title": "今日リリースされたツールはありません",
+      "description": "この特定の日付に記録されたツールはありません。別の日に移動してみてください。",
+      "showMore": "さらにツールを表示",
+      "loadingMore": "さらにツールを読み込んでいます...",
+      "toolsListTitle": "注目のツール"
+    },
+    "card": {
+      "visitWebsite": "ウェブサイトにアクセス",
+      "loginToUpvote": "賛成票ツールにログインしてください"
+    },
+    "page": {
+      "errorLoading": "リーダーボード データの読み込みに失敗しました。"
+    },
+    "sidebar": {
+      "launchArchive": "アーカイブを起動する",
+      "topCategories": "トップカテゴリー"
+    }
+  },
+  "categoryAI": "カテゴリ",
+  "regionAI": "地域",
+  "region": "地域",
+  "allRegions": "グローバル",
+  "channelAI": "チャンネル",
+  "channel": "チャンネル",
+  "allChannels": "すべてのソース",
+  "incomeAI": "社会/収入",
+  "socialMetrics": "社会的価値",
+  "channelVisits": "ソース訪問数",
+  "maxResultsHint": "結果の最大数を制限する。",
+  "regions": {
+    "us": "「米国」",
+    "ca": "「カナダ」",
+    "gb": "「イギリス」",
+    "in": "「インド」",
+    "ph": "「フィリピン」",
+    "vn": "「ベトナム」"
+  },
+  "channels": {
+    "search": "「検索」",
+    "direct": "「ダイレクト」",
+    "social": "「ソーシャル」",
+    "referrals": "「紹介」"
+  },
+  "viewDetails": "「詳細を見る」"
+}

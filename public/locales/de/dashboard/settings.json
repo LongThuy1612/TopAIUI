@@ -1,0 +1,63 @@
+{
+  "settingsPage": {
+    "profile": {
+      "fullName": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "emailHelp": "E-Mail kann nicht geändert werden",
+      "emailPlaceholder": "sie@beispiel.de",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+49 (000) 000-0000",
+      "company": "Firma",
+      "country": "Land",
+      "website": "Webseite",
+      "save": "Änderungen speichern",
+      "saving": "Speichere...",
+      "saveSuccess": "Profil erfolgreich aktualisiert."
+    },
+    "password": {
+      "title": "Passwort ändern",
+      "current": "Aktuelles Passwort",
+      "new": "Neues Passwort",
+      "confirm": "Neues Passwort bestätigen",
+      "update": "Passwort aktualisieren"
+    },
+    "notifications": {
+      "title": "Benachrichtigungseinstellungen",
+      "email": "E-Mail-Benachrichtigungen",
+      "marketing": "Marketing-E-Mails"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "fullName": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "emailHelp": "Die E-Mail-Adresse kann nicht geändert werden",
+    "emailPlaceholder": "ihre_adresse@example.com",
+    "phone": "Telefonnummer",
+    "company": "Unternehmen",
+    "country": "Land",
+    "website": "Webseite",
+    "save": "Änderungen speichern",
+    "saving": "Sparen...",
+    "saveSuccess": "Profil erfolgreich aktualisiert.",
+    "phonePlaceholder": "+1 (000) 000-0000"
+  },
+  "password": {
+    "title": "Kennwort ändern",
+    "current": "Aktuelles Passwort",
+    "new": "Neues Passwort",
+    "confirm": "Bestätigen Sie das neue Passwort",
+    "update": "Passwort aktualisieren"
+  },
+  "notifications": {
+    "title": "Benachrichtigungseinstellungen",
+    "email": "E-Mail-Benachrichtigungen",
+    "marketing": "Marketing-E-Mails"
+  },
+  "tabs": {
+    "profile": "Profil",
+    "security": "Sicherheit",
+    "notifications": "Benachrichtigungen"
+  },
+  "updated": "Einstellungen erfolgreich aktualisiert"
+}

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Sociaal Luisteren - AI-trends bewaken | TopAICollection",
+    "description": "Volg AI-trends op sociale mediaplatforms.",
+    "detailTitle": "{name} Sociaal Luisteren — TopAI",
+    "detailDescription": "Sociaal luisteranalyses voor {name}.",
+    "notFoundTitle": "Hulpprogramma niet gevonden - Sociaal luisteren"
+  },
+  "title": "Sociaal Luisteren",
+  "subtitle": "Videoprestaties van AI-tools volgen. Twitter",
+  "leaderboardTitle": "Sociale Ranglijst",
+  "leaderboardSubtitle": "Direct video-tracking. Twitter",
+  "table": {
+    "aiTool": "AI-tool",
+    "introduce": "Introductie",
+    "videoCount": "Video's",
+    "creatorsCount": "Makers",
+    "monthlyTraffic": "Maandelijks verkeer",
+    "avgViews": "Gem. weergaven",
+    "avgInteractions": "Gem. interacties",
+    "totalViews": "Totale weerg.",
+    "totalInteractions": "Totale inter.",
+    "emptyState": "Geen gegevens gevonden",
+    "pageIndicator": "Pagina {page} van {lastPage}",
+    "updatedAt": "Update datum",
+    "totalEngagement": "Totale betrokkenheid"
+  },
+  "search": {
+    "placeholder": "Voer toolnaam of domein in"
+  },
+  "detail": {
+    "viewTool": "Bekijk tool details",
+    "tabs": {
+      "socialListening": "Sociaal Luisteren"
+    },
+    "stats": {
+      "monthlyVisits": "Maandelijkse bezoeken",
+      "growth": "Groei",
+      "growthRate": "Groeipercentage",
+      "socialVideos": "Sociale video's",
+      "newLastWeek": "Nieuw deze week"
+    },
+    "metrics": {
+      "avgViews": "Gem. weergaven",
+      "totalVideos": "Totaal video's",
+      "totalCreators": "Totaal makers",
+      "totalViews": "Weerg. / Gem.",
+      "totalLikes": "Likes / Gem.",
+      "totalComments": "Comm. / Gem.",
+      "totalShares": "Totale shares",
+      "totalCollects": "Totale collecties",
+      "totalQuotes": "Totale citaten",
+      "totalReposts": "Totale reposts"
+    },
+    "platforms": {
+      "all": "Alle"
+    },
+    "feed": {
+      "unlockCta": "Ontgrendel om meer te zien",
+      "unlockDesc": "Log in om volledige videoanalyses te bekijken",
+      "viewNow": "Nu bekijken →",
+      "sortBy": "Sorteren op",
+      "sortViews": "Weergaven",
+      "sortLikes": "Vind ik leuk",
+      "sortDate": "Datum",
+      "loadMore": "Meer laden",
+      "searchPlaceholder": "Zoeken op titel of maker...",
+      "emptyState": "Geen berichten gevonden. Hier worden alleen video's weergegeven.",
+      "untitledPost": "Bericht zonder titel",
+      "metrics": {
+        "views": "Weergaven",
+        "likes": "Vind-ik-leuks",
+        "retweets": "Retweeten",
+        "shares": "Gedeeld",
+        "replies": "Antwoorden",
+        "comments": "Reacties",
+        "quotes": "Citaten",
+        "saves": "Opgeslagen",
+        "collects": "Verzamelingen",
+        "upvotes": "Stemmen",
+        "follows": "Volgen"
+      },
+      "sortComments": "Opmerkingen",
+      "sortShares": "Aandelen",
+      "title": "Sociale feed"
+    },
+    "traffic": {
+      "bounceRate": "Bouncepercentage",
+      "pagesPerVisit": "Pagina's / Bezoek",
+      "avgVisitDuration": "Gem. bezoekduur",
+      "globalRanking": "Globale ranking",
+      "category": "Categorie",
+      "categoryRanking": "Categorie ranking",
+      "deviceSplit": "Desktop vs. Mobiel",
+      "desktop": "Bureaublad",
+      "mobile": "Mobiel",
+      "trafficSources": "Verkeersbronnen",
+      "topRegions": "Toplanden",
+      "processingMsg": "Verkeersgegevens worden verwerkt. Kom later terug.",
+      "monthlyTrafficTrend": "Maandelijkse verkeerstrend",
+      "monthlyTrafficTrendDesc": "Wereldwijde historische bezoeken gedurende de afgelopen 30 dagen",
+      "sourceWebsiteInsight": "Bron: Website Insight Global"
+    },
+    "pricing": {
+      "notDocumented": "Prijsplannen zijn nog niet gedocumenteerd.",
+      "checkWebsite": "Controleer officiële website",
+      "visitWebsite": "Bezoek website",
+      "month": "maand"
+    },
+    "lastUpdated": "Laatst bijgewerkt",
+    "influencers": {
+      "title": "Topbeïnvloeders",
+      "name": "Schepper",
+      "videos": "Video's",
+      "reach": "Geschat. Bereik",
+      "platform": "Platform"
+    },
+    "filterInteraction": "Filterinteractie"
+  },
+  "platforms": {
+    "all": "Alle platforms"
+  },
+  "monitors": {
+    "title": "Uw monitoren",
+    "subtitle": "Volg specifieke zoekwoorden op sociale platforms",
+    "inputPlaceholder": "Voer trefwoord in (bijvoorbeeld ChatGPT, Midjourney)",
+    "addButton": "Begin met volgen",
+    "emptyTitle": "Geen actieve monitoren",
+    "emptyDesc": "Voeg hierboven een trefwoord toe om sociale vermeldingen en sentimenten te monitoren.",
+    "keyword": "Trefwoord",
+    "lastActive": "Laatst actief",
+    "addSuccess": "Monitor succesvol toegevoegd!",
+    "addError": "Kan monitor niet toevoegen",
+    "statusTracking": "Volgen",
+    "status": "Status",
+    "platform": "Platform"
+  },
+  "socialListeningTitle": "Leiderbord voor sociaal luisteren",
+  "pagination": {
+    "prev": "Vorige",
+    "next": "Volgende",
+    "page": "Pagina"
+  },
+  "nav": {
+    "overview": "Overzicht",
+    "social": "Sociaal",
+    "traffic": "Verkeer",
+    "pricing": "Prijzen"
+  },
+  "locked": {
+    "quotaTitle": "Functie vergrendeld",
+    "quotaDesc": "Je hebt je quotum voor social listening bereikt. Upgrade om meer inzichten te ontgrendelen.",
+    "upgradeBtn": "Nu upgraden",
+    "overlayTitle": "Premium-functie",
+    "overlayDesc": "Voor deze functie is een actief premium-abonnement vereist.",
+    "unlockBtn": "Premium ontgrendelen"
+  }
+}

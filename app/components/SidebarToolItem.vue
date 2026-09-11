@@ -7,15 +7,15 @@ const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').sli
 </script>
 
 <template>
-  <NuxtLink :to="`/tools/${tool.slug}`" class="flex items-start gap-3 rounded-xl border border-ink-100 bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md">
-    <div v-if="tool.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-lg">
+  <NuxtLink :to="`/tools/${tool.slug}`" class="flex items-center gap-2.5 rounded-xl border border-ink-200 bg-white p-4 transition-colors hover:border-brand-500">
+    <div v-if="tool.logoUrl" class="h-[26px] w-[26px] shrink-0 overflow-hidden rounded-lg">
       <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
     </div>
-    <div v-else class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-bold text-white">
+    <span v-else class="inline-flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded-lg bg-brand-100 text-xs font-extrabold text-brand-600">
       {{ initials }}
-    </div>
+    </span>
     <div class="min-w-0">
-      <h4 class="truncate text-sm font-semibold text-ink-900">{{ tool.name }}</h4>
+      <h4 class="truncate text-base font-bold text-ink-900">{{ tool.name }}</h4>
     </div>
   </NuxtLink>
 </template>

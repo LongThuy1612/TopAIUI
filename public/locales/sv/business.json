@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Business Solutions - Partner med oss ​​| TopAICollection",
+    "description": "Utforska affärspartnerskapsmöjligheter med TopAICollection. Reklam, sponsrat innehåll och mer."
+  },
+  "title": "Affärslösningar",
+  "subtitle": "Samarbeta med TopAICollection för att nå AI-entusiaster över hela världen",
+  "contact": {
+    "title": "Hör av dig"
+  },
+  "offers": {
+    "ads": "Kör riktade annonskampanjer",
+    "partnerships": "Utforska strategiska partnerskap",
+    "growth": "Accelerera din AI-produkttillväxt",
+    "consulting": "Anpassade AI-integrationstjänster"
+  },
+  "form": {
+    "fullName": "Fullständigt namn",
+    "workEmail": "Arbetsmail",
+    "companyName": "Företagsnamn",
+    "inquiryType": "Förfrågningstyp",
+    "selectType": "Välj typ",
+    "message": "Meddelande",
+    "messagePlaceholder": "Berätta mer om dina behov...",
+    "inquiryTypes": {
+      "advertise": "Annonsera",
+      "guestPost": "Gästinlägg",
+      "partnership": "Partnerskap",
+      "customDevelopment": "Anpassad utveckling",
+      "other": "Andra"
+    }
+  },
+  "sections": {
+    "advertise": {
+      "title": "Annonsera ditt AI-verktyg",
+      "description": "Få ditt AI-verktyg synligt på vår plattform.",
+      "link": "Läs mer"
+    },
+    "guestPost": {
+      "title": "Gästinlägg och länkar",
+      "description": "Publicera innehåll eller få bakåtlänkar på vår webbplats med hög auktoritet.",
+      "link": "Läs mer"
+    },
+    "submitTool": {
+      "title": "Skicka in ditt verktyg",
+      "description": "Lägg till ditt AI-verktyg i vår katalog gratis.",
+      "link": "Skicka nu"
+    },
+    "customSolutions": {
+      "title": "Anpassade lösningar",
+      "description": "Kontakta oss för anpassade partnerskapsmöjligheter.",
+      "link": "Kontakta oss"
+    }
+  },
+  "sidebar": {
+    "partnerCount": "100+ partners",
+    "partnerCountSub": "Betrodd av ledande AI-företag",
+    "contactSupport": "Kontakta support"
+  },
+  "validation": {
+    "required": "Detta fält är obligatoriskt",
+    "toolNameRequired": "Verktygsnamn krävs",
+    "url": "Ogiltig webbadress",
+    "descriptionMin": "Beskrivningen måste bestå av minst 10 tecken",
+    "categoryRequired": "Välj en kategori",
+    "email": "Ogiltig e-postadress",
+    "messageMin": "Meddelandet måste bestå av minst 10 tecken"
+  },
+  "success": "Din förfrågan har skickats!"
+}

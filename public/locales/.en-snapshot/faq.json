@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Frequently Asked Questions - TopAICollection",
+    "description": "Find answers to common questions about TopAICollection and how to use our AI tools directory."
+  },
+  "badge": "Help Center",
+  "title": "Frequently Asked Questions",
+  "subtitle": "Find answers to common questions about TopAICollection",
+  "categories": {
+    "general": "General Questions",
+    "tools": "About AI Tools",
+    "submission": "Tool Submission",
+    "account": "Account & Billing"
+  },
+  "questions": {
+    "general": {
+      "0": {
+        "question": "What is TopAICollection?",
+        "answer": "TopAICollection is a comprehensive directory of AI tools and websites. We help users discover the best AI solutions for their needs, from productivity tools to creative applications."
+      },
+      "1": {
+        "question": "How do I find the right AI tool?",
+        "answer": "You can browse by category, use our search function, or check our featured and trending sections. Each tool includes detailed descriptions, user reviews, and ratings to help you make an informed decision."
+      },
+      "2": {
+        "question": "Is TopAICollection free to use?",
+        "answer": "Yes! Browsing and searching our directory is completely free. Some listed tools may have their own pricing, which is clearly indicated on each tool's page."
+      }
+    },
+    "tools": {
+      "0": {
+        "question": "How are tools selected for the directory?",
+        "answer": "We carefully review each submission to ensure quality. Tools must be functional, provide value to users, and comply with our guidelines. We also consider user feedback and ratings."
+      },
+      "1": {
+        "question": "What information is provided for each tool?",
+        "answer": "Each tool listing includes a description, key features, pricing information, user reviews, traffic analytics, categories, and direct links to the tool's website."
+      },
+      "2": {
+        "question": "How often is the directory updated?",
+        "answer": "Our directory is updated daily with new tools and information. We continuously monitor listed tools to ensure accuracy and remove any that are no longer available."
+      }
+    },
+    "submission": {
+      "0": {
+        "question": "How can I submit my AI tool?",
+        "answer": "Visit our Submit Tool page and fill out the submission form. Provide detailed information about your tool, including its features, target audience, and pricing. We review all submissions within 48 hours."
+      },
+      "1": {
+        "question": "What are the requirements for tool submission?",
+        "answer": "Your tool must be functional, provide clear value to users, have a professional website, and comply with legal requirements. We don't accept tools that promote illegal activities or violate user privacy."
+      },
+      "2": {
+        "question": "How much does it cost to list a tool?",
+        "answer": "Basic listings are free. We also offer featured and premium listings with additional benefits like priority placement, promotional features, and advanced analytics."
+      }
+    },
+    "account": {
+      "0": {
+        "question": "Do I need an account to use TopAICollection?",
+        "answer": "No account is required to browse and search our directory. However, creating an account allows you to save favorite tools, write reviews, and manage tool submissions."
+      },
+      "1": {
+        "question": "How do I upgrade my tool listing?",
+        "answer": "Log into your account, go to your tool management dashboard, and select the upgrade option. You can choose from featured or premium plans with monthly or annual billing."
+      },
+      "2": {
+        "question": "Can I cancel my paid listing anytime?",
+        "answer": "Yes, you can cancel your paid listing at any time. Your listing will remain featured until the end of your current billing period, then revert to a basic listing."
+      }
+    }
+  },
+  "cta": {
+    "title": "Still have questions?",
+    "subtitle": "Our support team is here to help",
+    "button": "Contact Support"
+  }
+}

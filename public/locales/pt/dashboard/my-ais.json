@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "Ainda Sem Ferramentas de IA",
+      "description": "Envie a sua ferramenta de IA para ser descoberta por milhões de utilizadores.",
+      "cta": "Enviar Ferramenta de IA"
+    },
+    "columns": {
+      "tool": "Ferramenta",
+      "status": "Estado",
+      "organic": "Tráfego Orgânico",
+      "paid": "Tráfego Pago",
+      "impressions": "Impressões",
+      "actions": "Ações"
+    },
+    "statusTooltip": {
+      "pending": "A aguardar aprovação do administrador"
+    },
+    "submittedToast": "A sua ferramenta foi enviada e está a aguardar revisão.",
+    "warnings": {
+      "pendingView": "Esta ferramenta ainda está em revisão e ainda não está visível publicamente.",
+      "confirmDelete": "Tem certeza de que deseja excluir esta ferramenta de IA? Esta ação não pode ser desfeita."
+    },
+    "submit": {
+      "tool": "Enviar ferramenta de IA",
+      "update": "Atualizar IA",
+      "name": "Nome GPT",
+      "url": "URL do bate-papoGPT",
+      "category": "Categoria",
+      "description": "Descrição",
+      "gpt": {
+        "title": "Envie seu GPT",
+        "label": "Enviar GPT",
+        "description": "Envie seu GPT personalizado para ser descoberto por milhares de usuários."
+      }
+    }
+  },
+  "submissions": {
+    "title": "Envios",
+    "deleteSuccess": "Envio excluído com sucesso.",
+    "deleteError": "Falha ao excluir o envio.",
+    "noSubmissions": "Nenhuma postagem de convidado ainda",
+    "untitled": "Envio sem título",
+    "confirmDelete": "Tem certeza de que deseja excluir este envio? Esta ação não pode ser desfeita.",
+    "columns": {
+      "subject": "Assunto",
+      "status": "Estado",
+      "date": "Data",
+      "actions": "Ações"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "about": "Om oss",
+  "contact": "Kontakta",
+  "blog": "Blogg",
+  "privacy": "Sekretesspolicy",
+  "terms": "Användarvillkor",
+  "cookies": "Cookiepolicy",
+  "copyright": "© {year} TopAICollection. Alla rättigheter reserverade.",
+  "sitemap": "Webbplatskarta",
+  "resources": "Resurser",
+  "help": "Hjälpcenter",
+  "faq": "Vanliga frågor",
+  "submitTool": "Skicka verktyg",
+  "description": "TopAICollection är den ultimata katalogen för att upptäcka de bästa AI-verktygen och webbplatserna.",
+  "browseByAlphabet": "Bläddra efter alfabet",
+  "topAITools": {
+    "title": "Topp AI-verktyg",
+    "items": {
+      "gpt4": "GPT-4",
+      "midjourney": "Mellanresa",
+      "stableDiffusion": "Stabil diffusion",
+      "jasper": "Jaspis",
+      "chatgpt": "ChatGPT"
+    }
+  },
+  "moreTools": {
+    "title": "Fler verktyg",
+    "items": {
+      "audio": "Ljud-AI",
+      "video": "Video-AI",
+      "writing": "Skriver AI",
+      "image": "Bild AI",
+      "coding": "Kodar AI"
+    }
+  },
+  "recommend": {
+    "title": "Rekommendera",
+    "items": {
+      "newest": "Nyaste verktygen",
+      "mostSaved": "Mest frälsta",
+      "trending": "Trendigt nu",
+      "editorsChoice": "Redaktörens val",
+      "featured": "Utvalda",
+      "leaderboard": "Topplista"
+    }
+  },
+  "readMore": {
+    "title": "Läs mer",
+    "items": {
+      "blog": "Blogg",
+      "news": "AI Nyheter",
+      "guides": "Guider",
+      "tutorials": "Handledningar",
+      "glossary": "AI-ordlista"
+    }
+  },
+  "company": {
+    "title": "Om",
+    "items": {
+      "aboutUs": "Om oss",
+      "contact": "Affärskontakt",
+      "editorialGuidelines": "Redaktionella riktlinjer",
+      "reviewMethodology": "Granskningsmetodik",
+      "submit": "Skicka in",
+      "advertise": "Annonsera"
+    }
+  },
+  "chooseLanguage": "Välj Språk",
+  "followUs": "Följ oss",
+  "more": "Mer...",
+  "directory": {
+    "title": "AI-verktygskatalogarkiv"
+  },
+  "companyInfo": {
+    "address": "Tech-distriktet, Silicon Valley",
+    "country": "USA",
+    "name": "TopAICollection Inc.",
+    "city": "San Francisco, CA 94107",
+    "phone": "+1 (555) 123-4567",
+    "email": "contact@topaicollection.com"
+  },
+  "footer": {
+    "readMoreLinks": {
+      "videoGenerators": "Videogeneratorer",
+      "imageGenerators": "Bildgeneratorer",
+      "writers": "Skribenter",
+      "seoTools": "Seo-verktyg",
+      "websiteBuilders": "Webbplatsbyggare",
+      "chatbots": "Chattbotar"
+    }
+  }
+}

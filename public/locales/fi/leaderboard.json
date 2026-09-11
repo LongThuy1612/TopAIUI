@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "metadata": {
+      "title": "Päivittäinen tulostaulukko",
+      "title_long": "Päivittäinen tekoälytyökalujen tulostaulu"
+    }
+  },
+  "monthly": {
+    "metadata": {
+      "title": "Kuukausittainen tulostaulukko",
+      "title_long": "Kuukausittainen AI-työkalujen tulostaulukko"
+    }
+  },
+  "yearly": {
+    "metadata": {
+      "title": "Vuotuinen tulostaulukko",
+      "title_long": "Vuotuinen AI-työkalujen tulostaulukko"
+    }
+  }
+}

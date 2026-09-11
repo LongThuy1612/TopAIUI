@@ -1,0 +1,52 @@
+{
+  "myAis": {
+    "empty": {
+      "title": "AI 도구 없음",
+      "description": "AI 도구를 제출하여 수백만 명의 사용자가 발견하게 하세요.",
+      "cta": "AI 도구 제출"
+    },
+    "columns": {
+      "tool": "도구",
+      "status": "상태",
+      "organic": "유기적 트래픽",
+      "paid": "유료 트래픽",
+      "impressions": "노출수",
+      "actions": "작업"
+    },
+    "statusTooltip": {
+      "pending": "관리자 승인 대기 중"
+    },
+    "submittedToast": "도구가 제출되었으며 검토 대기 중입니다.",
+    "warnings": {
+      "pendingView": "이 도구는 아직 검토 중이며 아직 공개되지 않았습니다.",
+      "confirmDelete": "이 AI 도구를 삭제하시겠습니까? 이 작업은 취소할 수 없습니다."
+    },
+    "submit": {
+      "tool": "AI 도구 제출",
+      "update": "AI 업데이트",
+      "name": "GPT 이름",
+      "url": "채팅GPT URL",
+      "category": "범주",
+      "description": "설명",
+      "gpt": {
+        "title": "GPT 제출",
+        "label": "GPT 제출",
+        "description": "수천 명의 사용자가 발견할 수 있도록 맞춤 GPT를 제출하세요."
+      }
+    }
+  },
+  "submissions": {
+    "title": "제출물",
+    "deleteSuccess": "제출물이 성공적으로 삭제되었습니다.",
+    "deleteError": "제출물을 삭제하지 못했습니다.",
+    "noSubmissions": "아직 게스트 게시물이 없습니다.",
+    "untitled": "제목 없는 제출",
+    "confirmDelete": "이 제출물을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.",
+    "columns": {
+      "subject": "주제",
+      "status": "상태",
+      "date": "날짜",
+      "actions": "행위"
+    }
+  }
+}

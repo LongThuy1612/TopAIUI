@@ -1,0 +1,294 @@
+{
+  "title": "Mainosta tekoälytyökaluasi",
+  "description": "Mainosta AI-työkaluasi tuhansille päivittäisille käyttäjille.",
+  "hero": {
+    "title": "Tekoälysi on TopAICollectionissa",
+    "subtitle": "TopAI voi auttaa sinua tavoittamaan miljoonia tekoälykäyttäjiä ja potentiaalisia asiakkaita maailmanlaajuisesti.",
+    "stats": {
+      "pageViews": "5 milj.+",
+      "pageViewsLabel": "Sivun katselut",
+      "monthlyVisits": "3M+",
+      "monthlyVisitsLabel": "Kuukausittaiset vierailut",
+      "subscribers": "100 000+",
+      "subscribersLabel": "Tilaajat",
+      "desktopUsers": "55 %",
+      "desktopUsersLabel": "Työpöytäkäyttäjät",
+      "registeredUsers": "100K+",
+      "registeredUsersLabel": "Rekisteröityneet käyttäjät",
+      "avgTimeOnSite": "2,5 m",
+      "avgTimeOnSiteLabel": "Keskim. aika sivustolla"
+    },
+    "benefits": [
+      "Suosituin AI-työkaluhakemisto",
+      "Dofollow käänteinen linkki",
+      "Monikielinen esittely",
+      "Listaus ja liikenne ikuisesti",
+      "Arvoa perustajille ja uusille yrityksille"
+    ]
+  },
+  "tabs": {
+    "submit": "Lähetä AI",
+    "submitDesc": "Lähetä tekoälytyökalusi ja hanki liikennettä",
+    "advertise": "Mainosta tekoälyä",
+    "advertiseDesc": "Napsautuskohtainen maksu, suositellut tarjoukset, automaattinen mainosten sijoittelu",
+    "guestPost": "Vierasviestit / Linkin lisäys",
+    "guestPostDesc": "Vierasviestit/linkkilisäys TopAI:ssa",
+    "updateAi": "Päivitä AI",
+    "updateAiDesc": "Päivitä työkalusi tiedot",
+    "submitGpt": "Lähetä GPT",
+    "submitGptDesc": "Lähetä GPT, jotta useammat ihmiset voivat käyttää sitä",
+    "business": "Lisää bisnestä",
+    "businessDesc": "Kuten linkkien vaihto, Twitter-viestit, videot jne."
+  },
+  "form": {
+    "toolLabel": "Työkalu",
+    "toolHint": "PS: Jos työkalua ei löydy, lähetä se ensin.",
+    "toolPlaceholder": "Etsi työkalusi...",
+    "adLandingLink": "Mainoksen laskeutumislinkki",
+    "urlTitle": "Anna kelvollinen URL-osoite, joka alkaa http:// tai https://",
+    "toolLandingPlaceholder": "/työkalu/...",
+    "websitePlaceholder": "https://example.com"
+  },
+  "clicks": {
+    "title": "Valitse tarvitsemasi napsautusten määrä",
+    "numberOfClicks": "Napsautusten määrä",
+    "total": "Kokonais",
+    "payButton": "Maksaa",
+    "submitButton": "Toimita"
+  },
+  "packages": {
+    "500": {
+      "clicks": "500",
+      "price": "100"
+    },
+    "1000": {
+      "clicks": "1000",
+      "price": "180"
+    },
+    "5000": {
+      "clicks": "5000",
+      "price": "800"
+    },
+    "10000": {
+      "clicks": "10000",
+      "price": "1400"
+    },
+    "20000": {
+      "clicks": "20000",
+      "price": "2500"
+    },
+    "50000": {
+      "clicks": "50000",
+      "price": "5000"
+    }
+  },
+  "examples": {
+    "title": "Mainosta esimerkkiä työkalusta",
+    "description": "Automatisoimme mainoksesi täysin algoritmiemme perusteella varmistaaksemme, että saat vähintään ostettujen napsautusten määrän, mutta emme voi taata napsautusten laatua.",
+    "note": "Priorisoi mainoskulujen kuluttaminen saadaksesi nopeasti verkkosivuston napsautuksia ja näyttökertoja. Voit: keskeyttää mainokset tai käynnistää mainokset.",
+    "typesTitle": "Tässä on muutamia mainostyyppejä:",
+    "mostFrequently": "Useimmiten",
+    "mostEffective": "Tehokkain",
+    "standardDesc": "Näkyy etusivulla, luetteloissa ja luokkasivuilla.",
+    "effectiveDesc": "Näkyy kilpailijoiden sivuilla ja luokkasivuilla, joihin kuulut.",
+    "featured": "Suositeltu*",
+    "featuredDesc1": "Suositeltu sijainti etusivulla, uusin tekoäly, eniten käytetyt, tallennetuimmat, hakutulossivut, luokan tiedot jne.",
+    "featuredDesc2": "Useimpien sivujen yläreunassa on sponsoripaikka.",
+    "standard": "Vakio",
+    "targeted": "Kohdennettu"
+  },
+  "faq": {
+    "title": "FAQ - mainosta",
+    "items": [
+      {
+        "question": "Miten mainonta toimii?",
+        "answer": "Näytämme työkalusi ensiluokkaisissa paikoissa alustallamme. Maksat napsautuksesta, ja varmistamme, että mainoksesi saa ostamasi määrän napsautuksia."
+      },
+      {
+        "question": "Voinko ostaa napsautuksia useita kertoja?",
+        "answer": "Kyllä, voit ostaa lisää napsautuspaketteja milloin tahansa parantaaksesi työkalusi näkyvyyttä."
+      },
+      {
+        "question": "Voinko keskeyttää mainokseni?",
+        "answer": "Kyllä, voit keskeyttää ja jatkaa mainoskampanjoitasi milloin tahansa hallintapaneelista."
+      },
+      {
+        "question": "Millaista analytiikkaa saan?",
+        "answer": "Saat yksityiskohtaisia ​​tietoja maksuttomista napsautuksista, maksetuista napsautuksista, napsautusten kokonaismäärästä, näyttökerroista ja säästöistä."
+      }
+    ]
+  },
+  "whyAdvertise": "Miksi mainostaa?",
+  "customPackage": {
+    "title": "Tarvitsetko mukautetun paketin?",
+    "description": "Ota yhteyttä ja kysy räätälöityjä mainontaratkaisuja, jotka sopivat sinun tavoitteisiisi.",
+    "contactSales": "Ota yhteyttä myyntiin",
+    "estimatedClicks": "Arvioidut napsautukset",
+    "estimatedImpressions": "Arvioidut näyttökerrat",
+    "estimatedViews": "Arvioidut katselukerrat",
+    "estimatedUnits": "Arvioidut yksiköt",
+    "toolSlug": "Työkalun URL-tunniste (slug)",
+    "landingUrl": "Aloitus-url",
+    "campaignParameters": "Kampanjan parametrit",
+    "metricType": "Tiedon tyyppi",
+    "pacingType": "Tahdistustyyppi",
+    "basePrice": "Perushinta",
+    "totalBudget": "Kokonaisbudjetti",
+    "startDate": "Aloituspäivä",
+    "endDate": "Loppupäivä",
+    "priorityBid": "Ensisijainen tarjous",
+    "estimation": "Arviointi",
+    "cancel": "Peruuta",
+    "submitting": "Lähetä",
+    "submitProposal": "Lähetä ehdotus"
+  },
+  "features": {
+    "premiumPlacement": {
+      "title": "Premium-sijoitus",
+      "description": "Suositellut paikat kotisivuilla ja luokkasivuilla"
+    },
+    "targetedAudience": {
+      "title": "Kohdennettu yleisö",
+      "description": "Tavoita käyttäjiä, jotka etsivät aktiivisesti tekoälytyökaluja"
+    },
+    "analytics": {
+      "title": "Analyysi",
+      "description": "Seuraa suorituskykyä yksityiskohtaisilla oivalluksilla"
+    }
+  },
+  "campaigns": {
+    "previous": "Edellinen",
+    "pageOf": "Sivu {page}/{total}",
+    "choosePlan": "Valitse tilauksesi",
+    "choosePlanDesc": "Valitse alta sopimus kampanjasi uusimiseksi tai päivittämiseksi.",
+    "currentPlan": "Nykyinen suunnitelma",
+    "selectAgain": "Valitse uudelleen",
+    "selectPlan": "Valitse Suunnitelma"
+  },
+  "transactions": {
+    "noDescription": "Et ole vielä ostanut mainoshyvityksiä. Aloita kampanjoiden käynnistäminen lisäämällä saldosi."
+  },
+  "meta": {
+    "title": "Mainosta tekoälytyökalua - TopAICollection",
+    "description": "Mainosta tekoälytyökaluasi miljoonille tekoälyn harrastajille."
+  },
+  "plans": {
+    "title": "Mainossuunnitelmat",
+    "subtitle": "Laajenna ulottuvuuttasi",
+    "clickTarget": "Klikkaustavoite",
+    "toolRequired": "⚠ Ole hyvä ja syötä työkalun nimi yllä ennen lähettämistä.",
+    "empty": "Mainospaketteja ei ole saatavilla juuri nyt. Tarkista myöhemmin.",
+    "customPlanConfig": "Mukautetun suunnitelman määritys",
+    "basePrice": "Perushinta",
+    "adPlacements": "Mainosten sijoittelut",
+    "applyConfig": "Käytä Config. tiedostoa...",
+    "configured": "Määritetty",
+    "toolSlug": "Työkalun polkutunnus",
+    "landingUrl": "Laskeutumis-URL-osoite",
+    "campaignParameters": "Kampanjan parametrit",
+    "metricType": "Mittaustyyppi",
+    "pacingType": "Sydämentahdistustyyppi",
+    "totalBudget": "Kokonaistalousarvio",
+    "startDate": "Alkamispäivämäärä",
+    "endDate": "Päättymispäivä",
+    "priorityBid": "Prioriteettitarjous",
+    "estimation": "Arvio.",
+    "estimatedClicks": "Arvioidut napsautukset",
+    "estimatedImpressions": "Arvioidut näyttökerrat",
+    "estimatedViews": "Arvioidut katselukerrat",
+    "estimatedUnits": "Arvioidut {metric} yksikköä",
+    "submitProposal": "Lähetä mukautettu ehdotus",
+    "submitting": "Lähetetään…",
+    "cancel": "Peruuta",
+    "customBid": {
+      "title": "Muokattu tehokkuushintatarjous",
+      "budgetLabel": "Kokonaisbudjetti ($)",
+      "budgetDescription": "Kokonaissumma, jonka haluat käyttää.",
+      "priorityBidLabel": "Ensisijainen tarjouskerroin",
+      "priorityBidDescription": "Korkeampi hinta = korkeampi esiintymistiheys.",
+      "minBudget": "Minimibudjetti on 10 dollaria",
+      "minBid": "Minimihinta on 0,01 dollaria"
+    },
+    "placeholders": {
+      "toolSlug": "minun-mahtava-työkaluni",
+      "landingUrl": "https://...",
+      "metricType": "CPA",
+      "pacingType": "JOPA"
+    }
+  },
+  "submit": {
+    "button": "Lähetä kampanjapyyntö",
+    "submitting": "Lähetetään…",
+    "error": "Lähetys epäonnistui. Yritä uudelleen.",
+    "successTitle": "Kampanja lähetetty!",
+    "budgetLabel": "Aseta kampanjan budjetti ($ USD)",
+    "success": "Kampanja luotu onnistuneesti!",
+    "untitled": "Nimetön kampanja",
+    "missingTool": "Työkalu tai kohde-URL vaaditaan",
+    "loginRequiredTitle": "Tunnistautuminen vaaditaan",
+    "loginRequiredDesc": "Kirjaudu sisään lähettääksesi työkalun. Edistymistäsi ei tallenneta, ennen kuin todennat."
+  },
+  "sidebar": {
+    "pageViews": "Sivulataukset",
+    "pageViewsSub": "Kuukausittainen sivuliikenne"
+  },
+  "details": "Mainoksen tiedot",
+  "duration": "Kesto (päivää)",
+  "selectDuration": "Valitse kesto",
+  "days": "{count, plural, =1 {1 päivä} other {# päivää}}",
+  "preferredPlacement": "Ensisijainen sijoitus",
+  "selectPlacement": "Valitse sijoitus",
+  "placements": {
+    "homepageBanner": "Kotisivun banneri",
+    "sidebar": "Sivupalkki",
+    "categoryPage": "Luokkasivu",
+    "newsletter": "Uutiskirje",
+    "HOME": "Aloitussivu",
+    "CATEGORY": "Kategoriasivu",
+    "SEARCH": "Hakutulokset",
+    "TOOL_DETAIL": "Työkalun tietosivu"
+  },
+  "targetAudience": "Kohdeyleisö",
+  "targetAudiencePlaceholder": "Kuvaile kohdeyleisösi",
+  "validation": {
+    "required": "Tämä kenttä on pakollinen",
+    "selectDuration": "Valitse mainoksen kesto",
+    "selectPlacement": "Valitse mainoksen sijoitus",
+    "targetAudienceMin": "Kohdeyleisön on oltava vähintään 10 merkkiä pitkä",
+    "toolNameRequired": "Työkalun nimi vaaditaan",
+    "url": "Virheellinen URL-osoite",
+    "descriptionMin": "Kuvauksen tulee olla vähintään 10 merkkiä pitkä",
+    "categoryRequired": "Valitse luokka",
+    "email": "Virheellinen sähköpostiosoite",
+    "messageMin": "Viestin tulee olla vähintään 10 merkkiä pitkä"
+  },
+  "metrics": {
+    "labels": {
+      "CPC": "Maksu per klikkaus",
+      "CPM": "per 1 000 näyttökertaa",
+      "CPV": "per näyttökerta",
+      "FLAT_RATE": "kiinteä",
+      "CPC_LABEL": "Sopimuspuoli",
+      "CPM_LABEL": "Syklofosfamidi",
+      "CPV_LABEL": "Palatsi.",
+      "FLAT_RATE_LABEL": "Kiinteä hinta"
+    },
+    "units": {
+      "clicks": "klikkauksia",
+      "impressions": "näyttökertoja",
+      "views": "Näkymät",
+      "units": "kpl"
+    }
+  },
+  "selected": "Valittu",
+  "summary": {
+    "selectedPlanLabel": "Valittu mainospaketti",
+    "totalPriceLabel": "Kiinteä hinta yhteensä",
+    "securityFooter": "Turvallinen maksu • Välitön aktivointi • Täysi analytiikka"
+  },
+  "charts": {
+    "cpc": "Sopimuspuoli",
+    "cpm": "Syklofosfamidi",
+    "noData": "Historiallisia tietoja ei ole saatavilla"
+  }
+}
