@@ -5,10 +5,33 @@ export interface CategoryRef {
 }
 
 export interface Category extends CategoryRef {
-  parentId?: string | null
   isFeatured: boolean
   viewCount: number
   count: number
+}
+
+export interface TagRef {
+  slug: string
+  name: string
+}
+
+export interface Faq {
+  question: string
+  answer: string
+}
+
+export interface PricingPlan {
+  name: string
+  price: string
+  period: string
+  features: string[]
+}
+
+export interface Review {
+  rating: number
+  comment: string | null
+  createdAt: string
+  userName: string | null
 }
 
 export interface Tool {
@@ -58,6 +81,20 @@ export interface Tool {
   createdAt: string
   updatedAt: string
   categories?: CategoryRef[]
+
+  // Locale-aware fields — resolved server-side from ToolTranslation for the requested locale
+  shortDesc?: string | null
+  description?: string | null
+  whatIs?: string | null
+  howToUse?: string | null
+  coreFeatures?: string[]
+  useCases?: string[]
+
+  // Only populated by the tool-detail endpoint
+  tags?: TagRef[]
+  faqs?: Faq[]
+  pricingPlans?: PricingPlan[]
+  reviews?: Review[]
 }
 
 export interface ToolsResponse {

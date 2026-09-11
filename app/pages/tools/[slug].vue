@@ -5,7 +5,9 @@ const { t, locale } = useI18n()
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 
-const { data: tool, error } = await useFetch<Tool>(() => `/api/tools/${slug.value}`)
+const { data: tool, error } = await useFetch<Tool>(() => `/api/tools/${slug.value}`, {
+  query: computed(() => ({ locale: locale.value }))
+})
 
 if (error.value) {
   throw createError({ statusCode: 404, statusMessage: 'Tool not found' })
@@ -14,7 +16,7 @@ if (error.value) {
 const category = computed(() => tool.value?.categories?.[0])
 
 const { data: alternativesRes } = await useFetch<ToolsResponse>('/api/tools', {
-  query: computed(() => ({ category: category.value?.slug, limit: 6 }))
+  query: computed(() => ({ category: category.value?.slug, limit: 6, locale: locale.value }))
 })
 const alternatives = computed(() => (alternativesRes.value?.items ?? []).filter(item => item.slug !== slug.value))
 
@@ -73,14 +75,20 @@ function toggleSaved() {
   isSaved.value = favorites.has(slug.value)
 }
 
-type TabKey = 'info' | 'pricing' | 'reviews' | 'analytics' | 'alternatives'
-const tabs = computed<{ key: TabKey; id: string; label: string }[]>(() => [
-  { key: 'info', id: 'section-info', label: t('tool.tabProductInfo') },
-  { key: 'pricing', id: 'section-pricing', label: t('tool.tabPricing') },
-  { key: 'reviews', id: 'section-reviews', label: t('tool.tabReviews') },
-  { key: 'analytics', id: 'section-analytics', label: t('tool.tabAnalytics') },
-  { key: 'alternatives', id: 'section-alternatives', label: t('tool.tabAlternatives') }
-])
+type TabKey = 'info' | 'pricing' | 'reviews' | 'faq' | 'analytics' | 'alternatives'
+const tabs = computed<{ key: TabKey; id: string; label: string }[]>(() => {
+  const list: { key: TabKey; id: string; label: string }[] = [
+    { key: 'info', id: 'section-info', label: t('tool.tabProductInfo') },
+    { key: 'pricing', id: 'section-pricing', label: t('tool.tabPricing') },
+    { key: 'reviews', id: 'section-reviews', label: t('tool.tabReviews') }
+  ]
+  if (tool.value?.faqs?.length) list.push({ key: 'faq', id: 'section-faq', label: t('tool.faq') })
+  list.push(
+    { key: 'analytics', id: 'section-analytics', label: t('tool.tabAnalytics') },
+    { key: 'alternatives', id: 'section-alternatives', label: t('tool.tabAlternatives') }
+  )
+  return list
+})
 const activeTab = ref<TabKey>('info')
 
 function scrollToSection(id: string) {
@@ -246,7 +254,37 @@ useSeoMeta({
       <div id="section-info" class="scroll-mt-32">
         <h2 class="text-xl font-extrabold text-ink-900">{{ t('tool.productInformationHeading', { name: tool.name }) }}</h2>
         <div class="mt-4 divide-y divide-ink-100 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
-          <section class="pb-6">
+          <section v-if="tool.whatIs || tool.description" class="py-6 first:pt-0">
+            <h3 class="text-sm font-bold text-ink-900">{{ t('tool.whatIs', { name: tool.name }) }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-600">{{ tool.whatIs || tool.description }}</p>
+          </section>
+
+          <section v-if="tool.howToUse" class="py-6 first:pt-0">
+            <h3 class="text-sm font-bold text-ink-900">{{ t('tool.howToUseHeading', { name: tool.name }) }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-600">{{ tool.howToUse }}</p>
+          </section>
+
+          <section v-if="tool.coreFeatures?.length" class="py-6 first:pt-0">
+            <h3 class="text-sm font-bold text-ink-900">{{ t('tool.features') }}</h3>
+            <ul class="mt-2 space-y-1.5 text-sm text-ink-600">
+              <li v-for="feature in tool.coreFeatures" :key="feature" class="flex gap-2"><span class="text-brand-500">✓</span> {{ feature }}</li>
+            </ul>
+          </section>
+
+          <section v-if="tool.useCases?.length" class="py-6 first:pt-0">
+            <h3 class="text-sm font-bold text-ink-900">{{ t('tool.useCases') }}</h3>
+            <ul class="mt-2 space-y-1.5 text-sm text-ink-600">
+              <li v-for="useCase in tool.useCases" :key="useCase" class="flex gap-2"><span class="text-brand-500">•</span> {{ useCase }}</li>
+            </ul>
+          </section>
+
+          <section v-if="tool.tags?.length" class="py-6 first:pt-0">
+            <div class="flex flex-wrap gap-2">
+              <span v-for="tag in tool.tags" :key="tag.slug" class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-600">#{{ tag.name }}</span>
+            </div>
+          </section>
+
+          <section class="py-6 first:pt-0 last:pb-0">
             <dl class="grid grid-cols-1 gap-3 sm:grid-cols-2">
               <div v-if="tool.affiliateUrl" class="flex gap-2 text-sm">
                 <dt class="font-semibold text-ink-900">{{ t('tool.affiliateLink') }}:</dt>
@@ -269,8 +307,21 @@ useSeoMeta({
       <div id="section-pricing" class="scroll-mt-32">
         <h2 class="text-xl font-extrabold text-ink-900">{{ t('tool.pricingHeading', { name: tool.name }) }}</h2>
         <div class="mt-4 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
-          <span :class="['inline-block rounded-full px-3 py-1.5 text-sm font-semibold', pricingStyle[tool.pricingType]]">{{ t(`pricing.${tool.pricingType}`) }}</span>
-          <p v-if="tool.couponCode" class="mt-3 text-sm text-ink-600">{{ t('tool.couponCode') }}: <span class="font-semibold text-ink-900">{{ tool.couponCode }}</span></p>
+          <div v-if="tool.pricingPlans?.length" class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div v-for="plan in tool.pricingPlans" :key="plan.name" class="rounded-lg border border-ink-100 p-4">
+              <p class="text-sm font-bold text-ink-900">{{ plan.name }}</p>
+              <p class="mt-1 text-2xl font-extrabold text-ink-900">
+                {{ plan.price }}<span v-if="plan.period" class="text-sm font-medium text-ink-400"> / {{ plan.period }}</span>
+              </p>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink-600">
+                <li v-for="feature in plan.features" :key="feature" class="flex gap-2"><span class="text-brand-500">✓</span> {{ feature }}</li>
+              </ul>
+            </div>
+          </div>
+          <template v-else>
+            <span :class="['inline-block rounded-full px-3 py-1.5 text-sm font-semibold', pricingStyle[tool.pricingType]]">{{ t(`pricing.${tool.pricingType}`) }}</span>
+            <p v-if="tool.couponCode" class="mt-3 text-sm text-ink-600">{{ t('tool.couponCode') }}: <span class="font-semibold text-ink-900">{{ tool.couponCode }}</span></p>
+          </template>
         </div>
       </div>
 
@@ -286,6 +337,24 @@ useSeoMeta({
               <p class="mt-1 text-xs text-ink-400">{{ tool.ratingCount }} {{ t('tool.ratings') }} · {{ tool.upvoteCount }} {{ t('tool.upvotes') }}</p>
             </div>
           </div>
+
+          <div v-if="tool.reviews?.length" class="mt-6 space-y-4 border-t border-ink-100 pt-6">
+            <div v-for="(review, i) in tool.reviews" :key="i" class="flex gap-3">
+              <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink-100 text-sm font-bold text-ink-600">
+                {{ (review.userName || '?').slice(0, 1).toUpperCase() }}
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex flex-wrap items-center gap-2">
+                  <p class="text-sm font-semibold text-ink-900">{{ review.userName || 'Anonymous' }}</p>
+                  <div class="flex text-xs text-amber-400">
+                    <span v-for="i2 in 5" :key="i2">{{ i2 <= review.rating ? '★' : '☆' }}</span>
+                  </div>
+                </div>
+                <p v-if="review.comment" class="mt-1 text-sm text-ink-600">{{ review.comment }}</p>
+              </div>
+            </div>
+          </div>
+
           <textarea
             disabled
             :placeholder="t('tool.whatDoYouThink')"
@@ -295,6 +364,16 @@ useSeoMeta({
           <button type="button" disabled class="mt-3 cursor-not-allowed rounded-lg bg-ink-200 px-4 py-2 text-sm font-semibold text-ink-500">
             {{ t('tool.loginToComment') }}
           </button>
+        </div>
+      </div>
+
+      <div v-if="tool.faqs?.length" id="section-faq" class="scroll-mt-32">
+        <h2 class="text-xl font-extrabold text-ink-900">{{ t('tool.faq') }}</h2>
+        <div class="mt-4 divide-y divide-ink-100 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
+          <details v-for="(faq, i) in tool.faqs" :key="i" class="py-4 first:pt-0 last:pb-0">
+            <summary class="cursor-pointer text-sm font-semibold text-ink-900">{{ faq.question }}</summary>
+            <p class="mt-2 text-sm leading-relaxed text-ink-600">{{ faq.answer }}</p>
+          </details>
         </div>
       </div>
 

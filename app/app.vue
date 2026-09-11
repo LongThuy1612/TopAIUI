@@ -7,6 +7,7 @@ const announcementTool = computed(() => featuredRes.value?.items?.[0])
 
 <template>
   <div class="flex min-h-screen flex-col">
+    <NuxtLoadingIndicator color="linear-gradient(90deg,#0ea5e9,#38bdf8)" :height="3" />
     <AnnouncementBar :tool="announcementTool" />
     <AppHeader />
     <main class="flex-1">

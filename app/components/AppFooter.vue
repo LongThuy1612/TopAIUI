@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale, locales, setLocale } = useI18n()
 
 const year = new Date().getFullYear()
 
@@ -44,7 +44,6 @@ const resourceLinks = ['Blog', 'AI News', 'Prompts', 'AI Jobs', 'Weekly Newslett
 const aboutLinks = ['About Us', 'Terms of Service', 'Privacy Policy', 'Advertise']
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 const archiveDates = ['09/10', '09/09', '09/08', '09/07', '09/04', '09/03', '09/02', '09/01', '08/31']
-const languages = ['English', 'Tiếng Việt', '简体中文', '日本語', '한국어', 'Português', 'Español', 'Deutsch', 'Français']
 </script>
 
 <template>
@@ -101,12 +100,13 @@ const languages = ['English', 'Tiếng Việt', '简体中文', '日本語', '�
       </div>
       <p class="mt-3.5 text-[15px] font-semibold text-ink-600">{{ t('footer.tagline') }}</p>
       <div class="flex flex-wrap gap-x-[22px] gap-y-3.5 pt-[22px] text-sm">
-        <a
-          v-for="(lang, i) in languages"
-          :key="lang"
-          href="#"
-          :class="i === 0 ? 'font-bold text-brand-500' : 'text-ink-600'"
-        >{{ lang }}</a>
+        <button
+          v-for="loc in locales"
+          :key="loc.code"
+          type="button"
+          :class="loc.code === locale ? 'font-bold text-brand-500' : 'cursor-pointer text-ink-600 hover:text-brand-500'"
+          @click="setLocale(loc.code)"
+        >{{ loc.name }}</button>
       </div>
       <div class="pt-[26px] text-sm text-ink-500">© {{ year }} TopAICollection — {{ t('footer.copyright') }}</div>
     </div>

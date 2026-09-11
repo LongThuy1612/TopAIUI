@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Category, ToolsResponse } from '~/types'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 const isAll = computed(() => slug.value === 'all')
@@ -22,7 +22,7 @@ const filtersOpen = ref(false)
 watch([pricingFilter, sortBy, searchQuery, slug], () => { page.value = 1 })
 
 const [{ data: categories }, { data: toolsRes }] = await Promise.all([
-  useFetch<Category[]>('/api/categories'),
+  useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', {
     query: computed(() => ({
       category: isAll.value ? undefined : slug.value,
@@ -30,7 +30,8 @@ const [{ data: categories }, { data: toolsRes }] = await Promise.all([
       q: searchQuery.value || undefined,
       sort: sortBy.value,
       page: page.value,
-      limit: 24
+      limit: 24,
+      locale: locale.value
     }))
   })
 ])

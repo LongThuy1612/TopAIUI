@@ -33,7 +33,7 @@ function onSubmit() {
   </form>
   <form
     v-else
-    class="mx-auto flex max-w-[640px] items-center gap-2.5 rounded-[14px] border border-ink-200 bg-white p-2 shadow-[0_6px_18px_rgba(76,5,25,.06)]"
+    class="mx-auto flex max-w-[640px] items-center gap-2.5 rounded-[14px] border border-ink-200 bg-white p-2 shadow-[0_6px_18px_rgba(76,5,25,.06)] transition focus-within:border-brand-300 focus-within:ring-2 focus-within:ring-brand-50"
     @submit.prevent="onSubmit"
   >
     <input

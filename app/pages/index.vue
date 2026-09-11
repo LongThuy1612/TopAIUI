@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import type { Category, ToolsResponse } from '~/types'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const [{ data: newestRes }, { data: featuredRes }, { data: freeRes }, { data: categories }] = await Promise.all([
-  useFetch<ToolsResponse>('/api/tools', { query: { limit: 20, sort: 'newest' } }),
-  useFetch<ToolsResponse>('/api/tools', { query: { featured: 'true', limit: 20 } }),
-  useFetch<ToolsResponse>('/api/tools', { query: { pricing: 'FREE', limit: 20, sort: 'newest' } }),
-  useFetch<Category[]>('/api/categories')
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ featured: 'true', limit: 20, locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ pricing: 'FREE', limit: 20, sort: 'newest', locale: locale.value })) }),
+  useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) })
 ])
 
 const newestTools = computed(() => newestRes.value?.items ?? [])
@@ -18,6 +18,9 @@ const totalTools = computed(() => newestRes.value?.total ?? 0)
 
 const topCategories = computed(() =>
   [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 7)
+)
+const browseCategories = computed(() =>
+  [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
 )
 const justLaunched = computed(() => newestTools.value.slice(0, 4))
 const featuredHighlights = computed(() => (featuredTools.value.length ? featuredTools.value : newestTools.value).slice(0, 5))
@@ -88,7 +91,7 @@ useSeoMeta({
           <div class="text-[13px] font-bold uppercase tracking-[0.08em] text-ink-500">{{ t('sections.justLaunched') }}</div>
           <SidebarToolItem v-for="tool in justLaunched" :key="tool.slug" :tool="tool" />
           <div v-if="!justLaunched.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
-            {{ t('empty.noTools') }} <code>npm run seed</code>.
+            {{ t('empty.noTools') }} <code>No data</code>.
           </div>
           <NuxtLink to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
         </aside>
@@ -116,7 +119,7 @@ useSeoMeta({
             />
           </div>
           <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
-            {{ t('empty.noTools') }} <code>npm run seed</code>.
+            {{ t('empty.noTools') }} <code>No data</code>.
           </div>
 
           <div class="flex justify-center pt-7 pb-1">
@@ -140,7 +143,7 @@ useSeoMeta({
         </div>
         <div class="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] gap-[18px] pt-[30px]">
           <NuxtLink
-            v-for="cat in allCategories"
+            v-for="cat in browseCategories"
             :key="cat.slug"
             :to="`/category/${cat.slug}`"
             class="block rounded-[14px] border border-ink-200 bg-white p-5 transition-colors hover:border-brand-500"
@@ -175,7 +178,7 @@ useSeoMeta({
           </NuxtLink>
         </div>
         <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
-          {{ t('empty.noTools') }} <code>npm run seed</code>.
+          {{ t('empty.noTools') }} <code>No data</code>.
         </div>
       </div>
     </section>
