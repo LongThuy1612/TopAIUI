@@ -53,7 +53,7 @@ useSeoMeta({
 <template>
   <div>
     <section class="w-full border-b border-ink-200 bg-ink-100/60 px-4 pt-16 pb-[72px] sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-[1100px] text-center">
+      <div class="mx-auto max-w-[1240px] text-center">
         <div class="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-4 py-[7px] text-[13px] font-semibold text-brand-600">
           <span>{{ t('sections.updatedDaily') }}</span>
         </div>
@@ -62,7 +62,7 @@ useSeoMeta({
           {{ t('hero.titlePrefix') }} <span class="brand-gradient-text">{{ t('hero.titleHighlight') }}</span>
         </h1>
 
-        <p class="mx-auto mt-4 max-w-[820px] text-[17px] leading-relaxed text-ink-600">
+        <p class="mx-auto mt-4 max-w-[1000px] text-[17px] leading-relaxed text-ink-600">
           <span class="font-bold text-brand-500">{{ totalTools }}</span> {{ t('stats.tools') }}
           <span class="font-bold text-brand-500">{{ allCategories.length }}</span> {{ t('stats.categories') }}
           {{ t('stats.updatedNote') }}
