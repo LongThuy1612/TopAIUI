@@ -428,7 +428,7 @@ useSeoMeta({
           </div>
         </div>
 
-        <div class="mt-4 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
+        <div v-if="reviewsTotal > 0" class="mt-4 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
           <div class="flex items-center gap-2">
             <span class="text-sm font-semibold text-ink-600">{{ t('tool.sortBy') }}:</span>
             <select
@@ -441,7 +441,7 @@ useSeoMeta({
             </select>
           </div>
 
-          <div v-if="reviews.length" class="mt-4 divide-y divide-ink-100">
+          <div class="mt-4 divide-y divide-ink-100">
             <div v-for="(review, i) in reviews" :key="i" class="flex gap-3 py-4 first:pt-0 last:pb-0">
               <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-100 text-sm font-bold text-brand-600">
                 {{ (review.userName || '?').slice(0, 1).toUpperCase() }}
@@ -456,7 +456,6 @@ useSeoMeta({
               </div>
             </div>
           </div>
-          <p v-else class="mt-4 text-sm text-ink-400">{{ t('empty.noResults') }}</p>
 
           <div v-if="reviewsHasMore" class="mt-5 flex justify-center">
             <button
