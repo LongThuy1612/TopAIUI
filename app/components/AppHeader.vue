@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const { token, load } = useAdminAuth()
+load()
 
 function onSearch(q: string) {
   navigateTo({ path: '/category/all', query: q ? { q } : {} })
@@ -29,7 +31,11 @@ function onSearch(q: string) {
 
       <nav class="ml-auto flex shrink-0 items-center gap-3.5">
         <LanguageSwitcher class="hidden sm:block" />
-        <NuxtLink to="/admin/login" class="rounded-full border border-ink-200 px-3.5 py-1.5 text-sm font-semibold text-ink-800 hover:border-brand-300 hover:text-brand-500">
+        <NuxtLink
+          v-if="!token"
+          to="/admin/login"
+          class="rounded-full border border-ink-200 px-3.5 py-1.5 text-sm font-semibold text-ink-800 hover:border-brand-300 hover:text-brand-500"
+        >
           {{ t('header.admin') }}
         </NuxtLink>
       </nav>

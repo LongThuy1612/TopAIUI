@@ -1,5 +1,11 @@
 <script setup lang="ts">
-const { setToken } = useAdminAuth()
+const { token, load, setToken } = useAdminAuth()
+load()
+
+if (import.meta.client && token.value) {
+  await navigateTo('/admin')
+}
+
 const password = ref('')
 const error = ref('')
 const loading = ref(false)
