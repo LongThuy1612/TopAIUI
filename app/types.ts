@@ -97,11 +97,17 @@ export interface Tool {
   tags?: TagRef[]
   faqs?: Faq[]
   pricingPlans?: PricingPlan[]
-  reviews?: Review[]
 }
 
 export interface ToolsResponse {
   items: Tool[]
+  total: number
+  page: number
+  pageCount: number
+}
+
+export interface ReviewsResponse {
+  items: Review[]
   total: number
   page: number
   pageCount: number

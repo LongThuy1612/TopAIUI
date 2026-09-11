@@ -49,7 +49,7 @@
     "button": "Kirim alatmu"
   },
   "empty": {
-    "noTools": "Belum ada alat — jalankan",
+    "noTools": "Tidak ada data.",
     "noResults": "Tidak ada alat ditemukan"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "suara positif",
     "domainAuthority": "Otoritas domain",
     "trafficRank": "Peringkat trafik",
-    "viewCount": "Tampilan halaman"
+    "viewCount": "Tampilan halaman",
+    "outOf5": "dari 5",
+    "enterReviewPrompt": "Silakan masukkan ulasan Anda",
+    "sortBy": "Urutkan berdasarkan",
+    "sortNewest": "Terbaru",
+    "sortOldest": "Terlama",
+    "loadMoreReviews": "Muat lebih banyak ulasan",
+    "loadingMore": "Memuat...",
+    "reviewsLabel": "Ulasan",
+    "savedLabel": "Disimpan"
   },
   "footer": {
     "tagline": "Temukan, bandingkan, dan bagikan alat AI terbaik — dibangun dengan Nuxt & PostgreSQL.",

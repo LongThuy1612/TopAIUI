@@ -49,7 +49,7 @@
     "button": "Dien je tool in"
   },
   "empty": {
-    "noTools": "Nog geen tools — voer uit",
+    "noTools": "Geen gegevens.",
     "noResults": "Geen tools gevonden"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "upvotes",
     "domainAuthority": "Domeinautoriteit",
     "trafficRank": "Verkeerspositie",
-    "viewCount": "Paginaweergaven"
+    "viewCount": "Paginaweergaven",
+    "outOf5": "van de 5",
+    "enterReviewPrompt": "Voer je review in",
+    "sortBy": "Sorteren op",
+    "sortNewest": "Nieuwste",
+    "sortOldest": "Oudste",
+    "loadMoreReviews": "Meer reviews laden",
+    "loadingMore": "Laden...",
+    "reviewsLabel": "Reviews",
+    "savedLabel": "Opgeslagen"
   },
   "footer": {
     "tagline": "Ontdek, vergelijk en deel de beste AI-tools — gebouwd met Nuxt & PostgreSQL.",

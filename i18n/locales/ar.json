@@ -49,7 +49,7 @@
     "button": "أضف أداتك"
   },
   "empty": {
-    "noTools": "لا توجد أدوات بعد — نفّذ",
+    "noTools": "لا توجد بيانات.",
     "noResults": "لم يتم العثور على أدوات"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "إعجابات",
     "domainAuthority": "سلطة النطاق",
     "trafficRank": "ترتيب الزيارات",
-    "viewCount": "مشاهدات الصفحة"
+    "viewCount": "مشاهدات الصفحة",
+    "outOf5": "من 5",
+    "enterReviewPrompt": "يرجى إدخال تقييمك",
+    "sortBy": "ترتيب حسب",
+    "sortNewest": "الأحدث",
+    "sortOldest": "الأقدم",
+    "loadMoreReviews": "تحميل المزيد من التقييمات",
+    "loadingMore": "جارٍ التحميل...",
+    "reviewsLabel": "تقييمات",
+    "savedLabel": "محفوظ"
   },
   "footer": {
     "tagline": "اكتشف وقارن وشارك أفضل أدوات الذكاء الاصطناعي — مبني باستخدام Nuxt وPostgreSQL.",

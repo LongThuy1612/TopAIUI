@@ -49,7 +49,7 @@
     "button": "ส่งเครื่องมือของคุณ"
   },
   "empty": {
-    "noTools": "ยังไม่มีเครื่องมือ — รันคำสั่ง",
+    "noTools": "ไม่มีข้อมูล",
     "noResults": "ไม่พบเครื่องมือ"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "โหวต",
     "domainAuthority": "ความน่าเชื่อถือของโดเมน",
     "trafficRank": "อันดับการเข้าชม",
-    "viewCount": "ยอดเข้าชมหน้า"
+    "viewCount": "ยอดเข้าชมหน้า",
+    "outOf5": "จาก 5",
+    "enterReviewPrompt": "กรุณากรอกรีวิวของคุณ",
+    "sortBy": "เรียงตาม",
+    "sortNewest": "ใหม่ล่าสุด",
+    "sortOldest": "เก่าสุด",
+    "loadMoreReviews": "โหลดรีวิวเพิ่มเติม",
+    "loadingMore": "กำลังโหลด...",
+    "reviewsLabel": "รีวิว",
+    "savedLabel": "บันทึกแล้ว"
   },
   "footer": {
     "tagline": "ค้นพบ เปรียบเทียบ และแบ่งปันเครื่องมือ AI ที่ดีที่สุด — สร้างด้วย Nuxt และ PostgreSQL",

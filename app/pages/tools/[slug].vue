@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Tool, ToolsResponse } from '~/types'
+import type { Review, ReviewsResponse, Tool, ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
 const route = useRoute()
@@ -21,6 +21,47 @@ const { data: alternativesRes } = await useFetch<ToolsResponse>('/api/tools', {
 const alternatives = computed(() => (alternativesRes.value?.items ?? []).filter(item => item.slug !== slug.value))
 
 const initials = computed(() => tool.value?.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI')
+
+const reviewsSort = ref<'newest' | 'oldest'>('newest')
+const reviewsPage = ref(1)
+const reviewsLoading = ref(false)
+
+const { data: reviewsRes } = await useFetch<ReviewsResponse>(() => `/api/tools/${slug.value}/reviews`, {
+  query: { page: 1, limit: 10, sort: 'newest' }
+})
+const reviews = ref<Review[]>(reviewsRes.value?.items ?? [])
+const reviewsTotal = ref(reviewsRes.value?.total ?? 0)
+const reviewsHasMore = computed(() => reviews.value.length < reviewsTotal.value)
+
+async function fetchReviews(page: number, sort: 'newest' | 'oldest') {
+  reviewsLoading.value = true
+  try {
+    const res = await $fetch<ReviewsResponse>(`/api/tools/${slug.value}/reviews`, { query: { page, limit: 10, sort } })
+    reviewsTotal.value = res.total
+    return res.items
+  } finally {
+    reviewsLoading.value = false
+  }
+}
+
+async function loadMoreReviews() {
+  if (reviewsLoading.value || !reviewsHasMore.value) return
+  const nextPage = reviewsPage.value + 1
+  const items = await fetchReviews(nextPage, reviewsSort.value)
+  reviews.value.push(...items)
+  reviewsPage.value = nextPage
+}
+
+async function changeReviewsSort(sort: 'newest' | 'oldest') {
+  reviewsSort.value = sort
+  reviewsPage.value = 1
+  reviews.value = await fetchReviews(1, sort)
+}
+
+function formatReviewDate(iso: string) {
+  const d = new Date(iso)
+  return d.toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', { month: 'long', day: 'numeric', year: 'numeric' }).replace(',', '')
+}
 
 const pricingStyle: Record<string, string> = {
   FREE: 'bg-emerald-50 text-emerald-700',
@@ -137,18 +178,30 @@ useSeoMeta({
             <div v-else class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 text-base font-bold text-white">
               {{ initials }}
             </div>
-            <div>
+            <div class="min-w-0">
               <h1 class="text-2xl font-extrabold text-ink-900">{{ tool.name }}</h1>
               <span v-if="tool.isFeatured" class="mt-0.5 inline-flex items-center gap-1 text-xs font-semibold text-amber-600">★ {{ t('tool.featured') }}</span>
+              <div v-if="tool.averageRating || tool.reviewCount || tool.collectionCount" class="mt-1.5 flex flex-wrap items-center gap-2 text-sm">
+                <span v-if="tool.averageRating" class="flex items-center gap-1.5">
+                  <span class="flex text-brand-500">
+                    <svg v-for="i in 5" :key="i" class="h-3.5 w-3.5" viewBox="0 0 20 20" :fill="i <= Math.round(tool.averageRating) ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="1"><path d="M10 1.3l2.7 5.5 6 .88-4.35 4.24 1.03 6L10 14.9l-5.38 2.83 1.03-6L1.3 7.67l6-.87z" /></svg>
+                  </span>
+                  <span class="font-semibold text-ink-900">{{ tool.averageRating.toFixed(1) }}</span>
+                </span>
+                <span v-if="tool.averageRating && (tool.reviewCount || tool.collectionCount)" class="text-ink-300">|</span>
+                <span v-if="tool.reviewCount" class="text-ink-600">{{ tool.reviewCount }} {{ t('tool.reviewsLabel') }}</span>
+                <span v-if="tool.reviewCount && tool.collectionCount" class="text-ink-300">|</span>
+                <span v-if="tool.collectionCount" class="text-ink-600">{{ tool.collectionCount }} {{ t('tool.savedLabel') }}</span>
+              </div>
             </div>
             <a
               v-if="tool.website"
               :href="tool.website"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              class="ml-2 inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-600"
+              class="ml-2 inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-600"
             >
-              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H18m0 0v4.5M18 6l-7.5 7.5M6 6.75h3M6 12h3m-3 5.25h9a1.5 1.5 0 001.5-1.5V13.5" /></svg>
+              <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H18m0 0v4.5M18 6l-7.5 7.5M6 6.75h3M6 12h3m-3 5.25h9a1.5 1.5 0 001.5-1.5V13.5" /></svg>
               {{ t('tool.openSite') }}
             </a>
           </div>
@@ -213,7 +266,7 @@ useSeoMeta({
       </div>
     </div>
 
-    <div class="sticky top-16 z-30 mt-8 border-b border-ink-100 bg-white/95 backdrop-blur">
+    <div class="sticky top-[73px] z-30 mt-8 border-b border-ink-100 bg-white/95 backdrop-blur">
       <nav class="-mb-px flex gap-6 overflow-x-auto">
         <button
           v-for="tab in tabs"
@@ -232,20 +285,23 @@ useSeoMeta({
 
     <div v-if="alternatives.length" class="mt-5">
       <p class="text-xs font-semibold uppercase tracking-wide text-ink-400">{{ t('tool.similarTools') }}</p>
-      <div class="mt-2 flex gap-3 overflow-x-auto pb-1">
+      <div class="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
         <NuxtLink
           v-for="alt in alternatives"
           :key="alt.slug"
           :to="`/tools/${alt.slug}`"
-          class="flex w-60 shrink-0 items-start gap-2.5 rounded-xl border border-ink-100 bg-white p-3 shadow-sm transition hover:border-brand-200 hover:shadow-md"
+          class="min-w-0 rounded-xl border border-ink-100 bg-white p-3 shadow-sm transition hover:border-brand-200 hover:shadow-md"
         >
-          <div v-if="alt.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-lg">
-            <img :src="alt.logoUrl" :alt="alt.name" class="h-full w-full object-cover">
+          <div class="flex items-center gap-2.5">
+            <div v-if="alt.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-lg">
+              <img :src="alt.logoUrl" :alt="alt.name" class="h-full w-full object-cover">
+            </div>
+            <div v-else class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-bold text-white">
+              {{ alt.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI' }}
+            </div>
+            <p class="min-w-0 truncate text-sm font-semibold text-ink-900">{{ alt.name }}</p>
           </div>
-          <div v-else class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-bold text-white">
-            {{ alt.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI' }}
-          </div>
-          <p class="min-w-0 truncate text-sm font-semibold text-ink-900">{{ alt.name }}</p>
+          <p v-if="alt.shortDesc" class="mt-2 line-clamp-2 text-xs leading-relaxed text-ink-500">{{ alt.shortDesc }}</p>
         </NuxtLink>
       </div>
     </div>
@@ -334,44 +390,84 @@ useSeoMeta({
       </div>
 
       <div id="section-reviews" class="scroll-mt-32">
-        <h2 class="text-xl font-extrabold text-ink-900">{{ t('tool.reviewsHeading', { name: tool.name, count: tool.reviewCount }) }}</h2>
-        <div class="mt-4 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
-          <div class="flex items-center gap-4">
-            <p class="text-3xl font-extrabold text-ink-900">{{ tool.averageRating.toFixed(1) }}</p>
-            <div>
-              <div class="flex gap-1 text-lg text-amber-400">
-                <span v-for="i in 5" :key="i">{{ i <= Math.round(tool.averageRating) ? '★' : '☆' }}</span>
-              </div>
-              <p class="mt-1 text-xs text-ink-400">{{ tool.ratingCount }} {{ t('tool.ratings') }} · {{ tool.upvoteCount }} {{ t('tool.upvotes') }}</p>
+        <h2 class="text-xl font-extrabold text-ink-900">{{ t('tool.reviewsHeading', { name: tool.name, count: reviewsTotal }) }}</h2>
+
+        <div class="mt-4 divide-y divide-ink-100 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-3 pb-6 first:pt-0">
+            <div class="flex gap-1 text-xl text-brand-500">
+              <span v-for="i in 5" :key="i">{{ i <= Math.round(tool.averageRating) ? '★' : '☆' }}</span>
             </div>
+            <p class="text-sm text-ink-600">{{ tool.averageRating.toFixed(1) }} {{ t('tool.outOf5') }}</p>
           </div>
 
-          <div v-if="tool.reviews?.length" class="mt-6 space-y-4 border-t border-ink-100 pt-6">
-            <div v-for="(review, i) in tool.reviews" :key="i" class="flex gap-3">
-              <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink-100 text-sm font-bold text-ink-600">
+          <div class="pt-6">
+            <h3 class="text-lg font-bold text-ink-900">{{ t('tool.ratingPrompt', { name: tool.name }) }}</h3>
+            <div class="mt-2 flex gap-1 text-2xl text-ink-200">
+              <button v-for="i in 5" :key="i" type="button" disabled class="cursor-not-allowed leading-none">☆</button>
+            </div>
+            <div class="mt-3 flex gap-3">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink-100 text-ink-400">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+              </div>
+              <div class="min-w-0 flex-1">
+                <textarea
+                  disabled
+                  :placeholder="t('tool.whatDoYouThink')"
+                  class="w-full resize-none rounded-lg border border-ink-200 bg-ink-100/30 p-3 text-sm text-ink-400 outline-none"
+                  rows="3"
+                />
+                <div class="mt-1 flex items-center justify-between text-xs">
+                  <span class="text-red-500">{{ t('tool.enterReviewPrompt') }}</span>
+                  <span class="text-ink-400">0/10000</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" disabled class="mt-3 cursor-not-allowed rounded-lg bg-ink-200 px-4 py-2 text-sm font-semibold text-ink-500">
+              {{ t('tool.loginToComment') }}
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-4 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-2">
+            <span class="text-sm font-semibold text-ink-600">{{ t('tool.sortBy') }}:</span>
+            <select
+              v-model="reviewsSort"
+              class="rounded-lg border border-ink-200 bg-white px-3 py-1.5 text-sm font-semibold text-ink-600 outline-none focus:border-brand-300"
+              @change="changeReviewsSort(reviewsSort)"
+            >
+              <option value="newest">{{ t('tool.sortNewest') }}</option>
+              <option value="oldest">{{ t('tool.sortOldest') }}</option>
+            </select>
+          </div>
+
+          <div v-if="reviews.length" class="mt-4 divide-y divide-ink-100">
+            <div v-for="(review, i) in reviews" :key="i" class="flex gap-3 py-4 first:pt-0 last:pb-0">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-100 text-sm font-bold text-brand-600">
                 {{ (review.userName || '?').slice(0, 1).toUpperCase() }}
               </div>
               <div class="min-w-0 flex-1">
-                <div class="flex flex-wrap items-center gap-2">
-                  <p class="text-sm font-semibold text-ink-900">{{ review.userName || 'Anonymous' }}</p>
-                  <div class="flex text-xs text-amber-400">
-                    <span v-for="i2 in 5" :key="i2">{{ i2 <= review.rating ? '★' : '☆' }}</span>
-                  </div>
+                <p class="text-sm font-semibold text-ink-900">{{ review.userName || 'Anonymous' }}</p>
+                <p class="text-xs text-ink-400">{{ formatReviewDate(review.createdAt) }}</p>
+                <div class="mt-1 flex text-sm text-brand-500">
+                  <span v-for="i2 in 5" :key="i2">{{ i2 <= review.rating ? '★' : '☆' }}</span>
                 </div>
-                <p v-if="review.comment" class="mt-1 text-sm text-ink-600">{{ review.comment }}</p>
+                <p v-if="review.comment" class="mt-2 text-sm text-ink-600">{{ review.comment }}</p>
               </div>
             </div>
           </div>
+          <p v-else class="mt-4 text-sm text-ink-400">{{ t('empty.noResults') }}</p>
 
-          <textarea
-            disabled
-            :placeholder="t('tool.whatDoYouThink')"
-            class="mt-4 w-full resize-none rounded-lg border border-ink-200 bg-ink-100/30 p-3 text-sm text-ink-400 outline-none"
-            rows="3"
-          />
-          <button type="button" disabled class="mt-3 cursor-not-allowed rounded-lg bg-ink-200 px-4 py-2 text-sm font-semibold text-ink-500">
-            {{ t('tool.loginToComment') }}
-          </button>
+          <div v-if="reviewsHasMore" class="mt-5 flex justify-center">
+            <button
+              type="button"
+              :disabled="reviewsLoading"
+              class="rounded-full border border-ink-200 px-5 py-2 text-sm font-semibold text-ink-700 transition hover:border-brand-300 hover:text-brand-600 disabled:opacity-50"
+              @click="loadMoreReviews"
+            >
+              {{ reviewsLoading ? t('tool.loadingMore') : t('tool.loadMoreReviews') }}
+            </button>
+          </div>
         </div>
       </div>
 

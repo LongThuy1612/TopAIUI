@@ -49,7 +49,7 @@
     "button": "Envía tu herramienta"
   },
   "empty": {
-    "noTools": "Aún no hay herramientas — ejecuta",
+    "noTools": "Sin datos.",
     "noResults": "No se encontraron herramientas"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "votos positivos",
     "domainAuthority": "Autoridad de dominio",
     "trafficRank": "Clasificación de tráfico",
-    "viewCount": "Visualizaciones"
+    "viewCount": "Visualizaciones",
+    "outOf5": "sobre 5",
+    "enterReviewPrompt": "Por favor, introduce tu reseña",
+    "sortBy": "Ordenar por",
+    "sortNewest": "Más recientes",
+    "sortOldest": "Más antiguos",
+    "loadMoreReviews": "Cargar más reseñas",
+    "loadingMore": "Cargando...",
+    "reviewsLabel": "Reseñas",
+    "savedLabel": "Guardados"
   },
   "footer": {
     "tagline": "Descubre, compara y comparte las mejores herramientas de IA — creado con Nuxt y PostgreSQL.",

@@ -49,7 +49,7 @@
     "button": "Submit your tool"
   },
   "empty": {
-    "noTools": "No tools yet — run",
+    "noTools": "No data.",
     "noResults": "No tools found"
   },
   "category": {
@@ -135,6 +135,15 @@
     "couponCode": "Coupon code",
     "ratings": "ratings",
     "upvotes": "upvotes",
+    "outOf5": "out of 5",
+    "enterReviewPrompt": "Please enter your review",
+    "sortBy": "Sort By",
+    "sortNewest": "Newest",
+    "sortOldest": "Oldest",
+    "loadMoreReviews": "Load more reviews",
+    "loadingMore": "Loading...",
+    "reviewsLabel": "Reviews",
+    "savedLabel": "Saved",
     "domainAuthority": "Domain Authority",
     "trafficRank": "Traffic Rank",
     "viewCount": "Page Views"

@@ -49,7 +49,7 @@
     "button": "Đăng công cụ của bạn"
   },
   "empty": {
-    "noTools": "Chưa có công cụ nào — hãy chạy",
+    "noTools": "Chưa có dữ liệu.",
     "noResults": "Không tìm thấy công cụ nào"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "lượt upvote",
     "domainAuthority": "Domain Authority",
     "trafficRank": "Xếp hạng traffic",
-    "viewCount": "Lượt xem trang"
+    "viewCount": "Lượt xem trang",
+    "outOf5": "trên 5",
+    "enterReviewPrompt": "Vui lòng nhập đánh giá của bạn",
+    "sortBy": "Sắp xếp theo",
+    "sortNewest": "Mới nhất",
+    "sortOldest": "Cũ nhất",
+    "loadMoreReviews": "Xem thêm đánh giá",
+    "loadingMore": "Đang tải...",
+    "reviewsLabel": "Đánh giá",
+    "savedLabel": "Đã lưu"
   },
   "footer": {
     "tagline": "Khám phá, so sánh và chia sẻ những công cụ AI tốt nhất — xây dựng với Nuxt & PostgreSQL.",

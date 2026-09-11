@@ -49,7 +49,7 @@
     "button": "Skicka in ditt verktyg"
   },
   "empty": {
-    "noTools": "Inga verktyg ännu — köra",
+    "noTools": "Inga data.",
     "noResults": "Inga verktyg hittades"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "uppröstningar",
     "domainAuthority": "Domänauktoritet",
     "trafficRank": "Trafikranking",
-    "viewCount": "Sidvisningar"
+    "viewCount": "Sidvisningar",
+    "outOf5": "av 5",
+    "enterReviewPrompt": "Ange din recension",
+    "sortBy": "Sortera efter",
+    "sortNewest": "Nyaste",
+    "sortOldest": "Äldsta",
+    "loadMoreReviews": "Ladda fler recensioner",
+    "loadingMore": "Laddar...",
+    "reviewsLabel": "Recensioner",
+    "savedLabel": "Sparade"
   },
   "footer": {
     "tagline": "Upptäck, jämför och dela de bästa AI-verktygen — byggt med Nuxt & PostgreSQL.",

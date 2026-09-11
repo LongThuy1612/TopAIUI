@@ -92,7 +92,7 @@ useSeoMeta({
           <div class="text-[13px] font-bold uppercase tracking-[0.08em] text-ink-500">{{ t('sections.justLaunched') }}</div>
           <SidebarToolItem v-for="tool in justLaunched" :key="tool.slug" :tool="tool" />
           <div v-if="!justLaunched.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
-            {{ t('empty.noTools') }} <code>No data</code>.
+            {{ t('empty.noTools') }}
           </div>
           <NuxtLink to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
         </aside>
@@ -120,7 +120,7 @@ useSeoMeta({
             />
           </div>
           <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
-            {{ t('empty.noTools') }} <code>No data</code>.
+            {{ t('empty.noTools') }}
           </div>
 
           <div class="flex justify-center pt-7 pb-1">
@@ -180,7 +180,7 @@ useSeoMeta({
           </NuxtLink>
         </div>
         <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
-          {{ t('empty.noTools') }} <code>No data</code>.
+          {{ t('empty.noTools') }}
         </div>
       </div>
     </section>

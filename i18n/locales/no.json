@@ -49,7 +49,7 @@
     "button": "Send inn verktøyet ditt"
   },
   "empty": {
-    "noTools": "Ingen verktøy ennå — kjør",
+    "noTools": "Ingen data.",
     "noResults": "Ingen verktøy funnet"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "oppstemmer",
     "domainAuthority": "Domeneautoritet",
     "trafficRank": "Trafikkrangering",
-    "viewCount": "Sidevisninger"
+    "viewCount": "Sidevisninger",
+    "outOf5": "av 5",
+    "enterReviewPrompt": "Skriv inn anmeldelsen din",
+    "sortBy": "Sorter etter",
+    "sortNewest": "Nyeste",
+    "sortOldest": "Eldste",
+    "loadMoreReviews": "Last inn flere anmeldelser",
+    "loadingMore": "Laster...",
+    "reviewsLabel": "Anmeldelser",
+    "savedLabel": "Lagrede"
   },
   "footer": {
     "tagline": "Finn, sammenlign og del de beste AI-verktøyene — bygget med Nuxt & PostgreSQL.",

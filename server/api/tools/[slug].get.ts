@@ -24,6 +24,7 @@ export default defineEventHandler(async (event) => {
       reviewCount: true,
       ratingCount: true,
       upvoteCount: true,
+      collectionCount: true,
       isFeatured: true,
       isJustLaunched: true,
       isVerified: true,
@@ -59,12 +60,6 @@ export default defineEventHandler(async (event) => {
       },
       faqs: {
         select: { locale: true, question: true, answer: true }
-      },
-      reviews: {
-        where: { status: 'PUBLISHED' },
-        select: { rating: true, comment: true, createdAt: true, user: { select: { name: true } } },
-        orderBy: { createdAt: 'desc' },
-        take: 5
       }
     }
   })
@@ -73,7 +68,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: `Tool "${slug}" not found` })
   }
 
-  const { translations, pricingPlans, categories, tags, faqs, reviews, ...rest } = tool
+  const { translations, pricingPlans, categories, tags, faqs, ...rest } = tool
   const translation = pickByLocale(translations, locale)
 
   return {
@@ -87,7 +82,6 @@ export default defineEventHandler(async (event) => {
     pricingPlans: pickLocaleGroup(pricingPlans, locale).map((p) => ({ name: p.name, price: p.price, period: p.period, features: p.features })),
     faqs: pickLocaleGroup(faqs, locale).map((f) => ({ question: f.question, answer: f.answer })),
     categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug })),
-    tags: tags.map((tg) => ({ slug: tg.slug, name: pickByLocale(tg.translations, locale)?.name ?? tg.slug })),
-    reviews: reviews.map((r) => ({ rating: r.rating, comment: r.comment, createdAt: r.createdAt, userName: r.user?.name ?? null }))
+    tags: tags.map((tg) => ({ slug: tg.slug, name: pickByLocale(tg.translations, locale)?.name ?? tg.slug }))
   }
 })

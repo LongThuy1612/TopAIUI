@@ -49,7 +49,7 @@
     "button": "Lähetä työkalusi"
   },
   "empty": {
-    "noTools": "Ei vielä työkaluja — suorita",
+    "noTools": "Ei tietoja.",
     "noResults": "Työkaluja ei löytynyt"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "ääntä",
     "domainAuthority": "Verkkotunnuksen arvovalta",
     "trafficRank": "Liikennesija",
-    "viewCount": "Sivunäyttöjä"
+    "viewCount": "Sivunäyttöjä",
+    "outOf5": "/ 5",
+    "enterReviewPrompt": "Kirjoita arvostelusi",
+    "sortBy": "Järjestä",
+    "sortNewest": "Uusimmat",
+    "sortOldest": "Vanhimmat",
+    "loadMoreReviews": "Lataa lisää arvosteluja",
+    "loadingMore": "Ladataan...",
+    "reviewsLabel": "Arvostelua",
+    "savedLabel": "Tallennettu"
   },
   "footer": {
     "tagline": "Löydä, vertaile ja jaa parhaat tekoälytyökalut — rakennettu Nuxtilla ja PostgreSQL:llä.",

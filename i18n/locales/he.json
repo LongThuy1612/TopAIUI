@@ -49,7 +49,7 @@
     "button": "הוסף את הכלי שלך"
   },
   "empty": {
-    "noTools": "עדיין אין כלים — הפעל",
+    "noTools": "אין נתונים.",
     "noResults": "לא נמצאו כלים"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "לייקים",
     "domainAuthority": "סמכות דומיין",
     "trafficRank": "דירוג תנועה",
-    "viewCount": "צפיות בעמוד"
+    "viewCount": "צפיות בעמוד",
+    "outOf5": "מתוך 5",
+    "enterReviewPrompt": "אנא הזן את הביקורת שלך",
+    "sortBy": "מיין לפי",
+    "sortNewest": "החדש ביותר",
+    "sortOldest": "הישן ביותר",
+    "loadMoreReviews": "טען עוד ביקורות",
+    "loadingMore": "טוען...",
+    "reviewsLabel": "ביקורות",
+    "savedLabel": "נשמרו"
   },
   "footer": {
     "tagline": "גלה, השווה ושתף את כלי הבינה המלאכותית הטובים ביותר — נבנה עם Nuxt ו-PostgreSQL.",

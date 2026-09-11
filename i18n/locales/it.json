@@ -49,7 +49,7 @@
     "button": "Invia il tuo strumento"
   },
   "empty": {
-    "noTools": "Ancora nessuno strumento — esegui",
+    "noTools": "Nessun dato.",
     "noResults": "Nessuno strumento trovato"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "voti positivi",
     "domainAuthority": "Autorità del dominio",
     "trafficRank": "Posizione traffico",
-    "viewCount": "Visualizzazioni pagina"
+    "viewCount": "Visualizzazioni pagina",
+    "outOf5": "su 5",
+    "enterReviewPrompt": "Inserisci la tua recensione",
+    "sortBy": "Ordina per",
+    "sortNewest": "Più recenti",
+    "sortOldest": "Meno recenti",
+    "loadMoreReviews": "Carica altre recensioni",
+    "loadingMore": "Caricamento...",
+    "reviewsLabel": "Recensioni",
+    "savedLabel": "Salvataggi"
   },
   "footer": {
     "tagline": "Scopri, confronta e condividi i migliori strumenti IA — realizzato con Nuxt e PostgreSQL.",

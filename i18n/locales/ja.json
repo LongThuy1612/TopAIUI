@@ -49,7 +49,7 @@
     "button": "ツールを登録する"
   },
   "empty": {
-    "noTools": "まだツールがありません — 次を実行してください",
+    "noTools": "データがありません。",
     "noResults": "ツールが見つかりません"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "件のアップボート",
     "domainAuthority": "ドメインオーソリティ",
     "trafficRank": "トラフィック順位",
-    "viewCount": "ページビュー"
+    "viewCount": "ページビュー",
+    "outOf5": "（5点満点）",
+    "enterReviewPrompt": "レビューを入力してください",
+    "sortBy": "並び替え",
+    "sortNewest": "新しい順",
+    "sortOldest": "古い順",
+    "loadMoreReviews": "さらにレビューを読み込む",
+    "loadingMore": "読み込み中...",
+    "reviewsLabel": "件のレビュー",
+    "savedLabel": "件の保存"
   },
   "footer": {
     "tagline": "最高のAIツールを見つけて、比較して、共有しよう — Nuxt と PostgreSQL で構築。",

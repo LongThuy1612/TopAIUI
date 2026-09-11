@@ -49,7 +49,7 @@
     "button": "Indsend dit værktøj"
   },
   "empty": {
-    "noTools": "Endnu ingen værktøjer — køre",
+    "noTools": "Ingen data.",
     "noResults": "Ingen værktøjer fundet"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "opstemninger",
     "domainAuthority": "Domæneautoritet",
     "trafficRank": "Trafikranking",
-    "viewCount": "Sidevisninger"
+    "viewCount": "Sidevisninger",
+    "outOf5": "ud af 5",
+    "enterReviewPrompt": "Indtast din anmeldelse",
+    "sortBy": "Sorter efter",
+    "sortNewest": "Nyeste",
+    "sortOldest": "Ældste",
+    "loadMoreReviews": "Indlæs flere anmeldelser",
+    "loadingMore": "Indlæser...",
+    "reviewsLabel": "Anmeldelser",
+    "savedLabel": "Gemte"
   },
   "footer": {
     "tagline": "Find, sammenlign og del de bedste AI-værktøjer — bygget med Nuxt & PostgreSQL.",

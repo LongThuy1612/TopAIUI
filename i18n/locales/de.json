@@ -49,7 +49,7 @@
     "button": "Dein Tool einreichen"
   },
   "empty": {
-    "noTools": "Noch keine Tools — führe aus",
+    "noTools": "Keine Daten.",
     "noResults": "Keine Tools gefunden"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "Upvotes",
     "domainAuthority": "Domain-Autorität",
     "trafficRank": "Traffic-Rang",
-    "viewCount": "Seitenaufrufe"
+    "viewCount": "Seitenaufrufe",
+    "outOf5": "von 5",
+    "enterReviewPrompt": "Bitte gib deine Bewertung ein",
+    "sortBy": "Sortieren nach",
+    "sortNewest": "Neueste",
+    "sortOldest": "Älteste",
+    "loadMoreReviews": "Weitere Bewertungen laden",
+    "loadingMore": "Lädt...",
+    "reviewsLabel": "Bewertungen",
+    "savedLabel": "Gespeichert"
   },
   "footer": {
     "tagline": "Entdecke, vergleiche und teile die besten KI-Tools — entwickelt mit Nuxt & PostgreSQL.",

@@ -49,7 +49,7 @@
     "button": "提交你的工具"
   },
   "empty": {
-    "noTools": "暂无工具 — 请运行",
+    "noTools": "暂无数据。",
     "noResults": "未找到工具"
   },
   "category": {
@@ -137,7 +137,16 @@
     "upvotes": "点赞",
     "domainAuthority": "域名权重",
     "trafficRank": "流量排名",
-    "viewCount": "浏览量"
+    "viewCount": "浏览量",
+    "outOf5": "分（满分5分）",
+    "enterReviewPrompt": "请输入您的评价",
+    "sortBy": "排序方式",
+    "sortNewest": "最新",
+    "sortOldest": "最早",
+    "loadMoreReviews": "加载更多评价",
+    "loadingMore": "加载中...",
+    "reviewsLabel": "条评价",
+    "savedLabel": "次收藏"
   },
   "footer": {
     "tagline": "发现、比较和分享最好的 AI 工具 — 基于 Nuxt 与 PostgreSQL 构建。",
