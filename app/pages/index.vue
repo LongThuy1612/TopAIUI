@@ -184,7 +184,7 @@ useSeoMeta({
             v-for="tool in featuredHighlights"
             :key="tool.slug"
             :to="`/tools/${tool.slug}`"
-            class="relative flex flex-col gap-3 overflow-hidden rounded-[18px] border border-brand-300 bg-[#FEFAFC] p-5 shadow-[0_2px_6px_rgba(23,18,26,.04)] transition-shadow hover:shadow-[0_16px_32px_-20px_rgba(23,18,26,.45)]"
+            class="relative flex flex-col gap-3 overflow-hidden rounded-[18px] border border-brand-100 bg-white p-5 shadow-[0_2px_6px_rgba(23,18,26,.04)] transition-shadow hover:shadow-[0_16px_32px_-20px_rgba(23,18,26,.45)]"
           >
             <img
               v-if="tool.logoUrl"
@@ -196,12 +196,12 @@ useSeoMeta({
               <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-[0.06]"></span>
               <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-[0.12]">{{ initialsOf(tool.name) }}</span>
             </template>
-            <div class="relative flex items-center gap-[11px]">
+            <div class="relative flex items-start gap-[11px]">
               <div v-if="tool.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-full">
                 <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
               </div>
               <span v-else class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-[12.5px] font-extrabold text-white">{{ initialsOf(tool.name) }}</span>
-              <span class="text-[17px] font-extrabold tracking-[-.02em] text-ink-900">{{ tool.name }}</span>
+              <span class="line-clamp-2 min-w-0 text-[17px] font-extrabold tracking-[-.02em] text-ink-900">{{ tool.name }}</span>
             </div>
             <p v-if="tool.shortDesc" class="relative line-clamp-2 text-sm leading-[1.6] text-[#7A5566]">{{ tool.shortDesc }}</p>
             <p v-else-if="tool.categories?.length" class="relative line-clamp-2 text-sm leading-[1.6] text-[#7A5566]">{{ tool.categories.map(c => c.name).join(', ') }}</p>
