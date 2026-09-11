@@ -3,11 +3,12 @@ import type { Category, ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
 
-const [{ data: newestRes }, { data: featuredRes }, { data: freeRes }, { data: categories }] = await Promise.all([
+const [{ data: newestRes }, { data: featuredRes }, { data: freeRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ featured: 'true', limit: 20, locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ pricing: 'FREE', limit: 20, sort: 'newest', locale: locale.value })) }),
-  useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) })
+  useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 200, locale: locale.value })) })
 ])
 
 const newestTools = computed(() => newestRes.value?.items ?? [])
@@ -20,7 +21,7 @@ const browseCategories = computed(() =>
   [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
 )
 const justLaunched = computed(() => newestTools.value.slice(0, 4))
-const featuredHighlights = computed(() => (featuredTools.value.length ? featuredTools.value : newestTools.value).slice(0, 5))
+const featuredHighlights = computed(() => topRatedRes.value?.items ?? [])
 
 const activeTab = ref<'newest' | 'featured' | 'free'>('newest')
 const tabLists = { newest: newestTools, featured: featuredTools, free: freeTools }
@@ -114,7 +115,7 @@ useSeoMeta({
               :key="tab"
               type="button"
               class="cursor-pointer rounded-full px-[15px] py-[7px] text-[13.5px] font-semibold transition-colors"
-              :class="activeTab === tab ? 'bg-ink-900 text-white' : 'text-ink-800 hover:bg-ink-100'"
+              :class="activeTab === tab ? 'bg-brand-50 text-brand-600' : 'text-ink-800 hover:bg-ink-100'"
               @click="activeTab = tab"
             >
               {{ t(`tabs.${tab}`) }}
@@ -185,8 +186,16 @@ useSeoMeta({
             :to="`/tools/${tool.slug}`"
             class="relative flex flex-col gap-3 overflow-hidden rounded-[18px] border border-brand-300 bg-[#FEFAFC] p-5 shadow-[0_2px_6px_rgba(23,18,26,.04)] transition-shadow hover:shadow-[0_16px_32px_-20px_rgba(23,18,26,.45)]"
           >
-            <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-[0.06]"></span>
-            <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-[0.12]">{{ initialsOf(tool.name) }}</span>
+            <img
+              v-if="tool.logoUrl"
+              :src="tool.logoUrl"
+              :alt="tool.name"
+              class="pointer-events-none absolute -top-3 -right-4 h-28 w-28 rounded-full object-cover opacity-[0.16]"
+            >
+            <template v-else>
+              <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-[0.06]"></span>
+              <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-[0.12]">{{ initialsOf(tool.name) }}</span>
+            </template>
             <div class="relative flex items-center gap-[11px]">
               <div v-if="tool.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-full">
                 <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">

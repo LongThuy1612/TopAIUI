@@ -16,6 +16,7 @@ export default defineEventHandler(async (event) => {
   if (query.q) {
     where.name = { contains: String(query.q), mode: 'insensitive' }
   }
+  if (query.minRating) where.averageRating = { gt: Number(query.minRating) }
 
   const sortMap: Record<string, Prisma.ToolOrderByWithRelationInput | Prisma.ToolOrderByWithRelationInput[]> = {
     newest: { createdAt: 'desc' },
@@ -23,6 +24,7 @@ export default defineEventHandler(async (event) => {
     name: { name: 'asc' },
     traffic: { monthlyVisits: 'desc' },
     trending: { monthlyVisits: 'desc' },
+    rating: { averageRating: 'desc' },
     growth1m: { last1MonthGrowth: 'desc' },
     growth3m: { last3MonthGrowth: 'desc' },
     growth6m: { last6MonthGrowth: 'desc' }

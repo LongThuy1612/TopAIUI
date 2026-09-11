@@ -7,12 +7,6 @@ const props = defineProps<{
 
 const { t } = useI18n()
 
-const pricingStyle: Record<string, string> = {
-  FREE: 'border border-emerald-200 text-emerald-700',
-  FREEMIUM: 'border border-ink-200 text-ink-600',
-  PAID: 'border border-amber-200 text-amber-700'
-}
-
 const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI')
 
 const rankStyle = computed(() => {
@@ -42,15 +36,15 @@ const rankStyle = computed(() => {
         <h3 class="text-[17px] font-extrabold tracking-[-.01em] text-ink-900 group-hover:text-brand-500">{{ tool.name }}</h3>
         <span
           v-if="tool.isAd"
-          class="rounded-[5px] border border-transparent bg-brand-50 px-2 py-[3px] text-[10px] font-semibold tracking-[.1em] text-brand-500"
+          class="rounded-full border border-transparent bg-brand-50 px-2.5 py-[3px] text-[11px] font-semibold text-brand-500"
         >{{ t('sections.sponsorBadge') }}</span>
-        <span v-else :class="['rounded-[5px] px-2 py-[3px] text-[10px] font-semibold tracking-[.1em]', pricingStyle[tool.pricingType]]">{{ t(`pricing.${tool.pricingType}`) }}</span>
+        <span v-else-if="tool.pricingType === 'FREE'" class="rounded-full bg-ink-100 px-2.5 py-[3px] text-[11px] font-semibold text-ink-700">{{ t('pricing.FREE') }}</span>
       </div>
       <p v-if="tool.shortDesc" class="mt-1.5 mb-2.5 line-clamp-2 text-[14.5px] leading-[1.6] text-ink-800">{{ tool.shortDesc }}</p>
-      <div v-if="tool.tags?.length" class="flex flex-wrap gap-2 text-[12.5px] text-ink-600">
-        <span v-for="tag in tool.tags" :key="tag.slug" class="rounded-md border border-ink-100 bg-ink-100/50 px-2.5 py-[3px]">{{ tag.name }}</span>
+      <div v-if="tool.tags?.length" class="flex flex-wrap gap-x-3.5 gap-y-1 text-[13px] text-ink-500">
+        <span v-for="tag in tool.tags" :key="tag.slug">#{{ tag.name }}</span>
       </div>
-      <span v-else-if="categoryLabel" class="inline-block rounded-md border border-ink-100 bg-ink-100/50 px-2.5 py-[3px] text-[12.5px] text-ink-600">{{ categoryLabel }}</span>
+      <span v-else-if="categoryLabel" class="text-[13px] text-ink-500">#{{ categoryLabel }}</span>
     </div>
   </NuxtLink>
 </template>
