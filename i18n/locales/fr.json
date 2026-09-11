@@ -13,9 +13,10 @@
     "searchPlaceholder": "Rechercher des outils IA..."
   },
   "stats": {
-    "tools": "outils IA référencés",
-    "categories": "Catégories",
-    "featured": "Outils en vedette"
+    "tools": "IA et",
+    "categories": "catégories dans le meilleur annuaire d'outils IA.",
+    "featured": "Outils en vedette",
+    "updatedNote": "La liste des outils IA et la boutique GPTs sont mises à jour quotidiennement par ChatGPT."
   },
   "tabs": {
     "heading": "Explorer les outils",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Visiteurs mensuels",
     "features": "Fonctionnalités clés",
     "useCases": "Cas d'usage",
+    "coreFeaturesHeading": "Fonctionnalités clés de {name}",
+    "useCasesHeading": "Cas d'usage de {name}",
     "prosAndCons": "Avantages et inconvénients",
     "pros": "Avantages",
     "cons": "Inconvénients",

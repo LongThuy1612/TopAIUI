@@ -13,9 +13,10 @@
     "searchPlaceholder": "ابحث عن أدوات الذكاء الاصطناعي..."
   },
   "stats": {
-    "tools": "أداة ذكاء اصطناعي مدرجة",
-    "categories": "فئة",
-    "featured": "أدوات مميزة"
+    "tools": "أداة ذكاء اصطناعي و",
+    "categories": "فئة في أفضل دليل لأدوات الذكاء الاصطناعي.",
+    "featured": "أدوات مميزة",
+    "updatedNote": "تُحدَّث قائمة أدوات الذكاء الاصطناعي ومتجر GPTs يوميًا بواسطة ChatGPT."
   },
   "tabs": {
     "heading": "استكشف الأدوات",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "الزوار الشهريون",
     "features": "الميزات الرئيسية",
     "useCases": "حالات الاستخدام",
+    "coreFeaturesHeading": "أبرز ميزات {name}",
+    "useCasesHeading": "حالات استخدام {name}",
     "prosAndCons": "الإيجابيات والسلبيات",
     "pros": "الإيجابيات",
     "cons": "السلبيات",

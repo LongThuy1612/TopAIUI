@@ -13,9 +13,10 @@
     "searchPlaceholder": "Cerca strumenti IA..."
   },
   "stats": {
-    "tools": "strumenti IA elencati",
-    "categories": "Categorie",
-    "featured": "Strumenti in evidenza"
+    "tools": "IA e",
+    "categories": "categorie nella migliore directory di strumenti IA.",
+    "featured": "Strumenti in evidenza",
+    "updatedNote": "L'elenco degli strumenti IA e il negozio di GPTs sono aggiornati quotidianamente da ChatGPT."
   },
   "tabs": {
     "heading": "Esplora gli strumenti",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Visitatori mensili",
     "features": "Funzionalità principali",
     "useCases": "Casi d'uso",
+    "coreFeaturesHeading": "Funzionalità principali di {name}",
+    "useCasesHeading": "Casi d'uso di {name}",
     "prosAndCons": "Pro e contro",
     "pros": "Pro",
     "cons": "Contro",

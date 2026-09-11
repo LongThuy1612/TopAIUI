@@ -13,9 +13,10 @@
     "searchPlaceholder": "Hae tekoälytyökaluja..."
   },
   "stats": {
-    "tools": "tekoälytyökalua listattu",
-    "categories": "Kategoriat",
-    "featured": "Suositellut työkalut"
+    "tools": "tekoälyä ja",
+    "categories": "kategoriaa parhaassa tekoälytyökaluhakemistossa.",
+    "featured": "Suositellut työkalut",
+    "updatedNote": "Tekoälytyökaluluettelo ja GPTs-kauppa päivittyvät päivittäin ChatGPT:n toimesta."
   },
   "tabs": {
     "heading": "Selaa työkaluja",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Kävijöitä kuukaudessa",
     "features": "Keskeiset ominaisuudet",
     "useCases": "Käyttötapaukset",
+    "coreFeaturesHeading": "{name}: keskeiset ominaisuudet",
+    "useCasesHeading": "{name}: käyttötapaukset",
     "prosAndCons": "Hyvät ja huonot puolet",
     "pros": "Hyvät puolet",
     "cons": "Huonot puolet",

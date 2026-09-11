@@ -74,6 +74,9 @@ export interface Tool {
   ratingCount: number
   upvoteCount: number
   trafficRank: number
+  last1MonthGrowth: number
+  last3MonthGrowth: number
+  last6MonthGrowth: number
   nuxtTraffic?: unknown
   companyInfo?: unknown
   attributes?: unknown

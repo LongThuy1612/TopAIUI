@@ -63,8 +63,9 @@ useSeoMeta({
         </h1>
 
         <p class="mx-auto mt-4 max-w-[820px] text-[17px] leading-relaxed text-ink-600">
-          <span class="font-bold text-brand-500">{{ totalTools }}</span> {{ t('stats.tools') }} ·
+          <span class="font-bold text-brand-500">{{ totalTools }}</span> {{ t('stats.tools') }}
           <span class="font-bold text-brand-500">{{ allCategories.length }}</span> {{ t('stats.categories') }}
+          {{ t('stats.updatedNote') }}
         </p>
 
         <div class="mx-auto mt-[30px] max-w-[640px]">
@@ -174,7 +175,8 @@ useSeoMeta({
               <span class="inline-flex h-8 w-8 items-center justify-center rounded-[9px] bg-brand-800 text-xs font-extrabold text-white">{{ initialsOf(tool.name) }}</span>
               <span class="text-[19px] font-extrabold text-ink-900">{{ tool.name }}</span>
             </div>
-            <p v-if="tool.categories?.length" class="relative mt-3.5 text-sm leading-[1.55] text-brand-600">{{ tool.categories.map(c => c.name).join(', ') }}</p>
+            <p v-if="tool.shortDesc" class="relative mt-3.5 line-clamp-2 text-sm leading-[1.55] text-brand-600">{{ tool.shortDesc }}</p>
+            <p v-else-if="tool.categories?.length" class="relative mt-3.5 text-sm leading-[1.55] text-brand-600">{{ tool.categories.map(c => c.name).join(', ') }}</p>
           </NuxtLink>
         </div>
         <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">

@@ -13,9 +13,10 @@
     "searchPlaceholder": "AI 도구 검색..."
   },
   "stats": {
-    "tools": "개의 AI 도구 등록됨",
-    "categories": "개의 카테고리",
-    "featured": "추천 도구"
+    "tools": "개의 AI와",
+    "categories": "개의 카테고리를 갖춘 최고의 AI 도구 디렉터리입니다.",
+    "featured": "추천 도구",
+    "updatedNote": "AI 도구 목록과 GPTs 스토어는 ChatGPT에 의해 매일 업데이트됩니다."
   },
   "tabs": {
     "heading": "도구 탐색",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "월간 방문자 수",
     "features": "주요 기능",
     "useCases": "사용 사례",
+    "coreFeaturesHeading": "{name}의 주요 기능",
+    "useCasesHeading": "{name}의 사용 사례",
     "prosAndCons": "장단점",
     "pros": "장점",
     "cons": "단점",

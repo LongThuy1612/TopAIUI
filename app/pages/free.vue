@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ToolsResponse } from '~/types'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const sortValues = ['newest', 'featured', 'name'] as const
 const sortBy = ref<'newest' | 'featured' | 'name'>('newest')
@@ -15,7 +15,8 @@ const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
     pricing: 'FREE',
     sort: sortBy.value,
     page: page.value,
-    limit: 24
+    limit: 24,
+    locale: locale.value
   }))
 })
 

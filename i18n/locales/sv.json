@@ -13,9 +13,10 @@
     "searchPlaceholder": "Sök AI-verktyg..."
   },
   "stats": {
-    "tools": "AI-verktyg listade",
-    "categories": "Kategorier",
-    "featured": "Utvalda verktyg"
+    "tools": "AI:er och",
+    "categories": "kategorier i den bästa AI-verktygskatalogen.",
+    "featured": "Utvalda verktyg",
+    "updatedNote": "AI-verktygslistan och GPTs-butiken uppdateras dagligen av ChatGPT."
   },
   "tabs": {
     "heading": "Utforska verktyg",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Månatliga besökare",
     "features": "Huvudfunktioner",
     "useCases": "Användningsområden",
+    "coreFeaturesHeading": "Huvudfunktioner för {name}",
+    "useCasesHeading": "Användningsområden för {name}",
     "prosAndCons": "För- och nackdelar",
     "pros": "Fördelar",
     "cons": "Nackdelar",

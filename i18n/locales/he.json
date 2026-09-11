@@ -13,9 +13,10 @@
     "searchPlaceholder": "חיפוש כלי בינה מלאכותית..."
   },
   "stats": {
-    "tools": "כלי בינה מלאכותית ברשימה",
-    "categories": "קטגוריות",
-    "featured": "כלים מומלצים"
+    "tools": "כלי בינה מלאכותית ו-",
+    "categories": "קטגוריות בדירקטורי כלי הבינה המלאכותית הטוב ביותר.",
+    "featured": "כלים מומלצים",
+    "updatedNote": "רשימת כלי הבינה המלאכותית וחנות ה-GPTs מתעדכנות מדי יום על ידי ChatGPT."
   },
   "tabs": {
     "heading": "גלה כלים",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "מבקרים חודשיים",
     "features": "תכונות עיקריות",
     "useCases": "מקרי שימוש",
+    "coreFeaturesHeading": "התכונות המרכזיות של {name}",
+    "useCasesHeading": "מקרי השימוש של {name}",
     "prosAndCons": "יתרונות וחסרונות",
     "pros": "יתרונות",
     "cons": "חסרונות",

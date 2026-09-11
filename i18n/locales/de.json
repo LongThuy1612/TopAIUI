@@ -13,9 +13,10 @@
     "searchPlaceholder": "KI-Tools durchsuchen..."
   },
   "stats": {
-    "tools": "KI-Tools gelistet",
-    "categories": "Kategorien",
-    "featured": "Empfohlene Tools"
+    "tools": "KIs und",
+    "categories": "Kategorien im besten KI-Tool-Verzeichnis.",
+    "featured": "Empfohlene Tools",
+    "updatedNote": "Die KI-Tool-Liste und der GPTs Store werden täglich von ChatGPT aktualisiert."
   },
   "tabs": {
     "heading": "Tools entdecken",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Monatliche Besucher",
     "features": "Hauptfunktionen",
     "useCases": "Anwendungsfälle",
+    "coreFeaturesHeading": "Hauptfunktionen von {name}",
+    "useCasesHeading": "Anwendungsfälle von {name}",
     "prosAndCons": "Vor- und Nachteile",
     "pros": "Vorteile",
     "cons": "Nachteile",

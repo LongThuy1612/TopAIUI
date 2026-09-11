@@ -38,30 +38,27 @@ export default defineEventHandler(async (event) => {
       viewCount: true,
       createdAt: true,
       translations: {
-        where: { locale },
-        select: { shortDesc: true, description: true, whatIs: true, howToUse: true, coreFeatures: true, useCases: true }
+        select: { locale: true, shortDesc: true, description: true, whatIs: true, howToUse: true, coreFeatures: true, useCases: true }
       },
       pricingPlans: {
-        where: { locale },
-        select: { name: true, price: true, period: true, features: true }
+        select: { locale: true, name: true, price: true, period: true, features: true }
       },
       categories: {
         select: {
           slug: true,
           icon: true,
           name: true,
-          translations: { where: { locale }, select: { name: true } }
+          translations: { select: { locale: true, name: true } }
         }
       },
       tags: {
         select: {
           slug: true,
-          translations: { where: { locale }, select: { name: true } }
+          translations: { select: { locale: true, name: true } }
         }
       },
       faqs: {
-        where: { locale },
-        select: { question: true, answer: true }
+        select: { locale: true, question: true, answer: true }
       },
       reviews: {
         where: { status: 'PUBLISHED' },
@@ -76,8 +73,8 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: `Tool "${slug}" not found` })
   }
 
-  const { translations, categories, tags, reviews, ...rest } = tool
-  const translation = translations[0]
+  const { translations, pricingPlans, categories, tags, faqs, reviews, ...rest } = tool
+  const translation = pickByLocale(translations, locale)
 
   return {
     ...rest,
@@ -87,8 +84,10 @@ export default defineEventHandler(async (event) => {
     howToUse: translation?.howToUse ?? null,
     coreFeatures: translation?.coreFeatures ?? [],
     useCases: translation?.useCases ?? [],
-    categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: c.translations[0]?.name ?? c.name ?? c.slug })),
-    tags: tags.map((tg) => ({ slug: tg.slug, name: tg.translations[0]?.name ?? tg.slug })),
+    pricingPlans: pickLocaleGroup(pricingPlans, locale).map((p) => ({ name: p.name, price: p.price, period: p.period, features: p.features })),
+    faqs: pickLocaleGroup(faqs, locale).map((f) => ({ question: f.question, answer: f.answer })),
+    categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug })),
+    tags: tags.map((tg) => ({ slug: tg.slug, name: pickByLocale(tg.translations, locale)?.name ?? tg.slug })),
     reviews: reviews.map((r) => ({ rating: r.rating, comment: r.comment, createdAt: r.createdAt, userName: r.user?.name ?? null }))
   }
 })

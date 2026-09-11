@@ -8,14 +8,15 @@
   },
   "hero": {
     "titlePrefix": "Khám phá những",
-    "titleHighlight": "công cụ AI tốt nhất",
+    "titleHighlight": "trang web & công cụ AI tốt nhất",
     "subtitle": "Duyệt hàng trăm sản phẩm AI theo danh mục, so sánh giá và tìm công cụ phù hợp với công việc của bạn.",
     "searchPlaceholder": "Tìm kiếm công cụ AI..."
   },
   "stats": {
-    "tools": "Công cụ AI",
-    "categories": "Danh mục",
-    "featured": "Công cụ nổi bật"
+    "tools": "AI và",
+    "categories": "danh mục trong thư mục công cụ AI tốt nhất.",
+    "featured": "Công cụ nổi bật",
+    "updatedNote": "Danh sách công cụ AI & kho GPTs được cập nhật hàng ngày bởi ChatGPT."
   },
   "tabs": {
     "heading": "Khám phá công cụ",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Lượt truy cập / tháng",
     "features": "Tính năng nổi bật",
     "useCases": "Trường hợp sử dụng",
+    "coreFeaturesHeading": "Tính năng nổi bật của {name}",
+    "useCasesHeading": "Trường hợp sử dụng của {name}",
     "prosAndCons": "Ưu & nhược điểm",
     "pros": "Ưu điểm",
     "cons": "Nhược điểm",

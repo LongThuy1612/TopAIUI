@@ -36,19 +36,23 @@ export default defineEventHandler(async (event) => {
       skip: (page - 1) * limit,
       take: limit,
       include: {
-        categories: true,
-        translations: { where: { locale }, select: { shortDesc: true, description: true } }
+        categories: { select: { slug: true, icon: true, name: true, translations: { select: { locale: true, name: true } } } },
+        translations: { select: { locale: true, shortDesc: true, description: true } }
       }
     }),
     prisma.tool.count({ where })
   ])
 
   return {
-    items: items.map(({ translations, ...tool }) => ({
-      ...tool,
-      shortDesc: translations[0]?.shortDesc ?? null,
-      description: translations[0]?.description ?? null
-    })),
+    items: items.map(({ translations, categories, ...tool }) => {
+      const translation = pickByLocale(translations, locale)
+      return {
+        ...tool,
+        shortDesc: translation?.shortDesc ?? null,
+        description: translation?.description ?? null,
+        categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug }))
+      }
+    }),
     total,
     page,
     pageCount: Math.ceil(total / limit)

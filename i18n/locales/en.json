@@ -7,15 +7,16 @@
     "admin": "Admin"
   },
   "hero": {
-    "titlePrefix": "Discover the best",
-    "titleHighlight": "AI tools",
+    "titlePrefix": "Discover The Best",
+    "titleHighlight": "AI Websites & Tools",
     "subtitle": "Browse hundreds of AI products by category, compare pricing, and find the right tool for your workflow.",
     "searchPlaceholder": "Search AI tools..."
   },
   "stats": {
-    "tools": "AI tools listed",
-    "categories": "Categories",
-    "featured": "Featured tools"
+    "tools": "AIs and",
+    "categories": "categories in the best AI tools directory.",
+    "featured": "Featured tools",
+    "updatedNote": "AI tools list & GPTs store are updated daily by ChatGPT."
   },
   "tabs": {
     "heading": "Explore tools",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Monthly Visitors",
     "features": "Key features",
     "useCases": "Use cases",
+    "coreFeaturesHeading": "{name}'s Core Features",
+    "useCasesHeading": "{name}'s Use Cases",
     "prosAndCons": "Pros & cons",
     "pros": "Pros",
     "cons": "Cons",

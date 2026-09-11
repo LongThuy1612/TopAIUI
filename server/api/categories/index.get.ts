@@ -14,13 +14,13 @@ export default defineEventHandler(async (event) => {
       viewCount: true,
       name: true,
       _count: { select: { tools: { where: publishedToolFilter } } },
-      translations: { where: { locale }, select: { name: true } }
+      translations: { select: { locale: true, name: true } }
     }
   })
 
   return categories.map((c) => ({
     slug: c.slug,
-    name: c.translations[0]?.name ?? c.name ?? c.slug,
+    name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug,
     icon: c.icon,
     isFeatured: c.isFeatured,
     viewCount: c.viewCount,

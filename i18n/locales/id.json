@@ -13,9 +13,10 @@
     "searchPlaceholder": "Cari alat AI..."
   },
   "stats": {
-    "tools": "alat AI terdaftar",
-    "categories": "Kategori",
-    "featured": "Alat unggulan"
+    "tools": "AI dan",
+    "categories": "kategori di direktori alat AI terbaik.",
+    "featured": "Alat unggulan",
+    "updatedNote": "Daftar alat AI dan toko GPTs diperbarui setiap hari oleh ChatGPT."
   },
   "tabs": {
     "heading": "Jelajahi alat",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Pengunjung bulanan",
     "features": "Fitur utama",
     "useCases": "Kasus penggunaan",
+    "coreFeaturesHeading": "Fitur utama {name}",
+    "useCasesHeading": "Kasus penggunaan {name}",
     "prosAndCons": "Kelebihan dan kekurangan",
     "pros": "Kelebihan",
     "cons": "Kekurangan",

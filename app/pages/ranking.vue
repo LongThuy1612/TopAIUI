@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ToolsResponse } from '~/types'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const periods = ['growth1m', 'growth3m', 'growth6m', 'traffic'] as const
 type Period = (typeof periods)[number]
@@ -21,7 +21,7 @@ const periodGrowthField: Record<Period, 'last1MonthGrowth' | 'last3MonthGrowth' 
 const activePeriod = ref<Period>('growth1m')
 
 const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
-  query: computed(() => ({ sort: activePeriod.value, limit: 300 }))
+  query: computed(() => ({ sort: activePeriod.value, limit: 300, locale: locale.value }))
 })
 
 const tools = computed(() => toolsRes.value?.items ?? [])

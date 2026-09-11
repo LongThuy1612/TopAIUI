@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  tool: { slug: string; name: string; pricingType: 'FREE' | 'FREEMIUM' | 'PAID'; logoUrl?: string }
+  tool: { slug: string; name: string; pricingType: 'FREE' | 'FREEMIUM' | 'PAID'; logoUrl?: string; shortDesc?: string | null }
   rank?: number
   categoryLabel?: string
 }>()
@@ -38,6 +38,7 @@ const rankStyle = computed(() => {
         <h3 class="text-lg font-extrabold text-ink-900 group-hover:text-brand-500">{{ tool.name }}</h3>
         <span :class="['rounded-md px-[9px] py-[3px] text-[11px] font-bold', pricingStyle[tool.pricingType]]">{{ t(`pricing.${tool.pricingType}`) }}</span>
       </div>
+      <p v-if="tool.shortDesc" class="mt-1.5 line-clamp-2 text-[15px] leading-[1.55] text-ink-600">{{ tool.shortDesc }}</p>
       <p v-if="categoryLabel" class="mt-1.5 text-[13px] text-ink-500">{{ categoryLabel }}</p>
     </div>
   </NuxtLink>

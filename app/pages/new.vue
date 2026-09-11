@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ToolsResponse } from '~/types'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const pricingValues = ['FREE', 'FREEMIUM', 'PAID'] as const
 const pricingFilter = ref<'all' | 'FREE' | 'FREEMIUM' | 'PAID'>('all')
@@ -15,7 +15,8 @@ const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
     pricing: pricingFilter.value === 'all' ? undefined : pricingFilter.value,
     sort: 'newest',
     page: page.value,
-    limit: 24
+    limit: 24,
+    locale: locale.value
   }))
 })
 

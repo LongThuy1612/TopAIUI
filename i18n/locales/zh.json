@@ -13,9 +13,10 @@
     "searchPlaceholder": "搜索 AI 工具..."
   },
   "stats": {
-    "tools": "款 AI 工具",
-    "categories": "个分类",
-    "featured": "精选工具"
+    "tools": "个 AI 和",
+    "categories": "个分类，尽在最好的 AI 工具目录。",
+    "featured": "精选工具",
+    "updatedNote": "AI 工具列表和 GPTs 商店由 ChatGPT 每日更新。"
   },
   "tabs": {
     "heading": "探索工具",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "月访问量",
     "features": "主要功能",
     "useCases": "使用场景",
+    "coreFeaturesHeading": "{name} 的核心功能",
+    "useCasesHeading": "{name} 的使用场景",
     "prosAndCons": "优缺点",
     "pros": "优点",
     "cons": "缺点",

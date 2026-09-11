@@ -255,26 +255,34 @@ useSeoMeta({
         <h2 class="text-xl font-extrabold text-ink-900">{{ t('tool.productInformationHeading', { name: tool.name }) }}</h2>
         <div class="mt-4 divide-y divide-ink-100 rounded-xl border border-ink-100 bg-white p-6 shadow-sm">
           <section v-if="tool.whatIs || tool.description" class="py-6 first:pt-0">
-            <h3 class="text-sm font-bold text-ink-900">{{ t('tool.whatIs', { name: tool.name }) }}</h3>
-            <p class="mt-2 text-sm leading-relaxed text-ink-600">{{ tool.whatIs || tool.description }}</p>
+            <h3 class="text-lg font-bold text-ink-900">{{ t('tool.whatIs', { name: tool.name }) }}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-ink-600">{{ tool.whatIs || tool.description }}</p>
           </section>
 
           <section v-if="tool.howToUse" class="py-6 first:pt-0">
-            <h3 class="text-sm font-bold text-ink-900">{{ t('tool.howToUseHeading', { name: tool.name }) }}</h3>
-            <p class="mt-2 text-sm leading-relaxed text-ink-600">{{ tool.howToUse }}</p>
+            <h3 class="text-lg font-bold text-ink-900">{{ t('tool.howToUseHeading', { name: tool.name }) }}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-ink-600">{{ tool.howToUse }}</p>
           </section>
 
           <section v-if="tool.coreFeatures?.length" class="py-6 first:pt-0">
-            <h3 class="text-sm font-bold text-ink-900">{{ t('tool.features') }}</h3>
-            <ul class="mt-2 space-y-1.5 text-sm text-ink-600">
-              <li v-for="feature in tool.coreFeatures" :key="feature" class="flex gap-2"><span class="text-brand-500">✓</span> {{ feature }}</li>
+            <h3 class="text-lg font-bold text-ink-900">{{ t('tool.coreFeaturesHeading', { name: tool.name }) }}</h3>
+            <ul class="mt-4 space-y-3">
+              <li v-for="feature in tool.coreFeatures" :key="feature" class="flex items-center gap-3 text-sm text-ink-700">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white">
+                  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                </span>
+                {{ feature }}
+              </li>
             </ul>
           </section>
 
           <section v-if="tool.useCases?.length" class="py-6 first:pt-0">
-            <h3 class="text-sm font-bold text-ink-900">{{ t('tool.useCases') }}</h3>
-            <ul class="mt-2 space-y-1.5 text-sm text-ink-600">
-              <li v-for="useCase in tool.useCases" :key="useCase" class="flex gap-2"><span class="text-brand-500">•</span> {{ useCase }}</li>
+            <h3 class="text-lg font-bold text-ink-900">{{ t('tool.useCasesHeading', { name: tool.name }) }}</h3>
+            <ul class="mt-4 space-y-3">
+              <li v-for="(useCase, i) in tool.useCases" :key="useCase" class="flex items-center gap-3 text-sm text-ink-700">
+                <span class="rounded-md bg-ink-100 px-2 py-0.5 text-xs font-bold text-ink-500">#{{ i + 1 }}</span>
+                {{ useCase }}
+              </li>
             </ul>
           </section>
 

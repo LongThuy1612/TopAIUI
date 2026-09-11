@@ -13,9 +13,10 @@
     "searchPlaceholder": "ค้นหาเครื่องมือ AI..."
   },
   "stats": {
-    "tools": "เครื่องมือ AI ที่ลงทะเบียน",
-    "categories": "หมวดหมู่",
-    "featured": "เครื่องมือแนะนำ"
+    "tools": "AI และ",
+    "categories": "หมวดหมู่ในไดเรกทอรีเครื่องมือ AI ที่ดีที่สุด",
+    "featured": "เครื่องมือแนะนำ",
+    "updatedNote": "รายการเครื่องมือ AI และร้านค้า GPTs อัปเดตทุกวันโดย ChatGPT"
   },
   "tabs": {
     "heading": "สำรวจเครื่องมือ",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "ผู้เข้าชมต่อเดือน",
     "features": "ฟีเจอร์หลัก",
     "useCases": "กรณีการใช้งาน",
+    "coreFeaturesHeading": "ฟีเจอร์หลักของ {name}",
+    "useCasesHeading": "กรณีการใช้งานของ {name}",
     "prosAndCons": "ข้อดีและข้อเสีย",
     "pros": "ข้อดี",
     "cons": "ข้อเสีย",

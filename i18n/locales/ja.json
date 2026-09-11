@@ -13,9 +13,10 @@
     "searchPlaceholder": "AIツールを検索..."
   },
   "stats": {
-    "tools": "件のAIツール",
-    "categories": "カテゴリー",
-    "featured": "注目のツール"
+    "tools": "のAIと",
+    "categories": "のカテゴリーを掲載する、最高のAIツールディレクトリ。",
+    "featured": "注目のツール",
+    "updatedNote": "AIツールリストとGPTsストアはChatGPTによって毎日更新されます。"
   },
   "tabs": {
     "heading": "ツールを探す",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "月間訪問者数",
     "features": "主な機能",
     "useCases": "使用例",
+    "coreFeaturesHeading": "{name} の主な機能",
+    "useCasesHeading": "{name} の使用例",
     "prosAndCons": "メリット・デメリット",
     "pros": "メリット",
     "cons": "デメリット",

@@ -13,9 +13,10 @@
     "searchPlaceholder": "AI-tools zoeken..."
   },
   "stats": {
-    "tools": "AI-tools vermeld",
-    "categories": "Categorieën",
-    "featured": "Uitgelichte tools"
+    "tools": "AI's en",
+    "categories": "categorieën in de beste AI-toolgids.",
+    "featured": "Uitgelichte tools",
+    "updatedNote": "De AI-toollijst en GPTs-winkel worden dagelijks bijgewerkt door ChatGPT."
   },
   "tabs": {
     "heading": "Tools verkennen",
@@ -95,6 +96,8 @@
     "monthlyVisitors": "Maandelijkse bezoekers",
     "features": "Belangrijkste functies",
     "useCases": "Toepassingen",
+    "coreFeaturesHeading": "Belangrijkste functies van {name}",
+    "useCasesHeading": "Toepassingen van {name}",
     "prosAndCons": "Voor- en nadelen",
     "pros": "Voordelen",
     "cons": "Nadelen",
