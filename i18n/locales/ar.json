@@ -26,11 +26,15 @@
     "viewAll": "عرض الكل ←"
   },
   "announcement": {
-    "featured": "مميز"
+    "featured": "مميز",
+    "cta": "اعرف المزيد"
   },
   "sidebar": {
     "featuredTools": "أدوات مميزة",
-    "topCategories": "أفضل الفئات"
+    "topCategories": "أفضل الفئات",
+    "aiNews": "أخبار الذكاء الاصطناعي",
+    "top10": "أفضل 10",
+    "readMoreNews": "المزيد من أخبار الذكاء الاصطناعي"
   },
   "sections": {
     "browseByCategory": "تصفح حسب الفئة",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "الأبرز هذا الأسبوع",
     "featuredThisWeekSubtitle": "الأدوات الأكثر حفظًا وتقييمًا من قبل مجتمعنا.",
     "updatedDaily": "يُحدَّث يوميًا",
-    "viewMore": "عرض المزيد ←"
+    "viewMore": "عرض المزيد ←",
+    "browse": "تصفح",
+    "editorsPicks": "اختيارات المحررين",
+    "sponsorBadge": "ممول",
+    "viewMoreTools": "عرض المزيد من الأدوات ←"
   },
   "cta": {
     "title": "هل لديك أداة ذكاء اصطناعي تريد مشاركتها؟",

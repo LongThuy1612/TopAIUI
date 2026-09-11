@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { ToolsResponse } from '~/types'
 
-const { data: featuredRes } = await useFetch<ToolsResponse>('/api/tools', { query: { featured: 'true', limit: 1 } })
+const { locale } = useI18n()
+const { data: featuredRes } = await useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ featured: 'true', limit: 1, locale: locale.value })) })
 const announcementTool = computed(() => featuredRes.value?.items?.[0])
 </script>
 

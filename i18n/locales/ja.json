@@ -26,11 +26,15 @@
     "viewAll": "すべて見る →"
   },
   "announcement": {
-    "featured": "注目"
+    "featured": "注目",
+    "cta": "詳細を見る"
   },
   "sidebar": {
     "featuredTools": "注目のツール",
-    "topCategories": "人気カテゴリー"
+    "topCategories": "人気カテゴリー",
+    "aiNews": "AIニュース",
+    "top10": "トップ10",
+    "readMoreNews": "AIニュースをもっと見る"
   },
   "sections": {
     "browseByCategory": "カテゴリーで見る",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "今週の注目ツール",
     "featuredThisWeekSubtitle": "コミュニティで最も保存・評価されたツール。",
     "updatedDaily": "毎日更新",
-    "viewMore": "もっと見る →"
+    "viewMore": "もっと見る →",
+    "browse": "閲覧",
+    "editorsPicks": "編集部のおすすめ",
+    "sponsorBadge": "スポンサー",
+    "viewMoreTools": "もっとツールを見る →"
   },
   "cta": {
     "title": "紹介したいAIツールはありますか？",

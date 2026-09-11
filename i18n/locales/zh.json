@@ -26,11 +26,15 @@
     "viewAll": "查看全部 →"
   },
   "announcement": {
-    "featured": "精选"
+    "featured": "精选",
+    "cta": "了解更多"
   },
   "sidebar": {
     "featuredTools": "精选工具",
-    "topCategories": "热门分类"
+    "topCategories": "热门分类",
+    "aiNews": "AI 新闻",
+    "top10": "前 10",
+    "readMoreNews": "查看更多 AI 新闻"
   },
   "sections": {
     "browseByCategory": "按分类浏览",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "本周精选",
     "featuredThisWeekSubtitle": "社区收藏和评分最高的工具。",
     "updatedDaily": "每日更新",
-    "viewMore": "查看更多 →"
+    "viewMore": "查看更多 →",
+    "browse": "浏览",
+    "editorsPicks": "编辑精选",
+    "sponsorBadge": "赞助",
+    "viewMoreTools": "查看更多工具 →"
   },
   "cta": {
     "title": "有 AI 工具想要分享？",

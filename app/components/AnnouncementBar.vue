@@ -1,20 +1,19 @@
 <script setup lang="ts">
 const { t } = useI18n()
-defineProps<{ tool?: { slug: string; name: string } }>()
+defineProps<{ tool?: { slug: string; name: string; shortDesc?: string | null } }>()
 </script>
 
 <template>
-  <div
+  <NuxtLink
     v-if="tool"
-    class="flex flex-wrap items-center justify-center gap-2 px-5 py-3 text-center text-sm font-semibold text-white"
-    style="background: linear-gradient(90deg, #9f1239 0%, #db2777 55%, #ec4899 100%)"
+    :to="`/tools/${tool.slug}`"
+    class="flex w-full flex-wrap items-center justify-center gap-3.5 bg-ink-900 px-5 py-[11px] text-center text-[13.5px] font-medium text-white hover:text-white"
   >
-    <span class="opacity-85">{{ t('announcement.featured') }}</span>
-    <NuxtLink :to="`/tools/${tool.slug}`" class="inline-flex max-w-full items-center gap-1.5 truncate rounded-full bg-white/20 px-3 py-1 font-bold transition hover:bg-white/30">
-      <span class="truncate">{{ tool.name }}</span>
-      <svg class="h-3 w-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-      </svg>
-    </NuxtLink>
-  </div>
+    <span class="rounded border border-brand-200/40 px-[7px] py-[2px] text-[10.5px] font-semibold uppercase tracking-[.14em] text-brand-200">
+      {{ t('announcement.featured') }}
+    </span>
+    <span class="font-bold">{{ tool.name }}</span>
+    <span v-if="tool.shortDesc" class="max-w-md truncate text-white/60">{{ tool.shortDesc }}</span>
+    <span class="font-semibold text-brand-200">{{ t('announcement.cta') }} →</span>
+  </NuxtLink>
 </template>

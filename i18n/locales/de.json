@@ -26,11 +26,15 @@
     "viewAll": "Alle anzeigen →"
   },
   "announcement": {
-    "featured": "Empfohlen"
+    "featured": "Empfohlen",
+    "cta": "Mehr erfahren"
   },
   "sidebar": {
     "featuredTools": "Empfohlene Tools",
-    "topCategories": "Top-Kategorien"
+    "topCategories": "Top-Kategorien",
+    "aiNews": "KI-News",
+    "top10": "Top 10",
+    "readMoreNews": "Mehr KI-News anzeigen"
   },
   "sections": {
     "browseByCategory": "Nach Kategorie durchsuchen",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Empfehlungen dieser Woche",
     "featuredThisWeekSubtitle": "Die Tools, die unsere Community am häufigsten gespeichert und bewertet hat.",
     "updatedDaily": "Täglich aktualisiert",
-    "viewMore": "Mehr anzeigen →"
+    "viewMore": "Mehr anzeigen →",
+    "browse": "Durchsuchen",
+    "editorsPicks": "Redaktionsauswahl",
+    "sponsorBadge": "Gesponsert",
+    "viewMoreTools": "Mehr Tools anzeigen →"
   },
   "cta": {
     "title": "Hast du ein KI-Tool zum Teilen?",

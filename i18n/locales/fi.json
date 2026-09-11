@@ -26,11 +26,15 @@
     "viewAll": "Näytä kaikki →"
   },
   "announcement": {
-    "featured": "Suositeltu"
+    "featured": "Suositeltu",
+    "cta": "Lue lisää"
   },
   "sidebar": {
     "featuredTools": "Suositellut työkalut",
-    "topCategories": "Suosituimmat kategoriat"
+    "topCategories": "Suosituimmat kategoriat",
+    "aiNews": "Tekoälyuutiset",
+    "top10": "Top 10",
+    "readMoreNews": "Katso lisää tekoälyuutisia"
   },
   "sections": {
     "browseByCategory": "Selaa kategorioittain",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Viikon suositellut",
     "featuredThisWeekSubtitle": "Työkalut, jotka yhteisömme on tallentanut ja arvioinut eniten.",
     "updatedDaily": "Päivittyy päivittäin",
-    "viewMore": "Näytä lisää →"
+    "viewMore": "Näytä lisää →",
+    "browse": "Selaa",
+    "editorsPicks": "Toimituksen valinnat",
+    "sponsorBadge": "Sponsoroitu",
+    "viewMoreTools": "Näytä lisää työkaluja →"
   },
   "cta": {
     "title": "Onko sinulla tekoälytyökalu, jonka haluat jakaa?",

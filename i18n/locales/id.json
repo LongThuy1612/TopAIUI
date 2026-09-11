@@ -26,11 +26,15 @@
     "viewAll": "Lihat semua →"
   },
   "announcement": {
-    "featured": "Unggulan"
+    "featured": "Unggulan",
+    "cta": "Pelajari lebih lanjut"
   },
   "sidebar": {
     "featuredTools": "Alat unggulan",
-    "topCategories": "Kategori teratas"
+    "topCategories": "Kategori teratas",
+    "aiNews": "Berita AI",
+    "top10": "10 Teratas",
+    "readMoreNews": "Lihat berita AI lainnya"
   },
   "sections": {
     "browseByCategory": "Jelajahi berdasarkan kategori",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Unggulan minggu ini",
     "featuredThisWeekSubtitle": "Alat yang paling banyak disimpan dan dinilai oleh komunitas kami.",
     "updatedDaily": "Diperbarui setiap hari",
-    "viewMore": "Lihat lebih banyak →"
+    "viewMore": "Lihat lebih banyak →",
+    "browse": "Jelajahi",
+    "editorsPicks": "Pilihan editor",
+    "sponsorBadge": "Sponsor",
+    "viewMoreTools": "Lihat lebih banyak alat →"
   },
   "cta": {
     "title": "Punya alat AI yang ingin dibagikan?",

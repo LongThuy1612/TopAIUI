@@ -37,6 +37,7 @@ export default defineEventHandler(async (event) => {
       take: limit,
       include: {
         categories: { select: { slug: true, icon: true, name: true, translations: { select: { locale: true, name: true } } } },
+        tags: { select: { slug: true, translations: { select: { locale: true, name: true } } } },
         translations: { select: { locale: true, shortDesc: true, description: true } }
       }
     }),
@@ -44,13 +45,14 @@ export default defineEventHandler(async (event) => {
   ])
 
   return {
-    items: items.map(({ translations, categories, ...tool }) => {
+    items: items.map(({ translations, categories, tags, ...tool }) => {
       const translation = pickByLocale(translations, locale)
       return {
         ...tool,
         shortDesc: translation?.shortDesc ?? null,
         description: translation?.description ?? null,
-        categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug }))
+        categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug })),
+        tags: tags.map((tg) => ({ slug: tg.slug, name: pickByLocale(tg.translations, locale)?.name ?? tg.slug }))
       }
     }),
     total,

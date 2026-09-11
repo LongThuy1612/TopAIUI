@@ -26,11 +26,15 @@
     "viewAll": "Ver todo →"
   },
   "announcement": {
-    "featured": "Destacado"
+    "featured": "Destacado",
+    "cta": "Saber más"
   },
   "sidebar": {
     "featuredTools": "Herramientas destacadas",
-    "topCategories": "Categorías principales"
+    "topCategories": "Categorías principales",
+    "aiNews": "Noticias de IA",
+    "top10": "Top 10",
+    "readMoreNews": "Ver más noticias de IA"
   },
   "sections": {
     "browseByCategory": "Explorar por categoría",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Destacadas esta semana",
     "featuredThisWeekSubtitle": "Las herramientas que nuestra comunidad más guardó y valoró.",
     "updatedDaily": "Actualizado a diario",
-    "viewMore": "Ver más →"
+    "viewMore": "Ver más →",
+    "browse": "Explorar",
+    "editorsPicks": "Selección de los editores",
+    "sponsorBadge": "Patrocinado",
+    "viewMoreTools": "Ver más herramientas →"
   },
   "cta": {
     "title": "¿Tienes una herramienta de IA para compartir?",

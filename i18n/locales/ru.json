@@ -26,11 +26,15 @@
     "viewAll": "Смотреть все →"
   },
   "announcement": {
-    "featured": "Рекомендуем"
+    "featured": "Рекомендуем",
+    "cta": "Подробнее"
   },
   "sidebar": {
     "featuredTools": "Рекомендуемые инструменты",
-    "topCategories": "Популярные категории"
+    "topCategories": "Популярные категории",
+    "aiNews": "Новости ИИ",
+    "top10": "Топ 10",
+    "readMoreNews": "Больше новостей ИИ"
   },
   "sections": {
     "browseByCategory": "Обзор по категориям",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Рекомендуем на этой неделе",
     "featuredThisWeekSubtitle": "Инструменты, которые сообщество чаще всего сохраняло и оценивало.",
     "updatedDaily": "Обновляется ежедневно",
-    "viewMore": "Показать больше →"
+    "viewMore": "Показать больше →",
+    "browse": "Обзор",
+    "editorsPicks": "Выбор редакции",
+    "sponsorBadge": "Спонсор",
+    "viewMoreTools": "Больше инструментов →"
   },
   "cta": {
     "title": "Есть AI-инструмент, которым хотите поделиться?",

@@ -26,11 +26,15 @@
     "viewAll": "Visa alla →"
   },
   "announcement": {
-    "featured": "Utvald"
+    "featured": "Utvald",
+    "cta": "Läs mer"
   },
   "sidebar": {
     "featuredTools": "Utvalda verktyg",
-    "topCategories": "Toppkategorier"
+    "topCategories": "Toppkategorier",
+    "aiNews": "AI-nyheter",
+    "top10": "Topp 10",
+    "readMoreNews": "Visa fler AI-nyheter"
   },
   "sections": {
     "browseByCategory": "Bläddra efter kategori",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Utvalt denna vecka",
     "featuredThisWeekSubtitle": "Verktygen som vår community sparat och betygsatt mest.",
     "updatedDaily": "Uppdateras dagligen",
-    "viewMore": "Visa mer →"
+    "viewMore": "Visa mer →",
+    "browse": "Bläddra",
+    "editorsPicks": "Redaktionens val",
+    "sponsorBadge": "Sponsrad",
+    "viewMoreTools": "Visa fler verktyg →"
   },
   "cta": {
     "title": "Har du ett AI-verktyg att dela?",

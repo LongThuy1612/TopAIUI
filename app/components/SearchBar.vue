@@ -33,16 +33,17 @@ function onSubmit() {
   </form>
   <form
     v-else
-    class="mx-auto flex max-w-[640px] items-center gap-2.5 rounded-[14px] border border-ink-200 bg-white p-2 shadow-[0_6px_18px_rgba(76,5,25,.06)] transition focus-within:border-brand-300 focus-within:ring-2 focus-within:ring-brand-50"
+    class="mx-auto flex max-w-[660px] items-center gap-3 rounded-2xl border border-ink-300 bg-white py-[7px] pl-[18px] pr-[7px] shadow-[0_1px_2px_rgba(23,18,26,.04),0_12px_32px_-12px_rgba(190,24,93,.18)] transition focus-within:border-brand-300"
     @submit.prevent="onSubmit"
   >
+    <span class="shrink-0 text-base text-ink-400">⌕</span>
     <input
       v-model="value"
       type="text"
       :placeholder="placeholder"
-      class="min-w-0 flex-1 bg-transparent px-3.5 py-3 text-base text-ink-900 outline-none"
+      class="min-w-0 flex-1 bg-transparent py-[13px] text-base text-ink-900 outline-none"
     >
-    <button type="submit" class="flex-none cursor-pointer rounded-[10px] bg-brand-500 px-6 py-3 text-[15px] font-bold text-white transition-colors hover:bg-brand-600">
+    <button type="submit" class="flex-none cursor-pointer rounded-[11px] bg-brand-500 px-[26px] py-[13px] text-[15px] font-bold text-white transition-colors hover:bg-brand-600">
       Search
     </button>
   </form>

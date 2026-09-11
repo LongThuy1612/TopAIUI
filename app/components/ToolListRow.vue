@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  tool: { slug: string; name: string; pricingType: 'FREE' | 'FREEMIUM' | 'PAID'; logoUrl?: string; shortDesc?: string | null }
+  tool: { slug: string; name: string; pricingType: 'FREE' | 'FREEMIUM' | 'PAID'; logoUrl?: string; shortDesc?: string | null; isAd?: boolean; tags?: { slug: string; name: string }[] }
   rank?: number
   categoryLabel?: string
 }>()
@@ -8,9 +8,9 @@ const props = defineProps<{
 const { t } = useI18n()
 
 const pricingStyle: Record<string, string> = {
-  FREE: 'bg-emerald-50 text-emerald-700',
-  FREEMIUM: 'border border-brand-300 text-brand-600',
-  PAID: 'bg-amber-50 text-amber-700'
+  FREE: 'border border-emerald-200 text-emerald-700',
+  FREEMIUM: 'border border-ink-200 text-ink-600',
+  PAID: 'border border-amber-200 text-amber-700'
 }
 
 const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI')
@@ -25,21 +25,32 @@ const rankStyle = computed(() => {
 </script>
 
 <template>
-  <NuxtLink :to="`/tools/${tool.slug}`" class="group flex items-start gap-[18px] py-[22px]">
-    <span v-if="rank" :class="['w-5 shrink-0 pt-4 text-center text-sm font-bold', rankStyle]">{{ rank }}</span>
-    <div v-if="tool.logoUrl" class="h-14 w-14 shrink-0 overflow-hidden rounded-[14px]">
+  <NuxtLink :to="`/tools/${tool.slug}`" class="group flex items-start gap-4 py-5">
+    <span v-if="rank" :class="['w-5 shrink-0 pt-3.5 text-center text-sm font-bold', rankStyle]">{{ rank }}</span>
+    <div v-if="tool.logoUrl" class="h-[52px] w-[52px] shrink-0 overflow-hidden rounded-[14px]">
       <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
     </div>
-    <span v-else class="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-[14px] bg-brand-100 text-lg font-extrabold text-brand-600">
+    <span
+      v-else
+      class="inline-flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] text-base font-extrabold"
+      :class="tool.isAd ? 'bg-ink-900 text-white' : 'bg-brand-50 text-brand-500'"
+    >
       {{ initials }}
     </span>
     <div class="min-w-0 flex-1">
-      <div class="flex flex-wrap items-center gap-2.5">
-        <h3 class="text-lg font-extrabold text-ink-900 group-hover:text-brand-500">{{ tool.name }}</h3>
-        <span :class="['rounded-md px-[9px] py-[3px] text-[11px] font-bold', pricingStyle[tool.pricingType]]">{{ t(`pricing.${tool.pricingType}`) }}</span>
+      <div class="flex flex-wrap items-center gap-2">
+        <h3 class="text-[17px] font-extrabold tracking-[-.01em] text-ink-900 group-hover:text-brand-500">{{ tool.name }}</h3>
+        <span
+          v-if="tool.isAd"
+          class="rounded-[5px] border border-transparent bg-brand-50 px-2 py-[3px] text-[10px] font-semibold tracking-[.1em] text-brand-500"
+        >{{ t('sections.sponsorBadge') }}</span>
+        <span v-else :class="['rounded-[5px] px-2 py-[3px] text-[10px] font-semibold tracking-[.1em]', pricingStyle[tool.pricingType]]">{{ t(`pricing.${tool.pricingType}`) }}</span>
       </div>
-      <p v-if="tool.shortDesc" class="mt-1.5 line-clamp-2 text-[15px] leading-[1.55] text-ink-600">{{ tool.shortDesc }}</p>
-      <p v-if="categoryLabel" class="mt-1.5 text-[13px] text-ink-500">{{ categoryLabel }}</p>
+      <p v-if="tool.shortDesc" class="mt-1.5 mb-2.5 line-clamp-2 text-[14.5px] leading-[1.6] text-ink-800">{{ tool.shortDesc }}</p>
+      <div v-if="tool.tags?.length" class="flex flex-wrap gap-2 text-[12.5px] text-ink-600">
+        <span v-for="tag in tool.tags" :key="tag.slug" class="rounded-md border border-ink-100 bg-ink-100/50 px-2.5 py-[3px]">{{ tag.name }}</span>
+      </div>
+      <span v-else-if="categoryLabel" class="inline-block rounded-md border border-ink-100 bg-ink-100/50 px-2.5 py-[3px] text-[12.5px] text-ink-600">{{ categoryLabel }}</span>
     </div>
   </NuxtLink>
 </template>

@@ -26,11 +26,15 @@
     "viewAll": "Xem tất cả →"
   },
   "announcement": {
-    "featured": "Nổi bật"
+    "featured": "Nổi bật",
+    "cta": "Xem thêm"
   },
   "sidebar": {
     "featuredTools": "Công cụ nổi bật",
-    "topCategories": "Danh mục hàng đầu"
+    "topCategories": "Danh mục hàng đầu",
+    "aiNews": "Tin tức AI",
+    "top10": "Top 10",
+    "readMoreNews": "Xem thêm tin tức AI"
   },
   "sections": {
     "browseByCategory": "Duyệt theo danh mục",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Nổi bật tuần này",
     "featuredThisWeekSubtitle": "Những công cụ được cộng đồng lưu và đánh giá nhiều nhất.",
     "updatedDaily": "Cập nhật hàng ngày",
-    "viewMore": "Xem thêm →"
+    "viewMore": "Xem thêm →",
+    "browse": "Duyệt",
+    "editorsPicks": "Biên tập chọn lọc",
+    "sponsorBadge": "Tài trợ",
+    "viewMoreTools": "Xem thêm công cụ →"
   },
   "cta": {
     "title": "Bạn có công cụ AI muốn chia sẻ?",

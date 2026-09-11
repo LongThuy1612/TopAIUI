@@ -26,11 +26,15 @@
     "viewAll": "Alles bekijken →"
   },
   "announcement": {
-    "featured": "Uitgelicht"
+    "featured": "Uitgelicht",
+    "cta": "Meer info"
   },
   "sidebar": {
     "featuredTools": "Uitgelichte tools",
-    "topCategories": "Topcategorieën"
+    "topCategories": "Topcategorieën",
+    "aiNews": "AI-nieuws",
+    "top10": "Top 10",
+    "readMoreNews": "Meer AI-nieuws bekijken"
   },
   "sections": {
     "browseByCategory": "Bladeren op categorie",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Uitgelicht deze week",
     "featuredThisWeekSubtitle": "De tools die door onze community het meest zijn opgeslagen en beoordeeld.",
     "updatedDaily": "Dagelijks bijgewerkt",
-    "viewMore": "Meer bekijken →"
+    "viewMore": "Meer bekijken →",
+    "browse": "Bladeren",
+    "editorsPicks": "Keuze van de redactie",
+    "sponsorBadge": "Gesponsord",
+    "viewMoreTools": "Meer tools bekijken →"
   },
   "cta": {
     "title": "Heb je een AI-tool om te delen?",

@@ -26,11 +26,15 @@
     "viewAll": "צפה בהכול ←"
   },
   "announcement": {
-    "featured": "מומלץ"
+    "featured": "מומלץ",
+    "cta": "למידע נוסף"
   },
   "sidebar": {
     "featuredTools": "כלים מומלצים",
-    "topCategories": "קטגוריות מובילות"
+    "topCategories": "קטגוריות מובילות",
+    "aiNews": "חדשות בינה מלאכותית",
+    "top10": "10 המובילים",
+    "readMoreNews": "עוד חדשות בינה מלאכותית"
   },
   "sections": {
     "browseByCategory": "עיון לפי קטגוריה",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "מומלץ השבוע",
     "featuredThisWeekSubtitle": "הכלים שהקהילה שלנו שמרה ודירגה הכי הרבה.",
     "updatedDaily": "מתעדכן מדי יום",
-    "viewMore": "הצג עוד ←"
+    "viewMore": "הצג עוד ←",
+    "browse": "עיון",
+    "editorsPicks": "נבחרי המערכת",
+    "sponsorBadge": "ממומן",
+    "viewMoreTools": "עוד כלים ←"
   },
   "cta": {
     "title": "יש לך כלי בינה מלאכותית לשתף?",

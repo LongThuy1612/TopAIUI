@@ -26,11 +26,15 @@
     "viewAll": "Vedi tutti →"
   },
   "announcement": {
-    "featured": "In evidenza"
+    "featured": "In evidenza",
+    "cta": "Scopri di più"
   },
   "sidebar": {
     "featuredTools": "Strumenti in evidenza",
-    "topCategories": "Categorie principali"
+    "topCategories": "Categorie principali",
+    "aiNews": "Notizie IA",
+    "top10": "Top 10",
+    "readMoreNews": "Altre notizie IA"
   },
   "sections": {
     "browseByCategory": "Sfoglia per categoria",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "In evidenza questa settimana",
     "featuredThisWeekSubtitle": "Gli strumenti più salvati e valutati dalla nostra community.",
     "updatedDaily": "Aggiornato ogni giorno",
-    "viewMore": "Vedi altro →"
+    "viewMore": "Vedi altro →",
+    "browse": "Esplora",
+    "editorsPicks": "Scelti dalla redazione",
+    "sponsorBadge": "Sponsorizzato",
+    "viewMoreTools": "Vedi altri strumenti →"
   },
   "cta": {
     "title": "Hai uno strumento IA da condividere?",

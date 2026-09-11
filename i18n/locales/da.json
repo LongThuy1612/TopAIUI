@@ -26,11 +26,15 @@
     "viewAll": "Se alle →"
   },
   "announcement": {
-    "featured": "Fremhævet"
+    "featured": "Fremhævet",
+    "cta": "Læs mere"
   },
   "sidebar": {
     "featuredTools": "Fremhævede værktøjer",
-    "topCategories": "Populære kategorier"
+    "topCategories": "Populære kategorier",
+    "aiNews": "AI-nyheder",
+    "top10": "Top 10",
+    "readMoreNews": "Se flere AI-nyheder"
   },
   "sections": {
     "browseByCategory": "Gennemse efter kategori",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Fremhævet denne uge",
     "featuredThisWeekSubtitle": "De værktøjer, vores community har gemt og bedømt mest.",
     "updatedDaily": "Opdateres dagligt",
-    "viewMore": "Se mere →"
+    "viewMore": "Se mere →",
+    "browse": "Gennemse",
+    "editorsPicks": "Redaktionens valg",
+    "sponsorBadge": "Sponsoreret",
+    "viewMoreTools": "Se flere værktøjer →"
   },
   "cta": {
     "title": "Har du et AI-værktøj, du vil dele?",

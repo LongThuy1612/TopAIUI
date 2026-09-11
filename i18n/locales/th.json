@@ -26,11 +26,15 @@
     "viewAll": "ดูทั้งหมด →"
   },
   "announcement": {
-    "featured": "แนะนำ"
+    "featured": "แนะนำ",
+    "cta": "ดูเพิ่มเติม"
   },
   "sidebar": {
     "featuredTools": "เครื่องมือแนะนำ",
-    "topCategories": "หมวดหมู่ยอดนิยม"
+    "topCategories": "หมวดหมู่ยอดนิยม",
+    "aiNews": "ข่าว AI",
+    "top10": "อันดับ 10",
+    "readMoreNews": "ดูข่าว AI เพิ่มเติม"
   },
   "sections": {
     "browseByCategory": "เรียกดูตามหมวดหมู่",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "แนะนำสัปดาห์นี้",
     "featuredThisWeekSubtitle": "เครื่องมือที่ชุมชนของเราบันทึกและให้คะแนนมากที่สุด",
     "updatedDaily": "อัปเดตทุกวัน",
-    "viewMore": "ดูเพิ่มเติม →"
+    "viewMore": "ดูเพิ่มเติม →",
+    "browse": "เรียกดู",
+    "editorsPicks": "คัดสรรโดยทีมงาน",
+    "sponsorBadge": "สปอนเซอร์",
+    "viewMoreTools": "ดูเครื่องมือเพิ่มเติม →"
   },
   "cta": {
     "title": "มีเครื่องมือ AI ที่อยากแบ่งปันไหม?",

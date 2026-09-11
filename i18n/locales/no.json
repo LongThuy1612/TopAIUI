@@ -26,11 +26,15 @@
     "viewAll": "Se alle →"
   },
   "announcement": {
-    "featured": "Fremhevet"
+    "featured": "Fremhevet",
+    "cta": "Les mer"
   },
   "sidebar": {
     "featuredTools": "Utvalgte verktøy",
-    "topCategories": "Toppkategorier"
+    "topCategories": "Toppkategorier",
+    "aiNews": "AI-nyheter",
+    "top10": "Topp 10",
+    "readMoreNews": "Se flere AI-nyheter"
   },
   "sections": {
     "browseByCategory": "Bla gjennom etter kategori",
@@ -41,7 +45,11 @@
     "featuredThisWeek": "Fremhevet denne uken",
     "featuredThisWeekSubtitle": "Verktøyene fellesskapet vårt har lagret og vurdert mest.",
     "updatedDaily": "Oppdateres daglig",
-    "viewMore": "Se mer →"
+    "viewMore": "Se mer →",
+    "browse": "Bla gjennom",
+    "editorsPicks": "Redaksjonens valg",
+    "sponsorBadge": "Sponset",
+    "viewMoreTools": "Se flere verktøy →"
   },
   "cta": {
     "title": "Har du et AI-verktøy du vil dele?",

@@ -26,11 +26,15 @@
     "viewAll": "View all →"
   },
   "announcement": {
-    "featured": "Featured"
+    "featured": "Featured",
+    "cta": "Learn more"
   },
   "sidebar": {
     "featuredTools": "Featured tools",
-    "topCategories": "Top categories"
+    "topCategories": "Top categories",
+    "aiNews": "AI News",
+    "top10": "Top 10",
+    "readMoreNews": "Read more AI news"
   },
   "sections": {
     "browseByCategory": "Browse by category",
@@ -40,8 +44,12 @@
     "justLaunched": "Just launched",
     "featuredThisWeek": "Featured this week",
     "featuredThisWeekSubtitle": "The tools our community saved and rated most.",
+    "browse": "Browse",
+    "editorsPicks": "Editors' picks",
+    "sponsorBadge": "Sponsor",
     "updatedDaily": "Updated daily",
-    "viewMore": "View more →"
+    "viewMore": "View more →",
+    "viewMoreTools": "View more tools →"
   },
   "cta": {
     "title": "Have an AI tool to share?",
