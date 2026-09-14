@@ -51,8 +51,8 @@ export default defineEventHandler(async (event) => {
       const translation = pickByLocale(translations, locale)
       return {
         ...tool,
-        shortDesc: translation?.shortDesc ?? null,
-        description: translation?.description ?? null,
+        shortDesc: cleanText(translation?.shortDesc),
+        description: cleanText(translation?.description),
         categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug })),
         tags: tags.map((tg) => ({ slug: tg.slug, name: pickByLocale(tg.translations, locale)?.name ?? tg.slug }))
       }

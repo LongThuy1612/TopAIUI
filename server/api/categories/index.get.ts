@@ -14,16 +14,20 @@ export default defineEventHandler(async (event) => {
       viewCount: true,
       name: true,
       _count: { select: { tools: { where: publishedToolFilter } } },
-      translations: { select: { locale: true, name: true } }
+      translations: { select: { locale: true, name: true, description: true } }
     }
   })
 
-  return categories.map((c) => ({
-    slug: c.slug,
-    name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug,
-    icon: c.icon,
-    isFeatured: c.isFeatured,
-    viewCount: c.viewCount,
-    count: c._count.tools
-  }))
+  return categories.map((c) => {
+    const translation = pickByLocale(c.translations, locale)
+    return {
+      slug: c.slug,
+      name: translation?.name ?? c.name ?? c.slug,
+      description: cleanText(translation?.description),
+      icon: c.icon,
+      isFeatured: c.isFeatured,
+      viewCount: c.viewCount,
+      count: c._count.tools
+    }
+  })
 })

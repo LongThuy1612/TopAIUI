@@ -5,6 +5,7 @@ export interface CategoryRef {
 }
 
 export interface Category extends CategoryRef {
+  description?: string | null
   isFeatured: boolean
   viewCount: number
   count: number

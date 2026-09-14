@@ -73,8 +73,8 @@ export default defineEventHandler(async (event) => {
 
   return {
     ...rest,
-    shortDesc: translation?.shortDesc ?? null,
-    description: translation?.description ?? null,
+    shortDesc: cleanText(translation?.shortDesc),
+    description: cleanText(translation?.description),
     whatIs: translation?.whatIs ?? null,
     howToUse: translation?.howToUse ?? null,
     coreFeatures: translation?.coreFeatures ?? [],

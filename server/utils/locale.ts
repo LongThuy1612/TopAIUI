@@ -8,6 +8,11 @@ export function pickByLocale<T extends { locale: string }>(rows: T[], locale: st
   return rows.find(r => r.locale === locale) ?? rows.find(r => r.locale === 'en') ?? rows[0]
 }
 
+/** Some rows were imported with the literal string "undefined" instead of a real value or null. */
+export function cleanText(value: string | null | undefined): string | null {
+  return value && value !== 'undefined' ? value : null
+}
+
 /** Pick the full set of rows for the best-matching locale group (e.g. all PricingPlan rows for one locale). */
 export function pickLocaleGroup<T extends { locale: string }>(rows: T[], locale: string): T[] {
   const forLocale = rows.filter(r => r.locale === locale)
