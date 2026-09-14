@@ -18,19 +18,28 @@ export default defineEventHandler(async (event) => {
   }
   if (query.minRating) where.averageRating = { gt: Number(query.minRating) }
   if (query.today === 'true') {
-    const startOfToday = new Date()
-    startOfToday.setHours(0, 0, 0, 0)
-    const startOfTomorrow = new Date(startOfToday)
-    startOfTomorrow.setDate(startOfToday.getDate() + 1)
+    // Walk backwards a day at a time until we find one with enough tools to
+    // fill a page; capped so an idle directory can't spin through years of days.
+    const maxLookbackDays = 90
+    let bestRange: { gte: Date, lt: Date } | null = null
+    let bestCount = 0
 
-    const todayCount = await prisma.tool.count({ where: { ...where, createdAt: { gte: startOfToday, lt: startOfTomorrow } } })
-    if (todayCount > 0) {
-      where.createdAt = { gte: startOfToday, lt: startOfTomorrow }
-    } else {
-      const startOfYesterday = new Date(startOfToday)
-      startOfYesterday.setDate(startOfToday.getDate() - 1)
-      where.createdAt = { gte: startOfYesterday, lt: startOfToday }
+    for (let offset = 0; offset < maxLookbackDays; offset++) {
+      const start = new Date()
+      start.setHours(0, 0, 0, 0)
+      start.setDate(start.getDate() - offset)
+      const end = new Date(start)
+      end.setDate(start.getDate() + 1)
+
+      const count = await prisma.tool.count({ where: { ...where, createdAt: { gte: start, lt: end } } })
+      if (count > bestCount) {
+        bestCount = count
+        bestRange = { gte: start, lt: end }
+      }
+      if (count >= limit) break
     }
+
+    if (bestRange) where.createdAt = bestRange
   }
   if (query.days) {
     const since = new Date()
