@@ -22,7 +22,15 @@ export default defineEventHandler(async (event) => {
     startOfToday.setHours(0, 0, 0, 0)
     const startOfTomorrow = new Date(startOfToday)
     startOfTomorrow.setDate(startOfToday.getDate() + 1)
-    where.createdAt = { gte: startOfToday, lt: startOfTomorrow }
+
+    const todayCount = await prisma.tool.count({ where: { ...where, createdAt: { gte: startOfToday, lt: startOfTomorrow } } })
+    if (todayCount > 0) {
+      where.createdAt = { gte: startOfToday, lt: startOfTomorrow }
+    } else {
+      const startOfYesterday = new Date(startOfToday)
+      startOfYesterday.setDate(startOfToday.getDate() - 1)
+      where.createdAt = { gte: startOfYesterday, lt: startOfToday }
+    }
   }
   if (query.days) {
     const since = new Date()

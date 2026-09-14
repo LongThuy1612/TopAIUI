@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import type { ToolsResponse } from '~/types'
+import type { Tool, ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
 
 const viewMode = ref<'grid' | 'list'>('grid')
 const page = ref(1)
+const tools = ref<Tool[]>([])
+const pageCount = ref(1)
+const loadingMore = ref(false)
 
 const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({
@@ -15,8 +18,33 @@ const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
   }))
 })
 
-const tools = computed(() => toolsRes.value?.items ?? [])
-const pageCount = computed(() => toolsRes.value?.pageCount ?? 1)
+watch(toolsRes, (res) => {
+  if (!res) return
+  tools.value = page.value === 1 ? res.items : [...tools.value, ...res.items]
+  pageCount.value = res.pageCount
+  loadingMore.value = false
+}, { immediate: true })
+
+watch(locale, () => { page.value = 1 })
+
+function loadMore() {
+  if (loadingMore.value || page.value >= pageCount.value) return
+  loadingMore.value = true
+  page.value += 1
+}
+
+const sentinel = ref<HTMLElement | null>(null)
+let observer: IntersectionObserver | null = null
+
+onMounted(() => {
+  if (!import.meta.client) return
+  observer = new IntersectionObserver((entries) => {
+    if (entries[0]?.isIntersecting) loadMore()
+  })
+  if (sentinel.value) observer.observe(sentinel.value)
+})
+
+onBeforeUnmount(() => observer?.disconnect())
 
 useSeoMeta({
   title: 'Most Featured — TopAICollection'
@@ -72,6 +100,7 @@ useSeoMeta({
       {{ t('empty.noResults') }}.
     </div>
 
-    <Pagination v-model:page="page" :page-count="pageCount" />
+    <div ref="sentinel" class="h-px"></div>
+    <p v-if="loadingMore" class="py-6 text-center text-sm text-ink-400">{{ t('tool.loadingMore') }}</p>
   </div>
 </template>
