@@ -1,0 +1,23 @@
+import type { SitemapUrlInput } from '@nuxtjs/sitemap'
+
+export default defineSitemapEventHandler(async () => {
+  const [tools, categories] = await Promise.all([
+    prisma.tool.findMany({
+      where: { status: 'PUBLISHED', deletedAt: null },
+      select: { slug: true, updatedAt: true }
+    }),
+    prisma.category.findMany({ select: { slug: true, updatedAt: true } })
+  ])
+
+  const toolUrls: SitemapUrlInput[] = tools.map((tool) => ({
+    loc: `/tools/${tool.slug}`,
+    lastmod: tool.updatedAt
+  }))
+
+  const categoryUrls: SitemapUrlInput[] = categories.map((category) => ({
+    loc: `/category/${category.slug}`,
+    lastmod: category.updatedAt
+  }))
+
+  return [...toolUrls, ...categoryUrls]
+})

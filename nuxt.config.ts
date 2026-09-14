@@ -2,12 +2,24 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-01-01',
   future: { compatibilityVersion: 4 },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/icon'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/icon', '@nuxtjs/sitemap', '@nuxtjs/robots'],
   css: ['~/assets/css/main.css'],
+
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+  },
+
+  sitemap: {
+    sources: ['/api/__sitemap__/urls']
+  },
 
   app: {
     head: {
       link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/png', href: '/topaicollection.png' },
+        { rel: 'apple-touch-icon', href: '/topaicollection.png' },
+        { rel: 'manifest', href: '/manifest.json' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap' }
@@ -16,32 +28,31 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    lazy: true,
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     langDir: 'locales/',
     defaultLocale: 'en',
-    fallbackLocale: 'en',
     strategy: 'no_prefix',
     locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'zh', name: '中文', file: 'zh.json' },
-      { code: 'es', name: 'Español', file: 'es.json' },
-      { code: 'de', name: 'Deutsch', file: 'de.json' },
-      { code: 'ja', name: '日本語', file: 'ja.json' },
-      { code: 'fr', name: 'Français', file: 'fr.json' },
-      { code: 'ko', name: '한국어', file: 'ko.json' },
-      { code: 'it', name: 'Italiano', file: 'it.json' },
-      { code: 'nl', name: 'Nederlands', file: 'nl.json' },
-      { code: 'ru', name: 'Русский', file: 'ru.json' },
-      { code: 'pt', name: 'Português', file: 'pt.json' },
-      { code: 'sv', name: 'Svenska', file: 'sv.json' },
-      { code: 'da', name: 'Dansk', file: 'da.json' },
-      { code: 'no', name: 'Norsk', file: 'no.json' },
-      { code: 'fi', name: 'Suomi', file: 'fi.json' },
-      { code: 'ar', name: 'العربية', file: 'ar.json', dir: 'rtl' },
-      { code: 'he', name: 'עברית', file: 'he.json', dir: 'rtl' },
-      { code: 'th', name: 'ภาษาไทย', file: 'th.json' },
-      { code: 'id', name: 'Bahasa Indonesia', file: 'id.json' },
-      { code: 'vi', name: 'Tiếng Việt', file: 'vi.json' }
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
+      { code: 'zh', language: 'zh-CN', name: '中文', file: 'zh.json' },
+      { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' },
+      { code: 'de', language: 'de-DE', name: 'Deutsch', file: 'de.json' },
+      { code: 'ja', language: 'ja-JP', name: '日本語', file: 'ja.json' },
+      { code: 'fr', language: 'fr-FR', name: 'Français', file: 'fr.json' },
+      { code: 'ko', language: 'ko-KR', name: '한국어', file: 'ko.json' },
+      // { code: 'it', name: 'Italiano', file: 'it.json' },
+      // { code: 'nl', name: 'Nederlands', file: 'nl.json' },
+      // { code: 'ru', name: 'Русский', file: 'ru.json' },
+      { code: 'pt', language: 'pt-PT', name: 'Português', file: 'pt.json' },
+      // { code: 'sv', name: 'Svenska', file: 'sv.json' },
+      // { code: 'da', name: 'Dansk', file: 'da.json' },
+      // { code: 'no', name: 'Norsk', file: 'no.json' },
+      // { code: 'fi', name: 'Suomi', file: 'fi.json' },
+      // { code: 'ar', name: 'العربية', file: 'ar.json', dir: 'rtl' },
+      // { code: 'he', name: 'עברית', file: 'he.json', dir: 'rtl' },
+      // { code: 'th', name: 'ภาษาไทย', file: 'th.json' },
+      { code: 'id', language: 'id-ID', name: 'Bahasa Indonesia', file: 'id.json' },
+      { code: 'vi', language: 'vi-VN', name: 'Tiếng Việt', file: 'vi.json' }
     ],
     detectBrowserLanguage: {
       useCookie: true,
@@ -90,6 +101,7 @@ export default defineNuxtConfig({
     // Admin / CMS — always dynamic, never cached, hidden from search engines
     '/admin/**': {
       ssr: true,
+      robots: false,
       headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
     },
 

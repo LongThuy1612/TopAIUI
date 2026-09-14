@@ -95,7 +95,7 @@ const archiveDates = ['09/10', '09/09', '09/08', '09/07', '09/04', '09/03', '09/
 
     <div class="mx-auto mt-14 flex max-w-7xl flex-wrap items-center justify-between gap-6 border-t border-ink-200 pt-[26px]">
       <div class="flex items-center gap-[11px]">
-        <span class="inline-flex h-[34px] w-[34px] items-center justify-center rounded-[10px] bg-[linear-gradient(135deg,#db2777,#e11d48)] text-[15px] font-extrabold text-white">T</span>
+        <IconLogo class="h-[34px] w-[34px] rounded-[10px]" width="34" height="34" />
         <span class="text-[19px] font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
         <span class="text-sm text-ink-600">— {{ t('footer.tagline') }}</span>
       </div>

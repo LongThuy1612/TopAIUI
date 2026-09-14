@@ -12,7 +12,7 @@ function onSearch(q: string) {
   <header class="sticky top-0 z-40 border-b border-ink-200 bg-white/90 backdrop-blur">
     <div class="mx-auto flex h-[72px] max-w-7xl items-center gap-[30px] px-4 sm:px-6 lg:px-8">
       <NuxtLink to="/" class="flex shrink-0 items-center gap-2.5">
-        <span class="inline-flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-[linear-gradient(135deg,#db2777,#e11d48)] text-sm font-extrabold text-white">T</span>
+        <IconLogo class="h-[30px] w-[30px] rounded-[9px]" width="30" height="30" />
         <span class="text-[22px] font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
       </NuxtLink>
 

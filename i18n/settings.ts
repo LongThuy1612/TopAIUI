@@ -10,19 +10,19 @@ export const locales = [
   'ja', // Japanese
   'fr', // French
   'ko', // Korean
-  'it', // Italian
-  'nl', // Dutch
-  'ru', // Russian
   'pt', // Portuguese
-  'sv', // Swedish
-  'da', // Danish
-  'no', // Norwegian
-  'fi', // Finnish
-  'ar', // Arabic
-  'he', // Hebrew
-  'th', // Thai
   'id', // Bahasa Indonesia
   'vi', // Vietnamese
+  //'it', // Italian
+  //'nl', // Dutch
+  //'ru', // Russian
+  //'sv', // Swedish
+  //'da', // Danish
+  //'no', // Norwegian
+  //'fi', // Finnish
+  //'ar', // Arabic
+  //'he', // Hebrew
+  //'th', // Thai
 ] as const;
 
 export type Locale = (typeof locales)[number];
