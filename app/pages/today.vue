@@ -13,8 +13,8 @@ watch(pricingFilter, () => { page.value = 1 })
 const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({
     pricing: pricingFilter.value === 'all' ? undefined : pricingFilter.value,
-    featured: 'true',
     sort: 'newest',
+    today: 'true',
     page: page.value,
     limit: 24,
     locale: locale.value
@@ -26,7 +26,7 @@ const total = computed(() => toolsRes.value?.total ?? 0)
 const pageCount = computed(() => toolsRes.value?.pageCount ?? 1)
 
 useSeoMeta({
-  title: 'Featured AI Tools — TopAICollection'
+  title: 'Today — TopAICollection'
 })
 </script>
 
@@ -35,12 +35,12 @@ useSeoMeta({
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
       <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
       <span>›</span>
-      <span class="text-ink-600">{{ t('tabs.featured') }}</span>
+      <span class="text-ink-600">{{ t('tabs.newest') }}</span>
     </nav>
 
     <div class="mt-3">
       <h1 class="flex items-center gap-2 text-3xl font-extrabold text-ink-900">
-        <span>⭐</span> {{ t('tabs.featured') }}
+        <span>📅</span> {{ t('tabs.newest') }}
       </h1>
       <p class="mt-1.5 text-sm text-ink-500">{{ total }} {{ t('category.toolsFound', total) }}</p>
     </div>

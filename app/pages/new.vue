@@ -3,17 +3,13 @@ import type { ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
 
-const pricingValues = ['FREE', 'FREEMIUM', 'PAID'] as const
-const pricingFilter = ref<'all' | 'FREE' | 'FREEMIUM' | 'PAID'>('all')
 const viewMode = ref<'grid' | 'list'>('grid')
 const page = ref(1)
 
-watch(pricingFilter, () => { page.value = 1 })
-
 const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({
-    pricing: pricingFilter.value === 'all' ? undefined : pricingFilter.value,
-    sort: 'newest',
+    days: 7,
+    sort: 'rating',
     page: page.value,
     limit: 24,
     locale: locale.value
@@ -21,11 +17,10 @@ const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
 })
 
 const tools = computed(() => toolsRes.value?.items ?? [])
-const total = computed(() => toolsRes.value?.total ?? 0)
 const pageCount = computed(() => toolsRes.value?.pageCount ?? 1)
 
 useSeoMeta({
-  title: 'New AI Tools — TopAICollection'
+  title: 'New — TopAICollection'
 })
 </script>
 
@@ -34,30 +29,13 @@ useSeoMeta({
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
       <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
       <span>›</span>
-      <span class="text-ink-600">{{ t('tabs.newest') }}</span>
+      <span class="text-ink-600">{{ t('tabs.featured') }}</span>
     </nav>
 
-    <div class="mt-3">
+    <div class="mt-3 flex flex-wrap items-center justify-between gap-3 border-b border-ink-100 pb-4">
       <h1 class="flex items-center gap-2 text-3xl font-extrabold text-ink-900">
-        <span>🆕</span> {{ t('tabs.newest') }}
+        <span>🆕</span> {{ t('tabs.featured') }}
       </h1>
-      <p class="mt-1.5 text-sm text-ink-500">{{ total }} {{ t('category.toolsFound', total) }}</p>
-    </div>
-
-    <div class="mt-8 flex flex-wrap items-center justify-between gap-3 border-b border-ink-100 pb-4">
-      <div class="flex flex-wrap gap-2">
-        <button
-          v-for="p in (['all', ...pricingValues] as const)"
-          :key="p"
-          :class="[
-            'rounded-full border px-3 py-1.5 text-sm font-semibold transition',
-            pricingFilter === p ? 'border-brand-500 bg-brand-500 text-white' : 'border-ink-200 text-ink-600 hover:border-brand-300'
-          ]"
-          @click="pricingFilter = p"
-        >
-          {{ p === 'all' ? t('category.allPricing') : t(`pricing.${p}`) }}
-        </button>
-      </div>
 
       <div class="flex items-center gap-0.5 rounded-lg border border-ink-200 p-0.5">
         <button

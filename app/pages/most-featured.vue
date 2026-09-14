@@ -3,17 +3,12 @@ import type { ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
 
-const sortValues = ['newest', 'featured', 'name'] as const
-const sortBy = ref<'newest' | 'featured' | 'name'>('newest')
 const viewMode = ref<'grid' | 'list'>('grid')
 const page = ref(1)
 
-watch(sortBy, () => { page.value = 1 })
-
 const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({
-    pricing: 'FREE',
-    sort: sortBy.value,
+    sort: 'rating',
     page: page.value,
     limit: 24,
     locale: locale.value
@@ -21,11 +16,10 @@ const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
 })
 
 const tools = computed(() => toolsRes.value?.items ?? [])
-const total = computed(() => toolsRes.value?.total ?? 0)
 const pageCount = computed(() => toolsRes.value?.pageCount ?? 1)
 
 useSeoMeta({
-  title: 'Free AI Tools — TopAICollection'
+  title: 'Most Featured — TopAICollection'
 })
 </script>
 
@@ -37,20 +31,10 @@ useSeoMeta({
       <span class="text-ink-600">{{ t('tabs.free') }}</span>
     </nav>
 
-    <div class="mt-3">
+    <div class="mt-3 flex flex-wrap items-center justify-between gap-3 border-b border-ink-100 pb-4">
       <h1 class="flex items-center gap-2 text-3xl font-extrabold text-ink-900">
-        <span>🆓</span> {{ t('tabs.free') }}
+        <span>⭐</span> {{ t('tabs.free') }}
       </h1>
-      <p class="mt-1.5 text-sm text-ink-500">{{ total }} {{ t('category.toolsFound', total) }}</p>
-    </div>
-
-    <div class="mt-8 flex flex-wrap items-center justify-between gap-3 border-b border-ink-100 pb-4">
-      <select
-        v-model="sortBy"
-        class="rounded-lg border border-ink-200 bg-white px-3 py-1.5 text-sm font-semibold text-ink-600 outline-none focus:border-brand-300"
-      >
-        <option v-for="s in sortValues" :key="s" :value="s">{{ t(`category.sort${s === 'newest' ? 'Newest' : s === 'featured' ? 'Featured' : 'Name'}`) }}</option>
-      </select>
 
       <div class="flex items-center gap-0.5 rounded-lg border border-ink-200 p-0.5">
         <button

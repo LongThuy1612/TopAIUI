@@ -20,9 +20,9 @@
   },
   "tabs": {
     "heading": "Selaa työkaluja",
-    "newest": "Uudet",
-    "featured": "Suosituimmat",
-    "free": "Ilmainen",
+    "newest": "Tänään",
+    "featured": "Uudet",
+    "free": "Suosituimmat",
     "viewAll": "Näytä kaikki →"
   },
   "announcement": {

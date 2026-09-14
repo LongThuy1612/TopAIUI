@@ -17,6 +17,18 @@ export default defineEventHandler(async (event) => {
     where.name = { contains: String(query.q), mode: 'insensitive' }
   }
   if (query.minRating) where.averageRating = { gt: Number(query.minRating) }
+  if (query.today === 'true') {
+    const startOfToday = new Date()
+    startOfToday.setHours(0, 0, 0, 0)
+    const startOfTomorrow = new Date(startOfToday)
+    startOfTomorrow.setDate(startOfToday.getDate() + 1)
+    where.createdAt = { gte: startOfToday, lt: startOfTomorrow }
+  }
+  if (query.days) {
+    const since = new Date()
+    since.setDate(since.getDate() - Number(query.days))
+    where.createdAt = { gte: since }
+  }
 
   const sortMap: Record<string, Prisma.ToolOrderByWithRelationInput | Prisma.ToolOrderByWithRelationInput[]> = {
     newest: { createdAt: 'desc' },

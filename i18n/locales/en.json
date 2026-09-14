@@ -20,9 +20,9 @@
   },
   "tabs": {
     "heading": "Explore tools",
-    "newest": "New",
-    "featured": "Most Featured",
-    "free": "Free",
+    "newest": "Today",
+    "featured": "New",
+    "free": "Most Featured",
     "viewAll": "View all →"
   },
   "announcement": {

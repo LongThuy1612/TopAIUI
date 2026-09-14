@@ -3,17 +3,15 @@ import type { Category, ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
 
-const [{ data: newestRes }, { data: featuredRes }, { data: freeRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
+const [{ data: newestRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', locale: locale.value })) }),
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ featured: 'true', limit: 20, locale: locale.value })) }),
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ pricing: 'FREE', limit: 20, sort: 'newest', locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', today: 'true', locale: locale.value })) }),
   useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 200, locale: locale.value })) })
 ])
 
 const newestTools = computed(() => newestRes.value?.items ?? [])
-const featuredTools = computed(() => featuredRes.value?.items ?? [])
-const freeTools = computed(() => freeRes.value?.items ?? [])
+const todayTools = computed(() => todayRes.value?.items ?? [])
 const allCategories = computed(() => categories.value ?? [])
 const totalTools = computed(() => newestRes.value?.total ?? 0)
 
@@ -23,15 +21,7 @@ const browseCategories = computed(() =>
 const justLaunched = computed(() => newestTools.value.slice(0, 4))
 const featuredHighlights = computed(() => topRatedRes.value?.items ?? [])
 
-const activeTab = ref<'newest' | 'featured' | 'free'>('newest')
-const tabLists = { newest: newestTools, featured: featuredTools, free: freeTools }
-const tabTools = computed(() => tabLists[activeTab.value].value.slice(0, 10))
-
-const viewAllHref = computed(() => {
-  if (activeTab.value === 'newest') return { path: '/new' }
-  if (activeTab.value === 'featured') return { path: '/featured' }
-  return { path: '/free' }
-})
+const tabTools = computed(() => todayTools.value.slice(0, 10))
 
 const heroQuery = ref('')
 function onSearch(q: string) {
@@ -105,21 +95,29 @@ useSeoMeta({
           <div v-if="!justLaunched.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
             {{ t('empty.noTools') }}
           </div>
-          <NuxtLink to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
+          <NuxtLink to="/today" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
         </aside>
 
         <div class="min-w-0 rounded-[18px] border border-ink-200 bg-white pt-[22px] pr-[26px] pb-[26px] pl-[26px] lg:order-2">
           <div class="flex flex-wrap gap-1.5 border-b border-ink-100 pb-[18px]">
             <button
-              v-for="tab in (['newest', 'featured', 'free'] as const)"
-              :key="tab"
               type="button"
-              class="cursor-pointer rounded-full px-[15px] py-[7px] text-[13.5px] font-semibold transition-colors"
-              :class="activeTab === tab ? 'bg-brand-50 text-brand-600' : 'text-ink-800 hover:bg-ink-100'"
-              @click="activeTab = tab"
+              class="cursor-pointer rounded-full bg-brand-50 px-[15px] py-[7px] text-[13.5px] font-semibold text-brand-600 transition-colors"
             >
-              {{ t(`tabs.${tab}`) }}
+              {{ t('tabs.newest') }}
             </button>
+            <NuxtLink
+              to="/new"
+              class="rounded-full px-[15px] py-[7px] text-[13.5px] font-semibold text-ink-800 transition-colors hover:bg-ink-100"
+            >
+              {{ t('tabs.featured') }}
+            </NuxtLink>
+            <NuxtLink
+              to="/most-featured"
+              class="rounded-full px-[15px] py-[7px] text-[13.5px] font-semibold text-ink-800 transition-colors hover:bg-ink-100"
+            >
+              {{ t('tabs.free') }}
+            </NuxtLink>
           </div>
 
           <div v-if="tabTools.length" class="flex flex-col divide-y divide-ink-100">
@@ -135,7 +133,7 @@ useSeoMeta({
           </div>
 
           <div class="flex justify-center pt-[22px]">
-            <NuxtLink :to="viewAllHref" class="text-[14.5px] font-bold text-brand-500 hover:text-brand-600">
+            <NuxtLink to="/today" class="text-[14.5px] font-bold text-brand-500 hover:text-brand-600">
               {{ t('sections.viewMoreTools') }}
             </NuxtLink>
           </div>

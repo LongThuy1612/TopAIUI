@@ -20,9 +20,9 @@
   },
   "tabs": {
     "heading": "도구 탐색",
-    "newest": "신규",
-    "featured": "최다 추천",
-    "free": "무료",
+    "newest": "오늘",
+    "featured": "신규",
+    "free": "최다 추천",
     "viewAll": "전체 보기 →"
   },
   "announcement": {

@@ -36,7 +36,9 @@ function onSubmit() {
     class="mx-auto flex max-w-[660px] items-center gap-3 rounded-2xl border border-ink-300 bg-white py-[7px] pl-[18px] pr-[7px] shadow-[0_1px_2px_rgba(23,18,26,.04),0_12px_32px_-12px_rgba(190,24,93,.18)] transition focus-within:border-brand-300"
     @submit.prevent="onSubmit"
   >
-    <span class="shrink-0 text-base text-ink-400">⌕</span>
+    <svg class="h-5 w-5 shrink-0 text-ink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.25">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-5.15a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
+    </svg>
     <input
       v-model="value"
       type="text"
