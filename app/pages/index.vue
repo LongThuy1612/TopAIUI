@@ -88,7 +88,7 @@ useSeoMeta({
     </section>
 
     <section id="feed" class="w-full border-b border-ink-200 bg-white px-4 pt-8 pb-11 sm:px-6 lg:px-8">
-      <div class="mx-auto grid max-w-7xl grid-cols-1 gap-7 lg:grid-cols-[240px_1fr_280px] lg:items-start">
+      <div class="mx-auto grid max-w-[1440px] grid-cols-1 gap-5 lg:grid-cols-[260px_1fr_380px] lg:items-start">
 
         <aside class="flex min-w-0 flex-col gap-3 lg:order-1">
           <SidebarToolItem v-for="tool in justLaunched" :key="tool.slug" :tool="tool" />
@@ -146,7 +146,7 @@ useSeoMeta({
     </section>
 
     <section id="categories" class="w-full bg-white px-4 py-[72px] sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
+      <div class="mx-auto max-w-[1440px]">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <h2 class="text-[clamp(26px,3.2vw,36px)] font-extrabold tracking-[-0.03em] text-ink-900">{{ t('sections.browseByCategory') }}</h2>
           <NuxtLink to="/category/all" class="text-[14.5px] font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
@@ -174,7 +174,7 @@ useSeoMeta({
     </section>
 
     <section id="featured" class="w-full border-t border-ink-200 bg-ink-100/40 px-4 py-[72px] sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
+      <div class="mx-auto max-w-[1440px]">
         <h2 class="mb-1.5 text-[clamp(26px,3.2vw,36px)] font-extrabold tracking-[-0.03em] text-ink-900">{{ t('sections.featuredThisWeek') }}</h2>
         <p class="text-base text-ink-600">{{ t('sections.featuredThisWeekSubtitle') }}</p>
         <div v-if="featuredHighlights.length" class="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4 pt-[30px]">

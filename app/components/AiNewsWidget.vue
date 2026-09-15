@@ -17,20 +17,20 @@ const news: string[] = [
 
 <template>
   <div class="rounded-[18px] border border-ink-200 p-5">
-    <div class="border-b border-ink-100 pb-3.5 text-base font-extrabold text-ink-900">{{ t('sidebar.aiNews') }}</div>
+    <div class="border-b border-ink-100 pb-3.5 text-base font-semibold text-ink-900">{{ t('sidebar.aiNews') }}</div>
     <div class="flex flex-col gap-3.5 pt-3.5">
       <a
         v-for="(item, i) in news"
         :key="item"
         href="#"
-        class="grid grid-cols-[18px_minmax(0,1fr)] gap-2.5 text-[13.5px] leading-[1.5] text-ink-900 hover:text-brand-500"
+        class="grid grid-cols-[18px_minmax(0,1fr)] gap-2.5 text-base leading-[1.5] text-ink-900 hover:text-brand-500"
       >
         <span :class="['font-semibold', i < 3 ? 'text-brand-500' : 'text-ink-400']">{{ i + 1 }}</span>
         <span>{{ item }}</span>
       </a>
     </div>
     <div class="mt-4 border-t border-ink-100 pt-4 text-center">
-      <a href="#" class="text-[13.5px] font-bold text-brand-500 hover:text-brand-600">{{ t('sidebar.readMoreNews') }} →</a>
+      <a href="#" class="text-base font-bold text-brand-500 hover:text-brand-600">{{ t('sidebar.readMoreNews') }} →</a>
     </div>
   </div>
 </template>

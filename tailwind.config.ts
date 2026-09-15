@@ -9,7 +9,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Manrope', 'Helvetica', 'Arial', 'sans-serif']
+        sans: ['Helvetica', 'Arial', 'sans-serif']
       },
       colors: {
         // Pink/rose brand identity — primary #BE185D, gradient db2777 → e11d48

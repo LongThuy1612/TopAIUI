@@ -4,7 +4,7 @@
     "categories": "Danh mục",
     "rankings": "Xếp hạng",
     "submit": "Đăng công cụ",
-    "admin": "Đăng nhập"
+    "admin": "Dashboard"
   },
   "hero": {
     "titlePrefix": "Khám phá những",
@@ -126,6 +126,8 @@
     "ratingPrompt": "Bạn có giới thiệu {name} không? Để lại bình luận",
     "whatDoYouThink": "Bạn nghĩ gì?",
     "loginToComment": "Đăng nhập để bình luận",
+    "loginToReview": "Đăng nhập để đánh giá",
+    "submitReview": "Gửi đánh giá",
     "pricingHeading": "Bảng giá {name}",
     "noPricingYet": "Chưa có thông tin giá.",
     "analyticsHeading": "Phân tích {name}",

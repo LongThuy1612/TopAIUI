@@ -33,7 +33,7 @@ const rankStyle = computed(() => {
     </span>
     <div class="min-w-0 flex-1">
       <div class="flex flex-wrap items-center gap-2">
-        <h3 class="text-[17px] font-extrabold tracking-[-.01em] text-ink-900 group-hover:text-brand-500">{{ tool.name }}</h3>
+        <h3 class="text-base font-semibold tracking-[-.01em] text-ink-900 group-hover:text-brand-500">{{ tool.name }}</h3>
         <span
           v-if="tool.isAd"
           class="rounded-full border border-transparent bg-brand-50 px-2.5 py-[3px] text-[11px] font-semibold text-brand-500"
@@ -41,10 +41,10 @@ const rankStyle = computed(() => {
         <span v-else-if="tool.pricingType === 'FREE'" class="rounded-full bg-ink-100 px-2.5 py-[3px] text-[11px] font-semibold text-ink-700">{{ t('pricing.FREE') }}</span>
       </div>
       <p v-if="tool.shortDesc" class="mt-1.5 mb-2.5 line-clamp-2 text-[14.5px] leading-[1.6] text-ink-800">{{ tool.shortDesc }}</p>
-      <div v-if="tool.tags?.length" class="flex flex-wrap gap-x-3.5 gap-y-1 text-[13px] text-ink-500">
+      <div v-if="tool.tags?.length" class="flex flex-wrap gap-x-3.5 gap-y-1 text-xs text-ink-500">
         <span v-for="tag in tool.tags" :key="tag.slug">#{{ tag.name }}</span>
       </div>
-      <span v-else-if="categoryLabel" class="text-[13px] text-ink-500">#{{ categoryLabel }}</span>
+      <span v-else-if="categoryLabel" class="text-xs text-ink-500">#{{ categoryLabel }}</span>
     </div>
   </NuxtLink>
 </template>

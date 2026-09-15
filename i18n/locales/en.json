@@ -4,7 +4,7 @@
     "categories": "Categories",
     "rankings": "Rankings",
     "submit": "Submit a tool",
-    "admin": "Login"
+    "admin": "Dashboard"
   },
   "hero": {
     "titlePrefix": "Discover The Best",
@@ -126,6 +126,8 @@
     "ratingPrompt": "Would you recommend {name}? Leave a comment",
     "whatDoYouThink": "What do you think?",
     "loginToComment": "Login to comment",
+    "loginToReview": "Login to review",
+    "submitReview": "Submit review",
     "pricingHeading": "{name} Pricing",
     "noPricingYet": "No pricing information yet.",
     "analyticsHeading": "Analytics of {name}",

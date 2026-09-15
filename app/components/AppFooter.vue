@@ -48,7 +48,7 @@ const archiveDates = ['09/10', '09/09', '09/08', '09/07', '09/04', '09/03', '09/
 
 <template>
   <footer class="w-full border-t border-ink-200 bg-white px-4 pt-[72px] pb-9 sm:px-6 lg:px-8">
-    <div class="mx-auto grid max-w-7xl grid-cols-[repeat(auto-fit,minmax(205px,1fr))] items-start gap-11">
+    <div class="mx-auto grid max-w-[1440px] grid-cols-[repeat(auto-fit,minmax(205px,1fr))] items-start gap-11">
 
       <div v-for="col in footerColumns" :key="col.title">
         <div class="eyebrow-strong">{{ col.title }}</div>
@@ -93,7 +93,7 @@ const archiveDates = ['09/10', '09/09', '09/08', '09/07', '09/04', '09/03', '09/
       </div>
     </div>
 
-    <div class="mx-auto mt-14 flex max-w-7xl flex-wrap items-center justify-between gap-6 border-t border-ink-200 pt-[26px]">
+    <div class="mx-auto mt-14 flex max-w-[1440px] flex-wrap items-center justify-between gap-6 border-t border-ink-200 pt-[26px]">
       <div class="flex items-center gap-[11px]">
         <IconLogo class="h-[34px] w-[34px] rounded-[10px]" width="34" height="34" />
         <span class="text-[19px] font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
@@ -102,7 +102,7 @@ const archiveDates = ['09/10', '09/09', '09/08', '09/07', '09/04', '09/03', '09/
       <div class="text-[13px] text-ink-600">© {{ year }} TopAICollection — {{ t('footer.copyright') }}</div>
     </div>
 
-    <div class="mx-auto mt-5 flex max-w-7xl flex-wrap gap-x-5 gap-y-3 text-[13px]">
+    <div class="mx-auto mt-5 flex max-w-[1440px] flex-wrap gap-x-5 gap-y-3 text-[13px]">
       <button
         v-for="loc in locales"
         :key="loc.code"

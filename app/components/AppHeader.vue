@@ -10,7 +10,7 @@ function onSearch(q: string) {
 
 <template>
   <header class="sticky top-0 z-40 border-b border-ink-200 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex h-[72px] max-w-7xl items-center gap-[30px] px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto flex h-[72px] max-w-[1440px] items-center gap-[30px] px-4 sm:px-6 lg:px-8">
       <NuxtLink to="/" class="flex shrink-0 items-center gap-2.5">
         <IconLogo class="h-[30px] w-[30px] rounded-[9px]" width="30" height="30" />
         <span class="text-[22px] font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
@@ -32,9 +32,8 @@ function onSearch(q: string) {
       <nav class="ml-auto flex shrink-0 items-center gap-4">
         <LanguageSwitcher class="hidden sm:block" />
         <NuxtLink
-          v-if="!token"
-          to="/admin/login"
-          class="text-sm font-semibold text-ink-800 hover:text-brand-500"
+          :to="token ? '/admin' : '/admin/login'"
+          class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600"
         >
           {{ t('header.admin') }}
         </NuxtLink>
