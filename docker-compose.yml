@@ -26,8 +26,13 @@ services:
       - '3000:3000'
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-topainew}
-      ADMIN_TOKEN: ${ADMIN_TOKEN:-changeme-prod-token}
-      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin}
+      # NUXT_-prefixed vars are read by Nitro at container startup and always
+      # override whatever ADMIN_TOKEN/ADMIN_PASSWORD default got baked into
+      # the image during `npm run build` (nuxt.config.ts reads plain
+      # process.env.ADMIN_* only at build time, so setting the unprefixed
+      # names here has no effect without rebuilding the image).
+      NUXT_ADMIN_TOKEN: ${ADMIN_TOKEN:-changeme-prod-token}
+      NUXT_ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin}
       NUXT_PUBLIC_SITE_URL: http://localhost:3000
     depends_on:
       postgres:
