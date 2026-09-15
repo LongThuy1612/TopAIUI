@@ -37,7 +37,6 @@ useSeoMeta({ title: 'Quản lý Tool — TopAICollection' })
           <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900">
             <span>🛠️</span> {{ t('admin.manageTools') }}
           </h1>
-          <p class="mt-1 text-sm text-ink-500">{{ t('admin.manageToolsSubtitle') }}</p>
         </div>
         <NuxtLink to="/admin/tools/new" class="flex items-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

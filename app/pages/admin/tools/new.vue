@@ -19,7 +19,7 @@ if (error.value?.statusCode === 401) {
 }
 
 function goBack() {
-  router.push('/admin/pending')
+  router.push('/admin/tools')
 }
 
 function onSaved(id: string) {

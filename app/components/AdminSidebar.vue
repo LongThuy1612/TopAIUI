@@ -36,8 +36,8 @@ const businessItems = computed(() => [
     </NuxtLink>
 
     <NuxtLink
-      to="/admin/pending"
-      :class="['flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-bold', route.path === '/admin/pending' ? 'bg-brand-50 text-brand-600' : 'text-ink-700 hover:bg-ink-100/60']"
+      to="/admin/tools"
+      :class="['flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-bold', route.path === '/admin/tools' ? 'bg-brand-50 text-brand-600' : 'text-ink-700 hover:bg-ink-100/60']"
     >
       <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m-9 4h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2.5l-1-1h-3l-1 1H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z" />

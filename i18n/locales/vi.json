@@ -28,7 +28,6 @@
     "badge": "Admin",
     "dashboard": "Dashboard",
     "manageTools": "Quản lý Tool",
-    "manageToolsSubtitle": "Các tool chưa được duyệt — duyệt hoặc từ chối tại đây.",
     "newTool": "Tạo Tool mới",
     "newToolTitle": "Tạo Tool mới",
     "newToolSubtitle": "Tạo một tool mới. Sau khi tạo, các trường thông tin cơ bản sẽ bị khóa — chỉ còn Approved và nội dung bản dịch có thể chỉnh sửa.",

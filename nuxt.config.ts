@@ -95,9 +95,16 @@ export default defineNuxtConfig({
     // Public form, but has per-submission state (success/error) — don't cache
     '/submit': { headers: { 'Cache-Control': 'no-store' } },
 
-    // Admin / CMS — always dynamic, never cached, hidden from search engines
+    // Admin / CMS — always dynamic, never cached, hidden from search engines.
+    // ssr: false is required here: the admin token only lives in the
+    // browser's localStorage (see useAdminAuth.ts), so a server-rendered
+    // request never has it, always 401s on the admin API calls, and
+    // redirects to /admin/login — which then bounces straight back once its
+    // client-side check finds the real token. Disabling SSR skips that
+    // phantom unauthenticated render entirely so auth only ever resolves
+    // client-side, where the token actually exists.
     '/admin/**': {
-      ssr: true,
+      ssr: false,
       robots: false,
       headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
     },

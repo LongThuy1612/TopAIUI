@@ -28,7 +28,6 @@
     "badge": "Admin",
     "dashboard": "Dashboard",
     "manageTools": "Tool Management",
-    "manageToolsSubtitle": "Tools waiting for approval — approve or reject them here.",
     "newTool": "New Tool",
     "newToolTitle": "New Tool",
     "newToolSubtitle": "Create a new tool. Once created, its core fields are locked — only Approved and translations stay editable.",
