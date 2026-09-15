@@ -38,6 +38,7 @@ export default defineEventHandler(async (event) => {
       trafficRank: true,
       viewCount: true,
       createdAt: true,
+      addedOn: true,
       translations: {
         select: { locale: true, shortDesc: true, description: true, whatIs: true, howToUse: true, coreFeatures: true, useCases: true }
       },

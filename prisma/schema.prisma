@@ -111,6 +111,11 @@ model Tool {
   deletedAt         DateTime?
   status            String      @default("PUBLISHED")
   name              String
+  isApproved        Boolean     @default(false)
+  addedOn           DateTime?
+  region            String?
+  source            String?
+  monthlyRevenue    Float       @default(0)
 
   categories    Category[] @relation("ToolToCategory")
   tags          Tag[] @relation("ToolToTag")

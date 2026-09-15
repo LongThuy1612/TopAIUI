@@ -141,8 +141,9 @@ function submitNewReview() {
 }
 
 const addedOn = computed(() => {
-  if (!tool.value?.createdAt) return '—'
-  return new Date(tool.value.createdAt).toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', {
+  const date = tool.value?.addedOn ?? tool.value?.createdAt
+  if (!date) return '—'
+  return new Date(date).toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', {
     year: 'numeric', month: 'short', day: 'numeric'
   })
 })

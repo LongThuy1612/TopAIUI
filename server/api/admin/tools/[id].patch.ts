@@ -1,4 +1,8 @@
-const allowed = ['name', 'website', 'pricingType', 'isFeatured', 'isVerified', 'isJustLaunched', 'isFreeTool', 'status', 'logoUrl'] as const
+const allowed = [
+  'name', 'website', 'pricingType', 'isFeatured', 'isVerified', 'isJustLaunched', 'isFreeTool',
+  'status', 'logoUrl', 'isApproved', 'addedOn', 'region', 'source', 'monthlyRevenue',
+  'affiliateUrl', 'couponCode', 'twitterUrl', 'discordUrl', 'productHuntUrl'
+] as const
 
 export default defineEventHandler(async (event) => {
   requireAdmin(event)

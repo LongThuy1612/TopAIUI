@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const { token, load, setToken } = useAdminAuth()
 load()
 
@@ -18,7 +19,7 @@ async function login() {
     setToken(res.token)
     await navigateTo('/admin')
   } catch {
-    error.value = 'Wrong password'
+    error.value = t('admin.wrongPassword')
   } finally {
     loading.value = false
   }
@@ -29,13 +30,13 @@ useSeoMeta({ title: 'Admin login — TopAICollection' })
 
 <template>
   <div class="mx-auto max-w-sm px-4 py-20 sm:px-6 lg:px-8">
-    <h1 class="text-xl font-bold text-ink-900">Admin login</h1>
+    <h1 class="text-xl font-bold text-ink-900">{{ t('admin.loginTitle') }}</h1>
     <form class="mt-6 space-y-4" @submit.prevent="login">
-      <input v-model="password" type="password" placeholder="Admin password" required
+      <input v-model="password" type="password" :placeholder="t('admin.passwordPlaceholder')" required
              class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
       <p v-if="error" class="text-sm text-red-600">{{ error }}</p>
       <button :disabled="loading" class="w-full rounded-full bg-brand-500 py-2.5 text-sm font-semibold text-white hover:bg-brand-600 disabled:opacity-50">
-        {{ loading ? 'Signing in…' : 'Sign in' }}
+        {{ loading ? t('admin.signingIn') : t('admin.signIn') }}
       </button>
     </form>
   </div>

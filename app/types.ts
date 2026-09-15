@@ -16,6 +16,22 @@ export interface TagRef {
   name: string
 }
 
+export interface MetaOption {
+  value: string
+  count: number
+}
+
+export interface ToolTranslationEntry {
+  locale: string
+  shortDesc: string | null
+  description: string | null
+  whatIs: string | null
+  howToUse: string | null
+  coreFeatures: string[]
+  useCases: string[]
+  isManualOverride: boolean
+}
+
 export interface Faq {
   question: string
   answer: string
@@ -82,6 +98,11 @@ export interface Tool {
   companyInfo?: unknown
   attributes?: unknown
   ownerId?: string
+  isApproved?: boolean
+  addedOn?: string
+  region?: string | null
+  source?: string | null
+  monthlyRevenue?: number
   createdAt: string
   updatedAt: string
   categories?: CategoryRef[]
@@ -93,6 +114,9 @@ export interface Tool {
   howToUse?: string | null
   coreFeatures?: string[]
   useCases?: string[]
+
+  // Only populated by the admin tool-detail endpoint
+  translations?: ToolTranslationEntry[]
 
   // Only populated by the tool-detail endpoint
   tags?: TagRef[]

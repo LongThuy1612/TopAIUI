@@ -3,22 +3,23 @@ import type { Category, ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
 
-const [{ data: newestRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', locale: locale.value })) }),
+const [{ data: totalRes }, { data: newRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 1, sort: 'newest', locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', newToday: 'true', locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', today: 'true', locale: locale.value })) }),
   useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 200, locale: locale.value })) })
 ])
 
-const newestTools = computed(() => newestRes.value?.items ?? [])
+const newTools = computed(() => newRes.value?.items ?? [])
 const todayTools = computed(() => todayRes.value?.items ?? [])
 const allCategories = computed(() => categories.value ?? [])
-const totalTools = computed(() => newestRes.value?.total ?? 0)
+const totalTools = computed(() => totalRes.value?.total ?? 0)
 
 const browseCategories = computed(() =>
   [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
 )
-const justLaunched = computed(() => newestTools.value.slice(0, 4))
+const justLaunched = computed(() => newTools.value.slice(0, 4))
 const featuredHighlights = computed(() => topRatedRes.value?.items ?? [])
 
 const tabTools = computed(() => todayTools.value.slice(0, 10))
