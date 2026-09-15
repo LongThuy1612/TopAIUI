@@ -53,6 +53,7 @@
     "other": "Khác",
     "favourite": "Yêu thích",
     "sharedLogin": "Tài khoản dùng chung",
+    "logout": "Đăng xuất",
     "logoutConfirm": "Bạn có chắc muốn đăng xuất?",
     "greeting": "Chào Admin",
     "greetingSubtitle": "Xem tổng quan và quản lý các tool trong thư mục của bạn.",
@@ -172,7 +173,7 @@
     "browse": "Duyệt",
     "editorsPicks": "Biên tập chọn lọc",
     "sponsorBadge": "Tài trợ",
-    "viewMoreTools": "Xem thêm công cụ →"
+    "viewMoreTools": "Xem thêm →"
   },
   "cta": {
     "title": "Bạn có công cụ AI muốn chia sẻ?",

@@ -53,6 +53,7 @@
     "other": "Other",
     "favourite": "Favourite",
     "sharedLogin": "Shared login",
+    "logout": "Log out",
     "logoutConfirm": "Are you sure you want to log out?",
     "greeting": "Hi, Admin",
     "greetingSubtitle": "Explore your directory's tools and manage submissions.",
@@ -172,7 +173,7 @@
     "sponsorBadge": "Sponsor",
     "updatedDaily": "Updated daily",
     "viewMore": "View more →",
-    "viewMoreTools": "View more tools →"
+    "viewMoreTools": "View more →"
   },
   "cta": {
     "title": "Have an AI tool to share?",

@@ -105,7 +105,7 @@ const businessItems = computed(() => [
         <span class="block truncate text-xs font-bold text-ink-900">{{ t('admin.badge') }}</span>
         <span class="block truncate text-[11px] text-ink-400">{{ t('admin.sharedLogin') }}</span>
       </span>
-      <button type="button" title="Log out" class="shrink-0 text-ink-400 hover:text-brand-500" @click="confirmLogout">
+      <button type="button" :title="t('admin.logout')" class="shrink-0 text-ink-400 hover:text-brand-500" @click="confirmLogout">
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0-4-4m4 4H7m4 8H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6" />
         </svg>
