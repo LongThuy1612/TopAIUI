@@ -353,11 +353,22 @@ async function save() {
       </div>
 
       <div class="min-w-0 rounded-xl border border-ink-100 p-4">
-        <div class="flex flex-wrap items-center justify-between gap-3">
-          <h2 class="text-sm font-extrabold text-ink-900">{{ t('admin.translationHeading') }}</h2>
-          <select v-model="translationLocale" class="rounded-lg border border-ink-200 px-3 py-1.5 text-xs font-semibold outline-none focus:border-brand-400">
-            <option v-for="loc in translationLocales" :key="loc.code" :value="loc.code">{{ loc.name }}</option>
-          </select>
+        <h2 class="text-sm font-extrabold text-ink-900">{{ t('admin.translationHeading') }}</h2>
+        <div class="mt-3 flex flex-wrap gap-1 border-b border-ink-200">
+          <button
+            v-for="loc in translationLocales"
+            :key="loc.code"
+            type="button"
+            :class="[
+              '-mb-px shrink-0 rounded-t-lg border px-3 py-2 text-xs font-semibold transition',
+              translationLocale === loc.code
+                ? 'border-brand-300 border-b-white bg-white text-brand-600'
+                : 'border-transparent text-ink-500 hover:text-brand-600'
+            ]"
+            @click="translationLocale = loc.code"
+          >
+            {{ loc.name }}
+          </button>
         </div>
 
         <div class="mt-4 grid grid-cols-1 gap-4">

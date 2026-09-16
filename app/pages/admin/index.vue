@@ -35,10 +35,10 @@ const statusLabels: Record<'all' | 'PENDING' | 'PUBLISHED', string> = {
 const activeTab = ref<'data' | 'social'>('data')
 
 const featureCards = computed(() => [
-  { label: t('admin.websiteInsights'), color: 'bg-orange-50 text-orange-500', icon: 'M4 19h16M6 15l3-4 3 2 4-6 2 3' },
-  { label: t('admin.socialListening'), color: 'bg-pink-50 text-pink-500', icon: 'M12 3a7 7 0 0 0-7 7c0 3.5 2 5.5 3 7l1 2h6l1-2c1-1.5 3-3.5 3-7a7 7 0 0 0-7-7Zm-2 18h4' },
-  { label: t('admin.researchReport'), color: 'bg-blue-50 text-blue-500', icon: 'M6 3h9l4 4v14H6V3Zm8 9H9m6 4H9' },
-  { label: t('admin.aiAdvertisingLibrary'), color: 'bg-emerald-50 text-emerald-500', icon: 'M4 6h16v12H4V6Zm0 4h16', comingSoon: true }
+  { label: t('admin.websiteInsights'), to: '/admin/insights', color: 'bg-orange-50 text-orange-500', icon: 'M4 19h16M6 15l3-4 3 2 4-6 2 3' },
+  { label: t('admin.socialListening'), to: '/admin/social-listening', color: 'bg-pink-50 text-pink-500', icon: 'M12 3a7 7 0 0 0-7 7c0 3.5 2 5.5 3 7l1 2h6l1-2c1-1.5 3-3.5 3-7a7 7 0 0 0-7-7Zm-2 18h4' },
+  { label: t('admin.researchReport'), to: '/admin/research-report', color: 'bg-blue-50 text-blue-500', icon: 'M6 3h9l4 4v14H6V3Zm8 9H9m6 4H9' },
+  { label: t('admin.aiAdvertisingLibrary'), to: '#', color: 'bg-emerald-50 text-emerald-500', icon: 'M4 6h16v12H4V6Zm0 4h16', comingSoon: true }
 ])
 
 useSeoMeta({ title: 'Admin — TopAICollection' })
@@ -57,10 +57,10 @@ useSeoMeta({ title: 'Admin — TopAICollection' })
       </div>
 
       <div class="mt-6 grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-4">
-        <a
+        <NuxtLink
           v-for="card in featureCards"
           :key="card.label"
-          href="#"
+          :to="card.to"
           class="relative flex items-center justify-between rounded-xl border border-ink-100 bg-white p-4 transition hover:border-brand-200"
         >
           <div>
@@ -72,7 +72,7 @@ useSeoMeta({ title: 'Admin — TopAICollection' })
               <path stroke-linecap="round" stroke-linejoin="round" :d="card.icon" />
             </svg>
           </span>
-        </a>
+        </NuxtLink>
       </div>
 
       <div class="mt-3.5 grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-4">

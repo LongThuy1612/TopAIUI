@@ -168,15 +168,34 @@ onMounted(() => {
   if (import.meta.client) isSaved.value = readFavorites().includes(slug.value)
 })
 
-function toggleSaved() {
+function writeFavorites(nextSaved: boolean) {
   const favorites = new Set(readFavorites())
-  if (favorites.has(slug.value)) {
-    favorites.delete(slug.value)
-  } else {
+  if (nextSaved) {
     favorites.add(slug.value)
+  } else {
+    favorites.delete(slug.value)
   }
   localStorage.setItem(favoritesKey, JSON.stringify([...favorites]))
-  isSaved.value = favorites.has(slug.value)
+  isSaved.value = nextSaved
+}
+
+async function toggleSaved() {
+  const nextSaved = !isSaved.value
+  const previousCount = tool.value?.collectionCount ?? 0
+
+  writeFavorites(nextSaved)
+  if (tool.value) tool.value.collectionCount = Math.max(0, previousCount + (nextSaved ? 1 : -1))
+
+  try {
+    const res = await $fetch<{ collectionCount: number }>(`/api/tools/${slug.value}/save`, {
+      method: 'POST',
+      body: { saved: nextSaved }
+    })
+    if (tool.value) tool.value.collectionCount = res.collectionCount
+  } catch {
+    writeFavorites(!nextSaved)
+    if (tool.value) tool.value.collectionCount = previousCount
+  }
 }
 
 type TabKey = 'info' | 'pricing' | 'reviews' | 'faq' | 'analytics' | 'alternatives'

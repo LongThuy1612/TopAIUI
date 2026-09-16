@@ -82,7 +82,7 @@ export default defineEventHandler(async (event) => {
     useCases: translation?.useCases ?? [],
     pricingPlans: pickLocaleGroup(pricingPlans, locale).map((p) => ({ name: p.name, price: p.price, period: p.period, features: p.features })),
     faqs: pickLocaleGroup(faqs, locale).map((f) => ({ question: f.question, answer: f.answer })),
-    categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: pickByLocale(c.translations, locale)?.name ?? c.name ?? c.slug })),
-    tags: tags.map((tg) => ({ slug: tg.slug, name: pickByLocale(tg.translations, locale)?.name ?? tg.slug }))
+    categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug })),
+    tags: tags.map((tg) => ({ slug: tg.slug, name: cleanText(pickByLocale(tg.translations, locale)?.name) ?? tg.slug }))
   }
 })

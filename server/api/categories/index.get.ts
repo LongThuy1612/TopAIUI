@@ -22,7 +22,7 @@ export default defineEventHandler(async (event) => {
     const translation = pickByLocale(c.translations, locale)
     return {
       slug: c.slug,
-      name: translation?.name ?? c.name ?? c.slug,
+      name: cleanText(translation?.name) ?? cleanText(c.name) ?? c.slug,
       description: cleanText(translation?.description),
       icon: c.icon,
       isFeatured: c.isFeatured,
