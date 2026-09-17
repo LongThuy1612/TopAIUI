@@ -53,31 +53,6 @@ export default defineEventHandler(async (event) => {
     where.createdAt = { gte: since }
   }
   const isNewTab = query.newToday === 'true'
-  if (isNewTab) {
-    // Walk backwards a day at a time (by createdAt) until we find one with
-    // enough tools to fill a page; capped so an idle directory can't spin
-    // through years of days.
-    const maxLookbackDays = 90
-    let bestRange: { gte: Date, lt: Date } | null = null
-    let bestCount = 0
-
-    for (let offset = 0; offset < maxLookbackDays; offset++) {
-      const start = new Date()
-      start.setHours(0, 0, 0, 0)
-      start.setDate(start.getDate() - offset)
-      const end = new Date(start)
-      end.setDate(start.getDate() + 1)
-
-      const count = await prisma.tool.count({ where: { ...where, createdAt: { gte: start, lt: end } } })
-      if (count > bestCount) {
-        bestCount = count
-        bestRange = { gte: start, lt: end }
-      }
-      if (count >= limit) break
-    }
-
-    if (bestRange) where.createdAt = bestRange
-  }
 
   const sortMap: Record<string, Prisma.ToolOrderByWithRelationInput | Prisma.ToolOrderByWithRelationInput[]> = {
     newest: { createdAt: 'desc' },
