@@ -20,7 +20,7 @@ const topAiToolsLinks = computed(() =>
 const moreToolsLinks = computed(() =>
   sortedFooterCategories.value
     .slice(20, 35)
-    .map(cat => ({ label: `${cat.count} ${cat.name} Tools`, to: `/category/${cat.slug}` }))
+    .map(cat => ({ label: `${cat.name} Tools`, to: `/category/${cat.slug}` }))
 )
 
 const footerColumns = [
@@ -40,7 +40,11 @@ const footerColumns = [
 const resourceLinks = ['Blog', 'AI News', 'Prompts', 'AI Jobs', 'Weekly Newsletter']
 const aboutLinks = ['About Us', 'Terms of Service', 'Privacy Policy', 'Advertise']
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
-const archiveDates = ['09/10', '09/09', '09/08', '09/07', '09/04', '09/03', '09/02', '09/01', '08/31']
+const archiveDates = Array.from({ length: 9 }, (_, i) => {
+  const d = new Date()
+  d.setDate(d.getDate() - 1 - i)
+  return `${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`
+})
 </script>
 
 <template>
