@@ -1,7 +1,15 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { logout } = useAdminAuth()
+const { logout, isSharedLogin } = useAdminAuth()
+const { user } = useAuth()
 const route = useRoute()
+
+const accountInitial = computed(() => {
+  if (isSharedLogin.value) return 'A'
+  return (user.value?.name || user.value?.email || 'U').slice(0, 1).toUpperCase()
+})
+const accountName = computed(() => (isSharedLogin.value ? t('admin.badge') : user.value?.name || user.value?.email || t('admin.badge')))
+const accountSubtitle = computed(() => (isSharedLogin.value ? t('admin.sharedLogin') : user.value?.email || t('admin.sharedLogin')))
 
 function confirmLogout() {
   if (!confirm(t('admin.logoutConfirm'))) return
@@ -123,10 +131,10 @@ const businessItems = computed(() => [
     </div>
 
     <div class="mt-auto flex items-center gap-2.5 rounded-lg border border-ink-100 px-3 py-2.5">
-      <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-500 text-xs font-bold text-white">A</span>
+      <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-500 text-xs font-bold text-white">{{ accountInitial }}</span>
       <span class="min-w-0 flex-1">
-        <span class="block truncate text-xs font-bold text-ink-900">{{ t('admin.badge') }}</span>
-        <span class="block truncate text-[11px] text-ink-400">{{ t('admin.sharedLogin') }}</span>
+        <span class="block truncate text-xs font-bold text-ink-900">{{ accountName }}</span>
+        <span class="block truncate text-[11px] text-ink-400">{{ accountSubtitle }}</span>
       </span>
       <button type="button" :title="t('admin.logout')" class="shrink-0 text-ink-400 hover:text-brand-500" @click="confirmLogout">
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

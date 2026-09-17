@@ -65,6 +65,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     adminToken: process.env.ADMIN_TOKEN || 'changeme-dev-token',
     adminPassword: process.env.ADMIN_PASSWORD || 'changeme-dev-password',
+    userTokenSecret: process.env.USER_TOKEN_SECRET || 'changeme-dev-user-secret',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000'
     }

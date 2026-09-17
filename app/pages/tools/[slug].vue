@@ -80,8 +80,9 @@ const badges = computed(() => {
 
 const displayRating = computed(() => (tool.value?.reviewCount ? tool.value.averageRating : 5))
 
-const { userName, load: loadMockAuth } = useMockAuth()
-const isLoggedIn = computed(() => !!userName.value)
+const { user, load: loadAuth } = useAuth()
+const isLoggedIn = computed(() => !!user.value)
+const userName = computed(() => user.value?.name || user.value?.email || null)
 
 const newRating = ref(0)
 const newRatingHover = ref(0)
@@ -115,7 +116,7 @@ function clearReviewDraft() {
 watch([newRating, newComment], saveReviewDraft)
 
 onMounted(() => {
-  loadMockAuth()
+  loadAuth()
   loadReviewDraft()
 })
 

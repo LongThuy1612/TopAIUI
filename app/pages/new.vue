@@ -89,16 +89,18 @@ useSeoMeta({
       </div>
     </div>
 
-    <template v-if="tools.length">
-      <div v-if="viewMode === 'grid'" class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        <ToolCard v-for="tool in tools" :key="tool.slug" :tool="tool" />
+    <div class="-mx-4 mt-4 border-t border-ink-200 bg-ink-100/40 px-4 py-8 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+      <template v-if="tools.length">
+        <div v-if="viewMode === 'grid'" class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <ToolCard v-for="tool in tools" :key="tool.slug" :tool="tool" featured />
+        </div>
+        <div v-else class="divide-y divide-ink-100">
+          <ToolListRow v-for="tool in tools" :key="tool.slug" :tool="tool" :category-label="tool.categories?.[0]?.name" />
+        </div>
+      </template>
+      <div v-else class="rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
+        {{ t('empty.noResults') }}.
       </div>
-      <div v-else class="mt-2 divide-y divide-ink-100">
-        <ToolListRow v-for="tool in tools" :key="tool.slug" :tool="tool" :category-label="tool.categories?.[0]?.name" />
-      </div>
-    </template>
-    <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
-      {{ t('empty.noResults') }}.
     </div>
 
     <div ref="sentinel" class="h-px"></div>

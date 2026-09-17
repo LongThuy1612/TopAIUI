@@ -4,6 +4,7 @@ import type { ToolsResponse } from '~/types'
 const { locale } = useI18n()
 const route = useRoute()
 const isAdminRoute = computed(() => route.path.startsWith('/admin'))
+const isMinimalRoute = computed(() => ['/login', '/register', '/forgetPassword'].includes(route.path))
 
 const { data: featuredRes } = await useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ featured: 'true', limit: 1, locale: locale.value })) })
 const announcementTool = computed(() => featuredRes.value?.items?.[0])
@@ -17,12 +18,12 @@ useHead({
 <template>
   <div class="flex min-h-screen flex-col">
     <NuxtLoadingIndicator color="linear-gradient(90deg,#db2777,#e11d48)" :height="3" />
-    <AnnouncementBar v-if="!isAdminRoute" :tool="announcementTool" />
+    <AnnouncementBar v-if="!isAdminRoute && !isMinimalRoute" :tool="announcementTool" />
     <AdminHeader v-if="isAdminRoute" />
-    <AppHeader v-else />
+    <AppHeader v-else-if="!isMinimalRoute" />
     <main class="flex-1">
       <NuxtPage />
     </main>
-    <AppFooter v-if="!isAdminRoute" />
+    <AppFooter v-if="!isAdminRoute && !isMinimalRoute" />
   </div>
 </template>
