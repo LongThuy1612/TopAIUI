@@ -312,6 +312,10 @@ useSeoMeta({
         </div>
 
         <dl class="mt-3 space-y-2 text-base">
+          <div v-if="tool.shortDesc" class="flex gap-2">
+            <dt class="w-40 shrink-0 whitespace-nowrap font-semibold text-ink-900">{{ t('tool.introduction') }}:</dt>
+            <dd class="min-w-0 flex-1 leading-relaxed text-ink-600">{{ tool.shortDesc }}</dd>
+          </div>
           <div class="flex gap-2">
             <dt class="w-40 shrink-0 whitespace-nowrap font-semibold text-ink-900">{{ t('tool.addedOn') }}:</dt>
             <dd class="text-ink-600">{{ addedOn }}</dd>
