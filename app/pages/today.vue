@@ -53,6 +53,9 @@ useSeoMeta({
 </script>
 
 <template>
+  <div>
+  <AppHero />
+  <div class="bg-[rgba(243,238,240,0.4)]">
   <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
       <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
@@ -60,7 +63,7 @@ useSeoMeta({
       <span class="text-ink-600">{{ t('tabs.newest') }}</span>
     </nav>
 
-    <div class="mt-3 flex flex-wrap items-center justify-between gap-3 border-b border-ink-100 pb-4">
+    <div class="mt-3 flex flex-wrap items-center justify-between gap-3 pb-2">
       <h1 class="flex items-center gap-2 text-3xl font-extrabold text-ink-900">
         <span>📅</span> {{ t('tabs.newest') }}
       </h1>
@@ -89,9 +92,9 @@ useSeoMeta({
       </div>
     </div>
 
-    <div class="-mx-4 mt-4 border-t border-ink-200 bg-ink-100/40 px-4 py-8 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+    <div class="mt-1 py-4">
       <template v-if="tools.length">
-        <div v-if="viewMode === 'grid'" class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <div v-if="viewMode === 'grid'" class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <ToolCard v-for="tool in tools" :key="tool.slug" :tool="tool" featured />
         </div>
         <div v-else class="divide-y divide-ink-100">
@@ -105,5 +108,7 @@ useSeoMeta({
 
     <div ref="sentinel" class="h-px"></div>
     <p v-if="loadingMore" class="py-6 text-center text-sm text-ink-400">{{ t('tool.loadingMore') }}</p>
+  </div>
+  </div>
   </div>
 </template>

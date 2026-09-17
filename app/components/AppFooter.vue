@@ -1,32 +1,29 @@
 <script setup lang="ts">
+import type { Category } from '~/types'
+
 const { t, locale, locales, setLocale } = useI18n()
 
 const year = new Date().getFullYear()
 
+const { data: footerCategories } = await useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) })
+
+const sortedFooterCategories = computed(() =>
+  [...(footerCategories.value ?? [])].sort((a, b) => b.count - a.count)
+)
+
+const topAiToolsLinks = computed(() =>
+  sortedFooterCategories.value
+    .slice(0, 20)
+    .map(cat => ({ label: `${cat.count} ${cat.name} Tools`, to: `/category/${cat.slug}` }))
+)
+
+const moreToolsLinks = computed(() =>
+  sortedFooterCategories.value
+    .slice(20, 35)
+    .map(cat => ({ label: `${cat.count} ${cat.name} Tools`, to: `/category/${cat.slug}` }))
+)
+
 const footerColumns = [
-  {
-    title: 'Top AI Tools',
-    links: [
-      '10 Speech-to-Text Tools for Effortless Transcription',
-      '7 Copywriting Tools for Social Commerce Pages',
-      '13 Product Photo Generators for Online Stores',
-      '9 AI Assistants That Clear Your Inbox Faster',
-      '12 Tools for Building Short-Form Video',
-      '6 Subtitle Translators That Keep Context Intact',
-      '8 Coding Assistants That Hold Up in Real Projects',
-      '11 Tools for Summarizing Long Documents',
-      '14 Tools for Automated Customer Support',
-      '10 No-Code Data Analysis Tools'
-    ]
-  },
-  {
-    title: 'More Tools',
-    links: [
-      'ai content writing', 'text to image generator', 'chatbot for facebook page',
-      'remove image background online', 'automatic subtitle translation', 'document to slides',
-      'ai voice over', 'product description writer', 'ai review code', 'youtube video summary'
-    ]
-  },
   {
     title: 'Recommend',
     links: [
@@ -49,6 +46,20 @@ const archiveDates = ['09/10', '09/09', '09/08', '09/07', '09/04', '09/03', '09/
 <template>
   <footer class="w-full border-t border-ink-200 bg-white px-4 pt-[72px] pb-9 sm:px-6 lg:px-8">
     <div class="mx-auto grid max-w-[1440px] grid-cols-[repeat(auto-fit,minmax(205px,1fr))] items-start gap-11">
+
+      <div>
+        <div class="eyebrow-strong">Top AI Tools</div>
+        <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px] leading-relaxed">
+          <NuxtLink v-for="link in topAiToolsLinks" :key="link.to" :to="link.to" class="text-[rgb(107,114,128)] hover:text-brand-500">{{ link.label }}</NuxtLink>
+        </div>
+      </div>
+
+      <div>
+        <div class="eyebrow-strong">More Tools</div>
+        <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px] leading-relaxed">
+          <NuxtLink v-for="link in moreToolsLinks" :key="link.to" :to="link.to" class="text-[rgb(107,114,128)] hover:text-brand-500">{{ link.label }}</NuxtLink>
+        </div>
+      </div>
 
       <div v-for="col in footerColumns" :key="col.title">
         <div class="eyebrow-strong">{{ col.title }}</div>

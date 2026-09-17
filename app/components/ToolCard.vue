@@ -28,7 +28,7 @@ const rankStyle = computed(() => {
   <NuxtLink
     v-if="featured"
     :to="`/tools/${tool.slug}`"
-    class="relative flex flex-col gap-3 overflow-hidden rounded-[18px] border border-brand-100 bg-white p-5 shadow-[0_2px_6px_rgba(23,18,26,.04)] transition-shadow hover:shadow-[0_16px_32px_-20px_rgba(23,18,26,.45)]"
+    class="relative flex flex-col gap-3 overflow-hidden rounded-[18px] border border-ink-100 bg-white p-5 transition-shadow hover:shadow-[0_16px_32px_-20px_rgba(23,18,26,.45)]"
   >
     <img
       v-if="tool.logoUrl"
