@@ -25,5 +25,6 @@ useHead({
       <NuxtPage />
     </main>
     <AppFooter v-if="!isAdminRoute && !isMinimalRoute" />
+    <ScrollToTop v-if="!isAdminRoute" />
   </div>
 </template>
