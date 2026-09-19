@@ -298,3 +298,102 @@ model CollectionTranslation {
   @@unique([collectionId, locale])
   @@map("CollectionTranslation")
 }
+
+model ToolSocialStats {
+  id       String @id @default(uuid())
+  toolSlug String @unique @map("tool_slug")
+  domain                   String?   @map("domain")
+  toolName                 String?   @map("tool_name")
+  toolHandle               String?   @map("tool_handle")
+  website                  String?   @map("website")
+  websiteLogo              String?   @map("website_logo")
+  whatIsSummary            String?   @map("what_is_summary")
+  dataCount                Int       @default(0) @map("data_count")
+  relatedInfluencerCount   BigInt    @default(0) @map("related_influencer_count")
+  relatedVideoCount        BigInt    @default(0) @map("related_video_count")
+  averageViews             Float     @default(0) @map("average_views")
+  averageEngagement        Float     @default(0) @map("average_engagement")
+  totalViews               BigInt    @default(0) @map("total_views")
+  totalEngagement          BigInt    @default(0) @map("total_engagement")
+  monthVisitedCount        BigInt    @default(0) @map("month_visited_count")
+  tiktokVideoCount         BigInt    @default(0) @map("tiktok_video_count")
+  tiktokTotalViews         BigInt    @default(0) @map("tiktok_total_views")
+  tiktokAvgViews           Float     @default(0) @map("tiktok_avg_views")
+  tiktokTotalLikes         BigInt    @default(0) @map("tiktok_total_likes")
+  tiktokTotalComments      BigInt    @default(0) @map("tiktok_total_comments")
+  tiktokTotalShares        BigInt    @default(0) @map("tiktok_total_shares")
+  youtubeVideoCount        BigInt    @default(0) @map("youtube_video_count")
+  youtubeTotalViews        BigInt    @default(0) @map("youtube_total_views")
+  youtubeAvgViews          Float     @default(0) @map("youtube_avg_views")
+  youtubeTotalLikes        BigInt    @default(0) @map("youtube_total_likes")
+  youtubeTotalComments     BigInt    @default(0) @map("youtube_total_comments")
+  twitterTweetCount        BigInt    @default(0) @map("twitter_tweet_count")
+  twitterTotalViews        BigInt    @default(0) @map("twitter_total_views")
+  twitterAvgViews          Float     @default(0) @map("twitter_avg_views")
+  twitterTotalLikes        BigInt    @default(0) @map("twitter_total_likes")
+  twitterTotalReplies      BigInt    @default(0) @map("twitter_total_replies")
+  twitterTotalReposts      BigInt    @default(0) @map("twitter_total_reposts")
+  growthAbsolute           BigInt?   @map("growth_absolute")
+  growthRate               Float?    @map("growth_rate")
+  avgVisitDuration         Int?      @map("avg_visit_duration")
+  pagesPerVisit            Float?    @map("pages_per_visit")
+  bounceRate               Float?    @map("bounce_rate")
+  topRegions               Json?     @map("top_regions")
+  newVideosLastWeek        Int       @default(0) @map("new_videos_last_week")
+  rank                     Int?      @map("rank")
+  lastSyncedAt             DateTime? @map("last_synced_at")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  tiktokTotalCollects      BigInt    @default(0) @map("tiktok_total_collects")
+  twitterTotalQuotes       BigInt    @default(0) @map("twitter_total_quotes")
+  facebookAvgViews         Float     @default(0) @map("facebook_avg_views")
+  facebookPostCount        BigInt    @default(0) @map("facebook_post_count")
+  facebookTotalComments    BigInt    @default(0) @map("facebook_total_comments")
+  facebookTotalLikes       BigInt    @default(0) @map("facebook_total_likes")
+  facebookTotalViews       BigInt    @default(0) @map("facebook_total_views")
+  instagramAvgViews        Float     @default(0) @map("instagram_avg_views")
+  instagramPostCount       BigInt    @default(0) @map("instagram_post_count")
+  instagramTotalComments   BigInt    @default(0) @map("instagram_total_comments")
+  instagramTotalLikes      BigInt    @default(0) @map("instagram_total_likes")
+  instagramTotalViews      BigInt    @default(0) @map("instagram_total_views")
+  redditAvgViews           Float     @default(0) @map("reddit_avg_views")
+  redditPostCount          BigInt    @default(0) @map("reddit_post_count")
+  redditTotalComments      BigInt    @default(0) @map("reddit_total_comments")
+  redditTotalLikes         BigInt    @default(0) @map("reddit_total_likes")
+  redditTotalViews         BigInt    @default(0) @map("reddit_total_views")
+
+  feeds ToolSocialFeed[]
+
+  @@index([rank])
+  @@map("tool_social_stats")
+}
+
+model ToolSocialFeed {
+  id            String    @id @default(uuid())
+  statId        String    @map("stat_id")
+  platform      String
+  sourceId      String    @map("source_id")
+  title         String?
+  description   String?
+  thumbnailUrl  String?   @map("thumbnail_url")
+  videoUrl      String?   @map("video_url")
+  duration      Int       @default(0)
+  creatorName   String?   @map("creator_name")
+  creatorHandle String?   @map("creator_handle")
+  publishedAt   DateTime? @map("published_at")
+  views         BigInt    @default(0)
+  likes         BigInt    @default(0)
+  comments      BigInt    @default(0)
+  shares        BigInt    @default(0)
+  quotes        BigInt?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  collects      BigInt    @default(0)
+  interactions  Json?
+  metatags      Json?
+
+  stat ToolSocialStats @relation(fields: [statId], references: [id], onDelete: Cascade)
+
+  @@index([statId])
+  @@map("tool_social_feeds")
+}
