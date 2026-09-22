@@ -397,3 +397,39 @@ model ToolSocialFeed {
   @@index([statId])
   @@map("tool_social_feeds")
 }
+
+model ToolifyTool {
+  id                  String    @id @default(uuid())
+  slug                String    @unique
+  name                String
+  websiteDomain       String?   @map("website_domain")
+  websiteUrl          String?   @map("website_url")
+  imageUrl            String?   @map("image_url")
+  tagline             String?
+  whatIs              String?   @map("what_is")
+  whatIsSummary       String?   @map("what_is_summary")
+  howToUse            String?   @map("how_to_use")
+  bestFor             String?   @map("best_for")
+  tags                String?
+  pricingTags         String[]  @map("pricing_tags")
+  monthVisitedCount   BigInt?   @map("month_visited_count")
+  collectedCount      Int?      @map("collected_count")
+  reviewScore         Decimal?  @map("review_score") @db.Decimal(3, 2)
+  reviewCount         Int?      @map("review_count")
+  ratingCount         Int?      @map("rating_count")
+  toolifyCreatedAt    DateTime? @map("toolify_created_at") @db.Timestamptz(6)
+  toolifyUpdatedAt    DateTime? @map("toolify_updated_at") @db.Timestamptz(6)
+  sourceUrl           String    @map("source_url")
+  scrapedAt           DateTime  @map("scraped_at") @db.Timestamptz(6)
+  createdAt           DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt           DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  categories       Json? @map("categories") @db.JsonB
+  coreFeatures     Json? @map("core_features") @db.JsonB
+  useCases         Json? @map("use_cases") @db.JsonB
+  pricingPlans     Json? @map("pricing_plans") @db.JsonB
+  faqs             Json? @map("faqs") @db.JsonB
+  trafficSnapshots Json? @map("traffic_snapshots") @db.JsonB
+
+  @@map("ToolifyTool")
+}
