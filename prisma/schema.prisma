@@ -421,6 +421,7 @@ model ToolifyTool {
   toolifyUpdatedAt    DateTime? @map("toolify_updated_at") @db.Timestamptz(6)
   sourceUrl           String    @map("source_url")
   scrapedAt           DateTime  @map("scraped_at") @db.Timestamptz(6)
+  isSync              Int       @default(0) @map("is_sync")
   createdAt           DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
   updatedAt           DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
 
