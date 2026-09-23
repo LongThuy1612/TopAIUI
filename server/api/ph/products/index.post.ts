@@ -81,16 +81,23 @@ export default defineEventHandler(async (event) => {
     categories: toOptionalJson(body.categories),
     media: toOptionalJson(body.media),
     launches: toOptionalJson(body.launches),
-    badges: toOptionalJson(body.badges)
+    badges: toOptionalJson(body.badges),
+    reviews: toOptionalJson(body.reviews)
   }
 
+  const { phId: _phId, ...updateData } = data
+
   try {
-    const product = await prisma.phProductTool.create({ data })
+    const product = await prisma.phProductTool.upsert({
+      where: { phId },
+      create: data,
+      update: updateData
+    })
     return product
   } catch (err: any) {
     if (err?.code === 'P2002') {
-      throw createError({ statusCode: 409, statusMessage: 'A PhProductTool with this phId or slug already exists' })
+      throw createError({ statusCode: 409, statusMessage: 'A PhProductTool with this slug already exists' })
     }
-    throw createError({ statusCode: 400, statusMessage: 'Failed to create PhProductTool' })
+    throw createError({ statusCode: 400, statusMessage: 'Failed to save PhProductTool' })
   }
 })
