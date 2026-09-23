@@ -434,3 +434,49 @@ model ToolifyTool {
 
   @@map("ToolifyTool")
 }
+
+model PhProductTool {
+  id               Int      @id @default(autoincrement())
+  phId             String   @unique @map("ph_id")          // "504757" (từ key Product504757)
+  slug             String   @unique
+  name             String
+  tagline          String
+  description      String?  @db.Text
+
+  websiteUrl       String?  @map("website_url")
+  websiteDomain    String?  @map("website_domain")
+  cleanUrl         String?  @map("clean_url")
+  logoUuid         String?  @map("logo_uuid")
+
+  twitterUrl       String?  @map("twitter_url")
+  linkedinUrl      String?  @map("linkedin_url")
+  githubUrl        String?  @map("github_url")
+  facebookUrl      String?  @map("facebook_url")
+  instagramUrl     String?  @map("instagram_url")
+
+  pricingType      String?  @map("pricing_type")
+  employeeSize     String?  @map("employee_size")
+  fundingAmount    String?  @map("funding_amount")
+  wasInYCombinator Boolean  @default(false) @map("was_in_yc")
+  isClaimed        Boolean  @default(false) @map("is_claimed")
+  isTopProduct     Boolean  @default(false) @map("is_top_product")
+
+  reviewsCount          Int?     @map("reviews_count")
+  reviewsRating         Decimal? @db.Decimal(3, 2) @map("reviews_rating")
+  detailedReviewsCount  Int?     @map("detailed_reviews_count")
+  detailedReviewsRating Decimal? @db.Decimal(3, 2) @map("detailed_reviews_rating")
+  followersCount        Int?     @map("followers_count")
+
+  categories Json? @db.JsonB @map("categories") // [{slug,name,path}]
+  media      Json? @db.JsonB @map("media")      // [{imageUuid,mediaType,originalWidth,originalHeight}]
+  launches   Json? @db.JsonB @map("launches")   // [{slug,name,tagline,launchedAt,dailyRank,weeklyRank,monthlyRank,commentsCount,makers:[{name,username,avatarUrl}]}]
+  badges     Json? @db.JsonB @map("badges")     // [{type,awardedAt}]
+
+  sourceUrl String   @map("source_url")
+  scrapedAt DateTime @map("scraped_at")
+  isSync    Int      @default(0) @map("is_sync")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("PhProductTool")
+}
