@@ -473,6 +473,8 @@ model PhProductTool {
   badges     Json? @db.JsonB @map("badges")     // [{type,awardedAt}]
   reviews    Json? @db.JsonB @map("reviews")
 
+  phCategories PhCategory[] @relation("PhProductCategories")
+
   sourceUrl String   @map("source_url")
   scrapedAt DateTime @map("scraped_at")
   isSync    Int      @default(0) @map("is_sync")
@@ -480,4 +482,59 @@ model PhProductTool {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("PhProductTool")
+}
+
+model ToolifyCategory {
+  id               String    @id @default(cuid())
+
+  categoryId       Int       @unique @map("category_id") // category_detail.id
+  handle           String    @unique                     // slug, dùng để upsert
+
+  name             String
+  nameLocales      Json?     @map("name_locales") @db.JsonB
+  description      String?   @db.Text
+  type             Int?      // 1 = category lá, 2 = category-cha (nhóm lớn) -- xác nhận live
+
+  order            Int?
+  toolCount        Int?      @map("tool_count")
+  topToolCount     Int?      @map("top_tool_count")
+  topVisitedCount  Int?      @map("top_visited_count")
+
+  toolifyCreatedAt DateTime? @map("toolify_created_at") @db.Timestamptz(6)
+  toolifyUpdatedAt DateTime? @map("toolify_updated_at") @db.Timestamptz(6)
+
+  sourceUrl        String?   @map("source_url")
+  scrapedAt        DateTime? @map("scraped_at") @db.Timestamptz(6)
+
+  // Cây tự tham chiếu: 1 category-cha có nhiều category con
+  parentCategoryId Int?              @map("parent_category_id") // = group_id lấy từ chính trang category đó, null nếu là cha cao nhất
+  parent           ToolifyCategory?  @relation("CategoryTree", fields: [parentCategoryId], references: [categoryId])
+  children         ToolifyCategory[] @relation("CategoryTree")
+
+  createdAt        DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt        DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@index([parentCategoryId])
+  @@map("ToolifyCategory")
+}
+
+model PhCategory {
+  id               String       @id @default(cuid())
+  categoryId       Int?         @unique @map("category_id") // ProductCategory.id từ PH -- nullable, giống Toolify, để product-ingestion tự tạo bản ghi tạm nếu chưa crawl category riêng
+  slug             String       @unique                     // khoá nối chung với PhProductTool
+  name             String
+  description      String?      @db.Text
+  path             String?
+
+  parentCategoryId Int?         @map("parent_category_id")
+  parent           PhCategory?  @relation("PhCategoryTree", fields: [parentCategoryId], references: [categoryId])
+  children         PhCategory[] @relation("PhCategoryTree")
+
+  products         PhProductTool[] @relation("PhProductCategories")
+
+  createdAt        DateTime     @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt        DateTime     @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@index([parentCategoryId])
+  @@map("PhCategory")
 }
