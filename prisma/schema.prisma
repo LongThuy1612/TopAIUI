@@ -505,6 +505,7 @@ model ToolifyCategory {
 
   sourceUrl        String?   @map("source_url")
   scrapedAt        DateTime? @map("scraped_at") @db.Timestamptz(6)
+  isSync           Int       @default(0) @map("is_sync")
 
   // Cây tự tham chiếu: 1 category-cha có nhiều category con
   parentCategoryId Int?              @map("parent_category_id") // = group_id lấy từ chính trang category đó, null nếu là cha cao nhất
@@ -531,6 +532,8 @@ model PhCategory {
   children         PhCategory[] @relation("PhCategoryTree")
 
   products         PhProductTool[] @relation("PhProductCategories")
+
+  isSync           Int          @default(0) @map("is_sync")
 
   createdAt        DateTime     @default(now()) @map("created_at") @db.Timestamptz(6)
   updatedAt        DateTime     @updatedAt @map("updated_at") @db.Timestamptz(6)
