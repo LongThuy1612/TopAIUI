@@ -405,6 +405,7 @@ model ToolifyTool {
   websiteDomain       String?   @map("website_domain")
   websiteUrl          String?   @map("website_url")
   imageUrl            String?   @map("image_url")
+  iconUrl             String?   @map("icon_url")
   tagline             String?
   whatIs              String?   @map("what_is")
   whatIsSummary       String?   @map("what_is_summary")

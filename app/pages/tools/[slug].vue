@@ -15,6 +15,17 @@ if (error.value) {
 
 const category = computed(() => tool.value?.categories?.[0])
 
+// Crawled tools usually have no screenshotUrl, so fall back to the first
+// entry of `images` (string or { url }), then to the logo.
+const heroImage = computed(() => {
+  const t = tool.value
+  if (!t) return undefined
+  if (t.screenshotUrl) return t.screenshotUrl
+  const first = Array.isArray(t.images) ? t.images[0] : undefined
+  const fromImages = typeof first === 'string' ? first : (first as { url?: string } | undefined)?.url
+  return fromImages || t.logoUrl || undefined
+})
+
 const { data: alternativesRes } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({ category: category.value?.slug, limit: 6, locale: locale.value }))
 })
@@ -338,9 +349,9 @@ useSeoMeta({
         </div>
       </div>
 
-      <div v-if="tool.screenshotUrl">
+      <div v-if="heroImage">
         <img
-          :src="tool.screenshotUrl"
+          :src="heroImage"
           :alt="`${tool.name} screenshot`"
           class="aspect-video w-full rounded-xl border border-ink-100 object-cover shadow-sm"
         >

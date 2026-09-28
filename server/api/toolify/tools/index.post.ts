@@ -38,6 +38,8 @@ function serializeToolifyTool(tool: Record<string, any>) {
   }
 }
 
+// Upsert a ToolifyTool keyed by slug, so re-scraping a tool fills in fields
+// (e.g. imageUrl) that were missing on the first insert instead of 409-ing.
 export default defineEventHandler(async (event) => {
   requireAdmin(event)
 
@@ -61,13 +63,15 @@ export default defineEventHandler(async (event) => {
     websiteDomain: toOptionalString(body.websiteDomain),
     websiteUrl: toOptionalString(body.websiteUrl),
     imageUrl: toOptionalString(body.imageUrl),
+    iconUrl: toOptionalString(body.iconUrl),
     tagline: toOptionalString(body.tagline),
     whatIs: toOptionalString(body.whatIs),
     whatIsSummary: toOptionalString(body.whatIsSummary),
     howToUse: toOptionalString(body.howToUse),
     bestFor: toOptionalString(body.bestFor),
     tags: toOptionalString(body.tags),
-    pricingTags: Array.isArray(body.pricingTags) ? body.pricingTags.map(String) : [],
+    // undefined (not []) when absent, so an update doesn't wipe stored tags
+    pricingTags: Array.isArray(body.pricingTags) ? body.pricingTags.map(String) : undefined,
     monthVisitedCount: toOptionalBigInt(body.monthVisitedCount),
     collectedCount: toOptionalInt(body.collectedCount),
     reviewScore: body.reviewScore != null ? String(body.reviewScore) : undefined,
@@ -84,12 +88,14 @@ export default defineEventHandler(async (event) => {
   }
 
   try {
-    const tool = await prisma.toolifyTool.create({ data })
+    const tool = await prisma.toolifyTool.upsert({
+      where: { slug },
+      create: { ...data, pricingTags: data.pricingTags ?? [] },
+      // Reset isSync so the changed data gets synced to Tool again.
+      update: { ...data, isSync: 0 }
+    })
     return serializeToolifyTool(tool)
-  } catch (err: any) {
-    if (err?.code === 'P2002') {
-      throw createError({ statusCode: 409, statusMessage: 'A ToolifyTool with this slug already exists' })
-    }
-    throw createError({ statusCode: 400, statusMessage: 'Failed to create ToolifyTool' })
+  } catch {
+    throw createError({ statusCode: 400, statusMessage: 'Failed to save ToolifyTool' })
   }
 })
