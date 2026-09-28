@@ -136,6 +136,7 @@
     "pros": "メリット",
     "cons": "デメリット",
     "faq": "よくある質問",
+    "faqHeading": "{name}のFAQ",
     "alternatives": "の代替ツール",
     "backToCategory": "戻る：",
     "notFound": "ツールが見つかりません",
@@ -180,6 +181,9 @@
     "loadMoreReviews": "さらにレビューを読み込む",
     "loadingMore": "読み込み中...",
     "reviewsLabel": "件のレビュー",
+    "socialAndEmail": "SNS・メール",
+    "advertiseTool": "このツールを宣伝する",
+    "updateTool": "このツールを更新する",
     "savedLabel": "件の保存"
   },
   "footer": {

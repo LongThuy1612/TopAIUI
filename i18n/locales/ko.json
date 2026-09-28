@@ -136,6 +136,7 @@
     "pros": "장점",
     "cons": "단점",
     "faq": "자주 묻는 질문",
+    "faqHeading": "{name} FAQ",
     "alternatives": "의 대안",
     "backToCategory": "돌아가기:",
     "notFound": "도구를 찾을 수 없습니다",
@@ -180,6 +181,9 @@
     "loadMoreReviews": "리뷰 더 보기",
     "loadingMore": "불러오는 중...",
     "reviewsLabel": "개의 리뷰",
+    "socialAndEmail": "소셜 및 이메일",
+    "advertiseTool": "이 도구 광고하기",
+    "updateTool": "이 도구 업데이트",
     "savedLabel": "개의 저장"
   },
   "footer": {

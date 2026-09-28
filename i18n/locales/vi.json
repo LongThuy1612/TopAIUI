@@ -344,6 +344,7 @@
     "pros": "Ưu điểm",
     "cons": "Nhược điểm",
     "faq": "Câu hỏi thường gặp",
+    "faqHeading": "FAQ từ {name}",
     "alternatives": "Công cụ thay thế cho",
     "backToCategory": "Quay lại",
     "notFound": "Không tìm thấy công cụ",
@@ -390,6 +391,9 @@
     "loadMoreReviews": "Xem thêm đánh giá",
     "loadingMore": "Đang tải...",
     "reviewsLabel": "Đánh giá",
+    "socialAndEmail": "Mạng xã hội & Email",
+    "advertiseTool": "Quảng cáo công cụ này",
+    "updateTool": "Cập nhật công cụ này",
     "savedLabel": "Đã lưu"
   },
   "footer": {

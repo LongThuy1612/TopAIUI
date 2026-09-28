@@ -110,6 +110,7 @@
     "pros": "Плюсы",
     "cons": "Минусы",
     "faq": "Часто задаваемые вопросы",
+    "faqHeading": "FAQ о {name}",
     "alternatives": "Альтернативы",
     "backToCategory": "Назад к",
     "notFound": "Инструмент не найден",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "Загрузить больше отзывов",
     "loadingMore": "Загрузка...",
     "reviewsLabel": "Отзывов",
+    "socialAndEmail": "Соцсети и email",
+    "advertiseTool": "Рекламировать этот инструмент",
+    "updateTool": "Обновить этот инструмент",
     "savedLabel": "Сохранений"
   },
   "footer": {

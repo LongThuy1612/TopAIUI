@@ -136,6 +136,7 @@
     "pros": "Kelebihan",
     "cons": "Kekurangan",
     "faq": "Pertanyaan yang sering diajukan",
+    "faqHeading": "FAQ dari {name}",
     "alternatives": "Alternatif untuk",
     "backToCategory": "Kembali ke",
     "notFound": "Alat tidak ditemukan",
@@ -180,6 +181,9 @@
     "loadMoreReviews": "Muat lebih banyak ulasan",
     "loadingMore": "Memuat...",
     "reviewsLabel": "Ulasan",
+    "socialAndEmail": "Sosial & Email",
+    "advertiseTool": "Iklankan alat ini",
+    "updateTool": "Perbarui alat ini",
     "savedLabel": "Disimpan"
   },
   "footer": {

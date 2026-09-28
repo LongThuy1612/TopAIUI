@@ -110,6 +110,7 @@
     "pros": "Hyvät puolet",
     "cons": "Huonot puolet",
     "faq": "Usein kysytyt kysymykset",
+    "faqHeading": "FAQ: {name}",
     "alternatives": "Vaihtoehdot työkalulle",
     "backToCategory": "Takaisin",
     "notFound": "Työkalua ei löytynyt",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "Lataa lisää arvosteluja",
     "loadingMore": "Ladataan...",
     "reviewsLabel": "Arvostelua",
+    "socialAndEmail": "Some ja sähköposti",
+    "advertiseTool": "Mainosta tätä työkalua",
+    "updateTool": "Päivitä tämä työkalu",
     "savedLabel": "Tallennettu"
   },
   "footer": {

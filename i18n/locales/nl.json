@@ -110,6 +110,7 @@
     "pros": "Voordelen",
     "cons": "Nadelen",
     "faq": "Veelgestelde vragen",
+    "faqHeading": "FAQ over {name}",
     "alternatives": "Alternatieven voor",
     "backToCategory": "Terug naar",
     "notFound": "Tool niet gevonden",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "Meer reviews laden",
     "loadingMore": "Laden...",
     "reviewsLabel": "Reviews",
+    "socialAndEmail": "Social media & e-mail",
+    "advertiseTool": "Deze tool adverteren",
+    "updateTool": "Deze tool bijwerken",
     "savedLabel": "Opgeslagen"
   },
   "footer": {

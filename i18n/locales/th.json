@@ -110,6 +110,7 @@
     "pros": "ข้อดี",
     "cons": "ข้อเสีย",
     "faq": "คำถามที่พบบ่อย",
+    "faqHeading": "FAQ เกี่ยวกับ {name}",
     "alternatives": "ทางเลือกอื่นสำหรับ",
     "backToCategory": "กลับไปที่",
     "notFound": "ไม่พบเครื่องมือ",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "โหลดรีวิวเพิ่มเติม",
     "loadingMore": "กำลังโหลด...",
     "reviewsLabel": "รีวิว",
+    "socialAndEmail": "โซเชียลและอีเมล",
+    "advertiseTool": "โฆษณาเครื่องมือนี้",
+    "updateTool": "อัปเดตเครื่องมือนี้",
     "savedLabel": "บันทึกแล้ว"
   },
   "footer": {

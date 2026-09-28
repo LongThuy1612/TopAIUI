@@ -136,6 +136,7 @@
     "pros": "优点",
     "cons": "缺点",
     "faq": "常见问题",
+    "faqHeading": "{name} 的 FAQ",
     "alternatives": "的替代品",
     "backToCategory": "返回",
     "notFound": "未找到该工具",
@@ -180,6 +181,9 @@
     "loadMoreReviews": "加载更多评价",
     "loadingMore": "加载中...",
     "reviewsLabel": "条评价",
+    "socialAndEmail": "社交与邮箱",
+    "advertiseTool": "推广此工具",
+    "updateTool": "更新此工具",
     "savedLabel": "次收藏"
   },
   "footer": {

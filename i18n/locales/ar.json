@@ -110,6 +110,7 @@
     "pros": "الإيجابيات",
     "cons": "السلبيات",
     "faq": "الأسئلة الشائعة",
+    "faqHeading": "FAQ حول {name}",
     "alternatives": "بدائل لـ",
     "backToCategory": "العودة إلى",
     "notFound": "الأداة غير موجودة",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "تحميل المزيد من التقييمات",
     "loadingMore": "جارٍ التحميل...",
     "reviewsLabel": "تقييمات",
+    "socialAndEmail": "التواصل الاجتماعي والبريد",
+    "advertiseTool": "أعلن عن هذه الأداة",
+    "updateTool": "حدّث هذه الأداة",
     "savedLabel": "محفوظ"
   },
   "footer": {

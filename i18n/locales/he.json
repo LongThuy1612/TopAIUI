@@ -110,6 +110,7 @@
     "pros": "יתרונות",
     "cons": "חסרונות",
     "faq": "שאלות נפוצות",
+    "faqHeading": "FAQ על {name}",
     "alternatives": "חלופות ל־",
     "backToCategory": "חזרה אל",
     "notFound": "הכלי לא נמצא",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "טען עוד ביקורות",
     "loadingMore": "טוען...",
     "reviewsLabel": "ביקורות",
+    "socialAndEmail": "רשתות חברתיות ואימייל",
+    "advertiseTool": "פרסם את הכלי הזה",
+    "updateTool": "עדכן את הכלי הזה",
     "savedLabel": "נשמרו"
   },
   "footer": {

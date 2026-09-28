@@ -136,6 +136,7 @@
     "pros": "Ventajas",
     "cons": "Desventajas",
     "faq": "Preguntas frecuentes",
+    "faqHeading": "FAQ de {name}",
     "alternatives": "Alternativas a",
     "backToCategory": "Volver a",
     "notFound": "Herramienta no encontrada",
@@ -180,6 +181,9 @@
     "loadMoreReviews": "Cargar más reseñas",
     "loadingMore": "Cargando...",
     "reviewsLabel": "Reseñas",
+    "socialAndEmail": "Redes sociales y correo",
+    "advertiseTool": "Anunciar esta herramienta",
+    "updateTool": "Actualizar esta herramienta",
     "savedLabel": "Guardados"
   },
   "footer": {

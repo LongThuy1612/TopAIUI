@@ -110,6 +110,7 @@
     "pros": "Fordeler",
     "cons": "Ulemper",
     "faq": "Ofte stilte spørsmål",
+    "faqHeading": "FAQ om {name}",
     "alternatives": "Alternativer til",
     "backToCategory": "Tilbake til",
     "notFound": "Verktøy ikke funnet",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "Last inn flere anmeldelser",
     "loadingMore": "Laster...",
     "reviewsLabel": "Anmeldelser",
+    "socialAndEmail": "Sosiale medier og e-post",
+    "advertiseTool": "Annonser dette verktøyet",
+    "updateTool": "Oppdater dette verktøyet",
     "savedLabel": "Lagrede"
   },
   "footer": {

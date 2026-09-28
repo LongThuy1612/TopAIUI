@@ -110,6 +110,7 @@
     "pros": "Pro",
     "cons": "Contro",
     "faq": "Domande frequenti",
+    "faqHeading": "FAQ su {name}",
     "alternatives": "Alternative a",
     "backToCategory": "Torna a",
     "notFound": "Strumento non trovato",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "Carica altre recensioni",
     "loadingMore": "Caricamento...",
     "reviewsLabel": "Recensioni",
+    "socialAndEmail": "Social ed email",
+    "advertiseTool": "Pubblicizza questo strumento",
+    "updateTool": "Aggiorna questo strumento",
     "savedLabel": "Salvataggi"
   },
   "footer": {

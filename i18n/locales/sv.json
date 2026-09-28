@@ -110,6 +110,7 @@
     "pros": "Fördelar",
     "cons": "Nackdelar",
     "faq": "Vanliga frågor",
+    "faqHeading": "FAQ om {name}",
     "alternatives": "Alternativ till",
     "backToCategory": "Tillbaka till",
     "notFound": "Verktyget hittades inte",
@@ -154,6 +155,9 @@
     "loadMoreReviews": "Ladda fler recensioner",
     "loadingMore": "Laddar...",
     "reviewsLabel": "Recensioner",
+    "socialAndEmail": "Sociala medier & e-post",
+    "advertiseTool": "Annonsera detta verktyg",
+    "updateTool": "Uppdatera detta verktyg",
     "savedLabel": "Sparade"
   },
   "footer": {
