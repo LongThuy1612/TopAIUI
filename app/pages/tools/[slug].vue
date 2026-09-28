@@ -15,16 +15,67 @@ if (error.value) {
 
 const category = computed(() => tool.value?.categories?.[0])
 
-// Crawled tools usually have no screenshotUrl, so fall back to the first
-// entry of `images` (string or { url }), then to the logo.
-const heroImage = computed(() => {
+// Slides come from `images` (entries are a string or { url }) when it has any;
+// otherwise fall back to a single screenshotUrl, then the logo.
+const heroImages = computed<string[]>(() => {
   const t = tool.value
-  if (!t) return undefined
-  if (t.screenshotUrl) return t.screenshotUrl
-  const first = Array.isArray(t.images) ? t.images[0] : undefined
-  const fromImages = typeof first === 'string' ? first : (first as { url?: string } | undefined)?.url
-  return fromImages || t.logoUrl || undefined
+  if (!t) return []
+  const fromImages = (Array.isArray(t.images) ? t.images : [])
+    .map(item => (typeof item === 'string' ? item : (item as { url?: string } | null)?.url))
+    .filter((url): url is string => !!url)
+  if (fromImages.length) return [...new Set(fromImages)]
+  const fallback = t.screenshotUrl || t.logoUrl
+  return fallback ? [fallback] : []
 })
+
+const slider = ref<HTMLElement | null>(null)
+const activeSlide = ref(0)
+
+function onSliderScroll() {
+  const el = slider.value
+  if (el) activeSlide.value = Math.round(el.scrollLeft / el.clientWidth)
+}
+
+function goToSlide(index: number) {
+  const el = slider.value
+  if (!el) return
+  const next = Math.min(Math.max(index, 0), heroImages.value.length - 1)
+  el.scrollTo({ left: next * el.clientWidth, behavior: 'smooth' })
+}
+
+// Mouse drag to swipe; touch keeps the browser's native swipe.
+const isDragging = ref(false)
+// Snap stays off until the smooth scroll after a drag settles, otherwise the
+// browser re-snaps to the nearest image mid-animation.
+const snapDisabled = ref(false)
+let dragStartX = 0
+let dragStartScroll = 0
+
+function onDragStart(e: PointerEvent) {
+  if (e.pointerType !== 'mouse' || e.button !== 0 || heroImages.value.length < 2 || !slider.value) return
+  isDragging.value = true
+  snapDisabled.value = true
+  dragStartX = e.clientX
+  dragStartScroll = slider.value.scrollLeft
+  slider.value.setPointerCapture(e.pointerId)
+}
+
+function onDragMove(e: PointerEvent) {
+  if (!isDragging.value || !slider.value) return
+  slider.value.scrollLeft = dragStartScroll - (e.clientX - dragStartX)
+}
+
+function onDragEnd(e: PointerEvent) {
+  if (!isDragging.value || !slider.value) return
+  isDragging.value = false
+  slider.value.releasePointerCapture(e.pointerId)
+  // Past 15% of the width counts as a swipe to the next/previous image.
+  const delta = dragStartX - e.clientX
+  const threshold = slider.value.clientWidth * 0.15
+  const start = Math.round(dragStartScroll / slider.value.clientWidth)
+  goToSlide(delta > threshold ? start + 1 : delta < -threshold ? start - 1 : start)
+  setTimeout(() => { snapDisabled.value = false }, 500)
+}
 
 const { data: alternativesRes } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({ category: category.value?.slug, limit: 6, locale: locale.value }))
@@ -367,12 +418,45 @@ useSeoMeta({
           >f</a>
         </div>
 
-        <img
-          v-if="heroImage"
-          :src="heroImage"
-          :alt="`${tool.name} screenshot`"
-          class="mt-6 aspect-video w-full rounded object-cover shadow-[0_2px_12px_rgba(0,0,0,0.12)]"
-        >
+        <div v-if="heroImages.length" class="relative mt-6 overflow-hidden rounded shadow-[0_2px_12px_rgba(0,0,0,0.12)]">
+          <div
+            ref="slider"
+            :class="[
+              'flex overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden',
+              heroImages.length > 1 && 'cursor-grab',
+              isDragging && 'cursor-grabbing select-none',
+              !snapDisabled && 'snap-x snap-mandatory'
+            ]"
+            @scroll.passive="onSliderScroll"
+            @pointerdown="onDragStart"
+            @pointermove="onDragMove"
+            @pointerup="onDragEnd"
+            @pointercancel="onDragEnd"
+          >
+            <img
+              v-for="(src, i) in heroImages"
+              :key="src"
+              :src="src"
+              :alt="`${tool.name} screenshot ${i + 1}`"
+              :loading="i === 0 ? 'eager' : 'lazy'"
+              draggable="false"
+              class="aspect-video w-full shrink-0 snap-start object-cover"
+            >
+          </div>
+
+          <template v-if="heroImages.length > 1">
+            <div class="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-black/30 px-2 py-1">
+              <button
+                v-for="(_, i) in heroImages"
+                :key="i"
+                type="button"
+                :aria-label="`Go to image ${i + 1}`"
+                :class="['h-2 rounded-full transition-all', activeSlide === i ? 'w-5 bg-white' : 'w-2 bg-white/60 hover:bg-white']"
+                @click="goToSlide(i)"
+              />
+            </div>
+          </template>
+        </div>
 
         <div class="mt-3 flex justify-end gap-4">
           <NuxtLink to="/admin/advertise" class="rounded bg-brand-500 px-3 py-2 text-sm text-white transition hover:bg-brand-600">
