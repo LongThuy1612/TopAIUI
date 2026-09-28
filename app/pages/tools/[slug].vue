@@ -213,12 +213,12 @@ async function toggleSaved() {
 type TabKey = 'info' | 'pricing' | 'reviews' | 'faq' | 'analytics' | 'alternatives'
 const tabs = computed<{ key: TabKey; id: string; label: string }[]>(() => {
   const list: { key: TabKey; id: string; label: string }[] = [
-    { key: 'info', id: 'section-info', label: t('tool.tabProductInfo') },
-    { key: 'reviews', id: 'section-reviews', label: t('tool.tabReviews') },
-    { key: 'pricing', id: 'section-pricing', label: t('tool.tabPricing') }
+    { key: 'info', id: 'section-info', label: t('tool.tabProductInfo') }
   ]
   if (tool.value?.faqs?.length) list.push({ key: 'faq', id: 'section-faq', label: t('tool.faqHeading', { name: tool.value?.name ?? '' }) })
   list.push(
+    { key: 'reviews', id: 'section-reviews', label: t('tool.tabReviews') },
+    { key: 'pricing', id: 'section-pricing', label: t('tool.tabPricing') },
     { key: 'analytics', id: 'section-analytics', label: t('tool.tabAnalytics') },
     { key: 'alternatives', id: 'section-alternatives', label: t('tool.tabAlternatives') }
   )
@@ -233,10 +233,16 @@ function scrollToSection(id: string) {
 let sectionObserver: IntersectionObserver | null = null
 onMounted(() => {
   if (!import.meta.client) return
+  // FAQ is nested inside the info section, so track every visible section and
+  // prefer the later tab (the nested one) when both are in view.
+  const visible = new Set<string>()
   sectionObserver = new IntersectionObserver((entries) => {
     for (const entry of entries) {
-      if (entry.isIntersecting) activeTab.value = entry.target.id.replace('section-', '') as TabKey
+      if (entry.isIntersecting) visible.add(entry.target.id)
+      else visible.delete(entry.target.id)
     }
+    const current = [...tabs.value].reverse().find(tab => visible.has(tab.id))
+    if (current) activeTab.value = current.key
   }, { rootMargin: '-140px 0px -65% 0px', threshold: 0 })
   for (const tab of tabs.value) {
     const el = document.getElementById(tab.id)
@@ -421,19 +427,19 @@ useSeoMeta({
         <h2 class="text-[28px] font-bold leading-tight text-ink-900">{{ t('tool.productInformationHeading', { name: tool.name }) }}</h2>
         <div class="mt-6 divide-y divide-ink-100 rounded-lg border border-ink-200 bg-white p-7">
           <section v-if="tool.whatIs || tool.description" class="py-7 first:pt-0">
-            <h3 class="text-[22px] font-bold text-ink-900">{{ t('tool.whatIs', { name: tool.name }) }}</h3>
-            <p class="mt-4 text-[17px] leading-[1.75] text-ink-900">{{ tool.whatIs || tool.description }}</p>
+            <h3 class="text-2xl font-bold text-ink-900">{{ t('tool.whatIs', { name: tool.name }) }}</h3>
+            <p class="mt-4 text-lg leading-[1.6] text-ink-900">{{ tool.whatIs || tool.description }}</p>
           </section>
 
           <section v-if="tool.howToUse" class="py-7 first:pt-0">
-            <h3 class="text-[22px] font-bold text-ink-900">{{ t('tool.howToUseHeading', { name: tool.name }) }}</h3>
-            <p class="mt-4 text-[17px] leading-[1.75] text-ink-900">{{ tool.howToUse }}</p>
+            <h3 class="text-2xl font-bold text-ink-900">{{ t('tool.howToUseHeading', { name: tool.name }) }}</h3>
+            <p class="mt-4 text-lg leading-[1.6] text-ink-900">{{ tool.howToUse }}</p>
           </section>
 
           <section v-if="tool.coreFeatures?.length" class="py-7 first:pt-0">
-            <h3 class="text-[22px] font-bold text-ink-900">{{ t('tool.coreFeaturesHeading', { name: tool.name }) }}</h3>
+            <h3 class="text-2xl font-bold text-ink-900">{{ t('tool.coreFeaturesHeading', { name: tool.name }) }}</h3>
             <ul class="mt-4 space-y-3">
-              <li v-for="feature in tool.coreFeatures" :key="feature" class="flex items-center gap-3 text-[17px] text-ink-900">
+              <li v-for="feature in tool.coreFeatures" :key="feature" class="flex items-center gap-3 text-lg text-ink-900">
                 <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white">
                   <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                 </span>
@@ -443,18 +449,28 @@ useSeoMeta({
           </section>
 
           <section v-if="tool.useCases?.length" class="py-7 first:pt-0">
-            <h3 class="text-[22px] font-bold text-ink-900">{{ t('tool.useCasesHeading', { name: tool.name }) }}</h3>
+            <h3 class="text-2xl font-bold text-ink-900">{{ t('tool.useCasesHeading', { name: tool.name }) }}</h3>
             <ul class="mt-4 space-y-3">
-              <li v-for="(useCase, i) in tool.useCases" :key="useCase" class="flex items-center gap-3 text-[17px] text-ink-900">
+              <li v-for="(useCase, i) in tool.useCases" :key="useCase" class="flex items-center gap-3 text-lg text-ink-900">
                 <span class="rounded-md bg-ink-100 px-2 py-0.5 text-xs font-bold text-ink-500">#{{ i + 1 }}</span>
                 {{ useCase }}
               </li>
             </ul>
           </section>
 
+          <section v-if="tool.faqs?.length" id="section-faq" class="scroll-mt-32 py-7 first:pt-0">
+            <h3 class="text-2xl font-bold text-ink-900">{{ t('tool.faqHeading', { name: tool.name }) }}</h3>
+            <div class="mt-4 divide-y divide-ink-100">
+              <details v-for="(faq, i) in tool.faqs" :key="i" class="py-4 last:pb-0">
+                <summary class="cursor-pointer text-xl font-bold text-ink-900">{{ faq.question }}</summary>
+                <p class="mt-2 text-lg leading-[1.6] text-ink-900">{{ faq.answer }}</p>
+              </details>
+            </div>
+          </section>
+
           <section v-if="tool.tags?.length" class="py-7 first:pt-0">
             <div class="flex flex-wrap gap-2">
-              <span v-for="tag in tool.tags" :key="tag.slug" class="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-600">#{{ tag.name }}</span>
+              <span v-for="tag in tool.tags" :key="tag.slug" class="rounded-full bg-ink-100 px-3 py-1 text-sm text-ink-700">#{{ tag.name }}</span>
             </div>
           </section>
 
@@ -482,16 +498,16 @@ useSeoMeta({
         <h2 class="text-[28px] font-bold leading-tight text-ink-900">{{ t('tool.reviewsHeading', { name: tool.name, count: reviewsTotal }) }}</h2>
 
         <div class="mt-6 divide-y divide-ink-100 rounded-lg border border-ink-200 bg-white p-7">
-          <div class="flex items-center gap-3 pb-6 first:pt-0">
+          <div class="flex items-center gap-3 pb-7">
             <div class="flex gap-1 text-xl text-brand-500">
               <span v-for="i in 5" :key="i">{{ i <= Math.round(displayRating) ? '★' : '☆' }}</span>
             </div>
             <p class="text-base text-ink-900">{{ displayRating.toFixed(1) }} {{ t('tool.outOf5') }}</p>
           </div>
 
-          <div class="pt-6">
-            <h3 class="text-[22px] font-bold text-ink-900">{{ t('tool.ratingPrompt', { name: tool.name }) }}</h3>
-            <div class="mt-2 flex gap-1 text-2xl" @mouseleave="newRatingHover = 0">
+          <div class="pt-7">
+            <h3 class="text-2xl font-bold text-ink-900">{{ t('tool.ratingPrompt', { name: tool.name }) }}</h3>
+            <div class="mt-4 flex gap-1 text-2xl" @mouseleave="newRatingHover = 0">
               <button
                 v-for="i in 5"
                 :key="i"
@@ -566,7 +582,7 @@ useSeoMeta({
                 <div class="mt-1 flex text-base text-brand-500">
                   <span v-for="i2 in 5" :key="i2">{{ i2 <= review.rating ? '★' : '☆' }}</span>
                 </div>
-                <p v-if="review.comment" class="mt-2 text-base text-ink-900">{{ review.comment }}</p>
+                <p v-if="review.comment" class="mt-2 text-lg leading-[1.6] text-ink-900">{{ review.comment }}</p>
               </div>
             </div>
           </div>
@@ -589,11 +605,11 @@ useSeoMeta({
         <div class="mt-6 rounded-lg border border-ink-200 bg-white p-7">
           <div v-if="tool.pricingPlans?.length" class="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div v-for="plan in tool.pricingPlans" :key="plan.name" class="rounded-lg border border-ink-100 p-4">
-              <p class="text-base font-bold text-ink-900">{{ plan.name }}</p>
+              <p class="text-xl font-bold text-ink-900">{{ plan.name }}</p>
               <p class="mt-1 text-2xl font-bold text-ink-900">
                 {{ plan.price }}<span v-if="plan.period" class="text-base font-medium text-ink-400"> / {{ plan.period }}</span>
               </p>
-              <ul class="mt-3 space-y-1.5 text-base text-ink-900">
+              <ul class="mt-3 space-y-1.5 text-lg text-ink-900">
                 <li v-for="feature in plan.features" :key="feature" class="flex gap-2"><span class="text-brand-500">✓</span> {{ feature }}</li>
               </ul>
             </div>
@@ -605,36 +621,26 @@ useSeoMeta({
         </div>
       </div>
 
-      <div v-if="tool.faqs?.length" id="section-faq" class="scroll-mt-32">
-        <h2 class="text-[28px] font-bold leading-tight text-ink-900">{{ t('tool.faqHeading', { name: tool.name }) }}</h2>
-        <div class="mt-6 divide-y divide-ink-100 rounded-lg border border-ink-200 bg-white p-7">
-          <details v-for="(faq, i) in tool.faqs" :key="i" class="py-4 first:pt-0 last:pb-0">
-            <summary class="cursor-pointer text-base font-semibold text-ink-900">{{ faq.question }}</summary>
-            <p class="mt-2 text-[17px] leading-[1.75] text-ink-900">{{ faq.answer }}</p>
-          </details>
-        </div>
-      </div>
-
       <div id="section-analytics" class="scroll-mt-32">
         <h2 class="text-[28px] font-bold leading-tight text-ink-900">{{ t('tool.analyticsHeading', { name: tool.name }) }}</h2>
         <div class="mt-6 rounded-lg border border-ink-200 bg-white p-7">
           <p class="text-xs font-semibold uppercase tracking-wide text-ink-400">{{ t('tool.visitOverTime') }}</p>
           <dl class="mt-2 grid grid-cols-2 gap-4 sm:grid-cols-4">
             <div>
-              <dt class="text-xs text-ink-400">{{ t('tool.monthlyVisits') }}</dt>
-              <dd class="mt-1 text-lg font-bold text-ink-900">{{ tool.monthlyVisits.toLocaleString() }}</dd>
+              <dt class="text-sm text-ink-500">{{ t('tool.monthlyVisits') }}</dt>
+              <dd class="mt-1 text-xl font-bold text-ink-900">{{ tool.monthlyVisits.toLocaleString() }}</dd>
             </div>
             <div>
-              <dt class="text-xs text-ink-400">{{ t('tool.domainAuthority') }}</dt>
-              <dd class="mt-1 text-lg font-bold text-ink-900">{{ tool.domainAuthority }}</dd>
+              <dt class="text-sm text-ink-500">{{ t('tool.domainAuthority') }}</dt>
+              <dd class="mt-1 text-xl font-bold text-ink-900">{{ tool.domainAuthority }}</dd>
             </div>
             <div>
-              <dt class="text-xs text-ink-400">{{ t('tool.trafficRank') }}</dt>
-              <dd class="mt-1 text-lg font-bold text-ink-900">{{ tool.trafficRank ? `#${tool.trafficRank}` : '—' }}</dd>
+              <dt class="text-sm text-ink-500">{{ t('tool.trafficRank') }}</dt>
+              <dd class="mt-1 text-xl font-bold text-ink-900">{{ tool.trafficRank ? `#${tool.trafficRank}` : '—' }}</dd>
             </div>
             <div>
-              <dt class="text-xs text-ink-400">{{ t('tool.viewCount') }}</dt>
-              <dd class="mt-1 text-lg font-bold text-ink-900">{{ tool.viewCount.toLocaleString() }}</dd>
+              <dt class="text-sm text-ink-500">{{ t('tool.viewCount') }}</dt>
+              <dd class="mt-1 text-xl font-bold text-ink-900">{{ tool.viewCount.toLocaleString() }}</dd>
             </div>
           </dl>
         </div>
@@ -642,10 +648,10 @@ useSeoMeta({
 
       <div id="section-alternatives" class="scroll-mt-32">
         <h2 class="text-[28px] font-bold leading-tight text-ink-900">{{ t('tool.alternatives') }} {{ tool.name }}</h2>
-        <div v-if="alternatives.length" class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div v-if="alternatives.length" class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <ToolCard v-for="alt in alternatives" :key="alt.slug" :tool="alt" />
         </div>
-        <p v-else class="mt-4 rounded-xl border border-dashed border-ink-200 py-10 text-center text-base text-ink-400">
+        <p v-else class="mt-6 rounded-xl border border-dashed border-ink-200 py-10 text-center text-base text-ink-400">
           {{ t('empty.noResults') }}
         </p>
       </div>
