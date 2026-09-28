@@ -113,5 +113,16 @@ export default defineNuxtConfig({
     // API — data endpoints stay dynamic; admin API additionally is not CORS-open
     '/api/admin/**': { cors: false, headers: { 'Cache-Control': 'no-store' } },
     '/api/**': { cors: true }
+  },
+
+  // In dev the page cache above persists to .nuxt/cache and keeps serving HTML
+  // rendered by old component code for up to an hour; Vue then hydrates it with
+  // the new code but doesn't patch mismatched classes, so edits look broken.
+  $development: {
+    routeRules: {
+      '/': { cache: false },
+      '/category/**': { cache: false },
+      '/tools/**': { cache: false }
+    }
   }
 })

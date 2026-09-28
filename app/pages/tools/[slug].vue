@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Review, ReviewsResponse, Tool, ToolsResponse } from '~/types'
 
-const { t, locale } = useI18n()
+const { t, te, locale } = useI18n()
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 
@@ -209,6 +209,186 @@ const addedOn = computed(() => {
   return new Date(date).toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', {
     year: 'numeric', month: 'short', day: 'numeric'
   })
+})
+
+const analytics = computed(() => tool.value?.analytics ?? null)
+const numberLocale = computed(() => (locale.value === 'vi' ? 'vi-VN' : locale.value))
+
+function formatCompact(n: number | null | undefined) {
+  if (n == null) return '—'
+  return new Intl.NumberFormat(numberLocale.value, { notation: 'compact', maximumFractionDigits: 1 }).format(n)
+}
+
+function formatDuration(seconds: number | null | undefined) {
+  if (seconds == null) return '—'
+  const s = Math.round(seconds)
+  return [Math.floor(s / 3600), Math.floor((s % 3600) / 60), s % 60].map(v => String(v).padStart(2, '0')).join(':')
+}
+
+const analyticsStats = computed(() => {
+  const a = analytics.value
+  if (!a) return []
+  return [
+    { label: t('tool.monthlyVisits'), value: formatCompact(a.monthlyVisits) },
+    { label: t('tool.avgVisitDuration'), value: formatDuration(a.avgVisitDuration) },
+    { label: t('tool.pagePerVisit'), value: a.pagesPerVisit == null ? '—' : a.pagesPerVisit.toFixed(2) },
+    { label: t('tool.bounceRate'), value: a.bounceRatePct == null ? '—' : `${a.bounceRatePct.toFixed(2)}%` }
+  ]
+})
+
+// Round a raw axis step up to 1/2/2.5/5 × 10^n so tick labels read cleanly.
+function niceStep(raw: number) {
+  const pow = 10 ** Math.floor(Math.log10(raw))
+  const f = raw / pow
+  return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * pow
+}
+
+// Monotone cubic (Fritsch–Carlson) path: smooth like the reference chart but never
+// overshoots between points, so a flat stretch stays flat.
+function monotonePath(pts: { x: number; y: number }[]) {
+  const n = pts.length
+  const dx = pts.slice(1).map((p, i) => p.x - pts[i]!.x)
+  const slope = pts.slice(1).map((p, i) => (p.y - pts[i]!.y) / dx[i]!)
+  const tan = pts.map((_, i) => {
+    if (i === 0) return slope[0]!
+    if (i === n - 1) return slope[n - 2]!
+    const a = slope[i - 1]!, b = slope[i]!
+    return a * b <= 0 ? 0 : (3 * (dx[i - 1]! + dx[i]!)) / ((2 * dx[i]! + dx[i - 1]!) / a + (dx[i]! + 2 * dx[i - 1]!) / b)
+  })
+  let d = `M${pts[0]!.x},${pts[0]!.y}`
+  for (let i = 0; i < n - 1; i++) {
+    const h = dx[i]! / 3
+    d += ` C${pts[i]!.x + h},${pts[i]!.y + tan[i]! * h} ${pts[i + 1]!.x - h},${pts[i + 1]!.y - tan[i + 1]! * h} ${pts[i + 1]!.x},${pts[i + 1]!.y}`
+  }
+  return d
+}
+
+// Plot area is a 0–100 × 0–100 space stretched to the container; text and dots
+// are HTML positioned in % so they stay crisp at any width.
+const trafficChart = computed(() => {
+  const points = analytics.value?.chart ?? []
+  if (points.length < 2) return null
+  const values = points.map(p => p.visits)
+  const max = Math.max(...values)
+  const min = Math.min(...values)
+
+  // Start the axis at 0 unless the data sits in a narrow band far above it
+  // (e.g. 973M–981M), where a 0 baseline would flatten the line entirely.
+  const fromZero = min < max * 0.5
+  const step = niceStep(((fromZero ? max : max - min) || max || 1) / 4)
+  const lo = fromZero ? 0 : Math.max(0, Math.floor(min / step) * step - step)
+  const hi = Math.max(Math.ceil(max / step) * step, lo + step)
+  const ticks: { value: string; y: number }[] = []
+  for (let v = lo; v <= hi + step / 2; v += step) ticks.push({ value: formatCompact(v), y: 100 - ((v - lo) / (hi - lo)) * 100 })
+
+  // Category axis with half-step padding at both ends, like echarts' boundaryGap.
+  const coords = points.map((p, i) => ({
+    x: ((i + 0.5) / points.length) * 100,
+    y: 100 - ((p.visits - lo) / (hi - lo)) * 100,
+    label: formatMonth(p.month),
+    value: formatCompact(p.visits)
+  }))
+  const line = monotonePath(coords)
+  const first = coords[0]!, last = coords.at(-1)!
+  return { coords, ticks, line, area: `${line} L${last.x},100 L${first.x},100 Z` }
+})
+
+const formatMonth = (month: string) =>
+  new Date(`${month}-01T00:00:00Z`).toLocaleDateString(numberLocale.value, { month: 'short', year: 'numeric', timeZone: 'UTC' })
+
+// "Mar 2026 – May 2026", from the first and last chart points.
+const analyticsPeriod = computed(() => {
+  const chart = analytics.value?.chart ?? []
+  if (!chart.length) return null
+  return `${formatMonth(chart[0]!.month)} – ${formatMonth(chart.at(-1)!.month)}`
+})
+
+const sourceColors = ['#FF5B84', '#2A7BFF', '#17D5F4', '#FBC21E', '#0FC98A', '#11A085']
+const sourceLabel = (name: string) => {
+  const key = `tool.source${name.replace(/[^A-Za-z]/g, '')}`
+  return te(key) ? t(key) : name
+}
+
+// Donut with outside labels, echarts-style: segments start at 12 o'clock and go
+// clockwise; each label sits outside its segment's mid-angle, then labels on the
+// same side are pushed apart vertically so small neighbouring slices don't overlap.
+// Geometry mirrors the Toolify reference (outer 86 / inner 62 / labels at ~1.3r),
+// scaled 1.25× so the chart fills the column.
+const DONUT = { w: 700, h: 400, cx: 350, cy: 195, r: 100, inner: 76, labelR: 130, lineH: 16, hoverGrow: 10, font: 15 }
+const hoveredSource = ref<number | null>(null)
+const sourceDonut = computed(() => {
+  const { cx, cy, r, inner, labelR, lineH, h, hoverGrow } = DONUT
+  const point = (rad: number, angle: number) => [cx + rad * Math.sin(angle), cy - rad * Math.cos(angle)] as const
+  const arc = (outer: number, from: number, to: number) => {
+    const large = to - from > Math.PI ? 1 : 0
+    const [x1, y1] = point(outer, from)
+    const [x2, y2] = point(outer, to)
+    const [x3, y3] = point(inner, to)
+    const [x4, y4] = point(inner, from)
+    return `M${x1},${y1} A${outer},${outer} 0 ${large} 1 ${x2},${y2} L${x3},${y3} A${inner},${inner} 0 ${large} 0 ${x4},${y4} Z`
+  }
+  const items = (analytics.value?.sources ?? [])
+    .map((s, i) => ({ ...s, color: sourceColors[i % sourceColors.length]! }))
+    .filter(s => s.pct > 0)
+  const total = items.reduce((sum, s) => sum + s.pct, 0) || 1
+
+  let start = 0
+  const segments = items.map((s) => {
+    // Cap a lone 100% slice just short of a full turn so the arc still draws.
+    const sweep = Math.min((s.pct / total) * Math.PI * 2, Math.PI * 2 - 0.0001)
+    const end = start + sweep
+    const mid = start + sweep / 2
+    const [lx, ly] = point(labelR, mid)
+    const seg = {
+      color: s.color,
+      d: arc(r, start, end),
+      // Hover state: the slice grows outward, like echarts' emphasis scale.
+      dHover: arc(r + hoverGrow, start, end),
+      label: { text: `${sourceLabel(s.name)}：${s.pct.toFixed(2)}%`, x: lx, y: ly, right: lx >= cx }
+    }
+    start = end
+    return seg
+  })
+
+  for (const right of [true, false]) {
+    const side = segments.map(s => s.label).filter(l => l.right === right).sort((a, b) => a.y - b.y)
+    for (let i = 1; i < side.length; i++) side[i]!.y = Math.max(side[i]!.y, side[i - 1]!.y + lineH)
+    // If the stack ran off the bottom, shift it back up and re-space upwards.
+    const last = side.at(-1)
+    if (last && last.y > h - 8) {
+      last.y = h - 8
+      for (let i = side.length - 2; i >= 0; i--) side[i]!.y = Math.min(side[i]!.y, side[i + 1]!.y - lineH)
+    }
+    // Moving a label vertically can pull it over the ring; slide it back out
+    // along the label circle so it always clears the donut.
+    for (const l of side) {
+      const dy = l.y - cy
+      const dx = Math.abs(dy) < labelR ? Math.sqrt(labelR ** 2 - dy ** 2) : 6
+      l.x = right ? cx + dx : cx - dx
+    }
+  }
+  return segments
+})
+
+const countryName = (code: string) => {
+  try {
+    return new Intl.DisplayNames([numberLocale.value], { type: 'region' }).of(code) ?? code
+  } catch {
+    return code
+  }
+}
+
+const analyticsFacts = computed(() => {
+  const a = analytics.value
+  if (!a) return []
+  const r = a.ranking
+  return [
+    r.global && { label: t('tool.globalRank'), value: `#${r.global.toLocaleString(numberLocale.value)}` },
+    r.country && r.countryRank && { label: countryName(r.country), value: `#${r.countryRank.toLocaleString(numberLocale.value)}`, flag: r.country.toLowerCase() },
+    r.category && r.categoryRank && { label: r.category, value: `#${r.categoryRank.toLocaleString(numberLocale.value)}` },
+    a.yearFounded && { label: t('tool.yearFounded'), value: a.yearFounded },
+    a.employeeRange && { label: t('tool.employees'), value: a.employeeRange }
+  ].filter(Boolean) as { label: string; value: string; flag?: string }[]
 })
 
 const requestUrl = useRequestURL()
@@ -707,27 +887,197 @@ useSeoMeta({
 
       <div id="section-analytics" class="scroll-mt-32">
         <h2 class="text-[28px] font-bold leading-tight text-ink-900">{{ t('tool.analyticsHeading', { name: tool.name }) }}</h2>
-        <div class="mt-6 rounded-lg border border-ink-200 bg-white p-7">
-          <p class="text-xs font-semibold uppercase tracking-wide text-ink-400">{{ t('tool.visitOverTime') }}</p>
-          <dl class="mt-2 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            <div>
-              <dt class="text-sm text-ink-500">{{ t('tool.monthlyVisits') }}</dt>
-              <dd class="mt-1 text-xl font-bold text-ink-900">{{ tool.monthlyVisits.toLocaleString() }}</dd>
-            </div>
-            <div>
-              <dt class="text-sm text-ink-500">{{ t('tool.domainAuthority') }}</dt>
-              <dd class="mt-1 text-xl font-bold text-ink-900">{{ tool.domainAuthority }}</dd>
-            </div>
-            <div>
-              <dt class="text-sm text-ink-500">{{ t('tool.trafficRank') }}</dt>
-              <dd class="mt-1 text-xl font-bold text-ink-900">{{ tool.trafficRank ? `#${tool.trafficRank}` : '—' }}</dd>
-            </div>
-            <div>
-              <dt class="text-sm text-ink-500">{{ t('tool.viewCount') }}</dt>
-              <dd class="mt-1 text-xl font-bold text-ink-900">{{ tool.viewCount.toLocaleString() }}</dd>
+        <div v-if="analytics" class="mt-6 overflow-hidden rounded-lg border border-ink-200 bg-white">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-ink-200 bg-ink-100/60 px-7 py-4">
+            <h3 class="text-lg font-semibold text-ink-900">{{ t('tool.trafficAnalysis', { name: tool.name }) }}</h3>
+            <span
+              v-if="analytics.growthPct != null"
+              :class="['inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm font-semibold', analytics.growthPct >= 0 ? 'bg-emerald-50 text-emerald-700' : 'bg-red-50 text-red-700']"
+              :title="t('tool.vsLastMonth')"
+            >
+              {{ analytics.growthPct >= 0 ? '▲' : '▼' }} {{ Math.abs(analytics.growthPct).toFixed(1) }}%
+              <span class="font-normal opacity-80">{{ t('tool.vsLastMonth') }}</span>
+            </span>
+          </div>
+
+          <!-- Rankings & company facts -->
+          <dl v-if="analyticsFacts.length" class="grid grid-cols-2 border-b border-ink-200 sm:grid-cols-3 lg:grid-cols-5 lg:divide-x lg:divide-ink-200">
+            <div v-for="fact in analyticsFacts" :key="fact.label" class="px-7 py-4">
+              <dt class="flex items-center gap-1.5 text-sm text-ink-500" :title="fact.label">
+                <img v-if="fact.flag" :src="`https://flagcdn.com/w40/${fact.flag}.png`" alt="" class="h-3 w-[18px] shrink-0 rounded-[2px] object-cover" loading="lazy">
+                <span class="truncate">{{ fact.label }}</span>
+              </dt>
+              <dd class="mt-1 text-lg font-bold text-ink-900">{{ fact.value }}</dd>
             </div>
           </dl>
+
+          <!-- Visit over time: stats left, chart right -->
+          <div class="grid grid-cols-1 gap-8 border-b border-ink-200 p-7 lg:grid-cols-[320px_1fr]">
+            <div>
+              <h4 class="border-l-4 border-brand-500 pl-3 text-base font-semibold text-ink-900">{{ t('tool.visitOverTime') }}</h4>
+              <dl class="mt-4 divide-y divide-ink-200 rounded-lg border border-ink-200">
+                <div v-for="stat in analyticsStats" :key="stat.label" class="flex items-center justify-between px-5 py-3.5">
+                  <dt class="text-base text-ink-900">{{ stat.label }}</dt>
+                  <dd class="text-base font-bold text-ink-900">{{ stat.value }}</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div v-if="trafficChart">
+              <p v-if="analyticsPeriod" class="flex items-center gap-2 text-base text-ink-900">
+                <svg class="h-5 w-5 text-ink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3.75 8.25h16.5M5.25 5.25h13.5a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-12a1.5 1.5 0 0 1 1.5-1.5Z" /><path stroke-linecap="round" stroke-linejoin="round" d="m9 14.25 2 2 4-4" /></svg>
+                {{ analyticsPeriod }} · {{ t('tool.allTraffic') }}
+              </p>
+              <div class="mt-6 grid" style="grid-template-columns: 52px minmax(0, 1fr)">
+                <!-- Y axis labels -->
+                <div class="relative h-56">
+                  <span
+                    v-for="tick in trafficChart.ticks"
+                    :key="tick.value"
+                    class="absolute right-3 -translate-y-1/2 text-xs text-ink-500"
+                    :style="{ top: `${tick.y}%` }"
+                  >{{ tick.value }}</span>
+                </div>
+
+                <div>
+                  <div class="relative h-56">
+                    <!-- Grid: dashed lines, solid baseline -->
+                    <span
+                      v-for="(tick, i) in trafficChart.ticks"
+                      :key="`grid-${tick.value}`"
+                      :class="['absolute inset-x-0 border-t', i === 0 ? 'border-ink-300' : 'border-dashed border-ink-200']"
+                      :style="{ top: `${tick.y}%` }"
+                    />
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute inset-0 h-full w-full overflow-visible">
+                      <defs>
+                        <linearGradient id="traffic-fill" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#DB2777" stop-opacity="0.22" />
+                          <stop offset="100%" stop-color="#DB2777" stop-opacity="0" />
+                        </linearGradient>
+                      </defs>
+                      <path :d="trafficChart.area" fill="url(#traffic-fill)" />
+                      <path :d="trafficChart.line" fill="none" stroke="#DB2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+                    </svg>
+                    <!-- One hover column per point: guide line, hollow dot, tooltip -->
+                    <div
+                      v-for="c in trafficChart.coords"
+                      :key="c.label"
+                      class="group absolute inset-y-0 -translate-x-1/2"
+                      :style="{ left: `${c.x}%`, width: `${100 / trafficChart.coords.length}%` }"
+                    >
+                      <span class="absolute inset-y-0 left-1/2 hidden border-l border-dashed border-brand-300 group-hover:block" />
+                      <span
+                        class="absolute left-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-brand-400 bg-white transition-transform group-hover:scale-125"
+                        :style="{ top: `${c.y}%` }"
+                      />
+                      <span
+                        class="pointer-events-none absolute left-1/2 hidden -translate-x-1/2 -translate-y-[calc(100%+12px)] whitespace-nowrap rounded-md border border-ink-200 bg-white px-3 py-2 text-left shadow-lg group-hover:block"
+                        :style="{ top: `${c.y}%` }"
+                      >
+                        <span class="block text-xs text-ink-500">{{ c.label }}</span>
+                        <span class="block text-sm font-semibold text-ink-900">{{ c.value }}</span>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- X axis labels, centred under each point -->
+                  <div class="relative mt-3 h-4">
+                    <span
+                      v-for="c in trafficChart.coords"
+                      :key="`x-${c.label}`"
+                      class="absolute -translate-x-1/2 whitespace-nowrap text-xs text-ink-500"
+                      :style="{ left: `${c.x}%` }"
+                    >{{ c.label }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traffic sources: table left, donut right -->
+          <div v-if="analytics.sources.length" class="grid grid-cols-1 gap-8 border-b border-ink-200 p-7 lg:grid-cols-[320px_1fr]">
+            <div>
+              <h4 class="border-l-4 border-brand-500 pl-3 text-base font-semibold text-ink-900">{{ t('tool.trafficSources') }}</h4>
+              <ul class="mt-4 divide-y divide-ink-200 rounded-lg border border-ink-200">
+                <li v-for="(s, i) in analytics.sources" :key="s.name" class="flex items-center gap-3 px-5 py-3.5 text-base">
+                  <span class="h-2.5 w-2.5 shrink-0 rounded-full" :style="{ backgroundColor: sourceColors[i % sourceColors.length] }" />
+                  <span class="text-ink-900">{{ sourceLabel(s.name) }}</span>
+                  <span class="ml-auto font-bold text-ink-900">{{ s.pct.toFixed(2) }}%</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center justify-center">
+              <svg :viewBox="`0 0 ${DONUT.w} ${DONUT.h}`" class="w-full" :style="{ maxWidth: `${DONUT.w}px` }" role="img" :aria-label="t('tool.trafficSources')">
+                <path
+                  v-for="(seg, i) in sourceDonut"
+                  :key="seg.d"
+                  :d="hoveredSource === i ? seg.dHover : seg.d"
+                  :fill="seg.color"
+                  class="cursor-pointer"
+                  style="transition: d 0.2s ease-out"
+                  @mouseenter="hoveredSource = i"
+                  @mouseleave="hoveredSource = null"
+                />
+                <text
+                  v-for="seg in sourceDonut"
+                  :key="seg.label.text"
+                  :x="seg.label.x"
+                  :y="seg.label.y"
+                  :fill="seg.color"
+                  :text-anchor="seg.label.right ? 'start' : 'end'"
+                  dominant-baseline="middle"
+                  :font-size="DONUT.font"
+                >{{ seg.label.text }}</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Top keywords -->
+          <div v-if="analytics.keywords.length" class="border-b border-ink-200 p-7">
+            <h4 class="border-l-4 border-brand-500 pl-3 text-base font-semibold text-ink-900">{{ t('tool.topKeywords') }}</h4>
+            <div class="mt-4 overflow-x-auto rounded-lg border border-ink-200">
+              <table class="w-full text-base">
+                <thead class="bg-ink-100/60 text-left text-sm text-ink-500">
+                  <tr>
+                    <th class="px-5 py-3 font-medium">{{ t('tool.keyword') }}</th>
+                    <th class="px-5 py-3 text-right font-medium">{{ t('tool.searchVolume') }}</th>
+                    <th class="px-5 py-3 text-right font-medium">{{ t('tool.keywordType') }}</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-ink-200">
+                  <tr v-for="kw in analytics.keywords" :key="kw.keyword">
+                    <td class="px-5 py-3 text-ink-900">{{ kw.keyword }}</td>
+                    <td class="px-5 py-3 text-right font-semibold text-ink-900">{{ formatCompact(kw.volume) }}</td>
+                    <td class="px-5 py-3 text-right">
+                      <span :class="['rounded-full px-2.5 py-0.5 text-xs font-semibold', kw.type === 'paid' ? 'bg-amber-50 text-amber-700' : 'bg-emerald-50 text-emerald-700']">
+                        {{ kw.type === 'paid' ? t('tool.keywordPaid') : t('tool.keywordOrganic') }}
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Mobile apps -->
+          <div v-if="analytics.apps.length" class="p-7">
+            <h4 class="border-l-4 border-brand-500 pl-3 text-base font-semibold text-ink-900">{{ t('tool.mobileApps') }}</h4>
+            <div class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div v-for="app in analytics.apps" :key="app.title + app.store" class="flex items-center gap-4 rounded-lg border border-ink-200 p-4">
+                <img v-if="app.icon" :src="app.icon" :alt="app.title" class="h-12 w-12 shrink-0 rounded-xl" loading="lazy">
+                <div class="min-w-0">
+                  <p class="truncate font-semibold text-ink-900">{{ app.title }}</p>
+                  <p class="mt-0.5 text-sm text-ink-500">
+                    {{ app.store === 'appstore' ? 'App Store' : 'Google Play' }}
+                    <template v-if="app.rating"> · ★ {{ app.rating.toFixed(1) }} ({{ formatCompact(app.ratingCount) }})</template>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <p v-else class="mt-6 rounded-xl border border-dashed border-ink-200 py-10 text-center text-base text-ink-400">
+          {{ t('tool.noTrafficYet') }}
+        </p>
       </div>
 
       <div id="section-alternatives" class="scroll-mt-32">

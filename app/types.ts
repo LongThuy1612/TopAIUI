@@ -122,6 +122,28 @@ export interface Tool {
   tags?: TagRef[]
   faqs?: Faq[]
   pricingPlans?: PricingPlan[]
+  analytics?: ToolAnalytics | null
+}
+
+export interface ToolAnalytics {
+  monthlyVisits: number | null
+  growthPct: number | null
+  avgVisitDuration: number | null // seconds
+  pagesPerVisit: number | null
+  bounceRatePct: number | null
+  chart: { month: string; visits: number }[]
+  sources: { name: string; pct: number }[]
+  keywords: { keyword: string; volume: number; type: 'organic' | 'paid' }[]
+  ranking: {
+    global: number | null
+    country: string | null // ISO alpha-2
+    countryRank: number | null
+    category: string | null
+    categoryRank: number | null
+  }
+  yearFounded: string | null
+  employeeRange: string | null
+  apps: { title: string; icon: string | null; store: 'googleplay' | 'appstore'; rating: number | null; ratingCount: number }[]
 }
 
 export interface ToolsResponse {

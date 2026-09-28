@@ -299,6 +299,37 @@ model CollectionTranslation {
   @@map("CollectionTranslation")
 }
 
+// Mirrors the old topaicollection table column-for-column so its rows can be
+// imported as-is; joined to Tool by toolSlug (no FK, same as the source).
+model ToolAnalyticsData {
+  id                           String   @id @default(uuid())
+  toolSlug                     String   @unique
+  monthlyVisits                Float?
+  trafficVisits                Json?    // { "YYYY-MM-01": visits }
+  trafficSources               Json?    // { "Direct": 81.7, "Search": 0, ... } — percentages
+  engagement                   Json?    // { bounceRate: 0..1, timeOnSite: seconds, pagePerVisit }
+  paidKeywords                 Json?
+  organicKeywords              Json?
+  geography                    Json?
+  globalRanking                Int?
+  highestTrafficCountry        Int?
+  highestTrafficCountryRanking Int?
+  category                     String?
+  categoryRanking              Int?
+  hasGaToken                   Boolean?
+  privacyStatus                String?
+  relatedApps                  Json?
+  employeeRange                String?
+  createdAt                    DateTime @default(now())
+  updatedAt                    DateTime @updatedAt
+  desktopVsMobile              Json?
+  growthMetrics                Json?    // { trend: number[], change: fraction }
+  similarSites                 Json?
+  yearFounded                  String?
+
+  @@map("ToolAnalyticsData")
+}
+
 model ToolSocialStats {
   id       String @id @default(uuid())
   toolSlug String @unique @map("tool_slug")
