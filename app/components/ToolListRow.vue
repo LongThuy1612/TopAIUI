@@ -42,7 +42,7 @@ const rankStyle = computed(() => {
       </div>
       <p v-if="tool.shortDesc" class="mt-1.5 mb-2.5 line-clamp-2 text-[14.5px] leading-[1.6] text-ink-800">{{ tool.shortDesc }}</p>
       <div v-if="tool.tags?.length" class="flex flex-wrap gap-x-3.5 gap-y-1 text-xs text-ink-500">
-        <span v-for="tag in tool.tags" :key="tag.slug">#{{ tag.name }}</span>
+        <span v-for="tag in tool.tags.slice(0, 5)":key="tag.slug">#{{ tag.name }}</span>
       </div>
       <span v-else-if="categoryLabel" class="text-xs text-ink-500">#{{ categoryLabel }}</span>
     </div>

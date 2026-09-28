@@ -20,33 +20,9 @@ export default defineEventHandler(async (event) => {
   if (query.region) where.region = String(query.region)
   if (query.source) where.source = String(query.source)
   const isTodayTab = query.today === 'true'
-  if (isTodayTab) {
-    where.isApproved = true
-
-    // Walk backwards a day at a time (by addedOn) until we find one with
-    // enough tools to fill a page; capped so an idle directory can't spin
-    // through years of days.
-    const maxLookbackDays = 90
-    let bestRange: { gte: Date, lt: Date } | null = null
-    let bestCount = 0
-
-    for (let offset = 0; offset < maxLookbackDays; offset++) {
-      const start = new Date()
-      start.setHours(0, 0, 0, 0)
-      start.setDate(start.getDate() - offset)
-      const end = new Date(start)
-      end.setDate(start.getDate() + 1)
-
-      const count = await prisma.tool.count({ where: { ...where, addedOn: { gte: start, lt: end } } })
-      if (count > bestCount) {
-        bestCount = count
-        bestRange = { gte: start, lt: end }
-      }
-      if (count >= limit) break
-    }
-
-    if (bestRange) where.addedOn = bestRange
-  }
+  // Today = approved tools only. Sorted by addedOn unless the caller passes an
+  // explicit sort (the /today page uses sort=newest → createdAt).
+  if (isTodayTab) where.isApproved = true
   if (query.days) {
     const since = new Date()
     since.setDate(since.getDate() - Number(query.days))
@@ -66,8 +42,8 @@ export default defineEventHandler(async (event) => {
     growth6m: { last6MonthGrowth: 'desc' },
     revenue: { monthlyRevenue: 'desc' }
   }
-  const orderBy = isTodayTab
-    ? { addedOn: 'desc' as const }
+  const orderBy = isTodayTab && !query.sort
+    ? { addedOn: { sort: 'desc' as const, nulls: 'last' as const } }
     : isNewTab
       ? { createdAt: 'desc' as const }
       : (sortMap[String(query.sort)] ?? sortMap.newest)

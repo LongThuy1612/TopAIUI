@@ -5,7 +5,7 @@ const { t, locale } = useI18n()
 
 const [{ data: newRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', newToday: 'true', locale: locale.value })) }),
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', today: 'true', locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, today: 'true', locale: locale.value })) }),
   useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 200, locale: locale.value })) })
 ])
@@ -20,7 +20,7 @@ const browseCategories = computed(() =>
 const justLaunched = computed(() => newTools.value.slice(0, 4))
 const featuredHighlights = computed(() => topRatedRes.value?.items ?? [])
 
-const tabTools = computed(() => todayTools.value.slice(0, 10))
+const tabTools = computed(() => todayTools.value.slice(0, 20))
 
 function initialsOf(name: string) {
   return name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI'
