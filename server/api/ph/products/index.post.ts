@@ -91,7 +91,8 @@ export default defineEventHandler(async (event) => {
     const product = await prisma.phProductTool.upsert({
       where: { phId },
       create: data,
-      update: updateData
+      // Reset isSync so the changed data gets synced to Tool again.
+      update: { ...updateData, isSync: 0 }
     })
     return product
   } catch (err: any) {
