@@ -182,9 +182,11 @@ onMounted(() => {
   loadReviewDraft()
 })
 
+const loginLink = computed(() => ({ path: '/login', query: { redirect: route.fullPath } }))
+
 function goToLoginToReview() {
   saveReviewDraft()
-  navigateTo(`/login?redirect=${encodeURIComponent(route.fullPath)}`)
+  navigateTo(loginLink.value)
 }
 
 function submitNewReview() {
@@ -312,7 +314,7 @@ const sourceLabel = (name: string) => {
 // Donut with outside labels, echarts-style: segments start at 12 o'clock and go
 // clockwise; each label sits outside its segment's mid-angle, then labels on the
 // same side are pushed apart vertically so small neighbouring slices don't overlap.
-// Geometry mirrors the Toolify reference (outer 86 / inner 62 / labels at ~1.3r),
+// Geometry follows the design reference (outer 86 / inner 62 / labels at ~1.3r),
 // scaled 1.25× so the chart fills the column.
 const DONUT = { w: 700, h: 400, cx: 350, cy: 195, r: 100, inner: 76, labelR: 130, lineH: 16, hoverGrow: 10, font: 15 }
 const hoveredSource = ref<number | null>(null)
@@ -638,10 +640,10 @@ useSeoMeta({
         </div>
 
         <div class="mt-3 flex justify-end gap-4">
-          <NuxtLink to="/admin/advertise" class="rounded bg-brand-500 px-3 py-2 text-sm text-white transition hover:bg-brand-600">
+          <NuxtLink to="/advertise" class="rounded bg-brand-500 px-3 py-2 text-sm text-white transition hover:bg-brand-600">
             {{ t('tool.advertiseTool') }}
           </NuxtLink>
-          <NuxtLink to="/submit" class="rounded border border-brand-500 bg-white px-3 py-2 text-sm text-brand-500 transition hover:bg-brand-50">
+          <NuxtLink to="/update-ai" class="rounded border border-brand-500 bg-white px-3 py-2 text-sm text-brand-500 transition hover:bg-brand-50">
             {{ t('tool.updateTool') }}
           </NuxtLink>
         </div>

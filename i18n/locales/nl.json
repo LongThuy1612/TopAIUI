@@ -194,5 +194,391 @@
   },
   "language": {
     "label": "Taal"
+  },
+  "promote": {
+    "title": "Jouw AI's op {site}",
+    "myOrders": "Mijn bestellingen",
+    "intro": "{site} brengt je product onder de aandacht van mensen die actief naar AI-tools zoeken — bouwers, oprichters, investeerders en beslissers — zodat je meer zichtbaarheid, meer proefgebruikers en meer betalende klanten krijgt.",
+    "stats": {
+      "pageViews": "Paginaweergaven",
+      "monthlyVisits": "Maandelijkse bezoeken",
+      "subscribers": "Abonnees",
+      "desktopUsers": "Desktopgebruikers",
+      "avgTime": "Gem. tijd op de site"
+    },
+    "highlights": [
+      "Geselecteerde AI-toolsgids",
+      "Dofollow-backlinks",
+      "Meertalige vermeldingen",
+      "Permanente vermelding & verkeer",
+      "Gemaakt voor oprichters & startups"
+    ],
+    "chooseService": "Kies wat je nodig hebt",
+    "popular": "Populair",
+    "services": {
+      "submit": {
+        "title": "AI indienen",
+        "desc": "Vermeld je AI-tool en krijg bezoekers."
+      },
+      "advertise": {
+        "title": "AI adverteren",
+        "desc": "Pay-per-click-campagnes en uitgelichte plaatsingen."
+      },
+      "guestPost": {
+        "title": "Gastartikelen / Link invoegen",
+        "desc": "Publiceer artikelen of voeg links toe op {site}."
+      },
+      "update": {
+        "title": "AI bijwerken",
+        "desc": "Bewerk de gegevens van een tool die je al hebt vermeld."
+      },
+      "submitGpt": {
+        "title": "GPT indienen",
+        "desc": "Deel je eigen GPT met meer gebruikers."
+      }
+    },
+    "notice": {
+      "paid": "Betaling ontvangen — bedankt! Je kunt je bestelling volgen in {link}.",
+      "canceled": "Betaling geannuleerd. Er is niets in rekening gebracht."
+    },
+    "faqDefaultTitle": "Veelgestelde vragen",
+    "faqMore": "Heb je een vraag? {link}",
+    "contactUs": "Neem contact op",
+    "needToKnow": "Goed om te weten:",
+    "total": "Totaal: {amount}",
+    "pay": "{amount} betalen",
+    "processing": "Bezig met verwerken…",
+    "genericError": "Er ging iets mis. Probeer het opnieuw.",
+    "eta": "Geen wachtrij — binnen 48 uur online",
+    "toolPicker": {
+      "placeholder": "Typ om je tool te zoeken en te selecteren",
+      "searching": "Zoeken…",
+      "notFound": "Geen tool gevonden. {link}.",
+      "submitFirst": "Dien hem eerst in",
+      "notListed": "Nog niet vermeld? {link}."
+    },
+    "form": {
+      "tool": "Tool",
+      "selectTool": "Zoek en selecteer je tool.",
+      "invalidUrl": "Voer een geldige URL in."
+    },
+    "submit": {
+      "seoTitle": "Dien je AI-tool in – {site}",
+      "seoDesc": "Vermeld je AI-tool op {site} en word ontdekt door mensen die naar AI-producten zoeken.",
+      "panelTitle": "Vertel ons over je tool",
+      "name": "Naam",
+      "namePlaceholder": "bijv. Example AI",
+      "url": "Website-URL",
+      "whoWrites": "Wie schrijft de vermelding?",
+      "nameRequired": "Voer de naam van de tool in.",
+      "urlRequired": "Voer de website-URL in.",
+      "urlInvalid": "Voer een geldige URL in, bijv. {example}",
+      "modes": {
+        "auto": {
+          "title": "Geschreven door {site}",
+          "desc": "Wij schrijven de vermelding en alle vertalingen met AI voor je."
+        },
+        "manual": {
+          "title": "Ik schrijf hem zelf",
+          "desc": "Jij levert de vermelding in het Engels aan; wij regelen de vertalingen."
+        }
+      },
+      "mockDesc": "Jouw tool, in elke lijst getoond met een opvallende rand.",
+      "includesTitle": "Wat je vermelding bevat",
+      "youGetLead": "Je krijgt:",
+      "youGet": [
+        {
+          "title": "Binnen 48 uur vermeld in \"Nieuwste\" en \"Net gelanceerd\".",
+          "desc": "Geen wachtlijst."
+        },
+        {
+          "title": "Opvallende kaartrand.",
+          "desc": "Je tool valt op in lijsten en krijgt meer klikken."
+        },
+        {
+          "title": "Dofollow-backlinks voor SEO.",
+          "desc": "Je site krijgt meerdere dofollow-links vanaf onze pagina's, wat helpt bij zoekposities en organisch verkeer."
+        },
+        {
+          "title": "Permanente vermelding.",
+          "desc": "Je tool blijft in de gids staan en blijft bezoekers trekken."
+        },
+        {
+          "title": "Lanceringsbadge.",
+          "desc": "Plaats een \"Featured on\"-badge op je website."
+        }
+      ],
+      "faqTitle": "Veelgestelde vragen – AI indienen",
+      "faqs": [
+        {
+          "q": "Wat kost een vermelding? Eenmalig of terugkerend?",
+          "a": "Het is een eenmalige betaling. Er is geen abonnement."
+        },
+        {
+          "q": "Hoe snel staat mijn tool online?",
+          "a": "Betaalde inzendingen slaan de wachtrij over en worden meestal binnen 48 uur gepubliceerd."
+        },
+        {
+          "q": "Verloopt mijn vermelding?",
+          "a": "Nee. Na goedkeuring blijft je vermelding permanent in de gids."
+        },
+        {
+          "q": "Hoe krijg ik meer weergaven?",
+          "a": "Combineer je vermelding met een advertentiecampagne of een gastartikel voor extra bereik."
+        },
+        {
+          "q": "Waarom is mijn tool niet vermeld?",
+          "a": "We weigeren tools die onbereikbaar zijn, niets met AI te maken hebben of ons contentbeleid schenden. Je krijgt bericht en je geld terug."
+        },
+        {
+          "q": "Garanderen jullie verkeer of verkopen?",
+          "a": "Nee. We garanderen de vermelding en de plaatsing, geen specifieke resultaten in verkeer of omzet."
+        },
+        {
+          "q": "Wat is jullie terugbetalingsbeleid?",
+          "a": "Als je tool wordt afgewezen, krijg je het volledige bedrag terug. Gepubliceerde vermeldingen worden niet terugbetaald."
+        },
+        {
+          "q": "Werken jullie met bureaus?",
+          "a": "Ja — neem contact op voor bulkinzendingen."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Adverteer je AI-tool – {site}",
+      "seoDesc": "Pay-per-click- en uitgelichte advertentieplaatsingen op {site}.",
+      "panelTitle": "Welke tool wil je promoten?",
+      "landing": "Landings-URL van de advertentie",
+      "landingHint": "Optioneel — bijv. een link met UTM-tracking",
+      "choosePackage": "Kies een klikpakket",
+      "clicksLabel": "Klikken:",
+      "pickPackage": "Kies een pakket.",
+      "cpc": "Kosten per klik: {amount}",
+      "howTitle": "Zo werkt adverteren",
+      "intro": [
+        "Advertenties worden automatisch door ons systeem geplaatst totdat je minstens het aantal gekochte klikken hebt ontvangen.",
+        "Je budget wordt als eerste besteed, dus je krijgt snel klikken en vertoningen."
+      ],
+      "warning": "Je kunt niet kiezen op welke pagina's de advertenties verschijnen en de kwaliteit van de klikken is niet gegarandeerd.",
+      "controlNote": "Je kunt je campagne op elk moment pauzeren of hervatten.",
+      "placementsTitle": "Advertentieplaatsingen",
+      "tagline": "Jouw slogan hier",
+      "types": [
+        {
+          "badge": "Meest getoond",
+          "title": "Standaardplaatsing",
+          "points": [
+            "Getoond in het blok \"Net gelanceerd\" op de homepage.",
+            "Roteert over lijstpagina's: nieuwste, meest opgeslagen, meest gebruikt, maandelijks, categorieën.",
+            "Getoond op pagina's van concurrerende tools en op je eigen categoriepagina's."
+          ]
+        },
+        {
+          "badge": "Meest effectief",
+          "title": "Uitgelichte plaatsing",
+          "points": [
+            "Vastgezette plekken op home, nieuwste, meest gebruikt, meest opgeslagen, zoekresultaten en categoriepagina's.",
+            "Hoe hoger je resterende saldo, hoe hoger je positie — waardeer op elk moment op om te stijgen.",
+            "Sponsorbalk bovenaan de meeste pagina's, roterend tussen adverteerders.",
+            "Ook getoond op blog-, vergelijkings- en alternatievenpagina's.",
+            "Elke advertentieklik gaat rechtstreeks naar je website."
+          ]
+        }
+      ],
+      "reportTitle": "Campagnerapport",
+      "reportNote": "Je krijgt voor elke campagne een gedetailleerd rapport. Je kunt resultaten ook volgen met Google Analytics of een andere analysetool.",
+      "reportColumns": [
+        "Tool",
+        "Organische klikken",
+        "Betaalde klikken",
+        "Totaal klikken",
+        "Detailweergaven",
+        "Opgeslagen",
+        "Vertoningen"
+      ],
+      "sampleNote": "Voorbeeldgegevens, alleen ter illustratie.",
+      "faqTitle": "FAQ – Adverteren",
+      "faqs": [
+        {
+          "q": "Hoe werkt adverteren?",
+          "a": "Kies een tool en een klikpakket. Na betaling rouleren je advertenties over de site totdat de gekochte klikken zijn geleverd."
+        },
+        {
+          "q": "Kan ik vaker klikken kopen?",
+          "a": "Ja. Nieuwe aankopen worden bij je saldo opgeteld, wat ook je uitgelichte positie verhoogt."
+        },
+        {
+          "q": "Ik heb meer budget en wil meer klanten. Wat moet ik doen?",
+          "a": "Koop een groter pakket of neem contact op voor een campagne op maat met gastartikelen en promotie op sociale media."
+        },
+        {
+          "q": "Kan ik op specifieke landen of talen richten?",
+          "a": "Op dit moment niet. De targeting gebeurt automatisch."
+        },
+        {
+          "q": "Kan ik kiezen waar mijn advertenties verschijnen?",
+          "a": "Nee. Plaatsingen worden automatisch gekozen om je klikken zo snel mogelijk te leveren."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Gastartikelen & link invoegen – {site}",
+      "seoDesc": "Publiceer gastartikelen of voeg dofollow-links toe op {site} om een AI-geïnteresseerd publiek te bereiken.",
+      "title": "Gastartikelen / link invoegen op {site}",
+      "sub": "Hoeveel gastartikelen of linkinvoegingen wil je publiceren?",
+      "rule": "Een gastartikel kost 2 credits, een linkinvoeging kost 1 credit.",
+      "packagesLabel": "Creditpakketten",
+      "buy": "{n} credit kopen | {n} credits kopen",
+      "decrease": "Verlagen",
+      "increase": "Verhogen",
+      "customCredits": "Aangepast aantal credits",
+      "tip": "TIP: bestellingen boven {min} credits krijgen {percent}% korting.",
+      "packageNotes": [
+        "1 linkinvoeging",
+        "1 gastartikel of 2 linkinvoegingen",
+        "1 gastartikel + 1 linkinvoeging, of 3 linkinvoegingen",
+        "tot 5 gastartikelen of 10 linkinvoegingen"
+      ],
+      "benefits": [
+        "Dofollow-links",
+        "Gezaghebbende AI-artikelen",
+        "Blijvend verkeer",
+        "Permanente URL",
+        "SEO-waarde"
+      ],
+      "notes": [
+        "Een linkinvoeging kost 1 credit; een gastartikel kost 2 credits.",
+        "Om een gastartikel te publiceren heb je minstens 2 credits nodig.",
+        "Credits kun je verdelen over artikelen en linkinvoegingen. Ongebruikte credits worden op verzoek terugbetaald (1 credit = {price}).",
+        "Ander aantal nodig? Gebruik de knoppen. Bestellingen boven {min} credits krijgen automatisch {percent}% korting.",
+        "Credits die aan gepubliceerde content zijn besteed, worden niet terugbetaald. Wordt een inzending afgewezen, dan gaan de credits terug naar je saldo."
+      ],
+      "faqTitle": "Veelgestelde vragen – Gastartikelen / Link invoegen",
+      "faqs": [
+        {
+          "q": "Hoe bestel ik een gastartikel?",
+          "a": "Koop minstens 2 credits en dien je artikel in via je dashboard. Onze redactie beoordeelt het vóór publicatie."
+        },
+        {
+          "q": "Hoe bestel ik een linkinvoeging?",
+          "a": "Koop 1 credit per link en stuur ons de doel-URL, de ankertekst en het artikel waarin de link moet komen (of laat ons er een kiezen)."
+        },
+        {
+          "q": "Hoe verloopt de publicatie?",
+          "a": "Credits kopen → content of linkgegevens indienen → redactionele controle → publicatie. Je ontvangt de live-URL per e-mail."
+        },
+        {
+          "q": "Zijn er contentrichtlijnen voor gastartikelen?",
+          "a": "Artikelen moeten origineel, AI-gerelateerd en nuttig voor lezers zijn, zonder spam- of volwassenenlinks. We kunnen om aanpassingen vragen."
+        },
+        {
+          "q": "Krijg ik ongebruikte credits terugbetaald?",
+          "a": "Ja. Neem contact op met support en ongebruikte credits worden terugbetaald via de oorspronkelijke betaalmethode."
+        },
+        {
+          "q": "Wat leveren gastartikelen en linkinvoegingen mij op?",
+          "a": "Ze brengen je product onder de aandacht van een AI-geïnteresseerd publiek en geven je een permanente dofollow-backlink."
+        },
+        {
+          "q": "Is er een volumekorting?",
+          "a": "Ja — elke bestelling boven {min} credits krijgt automatisch {percent}% korting."
+        },
+        {
+          "q": "Werken jullie met bureaus?",
+          "a": "Ja. Bureaus met meerdere klanten kunnen contact opnemen voor afspraken op maat."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Werk je AI-tool bij – {site}",
+      "seoDesc": "Werk de gegevens bij van je tool die op {site} staat.",
+      "panelTitle": "Eerst betalen, dan je wijzigingen indienen",
+      "canUpdate": "Wat je kunt bijwerken:",
+      "fields": [
+        "Toolnaam",
+        "Korte intro",
+        "Beschrijving",
+        "Categorie",
+        "Gebruik",
+        "Kernfuncties",
+        "Toepassingen",
+        "Prijzen",
+        "Veelgestelde vragen",
+        "Website-URL"
+      ],
+      "notes": [
+        "Na betaling krijg je een formulier waarin je de gewenste wijzigingen indient.",
+        "Plak de nieuwe content in de bijbehorende velden — naam, categorie, intro, beschrijving, gebruik, functies, toepassingen, prijzen of veelgestelde vragen.",
+        "Website-URL's kunnen niet worden gewijzigd. Ben je naar een nieuw domein verhuisd, stel dan een doorverwijzing in vanaf het oude.",
+        "Elke update wordt handmatig beoordeeld voordat hij live gaat. Bij afwijzing krijg je automatisch je geld terug.",
+        "Elke betaling geldt voor één update. Controleer je content goed voordat je hem indient."
+      ],
+      "faqTitle": "FAQ – AI bijwerken",
+      "faqs": [
+        {
+          "q": "Wat kost een update?",
+          "a": "Een vast eenmalig bedrag per update, zie hierboven."
+        },
+        {
+          "q": "Hoe verloopt een update?",
+          "a": "Betalen → updateformulier invullen → ons team beoordeelt → wijzigingen gaan live."
+        },
+        {
+          "q": "Moet ik de nieuwe content zelf schrijven?",
+          "a": "Ja. Als je geen nieuwe content indient, verandert er niets en kun je om terugbetaling vragen."
+        },
+        {
+          "q": "Welke gegevens kan ik wijzigen?",
+          "a": "Alles uit de lijst hierboven behalve de website-URL."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Dien je GPT in – {site}",
+      "seoDesc": "Vermeld je eigen GPT op {site}.",
+      "panelTitle": "Plak de link naar je GPT",
+      "label": "GPT-link",
+      "required": "Voer de link naar je GPT in.",
+      "invalid": "Voer een geldige GPT-link in, bijv. {example}",
+      "hint": "We halen de GPT-gegevens automatisch op en schrijven de rest van de vermelding voor je.",
+      "faqTitle": "Veelgestelde vragen – GPT",
+      "faqs": [
+        {
+          "q": "Wat kost het om een GPT te vermelden?",
+          "a": "Een eenmalig bedrag, zie hierboven."
+        },
+        {
+          "q": "Hoe lang duurt het voordat mijn GPT vermeld wordt?",
+          "a": "Meestal binnen 48 uur na betaling."
+        },
+        {
+          "q": "Verloopt de vermelding van mijn GPT?",
+          "a": "Nee, hij blijft permanent vermeld zolang de GPT-link werkt."
+        },
+        {
+          "q": "Hoe krijgt mijn GPT meer gebruikers?",
+          "a": "Combineer de vermelding met een advertentiecampagne of een gastartikel."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Nieuwe bestelling",
+      "postCredits": "Credits voor gastartikelen:",
+      "adClicks": "Saldo advertentieklikken:",
+      "date": "Datum",
+      "service": "Dienst",
+      "details": "Details",
+      "amount": "Bedrag",
+      "status": "Status",
+      "statuses": {
+        "PAID": "Betaald",
+        "PENDING": "In afwachting",
+        "EXPIRED": "Verlopen"
+      },
+      "loading": "Laden…",
+      "empty": "Nog geen bestellingen.",
+      "clicks": "{n} klikken",
+      "credits": "{n} credit | {n} credits"
+    }
   }
 }

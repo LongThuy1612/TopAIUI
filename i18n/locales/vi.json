@@ -561,5 +561,391 @@
     "upload": "Tải lên",
     "uploadHint": "Vui lòng tải lên ảnh chụp màn hình hoặc video màn hình. Dung lượng tối đa mỗi tệp: 100MB.",
     "submit": "Gửi"
+  },
+  "promote": {
+    "title": "Công cụ AI của bạn trên {site}",
+    "myOrders": "Đơn hàng của tôi",
+    "intro": "{site} đưa sản phẩm của bạn đến với những người đang tích cực tìm kiếm công cụ AI — nhà phát triển, nhà sáng lập, nhà đầu tư và người ra quyết định — giúp bạn có thêm độ hiển thị, thêm lượt dùng thử và thêm khách hàng trả phí.",
+    "stats": {
+      "pageViews": "Lượt xem trang",
+      "monthlyVisits": "Lượt truy cập hằng tháng",
+      "subscribers": "Người đăng ký",
+      "desktopUsers": "Người dùng máy tính",
+      "avgTime": "Thời gian trung bình trên trang"
+    },
+    "highlights": [
+      "Danh bạ công cụ AI được chọn lọc",
+      "Backlink dofollow",
+      "Trang giới thiệu đa ngôn ngữ",
+      "Hiển thị & lưu lượng vĩnh viễn",
+      "Dành cho nhà sáng lập & startup"
+    ],
+    "chooseService": "Chọn dịch vụ bạn cần",
+    "popular": "Phổ biến",
+    "services": {
+      "submit": {
+        "title": "Đăng AI",
+        "desc": "Đăng công cụ AI của bạn và bắt đầu có lượt truy cập."
+      },
+      "advertise": {
+        "title": "Quảng cáo AI",
+        "desc": "Chiến dịch trả theo lượt nhấp và vị trí nổi bật."
+      },
+      "guestPost": {
+        "title": "Bài viết khách / Chèn liên kết",
+        "desc": "Đăng bài viết hoặc thêm liên kết trên {site}."
+      },
+      "update": {
+        "title": "Cập nhật AI",
+        "desc": "Chỉnh sửa thông tin công cụ bạn đã đăng."
+      },
+      "submitGpt": {
+        "title": "Đăng GPT",
+        "desc": "Chia sẻ GPT tùy chỉnh của bạn đến nhiều người hơn."
+      }
+    },
+    "notice": {
+      "paid": "Đã nhận thanh toán — cảm ơn bạn! Bạn có thể theo dõi đơn hàng tại {link}.",
+      "canceled": "Đã hủy thanh toán. Bạn chưa bị trừ tiền."
+    },
+    "faqDefaultTitle": "Câu hỏi thường gặp",
+    "faqMore": "Bạn có câu hỏi? {link}",
+    "contactUs": "Liên hệ với chúng tôi",
+    "needToKnow": "Cần biết:",
+    "total": "Tổng cộng: {amount}",
+    "pay": "Thanh toán {amount}",
+    "processing": "Đang xử lý…",
+    "genericError": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "eta": "Không cần xếp hàng — hiển thị trong vòng 48 giờ",
+    "toolPicker": {
+      "placeholder": "Nhập để tìm và chọn công cụ của bạn",
+      "searching": "Đang tìm…",
+      "notFound": "Không tìm thấy công cụ. {link}.",
+      "submitFirst": "Hãy đăng công cụ trước",
+      "notListed": "Chưa có trên trang? {link}."
+    },
+    "form": {
+      "tool": "Công cụ",
+      "selectTool": "Vui lòng tìm và chọn công cụ của bạn.",
+      "invalidUrl": "Vui lòng nhập URL hợp lệ."
+    },
+    "submit": {
+      "seoTitle": "Đăng công cụ AI của bạn – {site}",
+      "seoDesc": "Đăng công cụ AI của bạn trên {site} để được những người đang tìm sản phẩm AI khám phá.",
+      "panelTitle": "Giới thiệu về công cụ của bạn",
+      "name": "Tên",
+      "namePlaceholder": "ví dụ: Example AI",
+      "url": "URL trang web",
+      "whoWrites": "Ai sẽ viết nội dung giới thiệu?",
+      "nameRequired": "Vui lòng nhập tên công cụ.",
+      "urlRequired": "Vui lòng nhập URL trang web.",
+      "urlInvalid": "Vui lòng nhập URL hợp lệ, ví dụ: {example}",
+      "modes": {
+        "auto": {
+          "title": "{site} viết giúp",
+          "desc": "Chúng tôi dùng AI viết nội dung giới thiệu và toàn bộ bản dịch cho bạn."
+        },
+        "manual": {
+          "title": "Tôi sẽ tự viết",
+          "desc": "Bạn cung cấp nội dung bằng tiếng Anh; chúng tôi lo phần dịch."
+        }
+      },
+      "mockDesc": "Công cụ của bạn được hiển thị với viền nổi bật ở mọi danh sách.",
+      "includesTitle": "Gói đăng bao gồm",
+      "youGetLead": "Bạn sẽ nhận được:",
+      "youGet": [
+        {
+          "title": "Xuất hiện ở mục \"Mới nhất\" và \"Vừa ra mắt\" trong vòng 48 giờ.",
+          "desc": "Không phải chờ hàng đợi."
+        },
+        {
+          "title": "Thẻ có viền nổi bật.",
+          "desc": "Công cụ của bạn nổi bật trong danh sách và thu hút nhiều lượt nhấp hơn."
+        },
+        {
+          "title": "Backlink dofollow cho SEO.",
+          "desc": "Trang web của bạn nhận nhiều liên kết dofollow từ các trang của chúng tôi, giúp tăng thứ hạng tìm kiếm và lưu lượng tự nhiên."
+        },
+        {
+          "title": "Hiển thị vĩnh viễn.",
+          "desc": "Công cụ của bạn luôn có trong danh bạ và tiếp tục nhận lượt truy cập theo thời gian."
+        },
+        {
+          "title": "Huy hiệu ra mắt.",
+          "desc": "Gắn huy hiệu \"Featured on\" lên trang web của bạn."
+        }
+      ],
+      "faqTitle": "Câu hỏi thường gặp – Đăng AI",
+      "faqs": [
+        {
+          "q": "Đăng công cụ tốn bao nhiêu? Trả một lần hay định kỳ?",
+          "a": "Chỉ thanh toán một lần. Không có gói đăng ký định kỳ."
+        },
+        {
+          "q": "Bao lâu thì công cụ của tôi được hiển thị?",
+          "a": "Các đơn trả phí không cần xếp hàng và thường được đăng trong vòng 48 giờ."
+        },
+        {
+          "q": "Trang giới thiệu của tôi có hết hạn không?",
+          "a": "Không. Sau khi được duyệt, công cụ của bạn sẽ ở trong danh bạ vĩnh viễn."
+        },
+        {
+          "q": "Làm sao để có thêm lượt xem?",
+          "a": "Kết hợp việc đăng công cụ với một chiến dịch quảng cáo hoặc một bài viết khách để tăng độ hiển thị."
+        },
+        {
+          "q": "Vì sao công cụ của tôi không được đăng?",
+          "a": "Chúng tôi từ chối những công cụ không truy cập được, không liên quan đến AI hoặc vi phạm chính sách nội dung. Bạn sẽ được thông báo và hoàn tiền."
+        },
+        {
+          "q": "Các bạn có đảm bảo lưu lượng hay doanh số không?",
+          "a": "Không. Chúng tôi đảm bảo việc đăng và vị trí hiển thị, không đảm bảo lưu lượng hay doanh thu cụ thể."
+        },
+        {
+          "q": "Chính sách hoàn tiền thế nào?",
+          "a": "Nếu công cụ bị từ chối, bạn được hoàn tiền đầy đủ. Công cụ đã đăng thì không được hoàn tiền."
+        },
+        {
+          "q": "Các bạn có làm việc với agency không?",
+          "a": "Có — hãy liên hệ với chúng tôi để đăng số lượng lớn."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Quảng cáo công cụ AI của bạn – {site}",
+      "seoDesc": "Quảng cáo trả theo lượt nhấp và vị trí nổi bật trên {site}.",
+      "panelTitle": "Bạn muốn quảng bá công cụ nào?",
+      "landing": "URL trang đích quảng cáo",
+      "landingHint": "Không bắt buộc — ví dụ: liên kết có gắn UTM",
+      "choosePackage": "Chọn gói lượt nhấp",
+      "clicksLabel": "Lượt nhấp:",
+      "pickPackage": "Vui lòng chọn một gói.",
+      "cpc": "Giá mỗi lượt nhấp: {amount}",
+      "howTitle": "Cách quảng cáo hoạt động",
+      "intro": [
+        "Quảng cáo được hệ thống tự động phân phối cho đến khi bạn nhận đủ ít nhất số lượt nhấp đã mua.",
+        "Ngân sách của bạn được ưu tiên sử dụng trước, nên bạn nhanh chóng có lượt nhấp và lượt hiển thị."
+      ],
+      "warning": "Bạn không thể chọn trang hiển thị quảng cáo, và chất lượng lượt nhấp không được đảm bảo.",
+      "controlNote": "Bạn có thể tạm dừng hoặc tiếp tục chiến dịch bất cứ lúc nào.",
+      "placementsTitle": "Vị trí quảng cáo",
+      "tagline": "Khẩu hiệu của bạn ở đây",
+      "types": [
+        {
+          "badge": "Xuất hiện nhiều nhất",
+          "title": "Vị trí tiêu chuẩn",
+          "points": [
+            "Hiển thị ở khối \"Vừa ra mắt\" trên trang chủ.",
+            "Luân phiên trên các trang danh sách: mới nhất, được lưu nhiều nhất, được dùng nhiều nhất, theo tháng, danh mục.",
+            "Hiển thị trên trang của công cụ đối thủ và các trang danh mục của bạn."
+          ]
+        },
+        {
+          "badge": "Hiệu quả nhất",
+          "title": "Vị trí nổi bật",
+          "points": [
+            "Vị trí ghim trên trang chủ, mới nhất, dùng nhiều nhất, lưu nhiều nhất, kết quả tìm kiếm và trang danh mục.",
+            "Số dư còn lại càng cao thì thứ hạng càng cao — nạp thêm bất cứ lúc nào để lên hạng.",
+            "Thanh tài trợ ở đầu hầu hết các trang, luân phiên giữa các nhà quảng cáo.",
+            "Cũng hiển thị trên các trang blog, so sánh và công cụ thay thế.",
+            "Mọi lượt nhấp quảng cáo đều dẫn thẳng đến trang web của bạn."
+          ]
+        }
+      ],
+      "reportTitle": "Báo cáo chiến dịch",
+      "reportNote": "Bạn nhận được báo cáo chi tiết cho mỗi chiến dịch. Bạn cũng có thể theo dõi kết quả bằng Google Analytics hoặc bất kỳ công cụ phân tích nào.",
+      "reportColumns": [
+        "Công cụ",
+        "Lượt nhấp tự nhiên",
+        "Lượt nhấp trả phí",
+        "Tổng lượt nhấp",
+        "Lượt xem chi tiết",
+        "Lượt lưu",
+        "Lượt hiển thị"
+      ],
+      "sampleNote": "Số liệu mẫu chỉ mang tính minh họa.",
+      "faqTitle": "Câu hỏi thường gặp – Quảng cáo",
+      "faqs": [
+        {
+          "q": "Quảng cáo hoạt động như thế nào?",
+          "a": "Chọn công cụ và gói lượt nhấp. Sau khi thanh toán, quảng cáo của bạn bắt đầu luân phiên trên trang cho đến khi đủ số lượt nhấp đã mua."
+        },
+        {
+          "q": "Tôi có thể mua lượt nhấp nhiều lần không?",
+          "a": "Có. Lượt mua mới được cộng vào số dư, đồng thời nâng thứ hạng ở vị trí nổi bật."
+        },
+        {
+          "q": "Tôi có nhiều ngân sách hơn và muốn thêm khách hàng. Nên làm gì?",
+          "a": "Mua gói lớn hơn hoặc liên hệ với chúng tôi để có chiến dịch riêng kết hợp bài viết khách và quảng bá mạng xã hội."
+        },
+        {
+          "q": "Tôi có thể nhắm đến quốc gia hoặc ngôn ngữ cụ thể không?",
+          "a": "Hiện tại thì chưa. Việc nhắm mục tiêu được thực hiện tự động."
+        },
+        {
+          "q": "Tôi có thể chọn nơi quảng cáo xuất hiện không?",
+          "a": "Không. Vị trí được chọn tự động để mang lại lượt nhấp nhanh nhất có thể."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Bài viết khách & Chèn liên kết – {site}",
+      "seoDesc": "Đăng bài viết khách hoặc thêm liên kết dofollow trên {site} để tiếp cận cộng đồng quan tâm đến AI.",
+      "title": "Bài viết khách / chèn liên kết trên {site}",
+      "sub": "Bạn muốn đăng bao nhiêu bài viết khách hoặc liên kết?",
+      "rule": "Một bài viết khách tốn 2 credit, một liên kết chèn tốn 1 credit.",
+      "packagesLabel": "Gói credit",
+      "buy": "Mua {n} credit",
+      "decrease": "Giảm",
+      "increase": "Tăng",
+      "customCredits": "Số credit tùy chọn",
+      "tip": "MẸO: Đơn trên {min} credit được giảm {percent}%.",
+      "packageNotes": [
+        "1 liên kết chèn",
+        "1 bài viết khách hoặc 2 liên kết chèn",
+        "1 bài viết khách + 1 liên kết chèn, hoặc 3 liên kết chèn",
+        "tối đa 5 bài viết khách hoặc 10 liên kết chèn"
+      ],
+      "benefits": [
+        "Liên kết dofollow",
+        "Bài viết AI uy tín",
+        "Lưu lượng lâu dài",
+        "URL vĩnh viễn",
+        "Giá trị SEO"
+      ],
+      "notes": [
+        "Một liên kết chèn tốn 1 credit; một bài viết khách tốn 2 credit.",
+        "Để đăng bài viết khách, bạn cần ít nhất 2 credit.",
+        "Credit có thể chia cho bài viết và liên kết chèn. Credit chưa dùng có thể được hoàn tiền khi yêu cầu (1 credit = {price}).",
+        "Cần số lượng khác? Dùng nút tăng giảm. Đơn trên {min} credit tự động được giảm {percent}%.",
+        "Credit đã dùng cho nội dung đã đăng sẽ không được hoàn. Nếu nội dung bị từ chối, credit sẽ được trả lại vào số dư của bạn."
+      ],
+      "faqTitle": "Câu hỏi thường gặp – Bài viết khách / Chèn liên kết",
+      "faqs": [
+        {
+          "q": "Làm sao để đặt bài viết khách?",
+          "a": "Mua ít nhất 2 credit, sau đó gửi bài viết từ trang quản lý của bạn. Biên tập viên sẽ duyệt trước khi đăng."
+        },
+        {
+          "q": "Làm sao để đặt chèn liên kết?",
+          "a": "Mua 1 credit cho mỗi liên kết, sau đó gửi cho chúng tôi URL đích, anchor text và bài viết bạn muốn chèn (hoặc để chúng tôi chọn giúp)."
+        },
+        {
+          "q": "Quy trình đăng bài diễn ra thế nào?",
+          "a": "Mua credit → gửi nội dung hoặc thông tin liên kết → biên tập duyệt → đăng bài. Bạn sẽ nhận URL bài viết qua email."
+        },
+        {
+          "q": "Có quy định nội dung cho bài viết khách không?",
+          "a": "Bài viết cần là nội dung gốc, liên quan đến AI, hữu ích cho người đọc và không chứa liên kết spam hay người lớn. Chúng tôi có thể yêu cầu chỉnh sửa."
+        },
+        {
+          "q": "Tôi có được hoàn tiền cho credit chưa dùng không?",
+          "a": "Có. Hãy liên hệ bộ phận hỗ trợ, credit chưa dùng sẽ được hoàn về phương thức thanh toán ban đầu."
+        },
+        {
+          "q": "Bài viết khách và chèn liên kết mang lại gì cho tôi?",
+          "a": "Chúng đưa sản phẩm của bạn đến với cộng đồng quan tâm đến AI và mang lại backlink dofollow vĩnh viễn."
+        },
+        {
+          "q": "Có giảm giá khi mua số lượng lớn không?",
+          "a": "Có — mọi đơn trên {min} credit được tự động giảm {percent}%."
+        },
+        {
+          "q": "Các bạn có làm việc với agency không?",
+          "a": "Có. Agency quản lý nhiều khách hàng có thể liên hệ để có thỏa thuận riêng."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Cập nhật công cụ AI của bạn – {site}",
+      "seoDesc": "Cập nhật thông tin công cụ bạn đã đăng trên {site}.",
+      "panelTitle": "Thanh toán trước, sau đó gửi nội dung thay đổi",
+      "canUpdate": "Những gì bạn có thể cập nhật:",
+      "fields": [
+        "Tên công cụ",
+        "Giới thiệu ngắn",
+        "Mô tả",
+        "Danh mục",
+        "Cách sử dụng",
+        "Tính năng chính",
+        "Trường hợp sử dụng",
+        "Giá",
+        "Câu hỏi thường gặp",
+        "URL trang web"
+      ],
+      "notes": [
+        "Sau khi thanh toán, bạn sẽ nhận một biểu mẫu để gửi những thay đổi cần thiết.",
+        "Dán nội dung mới vào đúng ô tương ứng — tên, danh mục, giới thiệu, mô tả, cách dùng, tính năng, trường hợp sử dụng, giá hoặc câu hỏi thường gặp.",
+        "Không thể thay đổi URL trang web. Nếu bạn chuyển sang tên miền mới, hãy thiết lập chuyển hướng từ tên miền cũ.",
+        "Mọi cập nhật đều được duyệt thủ công trước khi hiển thị. Nếu bị từ chối, bạn sẽ được hoàn tiền tự động.",
+        "Mỗi lần thanh toán áp dụng cho một lần cập nhật. Vui lòng kiểm tra kỹ nội dung trước khi gửi."
+      ],
+      "faqTitle": "Câu hỏi thường gặp – Cập nhật AI",
+      "faqs": [
+        {
+          "q": "Một lần cập nhật tốn bao nhiêu?",
+          "a": "Một khoản phí cố định cho mỗi lần cập nhật, hiển thị ở trên."
+        },
+        {
+          "q": "Quy trình cập nhật diễn ra thế nào?",
+          "a": "Thanh toán → điền biểu mẫu cập nhật → đội ngũ của chúng tôi duyệt → thay đổi được áp dụng."
+        },
+        {
+          "q": "Tôi có phải tự viết nội dung mới không?",
+          "a": "Có. Nếu bạn không gửi nội dung mới, sẽ không có gì thay đổi và bạn có thể yêu cầu hoàn tiền."
+        },
+        {
+          "q": "Tôi có thể thay đổi những thông tin nào?",
+          "a": "Tất cả các mục trong danh sách ở trên, trừ URL trang web."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Đăng GPT của bạn – {site}",
+      "seoDesc": "Đăng GPT tùy chỉnh của bạn trên {site}.",
+      "panelTitle": "Dán liên kết GPT của bạn",
+      "label": "Liên kết GPT",
+      "required": "Vui lòng nhập liên kết GPT.",
+      "invalid": "Vui lòng nhập liên kết GPT hợp lệ, ví dụ: {example}",
+      "hint": "Chúng tôi tự động lấy thông tin GPT và viết phần còn lại của trang giới thiệu cho bạn.",
+      "faqTitle": "Câu hỏi thường gặp – GPT",
+      "faqs": [
+        {
+          "q": "Đăng một GPT tốn bao nhiêu?",
+          "a": "Một khoản phí trả một lần, hiển thị ở trên."
+        },
+        {
+          "q": "Bao lâu thì GPT của tôi được đăng?",
+          "a": "Thường trong vòng 48 giờ sau khi thanh toán."
+        },
+        {
+          "q": "Trang GPT của tôi có hết hạn không?",
+          "a": "Không, GPT được hiển thị vĩnh viễn miễn là liên kết còn hoạt động."
+        },
+        {
+          "q": "Làm sao để GPT của tôi có thêm người dùng?",
+          "a": "Kết hợp việc đăng với một chiến dịch quảng cáo hoặc một bài viết khách."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Đơn hàng mới",
+      "postCredits": "Credit bài viết khách:",
+      "adClicks": "Số dư lượt nhấp quảng cáo:",
+      "date": "Ngày",
+      "service": "Dịch vụ",
+      "details": "Chi tiết",
+      "amount": "Số tiền",
+      "status": "Trạng thái",
+      "statuses": {
+        "PAID": "Đã thanh toán",
+        "PENDING": "Chờ thanh toán",
+        "EXPIRED": "Hết hạn"
+      },
+      "loading": "Đang tải…",
+      "empty": "Chưa có đơn hàng nào.",
+      "clicks": "{n} lượt nhấp",
+      "credits": "{n} credit"
+    }
   }
 }

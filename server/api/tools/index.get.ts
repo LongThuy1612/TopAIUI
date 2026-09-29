@@ -64,8 +64,8 @@ export default defineEventHandler(async (event) => {
   ])
 
   return {
-    // toolifyUrl / productHuntUrl / source reveal where the data was scraped
-    // from — keep them out of the public payload.
+    // Source-URL / source columns reveal where the data was scraped from —
+    // keep them out of the public payload.
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     items: items.map(({ translations, categories, tags, toolifyUrl, productHuntUrl, source, ...tool }) => {
       const translation = pickByLocale(translations, locale)

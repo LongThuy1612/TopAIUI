@@ -561,5 +561,391 @@
   },
   "language": {
     "label": "Language"
+  },
+  "promote": {
+    "title": "Your AIs on {site}",
+    "myOrders": "My Orders",
+    "intro": "{site} puts your product in front of people actively looking for AI tools — builders, founders, investors and decision makers — so you get more visibility, more trials and more paying users.",
+    "stats": {
+      "pageViews": "Page views",
+      "monthlyVisits": "Monthly visits",
+      "subscribers": "Subscribers",
+      "desktopUsers": "Desktop users",
+      "avgTime": "Avg. time on site"
+    },
+    "highlights": [
+      "Curated AI tools directory",
+      "Dofollow backlinks",
+      "Multilingual listings",
+      "Permanent listing & traffic",
+      "Built for founders & startups"
+    ],
+    "chooseService": "Choose what you want",
+    "popular": "Popular",
+    "services": {
+      "submit": {
+        "title": "Submit AI",
+        "desc": "List your AI tool and start getting visitors."
+      },
+      "advertise": {
+        "title": "Advertise AI",
+        "desc": "Pay-per-click campaigns and featured placements."
+      },
+      "guestPost": {
+        "title": "Guest Posts / Link Insert",
+        "desc": "Publish articles or add links on {site}."
+      },
+      "update": {
+        "title": "Update AI",
+        "desc": "Edit the details of a tool you already listed."
+      },
+      "submitGpt": {
+        "title": "Submit GPT",
+        "desc": "Share your custom GPT with more users."
+      }
+    },
+    "notice": {
+      "paid": "Payment received — thank you! You can follow your order in {link}.",
+      "canceled": "Payment canceled. You have not been charged."
+    },
+    "faqDefaultTitle": "Frequently Asked Questions",
+    "faqMore": "Have a question? {link}",
+    "contactUs": "Contact us",
+    "needToKnow": "Need to know:",
+    "total": "Total: {amount}",
+    "pay": "Pay {amount}",
+    "processing": "Processing…",
+    "genericError": "Something went wrong. Please try again.",
+    "eta": "Skip the queue — live within 48 hours",
+    "toolPicker": {
+      "placeholder": "Type to search and select your tool",
+      "searching": "Searching…",
+      "notFound": "No tool found. {link}.",
+      "submitFirst": "Submit it first",
+      "notListed": "Not listed yet? {link}."
+    },
+    "form": {
+      "tool": "Tool",
+      "selectTool": "Please search and select your tool.",
+      "invalidUrl": "Enter a valid URL."
+    },
+    "submit": {
+      "seoTitle": "Submit your AI tool – {site}",
+      "seoDesc": "List your AI tool on {site} and get discovered by people looking for AI products.",
+      "panelTitle": "Tell us about your tool",
+      "name": "Name",
+      "namePlaceholder": "e.g. Example AI",
+      "url": "Website URL",
+      "whoWrites": "Who writes the listing?",
+      "nameRequired": "Please enter the tool name.",
+      "urlRequired": "Please enter the website URL.",
+      "urlInvalid": "Enter a valid URL, e.g. {example}",
+      "modes": {
+        "auto": {
+          "title": "Written by {site}",
+          "desc": "We write the listing and all translations for you with AI."
+        },
+        "manual": {
+          "title": "I will write it",
+          "desc": "You provide the listing in English; we handle the translations."
+        }
+      },
+      "mockDesc": "Your tool, shown with a highlighted border in every listing.",
+      "includesTitle": "What your listing includes",
+      "youGetLead": "You will get:",
+      "youGet": [
+        {
+          "title": "Listed in \"Latest\" and \"Just Launched\" within 48 hours.",
+          "desc": "No waiting list."
+        },
+        {
+          "title": "Highlighted card border.",
+          "desc": "Your tool stands out in listings and draws more clicks."
+        },
+        {
+          "title": "Dofollow backlinks for SEO.",
+          "desc": "Your site gets several dofollow links from our pages, helping search rankings and organic traffic."
+        },
+        {
+          "title": "Permanent listing.",
+          "desc": "Your tool stays in the directory and keeps getting visitors over time."
+        },
+        {
+          "title": "Launch badge.",
+          "desc": "Embed a \"Featured on\" badge on your website."
+        }
+      ],
+      "faqTitle": "Frequently Asked Questions – Submit AI",
+      "faqs": [
+        {
+          "q": "How much does a listing cost? Is it one-time or recurring?",
+          "a": "It is a one-time payment. There is no subscription."
+        },
+        {
+          "q": "How soon will my tool go live?",
+          "a": "Paid submissions skip the queue and are usually published within 48 hours."
+        },
+        {
+          "q": "Does my listing expire?",
+          "a": "No. Once approved, your listing stays in the directory permanently."
+        },
+        {
+          "q": "How can I get more views?",
+          "a": "Combine your listing with an ad campaign or a guest post for extra exposure."
+        },
+        {
+          "q": "Why was my tool not listed?",
+          "a": "We reject tools that are unreachable, not AI-related, or that violate our content policy. You will be notified and refunded."
+        },
+        {
+          "q": "Do you guarantee traffic or sales?",
+          "a": "No. We guarantee the listing and its placement, not specific traffic or revenue outcomes."
+        },
+        {
+          "q": "What is your refund policy?",
+          "a": "If your tool is rejected, you get a full refund. Published listings are non-refundable."
+        },
+        {
+          "q": "Do you work with agencies?",
+          "a": "Yes — contact us for bulk submissions."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Advertise your AI tool – {site}",
+      "seoDesc": "Pay-per-click and featured ad placements on {site}.",
+      "panelTitle": "Which tool do you want to promote?",
+      "landing": "Ad landing URL",
+      "landingHint": "Optional — e.g. a link with UTM tracking",
+      "choosePackage": "Choose a click package",
+      "clicksLabel": "Clicks:",
+      "pickPackage": "Please pick a package.",
+      "cpc": "Cost per click: {amount}",
+      "howTitle": "How advertising works",
+      "intro": [
+        "Ads are placed automatically by our system until you receive at least the number of clicks you bought.",
+        "Your budget is spent first, so you get clicks and impressions quickly."
+      ],
+      "warning": "You cannot choose which pages the ads appear on, and click quality is not guaranteed.",
+      "controlNote": "You can pause or resume your campaign at any time.",
+      "placementsTitle": "Ad placements",
+      "tagline": "Your tagline here",
+      "types": [
+        {
+          "badge": "Most frequent",
+          "title": "Standard placement",
+          "points": [
+            "Shown in the \"Just Launched\" block on the home page.",
+            "Rotated across listing pages: latest, most saved, most used, monthly, categories.",
+            "Shown on competitor tool pages and on your own category pages."
+          ]
+        },
+        {
+          "badge": "Most effective",
+          "title": "Featured placement",
+          "points": [
+            "Pinned slots on home, latest, most used, most saved, search results and category pages.",
+            "Higher remaining balance ranks higher — top up anytime to climb.",
+            "Sponsor bar at the top of most pages, rotated between advertisers.",
+            "Also shown on blog, comparison and alternatives pages.",
+            "Every ad click goes straight to your website."
+          ]
+        }
+      ],
+      "reportTitle": "Campaign report",
+      "reportNote": "You get a detailed report for every campaign. You can also track results with Google Analytics or any analytics tool.",
+      "reportColumns": [
+        "Tool",
+        "Organic clicks",
+        "Paid clicks",
+        "Total clicks",
+        "Detail views",
+        "Saves",
+        "Impressions"
+      ],
+      "sampleNote": "Sample data for illustration only.",
+      "faqTitle": "FAQ – Advertise",
+      "faqs": [
+        {
+          "q": "How does advertising work?",
+          "a": "Pick a tool and a click package. Once paid, your ads start rotating across the site until the purchased clicks are delivered."
+        },
+        {
+          "q": "Can I buy clicks more than once?",
+          "a": "Yes. New purchases are added to your balance, which also raises your featured ranking."
+        },
+        {
+          "q": "I have more budget and want more customers. What should I do?",
+          "a": "Buy a larger package or contact us for a custom campaign with guest posts and social promotion."
+        },
+        {
+          "q": "Can I target specific countries or languages?",
+          "a": "Not at the moment. Targeting is automatic."
+        },
+        {
+          "q": "Can I choose where my ads appear?",
+          "a": "No. Placements are chosen automatically to deliver your clicks as fast as possible."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Guest Posts & Link Insert – {site}",
+      "seoDesc": "Publish guest posts or add dofollow links on {site} to reach an AI-focused audience.",
+      "title": "Guest posts / link insert on {site}",
+      "sub": "How many guest posts or link inserts do you want to publish?",
+      "rule": "A guest post costs 2 credits, a link insert costs 1 credit.",
+      "packagesLabel": "Credit packages",
+      "buy": "Buy {n} credit | Buy {n} credits",
+      "decrease": "Decrease",
+      "increase": "Increase",
+      "customCredits": "Custom credits",
+      "tip": "TIP: Orders above {min} credits get {percent}% off.",
+      "packageNotes": [
+        "1 link insert",
+        "1 guest post or 2 link inserts",
+        "1 guest post + 1 link insert, or 3 link inserts",
+        "up to 5 guest posts or 10 link inserts"
+      ],
+      "benefits": [
+        "Dofollow links",
+        "Authority AI articles",
+        "Lasting traffic",
+        "Permanent URL",
+        "SEO value"
+      ],
+      "notes": [
+        "A link insert costs 1 credit; a guest post costs 2 credits.",
+        "To publish a guest post you need at least 2 credits.",
+        "Credits can be split across posts and link inserts. Unused credits can be refunded on request (1 credit = {price}).",
+        "Need a custom amount? Use the stepper. Orders above {min} credits get {percent}% off automatically.",
+        "Credits spent on a published item are not refundable. If a submission is rejected, its credits go back to your balance."
+      ],
+      "faqTitle": "Frequently Asked Questions – Guest Post / Link Insert",
+      "faqs": [
+        {
+          "q": "How do I order a guest post?",
+          "a": "Buy at least 2 credits, then submit your article from your dashboard. Our editors review it before publishing."
+        },
+        {
+          "q": "How do I order a link insert?",
+          "a": "Buy 1 credit per link, then send us the target URL, anchor text and the article you want it placed in (or let us pick one)."
+        },
+        {
+          "q": "What does the publishing process look like?",
+          "a": "Purchase credits → submit content or link details → editorial review → publication. You get the live URL by email."
+        },
+        {
+          "q": "Are there content guidelines for guest posts?",
+          "a": "Articles should be original, AI-related, useful to readers and free of spammy or adult links. We may request edits."
+        },
+        {
+          "q": "Can I get a refund for unused credits?",
+          "a": "Yes. Contact support and unused credits will be refunded to the original payment method."
+        },
+        {
+          "q": "What do guest posts and link inserts do for me?",
+          "a": "They put your product in front of an AI-focused audience and give you a permanent dofollow backlink."
+        },
+        {
+          "q": "Is there a bulk discount?",
+          "a": "Yes — any order above {min} credits is automatically discounted by {percent}%."
+        },
+        {
+          "q": "Do you work with agencies?",
+          "a": "Yes. Agencies managing multiple clients can contact us for custom arrangements."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Update your AI tool – {site}",
+      "seoDesc": "Update the details of your tool listed on {site}.",
+      "panelTitle": "Pay first, then submit your changes",
+      "canUpdate": "What you can update:",
+      "fields": [
+        "Tool name",
+        "Short intro",
+        "Description",
+        "Category",
+        "How to use",
+        "Core features",
+        "Use cases",
+        "Pricing",
+        "FAQs",
+        "Website URL"
+      ],
+      "notes": [
+        "After payment you get a form where you submit the changes you need.",
+        "Paste the new content into the matching fields — name, category, intro, description, usage, features, use cases, pricing or FAQs.",
+        "Website URLs cannot be changed. If you moved to a new domain, set up a redirect from the old one.",
+        "Every update is reviewed manually before going live. If it is rejected, you are refunded automatically.",
+        "Each payment covers one update. Please double-check your content before submitting."
+      ],
+      "faqTitle": "FAQ – Update AI",
+      "faqs": [
+        {
+          "q": "How much does an update cost?",
+          "a": "A flat one-time fee per update, shown above."
+        },
+        {
+          "q": "How does the update process work?",
+          "a": "Pay → fill in the update form → our team reviews → changes go live."
+        },
+        {
+          "q": "Do I have to write the new content myself?",
+          "a": "Yes. If you do not submit new content, nothing is changed and you can request a refund."
+        },
+        {
+          "q": "Which details can I change?",
+          "a": "Everything in the list above except the website URL."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Submit your GPT – {site}",
+      "seoDesc": "List your custom GPT on {site}.",
+      "panelTitle": "Paste your GPT link",
+      "label": "GPT link",
+      "required": "Please enter your GPT link.",
+      "invalid": "Enter a valid GPT link, e.g. {example}",
+      "hint": "We fetch the GPT details automatically and write the rest of the listing for you.",
+      "faqTitle": "Frequently Asked Questions – GPT",
+      "faqs": [
+        {
+          "q": "How much does it cost to list a GPT?",
+          "a": "A one-time fee, shown above."
+        },
+        {
+          "q": "How long until my GPT is listed?",
+          "a": "Usually within 48 hours after payment."
+        },
+        {
+          "q": "Does my GPT listing expire?",
+          "a": "No, it stays listed permanently as long as the GPT link works."
+        },
+        {
+          "q": "How can my GPT get more users?",
+          "a": "Pair the listing with an ad campaign or a guest post."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "New order",
+      "postCredits": "Guest post credits:",
+      "adClicks": "Ad clicks balance:",
+      "date": "Date",
+      "service": "Service",
+      "details": "Details",
+      "amount": "Amount",
+      "status": "Status",
+      "statuses": {
+        "PAID": "Paid",
+        "PENDING": "Pending",
+        "EXPIRED": "Expired"
+      },
+      "loading": "Loading…",
+      "empty": "No orders yet.",
+      "clicks": "{n} clicks",
+      "credits": "{n} credit | {n} credits"
+    }
   }
 }

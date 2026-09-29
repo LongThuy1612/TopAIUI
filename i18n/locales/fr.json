@@ -494,5 +494,391 @@
     "upload": "Téléverser",
     "uploadHint": "Veuillez téléverser des captures ou enregistrements d'écran. Taille max par fichier : 100 Mo.",
     "submit": "Envoyer"
+  },
+  "promote": {
+    "title": "Vos IA sur {site}",
+    "myOrders": "Mes commandes",
+    "intro": "{site} met votre produit sous les yeux de personnes qui recherchent activement des outils d'IA — développeurs, fondateurs, investisseurs et décideurs — pour plus de visibilité, plus d'essais et plus d'utilisateurs payants.",
+    "stats": {
+      "pageViews": "Pages vues",
+      "monthlyVisits": "Visites mensuelles",
+      "subscribers": "Abonnés",
+      "desktopUsers": "Utilisateurs sur ordinateur",
+      "avgTime": "Temps moyen sur le site"
+    },
+    "highlights": [
+      "Annuaire d'outils d'IA sélectionnés",
+      "Backlinks dofollow",
+      "Fiches multilingues",
+      "Fiche et trafic permanents",
+      "Conçu pour les fondateurs et les startups"
+    ],
+    "chooseService": "Choisissez ce dont vous avez besoin",
+    "popular": "Populaire",
+    "services": {
+      "submit": {
+        "title": "Soumettre une IA",
+        "desc": "Référencez votre outil d'IA et commencez à recevoir des visiteurs."
+      },
+      "advertise": {
+        "title": "Promouvoir une IA",
+        "desc": "Campagnes au coût par clic et emplacements mis en avant."
+      },
+      "guestPost": {
+        "title": "Articles invités / Insertion de liens",
+        "desc": "Publiez des articles ou ajoutez des liens sur {site}."
+      },
+      "update": {
+        "title": "Mettre à jour une IA",
+        "desc": "Modifiez les informations d'un outil déjà référencé."
+      },
+      "submitGpt": {
+        "title": "Soumettre un GPT",
+        "desc": "Partagez votre GPT personnalisé avec plus d'utilisateurs."
+      }
+    },
+    "notice": {
+      "paid": "Paiement reçu — merci ! Vous pouvez suivre votre commande dans {link}.",
+      "canceled": "Paiement annulé. Aucun montant ne vous a été débité."
+    },
+    "faqDefaultTitle": "Questions fréquentes",
+    "faqMore": "Une question ? {link}",
+    "contactUs": "Contactez-nous",
+    "needToKnow": "À savoir :",
+    "total": "Total : {amount}",
+    "pay": "Payer {amount}",
+    "processing": "Traitement…",
+    "genericError": "Une erreur s'est produite. Veuillez réessayer.",
+    "eta": "Sans file d'attente — en ligne sous 48 heures",
+    "toolPicker": {
+      "placeholder": "Tapez pour rechercher et sélectionner votre outil",
+      "searching": "Recherche…",
+      "notFound": "Aucun outil trouvé. {link}.",
+      "submitFirst": "Soumettez-le d'abord",
+      "notListed": "Pas encore référencé ? {link}."
+    },
+    "form": {
+      "tool": "Outil",
+      "selectTool": "Veuillez rechercher et sélectionner votre outil.",
+      "invalidUrl": "Saisissez une URL valide."
+    },
+    "submit": {
+      "seoTitle": "Soumettez votre outil d'IA – {site}",
+      "seoDesc": "Référencez votre outil d'IA sur {site} et faites-vous découvrir par les personnes qui cherchent des produits d'IA.",
+      "panelTitle": "Parlez-nous de votre outil",
+      "name": "Nom",
+      "namePlaceholder": "ex. Example AI",
+      "url": "URL du site web",
+      "whoWrites": "Qui rédige la fiche ?",
+      "nameRequired": "Veuillez saisir le nom de l'outil.",
+      "urlRequired": "Veuillez saisir l'URL du site web.",
+      "urlInvalid": "Saisissez une URL valide, ex. {example}",
+      "modes": {
+        "auto": {
+          "title": "Rédigée par {site}",
+          "desc": "Nous rédigeons la fiche et toutes les traductions pour vous grâce à l'IA."
+        },
+        "manual": {
+          "title": "Je la rédige moi-même",
+          "desc": "Vous fournissez la fiche en anglais ; nous nous occupons des traductions."
+        }
+      },
+      "mockDesc": "Votre outil, affiché avec une bordure mise en avant dans chaque liste.",
+      "includesTitle": "Ce que comprend votre fiche",
+      "youGetLead": "Vous obtenez :",
+      "youGet": [
+        {
+          "title": "Présence dans « Nouveautés » et « Tout juste lancés » sous 48 heures.",
+          "desc": "Pas de liste d'attente."
+        },
+        {
+          "title": "Bordure de carte mise en avant.",
+          "desc": "Votre outil se démarque dans les listes et attire plus de clics."
+        },
+        {
+          "title": "Backlinks dofollow pour le SEO.",
+          "desc": "Votre site reçoit plusieurs liens dofollow depuis nos pages, ce qui améliore le référencement et le trafic organique."
+        },
+        {
+          "title": "Fiche permanente.",
+          "desc": "Votre outil reste dans l'annuaire et continue d'attirer des visiteurs dans le temps."
+        },
+        {
+          "title": "Badge de lancement.",
+          "desc": "Intégrez un badge « Featured on » sur votre site web."
+        }
+      ],
+      "faqTitle": "Questions fréquentes – Soumettre une IA",
+      "faqs": [
+        {
+          "q": "Combien coûte une fiche ? Paiement unique ou récurrent ?",
+          "a": "C'est un paiement unique. Il n'y a pas d'abonnement."
+        },
+        {
+          "q": "Quand mon outil sera-t-il en ligne ?",
+          "a": "Les soumissions payantes passent devant la file d'attente et sont généralement publiées sous 48 heures."
+        },
+        {
+          "q": "Ma fiche expire-t-elle ?",
+          "a": "Non. Une fois approuvée, votre fiche reste dans l'annuaire de façon permanente."
+        },
+        {
+          "q": "Comment obtenir plus de vues ?",
+          "a": "Associez votre fiche à une campagne publicitaire ou à un article invité pour plus de visibilité."
+        },
+        {
+          "q": "Pourquoi mon outil n'a-t-il pas été référencé ?",
+          "a": "Nous refusons les outils inaccessibles, sans lien avec l'IA ou contraires à notre politique de contenu. Vous serez prévenu et remboursé."
+        },
+        {
+          "q": "Garantissez-vous du trafic ou des ventes ?",
+          "a": "Non. Nous garantissons la fiche et son emplacement, pas des résultats précis de trafic ou de revenus."
+        },
+        {
+          "q": "Quelle est votre politique de remboursement ?",
+          "a": "Si votre outil est refusé, vous êtes intégralement remboursé. Les fiches publiées ne sont pas remboursables."
+        },
+        {
+          "q": "Travaillez-vous avec des agences ?",
+          "a": "Oui — contactez-nous pour des soumissions en volume."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Faites la promotion de votre outil d'IA – {site}",
+      "seoDesc": "Publicités au coût par clic et emplacements mis en avant sur {site}.",
+      "panelTitle": "Quel outil souhaitez-vous promouvoir ?",
+      "landing": "URL de destination de l'annonce",
+      "landingHint": "Facultatif — ex. un lien avec suivi UTM",
+      "choosePackage": "Choisissez un forfait de clics",
+      "clicksLabel": "Clics :",
+      "pickPackage": "Veuillez choisir un forfait.",
+      "cpc": "Coût par clic : {amount}",
+      "howTitle": "Comment fonctionne la publicité",
+      "intro": [
+        "Les annonces sont diffusées automatiquement par notre système jusqu'à ce que vous receviez au moins le nombre de clics acheté.",
+        "Votre budget est dépensé en priorité, vous obtenez donc rapidement des clics et des impressions."
+      ],
+      "warning": "Vous ne pouvez pas choisir les pages où apparaissent les annonces, et la qualité des clics n'est pas garantie.",
+      "controlNote": "Vous pouvez mettre en pause ou reprendre votre campagne à tout moment.",
+      "placementsTitle": "Emplacements publicitaires",
+      "tagline": "Votre slogan ici",
+      "types": [
+        {
+          "badge": "Le plus fréquent",
+          "title": "Emplacement standard",
+          "points": [
+            "Affiché dans le bloc « Tout juste lancés » de la page d'accueil.",
+            "En rotation sur les pages de listes : nouveautés, plus enregistrés, plus utilisés, mensuels, catégories.",
+            "Affiché sur les pages d'outils concurrents et sur vos propres pages de catégorie."
+          ]
+        },
+        {
+          "badge": "Le plus efficace",
+          "title": "Emplacement mis en avant",
+          "points": [
+            "Emplacements épinglés sur l'accueil, les nouveautés, les plus utilisés, les plus enregistrés, les résultats de recherche et les pages de catégorie.",
+            "Plus le solde restant est élevé, meilleur est le classement — rechargez à tout moment pour monter.",
+            "Barre de sponsor en haut de la plupart des pages, en rotation entre annonceurs.",
+            "Également affiché sur les pages de blog, de comparaison et d'alternatives.",
+            "Chaque clic sur l'annonce mène directement à votre site web."
+          ]
+        }
+      ],
+      "reportTitle": "Rapport de campagne",
+      "reportNote": "Vous recevez un rapport détaillé pour chaque campagne. Vous pouvez aussi suivre les résultats avec Google Analytics ou tout autre outil d'analyse.",
+      "reportColumns": [
+        "Outil",
+        "Clics organiques",
+        "Clics payants",
+        "Clics totaux",
+        "Vues de la fiche",
+        "Enregistrements",
+        "Impressions"
+      ],
+      "sampleNote": "Données d'exemple à titre d'illustration uniquement.",
+      "faqTitle": "FAQ – Publicité",
+      "faqs": [
+        {
+          "q": "Comment fonctionne la publicité ?",
+          "a": "Choisissez un outil et un forfait de clics. Après paiement, vos annonces tournent sur le site jusqu'à ce que les clics achetés soient atteints."
+        },
+        {
+          "q": "Puis-je acheter des clics plusieurs fois ?",
+          "a": "Oui. Les nouveaux achats s'ajoutent à votre solde, ce qui améliore aussi votre classement dans les emplacements mis en avant."
+        },
+        {
+          "q": "J'ai plus de budget et je veux plus de clients. Que faire ?",
+          "a": "Achetez un forfait plus important ou contactez-nous pour une campagne sur mesure avec articles invités et promotion sur les réseaux sociaux."
+        },
+        {
+          "q": "Puis-je cibler des pays ou des langues précis ?",
+          "a": "Pas pour le moment. Le ciblage est automatique."
+        },
+        {
+          "q": "Puis-je choisir où apparaissent mes annonces ?",
+          "a": "Non. Les emplacements sont choisis automatiquement pour livrer vos clics le plus vite possible."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Articles invités et insertion de liens – {site}",
+      "seoDesc": "Publiez des articles invités ou ajoutez des liens dofollow sur {site} pour toucher un public intéressé par l'IA.",
+      "title": "Articles invités / insertion de liens sur {site}",
+      "sub": "Combien d'articles invités ou d'insertions de liens souhaitez-vous publier ?",
+      "rule": "Un article invité coûte 2 crédits, une insertion de lien coûte 1 crédit.",
+      "packagesLabel": "Forfaits de crédits",
+      "buy": "Acheter {n} crédit | Acheter {n} crédits",
+      "decrease": "Diminuer",
+      "increase": "Augmenter",
+      "customCredits": "Nombre de crédits personnalisé",
+      "tip": "ASTUCE : les commandes de plus de {min} crédits bénéficient de {percent}% de réduction.",
+      "packageNotes": [
+        "1 insertion de lien",
+        "1 article invité ou 2 insertions de liens",
+        "1 article invité + 1 insertion de lien, ou 3 insertions de liens",
+        "jusqu'à 5 articles invités ou 10 insertions de liens"
+      ],
+      "benefits": [
+        "Liens dofollow",
+        "Articles d'IA de référence",
+        "Trafic durable",
+        "URL permanente",
+        "Valeur SEO"
+      ],
+      "notes": [
+        "Une insertion de lien coûte 1 crédit ; un article invité coûte 2 crédits.",
+        "Pour publier un article invité, il vous faut au moins 2 crédits.",
+        "Les crédits peuvent être répartis entre articles et insertions de liens. Les crédits non utilisés peuvent être remboursés sur demande (1 crédit = {price}).",
+        "Besoin d'une autre quantité ? Utilisez le sélecteur. Les commandes de plus de {min} crédits bénéficient automatiquement de {percent}% de réduction.",
+        "Les crédits utilisés pour un contenu publié ne sont pas remboursables. Si une soumission est refusée, ses crédits reviennent sur votre solde."
+      ],
+      "faqTitle": "Questions fréquentes – Articles invités / Insertion de liens",
+      "faqs": [
+        {
+          "q": "Comment commander un article invité ?",
+          "a": "Achetez au moins 2 crédits, puis soumettez votre article depuis votre tableau de bord. Nos éditeurs le relisent avant publication."
+        },
+        {
+          "q": "Comment commander une insertion de lien ?",
+          "a": "Achetez 1 crédit par lien, puis envoyez-nous l'URL cible, le texte d'ancre et l'article où le placer (ou laissez-nous en choisir un)."
+        },
+        {
+          "q": "Comment se déroule la publication ?",
+          "a": "Achat de crédits → envoi du contenu ou des informations du lien → relecture éditoriale → publication. Vous recevez l'URL en ligne par e-mail."
+        },
+        {
+          "q": "Y a-t-il des règles de contenu pour les articles invités ?",
+          "a": "Les articles doivent être originaux, liés à l'IA, utiles aux lecteurs et sans liens spam ou pour adultes. Nous pouvons demander des modifications."
+        },
+        {
+          "q": "Puis-je être remboursé des crédits non utilisés ?",
+          "a": "Oui. Contactez le support et les crédits non utilisés seront remboursés sur le moyen de paiement d'origine."
+        },
+        {
+          "q": "Qu'apportent les articles invités et les insertions de liens ?",
+          "a": "Ils présentent votre produit à un public intéressé par l'IA et vous offrent un backlink dofollow permanent."
+        },
+        {
+          "q": "Existe-t-il une remise sur volume ?",
+          "a": "Oui — toute commande de plus de {min} crédits bénéficie automatiquement de {percent}% de réduction."
+        },
+        {
+          "q": "Travaillez-vous avec des agences ?",
+          "a": "Oui. Les agences qui gèrent plusieurs clients peuvent nous contacter pour des accords sur mesure."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Mettez à jour votre outil d'IA – {site}",
+      "seoDesc": "Mettez à jour les informations de votre outil référencé sur {site}.",
+      "panelTitle": "Payez d'abord, puis envoyez vos modifications",
+      "canUpdate": "Ce que vous pouvez mettre à jour :",
+      "fields": [
+        "Nom de l'outil",
+        "Courte présentation",
+        "Description",
+        "Catégorie",
+        "Mode d'emploi",
+        "Fonctionnalités clés",
+        "Cas d'usage",
+        "Tarifs",
+        "FAQ",
+        "URL du site web"
+      ],
+      "notes": [
+        "Après le paiement, vous recevez un formulaire pour envoyer les modifications souhaitées.",
+        "Collez le nouveau contenu dans les champs correspondants — nom, catégorie, présentation, description, utilisation, fonctionnalités, cas d'usage, tarifs ou FAQ.",
+        "L'URL du site web ne peut pas être modifiée. Si vous avez changé de domaine, mettez en place une redirection depuis l'ancien.",
+        "Chaque mise à jour est vérifiée manuellement avant d'être publiée. En cas de refus, vous êtes remboursé automatiquement.",
+        "Chaque paiement couvre une mise à jour. Vérifiez bien votre contenu avant de l'envoyer."
+      ],
+      "faqTitle": "FAQ – Mettre à jour une IA",
+      "faqs": [
+        {
+          "q": "Combien coûte une mise à jour ?",
+          "a": "Des frais uniques fixes par mise à jour, indiqués ci-dessus."
+        },
+        {
+          "q": "Comment se déroule une mise à jour ?",
+          "a": "Paiement → formulaire de mise à jour → vérification par notre équipe → les modifications sont publiées."
+        },
+        {
+          "q": "Dois-je rédiger moi-même le nouveau contenu ?",
+          "a": "Oui. Si vous n'envoyez pas de nouveau contenu, rien n'est modifié et vous pouvez demander un remboursement."
+        },
+        {
+          "q": "Quelles informations puis-je modifier ?",
+          "a": "Tout ce qui figure dans la liste ci-dessus, sauf l'URL du site web."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Soumettez votre GPT – {site}",
+      "seoDesc": "Référencez votre GPT personnalisé sur {site}.",
+      "panelTitle": "Collez le lien de votre GPT",
+      "label": "Lien du GPT",
+      "required": "Veuillez saisir le lien de votre GPT.",
+      "invalid": "Saisissez un lien de GPT valide, ex. {example}",
+      "hint": "Nous récupérons automatiquement les informations du GPT et rédigeons le reste de la fiche pour vous.",
+      "faqTitle": "Questions fréquentes – GPT",
+      "faqs": [
+        {
+          "q": "Combien coûte le référencement d'un GPT ?",
+          "a": "Des frais uniques, indiqués ci-dessus."
+        },
+        {
+          "q": "Combien de temps avant que mon GPT soit référencé ?",
+          "a": "Généralement sous 48 heures après le paiement."
+        },
+        {
+          "q": "La fiche de mon GPT expire-t-elle ?",
+          "a": "Non, elle reste en ligne de façon permanente tant que le lien du GPT fonctionne."
+        },
+        {
+          "q": "Comment mon GPT peut-il gagner plus d'utilisateurs ?",
+          "a": "Associez la fiche à une campagne publicitaire ou à un article invité."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Nouvelle commande",
+      "postCredits": "Crédits d'articles invités :",
+      "adClicks": "Solde de clics publicitaires :",
+      "date": "Date",
+      "service": "Service",
+      "details": "Détails",
+      "amount": "Montant",
+      "status": "Statut",
+      "statuses": {
+        "PAID": "Payée",
+        "PENDING": "En attente",
+        "EXPIRED": "Expirée"
+      },
+      "loading": "Chargement…",
+      "empty": "Aucune commande pour le moment.",
+      "clicks": "{n} clics",
+      "credits": "{n} crédit | {n} crédits"
+    }
   }
 }

@@ -494,5 +494,391 @@
     "upload": "Subir",
     "uploadHint": "Sube capturas de pantalla o grabaciones de pantalla. Tamaño máximo por archivo: 100 MB.",
     "submit": "Enviar"
+  },
+  "promote": {
+    "title": "Tus IA en {site}",
+    "myOrders": "Mis pedidos",
+    "intro": "{site} pone tu producto delante de personas que buscan activamente herramientas de IA — desarrolladores, fundadores, inversores y responsables de decisiones — para que consigas más visibilidad, más pruebas y más usuarios de pago.",
+    "stats": {
+      "pageViews": "Páginas vistas",
+      "monthlyVisits": "Visitas mensuales",
+      "subscribers": "Suscriptores",
+      "desktopUsers": "Usuarios de escritorio",
+      "avgTime": "Tiempo medio en el sitio"
+    },
+    "highlights": [
+      "Directorio de herramientas de IA seleccionadas",
+      "Backlinks dofollow",
+      "Fichas multilingües",
+      "Ficha y tráfico permanentes",
+      "Pensado para fundadores y startups"
+    ],
+    "chooseService": "Elige lo que necesitas",
+    "popular": "Popular",
+    "services": {
+      "submit": {
+        "title": "Enviar IA",
+        "desc": "Publica tu herramienta de IA y empieza a recibir visitas."
+      },
+      "advertise": {
+        "title": "Anunciar IA",
+        "desc": "Campañas de pago por clic y posiciones destacadas."
+      },
+      "guestPost": {
+        "title": "Artículos de invitado / Inserción de enlaces",
+        "desc": "Publica artículos o añade enlaces en {site}."
+      },
+      "update": {
+        "title": "Actualizar IA",
+        "desc": "Edita los datos de una herramienta que ya publicaste."
+      },
+      "submitGpt": {
+        "title": "Enviar GPT",
+        "desc": "Comparte tu GPT personalizado con más usuarios."
+      }
+    },
+    "notice": {
+      "paid": "Pago recibido — ¡gracias! Puedes seguir tu pedido en {link}.",
+      "canceled": "Pago cancelado. No se te ha cobrado nada."
+    },
+    "faqDefaultTitle": "Preguntas frecuentes",
+    "faqMore": "¿Tienes alguna pregunta? {link}",
+    "contactUs": "Contáctanos",
+    "needToKnow": "Debes saber:",
+    "total": "Total: {amount}",
+    "pay": "Pagar {amount}",
+    "processing": "Procesando…",
+    "genericError": "Algo salió mal. Inténtalo de nuevo.",
+    "eta": "Sin cola — publicado en 48 horas",
+    "toolPicker": {
+      "placeholder": "Escribe para buscar y seleccionar tu herramienta",
+      "searching": "Buscando…",
+      "notFound": "No se encontró ninguna herramienta. {link}.",
+      "submitFirst": "Envíala primero",
+      "notListed": "¿Aún no está publicada? {link}."
+    },
+    "form": {
+      "tool": "Herramienta",
+      "selectTool": "Busca y selecciona tu herramienta.",
+      "invalidUrl": "Introduce una URL válida."
+    },
+    "submit": {
+      "seoTitle": "Envía tu herramienta de IA – {site}",
+      "seoDesc": "Publica tu herramienta de IA en {site} y haz que la descubran quienes buscan productos de IA.",
+      "panelTitle": "Cuéntanos sobre tu herramienta",
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Example AI",
+      "url": "URL del sitio web",
+      "whoWrites": "¿Quién redacta la ficha?",
+      "nameRequired": "Introduce el nombre de la herramienta.",
+      "urlRequired": "Introduce la URL del sitio web.",
+      "urlInvalid": "Introduce una URL válida, p. ej. {example}",
+      "modes": {
+        "auto": {
+          "title": "Redactada por {site}",
+          "desc": "Redactamos la ficha y todas las traducciones por ti con IA."
+        },
+        "manual": {
+          "title": "La redactaré yo",
+          "desc": "Tú aportas la ficha en inglés; nosotros nos encargamos de las traducciones."
+        }
+      },
+      "mockDesc": "Tu herramienta, mostrada con un borde destacado en todos los listados.",
+      "includesTitle": "Qué incluye tu ficha",
+      "youGetLead": "Obtendrás:",
+      "youGet": [
+        {
+          "title": "Aparición en \"Lo más reciente\" y \"Recién lanzado\" en 48 horas.",
+          "desc": "Sin lista de espera."
+        },
+        {
+          "title": "Borde de tarjeta destacado.",
+          "desc": "Tu herramienta resalta en los listados y atrae más clics."
+        },
+        {
+          "title": "Backlinks dofollow para SEO.",
+          "desc": "Tu sitio recibe varios enlaces dofollow desde nuestras páginas, lo que mejora el posicionamiento y el tráfico orgánico."
+        },
+        {
+          "title": "Ficha permanente.",
+          "desc": "Tu herramienta permanece en el directorio y sigue recibiendo visitas con el tiempo."
+        },
+        {
+          "title": "Insignia de lanzamiento.",
+          "desc": "Inserta una insignia \"Featured on\" en tu sitio web."
+        }
+      ],
+      "faqTitle": "Preguntas frecuentes – Enviar IA",
+      "faqs": [
+        {
+          "q": "¿Cuánto cuesta una ficha? ¿Es un pago único o recurrente?",
+          "a": "Es un pago único. No hay suscripción."
+        },
+        {
+          "q": "¿Cuándo se publicará mi herramienta?",
+          "a": "Los envíos de pago no hacen cola y suelen publicarse en 48 horas."
+        },
+        {
+          "q": "¿Caduca mi ficha?",
+          "a": "No. Una vez aprobada, tu ficha permanece en el directorio para siempre."
+        },
+        {
+          "q": "¿Cómo puedo conseguir más visitas?",
+          "a": "Combina tu ficha con una campaña de anuncios o un artículo de invitado para ganar exposición."
+        },
+        {
+          "q": "¿Por qué no se publicó mi herramienta?",
+          "a": "Rechazamos herramientas inaccesibles, no relacionadas con la IA o que infringen nuestra política de contenidos. Se te notificará y se te reembolsará."
+        },
+        {
+          "q": "¿Garantizáis tráfico o ventas?",
+          "a": "No. Garantizamos la ficha y su posición, no resultados concretos de tráfico o ingresos."
+        },
+        {
+          "q": "¿Cuál es vuestra política de reembolso?",
+          "a": "Si tu herramienta es rechazada, recibes un reembolso completo. Las fichas publicadas no son reembolsables."
+        },
+        {
+          "q": "¿Trabajáis con agencias?",
+          "a": "Sí — contáctanos para envíos en volumen."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Anuncia tu herramienta de IA – {site}",
+      "seoDesc": "Anuncios de pago por clic y posiciones destacadas en {site}.",
+      "panelTitle": "¿Qué herramienta quieres promocionar?",
+      "landing": "URL de destino del anuncio",
+      "landingHint": "Opcional — p. ej. un enlace con seguimiento UTM",
+      "choosePackage": "Elige un paquete de clics",
+      "clicksLabel": "Clics:",
+      "pickPackage": "Elige un paquete.",
+      "cpc": "Coste por clic: {amount}",
+      "howTitle": "Cómo funciona la publicidad",
+      "intro": [
+        "Nuestro sistema coloca los anuncios automáticamente hasta que recibas al menos los clics que compraste.",
+        "Tu presupuesto se gasta primero, así que consigues clics e impresiones rápidamente."
+      ],
+      "warning": "No puedes elegir en qué páginas aparecen los anuncios y la calidad de los clics no está garantizada.",
+      "controlNote": "Puedes pausar o reanudar tu campaña en cualquier momento.",
+      "placementsTitle": "Ubicaciones de anuncios",
+      "tagline": "Tu eslogan aquí",
+      "types": [
+        {
+          "badge": "Más frecuente",
+          "title": "Ubicación estándar",
+          "points": [
+            "Se muestra en el bloque \"Recién lanzado\" de la página de inicio.",
+            "Rota por las páginas de listados: más recientes, más guardadas, más usadas, mensuales, categorías.",
+            "Se muestra en páginas de herramientas competidoras y en tus propias páginas de categoría."
+          ]
+        },
+        {
+          "badge": "Más eficaz",
+          "title": "Ubicación destacada",
+          "points": [
+            "Espacios fijados en inicio, más recientes, más usadas, más guardadas, resultados de búsqueda y páginas de categoría.",
+            "Cuanto mayor sea el saldo restante, mejor posición — recarga cuando quieras para subir.",
+            "Barra de patrocinio en la parte superior de la mayoría de páginas, rotando entre anunciantes.",
+            "También se muestra en páginas de blog, comparativas y alternativas.",
+            "Cada clic en el anuncio va directamente a tu sitio web."
+          ]
+        }
+      ],
+      "reportTitle": "Informe de campaña",
+      "reportNote": "Recibes un informe detallado de cada campaña. También puedes medir los resultados con Google Analytics o cualquier herramienta de analítica.",
+      "reportColumns": [
+        "Herramienta",
+        "Clics orgánicos",
+        "Clics de pago",
+        "Clics totales",
+        "Vistas de detalle",
+        "Guardados",
+        "Impresiones"
+      ],
+      "sampleNote": "Datos de ejemplo solo con fines ilustrativos.",
+      "faqTitle": "Preguntas frecuentes – Anunciar",
+      "faqs": [
+        {
+          "q": "¿Cómo funciona la publicidad?",
+          "a": "Elige una herramienta y un paquete de clics. Tras el pago, tus anuncios empiezan a rotar por el sitio hasta entregar los clics comprados."
+        },
+        {
+          "q": "¿Puedo comprar clics más de una vez?",
+          "a": "Sí. Las nuevas compras se suman a tu saldo, lo que también mejora tu posición destacada."
+        },
+        {
+          "q": "Tengo más presupuesto y quiero más clientes. ¿Qué hago?",
+          "a": "Compra un paquete mayor o contáctanos para una campaña a medida con artículos de invitado y promoción en redes sociales."
+        },
+        {
+          "q": "¿Puedo segmentar por países o idiomas?",
+          "a": "Por ahora no. La segmentación es automática."
+        },
+        {
+          "q": "¿Puedo elegir dónde aparecen mis anuncios?",
+          "a": "No. Las ubicaciones se eligen automáticamente para entregar tus clics lo más rápido posible."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Artículos de invitado e inserción de enlaces – {site}",
+      "seoDesc": "Publica artículos de invitado o añade enlaces dofollow en {site} para llegar a una audiencia interesada en la IA.",
+      "title": "Artículos de invitado / inserción de enlaces en {site}",
+      "sub": "¿Cuántos artículos de invitado o inserciones de enlaces quieres publicar?",
+      "rule": "Un artículo de invitado cuesta 2 créditos; una inserción de enlace, 1 crédito.",
+      "packagesLabel": "Paquetes de créditos",
+      "buy": "Comprar {n} crédito | Comprar {n} créditos",
+      "decrease": "Reducir",
+      "increase": "Aumentar",
+      "customCredits": "Créditos personalizados",
+      "tip": "CONSEJO: los pedidos de más de {min} créditos tienen un {percent}% de descuento.",
+      "packageNotes": [
+        "1 inserción de enlace",
+        "1 artículo de invitado o 2 inserciones de enlace",
+        "1 artículo de invitado + 1 inserción de enlace, o 3 inserciones de enlace",
+        "hasta 5 artículos de invitado o 10 inserciones de enlace"
+      ],
+      "benefits": [
+        "Enlaces dofollow",
+        "Artículos de IA con autoridad",
+        "Tráfico duradero",
+        "URL permanente",
+        "Valor SEO"
+      ],
+      "notes": [
+        "Una inserción de enlace cuesta 1 crédito; un artículo de invitado cuesta 2 créditos.",
+        "Para publicar un artículo de invitado necesitas al menos 2 créditos.",
+        "Los créditos pueden repartirse entre artículos e inserciones de enlaces. Los créditos no usados se pueden reembolsar a petición (1 crédito = {price}).",
+        "¿Necesitas otra cantidad? Usa el selector. Los pedidos de más de {min} créditos obtienen automáticamente un {percent}% de descuento.",
+        "Los créditos gastados en un contenido publicado no son reembolsables. Si un envío es rechazado, sus créditos vuelven a tu saldo."
+      ],
+      "faqTitle": "Preguntas frecuentes – Artículos de invitado / Inserción de enlaces",
+      "faqs": [
+        {
+          "q": "¿Cómo encargo un artículo de invitado?",
+          "a": "Compra al menos 2 créditos y envía tu artículo desde tu panel. Nuestros editores lo revisan antes de publicarlo."
+        },
+        {
+          "q": "¿Cómo encargo una inserción de enlace?",
+          "a": "Compra 1 crédito por enlace y envíanos la URL de destino, el texto ancla y el artículo donde quieres colocarlo (o deja que elijamos uno)."
+        },
+        {
+          "q": "¿Cómo es el proceso de publicación?",
+          "a": "Compra de créditos → envío del contenido o de los datos del enlace → revisión editorial → publicación. Recibirás la URL publicada por correo."
+        },
+        {
+          "q": "¿Hay normas de contenido para los artículos de invitado?",
+          "a": "Los artículos deben ser originales, relacionados con la IA, útiles para los lectores y sin enlaces spam ni para adultos. Podemos pedir cambios."
+        },
+        {
+          "q": "¿Puedo obtener un reembolso por los créditos no usados?",
+          "a": "Sí. Contacta con soporte y los créditos no usados se reembolsarán al método de pago original."
+        },
+        {
+          "q": "¿Qué me aportan los artículos de invitado y las inserciones de enlaces?",
+          "a": "Ponen tu producto delante de una audiencia interesada en la IA y te dan un backlink dofollow permanente."
+        },
+        {
+          "q": "¿Hay descuento por volumen?",
+          "a": "Sí — todo pedido de más de {min} créditos tiene automáticamente un {percent}% de descuento."
+        },
+        {
+          "q": "¿Trabajáis con agencias?",
+          "a": "Sí. Las agencias que gestionan varios clientes pueden contactarnos para acuerdos a medida."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Actualiza tu herramienta de IA – {site}",
+      "seoDesc": "Actualiza los datos de tu herramienta publicada en {site}.",
+      "panelTitle": "Paga primero y luego envía tus cambios",
+      "canUpdate": "Qué puedes actualizar:",
+      "fields": [
+        "Nombre de la herramienta",
+        "Introducción breve",
+        "Descripción",
+        "Categoría",
+        "Cómo usarla",
+        "Funciones principales",
+        "Casos de uso",
+        "Precios",
+        "Preguntas frecuentes",
+        "URL del sitio web"
+      ],
+      "notes": [
+        "Tras el pago recibirás un formulario para enviar los cambios que necesites.",
+        "Pega el nuevo contenido en los campos correspondientes — nombre, categoría, introducción, descripción, uso, funciones, casos de uso, precios o preguntas frecuentes.",
+        "La URL del sitio web no se puede cambiar. Si te has mudado a un dominio nuevo, configura una redirección desde el antiguo.",
+        "Cada actualización se revisa manualmente antes de publicarse. Si se rechaza, se te reembolsa automáticamente.",
+        "Cada pago cubre una actualización. Revisa bien tu contenido antes de enviarlo."
+      ],
+      "faqTitle": "Preguntas frecuentes – Actualizar IA",
+      "faqs": [
+        {
+          "q": "¿Cuánto cuesta una actualización?",
+          "a": "Una tarifa única fija por actualización, indicada arriba."
+        },
+        {
+          "q": "¿Cómo funciona el proceso de actualización?",
+          "a": "Pago → rellenar el formulario de actualización → revisión de nuestro equipo → los cambios se publican."
+        },
+        {
+          "q": "¿Tengo que redactar yo el nuevo contenido?",
+          "a": "Sí. Si no envías contenido nuevo, no se cambia nada y puedes solicitar un reembolso."
+        },
+        {
+          "q": "¿Qué datos puedo cambiar?",
+          "a": "Todo lo de la lista anterior excepto la URL del sitio web."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Envía tu GPT – {site}",
+      "seoDesc": "Publica tu GPT personalizado en {site}.",
+      "panelTitle": "Pega el enlace de tu GPT",
+      "label": "Enlace del GPT",
+      "required": "Introduce el enlace de tu GPT.",
+      "invalid": "Introduce un enlace de GPT válido, p. ej. {example}",
+      "hint": "Obtenemos los datos del GPT automáticamente y redactamos el resto de la ficha por ti.",
+      "faqTitle": "Preguntas frecuentes – GPT",
+      "faqs": [
+        {
+          "q": "¿Cuánto cuesta publicar un GPT?",
+          "a": "Una tarifa única, indicada arriba."
+        },
+        {
+          "q": "¿Cuánto tarda en publicarse mi GPT?",
+          "a": "Normalmente en las 48 horas siguientes al pago."
+        },
+        {
+          "q": "¿Caduca la ficha de mi GPT?",
+          "a": "No, se mantiene publicada para siempre mientras el enlace del GPT funcione."
+        },
+        {
+          "q": "¿Cómo puede mi GPT conseguir más usuarios?",
+          "a": "Combina la ficha con una campaña de anuncios o un artículo de invitado."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Nuevo pedido",
+      "postCredits": "Créditos de artículos de invitado:",
+      "adClicks": "Saldo de clics de anuncios:",
+      "date": "Fecha",
+      "service": "Servicio",
+      "details": "Detalles",
+      "amount": "Importe",
+      "status": "Estado",
+      "statuses": {
+        "PAID": "Pagado",
+        "PENDING": "Pendiente",
+        "EXPIRED": "Caducado"
+      },
+      "loading": "Cargando…",
+      "empty": "Aún no hay pedidos.",
+      "clicks": "{n} clics",
+      "credits": "{n} crédito | {n} créditos"
+    }
   }
 }

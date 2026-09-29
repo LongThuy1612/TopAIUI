@@ -194,5 +194,391 @@
   },
   "language": {
     "label": "Språk"
+  },
+  "promote": {
+    "title": "Dina AI:er på {site}",
+    "myOrders": "Mina beställningar",
+    "intro": "{site} visar din produkt för människor som aktivt letar efter AI-verktyg — utvecklare, grundare, investerare och beslutsfattare — så att du får mer synlighet, fler provanvändare och fler betalande kunder.",
+    "stats": {
+      "pageViews": "Sidvisningar",
+      "monthlyVisits": "Besök per månad",
+      "subscribers": "Prenumeranter",
+      "desktopUsers": "Datoranvändare",
+      "avgTime": "Snittid på sajten"
+    },
+    "highlights": [
+      "Utvald katalog över AI-verktyg",
+      "Dofollow-bakåtlänkar",
+      "Flerspråkiga listningar",
+      "Permanent listning & trafik",
+      "Byggt för grundare & startups"
+    ],
+    "chooseService": "Välj vad du behöver",
+    "popular": "Populärt",
+    "services": {
+      "submit": {
+        "title": "Skicka in AI",
+        "desc": "Lista ditt AI-verktyg och börja få besökare."
+      },
+      "advertise": {
+        "title": "Annonsera AI",
+        "desc": "Kampanjer med betalning per klick och framhävda placeringar."
+      },
+      "guestPost": {
+        "title": "Gästinlägg / Länkinfogning",
+        "desc": "Publicera artiklar eller lägg till länkar på {site}."
+      },
+      "update": {
+        "title": "Uppdatera AI",
+        "desc": "Redigera uppgifterna för ett verktyg du redan listat."
+      },
+      "submitGpt": {
+        "title": "Skicka in GPT",
+        "desc": "Dela din egen GPT med fler användare."
+      }
+    },
+    "notice": {
+      "paid": "Betalningen har tagits emot — tack! Du kan följa din beställning under {link}.",
+      "canceled": "Betalningen avbröts. Du har inte debiterats."
+    },
+    "faqDefaultTitle": "Vanliga frågor",
+    "faqMore": "Har du en fråga? {link}",
+    "contactUs": "Kontakta oss",
+    "needToKnow": "Bra att veta:",
+    "total": "Totalt: {amount}",
+    "pay": "Betala {amount}",
+    "processing": "Bearbetar…",
+    "genericError": "Något gick fel. Försök igen.",
+    "eta": "Ingen kö — publicerad inom 48 timmar",
+    "toolPicker": {
+      "placeholder": "Skriv för att söka och välja ditt verktyg",
+      "searching": "Söker…",
+      "notFound": "Inget verktyg hittades. {link}.",
+      "submitFirst": "Skicka in det först",
+      "notListed": "Inte listat än? {link}."
+    },
+    "form": {
+      "tool": "Verktyg",
+      "selectTool": "Sök och välj ditt verktyg.",
+      "invalidUrl": "Ange en giltig URL."
+    },
+    "submit": {
+      "seoTitle": "Skicka in ditt AI-verktyg – {site}",
+      "seoDesc": "Lista ditt AI-verktyg på {site} och bli upptäckt av dem som letar efter AI-produkter.",
+      "panelTitle": "Berätta om ditt verktyg",
+      "name": "Namn",
+      "namePlaceholder": "t.ex. Example AI",
+      "url": "Webbplatsens URL",
+      "whoWrites": "Vem skriver listningen?",
+      "nameRequired": "Ange verktygets namn.",
+      "urlRequired": "Ange webbplatsens URL.",
+      "urlInvalid": "Ange en giltig URL, t.ex. {example}",
+      "modes": {
+        "auto": {
+          "title": "Skriven av {site}",
+          "desc": "Vi skriver listningen och alla översättningar åt dig med AI."
+        },
+        "manual": {
+          "title": "Jag skriver den själv",
+          "desc": "Du levererar listningen på engelska; vi sköter översättningarna."
+        }
+      },
+      "mockDesc": "Ditt verktyg, visat med framhävd ram i alla listor.",
+      "includesTitle": "Det här ingår i din listning",
+      "youGetLead": "Du får:",
+      "youGet": [
+        {
+          "title": "Listad i \"Senaste\" och \"Nyss lanserade\" inom 48 timmar.",
+          "desc": "Ingen väntelista."
+        },
+        {
+          "title": "Framhävd kortram.",
+          "desc": "Ditt verktyg sticker ut i listor och får fler klick."
+        },
+        {
+          "title": "Dofollow-bakåtlänkar för SEO.",
+          "desc": "Din webbplats får flera dofollow-länkar från våra sidor, vilket hjälper sökrankning och organisk trafik."
+        },
+        {
+          "title": "Permanent listning.",
+          "desc": "Ditt verktyg ligger kvar i katalogen och fortsätter att få besökare över tid."
+        },
+        {
+          "title": "Lanseringsmärke.",
+          "desc": "Bädda in ett \"Featured on\"-märke på din webbplats."
+        }
+      ],
+      "faqTitle": "Vanliga frågor – Skicka in AI",
+      "faqs": [
+        {
+          "q": "Vad kostar en listning? Engångsbetalning eller återkommande?",
+          "a": "Det är en engångsbetalning. Det finns ingen prenumeration."
+        },
+        {
+          "q": "Hur snabbt publiceras mitt verktyg?",
+          "a": "Betalda inskick hoppar över kön och publiceras oftast inom 48 timmar."
+        },
+        {
+          "q": "Går min listning ut?",
+          "a": "Nej. När den har godkänts ligger listningen kvar i katalogen för alltid."
+        },
+        {
+          "q": "Hur får jag fler visningar?",
+          "a": "Kombinera listningen med en annonskampanj eller ett gästinlägg för extra synlighet."
+        },
+        {
+          "q": "Varför listades inte mitt verktyg?",
+          "a": "Vi avvisar verktyg som inte går att nå, inte har med AI att göra eller bryter mot vår innehållspolicy. Du meddelas och får pengarna tillbaka."
+        },
+        {
+          "q": "Garanterar ni trafik eller försäljning?",
+          "a": "Nej. Vi garanterar listningen och dess placering, inte specifika resultat för trafik eller intäkter."
+        },
+        {
+          "q": "Vilken återbetalningspolicy har ni?",
+          "a": "Om ditt verktyg avvisas får du full återbetalning. Publicerade listningar återbetalas inte."
+        },
+        {
+          "q": "Samarbetar ni med byråer?",
+          "a": "Ja — kontakta oss för inskick i större volym."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Annonsera ditt AI-verktyg – {site}",
+      "seoDesc": "Annonser med betalning per klick och framhävda placeringar på {site}.",
+      "panelTitle": "Vilket verktyg vill du marknadsföra?",
+      "landing": "Annonsens landnings-URL",
+      "landingHint": "Valfritt — t.ex. en länk med UTM-spårning",
+      "choosePackage": "Välj ett klickpaket",
+      "clicksLabel": "Klick:",
+      "pickPackage": "Välj ett paket.",
+      "cpc": "Kostnad per klick: {amount}",
+      "howTitle": "Så fungerar annonsering",
+      "intro": [
+        "Annonserna placeras automatiskt av vårt system tills du har fått minst det antal klick du köpt.",
+        "Din budget används först, så du får snabbt klick och visningar."
+      ],
+      "warning": "Du kan inte välja på vilka sidor annonserna visas och klickkvaliteten garanteras inte.",
+      "controlNote": "Du kan pausa eller återuppta kampanjen när som helst.",
+      "placementsTitle": "Annonsplaceringar",
+      "tagline": "Din slogan här",
+      "types": [
+        {
+          "badge": "Visas oftast",
+          "title": "Standardplacering",
+          "points": [
+            "Visas i blocket \"Nyss lanserade\" på startsidan.",
+            "Roterar på listsidor: senaste, mest sparade, mest använda, månadsvis, kategorier.",
+            "Visas på konkurrerande verktygs sidor och på dina egna kategorisidor."
+          ]
+        },
+        {
+          "badge": "Mest effektiv",
+          "title": "Framhävd placering",
+          "points": [
+            "Fästa platser på startsidan, senaste, mest använda, mest sparade, sökresultat och kategorisidor.",
+            "Ju högre återstående saldo, desto högre placering — fyll på när som helst för att klättra.",
+            "Sponsorfält högst upp på de flesta sidor, roterande mellan annonsörer.",
+            "Visas även på blogg-, jämförelse- och alternativsidor.",
+            "Varje annonsklick leder direkt till din webbplats."
+          ]
+        }
+      ],
+      "reportTitle": "Kampanjrapport",
+      "reportNote": "Du får en detaljerad rapport för varje kampanj. Du kan också följa resultaten med Google Analytics eller valfritt analysverktyg.",
+      "reportColumns": [
+        "Verktyg",
+        "Organiska klick",
+        "Betalda klick",
+        "Totalt antal klick",
+        "Detaljvisningar",
+        "Sparningar",
+        "Visningar"
+      ],
+      "sampleNote": "Exempeldata endast i illustrativt syfte.",
+      "faqTitle": "Vanliga frågor – Annonsering",
+      "faqs": [
+        {
+          "q": "Hur fungerar annonsering?",
+          "a": "Välj ett verktyg och ett klickpaket. Efter betalningen roterar dina annonser på sajten tills de köpta klicken har levererats."
+        },
+        {
+          "q": "Kan jag köpa klick flera gånger?",
+          "a": "Ja. Nya köp läggs till ditt saldo, vilket också höjer din framhävda placering."
+        },
+        {
+          "q": "Jag har större budget och vill ha fler kunder. Vad ska jag göra?",
+          "a": "Köp ett större paket eller kontakta oss för en skräddarsydd kampanj med gästinlägg och marknadsföring i sociala medier."
+        },
+        {
+          "q": "Kan jag rikta mig till specifika länder eller språk?",
+          "a": "Inte i nuläget. Inriktningen sker automatiskt."
+        },
+        {
+          "q": "Kan jag välja var mina annonser visas?",
+          "a": "Nej. Placeringarna väljs automatiskt för att leverera dina klick så snabbt som möjligt."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Gästinlägg & länkinfogning – {site}",
+      "seoDesc": "Publicera gästinlägg eller lägg till dofollow-länkar på {site} för att nå en AI-intresserad publik.",
+      "title": "Gästinlägg / länkinfogning på {site}",
+      "sub": "Hur många gästinlägg eller länkinfogningar vill du publicera?",
+      "rule": "Ett gästinlägg kostar 2 krediter, en länkinfogning kostar 1 kredit.",
+      "packagesLabel": "Kreditpaket",
+      "buy": "Köp {n} kredit | Köp {n} krediter",
+      "decrease": "Minska",
+      "increase": "Öka",
+      "customCredits": "Eget antal krediter",
+      "tip": "TIPS: Beställningar över {min} krediter får {percent}% rabatt.",
+      "packageNotes": [
+        "1 länkinfogning",
+        "1 gästinlägg eller 2 länkinfogningar",
+        "1 gästinlägg + 1 länkinfogning, eller 3 länkinfogningar",
+        "upp till 5 gästinlägg eller 10 länkinfogningar"
+      ],
+      "benefits": [
+        "Dofollow-länkar",
+        "Auktoritativa AI-artiklar",
+        "Varaktig trafik",
+        "Permanent URL",
+        "SEO-värde"
+      ],
+      "notes": [
+        "En länkinfogning kostar 1 kredit; ett gästinlägg kostar 2 krediter.",
+        "För att publicera ett gästinlägg behöver du minst 2 krediter.",
+        "Krediter kan fördelas mellan inlägg och länkinfogningar. Oanvända krediter återbetalas på begäran (1 kredit = {price}).",
+        "Behöver du ett annat antal? Använd knapparna. Beställningar över {min} krediter får automatiskt {percent}% rabatt.",
+        "Krediter som använts för publicerat innehåll återbetalas inte. Om ett inskick avvisas går krediterna tillbaka till ditt saldo."
+      ],
+      "faqTitle": "Vanliga frågor – Gästinlägg / Länkinfogning",
+      "faqs": [
+        {
+          "q": "Hur beställer jag ett gästinlägg?",
+          "a": "Köp minst 2 krediter och skicka in din artikel från din instrumentpanel. Vår redaktion granskar den före publicering."
+        },
+        {
+          "q": "Hur beställer jag en länkinfogning?",
+          "a": "Köp 1 kredit per länk och skicka oss mål-URL, ankartext och artikeln där länken ska placeras (eller låt oss välja en)."
+        },
+        {
+          "q": "Hur går publiceringen till?",
+          "a": "Köp krediter → skicka in innehåll eller länkuppgifter → redaktionell granskning → publicering. Du får den publicerade URL:en via e-post."
+        },
+        {
+          "q": "Finns det innehållsriktlinjer för gästinlägg?",
+          "a": "Artiklar ska vara originella, AI-relaterade, användbara för läsarna och fria från spam- eller vuxenlänkar. Vi kan be om ändringar."
+        },
+        {
+          "q": "Kan jag få tillbaka pengar för oanvända krediter?",
+          "a": "Ja. Kontakta supporten så återbetalas oanvända krediter till den ursprungliga betalningsmetoden."
+        },
+        {
+          "q": "Vad ger gästinlägg och länkinfogningar mig?",
+          "a": "De visar din produkt för en AI-intresserad publik och ger dig en permanent dofollow-bakåtlänk."
+        },
+        {
+          "q": "Finns det mängdrabatt?",
+          "a": "Ja — alla beställningar över {min} krediter får automatiskt {percent}% rabatt."
+        },
+        {
+          "q": "Samarbetar ni med byråer?",
+          "a": "Ja. Byråer med flera kunder kan kontakta oss för skräddarsydda upplägg."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Uppdatera ditt AI-verktyg – {site}",
+      "seoDesc": "Uppdatera uppgifterna för ditt verktyg som listas på {site}.",
+      "panelTitle": "Betala först, skicka sedan in dina ändringar",
+      "canUpdate": "Det här kan du uppdatera:",
+      "fields": [
+        "Verktygets namn",
+        "Kort introduktion",
+        "Beskrivning",
+        "Kategori",
+        "Användning",
+        "Huvudfunktioner",
+        "Användningsfall",
+        "Priser",
+        "Vanliga frågor",
+        "Webbplatsens URL"
+      ],
+      "notes": [
+        "Efter betalningen får du ett formulär där du skickar in de ändringar du behöver.",
+        "Klistra in det nya innehållet i motsvarande fält — namn, kategori, introduktion, beskrivning, användning, funktioner, användningsfall, priser eller vanliga frågor.",
+        "Webbplatsens URL kan inte ändras. Om du har flyttat till en ny domän, sätt upp en omdirigering från den gamla.",
+        "Varje uppdatering granskas manuellt innan den publiceras. Om den avvisas återbetalas du automatiskt.",
+        "Varje betalning gäller en uppdatering. Dubbelkolla ditt innehåll innan du skickar in det."
+      ],
+      "faqTitle": "Vanliga frågor – Uppdatera AI",
+      "faqs": [
+        {
+          "q": "Vad kostar en uppdatering?",
+          "a": "En fast engångsavgift per uppdatering, se ovan."
+        },
+        {
+          "q": "Hur går en uppdatering till?",
+          "a": "Betala → fyll i uppdateringsformuläret → vårt team granskar → ändringarna publiceras."
+        },
+        {
+          "q": "Måste jag skriva det nya innehållet själv?",
+          "a": "Ja. Om du inte skickar in nytt innehåll ändras inget och du kan begära återbetalning."
+        },
+        {
+          "q": "Vilka uppgifter kan jag ändra?",
+          "a": "Allt i listan ovan utom webbplatsens URL."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Skicka in din GPT – {site}",
+      "seoDesc": "Lista din egen GPT på {site}.",
+      "panelTitle": "Klistra in länken till din GPT",
+      "label": "GPT-länk",
+      "required": "Ange länken till din GPT.",
+      "invalid": "Ange en giltig GPT-länk, t.ex. {example}",
+      "hint": "Vi hämtar GPT-uppgifterna automatiskt och skriver resten av listningen åt dig.",
+      "faqTitle": "Vanliga frågor – GPT",
+      "faqs": [
+        {
+          "q": "Vad kostar det att lista en GPT?",
+          "a": "En engångsavgift, se ovan."
+        },
+        {
+          "q": "Hur lång tid tar det innan min GPT listas?",
+          "a": "Oftast inom 48 timmar efter betalningen."
+        },
+        {
+          "q": "Går listningen av min GPT ut?",
+          "a": "Nej, den ligger kvar permanent så länge GPT-länken fungerar."
+        },
+        {
+          "q": "Hur får min GPT fler användare?",
+          "a": "Kombinera listningen med en annonskampanj eller ett gästinlägg."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Ny beställning",
+      "postCredits": "Krediter för gästinlägg:",
+      "adClicks": "Saldo för annonsklick:",
+      "date": "Datum",
+      "service": "Tjänst",
+      "details": "Detaljer",
+      "amount": "Belopp",
+      "status": "Status",
+      "statuses": {
+        "PAID": "Betald",
+        "PENDING": "Väntande",
+        "EXPIRED": "Utgången"
+      },
+      "loading": "Laddar…",
+      "empty": "Inga beställningar än.",
+      "clicks": "{n} klick",
+      "credits": "{n} kredit | {n} krediter"
+    }
   }
 }

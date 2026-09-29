@@ -1,69 +1,98 @@
 <script setup lang="ts">
-const categories = await $fetch('/api/categories')
+import { submitAi } from '~/data/promote'
+import { isHttpUrl } from '~/composables/usePromoteCheckout'
 
-const form = reactive({
-  name: '', categorySlug: '', website: '', pricingType: 'FREEMIUM'
+const { t, tp, items, faqs } = usePromoteText()
+
+useSeoMeta({
+  title: () => tp('promote.submit.seoTitle'),
+  description: () => tp('promote.submit.seoDesc'),
 })
-const submitting = ref(false)
-const result = ref<'idle' | 'success' | 'error'>('idle')
-const errorMessage = ref('')
 
-async function onSubmit() {
-  submitting.value = true
-  result.value = 'idle'
-  try {
-    await $fetch('/api/submit', { method: 'POST', body: form })
-    result.value = 'success'
-  } catch (e: any) {
-    result.value = 'error'
-    errorMessage.value = e?.data?.statusMessage || 'Something went wrong'
-  } finally {
-    submitting.value = false
-  }
+const form = reactive({ name: '', url: '', mode: 'auto' as 'auto' | 'manual' })
+const touched = ref(false)
+const errors = computed(() => ({
+  name: form.name.trim() ? '' : t('promote.submit.nameRequired'),
+  url: !form.url.trim() ? t('promote.submit.urlRequired') : isHttpUrl(form.url) ? '' : t('promote.submit.urlInvalid', { example: 'https://example.ai' }),
+}))
+const valid = computed(() => !errors.value.name && !errors.value.url)
+
+const { checkout, loading, error } = usePromoteCheckout()
+function pay() {
+  touched.value = true
+  if (!valid.value) return
+  checkout({ type: 'submit-ai', name: form.name.trim(), url: form.url.trim(), mode: form.mode })
 }
-
-useSeoMeta({ title: 'Submit a tool — TopAICollection' })
 </script>
 
 <template>
-  <div class="mx-auto max-w-xl px-4 py-14 sm:px-6 lg:px-8">
-    <h1 class="text-2xl font-extrabold text-ink-900">Submit a tool</h1>
-    <p class="mt-2 text-sm text-ink-600">Your submission goes into a moderation queue and appears on the site once an admin approves it.</p>
+  <PromoteShell active="submit" :faq-title="t('promote.submit.faqTitle')" :faqs="faqs('promote.submit.faqs')">
+    <section class="p-panel p-panel--narrow">
+      <h2 class="p-panel__title">{{ t('promote.submit.panelTitle') }}</h2>
 
-    <div v-if="result === 'success'" class="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">
-      Thanks! Your tool was submitted and is pending review.
-    </div>
-
-    <form v-else class="mt-6 space-y-4" @submit.prevent="onSubmit">
-      <div>
-        <label class="text-xs font-semibold text-ink-600">Tool name</label>
-        <input v-model="form.name" required class="mt-1 w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
-      </div>
-      <div>
-        <label class="text-xs font-semibold text-ink-600">Category</label>
-        <select v-model="form.categorySlug" required class="mt-1 w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
-          <option value="" disabled>Select a category</option>
-          <option v-for="c in categories" :key="c.slug" :value="c.slug">{{ c.name }}</option>
-        </select>
-      </div>
-      <div>
-        <label class="text-xs font-semibold text-ink-600">Website URL</label>
-        <input v-model="form.website" type="url" class="mt-1 w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
-      </div>
-      <div>
-        <label class="text-xs font-semibold text-ink-600">Pricing</label>
-        <select v-model="form.pricingType" class="mt-1 w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
-          <option value="FREE">Free</option>
-          <option value="FREEMIUM">Freemium</option>
-          <option value="PAID">Paid</option>
-        </select>
+      <div class="p-field">
+        <label class="p-label" for="tool-name"><span><span class="req">*</span>{{ t('promote.submit.name') }}</span></label>
+        <input id="tool-name" v-model="form.name" class="p-input" :class="{ 'p-input--error': touched && errors.name }" :placeholder="t('promote.submit.namePlaceholder')">
+        <p v-if="touched && errors.name" class="p-error">{{ errors.name }}</p>
       </div>
 
-      <p v-if="result === 'error'" class="text-sm text-red-600">{{ errorMessage }}</p>
+      <div class="p-field">
+        <label class="p-label" for="tool-url"><span><span class="req">*</span>{{ t('promote.submit.url') }}</span></label>
+        <input id="tool-url" v-model="form.url" type="url" class="p-input" :class="{ 'p-input--error': touched && errors.url }" placeholder="https://example.ai">
+        <p v-if="touched && errors.url" class="p-error">{{ errors.url }}</p>
+      </div>
 
-      <button :disabled="submitting" class="w-full rounded-full bg-brand-500 py-2.5 text-sm font-semibold text-white hover:bg-brand-600 disabled:opacity-50">
-        {{ submitting ? 'Submitting…' : 'Submit for review' }}
-      </button>
-    </form>
-  </div>
+      <div class="p-field">
+        <div class="p-label"><span><span class="req">*</span>{{ t('promote.submit.whoWrites') }}</span></div>
+        <div class="modes" role="radiogroup">
+          <label v-for="m in submitAi.modes" :key="m" class="mode" :class="{ 'mode--on': form.mode === m }">
+            <input v-model="form.mode" type="radio" name="mode" :value="m" class="sr-only">
+            <strong>{{ tp(`promote.submit.modes.${m}.title`) }}</strong>
+            <span>{{ t(`promote.submit.modes.${m}.desc`) }}</span>
+          </label>
+        </div>
+      </div>
+
+      <PromotePayBar :total="submitAi.price" :note="t('promote.eta')" :loading="loading" @pay="pay" />
+      <p v-if="error" class="p-error">{{ error }}</p>
+    </section>
+
+    <section class="p-panel example">
+      <div class="example__mock" aria-hidden="true">
+        <div class="ghost" />
+        <div class="mock-card">
+          <div class="mock-card__head"><span class="mock-logo">E</span>Example AI</div>
+          <p>{{ t('promote.submit.mockDesc') }}</p>
+        </div>
+        <div class="ghost" />
+      </div>
+      <div>
+        <h2 class="example__title">{{ t('promote.submit.includesTitle') }}</h2>
+        <p class="example__lead">{{ t('promote.submit.youGetLead') }}</p>
+        <PromoteChecklist :items="items('promote.submit.youGet')" />
+      </div>
+    </section>
+  </PromoteShell>
 </template>
+
+<style scoped>
+.modes { display: grid; gap: 12px; }
+.mode {
+  display: grid; gap: 6px; padding: 14px 16px; border: 1px solid var(--p-border); border-radius: 4px; cursor: pointer;
+}
+.mode strong { font-weight: 500; font-size: 16px; }
+.mode span { font-size: 13px; color: var(--p-muted); }
+.mode--on { border-color: var(--p-primary); background: var(--p-primary-soft); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.example { display: grid; grid-template-columns: 2fr 3fr; gap: 32px; padding: 32px; }
+.example__title { margin: 0 0 16px; font-size: 22px; }
+.example__lead { margin: 0 0 14px; }
+.example__mock { background: #f0f0f4; border-radius: 12px; padding: 24px; display: grid; gap: 14px; align-content: center; }
+.ghost { height: 56px; margin: 0 40px; border-radius: 6px; background: #fff; opacity: .7; }
+.mock-card { background: #fff; border: 2px solid #c9bdf7; border-radius: 8px; padding: 14px 16px; margin: 0 20px; }
+.mock-card__head { display: flex; align-items: center; gap: 10px; font-weight: 700; margin-bottom: 8px; }
+.mock-card p { margin: 0; font-size: 13px; color: var(--p-muted); }
+.mock-logo { width: 24px; height: 24px; border-radius: 6px; background: var(--p-primary); color: #fff; display: grid; place-items: center; font-size: 13px; }
+@media (max-width: 800px) { .example { grid-template-columns: 1fr; } }
+</style>

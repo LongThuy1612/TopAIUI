@@ -194,5 +194,391 @@
   },
   "language": {
     "label": "Kieli"
+  },
+  "promote": {
+    "title": "Tekoälysi palvelussa {site}",
+    "myOrders": "Tilaukseni",
+    "intro": "{site} tuo tuotteesi niiden ihmisten eteen, jotka etsivät aktiivisesti tekoälytyökaluja — kehittäjien, perustajien, sijoittajien ja päättäjien — jotta saat enemmän näkyvyyttä, kokeilijoita ja maksavia käyttäjiä.",
+    "stats": {
+      "pageViews": "Sivunkatselut",
+      "monthlyVisits": "Kuukausikäynnit",
+      "subscribers": "Tilaajat",
+      "desktopUsers": "Tietokoneen käyttäjät",
+      "avgTime": "Keskim. aika sivustolla"
+    },
+    "highlights": [
+      "Valikoitu tekoälytyökaluhakemisto",
+      "Dofollow-takalinkit",
+      "Monikieliset listaukset",
+      "Pysyvä listaus ja liikenne",
+      "Tehty perustajille ja startupeille"
+    ],
+    "chooseService": "Valitse tarvitsemasi",
+    "popular": "Suosittu",
+    "services": {
+      "submit": {
+        "title": "Lähetä tekoäly",
+        "desc": "Listaa tekoälytyökalusi ja ala saada kävijöitä."
+      },
+      "advertise": {
+        "title": "Mainosta tekoälyä",
+        "desc": "Klikkausperusteiset kampanjat ja korostetut näkyvyyspaikat."
+      },
+      "guestPost": {
+        "title": "Vierasartikkelit / Linkin lisäys",
+        "desc": "Julkaise artikkeleita tai lisää linkkejä palveluun {site}."
+      },
+      "update": {
+        "title": "Päivitä tekoäly",
+        "desc": "Muokkaa jo listaamasi työkalun tietoja."
+      },
+      "submitGpt": {
+        "title": "Lähetä GPT",
+        "desc": "Jaa oma GPT:si useammille käyttäjille."
+      }
+    },
+    "notice": {
+      "paid": "Maksu vastaanotettu — kiitos! Voit seurata tilaustasi kohdassa {link}.",
+      "canceled": "Maksu peruttiin. Sinua ei ole veloitettu."
+    },
+    "faqDefaultTitle": "Usein kysytyt kysymykset",
+    "faqMore": "Onko sinulla kysyttävää? {link}",
+    "contactUs": "Ota yhteyttä",
+    "needToKnow": "Hyvä tietää:",
+    "total": "Yhteensä: {amount}",
+    "pay": "Maksa {amount}",
+    "processing": "Käsitellään…",
+    "genericError": "Jokin meni vikaan. Yritä uudelleen.",
+    "eta": "Ei jonoa — julki 48 tunnin sisällä",
+    "toolPicker": {
+      "placeholder": "Kirjoita hakeaksesi ja valitaksesi työkalusi",
+      "searching": "Haetaan…",
+      "notFound": "Työkalua ei löytynyt. {link}.",
+      "submitFirst": "Lähetä se ensin",
+      "notListed": "Eikö vielä listattu? {link}."
+    },
+    "form": {
+      "tool": "Työkalu",
+      "selectTool": "Hae ja valitse työkalusi.",
+      "invalidUrl": "Anna kelvollinen URL-osoite."
+    },
+    "submit": {
+      "seoTitle": "Lähetä tekoälytyökalusi – {site}",
+      "seoDesc": "Listaa tekoälytyökalusi palvelussa {site} ja tule löydetyksi tekoälytuotteita etsivien keskuudessa.",
+      "panelTitle": "Kerro meille työkalustasi",
+      "name": "Nimi",
+      "namePlaceholder": "esim. Example AI",
+      "url": "Verkkosivuston URL",
+      "whoWrites": "Kuka kirjoittaa listauksen?",
+      "nameRequired": "Anna työkalun nimi.",
+      "urlRequired": "Anna verkkosivuston URL-osoite.",
+      "urlInvalid": "Anna kelvollinen URL-osoite, esim. {example}",
+      "modes": {
+        "auto": {
+          "title": "Kirjoittajana {site}",
+          "desc": "Kirjoitamme listauksen ja kaikki käännökset puolestasi tekoälyn avulla."
+        },
+        "manual": {
+          "title": "Kirjoitan sen itse",
+          "desc": "Toimitat listauksen englanniksi; me hoidamme käännökset."
+        }
+      },
+      "mockDesc": "Työkalusi näytetään korostetulla reunuksella jokaisessa listassa.",
+      "includesTitle": "Mitä listaukseesi sisältyy",
+      "youGetLead": "Saat:",
+      "youGet": [
+        {
+          "title": "Näkyvyys osioissa \"Uusimmat\" ja \"Juuri julkaistut\" 48 tunnin sisällä.",
+          "desc": "Ei jonotuslistaa."
+        },
+        {
+          "title": "Korostettu korttireunus.",
+          "desc": "Työkalusi erottuu listoissa ja saa enemmän klikkauksia."
+        },
+        {
+          "title": "Dofollow-takalinkit hakukoneoptimointiin.",
+          "desc": "Sivustosi saa useita dofollow-linkkejä sivuiltamme, mikä parantaa hakusijoituksia ja orgaanista liikennettä."
+        },
+        {
+          "title": "Pysyvä listaus.",
+          "desc": "Työkalusi pysyy hakemistossa ja saa kävijöitä jatkossakin."
+        },
+        {
+          "title": "Julkaisumerkki.",
+          "desc": "Lisää \"Featured on\" -merkki verkkosivustollesi."
+        }
+      ],
+      "faqTitle": "Usein kysytyt kysymykset – Lähetä tekoäly",
+      "faqs": [
+        {
+          "q": "Mitä listaus maksaa? Onko se kertamaksu vai toistuva?",
+          "a": "Se on kertamaksu. Tilausta ei ole."
+        },
+        {
+          "q": "Kuinka pian työkaluni julkaistaan?",
+          "a": "Maksetut lähetykset ohittavat jonon ja julkaistaan yleensä 48 tunnin sisällä."
+        },
+        {
+          "q": "Vanheneeko listaukseni?",
+          "a": "Ei. Hyväksymisen jälkeen listauksesi pysyy hakemistossa pysyvästi."
+        },
+        {
+          "q": "Miten saan enemmän katseluja?",
+          "a": "Yhdistä listaus mainoskampanjaan tai vierasartikkeliin saadaksesi lisää näkyvyyttä."
+        },
+        {
+          "q": "Miksi työkaluani ei listattu?",
+          "a": "Hylkäämme työkalut, joihin ei saada yhteyttä, jotka eivät liity tekoälyyn tai jotka rikkovat sisältöohjeitamme. Saat ilmoituksen ja rahasi takaisin."
+        },
+        {
+          "q": "Takaatteko liikennettä tai myyntiä?",
+          "a": "Emme. Takaamme listauksen ja sen sijoituksen, emme tiettyjä liikenne- tai tulostuloksia."
+        },
+        {
+          "q": "Mikä on palautuskäytäntönne?",
+          "a": "Jos työkalusi hylätään, saat täyden palautuksen. Julkaistuja listauksia ei palauteta."
+        },
+        {
+          "q": "Teettekö yhteistyötä toimistojen kanssa?",
+          "a": "Kyllä — ota yhteyttä suurempia lähetysmääriä varten."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Mainosta tekoälytyökaluasi – {site}",
+      "seoDesc": "Klikkausperusteiset mainokset ja korostetut mainospaikat palvelussa {site}.",
+      "panelTitle": "Mitä työkalua haluat mainostaa?",
+      "landing": "Mainoksen kohde-URL",
+      "landingHint": "Valinnainen — esim. linkki UTM-seurannalla",
+      "choosePackage": "Valitse klikkauspaketti",
+      "clicksLabel": "Klikkaukset:",
+      "pickPackage": "Valitse paketti.",
+      "cpc": "Hinta per klikkaus: {amount}",
+      "howTitle": "Näin mainonta toimii",
+      "intro": [
+        "Järjestelmämme näyttää mainoksia automaattisesti, kunnes olet saanut vähintään ostamasi määrän klikkauksia.",
+        "Budjettisi käytetään ensisijaisesti, joten saat klikkauksia ja näyttökertoja nopeasti."
+      ],
+      "warning": "Et voi valita, millä sivuilla mainokset näkyvät, eikä klikkausten laatua taata.",
+      "controlNote": "Voit keskeyttää tai jatkaa kampanjaa milloin tahansa.",
+      "placementsTitle": "Mainospaikat",
+      "tagline": "Iskulauseesi tähän",
+      "types": [
+        {
+          "badge": "Näkyy useimmin",
+          "title": "Vakiopaikka",
+          "points": [
+            "Näkyy etusivun \"Juuri julkaistut\" -lohkossa.",
+            "Kiertää listasivuilla: uusimmat, tallennetuimmat, käytetyimmät, kuukauden, kategoriat.",
+            "Näkyy kilpailevien työkalujen sivuilla ja omilla kategoriasivuillasi."
+          ]
+        },
+        {
+          "badge": "Tehokkain",
+          "title": "Korostettu paikka",
+          "points": [
+            "Kiinnitetyt paikat etusivulla, uusimmissa, käytetyimmissä, tallennetuimmissa, hakutuloksissa ja kategoriasivuilla.",
+            "Mitä suurempi jäljellä oleva saldo, sitä korkeampi sijoitus — lataa lisää milloin tahansa noustaksesi.",
+            "Sponsoripalkki useimpien sivujen yläosassa, kiertää mainostajien kesken.",
+            "Näkyy myös blogi-, vertailu- ja vaihtoehtosivuilla.",
+            "Jokainen mainosklikkaus vie suoraan verkkosivustollesi."
+          ]
+        }
+      ],
+      "reportTitle": "Kampanjaraportti",
+      "reportNote": "Saat jokaisesta kampanjasta yksityiskohtaisen raportin. Voit myös seurata tuloksia Google Analyticsilla tai millä tahansa analytiikkatyökalulla.",
+      "reportColumns": [
+        "Työkalu",
+        "Orgaaniset klikkaukset",
+        "Maksetut klikkaukset",
+        "Klikkaukset yhteensä",
+        "Sivun katselut",
+        "Tallennukset",
+        "Näyttökerrat"
+      ],
+      "sampleNote": "Esimerkkitiedot vain havainnollistamiseen.",
+      "faqTitle": "UKK – Mainonta",
+      "faqs": [
+        {
+          "q": "Miten mainonta toimii?",
+          "a": "Valitse työkalu ja klikkauspaketti. Maksun jälkeen mainoksesi kiertävät sivustolla, kunnes ostetut klikkaukset on toimitettu."
+        },
+        {
+          "q": "Voinko ostaa klikkauksia useammin kuin kerran?",
+          "a": "Kyllä. Uudet ostot lisätään saldoosi, mikä myös nostaa korostettua sijoitustasi."
+        },
+        {
+          "q": "Minulla on enemmän budjettia ja haluan lisää asiakkaita. Mitä teen?",
+          "a": "Osta suurempi paketti tai ota yhteyttä räätälöityä kampanjaa varten, joka sisältää vierasartikkeleita ja somenäkyvyyttä."
+        },
+        {
+          "q": "Voinko kohdistaa tiettyihin maihin tai kieliin?",
+          "a": "Ei tällä hetkellä. Kohdistus tapahtuu automaattisesti."
+        },
+        {
+          "q": "Voinko valita, missä mainokseni näkyvät?",
+          "a": "Et. Paikat valitaan automaattisesti, jotta klikkaukset toimitetaan mahdollisimman nopeasti."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Vierasartikkelit ja linkin lisäys – {site}",
+      "seoDesc": "Julkaise vierasartikkeleita tai lisää dofollow-linkkejä palveluun {site} ja tavoita tekoälystä kiinnostunut yleisö.",
+      "title": "Vierasartikkelit / linkin lisäys palvelussa {site}",
+      "sub": "Montako vierasartikkelia tai linkin lisäystä haluat julkaista?",
+      "rule": "Vierasartikkeli maksaa 2 krediittiä, linkin lisäys 1 krediitin.",
+      "packagesLabel": "Krediittipaketit",
+      "buy": "Osta {n} krediitti | Osta {n} krediittiä",
+      "decrease": "Vähennä",
+      "increase": "Lisää",
+      "customCredits": "Oma krediittimäärä",
+      "tip": "VINKKI: Yli {min} krediitin tilaukset saavat {percent}% alennuksen.",
+      "packageNotes": [
+        "1 linkin lisäys",
+        "1 vierasartikkeli tai 2 linkin lisäystä",
+        "1 vierasartikkeli + 1 linkin lisäys tai 3 linkin lisäystä",
+        "enintään 5 vierasartikkelia tai 10 linkin lisäystä"
+      ],
+      "benefits": [
+        "Dofollow-linkit",
+        "Asiantuntevat tekoälyartikkelit",
+        "Pysyvä liikenne",
+        "Pysyvä URL",
+        "Hakukonearvo"
+      ],
+      "notes": [
+        "Linkin lisäys maksaa 1 krediitin; vierasartikkeli maksaa 2 krediittiä.",
+        "Vierasartikkelin julkaisemiseen tarvitset vähintään 2 krediittiä.",
+        "Krediitit voi jakaa artikkelien ja linkin lisäysten kesken. Käyttämättömät krediitit hyvitetään pyynnöstä (1 krediitti = {price}).",
+        "Tarvitsetko eri määrän? Käytä painikkeita. Yli {min} krediitin tilaukset saavat automaattisesti {percent}% alennuksen.",
+        "Julkaistuun sisältöön käytettyjä krediittejä ei hyvitetä. Jos lähetys hylätään, sen krediitit palautetaan saldoosi."
+      ],
+      "faqTitle": "Usein kysytyt kysymykset – Vierasartikkelit / Linkin lisäys",
+      "faqs": [
+        {
+          "q": "Miten tilaan vierasartikkelin?",
+          "a": "Osta vähintään 2 krediittiä ja lähetä artikkelisi hallintapaneelista. Toimittajamme tarkistavat sen ennen julkaisua."
+        },
+        {
+          "q": "Miten tilaan linkin lisäyksen?",
+          "a": "Osta 1 krediitti per linkki ja lähetä meille kohde-URL, ankkuriteksti ja artikkeli, johon linkki lisätään (tai anna meidän valita)."
+        },
+        {
+          "q": "Miten julkaisu etenee?",
+          "a": "Krediittien osto → sisällön tai linkkitietojen lähetys → toimituksellinen tarkistus → julkaisu. Saat julkaistun URL-osoitteen sähköpostitse."
+        },
+        {
+          "q": "Onko vierasartikkeleille sisältöohjeita?",
+          "a": "Artikkelien tulee olla alkuperäisiä, tekoälyyn liittyviä ja lukijoille hyödyllisiä, eikä niissä saa olla roskaposti- tai aikuislinkkejä. Voimme pyytää muutoksia."
+        },
+        {
+          "q": "Saanko hyvityksen käyttämättömistä krediiteistä?",
+          "a": "Kyllä. Ota yhteyttä tukeen, niin käyttämättömät krediitit hyvitetään alkuperäiselle maksutavalle."
+        },
+        {
+          "q": "Mitä hyötyä vierasartikkeleista ja linkin lisäyksistä on?",
+          "a": "Ne tuovat tuotteesi tekoälystä kiinnostuneen yleisön eteen ja antavat pysyvän dofollow-takalinkin."
+        },
+        {
+          "q": "Onko määräalennusta?",
+          "a": "Kyllä — jokainen yli {min} krediitin tilaus saa automaattisesti {percent}% alennuksen."
+        },
+        {
+          "q": "Teettekö yhteistyötä toimistojen kanssa?",
+          "a": "Kyllä. Useita asiakkaita hoitavat toimistot voivat ottaa yhteyttä räätälöityjä sopimuksia varten."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Päivitä tekoälytyökalusi – {site}",
+      "seoDesc": "Päivitä palvelussa {site} listatun työkalusi tiedot.",
+      "panelTitle": "Maksa ensin, lähetä sitten muutoksesi",
+      "canUpdate": "Mitä voit päivittää:",
+      "fields": [
+        "Työkalun nimi",
+        "Lyhyt esittely",
+        "Kuvaus",
+        "Kategoria",
+        "Käyttöohje",
+        "Pääominaisuudet",
+        "Käyttötapaukset",
+        "Hinnoittelu",
+        "UKK",
+        "Verkkosivuston URL"
+      ],
+      "notes": [
+        "Maksun jälkeen saat lomakkeen, jolla lähetät tarvitsemasi muutokset.",
+        "Liitä uusi sisältö vastaaviin kenttiin — nimi, kategoria, esittely, kuvaus, käyttö, ominaisuudet, käyttötapaukset, hinnoittelu tai UKK.",
+        "Verkkosivuston URL-osoitetta ei voi muuttaa. Jos olet siirtynyt uuteen verkkotunnukseen, määritä uudelleenohjaus vanhasta.",
+        "Jokainen päivitys tarkistetaan käsin ennen julkaisua. Jos se hylätään, saat automaattisesti rahasi takaisin.",
+        "Jokainen maksu kattaa yhden päivityksen. Tarkista sisältö huolellisesti ennen lähettämistä."
+      ],
+      "faqTitle": "UKK – Päivitä tekoäly",
+      "faqs": [
+        {
+          "q": "Mitä päivitys maksaa?",
+          "a": "Kiinteä kertamaksu päivitystä kohden, katso yllä."
+        },
+        {
+          "q": "Miten päivitys etenee?",
+          "a": "Maksu → päivityslomakkeen täyttö → tiimimme tarkistaa → muutokset julkaistaan."
+        },
+        {
+          "q": "Pitääkö minun kirjoittaa uusi sisältö itse?",
+          "a": "Kyllä. Jos et lähetä uutta sisältöä, mitään ei muuteta ja voit pyytää hyvitystä."
+        },
+        {
+          "q": "Mitä tietoja voin muuttaa?",
+          "a": "Kaiken yllä olevasta listasta paitsi verkkosivuston URL-osoitteen."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Lähetä GPT:si – {site}",
+      "seoDesc": "Listaa oma GPT:si palvelussa {site}.",
+      "panelTitle": "Liitä GPT:si linkki",
+      "label": "GPT-linkki",
+      "required": "Anna GPT:si linkki.",
+      "invalid": "Anna kelvollinen GPT-linkki, esim. {example}",
+      "hint": "Haemme GPT:n tiedot automaattisesti ja kirjoitamme loput listauksesta puolestasi.",
+      "faqTitle": "Usein kysytyt kysymykset – GPT",
+      "faqs": [
+        {
+          "q": "Mitä GPT:n listaaminen maksaa?",
+          "a": "Kertamaksu, katso yllä."
+        },
+        {
+          "q": "Kuinka kauan kestää, ennen kuin GPT:ni listataan?",
+          "a": "Yleensä 48 tunnin sisällä maksusta."
+        },
+        {
+          "q": "Vanheneeko GPT:ni listaus?",
+          "a": "Ei, se pysyy listattuna pysyvästi niin kauan kuin GPT-linkki toimii."
+        },
+        {
+          "q": "Miten GPT:ni saa lisää käyttäjiä?",
+          "a": "Yhdistä listaus mainoskampanjaan tai vierasartikkeliin."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Uusi tilaus",
+      "postCredits": "Vierasartikkelikrediitit:",
+      "adClicks": "Mainosklikkausten saldo:",
+      "date": "Päivämäärä",
+      "service": "Palvelu",
+      "details": "Tiedot",
+      "amount": "Summa",
+      "status": "Tila",
+      "statuses": {
+        "PAID": "Maksettu",
+        "PENDING": "Odottaa",
+        "EXPIRED": "Vanhentunut"
+      },
+      "loading": "Ladataan…",
+      "empty": "Ei vielä tilauksia.",
+      "clicks": "{n} klikkausta",
+      "credits": "{n} krediitti | {n} krediittiä"
+    }
   }
 }

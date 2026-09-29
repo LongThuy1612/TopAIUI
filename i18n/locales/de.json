@@ -494,5 +494,391 @@
     "upload": "Hochladen",
     "uploadHint": "Bitte lade Screenshots oder Bildschirmaufnahmen hoch. Maximale Dateigröße: 100 MB.",
     "submit": "Absenden"
+  },
+  "promote": {
+    "title": "Deine KIs auf {site}",
+    "myOrders": "Meine Bestellungen",
+    "intro": "{site} bringt dein Produkt vor Menschen, die aktiv nach KI-Tools suchen — Entwickler, Gründer, Investoren und Entscheider — damit du mehr Sichtbarkeit, mehr Testnutzer und mehr zahlende Kunden bekommst.",
+    "stats": {
+      "pageViews": "Seitenaufrufe",
+      "monthlyVisits": "Monatliche Besuche",
+      "subscribers": "Abonnenten",
+      "desktopUsers": "Desktop-Nutzer",
+      "avgTime": "Ø Verweildauer"
+    },
+    "highlights": [
+      "Kuratiertes KI-Tool-Verzeichnis",
+      "Dofollow-Backlinks",
+      "Mehrsprachige Einträge",
+      "Dauerhafter Eintrag & Traffic",
+      "Für Gründer & Startups"
+    ],
+    "chooseService": "Wähle, was du brauchst",
+    "popular": "Beliebt",
+    "services": {
+      "submit": {
+        "title": "KI eintragen",
+        "desc": "Trage dein KI-Tool ein und gewinne Besucher."
+      },
+      "advertise": {
+        "title": "KI bewerben",
+        "desc": "Pay-per-Click-Kampagnen und hervorgehobene Platzierungen."
+      },
+      "guestPost": {
+        "title": "Gastbeiträge / Link-Einfügung",
+        "desc": "Veröffentliche Artikel oder füge Links auf {site} hinzu."
+      },
+      "update": {
+        "title": "KI aktualisieren",
+        "desc": "Bearbeite die Angaben zu einem bereits eingetragenen Tool."
+      },
+      "submitGpt": {
+        "title": "GPT eintragen",
+        "desc": "Teile dein eigenes GPT mit mehr Nutzern."
+      }
+    },
+    "notice": {
+      "paid": "Zahlung erhalten — danke! Du kannst deine Bestellung unter {link} verfolgen.",
+      "canceled": "Zahlung abgebrochen. Dir wurde nichts berechnet."
+    },
+    "faqDefaultTitle": "Häufig gestellte Fragen",
+    "faqMore": "Hast du eine Frage? {link}",
+    "contactUs": "Kontaktiere uns",
+    "needToKnow": "Gut zu wissen:",
+    "total": "Gesamt: {amount}",
+    "pay": "{amount} bezahlen",
+    "processing": "Wird verarbeitet…",
+    "genericError": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "eta": "Ohne Warteschlange — online innerhalb von 48 Stunden",
+    "toolPicker": {
+      "placeholder": "Tippe, um dein Tool zu suchen und auszuwählen",
+      "searching": "Suche läuft…",
+      "notFound": "Kein Tool gefunden. {link}.",
+      "submitFirst": "Trage es zuerst ein",
+      "notListed": "Noch nicht eingetragen? {link}."
+    },
+    "form": {
+      "tool": "Tool",
+      "selectTool": "Bitte suche und wähle dein Tool aus.",
+      "invalidUrl": "Gib eine gültige URL ein."
+    },
+    "submit": {
+      "seoTitle": "Trage dein KI-Tool ein – {site}",
+      "seoDesc": "Trage dein KI-Tool auf {site} ein und werde von Menschen entdeckt, die nach KI-Produkten suchen.",
+      "panelTitle": "Erzähl uns von deinem Tool",
+      "name": "Name",
+      "namePlaceholder": "z. B. Example AI",
+      "url": "Website-URL",
+      "whoWrites": "Wer schreibt den Eintrag?",
+      "nameRequired": "Bitte gib den Namen des Tools ein.",
+      "urlRequired": "Bitte gib die Website-URL ein.",
+      "urlInvalid": "Gib eine gültige URL ein, z. B. {example}",
+      "modes": {
+        "auto": {
+          "title": "Von {site} geschrieben",
+          "desc": "Wir schreiben den Eintrag und alle Übersetzungen mit KI für dich."
+        },
+        "manual": {
+          "title": "Ich schreibe ihn selbst",
+          "desc": "Du lieferst den Eintrag auf Englisch; wir kümmern uns um die Übersetzungen."
+        }
+      },
+      "mockDesc": "Dein Tool, in jeder Liste mit hervorgehobenem Rahmen angezeigt.",
+      "includesTitle": "Was dein Eintrag enthält",
+      "youGetLead": "Du bekommst:",
+      "youGet": [
+        {
+          "title": "Innerhalb von 48 Stunden in \"Neueste\" und \"Gerade gestartet\" gelistet.",
+          "desc": "Keine Warteliste."
+        },
+        {
+          "title": "Hervorgehobener Kartenrahmen.",
+          "desc": "Dein Tool fällt in Listen auf und erhält mehr Klicks."
+        },
+        {
+          "title": "Dofollow-Backlinks für SEO.",
+          "desc": "Deine Website erhält mehrere Dofollow-Links von unseren Seiten, was Suchrankings und organischen Traffic stärkt."
+        },
+        {
+          "title": "Dauerhafter Eintrag.",
+          "desc": "Dein Tool bleibt im Verzeichnis und bekommt langfristig Besucher."
+        },
+        {
+          "title": "Launch-Badge.",
+          "desc": "Binde ein \"Featured on\"-Badge auf deiner Website ein."
+        }
+      ],
+      "faqTitle": "Häufig gestellte Fragen – KI eintragen",
+      "faqs": [
+        {
+          "q": "Was kostet ein Eintrag? Einmalig oder wiederkehrend?",
+          "a": "Es ist eine einmalige Zahlung. Es gibt kein Abonnement."
+        },
+        {
+          "q": "Wie schnell ist mein Tool online?",
+          "a": "Bezahlte Einträge überspringen die Warteschlange und werden meist innerhalb von 48 Stunden veröffentlicht."
+        },
+        {
+          "q": "Läuft mein Eintrag ab?",
+          "a": "Nein. Nach der Freigabe bleibt dein Eintrag dauerhaft im Verzeichnis."
+        },
+        {
+          "q": "Wie bekomme ich mehr Aufrufe?",
+          "a": "Kombiniere deinen Eintrag mit einer Werbekampagne oder einem Gastbeitrag für zusätzliche Reichweite."
+        },
+        {
+          "q": "Warum wurde mein Tool nicht eingetragen?",
+          "a": "Wir lehnen Tools ab, die nicht erreichbar sind, nichts mit KI zu tun haben oder gegen unsere Inhaltsrichtlinien verstoßen. Du wirst benachrichtigt und erhältst eine Rückerstattung."
+        },
+        {
+          "q": "Garantiert ihr Traffic oder Umsatz?",
+          "a": "Nein. Wir garantieren den Eintrag und seine Platzierung, nicht bestimmte Traffic- oder Umsatzergebnisse."
+        },
+        {
+          "q": "Wie ist eure Rückerstattungsrichtlinie?",
+          "a": "Wird dein Tool abgelehnt, erhältst du den vollen Betrag zurück. Veröffentlichte Einträge sind nicht erstattungsfähig."
+        },
+        {
+          "q": "Arbeitet ihr mit Agenturen?",
+          "a": "Ja — kontaktiere uns für Sammeleinträge."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Bewirb dein KI-Tool – {site}",
+      "seoDesc": "Pay-per-Click- und hervorgehobene Anzeigenplätze auf {site}.",
+      "panelTitle": "Welches Tool möchtest du bewerben?",
+      "landing": "Anzeigen-Ziel-URL",
+      "landingHint": "Optional — z. B. ein Link mit UTM-Tracking",
+      "choosePackage": "Wähle ein Klickpaket",
+      "clicksLabel": "Klicks:",
+      "pickPackage": "Bitte wähle ein Paket.",
+      "cpc": "Kosten pro Klick: {amount}",
+      "howTitle": "So funktioniert Werbung",
+      "intro": [
+        "Anzeigen werden von unserem System automatisch ausgespielt, bis du mindestens die gekaufte Anzahl an Klicks erhalten hast.",
+        "Dein Budget wird bevorzugt ausgegeben, sodass du schnell Klicks und Impressionen erhältst."
+      ],
+      "warning": "Du kannst nicht auswählen, auf welchen Seiten die Anzeigen erscheinen, und die Klickqualität ist nicht garantiert.",
+      "controlNote": "Du kannst deine Kampagne jederzeit pausieren oder fortsetzen.",
+      "placementsTitle": "Anzeigenplätze",
+      "tagline": "Dein Slogan hier",
+      "types": [
+        {
+          "badge": "Am häufigsten",
+          "title": "Standardplatzierung",
+          "points": [
+            "Angezeigt im Block \"Gerade gestartet\" auf der Startseite.",
+            "Rotiert über Listenseiten: neueste, meistgespeicherte, meistgenutzte, monatliche, Kategorien.",
+            "Angezeigt auf Seiten von Konkurrenz-Tools und auf deinen eigenen Kategorieseiten."
+          ]
+        },
+        {
+          "badge": "Am effektivsten",
+          "title": "Hervorgehobene Platzierung",
+          "points": [
+            "Angepinnte Plätze auf Startseite, Neueste, Meistgenutzte, Meistgespeicherte, Suchergebnissen und Kategorieseiten.",
+            "Je höher das Restguthaben, desto höher das Ranking — lade jederzeit auf, um aufzusteigen.",
+            "Sponsorleiste oben auf den meisten Seiten, rotierend zwischen Werbetreibenden.",
+            "Auch auf Blog-, Vergleichs- und Alternativenseiten zu sehen.",
+            "Jeder Anzeigenklick führt direkt zu deiner Website."
+          ]
+        }
+      ],
+      "reportTitle": "Kampagnenbericht",
+      "reportNote": "Du erhältst für jede Kampagne einen detaillierten Bericht. Ergebnisse kannst du auch mit Google Analytics oder einem anderen Analysetool verfolgen.",
+      "reportColumns": [
+        "Tool",
+        "Organische Klicks",
+        "Bezahlte Klicks",
+        "Klicks gesamt",
+        "Detailaufrufe",
+        "Gespeichert",
+        "Impressionen"
+      ],
+      "sampleNote": "Beispieldaten nur zur Veranschaulichung.",
+      "faqTitle": "FAQ – Werbung",
+      "faqs": [
+        {
+          "q": "Wie funktioniert Werbung?",
+          "a": "Wähle ein Tool und ein Klickpaket. Nach der Zahlung rotieren deine Anzeigen auf der Website, bis die gekauften Klicks erreicht sind."
+        },
+        {
+          "q": "Kann ich mehrmals Klicks kaufen?",
+          "a": "Ja. Neue Käufe werden deinem Guthaben hinzugefügt, was auch dein Ranking bei hervorgehobenen Plätzen erhöht."
+        },
+        {
+          "q": "Ich habe mehr Budget und möchte mehr Kunden. Was soll ich tun?",
+          "a": "Kaufe ein größeres Paket oder kontaktiere uns für eine individuelle Kampagne mit Gastbeiträgen und Social-Media-Promotion."
+        },
+        {
+          "q": "Kann ich bestimmte Länder oder Sprachen ansprechen?",
+          "a": "Derzeit nicht. Die Ausrichtung erfolgt automatisch."
+        },
+        {
+          "q": "Kann ich wählen, wo meine Anzeigen erscheinen?",
+          "a": "Nein. Die Platzierungen werden automatisch gewählt, um deine Klicks so schnell wie möglich zu liefern."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Gastbeiträge & Link-Einfügung – {site}",
+      "seoDesc": "Veröffentliche Gastbeiträge oder füge Dofollow-Links auf {site} hinzu, um ein KI-interessiertes Publikum zu erreichen.",
+      "title": "Gastbeiträge / Link-Einfügung auf {site}",
+      "sub": "Wie viele Gastbeiträge oder Link-Einfügungen möchtest du veröffentlichen?",
+      "rule": "Ein Gastbeitrag kostet 2 Credits, eine Link-Einfügung 1 Credit.",
+      "packagesLabel": "Credit-Pakete",
+      "buy": "{n} Credit kaufen | {n} Credits kaufen",
+      "decrease": "Verringern",
+      "increase": "Erhöhen",
+      "customCredits": "Eigene Anzahl Credits",
+      "tip": "TIPP: Bestellungen über {min} Credits erhalten {percent}% Rabatt.",
+      "packageNotes": [
+        "1 Link-Einfügung",
+        "1 Gastbeitrag oder 2 Link-Einfügungen",
+        "1 Gastbeitrag + 1 Link-Einfügung oder 3 Link-Einfügungen",
+        "bis zu 5 Gastbeiträge oder 10 Link-Einfügungen"
+      ],
+      "benefits": [
+        "Dofollow-Links",
+        "Fundierte KI-Artikel",
+        "Nachhaltiger Traffic",
+        "Dauerhafte URL",
+        "SEO-Wert"
+      ],
+      "notes": [
+        "Eine Link-Einfügung kostet 1 Credit; ein Gastbeitrag kostet 2 Credits.",
+        "Für einen Gastbeitrag brauchst du mindestens 2 Credits.",
+        "Credits lassen sich auf Beiträge und Link-Einfügungen aufteilen. Nicht genutzte Credits werden auf Anfrage erstattet (1 Credit = {price}).",
+        "Andere Menge nötig? Nutze die Plus-/Minus-Tasten. Bestellungen über {min} Credits erhalten automatisch {percent}% Rabatt.",
+        "Für veröffentlichte Inhalte verwendete Credits werden nicht erstattet. Wird eine Einreichung abgelehnt, gehen die Credits zurück auf dein Guthaben."
+      ],
+      "faqTitle": "Häufig gestellte Fragen – Gastbeiträge / Link-Einfügung",
+      "faqs": [
+        {
+          "q": "Wie bestelle ich einen Gastbeitrag?",
+          "a": "Kaufe mindestens 2 Credits und reiche deinen Artikel über dein Dashboard ein. Unsere Redaktion prüft ihn vor der Veröffentlichung."
+        },
+        {
+          "q": "Wie bestelle ich eine Link-Einfügung?",
+          "a": "Kaufe 1 Credit pro Link und sende uns die Ziel-URL, den Ankertext und den Artikel, in dem der Link stehen soll (oder lass uns einen auswählen)."
+        },
+        {
+          "q": "Wie läuft die Veröffentlichung ab?",
+          "a": "Credits kaufen → Inhalt oder Link-Angaben einreichen → redaktionelle Prüfung → Veröffentlichung. Die Live-URL erhältst du per E-Mail."
+        },
+        {
+          "q": "Gibt es Inhaltsrichtlinien für Gastbeiträge?",
+          "a": "Artikel müssen originell, KI-bezogen, nützlich für Leser und frei von Spam- oder Erwachsenen-Links sein. Wir können Änderungen anfordern."
+        },
+        {
+          "q": "Kann ich nicht genutzte Credits erstatten lassen?",
+          "a": "Ja. Kontaktiere den Support, und nicht genutzte Credits werden auf die ursprüngliche Zahlungsmethode erstattet."
+        },
+        {
+          "q": "Was bringen mir Gastbeiträge und Link-Einfügungen?",
+          "a": "Sie bringen dein Produkt vor ein KI-interessiertes Publikum und verschaffen dir einen dauerhaften Dofollow-Backlink."
+        },
+        {
+          "q": "Gibt es einen Mengenrabatt?",
+          "a": "Ja — jede Bestellung über {min} Credits erhält automatisch {percent}% Rabatt."
+        },
+        {
+          "q": "Arbeitet ihr mit Agenturen?",
+          "a": "Ja. Agenturen mit mehreren Kunden können uns für individuelle Vereinbarungen kontaktieren."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Aktualisiere dein KI-Tool – {site}",
+      "seoDesc": "Aktualisiere die Angaben zu deinem auf {site} eingetragenen Tool.",
+      "panelTitle": "Erst bezahlen, dann Änderungen einreichen",
+      "canUpdate": "Was du aktualisieren kannst:",
+      "fields": [
+        "Tool-Name",
+        "Kurzbeschreibung",
+        "Beschreibung",
+        "Kategorie",
+        "Anleitung",
+        "Kernfunktionen",
+        "Anwendungsfälle",
+        "Preise",
+        "FAQs",
+        "Website-URL"
+      ],
+      "notes": [
+        "Nach der Zahlung erhältst du ein Formular, in dem du die gewünschten Änderungen einreichst.",
+        "Füge die neuen Inhalte in die passenden Felder ein — Name, Kategorie, Kurzbeschreibung, Beschreibung, Anleitung, Funktionen, Anwendungsfälle, Preise oder FAQs.",
+        "Website-URLs können nicht geändert werden. Wenn du auf eine neue Domain umgezogen bist, richte eine Weiterleitung von der alten ein.",
+        "Jede Aktualisierung wird vor der Veröffentlichung manuell geprüft. Wird sie abgelehnt, erhältst du automatisch eine Rückerstattung.",
+        "Jede Zahlung gilt für eine Aktualisierung. Bitte prüfe deine Inhalte vor dem Absenden sorgfältig."
+      ],
+      "faqTitle": "FAQ – KI aktualisieren",
+      "faqs": [
+        {
+          "q": "Was kostet eine Aktualisierung?",
+          "a": "Eine feste einmalige Gebühr pro Aktualisierung, siehe oben."
+        },
+        {
+          "q": "Wie läuft eine Aktualisierung ab?",
+          "a": "Bezahlen → Aktualisierungsformular ausfüllen → Prüfung durch unser Team → Änderungen gehen live."
+        },
+        {
+          "q": "Muss ich die neuen Inhalte selbst schreiben?",
+          "a": "Ja. Wenn du keine neuen Inhalte einreichst, wird nichts geändert und du kannst eine Rückerstattung beantragen."
+        },
+        {
+          "q": "Welche Angaben kann ich ändern?",
+          "a": "Alles aus der Liste oben außer der Website-URL."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Trage dein GPT ein – {site}",
+      "seoDesc": "Trage dein eigenes GPT auf {site} ein.",
+      "panelTitle": "Füge deinen GPT-Link ein",
+      "label": "GPT-Link",
+      "required": "Bitte gib deinen GPT-Link ein.",
+      "invalid": "Gib einen gültigen GPT-Link ein, z. B. {example}",
+      "hint": "Wir rufen die GPT-Angaben automatisch ab und schreiben den Rest des Eintrags für dich.",
+      "faqTitle": "Häufig gestellte Fragen – GPT",
+      "faqs": [
+        {
+          "q": "Was kostet es, ein GPT einzutragen?",
+          "a": "Eine einmalige Gebühr, siehe oben."
+        },
+        {
+          "q": "Wie lange dauert es, bis mein GPT eingetragen ist?",
+          "a": "Meist innerhalb von 48 Stunden nach der Zahlung."
+        },
+        {
+          "q": "Läuft mein GPT-Eintrag ab?",
+          "a": "Nein, er bleibt dauerhaft gelistet, solange der GPT-Link funktioniert."
+        },
+        {
+          "q": "Wie bekommt mein GPT mehr Nutzer?",
+          "a": "Kombiniere den Eintrag mit einer Werbekampagne oder einem Gastbeitrag."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Neue Bestellung",
+      "postCredits": "Gastbeitrags-Credits:",
+      "adClicks": "Guthaben an Anzeigenklicks:",
+      "date": "Datum",
+      "service": "Leistung",
+      "details": "Details",
+      "amount": "Betrag",
+      "status": "Status",
+      "statuses": {
+        "PAID": "Bezahlt",
+        "PENDING": "Ausstehend",
+        "EXPIRED": "Abgelaufen"
+      },
+      "loading": "Wird geladen…",
+      "empty": "Noch keine Bestellungen.",
+      "clicks": "{n} Klicks",
+      "credits": "{n} Credit | {n} Credits"
+    }
   }
 }

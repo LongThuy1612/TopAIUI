@@ -266,9 +266,31 @@ model User {
   deletedAt                DateTime?
   hasSetPassword           Boolean   @default(false)
 
-  reviews Review[]
+  reviews       Review[]
+  promoteOrders PromoteOrder[]
 
   @@map("User")
+}
+
+// One row per Stripe Checkout session from the promote pages (submit AI,
+// advertise, guest post, update AI, submit GPT). The webhook flips
+// PENDING → PAID exactly once, so a re-delivered event can't fulfil twice.
+model PromoteOrder {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type            String    // submit-ai | advertise | guest-post | update-ai | submit-gpt
+  payload         Json      // validated order details (tool, URL, credits, clicks…)
+  stripeSessionId String    @unique
+  amount          Int       // cents
+  currency        String    @default("usd")
+  status          String    @default("PENDING") // PENDING | PAID | EXPIRED
+  createdAt       DateTime  @default(now())
+  paidAt          DateTime?
+
+  @@index([userId])
+  @@index([type, status])
+  @@map("PromoteOrder")
 }
 
 model Collection {

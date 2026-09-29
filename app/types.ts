@@ -64,7 +64,6 @@ export interface Tool {
   couponCode?: string
   pricingType: 'FREE' | 'FREEMIUM' | 'PAID'
   website?: string
-  toolifyUrl?: string
   twitterUrl?: string
   discordUrl?: string
   productHuntUrl?: string

@@ -194,5 +194,391 @@
   },
   "language": {
     "label": "Sprog"
+  },
+  "promote": {
+    "title": "Dine AI'er på {site}",
+    "myOrders": "Mine ordrer",
+    "intro": "{site} viser dit produkt for folk, der aktivt leder efter AI-værktøjer — udviklere, stiftere, investorer og beslutningstagere — så du får mere synlighed, flere prøvebrugere og flere betalende kunder.",
+    "stats": {
+      "pageViews": "Sidevisninger",
+      "monthlyVisits": "Månedlige besøg",
+      "subscribers": "Abonnenter",
+      "desktopUsers": "Computerbrugere",
+      "avgTime": "Gns. tid på siden"
+    },
+    "highlights": [
+      "Udvalgt katalog over AI-værktøjer",
+      "Dofollow-backlinks",
+      "Flersprogede opslag",
+      "Permanent opslag & trafik",
+      "Lavet til stiftere & startups"
+    ],
+    "chooseService": "Vælg, hvad du har brug for",
+    "popular": "Populær",
+    "services": {
+      "submit": {
+        "title": "Indsend AI",
+        "desc": "Opret dit AI-værktøj og begynd at få besøgende."
+      },
+      "advertise": {
+        "title": "Annoncér AI",
+        "desc": "Pay-per-click-kampagner og fremhævede placeringer."
+      },
+      "guestPost": {
+        "title": "Gæsteindlæg / Linkindsættelse",
+        "desc": "Udgiv artikler eller tilføj links på {site}."
+      },
+      "update": {
+        "title": "Opdater AI",
+        "desc": "Rediger oplysningerne om et værktøj, du allerede har oprettet."
+      },
+      "submitGpt": {
+        "title": "Indsend GPT",
+        "desc": "Del din egen GPT med flere brugere."
+      }
+    },
+    "notice": {
+      "paid": "Betaling modtaget — tak! Du kan følge din ordre under {link}.",
+      "canceled": "Betalingen blev annulleret. Du er ikke blevet opkrævet."
+    },
+    "faqDefaultTitle": "Ofte stillede spørgsmål",
+    "faqMore": "Har du et spørgsmål? {link}",
+    "contactUs": "Kontakt os",
+    "needToKnow": "Godt at vide:",
+    "total": "I alt: {amount}",
+    "pay": "Betal {amount}",
+    "processing": "Behandler…",
+    "genericError": "Noget gik galt. Prøv igen.",
+    "eta": "Ingen kø — online inden for 48 timer",
+    "toolPicker": {
+      "placeholder": "Skriv for at søge og vælge dit værktøj",
+      "searching": "Søger…",
+      "notFound": "Intet værktøj fundet. {link}.",
+      "submitFirst": "Indsend det først",
+      "notListed": "Ikke oprettet endnu? {link}."
+    },
+    "form": {
+      "tool": "Værktøj",
+      "selectTool": "Søg efter og vælg dit værktøj.",
+      "invalidUrl": "Indtast en gyldig URL."
+    },
+    "submit": {
+      "seoTitle": "Indsend dit AI-værktøj – {site}",
+      "seoDesc": "Opret dit AI-værktøj på {site}, og bliv fundet af folk, der leder efter AI-produkter.",
+      "panelTitle": "Fortæl os om dit værktøj",
+      "name": "Navn",
+      "namePlaceholder": "f.eks. Example AI",
+      "url": "Hjemmesidens URL",
+      "whoWrites": "Hvem skriver opslaget?",
+      "nameRequired": "Indtast værktøjets navn.",
+      "urlRequired": "Indtast hjemmesidens URL.",
+      "urlInvalid": "Indtast en gyldig URL, f.eks. {example}",
+      "modes": {
+        "auto": {
+          "title": "Skrevet af {site}",
+          "desc": "Vi skriver opslaget og alle oversættelser for dig med AI."
+        },
+        "manual": {
+          "title": "Jeg skriver det selv",
+          "desc": "Du leverer opslaget på engelsk; vi står for oversættelserne."
+        }
+      },
+      "mockDesc": "Dit værktøj, vist med fremhævet ramme i alle lister.",
+      "includesTitle": "Det indeholder dit opslag",
+      "youGetLead": "Du får:",
+      "youGet": [
+        {
+          "title": "Vist under \"Nyeste\" og \"Netop lanceret\" inden for 48 timer.",
+          "desc": "Ingen venteliste."
+        },
+        {
+          "title": "Fremhævet kortramme.",
+          "desc": "Dit værktøj skiller sig ud i lister og får flere klik."
+        },
+        {
+          "title": "Dofollow-backlinks til SEO.",
+          "desc": "Din hjemmeside får flere dofollow-links fra vores sider, hvilket hjælper søgeplaceringer og organisk trafik."
+        },
+        {
+          "title": "Permanent opslag.",
+          "desc": "Dit værktøj bliver i kataloget og bliver ved med at få besøgende."
+        },
+        {
+          "title": "Lanceringsbadge.",
+          "desc": "Indsæt et \"Featured on\"-badge på din hjemmeside."
+        }
+      ],
+      "faqTitle": "Ofte stillede spørgsmål – Indsend AI",
+      "faqs": [
+        {
+          "q": "Hvad koster et opslag? Engangsbetaling eller løbende?",
+          "a": "Det er en engangsbetaling. Der er intet abonnement."
+        },
+        {
+          "q": "Hvor hurtigt kommer mit værktøj online?",
+          "a": "Betalte indsendelser springer køen over og udgives normalt inden for 48 timer."
+        },
+        {
+          "q": "Udløber mit opslag?",
+          "a": "Nej. Når det er godkendt, bliver dit opslag permanent i kataloget."
+        },
+        {
+          "q": "Hvordan får jeg flere visninger?",
+          "a": "Kombinér dit opslag med en annoncekampagne eller et gæsteindlæg for ekstra synlighed."
+        },
+        {
+          "q": "Hvorfor blev mit værktøj ikke oprettet?",
+          "a": "Vi afviser værktøjer, der ikke kan tilgås, ikke har med AI at gøre eller bryder vores indholdspolitik. Du får besked og pengene tilbage."
+        },
+        {
+          "q": "Garanterer I trafik eller salg?",
+          "a": "Nej. Vi garanterer opslaget og dets placering, ikke bestemte resultater for trafik eller omsætning."
+        },
+        {
+          "q": "Hvad er jeres refusionspolitik?",
+          "a": "Hvis dit værktøj afvises, får du hele beløbet tilbage. Udgivne opslag refunderes ikke."
+        },
+        {
+          "q": "Arbejder I med bureauer?",
+          "a": "Ja — kontakt os for indsendelser i større mængder."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Annoncér dit AI-værktøj – {site}",
+      "seoDesc": "Pay-per-click-annoncer og fremhævede placeringer på {site}.",
+      "panelTitle": "Hvilket værktøj vil du promovere?",
+      "landing": "Annoncens landings-URL",
+      "landingHint": "Valgfrit — f.eks. et link med UTM-sporing",
+      "choosePackage": "Vælg en klikpakke",
+      "clicksLabel": "Klik:",
+      "pickPackage": "Vælg en pakke.",
+      "cpc": "Pris pr. klik: {amount}",
+      "howTitle": "Sådan fungerer annoncering",
+      "intro": [
+        "Annoncerne placeres automatisk af vores system, indtil du har fået mindst det antal klik, du har købt.",
+        "Dit budget bruges først, så du hurtigt får klik og visninger."
+      ],
+      "warning": "Du kan ikke vælge, hvilke sider annoncerne vises på, og klikkvaliteten er ikke garanteret.",
+      "controlNote": "Du kan til enhver tid sætte kampagnen på pause eller genoptage den.",
+      "placementsTitle": "Annonceplaceringer",
+      "tagline": "Dit slogan her",
+      "types": [
+        {
+          "badge": "Vises oftest",
+          "title": "Standardplacering",
+          "points": [
+            "Vises i blokken \"Netop lanceret\" på forsiden.",
+            "Roterer på listesider: nyeste, mest gemte, mest brugte, månedlige, kategorier.",
+            "Vises på konkurrerende værktøjers sider og på dine egne kategorisider."
+          ]
+        },
+        {
+          "badge": "Mest effektiv",
+          "title": "Fremhævet placering",
+          "points": [
+            "Fastgjorte pladser på forsiden, nyeste, mest brugte, mest gemte, søgeresultater og kategorisider.",
+            "Jo højere resterende saldo, desto højere placering — fyld op når som helst for at stige.",
+            "Sponsorbjælke øverst på de fleste sider, der roterer mellem annoncører.",
+            "Vises også på blog-, sammenlignings- og alternativsider.",
+            "Hvert annonceklik fører direkte til din hjemmeside."
+          ]
+        }
+      ],
+      "reportTitle": "Kampagnerapport",
+      "reportNote": "Du får en detaljeret rapport for hver kampagne. Du kan også følge resultaterne med Google Analytics eller et andet analyseværktøj.",
+      "reportColumns": [
+        "Værktøj",
+        "Organiske klik",
+        "Betalte klik",
+        "Klik i alt",
+        "Detaljevisninger",
+        "Gemt",
+        "Visninger"
+      ],
+      "sampleNote": "Eksempeldata kun til illustration.",
+      "faqTitle": "Ofte stillede spørgsmål – Annoncering",
+      "faqs": [
+        {
+          "q": "Hvordan fungerer annoncering?",
+          "a": "Vælg et værktøj og en klikpakke. Efter betaling roterer dine annoncer på siden, indtil de købte klik er leveret."
+        },
+        {
+          "q": "Kan jeg købe klik flere gange?",
+          "a": "Ja. Nye køb lægges til din saldo, hvilket også hæver din fremhævede placering."
+        },
+        {
+          "q": "Jeg har et større budget og vil have flere kunder. Hvad gør jeg?",
+          "a": "Køb en større pakke, eller kontakt os om en skræddersyet kampagne med gæsteindlæg og promovering på sociale medier."
+        },
+        {
+          "q": "Kan jeg målrette bestemte lande eller sprog?",
+          "a": "Ikke i øjeblikket. Målretningen sker automatisk."
+        },
+        {
+          "q": "Kan jeg vælge, hvor mine annoncer vises?",
+          "a": "Nej. Placeringerne vælges automatisk for at levere dine klik så hurtigt som muligt."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Gæsteindlæg & linkindsættelse – {site}",
+      "seoDesc": "Udgiv gæsteindlæg eller tilføj dofollow-links på {site} for at nå et AI-interesseret publikum.",
+      "title": "Gæsteindlæg / linkindsættelse på {site}",
+      "sub": "Hvor mange gæsteindlæg eller linkindsættelser vil du udgive?",
+      "rule": "Et gæsteindlæg koster 2 kreditter, en linkindsættelse koster 1 kredit.",
+      "packagesLabel": "Kreditpakker",
+      "buy": "Køb {n} kredit | Køb {n} kreditter",
+      "decrease": "Formindsk",
+      "increase": "Forøg",
+      "customCredits": "Eget antal kreditter",
+      "tip": "TIP: Ordrer over {min} kreditter får {percent}% rabat.",
+      "packageNotes": [
+        "1 linkindsættelse",
+        "1 gæsteindlæg eller 2 linkindsættelser",
+        "1 gæsteindlæg + 1 linkindsættelse, eller 3 linkindsættelser",
+        "op til 5 gæsteindlæg eller 10 linkindsættelser"
+      ],
+      "benefits": [
+        "Dofollow-links",
+        "Troværdige AI-artikler",
+        "Varig trafik",
+        "Permanent URL",
+        "SEO-værdi"
+      ],
+      "notes": [
+        "En linkindsættelse koster 1 kredit; et gæsteindlæg koster 2 kreditter.",
+        "For at udgive et gæsteindlæg skal du have mindst 2 kreditter.",
+        "Kreditter kan fordeles mellem indlæg og linkindsættelser. Ubrugte kreditter refunderes efter anmodning (1 kredit = {price}).",
+        "Brug for et andet antal? Brug knapperne. Ordrer over {min} kreditter får automatisk {percent}% rabat.",
+        "Kreditter brugt på udgivet indhold refunderes ikke. Hvis en indsendelse afvises, går kreditterne tilbage til din saldo."
+      ],
+      "faqTitle": "Ofte stillede spørgsmål – Gæsteindlæg / Linkindsættelse",
+      "faqs": [
+        {
+          "q": "Hvordan bestiller jeg et gæsteindlæg?",
+          "a": "Køb mindst 2 kreditter, og indsend din artikel fra dit dashboard. Vores redaktion gennemgår den før udgivelse."
+        },
+        {
+          "q": "Hvordan bestiller jeg en linkindsættelse?",
+          "a": "Køb 1 kredit pr. link, og send os mål-URL, ankertekst og den artikel, linket skal placeres i (eller lad os vælge en)."
+        },
+        {
+          "q": "Hvordan foregår udgivelsen?",
+          "a": "Køb kreditter → indsend indhold eller linkoplysninger → redaktionel gennemgang → udgivelse. Du får den offentliggjorte URL via e-mail."
+        },
+        {
+          "q": "Er der retningslinjer for indholdet i gæsteindlæg?",
+          "a": "Artikler skal være originale, AI-relaterede, nyttige for læserne og fri for spam- eller voksenlinks. Vi kan bede om ændringer."
+        },
+        {
+          "q": "Kan jeg få refunderet ubrugte kreditter?",
+          "a": "Ja. Kontakt support, så refunderes ubrugte kreditter til den oprindelige betalingsmetode."
+        },
+        {
+          "q": "Hvad giver gæsteindlæg og linkindsættelser mig?",
+          "a": "De viser dit produkt for et AI-interesseret publikum og giver dig et permanent dofollow-backlink."
+        },
+        {
+          "q": "Er der mængderabat?",
+          "a": "Ja — alle ordrer over {min} kreditter får automatisk {percent}% rabat."
+        },
+        {
+          "q": "Arbejder I med bureauer?",
+          "a": "Ja. Bureauer med flere kunder kan kontakte os om skræddersyede aftaler."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Opdater dit AI-værktøj – {site}",
+      "seoDesc": "Opdater oplysningerne om dit værktøj på {site}.",
+      "panelTitle": "Betal først, og indsend derefter dine ændringer",
+      "canUpdate": "Det kan du opdatere:",
+      "fields": [
+        "Værktøjets navn",
+        "Kort intro",
+        "Beskrivelse",
+        "Kategori",
+        "Sådan bruges det",
+        "Kernefunktioner",
+        "Anvendelser",
+        "Priser",
+        "Ofte stillede spørgsmål",
+        "Hjemmesidens URL"
+      ],
+      "notes": [
+        "Efter betaling får du en formular, hvor du indsender de ændringer, du har brug for.",
+        "Indsæt det nye indhold i de tilsvarende felter — navn, kategori, intro, beskrivelse, brug, funktioner, anvendelser, priser eller ofte stillede spørgsmål.",
+        "Hjemmesidens URL kan ikke ændres. Hvis du er flyttet til et nyt domæne, så opsæt en omdirigering fra det gamle.",
+        "Hver opdatering gennemgås manuelt, før den går live. Hvis den afvises, refunderes du automatisk.",
+        "Hver betaling dækker én opdatering. Tjek dit indhold grundigt, før du indsender det."
+      ],
+      "faqTitle": "Ofte stillede spørgsmål – Opdater AI",
+      "faqs": [
+        {
+          "q": "Hvad koster en opdatering?",
+          "a": "Et fast engangsgebyr pr. opdatering, se ovenfor."
+        },
+        {
+          "q": "Hvordan foregår en opdatering?",
+          "a": "Betal → udfyld opdateringsformularen → vores team gennemgår → ændringerne går live."
+        },
+        {
+          "q": "Skal jeg selv skrive det nye indhold?",
+          "a": "Ja. Hvis du ikke indsender nyt indhold, ændres intet, og du kan anmode om refusion."
+        },
+        {
+          "q": "Hvilke oplysninger kan jeg ændre?",
+          "a": "Alt på listen ovenfor undtagen hjemmesidens URL."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Indsend din GPT – {site}",
+      "seoDesc": "Opret din egen GPT på {site}.",
+      "panelTitle": "Indsæt linket til din GPT",
+      "label": "GPT-link",
+      "required": "Indtast linket til din GPT.",
+      "invalid": "Indtast et gyldigt GPT-link, f.eks. {example}",
+      "hint": "Vi henter automatisk GPT-oplysningerne og skriver resten af opslaget for dig.",
+      "faqTitle": "Ofte stillede spørgsmål – GPT",
+      "faqs": [
+        {
+          "q": "Hvad koster det at oprette en GPT?",
+          "a": "Et engangsgebyr, se ovenfor."
+        },
+        {
+          "q": "Hvor lang tid går der, før min GPT er oprettet?",
+          "a": "Normalt inden for 48 timer efter betaling."
+        },
+        {
+          "q": "Udløber opslaget for min GPT?",
+          "a": "Nej, det forbliver permanent, så længe GPT-linket virker."
+        },
+        {
+          "q": "Hvordan får min GPT flere brugere?",
+          "a": "Kombinér opslaget med en annoncekampagne eller et gæsteindlæg."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Ny ordre",
+      "postCredits": "Kreditter til gæsteindlæg:",
+      "adClicks": "Saldo for annonceklik:",
+      "date": "Dato",
+      "service": "Tjeneste",
+      "details": "Detaljer",
+      "amount": "Beløb",
+      "status": "Status",
+      "statuses": {
+        "PAID": "Betalt",
+        "PENDING": "Afventer",
+        "EXPIRED": "Udløbet"
+      },
+      "loading": "Indlæser…",
+      "empty": "Ingen ordrer endnu.",
+      "clicks": "{n} klik",
+      "credits": "{n} kredit | {n} kreditter"
+    }
   }
 }

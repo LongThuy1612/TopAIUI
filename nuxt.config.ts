@@ -66,6 +66,9 @@ export default defineNuxtConfig({
     adminToken: process.env.ADMIN_TOKEN || 'changeme-dev-token',
     adminPassword: process.env.ADMIN_PASSWORD || 'changeme-dev-password',
     userTokenSecret: process.env.USER_TOKEN_SECRET || 'changeme-dev-user-secret',
+    // Override at runtime with NUXT_STRIPE_SECRET_KEY / NUXT_STRIPE_WEBHOOK_SECRET.
+    stripeSecretKey: process.env.STRIPE_SECRET_KEY || '',
+    stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000'
     }
@@ -92,9 +95,6 @@ export default defineNuxtConfig({
     '/': { cache: { maxAge: 60, swr: true } },
     '/category/**': { cache: { maxAge: 300, swr: true } },
     '/tools/**': { cache: { maxAge: 3600, swr: true } },
-
-    // Public form, but has per-submission state (success/error) — don't cache
-    '/submit': { headers: { 'Cache-Control': 'no-store' } },
 
     // Admin / CMS — always dynamic, never cached, hidden from search engines.
     // ssr: false is required here: the admin token only lives in the

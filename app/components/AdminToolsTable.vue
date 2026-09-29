@@ -62,7 +62,7 @@ function formatDate(d?: string) {
     <div v-if="!tools.length" class="flex flex-col items-center gap-4 py-16">
       <p class="text-sm text-ink-400">{{ t('admin.noToolsMatch') }}</p>
       <div class="flex gap-3">
-        <NuxtLink to="/submit" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">{{ t('admin.submitYourTool') }}</NuxtLink>
+        <NuxtLink to="/admin/tools/new" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">{{ t('admin.submitYourTool') }}</NuxtLink>
         <a href="#" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-700 hover:border-brand-300">{{ t('admin.advertiseYourTool') }}</a>
       </div>
     </div>

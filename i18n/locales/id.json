@@ -494,5 +494,391 @@
     "upload": "Unggah",
     "uploadHint": "Silakan unggah tangkapan layar atau rekaman layar. Ukuran maksimal per file: 100MB.",
     "submit": "Kirim"
+  },
+  "promote": {
+    "title": "AI Anda di {site}",
+    "myOrders": "Pesanan Saya",
+    "intro": "{site} menampilkan produk Anda kepada orang-orang yang aktif mencari alat AI — developer, pendiri, investor, dan pengambil keputusan — sehingga Anda mendapat lebih banyak visibilitas, lebih banyak uji coba, dan lebih banyak pengguna berbayar.",
+    "stats": {
+      "pageViews": "Tampilan halaman",
+      "monthlyVisits": "Kunjungan bulanan",
+      "subscribers": "Pelanggan",
+      "desktopUsers": "Pengguna desktop",
+      "avgTime": "Rata-rata waktu di situs"
+    },
+    "highlights": [
+      "Direktori alat AI pilihan",
+      "Backlink dofollow",
+      "Listing multibahasa",
+      "Listing & trafik permanen",
+      "Dibuat untuk pendiri & startup"
+    ],
+    "chooseService": "Pilih yang Anda butuhkan",
+    "popular": "Populer",
+    "services": {
+      "submit": {
+        "title": "Kirim AI",
+        "desc": "Daftarkan alat AI Anda dan mulai dapatkan pengunjung."
+      },
+      "advertise": {
+        "title": "Iklankan AI",
+        "desc": "Kampanye bayar per klik dan penempatan unggulan."
+      },
+      "guestPost": {
+        "title": "Guest Post / Sisipan Tautan",
+        "desc": "Terbitkan artikel atau tambahkan tautan di {site}."
+      },
+      "update": {
+        "title": "Perbarui AI",
+        "desc": "Ubah detail alat yang sudah Anda daftarkan."
+      },
+      "submitGpt": {
+        "title": "Kirim GPT",
+        "desc": "Bagikan GPT kustom Anda ke lebih banyak pengguna."
+      }
+    },
+    "notice": {
+      "paid": "Pembayaran diterima — terima kasih! Anda dapat memantau pesanan di {link}.",
+      "canceled": "Pembayaran dibatalkan. Anda tidak dikenai biaya."
+    },
+    "faqDefaultTitle": "Pertanyaan yang Sering Diajukan",
+    "faqMore": "Ada pertanyaan? {link}",
+    "contactUs": "Hubungi kami",
+    "needToKnow": "Perlu diketahui:",
+    "total": "Total: {amount}",
+    "pay": "Bayar {amount}",
+    "processing": "Memproses…",
+    "genericError": "Terjadi kesalahan. Silakan coba lagi.",
+    "eta": "Tanpa antre — tayang dalam 48 jam",
+    "toolPicker": {
+      "placeholder": "Ketik untuk mencari dan memilih alat Anda",
+      "searching": "Mencari…",
+      "notFound": "Alat tidak ditemukan. {link}.",
+      "submitFirst": "Kirim terlebih dahulu",
+      "notListed": "Belum terdaftar? {link}."
+    },
+    "form": {
+      "tool": "Alat",
+      "selectTool": "Silakan cari dan pilih alat Anda.",
+      "invalidUrl": "Masukkan URL yang valid."
+    },
+    "submit": {
+      "seoTitle": "Kirim alat AI Anda – {site}",
+      "seoDesc": "Daftarkan alat AI Anda di {site} dan temukan oleh orang-orang yang mencari produk AI.",
+      "panelTitle": "Ceritakan tentang alat Anda",
+      "name": "Nama",
+      "namePlaceholder": "mis. Example AI",
+      "url": "URL situs web",
+      "whoWrites": "Siapa yang menulis listing?",
+      "nameRequired": "Silakan masukkan nama alat.",
+      "urlRequired": "Silakan masukkan URL situs web.",
+      "urlInvalid": "Masukkan URL yang valid, mis. {example}",
+      "modes": {
+        "auto": {
+          "title": "Ditulis oleh {site}",
+          "desc": "Kami menulis listing dan semua terjemahannya untuk Anda dengan AI."
+        },
+        "manual": {
+          "title": "Saya akan menulisnya",
+          "desc": "Anda menyediakan listing dalam bahasa Inggris; kami mengurus terjemahannya."
+        }
+      },
+      "mockDesc": "Alat Anda, ditampilkan dengan bingkai yang disorot di setiap daftar.",
+      "includesTitle": "Isi listing Anda",
+      "youGetLead": "Anda akan mendapatkan:",
+      "youGet": [
+        {
+          "title": "Tampil di \"Terbaru\" dan \"Baru Diluncurkan\" dalam 48 jam.",
+          "desc": "Tanpa daftar tunggu."
+        },
+        {
+          "title": "Bingkai kartu yang disorot.",
+          "desc": "Alat Anda menonjol di daftar dan menarik lebih banyak klik."
+        },
+        {
+          "title": "Backlink dofollow untuk SEO.",
+          "desc": "Situs Anda mendapat beberapa tautan dofollow dari halaman kami, membantu peringkat pencarian dan trafik organik."
+        },
+        {
+          "title": "Listing permanen.",
+          "desc": "Alat Anda tetap ada di direktori dan terus mendapat pengunjung dari waktu ke waktu."
+        },
+        {
+          "title": "Lencana peluncuran.",
+          "desc": "Pasang lencana \"Featured on\" di situs web Anda."
+        }
+      ],
+      "faqTitle": "Pertanyaan yang Sering Diajukan – Kirim AI",
+      "faqs": [
+        {
+          "q": "Berapa biaya listing? Sekali bayar atau berulang?",
+          "a": "Sekali bayar. Tidak ada langganan."
+        },
+        {
+          "q": "Kapan alat saya tayang?",
+          "a": "Kiriman berbayar tidak perlu antre dan biasanya terbit dalam 48 jam."
+        },
+        {
+          "q": "Apakah listing saya kedaluwarsa?",
+          "a": "Tidak. Setelah disetujui, listing Anda tetap ada di direktori selamanya."
+        },
+        {
+          "q": "Bagaimana cara mendapat lebih banyak tayangan?",
+          "a": "Gabungkan listing dengan kampanye iklan atau guest post untuk eksposur tambahan."
+        },
+        {
+          "q": "Mengapa alat saya tidak didaftarkan?",
+          "a": "Kami menolak alat yang tidak dapat diakses, tidak terkait AI, atau melanggar kebijakan konten kami. Anda akan diberi tahu dan uang dikembalikan."
+        },
+        {
+          "q": "Apakah kalian menjamin trafik atau penjualan?",
+          "a": "Tidak. Kami menjamin listing dan penempatannya, bukan hasil trafik atau pendapatan tertentu."
+        },
+        {
+          "q": "Bagaimana kebijakan pengembalian dana?",
+          "a": "Jika alat Anda ditolak, dana dikembalikan penuh. Listing yang sudah terbit tidak dapat dikembalikan."
+        },
+        {
+          "q": "Apakah kalian bekerja sama dengan agensi?",
+          "a": "Ya — hubungi kami untuk pengiriman dalam jumlah banyak."
+        }
+      ]
+    },
+    "advertise": {
+      "seoTitle": "Iklankan alat AI Anda – {site}",
+      "seoDesc": "Iklan bayar per klik dan penempatan unggulan di {site}.",
+      "panelTitle": "Alat mana yang ingin Anda promosikan?",
+      "landing": "URL tujuan iklan",
+      "landingHint": "Opsional — mis. tautan dengan pelacakan UTM",
+      "choosePackage": "Pilih paket klik",
+      "clicksLabel": "Klik:",
+      "pickPackage": "Silakan pilih paket.",
+      "cpc": "Biaya per klik: {amount}",
+      "howTitle": "Cara kerja iklan",
+      "intro": [
+        "Iklan ditempatkan otomatis oleh sistem kami hingga Anda menerima setidaknya jumlah klik yang dibeli.",
+        "Anggaran Anda dibelanjakan lebih dulu, sehingga Anda cepat mendapat klik dan tayangan."
+      ],
+      "warning": "Anda tidak dapat memilih halaman tempat iklan muncul, dan kualitas klik tidak dijamin.",
+      "controlNote": "Anda dapat menjeda atau melanjutkan kampanye kapan saja.",
+      "placementsTitle": "Penempatan iklan",
+      "tagline": "Slogan Anda di sini",
+      "types": [
+        {
+          "badge": "Paling sering",
+          "title": "Penempatan standar",
+          "points": [
+            "Ditampilkan di blok \"Baru Diluncurkan\" di beranda.",
+            "Bergiliran di halaman daftar: terbaru, paling banyak disimpan, paling banyak dipakai, bulanan, kategori.",
+            "Ditampilkan di halaman alat pesaing dan halaman kategori Anda sendiri."
+          ]
+        },
+        {
+          "badge": "Paling efektif",
+          "title": "Penempatan unggulan",
+          "points": [
+            "Slot tersemat di beranda, terbaru, paling banyak dipakai, paling banyak disimpan, hasil pencarian, dan halaman kategori.",
+            "Semakin besar sisa saldo, semakin tinggi peringkat — isi ulang kapan saja untuk naik.",
+            "Bilah sponsor di bagian atas sebagian besar halaman, bergiliran antar pengiklan.",
+            "Juga ditampilkan di halaman blog, perbandingan, dan alternatif.",
+            "Setiap klik iklan langsung menuju situs web Anda."
+          ]
+        }
+      ],
+      "reportTitle": "Laporan kampanye",
+      "reportNote": "Anda mendapat laporan terperinci untuk setiap kampanye. Anda juga dapat melacak hasil dengan Google Analytics atau alat analitik apa pun.",
+      "reportColumns": [
+        "Alat",
+        "Klik organik",
+        "Klik berbayar",
+        "Total klik",
+        "Tampilan detail",
+        "Disimpan",
+        "Tayangan"
+      ],
+      "sampleNote": "Data contoh hanya untuk ilustrasi.",
+      "faqTitle": "FAQ – Iklan",
+      "faqs": [
+        {
+          "q": "Bagaimana cara kerja iklan?",
+          "a": "Pilih alat dan paket klik. Setelah dibayar, iklan Anda mulai bergiliran di seluruh situs hingga klik yang dibeli terpenuhi."
+        },
+        {
+          "q": "Bisakah saya membeli klik lebih dari sekali?",
+          "a": "Ya. Pembelian baru ditambahkan ke saldo Anda, yang juga menaikkan peringkat unggulan Anda."
+        },
+        {
+          "q": "Saya punya anggaran lebih dan ingin lebih banyak pelanggan. Apa yang harus saya lakukan?",
+          "a": "Beli paket yang lebih besar atau hubungi kami untuk kampanye khusus dengan guest post dan promosi media sosial."
+        },
+        {
+          "q": "Bisakah saya menargetkan negara atau bahasa tertentu?",
+          "a": "Saat ini belum. Penargetan dilakukan otomatis."
+        },
+        {
+          "q": "Bisakah saya memilih lokasi iklan muncul?",
+          "a": "Tidak. Penempatan dipilih otomatis agar klik Anda terpenuhi secepat mungkin."
+        }
+      ]
+    },
+    "guestPost": {
+      "seoTitle": "Guest Post & Sisipan Tautan – {site}",
+      "seoDesc": "Terbitkan guest post atau tambahkan tautan dofollow di {site} untuk menjangkau audiens yang tertarik pada AI.",
+      "title": "Guest post / sisipan tautan di {site}",
+      "sub": "Berapa banyak guest post atau sisipan tautan yang ingin Anda terbitkan?",
+      "rule": "Satu guest post memerlukan 2 kredit, satu sisipan tautan memerlukan 1 kredit.",
+      "packagesLabel": "Paket kredit",
+      "buy": "Beli {n} kredit",
+      "decrease": "Kurangi",
+      "increase": "Tambah",
+      "customCredits": "Jumlah kredit kustom",
+      "tip": "TIPS: Pesanan di atas {min} kredit mendapat diskon {percent}%.",
+      "packageNotes": [
+        "1 sisipan tautan",
+        "1 guest post atau 2 sisipan tautan",
+        "1 guest post + 1 sisipan tautan, atau 3 sisipan tautan",
+        "hingga 5 guest post atau 10 sisipan tautan"
+      ],
+      "benefits": [
+        "Tautan dofollow",
+        "Artikel AI berotoritas",
+        "Trafik jangka panjang",
+        "URL permanen",
+        "Nilai SEO"
+      ],
+      "notes": [
+        "Satu sisipan tautan memerlukan 1 kredit; satu guest post memerlukan 2 kredit.",
+        "Untuk menerbitkan guest post, Anda perlu minimal 2 kredit.",
+        "Kredit dapat dibagi untuk artikel dan sisipan tautan. Kredit yang tidak terpakai dapat dikembalikan atas permintaan (1 kredit = {price}).",
+        "Butuh jumlah lain? Gunakan tombol tambah/kurang. Pesanan di atas {min} kredit otomatis mendapat diskon {percent}%.",
+        "Kredit yang dipakai untuk konten yang sudah terbit tidak dapat dikembalikan. Jika kiriman ditolak, kreditnya kembali ke saldo Anda."
+      ],
+      "faqTitle": "Pertanyaan yang Sering Diajukan – Guest Post / Sisipan Tautan",
+      "faqs": [
+        {
+          "q": "Bagaimana cara memesan guest post?",
+          "a": "Beli minimal 2 kredit, lalu kirim artikel dari dasbor Anda. Editor kami meninjaunya sebelum diterbitkan."
+        },
+        {
+          "q": "Bagaimana cara memesan sisipan tautan?",
+          "a": "Beli 1 kredit per tautan, lalu kirimkan URL tujuan, anchor text, dan artikel tempat tautan ingin disisipkan (atau biarkan kami memilih)."
+        },
+        {
+          "q": "Seperti apa proses penerbitannya?",
+          "a": "Beli kredit → kirim konten atau detail tautan → tinjauan editorial → terbit. Anda menerima URL yang sudah tayang lewat email."
+        },
+        {
+          "q": "Apakah ada pedoman konten untuk guest post?",
+          "a": "Artikel harus orisinal, terkait AI, bermanfaat bagi pembaca, dan bebas dari tautan spam atau dewasa. Kami dapat meminta revisi."
+        },
+        {
+          "q": "Bisakah kredit yang tidak terpakai dikembalikan?",
+          "a": "Bisa. Hubungi dukungan dan kredit yang tidak terpakai akan dikembalikan ke metode pembayaran awal."
+        },
+        {
+          "q": "Apa manfaat guest post dan sisipan tautan bagi saya?",
+          "a": "Keduanya menampilkan produk Anda kepada audiens yang tertarik pada AI dan memberi Anda backlink dofollow permanen."
+        },
+        {
+          "q": "Apakah ada diskon pembelian banyak?",
+          "a": "Ya — setiap pesanan di atas {min} kredit otomatis mendapat diskon {percent}%."
+        },
+        {
+          "q": "Apakah kalian bekerja sama dengan agensi?",
+          "a": "Ya. Agensi yang mengelola banyak klien dapat menghubungi kami untuk pengaturan khusus."
+        }
+      ]
+    },
+    "update": {
+      "seoTitle": "Perbarui alat AI Anda – {site}",
+      "seoDesc": "Perbarui detail alat Anda yang terdaftar di {site}.",
+      "panelTitle": "Bayar dulu, lalu kirim perubahan Anda",
+      "canUpdate": "Yang dapat Anda perbarui:",
+      "fields": [
+        "Nama alat",
+        "Intro singkat",
+        "Deskripsi",
+        "Kategori",
+        "Cara penggunaan",
+        "Fitur utama",
+        "Contoh penggunaan",
+        "Harga",
+        "FAQ",
+        "URL situs web"
+      ],
+      "notes": [
+        "Setelah pembayaran Anda akan menerima formulir untuk mengirimkan perubahan yang diperlukan.",
+        "Tempelkan konten baru ke kolom yang sesuai — nama, kategori, intro, deskripsi, cara pakai, fitur, contoh penggunaan, harga, atau FAQ.",
+        "URL situs web tidak dapat diubah. Jika Anda pindah ke domain baru, atur pengalihan dari domain lama.",
+        "Setiap pembaruan ditinjau secara manual sebelum tayang. Jika ditolak, dana dikembalikan secara otomatis.",
+        "Setiap pembayaran berlaku untuk satu pembaruan. Periksa kembali konten Anda sebelum mengirim."
+      ],
+      "faqTitle": "FAQ – Perbarui AI",
+      "faqs": [
+        {
+          "q": "Berapa biaya pembaruan?",
+          "a": "Biaya tetap sekali bayar untuk setiap pembaruan, seperti tertera di atas."
+        },
+        {
+          "q": "Bagaimana proses pembaruannya?",
+          "a": "Bayar → isi formulir pembaruan → tim kami meninjau → perubahan tayang."
+        },
+        {
+          "q": "Apakah saya harus menulis konten baru sendiri?",
+          "a": "Ya. Jika Anda tidak mengirim konten baru, tidak ada yang diubah dan Anda dapat meminta pengembalian dana."
+        },
+        {
+          "q": "Detail apa saja yang bisa saya ubah?",
+          "a": "Semua yang ada di daftar di atas kecuali URL situs web."
+        }
+      ]
+    },
+    "submitGpt": {
+      "seoTitle": "Kirim GPT Anda – {site}",
+      "seoDesc": "Daftarkan GPT kustom Anda di {site}.",
+      "panelTitle": "Tempelkan tautan GPT Anda",
+      "label": "Tautan GPT",
+      "required": "Silakan masukkan tautan GPT Anda.",
+      "invalid": "Masukkan tautan GPT yang valid, mis. {example}",
+      "hint": "Kami mengambil detail GPT secara otomatis dan menulis sisa listing untuk Anda.",
+      "faqTitle": "Pertanyaan yang Sering Diajukan – GPT",
+      "faqs": [
+        {
+          "q": "Berapa biaya mendaftarkan GPT?",
+          "a": "Biaya sekali bayar, seperti tertera di atas."
+        },
+        {
+          "q": "Berapa lama sampai GPT saya terdaftar?",
+          "a": "Biasanya dalam 48 jam setelah pembayaran."
+        },
+        {
+          "q": "Apakah listing GPT saya kedaluwarsa?",
+          "a": "Tidak, tetap terdaftar selamanya selama tautan GPT masih berfungsi."
+        },
+        {
+          "q": "Bagaimana agar GPT saya mendapat lebih banyak pengguna?",
+          "a": "Gabungkan listing dengan kampanye iklan atau guest post."
+        }
+      ]
+    },
+    "orders": {
+      "newOrder": "Pesanan baru",
+      "postCredits": "Kredit guest post:",
+      "adClicks": "Saldo klik iklan:",
+      "date": "Tanggal",
+      "service": "Layanan",
+      "details": "Detail",
+      "amount": "Jumlah",
+      "status": "Status",
+      "statuses": {
+        "PAID": "Dibayar",
+        "PENDING": "Menunggu",
+        "EXPIRED": "Kedaluwarsa"
+      },
+      "loading": "Memuat…",
+      "empty": "Belum ada pesanan.",
+      "clicks": "{n} klik",
+      "credits": "{n} kredit"
+    }
   }
 }
