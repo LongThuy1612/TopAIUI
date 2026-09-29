@@ -19,7 +19,6 @@ export default defineEventHandler(async (event) => {
       couponCode: true,
       twitterUrl: true,
       discordUrl: true,
-      productHuntUrl: true,
       averageRating: true,
       reviewCount: true,
       ratingCount: true,

@@ -542,12 +542,11 @@ useSeoMeta({
             <dt class="w-[130px] shrink-0 whitespace-nowrap font-bold text-ink-900">{{ t('tool.monthlyVisitors') }}:</dt>
             <dd class="text-ink-900">{{ tool.monthlyVisits ? tool.monthlyVisits.toLocaleString() : '--' }}</dd>
           </div>
-          <div v-if="tool.twitterUrl || tool.discordUrl || tool.productHuntUrl" class="flex items-center gap-4">
+          <div v-if="tool.twitterUrl || tool.discordUrl" class="flex items-center gap-4">
             <dt class="w-[130px] shrink-0 whitespace-nowrap font-bold text-ink-900">{{ t('tool.socialAndEmail') }}:</dt>
             <dd class="flex items-center gap-2">
               <a v-if="tool.twitterUrl" :href="tool.twitterUrl" target="_blank" rel="noopener noreferrer" title="Twitter / X" class="flex h-6 w-6 items-center justify-center rounded-full bg-ink-900 text-xs font-bold text-white hover:bg-brand-500">𝕏</a>
               <a v-if="tool.discordUrl" :href="tool.discordUrl" target="_blank" rel="noopener noreferrer" title="Discord" class="flex h-6 w-6 items-center justify-center rounded-full bg-[#5865F2] text-[10px] font-bold text-white hover:opacity-80">D</a>
-              <a v-if="tool.productHuntUrl" :href="tool.productHuntUrl" target="_blank" rel="noopener noreferrer" title="Product Hunt" class="flex h-6 w-6 items-center justify-center rounded-full bg-[#DA552F] text-xs font-bold text-white hover:opacity-80">P</a>
             </dd>
           </div>
         </dl>
@@ -752,7 +751,6 @@ useSeoMeta({
             <div class="mt-4 flex flex-wrap gap-3 text-base">
               <a v-if="tool.twitterUrl" :href="tool.twitterUrl" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">Twitter / X ↗</a>
               <a v-if="tool.discordUrl" :href="tool.discordUrl" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">Discord ↗</a>
-              <a v-if="tool.productHuntUrl" :href="tool.productHuntUrl" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">Product Hunt ↗</a>
             </div>
           </section>
         </div>
