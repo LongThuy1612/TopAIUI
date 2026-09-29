@@ -619,6 +619,8 @@
       "saved": "Muutokset tallennettu.",
       "create": "Luo käyttäjä",
       "loadError": "Käyttäjää ei voitu ladata."
-    }
+    },
+    "greeting": "Hei, {name}",
+    "greetingSubtitle": "Seuraa tekoälytyökalujasi, kampanjoitasi ja tilauksiasi yhdessä paikassa."
   }
 }

@@ -619,6 +619,8 @@
       "saved": "Endringene er lagret.",
       "create": "Opprett bruker",
       "loadError": "Kunne ikke laste inn denne brukeren."
-    }
+    },
+    "greeting": "Hei, {name}",
+    "greetingSubtitle": "Følg AI-verktøyene, kampanjene og bestillingene dine på ett sted."
   }
 }

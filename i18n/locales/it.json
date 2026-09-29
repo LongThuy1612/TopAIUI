@@ -619,6 +619,8 @@
       "saved": "Modifiche salvate.",
       "create": "Crea utente",
       "loadError": "Impossibile caricare questo utente."
-    }
+    },
+    "greeting": "Ciao, {name}",
+    "greetingSubtitle": "Segui i tuoi strumenti di IA, le campagne e gli ordini in un unico posto."
   }
 }

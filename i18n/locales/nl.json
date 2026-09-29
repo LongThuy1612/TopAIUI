@@ -619,6 +619,8 @@
       "saved": "Wijzigingen opgeslagen.",
       "create": "Gebruiker aanmaken",
       "loadError": "Deze gebruiker kon niet worden geladen."
-    }
+    },
+    "greeting": "Hallo, {name}",
+    "greetingSubtitle": "Volg je AI-tools, campagnes en bestellingen op één plek."
   }
 }

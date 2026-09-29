@@ -619,6 +619,8 @@
       "saved": "Ændringerne er gemt.",
       "create": "Opret bruger",
       "loadError": "Brugeren kunne ikke indlæses."
-    }
+    },
+    "greeting": "Hej, {name}",
+    "greetingSubtitle": "Følg dine AI-værktøjer, kampagner og ordrer ét sted."
   }
 }

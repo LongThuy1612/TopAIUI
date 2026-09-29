@@ -91,7 +91,8 @@ const businessItems = computed(() => [
       </div>
     </div>
 
-    <div class="rounded-xl border border-ink-100 bg-ink-100/30 p-3.5 text-[14px]">
+    <!-- Plan / quota box is for customers only — admins have no plan. -->
+    <div v-if="!isAdmin" class="rounded-xl border border-ink-100 bg-ink-100/30 p-3.5 text-[14px]">
       <div class="font-bold text-ink-800">{{ t('admin.freePlan') }}</div>
       <div class="mt-3 flex items-center justify-between text-ink-500">
         <span>{{ t('admin.websiteInsightsQuota') }}</span>

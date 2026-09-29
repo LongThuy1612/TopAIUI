@@ -5,7 +5,9 @@ const { t } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 // The logged-in user's own tools (admins see the full list under Tool Management).
-const { authHeaders } = useAuth()
+const { user, authHeaders } = useAuth()
+// Greet the logged-in person, not a fixed "Admin".
+const displayName = computed(() => user.value?.name || user.value?.email?.split('@')[0] || '')
 const { data } = await useFetch<AdminToolsResponse>('/api/me/tools', {
   headers: authHeaders(),
   watch: false
@@ -40,7 +42,7 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
   <div>
     <div>
       <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900">
-        <span>👋</span> {{ t('admin.greeting') }}
+        <span>👋</span> {{ t('admin.greeting', { name: displayName }) }}
       </h1>
       <p class="mt-1 text-sm text-ink-500">{{ t('admin.greetingSubtitle') }}</p>
     </div>

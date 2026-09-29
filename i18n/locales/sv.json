@@ -619,6 +619,8 @@
       "saved": "Ändringarna har sparats.",
       "create": "Skapa användare",
       "loadError": "Det gick inte att läsa in användaren."
-    }
+    },
+    "greeting": "Hej, {name}",
+    "greetingSubtitle": "Följ dina AI-verktyg, kampanjer och beställningar på ett ställe."
   }
 }
