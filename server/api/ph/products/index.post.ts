@@ -27,7 +27,7 @@ function toOptionalJson(value: unknown): unknown {
 }
 
 export default defineEventHandler(async (event) => {
-  requireAdmin(event)
+  await requireAdmin(event)
 
   const body = await readBody(event)
 

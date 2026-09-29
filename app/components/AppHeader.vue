@@ -424,7 +424,7 @@ const rankingItems = [
       <nav class="ml-auto flex shrink-0 items-center gap-4">
         <LanguageSwitcher class="hidden sm:block" />
         <NuxtLink
-          :to="user ? '/admin' : '/login'"
+          :to="user ? '/dashboard' : '/login'"
           class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600"
         >
           {{ t('header.admin') }}

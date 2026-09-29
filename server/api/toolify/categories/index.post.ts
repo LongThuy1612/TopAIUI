@@ -24,7 +24,7 @@ function toOptionalJson(value: unknown): unknown {
 // Upsert a ToolifyCategory keyed by handle.
 // The parent (parentCategoryId = parent's categoryId) must already be saved.
 export default defineEventHandler(async (event) => {
-  requireAdmin(event)
+  await requireAdmin(event)
 
   const body = await readBody(event)
 

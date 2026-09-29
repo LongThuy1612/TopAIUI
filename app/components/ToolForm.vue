@@ -14,7 +14,7 @@ const emit = defineEmits<{
 }>()
 
 const { t, locale, locales } = useI18n()
-const { authHeaders } = useAdminAuth()
+const { authHeaders } = useAuth()
 
 const isEdit = computed(() => props.mode === 'edit')
 

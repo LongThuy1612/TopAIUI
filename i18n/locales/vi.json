@@ -229,7 +229,45 @@
       }
     },
     "paymentInvoice": "Thanh toán & Hóa đơn",
-    "feedback": "Phản hồi"
+    "feedback": "Phản hồi",
+    "users": {
+      "title": "Quản lý người dùng",
+      "newUser": "Thêm người dùng",
+      "searchPlaceholder": "Tìm theo email hoặc tên...",
+      "total": "Tổng số người dùng: {n}",
+      "roleAll": "Tất cả quyền",
+      "roles": {
+        "USER": "Người dùng",
+        "MANAGER": "Quản lý",
+        "ADMIN": "Quản trị viên"
+      },
+      "colUser": "Người dùng",
+      "colRole": "Quyền",
+      "colStatus": "Trạng thái",
+      "colOrders": "Đơn hàng",
+      "colCreated": "Ngày tạo",
+      "colActions": "Thao tác",
+      "active": "Hoạt động",
+      "banned": "Đã khóa",
+      "you": "Bạn",
+      "edit": "Sửa",
+      "delete": "Xóa",
+      "deleteConfirm": "Xóa {email}? Người này sẽ không thể đăng nhập nữa.",
+      "empty": "Không tìm thấy người dùng nào.",
+      "newTitle": "Thêm người dùng",
+      "editTitle": "Sửa người dùng",
+      "fieldEmail": "Email",
+      "fieldName": "Tên",
+      "fieldRole": "Quyền",
+      "fieldPassword": "Mật khẩu",
+      "fieldNewPassword": "Mật khẩu mới",
+      "passwordHint": "Để trống nếu giữ nguyên mật khẩu hiện tại.",
+      "fieldBanned": "Khóa tài khoản (không thể đăng nhập)",
+      "selfHint": "Bạn không thể tự đổi quyền hoặc tự khóa tài khoản của mình.",
+      "saved": "Đã lưu thay đổi.",
+      "create": "Tạo người dùng",
+      "loadError": "Không tải được người dùng này."
+    }
   },
   "hero": {
     "titlePrefix": "Khám phá những",

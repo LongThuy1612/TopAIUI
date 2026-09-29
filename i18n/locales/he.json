@@ -580,5 +580,45 @@
       "clicks": "קליקים: {n}",
       "credits": "קרדיטים: {n}"
     }
+  },
+  "admin": {
+    "users": {
+      "title": "ניהול משתמשים",
+      "newUser": "משתמש חדש",
+      "searchPlaceholder": "חיפוש לפי אימייל או שם...",
+      "total": "סה\"כ משתמשים: {n}",
+      "roleAll": "כל התפקידים",
+      "roles": {
+        "USER": "משתמש",
+        "MANAGER": "מנהל",
+        "ADMIN": "מנהל מערכת"
+      },
+      "colUser": "משתמש",
+      "colRole": "תפקיד",
+      "colStatus": "סטטוס",
+      "colOrders": "הזמנות",
+      "colCreated": "נוצר",
+      "colActions": "פעולות",
+      "active": "פעיל",
+      "banned": "חסום",
+      "you": "את/ה",
+      "edit": "עריכה",
+      "delete": "מחיקה",
+      "deleteConfirm": "למחוק את {email}? המשתמש לא יוכל להתחבר יותר.",
+      "empty": "לא נמצאו משתמשים.",
+      "newTitle": "משתמש חדש",
+      "editTitle": "עריכת משתמש",
+      "fieldEmail": "אימייל",
+      "fieldName": "שם",
+      "fieldRole": "תפקיד",
+      "fieldPassword": "סיסמה",
+      "fieldNewPassword": "סיסמה חדשה",
+      "passwordHint": "השאר ריק כדי לשמור על הסיסמה הנוכחית.",
+      "fieldBanned": "חסום (לא יכול להתחבר)",
+      "selfHint": "אי אפשר לשנות את התפקיד שלך או לחסום את עצמך.",
+      "saved": "השינויים נשמרו.",
+      "create": "יצירת משתמש",
+      "loadError": "לא ניתן לטעון את המשתמש."
+    }
   }
 }

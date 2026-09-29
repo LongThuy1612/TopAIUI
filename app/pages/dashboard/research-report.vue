@@ -1,11 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { token, load } = useAdminAuth()
-load()
-
-if (import.meta.client && !token.value) {
-  await navigateTo('/admin/login')
-}
+definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 type ReportTab = 'all' | 'overall' | 'sector' | 'primary' | 'sub'
 
@@ -55,51 +50,47 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="flex min-h-[calc(100vh-64px)] w-full">
-    <AdminSidebar />
+  <div>
+    <h1 class="flex items-center gap-2 text-[24px] font-semibold text-[rgb(25,25,25)]">
+      <span>📁</span> {{ t('researchReportPage.title') }}
+    </h1>
+    <p class="mt-1 max-w-3xl text-sm text-[rgb(75,85,99)]">{{ t('researchReportPage.subtitle') }}</p>
 
-    <div class="min-w-0 flex-1 px-6 py-6 lg:px-8">
-      <h1 class="flex items-center gap-2 text-[24px] font-semibold text-[rgb(25,25,25)]">
-        <span>📁</span> {{ t('researchReportPage.title') }}
-      </h1>
-      <p class="mt-1 max-w-3xl text-sm text-[rgb(75,85,99)]">{{ t('researchReportPage.subtitle') }}</p>
+    <div class="mt-5 flex flex-wrap gap-5 border-b border-ink-100">
+      <button
+        v-for="tab in tabs"
+        :key="tab.key"
+        type="button"
+        :class="[
+          'border-b-2 pb-2.5 text-sm font-semibold transition',
+          activeTab === tab.key ? 'border-brand-500 text-brand-600' : 'border-transparent text-[rgb(75,85,99)] hover:text-brand-600'
+        ]"
+        @click="activeTab = tab.key"
+      >
+        {{ t(`researchReportPage.${tab.labelKey}`) }}
+      </button>
+    </div>
 
-      <div class="mt-5 flex flex-wrap gap-5 border-b border-ink-100">
-        <button
-          v-for="tab in tabs"
-          :key="tab.key"
-          type="button"
-          :class="[
-            'border-b-2 pb-2.5 text-sm font-semibold transition',
-            activeTab === tab.key ? 'border-brand-500 text-brand-600' : 'border-transparent text-[rgb(75,85,99)] hover:text-brand-600'
-          ]"
-          @click="activeTab = tab.key"
-        >
-          {{ t(`researchReportPage.${tab.labelKey}`) }}
-        </button>
-      </div>
+    <div class="mt-4">
+      <select class="rounded-lg border border-ink-200 px-3 py-2 text-sm font-semibold text-[rgb(75,85,99)] outline-none focus:border-brand-400">
+        <option>{{ t('researchReportPage.allMonths') }}</option>
+      </select>
+    </div>
 
-      <div class="mt-4">
-        <select class="rounded-lg border border-ink-200 px-3 py-2 text-sm font-semibold text-[rgb(75,85,99)] outline-none focus:border-brand-400">
-          <option>{{ t('researchReportPage.allMonths') }}</option>
-        </select>
-      </div>
+    <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <a
+        v-for="report in filteredReports"
+        :key="report.title"
+        href="#"
+        class="rounded-xl border border-ink-100 bg-white p-4 transition hover:border-brand-300"
+      >
+        <div class="text-xs text-[rgb(75,85,99)]">{{ report.date }}</div>
+        <div class="mt-1.5 text-sm font-semibold text-[rgb(75,85,99)]">{{ report.title }}</div>
+      </a>
+    </div>
 
-      <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <a
-          v-for="report in filteredReports"
-          :key="report.title"
-          href="#"
-          class="rounded-xl border border-ink-100 bg-white p-4 transition hover:border-brand-300"
-        >
-          <div class="text-xs text-[rgb(75,85,99)]">{{ report.date }}</div>
-          <div class="mt-1.5 text-sm font-semibold text-[rgb(75,85,99)]">{{ report.title }}</div>
-        </a>
-      </div>
-
-      <div v-if="!filteredReports.length" class="py-16 text-center text-sm text-[rgb(75,85,99)]">
-        {{ t('researchReportPage.noResults') }}
-      </div>
+    <div v-if="!filteredReports.length" class="py-16 text-center text-sm text-[rgb(75,85,99)]">
+      {{ t('researchReportPage.noResults') }}
     </div>
   </div>
 </template>

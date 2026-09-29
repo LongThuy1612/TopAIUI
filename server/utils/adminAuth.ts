@@ -1,22 +1,30 @@
 import type { H3Event } from 'h3'
+import type { Role } from '@prisma/client'
 
-// Minimal starter auth: a single shared admin token compared against
-// the `x-admin-token` header. This is enough to demonstrate the ISR/
-// caching split between public and admin routes, but it is NOT a real
-// auth system — swap in a proper solution (Supabase Auth, Lucia,
-// @sidebase/nuxt-auth, etc.) with per-user accounts before going live.
-//
-// TEMPORARY: also accepts any valid logged-in user's token (no role
-// check at all). This intentionally lets any registered account into
-// the admin panel — requested as a stopgap until real role-based
-// access control is built. Do not leave this in place for production.
-export function requireAdmin(event: H3Event) {
-  const config = useRuntimeConfig()
-  const token = getHeader(event, 'x-admin-token')
-
-  if (token && (token === config.adminToken || verifyUserToken(token))) {
-    return
+// Loads the logged-in user (x-user-token) and checks their role in the DB.
+// Throws 401 when not logged in / banned, 403 when the role is not allowed.
+export async function requireRole(event: H3Event, roles: Role[]) {
+  const userId = requireUser(event)
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: { id: true, role: true, isBanned: true, deletedAt: true }
+  })
+  if (!user || user.isBanned || user.deletedAt) {
+    throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
   }
+  if (!roles.includes(user.role)) {
+    throw createError({ statusCode: 403, statusMessage: 'Forbidden' })
+  }
+  return user
+}
 
-  throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
+// Admin-only endpoints. Two ways in:
+//  - a logged-in user whose role is ADMIN (the dashboard UI), or
+//  - the shared `x-admin-token` (ADMIN_TOKEN) — kept for server-to-server
+//    callers such as the crawl scripts that post to /api/toolify and /api/ph.
+export async function requireAdmin(event: H3Event) {
+  const adminToken = getHeader(event, 'x-admin-token')
+  if (adminToken && adminToken === useRuntimeConfig().adminToken) return
+
+  await requireRole(event, ['ADMIN'])
 }

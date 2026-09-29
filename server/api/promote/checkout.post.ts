@@ -2,6 +2,7 @@
 // Nhận đơn từ các trang promote, kiểm tra lại giá ở server (không tin số tiền
 // từ client), tạo đơn PENDING + phiên Stripe Checkout rồi trả về checkoutUrl.
 // Việc ghi nhận thanh toán do webhook /api/stripe/webhook làm.
+import type { Prisma } from '@prisma/client'
 import {
   submitAi, submitGpt, updateAi, advertise, creditTotal, MAX_CREDITS_PER_ORDER
 } from '#shared/promote'
@@ -39,7 +40,7 @@ async function requireTool(toolId: unknown) {
 }
 
 // Trả về số tiền (USD), tên hiển thị trên Stripe và payload đã được làm sạch để lưu.
-async function priceOf(b: Body): Promise<{ amount: number; label: string; payload: Record<string, unknown> }> {
+async function priceOf(b: Body): Promise<{ amount: number; label: string; payload: Prisma.InputJsonObject }> {
   switch (b?.type) {
     case 'submit-ai': {
       const name = String(b.name ?? '').trim()
@@ -95,14 +96,14 @@ export default defineEventHandler(async (event) => {
   const { public: { siteUrl } } = useRuntimeConfig()
   const back = `${siteUrl}${returnPath[body.type]}`
 
-  const session = await stripe.checkout.sessions.create({
+  const createSession = (customerId: string | null) => stripe.checkout.sessions.create({
     mode: 'payment',
     line_items: [{
       quantity: 1,
       price_data: { currency: 'usd', unit_amount: amountCents, product_data: { name: label } }
     }],
-    ...(user.stripeCustomerId
-      ? { customer: user.stripeCustomerId }
+    ...(customerId
+      ? { customer: customerId }
       : { customer_email: user.email, customer_creation: 'always' as const }),
     client_reference_id: user.id,
     metadata: { userId: user.id, type: body.type },
@@ -110,9 +111,27 @@ export default defineEventHandler(async (event) => {
     cancel_url: `${back}?canceled=1`
   })
 
-  const order = await prisma.promoteOrder.create({
-    data: { userId: user.id, type: body.type, payload, stripeSessionId: session.id, amount: amountCents }
-  })
+  let session: Awaited<ReturnType<typeof createSession>>
+  try {
+    session = await createSession(user.stripeCustomerId)
+  } catch (err) {
+    // A saved customer id stops existing when switching Stripe accounts or
+    // test ↔ live keys. Forget it and let Checkout create a fresh customer.
+    const e = err as { code?: string; param?: string }
+    if (!user.stripeCustomerId || e.code !== 'resource_missing' || e.param !== 'customer') throw err
+    await prisma.user.update({ where: { id: user.id }, data: { stripeCustomerId: null } })
+    session = await createSession(null)
+  }
 
-  return { orderId: order.id, checkoutUrl: session.url }
+  try {
+    const order = await prisma.promoteOrder.create({
+      data: { userId: user.id, type: body.type, payload, stripeSessionId: session.id, amount: amountCents }
+    })
+    return { orderId: order.id, checkoutUrl: session.url }
+  } catch (err) {
+    // Without an order row the webhook could not record the payment, so
+    // never hand out a session that cannot be fulfilled.
+    await stripe.checkout.sessions.expire(session.id).catch(() => {})
+    throw err
+  }
 })

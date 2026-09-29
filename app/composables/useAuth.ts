@@ -4,6 +4,7 @@ export interface AuthUser {
   id: string
   email: string
   name: string | null
+  role: 'USER' | 'MANAGER' | 'ADMIN'
 }
 
 export function useAuth() {
@@ -70,5 +71,19 @@ export function useAuth() {
     }
   }
 
-  return { token, user, load, setSession, logout, fetchMe }
+  // Restores the session and waits for /api/auth/me, so callers (route
+  // middleware) can read `user.role` reliably. Client-only.
+  async function ensureUser() {
+    load()
+    if (!token.value) return null
+    return user.value ?? await fetchMe()
+  }
+
+  const isAdmin = computed(() => user.value?.role === 'ADMIN')
+
+  function authHeaders(): Record<string, string> {
+    return token.value ? { 'x-user-token': token.value } : {}
+  }
+
+  return { token, user, isAdmin, load, ensureUser, setSession, logout, fetchMe, authHeaders }
 }

@@ -580,5 +580,45 @@
       "clicks": "{n} klik",
       "credits": "{n} kredit | {n} kreditter"
     }
+  },
+  "admin": {
+    "users": {
+      "title": "Brugeradministration",
+      "newUser": "Ny bruger",
+      "searchPlaceholder": "Søg på e-mail eller navn...",
+      "total": "Brugere i alt: {n}",
+      "roleAll": "Alle roller",
+      "roles": {
+        "USER": "Bruger",
+        "MANAGER": "Manager",
+        "ADMIN": "Administrator"
+      },
+      "colUser": "Bruger",
+      "colRole": "Rolle",
+      "colStatus": "Status",
+      "colOrders": "Ordrer",
+      "colCreated": "Oprettet",
+      "colActions": "Handlinger",
+      "active": "Aktiv",
+      "banned": "Spærret",
+      "you": "Dig",
+      "edit": "Rediger",
+      "delete": "Slet",
+      "deleteConfirm": "Slet {email}? Personen kan ikke længere logge ind.",
+      "empty": "Ingen brugere fundet.",
+      "newTitle": "Ny bruger",
+      "editTitle": "Rediger bruger",
+      "fieldEmail": "E-mail",
+      "fieldName": "Navn",
+      "fieldRole": "Rolle",
+      "fieldPassword": "Adgangskode",
+      "fieldNewPassword": "Ny adgangskode",
+      "passwordHint": "Lad feltet stå tomt for at beholde den nuværende adgangskode.",
+      "fieldBanned": "Spærret (kan ikke logge ind)",
+      "selfHint": "Du kan ikke ændre din egen rolle eller spærre dig selv.",
+      "saved": "Ændringerne er gemt.",
+      "create": "Opret bruger",
+      "loadError": "Brugeren kunne ikke indlæses."
+    }
   }
 }

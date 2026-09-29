@@ -1,11 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { token, load } = useAdminAuth()
-load()
-
-if (import.meta.client && !token.value) {
-  await navigateTo('/admin/login')
-}
+definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 type SocialTool = {
   name: string
@@ -85,73 +80,69 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="flex min-h-[calc(100vh-64px)] w-full">
-    <AdminSidebar />
+  <div>
+    <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900">
+      <span>💬</span> {{ t('socialListening.title') }}
+    </h1>
+    <p class="mt-1 text-sm text-ink-900">{{ t('socialListening.subtitle') }}</p>
 
-    <div class="min-w-0 flex-1 px-6 py-6 lg:px-8">
-      <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900">
-        <span>💬</span> {{ t('socialListening.title') }}
-      </h1>
-      <p class="mt-1 text-sm text-ink-900">{{ t('socialListening.subtitle') }}</p>
-
-      <div class="mt-5 flex flex-wrap items-center gap-3">
-        <select v-model="activeCategory" class="rounded-lg border border-ink-200 px-3 py-2 text-sm font-semibold text-ink-900 outline-none focus:border-brand-400">
-          <option v-for="c in categories" :key="c" :value="c">{{ c === 'all' ? t('socialListening.allCategories') : c }}</option>
-        </select>
-        <div class="relative">
-          <input
-            v-model="search"
-            type="text"
-            :placeholder="t('socialListening.searchPlaceholder')"
-            class="w-72 rounded-lg border border-ink-200 py-2 pl-3 pr-9 text-sm outline-none focus:border-brand-400"
-          >
-          <svg class="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.3-4.3M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
-          </svg>
-        </div>
+    <div class="mt-5 flex flex-wrap items-center gap-3">
+      <select v-model="activeCategory" class="rounded-lg border border-ink-200 px-3 py-2 text-sm font-semibold text-ink-900 outline-none focus:border-brand-400">
+        <option v-for="c in categories" :key="c" :value="c">{{ c === 'all' ? t('socialListening.allCategories') : c }}</option>
+      </select>
+      <div class="relative">
+        <input
+          v-model="search"
+          type="text"
+          :placeholder="t('socialListening.searchPlaceholder')"
+          class="w-72 rounded-lg border border-ink-200 py-2 pl-3 pr-9 text-sm outline-none focus:border-brand-400"
+        >
+        <svg class="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.3-4.3M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
+        </svg>
       </div>
+    </div>
 
-      <div class="mt-5 overflow-x-auto rounded-xl border border-ink-100">
-        <table class="w-full min-w-[1100px] text-left text-sm">
-          <thead class="border-b border-ink-100 text-xs font-bold uppercase tracking-wide text-ink-900">
-            <tr>
-              <th class="px-4 py-3">{{ t('socialListening.colTool') }}</th>
-              <th class="px-4 py-3">{{ t('socialListening.colIntroduce') }}</th>
-              <th v-for="col in sortColumns" :key="col.key" class="px-4 py-3">
-                <button type="button" class="flex items-center gap-1 hover:text-brand-600" @click="toggleSort(col.key)">
-                  {{ t(`socialListening.${col.labelKey}`) }}
-                  <svg class="h-3 w-3 shrink-0" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2.5">
-                    <path v-if="sortKey === col.key && sortDir === 'asc'" stroke-linecap="round" stroke-linejoin="round" d="m5 12 5-5 5 5" />
-                    <path v-else-if="sortKey === col.key && sortDir === 'desc'" stroke-linecap="round" stroke-linejoin="round" d="m5 8 5 5 5-5" />
-                    <path v-else stroke-linecap="round" stroke-linejoin="round" d="M5 8.5 10 4l5 4.5M5 11.5 10 16l5-4.5" class="text-ink-300" />
-                  </svg>
-                </button>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="item in filteredTools" :key="item.name" class="border-t border-ink-100 hover:bg-ink-100/30">
-              <td class="px-4 py-4">
-                <a :href="item.website" target="_blank" rel="noopener noreferrer nofollow" class="flex items-center gap-2.5 hover:opacity-80">
-                  <span :class="['flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white', item.avatarBg]">{{ initials(item.name) }}</span>
-                  <span class="font-semibold text-ink-900 hover:text-brand-600">{{ item.name }}</span>
-                </a>
-              </td>
-              <td class="max-w-[280px] truncate px-4 py-4 text-ink-900">{{ item.intro }}</td>
-              <td class="px-4 py-4 font-semibold text-brand-600">{{ formatCompact(item.videoCount) }}</td>
-              <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.creatorsCount) }}</td>
-              <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.monthlyTraffic) }}</td>
-              <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.avgViews) }}</td>
-              <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.avgInteractions) }}</td>
-              <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.totalViews) }}</td>
-              <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.totalInteractions) }}</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="mt-5 overflow-x-auto rounded-xl border border-ink-100">
+      <table class="w-full min-w-[1100px] text-left text-sm">
+        <thead class="border-b border-ink-100 text-xs font-bold uppercase tracking-wide text-ink-900">
+          <tr>
+            <th class="px-4 py-3">{{ t('socialListening.colTool') }}</th>
+            <th class="px-4 py-3">{{ t('socialListening.colIntroduce') }}</th>
+            <th v-for="col in sortColumns" :key="col.key" class="px-4 py-3">
+              <button type="button" class="flex items-center gap-1 hover:text-brand-600" @click="toggleSort(col.key)">
+                {{ t(`socialListening.${col.labelKey}`) }}
+                <svg class="h-3 w-3 shrink-0" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2.5">
+                  <path v-if="sortKey === col.key && sortDir === 'asc'" stroke-linecap="round" stroke-linejoin="round" d="m5 12 5-5 5 5" />
+                  <path v-else-if="sortKey === col.key && sortDir === 'desc'" stroke-linecap="round" stroke-linejoin="round" d="m5 8 5 5 5-5" />
+                  <path v-else stroke-linecap="round" stroke-linejoin="round" d="M5 8.5 10 4l5 4.5M5 11.5 10 16l5-4.5" class="text-ink-300" />
+                </svg>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in filteredTools" :key="item.name" class="border-t border-ink-100 hover:bg-ink-100/30">
+            <td class="px-4 py-4">
+              <a :href="item.website" target="_blank" rel="noopener noreferrer nofollow" class="flex items-center gap-2.5 hover:opacity-80">
+                <span :class="['flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white', item.avatarBg]">{{ initials(item.name) }}</span>
+                <span class="font-semibold text-ink-900 hover:text-brand-600">{{ item.name }}</span>
+              </a>
+            </td>
+            <td class="max-w-[280px] truncate px-4 py-4 text-ink-900">{{ item.intro }}</td>
+            <td class="px-4 py-4 font-semibold text-brand-600">{{ formatCompact(item.videoCount) }}</td>
+            <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.creatorsCount) }}</td>
+            <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.monthlyTraffic) }}</td>
+            <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.avgViews) }}</td>
+            <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.avgInteractions) }}</td>
+            <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.totalViews) }}</td>
+            <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.totalInteractions) }}</td>
+          </tr>
+        </tbody>
+      </table>
 
-        <div v-if="!filteredTools.length" class="py-16 text-center text-sm text-ink-900">
-          {{ t('socialListening.noResults') }}
-        </div>
+      <div v-if="!filteredTools.length" class="py-16 text-center text-sm text-ink-900">
+        {{ t('socialListening.noResults') }}
       </div>
     </div>
   </div>

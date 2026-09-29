@@ -41,7 +41,7 @@ function serializeToolifyTool(tool: Record<string, any>) {
 // Upsert a ToolifyTool keyed by slug, so re-scraping a tool fills in fields
 // (e.g. imageUrl) that were missing on the first insert instead of 409-ing.
 export default defineEventHandler(async (event) => {
-  requireAdmin(event)
+  await requireAdmin(event)
 
   const body = await readBody(event)
 

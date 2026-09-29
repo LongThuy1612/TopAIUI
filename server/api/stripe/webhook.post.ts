@@ -27,6 +27,11 @@ export default defineEventHandler(async (event) => {
       if (session.payment_status !== 'paid') break
 
       const order = await fulfillPromoteOrder(session.id)
+      if (!order) {
+        // Paid but no matching PromoteOrder row — needs a manual look.
+        console.error('[stripe webhook] paid session without order', session.id, session.metadata)
+        break
+      }
       const customerId = typeof session.customer === 'string' ? session.customer : session.customer?.id
       if (order && customerId) {
         await prisma.user.updateMany({

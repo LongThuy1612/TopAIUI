@@ -580,5 +580,45 @@
       "clicks": "{n} clic",
       "credits": "{n} credito | {n} crediti"
     }
+  },
+  "admin": {
+    "users": {
+      "title": "Gestione utenti",
+      "newUser": "Nuovo utente",
+      "searchPlaceholder": "Cerca per email o nome...",
+      "total": "Utenti totali: {n}",
+      "roleAll": "Tutti i ruoli",
+      "roles": {
+        "USER": "Utente",
+        "MANAGER": "Manager",
+        "ADMIN": "Amministratore"
+      },
+      "colUser": "Utente",
+      "colRole": "Ruolo",
+      "colStatus": "Stato",
+      "colOrders": "Ordini",
+      "colCreated": "Creato il",
+      "colActions": "Azioni",
+      "active": "Attivo",
+      "banned": "Bloccato",
+      "you": "Tu",
+      "edit": "Modifica",
+      "delete": "Elimina",
+      "deleteConfirm": "Eliminare {email}? Non potrà più accedere.",
+      "empty": "Nessun utente trovato.",
+      "newTitle": "Nuovo utente",
+      "editTitle": "Modifica utente",
+      "fieldEmail": "Email",
+      "fieldName": "Nome",
+      "fieldRole": "Ruolo",
+      "fieldPassword": "Password",
+      "fieldNewPassword": "Nuova password",
+      "passwordHint": "Lascia vuoto per mantenere la password attuale.",
+      "fieldBanned": "Bloccato (non può accedere)",
+      "selfHint": "Non puoi cambiare il tuo ruolo né bloccarti da solo.",
+      "saved": "Modifiche salvate.",
+      "create": "Crea utente",
+      "loadError": "Impossibile caricare questo utente."
+    }
   }
 }

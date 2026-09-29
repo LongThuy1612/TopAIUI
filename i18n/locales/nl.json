@@ -580,5 +580,45 @@
       "clicks": "{n} klikken",
       "credits": "{n} credit | {n} credits"
     }
+  },
+  "admin": {
+    "users": {
+      "title": "Gebruikersbeheer",
+      "newUser": "Nieuwe gebruiker",
+      "searchPlaceholder": "Zoeken op e-mail of naam...",
+      "total": "Totaal gebruikers: {n}",
+      "roleAll": "Alle rollen",
+      "roles": {
+        "USER": "Gebruiker",
+        "MANAGER": "Manager",
+        "ADMIN": "Beheerder"
+      },
+      "colUser": "Gebruiker",
+      "colRole": "Rol",
+      "colStatus": "Status",
+      "colOrders": "Bestellingen",
+      "colCreated": "Aangemaakt",
+      "colActions": "Acties",
+      "active": "Actief",
+      "banned": "Geblokkeerd",
+      "you": "Jij",
+      "edit": "Bewerken",
+      "delete": "Verwijderen",
+      "deleteConfirm": "{email} verwijderen? Deze persoon kan dan niet meer inloggen.",
+      "empty": "Geen gebruikers gevonden.",
+      "newTitle": "Nieuwe gebruiker",
+      "editTitle": "Gebruiker bewerken",
+      "fieldEmail": "E-mail",
+      "fieldName": "Naam",
+      "fieldRole": "Rol",
+      "fieldPassword": "Wachtwoord",
+      "fieldNewPassword": "Nieuw wachtwoord",
+      "passwordHint": "Laat leeg om het huidige wachtwoord te behouden.",
+      "fieldBanned": "Geblokkeerd (kan niet inloggen)",
+      "selfHint": "Je kunt je eigen rol niet wijzigen en jezelf niet blokkeren.",
+      "saved": "Wijzigingen opgeslagen.",
+      "create": "Gebruiker aanmaken",
+      "loadError": "Deze gebruiker kon niet worden geladen."
+    }
   }
 }

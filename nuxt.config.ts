@@ -96,22 +96,39 @@ export default defineNuxtConfig({
     '/category/**': { cache: { maxAge: 300, swr: true } },
     '/tools/**': { cache: { maxAge: 3600, swr: true } },
 
-    // Admin / CMS — always dynamic, never cached, hidden from search engines.
-    // ssr: false is required here: the admin token only lives in the
-    // browser's localStorage (see useAdminAuth.ts), so a server-rendered
-    // request never has it, always 401s on the admin API calls, and
-    // redirects to /admin/login — which then bounces straight back once its
-    // client-side check finds the real token. Disabling SSR skips that
-    // phantom unauthenticated render entirely so auth only ever resolves
+    // Dashboard (every logged-in user) and admin-only pages — always dynamic,
+    // never cached, hidden from search engines.
+    // ssr: false is required here: the user session token only lives in the
+    // browser's storage (see useAuth.ts), so a server-rendered request never
+    // has it, and the auth / admin route middleware can only decide
     // client-side, where the token actually exists.
+    '/dashboard/**': {
+      ssr: false,
+      robots: false,
+      headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
+    },
     '/admin/**': {
       ssr: false,
       robots: false,
       headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
     },
 
+    // Old admin URLs → their new dashboard home (keeps bookmarks working).
+    '/admin': { redirect: '/dashboard' },
+    '/admin/login': { redirect: '/login' },
+    '/admin/insights': { redirect: '/dashboard/insights' },
+    '/admin/social-listening': { redirect: '/dashboard/social-listening' },
+    '/admin/research-report': { redirect: '/dashboard/research-report' },
+    '/admin/my-ais': { redirect: '/dashboard/my-ais' },
+    '/admin/advertise': { redirect: '/dashboard/advertise' },
+    '/admin/my-posts': { redirect: '/dashboard/my-posts' },
+    '/admin/my-gpts': { redirect: '/dashboard/my-gpts' },
+    '/admin/payment-invoice': { redirect: '/dashboard/payment-invoice' },
+    '/admin/feedback': { redirect: '/dashboard/feedback' },
+
     // API — data endpoints stay dynamic; admin API additionally is not CORS-open
     '/api/admin/**': { cors: false, headers: { 'Cache-Control': 'no-store' } },
+    '/api/me/**': { headers: { 'Cache-Control': 'no-store' } },
     '/api/**': { cors: true }
   },
 

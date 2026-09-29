@@ -29,5 +29,5 @@ export default defineEventHandler(async (event) => {
   })
 
   const token = createUserToken(user.id)
-  return { token, user: { id: user.id, email: user.email, name: user.name } }
+  return { token, user: { id: user.id, email: user.email, name: user.name, role: user.role } }
 })

@@ -5,7 +5,7 @@ const allowed = [
 ] as const
 
 export default defineEventHandler(async (event) => {
-  requireAdmin(event)
+  await requireAdmin(event)
 
   const id = getRouterParam(event, 'id')
   if (!id) {

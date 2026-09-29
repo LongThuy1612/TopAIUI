@@ -580,5 +580,45 @@
       "clicks": "{n} klikk",
       "credits": "{n} kreditt | {n} kreditter"
     }
+  },
+  "admin": {
+    "users": {
+      "title": "Brukeradministrasjon",
+      "newUser": "Ny bruker",
+      "searchPlaceholder": "Søk etter e-post eller navn...",
+      "total": "Antall brukere: {n}",
+      "roleAll": "Alle roller",
+      "roles": {
+        "USER": "Bruker",
+        "MANAGER": "Leder",
+        "ADMIN": "Administrator"
+      },
+      "colUser": "Bruker",
+      "colRole": "Rolle",
+      "colStatus": "Status",
+      "colOrders": "Bestillinger",
+      "colCreated": "Opprettet",
+      "colActions": "Handlinger",
+      "active": "Aktiv",
+      "banned": "Sperret",
+      "you": "Deg",
+      "edit": "Rediger",
+      "delete": "Slett",
+      "deleteConfirm": "Slette {email}? Personen kan ikke lenger logge inn.",
+      "empty": "Fant ingen brukere.",
+      "newTitle": "Ny bruker",
+      "editTitle": "Rediger bruker",
+      "fieldEmail": "E-post",
+      "fieldName": "Navn",
+      "fieldRole": "Rolle",
+      "fieldPassword": "Passord",
+      "fieldNewPassword": "Nytt passord",
+      "passwordHint": "La stå tomt for å beholde nåværende passord.",
+      "fieldBanned": "Sperret (kan ikke logge inn)",
+      "selfHint": "Du kan ikke endre din egen rolle eller sperre deg selv.",
+      "saved": "Endringene er lagret.",
+      "create": "Opprett bruker",
+      "loadError": "Kunne ikke laste inn denne brukeren."
+    }
   }
 }

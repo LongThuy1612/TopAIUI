@@ -580,5 +580,45 @@
       "clicks": "{n} klikkausta",
       "credits": "{n} krediitti | {n} krediittiä"
     }
+  },
+  "admin": {
+    "users": {
+      "title": "Käyttäjien hallinta",
+      "newUser": "Uusi käyttäjä",
+      "searchPlaceholder": "Hae sähköpostin tai nimen mukaan...",
+      "total": "Käyttäjiä yhteensä: {n}",
+      "roleAll": "Kaikki roolit",
+      "roles": {
+        "USER": "Käyttäjä",
+        "MANAGER": "Esihenkilö",
+        "ADMIN": "Ylläpitäjä"
+      },
+      "colUser": "Käyttäjä",
+      "colRole": "Rooli",
+      "colStatus": "Tila",
+      "colOrders": "Tilaukset",
+      "colCreated": "Luotu",
+      "colActions": "Toiminnot",
+      "active": "Aktiivinen",
+      "banned": "Estetty",
+      "you": "Sinä",
+      "edit": "Muokkaa",
+      "delete": "Poista",
+      "deleteConfirm": "Poistetaanko {email}? Käyttäjä ei voi enää kirjautua sisään.",
+      "empty": "Käyttäjiä ei löytynyt.",
+      "newTitle": "Uusi käyttäjä",
+      "editTitle": "Muokkaa käyttäjää",
+      "fieldEmail": "Sähköposti",
+      "fieldName": "Nimi",
+      "fieldRole": "Rooli",
+      "fieldPassword": "Salasana",
+      "fieldNewPassword": "Uusi salasana",
+      "passwordHint": "Jätä tyhjäksi, jos haluat säilyttää nykyisen salasanan.",
+      "fieldBanned": "Estetty (ei voi kirjautua)",
+      "selfHint": "Et voi muuttaa omaa rooliasi etkä estää itseäsi.",
+      "saved": "Muutokset tallennettu.",
+      "create": "Luo käyttäjä",
+      "loadError": "Käyttäjää ei voitu ladata."
+    }
   }
 }

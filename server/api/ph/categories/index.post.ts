@@ -16,7 +16,7 @@ function toOptionalInt(value: unknown): number | undefined {
 // (created during product ingestion without categoryId) can be filled in later.
 // The parent (parentCategoryId = parent's categoryId) must already be saved.
 export default defineEventHandler(async (event) => {
-  requireAdmin(event)
+  await requireAdmin(event)
 
   const body = await readBody(event)
 

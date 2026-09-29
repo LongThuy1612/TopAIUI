@@ -3,7 +3,8 @@ import type { ToolsResponse } from '~/types'
 
 const { locale } = useI18n()
 const route = useRoute()
-const isAdminRoute = computed(() => route.path.startsWith('/admin'))
+// Dashboard pages (user + admin) bring their own header/sidebar via layouts/dashboard.vue.
+const isDashboard = computed(() => route.meta.layout === 'dashboard')
 const isMinimalRoute = computed(() => ['/login', '/register', '/forgetPassword'].includes(route.path))
 
 const { data: featuredRes } = await useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ featured: 'true', limit: 1, locale: locale.value })) })
@@ -18,13 +19,14 @@ useHead({
 <template>
   <div class="flex min-h-screen flex-col">
     <NuxtLoadingIndicator color="linear-gradient(90deg,#db2777,#e11d48)" :height="3" />
-    <AnnouncementBar v-if="!isAdminRoute && !isMinimalRoute" :tool="announcementTool" />
-    <AdminHeader v-if="isAdminRoute" />
-    <AppHeader v-else-if="!isMinimalRoute" />
+    <AnnouncementBar v-if="!isDashboard && !isMinimalRoute" :tool="announcementTool" />
+    <AppHeader v-if="!isDashboard && !isMinimalRoute" />
     <main class="flex-1">
-      <NuxtPage />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </main>
-    <AppFooter v-if="!isAdminRoute && !isMinimalRoute" />
-    <ScrollToTop v-if="!isAdminRoute" />
+    <AppFooter v-if="!isDashboard && !isMinimalRoute" />
+    <ScrollToTop v-if="!isDashboard" />
   </div>
 </template>

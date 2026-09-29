@@ -580,5 +580,45 @@
       "clicks": "{n} klick",
       "credits": "{n} kredit | {n} krediter"
     }
+  },
+  "admin": {
+    "users": {
+      "title": "Användarhantering",
+      "newUser": "Ny användare",
+      "searchPlaceholder": "Sök på e-post eller namn...",
+      "total": "Antal användare: {n}",
+      "roleAll": "Alla roller",
+      "roles": {
+        "USER": "Användare",
+        "MANAGER": "Chef",
+        "ADMIN": "Administratör"
+      },
+      "colUser": "Användare",
+      "colRole": "Roll",
+      "colStatus": "Status",
+      "colOrders": "Beställningar",
+      "colCreated": "Skapad",
+      "colActions": "Åtgärder",
+      "active": "Aktiv",
+      "banned": "Spärrad",
+      "you": "Du",
+      "edit": "Redigera",
+      "delete": "Ta bort",
+      "deleteConfirm": "Ta bort {email}? Personen kan inte längre logga in.",
+      "empty": "Inga användare hittades.",
+      "newTitle": "Ny användare",
+      "editTitle": "Redigera användare",
+      "fieldEmail": "E-post",
+      "fieldName": "Namn",
+      "fieldRole": "Roll",
+      "fieldPassword": "Lösenord",
+      "fieldNewPassword": "Nytt lösenord",
+      "passwordHint": "Lämna tomt för att behålla nuvarande lösenord.",
+      "fieldBanned": "Spärrad (kan inte logga in)",
+      "selfHint": "Du kan inte ändra din egen roll eller spärra dig själv.",
+      "saved": "Ändringarna har sparats.",
+      "create": "Skapa användare",
+      "loadError": "Det gick inte att läsa in användaren."
+    }
   }
 }

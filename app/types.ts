@@ -162,3 +162,22 @@ export interface ReviewsResponse {
 export interface AdminToolsResponse {
   items: Tool[]
 }
+
+export type UserRole = 'USER' | 'MANAGER' | 'ADMIN'
+
+export interface AdminUser {
+  id: string
+  email: string
+  name: string | null
+  role: UserRole
+  isBanned: boolean
+  emailVerified: boolean
+  createdAt: string
+  updatedAt: string
+  _count: { promoteOrders: number }
+}
+
+export interface AdminUsersResponse {
+  items: AdminUser[]
+  total: number
+}

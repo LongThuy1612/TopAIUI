@@ -95,7 +95,7 @@ const archiveDates = Array.from({ length: 9 }, (_, i) => {
         <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px]">
           <NuxtLink to="/submit" class="text-ink-800 hover:text-brand-500">{{ t('footer.submit') }}</NuxtLink>
           <a v-for="link in aboutLinks" :key="link" href="#" class="text-ink-800 hover:text-brand-500">{{ link }}</a>
-          <NuxtLink to="/admin/login" class="text-ink-800 hover:text-brand-500">{{ t('footer.admin') }}</NuxtLink>
+          <NuxtLink to="/dashboard" class="text-ink-800 hover:text-brand-500">{{ t('footer.admin') }}</NuxtLink>
         </div>
 
         <div class="eyebrow pt-[30px]">Contact</div>
