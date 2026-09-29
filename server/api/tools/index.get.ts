@@ -21,7 +21,7 @@ export default defineEventHandler(async (event) => {
   if (query.source) where.source = String(query.source)
   const isTodayTab = query.today === 'true'
   // Today = approved tools only. Sorted by addedOn unless the caller passes an
-  // explicit sort (the /today page uses sort=newest → createdAt).
+  // explicit sort.
   if (isTodayTab) where.isApproved = true
   if (query.days) {
     const since = new Date()

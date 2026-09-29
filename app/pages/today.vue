@@ -13,7 +13,6 @@ watch(locale, () => { page.value = 1 })
 
 const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({
-    sort: 'newest',
     today: 'true',
     page: page.value,
     limit: 24,
