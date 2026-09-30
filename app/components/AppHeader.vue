@@ -349,9 +349,6 @@ const rankingItems = [
             </NuxtLink>
           </div>
         </div>
-        <a href="#" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
-          {{ t('header.jobs') }}
-        </a>
         <div class="relative" @mouseenter="openResourceMenu" @mouseleave="scheduleCloseResourceMenu">
           <a
             href="#"
@@ -416,9 +413,6 @@ const rankingItems = [
             </NuxtLink>
           </div>
         </div>
-        <a href="#" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
-          {{ t('header.adLibrary') }}
-        </a>
       </nav>
 
       <nav class="ml-auto flex shrink-0 items-center gap-4">

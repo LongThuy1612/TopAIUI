@@ -37,7 +37,7 @@ const footerColumns = [
   }
 ]
 
-const resourceLinks = ['Blog', 'AI News', 'Prompts', 'AI Jobs', 'Weekly Newsletter']
+const resourceLinks = ['Blog', 'AI News', 'Prompts','Weekly Newsletter']
 const aboutLinks = ['About Us', 'Terms of Service', 'Privacy Policy', 'Advertise']
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 const archiveDates = Array.from({ length: 9 }, (_, i) => {

@@ -348,6 +348,10 @@ model ToolAnalyticsData {
   growthMetrics                Json?    // { trend: number[], change: fraction }
   similarSites                 Json?
   yearFounded                  String?
+  history                      Json?
+  aiTraffic                    Json?
+  aiTrafficHistory             Json?
+  topPrompts                   Json?
 
   @@map("ToolAnalyticsData")
 }
