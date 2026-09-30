@@ -1116,7 +1116,7 @@ useSeoMeta({
             :key="alt.slug"
             class="flex flex-col overflow-hidden rounded-xl border border-ink-100 bg-white shadow-[0_2px_10px_rgba(23,18,26,.06)] transition hover:border-brand-300 hover:shadow-[0_12px_28px_-16px_rgba(23,18,26,.35)]"
           >
-            <NuxtLink :to="`/tools/${alt.slug}`" class="block h-[220px] bg-gradient-to-b from-[#C7C3FB] to-[#ECEAFE] px-8 pt-9">
+            <NuxtLink :to="`/tools/${alt.slug}`" class="block h-[220px] bg-gradient-to-b from-[#FBCFE8] to-[#FDF2F8] px-8 pt-9">
               <img
                 v-if="alt.screenshotUrl"
                 :src="alt.screenshotUrl"
