@@ -133,6 +133,7 @@ export interface ToolAnalytics {
   chart: { month: string; visits: number }[]
   sources: { name: string; pct: number }[]
   keywords: { keyword: string; volume: number; type: 'organic' | 'paid' }[]
+  geography: { code: string; numeric: number | null; pct: number }[] // code: ISO alpha-2, numeric: world map id
   ranking: {
     global: number | null
     country: string | null // ISO alpha-2

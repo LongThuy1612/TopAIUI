@@ -380,6 +380,10 @@ const countryName = (code: string) => {
   }
 }
 
+const geographyRegions = computed(() =>
+  (analytics.value?.geography ?? []).map(g => ({ ...g, label: countryName(g.code) }))
+)
+
 const analyticsFacts = computed(() => {
   const a = analytics.value
   if (!a) return []
@@ -989,6 +993,30 @@ useSeoMeta({
                     >{{ c.label }}</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Geography: top regions left, world map right -->
+          <div v-if="analytics.geography?.length" class="grid grid-cols-1 gap-8 border-b border-ink-200 p-7 lg:grid-cols-[320px_1fr]">
+            <div>
+              <h4 class="border-l-4 border-brand-500 pl-3 text-base font-semibold text-ink-900">{{ t('tool.geography') }}</h4>
+              <p class="mt-4 text-base text-ink-900">{{ t('tool.topRegions', { count: analytics.geography.length }) }}</p>
+              <ul class="mt-3 divide-y divide-ink-200 rounded-lg border border-ink-200">
+                <li v-for="region in geographyRegions" :key="region.code" class="flex items-center gap-3 px-5 py-3.5 text-base">
+                  <img :src="`https://flagcdn.com/w40/${region.code.toLowerCase()}.png`" alt="" class="h-[18px] w-[30px] shrink-0 object-cover" loading="lazy">
+                  <span class="min-w-0 truncate text-ink-900">{{ region.label }}</span>
+                  <span class="ml-auto font-bold text-ink-900">{{ region.pct.toFixed(2) }}%</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p v-if="analyticsPeriod" class="flex items-center gap-2 text-base text-ink-900">
+                <svg class="h-5 w-5 text-ink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3.75 8.25h16.5M5.25 5.25h13.5a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-12a1.5 1.5 0 0 1 1.5-1.5Z" /><path stroke-linecap="round" stroke-linejoin="round" d="m9 14.25 2 2 4-4" /></svg>
+                {{ analyticsPeriod }} · {{ t('tool.desktopOnly') }}
+              </p>
+              <div class="mx-auto mt-6 max-w-[520px]">
+                <WorldMap :regions="geographyRegions" />
               </div>
             </div>
           </div>

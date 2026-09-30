@@ -72,7 +72,7 @@ export default defineEventHandler(async (event) => {
     where: { toolSlug: tool.slug },
     select: {
       monthlyVisits: true, trafficVisits: true, trafficSources: true, engagement: true, growthMetrics: true,
-      organicKeywords: true, paidKeywords: true, globalRanking: true, highestTrafficCountry: true,
+      organicKeywords: true, paidKeywords: true, geography: true, globalRanking: true, highestTrafficCountry: true,
       highestTrafficCountryRanking: true, category: true, categoryRanking: true, relatedApps: true,
       yearFounded: true, employeeRange: true
     }
@@ -105,6 +105,7 @@ type AnalyticsRow = {
   growthMetrics: unknown
   organicKeywords: unknown
   paidKeywords: unknown
+  geography: unknown
   globalRanking: number | null
   highestTrafficCountry: number | null
   highestTrafficCountryRanking: number | null
@@ -113,16 +114,6 @@ type AnalyticsRow = {
   relatedApps: unknown
   yearFounded: string | null
   employeeRange: string | null
-}
-
-// highestTrafficCountry is an ISO 3166 numeric code; Intl.DisplayNames only
-// understands alpha-2, so map the countries that realistically top the list.
-const COUNTRY_NUMERIC_TO_ALPHA2: Record<number, string> = {
-  840: 'US', 356: 'IN', 76: 'BR', 360: 'ID', 392: 'JP', 826: 'GB', 276: 'DE', 250: 'FR', 724: 'ES', 380: 'IT',
-  124: 'CA', 36: 'AU', 484: 'MX', 643: 'RU', 156: 'CN', 410: 'KR', 704: 'VN', 764: 'TH', 608: 'PH', 458: 'MY',
-  702: 'SG', 792: 'TR', 616: 'PL', 528: 'NL', 804: 'UA', 32: 'AR', 170: 'CO', 604: 'PE', 152: 'CL', 818: 'EG',
-  682: 'SA', 784: 'AE', 364: 'IR', 586: 'PK', 50: 'BD', 566: 'NG', 710: 'ZA', 404: 'KE', 158: 'TW', 344: 'HK',
-  376: 'IL', 752: 'SE', 578: 'NO', 208: 'DK', 246: 'FI', 56: 'BE', 756: 'CH', 40: 'AT', 620: 'PT', 300: 'GR'
 }
 
 const toList = (v: unknown): unknown[] => (Array.isArray(v) ? v : [])
@@ -143,6 +134,34 @@ function normalizeKeywords(organic: unknown, paid: unknown) {
   add(organic, 'organic')
   add(paid, 'paid')
   return [...byKeyword.values()].sort((a, b) => b.volume - a.volume).slice(0, 10)
+}
+
+// geography is { data: [...], filters: {} }; each entry names a country (ISO
+// numeric code or alpha-2) and its traffic share (fraction or percent).
+// Returns alpha-2 + numeric codes (numeric matches the world map ids) and 0-100 shares.
+function normalizeGeography(geography: unknown) {
+  const raw = Array.isArray(geography) ? geography : asRecord(geography).data ?? geography
+  const entries: [unknown, unknown][] = Array.isArray(raw)
+    ? raw.map(asRecord).map(r => [
+        r.country ?? r.countryCode ?? r.country_code ?? r.code ?? r.key ?? r.id ?? r.name,
+        r.share ?? r.value ?? r.percentage ?? r.pct ?? r.traffic_share ?? r.visits_share
+      ])
+    : Object.entries(asRecord(raw))
+
+  const items = entries.flatMap(([country, share]) => {
+    const pct = asNumber(share)
+    const code = typeof country === 'string' && /^[A-Za-z]{2}$/.test(country)
+      ? country.toUpperCase()
+      : COUNTRY_NUMERIC_TO_ALPHA2[asNumber(country) ?? -1]
+    if (!code || pct == null || pct <= 0) return []
+    return [{ code, numeric: COUNTRY_ALPHA2_TO_NUMERIC[code] ?? null, pct }]
+  })
+  // Shares come as 0-1 fractions in some rows and as percentages in others.
+  const isFraction = items.every(i => i.pct <= 1)
+  return items
+    .map(i => ({ ...i, pct: isFraction ? i.pct * 100 : i.pct }))
+    .sort((a, b) => b.pct - a.pct)
+    .slice(0, 10)
 }
 
 // relatedApps is { apps_0: [...Google Play], apps_1: [...App Store] } and
@@ -195,6 +214,7 @@ function normalizeAnalytics(row: AnalyticsRow | null) {
     chart,
     sources,
     keywords: normalizeKeywords(row.organicKeywords, row.paidKeywords),
+    geography: normalizeGeography(row.geography),
     ranking: {
       global: row.globalRanking,
       country: row.highestTrafficCountry ? COUNTRY_NUMERIC_TO_ALPHA2[row.highestTrafficCountry] ?? null : null,
