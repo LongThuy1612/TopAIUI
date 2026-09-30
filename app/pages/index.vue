@@ -4,7 +4,7 @@ import type { Category, ToolsResponse } from '~/types'
 const { t, locale } = useI18n()
 
 const [{ data: newRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, sort: 'newest', newToday: 'true', locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, newToday: 'true', locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, today: 'true', locale: locale.value })) }),
   useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 200, locale: locale.value })) })

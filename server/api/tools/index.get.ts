@@ -20,8 +20,8 @@ export default defineEventHandler(async (event) => {
   if (query.region) where.region = String(query.region)
   if (query.source) where.source = String(query.source)
   const isTodayTab = query.today === 'true'
-  // Today = approved tools only. Sorted by addedOn unless the caller passes an
-  // explicit sort.
+  // Today and New are the same list, always sorted by addedOn (tools without
+  // one go last); Today just narrows it to approved tools.
   if (isTodayTab) where.isApproved = true
   if (query.days) {
     const since = new Date()
@@ -42,11 +42,11 @@ export default defineEventHandler(async (event) => {
     growth6m: { last6MonthGrowth: 'desc' },
     revenue: { monthlyRevenue: 'desc' }
   }
-  const orderBy = isTodayTab && !query.sort
-    ? { addedOn: { sort: 'desc' as const, nulls: 'last' as const } }
-    : isNewTab
-      ? { createdAt: 'desc' as const }
-      : (sortMap[String(query.sort)] ?? sortMap.newest)
+  // id only breaks ties (every tool without addedOn ties), so pages of the
+  // infinite scroll don't repeat or skip tools.
+  const orderBy = isTodayTab || isNewTab
+    ? [{ addedOn: { sort: 'desc' as const, nulls: 'last' as const } }, { id: 'asc' as const }]
+    : (sortMap[String(query.sort)] ?? sortMap.newest)
 
   const [items, total] = await Promise.all([
     prisma.tool.findMany({

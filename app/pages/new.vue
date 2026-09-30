@@ -12,7 +12,6 @@ const loadingMore = ref(false)
 const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({
     newToday: 'true',
-    sort: 'newest',
     page: page.value,
     limit: 24,
     locale: locale.value

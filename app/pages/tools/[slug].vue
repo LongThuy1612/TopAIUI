@@ -206,7 +206,7 @@ function submitNewReview() {
 }
 
 const addedOn = computed(() => {
-  const date = tool.value?.addedOn ?? tool.value?.createdAt
+  const date = tool.value?.addedOn
   if (!date) return '—'
   return new Date(date).toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', {
     year: 'numeric', month: 'short', day: 'numeric'
