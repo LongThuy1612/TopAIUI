@@ -115,7 +115,6 @@ export default defineNuxtConfig({
 
     // Old admin URLs → their new dashboard home (keeps bookmarks working).
     '/admin': { redirect: '/dashboard' },
-    '/admin/login': { redirect: '/login' },
     '/admin/insights': { redirect: '/dashboard/insights' },
     '/admin/social-listening': { redirect: '/dashboard/social-listening' },
     '/admin/research-report': { redirect: '/dashboard/research-report' },
