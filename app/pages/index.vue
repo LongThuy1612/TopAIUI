@@ -89,6 +89,7 @@ useSeoMeta({
               :key="tool.slug"
               :tool="tool"
               :category-label="tool.categories?.[0]?.name"
+              hover-glow
             />
           </div>
           <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">

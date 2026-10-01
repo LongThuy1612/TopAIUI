@@ -3,6 +3,7 @@ const props = defineProps<{
   tool: { slug: string; name: string; pricingType: 'FREE' | 'FREEMIUM' | 'PAID'; logoUrl?: string; shortDesc?: string | null; isAd?: boolean; tags?: { slug: string; name: string }[] }
   rank?: number
   categoryLabel?: string
+  hoverGlow?: boolean
 }>()
 
 const { t } = useI18n()
@@ -19,19 +20,33 @@ const rankStyle = computed(() => {
 </script>
 
 <template>
-  <NuxtLink :to="`/tools/${tool.slug}`" class="group flex items-start gap-4 py-5">
-    <span v-if="rank" :class="['w-5 shrink-0 pt-3.5 text-center text-sm font-bold', rankStyle]">{{ rank }}</span>
-    <div v-if="tool.logoUrl" class="h-[52px] w-[52px] shrink-0 overflow-hidden rounded-[14px]">
+  <NuxtLink
+    :to="`/tools/${tool.slug}`"
+    :class="['group relative flex items-start gap-4 py-5', hoverGlow && '-mx-3 overflow-hidden rounded-[14px] px-3 transition-colors hover:bg-[#FDFAFB]']"
+  >
+    <img
+      v-if="hoverGlow && tool.logoUrl"
+      :src="tool.logoUrl"
+      alt=""
+      aria-hidden="true"
+      class="pointer-events-none absolute -top-4 -right-4 h-28 w-28 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.16]"
+    >
+    <template v-else-if="hoverGlow">
+      <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.06]"></span>
+      <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.12]">{{ initials }}</span>
+    </template>
+    <span v-if="rank" :class="['relative w-5 shrink-0 pt-3.5 text-center text-sm font-bold', rankStyle]">{{ rank }}</span>
+    <div v-if="tool.logoUrl" class="relative h-[52px] w-[52px] shrink-0 overflow-hidden rounded-[14px]">
       <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
     </div>
     <span
       v-else
-      class="inline-flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] text-base font-extrabold"
+      class="relative inline-flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] text-base font-extrabold"
       :class="tool.isAd ? 'bg-ink-900 text-white' : 'bg-brand-50 text-brand-500'"
     >
       {{ initials }}
     </span>
-    <div class="min-w-0 flex-1">
+    <div class="relative min-w-0 flex-1">
       <div class="flex flex-wrap items-center gap-2">
         <h3 class="text-base font-semibold tracking-[-.01em] text-ink-900 group-hover:text-brand-500">{{ tool.name }}</h3>
         <span
