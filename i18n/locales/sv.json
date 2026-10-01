@@ -621,5 +621,12 @@
     },
     "greeting": "Hej, {name}",
     "greetingSubtitle": "Följ dina AI-verktyg, kampanjer och beställningar på ett ställe."
+  },
+  "errorPage": {
+    "title": "Sidan hittades inte",
+    "message": "Kontrollera webbadressen och försök igen.",
+    "errorTitle": "Något gick fel",
+    "errorMessage": "Ett oväntat fel inträffade. Försök igen senare.",
+    "backHome": "Tillbaka till startsidan"
   }
 }

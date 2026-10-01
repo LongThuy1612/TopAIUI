@@ -917,5 +917,12 @@
       "clicks": "{n} clics",
       "credits": "{n} crédito | {n} créditos"
     }
+  },
+  "errorPage": {
+    "title": "Página no encontrada",
+    "message": "Comprueba la URL e inténtalo de nuevo.",
+    "errorTitle": "Algo salió mal",
+    "errorMessage": "Se produjo un error inesperado. Inténtalo de nuevo más tarde.",
+    "backHome": "Volver al inicio"
   }
 }

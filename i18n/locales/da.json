@@ -621,5 +621,12 @@
     },
     "greeting": "Hej, {name}",
     "greetingSubtitle": "Følg dine AI-værktøjer, kampagner og ordrer ét sted."
+  },
+  "errorPage": {
+    "title": "Siden blev ikke fundet",
+    "message": "Tjek venligst URL'en og prøv igen.",
+    "errorTitle": "Noget gik galt",
+    "errorMessage": "Der opstod en uventet fejl. Prøv igen senere.",
+    "backHome": "Gå tilbage til forsiden"
   }
 }

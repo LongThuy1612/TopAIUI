@@ -917,5 +917,12 @@
       "clicks": "{n} 次点击",
       "credits": "{n} 积分"
     }
+  },
+  "errorPage": {
+    "title": "页面未找到",
+    "message": "请检查网址后重试。",
+    "errorTitle": "出了点问题",
+    "errorMessage": "发生意外错误，请稍后重试。",
+    "backHome": "返回首页"
   }
 }

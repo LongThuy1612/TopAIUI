@@ -621,5 +621,12 @@
     },
     "greeting": "Hallo, {name}",
     "greetingSubtitle": "Volg je AI-tools, campagnes en bestellingen op één plek."
+  },
+  "errorPage": {
+    "title": "Pagina niet gevonden",
+    "message": "Controleer de URL en probeer het opnieuw.",
+    "errorTitle": "Er is iets misgegaan",
+    "errorMessage": "Er is een onverwachte fout opgetreden. Probeer het later opnieuw.",
+    "backHome": "Terug naar home"
   }
 }

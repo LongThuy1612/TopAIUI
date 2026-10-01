@@ -917,5 +917,12 @@
       "clicks": "{n} clics",
       "credits": "{n} crédit | {n} crédits"
     }
+  },
+  "errorPage": {
+    "title": "Page introuvable",
+    "message": "Veuillez vérifier l'URL et réessayer.",
+    "errorTitle": "Une erreur s'est produite",
+    "errorMessage": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
+    "backHome": "Retour à l'accueil"
   }
 }

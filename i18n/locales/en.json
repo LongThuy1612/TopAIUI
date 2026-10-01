@@ -992,5 +992,12 @@
       "clicks": "{n} clicks",
       "credits": "{n} credit | {n} credits"
     }
+  },
+  "errorPage": {
+    "title": "Page not found",
+    "message": "Please check the URL and try again.",
+    "errorTitle": "Something went wrong",
+    "errorMessage": "An unexpected error occurred. Please try again later.",
+    "backHome": "Go back home"
   }
 }

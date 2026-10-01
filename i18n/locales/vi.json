@@ -992,5 +992,12 @@
       "clicks": "{n} lượt nhấp",
       "credits": "{n} credit"
     }
+  },
+  "errorPage": {
+    "title": "Không tìm thấy trang",
+    "message": "Vui lòng kiểm tra lại đường dẫn và thử lại.",
+    "errorTitle": "Đã xảy ra lỗi",
+    "errorMessage": "Có lỗi không mong muốn xảy ra. Vui lòng thử lại sau.",
+    "backHome": "Về trang chủ"
   }
 }

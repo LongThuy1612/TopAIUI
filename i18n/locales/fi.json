@@ -621,5 +621,12 @@
     },
     "greeting": "Hei, {name}",
     "greetingSubtitle": "Seuraa tekoälytyökalujasi, kampanjoitasi ja tilauksiasi yhdessä paikassa."
+  },
+  "errorPage": {
+    "title": "Sivua ei löytynyt",
+    "message": "Tarkista URL-osoite ja yritä uudelleen.",
+    "errorTitle": "Jokin meni pieleen",
+    "errorMessage": "Tapahtui odottamaton virhe. Yritä myöhemmin uudelleen.",
+    "backHome": "Palaa etusivulle"
   }
 }

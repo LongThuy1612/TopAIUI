@@ -621,5 +621,12 @@
     },
     "greeting": "Ciao, {name}",
     "greetingSubtitle": "Segui i tuoi strumenti di IA, le campagne e gli ordini in un unico posto."
+  },
+  "errorPage": {
+    "title": "Pagina non trovata",
+    "message": "Controlla l'URL e riprova.",
+    "errorTitle": "Qualcosa è andato storto",
+    "errorMessage": "Si è verificato un errore imprevisto. Riprova più tardi.",
+    "backHome": "Torna alla home"
   }
 }

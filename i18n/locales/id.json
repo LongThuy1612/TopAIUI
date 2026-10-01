@@ -917,5 +917,12 @@
       "clicks": "{n} klik",
       "credits": "{n} kredit"
     }
+  },
+  "errorPage": {
+    "title": "Halaman tidak ditemukan",
+    "message": "Silakan periksa URL dan coba lagi.",
+    "errorTitle": "Terjadi kesalahan",
+    "errorMessage": "Terjadi kesalahan yang tidak terduga. Silakan coba lagi nanti.",
+    "backHome": "Kembali ke beranda"
   }
 }
