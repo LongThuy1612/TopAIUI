@@ -490,6 +490,7 @@ model ToolifyTool {
   pricingPlans     Json? @map("pricing_plans") @db.JsonB
   faqs             Json? @map("faqs") @db.JsonB
   trafficSnapshots Json? @map("traffic_snapshots") @db.JsonB
+  analyticsData    Json? @map("analytics_data") @db.JsonB
 
   @@map("ToolifyTool")
 }

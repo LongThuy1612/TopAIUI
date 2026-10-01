@@ -1,3 +1,5 @@
+import { Prisma } from '@prisma/client'
+
 function toOptionalString(value: unknown): string | undefined {
   if (value === undefined || value === null) return undefined
   const str = String(value).trim()
@@ -26,8 +28,10 @@ function toOptionalDate(value: unknown): Date | undefined {
   return Number.isNaN(date.getTime()) ? undefined : date
 }
 
+// Prisma rejects a bare null for Json? columns; DbNull stores SQL NULL.
 function toOptionalJson(value: unknown): unknown {
-  return value === undefined ? undefined : value
+  if (value === undefined) return undefined
+  return value === null ? Prisma.DbNull : value
 }
 
 // BigInt fields (e.g. monthVisitedCount) can't be JSON.stringify'd as-is.
@@ -84,7 +88,9 @@ export default defineEventHandler(async (event) => {
     useCases: toOptionalJson(body.useCases),
     pricingPlans: toOptionalJson(body.pricingPlans),
     faqs: toOptionalJson(body.faqs),
-    trafficSnapshots: toOptionalJson(body.trafficSnapshots)
+    trafficSnapshots: toOptionalJson(body.trafficSnapshots),
+    // absent when Toolify has no traffic data; undefined keeps the stored value
+    analyticsData: toOptionalJson(body.analyticsData)
   }
 
   try {

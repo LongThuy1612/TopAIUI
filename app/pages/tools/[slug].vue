@@ -208,8 +208,9 @@ function submitNewReview() {
 const addedOn = computed(() => {
   const date = tool.value?.addedOn
   if (!date) return '—'
+  // addedOn is stored in UTC; show the UTC day so it matches the DB and the /archive/[date] page.
   return new Date(date).toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', {
-    year: 'numeric', month: 'short', day: 'numeric'
+    year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'
   })
 })
 
