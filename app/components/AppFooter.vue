@@ -40,10 +40,11 @@ const footerColumns = [
 const resourceLinks = ['Blog', 'AI News', 'Prompts','Weekly Newsletter']
 const aboutLinks = ['About Us', 'Terms of Service', 'Privacy Policy', 'Advertise']
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+// Last 9 days before today, in UTC so server and client render the same dates
+// and they match the /archive/[date] filter on addedOn.
 const archiveDates = Array.from({ length: 9 }, (_, i) => {
-  const d = new Date()
-  d.setDate(d.getDate() - 1 - i)
-  return `${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`
+  const iso = new Date(Date.now() - (i + 1) * 24 * 60 * 60 * 1000).toISOString().slice(0, 10)
+  return { iso, label: `${iso.slice(5, 7)}/${iso.slice(8, 10)}` }
 })
 </script>
 
@@ -86,7 +87,7 @@ const archiveDates = Array.from({ length: 9 }, (_, i) => {
 
         <div class="eyebrow pt-[30px]">Top 1000 AI Tools Directory</div>
         <div class="grid grid-cols-3 gap-[11px] pt-4 text-[13px]">
-          <a v-for="date in archiveDates" :key="date" href="#" class="text-ink-800 hover:text-brand-500">{{ date }}</a>
+          <NuxtLink v-for="date in archiveDates" :key="date.iso" :to="`/archive/${date.iso}`" class="text-ink-800 hover:text-brand-500">{{ date.label }}</NuxtLink>
         </div>
       </div>
 

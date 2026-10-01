@@ -457,6 +457,11 @@
     "keywordPaid": "Trả phí",
     "mobileApps": "Ứng dụng di động"
   },
+  "archive": {
+    "title": "Top 1000 công cụ AI",
+    "rank": "Hạng",
+    "name": "Tên"
+  },
   "footer": {
     "tagline": "Khám phá, so sánh và chia sẻ những công cụ AI tốt nhất — xây dựng với Nuxt & PostgreSQL.",
     "product": "Sản phẩm",

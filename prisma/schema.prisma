@@ -126,6 +126,7 @@ model Tool {
   reviews       Review[]
 
   @@index([status])
+  @@index([addedOn])
   @@map("Tool")
 }
 

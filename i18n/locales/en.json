@@ -588,6 +588,11 @@
     "keywordPaid": "Paid",
     "mobileApps": "Mobile Apps"
   },
+  "archive": {
+    "title": "Top 1000 AI Tools",
+    "rank": "Rank",
+    "name": "Name"
+  },
   "footer": {
     "tagline": "Discover, compare and share the best AI tools",
     "product": "Product",

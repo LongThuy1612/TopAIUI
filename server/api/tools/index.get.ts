@@ -29,6 +29,12 @@ export default defineEventHandler(async (event) => {
     where.createdAt = { gte: since }
   }
   const isNewTab = query.newToday === 'true'
+  // Footer archive: tools whose addedOn falls on one UTC calendar day (YYYY-MM-DD).
+  const addedDate = /^\d{4}-\d{2}-\d{2}$/.test(String(query.addedDate ?? '')) ? new Date(`${query.addedDate}T00:00:00Z`) : null
+  const isArchiveDay = !!addedDate && !Number.isNaN(addedDate.getTime())
+  if (isArchiveDay) {
+    where.addedOn = { gte: addedDate, lt: new Date(addedDate.getTime() + 24 * 60 * 60 * 1000) }
+  }
 
   const sortMap: Record<string, Prisma.ToolOrderByWithRelationInput | Prisma.ToolOrderByWithRelationInput[]> = {
     newest: { createdAt: 'desc' },
@@ -44,7 +50,7 @@ export default defineEventHandler(async (event) => {
   }
   // id only breaks ties (every tool without addedOn ties), so pages of the
   // infinite scroll don't repeat or skip tools.
-  const orderBy = isTodayTab || isNewTab
+  const orderBy = isTodayTab || isNewTab || isArchiveDay
     ? [{ addedOn: { sort: 'desc' as const, nulls: 'last' as const } }, { id: 'asc' as const }]
     : (sortMap[String(query.sort)] ?? sortMap.newest)
 
