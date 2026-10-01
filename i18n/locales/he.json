@@ -178,7 +178,14 @@
     "keywordType": "סוג",
     "keywordOrganic": "אורגני",
     "keywordPaid": "ממומן",
-    "mobileApps": "אפליקציות"
+    "mobileApps": "אפליקציות",
+    "loginToReview": "התחבר כדי לכתוב ביקורת",
+    "submitReview": "שלח ביקורת",
+    "submittingReview": "שולח...",
+    "reviewPendingNotice": "תודה! הביקורת שלך נשלחה ותוצג לאחר אישור.",
+    "reviewAlreadySubmitted": "כבר כתבת ביקורת על הכלי הזה.",
+    "reviewSubmitError": "לא ניתן היה לשלוח את הביקורת. נסה שוב.",
+    "reviewSessionExpired": "פג תוקף ההתחברות. התחבר שוב כדי לשלוח את הביקורת."
   },
   "footer": {
     "tagline": "גלה, השווה ושתף את כלי הבינה המלאכותית הטובים ביותר — נבנה עם Nuxt ו-PostgreSQL.",
@@ -618,6 +625,30 @@
       "saved": "השינויים נשמרו.",
       "create": "יצירת משתמש",
       "loadError": "לא ניתן לטעון את המשתמש."
+    },
+    "reviews": {
+      "title": "ניהול ביקורות",
+      "total": "סה\"כ ביקורות: {n}",
+      "pendingBadge": "{n} ממתינות",
+      "searchPlaceholder": "חיפוש לפי כלי, משתמש או תוכן...",
+      "statusAll": "כל הסטטוסים",
+      "statuses": {
+        "PENDING": "ממתינה",
+        "APPROVED": "אושרה",
+        "REJECTED": "נדחתה"
+      },
+      "colTool": "כלי",
+      "colAuthor": "כותב",
+      "colReview": "ביקורת",
+      "colStatus": "סטטוס",
+      "colCreated": "נוצר",
+      "colActions": "פעולות",
+      "approve": "אישור",
+      "reject": "דחייה",
+      "delete": "מחיקה",
+      "deleteConfirm": "למחוק את הביקורת הזו לצמיתות?",
+      "guest": "אורח",
+      "empty": "לא נמצאו ביקורות."
     },
     "greeting": "שלום, {name}",
     "greetingSubtitle": "עקוב אחרי כלי ה-AI, הקמפיינים וההזמנות שלך במקום אחד."

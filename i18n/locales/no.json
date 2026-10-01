@@ -178,7 +178,14 @@
     "keywordType": "Type",
     "keywordOrganic": "Organisk",
     "keywordPaid": "Betalt",
-    "mobileApps": "Mobilapper"
+    "mobileApps": "Mobilapper",
+    "loginToReview": "Logg inn for å anmelde",
+    "submitReview": "Send anmeldelse",
+    "submittingReview": "Sender...",
+    "reviewPendingNotice": "Takk! Anmeldelsen din er sendt og vises når den er godkjent.",
+    "reviewAlreadySubmitted": "Du har allerede anmeldt dette verktøyet.",
+    "reviewSubmitError": "Kunne ikke sende anmeldelsen. Prøv igjen.",
+    "reviewSessionExpired": "Økten din er utløpt. Logg inn på nytt for å sende anmeldelsen."
   },
   "footer": {
     "tagline": "Finn, sammenlign og del de beste AI-verktøyene — bygget med Nuxt & PostgreSQL.",
@@ -618,6 +625,30 @@
       "saved": "Endringene er lagret.",
       "create": "Opprett bruker",
       "loadError": "Kunne ikke laste inn denne brukeren."
+    },
+    "reviews": {
+      "title": "Anmeldelsesadministrasjon",
+      "total": "Antall anmeldelser: {n}",
+      "pendingBadge": "{n} venter",
+      "searchPlaceholder": "Søk etter verktøy, bruker eller innhold...",
+      "statusAll": "Alle statuser",
+      "statuses": {
+        "PENDING": "Venter",
+        "APPROVED": "Godkjent",
+        "REJECTED": "Avvist"
+      },
+      "colTool": "Verktøy",
+      "colAuthor": "Forfatter",
+      "colReview": "Anmeldelse",
+      "colStatus": "Status",
+      "colCreated": "Opprettet",
+      "colActions": "Handlinger",
+      "approve": "Godkjenn",
+      "reject": "Avvis",
+      "delete": "Slett",
+      "deleteConfirm": "Slette denne anmeldelsen permanent?",
+      "guest": "Gjest",
+      "empty": "Fant ingen anmeldelser."
     },
     "greeting": "Hei, {name}",
     "greetingSubtitle": "Følg AI-verktøyene, kampanjene og bestillingene dine på ett sted."

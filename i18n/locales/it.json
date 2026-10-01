@@ -178,7 +178,14 @@
     "keywordType": "Tipo",
     "keywordOrganic": "Organica",
     "keywordPaid": "A pagamento",
-    "mobileApps": "App mobili"
+    "mobileApps": "App mobili",
+    "loginToReview": "Accedi per recensire",
+    "submitReview": "Invia recensione",
+    "submittingReview": "Invio in corso...",
+    "reviewPendingNotice": "Grazie! La tua recensione è stata inviata e sarà visibile dopo l'approvazione.",
+    "reviewAlreadySubmitted": "Hai già recensito questo strumento.",
+    "reviewSubmitError": "Impossibile inviare la recensione. Riprova.",
+    "reviewSessionExpired": "La sessione è scaduta. Accedi di nuovo per inviare la recensione."
   },
   "footer": {
     "tagline": "Scopri, confronta e condividi i migliori strumenti IA — realizzato con Nuxt e PostgreSQL.",
@@ -618,6 +625,30 @@
       "saved": "Modifiche salvate.",
       "create": "Crea utente",
       "loadError": "Impossibile caricare questo utente."
+    },
+    "reviews": {
+      "title": "Gestione recensioni",
+      "total": "Recensioni totali: {n}",
+      "pendingBadge": "{n} in attesa",
+      "searchPlaceholder": "Cerca per strumento, utente o contenuto...",
+      "statusAll": "Tutti gli stati",
+      "statuses": {
+        "PENDING": "In attesa",
+        "APPROVED": "Approvata",
+        "REJECTED": "Rifiutata"
+      },
+      "colTool": "Strumento",
+      "colAuthor": "Autore",
+      "colReview": "Recensione",
+      "colStatus": "Stato",
+      "colCreated": "Creato il",
+      "colActions": "Azioni",
+      "approve": "Approva",
+      "reject": "Rifiuta",
+      "delete": "Elimina",
+      "deleteConfirm": "Eliminare definitivamente questa recensione?",
+      "guest": "Ospite",
+      "empty": "Nessuna recensione trovata."
     },
     "greeting": "Ciao, {name}",
     "greetingSubtitle": "Segui i tuoi strumenti di IA, le campagne e gli ordini in un unico posto."

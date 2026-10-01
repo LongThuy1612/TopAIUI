@@ -204,7 +204,14 @@
     "keywordType": "Typ",
     "keywordOrganic": "Organisch",
     "keywordPaid": "Bezahlt",
-    "mobileApps": "Mobile Apps"
+    "mobileApps": "Mobile Apps",
+    "loginToReview": "Zum Bewerten anmelden",
+    "submitReview": "Bewertung senden",
+    "submittingReview": "Wird gesendet...",
+    "reviewPendingNotice": "Danke! Deine Bewertung wurde gesendet und erscheint nach der Freigabe.",
+    "reviewAlreadySubmitted": "Du hast dieses Tool bereits bewertet.",
+    "reviewSubmitError": "Bewertung konnte nicht gesendet werden. Bitte versuche es erneut.",
+    "reviewSessionExpired": "Deine Sitzung ist abgelaufen. Bitte melde dich erneut an, um deine Bewertung zu senden."
   },
   "footer": {
     "tagline": "Entdecke, vergleiche und teile die besten KI-Tools — entwickelt mit Nuxt & PostgreSQL.",
@@ -399,6 +406,30 @@
       "saved": "Änderungen gespeichert.",
       "create": "Benutzer erstellen",
       "loadError": "Dieser Benutzer konnte nicht geladen werden."
+    },
+    "reviews": {
+      "title": "Bewertungsverwaltung",
+      "total": "Bewertungen gesamt: {n}",
+      "pendingBadge": "{n} ausstehend",
+      "searchPlaceholder": "Nach Tool, Benutzer oder Inhalt suchen...",
+      "statusAll": "Alle Status",
+      "statuses": {
+        "PENDING": "Ausstehend",
+        "APPROVED": "Freigegeben",
+        "REJECTED": "Abgelehnt"
+      },
+      "colTool": "Tool",
+      "colAuthor": "Autor",
+      "colReview": "Bewertung",
+      "colStatus": "Status",
+      "colCreated": "Erstellt",
+      "colActions": "Aktionen",
+      "approve": "Freigeben",
+      "reject": "Ablehnen",
+      "delete": "Löschen",
+      "deleteConfirm": "Diese Bewertung endgültig löschen?",
+      "guest": "Gast",
+      "empty": "Keine Bewertungen gefunden."
     }
   },
   "socialListening": {

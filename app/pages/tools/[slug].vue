@@ -122,7 +122,7 @@ async function changeReviewsSort(sort: 'newest' | 'oldest') {
 
 function formatReviewDate(iso: string) {
   const d = new Date(iso)
-  return d.toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', { month: 'long', day: 'numeric', year: 'numeric' }).replace(',', '')
+  return d.toLocaleDateString(locale.value, { month: 'long', day: 'numeric', year: 'numeric' }).replace(',', '')
 }
 
 const pricingStyle: Record<string, string> = {
@@ -142,67 +142,115 @@ const badges = computed(() => {
 
 const displayRating = computed(() => (tool.value?.reviewCount ? tool.value.averageRating : 5))
 
-const { user, load: loadAuth } = useAuth()
+const { user, ensureUser, authHeaders, logout } = useAuth()
 const isLoggedIn = computed(() => !!user.value)
-const userName = computed(() => user.value?.name || user.value?.email || null)
 
 const newRating = ref(0)
 const newRatingHover = ref(0)
 const newComment = ref('')
 const reviewSubmitAttempted = ref(false)
+const reviewSubmitting = ref(false)
+const reviewSubmitted = ref(false)
+const reviewError = ref('')
 const canSubmitReview = computed(() => newComment.value.trim().length > 0)
 const reviewDraftKey = computed(() => `topainew:review-draft:${slug.value}`)
 
+// `submitAfterLogin` (a timestamp) is set when a guest clicks "Login to review":
+// if they come back logged in shortly after, the draft is sent automatically.
+// An old flag (abandoned login) is ignored so nothing is posted unexpectedly.
+const SUBMIT_AFTER_LOGIN_TTL_MS = 30 * 60 * 1000
+
 function loadReviewDraft() {
-  if (!import.meta.client) return
+  if (!import.meta.client) return null
   try {
     const raw = localStorage.getItem(reviewDraftKey.value)
-    if (!raw) return
-    const draft = JSON.parse(raw) as { rating?: number; comment?: string }
+    if (!raw) return null
+    const draft = JSON.parse(raw) as { rating?: number; comment?: string; submitAfterLogin?: number }
     newRating.value = draft.rating ?? 0
     newComment.value = draft.comment ?? ''
+    return draft
   } catch {
     // ignore corrupt draft
+    return null
   }
 }
 
-function saveReviewDraft() {
+function saveReviewDraft(submitAfterLogin = false) {
   if (!import.meta.client) return
-  localStorage.setItem(reviewDraftKey.value, JSON.stringify({ rating: newRating.value, comment: newComment.value }))
+  if (!newRating.value && !newComment.value) return clearReviewDraft()
+  try {
+    const draft = { rating: newRating.value, comment: newComment.value, submitAfterLogin: submitAfterLogin ? Date.now() : undefined }
+    localStorage.setItem(reviewDraftKey.value, JSON.stringify(draft))
+  } catch {
+    // storage unavailable — the draft just won't survive the login redirect
+  }
 }
 
 function clearReviewDraft() {
-  if (import.meta.client) localStorage.removeItem(reviewDraftKey.value)
+  if (!import.meta.client) return
+  try {
+    localStorage.removeItem(reviewDraftKey.value)
+  } catch {
+    // ignore
+  }
 }
 
-watch([newRating, newComment], saveReviewDraft)
+watch([newRating, newComment], () => saveReviewDraft())
 
-onMounted(() => {
-  loadAuth()
-  loadReviewDraft()
+onMounted(async () => {
+  const draft = loadReviewDraft()
+  const me = await ensureUser()
+  const flaggedAt = draft?.submitAfterLogin
+  const submitAfterLogin = typeof flaggedAt === 'number' && Date.now() - flaggedAt < SUBMIT_AFTER_LOGIN_TTL_MS
+  if (me && submitAfterLogin && canSubmitReview.value) {
+    await submitNewReview()
+    document.getElementById('section-reviews')?.scrollIntoView({ behavior: 'smooth' })
+  }
 })
 
 const loginLink = computed(() => ({ path: '/login', query: { redirect: route.fullPath } }))
 
 function goToLoginToReview() {
-  saveReviewDraft()
+  reviewSubmitAttempted.value = true
+  if (!canSubmitReview.value) return
+  saveReviewDraft(true)
   navigateTo(loginLink.value)
 }
 
-function submitNewReview() {
+async function submitNewReview() {
   reviewSubmitAttempted.value = true
-  if (!canSubmitReview.value) return
-  reviews.value.unshift({
-    rating: newRating.value || 5,
-    comment: newComment.value.trim(),
-    createdAt: new Date().toISOString(),
-    userName: userName.value
-  })
-  reviewsTotal.value += 1
-  newRating.value = 0
-  newComment.value = ''
-  reviewSubmitAttempted.value = false
-  clearReviewDraft()
+  reviewError.value = ''
+  reviewSubmitted.value = false
+  if (!canSubmitReview.value || reviewSubmitting.value) return
+  reviewSubmitting.value = true
+  try {
+    await $fetch(`/api/tools/${slug.value}/reviews`, {
+      method: 'POST',
+      headers: authHeaders(),
+      body: { rating: newRating.value || 5, comment: newComment.value.trim(), locale: locale.value }
+    })
+    reviewSubmitted.value = true
+    newRating.value = 0
+    newComment.value = ''
+    reviewSubmitAttempted.value = false
+    clearReviewDraft()
+  } catch (e: any) {
+    if (e?.statusCode === 409) {
+      reviewError.value = t('tool.reviewAlreadySubmitted')
+      clearReviewDraft()
+    } else if (e?.statusCode === 401) {
+      // Session expired or account banned — drop the stale login so the
+      // "Login to review" button comes back; the draft is kept for after login.
+      logout()
+      reviewError.value = t('tool.reviewSessionExpired')
+      saveReviewDraft()
+    } else {
+      reviewError.value = e?.data?.message || t('tool.reviewSubmitError')
+      saveReviewDraft()
+    }
+  } finally {
+    reviewSubmitting.value = false
+  }
 }
 
 const addedOn = computed(() => {
@@ -817,13 +865,15 @@ useSeoMeta({
             <button
               v-else
               type="button"
-              :disabled="!canSubmitReview"
+              :disabled="!canSubmitReview || reviewSubmitting"
               class="mt-3 rounded-lg px-4 py-2 text-base font-semibold transition"
-              :class="canSubmitReview ? 'bg-brand-500 text-white hover:bg-brand-600' : 'cursor-not-allowed bg-ink-200 text-ink-500'"
+              :class="canSubmitReview && !reviewSubmitting ? 'bg-brand-500 text-white hover:bg-brand-600' : 'cursor-not-allowed bg-ink-200 text-ink-500'"
               @click="submitNewReview"
             >
-              {{ t('tool.submitReview') }}
+              {{ reviewSubmitting ? t('tool.submittingReview') : t('tool.submitReview') }}
             </button>
+            <p v-if="reviewSubmitted" class="mt-3 rounded-lg bg-emerald-50 px-3 py-2 text-sm text-emerald-700">{{ t('tool.reviewPendingNotice') }}</p>
+            <p v-if="reviewError" class="mt-3 text-sm text-red-600">{{ reviewError }}</p>
           </div>
         </div>
 

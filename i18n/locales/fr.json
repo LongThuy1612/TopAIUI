@@ -204,7 +204,14 @@
     "keywordType": "Type",
     "keywordOrganic": "Organique",
     "keywordPaid": "Payant",
-    "mobileApps": "Applications mobiles"
+    "mobileApps": "Applications mobiles",
+    "loginToReview": "Connectez-vous pour donner votre avis",
+    "submitReview": "Envoyer l'avis",
+    "submittingReview": "Envoi...",
+    "reviewPendingNotice": "Merci ! Votre avis a été envoyé et sera publié après validation.",
+    "reviewAlreadySubmitted": "Vous avez déjà donné votre avis sur cet outil.",
+    "reviewSubmitError": "Impossible d'envoyer votre avis. Veuillez réessayer.",
+    "reviewSessionExpired": "Votre session a expiré. Reconnectez-vous pour envoyer votre avis."
   },
   "footer": {
     "tagline": "Découvrez, comparez et partagez les meilleurs outils d'IA — propulsé par Nuxt & PostgreSQL.",
@@ -399,6 +406,30 @@
       "saved": "Modifications enregistrées.",
       "create": "Créer l'utilisateur",
       "loadError": "Impossible de charger cet utilisateur."
+    },
+    "reviews": {
+      "title": "Gestion des avis",
+      "total": "Total d'avis : {n}",
+      "pendingBadge": "{n} en attente",
+      "searchPlaceholder": "Rechercher par outil, utilisateur ou contenu...",
+      "statusAll": "Tous les statuts",
+      "statuses": {
+        "PENDING": "En attente",
+        "APPROVED": "Approuvé",
+        "REJECTED": "Refusé"
+      },
+      "colTool": "Outil",
+      "colAuthor": "Auteur",
+      "colReview": "Avis",
+      "colStatus": "Statut",
+      "colCreated": "Créé le",
+      "colActions": "Actions",
+      "approve": "Approuver",
+      "reject": "Refuser",
+      "delete": "Supprimer",
+      "deleteConfirm": "Supprimer définitivement cet avis ?",
+      "guest": "Invité",
+      "empty": "Aucun avis trouvé."
     }
   },
   "socialListening": {

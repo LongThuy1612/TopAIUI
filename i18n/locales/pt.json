@@ -204,7 +204,14 @@
     "keywordType": "Tipo",
     "keywordOrganic": "Orgânica",
     "keywordPaid": "Paga",
-    "mobileApps": "Apps móveis"
+    "mobileApps": "Apps móveis",
+    "loginToReview": "Faça login para avaliar",
+    "submitReview": "Enviar avaliação",
+    "submittingReview": "A enviar...",
+    "reviewPendingNotice": "Obrigado! A sua avaliação foi enviada e será publicada após aprovação.",
+    "reviewAlreadySubmitted": "Já avaliou esta ferramenta.",
+    "reviewSubmitError": "Não foi possível enviar a avaliação. Tente novamente.",
+    "reviewSessionExpired": "A sua sessão expirou. Faça login novamente para enviar a avaliação."
   },
   "footer": {
     "tagline": "Descubra, compare e compartilhe as melhores ferramentas de IA — construído com Nuxt e PostgreSQL.",
@@ -399,6 +406,30 @@
       "saved": "Alterações guardadas.",
       "create": "Criar utilizador",
       "loadError": "Não foi possível carregar este utilizador."
+    },
+    "reviews": {
+      "title": "Gestão de avaliações",
+      "total": "Total de avaliações: {n}",
+      "pendingBadge": "{n} pendentes",
+      "searchPlaceholder": "Pesquisar por ferramenta, utilizador ou conteúdo...",
+      "statusAll": "Todos os estados",
+      "statuses": {
+        "PENDING": "Pendente",
+        "APPROVED": "Aprovada",
+        "REJECTED": "Rejeitada"
+      },
+      "colTool": "Ferramenta",
+      "colAuthor": "Autor",
+      "colReview": "Avaliação",
+      "colStatus": "Estado",
+      "colCreated": "Criado em",
+      "colActions": "Ações",
+      "approve": "Aprovar",
+      "reject": "Rejeitar",
+      "delete": "Eliminar",
+      "deleteConfirm": "Eliminar esta avaliação permanentemente?",
+      "guest": "Visitante",
+      "empty": "Nenhuma avaliação encontrada."
     }
   },
   "socialListening": {

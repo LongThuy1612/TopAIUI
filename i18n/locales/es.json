@@ -204,7 +204,14 @@
     "keywordType": "Tipo",
     "keywordOrganic": "Orgánica",
     "keywordPaid": "De pago",
-    "mobileApps": "Apps móviles"
+    "mobileApps": "Apps móviles",
+    "loginToReview": "Inicia sesión para opinar",
+    "submitReview": "Enviar opinión",
+    "submittingReview": "Enviando...",
+    "reviewPendingNotice": "¡Gracias! Tu opinión se ha enviado y aparecerá cuando sea aprobada.",
+    "reviewAlreadySubmitted": "Ya has opinado sobre esta herramienta.",
+    "reviewSubmitError": "No se pudo enviar tu opinión. Inténtalo de nuevo.",
+    "reviewSessionExpired": "Tu sesión ha caducado. Inicia sesión de nuevo para enviar tu opinión."
   },
   "footer": {
     "tagline": "Descubre, compara y comparte las mejores herramientas de IA — creado con Nuxt y PostgreSQL.",
@@ -399,6 +406,30 @@
       "saved": "Cambios guardados.",
       "create": "Crear usuario",
       "loadError": "No se pudo cargar este usuario."
+    },
+    "reviews": {
+      "title": "Gestión de opiniones",
+      "total": "Total de opiniones: {n}",
+      "pendingBadge": "{n} pendientes",
+      "searchPlaceholder": "Buscar por herramienta, usuario o contenido...",
+      "statusAll": "Todos los estados",
+      "statuses": {
+        "PENDING": "Pendiente",
+        "APPROVED": "Aprobada",
+        "REJECTED": "Rechazada"
+      },
+      "colTool": "Herramienta",
+      "colAuthor": "Autor",
+      "colReview": "Opinión",
+      "colStatus": "Estado",
+      "colCreated": "Creado",
+      "colActions": "Acciones",
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "delete": "Eliminar",
+      "deleteConfirm": "¿Eliminar esta opinión de forma permanente?",
+      "guest": "Invitado",
+      "empty": "No se encontraron opiniones."
     }
   },
   "socialListening": {

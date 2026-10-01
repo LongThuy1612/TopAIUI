@@ -178,7 +178,14 @@
     "keywordType": "Tyyppi",
     "keywordOrganic": "Orgaaninen",
     "keywordPaid": "Maksettu",
-    "mobileApps": "Mobiilisovellukset"
+    "mobileApps": "Mobiilisovellukset",
+    "loginToReview": "Kirjaudu sisään arvostellaksesi",
+    "submitReview": "Lähetä arvostelu",
+    "submittingReview": "Lähetetään...",
+    "reviewPendingNotice": "Kiitos! Arvostelusi on lähetetty ja se näytetään hyväksynnän jälkeen.",
+    "reviewAlreadySubmitted": "Olet jo arvostellut tämän työkalun.",
+    "reviewSubmitError": "Arvostelun lähettäminen epäonnistui. Yritä uudelleen.",
+    "reviewSessionExpired": "Istuntosi on vanhentunut. Kirjaudu uudelleen lähettääksesi arvostelun."
   },
   "footer": {
     "tagline": "Löydä, vertaile ja jaa parhaat tekoälytyökalut — rakennettu Nuxtilla ja PostgreSQL:llä.",
@@ -618,6 +625,30 @@
       "saved": "Muutokset tallennettu.",
       "create": "Luo käyttäjä",
       "loadError": "Käyttäjää ei voitu ladata."
+    },
+    "reviews": {
+      "title": "Arvostelujen hallinta",
+      "total": "Arvosteluja yhteensä: {n}",
+      "pendingBadge": "{n} odottaa",
+      "searchPlaceholder": "Hae työkalun, käyttäjän tai sisällön mukaan...",
+      "statusAll": "Kaikki tilat",
+      "statuses": {
+        "PENDING": "Odottaa",
+        "APPROVED": "Hyväksytty",
+        "REJECTED": "Hylätty"
+      },
+      "colTool": "Työkalu",
+      "colAuthor": "Kirjoittaja",
+      "colReview": "Arvostelu",
+      "colStatus": "Tila",
+      "colCreated": "Luotu",
+      "colActions": "Toiminnot",
+      "approve": "Hyväksy",
+      "reject": "Hylkää",
+      "delete": "Poista",
+      "deleteConfirm": "Poistetaanko tämä arvostelu pysyvästi?",
+      "guest": "Vieras",
+      "empty": "Arvosteluja ei löytynyt."
     },
     "greeting": "Hei, {name}",
     "greetingSubtitle": "Seuraa tekoälytyökalujasi, kampanjoitasi ja tilauksiasi yhdessä paikassa."

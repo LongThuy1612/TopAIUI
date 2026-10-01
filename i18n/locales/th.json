@@ -178,7 +178,14 @@
     "keywordType": "ประเภท",
     "keywordOrganic": "ออร์แกนิก",
     "keywordPaid": "แบบชำระเงิน",
-    "mobileApps": "แอปมือถือ"
+    "mobileApps": "แอปมือถือ",
+    "loginToReview": "เข้าสู่ระบบเพื่อรีวิว",
+    "submitReview": "ส่งรีวิว",
+    "submittingReview": "กำลังส่ง...",
+    "reviewPendingNotice": "ขอบคุณ! ส่งรีวิวของคุณแล้ว และจะแสดงหลังจากได้รับการอนุมัติ",
+    "reviewAlreadySubmitted": "คุณได้รีวิวเครื่องมือนี้แล้ว",
+    "reviewSubmitError": "ไม่สามารถส่งรีวิวได้ โปรดลองอีกครั้ง",
+    "reviewSessionExpired": "เซสชันหมดอายุแล้ว โปรดเข้าสู่ระบบอีกครั้งเพื่อส่งรีวิว"
   },
   "footer": {
     "tagline": "ค้นพบ เปรียบเทียบ และแบ่งปันเครื่องมือ AI ที่ดีที่สุด — สร้างด้วย Nuxt และ PostgreSQL",
@@ -618,6 +625,30 @@
       "saved": "บันทึกการเปลี่ยนแปลงแล้ว",
       "create": "สร้างผู้ใช้",
       "loadError": "ไม่สามารถโหลดผู้ใช้นี้ได้"
+    },
+    "reviews": {
+      "title": "จัดการรีวิว",
+      "total": "รีวิวทั้งหมด: {n}",
+      "pendingBadge": "รออนุมัติ {n} รายการ",
+      "searchPlaceholder": "ค้นหาตามเครื่องมือ ผู้ใช้ หรือเนื้อหา...",
+      "statusAll": "ทุกสถานะ",
+      "statuses": {
+        "PENDING": "รออนุมัติ",
+        "APPROVED": "อนุมัติแล้ว",
+        "REJECTED": "ปฏิเสธแล้ว"
+      },
+      "colTool": "เครื่องมือ",
+      "colAuthor": "ผู้เขียน",
+      "colReview": "รีวิว",
+      "colStatus": "สถานะ",
+      "colCreated": "สร้างเมื่อ",
+      "colActions": "การดำเนินการ",
+      "approve": "อนุมัติ",
+      "reject": "ปฏิเสธ",
+      "delete": "ลบ",
+      "deleteConfirm": "ลบรีวิวนี้อย่างถาวรหรือไม่?",
+      "guest": "ผู้เยี่ยมชม",
+      "empty": "ไม่พบรีวิว"
     },
     "greeting": "สวัสดี {name}",
     "greetingSubtitle": "ติดตามเครื่องมือ AI แคมเปญ และคำสั่งซื้อของคุณได้ในที่เดียว"

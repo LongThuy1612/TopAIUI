@@ -267,6 +267,30 @@
       "saved": "Changes saved.",
       "create": "Create user",
       "loadError": "Could not load this user."
+    },
+    "reviews": {
+      "title": "Review Manager",
+      "total": "Total reviews: {n}",
+      "pendingBadge": "{n} pending",
+      "searchPlaceholder": "Search by tool, user or content...",
+      "statusAll": "All statuses",
+      "statuses": {
+        "PENDING": "Pending",
+        "APPROVED": "Approved",
+        "REJECTED": "Rejected"
+      },
+      "colTool": "Tool",
+      "colAuthor": "Author",
+      "colReview": "Review",
+      "colStatus": "Status",
+      "colCreated": "Created",
+      "colActions": "Actions",
+      "approve": "Approve",
+      "reject": "Reject",
+      "delete": "Delete",
+      "deleteConfirm": "Delete this review permanently?",
+      "guest": "Guest",
+      "empty": "No reviews found."
     }
   },
   "hero": {
@@ -586,7 +610,12 @@
     "keywordType": "Type",
     "keywordOrganic": "Organic",
     "keywordPaid": "Paid",
-    "mobileApps": "Mobile Apps"
+    "mobileApps": "Mobile Apps",
+    "submittingReview": "Submitting...",
+    "reviewPendingNotice": "Thanks! Your review has been submitted and will appear after it is approved.",
+    "reviewAlreadySubmitted": "You have already reviewed this tool.",
+    "reviewSubmitError": "Could not submit your review. Please try again.",
+    "reviewSessionExpired": "Your session has expired. Please log in again to submit your review."
   },
   "archive": {
     "title": "Top 1000 AI Tools",

@@ -204,7 +204,14 @@
     "keywordType": "类型",
     "keywordOrganic": "自然",
     "keywordPaid": "付费",
-    "mobileApps": "移动应用"
+    "mobileApps": "移动应用",
+    "loginToReview": "登录后评价",
+    "submitReview": "提交评价",
+    "submittingReview": "提交中...",
+    "reviewPendingNotice": "感谢！您的评价已提交，审核通过后将会显示。",
+    "reviewAlreadySubmitted": "您已经评价过此工具。",
+    "reviewSubmitError": "评价提交失败，请重试。",
+    "reviewSessionExpired": "登录已过期，请重新登录后提交评价。"
   },
   "footer": {
     "tagline": "发现、比较和分享最好的 AI 工具 — 基于 Nuxt 与 PostgreSQL 构建。",
@@ -399,6 +406,30 @@
       "saved": "已保存更改。",
       "create": "创建用户",
       "loadError": "无法加载该用户。"
+    },
+    "reviews": {
+      "title": "评价管理",
+      "total": "评价总数：{n}",
+      "pendingBadge": "{n} 条待审核",
+      "searchPlaceholder": "按工具、用户或内容搜索...",
+      "statusAll": "全部状态",
+      "statuses": {
+        "PENDING": "待审核",
+        "APPROVED": "已通过",
+        "REJECTED": "已拒绝"
+      },
+      "colTool": "工具",
+      "colAuthor": "作者",
+      "colReview": "评价",
+      "colStatus": "状态",
+      "colCreated": "创建时间",
+      "colActions": "操作",
+      "approve": "通过",
+      "reject": "拒绝",
+      "delete": "删除",
+      "deleteConfirm": "确定永久删除这条评价吗？",
+      "guest": "访客",
+      "empty": "未找到评价。"
     }
   },
   "socialListening": {

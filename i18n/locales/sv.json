@@ -178,7 +178,14 @@
     "keywordType": "Typ",
     "keywordOrganic": "Organisk",
     "keywordPaid": "Betald",
-    "mobileApps": "Mobilappar"
+    "mobileApps": "Mobilappar",
+    "loginToReview": "Logga in för att recensera",
+    "submitReview": "Skicka recension",
+    "submittingReview": "Skickar...",
+    "reviewPendingNotice": "Tack! Din recension har skickats och visas när den har godkänts.",
+    "reviewAlreadySubmitted": "Du har redan recenserat det här verktyget.",
+    "reviewSubmitError": "Det gick inte att skicka recensionen. Försök igen.",
+    "reviewSessionExpired": "Din session har gått ut. Logga in igen för att skicka recensionen."
   },
   "footer": {
     "tagline": "Upptäck, jämför och dela de bästa AI-verktygen — byggt med Nuxt & PostgreSQL.",
@@ -618,6 +625,30 @@
       "saved": "Ändringarna har sparats.",
       "create": "Skapa användare",
       "loadError": "Det gick inte att läsa in användaren."
+    },
+    "reviews": {
+      "title": "Recensionshantering",
+      "total": "Antal recensioner: {n}",
+      "pendingBadge": "{n} väntar",
+      "searchPlaceholder": "Sök på verktyg, användare eller innehåll...",
+      "statusAll": "Alla statusar",
+      "statuses": {
+        "PENDING": "Väntar",
+        "APPROVED": "Godkänd",
+        "REJECTED": "Avvisad"
+      },
+      "colTool": "Verktyg",
+      "colAuthor": "Författare",
+      "colReview": "Recension",
+      "colStatus": "Status",
+      "colCreated": "Skapad",
+      "colActions": "Åtgärder",
+      "approve": "Godkänn",
+      "reject": "Avvisa",
+      "delete": "Ta bort",
+      "deleteConfirm": "Ta bort den här recensionen permanent?",
+      "guest": "Gäst",
+      "empty": "Inga recensioner hittades."
     },
     "greeting": "Hej, {name}",
     "greetingSubtitle": "Följ dina AI-verktyg, kampanjer och beställningar på ett ställe."

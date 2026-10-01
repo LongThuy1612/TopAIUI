@@ -204,7 +204,14 @@
     "keywordType": "Jenis",
     "keywordOrganic": "Organik",
     "keywordPaid": "Berbayar",
-    "mobileApps": "Aplikasi seluler"
+    "mobileApps": "Aplikasi seluler",
+    "loginToReview": "Masuk untuk mengulas",
+    "submitReview": "Kirim ulasan",
+    "submittingReview": "Mengirim...",
+    "reviewPendingNotice": "Terima kasih! Ulasan Anda telah dikirim dan akan tampil setelah disetujui.",
+    "reviewAlreadySubmitted": "Anda sudah mengulas tool ini.",
+    "reviewSubmitError": "Gagal mengirim ulasan. Silakan coba lagi.",
+    "reviewSessionExpired": "Sesi Anda telah berakhir. Silakan masuk lagi untuk mengirim ulasan."
   },
   "footer": {
     "tagline": "Temukan, bandingkan, dan bagikan alat AI terbaik — dibangun dengan Nuxt & PostgreSQL.",
@@ -399,6 +406,30 @@
       "saved": "Perubahan disimpan.",
       "create": "Buat pengguna",
       "loadError": "Tidak dapat memuat pengguna ini."
+    },
+    "reviews": {
+      "title": "Manajemen Ulasan",
+      "total": "Total ulasan: {n}",
+      "pendingBadge": "{n} menunggu",
+      "searchPlaceholder": "Cari berdasarkan tool, pengguna, atau isi...",
+      "statusAll": "Semua status",
+      "statuses": {
+        "PENDING": "Menunggu",
+        "APPROVED": "Disetujui",
+        "REJECTED": "Ditolak"
+      },
+      "colTool": "Tool",
+      "colAuthor": "Penulis",
+      "colReview": "Ulasan",
+      "colStatus": "Status",
+      "colCreated": "Dibuat",
+      "colActions": "Aksi",
+      "approve": "Setujui",
+      "reject": "Tolak",
+      "delete": "Hapus",
+      "deleteConfirm": "Hapus ulasan ini secara permanen?",
+      "guest": "Tamu",
+      "empty": "Tidak ada ulasan ditemukan."
     }
   },
   "socialListening": {

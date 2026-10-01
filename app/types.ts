@@ -182,3 +182,25 @@ export interface AdminUsersResponse {
   items: AdminUser[]
   total: number
 }
+
+export type ReviewStatus = 'PENDING' | 'APPROVED' | 'REJECTED'
+
+export interface AdminReview {
+  id: string
+  rating: number
+  comment: string | null
+  status: ReviewStatus
+  locale: string
+  createdAt: string
+  userInfo: { name?: string; email?: string } | null
+  tool: { id: string; name: string; slug: string }
+  user: { id: string; name: string | null; email: string } | null
+}
+
+export interface AdminReviewsResponse {
+  items: AdminReview[]
+  total: number
+  pendingCount: number
+  page: number
+  pageCount: number
+}

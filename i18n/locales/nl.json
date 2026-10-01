@@ -178,7 +178,14 @@
     "keywordType": "Type",
     "keywordOrganic": "Organisch",
     "keywordPaid": "Betaald",
-    "mobileApps": "Mobiele apps"
+    "mobileApps": "Mobiele apps",
+    "loginToReview": "Log in om een review te schrijven",
+    "submitReview": "Review versturen",
+    "submittingReview": "Versturen...",
+    "reviewPendingNotice": "Bedankt! Je review is verstuurd en verschijnt na goedkeuring.",
+    "reviewAlreadySubmitted": "Je hebt deze tool al beoordeeld.",
+    "reviewSubmitError": "Je review kon niet worden verstuurd. Probeer het opnieuw.",
+    "reviewSessionExpired": "Je sessie is verlopen. Log opnieuw in om je review te versturen."
   },
   "footer": {
     "tagline": "Ontdek, vergelijk en deel de beste AI-tools — gebouwd met Nuxt & PostgreSQL.",
@@ -618,6 +625,30 @@
       "saved": "Wijzigingen opgeslagen.",
       "create": "Gebruiker aanmaken",
       "loadError": "Deze gebruiker kon niet worden geladen."
+    },
+    "reviews": {
+      "title": "Reviewbeheer",
+      "total": "Totaal reviews: {n}",
+      "pendingBadge": "{n} in afwachting",
+      "searchPlaceholder": "Zoeken op tool, gebruiker of inhoud...",
+      "statusAll": "Alle statussen",
+      "statuses": {
+        "PENDING": "In afwachting",
+        "APPROVED": "Goedgekeurd",
+        "REJECTED": "Afgewezen"
+      },
+      "colTool": "Tool",
+      "colAuthor": "Auteur",
+      "colReview": "Review",
+      "colStatus": "Status",
+      "colCreated": "Aangemaakt",
+      "colActions": "Acties",
+      "approve": "Goedkeuren",
+      "reject": "Afwijzen",
+      "delete": "Verwijderen",
+      "deleteConfirm": "Deze review definitief verwijderen?",
+      "guest": "Gast",
+      "empty": "Geen reviews gevonden."
     },
     "greeting": "Hallo, {name}",
     "greetingSubtitle": "Volg je AI-tools, campagnes en bestellingen op één plek."

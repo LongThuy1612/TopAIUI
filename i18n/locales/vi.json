@@ -267,6 +267,30 @@
       "saved": "Đã lưu thay đổi.",
       "create": "Tạo người dùng",
       "loadError": "Không tải được người dùng này."
+    },
+    "reviews": {
+      "title": "Quản lý đánh giá",
+      "total": "Tổng số đánh giá: {n}",
+      "pendingBadge": "{n} chờ duyệt",
+      "searchPlaceholder": "Tìm theo tool, người dùng hoặc nội dung...",
+      "statusAll": "Tất cả trạng thái",
+      "statuses": {
+        "PENDING": "Chờ duyệt",
+        "APPROVED": "Đã duyệt",
+        "REJECTED": "Từ chối"
+      },
+      "colTool": "Tool",
+      "colAuthor": "Người viết",
+      "colReview": "Đánh giá",
+      "colStatus": "Trạng thái",
+      "colCreated": "Ngày tạo",
+      "colActions": "Thao tác",
+      "approve": "Duyệt",
+      "reject": "Từ chối",
+      "delete": "Xóa",
+      "deleteConfirm": "Xóa vĩnh viễn đánh giá này?",
+      "guest": "Khách",
+      "empty": "Không có đánh giá nào."
     }
   },
   "hero": {
@@ -455,7 +479,12 @@
     "keywordType": "Loại",
     "keywordOrganic": "Tự nhiên",
     "keywordPaid": "Trả phí",
-    "mobileApps": "Ứng dụng di động"
+    "mobileApps": "Ứng dụng di động",
+    "submittingReview": "Đang gửi...",
+    "reviewPendingNotice": "Cảm ơn bạn! Đánh giá đã được gửi và sẽ hiển thị sau khi được duyệt.",
+    "reviewAlreadySubmitted": "Bạn đã đánh giá công cụ này rồi.",
+    "reviewSubmitError": "Không gửi được đánh giá. Vui lòng thử lại.",
+    "reviewSessionExpired": "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại để gửi đánh giá."
   },
   "archive": {
     "title": "Top 1000 công cụ AI",

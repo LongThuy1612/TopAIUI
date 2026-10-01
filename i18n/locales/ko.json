@@ -204,7 +204,14 @@
     "keywordType": "유형",
     "keywordOrganic": "자연",
     "keywordPaid": "유료",
-    "mobileApps": "모바일 앱"
+    "mobileApps": "모바일 앱",
+    "loginToReview": "로그인하고 리뷰 작성",
+    "submitReview": "리뷰 제출",
+    "submittingReview": "제출 중...",
+    "reviewPendingNotice": "감사합니다! 리뷰가 제출되었으며 승인 후 표시됩니다.",
+    "reviewAlreadySubmitted": "이미 이 도구에 리뷰를 작성했습니다.",
+    "reviewSubmitError": "리뷰를 제출하지 못했습니다. 다시 시도해 주세요.",
+    "reviewSessionExpired": "세션이 만료되었습니다. 다시 로그인한 후 리뷰를 제출해 주세요."
   },
   "footer": {
     "tagline": "최고의 AI 도구를 발견하고, 비교하고, 공유하세요 — Nuxt & PostgreSQL로 구축.",
@@ -399,6 +406,30 @@
       "saved": "변경 사항이 저장되었습니다.",
       "create": "사용자 만들기",
       "loadError": "이 사용자를 불러올 수 없습니다."
+    },
+    "reviews": {
+      "title": "리뷰 관리",
+      "total": "전체 리뷰: {n}",
+      "pendingBadge": "승인 대기 {n}건",
+      "searchPlaceholder": "도구, 사용자 또는 내용으로 검색...",
+      "statusAll": "모든 상태",
+      "statuses": {
+        "PENDING": "승인 대기",
+        "APPROVED": "승인됨",
+        "REJECTED": "거절됨"
+      },
+      "colTool": "도구",
+      "colAuthor": "작성자",
+      "colReview": "리뷰",
+      "colStatus": "상태",
+      "colCreated": "생성일",
+      "colActions": "작업",
+      "approve": "승인",
+      "reject": "거절",
+      "delete": "삭제",
+      "deleteConfirm": "이 리뷰를 영구적으로 삭제하시겠습니까?",
+      "guest": "게스트",
+      "empty": "리뷰를 찾을 수 없습니다."
     }
   },
   "socialListening": {

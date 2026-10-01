@@ -178,7 +178,14 @@
     "keywordType": "النوع",
     "keywordOrganic": "عضوي",
     "keywordPaid": "مدفوع",
-    "mobileApps": "تطبيقات الجوال"
+    "mobileApps": "تطبيقات الجوال",
+    "loginToReview": "سجّل الدخول للتقييم",
+    "submitReview": "إرسال التقييم",
+    "submittingReview": "جارٍ الإرسال...",
+    "reviewPendingNotice": "شكرًا! تم إرسال تقييمك وسيظهر بعد الموافقة عليه.",
+    "reviewAlreadySubmitted": "لقد قيّمت هذه الأداة بالفعل.",
+    "reviewSubmitError": "تعذّر إرسال تقييمك. يرجى المحاولة مرة أخرى.",
+    "reviewSessionExpired": "انتهت صلاحية الجلسة. يرجى تسجيل الدخول مرة أخرى لإرسال تقييمك."
   },
   "footer": {
     "tagline": "اكتشف وقارن وشارك أفضل أدوات الذكاء الاصطناعي — مبني باستخدام Nuxt وPostgreSQL.",
@@ -618,6 +625,30 @@
       "saved": "تم حفظ التغييرات.",
       "create": "إنشاء مستخدم",
       "loadError": "تعذر تحميل هذا المستخدم."
+    },
+    "reviews": {
+      "title": "إدارة التقييمات",
+      "total": "إجمالي التقييمات: {n}",
+      "pendingBadge": "{n} قيد المراجعة",
+      "searchPlaceholder": "ابحث بالأداة أو المستخدم أو المحتوى...",
+      "statusAll": "كل الحالات",
+      "statuses": {
+        "PENDING": "قيد المراجعة",
+        "APPROVED": "مقبول",
+        "REJECTED": "مرفوض"
+      },
+      "colTool": "الأداة",
+      "colAuthor": "الكاتب",
+      "colReview": "التقييم",
+      "colStatus": "الحالة",
+      "colCreated": "تاريخ الإنشاء",
+      "colActions": "الإجراءات",
+      "approve": "قبول",
+      "reject": "رفض",
+      "delete": "حذف",
+      "deleteConfirm": "هل تريد حذف هذا التقييم نهائيًا؟",
+      "guest": "زائر",
+      "empty": "لم يتم العثور على تقييمات."
     },
     "greeting": "مرحبًا، {name}",
     "greetingSubtitle": "تابع أدوات الذكاء الاصطناعي وحملاتك وطلباتك في مكان واحد."

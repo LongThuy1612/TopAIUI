@@ -204,7 +204,14 @@
     "keywordType": "種類",
     "keywordOrganic": "オーガニック",
     "keywordPaid": "有料",
-    "mobileApps": "モバイルアプリ"
+    "mobileApps": "モバイルアプリ",
+    "loginToReview": "ログインしてレビュー",
+    "submitReview": "レビューを送信",
+    "submittingReview": "送信中...",
+    "reviewPendingNotice": "ありがとうございます！レビューを送信しました。承認後に表示されます。",
+    "reviewAlreadySubmitted": "このツールはすでにレビュー済みです。",
+    "reviewSubmitError": "レビューを送信できませんでした。もう一度お試しください。",
+    "reviewSessionExpired": "セッションの有効期限が切れました。もう一度ログインしてレビューを送信してください。"
   },
   "footer": {
     "tagline": "最高のAIツールを見つけて、比較して、共有しよう — Nuxt と PostgreSQL で構築。",
@@ -399,6 +406,30 @@
       "saved": "変更を保存しました。",
       "create": "ユーザーを作成",
       "loadError": "このユーザーを読み込めませんでした。"
+    },
+    "reviews": {
+      "title": "レビュー管理",
+      "total": "レビュー数：{n}",
+      "pendingBadge": "承認待ち {n} 件",
+      "searchPlaceholder": "ツール、ユーザー、内容で検索...",
+      "statusAll": "すべての状態",
+      "statuses": {
+        "PENDING": "承認待ち",
+        "APPROVED": "承認済み",
+        "REJECTED": "却下"
+      },
+      "colTool": "ツール",
+      "colAuthor": "投稿者",
+      "colReview": "レビュー",
+      "colStatus": "状態",
+      "colCreated": "作成日",
+      "colActions": "操作",
+      "approve": "承認",
+      "reject": "却下",
+      "delete": "削除",
+      "deleteConfirm": "このレビューを完全に削除しますか？",
+      "guest": "ゲスト",
+      "empty": "レビューが見つかりません。"
     }
   },
   "socialListening": {

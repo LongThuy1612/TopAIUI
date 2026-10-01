@@ -10,6 +10,7 @@ const accountSubtitle = computed(() => (isAdmin.value ? t('admin.badge') : user.
 // Admin sections and their sub-pages (/admin/tools/new, /admin/users/:id…).
 const onToolsPage = computed(() => route.path.startsWith('/admin/tools'))
 const onUsersPage = computed(() => route.path.startsWith('/admin/users'))
+const onReviewsPage = computed(() => route.path.startsWith('/admin/reviews'))
 
 function confirmLogout() {
   if (!confirm(t('admin.logoutConfirm'))) return
@@ -72,6 +73,17 @@ const businessItems = computed(() => [
         <path stroke-linecap="round" stroke-linejoin="round" d="M16 19v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1m20 0v-1a4 4 0 0 0-3-3.87M15 3.13a4 4 0 0 1 0 7.75M13 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
       </svg>
       {{ t('admin.users.title') }}
+    </NuxtLink>
+
+    <NuxtLink
+      v-if="isAdmin"
+      to="/admin/reviews"
+      :class="['-mt-5 flex items-center gap-2.5 rounded-lg px-3 py-2 text-base font-bold', onReviewsPage ? 'bg-brand-50 text-brand-600' : 'text-ink-700 hover:bg-ink-100/60']"
+    >
+      <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z" />
+      </svg>
+      {{ t('admin.reviews.title') }}
     </NuxtLink>
 
     <div>
