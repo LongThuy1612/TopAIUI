@@ -4,8 +4,8 @@ import type { Category, ToolsResponse } from '~/types'
 const { t, locale } = useI18n()
 
 const [{ data: newRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, newToday: 'true', locale: locale.value })) }),
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 20, today: 'true', locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 5, newToday: 'true', locale: locale.value })) }),
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 15, today: 'true', locale: locale.value })) }),
   useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 200, locale: locale.value })) })
 ])
@@ -17,10 +17,11 @@ const allCategories = computed(() => categories.value ?? [])
 const browseCategories = computed(() =>
   [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
 )
-const justLaunched = computed(() => newTools.value.slice(0, 4))
+// First 5 tools of the /new page (same query and order).
+const justLaunched = computed(() => newTools.value.slice(0, 5))
 const featuredHighlights = computed(() => topRatedRes.value?.items ?? [])
 
-const tabTools = computed(() => todayTools.value.slice(0, 20))
+const tabTools = computed(() => todayTools.value.slice(0, 15))
 
 function initialsOf(name: string) {
   return name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI'
@@ -57,7 +58,7 @@ useSeoMeta({
           <div v-if="!justLaunched.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
             {{ t('empty.noTools') }}
           </div>
-          <NuxtLink to="/today" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
+          <NuxtLink to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
         </aside>
 
         <div class="min-w-0 rounded-[18px] border border-ink-200 bg-white pt-[22px] pr-[26px] pb-[26px] pl-[26px] lg:order-2">
