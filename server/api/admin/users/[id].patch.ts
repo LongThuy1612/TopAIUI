@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
     const email = body.email.trim().toLowerCase()
     if (!EMAIL_RE.test(email)) throw badRequest('Invalid email address')
     if (email !== target.email) {
-      if (await prisma.user.findUnique({ where: { email } })) {
+      if (await isEmailTaken(email, target.id)) {
         throw createError({ statusCode: 409, statusMessage: 'Email already registered', message: 'Email already registered' })
       }
       data.email = email

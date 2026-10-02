@@ -30,7 +30,8 @@
     "registerError": "Algo deu errado. Tente novamente.",
     "passwordMinLength": "Pelo menos 6 caracteres.",
     "invalidCredentials": "E-mail ou senha inválidos.",
-    "accountBanned": "Esta conta foi banida."
+    "accountBanned": "Esta conta foi banida.",
+    "googleEmailInUse": "Este e-mail já está registrado. Entre com seu e-mail e senha."
   },
   "hero": {
     "titlePrefix": "Descubra as melhores",

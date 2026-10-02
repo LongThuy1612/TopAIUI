@@ -30,7 +30,8 @@
     "registerError": "Terjadi kesalahan. Silakan coba lagi.",
     "passwordMinLength": "Minimal 6 karakter.",
     "invalidCredentials": "Email atau kata sandi salah.",
-    "accountBanned": "Akun ini telah diblokir."
+    "accountBanned": "Akun ini telah diblokir.",
+    "googleEmailInUse": "Email ini sudah terdaftar. Silakan masuk dengan email dan kata sandi Anda."
   },
   "hero": {
     "titlePrefix": "Temukan",

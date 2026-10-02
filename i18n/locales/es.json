@@ -30,7 +30,8 @@
     "registerError": "Algo salió mal. Inténtalo de nuevo.",
     "passwordMinLength": "Al menos 6 caracteres.",
     "invalidCredentials": "Correo electrónico o contraseña incorrectos.",
-    "accountBanned": "Esta cuenta ha sido bloqueada."
+    "accountBanned": "Esta cuenta ha sido bloqueada.",
+    "googleEmailInUse": "Este correo ya está registrado. Inicia sesión con tu correo y contraseña."
   },
   "hero": {
     "titlePrefix": "Descubre las mejores",

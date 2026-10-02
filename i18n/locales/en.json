@@ -36,7 +36,8 @@
     "registerError": "Something went wrong. Please try again.",
     "passwordMinLength": "At least 6 characters.",
     "invalidCredentials": "Invalid email or password.",
-    "accountBanned": "This account has been banned."
+    "accountBanned": "This account has been banned.",
+    "googleEmailInUse": "This email is already registered. Please sign in with your email and password."
   },
   "productsMenu": {
     "newTitle": "New AIs",

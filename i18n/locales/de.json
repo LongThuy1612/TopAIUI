@@ -30,7 +30,8 @@
     "registerError": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
     "passwordMinLength": "Mindestens 6 Zeichen.",
     "invalidCredentials": "Ungültige E-Mail-Adresse oder Passwort.",
-    "accountBanned": "Dieses Konto wurde gesperrt."
+    "accountBanned": "Dieses Konto wurde gesperrt.",
+    "googleEmailInUse": "Diese E-Mail ist bereits registriert. Bitte melde dich mit E-Mail und Passwort an."
   },
   "hero": {
     "titlePrefix": "Entdecke die besten",

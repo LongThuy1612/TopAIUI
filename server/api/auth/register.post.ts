@@ -13,8 +13,8 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Password must be at least 6 characters' })
   }
 
-  const existing = await prisma.user.findUnique({ where: { email } })
-  if (existing) {
+  // Also catches the same Gmail inbox written differently (a.b@ vs ab@gmail.com).
+  if (await isEmailTaken(email)) {
     throw createError({ statusCode: 409, statusMessage: 'Email already registered' })
   }
 

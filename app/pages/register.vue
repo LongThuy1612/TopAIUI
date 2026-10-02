@@ -36,6 +36,15 @@ async function submit() {
   }
 }
 
+// Hidden too when Google's script is blocked, so the divider doesn't dangle.
+const googleEnabled = ref(!!useRuntimeConfig().public.googleClientId)
+
+function onGoogleError(statusCode: number | undefined) {
+  error.value = statusCode === 403
+    ? t('auth.accountBanned')
+    : statusCode === 409 ? t('auth.googleEmailInUse') : t('auth.registerError')
+}
+
 useSeoMeta({ title: () => `${t('auth.signUpTitle')} — TopAICollection` })
 </script>
 
@@ -49,6 +58,21 @@ useSeoMeta({ title: () => `${t('auth.signUpTitle')} — TopAICollection` })
     <h1 class="mt-8 text-2xl font-extrabold text-ink-900">{{ t('auth.signUpTitle') }}</h1>
 
     <div class="mt-8 w-full">
+      <template v-if="googleEnabled">
+        <GoogleSignInButton
+          text="signup_with"
+          @signed-in="navigateTo(redirect)"
+          @error="onGoogleError"
+          @unavailable="googleEnabled = false"
+        />
+
+        <div class="my-5 flex items-center gap-3">
+          <div class="h-px flex-1 bg-ink-200"></div>
+          <span class="text-xs font-medium text-ink-500">{{ t('auth.orContinueWith') }}</span>
+          <div class="h-px flex-1 bg-ink-200"></div>
+        </div>
+      </template>
+
       <form class="space-y-4" @submit.prevent="submit">
         <div>
           <label class="mb-1.5 block text-sm font-semibold text-ink-900">

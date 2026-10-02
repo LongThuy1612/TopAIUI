@@ -274,6 +274,9 @@ model User {
   isBanned                 Boolean   @default(false)
   deletedAt                DateTime?
   hasSetPassword           Boolean   @default(false)
+  // Google account "sub" — set on first Google sign-in (new or linked by email).
+  googleId                 String?   @unique
+  avatarUrl                String?
 
   reviews       Review[]
   promoteOrders PromoteOrder[]

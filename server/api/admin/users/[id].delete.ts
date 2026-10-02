@@ -1,5 +1,6 @@
 // Delete a user. Soft delete — their orders and reviews stay for accounting —
-// and the email is released so the address can register again.
+// and the email (and linked Google account) is released so the address can
+// register again.
 export default defineEventHandler(async (event) => {
   const me = await requireRole(event, ['ADMIN'])
   const id = getRouterParam(event, 'id')!
@@ -19,6 +20,7 @@ export default defineEventHandler(async (event) => {
       isBanned: true,
       email: `deleted-${Date.now()}-${target.email}`,
       password: null,
+      googleId: null,
       passwordResetToken: null,
       verificationToken: null
     }

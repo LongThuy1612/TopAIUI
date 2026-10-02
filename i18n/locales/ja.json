@@ -30,7 +30,8 @@
     "registerError": "問題が発生しました。もう一度お試しください。",
     "passwordMinLength": "6文字以上で入力してください。",
     "invalidCredentials": "メールアドレスまたはパスワードが正しくありません。",
-    "accountBanned": "このアカウントは停止されています。"
+    "accountBanned": "このアカウントは停止されています。",
+    "googleEmailInUse": "このメールアドレスは既に登録されています。メールアドレスとパスワードでログインしてください。"
   },
   "hero": {
     "titlePrefix": "最高の",

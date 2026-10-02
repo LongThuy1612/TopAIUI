@@ -30,7 +30,8 @@
     "registerError": "Une erreur s'est produite. Veuillez réessayer.",
     "passwordMinLength": "Au moins 6 caractères.",
     "invalidCredentials": "E-mail ou mot de passe invalide.",
-    "accountBanned": "Ce compte a été banni."
+    "accountBanned": "Ce compte a été banni.",
+    "googleEmailInUse": "Cet e-mail est déjà enregistré. Veuillez vous connecter avec votre e-mail et votre mot de passe."
   },
   "hero": {
     "titlePrefix": "Découvrez les meilleurs",

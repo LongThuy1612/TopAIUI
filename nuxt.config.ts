@@ -87,7 +87,11 @@ export default defineNuxtConfig({
     // Override at runtime with NUXT_FAKE_PAYMENT.
     fakePayment: process.env.FAKE_PAYMENT === 'true',
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+      // OAuth Web client ID for "Sign in with Google" (not a secret). Also
+      // used server-side as the expected ID-token audience.
+      // Override at runtime with NUXT_PUBLIC_GOOGLE_CLIENT_ID.
+      googleClientId: process.env.GOOGLE_CLIENT_ID || ''
     }
   },
 

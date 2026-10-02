@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
   if (!EMAIL_RE.test(email)) throw badRequest('Invalid email address')
   if (password.length < 6) throw badRequest('Password must be at least 6 characters')
 
-  if (await prisma.user.findUnique({ where: { email } })) {
+  if (await isEmailTaken(email)) {
     throw createError({ statusCode: 409, statusMessage: 'Email already registered', message: 'Email already registered' })
   }
 

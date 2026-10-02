@@ -36,7 +36,8 @@
     "registerError": "Đã xảy ra lỗi. Vui lòng thử lại.",
     "passwordMinLength": "Tối thiểu 6 ký tự.",
     "invalidCredentials": "Email hoặc mật khẩu không đúng.",
-    "accountBanned": "Tài khoản này đã bị khóa."
+    "accountBanned": "Tài khoản này đã bị khóa.",
+    "googleEmailInUse": "Email này đã được đăng ký. Vui lòng đăng nhập bằng email và mật khẩu."
   },
   "productsMenu": {
     "newTitle": "AI mới",

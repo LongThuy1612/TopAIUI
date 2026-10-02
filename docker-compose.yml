@@ -39,6 +39,8 @@ services:
       NUXT_STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
       # Public URL of the site — Stripe sends customers back here after paying.
       NUXT_PUBLIC_SITE_URL: ${NUXT_PUBLIC_SITE_URL:-http://localhost:3000}
+      # Sign in with Google (OAuth Web client ID). Empty = Google button hidden.
+      NUXT_PUBLIC_GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
     volumes:
       # Uploaded tool logos / screenshots (nitro storage "uploads", ./.data/uploads).
       - uploads_data:/app/.data/uploads
