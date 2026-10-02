@@ -446,7 +446,12 @@
     "regionsTitle": "Top công cụ AI theo khu vực",
     "sourceTitle": "Top công cụ AI theo nguồn",
     "revenueTitle": "Top công cụ AI theo doanh thu",
-    "noSelection": "Chọn một mục ở trên để xem bảng xếp hạng."
+    "noSelection": "Chọn một mục ở trên để xem bảng xếp hạng.",
+    "dataMonth": "Dữ liệu lưu lượng: {month}.",
+    "colVisitsFrom": "Lượt truy cập từ {name}",
+    "growthNote": "Tăng trưởng chỉ xếp hạng các công cụ có ít nhất {min} lượt truy cập ở tháng so sánh.",
+    "loadMore": "Xem thêm",
+    "loading": "Đang tải…"
   },
   "tool": {
     "openSite": "Mở trang web",

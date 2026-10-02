@@ -146,6 +146,9 @@ export default defineNuxtConfig({
     '/admin/payment-invoice': { redirect: '/dashboard/payment-invoice' },
     '/admin/feedback': { redirect: '/dashboard/feedback' },
 
+    // Revenue ranking is hidden until there is revenue data to rank by.
+    '/ranking/revenue': { redirect: '/ranking' },
+
     // API — data endpoints stay dynamic; admin API additionally is not CORS-open
     '/api/admin/**': { cors: false, headers: { 'Cache-Control': 'no-store' } },
     '/api/me/**': { headers: { 'Cache-Control': 'no-store' } },

@@ -1,39 +1,22 @@
 <script setup lang="ts">
-import type { ToolsResponse } from '~/types'
-
 const { t, locale } = useI18n()
+const route = useRoute()
 
-const periods = ['growth1m', 'growth3m', 'growth6m', 'traffic'] as const
-type Period = (typeof periods)[number]
-const periodLabels: Record<Period, string> = {
-  growth1m: 'ranking.byGrowth1m',
-  growth3m: 'ranking.byGrowth3m',
-  growth6m: 'ranking.byGrowth6m',
-  traffic: 'ranking.byTraffic'
-}
-const periodGrowthField: Record<Period, 'last1MonthGrowth' | 'last3MonthGrowth' | 'last6MonthGrowth' | null> = {
-  growth1m: 'last1MonthGrowth',
-  growth3m: 'last3MonthGrowth',
-  growth6m: 'last6MonthGrowth',
-  traffic: null
-}
+const sorts = [
+  { value: 'growth1m', label: 'ranking.byGrowth1m' },
+  { value: 'growth3m', label: 'ranking.byGrowth3m' },
+  { value: 'growth6m', label: 'ranking.byGrowth6m' },
+  { value: 'traffic', label: 'ranking.byTraffic' }
+] as const
 
-const activePeriod = ref<Period>('growth1m')
+const sort = computed(() => sorts.find(s => s.value === route.query.sort)?.value ?? 'growth1m')
+// Sorting by visits still shows the 1-month change next to them.
+const growthLabel = computed(() => t(sorts.find(s => s.value === sort.value && s.value !== 'traffic')?.label ?? 'ranking.byGrowth1m'))
 
-const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
-  query: computed(() => ({ sort: activePeriod.value, limit: 300, locale: locale.value }))
-})
+const { data, items, pending, hasMore, loadingMore, loadMore } = await useRanking(() => ({ sort: sort.value }))
 
-const tools = computed(() => toolsRes.value?.items ?? [])
-
-const monthLabel = computed(() => new Date().toLocaleDateString(undefined, { month: 'long', year: 'numeric' }))
-
-const showMetricColumn = computed(() => periodGrowthField[activePeriod.value] !== null)
-const metricLabel = computed(() => (showMetricColumn.value ? t('ranking.colGrowth') : undefined))
-
-function metricValue(tool: { last1MonthGrowth: number; last3MonthGrowth: number; last6MonthGrowth: number }) {
-  const field = periodGrowthField[activePeriod.value]
-  return field ? tool[field] : null
+function select(value: string) {
+  navigateTo({ query: { ...route.query, sort: value } }, { replace: true })
 }
 
 useSeoMeta({
@@ -43,33 +26,9 @@ useSeoMeta({
 
 <template>
   <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
-    <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
-      <span>›</span>
-      <span class="text-ink-600">{{ t('header.rankings') }}</span>
-    </nav>
-
-    <div class="mt-3">
-      <h1 class="flex items-center gap-2 text-3xl font-extrabold text-ink-900">
-        <span>🏆</span> {{ t('ranking.title') }} — {{ monthLabel }}
-      </h1>
-      <p class="mt-1.5 max-w-2xl text-sm text-ink-500">{{ t('ranking.subtitle') }}</p>
-    </div>
-
-    <div class="mt-6 flex flex-wrap gap-2">
-      <button
-        v-for="p in periods"
-        :key="p"
-        :class="[
-          'rounded-full border px-4 py-1.5 text-sm font-semibold transition',
-          activePeriod === p ? 'border-brand-500 bg-brand-500 text-white' : 'border-ink-200 text-ink-600 hover:border-brand-300'
-        ]"
-        @click="activePeriod = p"
-      >
-        {{ t(periodLabels[p]) }}
-      </button>
-    </div>
-
-    <RankingTable :tools="tools" :metric-label="metricLabel" metric-type="growth" :metric-value="metricValue" />
+    <RankingHeader icon="🏆" :title="t('ranking.title')" :month="data?.month" />
+    <RankingChips :options="sorts.map(s => ({ value: s.value, label: t(s.label) }))" :active="sort" @select="select" />
+    <p v-if="sort !== 'traffic' && data?.minGrowthBase" class="mt-3 text-xs text-ink-400">{{ t('ranking.growthNote', { min: (data?.minGrowthBase ?? 0).toLocaleString(locale) }) }}</p>
+    <RankingTable :items="items" :growth-label="growthLabel" :has-more="hasMore" :loading-more="loadingMore" :loading="pending" @load-more="loadMore" />
   </div>
 </template>

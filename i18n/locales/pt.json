@@ -119,7 +119,12 @@
     "colGrowth": "Crescimento",
     "colAuthority": "Autoridade de domínio",
     "colCategory": "Categoria",
-    "noData": "Ainda não há dados de ranking."
+    "noData": "Ainda não há dados de ranking.",
+    "dataMonth": "Dados de tráfego de {month}.",
+    "colVisitsFrom": "Visitas de {name}",
+    "growthNote": "O crescimento só é classificado para ferramentas com pelo menos {min} visitas no mês de comparação.",
+    "loadMore": "Carregar mais",
+    "loading": "Carregando…"
   },
   "tool": {
     "openSite": "Abrir site",

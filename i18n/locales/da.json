@@ -92,7 +92,12 @@
     "colGrowth": "Vækst",
     "colAuthority": "Domæneautoritet",
     "colCategory": "Kategori",
-    "noData": "Ingen ranglistedata endnu."
+    "noData": "Ingen ranglistedata endnu.",
+    "dataMonth": "Traffic data for {month}.",
+    "colVisitsFrom": "Visits from {name}",
+    "growthNote": "Growth is ranked only for tools with at least {min} visits in the earlier month.",
+    "loadMore": "Load more",
+    "loading": "Loading…"
   },
   "tool": {
     "openSite": "Åbn websted",

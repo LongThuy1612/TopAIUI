@@ -119,7 +119,12 @@
     "colGrowth": "Pertumbuhan",
     "colAuthority": "Otoritas domain",
     "colCategory": "Kategori",
-    "noData": "Belum ada data peringkat."
+    "noData": "Belum ada data peringkat.",
+    "dataMonth": "Data trafik untuk {month}.",
+    "colVisitsFrom": "Kunjungan dari {name}",
+    "growthNote": "Pertumbuhan hanya diperingkat untuk alat dengan minimal {min} kunjungan di bulan pembanding.",
+    "loadMore": "Muat lebih banyak",
+    "loading": "Memuat…"
   },
   "tool": {
     "openSite": "Buka situs",

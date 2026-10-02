@@ -119,7 +119,12 @@
     "colGrowth": "增长",
     "colAuthority": "域名权重",
     "colCategory": "分类",
-    "noData": "暂无排名数据。"
+    "noData": "暂无排名数据。",
+    "dataMonth": "{month} 的流量数据。",
+    "colVisitsFrom": "来自 {name} 的访问量",
+    "growthNote": "仅对对比月份访问量至少 {min} 的工具进行增长排名。",
+    "loadMore": "加载更多",
+    "loading": "加载中…"
   },
   "tool": {
     "openSite": "访问网站",

@@ -16,11 +16,6 @@ export interface TagRef {
   name: string
 }
 
-export interface MetaOption {
-  value: string
-  count: number
-}
-
 export interface ToolTranslationEntry {
   locale: string
   shortDesc: string | null
@@ -244,4 +239,37 @@ export interface ToolUpdateRequest {
   rejectionReason?: string | null
   submittedAt?: string | null
   reviewedAt?: string | null
+}
+
+export interface RankingItem {
+  rank: number
+  slug: string
+  name: string
+  logoUrl: string | null
+  visits: number
+  /** Percent change for the selected period (1-month unless sorting by 3/6-month growth). */
+  growth: number | null
+  /** Visits from the selected country/source (equals visits otherwise). */
+  score: number
+  /** Share 0-100 of the selected country/source, null without one. */
+  share: number | null
+  categories: { slug: string; name: string }[]
+}
+
+export interface RankingResponse {
+  /** Month the traffic data is for, YYYY-MM. */
+  month: string | null
+  /** Growth is only ranked for tools with at least this many visits in the base month. */
+  minGrowthBase: number
+  items: RankingItem[]
+  total: number
+  page: number
+  pageCount: number
+}
+
+export interface RankingFilters {
+  month: string | null
+  categories: { slug: string; name: string; count: number }[]
+  countries: { code: string; count: number }[]
+  sources: { name: string; count: number }[]
 }

@@ -92,7 +92,12 @@
     "colGrowth": "การเติบโต",
     "colAuthority": "ความน่าเชื่อถือของโดเมน",
     "colCategory": "หมวดหมู่",
-    "noData": "ยังไม่มีข้อมูลการจัดอันดับ"
+    "noData": "ยังไม่มีข้อมูลการจัดอันดับ",
+    "dataMonth": "Traffic data for {month}.",
+    "colVisitsFrom": "Visits from {name}",
+    "growthNote": "Growth is ranked only for tools with at least {min} visits in the earlier month.",
+    "loadMore": "Load more",
+    "loading": "Loading…"
   },
   "tool": {
     "openSite": "เปิดเว็บไซต์",

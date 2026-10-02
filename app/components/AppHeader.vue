@@ -218,12 +218,6 @@ const rankingItems = [
     icon: 'M4 13h3v7H4v-7Zm6.5-5h3v12h-3V8Zm6.5 8h3v4h-3v-4Z',
     titleKey: 'rankingMenu.sourceTitle',
     descKey: 'rankingMenu.sourceDesc'
-  },
-  {
-    to: '/ranking/revenue',
-    icon: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm.75 15.5v1h-1.5v-1.02c-1.28-.19-2.32-.9-2.75-2.02l1.4-.58c.28.68.9 1.1 1.85 1.1.86 0 1.4-.36 1.4-.94 0-.6-.5-.83-1.7-1.14-1.6-.4-2.75-.95-2.75-2.45 0-1.16.9-2 2.15-2.24V7.5h1.5v1.2c1.1.2 1.95.85 2.3 1.83l-1.38.58c-.24-.56-.78-.9-1.52-.9-.75 0-1.25.32-1.25.85 0 .54.5.75 1.65 1.05 1.66.43 2.8 1 2.8 2.5 0 1.24-.95 2.15-2.2 2.39Z',
-    titleKey: 'rankingMenu.revenueTitle',
-    descKey: 'rankingMenu.revenueDesc'
   }
 ]
 </script>

@@ -92,7 +92,12 @@
     "colGrowth": "צמיחה",
     "colAuthority": "סמכות דומיין",
     "colCategory": "קטגוריה",
-    "noData": "אין עדיין נתוני דירוג."
+    "noData": "אין עדיין נתוני דירוג.",
+    "dataMonth": "Traffic data for {month}.",
+    "colVisitsFrom": "Visits from {name}",
+    "growthNote": "Growth is ranked only for tools with at least {min} visits in the earlier month.",
+    "loadMore": "Load more",
+    "loading": "Loading…"
   },
   "tool": {
     "openSite": "פתח אתר",

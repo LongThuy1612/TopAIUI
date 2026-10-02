@@ -92,7 +92,12 @@
     "colGrowth": "النمو",
     "colAuthority": "سلطة النطاق",
     "colCategory": "الفئة",
-    "noData": "لا توجد بيانات تصنيف بعد."
+    "noData": "لا توجد بيانات تصنيف بعد.",
+    "dataMonth": "Traffic data for {month}.",
+    "colVisitsFrom": "Visits from {name}",
+    "growthNote": "Growth is ranked only for tools with at least {min} visits in the earlier month.",
+    "loadMore": "Load more",
+    "loading": "Loading…"
   },
   "tool": {
     "openSite": "فتح الموقع",

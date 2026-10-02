@@ -446,7 +446,12 @@
     "regionsTitle": "Top AI Tools By Region",
     "sourceTitle": "Top AI Tools By Source",
     "revenueTitle": "Top AI Tools By Revenue",
-    "noSelection": "Choose an option above to see the ranking."
+    "noSelection": "Choose an option above to see the ranking.",
+    "dataMonth": "Traffic data for {month}.",
+    "colVisitsFrom": "Visits from {name}",
+    "growthNote": "Growth is ranked only for tools with at least {min} visits in the earlier month.",
+    "loadMore": "Load more",
+    "loading": "Loading…"
   },
   "socialListening": {
     "title": "Social Listening",
