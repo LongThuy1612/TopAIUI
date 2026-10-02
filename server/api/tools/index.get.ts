@@ -82,6 +82,10 @@ export default defineCachedEventHandler(async (event) => {
       const translation = pickByLocale(translations, locale)
       return {
         ...tool,
+        icon: resolveToolImage(tool.icon, tool.website),
+        logoUrl: resolveToolImage(tool.logoUrl, tool.website),
+        screenshotUrl: resolveToolImage(tool.screenshotUrl, tool.website),
+        images: resolveToolImages(tool.images, tool.website),
         shortDesc: cleanText(translation?.shortDesc),
         description: cleanText(translation?.description),
         categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug })),

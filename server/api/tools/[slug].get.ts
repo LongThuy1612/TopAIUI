@@ -84,6 +84,10 @@ export default defineCachedEventHandler(async (event) => {
 
   return {
     ...rest,
+    icon: resolveToolImage(rest.icon, rest.website),
+    logoUrl: resolveToolImage(rest.logoUrl, rest.website),
+    screenshotUrl: resolveToolImage(rest.screenshotUrl, rest.website),
+    images: resolveToolImages(rest.images, rest.website),
     shortDesc: cleanText(translation?.shortDesc),
     description: cleanText(translation?.description),
     whatIs: translation?.whatIs ?? null,

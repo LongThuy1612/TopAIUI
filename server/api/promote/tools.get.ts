@@ -8,8 +8,8 @@ export default defineEventHandler(async (event) => {
     where: { status: 'PUBLISHED', deletedAt: null, name: { contains: q, mode: 'insensitive' } },
     orderBy: { name: 'asc' },
     take: 10,
-    select: { id: true, name: true, slug: true, logoUrl: true, icon: true }
+    select: { id: true, name: true, slug: true, logoUrl: true, icon: true, website: true }
   })
 
-  return tools.map(t => ({ id: t.id, name: t.name, slug: t.slug, logo: t.logoUrl || t.icon || undefined }))
+  return tools.map(t => ({ id: t.id, name: t.name, slug: t.slug, logo: resolveToolImage(t.logoUrl, t.website) || resolveToolImage(t.icon, t.website) || undefined }))
 })
