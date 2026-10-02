@@ -1,6 +1,11 @@
 import type { Prisma } from '@prisma/client'
 
-export default defineEventHandler(async (event) => {
+// Public, identical for every visitor, and hit by every page (app.vue, hero,
+// lists) — so it's cached in memory per full URL (path + query). The page HTML
+// cache in nuxt.config.ts only helps full page loads; client-side navigation
+// calls this API directly. Free-text search (?q=) skips the cache so arbitrary
+// queries can't fill it up. Off in dev so DB edits show up immediately.
+export default defineCachedEventHandler(async (event) => {
   const query = getQuery(event)
   const page = Math.max(1, Number(query.page) || 1)
   const limit = Math.min(300, Number(query.limit) || 24)
@@ -87,4 +92,9 @@ export default defineEventHandler(async (event) => {
     page,
     pageCount: Math.ceil(total / limit)
   }
+}, {
+  name: 'api-tools',
+  maxAge: 60,
+  swr: true,
+  shouldBypassCache: (event) => import.meta.dev || !!getQuery(event).q
 })

@@ -1,9 +1,12 @@
-export default defineEventHandler(async (event) => {
+// Cached like the /tools/** page it feeds (see nuxt.config.ts routeRules), so
+// client-side navigation to a tool doesn't hit the database every time either.
+export default defineCachedEventHandler(async (event) => {
   const slug = getRouterParam(event, 'slug')
   const query = getQuery(event)
   const locale = String(query.locale ?? 'en')
 
-  const tool = await prisma.tool.findFirst({
+  // Analytics are keyed by slug, so both queries can run at once.
+  const [tool, analyticsRow] = await Promise.all([prisma.tool.findFirst({
     where: { slug, status: 'PUBLISHED', deletedAt: null },
     select: {
       id: true,
@@ -62,21 +65,19 @@ export default defineEventHandler(async (event) => {
         select: { locale: true, question: true, answer: true }
       }
     }
-  })
-
-  if (!tool) {
-    throw createError({ statusCode: 404, statusMessage: `Tool "${slug}" not found` })
-  }
-
-  const analyticsRow = await prisma.toolAnalyticsData.findUnique({
-    where: { toolSlug: tool.slug },
+  }), prisma.toolAnalyticsData.findUnique({
+    where: { toolSlug: slug },
     select: {
       monthlyVisits: true, trafficVisits: true, trafficSources: true, engagement: true, growthMetrics: true,
       organicKeywords: true, paidKeywords: true, geography: true, globalRanking: true, highestTrafficCountry: true,
       highestTrafficCountryRanking: true, category: true, categoryRanking: true, relatedApps: true,
       yearFounded: true, employeeRange: true
     }
-  })
+  })])
+
+  if (!tool) {
+    throw createError({ statusCode: 404, statusMessage: `Tool "${slug}" not found` })
+  }
 
   const { translations, pricingPlans, categories, tags, faqs, ...rest } = tool
   const translation = pickByLocale(translations, locale)
@@ -95,7 +96,7 @@ export default defineEventHandler(async (event) => {
     tags: tags.map((tg) => ({ slug: tg.slug, name: cleanText(pickByLocale(tg.translations, locale)?.name) ?? tg.slug })),
     analytics: normalizeAnalytics(analyticsRow)
   }
-})
+}, { name: 'api-tool', maxAge: 300, swr: true, shouldBypassCache: () => import.meta.dev })
 
 type AnalyticsRow = {
   monthlyVisits: number | null

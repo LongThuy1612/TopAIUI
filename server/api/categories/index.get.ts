@@ -1,4 +1,6 @@
-export default defineEventHandler(async (event) => {
+// Counts published tools per category on every call and is fetched by nearly
+// every page (hero, footer), so it's cached; counts can lag a few minutes.
+export default defineCachedEventHandler(async (event) => {
   const query = getQuery(event)
   const locale = String(query.locale ?? 'en')
 
@@ -30,4 +32,4 @@ export default defineEventHandler(async (event) => {
       count: c._count.tools
     }
   })
-})
+}, { name: 'api-categories', maxAge: 300, swr: true, shouldBypassCache: () => import.meta.dev })

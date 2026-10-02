@@ -1,4 +1,6 @@
-export default defineEventHandler(async (event) => {
+// New reviews start PENDING, so a short cache never hides a just-posted one;
+// approvals show up within a minute.
+export default defineCachedEventHandler(async (event) => {
   const slug = getRouterParam(event, 'slug')
   const query = getQuery(event)
   const page = Math.max(1, Number(query.page) || 1)
@@ -27,4 +29,4 @@ export default defineEventHandler(async (event) => {
     page,
     pageCount: Math.max(1, Math.ceil(total / limit))
   }
-})
+}, { name: 'api-tool-reviews', maxAge: 60, swr: true, shouldBypassCache: () => import.meta.dev })

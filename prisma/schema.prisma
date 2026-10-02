@@ -133,7 +133,11 @@ model Tool {
   updateRequests ToolUpdateRequest[]
 
   @@index([status])
-  @@index([addedOn])
+  // /new, /today, home "new" list: ORDER BY addedOn DESC NULLS LAST, id ASC.
+  // The migration creates it as ("addedOn" DESC NULLS LAST, id) so Postgres
+  // reads the first page straight off the index instead of sorting every tool.
+  @@index([addedOn(sort: Desc), id])
+  @@index([createdAt])
   @@index([aiSync])
   @@map("Tool")
 }
@@ -167,6 +171,7 @@ model Faq {
 
   tool Tool @relation(fields: [toolId], references: [id])
 
+  @@index([toolId, locale])
   @@map("Faq")
 }
 
@@ -178,6 +183,7 @@ model Feature {
 
   tool Tool @relation(fields: [toolId], references: [id])
 
+  @@index([toolId])
   @@map("Feature")
 }
 
@@ -192,6 +198,7 @@ model PricingPlan {
 
   tool Tool @relation(fields: [toolId], references: [id])
 
+  @@index([toolId, locale])
   @@map("PricingPlan")
 }
 
@@ -211,6 +218,7 @@ model Review {
   tool Tool  @relation(fields: [toolId], references: [id])
   user User? @relation(fields: [userId], references: [id])
 
+  @@index([toolId, status, createdAt])
   @@map("Review")
 }
 

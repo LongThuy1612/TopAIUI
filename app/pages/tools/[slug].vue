@@ -5,9 +5,15 @@ const { t, te, locale } = useI18n()
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 
-const { data: tool, error } = await useFetch<Tool>(() => `/api/tools/${slug.value}`, {
-  query: computed(() => ({ locale: locale.value }))
-})
+// Tool and its first page of reviews don't depend on each other — fetch both at once.
+const [{ data: tool, error }, { data: reviewsRes }] = await Promise.all([
+  useFetch<Tool>(() => `/api/tools/${slug.value}`, {
+    query: computed(() => ({ locale: locale.value }))
+  }),
+  useFetch<ReviewsResponse>(() => `/api/tools/${slug.value}/reviews`, {
+    query: { page: 1, limit: 10, sort: 'newest' }
+  })
+])
 
 if (error.value) {
   throw createError({ statusCode: 404, statusMessage: 'Tool not found' })
@@ -77,8 +83,11 @@ function onDragEnd(e: PointerEvent) {
   setTimeout(() => { snapDisabled.value = false }, 500)
 }
 
-const { data: alternativesRes } = await useFetch<ToolsResponse>('/api/tools', {
-  query: computed(() => ({ category: category.value?.slug, limit: 6, locale: locale.value }))
+// Below the fold: still server-rendered, but lazy so client-side navigation
+// shows the tool without waiting for this list.
+const { data: alternativesRes } = useFetch<ToolsResponse>('/api/tools', {
+  query: computed(() => ({ category: category.value?.slug, limit: 6, locale: locale.value })),
+  lazy: true
 })
 const alternatives = computed(() => (alternativesRes.value?.items ?? []).filter(item => item.slug !== slug.value))
 
@@ -88,9 +97,6 @@ const reviewsSort = ref<'newest' | 'oldest'>('newest')
 const reviewsPage = ref(1)
 const reviewsLoading = ref(false)
 
-const { data: reviewsRes } = await useFetch<ReviewsResponse>(() => `/api/tools/${slug.value}/reviews`, {
-  query: { page: 1, limit: 10, sort: 'newest' }
-})
 const reviews = ref<Review[]>(reviewsRes.value?.items ?? [])
 const reviewsTotal = ref(reviewsRes.value?.total ?? 0)
 const reviewsHasMore = computed(() => reviews.value.length < reviewsTotal.value)
