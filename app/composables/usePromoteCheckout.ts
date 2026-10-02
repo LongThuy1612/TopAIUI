@@ -1,5 +1,6 @@
 // Gửi đơn hàng của các trang promote tới API.
-// Server trả về { orderId, checkoutUrl? } — nếu có checkoutUrl thì chuyển sang cổng thanh toán.
+// Server trả về { orderId, checkoutUrl?, redirect? } — nếu có checkoutUrl thì chuyển sang cổng thanh toán,
+// còn khi giả lập thanh toán (FAKE_PAYMENT) thì đi tới `redirect`.
 
 export type ToolOption = { id: string | number; name: string; slug?: string; logo?: string }
 
@@ -27,7 +28,7 @@ export function usePromoteCheckout() {
     loading.value = true
     error.value = null
     try {
-      const res = await $fetch<{ orderId: string; checkoutUrl?: string }>('/api/promote/checkout', {
+      const res = await $fetch<{ orderId: string; checkoutUrl?: string; redirect?: string }>('/api/promote/checkout', {
         method: 'POST',
         body: order,
         headers: { 'x-user-token': token.value },
@@ -37,7 +38,7 @@ export function usePromoteCheckout() {
         await navigateTo(res.checkoutUrl, { external: true })
         return
       }
-      await navigateTo(`/orders?new=${res.orderId}`)
+      await navigateTo(res.redirect ?? `/orders?new=${res.orderId}`)
     } catch (e: any) {
       if (e?.statusCode === 401) return goLogin()
       error.value = e?.statusCode === 400 && e?.data?.message ? e.data.message : t('promote.genericError')

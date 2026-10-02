@@ -116,6 +116,12 @@ model Tool {
   region            String?
   source            String?
   monthlyRevenue    Float       @default(0)
+  // User-submitted tools: AI content job for the crawler's sync-user-tool cron.
+  // null = none, 0 = queued, 1 = done, -1 = failed (retried after cooldown), 2 = invalid
+  aiSync            Int?
+  // Failed runs of the current job — the crawler backs off and gives up after a few.
+  // Reset to 0 whenever the site queues the job again.
+  aiSyncAttempts    Int         @default(0)
 
   categories    Category[] @relation("ToolToCategory")
   tags          Tag[] @relation("ToolToTag")
@@ -124,9 +130,11 @@ model Tool {
   features      Feature[]
   pricingPlans  PricingPlan[]
   reviews       Review[]
+  updateRequests ToolUpdateRequest[]
 
   @@index([status])
   @@index([addedOn])
+  @@index([aiSync])
   @@map("Tool")
 }
 
@@ -269,6 +277,7 @@ model User {
 
   reviews       Review[]
   promoteOrders PromoteOrder[]
+  toolUpdateRequests ToolUpdateRequest[]
 
   @@map("User")
 }
@@ -288,10 +297,37 @@ model PromoteOrder {
   status          String    @default("PENDING") // PENDING | PAID | EXPIRED
   createdAt       DateTime  @default(now())
   paidAt          DateTime?
+  toolId          String?   // submit-ai: the Tool created when the order is paid
 
   @@index([userId])
+  @@index([toolId])
   @@index([type, status])
   @@map("PromoteOrder")
+}
+
+// A paid "Update AI" change to a published tool (only its owner can buy one). Created
+// when the order is paid; the owner fills in the new details (stored in `changes`, the
+// live listing is untouched), an admin applies them or rejects — a rejection refunds
+// the order through Stripe. One payment = one update.
+model ToolUpdateRequest {
+  id              String    @id @default(cuid())
+  toolId          String
+  tool            Tool      @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  orderId         String    @unique
+  status          String    @default("DRAFT") // DRAFT | SUBMITTED | APPLIED | REJECTED
+  changes         Json?     // proposed fields: name, logoUrl, images, pricingType, twitterUrl, discordUrl, categorySlugs, content{…}
+  rejectionReason String?
+  refundId        String?
+  submittedAt     DateTime?
+  reviewedAt      DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([toolId, status])
+  @@index([status])
+  @@map("ToolUpdateRequest")
 }
 
 model Collection {

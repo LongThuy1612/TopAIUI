@@ -97,7 +97,7 @@
     "newToolSubtitle": "Tạo một tool mới. Sau khi tạo, các trường thông tin cơ bản sẽ bị khóa — chỉ còn Approved và nội dung bản dịch có thể chỉnh sửa.",
     "slugRequired": "Vui lòng nhập slug.",
     "slugTaken": "Slug này đã được dùng bởi tool khác. Vui lòng chọn slug khác.",
-    "editLockedHint": "Các trường thông tin cơ bản đã bị khóa sau khi tạo. Bạn vẫn có thể bật/tắt Approved và chỉnh nội dung bản dịch.",
+    "editLockedHint": "Các trường thông tin cơ bản đã bị khóa sau khi tạo. Bạn vẫn có thể đổi logo, ảnh chụp màn hình, bật/tắt Approved và chỉnh nội dung bản dịch.",
     "pendingCount": "tool đang chờ duyệt | tool đang chờ duyệt",
     "searchPlaceholder": "Tìm theo tên hoặc slug...",
     "research": "Research",
@@ -291,6 +291,63 @@
       "deleteConfirm": "Xóa vĩnh viễn đánh giá này?",
       "guest": "Khách",
       "empty": "Không có đánh giá nào."
+    },
+    "userSubmission": "User gửi",
+    "waitingUserContent": "Chờ chủ tool điền nội dung",
+    "submission": {
+      "title": "Tool do người dùng gửi",
+      "owner": "Chủ tool",
+      "mode": "Ai viết nội dung",
+      "reason": "Lý do từ chối",
+      "modes": {
+        "auto": "Đội ngũ của chúng ta (auto)",
+        "manual": "Chủ tool tự viết (manual)"
+      },
+      "publish": "Công khai",
+      "reject": "Từ chối",
+      "reasonPlaceholder": "Lý do từ chối — chủ tool sẽ thấy",
+      "publishHint": "Muốn công khai thì bản tiếng Anh phải đủ nội dung. Việc duyệt (Approved) dùng công tắc bên dưới. Từ chối sẽ trả tool về cho chủ tool sửa và gửi lại.",
+      "ai": "Nội dung AI",
+      "aiRerun": "Chạy lại AI",
+      "aiStatus": {
+        "none": "Chưa yêu cầu",
+        "queued": "Đang chờ — crawler sẽ xử lý ngay",
+        "done": "Đã xong",
+        "failed": "Lỗi — đang tự thử lại",
+        "invalid": "Cần admin xử lý — website lỗi hoặc AI không đủ dữ liệu"
+      },
+      "duplicate": "Cảnh báo: trùng website với tool đã có —"
+    },
+    "update": {
+      "title": "Cập nhật có trả phí",
+      "pendingTitle": "Cập nhật đang chờ duyệt ({n})",
+      "status": {
+        "DRAFT": "Chủ tool đã thanh toán và đang chuẩn bị thay đổi.",
+        "SUBMITTED": "Đã gửi — xem các thay đổi bên dưới."
+      },
+      "field": "Trường",
+      "current": "Đang công khai",
+      "proposed": "Đề xuất",
+      "fields": {
+        "name": "Tên",
+        "logoUrl": "Logo",
+        "pricingType": "Giá",
+        "twitterUrl": "Twitter URL",
+        "discordUrl": "Discord URL",
+        "images": "Ảnh chụp màn hình",
+        "categories": "Category",
+        "shortDesc": "Mô tả ngắn",
+        "description": "Mô tả",
+        "whatIs": "Là gì",
+        "howToUse": "Cách dùng",
+        "coreFeatures": "Tính năng chính",
+        "useCases": "Trường hợp sử dụng"
+      },
+      "noChanges": "Chưa có thay đổi.",
+      "apply": "Áp dụng cập nhật",
+      "reject": "Từ chối & hoàn tiền",
+      "reasonPlaceholder": "Lý do từ chối — chủ tool sẽ thấy",
+      "hint": "Áp dụng sẽ ghi thay đổi lên trang công khai và dịch lại. Từ chối sẽ hoàn tiền qua Stripe."
     }
   },
   "hero": {
@@ -321,7 +378,7 @@
     "topCategories": "Danh mục hàng đầu",
     "aiNews": "Tin tức AI",
     "top10": "Top 10",
-    "readMoreNews": "Xem thêm tin tức AI"
+    "readMoreNews": "Xem thêm"
   },
   "sections": {
     "browseByCategory": "Duyệt theo danh mục",
@@ -972,7 +1029,10 @@
           "q": "Tôi có thể thay đổi những thông tin nào?",
           "a": "Tất cả các mục trong danh sách ở trên, trừ URL trang web."
         }
-      ]
+      ],
+      "loginToPick": "Đăng nhập để chọn tool của bạn",
+      "noOwnedTools": "Bạn chưa có tool nào đã công khai — chỉ chủ tool mới cập nhật được tool đó.",
+      "pickOwnTool": "Chọn một tool đã công khai của bạn"
     },
     "submitGpt": {
       "seoTitle": "Đăng GPT của bạn – {site}",
@@ -1014,7 +1074,8 @@
       "statuses": {
         "PAID": "Đã thanh toán",
         "PENDING": "Chờ thanh toán",
-        "EXPIRED": "Hết hạn"
+        "EXPIRED": "Hết hạn",
+        "REFUNDED": "Đã hoàn tiền"
       },
       "loading": "Đang tải…",
       "empty": "Chưa có đơn hàng nào.",
@@ -1028,5 +1089,82 @@
     "errorTitle": "Đã xảy ra lỗi",
     "errorMessage": "Có lỗi không mong muốn xảy ra. Vui lòng thử lại sau.",
     "backHome": "Về trang chủ"
+  },
+  "myTool": {
+    "contentHeading": "Nội dung giới thiệu (tiếng Anh)",
+    "contentHint": "Các trường có dấu * là bắt buộc khi gửi duyệt. Mỗi tính năng / use case một dòng.",
+    "saveDraft": "Lưu nháp",
+    "submitForReview": "Gửi duyệt",
+    "saving": "Đang lưu…",
+    "saved": "Đã lưu.",
+    "submitted": "Đã gửi — chúng tôi sẽ sớm duyệt tool của bạn.",
+    "saveError": "Không lưu được. Vui lòng thử lại.",
+    "reason": "Lý do",
+    "viewPage": "Xem trang công khai",
+    "stage": {
+      "draft": {
+        "title": "Đã thanh toán — hãy hoàn thiện thông tin tool",
+        "desc": "Điền thông tin bên dưới rồi gửi duyệt."
+      },
+      "review": {
+        "title": "Đang chờ duyệt",
+        "desc": "Đội ngũ đang xem xét tool của bạn. Bạn vẫn có thể sửa cho tới khi tool được công khai."
+      },
+      "writing": {
+        "title": "Chúng tôi đang viết nội dung",
+        "desc": "Đội ngũ đang chuẩn bị nội dung cho tool của bạn. Tool sẽ được công khai sau khi duyệt."
+      },
+      "rejected": {
+        "title": "Cần chỉnh sửa",
+        "desc": "Tool chưa được duyệt. Hãy sửa theo lý do bên dưới rồi gửi lại."
+      },
+      "live": {
+        "title": "Tool đã được công khai",
+        "desc": "Muốn thay đổi tool đã công khai, hãy dùng Update AI."
+      },
+      "updateDraft": {
+        "title": "Đã thanh toán cập nhật — hãy sửa thông tin",
+        "desc": "Sửa thông tin bên dưới rồi gửi duyệt. Trang đang công khai không đổi cho tới khi bản cập nhật được duyệt."
+      },
+      "updateReview": {
+        "title": "Bản cập nhật đang chờ duyệt",
+        "desc": "Đội ngũ đang xem thay đổi của bạn. Bạn vẫn sửa được — khi đó bản cập nhật quay về nháp cho tới khi gửi lại."
+      }
+    },
+    "upload": {
+      "logo": "Logo",
+      "logoHint": "Ảnh vuông, PNG / JPG / WebP / GIF, tối đa 5 MB.",
+      "none": "Chưa có",
+      "choose": "Tải logo lên",
+      "change": "Đổi ảnh",
+      "remove": "Xoá",
+      "uploading": "Đang tải lên…",
+      "screenshots": "Ảnh chụp màn hình",
+      "screenshotsHint": "Tối đa {n} ảnh, hiển thị ở gallery trên trang tool. Ảnh đầu tiên là ảnh bìa. Nên dùng tỉ lệ 16:9, mỗi ảnh tối đa 5 MB.",
+      "add": "Thêm ảnh",
+      "cover": "Ảnh bìa",
+      "moveLeft": "Chuyển sang trái",
+      "moveRight": "Chuyển sang phải",
+      "tooLarge": "Ảnh phải nhỏ hơn hoặc bằng 5 MB.",
+      "error": "Tải ảnh lên thất bại. Vui lòng thử lại."
+    },
+    "savedNeedsResubmit": "Đã lưu. Tool đã quay về bản nháp — sửa xong hãy bấm \"Gửi duyệt\" lại.",
+    "update": {
+      "buy": "Cập nhật tool này",
+      "submit": "Gửi bản cập nhật để duyệt",
+      "submitted": "Đã gửi bản cập nhật — chúng tôi sẽ sớm duyệt. Trang đang công khai giữ nguyên cho tới lúc đó.",
+      "last": {
+        "APPLIED": "Bản cập nhật gần nhất đã được áp dụng.",
+        "REJECTED": "Bản cập nhật gần nhất không được duyệt — tiền đã được hoàn lại."
+      }
+    }
+  },
+  "categoryPicker": {
+    "choose": "Chọn",
+    "done": "Xong",
+    "search": "Tìm category…",
+    "limit": "Tối đa {n} category",
+    "empty": "Không có category phù hợp",
+    "remove": "Bỏ chọn"
   }
 }

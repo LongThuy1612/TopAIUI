@@ -18,9 +18,8 @@ export default defineEventHandler(async (event) => {
   for (const key of allowed) {
     if (key in body) data[key] = body[key]
   }
-  if (body.categorySlug) {
-    data.categories = { connect: [{ slug: body.categorySlug }] }
-  }
+  if ('images' in body) Object.assign(data, toolImagesData(body.images))
+  if ('categorySlugs' in body) data.categories = { connect: (await categoriesSetData(body.categorySlugs)).set }
 
   try {
     return await prisma.tool.create({ data, include: { categories: true, translations: true } })

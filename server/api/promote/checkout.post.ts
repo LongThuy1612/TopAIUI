@@ -2,6 +2,9 @@
 // Nhận đơn từ các trang promote, kiểm tra lại giá ở server (không tin số tiền
 // từ client), tạo đơn PENDING + phiên Stripe Checkout rồi trả về checkoutUrl.
 // Việc ghi nhận thanh toán do webhook /api/stripe/webhook làm.
+// FAKE_PAYMENT=true (chỉ dùng khi dev): bỏ qua Stripe, coi như đã trả tiền
+// và chạy luôn fulfillPromoteOrder như webhook.
+import { randomUUID } from 'node:crypto'
 import type { Prisma } from '@prisma/client'
 import {
   submitAi, submitGpt, updateAi, advertise, creditTotal, MAX_CREDITS_PER_ORDER
@@ -40,20 +43,29 @@ async function requireTool(toolId: unknown) {
 }
 
 // Trả về số tiền (USD), tên hiển thị trên Stripe và payload đã được làm sạch để lưu.
-async function priceOf(b: Body): Promise<{ amount: number; label: string; payload: Prisma.InputJsonObject }> {
+async function priceOf(b: Body, userId: string): Promise<{ amount: number; label: string; payload: Prisma.InputJsonObject }> {
   switch (b?.type) {
     case 'submit-ai': {
       const name = String(b.name ?? '').trim()
       if (!name || !isUrl(b.url)) throw bad('Invalid tool name or URL.')
+      if (name.length > 120 || String(b.url).trim().length > 2000) throw bad('Tool name or URL is too long.')
+      const existing = await findDuplicateTool(String(b.url))
+      if (existing) throw bad(`This website is already listed as "${existing.name}".`)
+      if (await findPendingSubmission(String(b.url), userId)) throw bad('This website is already being submitted by someone else.')
       const mode = b.mode === 'manual' ? 'manual' : 'auto'
-      return { amount: submitAi.price, label: `Submit AI: ${name}`, payload: { name, url: String(b.url).trim(), mode } }
+      const url = String(b.url).trim()
+      return { amount: submitAi.price, label: `Submit AI: ${name}`, payload: { name, url, mode, siteKey: siteKeyOf(url) } }
     }
     case 'submit-gpt': {
       if (!isUrl(b.gptUrl)) throw bad('Invalid GPT link.')
       return { amount: submitGpt.price, label: 'Submit GPT', payload: { gptUrl: String(b.gptUrl).trim() } }
     }
     case 'update-ai': {
+      // Only the owner can buy an update, for their own published tool, one at a time.
       const tool = await requireTool(b.toolId)
+      const owned = await prisma.tool.findFirst({ where: { id: tool.id, ownerId: userId }, select: { id: true } })
+      if (!owned) throw bad('You can only update a tool you own.')
+      if (await findOpenUpdate(tool.id)) throw bad('This tool already has an update in progress.')
       return { amount: updateAi.price, label: `Update AI: ${tool.name}`, payload: { toolId: tool.id, toolName: tool.name } }
     }
     case 'advertise': {
@@ -89,8 +101,21 @@ export default defineEventHandler(async (event) => {
   }
 
   const body = await readBody<Body>(event)
-  const { amount, label, payload } = await priceOf(body)
+  const { amount, label, payload } = await priceOf(body, user.id)
   const amountCents = Math.round(amount * 100)
+
+  // Dev builds only: a production server never skips payment, whatever the env says.
+  if (import.meta.dev && useRuntimeConfig().fakePayment) {
+    const order = await prisma.promoteOrder.create({
+      data: { userId: user.id, type: body.type, payload, stripeSessionId: `fake_${randomUUID()}`, amount: amountCents }
+    })
+    const paid = await fulfillPromoteOrder(order.stripeSessionId)
+    return {
+      orderId: order.id,
+      // A new tool / an update goes straight to the tool's page; everything else to the order list.
+      redirect: paid?.toolId ? `/dashboard/my-ais/${paid.toolId}` : `/orders?new=${order.id}`
+    }
+  }
 
   const stripe = useStripe()
   const { public: { siteUrl } } = useRuntimeConfig()

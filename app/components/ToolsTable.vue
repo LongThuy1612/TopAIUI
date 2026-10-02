@@ -2,11 +2,20 @@
 import type { Tool } from '~/types'
 
 // `admin`: rows open the admin editor and the empty state offers "New tool".
-// Otherwise (a user's own tools) rows open the public tool page and the empty
-// state points to the paid submit / advertise pages.
+// Otherwise (a user's own tools) rows open the public tool page — or, while
+// the tool isn't published yet, its edit page — and the empty state points to
+// the paid submit / advertise pages.
 const props = defineProps<{ tools: Tool[]; admin?: boolean }>()
 
-const rowLink = (tool: Tool) => (props.admin ? `/admin/tools/${tool.id}` : `/tools/${tool.slug}`)
+const rowLink = (tool: Tool) => {
+  if (props.admin) return `/admin/tools/${tool.id}`
+  return tool.status === 'PUBLISHED' ? `/tools/${tool.slug}` : `/dashboard/my-ais/${tool.id}`
+}
+
+const statusClass: Record<string, string> = {
+  PUBLISHED: 'bg-emerald-50 text-emerald-700',
+  CANCELED: 'bg-red-50 text-red-700'
+}
 
 const { t } = useI18n()
 
@@ -47,8 +56,11 @@ function formatDate(d?: string) {
               </div>
               <div class="min-w-0">
                 <div class="truncate font-semibold text-ink-900 hover:text-brand-600">{{ tool.name }}</div>
-                <span :class="['inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold', tool.status === 'PUBLISHED' ? 'bg-emerald-50 text-emerald-700' : 'bg-amber-50 text-amber-700']">
+                <span :class="['inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold', statusClass[tool.status] ?? 'bg-amber-50 text-amber-700']">
                   {{ tool.status }}
+                </span>
+                <span v-if="admin && tool.ownerId" class="ml-1 inline-block rounded-full bg-brand-50 px-2 py-0.5 text-[10px] font-semibold text-brand-700">
+                  {{ tool.step2 || tool.status !== 'PENDING' ? t('admin.userSubmission') : t('admin.waitingUserContent') }}
                 </span>
               </div>
             </NuxtLink>

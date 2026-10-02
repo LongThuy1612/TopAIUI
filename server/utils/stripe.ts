@@ -15,7 +15,9 @@ export function useStripe(): Stripe {
 // Marks the order PAID and applies its effect — exactly once. Safe to call for
 // every webhook delivery: only the caller that flips PENDING → PAID gets
 // count === 1. Guest-post credits and ad clicks are added to the user's
-// balance; submit / update / GPT orders are left PAID for an admin to process.
+// balance; a submit-ai order creates the user's PENDING tool (see
+// server/utils/userTools.ts); an update-ai order opens the owner's update request
+// (server/utils/toolUpdates.ts); GPT orders are left PAID for an admin.
 export async function fulfillPromoteOrder(sessionId: string) {
   return prisma.$transaction(async (tx) => {
     const order = await tx.promoteOrder.findUnique({ where: { stripeSessionId: sessionId } })
@@ -38,6 +40,12 @@ export async function fulfillPromoteOrder(sessionId: string) {
         where: { id: order.userId },
         data: { adCredits: { increment: Number(payload.clicks) } }
       })
+    } else if (order.type === 'submit-ai') {
+      const toolId = await createSubmittedTool(tx, order.userId, payload)
+      return tx.promoteOrder.update({ where: { id: order.id }, data: { toolId } })
+    } else if (order.type === 'update-ai') {
+      const { toolId } = await createUpdateRequest(tx, order)
+      return tx.promoteOrder.update({ where: { id: order.id }, data: { toolId } })
     }
     return order
   })

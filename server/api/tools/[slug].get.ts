@@ -203,7 +203,14 @@ function normalizeAnalytics(row: AnalyticsRow | null) {
 
   const engagement = asRecord(row.engagement)
   const bounce = asNumber(engagement.bounceRate)
-  const change = asNumber(asRecord(row.growthMetrics).change)
+  // Month-over-month growth from the same visits the chart shows. growthMetrics.change
+  // isn't reliable on its own: SimilarWeb rows store it as a fraction (0.12 = 12%) but
+  // Toolify-sourced rows as a percentage (735.06 = 735%), and x100 on the latter gave
+  // "73505.9%". It is only used when the chart has fewer than two months.
+  const [prev, last] = chart.slice(-2).map(p => p.visits)
+  const change = chart.length >= 2 && prev! > 0
+    ? (last! - prev!) / prev!
+    : asNumber(asRecord(row.growthMetrics).change)
 
   return {
     monthlyVisits: row.monthlyVisits ?? chart.at(-1)?.visits ?? null,

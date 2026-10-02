@@ -59,7 +59,19 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'node-server'
+    preset: 'node-server',
+    // Uploaded images (server/utils/uploads.ts). Local disk for now — mount it
+    // as a volume in Docker (see docker-compose.yml); swap the driver for S3/R2
+    // later without touching the upload code.
+    storage: {
+      uploads: { driver: 'fs', base: process.env.UPLOAD_DIR || './.data/uploads' }
+    },
+    devStorage: {
+      uploads: { driver: 'fs', base: process.env.UPLOAD_DIR || './.data/uploads' }
+    },
+    // Nightly cleanup of uploaded images no tool uses (server/tasks/uploads/cleanup.ts).
+    experimental: { tasks: true },
+    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'] }
   },
 
   runtimeConfig: {
@@ -69,6 +81,11 @@ export default defineNuxtConfig({
     // Override at runtime with NUXT_STRIPE_SECRET_KEY / NUXT_STRIPE_WEBHOOK_SECRET.
     stripeSecretKey: process.env.STRIPE_SECRET_KEY || '',
     stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '',
+    // DEV ONLY: treat every promote order as paid without going through
+    // Stripe (see server/api/promote/checkout.post.ts). Ignored by production
+    // builds (`nuxt build`) — only `nuxt dev` honours it.
+    // Override at runtime with NUXT_FAKE_PAYMENT.
+    fakePayment: process.env.FAKE_PAYMENT === 'true',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000'
     }

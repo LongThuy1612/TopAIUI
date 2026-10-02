@@ -11,5 +11,14 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: 'Tool not found' })
   }
 
-  return tool
+  // User-submitted tools: who sent it and whether our team writes the listing.
+  if (!tool.ownerId) return tool
+  const [owner, submitMode, duplicateOf, updateRequest] = await Promise.all([
+    prisma.user.findUnique({ where: { id: tool.ownerId }, select: { id: true, email: true, name: true } }),
+    submitModeOf(tool.id),
+    tool.website ? findDuplicateTool(tool.website, tool.id) : null,
+    // An open paid update (the owner may still be filling it in, or it waits for review).
+    findOpenUpdate(tool.id)
+  ])
+  return { ...tool, owner, submitMode, duplicateOf, updateRequest }
 })

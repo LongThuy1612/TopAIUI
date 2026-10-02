@@ -27,9 +27,10 @@ const form = reactive({
   slug: '',
   website: '',
   logoUrl: '',
+  images: [] as string[],
   pricingType: 'FREEMIUM' as (typeof pricingOptions)[number],
   status: 'PENDING' as (typeof statusOptions)[number],
-  categorySlug: '',
+  categorySlugs: [] as string[],
   region: '',
   source: '',
   monthlyRevenue: 0,
@@ -50,9 +51,13 @@ function loadForm(src: Tool) {
   form.slug = src.slug ?? ''
   form.website = src.website ?? ''
   form.logoUrl = src.logoUrl ?? ''
+  // Crawled entries may be { url } objects; the form works with plain URLs.
+  form.images = (Array.isArray(src.images) ? src.images : [])
+    .map(i => (typeof i === 'string' ? i : (i as { url?: string } | null)?.url))
+    .filter((u): u is string => !!u)
   form.pricingType = src.pricingType ?? 'FREEMIUM'
   form.status = src.status ?? 'PENDING'
-  form.categorySlug = src.categories?.[0]?.slug ?? ''
+  form.categorySlugs = (src.categories ?? []).map(c => c.slug)
   form.region = src.region ?? ''
   form.source = src.source ?? ''
   form.monthlyRevenue = src.monthlyRevenue ?? 0
@@ -97,6 +102,11 @@ function saveDraft(loc: string) {
   translationDrafts[loc] = { ...translationForm }
 }
 
+// What each locale looked like when first opened — Save only sends locales whose text
+// differs. Sending an untouched tab would still mark it isManualOverride, and the AI
+// job never re-translates a manual locale, so merely viewing a tab would freeze it.
+const loadedDrafts: Record<string, string> = {}
+
 function loadTranslation(loc: string) {
   const draft = translationDrafts[loc]
   if (draft) {
@@ -110,6 +120,7 @@ function loadTranslation(loc: string) {
   translationForm.howToUse = entry?.howToUse ?? ''
   translationForm.coreFeatures = (entry?.coreFeatures ?? []).join('\n')
   translationForm.useCases = (entry?.useCases ?? []).join('\n')
+  loadedDrafts[loc] = JSON.stringify({ ...translationForm })
 }
 
 loadTranslation(translationLocale.value)
@@ -119,6 +130,44 @@ watch(translationLocale, (newLoc, oldLoc) => {
 })
 
 const saving = ref(false)
+const uploading = ref(false)
+// Images and categories are only sent when changed: untouched crawled `images`
+// keep their shape, and a save never drops categories nobody edited.
+const imagesSnapshot = JSON.stringify(form.images)
+
+function buildToolBody(): Record<string, unknown> {
+  return {
+    name: form.name,
+    website: form.website || null,
+    logoUrl: form.logoUrl || null,
+    pricingType: form.pricingType,
+    status: form.status,
+    region: form.region || null,
+    source: form.source || null,
+    monthlyRevenue: form.monthlyRevenue,
+    affiliateUrl: form.affiliateUrl || null,
+    couponCode: form.couponCode || null,
+    twitterUrl: form.twitterUrl || null,
+    discordUrl: form.discordUrl || null,
+    productHuntUrl: form.productHuntUrl || null,
+    isApproved: form.isApproved,
+    isFeatured: form.isFeatured,
+    isVerified: form.isVerified,
+    isJustLaunched: form.isJustLaunched,
+    isFreeTool: form.isFreeTool
+  }
+}
+const initialToolBody = buildToolBody()
+const categoriesSnapshot = JSON.stringify(form.categorySlugs)
+// The tool's own categories may not be in the public list (it only has ones with published tools).
+const categoryOptions = computed(() => {
+  const list = props.categories.map(c => ({ slug: c.slug, name: c.name }))
+  for (const c of props.initialTool?.categories ?? []) {
+    if (!list.some(o => o.slug === c.slug)) list.push({ slug: c.slug, name: c.name })
+  }
+  return list
+})
+const uploadUrl = computed(() => `/api/admin/uploads${props.toolId ? `?toolId=${props.toolId}` : ''}`)
 const saveError = ref('')
 
 function getEnglishDraft(): TranslationDraft | null {
@@ -158,11 +207,18 @@ async function save() {
   saveDraft(translationLocale.value)
 
   const enDraft = getEnglishDraft()
-  if (!enDraft || !draftHasContent(enDraft)) {
+  // New tools need English content. When editing, only if the EN tab was changed (so it
+  // can't be blanked) — otherwise an admin couldn't save categories / flags on a tool
+  // whose listing isn't written yet (e.g. a user tool still waiting for the AI job).
+  const enTouched = !!translationDrafts.en && JSON.stringify(translationDrafts.en) !== loadedDrafts.en
+  if ((!isEdit.value || enTouched) && (!enDraft || !draftHasContent(enDraft))) {
     saveError.value = t('admin.enContentRequired')
     return
   }
-  if (form.isApproved && !draftHasAllContent(enDraft)) {
+  // Approving needs the full English listing — checked when Approved is being turned on
+  // (or the EN text changed), not on every save of a tool that was approved earlier.
+  const approving = form.isApproved && (!isEdit.value || !initialToolBody.isApproved || enTouched)
+  if (approving && (!enDraft || !draftHasAllContent(enDraft))) {
     saveError.value = t('admin.enContentIncomplete')
     return
   }
@@ -175,35 +231,28 @@ async function save() {
   try {
     let id = props.toolId
 
-    const toolBody: Record<string, unknown> = {
-      name: form.name,
-      website: form.website || null,
-      logoUrl: form.logoUrl || null,
-      pricingType: form.pricingType,
-      status: form.status,
-      categorySlug: form.categorySlug || undefined,
-      region: form.region || null,
-      source: form.source || null,
-      monthlyRevenue: form.monthlyRevenue,
-      affiliateUrl: form.affiliateUrl || null,
-      couponCode: form.couponCode || null,
-      twitterUrl: form.twitterUrl || null,
-      discordUrl: form.discordUrl || null,
-      productHuntUrl: form.productHuntUrl || null,
-      isApproved: form.isApproved,
-      isFeatured: form.isFeatured,
-      isVerified: form.isVerified,
-      isJustLaunched: form.isJustLaunched,
-      isFreeTool: form.isFreeTool
+    const toolBody = buildToolBody()
+    if (isEdit.value) {
+      // Only what the admin changed: the form loaded the tool once, and sending every field
+      // back would overwrite anything that changed since (status set by Publish/Reject,
+      // a name the owner just edited, …).
+      for (const key of Object.keys(toolBody)) {
+        if (JSON.stringify(toolBody[key]) === JSON.stringify(initialToolBody[key])) delete toolBody[key]
+      }
     }
+
+    if (JSON.stringify(form.images) !== imagesSnapshot) toolBody.images = form.images
+    if (JSON.stringify(form.categorySlugs) !== categoriesSnapshot) toolBody.categorySlugs = form.categorySlugs
 
     if (isEdit.value) {
       // First-time approval stamps addedOn with the save moment; an already
       // approved tool keeps whatever addedOn it already has.
-      if (form.isApproved && !props.initialTool?.addedOn) {
+      if (toolBody.isApproved === true && !props.initialTool?.addedOn) {
         toolBody.addedOn = new Date().toISOString()
       }
-      await $fetch(`/api/admin/tools/${id}`, { method: 'PATCH', headers: authHeaders(), body: toolBody })
+      if (Object.keys(toolBody).length > 0) {
+        await $fetch(`/api/admin/tools/${id}`, { method: 'PATCH', headers: authHeaders(), body: toolBody })
+      }
     } else {
       toolBody.slug = form.slug.trim()
       if (form.isApproved) toolBody.addedOn = new Date().toISOString()
@@ -211,8 +260,10 @@ async function save() {
       id = created.id
     }
 
-    const translationRequests = Object.entries(translationDrafts).map(([loc, draft]) =>
-      $fetch(`/api/admin/tools/${id}/translations`, {
+    const translationRequests = Object.entries(translationDrafts)
+      .filter(([loc, draft]) => JSON.stringify(draft) !== loadedDrafts[loc])
+      .map(([loc, draft]) =>
+        $fetch(`/api/admin/tools/${id}/translations`, {
         method: 'PUT',
         headers: authHeaders(),
         body: {
@@ -259,6 +310,16 @@ async function save() {
 
     <p v-if="isEdit" class="rounded-lg bg-ink-100/50 px-3 py-2 text-xs text-ink-500">{{ t('admin.editLockedHint') }}</p>
 
+    <div class="rounded-xl border border-ink-100 p-4">
+      <ToolImageFields
+        v-model:logo="form.logoUrl"
+        v-model:images="form.images"
+        v-model:busy="uploading"
+        :upload-url="uploadUrl"
+        :name="form.name"
+      />
+    </div>
+
     <div class="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_1fr_2fr]">
       <div class="min-w-0 space-y-4 rounded-xl border border-ink-100 p-4">
         <label class="block">
@@ -274,10 +335,6 @@ async function save() {
           <input v-model="form.website" type="text" :disabled="isEdit" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400 disabled:border-ink-100 disabled:bg-ink-100/40 disabled:text-ink-400">
         </label>
         <label class="block">
-          <span class="mb-1 block text-xs font-semibold text-ink-600">{{ t('admin.fieldLogoUrl') }}</span>
-          <input v-model="form.logoUrl" type="text" :disabled="isEdit" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400 disabled:border-ink-100 disabled:bg-ink-100/40 disabled:text-ink-400">
-        </label>
-        <label class="block">
           <span class="mb-1 block text-xs font-semibold text-ink-600">{{ t('admin.fieldPricingType') }}</span>
           <select v-model="form.pricingType" :disabled="isEdit" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400 disabled:border-ink-100 disabled:bg-ink-100/40 disabled:text-ink-400">
             <option v-for="p in pricingOptions" :key="p" :value="p">{{ p }}</option>
@@ -289,13 +346,11 @@ async function save() {
             <option v-for="s in statusOptions" :key="s" :value="s">{{ s }}</option>
           </select>
         </label>
-        <label class="block">
+        <div>
           <span class="mb-1 block text-xs font-semibold text-ink-600">{{ t('admin.fieldCategory') }}</span>
-          <select v-model="form.categorySlug" :disabled="isEdit" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400 disabled:border-ink-100 disabled:bg-ink-100/40 disabled:text-ink-400">
-            <option value="">{{ t('admin.noCategory') }}</option>
-            <option v-for="c in categories" :key="c.slug" :value="c.slug">{{ c.name }}</option>
-          </select>
-        </label>
+          <!-- Editable after creation too (not locked like the other core fields). -->
+          <CategoryMultiSelect v-model="form.categorySlugs" :options="categoryOptions" />
+        </div>
       </div>
 
       <div class="min-w-0 space-y-4 rounded-xl border border-ink-100 p-4">
@@ -403,7 +458,7 @@ async function save() {
     <p v-if="saveError" class="text-sm text-red-600">{{ saveError }}</p>
 
     <div class="flex items-center gap-3 border-t border-ink-100 pt-5">
-      <button type="submit" :disabled="saving" class="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-600 disabled:opacity-50">
+      <button type="submit" :disabled="saving || uploading" class="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-600 disabled:opacity-50">
         {{ saving ? t('admin.saving') : t('admin.save') }}
       </button>
       <button type="button" class="rounded-lg border border-ink-200 px-5 py-2.5 text-sm font-semibold text-ink-700 hover:border-brand-300" @click="emit('cancel')">

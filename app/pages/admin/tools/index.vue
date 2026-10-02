@@ -16,6 +16,13 @@ const { data } = await useFetch<AdminToolsResponse>('/api/admin/tools', {
 
 const items = computed(() => data.value?.items ?? [])
 
+// Paid updates of published tools waiting for review — those tools are approved, so
+// they don't show up in the list below.
+const { data: updates } = await useFetch<{ items: { id: string; submittedAt: string; tool: { id: string; name: string }; user: { email: string } }[] }>('/api/admin/update-requests', {
+  headers: authHeaders(),
+  watch: false
+})
+
 useSeoMeta({ title: 'Quản lý Tool — TopAICollection' })
 </script>
 
@@ -42,6 +49,16 @@ useSeoMeta({ title: 'Quản lý Tool — TopAICollection' })
         <SearchBar v-model="searchQuery" :placeholder="t('admin.searchPlaceholder')" dense />
       </div>
     </div>
+
+    <section v-if="updates?.items.length" class="mt-5 rounded-xl border border-amber-200 bg-amber-50/50 p-4">
+      <h2 class="text-sm font-extrabold text-ink-900">{{ t('admin.update.pendingTitle', { n: updates.items.length }) }}</h2>
+      <ul class="mt-2 divide-y divide-amber-100 text-sm">
+        <li v-for="u in updates.items" :key="u.id" class="flex flex-wrap items-center justify-between gap-2 py-2">
+          <NuxtLink :to="`/admin/tools/${u.tool.id}`" class="font-semibold text-brand-600 hover:underline">{{ u.tool.name }}</NuxtLink>
+          <span class="text-ink-500">{{ u.user.email }} · {{ new Date(u.submittedAt).toLocaleString() }}</span>
+        </li>
+      </ul>
+    </section>
 
     <ToolsTable class="mt-4" :tools="items" admin />
   </div>

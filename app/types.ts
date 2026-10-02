@@ -97,6 +97,9 @@ export interface Tool {
   companyInfo?: unknown
   attributes?: unknown
   ownerId?: string
+  step1?: boolean
+  step2?: boolean // user-submitted tool: listing content is ready for review
+  aiSync?: number | null // crawler AI job: null none, 0 queued, 1 done, -1 failed, 2 invalid
   isApproved?: boolean
   addedOn?: string
   region?: string | null
@@ -116,6 +119,13 @@ export interface Tool {
 
   // Only populated by the admin tool-detail endpoint
   translations?: ToolTranslationEntry[]
+
+  // User-submitted tools (admin + owner detail endpoints)
+  owner?: { id: string; email: string; name: string | null } | null
+  submitMode?: 'auto' | 'manual'
+  duplicateOf?: { id: string; name: string; website: string | null } | null // admin endpoint only
+  updateRequest?: ToolUpdateRequest | null // paid update of a published tool (owner: latest; admin: open one)
+  canEdit?: boolean // owner endpoint only
 
   // Only populated by the tool-detail endpoint
   tags?: TagRef[]
@@ -203,4 +213,35 @@ export interface AdminReviewsResponse {
   pendingCount: number
   page: number
   pageCount: number
+}
+
+// Proposed changes of a paid "Update AI" (see server/utils/toolUpdates.ts).
+export interface ToolUpdateChanges {
+  fields: {
+    name?: string
+    logoUrl?: string | null
+    images?: string[]
+    screenshotUrl?: string | null
+    twitterUrl?: string | null
+    discordUrl?: string | null
+    pricingType?: 'FREE' | 'FREEMIUM' | 'PAID'
+  }
+  categorySlugs?: string[]
+  content?: {
+    shortDesc: string | null
+    description: string | null
+    whatIs: string | null
+    howToUse: string | null
+    coreFeatures: string[]
+    useCases: string[]
+  }
+}
+
+export interface ToolUpdateRequest {
+  id: string
+  status: 'DRAFT' | 'SUBMITTED' | 'APPLIED' | 'REJECTED'
+  changes: ToolUpdateChanges | null
+  rejectionReason?: string | null
+  submittedAt?: string | null
+  reviewedAt?: string | null
 }

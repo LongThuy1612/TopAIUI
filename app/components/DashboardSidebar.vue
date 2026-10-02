@@ -32,8 +32,9 @@ const otherItems = computed(() => [
   { label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' }
 ])
 
+// Admins manage every tool under Tool Management, so "My AIs" is customer-only.
 const businessItems = computed(() => [
-  { label: t('admin.myAIs'), to: '/dashboard/my-ais', icon: 'M5 12h5m4 0h5M5 12a2 2 0 0 1 2-2h1m6 0h1a2 2 0 0 1 2 2m-12 0a2 2 0 0 0 2 2h1m6 0h1a2 2 0 0 0 2-2' },
+  ...(isAdmin.value ? [] : [{ label: t('admin.myAIs'), to: '/dashboard/my-ais', icon: 'M5 12h5m4 0h5M5 12a2 2 0 0 1 2-2h1m6 0h1a2 2 0 0 1 2 2m-12 0a2 2 0 0 0 2 2h1m6 0h1a2 2 0 0 0 2-2' }]),
   { label: t('admin.advertiseAI'), to: '/dashboard/advertise', icon: 'M4 19h16M8 15v-4M12 15V9m4 6v-8' },
   { label: t('admin.postsLinks'), to: '/dashboard/my-posts', icon: 'M6 3h12v18H6V3Zm3 5h6m-6 4h6m-6 4h4' },
   { label: t('admin.myGPTs'), to: '/dashboard/my-gpts', icon: 'M12 2 2 7l10 5 10-5-10-5Zm0 10L2 7v10l10 5 10-5V7l-10 5Z' }

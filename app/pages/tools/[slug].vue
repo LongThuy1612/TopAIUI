@@ -270,6 +270,14 @@ function formatCompact(n: number | null | undefined) {
   return new Intl.NumberFormat(numberLocale.value, { notation: 'compact', maximumFractionDigits: 1 }).format(n)
 }
 
+// Month-over-month growth badge: "12.3%"; a jump of 1000%+ (a tiny previous month)
+// reads better as a multiplier — "736×" instead of "73,505.9%".
+function formatGrowth(pct: number) {
+  const abs = Math.abs(pct)
+  if (pct >= 1000) return `${new Intl.NumberFormat(numberLocale.value, { maximumFractionDigits: 0 }).format(1 + pct / 100)}×`
+  return `${new Intl.NumberFormat(numberLocale.value, { maximumFractionDigits: 1, minimumFractionDigits: 1 }).format(abs)}%`
+}
+
 function formatDuration(seconds: number | null | undefined) {
   if (seconds == null) return '—'
   const s = Math.round(seconds)
@@ -950,7 +958,7 @@ useSeoMeta({
               :class="['inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm font-semibold', analytics.growthPct >= 0 ? 'bg-emerald-50 text-emerald-700' : 'bg-red-50 text-red-700']"
               :title="t('tool.vsLastMonth')"
             >
-              {{ analytics.growthPct >= 0 ? '▲' : '▼' }} {{ Math.abs(analytics.growthPct).toFixed(1) }}%
+              {{ analytics.growthPct >= 0 ? '▲' : '▼' }} {{ formatGrowth(analytics.growthPct) }}
               <span class="font-normal opacity-80">{{ t('tool.vsLastMonth') }}</span>
             </span>
           </div>

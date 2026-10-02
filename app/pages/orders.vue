@@ -7,7 +7,7 @@ interface OrderRow {
   payload: Record<string, unknown>
   amount: number
   currency: string
-  status: 'PENDING' | 'PAID' | 'EXPIRED'
+  status: 'PENDING' | 'PAID' | 'EXPIRED' | 'REFUNDED'
   createdAt: string
 }
 
@@ -66,7 +66,8 @@ const date = (iso: string) => new Date(iso).toLocaleString()
 const statusClass: Record<OrderRow['status'], string> = {
   PAID: 'bg-emerald-50 text-emerald-700',
   PENDING: 'bg-amber-50 text-amber-700',
-  EXPIRED: 'bg-ink-100 text-ink-500'
+  EXPIRED: 'bg-ink-100 text-ink-500',
+  REFUNDED: 'bg-sky-50 text-sky-700'
 }
 
 useSeoMeta({ title: () => `${t('promote.myOrders')} — TopAICollection`, robots: 'noindex' })

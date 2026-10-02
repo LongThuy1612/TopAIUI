@@ -18,6 +18,10 @@ const errors = computed(() => ({
 const valid = computed(() => !errors.value.name && !errors.value.url)
 
 const { checkout, loading, error } = usePromoteCheckout()
+
+// Back from Stripe: go straight to the new tool once the order is fulfilled.
+useStripeReturn()
+
 function pay() {
   touched.value = true
   if (!valid.value) return

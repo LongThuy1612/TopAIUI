@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Tool" ADD COLUMN "aiSyncAttempts" INTEGER NOT NULL DEFAULT 0;

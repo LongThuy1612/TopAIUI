@@ -19,9 +19,11 @@ export default defineEventHandler(async (event) => {
   for (const key of allowed) {
     if (key in updates) patch[key] = updates[key]
   }
-  if (updates.categorySlug) {
-    patch.categories = { set: [{ slug: updates.categorySlug }] }
-  }
+  // Screenshots (uploaded or URLs) — only when the form actually changed them,
+  // so crawled tools keep their original images entries.
+  if ('images' in updates) Object.assign(patch, toolImagesData(updates.images))
+  // Only sent when the admin changed the selection, so untouched tools keep every category.
+  if ('categorySlugs' in updates) patch.categories = await categoriesSetData(updates.categorySlugs)
 
   try {
     return await prisma.tool.update({ where: { id }, data: patch, include: { categories: true } })

@@ -97,7 +97,7 @@
     "newToolSubtitle": "Create a new tool. Once created, its core fields are locked — only Approved and translations stay editable.",
     "slugRequired": "Slug is required.",
     "slugTaken": "This slug is already used by another tool. Please choose a different one.",
-    "editLockedHint": "Core fields are locked after creation. You can still toggle Approved and edit the translation content.",
+    "editLockedHint": "Core fields are locked after creation. You can still change the logo and screenshots, toggle Approved and edit the translation content.",
     "pendingCount": "tool waiting for approval | tools waiting for approval",
     "searchPlaceholder": "Search by name or slug...",
     "research": "Research",
@@ -291,6 +291,63 @@
       "deleteConfirm": "Delete this review permanently?",
       "guest": "Guest",
       "empty": "No reviews found."
+    },
+    "userSubmission": "User submission",
+    "waitingUserContent": "Waiting for owner content",
+    "submission": {
+      "title": "User submission",
+      "owner": "Owner",
+      "mode": "Who writes the listing",
+      "reason": "Rejection reason",
+      "modes": {
+        "auto": "Our team (auto)",
+        "manual": "The owner (manual)"
+      },
+      "publish": "Publish",
+      "reject": "Reject",
+      "reasonPlaceholder": "Reason for rejection — shown to the owner",
+      "publishHint": "Publishing needs the full English listing. Use the Approved toggle below to approve it. Rejecting sends the tool back to the owner to fix and resubmit.",
+      "ai": "AI content",
+      "aiRerun": "Run AI again",
+      "aiStatus": {
+        "none": "Not requested",
+        "queued": "Queued — the crawler will pick it up shortly",
+        "done": "Done",
+        "failed": "Failed — retrying automatically",
+        "invalid": "Needs an admin — website unreadable or not enough info for AI"
+      },
+      "duplicate": "Warning: same website as an existing listing —"
+    },
+    "update": {
+      "title": "Paid update",
+      "pendingTitle": "Updates waiting for review ({n})",
+      "status": {
+        "DRAFT": "The owner paid and is still preparing the changes.",
+        "SUBMITTED": "Submitted — review the changes below."
+      },
+      "field": "Field",
+      "current": "Live now",
+      "proposed": "Proposed",
+      "fields": {
+        "name": "Name",
+        "logoUrl": "Logo",
+        "pricingType": "Pricing",
+        "twitterUrl": "Twitter URL",
+        "discordUrl": "Discord URL",
+        "images": "Screenshots",
+        "categories": "Categories",
+        "shortDesc": "Short description",
+        "description": "Description",
+        "whatIs": "What is it",
+        "howToUse": "How to use",
+        "coreFeatures": "Core features",
+        "useCases": "Use cases"
+      },
+      "noChanges": "No changes yet.",
+      "apply": "Apply update",
+      "reject": "Reject & refund",
+      "reasonPlaceholder": "Reason for rejecting — shown to the owner",
+      "hint": "Applying writes the changes to the live listing and re-translates it. Rejecting refunds the payment through Stripe."
     }
   },
   "hero": {
@@ -321,7 +378,7 @@
     "topCategories": "Top categories",
     "aiNews": "AI News",
     "top10": "Top 10",
-    "readMoreNews": "Read more AI news"
+    "readMoreNews": "Read more"
   },
   "sections": {
     "browseByCategory": "Browse by category",
@@ -972,7 +1029,10 @@
           "q": "Which details can I change?",
           "a": "Everything in the list above except the website URL."
         }
-      ]
+      ],
+      "loginToPick": "Log in to choose one of your tools",
+      "noOwnedTools": "You have no published tool yet — only the owner of a listed tool can update it.",
+      "pickOwnTool": "Choose one of your published tools"
     },
     "submitGpt": {
       "seoTitle": "Submit your GPT – {site}",
@@ -1014,7 +1074,8 @@
       "statuses": {
         "PAID": "Paid",
         "PENDING": "Pending",
-        "EXPIRED": "Expired"
+        "EXPIRED": "Expired",
+        "REFUNDED": "Refunded"
       },
       "loading": "Loading…",
       "empty": "No orders yet.",
@@ -1028,5 +1089,82 @@
     "errorTitle": "Something went wrong",
     "errorMessage": "An unexpected error occurred. Please try again later.",
     "backHome": "Go back home"
+  },
+  "myTool": {
+    "contentHeading": "Listing content (English)",
+    "contentHint": "Fields marked * are required to submit. One feature / use case per line.",
+    "saveDraft": "Save draft",
+    "submitForReview": "Submit for review",
+    "saving": "Saving…",
+    "saved": "Saved.",
+    "submitted": "Submitted — we will review your tool soon.",
+    "saveError": "Could not save. Please try again.",
+    "reason": "Reason",
+    "viewPage": "View public page",
+    "stage": {
+      "draft": {
+        "title": "Payment received — complete your listing",
+        "desc": "Fill in the details below, then submit your tool for review."
+      },
+      "review": {
+        "title": "In review",
+        "desc": "Our team is reviewing your tool. You can still make changes until it is published."
+      },
+      "writing": {
+        "title": "We are writing your listing",
+        "desc": "Our team is preparing the content for your tool. It will be published once reviewed."
+      },
+      "rejected": {
+        "title": "Changes needed",
+        "desc": "Your tool was not approved yet. Fix the issue below and submit again."
+      },
+      "live": {
+        "title": "Your tool is live",
+        "desc": "To change a published listing, use Update AI."
+      },
+      "updateDraft": {
+        "title": "Update paid — edit your listing",
+        "desc": "Change the details below and submit them for review. Your live listing does not change until the update is approved."
+      },
+      "updateReview": {
+        "title": "Update under review",
+        "desc": "Our team is reviewing your changes. You can still edit them — that sends them back to draft until you submit again."
+      }
+    },
+    "upload": {
+      "logo": "Logo",
+      "logoHint": "Square image, PNG / JPG / WebP / GIF, up to 5 MB.",
+      "none": "No logo",
+      "choose": "Upload logo",
+      "change": "Change",
+      "remove": "Remove",
+      "uploading": "Uploading…",
+      "screenshots": "Screenshots",
+      "screenshotsHint": "Up to {n} images shown in the gallery on your tool page. The first one is the cover. 16:9 works best, up to 5 MB each.",
+      "add": "Add images",
+      "cover": "Cover",
+      "moveLeft": "Move left",
+      "moveRight": "Move right",
+      "tooLarge": "Image must be 5 MB or smaller.",
+      "error": "Upload failed. Please try again."
+    },
+    "savedNeedsResubmit": "Saved. Your tool is back in draft — press \"Submit for review\" again when you are done.",
+    "update": {
+      "buy": "Update this tool",
+      "submit": "Submit update for review",
+      "submitted": "Update submitted — we will review it soon. Your live listing stays as it is until then.",
+      "last": {
+        "APPLIED": "Your last update is live.",
+        "REJECTED": "Your last update was not approved — the payment has been refunded."
+      }
+    }
+  },
+  "categoryPicker": {
+    "choose": "Choose",
+    "done": "Done",
+    "search": "Search categories…",
+    "limit": "Up to {n} categories",
+    "empty": "No matching category",
+    "remove": "Remove"
   }
 }
