@@ -162,45 +162,64 @@ function normalizeApps(relatedApps: unknown) {
 function normalizeAnalytics(row: AnalyticsRow | null) {
   if (!row) return null
 
-  const chart = Object.entries(asRecord(row.trafficVisits))
+  // Many rows are placeholders filled with zeros — a 0 visit count, duration,
+  // bounce rate or source share means "no data", so it's dropped rather than
+  // shown as a flat line and a column of 0.00%.
+  const positive = (n: number | null | undefined) => (n != null && n > 0 ? n : null)
+
+  let chart = Object.entries(asRecord(row.trafficVisits))
     .map(([month, v]) => ({ month: month.slice(0, 7), visits: asNumber(v) ?? 0 }))
     .sort((a, b) => a.month.localeCompare(b.month))
+  if (chart.every(p => p.visits <= 0)) chart = []
 
   const sources = Object.entries(asRecord(row.trafficSources))
     .map(([name, v]) => ({ name, pct: asNumber(v) ?? 0 }))
+    .filter(s => s.pct > 0)
     .sort((a, b) => b.pct - a.pct)
 
   const engagement = asRecord(row.engagement)
-  const bounce = asNumber(engagement.bounceRate)
+  const bounce = positive(asNumber(engagement.bounceRate))
+  const monthlyVisits = positive(row.monthlyVisits) ?? positive(chart.at(-1)?.visits)
   // Month-over-month growth from the same visits the chart shows. growthMetrics.change
   // isn't reliable on its own: SimilarWeb rows store it as a fraction (0.12 = 12%) but
   // Toolify-sourced rows as a percentage (735.06 = 735%), and x100 on the latter gave
   // "73505.9%". It is only used when the chart has fewer than two months.
   const [prev, last] = chart.slice(-2).map(p => p.visits)
-  const change = chart.length >= 2 && prev! > 0
-    ? (last! - prev!) / prev!
-    : asNumber(asRecord(row.growthMetrics).change)
+  // No visits at all → no growth either (growthMetrics.change is 0 on placeholder rows).
+  const change = monthlyVisits == null
+    ? null
+    : chart.length >= 2 && prev! > 0
+      ? (last! - prev!) / prev!
+      : asNumber(asRecord(row.growthMetrics).change)
 
-  return {
-    monthlyVisits: row.monthlyVisits ?? chart.at(-1)?.visits ?? null,
+  const result = {
+    monthlyVisits,
     growthPct: change == null ? null : change * 100,
-    avgVisitDuration: asNumber(engagement.timeOnSite ?? engagement.avgVisitDuration),
-    pagesPerVisit: asNumber(engagement.pagePerVisit ?? engagement.pagesPerVisit),
+    avgVisitDuration: positive(asNumber(engagement.timeOnSite ?? engagement.avgVisitDuration)),
+    pagesPerVisit: positive(asNumber(engagement.pagePerVisit ?? engagement.pagesPerVisit)),
     bounceRatePct: bounce == null ? null : bounce * 100,
     chart,
     sources,
     keywords: normalizeKeywords(row.organicKeywords, row.paidKeywords),
     geography: normalizeGeography(row.geography),
     ranking: {
-      global: row.globalRanking,
+      global: positive(row.globalRanking),
       country: row.highestTrafficCountry ? COUNTRY_NUMERIC_TO_ALPHA2[row.highestTrafficCountry] ?? null : null,
-      countryRank: row.highestTrafficCountryRanking,
+      countryRank: positive(row.highestTrafficCountryRanking),
       // "Computers_Electronics_and_Technology/Graphics_Multimedia_and_Web_Design" → "Graphics Multimedia and Web Design"
       category: row.category ? row.category.split('/').pop()!.replace(/_/g, ' ') : null,
-      categoryRank: row.categoryRanking
+      categoryRank: positive(row.categoryRanking)
     },
     yearFounded: row.yearFounded,
     employeeRange: row.employeeRange,
     apps: normalizeApps(row.relatedApps)
   }
+
+  // Nothing left worth a section → null, so the page shows "no traffic data yet".
+  const r = result.ranking
+  const hasData = result.monthlyVisits != null || result.chart.length || result.sources.length
+    || result.keywords.length || result.geography.length || result.apps.length
+    || r.global != null || r.countryRank != null || r.categoryRank != null
+    || !!result.yearFounded || !!result.employeeRange
+  return hasData ? result : null
 }

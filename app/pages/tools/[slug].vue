@@ -293,12 +293,13 @@ function formatDuration(seconds: number | null | undefined) {
 const analyticsStats = computed(() => {
   const a = analytics.value
   if (!a) return []
+  // Metrics without data (null from the API) are left out instead of showing "—".
   return [
-    { label: t('tool.monthlyVisits'), value: formatCompact(a.monthlyVisits) },
-    { label: t('tool.avgVisitDuration'), value: formatDuration(a.avgVisitDuration) },
-    { label: t('tool.pagePerVisit'), value: a.pagesPerVisit == null ? '—' : a.pagesPerVisit.toFixed(2) },
-    { label: t('tool.bounceRate'), value: a.bounceRatePct == null ? '—' : `${a.bounceRatePct.toFixed(2)}%` }
-  ]
+    a.monthlyVisits != null && { label: t('tool.monthlyVisits'), value: formatCompact(a.monthlyVisits) },
+    a.avgVisitDuration != null && { label: t('tool.avgVisitDuration'), value: formatDuration(a.avgVisitDuration) },
+    a.pagesPerVisit != null && { label: t('tool.pagePerVisit'), value: a.pagesPerVisit.toFixed(2) },
+    a.bounceRatePct != null && { label: t('tool.bounceRate'), value: `${a.bounceRatePct.toFixed(2)}%` }
+  ].filter(Boolean) as { label: string; value: string }[]
 })
 
 // Round a raw axis step up to 1/2/2.5/5 × 10^n so tick labels read cleanly.
@@ -981,8 +982,8 @@ useSeoMeta({
           </dl>
 
           <!-- Visit over time: stats left, chart right -->
-          <div class="grid grid-cols-1 gap-8 border-b border-ink-200 p-7 lg:grid-cols-[320px_1fr]">
-            <div>
+          <div v-if="analyticsStats.length || trafficChart" class="grid grid-cols-1 gap-8 border-b border-ink-200 p-7 lg:grid-cols-[320px_1fr]">
+            <div v-if="analyticsStats.length">
               <h4 class="border-l-4 border-brand-500 pl-3 text-base font-semibold text-ink-900">{{ t('tool.visitOverTime') }}</h4>
               <dl class="mt-4 divide-y divide-ink-200 rounded-lg border border-ink-200">
                 <div v-for="stat in analyticsStats" :key="stat.label" class="flex items-center justify-between px-5 py-3.5">
