@@ -50,7 +50,7 @@ useSeoMeta({
   <div>
     <AppHero />
 
-    <section id="feed" class="w-full border-b border-ink-200 bg-white px-4 pt-8 pb-11 sm:px-6 lg:px-8">
+    <section id="feed" class="after-dot-grid w-full border-b border-ink-200 px-4 pt-8 pb-11 sm:px-6 lg:px-8">
       <div class="mx-auto grid max-w-[1440px] grid-cols-1 gap-5 lg:grid-cols-[260px_1fr_380px] lg:items-start">
 
         <aside class="flex min-w-0 flex-col gap-3 lg:order-1">

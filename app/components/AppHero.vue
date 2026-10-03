@@ -18,7 +18,7 @@ function onSearch(q: string) {
 </script>
 
 <template>
-  <section class="dot-grid-bg w-full border-b border-ink-200 px-4 pt-[72px] pb-[76px] sm:px-6 lg:px-8">
+  <section class="dot-grid-bg w-full px-4 pt-[72px] pb-[76px] sm:px-6 lg:px-8">
     <div class="mx-auto max-w-[1240px] text-center">
       <div class="eyebrow inline-flex items-center gap-[9px] normal-case">
         <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>

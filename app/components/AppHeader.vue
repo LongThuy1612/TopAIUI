@@ -80,6 +80,9 @@ const productItems = [
   }
 ]
 
+// Prompts and Resource menus are hidden for now; flip to bring them back.
+const SHOW_PROMPTS_RESOURCE = false
+
 const promptsMenuOpen = ref(false)
 let promptsCloseTimer: ReturnType<typeof setTimeout> | null = null
 
@@ -181,15 +184,17 @@ const submitItems = [
     icon: 'M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757M10.81 15.312a4.5 4.5 0 0 1-1.242-7.244l4.5-4.5a4.5 4.5 0 0 1 6.364 6.364l-1.757 1.757',
     titleKey: 'submitMenu.guestPostsTitle',
     stroke: true
-  },
+  }
+]
+
+// Shown as top-level header links rather than inside the Submit menu.
+const submitLinks = [
   {
     to: '/update-ai',
-    icon: 'M11.47 2.47a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 1 1-1.06 1.06l-3.22-3.22V16.5a.75.75 0 0 1-1.5 0V4.81L7.03 8.03a.75.75 0 0 1-1.06-1.06l4.5-4.5ZM3 15.75a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z',
     titleKey: 'submitMenu.updateAiTitle'
   },
   {
     to: '/submit-gpt',
-    icon: 'M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z',
     titleKey: 'submitMenu.submitGptTitle'
   }
 ]
@@ -230,7 +235,7 @@ const rankingItems = [
         <span class="text-[22px] font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
       </NuxtLink>
 
-      <nav class="hidden shrink-0 items-center gap-1 lg:flex">
+      <nav class="hidden flex-1 items-center justify-center gap-4 lg:flex">
         <NuxtLink to="/category/all?pricing=FREE" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
           {{ t('header.freeTools') }}
         </NuxtLink>
@@ -309,7 +314,7 @@ const rankingItems = [
           </div>
         </div>
 
-        <div class="relative" @mouseenter="openPromptsMenu" @mouseleave="scheduleClosePromptsMenu">
+        <div v-if="SHOW_PROMPTS_RESOURCE" class="relative" @mouseenter="openPromptsMenu" @mouseleave="scheduleClosePromptsMenu">
           <a
             href="#"
             class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
@@ -343,7 +348,7 @@ const rankingItems = [
             </NuxtLink>
           </div>
         </div>
-        <div class="relative" @mouseenter="openResourceMenu" @mouseleave="scheduleCloseResourceMenu">
+        <div v-if="SHOW_PROMPTS_RESOURCE" class="relative" @mouseenter="openResourceMenu" @mouseleave="scheduleCloseResourceMenu">
           <a
             href="#"
             class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
@@ -407,6 +412,14 @@ const rankingItems = [
             </NuxtLink>
           </div>
         </div>
+        <NuxtLink
+          v-for="item in submitLinks"
+          :key="item.to"
+          :to="item.to"
+          class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
+        >
+          {{ t(item.titleKey) }}
+        </NuxtLink>
       </nav>
 
       <nav class="ml-auto flex shrink-0 items-center gap-4">

@@ -23,9 +23,34 @@ body {
 }
 
 .dot-grid-bg {
+  position: relative;
   background-color: #fff;
-  background-image:
-    radial-gradient(circle at 50% -10%, rgba(219, 39, 119, .10), rgba(255, 255, 255, 0) 55%),
-    radial-gradient(#EDE3E8 1px, transparent 1px);
-  background-size: auto, 22px 22px;
+  background-image: radial-gradient(circle at 50% -10%, rgba(219, 39, 119, .10), rgba(255, 255, 255, 0) 55%);
+}
+
+/* The dots sit on their own layer that runs past the bottom of the section
+   and fades out, so they spill softly into the content below instead of
+   stopping at a hard edge. The section after it uses .after-dot-grid. */
+.dot-grid-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 -140px;
+  background-image: radial-gradient(#EDE3E8 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 260px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 260px), transparent);
+  pointer-events: none;
+}
+
+.dot-grid-bg > * {
+  position: relative;
+}
+
+/* Section right below a .dot-grid-bg: stacks above the spilled dots and
+   starts transparent so they show through, easing into its own background
+   (white, or set --after-dot-grid-bg). */
+.after-dot-grid {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent, var(--after-dot-grid-bg, #fff) 160px);
 }
