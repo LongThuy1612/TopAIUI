@@ -446,10 +446,10 @@ const countryName = (code: string) => {
 
 const geographyRegions = computed(() =>
   (analytics.value?.geography ?? []).map(g => ({ ...g, label: countryName(g.code) }))
+)
 
 // Country highlighted on the map and in the region list (ISO numeric), kept in sync both ways.
 const hoveredRegion = ref<number | null>(null)
-)
 
 const analyticsFacts = computed(() => {
   const a = analytics.value
