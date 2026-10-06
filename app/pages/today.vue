@@ -11,7 +11,7 @@ const loadingMore = ref(false)
 
 watch(locale, () => { page.value = 1 })
 
-const { data: toolsRes } = await useFetch<ToolsResponse>('/api/tools', {
+const { data: toolsRes, error: toolsError, refresh: refreshTools } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({
     today: 'true',
     page: page.value,
@@ -27,8 +27,19 @@ watch(toolsRes, (res) => {
   loadingMore.value = false
 }, { immediate: true })
 
+// A failed page leaves data empty, so the watcher above never clears
+// loadingMore and scrolling would stop for good. Clear it here instead; the
+// next time the sentinel comes into view loadMore() retries that same page.
+watch(toolsError, (err) => { if (err) loadingMore.value = false })
+
 function loadMore() {
-  if (loadingMore.value || page.value >= pageCount.value) return
+  if (loadingMore.value) return
+  if (toolsError.value) {
+    loadingMore.value = true
+    refreshTools()
+    return
+  }
+  if (page.value >= pageCount.value) return
   loadingMore.value = true
   page.value += 1
 }

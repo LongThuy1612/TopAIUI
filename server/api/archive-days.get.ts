@@ -1,6 +1,7 @@
 // Days of one month (UTC) that have published tools, keyed by addedOn — drives
 // the calendar on /archive/[date]. ?month=YYYY-MM → [{ date: 'YYYY-MM-DD', count }]
-export default defineEventHandler(async (event) => {
+// Cached per month like the other public lists; only the current month changes.
+export default defineCachedEventHandler(async (event) => {
   const month = String(getQuery(event).month ?? '')
   const start = /^\d{4}-\d{2}$/.test(month) ? new Date(`${month}-01T00:00:00Z`) : null
   if (!start || Number.isNaN(start.getTime())) {
@@ -15,4 +16,4 @@ export default defineEventHandler(async (event) => {
     GROUP BY 1
     ORDER BY 1
   `
-})
+}, { name: 'api-archive-days', maxAge: 600, swr: true, shouldBypassCache: () => import.meta.dev })

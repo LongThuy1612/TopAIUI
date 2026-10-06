@@ -65,29 +65,45 @@ export default defineCachedEventHandler(async (event) => {
       orderBy,
       skip: (page - 1) * limit,
       take: limit,
-      include: {
+      // Only what the cards / rows / alternatives render. The full row carries
+      // large JSON columns (nuxtTraffic, companyInfo, attributes…) and every
+      // locale's long description — the home page alone asks for 200 tools, and
+      // the SSR payload embeds the response a second time in the HTML.
+      select: {
+        id: true,
+        slug: true,
+        name: true,
+        icon: true,
+        logoUrl: true,
+        screenshotUrl: true,
+        website: true,
+        pricingType: true,
+        isFeatured: true,
+        isAd: true,
+        isVerified: true,
+        averageRating: true,
+        reviewCount: true,
+        upvoteCount: true,
+        collectionCount: true,
+        createdAt: true,
+        addedOn: true,
         categories: { select: { slug: true, icon: true, name: true, translations: { select: { locale: true, name: true } } } },
         tags: { select: { slug: true, translations: { select: { locale: true, name: true } } } },
-        translations: { select: { locale: true, shortDesc: true, description: true } }
+        translations: { select: { locale: true, shortDesc: true } }
       }
     }),
     prisma.tool.count({ where })
   ])
 
   return {
-    // Source-URL / source columns reveal where the data was scraped from —
-    // keep them out of the public payload.
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    items: items.map(({ translations, categories, tags, toolifyUrl, productHuntUrl, source, ...tool }) => {
+    items: items.map(({ translations, categories, tags, ...tool }) => {
       const translation = pickByLocale(translations, locale)
       return {
         ...tool,
         icon: resolveToolImage(tool.icon),
         logoUrl: resolveToolImage(tool.logoUrl),
         screenshotUrl: resolveToolImage(tool.screenshotUrl),
-        images: resolveToolImages(tool.images),
         shortDesc: cleanText(translation?.shortDesc),
-        description: cleanText(translation?.description),
         categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug })),
         tags: tags.map((tg) => ({ slug: tg.slug, name: cleanText(pickByLocale(tg.translations, locale)?.name) ?? tg.slug }))
       }

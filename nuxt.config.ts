@@ -1,3 +1,15 @@
+// Page HTML cache rule. A cached render only sees the request headers listed
+// in `varies`, and they're part of the cache key:
+//   - cookie: reduced to just the locale cookie by
+//     server/middleware/01.page-cache-locale.ts → one cache entry per language,
+//     rendered in that language
+//   - host / x-forwarded-proto: so useRequestURL() (share links) sees the real
+//     site URL instead of http://localhost. Not x-forwarded-host: h3 ignores it
+//     unless asked to, so it would only let any client mint new cache entries.
+function pageCache(maxAge: number) {
+  return { cache: { maxAge, swr: true, varies: ['cookie', 'host', 'x-forwarded-proto'] } }
+}
+
 export default defineNuxtConfig({
   compatibilityDate: '2026-01-01',
   future: { compatibilityVersion: 4 },
@@ -112,10 +124,18 @@ export default defineNuxtConfig({
   // USER / personalized pages (dashboard, "my submissions") → same reasoning,
   // each response is specific to the logged-in user, so caching is unsafe.
   routeRules: {
-    // Public — safe to cache, identical for everyone
-    '/': { cache: { maxAge: 60, swr: true } },
-    '/category/**': { cache: { maxAge: 300, swr: true } },
-    '/tools/**': { cache: { maxAge: 3600, swr: true } },
+    // Public — safe to cache, identical for everyone in the same language
+    // (see pageCache below).
+    '/': pageCache(60),
+    '/category/**': pageCache(300),
+    '/tools/**': pageCache(3600),
+    '/new': pageCache(60),
+    '/today': pageCache(60),
+    '/most-featured': pageCache(300),
+    '/archive/**': pageCache(600),
+    // The ranking dataset itself is rebuilt hourly (server/utils/ranking.ts).
+    '/ranking': pageCache(600),
+    '/ranking/**': pageCache(600),
 
     // Dashboard (every logged-in user) and admin-only pages — always dynamic,
     // never cached, hidden from search engines.
@@ -162,7 +182,13 @@ export default defineNuxtConfig({
     routeRules: {
       '/': { cache: false },
       '/category/**': { cache: false },
-      '/tools/**': { cache: false }
+      '/tools/**': { cache: false },
+      '/new': { cache: false },
+      '/today': { cache: false },
+      '/most-featured': { cache: false },
+      '/archive/**': { cache: false },
+      '/ranking': { cache: false },
+      '/ranking/**': { cache: false }
     }
   }
 })

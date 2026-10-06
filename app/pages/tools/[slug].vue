@@ -16,7 +16,10 @@ const [{ data: tool, error }, { data: reviewsRes }] = await Promise.all([
 ])
 
 if (error.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Tool not found' })
+  // Only a real "no such tool" is a 404; a DB / API failure must not tell
+  // crawlers the page is gone (and a 503 keeps it out of the page cache).
+  const notFound = error.value.statusCode === 404
+  throw createError({ statusCode: notFound ? 404 : 503, statusMessage: notFound ? 'Tool not found' : 'Service unavailable' })
 }
 
 const category = computed(() => tool.value?.categories?.[0])
@@ -115,9 +118,17 @@ async function fetchReviews(page: number, sort: 'newest' | 'oldest') {
 async function loadMoreReviews() {
   if (reviewsLoading.value || !reviewsHasMore.value) return
   const nextPage = reviewsPage.value + 1
-  const items = await fetchReviews(nextPage, reviewsSort.value)
+  const sort = reviewsSort.value
+  const items = await fetchReviews(nextPage, sort)
+  // Sort changed while this page was loading: changeReviewsSort already
+  // replaced the list, so these (old-order) reviews don't belong in it.
+  if (sort !== reviewsSort.value) return
   reviews.value.push(...items)
   reviewsPage.value = nextPage
+  // Pages are cached separately, so total can be ahead of what's left (a review
+  // was rejected meanwhile) — an empty page means the end, or the button would
+  // stay up and keep fetching empty pages.
+  if (!items.length) reviewsTotal.value = reviews.value.length
 }
 
 async function changeReviewsSort(sort: 'newest' | 'oldest') {

@@ -139,6 +139,18 @@ model Tool {
   @@index([addedOn(sort: Desc), id])
   @@index([createdAt])
   @@index([aiSync])
+  // "My AIs" / dashboard: WHERE ownerId = ? ORDER BY createdAt DESC.
+  @@index([ownerId, createdAt])
+  // Announcement bar on every page: featured=true, newest first, LIMIT 1.
+  @@index([isFeatured, createdAt])
+  // sort=rating (home "top rated", /most-featured).
+  @@index([averageRating(sort: Desc)])
+  // sort=name and sort=featured on category pages.
+  @@index([name])
+  @@index([isAd(sort: Desc), adPriority(sort: Desc), isFeatured(sort: Desc), viewCount(sort: Desc)])
+  // Name search (?q= on /api/tools, /api/promote/tools, admin) is ILIKE '%q%',
+  // which a btree can't serve; a trigram GIN index can.
+  @@index([name(ops: raw("gin_trgm_ops"))], type: Gin, map: "Tool_name_trgm_idx")
   @@map("Tool")
 }
 
@@ -219,6 +231,8 @@ model Review {
   user User? @relation(fields: [userId], references: [id])
 
   @@index([toolId, status, createdAt])
+  // Review Manager: filter by status, newest first, plus the pending count.
+  @@index([status, createdAt])
   @@map("Review")
 }
 

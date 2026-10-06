@@ -7,7 +7,7 @@ const [{ data: newRes }, { data: todayRes }, { data: categories }, { data: topRa
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 5, newToday: 'true', locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 15, today: 'true', locale: locale.value })) }),
   useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 200, locale: locale.value })) })
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 100, locale: locale.value })) })
 ])
 
 const newTools = computed(() => newRes.value?.items ?? [])

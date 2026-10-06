@@ -4,6 +4,10 @@ export default defineCachedEventHandler(async (event) => {
   const slug = getRouterParam(event, 'slug')
   const query = getQuery(event)
   const locale = String(query.locale ?? 'en')
+  // Only the requested locale and the English fallback: every locale's row
+  // carries long description / whatIs / howToUse text and its own FAQs, and
+  // only one of them is ever shown.
+  const localeFilter = { locale: { in: [...new Set([locale, 'en'])] } }
 
   // Analytics are keyed by slug, so both queries can run at once.
   const [tool, analyticsRow] = await Promise.all([prisma.tool.findFirst({
@@ -42,10 +46,12 @@ export default defineCachedEventHandler(async (event) => {
       createdAt: true,
       addedOn: true,
       translations: {
-        select: { locale: true, shortDesc: true, description: true, whatIs: true, howToUse: true, coreFeatures: true, useCases: true }
+        where: localeFilter,
+        select: TRANSLATION_SELECT
       },
       pricingPlans: {
-        select: { locale: true, name: true, price: true, period: true, features: true }
+        where: localeFilter,
+        select: PRICING_SELECT
       },
       categories: {
         select: {
@@ -62,8 +68,10 @@ export default defineCachedEventHandler(async (event) => {
         }
       },
       faqs: {
-        select: { locale: true, question: true, answer: true }
-      }
+        where: localeFilter,
+        select: FAQ_SELECT
+      },
+      _count: { select: { translations: true, pricingPlans: true, faqs: true } }
     }
   }), prisma.toolAnalyticsData.findUnique({
     where: { toolSlug: slug },
@@ -79,7 +87,28 @@ export default defineCachedEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: `Tool "${slug}" not found` })
   }
 
-  const { translations, pricingPlans, categories, tags, faqs, ...rest } = tool
+  const { categories, tags, _count: counts, ...rest } = tool
+  let { translations, pricingPlans, faqs } = tool
+  // Content exists only in some other locale (rare): load it, as pickByLocale /
+  // pickLocaleGroup fell back to any locale when every locale was loaded.
+  const missing = {
+    translations: !translations.length && counts.translations > 0,
+    pricingPlans: !pricingPlans.length && counts.pricingPlans > 0,
+    faqs: !faqs.length && counts.faqs > 0
+  }
+  if (missing.translations || missing.pricingPlans || missing.faqs) {
+    const any = await prisma.tool.findUnique({
+      where: { id: tool.id },
+      select: {
+        translations: missing.translations && { select: TRANSLATION_SELECT, take: 1 },
+        pricingPlans: missing.pricingPlans && { select: PRICING_SELECT },
+        faqs: missing.faqs && { select: FAQ_SELECT }
+      }
+    })
+    translations = any?.translations ?? translations
+    pricingPlans = any?.pricingPlans ?? pricingPlans
+    faqs = any?.faqs ?? faqs
+  }
   const translation = pickByLocale(translations, locale)
 
   return {
@@ -101,6 +130,10 @@ export default defineCachedEventHandler(async (event) => {
     analytics: normalizeAnalytics(analyticsRow)
   }
 }, { name: 'api-tool', maxAge: 300, swr: true, shouldBypassCache: () => import.meta.dev })
+
+const TRANSLATION_SELECT = { locale: true, shortDesc: true, description: true, whatIs: true, howToUse: true, coreFeatures: true, useCases: true } as const
+const PRICING_SELECT = { locale: true, name: true, price: true, period: true, features: true } as const
+const FAQ_SELECT = { locale: true, question: true, answer: true } as const
 
 type AnalyticsRow = {
   monthlyVisits: number | null
