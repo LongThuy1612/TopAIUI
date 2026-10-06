@@ -195,7 +195,10 @@ async function loadRankingDataset(): Promise<RankingDataset> {
 // would re-parse the whole multi-MB dataset. Stale-while-revalidate: after an
 // hour the current copy keeps being served while one rebuild runs; a failed
 // rebuild keeps the old copy and is retried on the next request.
-const DATASET_MAX_AGE = 60 * 60 * 1000
+// Dev keeps it only a minute: reloading ~40k rows / ~18 MB of JSON on every
+// request made each ranking tab click take seconds, and a minute is still
+// short enough for DB edits to show up while working on it.
+const DATASET_MAX_AGE = (import.meta.dev ? 60 : 60 * 60) * 1000
 let dataset: { value: RankingDataset; at: number } | null = null
 let building: Promise<RankingDataset> | null = null
 
@@ -210,7 +213,6 @@ function rebuildRankingDataset() {
 }
 
 export async function getRankingDataset(): Promise<RankingDataset> {
-  if (import.meta.dev) return loadRankingDataset()
   if (!dataset) return rebuildRankingDataset()
   if (Date.now() - dataset.at > DATASET_MAX_AGE) {
     rebuildRankingDataset().catch(err => console.error('[ranking] dataset rebuild failed', err))
