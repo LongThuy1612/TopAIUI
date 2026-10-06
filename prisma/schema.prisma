@@ -648,3 +648,49 @@ model PhCategory {
   @@index([parentCategoryId])
   @@map("PhCategory")
 }
+
+model CapterraTool {
+  id              String    @id @default(uuid())
+  capterraId      Int       @unique              // 10265222 từ /p/10265222/TFives/
+  slug            String                         // "TFives"
+  url             String
+  name            String
+  websiteUrl      String?                        // vendor's own site (Capterra's "Visit website")
+
+  categoryName    String?                        // breadcrumb cấp 2, vd "Audit Software"
+  categoryUrl     String?
+
+  lastUpdated     DateTime? @db.Date             // "Last updated on <date>" trên trang
+                                                 // (ngày sửa profile, KHÔNG phải ngày tạo)
+  description     String?   @db.Text
+  usedFor         Json?                          // string[]
+
+  ratingOverall   Float?                         // null khi reviewCount = 0
+  reviewCount     Int       @default(0)
+  startingPrice   String?                        // free text: "Contact vendor for pricing", "R$149.9 ..."
+  freeTrial       Boolean   @default(false)
+  freeVersion     Boolean   @default(false)
+  pricingPlans    Json?                          // [{name, price, unit}]
+
+  alternatives    Json?                          // [{name, rating, reviewCount, startingPrice, positivePct}]
+  headToHead      Json?                          // {name, rating, reviewCount, startingPrice}
+  support         Json?                          // string[]
+  training        Json?                          // string[]
+  deployment      Json?                          // string[]
+  typicalUsers    Json?                          // string[]
+
+  features        Json?                          // [{name, description}]
+  ratingBreakdown Json?                          // {"5":9,"4":4,...}
+  subRatings      Json?                          // {easeOfUse, valueForMoney, customerService, features}
+  reviews         Json?                          // [{reviewer, role, industry, title, date, overallRating, ... pros, cons}]
+  faqs            Json?                          // [{section, question, answer}]
+
+  sourceUrl       String?
+  scrapedAt       DateTime?
+  isSync          Int       @default(0) @map("is_sync")
+  createdAt       DateTime  @default(now())      // = ngày crawler của mình thấy tool lần đầu
+  updatedAt       DateTime  @updatedAt
+
+  @@index([lastUpdated])
+  @@index([categoryName])
+}

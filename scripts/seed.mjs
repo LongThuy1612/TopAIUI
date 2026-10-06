@@ -69,6 +69,81 @@ function fakeAnalytics(slug) {
   }
 }
 
+// TFives = real data read from capterra.com/p/10265222/TFives/ on 2026-10-06 (brand-new tool,
+// no reviews yet). Keepfy only carries the shape of the fields a new tool leaves empty
+// (pricingPlans, ratingBreakdown, subRatings, features, reviews, faqs); long text trimmed with '...'.
+const capterraTools = [
+  {
+    capterraId: 10265222,
+    slug: 'TFives',
+    url: 'https://www.capterra.com/p/10265222/TFives/',
+    name: 'TFives',
+    categoryName: 'Audit Software',
+    categoryUrl: 'https://www.capterra.com/audit-software/',
+    lastUpdated: new Date('2026-10-06'),
+    description: 'TFives is AI governance and regulatory compliance software for pharmaceutical and life sciences companies. ComplianceIQ, the core compliance management platform, applies the right regulations, controls, and evidence to every AI workflow, from design to retirement. Role-based workflows serve regulatory affairs, quality, clinical and R&D, medical affairs and safety, and commercial teams. Before an AI agent acts on a high-consequence decision, TFives checks that it is allowed within its approved use. Allowed actions proceed and are recorded; others are stopped and sent to a human reviewer. Every decision is logged with the rule applied, the source evidence, and who approved it, and can be exported as a signed ALCOA+ inspection package. PromoIQ checks pharma promotional content against FDA and FTC rules before MLR review. TFives supports governance, risk and compliance (GRC) programs and works alongside RIM and eQMS systems. SOC 2 compliant; 2026 Fierce AI Innovation Awards finalist.',
+    usedFor: ['Audit'],
+    ratingOverall: null,
+    reviewCount: 0,
+    startingPrice: 'Contact vendor for pricing',
+    freeTrial: true,
+    freeVersion: false,
+    pricingPlans: [],
+    alternatives: [
+      { name: 'Netwrix Access Analyzer', rating: 4.5, reviewCount: 15, startingPrice: 'Contact vendor for pricing', positivePct: 100 },
+      { name: 'ChemicalSafety', rating: 4.7, reviewCount: 3, startingPrice: '$29.00 Per User, Per Month', positivePct: 100 },
+      { name: 'FORM OpX', rating: 4.5, reviewCount: 36, startingPrice: '$30.00 Per User, Per Month', positivePct: 92 },
+      { name: 'VelocityEHS', rating: 4.5, reviewCount: 166, startingPrice: 'Contact vendor for pricing', positivePct: 95 }
+    ],
+    headToHead: { name: 'ComplianceHR', rating: 4.8, reviewCount: 8, startingPrice: '$2500 Other, Per Year' },
+    support: ['Email/Help Desk', 'FAQs/Forum', 'Knowledge Base', 'Phone Support', '24/7 (Live rep)', 'Chat'],
+    training: ['In Person', 'Live Online', 'Webinars', 'Documentation', 'Videos'],
+    deployment: ['Web', 'Android', 'iPhone/iPad'],
+    typicalUsers: ['Freelancers', 'Small businesses', 'Mid size businesses', 'Enterprises'],
+    features: [],
+    reviews: [],
+    faqs: [],
+    sourceUrl: 'https://www.capterra.com/p/10265222/TFives/',
+    scrapedAt: new Date('2026-10-06T00:00:00.000Z')
+  },
+  {
+    capterraId: 248340,
+    slug: 'Keepfy',
+    url: 'https://www.capterra.com/p/248340/Keepfy/',
+    name: 'Keepfy',
+    ratingOverall: 4.7,
+    reviewCount: 13,
+    startingPrice: 'R$149.90 Per User, Per Month',
+    pricingPlans: [{ name: 'Basic', price: 'R$149.90', unit: 'Per User, Per Month' }],
+    ratingBreakdown: { 5: 9, 4: 4, 3: 0, 2: 0, 1: 0 },
+    subRatings: { easeOfUse: 4.6, valueForMoney: 4.7, customerService: 4.6, features: 4.6 },
+    features: [
+      { name: 'Activity Dashboard', description: 'Dashboard to view the status of ongoing processes, identify current incidents and track past activities' },
+      { name: 'Work Order Management', description: 'Creating, assign, and track jobs and/or tasks for work orders' }
+    ],
+    reviews: [
+      {
+        reviewer: 'Luciano O.',
+        role: 'Gestor de Manutenção',
+        industry: 'Health, Wellness and Fitness',
+        title: 'Excelente Sistema',
+        date: '2025-06-11',
+        overallRating: 5.0,
+        easeOfUse: 5.0,
+        features: 5.0,
+        customerService: 5.0,
+        likelihoodToRecommend: 10,
+        pros: 'Sistema eficiente de gestão, ...',
+        cons: 'uma sugestão de melhoria, ...',
+        switchedFrom: 'Leankeep',
+        reviewSource: 'Vendor Referred - Incentive Offered'
+      }
+    ],
+    faqs: [{ section: 'Overview', question: 'Which roles and teams benefit most from Keepfy?', answer: null }],
+    sourceUrl: 'https://www.capterra.com/p/248340/Keepfy/'
+  }
+]
+
 async function seed() {
   console.log('Seeding database...')
 
@@ -92,6 +167,11 @@ async function seed() {
     await prisma.toolAnalyticsData.upsert({ where: { toolSlug: slug }, update: data, create: { toolSlug: slug, ...data } })
   }
   console.log(`Upserted fake analytics for ${analyticsTools.length} tools (${analyticsSkip.join(', ')} left empty).`)
+
+  for (const tool of capterraTools) {
+    await prisma.capterraTool.upsert({ where: { capterraId: tool.capterraId }, update: tool, create: tool })
+  }
+  console.log(`Upserted ${capterraTools.length} Capterra tools.`)
 
   console.log('Seed complete.')
 }

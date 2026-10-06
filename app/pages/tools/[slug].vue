@@ -446,6 +446,9 @@ const countryName = (code: string) => {
 
 const geographyRegions = computed(() =>
   (analytics.value?.geography ?? []).map(g => ({ ...g, label: countryName(g.code) }))
+
+// Country highlighted on the map and in the region list (ISO numeric), kept in sync both ways.
+const hoveredRegion = ref<number | null>(null)
 )
 
 const analyticsFacts = computed(() => {
@@ -1069,7 +1072,13 @@ useSeoMeta({
               <h4 class="border-l-4 border-brand-500 pl-3 text-base font-semibold text-ink-900">{{ t('tool.geography') }}</h4>
               <p class="mt-4 text-base text-ink-900">{{ t('tool.topRegions', { count: analytics.geography.length }) }}</p>
               <ul class="mt-3 divide-y divide-ink-200 rounded-lg border border-ink-200">
-                <li v-for="region in geographyRegions" :key="region.code" class="flex items-center gap-3 px-5 py-3.5 text-base">
+                <li
+                  v-for="region in geographyRegions"
+                  :key="region.code"
+                  :class="['flex items-center gap-3 px-5 py-3.5 text-base transition-colors', region.numeric != null && region.numeric === hoveredRegion && 'bg-[#2A7BFF]/10']"
+                  @mouseenter="hoveredRegion = region.numeric"
+                  @mouseleave="hoveredRegion = null"
+                >
                   <img :src="`https://flagcdn.com/w40/${region.code.toLowerCase()}.png`" alt="" class="h-[18px] w-[30px] shrink-0 object-cover" loading="lazy">
                   <span class="min-w-0 truncate text-ink-900">{{ region.label }}</span>
                   <span class="ml-auto font-bold text-ink-900">{{ region.pct.toFixed(2) }}%</span>
@@ -1082,7 +1091,7 @@ useSeoMeta({
                 {{ analyticsPeriod }} · {{ t('tool.desktopOnly') }}
               </p>
               <div class="mx-auto mt-6 max-w-[520px]">
-                <WorldMap :regions="geographyRegions" />
+                <WorldMap v-model:active="hoveredRegion" :regions="geographyRegions" />
               </div>
             </div>
           </div>
