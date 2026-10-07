@@ -128,7 +128,8 @@ useSeoMeta({
             <thead class="bg-brand-500 text-left text-white">
               <tr>
                 <th class="w-[120px] px-4 py-2.5 text-center font-medium">{{ t('archive.rank') }}</th>
-                <th class="px-4 py-2.5 font-medium">{{ t('archive.name') }}</th>
+                <th class="px-4 py-2.5 font-medium md:w-[30%]">{{ t('archive.name') }}</th>
+                <th class="hidden px-4 py-2.5 font-medium md:table-cell">{{ t('archive.introduction') }}</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-ink-100">
@@ -137,9 +138,12 @@ useSeoMeta({
                 <td class="px-4 py-2.5">
                   <NuxtLink :to="`/tools/${tool.slug}`" class="text-ink-600 hover:text-brand-600">{{ tool.name }}</NuxtLink>
                 </td>
+                <td class="hidden px-4 py-2.5 text-ink-500 md:table-cell">
+                  <span class="line-clamp-2">{{ tool.shortDesc }}</span>
+                </td>
               </tr>
               <tr v-if="!tools.length">
-                <td colspan="2" class="px-4 py-12 text-center text-sm text-ink-400">{{ t('empty.noResults') }}.</td>
+                <td colspan="3" class="px-4 py-12 text-center text-sm text-ink-400">{{ t('empty.noResults') }}.</td>
               </tr>
             </tbody>
           </table>

@@ -10,7 +10,10 @@
     "resource": "Resource",
     "submit": "Submit",
     "adLibrary": "AI Ad Library",
-    "admin": "Dashboard"
+    "admin": "Dashboard",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "auth": {
     "signInTitle": "Sign in to your account",
@@ -687,7 +690,8 @@
   "archive": {
     "title": "Top 1000 AI Tools",
     "rank": "Rank",
-    "name": "Name"
+    "name": "Name",
+    "introduction": "Introduction"
   },
   "footer": {
     "tagline": "Discover, compare and share the best AI tools",
@@ -698,7 +702,19 @@
     "categories": "Categories",
     "company": "Company",
     "language": "Language",
-    "copyright": "All rights reserved."
+    "copyright": "All rights reserved.",
+    "topAiTools": "Top AI Tools",
+    "moreTools": "More Tools",
+    "categoryToolsCount": "{count} {name} Tools",
+    "categoryTools": "{name} Tools",
+    "browseByAlphabet": "Browse by Alphabet",
+    "top1000Directory": "Top 1000 AI Tools Directory",
+    "about": "About",
+    "aboutUs": "About Us",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "advertise": "Advertise",
+    "contact": "Contact"
   },
   "language": {
     "label": "Language"

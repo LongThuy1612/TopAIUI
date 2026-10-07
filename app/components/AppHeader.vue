@@ -187,14 +187,17 @@ const submitItems = [
   }
 ]
 
-// Shown as top-level header links rather than inside the Submit menu.
+// Top-level header links when the nav has room for them; otherwise they move
+// into the Submit menu (see navLevel below).
 const submitLinks = [
   {
     to: '/update-ai',
+    icon: 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99',
     titleKey: 'submitMenu.updateAiTitle'
   },
   {
     to: '/submit-gpt',
+    icon: 'M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z',
     titleKey: 'submitMenu.submitGptTitle'
   }
 ]
@@ -225,212 +228,518 @@ const rankingItems = [
     descKey: 'rankingMenu.sourceDesc'
   }
 ]
+
+// How much of the desktop nav fits, measured from the real (translated) text
+// rather than fixed breakpoints, so the items close in on each other first and
+// only collapse once they would touch:
+//   full    — every item on the bar
+//   merged  — Update AI / Submit GPT move into the Submit menu
+//   compact — the bar is hidden and the burger menu takes over
+// Until the first measurement (SSR + hydration) the breakpoint classes below
+// stand in, so the server-rendered header already looks about right. They hide
+// with visibility, never display:none, so the first measurement on mount sees
+// real widths instead of zeros.
+const navEl = ref<HTMLElement | null>(null)
+const navInner = ref<HTMLElement | null>(null)
+const submitLinksEl = ref<HTMLElement | null>(null)
+const burgerEl = ref<HTMLElement | null>(null)
+const navMeasured = ref(false)
+const navLevel = ref<'full' | 'merged' | 'compact'>('full')
+
+function measureNav() {
+  const nav = navEl.value, inner = navInner.value, extra = submitLinksEl.value
+  if (!nav || !inner || !extra) return
+  // inner is w-max, so its box is the items' natural width. When the two extra
+  // links are out of the flow (absolute), add them back to get the full width.
+  const gap = parseFloat(getComputedStyle(inner).columnGap) || 0
+  const extraWidth = extra.getBoundingClientRect().width + gap
+  const innerWidth = inner.getBoundingClientRect().width
+  const extraInFlow = getComputedStyle(extra).position !== 'absolute'
+  const fullWidth = extraInFlow ? innerWidth : innerWidth + extraWidth
+  // While the burger shows it takes room from the nav that the nav gets back
+  // once the burger hides; count it so growing and shrinking switch at the
+  // same window width.
+  let room = nav.clientWidth - 4
+  const burger = burgerEl.value
+  if (burger && getComputedStyle(burger).display !== 'none') {
+    const burgerStyle = getComputedStyle(burger)
+    room += burger.offsetWidth + parseFloat(burgerStyle.marginLeft) + parseFloat(burgerStyle.marginRight)
+      + (parseFloat(getComputedStyle(burger.parentElement!).columnGap) || 0)
+  }
+  navLevel.value = fullWidth <= room ? 'full' : fullWidth - extraWidth <= room ? 'merged' : 'compact'
+  navMeasured.value = true
+}
+
+// ResizeObserver callbacks that change layout can trigger "ResizeObserver loop"
+// errors; measure on the next frame instead, once per frame.
+let measureFrame = 0
+function scheduleMeasureNav() {
+  if (measureFrame) return
+  measureFrame = requestAnimationFrame(() => { measureFrame = 0; measureNav() })
+}
+
+const navClass = computed(() => {
+  if (!navMeasured.value) return 'flex max-xl:invisible max-xl:overflow-hidden'
+  return navLevel.value === 'compact' ? 'flex invisible overflow-hidden' : 'flex'
+})
+const submitLinksClass = computed(() => {
+  // Parked at the nav's start (left-0) so the hidden copy can't stick out past
+  // the header's right edge.
+  if (!navMeasured.value) return 'flex max-[1759px]:invisible max-[1759px]:absolute max-[1759px]:left-0 max-[1759px]:top-0'
+  return navLevel.value === 'full' ? 'flex' : 'invisible absolute left-0 top-0 flex'
+})
+const showMergedLinks = computed(() => !navMeasured.value || navLevel.value !== 'full')
+const burgerClass = computed(() => {
+  if (!navMeasured.value) return 'flex xl:hidden'
+  return navLevel.value === 'compact' ? 'flex' : 'hidden'
+})
+
+let navObserver: ResizeObserver | null = null
+
+// Mobile menu (shown when navLevel is compact): a panel with the same links;
+// each dropdown becomes a collapsible section.
+const mobileMenuOpen = ref(false)
+const mobileSection = ref<'products' | 'ranking' | 'submit' | null>(null)
+const route = useRoute()
+
+function toggleMobileSection(section: 'products' | 'ranking' | 'submit') {
+  mobileSection.value = mobileSection.value === section ? null : section
+}
+
+const mobilePanelEl = ref<HTMLElement | null>(null)
+const mobileCloseEl = ref<HTMLElement | null>(null)
+
+// Closing with Escape / the close button / the backdrop hands keyboard focus
+// back to the burger; closing because of a navigation leaves focus alone.
+function closeMobileMenu(restoreFocus = true) {
+  if (!mobileMenuOpen.value) return
+  mobileMenuOpen.value = false
+  if (restoreFocus) nextTick(() => burgerEl.value?.focus())
+}
+
+// Close on navigation — also covers links that point at the current page.
+watch(() => route.fullPath, () => closeMobileMenu(false))
+
+// The page behind the panel shouldn't scroll while it is open.
+watch(mobileMenuOpen, (open) => {
+  if (!import.meta.client) return
+  document.documentElement.style.overflow = open ? 'hidden' : ''
+  if (open) nextTick(() => mobileCloseEl.value?.focus())
+  else mobileSection.value = null
+})
+
+function onKeydown(e: KeyboardEvent) {
+  if (!mobileMenuOpen.value) return
+  if (e.key === 'Escape') { closeMobileMenu(); return }
+  // Keep Tab inside the panel; the page behind it is covered.
+  if (e.key === 'Tab' && mobilePanelEl.value) {
+    const focusables = [...mobilePanelEl.value.querySelectorAll<HTMLElement>('a[href], button, select')]
+      .filter(el => el.offsetParent)
+    if (!focusables.length) return
+    const first = focusables[0]!, last = focusables[focusables.length - 1]!
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus() }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus() }
+  }
+}
+
+// Widening the window until the desktop nav fits again closes the panel; going
+// the other way closes any hover dropdown, so it isn't still open when the bar
+// comes back.
+watch(navLevel, (level) => {
+  if (level !== 'compact') closeMobileMenu(false)
+  else productsMenuOpen.value = rankingMenuOpen.value = submitMenuOpen.value = false
+})
+
+onMounted(() => {
+  window.addEventListener('keydown', onKeydown)
+  measureNav()
+  // nav: window / logo size changes. inner: language switch, web fonts loading.
+  navObserver = new ResizeObserver(scheduleMeasureNav)
+  if (navEl.value) navObserver.observe(navEl.value)
+  if (navInner.value) navObserver.observe(navInner.value)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', onKeydown)
+  navObserver?.disconnect()
+  cancelAnimationFrame(measureFrame)
+  document.documentElement.style.overflow = ''
+})
 </script>
 
 <template>
   <header class="sticky top-0 z-40 border-b border-ink-200 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex h-[72px] max-w-[1440px] items-center gap-[30px] px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto flex h-[72px] max-w-[1440px] items-center gap-[clamp(8px,1.4vw,30px)] px-4 sm:px-6 lg:px-8">
       <NuxtLink to="/" class="flex shrink-0 items-center gap-2.5">
         <IconLogo class="h-[30px] w-[30px] rounded-[9px]" width="30" height="30" />
-        <span class="text-[22px] font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
+        <span class="text-[19px] font-extrabold tracking-[-0.02em] text-ink-900 sm:text-[22px]">TopAI<span class="text-brand-500">Collection</span></span>
       </NuxtLink>
 
-      <nav class="hidden flex-1 items-center justify-center gap-4 lg:flex">
-        <NuxtLink to="/category/all?pricing=FREE" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
-          {{ t('header.freeTools') }}
+      <nav ref="navEl" class="min-w-0 flex-1 items-center justify-center" :class="navClass">
+        <!-- Gaps shrink with the window, so items close in before the nav collapses. -->
+        <div ref="navInner" class="relative flex w-max shrink-0 items-center gap-[clamp(0px,1.2vw,16px)]">
+          <NuxtLink to="/category/all?pricing=FREE" class="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
+            {{ t('header.freeTools') }}
+          </NuxtLink>
+          <div class="relative" @mouseenter="openProductsMenu" @mouseleave="scheduleCloseProductsMenu">
+            <a
+              href="#"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
+              :class="productsMenuOpen && 'text-brand-500'"
+              @click.prevent
+            >
+              {{ t('header.products') }}
+              <svg class="h-3.5 w-3.5 transition-transform" :class="productsMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
+              </svg>
+            </a>
+
+            <div
+              v-if="productsMenuOpen"
+              class="absolute left-0 top-full w-[360px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+            >
+              <NuxtLink
+                v-for="item in productItems"
+                :key="item.titleKey"
+                :to="item.to"
+                class="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
+                @click="productsMenuOpen = false"
+              >
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                  <svg v-if="item.stroke" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                    <path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" />
+                  </svg>
+                  <svg v-else class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
+                </span>
+                <span class="min-w-0">
+                  <span class="block text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
+                  <span class="mt-0.5 block text-xs leading-snug text-ink-500">{{ t(item.descKey) }}</span>
+                </span>
+              </NuxtLink>
+            </div>
+          </div>
+          <NuxtLink to="/category/all" class="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
+            {{ t('header.categories') }}
+          </NuxtLink>
+
+          <div class="relative" @mouseenter="openRankingMenu" @mouseleave="scheduleCloseRankingMenu">
+            <NuxtLink
+              to="/ranking"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
+              :class="rankingMenuOpen && 'text-brand-500'"
+            >
+              {{ t('header.rankings') }}
+              <svg class="h-3.5 w-3.5 transition-transform" :class="rankingMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
+              </svg>
+            </NuxtLink>
+
+            <div
+              v-if="rankingMenuOpen"
+              class="absolute left-0 top-full w-[360px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+            >
+              <NuxtLink
+                v-for="item in rankingItems"
+                :key="item.to"
+                :to="item.to"
+                class="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
+                @click="rankingMenuOpen = false"
+              >
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
+                </span>
+                <span class="min-w-0">
+                  <span class="block text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
+                  <span class="mt-0.5 block text-xs leading-snug text-ink-500">{{ t(item.descKey) }}</span>
+                </span>
+              </NuxtLink>
+            </div>
+          </div>
+
+          <div v-if="SHOW_PROMPTS_RESOURCE" class="relative" @mouseenter="openPromptsMenu" @mouseleave="scheduleClosePromptsMenu">
+            <a
+              href="#"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
+              :class="promptsMenuOpen && 'text-brand-500'"
+              @click.prevent
+            >
+              {{ t('header.prompts') }}
+              <svg class="h-3.5 w-3.5 transition-transform" :class="promptsMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
+              </svg>
+            </a>
+
+            <div
+              v-if="promptsMenuOpen"
+              class="absolute left-0 top-full w-[260px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+            >
+              <NuxtLink
+                v-for="item in promptItems"
+                :key="item.titleKey"
+                :to="item.to"
+                class="flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
+                @click="promptsMenuOpen = false"
+              >
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                  <svg v-if="item.stroke" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                    <path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" />
+                  </svg>
+                  <svg v-else class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
+                </span>
+                <span class="text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
+              </NuxtLink>
+            </div>
+          </div>
+          <div v-if="SHOW_PROMPTS_RESOURCE" class="relative" @mouseenter="openResourceMenu" @mouseleave="scheduleCloseResourceMenu">
+            <a
+              href="#"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
+              :class="resourceMenuOpen && 'text-brand-500'"
+              @click.prevent
+            >
+              {{ t('header.resource') }}
+              <svg class="h-3.5 w-3.5 transition-transform" :class="resourceMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
+              </svg>
+            </a>
+
+            <div
+              v-if="resourceMenuOpen"
+              class="absolute left-0 top-full w-[240px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+            >
+              <NuxtLink
+                v-for="item in resourceItems"
+                :key="item.titleKey"
+                :to="item.to"
+                class="flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
+                @click="resourceMenuOpen = false"
+              >
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
+                </span>
+                <span class="text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
+              </NuxtLink>
+            </div>
+          </div>
+          <div class="relative" @mouseenter="openSubmitMenu" @mouseleave="scheduleCloseSubmitMenu">
+            <NuxtLink
+              to="/submit"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
+              :class="submitMenuOpen && 'text-brand-500'"
+            >
+              {{ t('header.submit') }}
+              <svg class="h-3.5 w-3.5 transition-transform" :class="submitMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
+              </svg>
+            </NuxtLink>
+
+            <div
+              v-if="submitMenuOpen"
+              class="absolute left-0 top-full w-[260px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+            >
+              <NuxtLink
+                v-for="item in submitItems"
+                :key="item.titleKey"
+                :to="item.to"
+                class="flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
+                @click="submitMenuOpen = false"
+              >
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                  <svg v-if="item.stroke" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                    <path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" />
+                  </svg>
+                  <svg v-else class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
+                </span>
+                <span class="text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
+              </NuxtLink>
+              <NuxtLink
+                v-for="item in submitLinks"
+                :key="item.to"
+                :to="item.to"
+                v-if="showMergedLinks"
+                class="flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
+                :class="!navMeasured && 'min-[1760px]:hidden'"
+                @click="submitMenuOpen = false"
+              >
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                    <path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" />
+                  </svg>
+                </span>
+                <span class="text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
+              </NuxtLink>
+            </div>
+          </div>
+          <div ref="submitLinksEl" class="items-center gap-[clamp(0px,1.2vw,16px)]" :class="submitLinksClass">
+            <NuxtLink
+              v-for="item in submitLinks"
+              :key="item.to"
+              :to="item.to"
+              class="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
+            >
+              {{ t(item.titleKey) }}
+            </NuxtLink>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="ml-auto flex shrink-0 items-center gap-3 sm:gap-4">
+        <LanguageSwitcher class="hidden sm:block" />
+        <NuxtLink
+          :to="user ? '/dashboard' : '/login'"
+          class="hidden whitespace-nowrap rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 sm:block"
+        >
+          {{ t('header.admin') }}
         </NuxtLink>
-        <div class="relative" @mouseenter="openProductsMenu" @mouseleave="scheduleCloseProductsMenu">
-          <a
-            href="#"
-            class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-            :class="productsMenuOpen && 'text-brand-500'"
-            @click.prevent
+        <button
+          type="button"
+          ref="burgerEl"
+          class="-mr-2 h-10 w-10 items-center justify-center rounded-lg text-ink-800 hover:bg-ink-100/60"
+          :class="burgerClass"
+          :aria-label="t('header.openMenu')"
+          aria-controls="mobile-menu"
+          :aria-expanded="mobileMenuOpen"
+          @click="mobileMenuOpen = true"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Teleported: the header's backdrop-blur would otherwise make it the
+         containing block for this fixed panel. -->
+    <Teleport to="body">
+      <div v-if="mobileMenuOpen" class="fixed inset-0 z-50 bg-ink-900/40" @click="closeMobileMenu()" />
+      <div
+        v-if="mobileMenuOpen"
+        id="mobile-menu"
+        ref="mobilePanelEl"
+        class="fixed inset-x-0 top-0 z-50 flex max-h-screen flex-col supports-[height:100dvh]:max-h-[100dvh] rounded-b-2xl bg-white shadow-xl"
+        role="dialog"
+        aria-modal="true"
+        :aria-label="t('header.menu')"
+      >
+        <!-- Mirrors the header bar: from sm up the language switcher and
+             Dashboard live up here, below sm in the footer row instead. -->
+        <div class="flex h-[72px] shrink-0 items-center gap-3 border-b border-ink-200 px-4 sm:gap-4 sm:px-6 lg:px-8">
+          <NuxtLink to="/" class="mr-auto flex items-center gap-2.5" @click="closeMobileMenu(false)">
+            <IconLogo class="h-[30px] w-[30px] rounded-[9px]" width="30" height="30" />
+            <span class="text-[19px] font-extrabold tracking-[-0.02em] text-ink-900 sm:text-[22px]">TopAI<span class="text-brand-500">Collection</span></span>
+          </NuxtLink>
+          <LanguageSwitcher class="hidden sm:block" />
+          <NuxtLink
+            :to="user ? '/dashboard' : '/login'"
+            class="hidden whitespace-nowrap rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 sm:block"
+            @click="closeMobileMenu(false)"
+          >
+            {{ t('header.admin') }}
+          </NuxtLink>
+          <button
+            ref="mobileCloseEl"
+            type="button"
+            class="-mr-2 flex h-10 w-10 items-center justify-center rounded-lg text-ink-800 hover:bg-ink-100/60"
+            :aria-label="t('header.closeMenu')"
+            @click="closeMobileMenu()"
+          >
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M6 6l12 12M18 6 6 18" /></svg>
+          </button>
+        </div>
+
+        <nav class="min-h-0 overflow-y-auto overscroll-contain px-4 py-3 sm:px-6 lg:px-8">
+          <NuxtLink to="/category/all?pricing=FREE" class="block rounded-lg px-3 py-3 text-base font-semibold text-ink-900 hover:bg-ink-100/60" @click="closeMobileMenu(false)">
+            {{ t('header.freeTools') }}
+          </NuxtLink>
+
+          <button
+            type="button"
+            class="flex w-full items-center justify-between rounded-lg px-3 py-3 text-base font-semibold text-ink-900 hover:bg-ink-100/60"
+            :aria-expanded="mobileSection === 'products'"
+            @click="toggleMobileSection('products')"
           >
             {{ t('header.products') }}
-            <svg class="h-3.5 w-3.5 transition-transform" :class="productsMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
-            </svg>
-          </a>
-
-          <div
-            v-if="productsMenuOpen"
-            class="absolute left-0 top-full w-[360px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
-          >
+            <svg class="h-4 w-4 transition-transform" :class="mobileSection === 'products' && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" /></svg>
+          </button>
+          <div v-if="mobileSection === 'products'" class="pb-2 pl-3">
             <NuxtLink
               v-for="item in productItems"
               :key="item.titleKey"
               :to="item.to"
-              class="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
-              @click="productsMenuOpen = false"
+              class="flex items-center gap-3 rounded-xl p-2.5 hover:bg-ink-100/60"
+              @click="closeMobileMenu(false)"
             >
-              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
-                <svg v-if="item.stroke" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
-                  <path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" />
-                </svg>
-                <svg v-else class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                <svg v-if="item.stroke" class="h-[18px] w-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" /></svg>
+                <svg v-else class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
               </span>
-              <span class="min-w-0">
-                <span class="block text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
-                <span class="mt-0.5 block text-xs leading-snug text-ink-500">{{ t(item.descKey) }}</span>
-              </span>
+              <span class="text-sm font-semibold text-ink-800">{{ t(item.titleKey) }}</span>
             </NuxtLink>
           </div>
-        </div>
-        <NuxtLink to="/category/all" class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
-          {{ t('header.categories') }}
-        </NuxtLink>
 
-        <div class="relative" @mouseenter="openRankingMenu" @mouseleave="scheduleCloseRankingMenu">
-          <NuxtLink
-            to="/ranking"
-            class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-            :class="rankingMenuOpen && 'text-brand-500'"
-          >
-            {{ t('header.rankings') }}
-            <svg class="h-3.5 w-3.5 transition-transform" :class="rankingMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
-            </svg>
+          <NuxtLink to="/category/all" class="block rounded-lg px-3 py-3 text-base font-semibold text-ink-900 hover:bg-ink-100/60" @click="closeMobileMenu(false)">
+            {{ t('header.categories') }}
           </NuxtLink>
 
-          <div
-            v-if="rankingMenuOpen"
-            class="absolute left-0 top-full w-[360px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+          <button
+            type="button"
+            class="flex w-full items-center justify-between rounded-lg px-3 py-3 text-base font-semibold text-ink-900 hover:bg-ink-100/60"
+            :aria-expanded="mobileSection === 'ranking'"
+            @click="toggleMobileSection('ranking')"
           >
+            {{ t('header.rankings') }}
+            <svg class="h-4 w-4 transition-transform" :class="mobileSection === 'ranking' && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" /></svg>
+          </button>
+          <div v-if="mobileSection === 'ranking'" class="pb-2 pl-3">
             <NuxtLink
               v-for="item in rankingItems"
               :key="item.to"
               :to="item.to"
-              class="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
-              @click="rankingMenuOpen = false"
+              class="flex items-center gap-3 rounded-xl p-2.5 hover:bg-ink-100/60"
+              @click="closeMobileMenu(false)"
             >
-              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
-                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                <svg class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
               </span>
-              <span class="min-w-0">
-                <span class="block text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
-                <span class="mt-0.5 block text-xs leading-snug text-ink-500">{{ t(item.descKey) }}</span>
-              </span>
+              <span class="text-sm font-semibold text-ink-800">{{ t(item.titleKey) }}</span>
             </NuxtLink>
           </div>
-        </div>
 
-        <div v-if="SHOW_PROMPTS_RESOURCE" class="relative" @mouseenter="openPromptsMenu" @mouseleave="scheduleClosePromptsMenu">
-          <a
-            href="#"
-            class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-            :class="promptsMenuOpen && 'text-brand-500'"
-            @click.prevent
-          >
-            {{ t('header.prompts') }}
-            <svg class="h-3.5 w-3.5 transition-transform" :class="promptsMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
-            </svg>
-          </a>
-
-          <div
-            v-if="promptsMenuOpen"
-            class="absolute left-0 top-full w-[260px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
-          >
-            <NuxtLink
-              v-for="item in promptItems"
-              :key="item.titleKey"
-              :to="item.to"
-              class="flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
-              @click="promptsMenuOpen = false"
-            >
-              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
-                <svg v-if="item.stroke" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
-                  <path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" />
-                </svg>
-                <svg v-else class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
-              </span>
-              <span class="text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
-            </NuxtLink>
-          </div>
-        </div>
-        <div v-if="SHOW_PROMPTS_RESOURCE" class="relative" @mouseenter="openResourceMenu" @mouseleave="scheduleCloseResourceMenu">
-          <a
-            href="#"
-            class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-            :class="resourceMenuOpen && 'text-brand-500'"
-            @click.prevent
-          >
-            {{ t('header.resource') }}
-            <svg class="h-3.5 w-3.5 transition-transform" :class="resourceMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
-            </svg>
-          </a>
-
-          <div
-            v-if="resourceMenuOpen"
-            class="absolute left-0 top-full w-[240px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
-          >
-            <NuxtLink
-              v-for="item in resourceItems"
-              :key="item.titleKey"
-              :to="item.to"
-              class="flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
-              @click="resourceMenuOpen = false"
-            >
-              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
-                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
-              </span>
-              <span class="text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
-            </NuxtLink>
-          </div>
-        </div>
-        <div class="relative" @mouseenter="openSubmitMenu" @mouseleave="scheduleCloseSubmitMenu">
-          <NuxtLink
-            to="/submit"
-            class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-            :class="submitMenuOpen && 'text-brand-500'"
+          <button
+            type="button"
+            class="flex w-full items-center justify-between rounded-lg px-3 py-3 text-base font-semibold text-ink-900 hover:bg-ink-100/60"
+            :aria-expanded="mobileSection === 'submit'"
+            @click="toggleMobileSection('submit')"
           >
             {{ t('header.submit') }}
-            <svg class="h-3.5 w-3.5 transition-transform" :class="submitMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
-            </svg>
-          </NuxtLink>
-
-          <div
-            v-if="submitMenuOpen"
-            class="absolute left-0 top-full w-[260px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
-          >
+            <svg class="h-4 w-4 transition-transform" :class="mobileSection === 'submit' && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" /></svg>
+          </button>
+          <div v-if="mobileSection === 'submit'" class="pb-2 pl-3">
             <NuxtLink
-              v-for="item in submitItems"
-              :key="item.titleKey"
+              v-for="item in [...submitItems, ...submitLinks.map(l => ({ ...l, stroke: true }))]"
+              :key="item.to"
               :to="item.to"
-              class="flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-ink-100/60"
-              @click="submitMenuOpen = false"
+              class="flex items-center gap-3 rounded-xl p-2.5 hover:bg-ink-100/60"
+              @click="closeMobileMenu(false)"
             >
-              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
-                <svg v-if="item.stroke" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
-                  <path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" />
-                </svg>
-                <svg v-else class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                <svg v-if="item.stroke" class="h-[18px] w-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" /></svg>
+                <svg v-else class="h-[18px] w-[18px]" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
               </span>
-              <span class="text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
+              <span class="text-sm font-semibold text-ink-800">{{ t(item.titleKey) }}</span>
             </NuxtLink>
           </div>
-        </div>
-        <NuxtLink
-          v-for="item in submitLinks"
-          :key="item.to"
-          :to="item.to"
-          class="rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-        >
-          {{ t(item.titleKey) }}
-        </NuxtLink>
-      </nav>
+        </nav>
 
-      <nav class="ml-auto flex shrink-0 items-center gap-4">
-        <LanguageSwitcher class="hidden sm:block" />
-        <NuxtLink
-          :to="user ? '/dashboard' : '/login'"
-          class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600"
-        >
-          {{ t('header.admin') }}
-        </NuxtLink>
-      </nav>
-    </div>
+        <div class="flex shrink-0 items-center gap-3 border-t border-ink-200 px-4 py-4 sm:hidden">
+          <LanguageSwitcher />
+          <NuxtLink
+            :to="user ? '/dashboard' : '/login'"
+            class="ml-auto whitespace-nowrap rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-600"
+            @click="closeMobileMenu(false)"
+          >
+            {{ t('header.admin') }}
+          </NuxtLink>
+        </div>
+      </div>
+    </Teleport>
   </header>
 </template>

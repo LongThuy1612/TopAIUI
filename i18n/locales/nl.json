@@ -4,7 +4,14 @@
     "categories": "Categorieën",
     "rankings": "Ranglijsten",
     "submit": "Tool indienen",
-    "admin": "Dashboard"
+    "admin": "Dashboard",
+    "freeTools": "Gratis tools",
+    "products": "Producten",
+    "prompts": "Prompts",
+    "resource": "Bronnen",
+    "menu": "Menu",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten"
   },
   "hero": {
     "titlePrefix": "Ontdek de beste",
@@ -201,7 +208,19 @@
     "categories": "Categorieën",
     "company": "Bedrijf",
     "language": "Taal",
-    "copyright": "Alle rechten voorbehouden."
+    "copyright": "Alle rechten voorbehouden.",
+    "topAiTools": "Top AI-tools",
+    "moreTools": "Meer tools",
+    "categoryToolsCount": "{count} {name}-tools",
+    "categoryTools": "{name}-tools",
+    "browseByAlphabet": "Bladeren op letter",
+    "top1000Directory": "Overzicht top 1000 AI-tools",
+    "about": "Over",
+    "aboutUs": "Over ons",
+    "terms": "Servicevoorwaarden",
+    "privacy": "Privacybeleid",
+    "advertise": "Adverteren",
+    "contact": "Contact"
   },
   "language": {
     "label": "Taal"
@@ -664,5 +683,50 @@
     "errorTitle": "Er is iets misgegaan",
     "errorMessage": "Er is een onverwachte fout opgetreden. Probeer het later opnieuw.",
     "backHome": "Terug naar home"
+  },
+  "alphabet": {
+    "title": "AI-tools die beginnen met",
+    "browse": "Bladeren op letter"
+  },
+  "archive": {
+    "title": "Top 1000 AI-tools",
+    "rank": "Rang",
+    "name": "Naam",
+    "introduction": "Introductie"
+  },
+  "productsMenu": {
+    "newTitle": "Nieuwe AI’s",
+    "newDesc": "De nieuwste AI-tools, elke dag",
+    "savedTitle": "Meest bewaarde AI’s",
+    "savedDesc": "AI’s met de meeste favorieten op ons platform",
+    "usedTitle": "Meest gebruikte AI’s",
+    "usedDesc": "AI’s met het meeste websiteverkeer",
+    "appsTitle": "AI-apps",
+    "appsDesc": "AI-tools per categorie",
+    "discordTitle": "AI-Discords",
+    "discordDesc": "Ontdek Discord-servers over AI",
+    "extensionsTitle": "AI Chrome-extensies",
+    "extensionsDesc": "AI-tools als browserextensie",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs uit de GPT Store",
+    "modelsTitle": "AI-modellen",
+    "modelsDesc": "Ontdek het beste AI-model"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "Top AI per maand",
+    "monthlyDesc": "AI-ranglijsten per maand en maandelijkse bezoeken.",
+    "categoriesTitle": "Top AI per categorie",
+    "categoriesDesc": "AI-ranglijsten per categorie en maandelijkse bezoeken.",
+    "regionsTitle": "Top AI per regio",
+    "regionsDesc": "AI-ranglijsten per regio en maandelijkse bezoeken.",
+    "sourceTitle": "Top AI per bron",
+    "sourceDesc": "AI-ranglijsten per bron en maandelijkse bezoeken."
+  },
+  "submitMenu": {
+    "submitTitle": "Tool indienen",
+    "advertiseTitle": "Adverteren",
+    "guestPostsTitle": "Gastblogs / Link invoegen",
+    "updateAiTitle": "AI bijwerken",
+    "submitGptTitle": "GPT indienen"
   }
 }

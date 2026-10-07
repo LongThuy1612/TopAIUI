@@ -4,7 +4,14 @@
     "categories": "Kategori",
     "rankings": "Peringkat",
     "submit": "Kirim alat",
-    "admin": "Dashboard"
+    "admin": "Dasbor",
+    "freeTools": "Alat Gratis",
+    "products": "Produk",
+    "prompts": "Prompt",
+    "resource": "Sumber Daya",
+    "menu": "Menu",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu"
   },
   "auth": {
     "signInTitle": "Masuk ke akun Anda",
@@ -228,7 +235,19 @@
     "categories": "Kategori",
     "company": "Perusahaan",
     "language": "Bahasa",
-    "copyright": "Semua hak dilindungi."
+    "copyright": "Semua hak dilindungi.",
+    "topAiTools": "Alat AI Teratas",
+    "moreTools": "Alat Lainnya",
+    "categoryToolsCount": "{count} Alat {name}",
+    "categoryTools": "Alat {name}",
+    "browseByAlphabet": "Telusuri menurut abjad",
+    "top1000Directory": "Direktori Top 1000 Alat AI",
+    "about": "Tentang",
+    "aboutUs": "Tentang Kami",
+    "terms": "Ketentuan Layanan",
+    "privacy": "Kebijakan Privasi",
+    "advertise": "Beriklan",
+    "contact": "Kontak"
   },
   "language": {
     "label": "Bahasa"
@@ -961,5 +980,50 @@
     "errorTitle": "Terjadi kesalahan",
     "errorMessage": "Terjadi kesalahan yang tidak terduga. Silakan coba lagi nanti.",
     "backHome": "Kembali ke beranda"
+  },
+  "alphabet": {
+    "title": "Alat AI yang diawali dengan",
+    "browse": "Telusuri menurut abjad"
+  },
+  "archive": {
+    "title": "Top 1000 Alat AI",
+    "rank": "Peringkat",
+    "name": "Nama",
+    "introduction": "Pengantar"
+  },
+  "productsMenu": {
+    "newTitle": "AI Terbaru",
+    "newDesc": "Alat AI terbaru, setiap hari",
+    "savedTitle": "AI Paling Banyak Disimpan",
+    "savedDesc": "AI dengan favorit terbanyak di platform kami",
+    "usedTitle": "AI Paling Banyak Dipakai",
+    "usedDesc": "AI dengan trafik situs tertinggi",
+    "appsTitle": "Aplikasi AI",
+    "appsDesc": "Alat AI berdasarkan kategori",
+    "discordTitle": "Discord AI",
+    "discordDesc": "Temukan server Discord tentang AI",
+    "extensionsTitle": "Ekstensi Chrome AI",
+    "extensionsDesc": "Alat AI berupa ekstensi browser",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs dari GPT Store",
+    "modelsTitle": "Model AI",
+    "modelsDesc": "Temukan model AI terbaik"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "AI Teratas per Bulan",
+    "monthlyDesc": "Daftar AI per bulan dan kunjungan bulanan.",
+    "categoriesTitle": "AI Teratas per Kategori",
+    "categoriesDesc": "Daftar AI per kategori dan kunjungan bulanan.",
+    "regionsTitle": "AI Teratas per Wilayah",
+    "regionsDesc": "Daftar AI per wilayah dan kunjungan bulanan.",
+    "sourceTitle": "AI Teratas per Sumber",
+    "sourceDesc": "Daftar AI per sumber dan kunjungan bulanan."
+  },
+  "submitMenu": {
+    "submitTitle": "Kirim Alat",
+    "advertiseTitle": "Beriklan",
+    "guestPostsTitle": "Guest Post / Sisip Tautan",
+    "updateAiTitle": "Perbarui AI",
+    "submitGptTitle": "Kirim GPT"
   }
 }

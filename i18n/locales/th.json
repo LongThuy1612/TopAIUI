@@ -4,7 +4,14 @@
     "categories": "หมวดหมู่",
     "rankings": "อันดับ",
     "submit": "ส่งเครื่องมือ",
-    "admin": "Dashboard"
+    "admin": "แดชบอร์ด",
+    "freeTools": "เครื่องมือฟรี",
+    "products": "ผลิตภัณฑ์",
+    "prompts": "พรอมต์",
+    "resource": "แหล่งข้อมูล",
+    "menu": "เมนู",
+    "openMenu": "เปิดเมนู",
+    "closeMenu": "ปิดเมนู"
   },
   "hero": {
     "titlePrefix": "ค้นพบ",
@@ -201,7 +208,19 @@
     "categories": "หมวดหมู่",
     "company": "บริษัท",
     "language": "ภาษา",
-    "copyright": "สงวนลิขสิทธิ์"
+    "copyright": "สงวนลิขสิทธิ์",
+    "topAiTools": "เครื่องมือ AI ยอดนิยม",
+    "moreTools": "เครื่องมืออื่น ๆ",
+    "categoryToolsCount": "เครื่องมือ{name} {count} รายการ",
+    "categoryTools": "เครื่องมือ{name}",
+    "browseByAlphabet": "เรียกดูตามตัวอักษร",
+    "top1000Directory": "ไดเรกทอรีเครื่องมือ AI 1000 อันดับแรก",
+    "about": "เกี่ยวกับ",
+    "aboutUs": "เกี่ยวกับเรา",
+    "terms": "ข้อกำหนดการใช้บริการ",
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "advertise": "ลงโฆษณา",
+    "contact": "ติดต่อ"
   },
   "language": {
     "label": "ภาษา"
@@ -664,5 +683,50 @@
     "errorTitle": "เกิดข้อผิดพลาด",
     "errorMessage": "เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดลองอีกครั้งในภายหลัง",
     "backHome": "กลับไปหน้าแรก"
+  },
+  "alphabet": {
+    "title": "เครื่องมือ AI ที่ขึ้นต้นด้วย",
+    "browse": "เรียกดูตามตัวอักษร"
+  },
+  "archive": {
+    "title": "เครื่องมือ AI ยอดนิยม 1000 อันดับ",
+    "rank": "อันดับ",
+    "name": "ชื่อ",
+    "introduction": "แนะนำ"
+  },
+  "productsMenu": {
+    "newTitle": "AI ใหม่",
+    "newDesc": "เครื่องมือ AI ล่าสุด อัปเดตทุกวัน",
+    "savedTitle": "AI ที่ถูกบันทึกมากที่สุด",
+    "savedDesc": "AI ที่มีคนกดชื่นชอบมากที่สุดบนแพลตฟอร์ม",
+    "usedTitle": "AI ที่ใช้มากที่สุด",
+    "usedDesc": "AI ที่มีทราฟฟิกเว็บไซต์สูงสุด",
+    "appsTitle": "แอป AI",
+    "appsDesc": "เครื่องมือ AI แยกตามหมวดหมู่",
+    "discordTitle": "Discord ของ AI",
+    "discordDesc": "ค้นหาคอมมูนิตี้ Discord ด้าน AI",
+    "extensionsTitle": "ส่วนขยาย Chrome ด้าน AI",
+    "extensionsDesc": "เครื่องมือ AI แบบส่วนขยายเบราว์เซอร์",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs จาก GPT Store",
+    "modelsTitle": "โมเดล AI",
+    "modelsDesc": "ค้นหาโมเดล AI ที่ดีที่สุด"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "AI ยอดนิยมรายเดือน",
+    "monthlyDesc": "อันดับ AI ตามเดือนและยอดเข้าชมรายเดือน",
+    "categoriesTitle": "AI ยอดนิยมตามหมวดหมู่",
+    "categoriesDesc": "อันดับ AI ตามหมวดหมู่และยอดเข้าชมรายเดือน",
+    "regionsTitle": "AI ยอดนิยมตามภูมิภาค",
+    "regionsDesc": "อันดับ AI ตามภูมิภาคและยอดเข้าชมรายเดือน",
+    "sourceTitle": "AI ยอดนิยมตามแหล่งที่มา",
+    "sourceDesc": "อันดับ AI ตามแหล่งที่มาและยอดเข้าชมรายเดือน"
+  },
+  "submitMenu": {
+    "submitTitle": "ส่งเครื่องมือ",
+    "advertiseTitle": "ลงโฆษณา",
+    "guestPostsTitle": "Guest Post / แทรกลิงก์",
+    "updateAiTitle": "อัปเดต AI",
+    "submitGptTitle": "ส่ง GPT"
   }
 }

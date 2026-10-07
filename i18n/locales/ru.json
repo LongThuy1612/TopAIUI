@@ -4,7 +4,14 @@
     "categories": "Категории",
     "rankings": "Рейтинги",
     "submit": "Добавить инструмент",
-    "admin": "Dashboard"
+    "admin": "Панель управления",
+    "freeTools": "Бесплатные инструменты",
+    "products": "Продукты",
+    "prompts": "Промпты",
+    "resource": "Ресурсы",
+    "menu": "Меню",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню"
   },
   "hero": {
     "titlePrefix": "Найдите лучшие",
@@ -201,7 +208,19 @@
     "categories": "Категории",
     "company": "Компания",
     "language": "Язык",
-    "copyright": "Все права защищены."
+    "copyright": "Все права защищены.",
+    "topAiTools": "Лучшие ИИ-инструменты",
+    "moreTools": "Другие инструменты",
+    "categoryToolsCount": "Инструменты {name} ({count})",
+    "categoryTools": "Инструменты: {name}",
+    "browseByAlphabet": "Поиск по алфавиту",
+    "top1000Directory": "Каталог топ-1000 ИИ-инструментов",
+    "about": "О нас",
+    "aboutUs": "О компании",
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности",
+    "advertise": "Реклама",
+    "contact": "Контакты"
   },
   "language": {
     "label": "Язык"
@@ -664,5 +683,50 @@
     "errorTitle": "Что-то пошло не так",
     "errorMessage": "Произошла непредвиденная ошибка. Попробуйте позже.",
     "backHome": "Вернуться на главную"
+  },
+  "alphabet": {
+    "title": "ИИ-инструменты на букву",
+    "browse": "Поиск по алфавиту"
+  },
+  "archive": {
+    "title": "Топ-1000 ИИ-инструментов",
+    "rank": "Место",
+    "name": "Название",
+    "introduction": "Описание"
+  },
+  "productsMenu": {
+    "newTitle": "Новые ИИ",
+    "newDesc": "Самые свежие ИИ-инструменты каждый день",
+    "savedTitle": "Самые сохраняемые ИИ",
+    "savedDesc": "ИИ с наибольшим числом добавлений в избранное",
+    "usedTitle": "Самые используемые ИИ",
+    "usedDesc": "ИИ с наибольшим трафиком сайта",
+    "appsTitle": "ИИ-приложения",
+    "appsDesc": "ИИ-инструменты по категориям",
+    "discordTitle": "Discord об ИИ",
+    "discordDesc": "Discord-сообщества об ИИ",
+    "extensionsTitle": "ИИ-расширения Chrome",
+    "extensionsDesc": "ИИ-инструменты в виде расширений браузера",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs из GPT Store",
+    "modelsTitle": "ИИ-модели",
+    "modelsDesc": "Найдите лучшую ИИ-модель"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "Топ ИИ по месяцам",
+    "monthlyDesc": "Рейтинги ИИ по месяцам и месячным посещениям.",
+    "categoriesTitle": "Топ ИИ по категориям",
+    "categoriesDesc": "Рейтинги ИИ по категориям и месячным посещениям.",
+    "regionsTitle": "Топ ИИ по регионам",
+    "regionsDesc": "Рейтинги ИИ по регионам и месячным посещениям.",
+    "sourceTitle": "Топ ИИ по источникам",
+    "sourceDesc": "Рейтинги ИИ по источникам и месячным посещениям."
+  },
+  "submitMenu": {
+    "submitTitle": "Добавить инструмент",
+    "advertiseTitle": "Реклама",
+    "guestPostsTitle": "Гостевые посты / Вставка ссылок",
+    "updateAiTitle": "Обновить ИИ",
+    "submitGptTitle": "Добавить GPT"
   }
 }

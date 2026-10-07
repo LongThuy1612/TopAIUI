@@ -4,7 +4,14 @@
     "categories": "分类",
     "rankings": "排行榜",
     "submit": "提交工具",
-    "admin": "Dashboard"
+    "admin": "控制台",
+    "freeTools": "免费工具",
+    "products": "产品",
+    "prompts": "提示词",
+    "resource": "资源",
+    "menu": "菜单",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
   },
   "auth": {
     "signInTitle": "登录您的账户",
@@ -228,7 +235,19 @@
     "categories": "分类",
     "company": "公司",
     "language": "语言",
-    "copyright": "保留所有权利。"
+    "copyright": "保留所有权利。",
+    "topAiTools": "热门 AI 工具",
+    "moreTools": "更多工具",
+    "categoryToolsCount": "{count} 个{name}工具",
+    "categoryTools": "{name}工具",
+    "browseByAlphabet": "按字母浏览",
+    "top1000Directory": "Top 1000 AI 工具目录",
+    "about": "关于",
+    "aboutUs": "关于我们",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "advertise": "广告合作",
+    "contact": "联系我们"
   },
   "language": {
     "label": "语言"
@@ -961,5 +980,50 @@
     "errorTitle": "出了点问题",
     "errorMessage": "发生意外错误，请稍后重试。",
     "backHome": "返回首页"
+  },
+  "alphabet": {
+    "title": "以此字母开头的 AI 工具",
+    "browse": "按字母浏览"
+  },
+  "archive": {
+    "title": "Top 1000 AI 工具",
+    "rank": "排名",
+    "name": "名称",
+    "introduction": "简介"
+  },
+  "productsMenu": {
+    "newTitle": "最新 AI",
+    "newDesc": "每天更新的最新 AI 工具",
+    "savedTitle": "收藏最多的 AI",
+    "savedDesc": "本平台收藏数最多的 AI",
+    "usedTitle": "最常用的 AI",
+    "usedDesc": "网站流量最高的 AI",
+    "appsTitle": "AI 应用",
+    "appsDesc": "按分类整理的 AI 工具",
+    "discordTitle": "AI Discord",
+    "discordDesc": "发现 AI 相关的 Discord 社区",
+    "extensionsTitle": "AI Chrome 扩展",
+    "extensionsDesc": "浏览器扩展形式的 AI 工具",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "来自 GPT Store 的 GPTs",
+    "modelsTitle": "AI 模型",
+    "modelsDesc": "发现最适合的 AI 模型"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "月度 AI 排行",
+    "monthlyDesc": "按月份和月访问量排列的 AI 榜单",
+    "categoriesTitle": "分类 AI 排行",
+    "categoriesDesc": "按分类和月访问量排列的 AI 榜单",
+    "regionsTitle": "地区 AI 排行",
+    "regionsDesc": "按地区和月访问量排列的 AI 榜单",
+    "sourceTitle": "来源 AI 排行",
+    "sourceDesc": "按来源和月访问量排列的 AI 榜单"
+  },
+  "submitMenu": {
+    "submitTitle": "提交工具",
+    "advertiseTitle": "广告投放",
+    "guestPostsTitle": "客座文章 / 链接插入",
+    "updateAiTitle": "更新 AI",
+    "submitGptTitle": "提交 GPT"
   }
 }

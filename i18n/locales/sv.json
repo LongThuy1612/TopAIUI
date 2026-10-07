@@ -4,7 +4,14 @@
     "categories": "Kategorier",
     "rankings": "Rankningar",
     "submit": "Skicka in ett verktyg",
-    "admin": "Dashboard"
+    "admin": "Kontrollpanel",
+    "freeTools": "Gratis verktyg",
+    "products": "Produkter",
+    "prompts": "Promptar",
+    "resource": "Resurser",
+    "menu": "Meny",
+    "openMenu": "Öppna meny",
+    "closeMenu": "Stäng meny"
   },
   "hero": {
     "titlePrefix": "Upptäck de bästa",
@@ -201,7 +208,19 @@
     "categories": "Kategorier",
     "company": "Företag",
     "language": "Språk",
-    "copyright": "Alla rättigheter förbehållna."
+    "copyright": "Alla rättigheter förbehållna.",
+    "topAiTools": "Populära AI-verktyg",
+    "moreTools": "Fler verktyg",
+    "categoryToolsCount": "{count} {name}-verktyg",
+    "categoryTools": "{name}-verktyg",
+    "browseByAlphabet": "Bläddra efter bokstav",
+    "top1000Directory": "Katalog över topp 1000 AI-verktyg",
+    "about": "Om",
+    "aboutUs": "Om oss",
+    "terms": "Användarvillkor",
+    "privacy": "Integritetspolicy",
+    "advertise": "Annonsera",
+    "contact": "Kontakt"
   },
   "language": {
     "label": "Språk"
@@ -664,5 +683,50 @@
     "errorTitle": "Något gick fel",
     "errorMessage": "Ett oväntat fel inträffade. Försök igen senare.",
     "backHome": "Tillbaka till startsidan"
+  },
+  "alphabet": {
+    "title": "AI-verktyg som börjar på",
+    "browse": "Bläddra efter bokstav"
+  },
+  "archive": {
+    "title": "Topp 1000 AI-verktyg",
+    "rank": "Placering",
+    "name": "Namn",
+    "introduction": "Introduktion"
+  },
+  "productsMenu": {
+    "newTitle": "Nya AI",
+    "newDesc": "De senaste AI-verktygen, varje dag",
+    "savedTitle": "Mest sparade AI",
+    "savedDesc": "AI med flest favoriter på vår plattform",
+    "usedTitle": "Mest använda AI",
+    "usedDesc": "AI med mest webbtrafik",
+    "appsTitle": "AI-appar",
+    "appsDesc": "AI-verktyg efter kategori",
+    "discordTitle": "AI-Discord",
+    "discordDesc": "Hitta Discord-servrar om AI",
+    "extensionsTitle": "AI-tillägg för Chrome",
+    "extensionsDesc": "AI-verktyg som webbläsartillägg",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs från GPT Store",
+    "modelsTitle": "AI-modeller",
+    "modelsDesc": "Hitta den bästa AI-modellen"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "Topp-AI per månad",
+    "monthlyDesc": "AI-topplistor per månad och månatliga besök.",
+    "categoriesTitle": "Topp-AI per kategori",
+    "categoriesDesc": "AI-topplistor per kategori och månatliga besök.",
+    "regionsTitle": "Topp-AI per region",
+    "regionsDesc": "AI-topplistor per region och månatliga besök.",
+    "sourceTitle": "Topp-AI per källa",
+    "sourceDesc": "AI-topplistor per källa och månatliga besök."
+  },
+  "submitMenu": {
+    "submitTitle": "Skicka in verktyg",
+    "advertiseTitle": "Annonsera",
+    "guestPostsTitle": "Gästinlägg / Länkinfogning",
+    "updateAiTitle": "Uppdatera AI",
+    "submitGptTitle": "Skicka in GPT"
   }
 }

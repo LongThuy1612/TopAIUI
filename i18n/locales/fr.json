@@ -4,7 +4,14 @@
     "categories": "Catégories",
     "rankings": "Classements",
     "submit": "Soumettre un outil",
-    "admin": "Dashboard"
+    "admin": "Tableau de bord",
+    "freeTools": "Outils gratuits",
+    "products": "Produits",
+    "prompts": "Prompts",
+    "resource": "Ressources",
+    "menu": "Menu",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "auth": {
     "signInTitle": "Connectez-vous à votre compte",
@@ -228,7 +235,19 @@
     "categories": "Catégories",
     "company": "Entreprise",
     "language": "Langue",
-    "copyright": "Tous droits réservés."
+    "copyright": "Tous droits réservés.",
+    "topAiTools": "Meilleurs outils IA",
+    "moreTools": "Plus d’outils",
+    "categoryToolsCount": "{count} outils {name}",
+    "categoryTools": "Outils {name}",
+    "browseByAlphabet": "Parcourir par lettre",
+    "top1000Directory": "Annuaire des 1000 meilleurs outils IA",
+    "about": "À propos",
+    "aboutUs": "Qui sommes-nous",
+    "terms": "Conditions d’utilisation",
+    "privacy": "Politique de confidentialité",
+    "advertise": "Publicité",
+    "contact": "Contact"
   },
   "language": {
     "label": "Langue"
@@ -961,5 +980,50 @@
     "errorTitle": "Une erreur s'est produite",
     "errorMessage": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
     "backHome": "Retour à l'accueil"
+  },
+  "alphabet": {
+    "title": "Outils IA commençant par",
+    "browse": "Parcourir par lettre"
+  },
+  "archive": {
+    "title": "Top 1000 des outils IA",
+    "rank": "Rang",
+    "name": "Nom",
+    "introduction": "Présentation"
+  },
+  "productsMenu": {
+    "newTitle": "Nouvelles IA",
+    "newDesc": "Les derniers outils IA, chaque jour",
+    "savedTitle": "IA les plus enregistrées",
+    "savedDesc": "Les IA les plus mises en favori sur notre plateforme",
+    "usedTitle": "IA les plus utilisées",
+    "usedDesc": "Les IA au plus fort trafic web",
+    "appsTitle": "Applis IA",
+    "appsDesc": "Outils IA classés par catégorie",
+    "discordTitle": "Discord de l’IA",
+    "discordDesc": "Découvrez les Discord consacrés à l’IA",
+    "extensionsTitle": "Extensions Chrome IA",
+    "extensionsDesc": "Outils IA sous forme d’extensions de navigateur",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs du GPT Store",
+    "modelsTitle": "Modèles d’IA",
+    "modelsDesc": "Découvrez le meilleur modèle d’IA"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "Top IA par mois",
+    "monthlyDesc": "Classements IA par mois et visites mensuelles.",
+    "categoriesTitle": "Top IA par catégorie",
+    "categoriesDesc": "Classements IA par catégorie et visites mensuelles.",
+    "regionsTitle": "Top IA par région",
+    "regionsDesc": "Classements IA par région et visites mensuelles.",
+    "sourceTitle": "Top IA par source",
+    "sourceDesc": "Classements IA par source et visites mensuelles."
+  },
+  "submitMenu": {
+    "submitTitle": "Soumettre un outil",
+    "advertiseTitle": "Publicité",
+    "guestPostsTitle": "Articles invités / Insertion de liens",
+    "updateAiTitle": "Actualiser une IA",
+    "submitGptTitle": "Ajouter un GPT"
   }
 }

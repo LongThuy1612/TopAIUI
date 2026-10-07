@@ -4,7 +4,14 @@
     "categories": "קטגוריות",
     "rankings": "דירוגים",
     "submit": "הוספת כלי",
-    "admin": "Dashboard"
+    "admin": "לוח בקרה",
+    "freeTools": "כלים חינמיים",
+    "products": "מוצרים",
+    "prompts": "פרומפטים",
+    "resource": "משאבים",
+    "menu": "תפריט",
+    "openMenu": "פתיחת תפריט",
+    "closeMenu": "סגירת תפריט"
   },
   "hero": {
     "titlePrefix": "גלה את",
@@ -201,7 +208,19 @@
     "categories": "קטגוריות",
     "company": "חברה",
     "language": "שפה",
-    "copyright": "כל הזכויות שמורות."
+    "copyright": "כל הזכויות שמורות.",
+    "topAiTools": "כלי AI מובילים",
+    "moreTools": "כלים נוספים",
+    "categoryToolsCount": "{count} כלי {name}",
+    "categoryTools": "כלי {name}",
+    "browseByAlphabet": "עיון לפי אות",
+    "top1000Directory": "מדריך 1000 כלי ה-AI המובילים",
+    "about": "אודות",
+    "aboutUs": "מי אנחנו",
+    "terms": "תנאי שימוש",
+    "privacy": "מדיניות פרטיות",
+    "advertise": "פרסום",
+    "contact": "צור קשר"
   },
   "language": {
     "label": "שפה"
@@ -664,5 +683,50 @@
     "errorTitle": "משהו השתבש",
     "errorMessage": "אירעה שגיאה בלתי צפויה. אנא נסו שוב מאוחר יותר.",
     "backHome": "חזרה לדף הבית"
+  },
+  "alphabet": {
+    "title": "כלי AI שמתחילים באות",
+    "browse": "עיון לפי אות"
+  },
+  "archive": {
+    "title": "1000 כלי ה-AI המובילים",
+    "rank": "דירוג",
+    "name": "שם",
+    "introduction": "תיאור"
+  },
+  "productsMenu": {
+    "newTitle": "AI חדשים",
+    "newDesc": "כלי ה-AI החדשים ביותר, כל יום",
+    "savedTitle": "ה-AI השמורים ביותר",
+    "savedDesc": "כלי AI עם הכי הרבה מועדפים בפלטפורמה",
+    "usedTitle": "ה-AI הנפוצים ביותר",
+    "usedDesc": "כלי AI עם התנועה הגבוהה ביותר",
+    "appsTitle": "אפליקציות AI",
+    "appsDesc": "כלי AI לפי קטגוריה",
+    "discordTitle": "Discord של AI",
+    "discordDesc": "גלו שרתי Discord בנושא AI",
+    "extensionsTitle": "תוספי Chrome של AI",
+    "extensionsDesc": "כלי AI כתוספי דפדפן",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs מחנות GPT",
+    "modelsTitle": "מודלי AI",
+    "modelsDesc": "גלו את מודל ה-AI הטוב ביותר"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "AI מובילים לפי חודש",
+    "monthlyDesc": "דירוגים לפי חודש וביקורים חודשיים.",
+    "categoriesTitle": "AI מובילים לפי קטגוריה",
+    "categoriesDesc": "דירוגים לפי קטגוריה וביקורים חודשיים.",
+    "regionsTitle": "AI מובילים לפי אזור",
+    "regionsDesc": "דירוגים לפי אזור וביקורים חודשיים.",
+    "sourceTitle": "AI מובילים לפי מקור",
+    "sourceDesc": "דירוגים לפי מקור וביקורים חודשיים."
+  },
+  "submitMenu": {
+    "submitTitle": "הגשת כלי",
+    "advertiseTitle": "פרסום",
+    "guestPostsTitle": "פוסטים אורחים / הוספת קישור",
+    "updateAiTitle": "עדכון AI",
+    "submitGptTitle": "הגשת GPT"
   }
 }

@@ -4,7 +4,14 @@
     "categories": "Kategorien",
     "rankings": "Rankings",
     "submit": "Tool einreichen",
-    "admin": "Dashboard"
+    "admin": "Dashboard",
+    "freeTools": "Kostenlose Tools",
+    "products": "Produkte",
+    "prompts": "Prompts",
+    "resource": "Ressourcen",
+    "menu": "Menü",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
   },
   "auth": {
     "signInTitle": "Melde dich bei deinem Konto an",
@@ -228,7 +235,19 @@
     "categories": "Kategorien",
     "company": "Unternehmen",
     "language": "Sprache",
-    "copyright": "Alle Rechte vorbehalten."
+    "copyright": "Alle Rechte vorbehalten.",
+    "topAiTools": "Top KI-Tools",
+    "moreTools": "Weitere Tools",
+    "categoryToolsCount": "{count} {name}-Tools",
+    "categoryTools": "{name}-Tools",
+    "browseByAlphabet": "Nach Alphabet durchsuchen",
+    "top1000Directory": "Verzeichnis der Top 1000 KI-Tools",
+    "about": "Über",
+    "aboutUs": "Über uns",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "advertise": "Werbung",
+    "contact": "Kontakt"
   },
   "language": {
     "label": "Sprache"
@@ -961,5 +980,50 @@
     "errorTitle": "Etwas ist schiefgelaufen",
     "errorMessage": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuche es später erneut.",
     "backHome": "Zurück zur Startseite"
+  },
+  "alphabet": {
+    "title": "KI-Tools, die beginnen mit",
+    "browse": "Nach Alphabet durchsuchen"
+  },
+  "archive": {
+    "title": "Top 1000 KI-Tools",
+    "rank": "Rang",
+    "name": "Name",
+    "introduction": "Einführung"
+  },
+  "productsMenu": {
+    "newTitle": "Neue KIs",
+    "newDesc": "Die neuesten KI-Tools, jeden Tag",
+    "savedTitle": "Meistgespeicherte KIs",
+    "savedDesc": "KIs mit den meisten Favoriten auf unserer Plattform",
+    "usedTitle": "Meistgenutzte KIs",
+    "usedDesc": "KIs mit dem meisten Website-Traffic",
+    "appsTitle": "KI-Apps",
+    "appsDesc": "KI-Tools nach Kategorie",
+    "discordTitle": "KI-Discords",
+    "discordDesc": "Entdecke Discord-Server rund um KI",
+    "extensionsTitle": "KI-Chrome-Erweiterungen",
+    "extensionsDesc": "KI-Tools als Browser-Erweiterung",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs aus dem GPT Store",
+    "modelsTitle": "KI-Modelle",
+    "modelsDesc": "Finde das beste KI-Modell"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "Top-KI nach Monat",
+    "monthlyDesc": "KI-Rankings nach Monat und monatlichen Besuchen.",
+    "categoriesTitle": "Top-KI nach Kategorie",
+    "categoriesDesc": "KI-Rankings nach Kategorie und monatlichen Besuchen.",
+    "regionsTitle": "Top-KI nach Region",
+    "regionsDesc": "KI-Rankings nach Region und monatlichen Besuchen.",
+    "sourceTitle": "Top-KI nach Quelle",
+    "sourceDesc": "KI-Rankings nach Quelle und monatlichen Besuchen."
+  },
+  "submitMenu": {
+    "submitTitle": "Tool einreichen",
+    "advertiseTitle": "Werbung",
+    "guestPostsTitle": "Gastbeiträge / Link-Einfügung",
+    "updateAiTitle": "KI aktualisieren",
+    "submitGptTitle": "GPT einreichen"
   }
 }

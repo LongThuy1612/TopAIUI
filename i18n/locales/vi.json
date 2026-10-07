@@ -10,7 +10,10 @@
     "resource": "Tài nguyên",
     "submit": "Đăng công cụ",
     "adLibrary": "Thư viện quảng cáo AI",
-    "admin": "Dashboard"
+    "admin": "Bảng điều khiển",
+    "menu": "Menu",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu"
   },
   "auth": {
     "signInTitle": "Đăng nhập vào tài khoản",
@@ -556,7 +559,8 @@
   "archive": {
     "title": "Top 1000 công cụ AI",
     "rank": "Hạng",
-    "name": "Tên"
+    "name": "Tên",
+    "introduction": "Giới thiệu"
   },
   "footer": {
     "tagline": "Khám phá, so sánh và chia sẻ những công cụ AI tốt nhất — xây dựng với Nuxt & PostgreSQL.",
@@ -567,7 +571,19 @@
     "categories": "Danh mục",
     "company": "Về chúng tôi",
     "language": "Ngôn ngữ",
-    "copyright": "Bảo lưu mọi quyền."
+    "copyright": "Bảo lưu mọi quyền.",
+    "topAiTools": "Công cụ AI hàng đầu",
+    "moreTools": "Thêm công cụ",
+    "categoryToolsCount": "{count} công cụ {name}",
+    "categoryTools": "Công cụ {name}",
+    "browseByAlphabet": "Duyệt theo chữ cái",
+    "top1000Directory": "Danh bạ Top 1000 công cụ AI",
+    "about": "Giới thiệu",
+    "aboutUs": "Về chúng tôi",
+    "terms": "Điều khoản dịch vụ",
+    "privacy": "Chính sách bảo mật",
+    "advertise": "Quảng cáo",
+    "contact": "Liên hệ"
   },
   "language": {
     "label": "Ngôn ngữ"

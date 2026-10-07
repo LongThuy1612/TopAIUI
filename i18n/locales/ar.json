@@ -4,7 +4,14 @@
     "categories": "الفئات",
     "rankings": "التصنيفات",
     "submit": "أضف أداة",
-    "admin": "Dashboard"
+    "admin": "لوحة التحكم",
+    "freeTools": "أدوات مجانية",
+    "products": "المنتجات",
+    "prompts": "الموجّهات",
+    "resource": "الموارد",
+    "menu": "القائمة",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
   },
   "hero": {
     "titlePrefix": "اكتشف أفضل",
@@ -201,7 +208,19 @@
     "categories": "الفئات",
     "company": "الشركة",
     "language": "اللغة",
-    "copyright": "جميع الحقوق محفوظة."
+    "copyright": "جميع الحقوق محفوظة.",
+    "topAiTools": "أفضل أدوات الذكاء الاصطناعي",
+    "moreTools": "المزيد من الأدوات",
+    "categoryToolsCount": "{count} أداة {name}",
+    "categoryTools": "أدوات {name}",
+    "browseByAlphabet": "تصفح حسب الحرف",
+    "top1000Directory": "دليل أفضل 1000 أداة ذكاء اصطناعي",
+    "about": "حول",
+    "aboutUs": "من نحن",
+    "terms": "شروط الخدمة",
+    "privacy": "سياسة الخصوصية",
+    "advertise": "أعلن معنا",
+    "contact": "اتصل بنا"
   },
   "language": {
     "label": "اللغة"
@@ -664,5 +683,50 @@
     "errorTitle": "حدث خطأ ما",
     "errorMessage": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقًا.",
     "backHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "alphabet": {
+    "title": "أدوات الذكاء الاصطناعي التي تبدأ بـ",
+    "browse": "تصفح حسب الحرف"
+  },
+  "archive": {
+    "title": "أفضل 1000 أداة ذكاء اصطناعي",
+    "rank": "الترتيب",
+    "name": "الاسم",
+    "introduction": "نبذة"
+  },
+  "productsMenu": {
+    "newTitle": "أحدث أدوات الذكاء الاصطناعي",
+    "newDesc": "أحدث أدوات الذكاء الاصطناعي كل يوم",
+    "savedTitle": "الأكثر حفظًا",
+    "savedDesc": "الأدوات الأكثر إضافة إلى المفضلة على منصتنا",
+    "usedTitle": "الأكثر استخدامًا",
+    "usedDesc": "الأدوات ذات أعلى زيارات للموقع",
+    "appsTitle": "تطبيقات الذكاء الاصطناعي",
+    "appsDesc": "أدوات مصنّفة حسب الفئة",
+    "discordTitle": "ديسكورد الذكاء الاصطناعي",
+    "discordDesc": "اكتشف خوادم ديسكورد عن الذكاء الاصطناعي",
+    "extensionsTitle": "إضافات Chrome للذكاء الاصطناعي",
+    "extensionsDesc": "أدوات ذكاء اصطناعي كإضافات للمتصفح",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs من متجر GPT",
+    "modelsTitle": "نماذج الذكاء الاصطناعي",
+    "modelsDesc": "اكتشف أفضل نموذج ذكاء اصطناعي"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "الأفضل حسب الشهر",
+    "monthlyDesc": "قوائم حسب الشهر والزيارات الشهرية.",
+    "categoriesTitle": "الأفضل حسب الفئة",
+    "categoriesDesc": "قوائم حسب الفئة والزيارات الشهرية.",
+    "regionsTitle": "الأفضل حسب المنطقة",
+    "regionsDesc": "قوائم حسب المنطقة والزيارات الشهرية.",
+    "sourceTitle": "الأفضل حسب المصدر",
+    "sourceDesc": "قوائم حسب المصدر والزيارات الشهرية."
+  },
+  "submitMenu": {
+    "submitTitle": "أرسل أداة",
+    "advertiseTitle": "أعلن معنا",
+    "guestPostsTitle": "مقالات ضيف / إدراج روابط",
+    "updateAiTitle": "تحديث أداة",
+    "submitGptTitle": "أرسل GPT"
   }
 }

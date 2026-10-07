@@ -4,7 +4,14 @@
     "categories": "Kategoriat",
     "rankings": "Ranking-listat",
     "submit": "Lähetä työkalu",
-    "admin": "Dashboard"
+    "admin": "Hallintapaneeli",
+    "freeTools": "Ilmaiset työkalut",
+    "products": "Tuotteet",
+    "prompts": "Kehotteet",
+    "resource": "Resurssit",
+    "menu": "Valikko",
+    "openMenu": "Avaa valikko",
+    "closeMenu": "Sulje valikko"
   },
   "hero": {
     "titlePrefix": "Löydä parhaat",
@@ -201,7 +208,19 @@
     "categories": "Kategoriat",
     "company": "Yritys",
     "language": "Kieli",
-    "copyright": "Kaikki oikeudet pidätetään."
+    "copyright": "Kaikki oikeudet pidätetään.",
+    "topAiTools": "Suosituimmat tekoälytyökalut",
+    "moreTools": "Lisää työkaluja",
+    "categoryToolsCount": "{name}-työkalut ({count})",
+    "categoryTools": "{name}-työkalut",
+    "browseByAlphabet": "Selaa aakkosittain",
+    "top1000Directory": "Top 1000 tekoälytyökalun hakemisto",
+    "about": "Tietoa",
+    "aboutUs": "Tietoa meistä",
+    "terms": "Käyttöehdot",
+    "privacy": "Tietosuojakäytäntö",
+    "advertise": "Mainosta",
+    "contact": "Yhteystiedot"
   },
   "language": {
     "label": "Kieli"
@@ -664,5 +683,50 @@
     "errorTitle": "Jokin meni pieleen",
     "errorMessage": "Tapahtui odottamaton virhe. Yritä myöhemmin uudelleen.",
     "backHome": "Palaa etusivulle"
+  },
+  "alphabet": {
+    "title": "Tekoälytyökalut, jotka alkavat kirjaimella",
+    "browse": "Selaa aakkosittain"
+  },
+  "archive": {
+    "title": "Top 1000 tekoälytyökalua",
+    "rank": "Sija",
+    "name": "Nimi",
+    "introduction": "Esittely"
+  },
+  "productsMenu": {
+    "newTitle": "Uudet tekoälyt",
+    "newDesc": "Uusimmat tekoälytyökalut joka päivä",
+    "savedTitle": "Tallennetuimmat tekoälyt",
+    "savedDesc": "Alustamme suosikeissa useimmin olevat tekoälyt",
+    "usedTitle": "Käytetyimmät tekoälyt",
+    "usedDesc": "Tekoälyt, joilla on eniten verkkoliikennettä",
+    "appsTitle": "Tekoälysovellukset",
+    "appsDesc": "Tekoälytyökalut kategorioittain",
+    "discordTitle": "Tekoäly-Discordit",
+    "discordDesc": "Löydä tekoälyaiheisia Discord-palvelimia",
+    "extensionsTitle": "Tekoälylaajennukset Chromeen",
+    "extensionsDesc": "Tekoälytyökalut selainlaajennuksina",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs GPT Storesta",
+    "modelsTitle": "Tekoälymallit",
+    "modelsDesc": "Löydä paras tekoälymalli"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "Top-tekoälyt kuukausittain",
+    "monthlyDesc": "Tekoälylistat kuukauden ja kuukausikäyntien mukaan.",
+    "categoriesTitle": "Top-tekoälyt kategorioittain",
+    "categoriesDesc": "Tekoälylistat kategorian ja kuukausikäyntien mukaan.",
+    "regionsTitle": "Top-tekoälyt alueittain",
+    "regionsDesc": "Tekoälylistat alueen ja kuukausikäyntien mukaan.",
+    "sourceTitle": "Top-tekoälyt lähteittäin",
+    "sourceDesc": "Tekoälylistat lähteen ja kuukausikäyntien mukaan."
+  },
+  "submitMenu": {
+    "submitTitle": "Lähetä työkalu",
+    "advertiseTitle": "Mainosta",
+    "guestPostsTitle": "Vierasartikkelit / Linkin lisäys",
+    "updateAiTitle": "Päivitä tekoäly",
+    "submitGptTitle": "Lähetä GPT"
   }
 }

@@ -4,7 +4,14 @@
     "categories": "Kategorier",
     "rankings": "Rangeringer",
     "submit": "Send inn et verktøy",
-    "admin": "Dashboard"
+    "admin": "Kontrollpanel",
+    "freeTools": "Gratis verktøy",
+    "products": "Produkter",
+    "prompts": "Prompter",
+    "resource": "Ressurser",
+    "menu": "Meny",
+    "openMenu": "Åpne meny",
+    "closeMenu": "Lukk meny"
   },
   "hero": {
     "titlePrefix": "Finn de beste",
@@ -201,7 +208,19 @@
     "categories": "Kategorier",
     "company": "Firma",
     "language": "Språk",
-    "copyright": "Med enerett."
+    "copyright": "Med enerett.",
+    "topAiTools": "Populære AI-verktøy",
+    "moreTools": "Flere verktøy",
+    "categoryToolsCount": "{count} {name}-verktøy",
+    "categoryTools": "{name}-verktøy",
+    "browseByAlphabet": "Bla etter bokstav",
+    "top1000Directory": "Katalog over topp 1000 AI-verktøy",
+    "about": "Om",
+    "aboutUs": "Om oss",
+    "terms": "Vilkår for bruk",
+    "privacy": "Personvernerklæring",
+    "advertise": "Annonser",
+    "contact": "Kontakt"
   },
   "language": {
     "label": "Språk"
@@ -664,5 +683,50 @@
     "errorTitle": "Noe gikk galt",
     "errorMessage": "Det oppstod en uventet feil. Prøv igjen senere.",
     "backHome": "Gå tilbake til forsiden"
+  },
+  "alphabet": {
+    "title": "AI-verktøy som starter med",
+    "browse": "Bla etter bokstav"
+  },
+  "archive": {
+    "title": "Topp 1000 AI-verktøy",
+    "rank": "Plassering",
+    "name": "Navn",
+    "introduction": "Introduksjon"
+  },
+  "productsMenu": {
+    "newTitle": "Nye AI",
+    "newDesc": "De nyeste AI-verktøyene, hver dag",
+    "savedTitle": "Mest lagrede AI",
+    "savedDesc": "AI med flest favoritter på plattformen vår",
+    "usedTitle": "Mest brukte AI",
+    "usedDesc": "AI med mest nettstedstrafikk",
+    "appsTitle": "AI-apper",
+    "appsDesc": "AI-verktøy etter kategori",
+    "discordTitle": "AI-Discord",
+    "discordDesc": "Finn Discord-servere om AI",
+    "extensionsTitle": "AI-utvidelser for Chrome",
+    "extensionsDesc": "AI-verktøy som nettleserutvidelser",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs fra GPT Store",
+    "modelsTitle": "AI-modeller",
+    "modelsDesc": "Finn den beste AI-modellen"
+  },
+  "rankingMenu": {
+    "monthlyTitle": "Topp-AI per måned",
+    "monthlyDesc": "AI-topplister per måned og månedlige besøk.",
+    "categoriesTitle": "Topp-AI per kategori",
+    "categoriesDesc": "AI-topplister per kategori og månedlige besøk.",
+    "regionsTitle": "Topp-AI per region",
+    "regionsDesc": "AI-topplister per region og månedlige besøk.",
+    "sourceTitle": "Topp-AI per kilde",
+    "sourceDesc": "AI-topplister per kilde og månedlige besøk."
+  },
+  "submitMenu": {
+    "submitTitle": "Send inn verktøy",
+    "advertiseTitle": "Annonser",
+    "guestPostsTitle": "Gjesteinnlegg / Lenkeinnsetting",
+    "updateAiTitle": "Oppdater AI",
+    "submitGptTitle": "Send inn GPT"
   }
 }
