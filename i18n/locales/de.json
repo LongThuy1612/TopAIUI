@@ -267,7 +267,6 @@
     "research": "Recherche",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "Recherchebericht",
     "freePlan": "Kostenlos",
     "websiteInsightsQuota": "Website-Insights-Kontingent",
     "socialListeningQueries": "Social-Listening-Abfragen",
@@ -314,7 +313,6 @@
     "postsLinks": "Beiträge / Links",
     "myGPTs": "Meine GPTs",
     "other": "Weitere",
-    "favourite": "Favoriten",
     "paymentInvoice": "Zahlung & Rechnung",
     "feedback": "Feedback",
     "sharedLogin": "Geteilter Login",
@@ -489,18 +487,15 @@
     "colAction": "Aktion",
     "bounceRate": "Absprungrate",
     "view": "Ansehen",
-    "noResults": "Keine Tools entsprechen deiner Suche."
-  },
-  "researchReportPage": {
-    "title": "KI-Branchen-Insights & Marktforschungsberichte",
-    "subtitle": "Entdecke unsere Prognosen für 2026, aufkommende Branchentrends und tiefgehende Analysen der gesamten KI-Landschaft — von breiten Marktüberblicken bis hin zu Nischen-Sektor-Analysen.",
-    "allMonths": "Alle Monate",
-    "tabAll": "Alle Berichte",
-    "tabOverall": "Gesamtbericht",
-    "tabSector": "Branchen-Insights",
-    "tabPrimary": "Hauptkategorien",
-    "tabSub": "Unterkategorien",
-    "noResults": "Noch keine Berichte in dieser Kategorie."
+    "noResults": "Keine Tools entsprechen deiner Suche.",
+    "sortVisitsDesc": "Monatliche Besuche: absteigend",
+    "sortVisitsAsc": "Monatliche Besuche: aufsteigend",
+    "sortGrowthDesc": "Wachstum: absteigend",
+    "sortGrowthRateDesc": "Wachstumsrate: absteigend",
+    "sortGrowthRateAsc": "Wachstumsrate: aufsteigend",
+    "loading": "Wird geladen…",
+    "loadError": "Daten konnten nicht geladen werden. Bitte erneut versuchen.",
+    "popupBlocked": "Dein Browser hat einige Tabs blockiert. Erlaube Pop-ups für diese Seite, um alle zu öffnen."
   },
   "myAIsPage": {
     "title": "Meine KIs",
@@ -571,7 +566,12 @@
     "fieldZip": "PLZ",
     "fieldAddress": "Adresse",
     "fieldVatNumber": "USt-IdNr.",
-    "save": "Speichern"
+    "save": "Speichern",
+    "invoiceHistory": "Rechnungsverlauf",
+    "loadError": "Profil konnte nicht geladen werden. Bitte Seite neu laden.",
+    "emailHint": "Die Anmelde-E-Mail kann hier nicht geändert werden.",
+    "saved": "Gespeichert.",
+    "saveError": "Speichern fehlgeschlagen. Bitte erneut versuchen."
   },
   "feedbackPage": {
     "title": "Nutzerfeedback",
@@ -585,8 +585,26 @@
     "descriptionPlaceholder": "Bitte beschreibe dein Problem oder deinen Vorschlag im Detail...",
     "attachment": "Anhang",
     "upload": "Hochladen",
-    "uploadHint": "Bitte lade Screenshots oder Bildschirmaufnahmen hoch. Maximale Dateigröße: 100 MB.",
-    "submit": "Absenden"
+    "uploadHint": "Screenshots oder Bildschirmaufnahmen: PNG, JPG, WebP, GIF, MP4, WebM oder MOV, bis 20 MB.",
+    "submit": "Absenden",
+    "removeFile": "Entfernen",
+    "sending": "Wird gesendet…",
+    "success": "Danke! Dein Feedback wurde gesendet.",
+    "errorTooShort": "Bitte schreibe mindestens {n} Zeichen.",
+    "errorFileType": "Dieser Dateityp wird nicht unterstützt. Verwende PNG, JPG, WebP, GIF, MP4, WebM oder MOV.",
+    "errorFileSize": "Die Datei darf höchstens 20 MB groß sein.",
+    "errorRateLimit": "Du hast in letzter Zeit viel Feedback gesendet. Bitte versuche es später erneut.",
+    "errorGeneric": "Feedback konnte nicht gesendet werden. Bitte erneut versuchen.",
+    "historyTitle": "Dein Feedback",
+    "historyEmpty": "Du hast noch kein Feedback gesendet.",
+    "download": "Herunterladen",
+    "attachmentError": "Anhang konnte nicht geladen werden.",
+    "statuses": {
+      "NEW": "Eingegangen",
+      "IN_PROGRESS": "In Bearbeitung",
+      "RESOLVED": "Gelöst",
+      "CLOSED": "Geschlossen"
+    }
   },
   "promote": {
     "title": "Deine KIs auf {site}",
@@ -1025,5 +1043,35 @@
     "guestPostsTitle": "Gastbeiträge / Link-Einfügung",
     "updateAiTitle": "KI aktualisieren",
     "submitGptTitle": "GPT einreichen"
+  },
+  "adminFeedback": {
+    "title": "Feedback",
+    "newBadge": "{n} neu",
+    "total": "{n} Einträge",
+    "searchPlaceholder": "Nachricht oder Nutzer suchen…",
+    "statusAll": "Alle Status",
+    "typeAll": "Alle Typen",
+    "colUser": "Nutzer",
+    "colMessage": "Feedback",
+    "colStatus": "Status",
+    "colNote": "Interne Notiz",
+    "colActions": "Aktionen",
+    "notePlaceholder": "Nur für Admins sichtbar",
+    "saveNote": "Notiz speichern",
+    "delete": "Löschen",
+    "deleteConfirm": "Dieses Feedback samt Anhang löschen?",
+    "empty": "Kein Feedback.",
+    "statuses": {
+      "NEW": "Neu",
+      "IN_PROGRESS": "In Bearbeitung",
+      "RESOLVED": "Gelöst",
+      "CLOSED": "Geschlossen"
+    },
+    "types": {
+      "FEATURE": "Funktionswunsch",
+      "ISSUE": "Problem",
+      "BILLING": "Abrechnung",
+      "OTHER": "Sonstiges"
+    }
   }
 }

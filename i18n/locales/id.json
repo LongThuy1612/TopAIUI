@@ -267,7 +267,6 @@
     "research": "Riset",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "Laporan Riset",
     "freePlan": "Gratis",
     "websiteInsightsQuota": "Kuota Website Insights",
     "socialListeningQueries": "Kueri Social Listening",
@@ -314,7 +313,6 @@
     "postsLinks": "Postingan / Tautan",
     "myGPTs": "GPT Saya",
     "other": "Lainnya",
-    "favourite": "Favorit",
     "paymentInvoice": "Pembayaran & Faktur",
     "feedback": "Umpan Balik",
     "sharedLogin": "Login bersama",
@@ -489,18 +487,15 @@
     "colAction": "Aksi",
     "bounceRate": "Rasio Pentalan",
     "view": "Lihat",
-    "noResults": "Tidak ada tool yang cocok dengan pencarian Anda."
-  },
-  "researchReportPage": {
-    "title": "Wawasan Industri AI & Laporan Riset Pasar",
-    "subtitle": "Jelajahi prakiraan 2026 kami, tren yang muncul di berbagai sektor, dan dapatkan analisis mendalam tentang seluruh lanskap AI — dari gambaran umum pasar hingga analisis sektor khusus yang mendalam.",
-    "allMonths": "Semua Bulan",
-    "tabAll": "Semua Laporan",
-    "tabOverall": "Laporan Keseluruhan",
-    "tabSector": "Wawasan Sektor",
-    "tabPrimary": "Kategori Utama",
-    "tabSub": "Sub-Kategori",
-    "noResults": "Belum ada laporan dalam kategori ini."
+    "noResults": "Tidak ada tool yang cocok dengan pencarian Anda.",
+    "sortVisitsDesc": "Kunjungan bulanan: tinggi → rendah",
+    "sortVisitsAsc": "Kunjungan bulanan: rendah → tinggi",
+    "sortGrowthDesc": "Pertumbuhan: tinggi → rendah",
+    "sortGrowthRateDesc": "Laju pertumbuhan: tinggi → rendah",
+    "sortGrowthRateAsc": "Laju pertumbuhan: rendah → tinggi",
+    "loading": "Memuat…",
+    "loadError": "Gagal memuat data. Silakan coba lagi.",
+    "popupBlocked": "Browser memblokir beberapa tab. Izinkan pop-up untuk situs ini agar semuanya terbuka."
   },
   "myAIsPage": {
     "title": "AI Saya",
@@ -571,7 +566,12 @@
     "fieldZip": "Kode Pos",
     "fieldAddress": "Alamat",
     "fieldVatNumber": "Nomor PPN",
-    "save": "Simpan"
+    "save": "Simpan",
+    "invoiceHistory": "Riwayat Tagihan",
+    "loadError": "Gagal memuat profil. Muat ulang halaman.",
+    "emailHint": "Email masuk tidak dapat diubah di sini.",
+    "saved": "Tersimpan.",
+    "saveError": "Gagal menyimpan. Silakan coba lagi."
   },
   "feedbackPage": {
     "title": "Umpan Balik Pengguna",
@@ -585,8 +585,26 @@
     "descriptionPlaceholder": "Jelaskan masalah atau saran Anda secara rinci...",
     "attachment": "Lampiran",
     "upload": "Unggah",
-    "uploadHint": "Silakan unggah tangkapan layar atau rekaman layar. Ukuran maksimal per file: 100MB.",
-    "submit": "Kirim"
+    "uploadHint": "Tangkapan atau rekaman layar: PNG, JPG, WebP, GIF, MP4, WebM, atau MOV, maksimal 20 MB.",
+    "submit": "Kirim",
+    "removeFile": "Hapus",
+    "sending": "Mengirim…",
+    "success": "Terima kasih! Masukan Anda telah dikirim.",
+    "errorTooShort": "Tulis minimal {n} karakter.",
+    "errorFileType": "Jenis file tidak didukung. Gunakan PNG, JPG, WebP, GIF, MP4, WebM, atau MOV.",
+    "errorFileSize": "Ukuran file maksimal 20 MB.",
+    "errorRateLimit": "Anda mengirim banyak masukan baru-baru ini. Silakan coba lagi nanti.",
+    "errorGeneric": "Gagal mengirim masukan. Silakan coba lagi.",
+    "historyTitle": "Masukan Anda",
+    "historyEmpty": "Anda belum mengirim masukan.",
+    "download": "Unduh",
+    "attachmentError": "Gagal memuat lampiran.",
+    "statuses": {
+      "NEW": "Diterima",
+      "IN_PROGRESS": "Diproses",
+      "RESOLVED": "Selesai",
+      "CLOSED": "Ditutup"
+    }
   },
   "promote": {
     "title": "AI Anda di {site}",
@@ -1025,5 +1043,35 @@
     "guestPostsTitle": "Guest Post / Sisip Tautan",
     "updateAiTitle": "Perbarui AI",
     "submitGptTitle": "Kirim GPT"
+  },
+  "adminFeedback": {
+    "title": "Masukan",
+    "newBadge": "{n} baru",
+    "total": "{n} masukan",
+    "searchPlaceholder": "Cari pesan atau pengguna…",
+    "statusAll": "Semua status",
+    "typeAll": "Semua jenis",
+    "colUser": "Pengguna",
+    "colMessage": "Masukan",
+    "colStatus": "Status",
+    "colNote": "Catatan internal",
+    "colActions": "Aksi",
+    "notePlaceholder": "Hanya terlihat oleh admin",
+    "saveNote": "Simpan catatan",
+    "delete": "Hapus",
+    "deleteConfirm": "Hapus masukan ini beserta lampirannya?",
+    "empty": "Belum ada masukan.",
+    "statuses": {
+      "NEW": "Baru",
+      "IN_PROGRESS": "Diproses",
+      "RESOLVED": "Selesai",
+      "CLOSED": "Ditutup"
+    },
+    "types": {
+      "FEATURE": "Permintaan fitur",
+      "ISSUE": "Masalah",
+      "BILLING": "Tagihan",
+      "OTHER": "Lainnya"
+    }
   }
 }

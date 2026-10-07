@@ -267,7 +267,6 @@
     "research": "调研",
     "websiteInsights": "网站洞察",
     "socialListening": "社交聆听",
-    "researchReport": "调研报告",
     "freePlan": "免费版",
     "websiteInsightsQuota": "网站洞察配额",
     "socialListeningQueries": "社交聆听查询次数",
@@ -314,7 +313,6 @@
     "postsLinks": "文章 / 链接",
     "myGPTs": "我的 GPTs",
     "other": "其他",
-    "favourite": "收藏",
     "paymentInvoice": "付款与发票",
     "feedback": "反馈",
     "sharedLogin": "共享登录",
@@ -489,18 +487,15 @@
     "colAction": "操作",
     "bounceRate": "跳出率",
     "view": "查看",
-    "noResults": "没有符合搜索条件的工具。"
-  },
-  "researchReportPage": {
-    "title": "AI 行业洞察与市场调研报告",
-    "subtitle": "探索我们的 2026 年预测、行业新兴趋势，并获取覆盖整个 AI 领域的深入分析——从宏观市场概览到细分行业深度剖析。",
-    "allMonths": "全部月份",
-    "tabAll": "全部报告",
-    "tabOverall": "总体报告",
-    "tabSector": "行业洞察",
-    "tabPrimary": "主要分类",
-    "tabSub": "子分类",
-    "noResults": "该分类下暂无报告。"
+    "noResults": "没有符合搜索条件的工具。",
+    "sortVisitsDesc": "月访问量：高 → 低",
+    "sortVisitsAsc": "月访问量：低 → 高",
+    "sortGrowthDesc": "增长：高 → 低",
+    "sortGrowthRateDesc": "增长率：高 → 低",
+    "sortGrowthRateAsc": "增长率：低 → 高",
+    "loading": "加载中…",
+    "loadError": "无法加载数据，请重试。",
+    "popupBlocked": "浏览器拦截了部分标签页。请允许本站弹出窗口以全部打开。"
   },
   "myAIsPage": {
     "title": "我的 AI",
@@ -571,7 +566,12 @@
     "fieldZip": "邮政编码",
     "fieldAddress": "地址",
     "fieldVatNumber": "增值税号",
-    "save": "保存"
+    "save": "保存",
+    "invoiceHistory": "账单记录",
+    "loadError": "无法加载个人资料，请刷新页面。",
+    "emailHint": "登录邮箱无法在此修改。",
+    "saved": "已保存。",
+    "saveError": "保存失败，请重试。"
   },
   "feedbackPage": {
     "title": "用户反馈",
@@ -585,8 +585,26 @@
     "descriptionPlaceholder": "请详细描述您的问题或建议...",
     "attachment": "附件",
     "upload": "上传",
-    "uploadHint": "请上传截图或屏幕录像。每个文件最大 100MB。",
-    "submit": "提交"
+    "uploadHint": "截图或录屏：PNG、JPG、WebP、GIF、MP4、WebM 或 MOV，最大 20 MB。",
+    "submit": "提交",
+    "removeFile": "移除",
+    "sending": "发送中…",
+    "success": "谢谢！您的反馈已发送。",
+    "errorTooShort": "请至少输入 {n} 个字符。",
+    "errorFileType": "不支持该文件类型。请使用 PNG、JPG、WebP、GIF、MP4、WebM 或 MOV。",
+    "errorFileSize": "文件不能超过 20 MB。",
+    "errorRateLimit": "您最近发送的反馈较多，请稍后再试。",
+    "errorGeneric": "反馈发送失败，请重试。",
+    "historyTitle": "我的反馈",
+    "historyEmpty": "您还没有发送过反馈。",
+    "download": "下载",
+    "attachmentError": "无法加载附件。",
+    "statuses": {
+      "NEW": "已收到",
+      "IN_PROGRESS": "处理中",
+      "RESOLVED": "已解决",
+      "CLOSED": "已关闭"
+    }
   },
   "promote": {
     "title": "你在 {site} 上的 AI",
@@ -1025,5 +1043,35 @@
     "guestPostsTitle": "客座文章 / 链接插入",
     "updateAiTitle": "更新 AI",
     "submitGptTitle": "提交 GPT"
+  },
+  "adminFeedback": {
+    "title": "用户反馈",
+    "newBadge": "{n} 条新反馈",
+    "total": "共 {n} 条",
+    "searchPlaceholder": "搜索内容或用户…",
+    "statusAll": "全部状态",
+    "typeAll": "全部类型",
+    "colUser": "用户",
+    "colMessage": "反馈",
+    "colStatus": "状态",
+    "colNote": "内部备注",
+    "colActions": "操作",
+    "notePlaceholder": "仅管理员可见",
+    "saveNote": "保存备注",
+    "delete": "删除",
+    "deleteConfirm": "删除此反馈及其附件？",
+    "empty": "暂无反馈。",
+    "statuses": {
+      "NEW": "新",
+      "IN_PROGRESS": "处理中",
+      "RESOLVED": "已解决",
+      "CLOSED": "已关闭"
+    },
+    "types": {
+      "FEATURE": "功能建议",
+      "ISSUE": "问题反馈",
+      "BILLING": "账单",
+      "OTHER": "其他"
+    }
   }
 }

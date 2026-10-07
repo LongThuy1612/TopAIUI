@@ -267,7 +267,6 @@
     "research": "Pesquisa",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "Relatório de pesquisa",
     "freePlan": "Grátis",
     "websiteInsightsQuota": "Cota de Website Insights",
     "socialListeningQueries": "Consultas de Social Listening",
@@ -314,7 +313,6 @@
     "postsLinks": "Postagens / Links",
     "myGPTs": "Meus GPTs",
     "other": "Outro",
-    "favourite": "Favoritos",
     "paymentInvoice": "Pagamento e fatura",
     "feedback": "Feedback",
     "sharedLogin": "Login compartilhado",
@@ -489,18 +487,15 @@
     "colAction": "Ação",
     "bounceRate": "Taxa de rejeição",
     "view": "Ver",
-    "noResults": "Nenhuma ferramenta corresponde à sua busca."
-  },
-  "researchReportPage": {
-    "title": "Insights do setor de IA e relatórios de pesquisa de mercado",
-    "subtitle": "Explore nossas previsões para 2026, tendências emergentes por setor e obtenha análises aprofundadas de todo o panorama de IA — desde visões gerais do mercado até análises de nicho por setor.",
-    "allMonths": "Todos os meses",
-    "tabAll": "Todos os relatórios",
-    "tabOverall": "Relatório geral",
-    "tabSector": "Insights por setor",
-    "tabPrimary": "Categorias principais",
-    "tabSub": "Subcategorias",
-    "noResults": "Ainda não há relatórios nesta categoria."
+    "noResults": "Nenhuma ferramenta corresponde à sua busca.",
+    "sortVisitsDesc": "Visitas mensais: maior → menor",
+    "sortVisitsAsc": "Visitas mensais: menor → maior",
+    "sortGrowthDesc": "Crescimento: maior → menor",
+    "sortGrowthRateDesc": "Taxa de crescimento: maior → menor",
+    "sortGrowthRateAsc": "Taxa de crescimento: menor → maior",
+    "loading": "Carregando…",
+    "loadError": "Não foi possível carregar os dados. Tente novamente.",
+    "popupBlocked": "O navegador bloqueou algumas abas. Permita pop-ups deste site para abrir todas."
   },
   "myAIsPage": {
     "title": "Minhas IAs",
@@ -571,7 +566,12 @@
     "fieldZip": "CEP",
     "fieldAddress": "Endereço",
     "fieldVatNumber": "Número de IVA",
-    "save": "Salvar"
+    "save": "Salvar",
+    "invoiceHistory": "Histórico de faturas",
+    "loadError": "Não foi possível carregar seu perfil. Recarregue a página.",
+    "emailHint": "O e-mail de login não pode ser alterado aqui.",
+    "saved": "Salvo.",
+    "saveError": "Não foi possível salvar. Tente novamente."
   },
   "feedbackPage": {
     "title": "Feedback do usuário",
@@ -585,8 +585,26 @@
     "descriptionPlaceholder": "Descreva seu problema ou sugestão em detalhes...",
     "attachment": "Anexo",
     "upload": "Enviar arquivo",
-    "uploadHint": "Envie capturas de tela ou gravações de tela. Tamanho máximo por arquivo: 100MB.",
-    "submit": "Enviar"
+    "uploadHint": "Capturas ou gravações de tela: PNG, JPG, WebP, GIF, MP4, WebM ou MOV, até 20 MB.",
+    "submit": "Enviar",
+    "removeFile": "Remover",
+    "sending": "Enviando…",
+    "success": "Obrigado! Seu feedback foi enviado.",
+    "errorTooShort": "Escreva pelo menos {n} caracteres.",
+    "errorFileType": "Tipo de arquivo não suportado. Use PNG, JPG, WebP, GIF, MP4, WebM ou MOV.",
+    "errorFileSize": "O arquivo deve ter no máximo 20 MB.",
+    "errorRateLimit": "Você enviou muitos feedbacks recentemente. Tente novamente mais tarde.",
+    "errorGeneric": "Não foi possível enviar seu feedback. Tente novamente.",
+    "historyTitle": "Seus feedbacks",
+    "historyEmpty": "Você ainda não enviou nenhum feedback.",
+    "download": "Baixar",
+    "attachmentError": "Não foi possível carregar o anexo.",
+    "statuses": {
+      "NEW": "Recebido",
+      "IN_PROGRESS": "Em andamento",
+      "RESOLVED": "Resolvido",
+      "CLOSED": "Fechado"
+    }
   },
   "promote": {
     "title": "As suas IAs no {site}",
@@ -1025,5 +1043,35 @@
     "guestPostsTitle": "Guest posts / Inserção de links",
     "updateAiTitle": "Atualizar IA",
     "submitGptTitle": "Enviar GPT"
+  },
+  "adminFeedback": {
+    "title": "Feedback",
+    "newBadge": "{n} novos",
+    "total": "{n} feedbacks",
+    "searchPlaceholder": "Buscar mensagem ou usuário…",
+    "statusAll": "Todos os status",
+    "typeAll": "Todos os tipos",
+    "colUser": "Usuário",
+    "colMessage": "Feedback",
+    "colStatus": "Status",
+    "colNote": "Nota interna",
+    "colActions": "Ações",
+    "notePlaceholder": "Visível apenas para admins",
+    "saveNote": "Salvar nota",
+    "delete": "Excluir",
+    "deleteConfirm": "Excluir este feedback e o anexo?",
+    "empty": "Nenhum feedback.",
+    "statuses": {
+      "NEW": "Novo",
+      "IN_PROGRESS": "Em andamento",
+      "RESOLVED": "Resolvido",
+      "CLOSED": "Fechado"
+    },
+    "types": {
+      "FEATURE": "Pedido de recurso",
+      "ISSUE": "Problema",
+      "BILLING": "Cobrança",
+      "OTHER": "Outro"
+    }
   }
 }

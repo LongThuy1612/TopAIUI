@@ -728,5 +728,35 @@
     "guestPostsTitle": "פוסטים אורחים / הוספת קישור",
     "updateAiTitle": "עדכון AI",
     "submitGptTitle": "הגשת GPT"
+  },
+  "adminFeedback": {
+    "title": "משוב",
+    "newBadge": "{n} חדשים",
+    "total": "{n} פריטים",
+    "searchPlaceholder": "חיפוש לפי תוכן או משתמש…",
+    "statusAll": "כל הסטטוסים",
+    "typeAll": "כל הסוגים",
+    "colUser": "משתמש",
+    "colMessage": "משוב",
+    "colStatus": "סטטוס",
+    "colNote": "הערה פנימית",
+    "colActions": "פעולות",
+    "notePlaceholder": "גלוי למנהלים בלבד",
+    "saveNote": "שמירת הערה",
+    "delete": "מחיקה",
+    "deleteConfirm": "למחוק את המשוב ואת הקובץ המצורף?",
+    "empty": "אין משוב.",
+    "statuses": {
+      "NEW": "חדש",
+      "IN_PROGRESS": "בטיפול",
+      "RESOLVED": "נפתר",
+      "CLOSED": "סגור"
+    },
+    "types": {
+      "FEATURE": "בקשת תכונה",
+      "ISSUE": "תקלה",
+      "BILLING": "חיוב",
+      "OTHER": "אחר"
+    }
   }
 }

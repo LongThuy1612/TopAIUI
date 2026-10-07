@@ -44,6 +44,8 @@ services:
     volumes:
       # Uploaded tool logos / screenshots (nitro storage "uploads", ./.data/uploads).
       - uploads_data:/app/.data/uploads
+      # Feedback attachments (nitro storage "feedback", ./.data/feedback) — private.
+      - feedback_data:/app/.data/feedback
     depends_on:
       postgres:
         condition: service_healthy
@@ -60,3 +62,4 @@ services:
 volumes:
   postgres_data:
   uploads_data:
+  feedback_data:

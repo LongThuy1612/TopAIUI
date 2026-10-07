@@ -728,5 +728,35 @@
     "guestPostsTitle": "Гостевые посты / Вставка ссылок",
     "updateAiTitle": "Обновить ИИ",
     "submitGptTitle": "Добавить GPT"
+  },
+  "adminFeedback": {
+    "title": "Отзывы",
+    "newBadge": "Новых: {n}",
+    "total": "Всего: {n}",
+    "searchPlaceholder": "Поиск по тексту или пользователю…",
+    "statusAll": "Все статусы",
+    "typeAll": "Все типы",
+    "colUser": "Пользователь",
+    "colMessage": "Отзыв",
+    "colStatus": "Статус",
+    "colNote": "Внутренняя заметка",
+    "colActions": "Действия",
+    "notePlaceholder": "Видно только администраторам",
+    "saveNote": "Сохранить заметку",
+    "delete": "Удалить",
+    "deleteConfirm": "Удалить этот отзыв и вложение?",
+    "empty": "Отзывов нет.",
+    "statuses": {
+      "NEW": "Новый",
+      "IN_PROGRESS": "В работе",
+      "RESOLVED": "Решён",
+      "CLOSED": "Закрыт"
+    },
+    "types": {
+      "FEATURE": "Запрос функции",
+      "ISSUE": "Проблема",
+      "BILLING": "Оплата",
+      "OTHER": "Другое"
+    }
   }
 }

@@ -2,7 +2,12 @@
 const { t } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
-const credits = 0
+const { data } = await useMyOrders()
+
+// Credits come from paid guest-post orders (User.postCredits). There is no
+// table of published posts / inserted links yet, so the list below is always
+// empty until that exists; buying and spending credits starts on /post-or-insert.
+const credits = computed(() => data.value?.postCredits ?? 0)
 
 useSeoMeta({
   title: () => `${t('myPostsPage.title')} — TopAICollection`
@@ -14,19 +19,19 @@ useSeoMeta({
     <h1 class="text-xl font-extrabold text-ink-900">{{ t('myPostsPage.title') }}</h1>
 
     <div class="mt-4 flex flex-wrap items-center gap-3">
-      <a href="#" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+      <NuxtLink to="/post-or-insert" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
         {{ t('myPostsPage.createNewPost') }}
-      </a>
-      <a href="#" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+      </NuxtLink>
+      <NuxtLink to="/post-or-insert" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
         {{ t('myPostsPage.createNewLinkInsert') }}
-      </a>
+      </NuxtLink>
       <span class="text-sm text-ink-900">
         <span class="font-bold">{{ t('myPostsPage.myCredits') }}: {{ credits }}</span>
         {{ t('myPostsPage.creditsHint') }}
       </span>
-      <a href="#" class="rounded-lg border border-ink-200 px-4 py-2.5 text-sm font-semibold text-ink-900 hover:border-brand-300">
+      <NuxtLink to="/post-or-insert" class="rounded-lg border border-ink-200 px-4 py-2.5 text-sm font-semibold text-ink-900 hover:border-brand-300">
         {{ t('myPostsPage.buyMore') }}
-      </a>
+      </NuxtLink>
     </div>
 
     <div class="mt-5 overflow-x-auto rounded-xl border border-ink-100">
@@ -44,12 +49,12 @@ useSeoMeta({
       <div class="flex flex-col items-center gap-4 py-16">
         <p class="text-sm text-ink-900">{{ t('myPostsPage.emptyMessage') }}</p>
         <div class="flex flex-wrap justify-center gap-3">
-          <a href="#" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+          <NuxtLink to="/post-or-insert" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
             {{ t('myPostsPage.createNewPost') }}
-          </a>
-          <a href="#" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+          </NuxtLink>
+          <NuxtLink to="/post-or-insert" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
             {{ t('myPostsPage.createNewLinkInsert') }}
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>

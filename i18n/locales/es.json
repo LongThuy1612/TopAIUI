@@ -267,7 +267,6 @@
     "research": "Investigación",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "Informe de investigación",
     "freePlan": "Gratis",
     "websiteInsightsQuota": "Cuota de Website Insights",
     "socialListeningQueries": "Consultas de Social Listening",
@@ -314,7 +313,6 @@
     "postsLinks": "Publicaciones / Enlaces",
     "myGPTs": "Mis GPTs",
     "other": "Otro",
-    "favourite": "Favoritos",
     "paymentInvoice": "Pago y facturación",
     "feedback": "Comentarios",
     "sharedLogin": "Inicio de sesión compartido",
@@ -489,18 +487,15 @@
     "colAction": "Acción",
     "bounceRate": "Tasa de rebote",
     "view": "Ver",
-    "noResults": "Ninguna herramienta coincide con tu búsqueda."
-  },
-  "researchReportPage": {
-    "title": "Perspectivas de la industria de IA e informes de investigación de mercado",
-    "subtitle": "Explora nuestras previsiones para 2026, las tendencias emergentes por sector y obtén análisis en profundidad de todo el panorama de la IA, desde visiones generales del mercado hasta análisis específicos por nicho.",
-    "allMonths": "Todos los meses",
-    "tabAll": "Todos los informes",
-    "tabOverall": "Informe general",
-    "tabSector": "Perspectivas por sector",
-    "tabPrimary": "Categorías principales",
-    "tabSub": "Subcategorías",
-    "noResults": "Aún no hay informes en esta categoría."
+    "noResults": "Ninguna herramienta coincide con tu búsqueda.",
+    "sortVisitsDesc": "Visitas mensuales: mayor → menor",
+    "sortVisitsAsc": "Visitas mensuales: menor → mayor",
+    "sortGrowthDesc": "Crecimiento: mayor → menor",
+    "sortGrowthRateDesc": "Tasa de crecimiento: mayor → menor",
+    "sortGrowthRateAsc": "Tasa de crecimiento: menor → mayor",
+    "loading": "Cargando…",
+    "loadError": "No se pudieron cargar los datos. Inténtalo de nuevo.",
+    "popupBlocked": "El navegador bloqueó algunas pestañas. Permite las ventanas emergentes de este sitio para abrirlas todas."
   },
   "myAIsPage": {
     "title": "Mis IAs",
@@ -571,7 +566,12 @@
     "fieldZip": "Código postal",
     "fieldAddress": "Dirección",
     "fieldVatNumber": "Número de IVA",
-    "save": "Guardar"
+    "save": "Guardar",
+    "invoiceHistory": "Historial de facturas",
+    "loadError": "No se pudo cargar tu perfil. Recarga la página.",
+    "emailHint": "El correo de inicio de sesión no se puede cambiar aquí.",
+    "saved": "Guardado.",
+    "saveError": "No se pudo guardar. Inténtalo de nuevo."
   },
   "feedbackPage": {
     "title": "Comentarios de usuarios",
@@ -585,8 +585,26 @@
     "descriptionPlaceholder": "Describe tu problema o sugerencia en detalle...",
     "attachment": "Adjunto",
     "upload": "Subir",
-    "uploadHint": "Sube capturas de pantalla o grabaciones de pantalla. Tamaño máximo por archivo: 100 MB.",
-    "submit": "Enviar"
+    "uploadHint": "Capturas o grabaciones de pantalla: PNG, JPG, WebP, GIF, MP4, WebM o MOV, hasta 20 MB.",
+    "submit": "Enviar",
+    "removeFile": "Quitar",
+    "sending": "Enviando…",
+    "success": "¡Gracias! Tu comentario se ha enviado.",
+    "errorTooShort": "Escribe al menos {n} caracteres.",
+    "errorFileType": "Este tipo de archivo no es compatible. Usa PNG, JPG, WebP, GIF, MP4, WebM o MOV.",
+    "errorFileSize": "El archivo debe pesar 20 MB o menos.",
+    "errorRateLimit": "Has enviado muchos comentarios recientemente. Inténtalo más tarde.",
+    "errorGeneric": "No se pudo enviar tu comentario. Inténtalo de nuevo.",
+    "historyTitle": "Tus comentarios",
+    "historyEmpty": "Todavía no has enviado comentarios.",
+    "download": "Descargar",
+    "attachmentError": "No se pudo cargar el adjunto.",
+    "statuses": {
+      "NEW": "Recibido",
+      "IN_PROGRESS": "En curso",
+      "RESOLVED": "Resuelto",
+      "CLOSED": "Cerrado"
+    }
   },
   "promote": {
     "title": "Tus IA en {site}",
@@ -1025,5 +1043,35 @@
     "guestPostsTitle": "Guest posts / Inserción de enlaces",
     "updateAiTitle": "Actualizar IA",
     "submitGptTitle": "Enviar GPT"
+  },
+  "adminFeedback": {
+    "title": "Comentarios",
+    "newBadge": "{n} nuevos",
+    "total": "{n} comentarios",
+    "searchPlaceholder": "Buscar mensaje o usuario…",
+    "statusAll": "Todos los estados",
+    "typeAll": "Todos los tipos",
+    "colUser": "Usuario",
+    "colMessage": "Comentario",
+    "colStatus": "Estado",
+    "colNote": "Nota interna",
+    "colActions": "Acciones",
+    "notePlaceholder": "Solo visible para administradores",
+    "saveNote": "Guardar nota",
+    "delete": "Eliminar",
+    "deleteConfirm": "¿Eliminar este comentario y su adjunto?",
+    "empty": "No hay comentarios.",
+    "statuses": {
+      "NEW": "Nuevo",
+      "IN_PROGRESS": "En curso",
+      "RESOLVED": "Resuelto",
+      "CLOSED": "Cerrado"
+    },
+    "types": {
+      "FEATURE": "Solicitud de función",
+      "ISSUE": "Problema",
+      "BILLING": "Facturación",
+      "OTHER": "Otro"
+    }
   }
 }

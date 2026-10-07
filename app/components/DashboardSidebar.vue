@@ -11,6 +11,8 @@ const accountSubtitle = computed(() => (isAdmin.value ? t('admin.badge') : user.
 const onToolsPage = computed(() => route.path.startsWith('/admin/tools'))
 const onUsersPage = computed(() => route.path.startsWith('/admin/users'))
 const onReviewsPage = computed(() => route.path.startsWith('/admin/reviews'))
+// /admin/feedback is taken by the redirect for the old user Feedback URL (nuxt.config.ts).
+const onFeedbackPage = computed(() => route.path.startsWith('/admin/user-feedback'))
 
 function confirmLogout() {
   if (!confirm(t('admin.logoutConfirm'))) return
@@ -20,14 +22,12 @@ function confirmLogout() {
 
 const researchItems = computed(() => [
   { label: t('admin.websiteInsights'), to: '/dashboard/insights', icon: 'M4 19h16M6 15l3-4 3 2 4-6 2 3', color: 'bg-orange-50 text-orange-500' },
-  { label: t('admin.socialListening'), to: '/dashboard/social-listening', icon: 'M12 3a7 7 0 0 0-7 7c0 3.5 2 5.5 3 7l1 2h6l1-2c1-1.5 3-3.5 3-7a7 7 0 0 0-7-7Zm-2 18h4', color: 'bg-pink-50 text-pink-500' },
-  { label: t('admin.researchReport'), to: '/dashboard/research-report', icon: 'M6 3h9l4 4v14H6V3Zm8 9H9m6 4H9', color: 'bg-blue-50 text-blue-500' }
+  { label: t('admin.socialListening'), to: '/dashboard/social-listening', icon: 'M12 3a7 7 0 0 0-7 7c0 3.5 2 5.5 3 7l1 2h6l1-2c1-1.5 3-3.5 3-7a7 7 0 0 0-7-7Zm-2 18h4', color: 'bg-pink-50 text-pink-500' }
 ])
 
 const upgradeModalOpen = ref(false)
 
 const otherItems = computed(() => [
-  { label: t('admin.favourite'), to: '#', icon: 'M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z' },
   { label: t('admin.paymentInvoice'), to: '/dashboard/payment-invoice', icon: 'M7 3h10a1 1 0 0 1 1 1v17l-3-2-2 2-2-2-2 2-3-2V4a1 1 0 0 1 1-1Zm2 5h6m-6 4h6m-6 4h3' },
   { label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' }
 ])
@@ -85,6 +85,17 @@ const businessItems = computed(() => [
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z" />
       </svg>
       {{ t('admin.reviews.title') }}
+    </NuxtLink>
+
+    <NuxtLink
+      v-if="isAdmin"
+      to="/admin/user-feedback"
+      :class="['-mt-5 flex items-center gap-2.5 rounded-lg px-3 py-2 text-base font-bold', onFeedbackPage ? 'bg-brand-50 text-brand-600' : 'text-ink-700 hover:bg-ink-100/60']"
+    >
+      <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6" />
+      </svg>
+      {{ t('adminFeedback.title') }}
     </NuxtLink>
 
     <div>

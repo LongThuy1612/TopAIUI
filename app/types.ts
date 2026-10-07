@@ -273,3 +273,35 @@ export interface RankingFilters {
   countries: { code: string; count: number }[]
   sources: { name: string; count: number }[]
 }
+
+// Dashboard → Feedback (server/utils/feedback.ts).
+export type FeedbackType = 'FEATURE' | 'ISSUE' | 'BILLING' | 'OTHER'
+export type FeedbackStatus = 'NEW' | 'IN_PROGRESS' | 'RESOLVED' | 'CLOSED'
+
+export interface MyFeedback {
+  id: string
+  type: FeedbackType
+  message: string
+  status: FeedbackStatus
+  hasAttachment: boolean
+  attachmentName: string | null
+  attachmentType: string | null
+  createdAt: string
+}
+
+export interface AdminFeedback extends MyFeedback {
+  adminNote: string | null
+  attachmentSize: number | null
+  locale: string | null
+  userAgent: string | null
+  resolvedAt: string | null
+  user: { id: string; name: string | null; email: string }
+}
+
+export interface AdminFeedbackResponse {
+  items: AdminFeedback[]
+  total: number
+  newCount: number
+  page: number
+  pageCount: number
+}

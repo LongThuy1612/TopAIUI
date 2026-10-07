@@ -728,5 +728,35 @@
     "guestPostsTitle": "Gjesteinnlegg / Lenkeinnsetting",
     "updateAiTitle": "Oppdater AI",
     "submitGptTitle": "Send inn GPT"
+  },
+  "adminFeedback": {
+    "title": "Tilbakemeldinger",
+    "newBadge": "{n} nye",
+    "total": "{n} tilbakemeldinger",
+    "searchPlaceholder": "Søk i melding eller bruker…",
+    "statusAll": "Alle statuser",
+    "typeAll": "Alle typer",
+    "colUser": "Bruker",
+    "colMessage": "Tilbakemelding",
+    "colStatus": "Status",
+    "colNote": "Internt notat",
+    "colActions": "Handlinger",
+    "notePlaceholder": "Bare synlig for administratorer",
+    "saveNote": "Lagre notat",
+    "delete": "Slett",
+    "deleteConfirm": "Slette denne tilbakemeldingen og vedlegget?",
+    "empty": "Ingen tilbakemeldinger.",
+    "statuses": {
+      "NEW": "Ny",
+      "IN_PROGRESS": "Under arbeid",
+      "RESOLVED": "Løst",
+      "CLOSED": "Lukket"
+    },
+    "types": {
+      "FEATURE": "Funksjonsønske",
+      "ISSUE": "Problem",
+      "BILLING": "Fakturering",
+      "OTHER": "Annet"
+    }
   }
 }

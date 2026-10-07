@@ -267,7 +267,6 @@
     "research": "리서치",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "리서치 보고서",
     "freePlan": "무료",
     "websiteInsightsQuota": "Website Insights 할당량",
     "socialListeningQueries": "Social Listening 쿼리 수",
@@ -314,7 +313,6 @@
     "postsLinks": "게시글 / 링크",
     "myGPTs": "내 GPTs",
     "other": "기타",
-    "favourite": "즐겨찾기",
     "paymentInvoice": "결제 및 인보이스",
     "feedback": "피드백",
     "sharedLogin": "공유 로그인",
@@ -489,18 +487,15 @@
     "colAction": "작업",
     "bounceRate": "이탈률",
     "view": "보기",
-    "noResults": "검색 조건에 맞는 도구가 없습니다."
-  },
-  "researchReportPage": {
-    "title": "AI 산업 인사이트 및 시장 조사 보고서",
-    "subtitle": "2026년 전망, 섹터별 새로운 트렌드를 살펴보고 전체 AI 시장 개요부터 세부 섹터 심층 분석까지 AI 업계 전반에 대한 심층 분석을 확인하세요.",
-    "allMonths": "전체 월",
-    "tabAll": "전체 보고서",
-    "tabOverall": "종합 보고서",
-    "tabSector": "섹터 인사이트",
-    "tabPrimary": "주요 카테고리",
-    "tabSub": "하위 카테고리",
-    "noResults": "이 카테고리에는 아직 보고서가 없습니다."
+    "noResults": "검색 조건에 맞는 도구가 없습니다.",
+    "sortVisitsDesc": "월간 방문수: 높은 순",
+    "sortVisitsAsc": "월간 방문수: 낮은 순",
+    "sortGrowthDesc": "증가량: 높은 순",
+    "sortGrowthRateDesc": "성장률: 높은 순",
+    "sortGrowthRateAsc": "성장률: 낮은 순",
+    "loading": "불러오는 중…",
+    "loadError": "데이터를 불러오지 못했습니다. 다시 시도해 주세요.",
+    "popupBlocked": "브라우저가 일부 탭을 차단했습니다. 모두 열려면 이 사이트의 팝업을 허용하세요."
   },
   "myAIsPage": {
     "title": "내 AI",
@@ -571,7 +566,12 @@
     "fieldZip": "우편번호",
     "fieldAddress": "주소",
     "fieldVatNumber": "VAT 번호",
-    "save": "저장"
+    "save": "저장",
+    "invoiceHistory": "청구 내역",
+    "loadError": "프로필을 불러오지 못했습니다. 페이지를 새로고침하세요.",
+    "emailHint": "로그인 이메일은 여기에서 변경할 수 없습니다.",
+    "saved": "저장되었습니다.",
+    "saveError": "저장하지 못했습니다. 다시 시도해 주세요."
   },
   "feedbackPage": {
     "title": "사용자 피드백",
@@ -585,8 +585,26 @@
     "descriptionPlaceholder": "문제 또는 제안 사항을 자세히 설명해 주세요...",
     "attachment": "첨부파일",
     "upload": "업로드",
-    "uploadHint": "스크린샷이나 화면 녹화를 업로드해 주세요. 파일당 최대 크기: 100MB.",
-    "submit": "제출"
+    "uploadHint": "스크린샷 또는 화면 녹화: PNG, JPG, WebP, GIF, MP4, WebM, MOV, 최대 20MB.",
+    "submit": "제출",
+    "removeFile": "삭제",
+    "sending": "보내는 중…",
+    "success": "감사합니다! 피드백이 전송되었습니다.",
+    "errorTooShort": "최소 {n}자 이상 입력해 주세요.",
+    "errorFileType": "지원하지 않는 파일 형식입니다. PNG, JPG, WebP, GIF, MP4, WebM 또는 MOV를 사용하세요.",
+    "errorFileSize": "파일은 20MB 이하여야 합니다.",
+    "errorRateLimit": "최근 피드백을 많이 보내셨습니다. 잠시 후 다시 시도해 주세요.",
+    "errorGeneric": "피드백을 보내지 못했습니다. 다시 시도해 주세요.",
+    "historyTitle": "내 피드백",
+    "historyEmpty": "아직 보낸 피드백이 없습니다.",
+    "download": "다운로드",
+    "attachmentError": "첨부 파일을 불러오지 못했습니다.",
+    "statuses": {
+      "NEW": "접수됨",
+      "IN_PROGRESS": "처리 중",
+      "RESOLVED": "해결됨",
+      "CLOSED": "종료"
+    }
   },
   "promote": {
     "title": "{site}에서 내 AI 알리기",
@@ -1025,5 +1043,35 @@
     "guestPostsTitle": "게스트 포스트 / 링크 삽입",
     "updateAiTitle": "AI 업데이트",
     "submitGptTitle": "GPT 등록"
+  },
+  "adminFeedback": {
+    "title": "피드백",
+    "newBadge": "새 피드백 {n}개",
+    "total": "총 {n}개",
+    "searchPlaceholder": "내용 또는 사용자 검색…",
+    "statusAll": "모든 상태",
+    "typeAll": "모든 유형",
+    "colUser": "사용자",
+    "colMessage": "피드백",
+    "colStatus": "상태",
+    "colNote": "내부 메모",
+    "colActions": "작업",
+    "notePlaceholder": "관리자만 볼 수 있음",
+    "saveNote": "메모 저장",
+    "delete": "삭제",
+    "deleteConfirm": "이 피드백과 첨부 파일을 삭제할까요?",
+    "empty": "피드백이 없습니다.",
+    "statuses": {
+      "NEW": "새로 접수",
+      "IN_PROGRESS": "처리 중",
+      "RESOLVED": "해결됨",
+      "CLOSED": "종료"
+    },
+    "types": {
+      "FEATURE": "기능 요청",
+      "ISSUE": "문제 신고",
+      "BILLING": "결제",
+      "OTHER": "기타"
+    }
   }
 }

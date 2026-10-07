@@ -728,5 +728,35 @@
     "guestPostsTitle": "Gastblogs / Link invoegen",
     "updateAiTitle": "AI bijwerken",
     "submitGptTitle": "GPT indienen"
+  },
+  "adminFeedback": {
+    "title": "Feedback",
+    "newBadge": "{n} nieuw",
+    "total": "{n} feedback",
+    "searchPlaceholder": "Zoek bericht of gebruiker…",
+    "statusAll": "Alle statussen",
+    "typeAll": "Alle typen",
+    "colUser": "Gebruiker",
+    "colMessage": "Feedback",
+    "colStatus": "Status",
+    "colNote": "Interne notitie",
+    "colActions": "Acties",
+    "notePlaceholder": "Alleen zichtbaar voor admins",
+    "saveNote": "Notitie opslaan",
+    "delete": "Verwijderen",
+    "deleteConfirm": "Deze feedback en bijlage verwijderen?",
+    "empty": "Geen feedback.",
+    "statuses": {
+      "NEW": "Nieuw",
+      "IN_PROGRESS": "In behandeling",
+      "RESOLVED": "Opgelost",
+      "CLOSED": "Gesloten"
+    },
+    "types": {
+      "FEATURE": "Functieverzoek",
+      "ISSUE": "Probleem",
+      "BILLING": "Facturering",
+      "OTHER": "Overig"
+    }
   }
 }

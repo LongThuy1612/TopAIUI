@@ -76,10 +76,15 @@ export default defineNuxtConfig({
     // as a volume in Docker (see docker-compose.yml); swap the driver for S3/R2
     // later without touching the upload code.
     storage: {
-      uploads: { driver: 'fs', base: process.env.UPLOAD_DIR || './.data/uploads' }
+      uploads: { driver: 'fs', base: process.env.UPLOAD_DIR || './.data/uploads' },
+      // Feedback attachments (server/utils/feedback.ts): private — never served
+      // by /uploads, only through /api/feedback/<id>/attachment to the sender
+      // and admins — and kept apart so the nightly uploads cleanup can't see them.
+      feedback: { driver: 'fs', base: process.env.FEEDBACK_UPLOAD_DIR || './.data/feedback' }
     },
     devStorage: {
-      uploads: { driver: 'fs', base: process.env.UPLOAD_DIR || './.data/uploads' }
+      uploads: { driver: 'fs', base: process.env.UPLOAD_DIR || './.data/uploads' },
+      feedback: { driver: 'fs', base: process.env.FEEDBACK_UPLOAD_DIR || './.data/feedback' }
     },
     // Nightly cleanup of uploaded images no tool uses (server/tasks/uploads/cleanup.ts).
     experimental: { tasks: true },
@@ -159,7 +164,9 @@ export default defineNuxtConfig({
     '/admin': { redirect: '/dashboard' },
     '/admin/insights': { redirect: '/dashboard/insights' },
     '/admin/social-listening': { redirect: '/dashboard/social-listening' },
-    '/admin/research-report': { redirect: '/dashboard/research-report' },
+    // Research Report was removed.
+    '/admin/research-report': { redirect: '/dashboard' },
+    '/dashboard/research-report': { redirect: '/dashboard' },
     '/admin/my-ais': { redirect: '/dashboard/my-ais' },
     '/admin/advertise': { redirect: '/dashboard/advertise' },
     '/admin/my-posts': { redirect: '/dashboard/my-posts' },

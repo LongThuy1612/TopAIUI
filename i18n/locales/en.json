@@ -107,7 +107,6 @@
     "research": "Research",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "Research Report",
     "freePlan": "Free",
     "websiteInsightsQuota": "Website Insights Quota",
     "socialListeningQueries": "Social Listening Queries",
@@ -154,7 +153,6 @@
     "postsLinks": "Posts / Links",
     "myGPTs": "My GPTs",
     "other": "Other",
-    "favourite": "Favourite",
     "paymentInvoice": "Payment & Invoice",
     "feedback": "Feedback",
     "sharedLogin": "Shared login",
@@ -488,18 +486,15 @@
     "colAction": "Action",
     "bounceRate": "Bounce Rate",
     "view": "View",
-    "noResults": "No tools match your search."
-  },
-  "researchReportPage": {
-    "title": "AI Industry Insights & Market Research Reports",
-    "subtitle": "Explore our 2026 forecasts, Sector emerging trends, and get in-depth analysis on the entire AI landscape—from broad market overviews to niche sector deep dives.",
-    "allMonths": "All Months",
-    "tabAll": "All Reports",
-    "tabOverall": "Overall Report",
-    "tabSector": "Sector Insights",
-    "tabPrimary": "Primary Categories",
-    "tabSub": "Sub-Categories",
-    "noResults": "No reports in this category yet."
+    "noResults": "No tools match your search.",
+    "sortVisitsDesc": "Monthly visits: high → low",
+    "sortVisitsAsc": "Monthly visits: low → high",
+    "sortGrowthDesc": "Growth: high → low",
+    "sortGrowthRateDesc": "Growth rate: high → low",
+    "sortGrowthRateAsc": "Growth rate: low → high",
+    "loading": "Loading…",
+    "loadError": "Could not load insights. Please try again.",
+    "popupBlocked": "Your browser blocked some tabs. Allow pop-ups for this site to open them all."
   },
   "myAIsPage": {
     "title": "My AIs",
@@ -570,7 +565,12 @@
     "fieldZip": "ZIP/Postal",
     "fieldAddress": "Address",
     "fieldVatNumber": "VAT Number",
-    "save": "Save"
+    "save": "Save",
+    "invoiceHistory": "Invoice History",
+    "loadError": "Could not load your profile. Please reload the page.",
+    "emailHint": "Your sign-in email can’t be changed here.",
+    "saved": "Saved.",
+    "saveError": "Could not save. Please try again."
   },
   "feedbackPage": {
     "title": "User Feedback",
@@ -584,8 +584,26 @@
     "descriptionPlaceholder": "Please describe your issue or suggestion in detail...",
     "attachment": "Attachment",
     "upload": "Upload",
-    "uploadHint": "Please upload screenshots or screen recordings. Max size per file: 100MB.",
-    "submit": "Submit"
+    "uploadHint": "Screenshots or screen recordings: PNG, JPG, WebP, GIF, MP4, WebM or MOV, up to 20 MB.",
+    "submit": "Submit",
+    "removeFile": "Remove",
+    "sending": "Sending…",
+    "success": "Thank you! Your feedback has been sent.",
+    "errorTooShort": "Please write at least {n} characters.",
+    "errorFileType": "This file type isn’t supported. Use PNG, JPG, WebP, GIF, MP4, WebM or MOV.",
+    "errorFileSize": "The file must be 20 MB or smaller.",
+    "errorRateLimit": "You’ve sent a lot of feedback recently. Please try again later.",
+    "errorGeneric": "Could not send your feedback. Please try again.",
+    "historyTitle": "Your feedback",
+    "historyEmpty": "You haven’t sent any feedback yet.",
+    "download": "Download",
+    "attachmentError": "Could not load the attachment.",
+    "statuses": {
+      "NEW": "Received",
+      "IN_PROGRESS": "In progress",
+      "RESOLVED": "Resolved",
+      "CLOSED": "Closed"
+    }
   },
   "tool": {
     "openSite": "Open site",
@@ -1192,5 +1210,35 @@
     "limit": "Up to {n} categories",
     "empty": "No matching category",
     "remove": "Remove"
+  },
+  "adminFeedback": {
+    "title": "Feedback",
+    "newBadge": "{n} new",
+    "total": "{n} feedback",
+    "searchPlaceholder": "Search message or user…",
+    "statusAll": "All statuses",
+    "typeAll": "All types",
+    "colUser": "User",
+    "colMessage": "Feedback",
+    "colStatus": "Status",
+    "colNote": "Internal note",
+    "colActions": "Actions",
+    "notePlaceholder": "Only admins see this",
+    "saveNote": "Save note",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this feedback and its attachment?",
+    "empty": "No feedback.",
+    "statuses": {
+      "NEW": "New",
+      "IN_PROGRESS": "In progress",
+      "RESOLVED": "Resolved",
+      "CLOSED": "Closed"
+    },
+    "types": {
+      "FEATURE": "Feature request",
+      "ISSUE": "Issue",
+      "BILLING": "Billing",
+      "OTHER": "Other"
+    }
   }
 }

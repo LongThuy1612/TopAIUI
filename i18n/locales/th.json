@@ -728,5 +728,35 @@
     "guestPostsTitle": "Guest Post / แทรกลิงก์",
     "updateAiTitle": "อัปเดต AI",
     "submitGptTitle": "ส่ง GPT"
+  },
+  "adminFeedback": {
+    "title": "ความคิดเห็น",
+    "newBadge": "ใหม่ {n} รายการ",
+    "total": "ทั้งหมด {n} รายการ",
+    "searchPlaceholder": "ค้นหาข้อความหรือผู้ใช้…",
+    "statusAll": "ทุกสถานะ",
+    "typeAll": "ทุกประเภท",
+    "colUser": "ผู้ใช้",
+    "colMessage": "ความคิดเห็น",
+    "colStatus": "สถานะ",
+    "colNote": "บันทึกภายใน",
+    "colActions": "การทำงาน",
+    "notePlaceholder": "เฉพาะผู้ดูแลเท่านั้นที่เห็น",
+    "saveNote": "บันทึกโน้ต",
+    "delete": "ลบ",
+    "deleteConfirm": "ลบความคิดเห็นนี้และไฟล์แนบหรือไม่?",
+    "empty": "ไม่มีความคิดเห็น",
+    "statuses": {
+      "NEW": "ใหม่",
+      "IN_PROGRESS": "กำลังดำเนินการ",
+      "RESOLVED": "แก้ไขแล้ว",
+      "CLOSED": "ปิดแล้ว"
+    },
+    "types": {
+      "FEATURE": "ขอฟีเจอร์",
+      "ISSUE": "แจ้งปัญหา",
+      "BILLING": "การเรียกเก็บเงิน",
+      "OTHER": "อื่น ๆ"
+    }
   }
 }

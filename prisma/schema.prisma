@@ -20,6 +20,21 @@ enum Role {
   ADMIN
 }
 
+// Dashboard → Feedback: the four choices on the form.
+enum FeedbackType {
+  FEATURE // request a new feature
+  ISSUE   // report a problem
+  BILLING // billing question
+  OTHER
+}
+
+enum FeedbackStatus {
+  NEW
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
+}
+
 model Category {
   id         String   @id @default(cuid())
   handle     String?
@@ -303,8 +318,37 @@ model User {
   reviews       Review[]
   promoteOrders PromoteOrder[]
   toolUpdateRequests ToolUpdateRequest[]
+  feedbacks     Feedback[]
 
   @@map("User")
+}
+
+// A message sent from Dashboard → Feedback, handled by admins.
+model Feedback {
+  id             String         @id @default(cuid())
+  userId         String
+  user           User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type           FeedbackType
+  message        String         // up to 1000 characters (checked by the API)
+  // Optional screenshot / screen recording, stored with the other uploads.
+  attachmentUrl  String?        // key in the private "feedback" storage, served by /api/feedback/<id>/attachment
+  attachmentName String?        // original file name, for display
+  attachmentSize Int?           // bytes
+  attachmentType String?        // MIME type
+  status         FeedbackStatus @default(NEW)
+  adminNote      String?        // internal, never shown to the user
+  // Context that helps reproduce an issue.
+  locale         String?
+  userAgent      String?
+  resolvedAt     DateTime?      // set when status becomes RESOLVED / CLOSED
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+
+  // "My feedback", newest first.
+  @@index([userId, createdAt])
+  // Admin list filtered by status, newest first.
+  @@index([status, createdAt])
+  @@map("Feedback")
 }
 
 // One row per Stripe Checkout session from the promote pages (submit AI,

@@ -267,7 +267,6 @@
     "research": "リサーチ",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "リサーチレポート",
     "freePlan": "無料プラン",
     "websiteInsightsQuota": "Website Insights の利用枠",
     "socialListeningQueries": "Social Listening のクエリ数",
@@ -314,7 +313,6 @@
     "postsLinks": "投稿 / リンク",
     "myGPTs": "マイGPTs",
     "other": "その他",
-    "favourite": "お気に入り",
     "paymentInvoice": "支払いと請求書",
     "feedback": "フィードバック",
     "sharedLogin": "共有ログイン",
@@ -489,18 +487,15 @@
     "colAction": "アクション",
     "bounceRate": "直帰率",
     "view": "表示",
-    "noResults": "検索条件に一致するツールがありません。"
-  },
-  "researchReportPage": {
-    "title": "AI業界インサイト＆市場調査レポート",
-    "subtitle": "2026年の予測、業界の新たなトレンドを探り、市場全体の概観からニッチ分野の深掘り分析まで、AI業界全体の詳細な分析をご覧いただけます。",
-    "allMonths": "全ての月",
-    "tabAll": "すべてのレポート",
-    "tabOverall": "総合レポート",
-    "tabSector": "業界インサイト",
-    "tabPrimary": "主要カテゴリー",
-    "tabSub": "サブカテゴリー",
-    "noResults": "このカテゴリーにはまだレポートがありません。"
+    "noResults": "検索条件に一致するツールがありません。",
+    "sortVisitsDesc": "月間訪問数：多い順",
+    "sortVisitsAsc": "月間訪問数：少ない順",
+    "sortGrowthDesc": "増加数：多い順",
+    "sortGrowthRateDesc": "成長率：高い順",
+    "sortGrowthRateAsc": "成長率：低い順",
+    "loading": "読み込み中…",
+    "loadError": "データを読み込めませんでした。もう一度お試しください。",
+    "popupBlocked": "ブラウザが一部のタブをブロックしました。すべて開くにはこのサイトのポップアップを許可してください。"
   },
   "myAIsPage": {
     "title": "マイAI",
@@ -571,7 +566,12 @@
     "fieldZip": "郵便番号",
     "fieldAddress": "住所",
     "fieldVatNumber": "VAT番号",
-    "save": "保存"
+    "save": "保存",
+    "invoiceHistory": "請求履歴",
+    "loadError": "プロフィールを読み込めませんでした。ページを再読み込みしてください。",
+    "emailHint": "ログイン用メールアドレスはここでは変更できません。",
+    "saved": "保存しました。",
+    "saveError": "保存できませんでした。もう一度お試しください。"
   },
   "feedbackPage": {
     "title": "ユーザーフィードバック",
@@ -585,8 +585,26 @@
     "descriptionPlaceholder": "問題やご提案を詳しくご記入ください...",
     "attachment": "添付ファイル",
     "upload": "アップロード",
-    "uploadHint": "スクリーンショットまたは画面録画をアップロードしてください。1ファイルあたり最大100MB。",
-    "submit": "送信"
+    "uploadHint": "スクリーンショットまたは画面録画：PNG、JPG、WebP、GIF、MP4、WebM、MOV（最大 20 MB）。",
+    "submit": "送信",
+    "removeFile": "削除",
+    "sending": "送信中…",
+    "success": "ありがとうございます！フィードバックを送信しました。",
+    "errorTooShort": "{n} 文字以上入力してください。",
+    "errorFileType": "このファイル形式には対応していません。PNG、JPG、WebP、GIF、MP4、WebM、MOV をご利用ください。",
+    "errorFileSize": "ファイルは 20 MB 以下にしてください。",
+    "errorRateLimit": "短時間に多くのフィードバックが送信されました。しばらくしてからお試しください。",
+    "errorGeneric": "フィードバックを送信できませんでした。もう一度お試しください。",
+    "historyTitle": "あなたのフィードバック",
+    "historyEmpty": "まだフィードバックを送信していません。",
+    "download": "ダウンロード",
+    "attachmentError": "添付ファイルを読み込めませんでした。",
+    "statuses": {
+      "NEW": "受付済み",
+      "IN_PROGRESS": "対応中",
+      "RESOLVED": "解決済み",
+      "CLOSED": "クローズ"
+    }
   },
   "promote": {
     "title": "{site} であなたの AI を紹介",
@@ -1025,5 +1043,35 @@
     "guestPostsTitle": "ゲスト投稿 / リンク挿入",
     "updateAiTitle": "AIを更新",
     "submitGptTitle": "GPTを登録"
+  },
+  "adminFeedback": {
+    "title": "フィードバック",
+    "newBadge": "新着 {n} 件",
+    "total": "{n} 件",
+    "searchPlaceholder": "内容またはユーザーを検索…",
+    "statusAll": "すべてのステータス",
+    "typeAll": "すべての種類",
+    "colUser": "ユーザー",
+    "colMessage": "フィードバック",
+    "colStatus": "ステータス",
+    "colNote": "社内メモ",
+    "colActions": "操作",
+    "notePlaceholder": "管理者のみ閲覧可能",
+    "saveNote": "メモを保存",
+    "delete": "削除",
+    "deleteConfirm": "このフィードバックと添付ファイルを削除しますか？",
+    "empty": "フィードバックはありません。",
+    "statuses": {
+      "NEW": "新規",
+      "IN_PROGRESS": "対応中",
+      "RESOLVED": "解決済み",
+      "CLOSED": "クローズ"
+    },
+    "types": {
+      "FEATURE": "機能リクエスト",
+      "ISSUE": "不具合",
+      "BILLING": "請求",
+      "OTHER": "その他"
+    }
   }
 }

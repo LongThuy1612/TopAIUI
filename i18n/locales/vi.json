@@ -107,7 +107,6 @@
     "research": "Research",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "Research Report",
     "freePlan": "Free",
     "websiteInsightsQuota": "Website Insights Quota",
     "socialListeningQueries": "Social Listening Queries",
@@ -118,7 +117,6 @@
     "postsLinks": "Posts / Links",
     "myGPTs": "My GPTs",
     "other": "Khác",
-    "favourite": "Yêu thích",
     "sharedLogin": "Tài khoản dùng chung",
     "logout": "Đăng xuất",
     "logoutConfirm": "Bạn có chắc muốn đăng xuất?",
@@ -620,18 +618,15 @@
     "colAction": "Hành động",
     "bounceRate": "Tỷ lệ thoát",
     "view": "Xem",
-    "noResults": "Không có tool nào khớp với tìm kiếm của bạn."
-  },
-  "researchReportPage": {
-    "title": "Báo cáo Insight ngành AI & Nghiên cứu thị trường",
-    "subtitle": "Khám phá dự báo năm 2026, các xu hướng mới nổi theo từng ngành, và nhận phân tích chuyên sâu về toàn bộ thị trường AI — từ tổng quan thị trường đến phân tích sâu từng ngành nhỏ.",
-    "allMonths": "Tất cả các tháng",
-    "tabAll": "Tất cả báo cáo",
-    "tabOverall": "Báo cáo tổng quan",
-    "tabSector": "Insight theo ngành",
-    "tabPrimary": "Danh mục chính",
-    "tabSub": "Danh mục con",
-    "noResults": "Chưa có báo cáo nào trong danh mục này."
+    "noResults": "Không có tool nào khớp với tìm kiếm của bạn.",
+    "sortVisitsDesc": "Lượt truy cập: cao → thấp",
+    "sortVisitsAsc": "Lượt truy cập: thấp → cao",
+    "sortGrowthDesc": "Tăng trưởng: cao → thấp",
+    "sortGrowthRateDesc": "Tốc độ tăng trưởng: cao → thấp",
+    "sortGrowthRateAsc": "Tốc độ tăng trưởng: thấp → cao",
+    "loading": "Đang tải…",
+    "loadError": "Không tải được dữ liệu. Vui lòng thử lại.",
+    "popupBlocked": "Trình duyệt đã chặn một số tab. Hãy cho phép cửa sổ bật lên cho trang này để mở tất cả."
   },
   "myAIsPage": {
     "title": "My AIs",
@@ -702,7 +697,12 @@
     "fieldZip": "Mã bưu điện",
     "fieldAddress": "Địa chỉ",
     "fieldVatNumber": "Mã số thuế (VAT)",
-    "save": "Lưu"
+    "save": "Lưu",
+    "invoiceHistory": "Lịch sử hóa đơn",
+    "loadError": "Không tải được hồ sơ. Vui lòng tải lại trang.",
+    "emailHint": "Email đăng nhập không thể thay đổi tại đây.",
+    "saved": "Đã lưu.",
+    "saveError": "Không lưu được. Vui lòng thử lại."
   },
   "feedbackPage": {
     "title": "Phản hồi người dùng",
@@ -716,8 +716,26 @@
     "descriptionPlaceholder": "Vui lòng mô tả chi tiết vấn đề hoặc đề xuất của bạn...",
     "attachment": "Tệp đính kèm",
     "upload": "Tải lên",
-    "uploadHint": "Vui lòng tải lên ảnh chụp màn hình hoặc video màn hình. Dung lượng tối đa mỗi tệp: 100MB.",
-    "submit": "Gửi"
+    "uploadHint": "Ảnh chụp hoặc video quay màn hình: PNG, JPG, WebP, GIF, MP4, WebM hoặc MOV, tối đa 20 MB.",
+    "submit": "Gửi",
+    "removeFile": "Xóa",
+    "sending": "Đang gửi…",
+    "success": "Cảm ơn bạn! Góp ý đã được gửi.",
+    "errorTooShort": "Vui lòng viết ít nhất {n} ký tự.",
+    "errorFileType": "Định dạng file không được hỗ trợ. Hãy dùng PNG, JPG, WebP, GIF, MP4, WebM hoặc MOV.",
+    "errorFileSize": "File phải nhỏ hơn hoặc bằng 20 MB.",
+    "errorRateLimit": "Bạn đã gửi khá nhiều góp ý gần đây. Vui lòng thử lại sau.",
+    "errorGeneric": "Không gửi được góp ý. Vui lòng thử lại.",
+    "historyTitle": "Góp ý của bạn",
+    "historyEmpty": "Bạn chưa gửi góp ý nào.",
+    "download": "Tải về",
+    "attachmentError": "Không tải được file đính kèm.",
+    "statuses": {
+      "NEW": "Đã nhận",
+      "IN_PROGRESS": "Đang xử lý",
+      "RESOLVED": "Đã giải quyết",
+      "CLOSED": "Đã đóng"
+    }
   },
   "promote": {
     "title": "Công cụ AI của bạn trên {site}",
@@ -1192,5 +1210,35 @@
     "limit": "Tối đa {n} category",
     "empty": "Không có category phù hợp",
     "remove": "Bỏ chọn"
+  },
+  "adminFeedback": {
+    "title": "Góp ý",
+    "newBadge": "{n} mới",
+    "total": "{n} góp ý",
+    "searchPlaceholder": "Tìm nội dung hoặc người gửi…",
+    "statusAll": "Mọi trạng thái",
+    "typeAll": "Mọi loại",
+    "colUser": "Người gửi",
+    "colMessage": "Góp ý",
+    "colStatus": "Trạng thái",
+    "colNote": "Ghi chú nội bộ",
+    "colActions": "Thao tác",
+    "notePlaceholder": "Chỉ admin xem được",
+    "saveNote": "Lưu ghi chú",
+    "delete": "Xóa",
+    "deleteConfirm": "Xóa góp ý này và file đính kèm?",
+    "empty": "Không có góp ý.",
+    "statuses": {
+      "NEW": "Mới",
+      "IN_PROGRESS": "Đang xử lý",
+      "RESOLVED": "Đã giải quyết",
+      "CLOSED": "Đã đóng"
+    },
+    "types": {
+      "FEATURE": "Đề xuất tính năng",
+      "ISSUE": "Báo lỗi",
+      "BILLING": "Thanh toán",
+      "OTHER": "Khác"
+    }
   }
 }

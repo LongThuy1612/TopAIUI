@@ -728,5 +728,35 @@
     "guestPostsTitle": "Gästinlägg / Länkinfogning",
     "updateAiTitle": "Uppdatera AI",
     "submitGptTitle": "Skicka in GPT"
+  },
+  "adminFeedback": {
+    "title": "Feedback",
+    "newBadge": "{n} nya",
+    "total": "{n} feedback",
+    "searchPlaceholder": "Sök meddelande eller användare…",
+    "statusAll": "Alla statusar",
+    "typeAll": "Alla typer",
+    "colUser": "Användare",
+    "colMessage": "Feedback",
+    "colStatus": "Status",
+    "colNote": "Intern anteckning",
+    "colActions": "Åtgärder",
+    "notePlaceholder": "Syns bara för administratörer",
+    "saveNote": "Spara anteckning",
+    "delete": "Ta bort",
+    "deleteConfirm": "Ta bort denna feedback och bilagan?",
+    "empty": "Ingen feedback.",
+    "statuses": {
+      "NEW": "Ny",
+      "IN_PROGRESS": "Pågår",
+      "RESOLVED": "Löst",
+      "CLOSED": "Stängd"
+    },
+    "types": {
+      "FEATURE": "Funktionsönskemål",
+      "ISSUE": "Problem",
+      "BILLING": "Fakturering",
+      "OTHER": "Annat"
+    }
   }
 }

@@ -1,21 +1,108 @@
 <script setup lang="ts">
-const { t } = useI18n()
+import type { OrderRow, OrderType } from '~/composables/useMyOrders'
+
+const { t, locale } = useI18n()
+const { authHeaders, user } = useAuth()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 const upgradeModalOpen = ref(false)
 
-const profile = ref({
-  email: 'bigbossabc1@gmail.com',
-  userName: 'boss big',
-  company: '',
-  country: '',
-  phone: '',
-  city: '',
-  state: '',
-  zip: '',
-  address: '',
-  vatNumber: ''
+interface Profile {
+  email: string
+  name: string | null
+  company: string | null
+  country: string | null
+  phone: string | null
+  city: string | null
+  state: string | null
+  zip: string | null
+  address: string | null
+  vatNumber: string | null
+}
+
+const EDITABLE = ['name', 'company', 'country', 'phone', 'city', 'state', 'zip', 'address', 'vatNumber'] as const
+
+// The form edits a copy; the email comes from the account and is read-only.
+const form = reactive<Record<typeof EDITABLE[number], string>>({
+  name: '', company: '', country: '', phone: '', city: '', state: '', zip: '', address: '', vatNumber: ''
 })
+
+const [{ data: profile, error: profileError }, { data: ordersRes, pending: ordersPending }] = await Promise.all([
+  useFetch<Profile>('/api/me/profile', { headers: authHeaders() }),
+  useMyOrders()
+])
+
+function fillForm(p: Profile | null | undefined) {
+  if (!p) return
+  for (const key of EDITABLE) form[key] = p[key] ?? ''
+}
+watch(profile, fillForm, { immediate: true })
+
+const saving = ref(false)
+const saveState = ref<'idle' | 'saved' | 'error'>('idle')
+let saveStateTimer: ReturnType<typeof setTimeout> | null = null
+onBeforeUnmount(() => { if (saveStateTimer) clearTimeout(saveStateTimer) })
+
+async function save() {
+  if (saving.value) return
+  saving.value = true
+  saveState.value = 'idle'
+  try {
+    const updated = await $fetch<Profile>('/api/me/profile', {
+      method: 'PATCH',
+      headers: authHeaders(),
+      body: { ...form }
+    })
+    profile.value = updated
+    // The sidebar shows the account name from the auth state.
+    if (user.value) user.value = { ...user.value, name: updated.name }
+    saveState.value = 'saved'
+  } catch {
+    saveState.value = 'error'
+  } finally {
+    saving.value = false
+    if (saveStateTimer) clearTimeout(saveStateTimer)
+    saveStateTimer = setTimeout(() => { saveState.value = 'idle' }, 4000)
+  }
+}
+
+// ISO 3166-1 alpha-2; names come from the browser in the current language.
+const COUNTRY_CODES = 'AD AE AF AG AI AL AM AO AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG US UY UZ VA VC VE VG VI VN VU WF WS XK YE YT ZA ZM ZW'.split(' ')
+const countries = computed(() => {
+  let names: Intl.DisplayNames | null = null
+  try { names = new Intl.DisplayNames([locale.value, 'en'], { type: 'region' }) } catch {}
+  return COUNTRY_CODES
+    .map(code => ({ code, name: names?.of(code) ?? code }))
+    .sort((a, b) => a.name.localeCompare(b.name, locale.value))
+})
+
+const orders = computed(() => ordersRes.value?.orders ?? [])
+
+const typeKey: Record<OrderType, string> = {
+  'submit-ai': 'submit',
+  'advertise': 'advertise',
+  'guest-post': 'guestPost',
+  'update-ai': 'update',
+  'submit-gpt': 'submitGpt'
+}
+
+function detail(o: OrderRow) {
+  const p = o.payload
+  switch (o.type) {
+    case 'submit-ai': return String(p.name ?? '')
+    case 'submit-gpt': return String(p.gptUrl ?? '')
+    case 'update-ai': return String(p.toolName ?? '')
+    case 'advertise': return `${p.toolName ?? ''} · ${t('promote.orders.clicks', { n: new Intl.NumberFormat(locale.value).format(Number(p.clicks)) })}`
+    case 'guest-post': return t('promote.orders.credits', Number(p.credits))
+    default: return ''
+  }
+}
+
+const money = (cents: number, currency: string) =>
+  new Intl.NumberFormat(locale.value, { style: 'currency', currency: currency.toUpperCase() }).format(cents / 100)
+const date = (iso: string) => new Date(iso).toLocaleDateString(locale.value, { year: 'numeric', month: 'short', day: 'numeric' })
+
+const inputClass = 'w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400'
 
 useSeoMeta({
   title: () => `${t('paymentInvoicePage.title')} — TopAICollection`
@@ -76,61 +163,100 @@ useSeoMeta({
       </div>
     </div>
 
+    <h2 class="mt-8 text-lg font-extrabold text-ink-900">{{ t('paymentInvoicePage.invoiceHistory') }}</h2>
+
+    <div class="mt-4 overflow-x-auto rounded-xl border border-ink-100">
+      <table class="w-full min-w-[680px] text-left text-sm">
+        <thead class="border-b border-ink-100 text-xs font-bold uppercase tracking-wide text-ink-900">
+          <tr>
+            <th class="px-4 py-3">{{ t('promote.orders.date') }}</th>
+            <th class="px-4 py-3">{{ t('promote.orders.service') }}</th>
+            <th class="px-4 py-3">{{ t('promote.orders.details') }}</th>
+            <th class="px-4 py-3">{{ t('promote.orders.amount') }}</th>
+            <th class="px-4 py-3">{{ t('promote.orders.status') }}</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-ink-100">
+          <tr v-for="o in orders" :key="o.id">
+            <td class="whitespace-nowrap px-4 py-3 text-ink-600">{{ date(o.paidAt ?? o.createdAt) }}</td>
+            <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ typeKey[o.type] ? t(`promote.services.${typeKey[o.type]}.title`) : o.type }}</td>
+            <td class="max-w-[260px] truncate px-4 py-3 text-ink-600" :title="detail(o)">{{ detail(o) }}</td>
+            <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ money(o.amount, o.currency) }}</td>
+            <td class="px-4 py-3">
+              <span :class="['whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold', orderStatusClass[o.status] ?? 'bg-ink-100 text-ink-500']">{{ t(`promote.orders.statuses.${o.status}`) }}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p v-if="ordersPending && !orders.length" class="py-10 text-center text-sm text-ink-400">{{ t('promote.orders.loading') }}</p>
+      <p v-else-if="!orders.length" class="py-10 text-center text-sm text-ink-400">{{ t('promote.orders.empty') }}</p>
+    </div>
+
     <h2 class="mt-8 text-lg font-extrabold text-ink-900">{{ t('paymentInvoicePage.profileTitle') }}</h2>
 
-    <form class="mt-4 grid grid-cols-1 gap-4 rounded-xl border border-ink-100 p-6 sm:grid-cols-2" @submit.prevent>
+    <p v-if="profileError" class="mt-4 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">{{ t('paymentInvoicePage.loadError') }}</p>
+
+    <form class="mt-4 grid grid-cols-1 gap-4 rounded-xl border border-ink-100 p-6 sm:grid-cols-2" @submit.prevent="save">
       <label class="block">
-        <span class="mb-1 block text-sm font-semibold text-ink-900"><span class="text-red-500">*</span> {{ t('paymentInvoicePage.fieldEmail') }}</span>
-        <input v-model="profile.email" type="email" required class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldEmail') }}</span>
+        <input :value="profile?.email ?? ''" type="email" readonly :class="[inputClass, 'cursor-not-allowed bg-ink-100/50 text-ink-600']">
+        <span class="mt-1 block text-xs text-ink-500">{{ t('paymentInvoicePage.emailHint') }}</span>
       </label>
       <label class="block">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldUserName') }}</span>
-        <input v-model="profile.userName" type="text" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <input v-model="form.name" type="text" maxlength="100" autocomplete="name" :class="inputClass">
       </label>
 
       <label class="block sm:col-span-2">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldCompany') }}</span>
-        <input v-model="profile.company" type="text" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <input v-model="form.company" type="text" maxlength="200" autocomplete="organization" :class="inputClass">
       </label>
 
       <label class="block">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldCountry') }}</span>
-        <select v-model="profile.country" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <select v-model="form.country" autocomplete="country" :class="inputClass">
           <option value=""></option>
+          <option v-for="c in countries" :key="c.code" :value="c.code">{{ c.name }}</option>
         </select>
       </label>
       <label class="block">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldPhone') }}</span>
-        <input v-model="profile.phone" type="text" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <input v-model="form.phone" type="tel" maxlength="40" autocomplete="tel" :class="inputClass">
       </label>
 
       <label class="block">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldCity') }}</span>
-        <input v-model="profile.city" type="text" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <input v-model="form.city" type="text" maxlength="100" autocomplete="address-level2" :class="inputClass">
       </label>
       <label class="block">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldState') }}</span>
-        <input v-model="profile.state" type="text" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <input v-model="form.state" type="text" maxlength="100" autocomplete="address-level1" :class="inputClass">
       </label>
 
       <label class="block">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldZip') }}</span>
-        <input v-model="profile.zip" type="text" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <input v-model="form.zip" type="text" maxlength="20" autocomplete="postal-code" :class="inputClass">
       </label>
       <label class="block">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldVatNumber') }}</span>
-        <input v-model="profile.vatNumber" type="text" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <input v-model="form.vatNumber" type="text" maxlength="40" :class="inputClass">
       </label>
 
       <label class="block sm:col-span-2">
         <span class="mb-1 block text-sm font-semibold text-ink-900">{{ t('paymentInvoicePage.fieldAddress') }}</span>
-        <input v-model="profile.address" type="text" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
+        <input v-model="form.address" type="text" maxlength="300" autocomplete="street-address" :class="inputClass">
       </label>
 
-      <div class="sm:col-span-2">
-        <button type="submit" class="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-600">
+      <div class="flex flex-wrap items-center gap-3 sm:col-span-2">
+        <button
+          type="submit"
+          class="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-600 disabled:cursor-not-allowed disabled:opacity-60"
+          :disabled="saving || !profile"
+        >
           {{ t('paymentInvoicePage.save') }}
         </button>
+        <span v-if="saveState === 'saved'" class="text-sm font-semibold text-emerald-600" role="status">{{ t('paymentInvoicePage.saved') }}</span>
+        <span v-else-if="saveState === 'error'" class="text-sm font-semibold text-red-600" role="alert">{{ t('paymentInvoicePage.saveError') }}</span>
       </div>
     </form>
     <UpgradeModal :open="upgradeModalOpen" @close="upgradeModalOpen = false" />

@@ -728,5 +728,35 @@
     "guestPostsTitle": "Gæsteindlæg / Linkindsættelse",
     "updateAiTitle": "Opdater AI",
     "submitGptTitle": "Indsend GPT"
+  },
+  "adminFeedback": {
+    "title": "Feedback",
+    "newBadge": "{n} nye",
+    "total": "{n} feedback",
+    "searchPlaceholder": "Søg i besked eller bruger…",
+    "statusAll": "Alle statusser",
+    "typeAll": "Alle typer",
+    "colUser": "Bruger",
+    "colMessage": "Feedback",
+    "colStatus": "Status",
+    "colNote": "Intern note",
+    "colActions": "Handlinger",
+    "notePlaceholder": "Kun synlig for administratorer",
+    "saveNote": "Gem note",
+    "delete": "Slet",
+    "deleteConfirm": "Slet denne feedback og vedhæftningen?",
+    "empty": "Ingen feedback.",
+    "statuses": {
+      "NEW": "Ny",
+      "IN_PROGRESS": "I gang",
+      "RESOLVED": "Løst",
+      "CLOSED": "Lukket"
+    },
+    "types": {
+      "FEATURE": "Funktionsønske",
+      "ISSUE": "Problem",
+      "BILLING": "Fakturering",
+      "OTHER": "Andet"
+    }
   }
 }

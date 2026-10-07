@@ -267,7 +267,6 @@
     "research": "Recherche",
     "websiteInsights": "Website Insights",
     "socialListening": "Social Listening",
-    "researchReport": "Rapport de recherche",
     "freePlan": "Gratuit",
     "websiteInsightsQuota": "Quota Website Insights",
     "socialListeningQueries": "Requêtes Social Listening",
@@ -314,7 +313,6 @@
     "postsLinks": "Publications / Liens",
     "myGPTs": "Mes GPTs",
     "other": "Autre",
-    "favourite": "Favoris",
     "paymentInvoice": "Paiement et facturation",
     "feedback": "Retour d'expérience",
     "sharedLogin": "Connexion partagée",
@@ -489,18 +487,15 @@
     "colAction": "Action",
     "bounceRate": "Taux de rebond",
     "view": "Voir",
-    "noResults": "Aucun outil ne correspond à votre recherche."
-  },
-  "researchReportPage": {
-    "title": "Perspectives de l'industrie IA et rapports d'étude de marché",
-    "subtitle": "Explorez nos prévisions 2026, les tendances émergentes par secteur, et obtenez des analyses approfondies sur l'ensemble du paysage de l'IA — des aperçus globaux du marché aux analyses sectorielles de niche.",
-    "allMonths": "Tous les mois",
-    "tabAll": "Tous les rapports",
-    "tabOverall": "Rapport global",
-    "tabSector": "Perspectives sectorielles",
-    "tabPrimary": "Catégories principales",
-    "tabSub": "Sous-catégories",
-    "noResults": "Aucun rapport dans cette catégorie pour le moment."
+    "noResults": "Aucun outil ne correspond à votre recherche.",
+    "sortVisitsDesc": "Visites mensuelles : décroissant",
+    "sortVisitsAsc": "Visites mensuelles : croissant",
+    "sortGrowthDesc": "Croissance : décroissant",
+    "sortGrowthRateDesc": "Taux de croissance : décroissant",
+    "sortGrowthRateAsc": "Taux de croissance : croissant",
+    "loading": "Chargement…",
+    "loadError": "Impossible de charger les données. Veuillez réessayer.",
+    "popupBlocked": "Votre navigateur a bloqué certains onglets. Autorisez les fenêtres pop-up pour ce site afin de tous les ouvrir."
   },
   "myAIsPage": {
     "title": "Mes IA",
@@ -571,7 +566,12 @@
     "fieldZip": "Code postal",
     "fieldAddress": "Adresse",
     "fieldVatNumber": "Numéro de TVA",
-    "save": "Enregistrer"
+    "save": "Enregistrer",
+    "invoiceHistory": "Historique des factures",
+    "loadError": "Impossible de charger votre profil. Rechargez la page.",
+    "emailHint": "L’e-mail de connexion ne peut pas être modifié ici.",
+    "saved": "Enregistré.",
+    "saveError": "Échec de l’enregistrement. Veuillez réessayer."
   },
   "feedbackPage": {
     "title": "Retour des utilisateurs",
@@ -585,8 +585,26 @@
     "descriptionPlaceholder": "Veuillez décrire votre problème ou suggestion en détail...",
     "attachment": "Pièce jointe",
     "upload": "Téléverser",
-    "uploadHint": "Veuillez téléverser des captures ou enregistrements d'écran. Taille max par fichier : 100 Mo.",
-    "submit": "Envoyer"
+    "uploadHint": "Captures ou enregistrements d’écran : PNG, JPG, WebP, GIF, MP4, WebM ou MOV, jusqu’à 20 Mo.",
+    "submit": "Envoyer",
+    "removeFile": "Retirer",
+    "sending": "Envoi…",
+    "success": "Merci ! Votre avis a été envoyé.",
+    "errorTooShort": "Veuillez écrire au moins {n} caractères.",
+    "errorFileType": "Ce type de fichier n’est pas pris en charge. Utilisez PNG, JPG, WebP, GIF, MP4, WebM ou MOV.",
+    "errorFileSize": "Le fichier doit faire 20 Mo au maximum.",
+    "errorRateLimit": "Vous avez envoyé beaucoup d’avis récemment. Réessayez plus tard.",
+    "errorGeneric": "Impossible d’envoyer votre avis. Veuillez réessayer.",
+    "historyTitle": "Vos avis",
+    "historyEmpty": "Vous n’avez encore envoyé aucun avis.",
+    "download": "Télécharger",
+    "attachmentError": "Impossible de charger la pièce jointe.",
+    "statuses": {
+      "NEW": "Reçu",
+      "IN_PROGRESS": "En cours",
+      "RESOLVED": "Résolu",
+      "CLOSED": "Fermé"
+    }
   },
   "promote": {
     "title": "Vos IA sur {site}",
@@ -1025,5 +1043,35 @@
     "guestPostsTitle": "Articles invités / Insertion de liens",
     "updateAiTitle": "Actualiser une IA",
     "submitGptTitle": "Ajouter un GPT"
+  },
+  "adminFeedback": {
+    "title": "Avis",
+    "newBadge": "{n} nouveaux",
+    "total": "{n} avis",
+    "searchPlaceholder": "Rechercher un message ou un utilisateur…",
+    "statusAll": "Tous les statuts",
+    "typeAll": "Tous les types",
+    "colUser": "Utilisateur",
+    "colMessage": "Avis",
+    "colStatus": "Statut",
+    "colNote": "Note interne",
+    "colActions": "Actions",
+    "notePlaceholder": "Visible uniquement par les admins",
+    "saveNote": "Enregistrer la note",
+    "delete": "Supprimer",
+    "deleteConfirm": "Supprimer cet avis et sa pièce jointe ?",
+    "empty": "Aucun avis.",
+    "statuses": {
+      "NEW": "Nouveau",
+      "IN_PROGRESS": "En cours",
+      "RESOLVED": "Résolu",
+      "CLOSED": "Fermé"
+    },
+    "types": {
+      "FEATURE": "Demande de fonctionnalité",
+      "ISSUE": "Problème",
+      "BILLING": "Facturation",
+      "OTHER": "Autre"
+    }
   }
 }

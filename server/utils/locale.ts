@@ -3,6 +3,15 @@
 // English first, then to whichever locale actually has data — so the UI never shows an empty
 // description/category name just because a translation hasn't been done yet for that locale.
 
+// Every locale with a messages file in i18n/locales.
+const SUPPORTED_LOCALES = new Set(['en', 'zh', 'es', 'de', 'ja', 'fr', 'ko', 'pt', 'id', 'vi', 'ar', 'da', 'fi', 'he', 'it', 'nl', 'no', 'ru', 'sv', 'th'])
+
+/** A known locale code from a query value, else 'en'. Use it before keying a cache on the locale, so arbitrary values can't create unbounded cache entries. */
+export function normalizeLocale(value: unknown): string {
+  const code = String(value ?? '').toLowerCase()
+  return SUPPORTED_LOCALES.has(code) ? code : 'en'
+}
+
 /** Pick the single best-matching row (e.g. one CategoryTranslation) for a locale. */
 export function pickByLocale<T extends { locale: string }>(rows: T[], locale: string): T | undefined {
   return rows.find(r => r.locale === locale) ?? rows.find(r => r.locale === 'en') ?? rows[0]

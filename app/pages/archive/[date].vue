@@ -83,11 +83,19 @@ const monthLabel = computed(() =>
   monthStart.value.toLocaleDateString(dateLocale.value, { month: 'long', year: 'numeric', timeZone: 'UTC' })
 )
 // 2023-01-01 is a Sunday, so these come out Su → Sa.
-const weekdays = computed(() =>
-  Array.from({ length: 7 }, (_, i) =>
-    new Date(Date.UTC(2023, 0, 1 + i)).toLocaleDateString(dateLocale.value, { weekday: 'short', timeZone: 'UTC' }).slice(0, 2)
-  )
-)
+// Two letters ("Su Mo…") when they stay distinct; some languages collide there
+// (vi "Thứ 2"/"Thứ 3" → "Th", pt, id), so fall back to the narrow form (vi
+// "CN T2…") and then to the full short name.
+const weekdays = computed(() => {
+  const names = (weekday: 'short' | 'narrow') => Array.from({ length: 7 }, (_, i) =>
+    new Date(Date.UTC(2023, 0, 1 + i)).toLocaleDateString(dateLocale.value, { weekday, timeZone: 'UTC' }))
+  const distinct = (list: string[]) => new Set(list).size === 7
+  const short = names('short')
+  const twoLetters = short.map(s => s.slice(0, 2))
+  if (distinct(twoLetters)) return twoLetters
+  const narrow = names('narrow')
+  return distinct(narrow) ? narrow : short.map(s => s.replace(/\.$/, ''))
+})
 // Any past or current day can be picked; days that have tools are just shown darker.
 const todayIso = new Date().toISOString().slice(0, 10)
 const calendarCells = computed(() => {
@@ -162,7 +170,7 @@ useSeoMeta({
             </button>
           </div>
           <div class="grid grid-cols-7 px-2 pb-2 text-center text-sm">
-            <span v-for="w in weekdays" :key="w" class="py-2.5 text-ink-500">{{ w }}</span>
+            <span v-for="(w, i) in weekdays" :key="i" class="py-2.5 text-ink-500">{{ w }}</span>
             <template v-for="(cell, i) in calendarCells" :key="cell ? cell.iso : `blank-${i}`">
               <span v-if="!cell" />
               <NuxtLink

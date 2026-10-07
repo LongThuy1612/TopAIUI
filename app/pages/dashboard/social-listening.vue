@@ -1,13 +1,18 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const { authHeaders } = useAuth()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
-type SocialTool = {
+import { NuxtLink } from '#components'
+
+interface SocialTool {
+  slug: string
+  hasPage: boolean
   name: string
-  intro: string
-  website: string
-  avatarBg: string
-  category: string
+  website: string | null
+  logo: string | null
+  intro: string | null
+  categories: { slug: string; name: string }[]
   videoCount: number
   creatorsCount: number
   monthlyTraffic: number
@@ -17,25 +22,51 @@ type SocialTool = {
   totalInteractions: number
 }
 
-const tools: SocialTool[] = [
-  { name: 'Beacons', intro: 'All-in-one platform for content creators to build websites, sell products, and grow their audience.', website: 'https://beacons.ai', avatarBg: 'bg-ink-900', category: 'Marketing', videoCount: 127600, creatorsCount: 15200, monthlyTraffic: 26400000, avgViews: 65100, avgInteractions: 2600, totalViews: 8300000000, totalInteractions: 331700000 },
-  { name: 'CapCut', intro: 'CapCut is an AI-driven all-in-one video editing app for creating and editing short videos.', website: 'https://www.capcut.com', avatarBg: 'bg-ink-900', category: 'Video', videoCount: 91900, creatorsCount: 53300, monthlyTraffic: 49100000, avgViews: 11500, avgInteractions: 435, totalViews: 1100000000, totalInteractions: 40000000 },
-  { name: 'VidIQ', intro: 'VidIQ is a SaaS platform that helps YouTube creators grow their channel with data-driven insights.', website: 'https://vidiq.com', avatarBg: 'bg-blue-600', category: 'Video', videoCount: 72200, creatorsCount: 5900, monthlyTraffic: 6700000, avgViews: 11700, avgInteractions: 429, totalViews: 845800000, totalInteractions: 31000000 },
-  { name: 'Mailchimp', intro: 'Marketing automation and email platform for growing businesses of every size.', website: 'https://mailchimp.com', avatarBg: 'bg-violet-500', category: 'Marketing', videoCount: 60100, creatorsCount: 6300, monthlyTraffic: 9700000, avgViews: 19100, avgInteractions: 843, totalViews: 1100000000, totalInteractions: 50700000 },
-  { name: 'ChatGPT', intro: 'A free-to-use AI system for conversational assistance, writing, coding, and more.', website: 'https://chatgpt.com', avatarBg: 'bg-emerald-600', category: 'Writing', videoCount: 41600, creatorsCount: 13900, monthlyTraffic: 5600000000, avgViews: 7500, avgInteractions: 264, totalViews: 310600000, totalInteractions: 11000000 },
-  { name: 'ElevenLabs', intro: 'AI audio platform offering text-to-speech and voice cloning for creators and developers.', website: 'https://elevenlabs.io', avatarBg: 'bg-ink-900', category: 'Audio', videoCount: 41200, creatorsCount: 8600, monthlyTraffic: 36400000, avgViews: 55600, avgInteractions: 2700, totalViews: 2300000000, totalInteractions: 112500000 },
-  { name: 'PhotoAI - AI Art and Face Swap (ios)', intro: 'AI-powered photo editing app for art, face swap, and creative image generation.', website: 'https://photoai.com', avatarBg: 'bg-ink-900', category: 'Image', videoCount: 36100, creatorsCount: 5600, monthlyTraffic: 133800000, avgViews: 71300, avgInteractions: 2000, totalViews: 2600000000, totalInteractions: 71200000 },
-  { name: 'Movavi', intro: 'Movavi provides user-friendly photo and video editing software for everyday creators.', website: 'https://www.movavi.com', avatarBg: 'bg-ink-900', category: 'Video', videoCount: 33600, creatorsCount: 8600, monthlyTraffic: 2000000, avgViews: 559, avgInteractions: 19, totalViews: 18800000, totalInteractions: 637400 },
-  { name: 'Suno', intro: 'AI music generator for creating, editing, and producing original songs from text prompts.', website: 'https://suno.com', avatarBg: 'bg-orange-500', category: 'Audio', videoCount: 31500, creatorsCount: 6800, monthlyTraffic: 72700000, avgViews: 3100, avgInteractions: 86, totalViews: 96500000, totalInteractions: 2700000 }
-]
-
-const categories = computed(() => ['all', ...new Set(tools.map(t => t.category))])
-const activeCategory = ref('all')
-const search = ref('')
+interface SocialResponse {
+  categories: { slug: string; name: string }[]
+  total: number
+  page: number
+  pageCount: number
+  items: SocialTool[]
+}
 
 type SortKey = 'videoCount' | 'creatorsCount' | 'monthlyTraffic' | 'avgViews' | 'avgInteractions' | 'totalViews' | 'totalInteractions'
+
+const PAGE_SIZE = 50
+const activeCategory = ref('')
+const search = ref('')
 const sortKey = ref<SortKey>('videoCount')
 const sortDir = ref<'asc' | 'desc'>('desc')
+const page = ref(1)
+
+// Only query the server once typing pauses.
+const debouncedSearch = ref('')
+let searchTimer: ReturnType<typeof setTimeout> | null = null
+watch(search, (value) => {
+  if (searchTimer) clearTimeout(searchTimer)
+  searchTimer = setTimeout(() => { debouncedSearch.value = value.trim() }, 300)
+})
+onBeforeUnmount(() => { if (searchTimer) clearTimeout(searchTimer) })
+
+// Any filter change starts again from the first page.
+watch([activeCategory, debouncedSearch, sortKey, sortDir, locale], () => { page.value = 1 })
+
+const { data, pending, error } = await useFetch<SocialResponse>('/api/social-listening', {
+  headers: authHeaders(),
+  query: computed(() => ({
+    category: activeCategory.value || undefined,
+    q: debouncedSearch.value || undefined,
+    sort: sortKey.value,
+    dir: sortDir.value,
+    page: page.value,
+    limit: PAGE_SIZE,
+    locale: locale.value
+  }))
+})
+
+const tools = computed(() => data.value?.items ?? [])
+const categories = computed(() => data.value?.categories ?? [])
+const pageCount = computed(() => data.value?.pageCount ?? 0)
 
 function toggleSort(key: SortKey) {
   if (sortKey.value === key) {
@@ -46,23 +77,22 @@ function toggleSort(key: SortKey) {
   }
 }
 
-const filteredTools = computed(() => {
-  const q = search.value.trim().toLowerCase()
-  let list = tools.filter(item =>
-    (activeCategory.value === 'all' || item.category === activeCategory.value) &&
-    (!q || item.name.toLowerCase().includes(q))
-  )
-  list = [...list].sort((a, b) => (a[sortKey.value] - b[sortKey.value]) * (sortDir.value === 'asc' ? 1 : -1))
-  return list
-})
-
 function formatCompact(n: number) {
-  return new Intl.NumberFormat(undefined, { notation: 'compact', maximumFractionDigits: 1 }).format(n)
+  return new Intl.NumberFormat(locale.value, { notation: 'compact', maximumFractionDigits: 1 }).format(n)
 }
 
 function initials(name: string) {
-  return name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase()
+  return name.replace(/[^\p{L}\p{N}]/gu, '').slice(0, 2).toUpperCase()
 }
+
+const avatarColors = ['bg-ink-900', 'bg-blue-500', 'bg-orange-500', 'bg-emerald-600', 'bg-violet-500', 'bg-sky-500', 'bg-red-600']
+function avatarBg(name: string) {
+  let h = 0
+  for (const ch of name) h = (h * 31 + ch.charCodeAt(0)) >>> 0
+  return avatarColors[h % avatarColors.length]
+}
+
+const brokenLogos = ref(new Set<string>())
 
 const sortColumns: { key: SortKey; labelKey: string }[] = [
   { key: 'videoCount', labelKey: 'colVideoCount' },
@@ -88,14 +118,15 @@ useSeoMeta({
 
     <div class="mt-5 flex flex-wrap items-center gap-3">
       <select v-model="activeCategory" class="rounded-lg border border-ink-200 px-3 py-2 text-sm font-semibold text-ink-900 outline-none focus:border-brand-400">
-        <option v-for="c in categories" :key="c" :value="c">{{ c === 'all' ? t('socialListening.allCategories') : c }}</option>
+        <option value="">{{ t('socialListening.allCategories') }}</option>
+        <option v-for="c in categories" :key="c.slug" :value="c.slug">{{ c.name }}</option>
       </select>
       <div class="relative">
         <input
           v-model="search"
           type="text"
           :placeholder="t('socialListening.searchPlaceholder')"
-          class="w-72 rounded-lg border border-ink-200 py-2 pl-3 pr-9 text-sm outline-none focus:border-brand-400"
+          class="w-72 max-w-full rounded-lg border border-ink-200 py-2 pl-3 pr-9 text-sm outline-none focus:border-brand-400"
         >
         <svg class="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.3-4.3M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
@@ -121,15 +152,28 @@ useSeoMeta({
             </th>
           </tr>
         </thead>
-        <tbody>
-          <tr v-for="item in filteredTools" :key="item.name" class="border-t border-ink-100 hover:bg-ink-100/30">
+        <tbody :class="pending && 'opacity-50'">
+          <tr v-for="item in tools" :key="item.slug" class="border-t border-ink-100 hover:bg-ink-100/30">
             <td class="px-4 py-4">
-              <a :href="item.website" target="_blank" rel="noopener noreferrer nofollow" class="flex items-center gap-2.5 hover:opacity-80">
-                <span :class="['flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white', item.avatarBg]">{{ initials(item.name) }}</span>
+              <!-- Tools listed here open their page; crawled-only ones open their website. -->
+              <component
+                :is="item.hasPage ? NuxtLink : (item.website ? 'a' : 'span')"
+                v-bind="item.hasPage ? { to: `/tools/${item.slug}` } : (item.website ? { href: item.website, target: '_blank', rel: 'noopener noreferrer nofollow' } : {})"
+                class="flex items-center gap-2.5 hover:opacity-80"
+              >
+                <img
+                  v-if="item.logo && !brokenLogos.has(item.slug)"
+                  :src="item.logo"
+                  :alt="item.name"
+                  class="h-10 w-10 shrink-0 rounded-full border border-ink-100 object-cover"
+                  loading="lazy"
+                  @error="brokenLogos = new Set(brokenLogos).add(item.slug)"
+                >
+                <span v-else :class="['flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white', avatarBg(item.name)]">{{ initials(item.name) }}</span>
                 <span class="font-semibold text-ink-900 hover:text-brand-600">{{ item.name }}</span>
-              </a>
+              </component>
             </td>
-            <td class="max-w-[280px] truncate px-4 py-4 text-ink-900">{{ item.intro }}</td>
+            <td class="max-w-[280px] truncate px-4 py-4 text-ink-900" :title="item.intro ?? ''">{{ item.intro ?? '—' }}</td>
             <td class="px-4 py-4 font-semibold text-brand-600">{{ formatCompact(item.videoCount) }}</td>
             <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.creatorsCount) }}</td>
             <td class="px-4 py-4 text-ink-900">{{ formatCompact(item.monthlyTraffic) }}</td>
@@ -141,9 +185,17 @@ useSeoMeta({
         </tbody>
       </table>
 
-      <div v-if="!filteredTools.length" class="py-16 text-center text-sm text-ink-900">
+      <div v-if="error" class="py-16 text-center text-sm text-red-600">{{ t('websiteInsights.loadError') }}</div>
+      <div v-else-if="pending && !tools.length" class="py-16 text-center text-sm text-ink-400">{{ t('websiteInsights.loading') }}</div>
+      <div v-else-if="!tools.length" class="py-16 text-center text-sm text-ink-900">
         {{ t('socialListening.noResults') }}
       </div>
+    </div>
+
+    <div v-if="pageCount > 1" class="mt-4 flex items-center justify-end gap-3 text-sm">
+      <button type="button" class="rounded-lg border border-ink-200 px-3 py-1.5 font-semibold text-ink-900 hover:border-brand-300 disabled:cursor-not-allowed disabled:opacity-40" :disabled="page <= 1" @click="page--">‹</button>
+      <span class="text-ink-600">{{ page }} / {{ pageCount }}</span>
+      <button type="button" class="rounded-lg border border-ink-200 px-3 py-1.5 font-semibold text-ink-900 hover:border-brand-300 disabled:cursor-not-allowed disabled:opacity-40" :disabled="page >= pageCount" @click="page++">›</button>
     </div>
   </div>
 </template>

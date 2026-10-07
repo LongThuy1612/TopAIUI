@@ -728,5 +728,35 @@
     "guestPostsTitle": "مقالات ضيف / إدراج روابط",
     "updateAiTitle": "تحديث أداة",
     "submitGptTitle": "أرسل GPT"
+  },
+  "adminFeedback": {
+    "title": "الملاحظات",
+    "newBadge": "{n} جديدة",
+    "total": "{n} ملاحظة",
+    "searchPlaceholder": "ابحث في النص أو المستخدم…",
+    "statusAll": "كل الحالات",
+    "typeAll": "كل الأنواع",
+    "colUser": "المستخدم",
+    "colMessage": "الملاحظة",
+    "colStatus": "الحالة",
+    "colNote": "ملاحظة داخلية",
+    "colActions": "إجراءات",
+    "notePlaceholder": "يراها المسؤولون فقط",
+    "saveNote": "حفظ الملاحظة",
+    "delete": "حذف",
+    "deleteConfirm": "حذف هذه الملاحظة ومرفقها؟",
+    "empty": "لا توجد ملاحظات.",
+    "statuses": {
+      "NEW": "جديدة",
+      "IN_PROGRESS": "قيد المعالجة",
+      "RESOLVED": "تم الحل",
+      "CLOSED": "مغلقة"
+    },
+    "types": {
+      "FEATURE": "طلب ميزة",
+      "ISSUE": "مشكلة",
+      "BILLING": "الفواتير",
+      "OTHER": "أخرى"
+    }
   }
 }

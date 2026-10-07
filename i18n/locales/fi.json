@@ -728,5 +728,35 @@
     "guestPostsTitle": "Vierasartikkelit / Linkin lisäys",
     "updateAiTitle": "Päivitä tekoäly",
     "submitGptTitle": "Lähetä GPT"
+  },
+  "adminFeedback": {
+    "title": "Palaute",
+    "newBadge": "{n} uutta",
+    "total": "{n} palautetta",
+    "searchPlaceholder": "Hae viestiä tai käyttäjää…",
+    "statusAll": "Kaikki tilat",
+    "typeAll": "Kaikki tyypit",
+    "colUser": "Käyttäjä",
+    "colMessage": "Palaute",
+    "colStatus": "Tila",
+    "colNote": "Sisäinen muistiinpano",
+    "colActions": "Toiminnot",
+    "notePlaceholder": "Näkyy vain ylläpitäjille",
+    "saveNote": "Tallenna muistiinpano",
+    "delete": "Poista",
+    "deleteConfirm": "Poistetaanko palaute ja sen liite?",
+    "empty": "Ei palautetta.",
+    "statuses": {
+      "NEW": "Uusi",
+      "IN_PROGRESS": "Työn alla",
+      "RESOLVED": "Ratkaistu",
+      "CLOSED": "Suljettu"
+    },
+    "types": {
+      "FEATURE": "Ominaisuustoive",
+      "ISSUE": "Ongelma",
+      "BILLING": "Laskutus",
+      "OTHER": "Muu"
+    }
   }
 }

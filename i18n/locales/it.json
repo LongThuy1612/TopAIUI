@@ -728,5 +728,35 @@
     "guestPostsTitle": "Guest post / Inserimento link",
     "updateAiTitle": "Aggiorna IA",
     "submitGptTitle": "Invia GPT"
+  },
+  "adminFeedback": {
+    "title": "Feedback",
+    "newBadge": "{n} nuovi",
+    "total": "{n} feedback",
+    "searchPlaceholder": "Cerca messaggio o utente…",
+    "statusAll": "Tutti gli stati",
+    "typeAll": "Tutti i tipi",
+    "colUser": "Utente",
+    "colMessage": "Feedback",
+    "colStatus": "Stato",
+    "colNote": "Nota interna",
+    "colActions": "Azioni",
+    "notePlaceholder": "Visibile solo agli admin",
+    "saveNote": "Salva nota",
+    "delete": "Elimina",
+    "deleteConfirm": "Eliminare questo feedback e l’allegato?",
+    "empty": "Nessun feedback.",
+    "statuses": {
+      "NEW": "Nuovo",
+      "IN_PROGRESS": "In corso",
+      "RESOLVED": "Risolto",
+      "CLOSED": "Chiuso"
+    },
+    "types": {
+      "FEATURE": "Richiesta funzionalità",
+      "ISSUE": "Problema",
+      "BILLING": "Fatturazione",
+      "OTHER": "Altro"
+    }
   }
 }
