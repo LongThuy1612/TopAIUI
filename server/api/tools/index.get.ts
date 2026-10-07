@@ -41,6 +41,11 @@ export default defineCachedEventHandler(async (event) => {
     where.addedOn = { gte: addedDate, lt: new Date(addedDate.getTime() + 24 * 60 * 60 * 1000) }
   }
 
+  // Footer "Browse by Alphabet": tools whose name starts with one letter A–Z.
+  const letter = /^[a-z]$/i.test(String(query.letter ?? '')) ? String(query.letter).toUpperCase() : null
+  // Goes in AND so it doesn't overwrite the ?q= name filter above.
+  if (letter) where.AND = [{ name: { startsWith: letter, mode: 'insensitive' } }]
+
   const sortMap: Record<string, Prisma.ToolOrderByWithRelationInput | Prisma.ToolOrderByWithRelationInput[]> = {
     newest: { createdAt: 'desc' },
     featured: [{ isAd: 'desc' }, { adPriority: 'desc' }, { isFeatured: 'desc' }, { viewCount: 'desc' }],
@@ -57,7 +62,9 @@ export default defineCachedEventHandler(async (event) => {
   // infinite scroll don't repeat or skip tools.
   const orderBy = isTodayTab || isNewTab || isArchiveDay
     ? [{ addedOn: { sort: 'desc' as const, nulls: 'last' as const } }, { id: 'asc' as const }]
-    : (sortMap[String(query.sort)] ?? sortMap.newest)
+    : letter
+      ? [{ name: 'asc' as const }, { id: 'asc' as const }]
+      : (sortMap[String(query.sort)] ?? sortMap.newest)
 
   const [items, total] = await Promise.all([
     prisma.tool.findMany({

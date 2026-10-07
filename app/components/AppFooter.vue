@@ -37,7 +37,6 @@ const footerColumns = [
   }
 ]
 
-const resourceLinks = ['Blog', 'AI News', 'Prompts','Weekly Newsletter']
 const aboutLinks = ['About Us', 'Terms of Service', 'Privacy Policy', 'Advertise']
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 // Last 9 days before today, in UTC so server and client render the same dates
@@ -77,12 +76,11 @@ const archiveDates = Array.from({ length: 9 }, (_, i) => {
         <div class="eyebrow-strong">Resource</div>
         <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px]">
           <NuxtLink to="/ranking" class="text-ink-800 hover:text-brand-500">Ranking</NuxtLink>
-          <a v-for="link in resourceLinks" :key="link" href="#" class="text-ink-800 hover:text-brand-500">{{ link }}</a>
         </div>
 
         <div class="eyebrow pt-[30px]">Browse by Alphabet</div>
         <div class="flex flex-wrap gap-x-3 gap-y-[9px] pt-4 text-[13px]">
-          <a v-for="letter in alphabet" :key="letter" href="#" class="text-ink-800 hover:text-brand-500">{{ letter }}</a>
+          <NuxtLink v-for="letter in alphabet" :key="letter" :to="`/alphabet/${letter.toLowerCase()}`" class="text-ink-800 hover:text-brand-500">{{ letter }}</NuxtLink>
         </div>
 
         <div class="eyebrow pt-[30px]">Top 1000 AI Tools Directory</div>

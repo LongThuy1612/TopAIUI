@@ -549,6 +549,10 @@
     "reviewSubmitError": "Không gửi được đánh giá. Vui lòng thử lại.",
     "reviewSessionExpired": "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại để gửi đánh giá."
   },
+  "alphabet": {
+    "title": "Công cụ AI bắt đầu bằng",
+    "browse": "Duyệt theo chữ cái"
+  },
   "archive": {
     "title": "Top 1000 công cụ AI",
     "rank": "Hạng",

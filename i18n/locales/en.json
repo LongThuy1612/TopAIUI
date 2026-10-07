@@ -680,6 +680,10 @@
     "reviewSubmitError": "Could not submit your review. Please try again.",
     "reviewSessionExpired": "Your session has expired. Please log in again to submit your review."
   },
+  "alphabet": {
+    "title": "AI Tools starting with",
+    "browse": "Browse by Alphabet"
+  },
   "archive": {
     "title": "Top 1000 AI Tools",
     "rank": "Rank",

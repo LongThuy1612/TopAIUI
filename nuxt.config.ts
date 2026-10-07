@@ -133,6 +133,7 @@ export default defineNuxtConfig({
     '/today': pageCache(60),
     '/most-featured': pageCache(300),
     '/archive/**': pageCache(600),
+    '/alphabet/**': pageCache(600),
     // The ranking dataset itself is rebuilt hourly (server/utils/ranking.ts).
     '/ranking': pageCache(600),
     '/ranking/**': pageCache(600),
@@ -187,6 +188,7 @@ export default defineNuxtConfig({
       '/today': { cache: false },
       '/most-featured': { cache: false },
       '/archive/**': { cache: false },
+      '/alphabet/**': { cache: false },
       '/ranking': { cache: false },
       '/ranking/**': { cache: false }
     }
