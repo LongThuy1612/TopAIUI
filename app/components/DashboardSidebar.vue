@@ -29,7 +29,8 @@ const upgradeModalOpen = ref(false)
 
 const otherItems = computed(() => [
   { label: t('admin.paymentInvoice'), to: '/dashboard/payment-invoice', icon: 'M7 3h10a1 1 0 0 1 1 1v17l-3-2-2 2-2-2-2 2-3-2V4a1 1 0 0 1 1-1Zm2 5h6m-6 4h6m-6 4h3' },
-  { label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' }
+  // Admins read everyone's feedback under the admin "Feedback" link instead.
+  ...(isAdmin.value ? [] : [{ label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' }])
 ])
 
 // Admins manage every tool under Tool Management, so "My AIs" is customer-only.
