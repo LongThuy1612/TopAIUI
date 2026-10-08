@@ -92,7 +92,15 @@ const { data: alternativesRes } = useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({ category: category.value?.slug, limit: 6, locale: locale.value })),
   lazy: true
 })
-const alternatives = computed(() => (alternativesRes.value?.items ?? []).filter(item => item.slug !== slug.value))
+// Tools shown in an ad slot on this page aren't repeated among the alternatives.
+const alternatives = computed(() => (alternativesRes.value?.items ?? [])
+  .filter(item => item.slug !== slug.value && !adSlots.value.some(ad => ad.tool.slug === item.slug)))
+
+// Two sponsored banners, never this tool's own ad: above the reviews, and over the
+// alternatives (other tools of the kind the visitor is looking at).
+const { slots: adSlots } = useAdSlots('tool', { exclude: () => slug.value, positions: [1], limit: 2 })
+const adBanner = computed(() => adSlots.value[0])
+const alternativesAd = computed(() => adSlots.value[1])
 
 const initials = computed(() => tool.value?.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI')
 
@@ -840,6 +848,8 @@ useSeoMeta({
         </div>
       </div>
 
+      <AdBanner v-if="adBanner" :ad="adBanner" placement="tool" />
+
       <div id="section-reviews" class="scroll-mt-32">
         <h2 class="text-[28px] font-bold leading-tight text-ink-900">{{ t('tool.reviewsHeading', { name: tool.name, count: reviewsTotal }) }}</h2>
 
@@ -1196,6 +1206,7 @@ useSeoMeta({
 
       <div id="section-alternatives" class="scroll-mt-32">
         <h2 class="text-[28px] font-bold leading-tight text-ink-900">{{ t('tool.alternatives') }} {{ tool.name }}</h2>
+        <AdBanner v-if="alternativesAd" :ad="alternativesAd" placement="tool" class="mt-6" />
         <div v-if="alternatives.length" class="mt-6 grid grid-cols-1 gap-6 rounded-2xl border border-ink-100 bg-white p-4 sm:p-6 md:grid-cols-2 xl:grid-cols-3">
           <div
             v-for="alt in alternatives"

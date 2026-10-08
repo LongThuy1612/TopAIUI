@@ -779,20 +779,20 @@
           "badge": "Le plus fréquent",
           "title": "Emplacement standard",
           "points": [
-            "Affiché dans le bloc « Tout juste lancés » de la page d'accueil.",
-            "En rotation sur les pages de listes : nouveautés, plus enregistrés, plus utilisés, mensuels, catégories.",
-            "Affiché sur les pages d'outils concurrents et sur vos propres pages de catégorie."
+            "Diffusé en bannière tournante sur les pages de liste : Aujourd'hui, Nouveautés, Les plus en vue, catégories, résultats de recherche et classements.",
+            "Affiché dans le fil de la page d'accueil et dans le bloc « Tout juste lancés ».",
+            "Affiché sur les pages d'autres outils, au-dessus des avis et des alternatives.",
+            "Mis en ligne immédiatement si l'annonce renvoie vers le site de votre propre outil."
           ]
         },
         {
           "badge": "Le plus efficace",
           "title": "Emplacement mis en avant",
           "points": [
-            "Emplacements épinglés sur l'accueil, les nouveautés, les plus utilisés, les plus enregistrés, les résultats de recherche et les pages de catégorie.",
-            "Plus le solde restant est élevé, meilleur est le classement — rechargez à tout moment pour monter.",
-            "Barre de sponsor en haut de la plupart des pages, en rotation entre annonceurs.",
-            "Également affiché sur les pages de blog, de comparaison et d'alternatives.",
-            "Chaque clic sur l'annonce mène directement à votre site web."
+            "Choisi avant toute campagne standard pour tous les emplacements ci-dessus.",
+            "Barre sponsorisée en haut de la plupart des pages, en rotation entre annonceurs premium.",
+            "Plus votre solde restant est élevé, plus vous êtes affiché souvent — rechargez à tout moment.",
+            "Vérifié par notre équipe avant la mise en ligne. Chaque clic mène directement à votre site."
           ]
         }
       ],
@@ -816,7 +816,7 @@
         },
         {
           "q": "Puis-je acheter des clics plusieurs fois ?",
-          "a": "Oui. Les nouveaux achats s'ajoutent à votre solde, ce qui améliore aussi votre classement dans les emplacements mis en avant."
+          "a": "Oui. Les nouveaux achats s'ajoutent au solde de cet outil pour le même type d'annonce, et un solde plus élevé est affiché plus souvent."
         },
         {
           "q": "J'ai plus de budget et je veux plus de clients. Que faire ?",

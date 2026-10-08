@@ -41,6 +41,11 @@ services:
       NUXT_PUBLIC_SITE_URL: ${NUXT_PUBLIC_SITE_URL:-http://localhost:3000}
       # Sign in with Google (OAuth Web client ID). Empty = Google button hidden.
       NUXT_PUBLIC_GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      # Ad clicks are charged once per visitor IP per day (server/utils/ads.ts).
+      # true only when a reverse proxy of yours (nginx, Caddy… on the host) forwards
+      # to this container and appends the client IP to X-Forwarded-For; false when
+      # visitors reach port 3000 directly (the header would be theirs to fake).
+      NUXT_TRUST_PROXY: ${TRUST_PROXY:-false}
     volumes:
       # Uploaded tool logos / screenshots (nitro storage "uploads", ./.data/uploads).
       - uploads_data:/app/.data/uploads

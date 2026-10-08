@@ -779,20 +779,20 @@
           "badge": "Am häufigsten",
           "title": "Standardplatzierung",
           "points": [
-            "Angezeigt im Block \"Gerade gestartet\" auf der Startseite.",
-            "Rotiert über Listenseiten: neueste, meistgespeicherte, meistgenutzte, monatliche, Kategorien.",
-            "Angezeigt auf Seiten von Konkurrenz-Tools und auf deinen eigenen Kategorieseiten."
+            "Wird als Banner auf Listenseiten rotiert: Heute, Neu, Meist empfohlen, Kategorien, Suchergebnisse und Rankings.",
+            "Erscheint im Feed der Startseite und im Block „Gerade gestartet“.",
+            "Erscheint auf den Seiten anderer Tools, über den Bewertungen und über den Alternativen.",
+            "Geht sofort live, wenn die Anzeige auf die eigene Website des Tools verlinkt."
           ]
         },
         {
           "badge": "Am effektivsten",
           "title": "Hervorgehobene Platzierung",
           "points": [
-            "Angepinnte Plätze auf Startseite, Neueste, Meistgenutzte, Meistgespeicherte, Suchergebnissen und Kategorieseiten.",
-            "Je höher das Restguthaben, desto höher das Ranking — lade jederzeit auf, um aufzusteigen.",
-            "Sponsorleiste oben auf den meisten Seiten, rotierend zwischen Werbetreibenden.",
-            "Auch auf Blog-, Vergleichs- und Alternativenseiten zu sehen.",
-            "Jeder Anzeigenklick führt direkt zu deiner Website."
+            "Wird vor jeder Standard-Kampagne für alle oben genannten Werbeplätze ausgewählt.",
+            "Sponsorenleiste oben auf den meisten Seiten, rotierend zwischen Featured-Werbetreibenden.",
+            "Je höher dein Restguthaben, desto häufiger wirst du angezeigt – jederzeit aufladbar.",
+            "Wird vor dem Start von unserem Team geprüft. Jeder Klick führt direkt zu deiner Website."
           ]
         }
       ],
@@ -816,7 +816,7 @@
         },
         {
           "q": "Kann ich mehrmals Klicks kaufen?",
-          "a": "Ja. Neue Käufe werden deinem Guthaben hinzugefügt, was auch dein Ranking bei hervorgehobenen Plätzen erhöht."
+          "a": "Ja. Neue Käufe werden dem Guthaben dieses Tools für denselben Anzeigentyp gutgeschrieben, und ein höheres Guthaben wird häufiger angezeigt."
         },
         {
           "q": "Ich habe mehr Budget und möchte mehr Kunden. Was soll ich tun?",

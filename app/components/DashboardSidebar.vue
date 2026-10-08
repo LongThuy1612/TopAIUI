@@ -13,6 +13,7 @@ const onUsersPage = computed(() => route.path.startsWith('/admin/users'))
 const onReviewsPage = computed(() => route.path.startsWith('/admin/reviews'))
 // /admin/feedback is taken by the redirect for the old user Feedback URL (nuxt.config.ts).
 const onFeedbackPage = computed(() => route.path.startsWith('/admin/user-feedback'))
+const onAdsPage = computed(() => route.path.startsWith('/admin/ads'))
 
 function confirmLogout() {
   if (!confirm(t('admin.logoutConfirm'))) return
@@ -97,6 +98,17 @@ const businessItems = computed(() => [
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6" />
       </svg>
       {{ t('adminFeedback.title') }}
+    </NuxtLink>
+
+    <NuxtLink
+      v-if="isAdmin"
+      to="/admin/ads"
+      :class="['-mt-5 flex items-center gap-2.5 rounded-lg px-3 py-2 text-base font-bold', onAdsPage ? 'bg-brand-50 text-brand-600' : 'text-ink-700 hover:bg-ink-100/60']"
+    >
+      <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 19h16M8 15v-4M12 15V9m4 6v-8" />
+      </svg>
+      {{ t('adminAds.title') }}
     </NuxtLink>
 
     <div>

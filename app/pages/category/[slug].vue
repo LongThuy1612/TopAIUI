@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Category, ToolsResponse } from '~/types'
+import { advertise } from '~/data/promote'
 
 const { t, locale } = useI18n()
 const route = useRoute()
@@ -37,7 +38,18 @@ const [{ data: categories }, { data: toolsRes }] = await Promise.all([
 ])
 const activeCategory = computed(() => isAll.value ? undefined : categories.value?.find(c => c.slug === slug.value))
 
+// Sponsored slots of this category (any category on /category/all), on page 1.
+// One banner under row 3 of the grid, whatever its column count: pinned with
+// grid-row-start, the cards flow around it (a shorter list leaves it at the end).
+// List view: after tool 3. Fewer than 3 tools: no banner.
+const bannerRow = advertise.bannerAfterRow + 1
+const { feed } = useAdSlots('category', { category: () => slug.value, positions: [bannerRow], rerender: () => [viewMode.value, items.value] })
+const bannerStyle = { gridRowStart: bannerRow }
 const tools = computed(() => toolsRes.value?.items ?? [])
+// No banner under a price filter (an ad for a paid tool would contradict "Free");
+// search results do get one.
+const showAds = computed(() => page.value === 1 && pricingFilter.value === 'all')
+const items = computed(() => (showAds.value ? feed(tools.value) : tools.value.map(tool => ({ key: tool.slug, tool, ad: undefined }))))
 const total = computed(() => toolsRes.value?.total ?? 0)
 const pageCount = computed(() => toolsRes.value?.pageCount ?? 1)
 
@@ -145,11 +157,17 @@ useSeoMeta({
         </div>
 
         <template v-if="tools.length">
-          <div v-if="viewMode === 'grid'" class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            <ToolCard v-for="tool in tools" :key="tool.slug" :tool="tool" />
+          <div v-if="viewMode === 'grid'" class="mt-4 grid grid-flow-row-dense grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <template v-for="item in items" :key="item.key">
+              <AdBanner v-if="item.ad" :ad="item.ad" placement="category" class="col-span-full" :style="bannerStyle" />
+              <ToolCard v-else :tool="item.tool" />
+            </template>
           </div>
           <div v-else class="mt-2 divide-y divide-ink-100">
-            <ToolListRow v-for="tool in tools" :key="tool.slug" :tool="tool" :category-label="tool.categories?.[0]?.name" />
+            <template v-for="item in items" :key="item.key">
+              <div v-if="item.ad" class="py-3"><AdBanner :ad="item.ad" placement="category" /></div>
+              <ToolListRow v-else :tool="item.tool" :category-label="item.tool.categories?.[0]?.name" />
+            </template>
           </div>
         </template>
         <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">

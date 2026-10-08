@@ -779,20 +779,20 @@
           "badge": "Más frecuente",
           "title": "Ubicación estándar",
           "points": [
-            "Se muestra en el bloque \"Recién lanzado\" de la página de inicio.",
-            "Rota por las páginas de listados: más recientes, más guardadas, más usadas, mensuales, categorías.",
-            "Se muestra en páginas de herramientas competidoras y en tus propias páginas de categoría."
+            "Rota como banner en las páginas de listado: Hoy, Nuevos, Más destacados, categorías, resultados de búsqueda y rankings.",
+            "Aparece en el feed de la página de inicio y en el bloque \"Recién lanzados\".",
+            "Aparece en las páginas de otras herramientas, encima de las reseñas y de las alternativas.",
+            "Se activa de inmediato si el anuncio enlaza al sitio web de tu propia herramienta."
           ]
         },
         {
           "badge": "Más eficaz",
           "title": "Ubicación destacada",
           "points": [
-            "Espacios fijados en inicio, más recientes, más usadas, más guardadas, resultados de búsqueda y páginas de categoría.",
-            "Cuanto mayor sea el saldo restante, mejor posición — recarga cuando quieras para subir.",
-            "Barra de patrocinio en la parte superior de la mayoría de páginas, rotando entre anunciantes.",
-            "También se muestra en páginas de blog, comparativas y alternativas.",
-            "Cada clic en el anuncio va directamente a tu sitio web."
+            "Se elige antes que cualquier campaña estándar en todos los espacios anteriores.",
+            "Barra de patrocinio en la parte superior de la mayoría de las páginas, rotando entre anunciantes destacados.",
+            "Cuanto mayor sea tu saldo restante, más a menudo se muestra: recarga cuando quieras.",
+            "Nuestro equipo lo revisa antes de publicarlo. Cada clic en el anuncio lleva directamente a tu sitio web."
           ]
         }
       ],
@@ -816,7 +816,7 @@
         },
         {
           "q": "¿Puedo comprar clics más de una vez?",
-          "a": "Sí. Las nuevas compras se suman a tu saldo, lo que también mejora tu posición destacada."
+          "a": "Sí. Las nuevas compras se suman al saldo de esa herramienta para el mismo tipo de anuncio, y un saldo mayor se muestra con más frecuencia."
         },
         {
           "q": "Tengo más presupuesto y quiero más clientes. ¿Qué hago?",

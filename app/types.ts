@@ -305,3 +305,42 @@ export interface AdminFeedbackResponse {
   page: number
   pageCount: number
 }
+
+// Pay-per-click ads (server/utils/ads.ts).
+export type AdTier = 'STANDARD' | 'FEATURED'
+export type AdCampaignStatus = 'PENDING_REVIEW' | 'ACTIVE' | 'PAUSED' | 'EXHAUSTED' | 'REJECTED'
+export type AdPlacement = 'home' | 'today' | 'new' | 'most-featured' | 'category' | 'tool' | 'ranking' | 'bar'
+
+export interface AdSlot {
+  campaignId: string
+  tier: AdTier
+  clickUrl: string
+  tool: Pick<Tool, 'id' | 'slug' | 'name' | 'pricingType'> & {
+    logoUrl?: string
+    isAd: true
+    shortDesc: string | null
+    categories: { slug: string; name: string }[]
+    tags: { slug: string; name: string }[]
+  }
+}
+
+export interface AdCampaign {
+  id: string
+  tier: AdTier
+  status: AdCampaignStatus
+  pausedByAdmin: boolean
+  landingUrl: string | null
+  pendingLandingUrl: string | null
+  rejectionReason: string | null
+  clicksPurchased: number
+  clicksRemaining: number
+  clicks: number
+  impressions: number
+  createdAt: string
+  tool: { id: string; name: string; slug: string; logoUrl: string | null; website: string | null }
+}
+
+export interface AdminAdCampaign extends AdCampaign {
+  updatedAt: string
+  user: { email: string }
+}

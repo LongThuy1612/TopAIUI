@@ -779,20 +779,20 @@
           "badge": "Paling sering",
           "title": "Penempatan standar",
           "points": [
-            "Ditampilkan di blok \"Baru Diluncurkan\" di beranda.",
-            "Bergiliran di halaman daftar: terbaru, paling banyak disimpan, paling banyak dipakai, bulanan, kategori.",
-            "Ditampilkan di halaman alat pesaing dan halaman kategori Anda sendiri."
+            "Bergiliran sebagai banner di halaman daftar: Hari Ini, Terbaru, Paling Unggul, kategori, hasil pencarian, dan peringkat.",
+            "Tampil di feed beranda dan blok \"Baru Diluncurkan\".",
+            "Tampil di halaman alat lain, di atas ulasan dan di atas alternatif.",
+            "Langsung tayang jika iklan mengarah ke situs web alat itu sendiri."
           ]
         },
         {
           "badge": "Paling efektif",
           "title": "Penempatan unggulan",
           "points": [
-            "Slot tersemat di beranda, terbaru, paling banyak dipakai, paling banyak disimpan, hasil pencarian, dan halaman kategori.",
-            "Semakin besar sisa saldo, semakin tinggi peringkat — isi ulang kapan saja untuk naik.",
-            "Bilah sponsor di bagian atas sebagian besar halaman, bergiliran antar pengiklan.",
-            "Juga ditampilkan di halaman blog, perbandingan, dan alternatif.",
-            "Setiap klik iklan langsung menuju situs web Anda."
+            "Dipilih lebih dulu daripada kampanye standar di semua slot iklan di atas.",
+            "Bilah sponsor di bagian atas sebagian besar halaman, bergiliran di antara pengiklan unggulan.",
+            "Semakin tinggi sisa saldo Anda, semakin sering ditampilkan — isi ulang kapan saja.",
+            "Ditinjau tim kami sebelum tayang. Setiap klik iklan langsung menuju situs web Anda."
           ]
         }
       ],
@@ -816,7 +816,7 @@
         },
         {
           "q": "Bisakah saya membeli klik lebih dari sekali?",
-          "a": "Ya. Pembelian baru ditambahkan ke saldo Anda, yang juga menaikkan peringkat unggulan Anda."
+          "a": "Ya. Pembelian baru ditambahkan ke saldo alat tersebut untuk jenis iklan yang sama, dan saldo yang lebih tinggi lebih sering ditampilkan."
         },
         {
           "q": "Saya punya anggaran lebih dan ingin lebih banyak pelanggan. Apa yang harus saya lakukan?",

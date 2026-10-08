@@ -1,13 +1,23 @@
 <script setup lang="ts">
 const props = defineProps<{
   tool: { slug: string; name: string; logoUrl?: string; shortDesc?: string | null }
+  // Sponsored slot: links straight to the advertiser (through the click counter).
+  href?: string
 }>()
+
+const { t } = useI18n()
 
 const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI')
 </script>
 
 <template>
-  <NuxtLink :to="`/tools/${tool.slug}`" class="relative block overflow-hidden rounded-[14px] border border-ink-200 bg-white p-4 transition hover:border-brand-200 hover:shadow-[0_10px_24px_-16px_rgba(23,18,26,.35)]">
+  <NuxtLink
+    :to="href ?? `/tools/${tool.slug}`"
+    :external="!!href"
+    :target="href ? '_blank' : undefined"
+    :rel="href ? 'sponsored nofollow noopener' : undefined"
+    class="relative block overflow-hidden rounded-[14px] border border-ink-200 bg-white p-4 transition hover:border-brand-200 hover:shadow-[0_10px_24px_-16px_rgba(23,18,26,.35)]"
+  >
     <img
       v-if="tool.logoUrl"
       :src="tool.logoUrl"
@@ -27,6 +37,7 @@ const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').sli
         {{ initials }}
       </span>
       <h4 class="min-w-0 truncate text-[15.5px] font-semibold text-ink-900">{{ tool.name }}</h4>
+      <span v-if="href" class="ml-auto shrink-0 rounded-full bg-brand-500 px-2 py-0.5 text-[10px] font-semibold text-white">{{ t('sections.sponsorBadge') }}</span>
     </div>
     <p v-if="tool.shortDesc" class="relative mt-[9px] line-clamp-2 text-[13.5px] leading-[1.55] text-ink-800">{{ tool.shortDesc }}</p>
   </NuxtLink>

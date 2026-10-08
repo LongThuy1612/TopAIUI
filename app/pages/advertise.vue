@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { advertise } from '~/data/promote'
+import { advertise, AD_TIERS, type AdTier } from '~/data/promote'
 import { isHttpUrl, type ToolOption } from '~/composables/usePromoteCheckout'
 
 const { t, tp, list, faqs } = usePromoteText()
@@ -10,12 +10,16 @@ useSeoMeta({
   description: () => tp('promote.advertise.seoDesc'),
 })
 
+const route = useRoute()
 const tool = ref<ToolOption | null>(null)
 const landingUrl = ref('')
+// ?tier=FEATURED preselects the tier (top-up links from the dashboard).
+const tier = ref<AdTier>(AD_TIERS.find(x => x === route.query.tier) ?? 'STANDARD')
 const selected = ref<number | null>(null)
 const touched = ref(false)
 
-const pkg = computed(() => (selected.value == null ? null : advertise.packages[selected.value]))
+const packages = computed(() => advertise.packages[tier.value])
+const pkg = computed(() => (selected.value == null ? null : packages.value[selected.value]))
 const total = computed(() => (pkg.value ? +(pkg.value.clicks * pkg.value.costPerClick).toFixed(2) : null))
 
 const errors = computed(() => ({
@@ -34,10 +38,11 @@ const adTypes = computed(() =>
 )
 
 const { checkout, loading, error } = usePromoteCheckout()
+useStripeReturn()
 function pay() {
   touched.value = true
   if (errors.value.tool || errors.value.landing || !pkg.value) return
-  checkout({ type: 'advertise', toolId: tool.value!.id, landingUrl: landingUrl.value.trim() || undefined, clicks: pkg.value.clicks })
+  checkout({ type: 'advertise', toolId: tool.value!.id, tier: tier.value, landingUrl: landingUrl.value.trim() || undefined, clicks: pkg.value.clicks })
 }
 const nf = new Intl.NumberFormat('en-US')
 </script>
@@ -63,10 +68,28 @@ const nf = new Intl.NumberFormat('en-US')
         <p v-if="errors.landing" class="p-error">{{ errors.landing }}</p>
       </div>
 
+      <h3 class="sub">{{ t('promote.advertise.chooseTier') }}</h3>
+      <div class="tiers" role="radiogroup">
+        <button
+          v-for="(x, i) in AD_TIERS"
+          :key="x"
+          type="button"
+          role="radio"
+          :aria-checked="tier === x"
+          class="tier"
+          :class="{ 'tier--on': tier === x }"
+          @click="tier = x"
+        >
+          <strong>{{ adTypes[i]?.title }}</strong>
+          <small>{{ t(`promote.advertise.tierHints.${x}`) }}</small>
+        </button>
+      </div>
+      <p class="muted review-note">{{ t('promote.advertise.reviewNote') }}</p>
+
       <h3 class="sub">{{ t('promote.advertise.choosePackage') }}</h3>
       <div class="clicks" role="radiogroup">
         <button
-          v-for="(p, i) in advertise.packages"
+          v-for="(p, i) in packages"
           :key="p.clicks"
           type="button"
           role="radio"
@@ -128,6 +151,14 @@ const nf = new Intl.NumberFormat('en-US')
 
 <style scoped>
 .sub { text-align: center; font-size: 20px; margin: 32px 0 16px; }
+.tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tier {
+  display: flex; flex-direction: column; gap: 4px; padding: 14px; text-align: left;
+  border: 1px solid #d9d9de; border-radius: 6px; background: #fff; font: inherit; cursor: pointer; color: var(--p-text);
+}
+.tier small { color: var(--p-muted); font-size: 13px; }
+.tier--on { border-color: var(--p-primary); box-shadow: 0 0 0 1px var(--p-primary); }
+.review-note { margin: 10px 0 0; }
 .clicks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .click {
   display: flex; justify-content: space-between; align-items: center; height: 60px; padding: 0 14px;
@@ -167,6 +198,7 @@ th { background: #f6f7f9; }
 
 @media (max-width: 700px) {
   .clicks { grid-template-columns: repeat(2, 1fr); }
+  .tiers { grid-template-columns: 1fr; }
   .types { grid-template-columns: 1fr; }
 }
 </style>

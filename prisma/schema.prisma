@@ -146,6 +146,7 @@ model Tool {
   pricingPlans  PricingPlan[]
   reviews       Review[]
   updateRequests ToolUpdateRequest[]
+  adCampaigns   AdCampaign[]
 
   @@index([status])
   // /new, /today, home "new" list: ORDER BY addedOn DESC NULLS LAST, id ASC.
@@ -299,7 +300,6 @@ model User {
   updatedAt                DateTime  @updatedAt
   credits                  Int       @default(0)
   usage                    Json?
-  adCredits                Int       @default(0)
   linkCredits              Int       @default(0)
   postCredits              Int       @default(0)
   bio                      String?
@@ -319,6 +319,7 @@ model User {
   promoteOrders PromoteOrder[]
   toolUpdateRequests ToolUpdateRequest[]
   feedbacks     Feedback[]
+  adCampaigns   AdCampaign[]
 
   @@map("User")
 }
@@ -366,11 +367,13 @@ model PromoteOrder {
   status          String    @default("PENDING") // PENDING | PAID | EXPIRED
   createdAt       DateTime  @default(now())
   paidAt          DateTime?
-  toolId          String?   // submit-ai: the Tool created when the order is paid
+  toolId          String?   // submit-ai: the Tool created when the order is paid; advertise: the advertised tool
+  campaignId      String?   // advertise: the AdCampaign the clicks went to (refunded with it on rejection)
 
   @@index([userId])
   @@index([toolId])
   @@index([type, status])
+  @@index([campaignId])
   @@map("PromoteOrder")
 }
 
@@ -751,4 +754,57 @@ model CapterraTool {
 
   @@index([lastUpdated])
   @@index([categoryName])
+}
+
+// Pay-per-click ads (server/utils/ads.ts). One campaign per user, tool and tier; buying
+// more clicks for the same tool and tier tops it up. Every charged click takes one from
+// clicksRemaining; at 0 the campaign is EXHAUSTED until the next top-up.
+//
+//   paid order → ACTIVE (standard, landing URL on the tool's own site)
+//              → PENDING_REVIEW (featured, or a landing URL on another site) → admin approves / rejects (refund)
+// Changing the landing URL of a running campaign keeps it running on the approved URL;
+// the new one waits in pendingLandingUrl when it needs a review.
+model AdCampaign {
+  id                String    @id @default(cuid())
+  userId            String
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  toolId            String
+  tool              Tool      @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  tier              String    // STANDARD | FEATURED
+  status            String    @default("PENDING_REVIEW") // PENDING_REVIEW | ACTIVE | PAUSED | EXHAUSTED | REJECTED
+  pausedByAdmin     Boolean   @default(false) // an admin pause can't be resumed by the owner
+  landingUrl        String?   // approved target; null = the tool's website
+  pendingLandingUrl String?   // a change waiting for an admin
+  rejectionReason   String?
+  clicksPurchased   Int       @default(0)
+  clicksRemaining   Int       @default(0)
+  clicks            Int       @default(0) // charged clicks
+  impressions       Int       @default(0)
+  approvedAt        DateTime?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  adClicks AdClick[]
+
+  @@unique([userId, toolId, tier])
+  // Slot picking: every running campaign.
+  @@index([status, clicksRemaining])
+  @@index([toolId])
+  @@map("AdCampaign")
+}
+
+// One row per click on a sponsored slot, charged or not (repeat visitor, bot, no balance).
+model AdClick {
+  id         String     @id @default(cuid())
+  campaignId String
+  campaign   AdCampaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  placement  String?
+  ipHash     String
+  charged    Boolean
+  createdAt  DateTime   @default(now())
+
+  // "Same visitor clicked this campaign in the last 24h?" and the per-day report.
+  @@index([campaignId, ipHash, createdAt])
+  @@index([campaignId, createdAt])
+  @@map("AdClick")
 }

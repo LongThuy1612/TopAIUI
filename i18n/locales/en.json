@@ -395,7 +395,9 @@
     "sponsorBadge": "Sponsor",
     "updatedDaily": "Updated daily",
     "viewMore": "View more →",
-    "viewMoreTools": "View more →"
+    "viewMoreTools": "View more →",
+    "adLabel": "Ad",
+    "tryNow": "Try Now"
   },
   "cta": {
     "title": "Have an AI tool to share?",
@@ -517,7 +519,33 @@
     "colBalances": "Balances",
     "colStatus": "Status",
     "colAction": "Action",
-    "emptyMessage": "You currently have no ads, click to create ads"
+    "emptyMessage": "You currently have no ads, click to create ads",
+    "colPerformance": "Performance",
+    "tiers": {
+      "STANDARD": "Standard",
+      "FEATURED": "Featured"
+    },
+    "statuses": {
+      "PENDING_REVIEW": "In review",
+      "ACTIVE": "Running",
+      "PAUSED": "Paused",
+      "EXHAUSTED": "Out of clicks",
+      "REJECTED": "Rejected"
+    },
+    "toolWebsite": "Tool website",
+    "pendingLanding": "In review: {url}",
+    "remaining": "clicks left",
+    "impressions": "Impressions",
+    "clicks": "Clicks",
+    "pausedByAdmin": "Paused by our team",
+    "reason": "Reason: {reason}",
+    "pause": "Pause",
+    "resume": "Resume",
+    "editLanding": "Change landing URL",
+    "save": "Save",
+    "cancel": "Cancel",
+    "landingHint": "Leave empty to use your tool's website. A URL on another site is reviewed first; the current one keeps running meanwhile.",
+    "reviewNote": "Each tool and ad type has its own click balance. Ads link straight to your site, and only the first click per visitor in 24 hours is charged."
   },
   "myPostsPage": {
     "title": "My Posts&Articles / Link Insert",
@@ -910,20 +938,20 @@
           "badge": "Most frequent",
           "title": "Standard placement",
           "points": [
-            "Shown in the \"Just Launched\" block on the home page.",
-            "Rotated across listing pages: latest, most saved, most used, monthly, categories.",
-            "Shown on competitor tool pages and on your own category pages."
+            "Rotated as a banner on listing pages: Today, New, Most Featured, categories, search results and rankings.",
+            "Shown in the home page feed and the \"Just Launched\" block.",
+            "Shown on other tools' pages, above the reviews and over the alternatives.",
+            "Goes live right away when the ad links to your tool's own website."
           ]
         },
         {
           "badge": "Most effective",
           "title": "Featured placement",
           "points": [
-            "Pinned slots on home, latest, most used, most saved, search results and category pages.",
-            "Higher remaining balance ranks higher — top up anytime to climb.",
-            "Sponsor bar at the top of most pages, rotated between advertisers.",
-            "Also shown on blog, comparison and alternatives pages.",
-            "Every ad click goes straight to your website."
+            "Picked before any standard campaign for every ad spot above.",
+            "Sponsor bar at the top of most pages, rotated between featured advertisers.",
+            "The higher your remaining balance, the more often you are shown — top up anytime.",
+            "Checked by our team before going live. Every ad click goes straight to your website."
           ]
         }
       ],
@@ -947,7 +975,7 @@
         },
         {
           "q": "Can I buy clicks more than once?",
-          "a": "Yes. New purchases are added to your balance, which also raises your featured ranking."
+          "a": "Yes. New purchases are added to that tool's balance for the same ad type, and a higher balance is shown more often."
         },
         {
           "q": "I have more budget and want more customers. What should I do?",
@@ -961,7 +989,13 @@
           "q": "Can I choose where my ads appear?",
           "a": "No. Placements are chosen automatically to deliver your clicks as fast as possible."
         }
-      ]
+      ],
+      "chooseTier": "Choose an ad type",
+      "tierHints": {
+        "STANDARD": "Rotated across list pages. Goes live right away when it links to your own site.",
+        "FEATURED": "Pinned first, plus the sponsor bar. Costs more per click; reviewed by our team."
+      },
+      "reviewNote": "Featured campaigns, and any landing URL outside your tool's website, are checked by our team before they go live. A rejected campaign is fully refunded."
     },
     "guestPost": {
       "seoTitle": "Guest Posts & Link Insert – {site}",
@@ -1240,5 +1274,31 @@
       "BILLING": "Billing",
       "OTHER": "Other"
     }
+  },
+  "adminAds": {
+    "title": "Ad Campaigns",
+    "filters": {
+      "review": "Waiting for review",
+      "all": "All campaigns"
+    },
+    "colCampaign": "Campaign",
+    "colLanding": "Landing",
+    "colBalance": "Balance",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "toolWebsite": "Tool website",
+    "landing": "Landing URL",
+    "sameAsWebsite": "Same as website",
+    "pendingLanding": "New URL waiting:",
+    "approveCampaign": "Approve campaign",
+    "approveLanding": "Approve new URL",
+    "rejectCampaign": "Reject & refund",
+    "rejectLanding": "Reject new URL",
+    "rejectCampaignPrompt": "Reason for rejecting (shown to the advertiser). Every order of this campaign will be refunded.",
+    "rejectLandingPrompt": "Reason for rejecting the new landing URL (shown to the advertiser):",
+    "addClicks": "Add clicks",
+    "addClicksPrompt": "How many clicks to add?",
+    "emptyReview": "Nothing waiting for review.",
+    "empty": "No campaigns yet."
   }
 }

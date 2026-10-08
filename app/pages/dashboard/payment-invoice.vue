@@ -92,7 +92,7 @@ function detail(o: OrderRow) {
     case 'submit-ai': return String(p.name ?? '')
     case 'submit-gpt': return String(p.gptUrl ?? '')
     case 'update-ai': return String(p.toolName ?? '')
-    case 'advertise': return `${p.toolName ?? ''} · ${t('promote.orders.clicks', { n: new Intl.NumberFormat(locale.value).format(Number(p.clicks)) })}`
+    case 'advertise': return `${p.toolName ?? ''} · ${t(`advertisePage.tiers.${p.tier === 'FEATURED' ? 'FEATURED' : 'STANDARD'}`)} · ${t('promote.orders.clicks', { n: new Intl.NumberFormat(locale.value).format(Number(p.clicks)) })}`
     case 'guest-post': return t('promote.orders.credits', Number(p.credits))
     default: return ''
   }

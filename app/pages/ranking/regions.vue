@@ -21,6 +21,7 @@ useSeoMeta({
   <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
     <RankingHeader :crumb="t('rankingMenu.regionsTitle')" icon="🌍" :title="t('ranking.regionsTitle')" :month="data?.month" />
     <RankingChips :options="options" :active="active" @select="select" />
+    <AdBannerSlot placement="ranking" class="mt-6" />
     <RankingTable
       :items="active ? items : []"
       :score-label="active ? t('ranking.colVisitsFrom', { name: countryName(active, locale) }) : undefined"

@@ -42,17 +42,28 @@ export const submitAi = {
 /* Advertise AI                                                        */
 /* ------------------------------------------------------------------ */
 
-// TODO: đặt giá thật. costPerClick tính theo USD.
+export type AdTier = 'STANDARD' | 'FEATURED'
+export const AD_TIERS: AdTier[] = ['STANDARD', 'FEATURED']
+
+// TODO: đặt giá thật. costPerClick tính theo USD. Featured = 2× Standard.
+const standardPackages = [
+  { clicks: 500, costPerClick: 0.2 },
+  { clicks: 1000, costPerClick: 0.18 },
+  { clicks: 5000, costPerClick: 0.16 },
+  { clicks: 10000, costPerClick: 0.14 },
+  { clicks: 20000, costPerClick: 0.12 },
+  { clicks: 50000, costPerClick: 0.1 },
+]
+
 export const advertise = {
-  packages: [
-    { clicks: 500, costPerClick: 0.2 },
-    { clicks: 1000, costPerClick: 0.18 },
-    { clicks: 5000, costPerClick: 0.16 },
-    { clicks: 10000, costPerClick: 0.14 },
-    { clicks: 20000, costPerClick: 0.12 },
-    { clicks: 50000, costPerClick: 0.1 },
-  ],
-  featuredTypeIndex: 1, // promote.advertise.types[1] là gói nổi bật
+  // Mỗi tier một bảng giá; số dư click của 2 tier tách riêng (xem server/utils/ads.ts).
+  packages: {
+    STANDARD: standardPackages,
+    FEATURED: standardPackages.map(p => ({ clicks: p.clicks, costPerClick: +(p.costPerClick * 2).toFixed(2) })),
+  } as Record<AdTier, { clicks: number; costPerClick: number }[]>,
+  slotPositions: [1, 4, 12], // trang Home: vị trí (tính từ 1) của các ô sponsor trong danh sách
+  bannerAfterRow: 3, // các trang list khác: 1 banner, nằm sau hàng thứ 3
+  featuredTypeIndex: 1, // promote.advertise.types[1] là gói nổi bật (= tier FEATURED)
   // Bảng minh hoạ — số liệu mẫu, không phải thật
   reportExampleRows: [['Example AI', '1,200', '500', '1,700', '2,100', '60', '850,000']],
 }

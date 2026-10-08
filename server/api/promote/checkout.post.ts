@@ -12,7 +12,7 @@ import {
 
 type Body =
   | { type: 'submit-ai'; name: string; url: string; mode: 'auto' | 'manual' }
-  | { type: 'advertise'; toolId: string; landingUrl?: string; clicks: number }
+  | { type: 'advertise'; toolId: string; tier: 'STANDARD' | 'FEATURED'; landingUrl?: string; clicks: number }
   | { type: 'guest-post'; credits: number }
   | { type: 'update-ai'; toolId: string }
   | { type: 'submit-gpt'; gptUrl: string }
@@ -69,14 +69,22 @@ async function priceOf(b: Body, userId: string): Promise<{ amount: number; label
       return { amount: updateAi.price, label: `Update AI: ${tool.name}`, payload: { toolId: tool.id, toolName: tool.name } }
     }
     case 'advertise': {
-      const pkg = advertise.packages.find(p => p.clicks === Number(b.clicks))
+      if (!isAdTier(b.tier)) throw bad('Invalid ad type.')
+      const pkg = advertise.packages[b.tier].find(p => p.clicks === Number(b.clicks))
       if (!pkg) throw bad('Invalid package.')
-      if (b.landingUrl && !isUrl(b.landingUrl)) throw bad('Invalid landing URL.')
+      if (b.landingUrl && (!isUrl(b.landingUrl) || String(b.landingUrl).trim().length > 2000)) throw bad('Invalid landing URL.')
       const tool = await requireTool(b.toolId)
+      // Paying into a campaign our team stopped would only strand the money.
+      const held = await prisma.adCampaign.findFirst({
+        where: { userId, toolId: tool.id, tier: b.tier, status: 'PAUSED', pausedByAdmin: true },
+        select: { id: true }
+      })
+      if (held) throw bad('This campaign was paused by our team. Please contact us before buying more clicks.')
+      const tierLabel = b.tier === 'FEATURED' ? 'Featured' : 'Standard'
       return {
         amount: +(pkg.clicks * pkg.costPerClick).toFixed(2),
-        label: `Advertise ${tool.name}: ${pkg.clicks.toLocaleString('en-US')} clicks`,
-        payload: { toolId: tool.id, toolName: tool.name, clicks: pkg.clicks, landingUrl: b.landingUrl?.trim() || null }
+        label: `Advertise ${tool.name} (${tierLabel}): ${pkg.clicks.toLocaleString('en-US')} clicks`,
+        payload: { toolId: tool.id, toolName: tool.name, tier: b.tier, clicks: pkg.clicks, landingUrl: b.landingUrl?.trim() || null }
       }
     }
     case 'guest-post': {
@@ -112,8 +120,11 @@ export default defineEventHandler(async (event) => {
     const paid = await fulfillPromoteOrder(order.stripeSessionId)
     return {
       orderId: order.id,
-      // A new tool / an update goes straight to the tool's page; everything else to the order list.
-      redirect: paid?.toolId ? `/dashboard/my-ais/${paid.toolId}` : `/orders?new=${order.id}`
+      // A new tool / an update goes straight to the tool's page, ads to the campaign list;
+      // everything else to the order list.
+      redirect: body.type === 'advertise'
+        ? '/dashboard/advertise'
+        : paid?.toolId ? `/dashboard/my-ais/${paid.toolId}` : `/orders?new=${order.id}`
     }
   }
 

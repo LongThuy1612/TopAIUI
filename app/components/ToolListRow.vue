@@ -4,6 +4,11 @@ const props = defineProps<{
   rank?: number
   categoryLabel?: string
   hoverGlow?: boolean
+  // Sponsored slot: the row links straight to the advertiser (through the click counter)
+  // and carries the Sponsor badge. A tool that merely has a campaign, shown as an ordinary
+  // row, gets neither.
+  href?: string
+  sponsorTier?: 'STANDARD' | 'FEATURED'
 }>()
 
 const { t } = useI18n()
@@ -21,8 +26,15 @@ const rankStyle = computed(() => {
 
 <template>
   <NuxtLink
-    :to="`/tools/${tool.slug}`"
-    :class="['group relative flex items-start gap-4 py-5', hoverGlow && '-mx-3 overflow-hidden rounded-[14px] px-3 transition-colors hover:bg-[#FDFAFB]']"
+    :to="href ?? `/tools/${tool.slug}`"
+    :external="!!href"
+    :target="href ? '_blank' : undefined"
+    :rel="href ? 'sponsored nofollow noopener' : undefined"
+    :class="[
+      'group relative flex items-start gap-4 py-5',
+      hoverGlow && '-mx-3 overflow-hidden rounded-[14px] px-3 transition-colors hover:bg-[#FDFAFB]',
+      sponsorTier === 'FEATURED' && '-mx-3 rounded-[14px] bg-brand-50/50 px-3 ring-1 ring-brand-100'
+    ]"
   >
     <img
       v-if="hoverGlow && tool.logoUrl"
@@ -42,7 +54,7 @@ const rankStyle = computed(() => {
     <span
       v-else
       class="relative inline-flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] text-base font-extrabold"
-      :class="tool.isAd ? 'bg-ink-900 text-white' : 'bg-brand-50 text-brand-500'"
+      :class="href ? 'bg-ink-900 text-white' : 'bg-brand-50 text-brand-500'"
     >
       {{ initials }}
     </span>
@@ -50,8 +62,8 @@ const rankStyle = computed(() => {
       <div class="flex flex-wrap items-center gap-2">
         <h3 class="text-base font-semibold tracking-[-.01em] text-ink-900 group-hover:text-brand-500">{{ tool.name }}</h3>
         <span
-          v-if="tool.isAd"
-          class="rounded-full border border-transparent bg-brand-50 px-2.5 py-[3px] text-[11px] font-semibold text-brand-500"
+          v-if="href"
+          class="rounded-full border border-transparent bg-brand-500 px-2.5 py-[3px] text-[11px] font-semibold text-white"
         >{{ t('sections.sponsorBadge') }}</span>
         <span v-else-if="tool.pricingType === 'FREE'" class="rounded-full bg-ink-100 px-2.5 py-[3px] text-[11px] font-semibold text-ink-700">{{ t('pricing.FREE') }}</span>
       </div>

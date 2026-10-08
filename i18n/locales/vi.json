@@ -395,7 +395,9 @@
     "browse": "Duyệt",
     "editorsPicks": "Biên tập chọn lọc",
     "sponsorBadge": "Tài trợ",
-    "viewMoreTools": "Xem thêm →"
+    "viewMoreTools": "Xem thêm →",
+    "adLabel": "QC",
+    "tryNow": "Dùng thử"
   },
   "cta": {
     "title": "Bạn có công cụ AI muốn chia sẻ?",
@@ -649,7 +651,33 @@
     "colBalances": "Số dư",
     "colStatus": "Trạng thái",
     "colAction": "Hành động",
-    "emptyMessage": "Bạn hiện chưa có quảng cáo nào, nhấn để tạo quảng cáo"
+    "emptyMessage": "Bạn hiện chưa có quảng cáo nào, nhấn để tạo quảng cáo",
+    "colPerformance": "Hiệu quả",
+    "tiers": {
+      "STANDARD": "Standard",
+      "FEATURED": "Featured"
+    },
+    "statuses": {
+      "PENDING_REVIEW": "Đang duyệt",
+      "ACTIVE": "Đang chạy",
+      "PAUSED": "Tạm dừng",
+      "EXHAUSTED": "Hết click",
+      "REJECTED": "Bị từ chối"
+    },
+    "toolWebsite": "Website của tool",
+    "pendingLanding": "Đang duyệt: {url}",
+    "remaining": "click còn lại",
+    "impressions": "Lượt hiển thị",
+    "clicks": "Click",
+    "pausedByAdmin": "Bị đội ngũ tạm dừng",
+    "reason": "Lý do: {reason}",
+    "pause": "Tạm dừng",
+    "resume": "Tiếp tục",
+    "editLanding": "Đổi landing URL",
+    "save": "Lưu",
+    "cancel": "Huỷ",
+    "landingHint": "Để trống để dùng website của tool. URL thuộc website khác sẽ được duyệt trước; trong lúc đó URL hiện tại vẫn chạy.",
+    "reviewNote": "Mỗi tool và loại quảng cáo có số dư click riêng. Quảng cáo dẫn thẳng tới website của bạn, mỗi người xem chỉ bị tính click đầu tiên trong 24 giờ."
   },
   "myPostsPage": {
     "title": "Bài viết & Chèn liên kết của tôi",
@@ -910,20 +938,20 @@
           "badge": "Xuất hiện nhiều nhất",
           "title": "Vị trí tiêu chuẩn",
           "points": [
-            "Hiển thị ở khối \"Vừa ra mắt\" trên trang chủ.",
-            "Luân phiên trên các trang danh sách: mới nhất, được lưu nhiều nhất, được dùng nhiều nhất, theo tháng, danh mục.",
-            "Hiển thị trên trang của công cụ đối thủ và các trang danh mục của bạn."
+            "Luân phiên dạng banner trên các trang danh sách: Hôm nay, Mới, Nổi bật nhất, danh mục, kết quả tìm kiếm và bảng xếp hạng.",
+            "Hiển thị trong danh sách ở trang chủ và khối \"Vừa ra mắt\".",
+            "Hiển thị trên trang của các công cụ khác, phía trên phần đánh giá và mục công cụ thay thế.",
+            "Chạy ngay nếu quảng cáo dẫn về website của chính công cụ."
           ]
         },
         {
           "badge": "Hiệu quả nhất",
           "title": "Vị trí nổi bật",
           "points": [
-            "Vị trí ghim trên trang chủ, mới nhất, dùng nhiều nhất, lưu nhiều nhất, kết quả tìm kiếm và trang danh mục.",
-            "Số dư còn lại càng cao thì thứ hạng càng cao — nạp thêm bất cứ lúc nào để lên hạng.",
-            "Thanh tài trợ ở đầu hầu hết các trang, luân phiên giữa các nhà quảng cáo.",
-            "Cũng hiển thị trên các trang blog, so sánh và công cụ thay thế.",
-            "Mọi lượt nhấp quảng cáo đều dẫn thẳng đến trang web của bạn."
+            "Được chọn trước mọi chiến dịch tiêu chuẩn ở tất cả các vị trí trên.",
+            "Thanh tài trợ ở đầu hầu hết các trang, luân phiên giữa các nhà quảng cáo nổi bật.",
+            "Số dư còn lại càng cao thì càng được hiển thị nhiều — nạp thêm bất cứ lúc nào.",
+            "Được đội ngũ duyệt trước khi chạy. Mọi lượt nhấp quảng cáo đều dẫn thẳng đến website của bạn."
           ]
         }
       ],
@@ -947,7 +975,7 @@
         },
         {
           "q": "Tôi có thể mua lượt nhấp nhiều lần không?",
-          "a": "Có. Lượt mua mới được cộng vào số dư, đồng thời nâng thứ hạng ở vị trí nổi bật."
+          "a": "Có. Lượt mua mới được cộng vào số dư của công cụ đó cho cùng loại quảng cáo; số dư càng cao thì càng được hiển thị nhiều."
         },
         {
           "q": "Tôi có nhiều ngân sách hơn và muốn thêm khách hàng. Nên làm gì?",
@@ -961,7 +989,13 @@
           "q": "Tôi có thể chọn nơi quảng cáo xuất hiện không?",
           "a": "Không. Vị trí được chọn tự động để mang lại lượt nhấp nhanh nhất có thể."
         }
-      ]
+      ],
+      "chooseTier": "Chọn loại quảng cáo",
+      "tierHints": {
+        "STANDARD": "Xoay vòng trên các trang danh sách. Chạy ngay nếu trỏ về website của tool.",
+        "FEATURED": "Ghim lên đầu và hiện trên thanh sponsor. Giá mỗi click cao hơn; được đội ngũ duyệt."
+      },
+      "reviewNote": "Chiến dịch Featured và mọi landing URL nằm ngoài website của tool sẽ được đội ngũ kiểm tra trước khi chạy. Chiến dịch bị từ chối được hoàn tiền toàn bộ."
     },
     "guestPost": {
       "seoTitle": "Bài viết khách & Chèn liên kết – {site}",
@@ -1240,5 +1274,31 @@
       "BILLING": "Thanh toán",
       "OTHER": "Khác"
     }
+  },
+  "adminAds": {
+    "title": "Chiến dịch quảng cáo",
+    "filters": {
+      "review": "Chờ duyệt",
+      "all": "Tất cả"
+    },
+    "colCampaign": "Chiến dịch",
+    "colLanding": "Landing",
+    "colBalance": "Số dư",
+    "colStatus": "Trạng thái",
+    "colActions": "Thao tác",
+    "toolWebsite": "Website của tool",
+    "landing": "Landing URL",
+    "sameAsWebsite": "Giống website",
+    "pendingLanding": "URL mới chờ duyệt:",
+    "approveCampaign": "Duyệt chiến dịch",
+    "approveLanding": "Duyệt URL mới",
+    "rejectCampaign": "Từ chối & hoàn tiền",
+    "rejectLanding": "Từ chối URL mới",
+    "rejectCampaignPrompt": "Lý do từ chối (người quảng cáo sẽ thấy). Mọi đơn của chiến dịch này sẽ được hoàn tiền.",
+    "rejectLandingPrompt": "Lý do từ chối landing URL mới (người quảng cáo sẽ thấy):",
+    "addClicks": "Cộng click",
+    "addClicksPrompt": "Cộng bao nhiêu click?",
+    "emptyReview": "Không có gì chờ duyệt.",
+    "empty": "Chưa có chiến dịch nào."
   }
 }

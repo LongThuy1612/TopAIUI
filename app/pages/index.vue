@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Category, ToolsResponse } from '~/types'
+import { advertise } from '~/data/promote'
 
 const { t, locale } = useI18n()
 
@@ -17,11 +18,20 @@ const allCategories = computed(() => categories.value ?? [])
 const browseCategories = computed(() =>
   [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
 )
-// First 5 tools of the /new page (same query and order).
-const justLaunched = computed(() => newTools.value.slice(0, 5))
+// One ad request for the page, so no tool is advertised twice on it: slots 1–3 go into
+// the feed (positions 1, 4, 12), a 4th one tops the "Just Launched" block. A tool in an
+// ad slot isn't repeated in the organic lists.
+const { slots: adSlots, feed } = useAdSlots('home', { limit: advertise.slotPositions.length + 1 })
+const justLaunchedAd = computed(() => adSlots.value[advertise.slotPositions.length])
+const tabTools = computed(() => feed(todayTools.value.filter(tool => tool.slug !== justLaunchedAd.value?.tool.slug)).slice(0, 15))
+const advertisedSlugs = computed(() => new Set([
+  ...tabTools.value.flatMap(item => (item.ad ? [item.ad.tool.slug] : [])),
+  ...(justLaunchedAd.value ? [justLaunchedAd.value.tool.slug] : [])
+]))
+// First 5 tools of the /new page (same query and order), less the advertised ones.
+const justLaunched = computed(() =>
+  newTools.value.filter(tool => !advertisedSlugs.value.has(tool.slug)).slice(0, justLaunchedAd.value ? 4 : 5))
 const featuredHighlights = computed(() => topRatedRes.value?.items ?? [])
-
-const tabTools = computed(() => todayTools.value.slice(0, 15))
 
 function initialsOf(name: string) {
   return name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI'
@@ -54,8 +64,15 @@ useSeoMeta({
       <div class="mx-auto grid max-w-[1440px] grid-cols-1 gap-5 lg:grid-cols-[260px_1fr_380px] lg:items-start">
 
         <aside class="flex min-w-0 flex-col gap-3 lg:order-1">
+          <SidebarToolItem
+            v-if="justLaunchedAd"
+            :tool="justLaunchedAd.tool"
+            :href="justLaunchedAd.clickUrl"
+            :data-ad-slot="justLaunchedAd.campaignId"
+            data-ad-placement="home"
+          />
           <SidebarToolItem v-for="tool in justLaunched" :key="tool.slug" :tool="tool" />
-          <div v-if="!justLaunched.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
+          <div v-if="!justLaunched.length && !justLaunchedAd" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
             {{ t('empty.noTools') }}
           </div>
           <NuxtLink to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
@@ -85,11 +102,15 @@ useSeoMeta({
 
           <div v-if="tabTools.length" class="flex flex-col divide-y divide-ink-100">
             <ToolListRow
-              v-for="tool in tabTools"
-              :key="tool.slug"
-              :tool="tool"
-              :category-label="tool.categories?.[0]?.name"
-              hover-glow
+              v-for="item in tabTools"
+              :key="item.key"
+              :tool="item.tool"
+              :category-label="item.tool.categories?.[0]?.name"
+              :href="item.ad?.clickUrl"
+              :sponsor-tier="item.ad?.tier"
+              :data-ad-slot="item.ad?.campaignId"
+              :data-ad-placement="item.ad ? 'home' : undefined"
+              :hover-glow="item.ad?.tier !== 'FEATURED'"
             />
           </div>
           <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">

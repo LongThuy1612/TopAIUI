@@ -29,6 +29,7 @@ useSeoMeta({
     <RankingHeader icon="🏆" :title="t('ranking.title')" :month="data?.month" />
     <RankingChips :options="sorts.map(s => ({ value: s.value, label: t(s.label) }))" :active="sort" @select="select" />
     <p v-if="sort !== 'traffic' && data?.minGrowthBase" class="mt-3 text-xs text-ink-400">{{ t('ranking.growthNote', { min: (data?.minGrowthBase ?? 0).toLocaleString(locale) }) }}</p>
+    <AdBannerSlot placement="ranking" class="mt-6" />
     <RankingTable :items="items" :growth-label="growthLabel" :has-more="hasMore" :loading-more="loadingMore" :loading="pending" @load-more="loadMore" />
   </div>
 </template>

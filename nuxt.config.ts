@@ -103,6 +103,9 @@ export default defineNuxtConfig({
     // builds (`nuxt build`) — only `nuxt dev` honours it.
     // Override at runtime with NUXT_FAKE_PAYMENT.
     fakePayment: process.env.FAKE_PAYMENT === 'true',
+    // true when the app runs behind our own reverse proxy that appends the client IP to
+    // X-Forwarded-For (server/utils/ads.ts, visitorIp). Override with NUXT_TRUST_PROXY.
+    trustProxy: process.env.TRUST_PROXY === 'true',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
       // OAuth Web client ID for "Sign in with Google" (not a secret). Also

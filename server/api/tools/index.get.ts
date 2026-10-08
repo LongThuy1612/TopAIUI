@@ -48,7 +48,8 @@ export default defineCachedEventHandler(async (event) => {
 
   const sortMap: Record<string, Prisma.ToolOrderByWithRelationInput | Prisma.ToolOrderByWithRelationInput[]> = {
     newest: { createdAt: 'desc' },
-    featured: [{ isAd: 'desc' }, { adPriority: 'desc' }, { isFeatured: 'desc' }, { viewCount: 'desc' }],
+    // Paid ads get their own slots (server/utils/ads.ts), not a head start in organic order.
+    featured: [{ isFeatured: 'desc' }, { viewCount: 'desc' }],
     name: { name: 'asc' },
     traffic: { monthlyVisits: 'desc' },
     trending: { monthlyVisits: 'desc' },

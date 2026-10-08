@@ -14,8 +14,8 @@ export function useStripe(): Stripe {
 
 // Marks the order PAID and applies its effect — exactly once. Safe to call for
 // every webhook delivery: only the caller that flips PENDING → PAID gets
-// count === 1. Guest-post credits and ad clicks are added to the user's
-// balance; a submit-ai order creates the user's PENDING tool (see
+// count === 1. Guest-post credits are added to the user's balance; ad clicks
+// open or top up the tool's ad campaign (server/utils/ads.ts); a submit-ai order creates the user's PENDING tool (see
 // server/utils/userTools.ts); an update-ai order opens the owner's update request
 // (server/utils/toolUpdates.ts); GPT orders are left PAID for an admin.
 export async function fulfillPromoteOrder(sessionId: string) {
@@ -36,10 +36,8 @@ export async function fulfillPromoteOrder(sessionId: string) {
         data: { postCredits: { increment: Number(payload.credits) } }
       })
     } else if (order.type === 'advertise') {
-      await tx.user.update({
-        where: { id: order.userId },
-        data: { adCredits: { increment: Number(payload.clicks) } }
-      })
+      const { toolId, campaignId } = await applyAdOrder(tx, order)
+      return tx.promoteOrder.update({ where: { id: order.id }, data: { toolId, campaignId } })
     } else if (order.type === 'submit-ai') {
       const toolId = await createSubmittedTool(tx, order.userId, payload)
       return tx.promoteOrder.update({ where: { id: order.id }, data: { toolId } })

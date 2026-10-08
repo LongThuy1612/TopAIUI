@@ -6,7 +6,7 @@ export type ToolOption = { id: string | number; name: string; slug?: string; log
 
 export type PromoteOrder =
   | { type: 'submit-ai'; name: string; url: string; mode: 'auto' | 'manual' }
-  | { type: 'advertise'; toolId: string | number; landingUrl?: string; clicks: number }
+  | { type: 'advertise'; toolId: string | number; tier: 'STANDARD' | 'FEATURED'; landingUrl?: string; clicks: number }
   | { type: 'guest-post'; credits: number }
   | { type: 'update-ai'; toolId: string | number }
   | { type: 'submit-gpt'; gptUrl: string }

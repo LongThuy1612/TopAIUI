@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Tool, ToolsResponse } from '~/types'
+import { advertise } from '~/data/promote'
 
 const { t, locale } = useI18n()
 
@@ -8,6 +9,14 @@ const page = ref(1)
 const tools = ref<Tool[]>([])
 const pageCount = ref(1)
 const loadingMore = ref(false)
+
+// One banner under row 3 of the grid, whatever its column count: pinned with
+// grid-row-start, the cards flow around it (a shorter list leaves it at the end).
+// List view: after tool 3. Fewer than 3 tools: no banner.
+const bannerRow = advertise.bannerAfterRow + 1
+const { feed } = useAdSlots('most-featured', { positions: [bannerRow], rerender: () => [viewMode.value, items.value] })
+const bannerStyle = { gridRowStart: bannerRow }
+const items = computed(() => feed(tools.value))
 
 const { data: toolsRes, error: toolsError, refresh: refreshTools } = await useFetch<ToolsResponse>('/api/tools', {
   query: computed(() => ({
@@ -104,11 +113,17 @@ useSeoMeta({
 
     <div class="mt-1 py-4">
       <template v-if="tools.length">
-        <div v-if="viewMode === 'grid'" class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <ToolCard v-for="tool in tools" :key="tool.slug" :tool="tool" featured />
+        <div v-if="viewMode === 'grid'" class="grid grid-flow-row-dense grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <template v-for="item in items" :key="item.key">
+            <AdBanner v-if="item.ad" :ad="item.ad" placement="most-featured" class="col-span-full" :style="bannerStyle" />
+            <ToolCard v-else :tool="item.tool" featured />
+          </template>
         </div>
         <div v-else class="divide-y divide-ink-100">
-          <ToolListRow v-for="tool in tools" :key="tool.slug" :tool="tool" :category-label="tool.categories?.[0]?.name" />
+          <template v-for="item in items" :key="item.key">
+            <div v-if="item.ad" class="py-3"><AdBanner :ad="item.ad" placement="most-featured" /></div>
+            <ToolListRow v-else :tool="item.tool" :category-label="item.tool.categories?.[0]?.name" />
+          </template>
         </div>
       </template>
       <div v-else class="rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">

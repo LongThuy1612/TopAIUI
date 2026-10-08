@@ -2,8 +2,10 @@
 export default defineEventHandler(async (event) => {
   const userId = requireUser(event)
 
-  const [user, orders] = await Promise.all([
-    prisma.user.findUnique({ where: { id: userId }, select: { postCredits: true, adCredits: true } }),
+  const [user, ads, orders] = await Promise.all([
+    prisma.user.findUnique({ where: { id: userId }, select: { postCredits: true } }),
+    // Ad clicks live on each campaign now; this is their total.
+    prisma.adCampaign.aggregate({ where: { userId, status: { not: 'REJECTED' } }, _sum: { clicksRemaining: true } }),
     prisma.promoteOrder.findMany({
       where: { userId },
       orderBy: { createdAt: 'desc' },
@@ -13,5 +15,5 @@ export default defineEventHandler(async (event) => {
   ])
   if (!user) throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
 
-  return { postCredits: user.postCredits, adClicks: user.adCredits, orders }
+  return { postCredits: user.postCredits, adClicks: ads._sum.clicksRemaining ?? 0, orders }
 })
