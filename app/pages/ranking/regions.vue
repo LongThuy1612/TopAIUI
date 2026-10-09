@@ -6,7 +6,7 @@ const { data: filters } = await useRankingFilters()
 const options = computed(() => (filters.value?.countries ?? []).map(c => ({ value: c.code, label: countryName(c.code, locale.value), count: c.count })))
 const active = computed(() => String(route.query.country ?? '').toUpperCase() || options.value[0]?.value || '')
 
-const { data, items, pending, hasMore, loadingMore, loadMore } = await useRanking(() => ({ country: active.value || undefined }))
+const { data, items, pending, hasMore, loadingMore, loadMore, reachedLimit } = await useRanking(() => ({ country: active.value || undefined }))
 
 function select(value: string) {
   navigateTo({ query: { ...route.query, country: value } }, { replace: true })
@@ -31,5 +31,6 @@ useSeoMeta({
       :loading="pending"
       @load-more="loadMore"
     />
+    <RankingLimitNotice v-if="reachedLimit" :limit="reachedLimit" />
   </div>
 </template>

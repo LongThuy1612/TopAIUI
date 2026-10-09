@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const { user, isAdmin, logout } = useAuth()
 const route = useRoute()
 
@@ -26,7 +26,37 @@ const researchItems = computed(() => [
   { label: t('admin.socialListening'), to: '/dashboard/social-listening', icon: 'M12 3a7 7 0 0 0-7 7c0 3.5 2 5.5 3 7l1 2h6l1-2c1-1.5 3-3.5 3-7a7 7 0 0 0-7-7Zm-2 18h4', color: 'bg-pink-50 text-pink-500' }
 ])
 
-const upgradeModalOpen = ref(false)
+// Shared so a page (e.g. Insights, out of Data Credits) can open it too.
+const upgradeModalOpen = useState('upgrade-modal-open', () => false)
+
+// Research Plan + this month's quota (customers only; admins have no plan).
+const { authHeaders } = useAuth()
+const { data: myPlan, refresh: refreshPlan } = useResearchPlan()
+const planLabel = computed(() => (!myPlan.value || myPlan.value.plan === 'FREE'
+  ? t('admin.freePlan')
+  : t(`admin.upgradeModal.plan.${myPlan.value.plan.toLowerCase()}`)))
+const quotaPct = (q: { used: number; limit: number } | undefined) => (q?.limit ? Math.min(100, Math.round((q.used / q.limit) * 100)) : 0)
+const nf = computed(() => new Intl.NumberFormat(locale.value))
+
+// Back from Stripe Checkout (?plan_session=…): mirror the new subscription right away
+// instead of waiting for the webhook, then drop the query from the URL.
+onMounted(async () => {
+  // From the public Ranking's "Upgrade" (?upgrade=1): open the plan picker.
+  if (route.query.upgrade) {
+    upgradeModalOpen.value = true
+    const { upgrade: _u, ...rest } = route.query
+    navigateTo({ query: rest }, { replace: true })
+    return
+  }
+  const sessionId = route.query.plan_session
+  if (typeof sessionId !== 'string' && !route.query.plan_canceled) return
+  if (typeof sessionId === 'string') {
+    await $fetch(`/api/billing/session/${sessionId}`, { headers: authHeaders() }).catch(() => {})
+    await refreshPlan()
+  }
+  const { plan_session: _s, plan_canceled: _c, ...query } = route.query
+  navigateTo({ query }, { replace: true })
+})
 
 const otherItems = computed(() => [
   { label: t('admin.paymentInvoice'), to: '/dashboard/payment-invoice', icon: 'M7 3h10a1 1 0 0 1 1 1v17l-3-2-2 2-2-2-2 2-3-2V4a1 1 0 0 1 1-1Zm2 5h6m-6 4h6m-6 4h3' },
@@ -130,20 +160,24 @@ const businessItems = computed(() => [
 
     <!-- Plan / quota box is for customers only — admins have no plan. -->
     <div v-if="!isAdmin" class="rounded-xl border border-ink-100 bg-ink-100/30 p-3.5 text-[14px]">
-      <div class="font-bold text-ink-800">{{ t('admin.freePlan') }}</div>
-      <div class="mt-3 flex items-center justify-between text-ink-500">
+      <div class="font-bold text-ink-800">{{ planLabel }}</div>
+      <div class="mt-3 flex items-center justify-between gap-2 text-ink-500">
         <span>{{ t('admin.websiteInsightsQuota') }}</span>
+        <span v-if="myPlan" class="shrink-0 text-xs">{{ nf.format(myPlan.usage.dataCredits.used) }}/{{ nf.format(myPlan.usage.dataCredits.limit) }}</span>
       </div>
       <div class="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-ink-200">
-        <div class="h-full w-1/5 rounded-full bg-brand-400"></div>
+        <div class="h-full rounded-full bg-brand-400" :style="{ width: `${quotaPct(myPlan?.usage.dataCredits)}%` }"></div>
       </div>
-      <div class="mt-2.5 text-ink-500">{{ t('admin.socialListeningQueries') }}</div>
+      <div class="mt-2.5 flex items-center justify-between gap-2 text-ink-500">
+        <span>{{ t('admin.socialListeningQueries') }}</span>
+        <span v-if="myPlan" class="shrink-0 text-xs">{{ nf.format(myPlan.usage.socialQueries.used) }}/{{ nf.format(myPlan.usage.socialQueries.limit) }}</span>
+      </div>
       <div class="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-ink-200">
-        <div class="h-full w-3/4 rounded-full bg-emerald-400"></div>
+        <div class="h-full rounded-full bg-emerald-400" :style="{ width: `${quotaPct(myPlan?.usage.socialQueries)}%` }"></div>
       </div>
       <button type="button" class="mt-3 flex items-center gap-1 font-bold text-brand-500 hover:text-brand-600" @click="upgradeModalOpen = true">
         <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2 3 12h5l-1 6 8-10h-5l1-6Z" /></svg>
-        {{ t('admin.upgrade') }}
+        {{ myPlan && myPlan.plan !== 'FREE' ? t('admin.managePlan') : t('admin.upgrade') }}
       </button>
     </div>
 

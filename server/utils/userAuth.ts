@@ -50,3 +50,15 @@ export function requireUser(event: H3Event): string {
 
   return userId
 }
+
+// Like requireUser, plus the account must still be active. Login tokens are stateless
+// and live 30 days, so a user banned or deleted after logging in still holds a valid one:
+// endpoints that spend quota, change data or touch billing check the account too.
+export async function requireActiveUser(event: H3Event): Promise<string> {
+  const userId = requireUser(event)
+  const user = await prisma.user.findUnique({ where: { id: userId }, select: { isBanned: true, deletedAt: true } })
+  if (!user || user.isBanned || user.deletedAt) {
+    throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
+  }
+  return userId
+}

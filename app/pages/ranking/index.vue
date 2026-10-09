@@ -13,7 +13,7 @@ const sort = computed(() => sorts.find(s => s.value === route.query.sort)?.value
 // Sorting by visits still shows the 1-month change next to them.
 const growthLabel = computed(() => t(sorts.find(s => s.value === sort.value && s.value !== 'traffic')?.label ?? 'ranking.byGrowth1m'))
 
-const { data, items, pending, hasMore, loadingMore, loadMore } = await useRanking(() => ({ sort: sort.value }))
+const { data, items, pending, hasMore, loadingMore, loadMore, reachedLimit } = await useRanking(() => ({ sort: sort.value }))
 
 function select(value: string) {
   navigateTo({ query: { ...route.query, sort: value } }, { replace: true })
@@ -31,5 +31,6 @@ useSeoMeta({
     <p v-if="sort !== 'traffic' && data?.minGrowthBase" class="mt-3 text-xs text-ink-400">{{ t('ranking.growthNote', { min: (data?.minGrowthBase ?? 0).toLocaleString(locale) }) }}</p>
     <AdBannerSlot placement="ranking" class="mt-6" />
     <RankingTable :items="items" :growth-label="growthLabel" :has-more="hasMore" :loading-more="loadingMore" :loading="pending" @load-more="loadMore" />
+    <RankingLimitNotice v-if="reachedLimit" :limit="reachedLimit" />
   </div>
 </template>

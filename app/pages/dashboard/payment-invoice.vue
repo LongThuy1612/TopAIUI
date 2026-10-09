@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import type { OrderRow, OrderType } from '~/composables/useMyOrders'
+import { researchPlans } from '#shared/research'
 
 const { t, locale } = useI18n()
-const { authHeaders, user } = useAuth()
+const { authHeaders, user, isAdmin } = useAuth()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 const upgradeModalOpen = ref(false)
@@ -78,6 +79,43 @@ const countries = computed(() => {
 
 const orders = computed(() => ordersRes.value?.orders ?? [])
 
+// Research Plan: current plan, this month's quota, and its Stripe charges.
+const { data: myPlan, busy: planBusy, error: planError, setCancel, openBillingPortal } = useResearchPlan()
+const isPaid = computed(() => !!myPlan.value && myPlan.value.plan !== 'FREE')
+const planName = computed(() => (isPaid.value ? t(`admin.upgradeModal.plan.${myPlan.value!.plan.toLowerCase()}`) : t('admin.freePlan')))
+const quotaPct = (q: { used: number; limit: number } | undefined) => (q?.limit ? Math.min(100, Math.round((q.used / q.limit) * 100)) : 0)
+const nf = computed(() => new Intl.NumberFormat(locale.value))
+// Next renewal: the plan's price, unless it was cancelled (then nothing more is charged).
+const nextCharge = computed(() => {
+  const p = myPlan.value
+  if (!p || p.plan === 'FREE' || !p.interval || p.cancelAtPeriodEnd) return null
+  return { amount: Math.round(researchPlans[p.plan].price[p.interval] * 100), date: p.currentPeriodEnd }
+})
+function cancelPlan() {
+  if (!confirm(t('admin.upgradeModal.confirmCancel', { date: myPlan.value?.currentPeriodEnd ? date(myPlan.value.currentPeriodEnd) : '' }))) return
+  setCancel(true)
+}
+
+// Invoice history: promote orders and subscription charges, newest first.
+const invoiceStatusClass: Record<string, string> = {
+  paid: 'bg-emerald-50 text-emerald-700',
+  open: 'bg-amber-50 text-amber-700',
+  uncollectible: 'bg-red-50 text-red-600',
+  void: 'bg-ink-100 text-ink-500'
+}
+const history = computed(() => [
+  ...orders.value.map(o => ({ kind: 'order' as const, key: o.id, at: o.paidAt ?? o.createdAt, order: o })),
+  ...(ordersRes.value?.invoices ?? []).map(inv => ({ kind: 'invoice' as const, key: inv.id, at: inv.paidAt ?? inv.createdAt, invoice: inv }))
+].sort((a, b) => b.at.localeCompare(a.at)))
+function invoiceDetail(inv: { plan: string | null; interval: string | null; periodStart: string | null; periodEnd: string | null }) {
+  const parts = [
+    inv.plan ? t(`admin.upgradeModal.plan.${inv.plan.toLowerCase()}`) : '',
+    inv.interval ? t(inv.interval === 'YEAR' ? 'admin.upgradeModal.yearly' : 'admin.upgradeModal.monthly') : '',
+    inv.periodStart && inv.periodEnd ? `${date(inv.periodStart)} – ${date(inv.periodEnd)}` : ''
+  ]
+  return parts.filter(Boolean).join(' · ')
+}
+
 const typeKey: Record<OrderType, string> = {
   'submit-ai': 'submit',
   'advertise': 'advertise',
@@ -119,21 +157,23 @@ useSeoMeta({
 
         <div class="mt-4 flex items-center justify-between text-sm font-semibold text-ink-900">
           <span>{{ t('paymentInvoicePage.monthlyQueries') }}</span>
-          <span>--</span>
+          <span>{{ myPlan ? `${nf.format(myPlan.usage.dataCredits.used)}/${nf.format(myPlan.usage.dataCredits.limit)}` : '--' }}</span>
         </div>
         <div class="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-ink-100">
-          <div class="h-full w-full rounded-full bg-blue-400"></div>
+          <div class="h-full rounded-full bg-blue-400" :style="{ width: `${quotaPct(myPlan?.usage.dataCredits)}%` }"></div>
         </div>
 
         <div class="mt-4 flex items-center justify-between text-sm font-semibold text-ink-900">
           <span>{{ t('paymentInvoicePage.socialListeningQueries') }}</span>
-          <span>100/100</span>
+          <span>{{ myPlan ? `${nf.format(myPlan.usage.socialQueries.used)}/${nf.format(myPlan.usage.socialQueries.limit)}` : '--' }}</span>
         </div>
         <div class="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-ink-100">
-          <div class="h-full w-full rounded-full bg-emerald-400"></div>
+          <div class="h-full rounded-full bg-emerald-400" :style="{ width: `${quotaPct(myPlan?.usage.socialQueries)}%` }"></div>
         </div>
+        <p v-if="myPlan" class="mt-2 text-xs text-ink-500">{{ t('paymentInvoicePage.quotaResets', { date: date(myPlan.usage.periodEnd) }) }}</p>
 
         <button
+          v-if="!isAdmin"
           type="button"
           class="mt-5 w-full rounded-lg border border-brand-200 bg-brand-50 px-4 py-2.5 text-sm font-bold text-brand-600 hover:bg-brand-100"
           @click="upgradeModalOpen = true"
@@ -146,20 +186,48 @@ useSeoMeta({
         <h2 class="text-lg font-extrabold text-ink-900">{{ t('paymentInvoicePage.subscription') }}</h2>
 
         <div class="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
-          <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.subscriptionPlan') }}:</span> Free</div>
-          <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.subscriptionCard') }}:</span> --</div>
-          <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.nextChargeAmount') }}:</span> --</div>
-          <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.nextChargeDate') }}:</span> --</div>
+          <div class="text-ink-900">
+            <span class="font-semibold">{{ t('paymentInvoicePage.subscriptionPlan') }}:</span> {{ planName }}
+            <template v-if="isPaid && myPlan?.interval"> · {{ t(myPlan.interval === 'YEAR' ? 'admin.upgradeModal.yearly' : 'admin.upgradeModal.monthly') }}</template>
+          </div>
+          <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.subscriptionCard') }}:</span> {{ myPlan?.canManageBilling ? t('paymentInvoicePage.cardInStripe') : '--' }}</div>
+          <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.nextChargeAmount') }}:</span> {{ nextCharge ? money(nextCharge.amount, 'usd') : '--' }}</div>
+          <div class="text-ink-900">
+            <span class="font-semibold">{{ isPaid && myPlan?.cancelAtPeriodEnd ? t('paymentInvoicePage.endsOn') : t('paymentInvoicePage.nextChargeDate') }}:</span>
+            {{ isPaid && myPlan?.currentPeriodEnd ? date(myPlan.currentPeriodEnd) : '--' }}
+          </div>
         </div>
+        <p v-if="myPlan?.status === 'past_due'" class="mt-3 text-sm font-semibold text-red-600">{{ t('admin.upgradeModal.pastDue') }}</p>
 
         <div class="mt-5 flex flex-wrap gap-3">
-          <button type="button" disabled class="cursor-not-allowed rounded-lg bg-ink-100 px-4 py-2.5 text-sm font-bold text-ink-400">
+          <button
+            type="button"
+            :disabled="!myPlan?.canManageBilling || !!planBusy"
+            class="rounded-lg bg-ink-100 px-4 py-2.5 text-sm font-bold text-ink-700 hover:bg-ink-200 disabled:cursor-not-allowed disabled:text-ink-400 disabled:hover:bg-ink-100"
+            @click="openBillingPortal()"
+          >
             {{ t('paymentInvoicePage.changeCard') }}
           </button>
-          <button type="button" disabled class="cursor-not-allowed rounded-lg bg-ink-100 px-4 py-2.5 text-sm font-bold text-ink-400">
+          <button
+            v-if="isPaid && myPlan?.cancelAtPeriodEnd"
+            type="button"
+            :disabled="!!planBusy"
+            class="rounded-lg bg-emerald-50 px-4 py-2.5 text-sm font-bold text-emerald-700 hover:bg-emerald-100 disabled:opacity-50"
+            @click="setCancel(false)"
+          >
+            {{ t('admin.upgradeModal.resume') }}
+          </button>
+          <button
+            v-else
+            type="button"
+            :disabled="!isPaid || !!planBusy"
+            class="rounded-lg bg-ink-100 px-4 py-2.5 text-sm font-bold text-ink-700 hover:bg-ink-200 disabled:cursor-not-allowed disabled:text-ink-400 disabled:hover:bg-ink-100"
+            @click="cancelPlan"
+          >
             {{ t('paymentInvoicePage.unsubscribe') }}
           </button>
         </div>
+        <p v-if="planError" class="mt-3 text-sm text-red-600">{{ planError }}</p>
       </div>
     </div>
 
@@ -177,19 +245,33 @@ useSeoMeta({
           </tr>
         </thead>
         <tbody class="divide-y divide-ink-100">
-          <tr v-for="o in orders" :key="o.id">
-            <td class="whitespace-nowrap px-4 py-3 text-ink-600">{{ date(o.paidAt ?? o.createdAt) }}</td>
-            <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ typeKey[o.type] ? t(`promote.services.${typeKey[o.type]}.title`) : o.type }}</td>
-            <td class="max-w-[260px] truncate px-4 py-3 text-ink-600" :title="detail(o)">{{ detail(o) }}</td>
-            <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ money(o.amount, o.currency) }}</td>
-            <td class="px-4 py-3">
-              <span :class="['whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold', orderStatusClass[o.status] ?? 'bg-ink-100 text-ink-500']">{{ t(`promote.orders.statuses.${o.status}`) }}</span>
-            </td>
+          <tr v-for="row in history" :key="row.key">
+            <template v-if="row.kind === 'order'">
+              <td class="whitespace-nowrap px-4 py-3 text-ink-600">{{ date(row.at) }}</td>
+              <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ typeKey[row.order.type] ? t(`promote.services.${typeKey[row.order.type]}.title`) : row.order.type }}</td>
+              <td class="max-w-[260px] truncate px-4 py-3 text-ink-600" :title="detail(row.order)">{{ detail(row.order) }}</td>
+              <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ money(row.order.amount, row.order.currency) }}</td>
+              <td class="px-4 py-3">
+                <span :class="['whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold', orderStatusClass[row.order.status] ?? 'bg-ink-100 text-ink-500']">{{ t(`promote.orders.statuses.${row.order.status}`) }}</span>
+              </td>
+            </template>
+            <template v-else>
+              <td class="whitespace-nowrap px-4 py-3 text-ink-600">{{ date(row.at) }}</td>
+              <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ t('paymentInvoicePage.researchPlan') }}</td>
+              <td class="max-w-[260px] truncate px-4 py-3 text-ink-600" :title="invoiceDetail(row.invoice)">
+                <a v-if="row.invoice.hostedInvoiceUrl" :href="row.invoice.hostedInvoiceUrl" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">{{ invoiceDetail(row.invoice) }}</a>
+                <template v-else>{{ invoiceDetail(row.invoice) }}</template>
+              </td>
+              <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ money(row.invoice.amount, row.invoice.currency) }}</td>
+              <td class="px-4 py-3">
+                <span :class="['whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold', invoiceStatusClass[row.invoice.status] ?? 'bg-ink-100 text-ink-500']">{{ t(`paymentInvoicePage.invoiceStatuses.${row.invoice.status}`) }}</span>
+              </td>
+            </template>
           </tr>
         </tbody>
       </table>
-      <p v-if="ordersPending && !orders.length" class="py-10 text-center text-sm text-ink-400">{{ t('promote.orders.loading') }}</p>
-      <p v-else-if="!orders.length" class="py-10 text-center text-sm text-ink-400">{{ t('promote.orders.empty') }}</p>
+      <p v-if="ordersPending && !history.length" class="py-10 text-center text-sm text-ink-400">{{ t('promote.orders.loading') }}</p>
+      <p v-else-if="!history.length" class="py-10 text-center text-sm text-ink-400">{{ t('promote.orders.empty') }}</p>
     </div>
 
     <h2 class="mt-8 text-lg font-extrabold text-ink-900">{{ t('paymentInvoicePage.profileTitle') }}</h2>

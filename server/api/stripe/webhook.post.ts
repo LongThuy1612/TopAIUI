@@ -22,6 +22,12 @@ export default defineEventHandler(async (event) => {
     case 'checkout.session.completed':
     case 'checkout.session.async_payment_succeeded': {
       const session = stripeEvent.data.object
+      // Research Plan subscription (not a promote order): mirror the subscription.
+      if (isResearchCheckout(session)) {
+        const subId = typeof session.subscription === 'string' ? session.subscription : session.subscription?.id
+        if (subId) await syncStripeSubscriptionById(subId)
+        break
+      }
       // Delayed payment methods fire `completed` while still unpaid; wait for
       // `async_payment_succeeded` in that case.
       if (session.payment_status !== 'paid') break
@@ -41,6 +47,22 @@ export default defineEventHandler(async (event) => {
       }
       break
     }
+    // Research Plan subscriptions (server/utils/research.ts): every change, renewal,
+    // cancellation and failed payment is mirrored from Stripe.
+    case 'customer.subscription.created':
+    case 'customer.subscription.updated':
+    case 'customer.subscription.deleted':
+      // Mirrors Stripe's current state, not the event's: events can arrive out of order.
+      await syncStripeSubscriptionById(stripeEvent.data.object.id, stripeEvent.data.object)
+      break
+    // Renewal of a banned user's plan: cancelled before it is charged.
+    case 'invoice.created':
+      await stopRenewalIfBanned(stripeEvent.data.object)
+      break
+    case 'invoice.paid':
+    case 'invoice.payment_failed':
+      await recordStripeInvoice(stripeEvent.data.object)
+      break
     case 'checkout.session.expired':
     case 'checkout.session.async_payment_failed': {
       await prisma.promoteOrder.updateMany({

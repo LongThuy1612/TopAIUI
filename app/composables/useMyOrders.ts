@@ -16,10 +16,27 @@ export interface OrderRow {
   paidAt: string | null
 }
 
+// One Stripe charge of a Research Plan subscription (first payment, renewal, plan change).
+export interface SubscriptionInvoiceRow {
+  id: string
+  amount: number
+  currency: string
+  status: string // Stripe invoice status: paid | open | uncollectible | void | draft
+  plan: 'STARTER' | 'PROFESSIONAL' | 'ENTERPRISE' | null
+  interval: 'MONTH' | 'YEAR' | null
+  periodStart: string | null
+  periodEnd: string | null
+  hostedInvoiceUrl: string | null
+  invoicePdf: string | null
+  paidAt: string | null
+  createdAt: string
+}
+
 export interface MyOrdersResponse {
   postCredits: number
   adClicks: number
   orders: OrderRow[]
+  invoices: SubscriptionInvoiceRow[]
 }
 
 export const orderStatusClass: Record<OrderStatus, string> = {

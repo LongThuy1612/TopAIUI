@@ -107,10 +107,9 @@ useSeoMeta({
               :tool="item.tool"
               :category-label="item.tool.categories?.[0]?.name"
               :href="item.ad?.clickUrl"
-              :sponsor-tier="item.ad?.tier"
               :data-ad-slot="item.ad?.campaignId"
               :data-ad-placement="item.ad ? 'home' : undefined"
-              :hover-glow="item.ad?.tier !== 'FEATURED'"
+              hover-glow
             />
           </div>
           <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">

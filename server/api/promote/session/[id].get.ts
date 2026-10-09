@@ -5,7 +5,7 @@
 // dev without `stripe listen`), ask Stripe directly and fulfil here —
 // fulfillPromoteOrder is idempotent, whichever caller gets there first does the work.
 export default defineEventHandler(async (event) => {
-  const userId = requireUser(event)
+  const userId = await requireActiveUser(event)
   const sessionId = getRouterParam(event, 'id') ?? ''
 
   const find = () => prisma.promoteOrder.findFirst({

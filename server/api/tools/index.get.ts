@@ -1,14 +1,14 @@
 import type { Prisma } from '@prisma/client'
+import type { H3Event } from 'h3'
+import { PUBLIC_LIMITS } from '#shared/research'
 
-// Public, identical for every visitor, and hit by every page (app.vue, hero,
-// lists) — so it's cached in memory per full URL (path + query). The page HTML
-// cache in nuxt.config.ts only helps full page loads; client-side navigation
-// calls this API directly. Free-text search (?q=) skips the cache so arbitrary
-// queries can't fill it up. Off in dev so DB edits show up immediately.
-export default defineCachedEventHandler(async (event) => {
+// The list itself. `isGuest`: no valid login token — guests only reach the first
+// PUBLIC_LIMITS.guestListTools tools of any list, then get loginRequired and nothing more.
+async function listTools(event: H3Event, isGuest: boolean) {
   const query = getQuery(event)
   const page = Math.max(1, Number(query.page) || 1)
-  const limit = Math.min(300, Number(query.limit) || 24)
+  const limit = Math.min(300, Math.max(1, Math.floor(Number(query.limit)) || 24))
+  const guestRoom = isGuest ? Math.max(0, PUBLIC_LIMITS.guestListTools - (page - 1) * limit) : Infinity
   const locale = String(query.locale ?? 'en')
 
   // status is hardcoded to 'PUBLISHED' — this endpoint never leaks pending
@@ -16,19 +16,20 @@ export default defineCachedEventHandler(async (event) => {
   // server/api/admin/tools/index.get.ts instead.
   const where: Prisma.ToolWhereInput = { status: 'PUBLISHED', deletedAt: null }
   if (query.category) where.categories = { some: { slug: String(query.category) } }
-  if (query.pricing) where.pricingType = String(query.pricing) as Prisma.ToolWhereInput['pricingType']
+  // Unknown values are ignored (Prisma would reject them with a 500).
+  if (['FREE', 'FREEMIUM', 'PAID'].includes(String(query.pricing))) where.pricingType = String(query.pricing) as Prisma.ToolWhereInput['pricingType']
   if (query.featured === 'true') where.isFeatured = true
   if (query.q) {
     where.name = { contains: String(query.q), mode: 'insensitive' }
   }
-  if (query.minRating) where.averageRating = { gt: Number(query.minRating) }
+  if (query.minRating && Number.isFinite(Number(query.minRating))) where.averageRating = { gt: Number(query.minRating) }
   if (query.region) where.region = String(query.region)
   if (query.source) where.source = String(query.source)
   const isTodayTab = query.today === 'true'
   // Today and New are the same list, always sorted by addedOn (tools without
   // one go last); Today just narrows it to approved tools.
   if (isTodayTab) where.isApproved = true
-  if (query.days) {
+  if (query.days && Number.isFinite(Number(query.days))) {
     const since = new Date()
     since.setDate(since.getDate() - Number(query.days))
     where.createdAt = { gte: since }
@@ -68,11 +69,11 @@ export default defineCachedEventHandler(async (event) => {
       : (sortMap[String(query.sort)] ?? sortMap.newest)
 
   const [items, total] = await Promise.all([
-    prisma.tool.findMany({
+    guestRoom <= 0 ? Promise.resolve([]) : prisma.tool.findMany({
       where,
       orderBy,
       skip: (page - 1) * limit,
-      take: limit,
+      take: Math.min(limit, guestRoom),
       // Only what the cards / rows / alternatives render. The full row carries
       // large JSON columns (nuxtTraffic, companyInfo, attributes…) and every
       // locale's long description — the home page alone asks for 200 tools, and
@@ -118,11 +119,28 @@ export default defineCachedEventHandler(async (event) => {
     }),
     total,
     page,
-    pageCount: Math.ceil(total / limit)
+    pageCount: Math.ceil(total / limit),
+    // The list goes on, but a guest has to log in to see more of it.
+    loginRequired: isGuest && total > PUBLIC_LIMITS.guestListTools && (page - 1) * limit + Math.min(limit, guestRoom) >= PUBLIC_LIMITS.guestListTools
   }
-}, {
+}
+
+// Guests: identical for every visitor, and hit by every page (app.vue, hero, lists) — so
+// it's cached in memory per full URL (path + query). The page HTML cache in nuxt.config.ts
+// only helps full page loads; client-side navigation calls this API directly. Free-text
+// search (?q=) skips the cache so arbitrary queries can't fill it up. Off in dev so DB edits
+// show up immediately. (Inside a cached handler the request only carries the `varies`
+// headers — the login token is read before, in the handler below.)
+const listForGuests = defineCachedEventHandler(event => listTools(event, true), {
   name: 'api-tools',
   maxAge: 60,
   swr: true,
   shouldBypassCache: (event) => import.meta.dev || !!getQuery(event).q
+})
+
+export default defineEventHandler((event) => {
+  const userToken = getHeader(event, 'x-user-token')
+  // Logged in: no guest limit, answered directly (never from or into the shared cache).
+  if (userToken && verifyUserToken(userToken)) return listTools(event, false)
+  return listForGuests(event)
 })

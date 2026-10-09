@@ -318,17 +318,17 @@ export async function adminAdAction(id: string, input: AdminAdAction) {
 /* Serving                                                             */
 /* ------------------------------------------------------------------ */
 
-// Weighted draw without replacement: a bigger remaining balance is picked more often.
-function drawWeighted<T extends { clicksRemaining: number }>(pool: T[], n: number) {
-  const left = [...pool]
-  const picked: T[] = []
-  while (picked.length < n && left.length) {
-    const total = left.reduce((sum, c) => sum + c.clicksRemaining, 0)
-    let r = Math.random() * total
-    const i = Math.max(0, left.findIndex(c => (r -= c.clicksRemaining) < 0))
-    picked.push(left.splice(i, 1)[0]!)
-  }
-  return picked
+// How often a campaign is shown, against others of its tier: the square root of its
+// remaining clicks. A bigger balance still shows more (50,000 left ≈ 10× a 500 one), but
+// can't crowd small advertisers out the way the raw balance would (100×).
+const adWeight = (c: { clicksRemaining: number }) => Math.sqrt(c.clicksRemaining)
+
+// One item drawn at random, proportionally to its weight.
+function drawOne<T>(items: T[], weight: (item: T) => number) {
+  const total = items.reduce((sum, it) => sum + weight(it), 0)
+  let r = Math.random() * total
+  for (const it of items) if ((r -= weight(it)) < 0) return it
+  return items[items.length - 1]!
 }
 
 // The most slots one request may take. One request per page, so a tool is never
@@ -341,7 +341,8 @@ const MAX_SLOTS: Partial<Record<AdPlacement, number>> = {
 }
 
 // Up to `limit` (at most MAX_SLOTS) sponsored tools for one page (the sponsor bar: one
-// featured). `exclude`: a tool slug never to advertise here (on a tool's
+// featured). Mixes Featured (advertise.featuredShare of the slots) and Standard, weighted by
+// the square root of the remaining clicks. `exclude`: a tool slug never to advertise here (on a tool's
 // own detail page, its own ad would be pointless).
 // Featured fills first, standard takes the slots left; one slot per tool.
 export async function pickAdSlots(placement: AdPlacement, opts: { category?: string; exclude?: string; locale: string; limit?: number }) {
@@ -361,19 +362,33 @@ export async function pickAdSlots(placement: AdPlacement, opts: { category?: str
     select: { id: true, tier: true, toolId: true, clicksRemaining: true }
   })
 
-  // A tool advertised twice (both tiers, or by two users) competes once, with its best campaign.
-  const best = new Map<string, (typeof campaigns)[number]>()
-  for (const c of campaigns) {
-    const prev = best.get(c.toolId)
-    const better = !prev || (c.tier === 'FEATURED' && prev.tier !== 'FEATURED') ||
-      (c.tier === prev.tier && c.clicksRemaining > prev.clicksRemaining)
-    if (better) best.set(c.toolId, c)
+  // Each slot: Featured with probability advertise.featuredShare (Standard otherwise) while
+  // both tiers have campaigns left; then a tool of that tier, weighted by the sum of its
+  // campaigns' weights; then one of that tool's campaigns, by weight — so a tool advertised
+  // by two users (or twice) shows both, each in proportion. One slot per tool per page.
+  type Pick = (typeof campaigns)[number]
+  const byTool = (tier: string) => {
+    const map = new Map<string, Pick[]>()
+    for (const c of campaigns.filter(c => c.tier === tier)) map.set(c.toolId, [...(map.get(c.toolId) ?? []), c])
+    return map
   }
-  const pool = [...best.values()]
+  const pools = { FEATURED: byTool('FEATURED'), STANDARD: byTool('STANDARD') }
   const max = MAX_SLOTS[placement] ?? advertise.slotPositions.length
   const slots = Math.min(max, Math.max(1, Math.floor(opts.limit ?? max)))
-  const featured = drawWeighted(pool.filter(c => c.tier === 'FEATURED'), slots)
-  const picked = [...featured, ...drawWeighted(pool.filter(c => c.tier !== 'FEATURED'), slots - featured.length)]
+  const usedTools = new Set<string>()
+  const picked: Pick[] = []
+  for (let i = 0; i < slots; i++) {
+    const left = (tier: 'FEATURED' | 'STANDARD') => [...pools[tier]].filter(([toolId]) => !usedTools.has(toolId))
+    const featured = left('FEATURED')
+    const standard = left('STANDARD')
+    if (!featured.length && !standard.length) break
+    const tierPool = !standard.length ? featured : !featured.length ? standard : (Math.random() < advertise.featuredShare ? featured : standard)
+    const [toolId, toolCampaigns] = drawOne(tierPool, ([, cs]) => cs.reduce((sum, c) => sum + adWeight(c), 0))
+    usedTools.add(toolId)
+    picked.push(drawOne(toolCampaigns, adWeight))
+  }
+  // Featured slots first (top of the home feed, the first banner of a page).
+  picked.sort((a, b) => (a.tier === b.tier ? 0 : a.tier === 'FEATURED' ? -1 : 1))
   if (!picked.length) return []
 
   const tools = await prisma.tool.findMany({

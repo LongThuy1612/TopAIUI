@@ -7,7 +7,20 @@
 // No response cache: filtering and sorting the in-memory dataset takes about a
 // millisecond, while caching per URL would keep one entry for every
 // country/source/page combination anyone (or any bot) ever requests.
+import { PUBLIC_LIMITS } from '#shared/research'
+
 const SORTS: RankingSort[] = ['traffic', 'growth1m', 'growth3m', 'growth6m']
+
+// Ranks past PUBLIC_LIMITS.rankingFreeTools need a paid Research Plan (admins: all).
+// Guests and Free users get the top of the list, then `limitedTo` with no more items.
+async function rankingLimit(token: string | undefined) {
+  const userId = token ? verifyUserToken(token) : null
+  if (!userId) return PUBLIC_LIMITS.rankingFreeTools
+  const user = await prisma.user.findUnique({ where: { id: userId }, select: { role: true, isBanned: true, deletedAt: true } })
+  if (!user || user.isBanned || user.deletedAt) return PUBLIC_LIMITS.rankingFreeTools
+  if (user.role === 'ADMIN') return Infinity
+  return (await currentAccess(userId)).plan === 'FREE' ? PUBLIC_LIMITS.rankingFreeTools : Infinity
+}
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
@@ -49,13 +62,17 @@ export default defineEventHandler(async (event) => {
 
   const growthField = sort === 'traffic' ? 'growth1m' : sort
   const start = (page - 1) * limit
+  const cap = await rankingLimit(getHeader(event, 'x-user-token'))
+  const take = Math.max(0, Math.min(limit, cap - start))
   return {
     month,
     minGrowthBase: MIN_GROWTH_BASE_VISITS,
     total: ranked.length,
     page,
     pageCount: Math.max(1, Math.ceil(ranked.length / limit)),
-    items: ranked.slice(start, start + limit).map(({ tool, score, share }, i) => ({
+    // Set when this user can't see the whole list: it stops at that rank.
+    limitedTo: ranked.length > cap ? cap : null,
+    items: ranked.slice(start, start + take).map(({ tool, score, share }, i) => ({
       rank: start + i + 1,
       slug: tool.slug,
       name: displayToolName(tool.name),

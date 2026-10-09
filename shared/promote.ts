@@ -63,6 +63,9 @@ export const advertise = {
   } as Record<AdTier, { clicks: number; costPerClick: number }[]>,
   slotPositions: [1, 4, 12], // trang Home: vị trí (tính từ 1) của các ô sponsor trong danh sách
   bannerAfterRow: 3, // các trang list khác: 1 banner, nằm sau hàng thứ 3
+  // Mỗi ô quảng cáo: xác suất lấy campaign Featured (còn lại là Standard), khi cả hai
+  // nhóm đều có campaign. Trong mỗi nhóm, trọng số = căn bậc hai số click còn lại.
+  featuredShare: 0.7,
   featuredTypeIndex: 1, // promote.advertise.types[1] là gói nổi bật (= tier FEATURED)
   // Bảng minh hoạ — số liệu mẫu, không phải thật
   reportExampleRows: [['Example AI', '1,200', '500', '1,700', '2,100', '60', '850,000']],

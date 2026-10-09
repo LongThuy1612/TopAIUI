@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Category, ToolsResponse } from '~/types'
 import { advertise } from '~/data/promote'
+import { PUBLIC_LIMITS } from '#shared/research'
 
 const { t, locale } = useI18n()
 const route = useRoute()
@@ -22,9 +23,12 @@ const filtersOpen = ref(false)
 
 watch([pricingFilter, sortBy, searchQuery, slug], () => { page.value = 1 })
 
+const { authHeaders, token } = useAuth()
 const [{ data: categories }, { data: toolsRes }] = await Promise.all([
   useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', {
+    // Deeper pages carry the login token: guests stop at PUBLIC_LIMITS.guestListTools tools.
+    headers: computed(() => (page.value > 1 ? authHeaders() : {})),
     query: computed(() => ({
       category: isAll.value ? undefined : slug.value,
       pricing: pricingFilter.value === 'all' ? undefined : pricingFilter.value,
@@ -51,7 +55,15 @@ const tools = computed(() => toolsRes.value?.items ?? [])
 const showAds = computed(() => page.value === 1 && pricingFilter.value === 'all')
 const items = computed(() => (showAds.value ? feed(tools.value) : tools.value.map(tool => ({ key: tool.slug, tool, ad: undefined }))))
 const total = computed(() => toolsRes.value?.total ?? 0)
-const pageCount = computed(() => toolsRes.value?.pageCount ?? 1)
+// Guests can't page past PUBLIC_LIMITS.guestListTools tools (the server returns nothing
+// there), so they don't get those page numbers either. Decided after mount: the login
+// token only exists in the browser, and the server-rendered page is a guest's.
+const mounted = ref(false)
+onMounted(() => { mounted.value = true })
+const pageCount = computed(() => {
+  const all = toolsRes.value?.pageCount ?? 1
+  return mounted.value && token.value ? all : Math.min(all, Math.ceil(PUBLIC_LIMITS.guestListTools / 24))
+})
 
 useSeoMeta({
   title: () => isAll.value ? 'All AI Tools — TopAICollection' : `${activeCategory.value?.name ?? slug.value} AI Tools — TopAICollection`

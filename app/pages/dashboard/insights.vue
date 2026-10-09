@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { FILTER_RANK, type FilterLevel } from '#shared/research'
+
 const { t, locale } = useI18n()
-const { authHeaders } = useAuth()
+const { authHeaders, isAdmin } = useAuth()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 interface InsightItem {
@@ -16,6 +18,8 @@ interface InsightItem {
   trend: (number | null)[]
   avgVisitDuration: number | null
   bounceRate: number | null
+  // No Data Credits left for this row: it comes without any figures.
+  locked: boolean
 }
 
 interface InsightsResponse {
@@ -25,6 +29,9 @@ interface InsightsResponse {
   page: number
   pageCount: number
   items: InsightItem[]
+  // This month's Data Credits after loading the page (null for admins: not charged).
+  credits: { used: number; limit: number; charged: number } | null
+  categories: { slug: string; name: string }[]
 }
 
 type SortOption = 'visits-desc' | 'visits-asc' | 'growth-desc' | 'growthRate-desc' | 'growthRate-asc'
@@ -52,8 +59,31 @@ watch(search, (value) => {
 })
 onBeforeUnmount(() => { if (searchTimer) clearTimeout(searchTimer) })
 
+// Plan-gated filters (server/utils/insights.ts): advanced = category, visits range,
+// growth-rate range; full = + max bounce rate, min visit duration, min pages per visit.
+// Locked ones open the Upgrade modal instead; the server refuses them anyway.
+const { data: myPlan } = useResearchPlan()
+const filterLevel = computed<FilterLevel>(() => myPlan.value?.filters ?? 'basic')
+const can = (level: FilterLevel) => FILTER_RANK[filterLevel.value] >= FILTER_RANK[level]
+const filters = reactive({
+  category: '', minVisits: '', maxVisits: '', minGrowthRate: '', maxGrowthRate: '',
+  maxBounceRate: '', minDuration: '', minPagesPerVisit: ''
+})
+// Typing in a number field: wait for a pause, like the search box.
+const appliedFilters = ref({ ...filters })
+let filterTimer: ReturnType<typeof setTimeout> | null = null
+watch(filters, () => {
+  if (filterTimer) clearTimeout(filterTimer)
+  filterTimer = setTimeout(() => { appliedFilters.value = { ...filters } }, 400)
+}, { deep: true })
+onBeforeUnmount(() => { if (filterTimer) clearTimeout(filterTimer) })
+const showFilters = ref(false)
+const activeFilterCount = computed(() => Object.values(appliedFilters.value).filter(Boolean).length)
+function clearFilters() { Object.keys(filters).forEach(k => { (filters as Record<string, string>)[k] = '' }) }
+const filterQuery = computed(() => Object.fromEntries(Object.entries(appliedFilters.value).filter(([, v]) => v !== '')))
+
 // Any filter change starts again from the first page.
-watch([month, sortOption, debouncedSearch, locale], () => { page.value = 1 })
+watch([month, sortOption, debouncedSearch, locale, appliedFilters], () => { page.value = 1 })
 
 const { data, pending, error } = await useFetch<InsightsResponse>('/api/insights', {
   headers: authHeaders(),
@@ -66,12 +96,28 @@ const { data, pending, error } = await useFetch<InsightsResponse>('/api/insights
       dir,
       page: page.value,
       limit: PAGE_SIZE,
-      locale: locale.value
+      locale: locale.value,
+      ...filterQuery.value
     }
   })
 })
 
+// Same month + filters for the statistics panel. The month goes through its own computed:
+// a primitive that only changes with the month, so paging the list (a new `data`) doesn't
+// rebuild the query and refetch the statistics.
+const shownMonth = computed(() => data.value?.month ?? undefined)
+const statsQuery = computed(() => ({ month: shownMonth.value, q: debouncedSearch.value || undefined, locale: locale.value, ...filterQuery.value }))
+
 const items = computed(() => data.value?.items ?? [])
+// Rows that can be selected / exported: the ones the user has paid credits for.
+const openItems = computed(() => items.value.filter(i => !i.locked))
+const lockedCount = computed(() => items.value.length - openItems.value.length)
+const credits = computed(() => data.value?.credits ?? null)
+const nfCredits = computed(() => new Intl.NumberFormat(locale.value))
+const upgradeModalOpen = useState('upgrade-modal-open', () => false)
+// Credits were spent: the sidebar's quota bar shows the new figure. Watching each response
+// (not the `charged` number, which stays 10 → 10 from one page to the next).
+watch(data, (d) => { if (d?.credits?.charged) refreshNuxtData('my-plan') })
 const months = computed(() => data.value?.months ?? [])
 const pageCount = computed(() => data.value?.pageCount ?? 0)
 // From the response, not the page ref: while the next page loads the old rows
@@ -83,7 +129,7 @@ const rankOffset = computed(() => ((data.value?.page ?? 1) - 1) * PAGE_SIZE)
 // otherwise an export would label old figures with the new month.
 const selected = ref<Map<string, InsightItem>>(new Map())
 watch([month, locale], () => { selected.value = new Map() })
-const allOnPageSelected = computed(() => items.value.length > 0 && items.value.every(i => selected.value.has(i.slug)))
+const allOnPageSelected = computed(() => openItems.value.length > 0 && openItems.value.every(i => selected.value.has(i.slug)))
 
 function toggleRow(item: InsightItem) {
   const next = new Map(selected.value)
@@ -94,8 +140,8 @@ function toggleRow(item: InsightItem) {
 
 function togglePage() {
   const next = new Map(selected.value)
-  if (allOnPageSelected.value) items.value.forEach(i => next.delete(i.slug))
-  else items.value.forEach(i => next.set(i.slug, i))
+  if (allOnPageSelected.value) openItems.value.forEach(i => next.delete(i.slug))
+  else openItems.value.forEach(i => next.set(i.slug, i))
   selected.value = next
 }
 
@@ -112,37 +158,39 @@ function bulkOpen() {
   if (blocked) alert(t('websiteInsights.popupBlocked'))
 }
 
-function csvCell(value: unknown) {
-  let s = value === null || value === undefined ? '' : String(value)
-  // Tool names are user-submitted: text starting with = + - @ would run as a
-  // formula when the file is opened in Excel / Sheets, so neutralise it.
-  if (typeof value === 'string' && /^[=+\-@\t\r]/.test(s)) s = `'${s}`
-  return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
-}
-
-// Exports the selected rows, or the current page when nothing is selected.
-function exportCsv() {
-  const rows = selected.value.size ? [...selected.value.values()] : items.value
-  const header = ['Tool', 'Domain', 'Month', 'Monthly Visits', 'Growth', 'Growth Rate (%)', 'Categories', 'Avg Visit Duration (s)', 'Bounce Rate (%)']
-  const lines = rows.map(r => [
-    r.name, r.domain, data.value?.month, Math.round(r.monthlyVisits),
-    r.growth === null ? '' : Math.round(r.growth),
-    // Rounded as numbers, not toFixed() strings: csvCell would otherwise treat
-    // a negative rate ("-10.14") as text and prefix it.
-    r.growthRate === null ? '' : Math.round(r.growthRate * 100) / 100,
-    r.categories.join('; '),
-    r.avgVisitDuration === null ? '' : Math.round(r.avgVisitDuration),
-    r.bounceRate === null ? '' : Math.round(r.bounceRate * 100) / 100
-  ].map(csvCell).join(','))
-  // BOM so Excel reads UTF-8 names correctly.
-  const blob = new Blob([String.fromCharCode(0xFEFF) + [header.join(','), ...lines].join('\n')], { type: 'text/csv;charset=utf-8' })
-  const url = URL.createObjectURL(blob)
-  const a = document.createElement('a')
-  a.href = url
-  a.download = `website-insights-${data.value?.month ?? 'export'}.csv`
-  a.click()
-  // Revoking in the same tick can cancel the download in Firefox / Safari.
-  setTimeout(() => URL.revokeObjectURL(url), 1000)
+// Exports the selected rows, or the current page when nothing is selected. Built on the
+// server (POST /api/insights/export), which checks the rows are unlocked and spends the
+// plan's export quota (rows per export, rows per month).
+const exporting = ref(false)
+const exportError = ref('')
+async function exportCsv() {
+  const rows = selected.value.size ? [...selected.value.values()] : openItems.value
+  if (!rows.length || !data.value?.month || exporting.value) return
+  exporting.value = true
+  exportError.value = ''
+  try {
+    const blob = await $fetch<Blob>('/api/insights/export', {
+      method: 'POST',
+      headers: authHeaders(),
+      body: { month: data.value.month, slugs: rows.map(r => r.slug), locale: locale.value },
+      responseType: 'blob'
+    })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `website-insights-${data.value.month}.csv`
+    a.click()
+    // Revoking in the same tick can cancel the download in Firefox / Safari.
+    setTimeout(() => URL.revokeObjectURL(url), 1000)
+    refreshNuxtData('my-plan')
+  } catch (e: any) {
+    // The error body of a blob request arrives as a Blob too.
+    let message = e?.data?.message
+    if (!message && e?.data instanceof Blob) { try { message = JSON.parse(await e.data.text()).message } catch {} }
+    exportError.value = message || t('websiteInsights.exportError')
+  } finally {
+    exporting.value = false
+  }
 }
 
 function formatCompact(n: number) {
@@ -189,9 +237,21 @@ useSeoMeta({
 
 <template>
   <div>
-    <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900">
-      <span>📈</span> {{ t('websiteInsights.title') }}
-    </h1>
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900">
+        <span>📈</span> {{ t('websiteInsights.title') }}
+      </h1>
+      <p v-if="credits" class="text-sm text-ink-600">
+        {{ t('websiteInsights.creditsThisMonth') }}: <strong class="text-ink-900">{{ nfCredits.format(credits.used) }}/{{ nfCredits.format(credits.limit) }}</strong>
+      </p>
+    </div>
+
+    <div v-if="lockedCount && !isAdmin" class="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-ink-900">
+      <span>{{ t('websiteInsights.outOfCredits', { n: lockedCount }) }}</span>
+      <button type="button" class="rounded-lg bg-brand-500 px-4 py-2 font-semibold text-white hover:bg-brand-600" @click="upgradeModalOpen = true">
+        {{ t('admin.upgrade') }}
+      </button>
+    </div>
 
     <div class="mt-5 flex flex-wrap items-center gap-3">
       <select :value="month || data?.month || ''" class="rounded-lg border border-ink-200 px-3 py-2 text-sm font-semibold text-ink-900 outline-none focus:border-brand-400" @change="month = ($event.target as HTMLSelectElement).value">
@@ -210,6 +270,43 @@ useSeoMeta({
       </div>
     </div>
 
+    <div class="mt-3">
+      <button type="button" class="text-sm font-semibold text-ink-700 hover:text-brand-600" @click="showFilters = !showFilters">
+        ⚙ {{ t('websiteInsights.advancedFilters') }}<template v-if="activeFilterCount"> ({{ activeFilterCount }})</template> {{ showFilters ? '▴' : '▾' }}
+      </button>
+      <div v-if="showFilters" class="mt-3 grid grid-cols-1 gap-3 rounded-xl border border-ink-100 p-4 text-sm sm:grid-cols-2 lg:grid-cols-4">
+        <template v-for="f in [
+          { key: 'category', level: 'advanced' as FilterLevel, kind: 'select' },
+          { key: 'minVisits', level: 'advanced' as FilterLevel, kind: 'number' },
+          { key: 'maxVisits', level: 'advanced' as FilterLevel, kind: 'number' },
+          { key: 'minGrowthRate', level: 'advanced' as FilterLevel, kind: 'number' },
+          { key: 'maxGrowthRate', level: 'advanced' as FilterLevel, kind: 'number' },
+          { key: 'maxBounceRate', level: 'full' as FilterLevel, kind: 'number' },
+          { key: 'minDuration', level: 'full' as FilterLevel, kind: 'number' },
+          { key: 'minPagesPerVisit', level: 'full' as FilterLevel, kind: 'number' }
+        ]" :key="f.key">
+          <label class="block">
+            <span class="mb-1 flex items-center gap-1 text-xs font-semibold text-ink-600">
+              <span v-if="!can(f.level)">🔒</span>{{ t(`websiteInsights.filter.${f.key}`) }}
+            </span>
+            <div v-if="!can(f.level)" class="cursor-pointer rounded-lg border border-dashed border-ink-200 px-3 py-2 text-ink-400 hover:border-brand-300 hover:text-brand-600" @click="upgradeModalOpen = true">
+              {{ t(f.level === 'full' ? 'websiteInsights.filterNeedsFull' : 'websiteInsights.filterNeedsAdvanced') }}
+            </div>
+            <select v-else-if="f.kind === 'select'" v-model="(filters as Record<string, string>)[f.key]" class="w-full rounded-lg border border-ink-200 px-3 py-2 outline-none focus:border-brand-400">
+              <option value="">{{ t('websiteInsights.filter.anyCategory') }}</option>
+              <option v-for="c in data?.categories ?? []" :key="c.slug" :value="c.slug">{{ c.name }}</option>
+            </select>
+            <input v-else v-model="(filters as Record<string, string>)[f.key]" type="number" class="w-full rounded-lg border border-ink-200 px-3 py-2 outline-none focus:border-brand-400">
+          </label>
+        </template>
+        <div class="flex items-end sm:col-span-2 lg:col-span-4">
+          <button type="button" class="text-sm font-semibold text-ink-500 hover:text-brand-600" :disabled="!activeFilterCount" @click="clearFilters">{{ t('websiteInsights.clearFilters') }}</button>
+        </div>
+      </div>
+    </div>
+
+    <InsightsStats :query="statsQuery" :level="myPlan?.stats ?? 'none'" @upgrade="upgradeModalOpen = true" />
+
     <div class="mt-3 flex flex-wrap items-center justify-between gap-3">
       <button
         type="button"
@@ -226,20 +323,24 @@ useSeoMeta({
         <button
           type="button"
           class="rounded-lg bg-ink-900 px-3 py-2 text-sm font-semibold text-white hover:bg-ink-800 disabled:cursor-not-allowed disabled:opacity-40"
-          :disabled="!items.length && !selected.size"
+          :disabled="(!openItems.length && !selected.size) || exporting"
           @click="exportCsv"
         >
-          {{ t('websiteInsights.export') }}
+          {{ exporting ? t('admin.upgradeModal.working') : t('websiteInsights.export') }}
         </button>
       </div>
     </div>
+    <p v-if="myPlan" class="mt-2 text-right text-xs text-ink-500">
+      {{ t('websiteInsights.exportQuota', { used: nfCredits.format(myPlan.usage.exportRows.used), limit: nfCredits.format(myPlan.usage.exportRows.limit), per: nfCredits.format(myPlan.usage.exportRows.perRequest) }) }}
+    </p>
+    <p v-if="exportError" class="mt-2 text-right text-sm text-red-600">{{ exportError }}</p>
 
     <div class="mt-5 overflow-x-auto rounded-xl border border-ink-100">
       <table class="w-full min-w-[1100px] text-left text-sm">
         <thead class="border-b border-ink-100 text-xs font-bold uppercase tracking-wide text-ink-900">
           <tr>
             <th class="w-10 px-4 py-3">
-              <input type="checkbox" class="h-4 w-4 rounded border-ink-300" :checked="allOnPageSelected" :disabled="!items.length" @change="togglePage">
+              <input type="checkbox" class="h-4 w-4 rounded border-ink-300" :checked="allOnPageSelected" :disabled="!openItems.length" @change="togglePage">
             </th>
             <th class="w-10 px-2 py-3">#</th>
             <th class="px-4 py-3">{{ t('websiteInsights.colTool') }}</th>
@@ -253,6 +354,24 @@ useSeoMeta({
         </thead>
         <tbody :class="pending && 'opacity-50'">
           <tr v-for="(item, i) in items" :key="item.slug" class="border-t border-ink-100 hover:bg-ink-100/30">
+            <template v-if="item.locked">
+              <td class="px-4 py-4"></td>
+              <td class="px-2 py-4 text-ink-400">{{ rankOffset + i + 1 }}</td>
+              <td colspan="7" class="px-4 py-4">
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex select-none items-center gap-2.5 blur-[3px]" aria-hidden="true">
+                    <span class="h-10 w-10 shrink-0 rounded-full bg-ink-200"></span>
+                    <span class="h-3 w-40 rounded bg-ink-200"></span>
+                    <span class="ml-16 h-3 w-24 rounded bg-ink-200"></span>
+                    <span class="ml-16 h-3 w-20 rounded bg-ink-200"></span>
+                  </div>
+                  <button v-if="!isAdmin" type="button" class="shrink-0 text-sm font-semibold text-brand-600 hover:text-brand-700" @click="upgradeModalOpen = true">
+                    🔒 {{ t('websiteInsights.unlock') }}
+                  </button>
+                </div>
+              </td>
+            </template>
+            <template v-else>
             <td class="px-4 py-4">
               <input type="checkbox" class="h-4 w-4 rounded border-ink-300" :checked="selected.has(item.slug)" @change="toggleRow(item)">
             </td>
@@ -318,11 +437,12 @@ useSeoMeta({
             <td class="px-4 py-4">
               <NuxtLink :to="`/tools/${item.slug}`" class="text-sm font-semibold text-brand-600 hover:text-brand-700">{{ t('websiteInsights.view') }}</NuxtLink>
             </td>
+            </template>
           </tr>
         </tbody>
       </table>
 
-      <div v-if="error" class="py-16 text-center text-sm text-red-600">{{ t('websiteInsights.loadError') }}</div>
+      <div v-if="error" class="py-16 text-center text-sm text-red-600">{{ error.data?.message || t('websiteInsights.loadError') }}</div>
       <div v-else-if="pending && !items.length" class="py-16 text-center text-sm text-ink-400">{{ t('websiteInsights.loading') }}</div>
       <div v-else-if="!items.length" class="py-16 text-center text-sm text-ink-900">{{ t('websiteInsights.noResults') }}</div>
     </div>

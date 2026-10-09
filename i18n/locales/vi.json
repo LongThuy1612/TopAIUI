@@ -216,19 +216,35 @@
         "enterprise": "Thiết kế cho các công ty đầu tư dựa trên dữ liệu và doanh nghiệp quy mô lớn."
       },
       "feature": {
-        "credits": "Data Credits",
-        "queries": "Lượt truy vấn Social Listening",
-        "filtering": "Bộ lọc nâng cao",
-        "export": "Xuất dữ liệu",
-        "statistics": "Thống kê dữ liệu cơ bản"
+        "credits": "Data Credits / tháng",
+        "queries": "query Social Listening đang hoạt động",
+        "filtering": "Lọc nâng cao",
+        "export": "dòng xuất / tháng",
+        "statistics": "Thống kê cơ bản",
+        "filteringFull": "Toàn bộ bộ lọc nâng cao",
+        "statisticsDeep": "Thống kê chuyên sâu"
       },
       "faq": {
         "title": "Câu hỏi thường gặp",
         "q1": {
           "question": "\"Data Credits\" là gì?",
-          "answer": "Data Credits là đơn vị bạn dùng để thực hiện nghiên cứu trên nền tảng của chúng tôi. Chúng được tiêu thụ theo các cách sau:\n1. Sử dụng dữ liệu: 1 credit được dùng cho mỗi dòng dữ liệu tải lên trang \"Insights\" hoặc \"Analysis\".\n2. Xuất dữ liệu: 1 credit được dùng cho mỗi dòng dữ liệu xuất ra file CSV hoặc Excel.\n3. Miễn phí: truy vấn Social Listening không tiêu tốn Data Credits.\nLưu ý: Credits sẽ reset vào đầu mỗi chu kỳ thanh toán hàng tháng. Credits chưa dùng sẽ không được cộng dồn sang kỳ sau."
+          "answer": "Data Credits là đơn vị bạn dùng để nghiên cứu trên nền tảng. Credit được tính như sau:\n1. Xem dữ liệu: mỗi dòng dữ liệu tải trên trang \"Insights\" tốn 1 credit. Xem lại cùng dòng đó trong cùng tháng thì không tốn thêm.\n2. Xuất dữ liệu: bạn xuất được các dòng đã tải mà không tốn thêm credit, trong hạn mức xuất của gói (số dòng mỗi lần và mỗi tháng).\n3. Miễn phí: query Social Listening không tốn Data Credits; gói của bạn giới hạn số query hoạt động cùng lúc.\nLưu ý: Credit và hạn mức xuất được làm mới mỗi tháng (kể cả gói năm). Credit chưa dùng không được cộng dồn."
         }
-      }
+      },
+      "currentPlan": "Gói hiện tại",
+      "upgradeTo": "Nâng cấp",
+      "downgradeTo": "Hạ gói",
+      "switchTo": "Chuyển",
+      "working": "Đang xử lý…",
+      "error": "Có lỗi xảy ra. Vui lòng thử lại.",
+      "confirmChange": "Chuyển sang gói {plan}? Phần chênh lệch được tính (hoặc hoàn) ngay.",
+      "confirmCancel": "Huỷ gói? Bạn vẫn dùng được đến {date}, sau đó chuyển về gói Free.",
+      "renewsOn": "Gia hạn vào {date}",
+      "endsOn": "Kết thúc vào {date}",
+      "pastDue": "Thanh toán thất bại — vui lòng cập nhật thẻ.",
+      "manageBilling": "Quản lý thanh toán",
+      "resume": "Giữ gói",
+      "cancelPlan": "Huỷ gói"
     },
     "paymentInvoice": "Thanh toán & Hóa đơn",
     "feedback": "Phản hồi",
@@ -350,7 +366,8 @@
       "reject": "Từ chối & hoàn tiền",
       "reasonPlaceholder": "Lý do từ chối — chủ tool sẽ thấy",
       "hint": "Áp dụng sẽ ghi thay đổi lên trang công khai và dịch lại. Từ chối sẽ hoàn tiền qua Stripe."
-    }
+    },
+    "managePlan": "Quản lý gói"
   },
   "hero": {
     "titlePrefix": "Khám phá những",
@@ -628,7 +645,38 @@
     "sortGrowthRateAsc": "Tốc độ tăng trưởng: thấp → cao",
     "loading": "Đang tải…",
     "loadError": "Không tải được dữ liệu. Vui lòng thử lại.",
-    "popupBlocked": "Trình duyệt đã chặn một số tab. Hãy cho phép cửa sổ bật lên cho trang này để mở tất cả."
+    "popupBlocked": "Trình duyệt đã chặn một số tab. Hãy cho phép cửa sổ bật lên cho trang này để mở tất cả.",
+    "creditsThisMonth": "Data Credits tháng này",
+    "outOfCredits": "Bạn đã dùng hết Data Credits của tháng này — {n} dòng trên trang đang bị khoá. Nâng cấp để xem.",
+    "unlock": "Nâng cấp để mở khoá",
+    "statsTitle": "Thống kê",
+    "statsLocked": "Thống kê theo tháng có ở các gói trả phí.",
+    "statTools": "Số công cụ",
+    "statVisits": "Tổng lượt truy cập",
+    "statGrowth": "Tăng trưởng lượt truy cập",
+    "statMedian": "Tăng trưởng trung vị",
+    "statTopGrowth": "Tăng nhanh nhất",
+    "statCategories": "Lượt truy cập theo danh mục",
+    "statTrend": "Tổng lượt truy cập 12 tháng",
+    "statDistribution": "Phân bố theo tăng trưởng",
+    "statCategoryGrowth": "Tăng trưởng theo danh mục",
+    "advancedFilters": "Bộ lọc",
+    "clearFilters": "Xoá bộ lọc",
+    "filterNeedsAdvanced": "Từ gói Starter",
+    "filterNeedsFull": "Gói Enterprise",
+    "exportQuota": "Xuất: {used}/{limit} dòng tháng này · tối đa {per} dòng mỗi lần",
+    "exportError": "Xuất thất bại. Vui lòng thử lại.",
+    "filter": {
+      "category": "Danh mục",
+      "anyCategory": "Mọi danh mục",
+      "minVisits": "Lượt truy cập tối thiểu",
+      "maxVisits": "Lượt truy cập tối đa",
+      "minGrowthRate": "Tăng trưởng tối thiểu (%)",
+      "maxGrowthRate": "Tăng trưởng tối đa (%)",
+      "maxBounceRate": "Tỷ lệ thoát tối đa (%)",
+      "minDuration": "Thời gian xem tối thiểu (giây)",
+      "minPagesPerVisit": "Số trang / lượt tối thiểu"
+    }
   },
   "myAIsPage": {
     "title": "My AIs",
@@ -730,7 +778,18 @@
     "loadError": "Không tải được hồ sơ. Vui lòng tải lại trang.",
     "emailHint": "Email đăng nhập không thể thay đổi tại đây.",
     "saved": "Đã lưu.",
-    "saveError": "Không lưu được. Vui lòng thử lại."
+    "saveError": "Không lưu được. Vui lòng thử lại.",
+    "quotaResets": "Hạn mức làm mới vào {date}",
+    "cardInStripe": "Lưu trên Stripe",
+    "endsOn": "Gói kết thúc",
+    "researchPlan": "Gói Research",
+    "invoiceStatuses": {
+      "paid": "Đã thanh toán",
+      "open": "Chưa thanh toán",
+      "uncollectible": "Thất bại",
+      "void": "Đã huỷ",
+      "draft": "Nháp"
+    }
   },
   "feedbackPage": {
     "title": "Phản hồi người dùng",
@@ -948,7 +1007,7 @@
           "badge": "Hiệu quả nhất",
           "title": "Vị trí nổi bật",
           "points": [
-            "Được chọn trước mọi chiến dịch tiêu chuẩn ở tất cả các vị trí trên.",
+            "Được hiển thị phần lớn thời gian ở mọi vị trí quảng cáo trên (khoảng 7/10 lượt xem), ưu tiên hơn chiến dịch tiêu chuẩn.",
             "Thanh tài trợ ở đầu hầu hết các trang, luân phiên giữa các nhà quảng cáo nổi bật.",
             "Số dư còn lại càng cao thì càng được hiển thị nhiều — nạp thêm bất cứ lúc nào.",
             "Được đội ngũ duyệt trước khi chạy. Mọi lượt nhấp quảng cáo đều dẫn thẳng đến website của bạn."
@@ -1300,5 +1359,37 @@
     "addClicksPrompt": "Cộng bao nhiêu click?",
     "emptyReview": "Không có gì chờ duyệt.",
     "empty": "Chưa có chiến dịch nào."
+  },
+  "socialQueries": {
+    "title": "Query của tôi",
+    "subtitle": "Theo dõi chủ đề trong các bài đăng mạng xã hội đã thu thập — tối đa 5 từ khoá mỗi query. Không tốn Data Credits.",
+    "usage": "{used}/{limit} đang hoạt động",
+    "new": "Mới",
+    "namePlaceholder": "Tên query, ví dụ AI Video",
+    "keywordsPlaceholder": "Từ khoá, cách nhau bằng dấu phẩy: AI video, text to video",
+    "keywordsHint": "{n}/{max} từ khoá",
+    "save": "Lưu",
+    "cancel": "Huỷ",
+    "paused": "Tạm dừng",
+    "newPosts": "{n} mới",
+    "results": "{n} bài",
+    "view": "Xem bài đăng",
+    "hide": "Ẩn",
+    "edit": "Sửa",
+    "pause": "Tạm dừng",
+    "resume": "Tiếp tục",
+    "delete": "Xoá",
+    "confirmDelete": "Xoá query \"{name}\"?",
+    "noResults": "Chưa có bài đăng nào khớp các từ khoá này.",
+    "loadMore": "Tải thêm",
+    "empty": "Chưa có query nào — tạo query để theo dõi một chủ đề.",
+    "none": "Query Social Listening có ở các gói trả phí.",
+    "error": "Có lỗi xảy ra. Vui lòng thử lại.",
+    "overLimit": "Vượt hạn mức gói"
+  },
+  "publicLimits": {
+    "login": "Đăng nhập để xem thêm",
+    "rankingTitle": "Bảng xếp hạng miễn phí hiển thị top {n}",
+    "rankingText": "Xem toàn bộ bảng xếp hạng, kèm lượt truy cập và tăng trưởng của mọi công cụ, với gói Research trả phí."
   }
 }

@@ -13,6 +13,9 @@ export default defineEventHandler(async (event) => {
     throw badRequest('At least one active admin is required')
   }
 
+  // A deleted account must not keep paying for a Research Plan.
+  await cancelSubscriptionsForDeletedUser(id)
+
   await prisma.user.update({
     where: { id },
     data: {

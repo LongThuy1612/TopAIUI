@@ -5,10 +5,9 @@ const props = defineProps<{
   categoryLabel?: string
   hoverGlow?: boolean
   // Sponsored slot: the row links straight to the advertiser (through the click counter)
-  // and carries the Sponsor badge. A tool that merely has a campaign, shown as an ordinary
-  // row, gets neither.
+  // and carries the Sponsor badge — otherwise it looks like any other row. A tool that
+  // merely has a campaign, shown as an ordinary row, gets neither.
   href?: string
-  sponsorTier?: 'STANDARD' | 'FEATURED'
 }>()
 
 const { t } = useI18n()
@@ -30,11 +29,7 @@ const rankStyle = computed(() => {
     :external="!!href"
     :target="href ? '_blank' : undefined"
     :rel="href ? 'sponsored nofollow noopener' : undefined"
-    :class="[
-      'group relative flex items-start gap-4 py-5',
-      hoverGlow && '-mx-3 overflow-hidden rounded-[14px] px-3 transition-colors hover:bg-[#FDFAFB]',
-      sponsorTier === 'FEATURED' && '-mx-3 rounded-[14px] bg-brand-50/50 px-3 ring-1 ring-brand-100'
-    ]"
+    :class="['group relative flex items-start gap-4 py-5', hoverGlow && '-mx-3 overflow-hidden rounded-[14px] px-3 transition-colors hover:bg-[#FDFAFB]']"
   >
     <img
       v-if="hoverGlow && tool.logoUrl"
@@ -53,8 +48,7 @@ const rankStyle = computed(() => {
     </div>
     <span
       v-else
-      class="relative inline-flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] text-base font-extrabold"
-      :class="href ? 'bg-ink-900 text-white' : 'bg-brand-50 text-brand-500'"
+      class="relative inline-flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] bg-brand-50 text-base font-extrabold text-brand-500"
     >
       {{ initials }}
     </span>

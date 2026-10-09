@@ -91,7 +91,7 @@ const loadSocialRows = defineCachedFunction(async (locale: string): Promise<Soci
 })
 
 export default defineEventHandler(async (event) => {
-  requireUser(event)
+  await requireActiveUser(event)
   const query = getQuery(event)
   const locale = normalizeLocale(query.locale)
   const rows = await loadSocialRows(locale)

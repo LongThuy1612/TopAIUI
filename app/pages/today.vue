@@ -20,7 +20,10 @@ const items = computed(() => feed(tools.value))
 
 watch(locale, () => { page.value = 1 })
 
+// Deeper pages carry the login token: guests stop at PUBLIC_LIMITS.guestListTools tools.
+const { authHeaders } = useAuth()
 const { data: toolsRes, error: toolsError, refresh: refreshTools } = await useFetch<ToolsResponse>('/api/tools', {
+  headers: computed(() => (page.value > 1 ? authHeaders() : {})),
   query: computed(() => ({
     today: 'true',
     page: page.value,
@@ -32,7 +35,7 @@ const { data: toolsRes, error: toolsError, refresh: refreshTools } = await useFe
 watch(toolsRes, (res) => {
   if (!res) return
   tools.value = page.value === 1 ? res.items : [...tools.value, ...res.items]
-  pageCount.value = res.pageCount
+  pageCount.value = res.loginRequired ? page.value : res.pageCount
   loadingMore.value = false
 }, { immediate: true })
 

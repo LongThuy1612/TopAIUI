@@ -114,6 +114,8 @@ useSeoMeta({
     <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900">
       <span>💬</span> {{ t('socialListening.title') }}
     </h1>
+
+    <SocialQueries />
     <p class="mt-1 text-sm text-ink-900">{{ t('socialListening.subtitle') }}</p>
 
     <div class="mt-5 flex flex-wrap items-center gap-3">

@@ -133,19 +133,35 @@
         "enterprise": "Designed for data-driven investment firms and large-scale enterprises."
       },
       "feature": {
-        "credits": "Data Credits",
-        "queries": "Social Listening Query",
-        "filtering": "Advanced Filtering",
-        "export": "Data Export",
-        "statistics": "Basic data statistics"
+        "credits": "Data Credits / month",
+        "queries": "active Social Listening queries",
+        "filtering": "Advanced filtering",
+        "export": "export rows / month",
+        "statistics": "Basic statistics",
+        "filteringFull": "All advanced filters",
+        "statisticsDeep": "In-depth statistics"
       },
       "faq": {
         "title": "FAQ",
         "q1": {
           "question": "What are \"Data Credits\"?",
-          "answer": "Data Credits are the currency you use to conduct research on our platform. They are consumed in the following ways:\n1. Data Usage: 1 credit is used for each row of data loaded on our \"Insights\" or \"Analysis\" pages.\n2. Exporting Data: 1 credit is used for each row of data exported to a CSV or Excel file.\n3. No Charge: Social Listening queries do not consume Data Credits.\nPlease note: Credits reset at the beginning of your billing cycle each month. Unused credits do not roll over."
+          "answer": "Data Credits are the currency you use to conduct research on our platform. They are consumed in the following ways:\n1. Data Usage: 1 credit is used for each row of data loaded on our \"Insights\" page. Loading the same row again in the same month is free.\n2. Exporting Data: you can export rows you have already loaded, without extra credits, up to your plan's export limit (rows per export and rows per month).\n3. No Charge: Social Listening queries do not consume Data Credits; your plan limits how many queries are active at once.\nPlease note: Credits and export rows reset every month (also on yearly plans). Unused credits do not roll over."
         }
-      }
+      },
+      "currentPlan": "Current plan",
+      "upgradeTo": "Upgrade",
+      "downgradeTo": "Downgrade",
+      "switchTo": "Switch",
+      "working": "Please wait…",
+      "error": "Something went wrong. Please try again.",
+      "confirmChange": "Switch to {plan}? The prorated difference is charged (or credited) right away.",
+      "confirmCancel": "Cancel your plan? You keep it until {date}, then move to Free.",
+      "renewsOn": "Renews on {date}",
+      "endsOn": "Ends on {date}",
+      "pastDue": "Payment failed — please update your card.",
+      "manageBilling": "Manage billing",
+      "resume": "Keep my plan",
+      "cancelPlan": "Cancel plan"
     },
     "business": "Business",
     "myAIs": "My AIs",
@@ -350,7 +366,8 @@
       "reject": "Reject & refund",
       "reasonPlaceholder": "Reason for rejecting — shown to the owner",
       "hint": "Applying writes the changes to the live listing and re-translates it. Rejecting refunds the payment through Stripe."
-    }
+    },
+    "managePlan": "Manage plan"
   },
   "hero": {
     "titlePrefix": "Discover The Best",
@@ -496,7 +513,38 @@
     "sortGrowthRateAsc": "Growth rate: low → high",
     "loading": "Loading…",
     "loadError": "Could not load insights. Please try again.",
-    "popupBlocked": "Your browser blocked some tabs. Allow pop-ups for this site to open them all."
+    "popupBlocked": "Your browser blocked some tabs. Allow pop-ups for this site to open them all.",
+    "creditsThisMonth": "Data Credits this month",
+    "outOfCredits": "You are out of Data Credits for this month — {n} row(s) on this page are locked. Upgrade to see them.",
+    "unlock": "Upgrade to unlock",
+    "statsTitle": "Statistics",
+    "statsLocked": "Monthly statistics come with paid plans.",
+    "statTools": "Tools",
+    "statVisits": "Total visits",
+    "statGrowth": "Visits growth",
+    "statMedian": "Median growth",
+    "statTopGrowth": "Fastest growing",
+    "statCategories": "Visits by category",
+    "statTrend": "Total visits, last 12 months",
+    "statDistribution": "Tools by growth",
+    "statCategoryGrowth": "Growth by category",
+    "advancedFilters": "Filters",
+    "clearFilters": "Clear filters",
+    "filterNeedsAdvanced": "Starter plan or higher",
+    "filterNeedsFull": "Enterprise plan",
+    "exportQuota": "Export: {used}/{limit} rows this month · up to {per} per export",
+    "exportError": "Export failed. Please try again.",
+    "filter": {
+      "category": "Category",
+      "anyCategory": "Any category",
+      "minVisits": "Min monthly visits",
+      "maxVisits": "Max monthly visits",
+      "minGrowthRate": "Min growth rate (%)",
+      "maxGrowthRate": "Max growth rate (%)",
+      "maxBounceRate": "Max bounce rate (%)",
+      "minDuration": "Min visit duration (s)",
+      "minPagesPerVisit": "Min pages per visit"
+    }
   },
   "myAIsPage": {
     "title": "My AIs",
@@ -598,7 +646,18 @@
     "loadError": "Could not load your profile. Please reload the page.",
     "emailHint": "Your sign-in email can’t be changed here.",
     "saved": "Saved.",
-    "saveError": "Could not save. Please try again."
+    "saveError": "Could not save. Please try again.",
+    "quotaResets": "Quota resets on {date}",
+    "cardInStripe": "Saved in Stripe",
+    "endsOn": "Plan ends on",
+    "researchPlan": "Research Plan",
+    "invoiceStatuses": {
+      "paid": "Paid",
+      "open": "Unpaid",
+      "uncollectible": "Failed",
+      "void": "Void",
+      "draft": "Draft"
+    }
   },
   "feedbackPage": {
     "title": "User Feedback",
@@ -948,7 +1007,7 @@
           "badge": "Most effective",
           "title": "Featured placement",
           "points": [
-            "Picked before any standard campaign for every ad spot above.",
+            "Shown most of the time in every ad spot above (about 7 in 10 views), ahead of standard campaigns.",
             "Sponsor bar at the top of most pages, rotated between featured advertisers.",
             "The higher your remaining balance, the more often you are shown — top up anytime.",
             "Checked by our team before going live. Every ad click goes straight to your website."
@@ -1300,5 +1359,37 @@
     "addClicksPrompt": "How many clicks to add?",
     "emptyReview": "Nothing waiting for review.",
     "empty": "No campaigns yet."
+  },
+  "socialQueries": {
+    "title": "My queries",
+    "subtitle": "Track topics across collected social posts — up to 5 keywords per query. No Data Credits are used.",
+    "usage": "{used}/{limit} active",
+    "new": "New",
+    "namePlaceholder": "Query name, e.g. AI Video",
+    "keywordsPlaceholder": "Keywords, comma-separated: AI video, text to video",
+    "keywordsHint": "{n}/{max} keywords",
+    "save": "Save",
+    "cancel": "Cancel",
+    "paused": "Paused",
+    "newPosts": "{n} new",
+    "results": "{n} posts",
+    "view": "View posts",
+    "hide": "Hide",
+    "edit": "Edit",
+    "pause": "Pause",
+    "resume": "Resume",
+    "delete": "Delete",
+    "confirmDelete": "Delete the query \"{name}\"?",
+    "noResults": "No posts match these keywords yet.",
+    "loadMore": "Load more",
+    "empty": "No queries yet — create one to follow a topic.",
+    "none": "Social Listening queries come with paid plans.",
+    "error": "Something went wrong. Please try again.",
+    "overLimit": "Over plan limit"
+  },
+  "publicLimits": {
+    "login": "Log in to see more",
+    "rankingTitle": "The free ranking shows the top {n}",
+    "rankingText": "See the whole ranking, with every tool's traffic and growth, on a paid Research Plan."
   }
 }

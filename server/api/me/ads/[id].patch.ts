@@ -1,7 +1,7 @@
 // PATCH /api/me/ads/<id> { landingUrl?: string | null, paused?: boolean }
 // The owner changes the landing URL (may need a review again) or pauses / resumes.
 export default defineEventHandler(async (event) => {
-  const userId = requireUser(event)
+  const userId = await requireActiveUser(event)
   const body = await readBody<{ landingUrl?: unknown; paused?: unknown }>(event)
   const input: { landingUrl?: string | null; paused?: boolean } = {}
 

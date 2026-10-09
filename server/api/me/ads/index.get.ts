@@ -1,6 +1,6 @@
 // The logged-in user's ad campaigns (Dashboard → Advertise AI).
 export default defineEventHandler(async (event) => {
-  const userId = requireUser(event)
+  const userId = await requireActiveUser(event)
   const campaigns = await prisma.adCampaign.findMany({
     where: { userId },
     orderBy: { createdAt: 'desc' },

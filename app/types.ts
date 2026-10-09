@@ -156,6 +156,8 @@ export interface ToolsResponse {
   total: number
   page: number
   pageCount: number
+  /** A guest reached PUBLIC_LIMITS.guestListTools: the rest needs a login. */
+  loginRequired?: boolean
 }
 
 export interface ReviewsResponse {
@@ -265,6 +267,8 @@ export interface RankingResponse {
   total: number
   page: number
   pageCount: number
+  /** The list stops at this rank for this user (guest / Free plan); null = no limit. */
+  limitedTo?: number | null
 }
 
 export interface RankingFilters {

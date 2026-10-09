@@ -28,6 +28,19 @@ enum FeedbackType {
   OTHER
 }
 
+// Research Plan (Dashboard → Website Insights / Social Listening). Prices and quotas
+// live in code (like the promote prices); the DB only names the plan.
+enum ResearchPlan {
+  STARTER
+  PROFESSIONAL
+  ENTERPRISE
+}
+
+enum BillingInterval {
+  MONTH
+  YEAR
+}
+
 enum FeedbackStatus {
   NEW
   IN_PROGRESS
@@ -320,6 +333,10 @@ model User {
   toolUpdateRequests ToolUpdateRequest[]
   feedbacks     Feedback[]
   adCampaigns   AdCampaign[]
+  subscriptions Subscription[]
+  researchUsage ResearchUsage[]
+  subscriptionInvoices SubscriptionInvoice[]
+  socialQueries SocialQuery[]
 
   @@map("User")
 }
@@ -561,6 +578,9 @@ model ToolSocialFeed {
   stat ToolSocialStats @relation(fields: [statId], references: [id], onDelete: Cascade)
 
   @@index([statId])
+  // Social Listening queries search titles / descriptions with ILIKE '%keyword%'.
+  @@index([title(ops: raw("gin_trgm_ops"))], type: Gin, map: "tool_social_feeds_title_trgm_idx")
+  @@index([description(ops: raw("gin_trgm_ops"))], type: Gin, map: "tool_social_feeds_description_trgm_idx")
   @@map("tool_social_feeds")
 }
 
@@ -807,4 +827,121 @@ model AdClick {
   @@index([campaignId, ipHash, createdAt])
   @@index([campaignId, createdAt])
   @@map("AdClick")
+}
+
+// A paid Research Plan subscription, mirrored from Stripe (Stripe is the source of truth;
+// the webhook keeps this row in step). A user keeps one row per Stripe subscription, so
+// past ones stay as history; the current one is the newest whose status gives access
+// (active / trialing / past_due while Stripe retries). No row = the Free plan.
+// Separate from ads and promote orders, which are one-off payments (PromoteOrder).
+model Subscription {
+  id                   String          @id @default(cuid())
+  userId               String
+  user                 User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  plan                 ResearchPlan
+  interval             BillingInterval
+  // Stripe's own status, as is: incomplete | incomplete_expired | trialing | active |
+  // past_due | canceled | unpaid | paused
+  status               String
+  stripeSubscriptionId String          @unique
+  stripePriceId        String
+  currentPeriodStart   DateTime
+  currentPeriodEnd     DateTime
+  cancelAtPeriodEnd    Boolean         @default(false) // cancelled, runs until currentPeriodEnd
+  canceledAt           DateTime?
+  endedAt              DateTime?
+  createdAt            DateTime        @default(now())
+  updatedAt            DateTime        @updatedAt
+
+  invoices SubscriptionInvoice[]
+
+  // "The user's current subscription": by user, newest first, filtered on status.
+  @@index([userId, createdAt])
+  @@index([status, currentPeriodEnd])
+  @@map("Subscription")
+}
+
+// What one user may use and has used in one quota period: a billing period of their
+// subscription, or a calendar month on the Free plan. The limits are copied in when the
+// period starts, so a later price/quota change in code doesn't rewrite a running period;
+// an upgrade mid-period raises them in place.
+model ResearchUsage {
+  id                 String   @id @default(cuid())
+  userId             String
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  plan               String // FREE | STARTER | PROFESSIONAL | ENTERPRISE, at the time
+  periodStart        DateTime
+  periodEnd          DateTime
+  dataCreditsLimit   Int
+  dataCreditsUsed    Int      @default(0)
+  socialQueriesLimit Int
+  socialQueriesUsed  Int      @default(0) // unused: active SocialQuery rows are counted live
+  exportRowsLimit    Int      @default(0)
+  exportRowsUsed     Int      @default(0)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  items ResearchUsageItem[]
+
+  // One row per user and period; spending locks it, so parallel requests can't overspend.
+  @@unique([userId, periodStart])
+  @@index([userId, periodEnd])
+  @@map("ResearchUsage")
+}
+
+// One Stripe invoice of a subscription (first payment and every renewal), for
+// Dashboard → Payment & Invoice. Upserted by stripeInvoiceId, so a re-delivered webhook
+// can't add it twice.
+model SubscriptionInvoice {
+  id               String           @id @default(cuid())
+  userId           String
+  user             User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subscriptionId   String?
+  subscription     Subscription?    @relation(fields: [subscriptionId], references: [id], onDelete: SetNull)
+  stripeInvoiceId  String           @unique
+  amount           Int // cents, what was charged
+  currency         String           @default("usd")
+  status           String // Stripe invoice status: draft | open | paid | uncollectible | void
+  plan             ResearchPlan?
+  interval         BillingInterval?
+  periodStart      DateTime?
+  periodEnd        DateTime?
+  hostedInvoiceUrl String?
+  invoicePdf       String?
+  paidAt           DateTime?
+  createdAt        DateTime         @default(now())
+
+  @@index([userId, createdAt])
+  @@map("SubscriptionInvoice")
+}
+
+// A data row already paid for in a quota month (key e.g. "insights:2026-09:<tool slug>"):
+// loading it again in the same month costs nothing.
+model ResearchUsageItem {
+  id        String        @id @default(cuid())
+  usageId   String
+  usage     ResearchUsage @relation(fields: [usageId], references: [id], onDelete: Cascade)
+  key       String
+  createdAt DateTime      @default(now())
+
+  @@unique([usageId, key])
+  @@map("ResearchUsageItem")
+}
+
+// A Social Listening query: a saved topic (1–5 keywords) matched against the crawled
+// social posts (ToolSocialFeed title / description). Plans limit how many are active at
+// once; pausing or deleting one frees its slot. No Data Credits are spent on them.
+model SocialQuery {
+  id           String    @id @default(cuid())
+  userId       String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name         String
+  keywords     String[]
+  active       Boolean   @default(true)
+  lastViewedAt DateTime? // posts collected after this are "new"
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([userId, active])
+  @@map("SocialQuery")
 }

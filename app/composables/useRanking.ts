@@ -15,6 +15,11 @@ export async function useRanking(params: MaybeRefOrGetter<Record<string, string 
   const more = ref<RankingItem[]>([])
   const page = ref(1)
   const loadingMore = ref(false)
+  // Guests and Free users stop at a rank (server `limitedTo`): set once a page comes back
+  // past it. The server-rendered first page is a guest's, so a paid user's own limit is
+  // only known from their first loadMore() — which carries their login token.
+  const reachedLimit = ref<number | null>(null)
+  const { authHeaders } = useAuth()
   // Bumped on every filter change so a loadMore() still in flight for the
   // previous filter drops its result instead of appending it to the new list.
   let generation = 0
@@ -23,6 +28,7 @@ export async function useRanking(params: MaybeRefOrGetter<Record<string, string 
     more.value = []
     page.value = 1
     loadingMore.value = false
+    reachedLimit.value = null
   })
 
   const { data, pending } = await request
@@ -33,23 +39,24 @@ export async function useRanking(params: MaybeRefOrGetter<Record<string, string 
     const seen = new Set<string>()
     return [...(data.value?.items ?? []), ...more.value].filter(item => !seen.has(item.slug) && seen.add(item.slug))
   })
-  const hasMore = computed(() => page.value < (data.value?.pageCount ?? 1))
+  const hasMore = computed(() => reachedLimit.value === null && page.value < (data.value?.pageCount ?? 1))
 
   async function loadMore() {
     if (loadingMore.value || !hasMore.value) return
     const current = generation
     loadingMore.value = true
     try {
-      const res = await $fetch<RankingResponse>('/api/ranking', { query: { ...query.value, page: page.value + 1 } })
+      const res = await $fetch<RankingResponse>('/api/ranking', { query: { ...query.value, page: page.value + 1 }, headers: authHeaders() })
       if (current !== generation) return
       more.value.push(...res.items)
       page.value = res.page
+      if (res.limitedTo && !res.items.length) reachedLimit.value = res.limitedTo
     } finally {
       if (current === generation) loadingMore.value = false
     }
   }
 
-  return { data, items, pending, hasMore, loadingMore, loadMore }
+  return { data, items, pending, hasMore, loadingMore, loadMore, reachedLimit }
 }
 
 export function useRankingFilters() {
