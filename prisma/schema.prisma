@@ -337,6 +337,8 @@ model User {
   researchUsage ResearchUsage[]
   subscriptionInvoices SubscriptionInvoice[]
   socialQueries SocialQuery[]
+  articles      Article[]
+  postSubmissions PostSubmission[]
 
   @@map("User")
 }
@@ -386,6 +388,10 @@ model PromoteOrder {
   paidAt          DateTime?
   toolId          String?   // submit-ai: the Tool created when the order is paid; advertise: the advertised tool
   campaignId      String?   // advertise: the AdCampaign the clicks went to (refunded with it on rejection)
+  // guest-post: unused credits refunded by an admin (server/utils/creditRefunds.ts); the
+  // order turns REFUNDED once all of its credits are back.
+  refundedCredits Int       @default(0)
+  refundedAmount  Int       @default(0) // cents
 
   @@index([userId])
   @@index([toolId])
@@ -944,4 +950,66 @@ model SocialQuery {
 
   @@index([userId, active])
   @@map("SocialQuery")
+}
+
+// A public article under /ai-news: written by our editors (EDITORIAL) or a customer's paid
+// guest post (GUEST_POST, created when an admin publishes the submission). Content is
+// Markdown, rendered on display (server/utils/articles.ts) — so the link policy
+// (dofollow / sponsored) applies to every article at once.
+model Article {
+  id           String    @id @default(cuid())
+  slug         String    @unique
+  title        String
+  excerpt      String?
+  content      String    // Markdown
+  coverUrl     String?
+  kind         String    @default("EDITORIAL") // EDITORIAL | GUEST_POST
+  status       String    @default("DRAFT")     // DRAFT | PUBLISHED
+  authorId     String?
+  author       User?     @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  authorName   String?   // byline shown on the page
+  publishedAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  submissions  PostSubmission[] @relation("SubmissionArticle")
+
+  // /ai-news list: published, newest first.
+  @@index([status, publishedAt])
+  @@map("Article")
+}
+
+// A customer's paid request (Dashboard → Posts / Links), paid with User.postCredits:
+//   GUEST_POST (2 credits)  → their article, published by an admin as an Article
+//   LINK_INSERT (1 credit)  → their link placed by an admin in an existing Article
+// Credits are taken on submit; a rejection or a withdrawal gives them back.
+//   PENDING → PUBLISHED | REJECTED, or CHANGES_REQUESTED → (edited) PENDING …
+model PostSubmission {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type        String    // GUEST_POST | LINK_INSERT
+  status      String    @default("PENDING") // PENDING | CHANGES_REQUESTED | PUBLISHED | REJECTED | WITHDRAWN
+  credits     Int       // spent on submit, refunded on rejection / withdrawal
+  // guest post
+  title       String?
+  excerpt     String?
+  content     String?   // Markdown
+  coverUrl    String?
+  // link insert
+  targetUrl   String?
+  anchorText  String?
+  note        String?   // where / how to place it
+  // the article: requested (link insert) / where it ended up (both kinds)
+  articleId   String?
+  article     Article?  @relation("SubmissionArticle", fields: [articleId], references: [id], onDelete: SetNull)
+  adminNote   String?   // reason for a rejection / what to change
+  submittedAt DateTime  @default(now())
+  reviewedAt  DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([userId, createdAt])
+  @@index([status, submittedAt])
+  @@map("PostSubmission")
 }

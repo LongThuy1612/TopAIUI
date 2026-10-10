@@ -253,6 +253,9 @@ useSeoMeta({
               <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ money(row.order.amount, row.order.currency) }}</td>
               <td class="px-4 py-3">
                 <span :class="['whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold', orderStatusClass[row.order.status] ?? 'bg-ink-100 text-ink-500']">{{ t(`promote.orders.statuses.${row.order.status}`) }}</span>
+                <p v-if="row.order.refundedAmount > 0 && row.order.status !== 'REFUNDED'" class="mt-1 whitespace-nowrap text-xs text-sky-700">
+                  {{ t('promote.orders.partlyRefunded', { amount: money(row.order.refundedAmount, row.order.currency), credits: t('promote.orders.credits', row.order.refundedCredits) }) }}
+                </p>
               </td>
             </template>
             <template v-else>

@@ -5,7 +5,8 @@ import { advertise } from '~/data/promote'
 const { t, locale } = useI18n()
 
 const [{ data: newRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 5, newToday: 'true', locale: locale.value })) }),
+  // 8, not 5: up to 3 of them may be sponsored in the feed and are left out of Just Launched.
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 8, newToday: 'true', locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 15, today: 'true', locale: locale.value })) }),
   useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 100, locale: locale.value })) })
@@ -15,22 +16,21 @@ const newTools = computed(() => newRes.value?.items ?? [])
 const todayTools = computed(() => todayRes.value?.items ?? [])
 const allCategories = computed(() => categories.value ?? [])
 
+// Home sidebar fallback while there are no AI News articles yet.
+const topCategories = computed(() =>
+  [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 7)
+)
 const browseCategories = computed(() =>
   [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
 )
-// One ad request for the page, so no tool is advertised twice on it: slots 1–3 go into
-// the feed (positions 1, 4, 12), a 4th one tops the "Just Launched" block. A tool in an
-// ad slot isn't repeated in the organic lists.
-const { slots: adSlots, feed } = useAdSlots('home', { limit: advertise.slotPositions.length + 1 })
-const justLaunchedAd = computed(() => adSlots.value[advertise.slotPositions.length])
-const tabTools = computed(() => feed(todayTools.value.filter(tool => tool.slug !== justLaunchedAd.value?.tool.slug)).slice(0, 15))
-const advertisedSlugs = computed(() => new Set([
-  ...tabTools.value.flatMap(item => (item.ad ? [item.ad.tool.slug] : [])),
-  ...(justLaunchedAd.value ? [justLaunchedAd.value.tool.slug] : [])
-]))
+// Sponsored tools only go into the feed (positions 1, 4, 12) — "Just Launched" stays
+// organic. A tool in an ad slot isn't repeated in the organic lists.
+const { feed } = useAdSlots('home', { limit: advertise.slotPositions.length })
+const tabTools = computed(() => feed(todayTools.value).slice(0, 15))
+const advertisedSlugs = computed(() => new Set(tabTools.value.flatMap(item => (item.ad ? [item.ad.tool.slug] : []))))
 // First 5 tools of the /new page (same query and order), less the advertised ones.
 const justLaunched = computed(() =>
-  newTools.value.filter(tool => !advertisedSlugs.value.has(tool.slug)).slice(0, justLaunchedAd.value ? 4 : 5))
+  newTools.value.filter(tool => !advertisedSlugs.value.has(tool.slug)).slice(0, 5))
 const featuredHighlights = computed(() => topRatedRes.value?.items ?? [])
 
 function initialsOf(name: string) {
@@ -64,15 +64,8 @@ useSeoMeta({
       <div class="mx-auto grid max-w-[1440px] grid-cols-1 gap-5 lg:grid-cols-[260px_1fr_380px] lg:items-start">
 
         <aside class="flex min-w-0 flex-col gap-3 lg:order-1">
-          <SidebarToolItem
-            v-if="justLaunchedAd"
-            :tool="justLaunchedAd.tool"
-            :href="justLaunchedAd.clickUrl"
-            :data-ad-slot="justLaunchedAd.campaignId"
-            data-ad-placement="home"
-          />
           <SidebarToolItem v-for="tool in justLaunched" :key="tool.slug" :tool="tool" />
-          <div v-if="!justLaunched.length && !justLaunchedAd" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
+          <div v-if="!justLaunched.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
             {{ t('empty.noTools') }}
           </div>
           <NuxtLink to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
@@ -124,7 +117,10 @@ useSeoMeta({
         </div>
 
         <aside class="flex min-w-0 flex-col gap-[18px] lg:order-3">
-          <AiNewsWidget />
+          <!-- Top Categories only while there is no AI News article yet (AiNewsWidget's slot). -->
+          <AiNewsWidget>
+            <TopCategoriesWidget v-if="topCategories.length" :categories="topCategories" />
+          </AiNewsWidget>
         </aside>
       </div>
     </section>

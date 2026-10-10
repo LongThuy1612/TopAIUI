@@ -348,3 +348,58 @@ export interface AdminAdCampaign extends AdCampaign {
   updatedAt: string
   user: { email: string }
 }
+
+// ---- AI News articles / guest posts (server/utils/articles.ts) ----
+export interface ArticleCard {
+  slug: string
+  title: string
+  excerpt: string | null
+  coverUrl: string | null
+  kind: 'EDITORIAL' | 'GUEST_POST'
+  authorName: string | null
+  publishedAt: string | null
+}
+export interface ArticlesResponse { items: ArticleCard[]; total: number; page: number; pageCount: number }
+export interface ArticleDetail extends ArticleCard {
+  html: string
+  updatedAt: string
+  related: { slug: string; title: string; publishedAt: string | null }[]
+}
+
+export type PostSubmissionStatus = 'PENDING' | 'CHANGES_REQUESTED' | 'PUBLISHED' | 'REJECTED' | 'WITHDRAWN'
+export interface PostSubmission {
+  id: string
+  type: 'GUEST_POST' | 'LINK_INSERT'
+  status: PostSubmissionStatus
+  credits: number
+  title: string | null
+  excerpt: string | null
+  content: string | null
+  coverUrl: string | null
+  targetUrl: string | null
+  anchorText: string | null
+  note: string | null
+  articleId: string | null
+  adminNote: string | null
+  submittedAt: string
+  reviewedAt: string | null
+  createdAt: string
+}
+// The list leaves out `content` (the edit form loads it with GET /api/me/posts/<id>).
+export interface MyPostSubmission extends PostSubmission { article: { slug: string; title: string } | null }
+// In the "all" list `content` is left out (only the review queue carries it).
+export interface AdminPostSubmission extends PostSubmission {
+  user: { email: string; name: string | null }
+  article: { id: string; slug: string; title: string; status: string } | null
+}
+export interface AdminArticleRow {
+  id: string
+  slug: string
+  title: string
+  kind: 'EDITORIAL' | 'GUEST_POST'
+  status: 'DRAFT' | 'PUBLISHED'
+  authorName: string | null
+  publishedAt: string | null
+  updatedAt: string
+  _count: { submissions: number }
+}

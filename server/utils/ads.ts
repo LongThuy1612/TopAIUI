@@ -336,7 +336,7 @@ function drawOne<T>(items: T[], weight: (item: T) => number) {
 // tool page = the banner above the reviews + the one over the alternatives.
 const MAX_SLOTS: Partial<Record<AdPlacement, number>> = {
   bar: 1,
-  home: advertise.slotPositions.length + 1,
+  home: advertise.slotPositions.length,
   tool: 2
 }
 

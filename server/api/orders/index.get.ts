@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
       where: { userId },
       orderBy: { createdAt: 'desc' },
       take: 100,
-      select: { id: true, type: true, payload: true, amount: true, currency: true, status: true, createdAt: true, paidAt: true }
+      select: { id: true, type: true, payload: true, amount: true, currency: true, status: true, createdAt: true, paidAt: true, refundedCredits: true, refundedAmount: true }
     }),
     // Research Plan charges (first payment, renewals, plan changes).
     prisma.subscriptionInvoice.findMany({

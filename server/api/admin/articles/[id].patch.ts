@@ -1,0 +1,21 @@
+// Save the admin editor. Publishing sets publishedAt the first time; going back to draft
+// keeps it (re-publishing doesn't bump an old article to the top of /ai-news).
+export default defineEventHandler(async (event) => {
+  await requireAdmin(event)
+  const id = getRouterParam(event, 'id') ?? ''
+  const input = cleanArticleInput(await readBody<Record<string, unknown>>(event) ?? {})
+  return prisma.$transaction(async (tx) => {
+    await lockArticleSlugs(tx)
+    const article = await tx.article.findUnique({ where: { id }, select: { slug: true, publishedAt: true } })
+    if (!article) throw createError({ statusCode: 404, statusMessage: 'Article not found' })
+    const slug = input.slug || article.slug
+    if (slug !== article.slug && await tx.article.findFirst({ where: { slug, id: { not: id } }, select: { id: true } })) {
+      throw createError({ statusCode: 409, statusMessage: 'Conflict', message: 'Another article already uses that slug.' })
+    }
+    return tx.article.update({
+      where: { id },
+      data: { ...input, slug, publishedAt: article.publishedAt ?? (input.status === 'PUBLISHED' ? new Date() : null) },
+      select: { id: true, slug: true }
+    })
+  })
+})

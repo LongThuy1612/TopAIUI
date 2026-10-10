@@ -1,14 +1,16 @@
 {
   "header": {
     "searchPlaceholder": "KI-Tools durchsuchen...",
-    "categories": "Kategorien",
-    "rankings": "Rankings",
-    "submit": "Tool einreichen",
-    "admin": "Dashboard",
     "freeTools": "Kostenlose Tools",
     "products": "Produkte",
+    "categories": "Kategorien",
+    "rankings": "Rankings",
     "prompts": "Prompts",
+    "jobs": "Jobs",
     "resource": "Ressourcen",
+    "submit": "Tool einreichen",
+    "adLibrary": "KI-Werbebibliothek",
+    "admin": "Dashboard",
     "menu": "Menü",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen"
@@ -40,217 +42,55 @@
     "accountBanned": "Dieses Konto wurde gesperrt.",
     "googleEmailInUse": "Diese E-Mail ist bereits registriert. Bitte melde dich mit E-Mail und Passwort an."
   },
-  "hero": {
-    "titlePrefix": "Entdecke die besten",
-    "titleHighlight": "KI-Tools",
-    "subtitle": "Durchsuche Hunderte von KI-Produkten nach Kategorie, vergleiche Preise und finde das richtige Tool für deinen Workflow.",
-    "searchPlaceholder": "KI-Tools durchsuchen..."
+  "productsMenu": {
+    "newTitle": "Neue KIs",
+    "newDesc": "Die neuesten KI-Tools, jeden Tag",
+    "savedTitle": "Meistgespeicherte KIs",
+    "savedDesc": "KIs mit den meisten Favoriten auf unserer Plattform",
+    "usedTitle": "Meistgenutzte KIs",
+    "usedDesc": "KIs mit dem meisten Website-Traffic",
+    "appsTitle": "KI-Apps",
+    "appsDesc": "KI-Tools nach Kategorie",
+    "discordTitle": "KI-Discords",
+    "discordDesc": "Entdecke Discord-Server rund um KI",
+    "extensionsTitle": "KI-Chrome-Erweiterungen",
+    "extensionsDesc": "KI-Tools als Browser-Erweiterung",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs aus dem GPT Store",
+    "modelsTitle": "KI-Modelle",
+    "modelsDesc": "Finde das beste KI-Modell"
   },
-  "stats": {
-    "tools": "KIs und",
-    "categories": "Kategorien im besten KI-Tool-Verzeichnis.",
-    "featured": "Empfohlene Tools",
-    "updatedNote": "Die KI-Tool-Liste und der GPTs Store werden täglich von ChatGPT aktualisiert."
+  "promptsMenu": {
+    "n8nTitle": "n8n-Workflows",
+    "midjourneyTitle": "Midjourney-Prompts",
+    "openclawTitle": "Openclaw-Skills",
+    "gptImageTitle": "GPT Image 2 Prompt",
+    "seedreamTitle": "Seedream 5 Pro Prompt",
+    "seedanceTitle": "Seedance 2.5 Prompt"
   },
-  "tabs": {
-    "heading": "Tools entdecken",
-    "newest": "Heute",
-    "featured": "Neu",
-    "free": "Am meisten empfohlen",
-    "viewAll": "Alle anzeigen →"
+  "resourceMenu": {
+    "checkDomainTitle": "Domain prüfen",
+    "aiDomainTitle": ".ai-Domain"
   },
-  "announcement": {
-    "featured": "Empfohlen",
-    "cta": "Mehr erfahren"
+  "submitMenu": {
+    "submitTitle": "Tool einreichen",
+    "advertiseTitle": "Werbung",
+    "guestPostsTitle": "Gastbeiträge / Link-Einfügung",
+    "updateAiTitle": "KI aktualisieren",
+    "submitGptTitle": "GPT einreichen",
+    "moreBusinessTitle": "Mehr Business"
   },
-  "sidebar": {
-    "featuredTools": "Empfohlene Tools",
-    "topCategories": "Top-Kategorien",
-    "aiNews": "KI-News",
-    "top10": "Top 10",
-    "readMoreNews": "Mehr lesen"
-  },
-  "sections": {
-    "browseByCategory": "Nach Kategorie durchsuchen",
-    "newestTools": "Neueste Tools",
-    "featuredTools": "Empfohlene Tools",
-    "viewAll": "Alle anzeigen →",
-    "justLaunched": "Gerade gestartet",
-    "featuredThisWeek": "Empfohlen",
-    "featuredThisWeekSubtitle": "Die Tools, die unsere Community am häufigsten gespeichert und bewertet hat.",
-    "updatedDaily": "Täglich aktualisiert",
-    "viewMore": "Mehr anzeigen →",
-    "browse": "Durchsuchen",
-    "editorsPicks": "Redaktionsauswahl",
-    "sponsorBadge": "Gesponsert",
-    "viewMoreTools": "Mehr anzeigen →"
-  },
-  "cta": {
-    "title": "Hast du ein KI-Tool zum Teilen?",
-    "subtitle": "Zeig es Menschen, die nach Tools wie deinem suchen.",
-    "button": "Dein Tool einreichen"
-  },
-  "empty": {
-    "noTools": "Keine Daten.",
-    "noResults": "Keine Tools gefunden"
-  },
-  "category": {
-    "breadcrumbHome": "Start",
-    "allTools": "Alle Tools",
-    "allToolsTitle": "Alle KI-Tools",
-    "allPricing": "Alle Preise",
-    "sortNewest": "Neueste zuerst",
-    "sortFeatured": "Empfohlene zuerst",
-    "sortName": "Name A–Z",
-    "toolsFound": "Tool gefunden | Tools gefunden",
-    "searchPlaceholder": "Tools durchsuchen...",
-    "filters": "Filter",
-    "viewGrid": "Rasteransicht",
-    "viewList": "Listenansicht"
-  },
-  "pricing": {
-    "FREE": "Kostenlos",
-    "FREEMIUM": "Freemium",
-    "PAID": "Kostenpflichtig"
-  },
-  "ranking": {
-    "title": "Top KI-Tools",
-    "subtitle": "Rangiert nach Traffic- und Wachstumsdaten aus unserem Verzeichnis.",
-    "byGrowth1m": "Wachstum 1 Monat",
-    "byGrowth3m": "Wachstum 3 Monate",
-    "byGrowth6m": "Wachstum 6 Monate",
-    "byTraffic": "Monatliche Besuche",
-    "colRank": "Rang",
-    "colTool": "Tool",
-    "colVisits": "Monatliche Besuche",
-    "colGrowth": "Wachstum",
-    "colAuthority": "Domain-Autorität",
-    "colCategory": "Kategorie",
-    "noData": "Noch keine Ranking-Daten.",
-    "dataMonth": "Traffic-Daten für {month}.",
-    "colVisitsFrom": "Besuche aus {name}",
-    "growthNote": "Wachstum wird nur für Tools mit mindestens {min} Besuchen im Vergleichsmonat gerankt.",
-    "loadMore": "Mehr laden",
-    "loading": "Wird geladen…"
-  },
-  "tool": {
-    "openSite": "Website öffnen",
-    "save": "Speichern",
-    "saved": "Gespeichert",
-    "featured": "Empfohlen",
-    "introduction": "Einführung",
-    "addedOn": "Hinzugefügt am",
-    "monthlyVisitors": "Monatliche Besucher",
-    "features": "Hauptfunktionen",
-    "useCases": "Anwendungsfälle",
-    "coreFeaturesHeading": "Hauptfunktionen von {name}",
-    "useCasesHeading": "Anwendungsfälle von {name}",
-    "prosAndCons": "Vor- und Nachteile",
-    "pros": "Vorteile",
-    "cons": "Nachteile",
-    "faq": "Häufig gestellte Fragen",
-    "faqHeading": "FAQ zu {name}",
-    "alternatives": "Alternativen zu",
-    "backToCategory": "Zurück zu",
-    "notFound": "Tool nicht gefunden",
-    "similarTools": "Ähnliche Tools",
-    "tabProductInfo": "Produktinformationen",
-    "tabPricing": "Preise",
-    "tabReviews": "Bewertungen",
-    "tabAnalytics": "Analysen",
-    "tabAlternatives": "Alternativen",
-    "productInformationHeading": "Produktinformationen zu {name}",
-    "whatIs": "Was ist {name}?",
-    "howToUseHeading": "Wie benutzt man {name}?",
-    "reviewsHeading": "{name} Bewertungen ({count})",
-    "ratingPrompt": "Würdest du {name} empfehlen? Hinterlasse einen Kommentar",
-    "whatDoYouThink": "Was denkst du?",
-    "loginToComment": "Zum Kommentieren anmelden",
-    "pricingHeading": "Preise von {name}",
-    "noPricingYet": "Noch keine Preisinformationen.",
-    "analyticsHeading": "Analysen von {name}",
-    "trafficAnalysis": "Traffic-Analyse der Website {name}",
-    "visitOverTime": "Besuche im Zeitverlauf",
-    "monthlyVisits": "Monatliche Besuche",
-    "avgVisitDuration": "Durchschn. Besuchsdauer",
-    "pagePerVisit": "Seiten pro Besuch",
-    "bounceRate": "Absprungrate",
-    "noTrafficYet": "Noch keine Traffic-Daten erfasst.",
-    "badgeVerified": "Verifiziert",
-    "badgeJustLaunched": "Gerade gestartet",
-    "badgeFreeTool": "Kostenloses Tool",
-    "affiliateLink": "Affiliate-Link",
-    "couponCode": "Gutscheincode",
-    "ratings": "Bewertungen",
-    "upvotes": "Upvotes",
-    "domainAuthority": "Domain-Autorität",
-    "trafficRank": "Traffic-Rang",
-    "viewCount": "Seitenaufrufe",
-    "outOf5": "von 5",
-    "enterReviewPrompt": "Bitte gib deine Bewertung ein",
-    "sortBy": "Sortieren nach",
-    "sortNewest": "Neueste",
-    "sortOldest": "Älteste",
-    "loadMoreReviews": "Weitere Bewertungen laden",
-    "loadingMore": "Lädt...",
-    "reviewsLabel": "Bewertungen",
-    "socialAndEmail": "Social Media & E-Mail",
-    "advertiseTool": "Dieses Tool bewerben",
-    "updateTool": "Dieses Tool aktualisieren",
-    "savedLabel": "Gespeichert",
-    "vsLastMonth": "ggü. Vormonat",
-    "trafficSources": "Traffic-Quellen",
-    "sourceDirect": "Direkt",
-    "sourceSearch": "Suche",
-    "sourceReferral": "Verweis",
-    "sourceSocial": "Soziale Medien",
-    "sourceMail": "E-Mail",
-    "sourcePaidReferrals": "Bezahlte Verweise",
-    "sourceOthers": "Sonstige",
-    "allTraffic": "Gesamter Traffic",
-    "globalRank": "Globaler Rang",
-    "yearFounded": "Gegründet",
-    "employees": "Mitarbeiter",
-    "topKeywords": "Top-Keywords",
-    "keyword": "Keyword",
-    "searchVolume": "Suchvolumen",
-    "keywordType": "Typ",
-    "keywordOrganic": "Organisch",
-    "keywordPaid": "Bezahlt",
-    "mobileApps": "Mobile Apps",
-    "loginToReview": "Zum Bewerten anmelden",
-    "submitReview": "Bewertung senden",
-    "submittingReview": "Wird gesendet...",
-    "reviewPendingNotice": "Danke! Deine Bewertung wurde gesendet und erscheint nach der Freigabe.",
-    "reviewAlreadySubmitted": "Du hast dieses Tool bereits bewertet.",
-    "reviewSubmitError": "Bewertung konnte nicht gesendet werden. Bitte versuche es erneut.",
-    "reviewSessionExpired": "Deine Sitzung ist abgelaufen. Bitte melde dich erneut an, um deine Bewertung zu senden."
-  },
-  "footer": {
-    "tagline": "Entdecke, vergleiche und teile die besten KI-Tools — entwickelt mit Nuxt & PostgreSQL.",
-    "product": "Produkt",
-    "home": "Start",
-    "allTools": "Alle Tools",
-    "submit": "Tool einreichen",
-    "categories": "Kategorien",
-    "company": "Unternehmen",
-    "language": "Sprache",
-    "copyright": "Alle Rechte vorbehalten.",
-    "topAiTools": "Top KI-Tools",
-    "moreTools": "Weitere Tools",
-    "categoryToolsCount": "{count} {name}-Tools",
-    "categoryTools": "{name}-Tools",
-    "browseByAlphabet": "Nach Alphabet durchsuchen",
-    "top1000Directory": "Verzeichnis der Top 1000 KI-Tools",
-    "about": "Über",
-    "aboutUs": "Über uns",
-    "terms": "Nutzungsbedingungen",
-    "privacy": "Datenschutzerklärung",
-    "advertise": "Werbung",
-    "contact": "Kontakt"
-  },
-  "language": {
-    "label": "Sprache"
+  "rankingMenu": {
+    "monthlyTitle": "Top-KI nach Monat",
+    "monthlyDesc": "KI-Rankings nach Monat und monatlichen Besuchen.",
+    "categoriesTitle": "Top-KI nach Kategorie",
+    "categoriesDesc": "KI-Rankings nach Kategorie und monatlichen Besuchen.",
+    "regionsTitle": "Top-KI nach Region",
+    "regionsDesc": "KI-Rankings nach Region und monatlichen Besuchen.",
+    "sourceTitle": "Top-KI nach Quelle",
+    "sourceDesc": "KI-Rankings nach Quelle und monatlichen Besuchen.",
+    "revenueTitle": "Top-KI nach Umsatz",
+    "revenueDesc": "Top-KI-Listen nach Umsatz und echtem Traffic."
   },
   "admin": {
     "badge": "Admin",
@@ -297,7 +137,9 @@
         "queries": "Social-Listening-Abfrage",
         "filtering": "Erweiterte Filterung",
         "export": "Datenexport",
-        "statistics": "Grundlegende Datenstatistiken"
+        "statistics": "Grundlegende Datenstatistiken",
+        "filteringFull": "Alle erweiterten Filter",
+        "statisticsDeep": "Detaillierte Statistiken"
       },
       "faq": {
         "title": "Häufig gestellte Fragen",
@@ -305,7 +147,21 @@
           "question": "Was sind „Daten-Credits“?",
           "answer": "Daten-Credits sind die Währung, mit der du auf unserer Plattform recherchierst. Sie werden wie folgt verbraucht:\n1. Datennutzung: 1 Credit wird für jede geladene Datenzeile auf unseren „Insights“- oder „Analysis“-Seiten verwendet.\n2. Datenexport: 1 Credit wird für jede in eine CSV- oder Excel-Datei exportierte Zeile verwendet.\n3. Keine Kosten: Social-Listening-Abfragen verbrauchen keine Daten-Credits.\nBitte beachte: Credits werden zu Beginn jedes Abrechnungszyklus zurückgesetzt. Nicht genutzte Credits werden nicht übertragen."
         }
-      }
+      },
+      "currentPlan": "Aktueller Plan",
+      "upgradeTo": "Upgrade",
+      "downgradeTo": "Downgrade",
+      "switchTo": "Wechseln",
+      "working": "Bitte warten…",
+      "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "confirmChange": "Zu {plan} wechseln? Die anteilige Differenz wird sofort berechnet (oder gutgeschrieben).",
+      "confirmCancel": "Plan kündigen? Du behältst ihn bis {date}, danach wechselst du zu Free.",
+      "renewsOn": "Verlängert sich am {date}",
+      "endsOn": "Endet am {date}",
+      "pastDue": "Zahlung fehlgeschlagen — bitte aktualisiere deine Karte.",
+      "manageBilling": "Abrechnung verwalten",
+      "resume": "Plan behalten",
+      "cancelPlan": "Plan kündigen"
     },
     "business": "Business",
     "myAIs": "Meine KIs",
@@ -453,7 +309,169 @@
       "deleteConfirm": "Diese Bewertung endgültig löschen?",
       "guest": "Gast",
       "empty": "Keine Bewertungen gefunden."
-    }
+    },
+    "userSubmission": "Nutzereinreichung",
+    "waitingUserContent": "Wartet auf Inhalte des Inhabers",
+    "submission": {
+      "title": "Nutzereinreichung",
+      "owner": "Inhaber",
+      "mode": "Wer schreibt den Eintrag",
+      "reason": "Ablehnungsgrund",
+      "modes": {
+        "auto": "Unser Team (automatisch)",
+        "manual": "Der Inhaber (manuell)"
+      },
+      "publish": "Veröffentlichen",
+      "reject": "Ablehnen",
+      "reasonPlaceholder": "Ablehnungsgrund — wird dem Inhaber angezeigt",
+      "publishHint": "Zum Veröffentlichen wird der vollständige englische Eintrag benötigt. Nutze unten den Schalter „Freigegeben“, um ihn freizugeben. Bei Ablehnung geht das Tool zur Überarbeitung und erneuten Einreichung an den Inhaber zurück.",
+      "ai": "KI-Inhalt",
+      "aiRerun": "KI erneut ausführen",
+      "aiStatus": {
+        "none": "Nicht angefordert",
+        "queued": "In der Warteschlange — der Crawler übernimmt in Kürze",
+        "done": "Fertig",
+        "failed": "Fehlgeschlagen — wird automatisch wiederholt",
+        "invalid": "Admin nötig — Website nicht lesbar oder zu wenig Infos für die KI"
+      },
+      "duplicate": "Warnung: gleiche Website wie ein bestehender Eintrag —"
+    },
+    "update": {
+      "title": "Bezahltes Update",
+      "pendingTitle": "Updates zur Prüfung ({n})",
+      "status": {
+        "DRAFT": "Der Inhaber hat bezahlt und bereitet die Änderungen noch vor.",
+        "SUBMITTED": "Eingereicht — prüfe die Änderungen unten."
+      },
+      "field": "Feld",
+      "current": "Aktuell live",
+      "proposed": "Vorgeschlagen",
+      "fields": {
+        "name": "Name",
+        "logoUrl": "Logo",
+        "pricingType": "Preismodell",
+        "twitterUrl": "Twitter-URL",
+        "discordUrl": "Discord-URL",
+        "images": "Screenshots",
+        "categories": "Kategorien",
+        "shortDesc": "Kurzbeschreibung",
+        "description": "Beschreibung",
+        "whatIs": "Was ist das",
+        "howToUse": "Verwendung",
+        "coreFeatures": "Hauptfunktionen",
+        "useCases": "Anwendungsfälle"
+      },
+      "noChanges": "Noch keine Änderungen.",
+      "apply": "Update übernehmen",
+      "reject": "Ablehnen & erstatten",
+      "reasonPlaceholder": "Ablehnungsgrund — wird dem Inhaber angezeigt",
+      "hint": "Beim Übernehmen werden die Änderungen in den Live-Eintrag geschrieben und neu übersetzt. Bei Ablehnung wird die Zahlung über Stripe erstattet."
+    },
+    "managePlan": "Plan verwalten"
+  },
+  "hero": {
+    "titlePrefix": "Entdecke die besten",
+    "titleHighlight": "KI-Tools",
+    "subtitle": "Durchsuche Hunderte von KI-Produkten nach Kategorie, vergleiche Preise und finde das richtige Tool für deinen Workflow.",
+    "searchPlaceholder": "KI-Tools durchsuchen..."
+  },
+  "stats": {
+    "tools": "KIs und",
+    "categories": "Kategorien im besten KI-Tool-Verzeichnis.",
+    "featured": "Empfohlene Tools",
+    "updatedNote": "Die KI-Tool-Liste und der GPTs Store werden täglich von ChatGPT aktualisiert."
+  },
+  "tabs": {
+    "heading": "Tools entdecken",
+    "newest": "Heute",
+    "featured": "Neu",
+    "free": "Am meisten empfohlen",
+    "viewAll": "Alle anzeigen →"
+  },
+  "announcement": {
+    "featured": "Empfohlen",
+    "cta": "Mehr erfahren"
+  },
+  "sidebar": {
+    "featuredTools": "Empfohlene Tools",
+    "topCategories": "Top-Kategorien",
+    "aiNews": "KI-News",
+    "top10": "Top 10",
+    "readMoreNews": "Mehr lesen"
+  },
+  "sections": {
+    "browseByCategory": "Nach Kategorie durchsuchen",
+    "newestTools": "Neueste Tools",
+    "featuredTools": "Empfohlene Tools",
+    "viewAll": "Alle anzeigen →",
+    "justLaunched": "Gerade gestartet",
+    "featuredThisWeek": "Empfohlen",
+    "featuredThisWeekSubtitle": "Die Tools, die unsere Community am häufigsten gespeichert und bewertet hat.",
+    "browse": "Durchsuchen",
+    "editorsPicks": "Redaktionsauswahl",
+    "sponsorBadge": "Gesponsert",
+    "updatedDaily": "Täglich aktualisiert",
+    "viewMore": "Mehr anzeigen →",
+    "viewMoreTools": "Mehr anzeigen →",
+    "adLabel": "Anzeige",
+    "tryNow": "Jetzt testen"
+  },
+  "cta": {
+    "title": "Hast du ein KI-Tool zum Teilen?",
+    "subtitle": "Zeig es Menschen, die nach Tools wie deinem suchen.",
+    "button": "Dein Tool einreichen"
+  },
+  "empty": {
+    "noTools": "Keine Daten.",
+    "noResults": "Keine Tools gefunden"
+  },
+  "category": {
+    "breadcrumbHome": "Start",
+    "allTools": "Alle Tools",
+    "allToolsTitle": "Alle KI-Tools",
+    "allPricing": "Alle Preise",
+    "sortNewest": "Neueste zuerst",
+    "sortFeatured": "Empfohlene zuerst",
+    "sortName": "Name A–Z",
+    "toolsFound": "Tool gefunden | Tools gefunden",
+    "searchPlaceholder": "Tools durchsuchen...",
+    "filters": "Filter",
+    "viewGrid": "Rasteransicht",
+    "viewList": "Listenansicht"
+  },
+  "pricing": {
+    "FREE": "Kostenlos",
+    "FREEMIUM": "Freemium",
+    "PAID": "Kostenpflichtig"
+  },
+  "ranking": {
+    "title": "Top KI-Tools",
+    "subtitle": "Rangiert nach Traffic- und Wachstumsdaten aus unserem Verzeichnis.",
+    "byGrowth1m": "Wachstum 1 Monat",
+    "byGrowth3m": "Wachstum 3 Monate",
+    "byGrowth6m": "Wachstum 6 Monate",
+    "byTraffic": "Monatliche Besuche",
+    "colRank": "Rang",
+    "colTool": "Tool",
+    "colVisits": "Monatliche Besuche",
+    "colGrowth": "Wachstum",
+    "colAuthority": "Domain-Autorität",
+    "colCategory": "Kategorie",
+    "colRevenue": "Umsatz",
+    "noData": "Noch keine Ranking-Daten.",
+    "selectCategory": "Kategorie wählen",
+    "selectRegion": "Region wählen",
+    "selectSource": "Quelle wählen",
+    "categoriesTitle": "Top-KI-Tools nach Kategorie",
+    "regionsTitle": "Top-KI-Tools nach Region",
+    "sourceTitle": "Top-KI-Tools nach Quelle",
+    "revenueTitle": "Top-KI-Tools nach Umsatz",
+    "noSelection": "Wähle oben eine Option, um das Ranking zu sehen.",
+    "dataMonth": "Traffic-Daten für {month}.",
+    "colVisitsFrom": "Besuche aus {name}",
+    "growthNote": "Wachstum wird nur für Tools mit mindestens {min} Besuchen im Vergleichsmonat gerankt.",
+    "loadMore": "Mehr laden",
+    "loading": "Wird geladen…"
   },
   "socialListening": {
     "title": "Social Listening",
@@ -495,7 +513,38 @@
     "sortGrowthRateAsc": "Wachstumsrate: aufsteigend",
     "loading": "Wird geladen…",
     "loadError": "Daten konnten nicht geladen werden. Bitte erneut versuchen.",
-    "popupBlocked": "Dein Browser hat einige Tabs blockiert. Erlaube Pop-ups für diese Seite, um alle zu öffnen."
+    "popupBlocked": "Dein Browser hat einige Tabs blockiert. Erlaube Pop-ups für diese Seite, um alle zu öffnen.",
+    "creditsThisMonth": "Data Credits diesen Monat",
+    "outOfCredits": "Deine Data Credits für diesen Monat sind aufgebraucht — {n} Zeile(n) auf dieser Seite sind gesperrt. Upgrade, um sie zu sehen.",
+    "unlock": "Zum Freischalten upgraden",
+    "statsTitle": "Statistiken",
+    "statsLocked": "Monatliche Statistiken gibt es in kostenpflichtigen Plänen.",
+    "statTools": "Tools",
+    "statVisits": "Besuche gesamt",
+    "statGrowth": "Besuchswachstum",
+    "statMedian": "Median-Wachstum",
+    "statTopGrowth": "Am schnellsten wachsend",
+    "statCategories": "Besuche nach Kategorie",
+    "statTrend": "Besuche gesamt, letzte 12 Monate",
+    "statDistribution": "Tools nach Wachstum",
+    "statCategoryGrowth": "Wachstum nach Kategorie",
+    "advancedFilters": "Filter",
+    "clearFilters": "Filter zurücksetzen",
+    "filterNeedsAdvanced": "Ab Starter-Plan",
+    "filterNeedsFull": "Enterprise-Plan",
+    "exportQuota": "Export: {used}/{limit} Zeilen diesen Monat · bis zu {per} pro Export",
+    "exportError": "Export fehlgeschlagen. Bitte versuche es erneut.",
+    "filter": {
+      "category": "Kategorie",
+      "anyCategory": "Alle Kategorien",
+      "minVisits": "Min. monatliche Besuche",
+      "maxVisits": "Max. monatliche Besuche",
+      "minGrowthRate": "Min. Wachstumsrate (%)",
+      "maxGrowthRate": "Max. Wachstumsrate (%)",
+      "maxBounceRate": "Max. Absprungrate (%)",
+      "minDuration": "Min. Besuchsdauer (s)",
+      "minPagesPerVisit": "Min. Seiten pro Besuch"
+    }
   },
   "myAIsPage": {
     "title": "Meine KIs",
@@ -518,7 +567,33 @@
     "colBalances": "Guthaben",
     "colStatus": "Status",
     "colAction": "Aktion",
-    "emptyMessage": "Du hast derzeit keine Anzeigen. Klicke, um welche zu erstellen."
+    "emptyMessage": "Du hast derzeit keine Anzeigen. Klicke, um welche zu erstellen.",
+    "colPerformance": "Leistung",
+    "tiers": {
+      "STANDARD": "Standard",
+      "FEATURED": "Featured"
+    },
+    "statuses": {
+      "PENDING_REVIEW": "In Prüfung",
+      "ACTIVE": "Läuft",
+      "PAUSED": "Pausiert",
+      "EXHAUSTED": "Keine Klicks mehr",
+      "REJECTED": "Abgelehnt"
+    },
+    "toolWebsite": "Tool-Website",
+    "pendingLanding": "In Prüfung: {url}",
+    "remaining": "Klicks übrig",
+    "impressions": "Impressionen",
+    "clicks": "Klicks",
+    "pausedByAdmin": "Von unserem Team pausiert",
+    "reason": "Grund: {reason}",
+    "pause": "Pausieren",
+    "resume": "Fortsetzen",
+    "editLanding": "Landing-URL ändern",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "landingHint": "Leer lassen, um die Website deines Tools zu verwenden. Eine URL auf einer anderen Website wird zuerst geprüft; die aktuelle läuft so lange weiter.",
+    "reviewNote": "Jedes Tool und jeder Anzeigentyp hat ein eigenes Klick-Guthaben. Anzeigen verlinken direkt auf deine Website, und pro Besucher wird nur der erste Klick innerhalb von 24 Stunden berechnet."
   },
   "myPostsPage": {
     "title": "Meine Beiträge & Artikel / Link-Einfügung",
@@ -531,7 +606,28 @@
     "colArticleLink": "Artikel/Link",
     "colType": "Typ",
     "colStatus": "Status",
-    "emptyMessage": "Du hast derzeit keinen Beitrag. Klicke, um einen zu erstellen."
+    "emptyMessage": "Du hast derzeit keinen Beitrag. Klicke, um einen zu erstellen.",
+    "noCredits": "Du brauchst Credits, um einen Beitrag oder eine Link-Einfügung zu erstellen — kaufe sie auf der Guest-Post-Seite.",
+    "creditsUsed": "{n} Credit(s)",
+    "requestedArticle": "Artikel gewünscht",
+    "editorPicks": "Redaktion wählt aus",
+    "editorNote": "Redaktion",
+    "refunded": "{n} Credit(s) erstattet",
+    "edit": "Bearbeiten",
+    "editResubmit": "Bearbeiten und erneut einreichen",
+    "withdraw": "Zurückziehen",
+    "withdrawConfirm": "Diese Einreichung zurückziehen? {n} Credit(s) gehen zurück auf dein Guthaben.",
+    "types": {
+      "GUEST_POST": "Gastbeitrag",
+      "LINK_INSERT": "Link-Einfügung"
+    },
+    "statuses": {
+      "PENDING": "In Prüfung",
+      "CHANGES_REQUESTED": "Änderungen angefragt",
+      "PUBLISHED": "Veröffentlicht",
+      "REJECTED": "Abgelehnt",
+      "WITHDRAWN": "Zurückgezogen"
+    }
   },
   "myGPTsPage": {
     "title": "Meine GPTs",
@@ -571,7 +667,18 @@
     "loadError": "Profil konnte nicht geladen werden. Bitte Seite neu laden.",
     "emailHint": "Die Anmelde-E-Mail kann hier nicht geändert werden.",
     "saved": "Gespeichert.",
-    "saveError": "Speichern fehlgeschlagen. Bitte erneut versuchen."
+    "saveError": "Speichern fehlgeschlagen. Bitte erneut versuchen.",
+    "quotaResets": "Kontingent wird am {date} zurückgesetzt",
+    "cardInStripe": "In Stripe gespeichert",
+    "endsOn": "Plan endet am",
+    "researchPlan": "Research Plan",
+    "invoiceStatuses": {
+      "paid": "Bezahlt",
+      "open": "Unbezahlt",
+      "uncollectible": "Fehlgeschlagen",
+      "void": "Storniert",
+      "draft": "Entwurf"
+    }
   },
   "feedbackPage": {
     "title": "Nutzerfeedback",
@@ -605,6 +712,138 @@
       "RESOLVED": "Gelöst",
       "CLOSED": "Geschlossen"
     }
+  },
+  "tool": {
+    "openSite": "Website öffnen",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "featured": "Empfohlen",
+    "introduction": "Einführung",
+    "addedOn": "Hinzugefügt am",
+    "monthlyVisitors": "Monatliche Besucher",
+    "features": "Hauptfunktionen",
+    "useCases": "Anwendungsfälle",
+    "coreFeaturesHeading": "Hauptfunktionen von {name}",
+    "useCasesHeading": "Anwendungsfälle von {name}",
+    "prosAndCons": "Vor- und Nachteile",
+    "pros": "Vorteile",
+    "cons": "Nachteile",
+    "faq": "Häufig gestellte Fragen",
+    "faqHeading": "FAQ zu {name}",
+    "alternatives": "Alternativen zu",
+    "backToCategory": "Zurück zu",
+    "notFound": "Tool nicht gefunden",
+    "similarTools": "Ähnliche Tools",
+    "tabProductInfo": "Produktinformationen",
+    "tabPricing": "Preise",
+    "tabReviews": "Bewertungen",
+    "tabAnalytics": "Analysen",
+    "tabAlternatives": "Alternativen",
+    "productInformationHeading": "Produktinformationen zu {name}",
+    "whatIs": "Was ist {name}?",
+    "howToUseHeading": "Wie benutzt man {name}?",
+    "reviewsHeading": "{name} Bewertungen ({count})",
+    "ratingPrompt": "Würdest du {name} empfehlen? Hinterlasse einen Kommentar",
+    "whatDoYouThink": "Was denkst du?",
+    "loginToComment": "Zum Kommentieren anmelden",
+    "loginToReview": "Zum Bewerten anmelden",
+    "submitReview": "Bewertung senden",
+    "pricingHeading": "Preise von {name}",
+    "noPricingYet": "Noch keine Preisinformationen.",
+    "analyticsHeading": "Analysen von {name}",
+    "trafficAnalysis": "Traffic-Analyse der Website {name}",
+    "visitOverTime": "Besuche im Zeitverlauf",
+    "monthlyVisits": "Monatliche Besuche",
+    "avgVisitDuration": "Durchschn. Besuchsdauer",
+    "pagePerVisit": "Seiten pro Besuch",
+    "bounceRate": "Absprungrate",
+    "noTrafficYet": "Noch keine Traffic-Daten erfasst.",
+    "badgeVerified": "Verifiziert",
+    "badgeJustLaunched": "Gerade gestartet",
+    "badgeFreeTool": "Kostenloses Tool",
+    "affiliateLink": "Affiliate-Link",
+    "couponCode": "Gutscheincode",
+    "ratings": "Bewertungen",
+    "upvotes": "Upvotes",
+    "outOf5": "von 5",
+    "enterReviewPrompt": "Bitte gib deine Bewertung ein",
+    "sortBy": "Sortieren nach",
+    "sortNewest": "Neueste",
+    "sortOldest": "Älteste",
+    "loadMoreReviews": "Weitere Bewertungen laden",
+    "loadingMore": "Lädt...",
+    "reviewsLabel": "Bewertungen",
+    "socialAndEmail": "Social Media & E-Mail",
+    "advertiseTool": "Dieses Tool bewerben",
+    "updateTool": "Dieses Tool aktualisieren",
+    "savedLabel": "Gespeichert",
+    "domainAuthority": "Domain-Autorität",
+    "trafficRank": "Traffic-Rang",
+    "viewCount": "Seitenaufrufe",
+    "vsLastMonth": "ggü. Vormonat",
+    "trafficSources": "Traffic-Quellen",
+    "geography": "Geografie",
+    "topRegions": "Top {count} Regionen",
+    "desktopOnly": "Nur Desktop",
+    "sourceDirect": "Direkt",
+    "sourceSearch": "Suche",
+    "sourceReferral": "Verweis",
+    "sourceSocial": "Soziale Medien",
+    "sourceMail": "E-Mail",
+    "sourcePaidReferrals": "Bezahlte Verweise",
+    "sourceOthers": "Sonstige",
+    "allTraffic": "Gesamter Traffic",
+    "globalRank": "Globaler Rang",
+    "yearFounded": "Gegründet",
+    "employees": "Mitarbeiter",
+    "topKeywords": "Top-Keywords",
+    "keyword": "Keyword",
+    "searchVolume": "Suchvolumen",
+    "keywordType": "Typ",
+    "keywordOrganic": "Organisch",
+    "keywordPaid": "Bezahlt",
+    "mobileApps": "Mobile Apps",
+    "submittingReview": "Wird gesendet...",
+    "reviewPendingNotice": "Danke! Deine Bewertung wurde gesendet und erscheint nach der Freigabe.",
+    "reviewAlreadySubmitted": "Du hast dieses Tool bereits bewertet.",
+    "reviewSubmitError": "Bewertung konnte nicht gesendet werden. Bitte versuche es erneut.",
+    "reviewSessionExpired": "Deine Sitzung ist abgelaufen. Bitte melde dich erneut an, um deine Bewertung zu senden."
+  },
+  "alphabet": {
+    "title": "KI-Tools, die beginnen mit",
+    "browse": "Nach Alphabet durchsuchen"
+  },
+  "archive": {
+    "title": "Top 1000 KI-Tools",
+    "rank": "Rang",
+    "name": "Name",
+    "introduction": "Einführung"
+  },
+  "footer": {
+    "tagline": "Entdecke, vergleiche und teile die besten KI-Tools — entwickelt mit Nuxt & PostgreSQL.",
+    "product": "Produkt",
+    "home": "Start",
+    "allTools": "Alle Tools",
+    "submit": "Tool einreichen",
+    "categories": "Kategorien",
+    "company": "Unternehmen",
+    "language": "Sprache",
+    "copyright": "Alle Rechte vorbehalten.",
+    "topAiTools": "Top KI-Tools",
+    "moreTools": "Weitere Tools",
+    "categoryToolsCount": "{count} {name}-Tools",
+    "categoryTools": "{name}-Tools",
+    "browseByAlphabet": "Nach Alphabet durchsuchen",
+    "top1000Directory": "Verzeichnis der Top 1000 KI-Tools",
+    "about": "Über",
+    "aboutUs": "Über uns",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "advertise": "Werbung",
+    "contact": "Kontakt"
+  },
+  "language": {
+    "label": "Sprache"
   },
   "promote": {
     "title": "Deine KIs auf {site}",
@@ -780,7 +1019,7 @@
           "title": "Standardplatzierung",
           "points": [
             "Wird als Banner auf Listenseiten rotiert: Heute, Neu, Meist empfohlen, Kategorien, Suchergebnisse und Rankings.",
-            "Erscheint im Feed der Startseite und im Block „Gerade gestartet“.",
+            "Erscheint im Feed der Startseite.",
             "Erscheint auf den Seiten anderer Tools, über den Bewertungen und über den Alternativen.",
             "Geht sofort live, wenn die Anzeige auf die eigene Website des Tools verlinkt."
           ]
@@ -830,7 +1069,13 @@
           "q": "Kann ich wählen, wo meine Anzeigen erscheinen?",
           "a": "Nein. Die Platzierungen werden automatisch gewählt, um deine Klicks so schnell wie möglich zu liefern."
         }
-      ]
+      ],
+      "chooseTier": "Anzeigentyp wählen",
+      "tierHints": {
+        "STANDARD": "Rotiert auf den Listenseiten. Geht sofort live, wenn sie auf deine eigene Website verlinkt.",
+        "FEATURED": "Ganz oben angeheftet, plus die Sponsor-Leiste. Teurer pro Klick; wird von unserem Team geprüft."
+      },
+      "reviewNote": "Featured-Kampagnen und jede Landing-URL außerhalb der Website deines Tools werden vor dem Start von unserem Team geprüft. Eine abgelehnte Kampagne wird vollständig erstattet."
     },
     "guestPost": {
       "seoTitle": "Gastbeiträge & Link-Einfügung – {site}",
@@ -876,7 +1121,7 @@
         },
         {
           "q": "Wie läuft die Veröffentlichung ab?",
-          "a": "Credits kaufen → Inhalt oder Link-Angaben einreichen → redaktionelle Prüfung → Veröffentlichung. Die Live-URL erhältst du per E-Mail."
+          "a": "Credits kaufen → Artikel oder Link-Angaben im Dashboard einreichen → redaktionelle Prüfung → Veröffentlichung. Den Live-Link findest du in deinem Dashboard (Posts / Links)."
         },
         {
           "q": "Gibt es Inhaltsrichtlinien für Gastbeiträge?",
@@ -942,7 +1187,10 @@
           "q": "Welche Angaben kann ich ändern?",
           "a": "Alles aus der Liste oben außer der Website-URL."
         }
-      ]
+      ],
+      "loginToPick": "Melde dich an, um eines deiner Tools zu wählen",
+      "noOwnedTools": "Du hast noch kein veröffentlichtes Tool — nur der Inhaber eines gelisteten Tools kann es aktualisieren.",
+      "pickOwnTool": "Wähle eines deiner veröffentlichten Tools"
     },
     "submitGpt": {
       "seoTitle": "Trage dein GPT ein – {site}",
@@ -984,12 +1232,14 @@
       "statuses": {
         "PAID": "Bezahlt",
         "PENDING": "Ausstehend",
-        "EXPIRED": "Abgelaufen"
+        "EXPIRED": "Abgelaufen",
+        "REFUNDED": "Erstattet"
       },
       "loading": "Wird geladen…",
       "empty": "Noch keine Bestellungen.",
       "clicks": "{n} Klicks",
-      "credits": "{n} Credit | {n} Credits"
+      "credits": "{n} Credit | {n} Credits",
+      "partlyRefunded": "Erstattet: {amount} ({credits})"
     }
   },
   "errorPage": {
@@ -999,50 +1249,82 @@
     "errorMessage": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuche es später erneut.",
     "backHome": "Zurück zur Startseite"
   },
-  "alphabet": {
-    "title": "KI-Tools, die beginnen mit",
-    "browse": "Nach Alphabet durchsuchen"
+  "myTool": {
+    "contentHeading": "Eintragsinhalt (Englisch)",
+    "contentHint": "Mit * markierte Felder sind zum Einreichen erforderlich. Eine Funktion / ein Anwendungsfall pro Zeile.",
+    "saveDraft": "Entwurf speichern",
+    "submitForReview": "Zur Prüfung einreichen",
+    "saving": "Wird gespeichert…",
+    "saved": "Gespeichert.",
+    "submitted": "Eingereicht — wir prüfen dein Tool bald.",
+    "saveError": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+    "reason": "Grund",
+    "viewPage": "Öffentliche Seite ansehen",
+    "stage": {
+      "draft": {
+        "title": "Zahlung erhalten — vervollständige deinen Eintrag",
+        "desc": "Fülle die Angaben unten aus und reiche dein Tool dann zur Prüfung ein."
+      },
+      "review": {
+        "title": "In Prüfung",
+        "desc": "Unser Team prüft dein Tool. Bis zur Veröffentlichung kannst du noch Änderungen vornehmen."
+      },
+      "writing": {
+        "title": "Wir schreiben deinen Eintrag",
+        "desc": "Unser Team bereitet die Inhalte für dein Tool vor. Es wird nach der Prüfung veröffentlicht."
+      },
+      "rejected": {
+        "title": "Änderungen nötig",
+        "desc": "Dein Tool wurde noch nicht freigegeben. Behebe das Problem unten und reiche es erneut ein."
+      },
+      "live": {
+        "title": "Dein Tool ist live",
+        "desc": "Um einen veröffentlichten Eintrag zu ändern, nutze Update AI."
+      },
+      "updateDraft": {
+        "title": "Update bezahlt — bearbeite deinen Eintrag",
+        "desc": "Ändere die Angaben unten und reiche sie zur Prüfung ein. Dein Live-Eintrag ändert sich erst, wenn das Update freigegeben ist."
+      },
+      "updateReview": {
+        "title": "Update in Prüfung",
+        "desc": "Unser Team prüft deine Änderungen. Du kannst sie noch bearbeiten — dann gehen sie zurück in den Entwurf, bis du sie erneut einreichst."
+      }
+    },
+    "upload": {
+      "logo": "Logo",
+      "logoHint": "Quadratisches Bild, PNG / JPG / WebP / GIF, bis 5 MB.",
+      "none": "Kein Logo",
+      "choose": "Logo hochladen",
+      "change": "Ändern",
+      "remove": "Entfernen",
+      "uploading": "Wird hochgeladen…",
+      "screenshots": "Screenshots",
+      "screenshotsHint": "Bis zu {n} Bilder in der Galerie auf deiner Tool-Seite. Das erste ist das Titelbild. 16:9 funktioniert am besten, bis 5 MB pro Bild.",
+      "add": "Bilder hinzufügen",
+      "cover": "Titelbild",
+      "moveLeft": "Nach links",
+      "moveRight": "Nach rechts",
+      "tooLarge": "Das Bild darf höchstens 5 MB groß sein.",
+      "error": "Upload fehlgeschlagen. Bitte versuche es erneut."
+    },
+    "savedNeedsResubmit": "Gespeichert. Dein Tool ist wieder im Entwurf — klicke erneut auf „Zur Prüfung einreichen“, wenn du fertig bist.",
+    "update": {
+      "buy": "Dieses Tool aktualisieren",
+      "submit": "Update zur Prüfung einreichen",
+      "submitted": "Update eingereicht — wir prüfen es bald. Dein Live-Eintrag bleibt bis dahin unverändert.",
+      "last": {
+        "APPLIED": "Dein letztes Update ist live.",
+        "REJECTED": "Dein letztes Update wurde nicht freigegeben — die Zahlung wurde erstattet."
+      }
+    }
   },
-  "archive": {
-    "title": "Top 1000 KI-Tools",
-    "rank": "Rang",
-    "name": "Name",
-    "introduction": "Einführung"
-  },
-  "productsMenu": {
-    "newTitle": "Neue KIs",
-    "newDesc": "Die neuesten KI-Tools, jeden Tag",
-    "savedTitle": "Meistgespeicherte KIs",
-    "savedDesc": "KIs mit den meisten Favoriten auf unserer Plattform",
-    "usedTitle": "Meistgenutzte KIs",
-    "usedDesc": "KIs mit dem meisten Website-Traffic",
-    "appsTitle": "KI-Apps",
-    "appsDesc": "KI-Tools nach Kategorie",
-    "discordTitle": "KI-Discords",
-    "discordDesc": "Entdecke Discord-Server rund um KI",
-    "extensionsTitle": "KI-Chrome-Erweiterungen",
-    "extensionsDesc": "KI-Tools als Browser-Erweiterung",
-    "gptsTitle": "GPTs",
-    "gptsDesc": "GPTs aus dem GPT Store",
-    "modelsTitle": "KI-Modelle",
-    "modelsDesc": "Finde das beste KI-Modell"
-  },
-  "rankingMenu": {
-    "monthlyTitle": "Top-KI nach Monat",
-    "monthlyDesc": "KI-Rankings nach Monat und monatlichen Besuchen.",
-    "categoriesTitle": "Top-KI nach Kategorie",
-    "categoriesDesc": "KI-Rankings nach Kategorie und monatlichen Besuchen.",
-    "regionsTitle": "Top-KI nach Region",
-    "regionsDesc": "KI-Rankings nach Region und monatlichen Besuchen.",
-    "sourceTitle": "Top-KI nach Quelle",
-    "sourceDesc": "KI-Rankings nach Quelle und monatlichen Besuchen."
-  },
-  "submitMenu": {
-    "submitTitle": "Tool einreichen",
-    "advertiseTitle": "Werbung",
-    "guestPostsTitle": "Gastbeiträge / Link-Einfügung",
-    "updateAiTitle": "KI aktualisieren",
-    "submitGptTitle": "GPT einreichen"
+  "categoryPicker": {
+    "choose": "Auswählen",
+    "done": "Fertig",
+    "search": "Kategorien suchen…",
+    "limit": "Bis zu {n} Kategorien",
+    "empty": "Keine passende Kategorie",
+    "remove": "Entfernen"
   },
   "adminFeedback": {
     "title": "Feedback",
@@ -1073,5 +1355,192 @@
       "BILLING": "Abrechnung",
       "OTHER": "Sonstiges"
     }
+  },
+  "adminAds": {
+    "title": "Werbekampagnen",
+    "filters": {
+      "review": "Wartet auf Prüfung",
+      "all": "Alle Kampagnen"
+    },
+    "colCampaign": "Kampagne",
+    "colLanding": "Landing",
+    "colBalance": "Guthaben",
+    "colStatus": "Status",
+    "colActions": "Aktionen",
+    "toolWebsite": "Tool-Website",
+    "landing": "Landing-URL",
+    "sameAsWebsite": "Wie Website",
+    "pendingLanding": "Neue URL wartet:",
+    "approveCampaign": "Kampagne freigeben",
+    "approveLanding": "Neue URL freigeben",
+    "rejectCampaign": "Ablehnen & erstatten",
+    "rejectLanding": "Neue URL ablehnen",
+    "rejectCampaignPrompt": "Ablehnungsgrund (wird dem Werbetreibenden angezeigt). Jede Bestellung dieser Kampagne wird erstattet.",
+    "rejectLandingPrompt": "Grund für die Ablehnung der neuen Landing-URL (wird dem Werbetreibenden angezeigt):",
+    "addClicks": "Klicks hinzufügen",
+    "addClicksPrompt": "Wie viele Klicks hinzufügen?",
+    "emptyReview": "Nichts wartet auf Prüfung.",
+    "empty": "Noch keine Kampagnen."
+  },
+  "socialQueries": {
+    "title": "Meine Abfragen",
+    "subtitle": "Verfolge Themen in gesammelten Social-Posts — bis zu 5 Keywords pro Abfrage. Es werden keine Data Credits verbraucht.",
+    "usage": "{used}/{limit} aktiv",
+    "new": "Neu",
+    "namePlaceholder": "Name der Abfrage, z. B. KI-Video",
+    "keywordsPlaceholder": "Keywords, durch Komma getrennt: KI-Video, Text zu Video",
+    "keywordsHint": "{n}/{max} Keywords",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "paused": "Pausiert",
+    "newPosts": "{n} neu",
+    "results": "{n} Posts",
+    "view": "Posts ansehen",
+    "hide": "Ausblenden",
+    "edit": "Bearbeiten",
+    "pause": "Pausieren",
+    "resume": "Fortsetzen",
+    "delete": "Löschen",
+    "confirmDelete": "Die Abfrage „{name}“ löschen?",
+    "noResults": "Noch keine Posts passen zu diesen Keywords.",
+    "loadMore": "Mehr laden",
+    "empty": "Noch keine Abfragen — erstelle eine, um einem Thema zu folgen.",
+    "none": "Social-Listening-Abfragen gibt es in kostenpflichtigen Plänen.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "overLimit": "Über dem Planlimit"
+  },
+  "publicLimits": {
+    "login": "Anmelden, um mehr zu sehen",
+    "rankingTitle": "Das kostenlose Ranking zeigt die Top {n}",
+    "rankingText": "Sieh das komplette Ranking mit Traffic und Wachstum jedes Tools in einem kostenpflichtigen Research Plan."
+  },
+  "aiNews": {
+    "title": "KI-News",
+    "sub": "News, Anleitungen und Geschichten aus der Welt der KI-Tools.",
+    "seoDesc": "Die neuesten KI-News, Anleitungen und Gastartikel auf TopAICollection.",
+    "empty": "Noch keine Artikel.",
+    "guestPost": "Gastbeitrag",
+    "by": "Von {name}",
+    "latest": "Neueste Artikel",
+    "writeForUs": "Schreib für uns",
+    "writeForUsSub": "Veröffentliche einen Gastbeitrag oder füge deinen Link in einen unserer Artikel ein.",
+    "learnMore": "Mehr erfahren",
+    "guestPostNote": "Dies ist ein Gastbeitrag. Die Ansichten und Links darin stammen vom Autor."
+  },
+  "articleEditor": {
+    "write": "Schreiben",
+    "preview": "Vorschau",
+    "words": "{n} Wörter",
+    "min": "min. {n}",
+    "links": "{n}/{max} Links",
+    "addImage": "Bild hinzufügen",
+    "uploading": "Wird hochgeladen…",
+    "placeholder": "In Markdown schreiben: ## Überschrift, **fett**, [Link](https://…), - Liste…",
+    "nothing": "Noch nichts für die Vorschau.",
+    "help": "Markdown: ## Überschrift · **fett** · *kursiv* · [Text](https://url) · - Liste · > Zitat. HTML ist nicht erlaubt.",
+    "uploadCover": "Titelbild hochladen (16:9)",
+    "changeCover": "Ändern",
+    "coverHint": "PNG, JPG, WebP oder GIF, bis 5 MB. Empfohlen: 1200×675."
+  },
+  "postForm": {
+    "title": "Neuer Gastbeitrag",
+    "editTitle": "Gastbeitrag bearbeiten",
+    "rules": {
+      "cost": "Ein Gastbeitrag kostet {n} Credits, die beim Einreichen abgezogen werden. Wird er abgelehnt oder ziehst du ihn zurück, bekommst du sie zurück.",
+      "words": "Mindestens {n} Wörter, original und auf Englisch.",
+      "links": "Höchstens {n} Links zu anderen Websites.",
+      "topic": "Thema KI: Tools, Anwendungsfälle, Tutorials, Branchennews. Keine Inhalte für Erwachsene, kein Glücksspiel, kein Spam.",
+      "review": "Unsere Redaktion prüft jeden Beitrag und kann Änderungen anfragen. Nach der Veröffentlichung erscheint der Link in deiner Liste."
+    },
+    "fieldTitle": "Titel",
+    "fieldExcerpt": "Zusammenfassung",
+    "excerptHint": "Optional, bis 300 Zeichen — erscheint auf Karten und in Suchergebnissen.",
+    "fieldCover": "Titelbild",
+    "fieldContent": "Artikel",
+    "needTitle": "Titel mit mindestens 10 Zeichen",
+    "needCover": "Ein Titelbild",
+    "needWords": "Mindestens {n} Wörter",
+    "tooManyLinks": "Nicht mehr als {n} Links",
+    "needCredits": "Mindestens {n} Credits",
+    "confirmSpend": "Zur Prüfung einreichen? Dafür werden {n} Credit(s) verwendet.",
+    "submit": "Zur Prüfung einreichen ({n} Credits)",
+    "resubmit": "Speichern und erneut einreichen",
+    "notEditable": "Diese Einreichung kann nicht bearbeitet werden (sie wurde bereits bearbeitet oder zurückgezogen)."
+  },
+  "linkForm": {
+    "title": "Neue Link-Einfügung",
+    "editTitle": "Link-Einfügung bearbeiten",
+    "intro": "Wir fügen deinen Link in einen unserer veröffentlichten Artikel ein, in einem Satz, in den er natürlich passt. Kostet {n} Credit; können wir ihn nicht unterbringen, bekommst du ihn zurück.",
+    "fieldUrl": "Einzufügender Link",
+    "fieldAnchor": "Ankertext",
+    "fieldArticle": "Artikel",
+    "editorChooses": "Die Redaktion den passendsten Artikel wählen lassen",
+    "fieldNote": "Hinweis für die Redaktion",
+    "notePlaceholder": "Optional: Stelle im Artikel, Kontext, gewünschte Formulierung…",
+    "needUrl": "Ein vollständiger Link (https://…)",
+    "needAnchor": "Ankertext"
+  },
+  "adminPosts": {
+    "title": "Gastbeiträge",
+    "filters": {
+      "review": "Wartet auf Prüfung",
+      "all": "Alle"
+    },
+    "preview": "Vorschau",
+    "hide": "Ausblenden",
+    "publish": "Als Artikel veröffentlichen",
+    "markDone": "Als erledigt markieren",
+    "pickArticle": "Artikel wählen",
+    "editArticle": "Artikel bearbeiten",
+    "requested": "Gewünschter Artikel",
+    "requestChanges": "Änderungen anfragen",
+    "reject": "Ablehnen und erstatten",
+    "changesPrompt": "Was soll der Kunde ändern?",
+    "rejectPrompt": "Ablehnungsgrund (die Credits werden erstattet):",
+    "emptyReview": "Nichts wartet auf Prüfung.",
+    "empty": "Noch keine Einreichungen."
+  },
+  "adminArticles": {
+    "title": "Artikel",
+    "new": "Neuer Artikel",
+    "colTitle": "Titel",
+    "colKind": "Art",
+    "colStatus": "Status",
+    "colPublished": "Veröffentlicht",
+    "colLinks": "Bestellungen",
+    "empty": "Noch keine Artikel.",
+    "notFound": "Artikel nicht gefunden.",
+    "kinds": {
+      "EDITORIAL": "Redaktionell",
+      "GUEST_POST": "Gastbeitrag"
+    },
+    "statuses": {
+      "DRAFT": "Entwurf",
+      "PUBLISHED": "Veröffentlicht"
+    },
+    "slug": "URL-Slug",
+    "slugAuto": "Wird aus dem Titel erzeugt",
+    "author": "Name des Autors",
+    "linkInserts": "Link-Einfügungen für diesen Artikel — füge den Link in den Text ein und markiere ihn dann unter Gastbeiträge als erledigt:",
+    "publish": "Veröffentlichen",
+    "saveLive": "Speichern",
+    "saveDraft": "Entwurf speichern",
+    "unpublish": "Zurückziehen (Entwurf)",
+    "delete": "Löschen",
+    "deleteConfirm": "Diesen Artikel endgültig löschen?",
+    "saved": "Gespeichert.",
+    "view": "Ansehen"
+  },
+  "adminCreditRefunds": {
+    "title": "Gastbeitrags-Credits",
+    "balance": "Guthaben",
+    "hint": "Nur ungenutzte Credits können erstattet werden, zum in dieser Bestellung pro Credit bezahlten Preis.",
+    "bought": "Gekauft",
+    "refunded": "Erstattet",
+    "refund": "{credits} Credit(s) erstatten · {amount}",
+    "confirm": "{credits} ungenutzte Credit(s) erstatten — {amount} zurück auf die Karte über Stripe? Die Credits werden vom Guthaben abgezogen.",
+    "done": "{credits} Credit(s) erstattet · {amount}.",
+    "nothing": "Keine ungenutzten Credits",
+    "empty": "Keine Gastbeitrags-Bestellungen."
   }
 }

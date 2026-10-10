@@ -40,6 +40,8 @@ useSeoMeta({ title: () => `${t('admin.users.editTitle')} — TopAICollection` })
       <p v-if="savedNotice" class="mt-3 text-sm text-emerald-600">{{ t('admin.users.saved') }}</p>
 
       <UserForm :key="user.updatedAt" class="mt-6" mode="edit" :user="user" @saved="onSaved" @cancel="goBack" />
+
+      <AdminCreditRefunds :user-id="user.id" class="mt-10" />
     </template>
   </div>
 </template>

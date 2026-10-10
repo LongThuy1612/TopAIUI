@@ -606,7 +606,28 @@
     "colArticleLink": "Article/Link",
     "colType": "Type",
     "colStatus": "Status",
-    "emptyMessage": "You currently have no Post, click Create"
+    "emptyMessage": "You currently have no Post, click Create",
+    "noCredits": "You need credits to create a post or link insert — buy them on the Guest Post page.",
+    "creditsUsed": "{n} credit(s)",
+    "requestedArticle": "Article requested",
+    "editorPicks": "Editor will choose",
+    "editorNote": "Editor",
+    "refunded": "{n} credit(s) refunded",
+    "edit": "Edit",
+    "editResubmit": "Edit and resubmit",
+    "withdraw": "Withdraw",
+    "withdrawConfirm": "Withdraw this submission? {n} credit(s) go back to your balance.",
+    "types": {
+      "GUEST_POST": "Guest post",
+      "LINK_INSERT": "Link insert"
+    },
+    "statuses": {
+      "PENDING": "In review",
+      "CHANGES_REQUESTED": "Changes requested",
+      "PUBLISHED": "Published",
+      "REJECTED": "Rejected",
+      "WITHDRAWN": "Withdrawn"
+    }
   },
   "myGPTsPage": {
     "title": "My GPTs",
@@ -998,7 +1019,7 @@
           "title": "Standard placement",
           "points": [
             "Rotated as a banner on listing pages: Today, New, Most Featured, categories, search results and rankings.",
-            "Shown in the home page feed and the \"Just Launched\" block.",
+            "Shown in the home page feed.",
             "Shown on other tools' pages, above the reviews and over the alternatives.",
             "Goes live right away when the ad links to your tool's own website."
           ]
@@ -1100,7 +1121,7 @@
         },
         {
           "q": "What does the publishing process look like?",
-          "a": "Purchase credits → submit content or link details → editorial review → publication. You get the live URL by email."
+          "a": "Purchase credits → submit your article or link details from your dashboard → editorial review → publication. The live link appears in your dashboard (Posts / Links)."
         },
         {
           "q": "Are there content guidelines for guest posts?",
@@ -1217,7 +1238,8 @@
       "loading": "Loading…",
       "empty": "No orders yet.",
       "clicks": "{n} clicks",
-      "credits": "{n} credit | {n} credits"
+      "credits": "{n} credit | {n} credits",
+      "partlyRefunded": "Refunded {amount} ({credits})"
     }
   },
   "errorPage": {
@@ -1391,5 +1413,134 @@
     "login": "Log in to see more",
     "rankingTitle": "The free ranking shows the top {n}",
     "rankingText": "See the whole ranking, with every tool's traffic and growth, on a paid Research Plan."
+  },
+  "aiNews": {
+    "title": "AI News",
+    "sub": "News, guides and stories from the AI tools world.",
+    "seoDesc": "The latest AI news, guides and guest articles on TopAICollection.",
+    "empty": "No articles yet.",
+    "guestPost": "Guest post",
+    "by": "By {name}",
+    "latest": "Latest articles",
+    "writeForUs": "Write for us",
+    "writeForUsSub": "Publish a guest post or add your link to one of our articles.",
+    "learnMore": "Learn more",
+    "guestPostNote": "This is a guest post. The views and links in it are the author's own."
+  },
+  "articleEditor": {
+    "write": "Write",
+    "preview": "Preview",
+    "words": "{n} words",
+    "min": "min {n}",
+    "links": "{n}/{max} links",
+    "addImage": "Add image",
+    "uploading": "Uploading…",
+    "placeholder": "Write in Markdown: ## Heading, **bold**, [link](https://…), - list…",
+    "nothing": "Nothing to preview yet.",
+    "help": "Markdown: ## heading · **bold** · *italic* · [text](https://url) · - list · > quote. HTML is not allowed.",
+    "uploadCover": "Upload a cover image (16:9)",
+    "changeCover": "Change",
+    "coverHint": "PNG, JPG, WebP or GIF, up to 5 MB. 1200×675 recommended."
+  },
+  "postForm": {
+    "title": "New guest post",
+    "editTitle": "Edit guest post",
+    "rules": {
+      "cost": "A guest post costs {n} credits, taken when you submit. If it is rejected or you withdraw it, they come back.",
+      "words": "At least {n} words, original and written in English.",
+      "links": "At most {n} links to other sites.",
+      "topic": "About AI: tools, use cases, tutorials, industry news. No adult, gambling or spammy content.",
+      "review": "Our editors review every post and may ask for changes. Once published, the link appears in your list."
+    },
+    "fieldTitle": "Title",
+    "fieldExcerpt": "Summary",
+    "excerptHint": "Optional, up to 300 characters — shown on cards and in search results.",
+    "fieldCover": "Cover image",
+    "fieldContent": "Article",
+    "needTitle": "Title of at least 10 characters",
+    "needCover": "A cover image",
+    "needWords": "At least {n} words",
+    "tooManyLinks": "No more than {n} links",
+    "needCredits": "At least {n} credits",
+    "confirmSpend": "Submit for review? This uses {n} credit(s).",
+    "submit": "Submit for review ({n} credits)",
+    "resubmit": "Save and resubmit",
+    "notEditable": "This submission can't be edited (it was already handled or withdrawn)."
+  },
+  "linkForm": {
+    "title": "New link insert",
+    "editTitle": "Edit link insert",
+    "intro": "We add your link to one of our published articles, in a sentence where it fits naturally. Costs {n} credit; if we can't place it, it comes back.",
+    "fieldUrl": "Link to insert",
+    "fieldAnchor": "Anchor text",
+    "fieldArticle": "Article",
+    "editorChooses": "Let the editor choose the best article",
+    "fieldNote": "Note for the editor",
+    "notePlaceholder": "Optional: where in the article, context, preferred wording…",
+    "needUrl": "A full link (https://…)",
+    "needAnchor": "Anchor text"
+  },
+  "adminPosts": {
+    "title": "Guest posts",
+    "filters": {
+      "review": "Waiting for review",
+      "all": "All"
+    },
+    "preview": "Preview",
+    "hide": "Hide",
+    "publish": "Publish as article",
+    "markDone": "Mark as done",
+    "pickArticle": "Pick the article",
+    "editArticle": "Edit article",
+    "requested": "Requested article",
+    "requestChanges": "Request changes",
+    "reject": "Reject and refund",
+    "changesPrompt": "What should the customer change?",
+    "rejectPrompt": "Reason for rejection (the credits are refunded):",
+    "emptyReview": "Nothing waiting for review.",
+    "empty": "No submissions yet."
+  },
+  "adminArticles": {
+    "title": "Articles",
+    "new": "New article",
+    "colTitle": "Title",
+    "colKind": "Kind",
+    "colStatus": "Status",
+    "colPublished": "Published",
+    "colLinks": "Orders",
+    "empty": "No articles yet.",
+    "notFound": "Article not found.",
+    "kinds": {
+      "EDITORIAL": "Editorial",
+      "GUEST_POST": "Guest post"
+    },
+    "statuses": {
+      "DRAFT": "Draft",
+      "PUBLISHED": "Published"
+    },
+    "slug": "URL slug",
+    "slugAuto": "Generated from the title",
+    "author": "Author name",
+    "linkInserts": "Link inserts for this article — paste the link into the text, then mark it done in Guest posts:",
+    "publish": "Publish",
+    "saveLive": "Save",
+    "saveDraft": "Save draft",
+    "unpublish": "Unpublish (draft)",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this article for good?",
+    "saved": "Saved.",
+    "view": "View"
+  },
+  "adminCreditRefunds": {
+    "title": "Guest post credits",
+    "balance": "Balance",
+    "hint": "only unused credits can be refunded, at the price paid per credit in that order.",
+    "bought": "Bought",
+    "refunded": "Refunded",
+    "refund": "Refund {credits} credit(s) · {amount}",
+    "confirm": "Refund {credits} unused credit(s) — {amount} back to the card through Stripe? The credits are taken off the balance.",
+    "done": "Refunded {credits} credit(s) · {amount}.",
+    "nothing": "No unused credits",
+    "empty": "No guest post orders."
   }
 }

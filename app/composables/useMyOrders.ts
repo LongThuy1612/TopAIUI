@@ -14,6 +14,9 @@ export interface OrderRow {
   status: OrderStatus
   createdAt: string
   paidAt: string | null
+  // guest-post: unused credits an admin refunded (amount in cents)
+  refundedCredits: number
+  refundedAmount: number
 }
 
 // One Stripe charge of a Research Plan subscription (first payment, renewal, plan change).

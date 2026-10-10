@@ -1,14 +1,16 @@
 {
   "header": {
     "searchPlaceholder": "搜索 AI 工具...",
-    "categories": "分类",
-    "rankings": "排行榜",
-    "submit": "提交工具",
-    "admin": "控制台",
     "freeTools": "免费工具",
     "products": "产品",
+    "categories": "分类",
+    "rankings": "排行榜",
     "prompts": "提示词",
+    "jobs": "招聘",
     "resource": "资源",
+    "submit": "提交工具",
+    "adLibrary": "AI 广告库",
+    "admin": "控制台",
     "menu": "菜单",
     "openMenu": "打开菜单",
     "closeMenu": "关闭菜单"
@@ -40,217 +42,55 @@
     "accountBanned": "该账户已被封禁。",
     "googleEmailInUse": "该邮箱已注册，请使用邮箱和密码登录。"
   },
-  "hero": {
-    "titlePrefix": "发现最好的",
-    "titleHighlight": "AI 工具",
-    "subtitle": "按分类浏览数百款 AI 产品，比较价格，找到最适合你工作流程的工具。",
-    "searchPlaceholder": "搜索 AI 工具..."
+  "productsMenu": {
+    "newTitle": "最新 AI",
+    "newDesc": "每天更新的最新 AI 工具",
+    "savedTitle": "收藏最多的 AI",
+    "savedDesc": "本平台收藏数最多的 AI",
+    "usedTitle": "最常用的 AI",
+    "usedDesc": "网站流量最高的 AI",
+    "appsTitle": "AI 应用",
+    "appsDesc": "按分类整理的 AI 工具",
+    "discordTitle": "AI Discord",
+    "discordDesc": "发现 AI 相关的 Discord 社区",
+    "extensionsTitle": "AI Chrome 扩展",
+    "extensionsDesc": "浏览器扩展形式的 AI 工具",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "来自 GPT Store 的 GPTs",
+    "modelsTitle": "AI 模型",
+    "modelsDesc": "发现最适合的 AI 模型"
   },
-  "stats": {
-    "tools": "个 AI 和",
-    "categories": "个分类，尽在最好的 AI 工具目录。",
-    "featured": "精选工具",
-    "updatedNote": "AI 工具列表和 GPTs 商店由 ChatGPT 每日更新。"
+  "promptsMenu": {
+    "n8nTitle": "n8n 工作流",
+    "midjourneyTitle": "Midjourney 提示词",
+    "openclawTitle": "Openclaw 技能",
+    "gptImageTitle": "GPT Image 2 提示词",
+    "seedreamTitle": "Seedream 5 Pro 提示词",
+    "seedanceTitle": "Seedance 2.5 提示词"
   },
-  "tabs": {
-    "heading": "探索工具",
-    "newest": "今天",
-    "featured": "最新",
-    "free": "最受推荐",
-    "viewAll": "查看全部 →"
+  "resourceMenu": {
+    "checkDomainTitle": "域名查询",
+    "aiDomainTitle": ".ai 域名"
   },
-  "announcement": {
-    "featured": "精选",
-    "cta": "了解更多"
+  "submitMenu": {
+    "submitTitle": "提交工具",
+    "advertiseTitle": "广告投放",
+    "guestPostsTitle": "客座文章 / 链接插入",
+    "updateAiTitle": "更新 AI",
+    "submitGptTitle": "提交 GPT",
+    "moreBusinessTitle": "更多商务"
   },
-  "sidebar": {
-    "featuredTools": "精选工具",
-    "topCategories": "热门分类",
-    "aiNews": "AI 新闻",
-    "top10": "前 10",
-    "readMoreNews": "阅读更多"
-  },
-  "sections": {
-    "browseByCategory": "按分类浏览",
-    "newestTools": "最新工具",
-    "featuredTools": "精选工具",
-    "viewAll": "查看全部 →",
-    "justLaunched": "新上线",
-    "featuredThisWeek": "精选",
-    "featuredThisWeekSubtitle": "社区收藏和评分最高的工具。",
-    "updatedDaily": "每日更新",
-    "viewMore": "查看更多 →",
-    "browse": "浏览",
-    "editorsPicks": "编辑精选",
-    "sponsorBadge": "赞助",
-    "viewMoreTools": "查看更多 →"
-  },
-  "cta": {
-    "title": "有 AI 工具想要分享？",
-    "subtitle": "让正在寻找同类工具的人看到它。",
-    "button": "提交你的工具"
-  },
-  "empty": {
-    "noTools": "暂无数据。",
-    "noResults": "未找到工具"
-  },
-  "category": {
-    "breadcrumbHome": "首页",
-    "allTools": "所有工具",
-    "allToolsTitle": "所有 AI 工具",
-    "allPricing": "所有价格",
-    "sortNewest": "最新优先",
-    "sortFeatured": "精选优先",
-    "sortName": "名称 A–Z",
-    "toolsFound": "个工具 | 个工具",
-    "searchPlaceholder": "搜索工具...",
-    "filters": "筛选",
-    "viewGrid": "网格视图",
-    "viewList": "列表视图"
-  },
-  "pricing": {
-    "FREE": "免费",
-    "FREEMIUM": "免费增值",
-    "PAID": "付费"
-  },
-  "ranking": {
-    "title": "热门 AI 工具",
-    "subtitle": "根据我们目录中记录的流量和增长数据排名。",
-    "byGrowth1m": "1 个月增长",
-    "byGrowth3m": "3 个月增长",
-    "byGrowth6m": "6 个月增长",
-    "byTraffic": "月访问量",
-    "colRank": "排名",
-    "colTool": "工具",
-    "colVisits": "月访问量",
-    "colGrowth": "增长",
-    "colAuthority": "域名权重",
-    "colCategory": "分类",
-    "noData": "暂无排名数据。",
-    "dataMonth": "{month} 的流量数据。",
-    "colVisitsFrom": "来自 {name} 的访问量",
-    "growthNote": "仅对对比月份访问量至少 {min} 的工具进行增长排名。",
-    "loadMore": "加载更多",
-    "loading": "加载中…"
-  },
-  "tool": {
-    "openSite": "访问网站",
-    "save": "收藏",
-    "saved": "已收藏",
-    "featured": "精选",
-    "introduction": "简介",
-    "addedOn": "添加时间",
-    "monthlyVisitors": "月访问量",
-    "features": "主要功能",
-    "useCases": "使用场景",
-    "coreFeaturesHeading": "{name} 的核心功能",
-    "useCasesHeading": "{name} 的使用场景",
-    "prosAndCons": "优缺点",
-    "pros": "优点",
-    "cons": "缺点",
-    "faq": "常见问题",
-    "faqHeading": "{name} 的 FAQ",
-    "alternatives": "的替代品",
-    "backToCategory": "返回",
-    "notFound": "未找到该工具",
-    "similarTools": "相似工具",
-    "tabProductInfo": "产品信息",
-    "tabPricing": "价格",
-    "tabReviews": "评价",
-    "tabAnalytics": "数据分析",
-    "tabAlternatives": "替代品",
-    "productInformationHeading": "{name} 产品信息",
-    "whatIs": "{name} 是什么？",
-    "howToUseHeading": "如何使用 {name}？",
-    "reviewsHeading": "{name} 评价（{count}）",
-    "ratingPrompt": "你会推荐 {name} 吗？留下评论",
-    "whatDoYouThink": "你怎么看？",
-    "loginToComment": "登录后评论",
-    "pricingHeading": "{name} 价格",
-    "noPricingYet": "暂无价格信息。",
-    "analyticsHeading": "{name} 数据分析",
-    "trafficAnalysis": "{name} 网站流量分析",
-    "visitOverTime": "访问趋势",
-    "monthlyVisits": "月访问量",
-    "avgVisitDuration": "平均访问时长",
-    "pagePerVisit": "每次访问页数",
-    "bounceRate": "跳出率",
-    "noTrafficYet": "暂无流量数据。",
-    "badgeVerified": "已认证",
-    "badgeJustLaunched": "新上线",
-    "badgeFreeTool": "免费工具",
-    "affiliateLink": "推广链接",
-    "couponCode": "优惠码",
-    "ratings": "评分",
-    "upvotes": "点赞",
-    "domainAuthority": "域名权重",
-    "trafficRank": "流量排名",
-    "viewCount": "浏览量",
-    "outOf5": "分（满分5分）",
-    "enterReviewPrompt": "请输入您的评价",
-    "sortBy": "排序方式",
-    "sortNewest": "最新",
-    "sortOldest": "最早",
-    "loadMoreReviews": "加载更多评价",
-    "loadingMore": "加载中...",
-    "reviewsLabel": "条评价",
-    "socialAndEmail": "社交与邮箱",
-    "advertiseTool": "推广此工具",
-    "updateTool": "更新此工具",
-    "savedLabel": "次收藏",
-    "vsLastMonth": "较上月",
-    "trafficSources": "流量来源",
-    "sourceDirect": "直接访问",
-    "sourceSearch": "搜索",
-    "sourceReferral": "引荐",
-    "sourceSocial": "社交",
-    "sourceMail": "邮件",
-    "sourcePaidReferrals": "付费引荐",
-    "sourceOthers": "其他",
-    "allTraffic": "全部流量",
-    "globalRank": "全球排名",
-    "yearFounded": "成立时间",
-    "employees": "员工人数",
-    "topKeywords": "热门关键词",
-    "keyword": "关键词",
-    "searchVolume": "搜索量",
-    "keywordType": "类型",
-    "keywordOrganic": "自然",
-    "keywordPaid": "付费",
-    "mobileApps": "移动应用",
-    "loginToReview": "登录后评价",
-    "submitReview": "提交评价",
-    "submittingReview": "提交中...",
-    "reviewPendingNotice": "感谢！您的评价已提交，审核通过后将会显示。",
-    "reviewAlreadySubmitted": "您已经评价过此工具。",
-    "reviewSubmitError": "评价提交失败，请重试。",
-    "reviewSessionExpired": "登录已过期，请重新登录后提交评价。"
-  },
-  "footer": {
-    "tagline": "发现、比较和分享最好的 AI 工具 — 基于 Nuxt 与 PostgreSQL 构建。",
-    "product": "产品",
-    "home": "首页",
-    "allTools": "所有工具",
-    "submit": "提交工具",
-    "categories": "分类",
-    "company": "公司",
-    "language": "语言",
-    "copyright": "保留所有权利。",
-    "topAiTools": "热门 AI 工具",
-    "moreTools": "更多工具",
-    "categoryToolsCount": "{count} 个{name}工具",
-    "categoryTools": "{name}工具",
-    "browseByAlphabet": "按字母浏览",
-    "top1000Directory": "Top 1000 AI 工具目录",
-    "about": "关于",
-    "aboutUs": "关于我们",
-    "terms": "服务条款",
-    "privacy": "隐私政策",
-    "advertise": "广告合作",
-    "contact": "联系我们"
-  },
-  "language": {
-    "label": "语言"
+  "rankingMenu": {
+    "monthlyTitle": "月度 AI 排行",
+    "monthlyDesc": "按月份和月访问量排列的 AI 榜单",
+    "categoriesTitle": "分类 AI 排行",
+    "categoriesDesc": "按分类和月访问量排列的 AI 榜单",
+    "regionsTitle": "地区 AI 排行",
+    "regionsDesc": "按地区和月访问量排列的 AI 榜单",
+    "sourceTitle": "来源 AI 排行",
+    "sourceDesc": "按来源和月访问量排列的 AI 榜单",
+    "revenueTitle": "按收入排名的 AI",
+    "revenueDesc": "按收入和真实流量排名的 AI 榜单。"
   },
   "admin": {
     "badge": "管理员",
@@ -297,7 +137,9 @@
         "queries": "社交聆听查询次数",
         "filtering": "高级筛选",
         "export": "数据导出",
-        "statistics": "基础数据统计"
+        "statistics": "基础数据统计",
+        "filteringFull": "全部高级筛选",
+        "statisticsDeep": "深度统计"
       },
       "faq": {
         "title": "常见问题",
@@ -305,7 +147,21 @@
           "question": "什么是“数据额度”？",
           "answer": "数据额度是您在本平台进行研究所使用的货币，消耗方式如下：\n1. 数据使用：在“洞察”或“分析”页面每加载一行数据消耗 1 点额度。\n2. 导出数据：每导出一行数据到 CSV 或 Excel 文件消耗 1 点额度。\n3. 免费项目：社交聆听查询不消耗数据额度。\n请注意：额度每月在计费周期开始时重置，未使用的额度不会结转到下一周期。"
         }
-      }
+      },
+      "currentPlan": "当前方案",
+      "upgradeTo": "升级",
+      "downgradeTo": "降级",
+      "switchTo": "切换",
+      "working": "请稍候…",
+      "error": "出错了，请重试。",
+      "confirmChange": "切换到 {plan}？按比例计算的差额将立即扣款（或退回）。",
+      "confirmCancel": "取消方案？您可使用到 {date}，之后转为 Free。",
+      "renewsOn": "{date} 续订",
+      "endsOn": "{date} 结束",
+      "pastDue": "付款失败 — 请更新您的银行卡。",
+      "manageBilling": "管理账单",
+      "resume": "保留我的方案",
+      "cancelPlan": "取消方案"
     },
     "business": "业务",
     "myAIs": "我的 AI",
@@ -453,7 +309,169 @@
       "deleteConfirm": "确定永久删除这条评价吗？",
       "guest": "访客",
       "empty": "未找到评价。"
-    }
+    },
+    "userSubmission": "用户提交",
+    "waitingUserContent": "等待所有者提供内容",
+    "submission": {
+      "title": "用户提交",
+      "owner": "所有者",
+      "mode": "由谁撰写收录内容",
+      "reason": "拒绝原因",
+      "modes": {
+        "auto": "我们的团队（自动）",
+        "manual": "所有者（手动）"
+      },
+      "publish": "发布",
+      "reject": "拒绝",
+      "reasonPlaceholder": "拒绝原因 — 将显示给所有者",
+      "publishHint": "发布需要完整的英文收录内容。使用下方的「已批准」开关进行批准。拒绝后，工具会退回给所有者修改并重新提交。",
+      "ai": "AI 内容",
+      "aiRerun": "重新运行 AI",
+      "aiStatus": {
+        "none": "未请求",
+        "queued": "排队中 — 爬虫即将处理",
+        "done": "已完成",
+        "failed": "失败 — 正在自动重试",
+        "invalid": "需要管理员处理 — 网站无法读取或信息不足以生成 AI 内容"
+      },
+      "duplicate": "警告：与现有收录的网站相同 —"
+    },
+    "update": {
+      "title": "付费更新",
+      "pendingTitle": "待审核的更新（{n}）",
+      "status": {
+        "DRAFT": "所有者已付款，仍在准备修改内容。",
+        "SUBMITTED": "已提交 — 请审核下方的修改。"
+      },
+      "field": "字段",
+      "current": "当前线上",
+      "proposed": "提议修改",
+      "fields": {
+        "name": "名称",
+        "logoUrl": "Logo",
+        "pricingType": "价格",
+        "twitterUrl": "Twitter 链接",
+        "discordUrl": "Discord 链接",
+        "images": "截图",
+        "categories": "分类",
+        "shortDesc": "简短描述",
+        "description": "描述",
+        "whatIs": "是什么",
+        "howToUse": "如何使用",
+        "coreFeatures": "核心功能",
+        "useCases": "使用场景"
+      },
+      "noChanges": "暂无修改。",
+      "apply": "应用更新",
+      "reject": "拒绝并退款",
+      "reasonPlaceholder": "拒绝原因 — 将显示给所有者",
+      "hint": "应用后，修改将写入线上收录并重新翻译。拒绝则通过 Stripe 退还款项。"
+    },
+    "managePlan": "管理方案"
+  },
+  "hero": {
+    "titlePrefix": "发现最好的",
+    "titleHighlight": "AI 工具",
+    "subtitle": "按分类浏览数百款 AI 产品，比较价格，找到最适合你工作流程的工具。",
+    "searchPlaceholder": "搜索 AI 工具..."
+  },
+  "stats": {
+    "tools": "个 AI 和",
+    "categories": "个分类，尽在最好的 AI 工具目录。",
+    "featured": "精选工具",
+    "updatedNote": "AI 工具列表和 GPTs 商店由 ChatGPT 每日更新。"
+  },
+  "tabs": {
+    "heading": "探索工具",
+    "newest": "今天",
+    "featured": "最新",
+    "free": "最受推荐",
+    "viewAll": "查看全部 →"
+  },
+  "announcement": {
+    "featured": "精选",
+    "cta": "了解更多"
+  },
+  "sidebar": {
+    "featuredTools": "精选工具",
+    "topCategories": "热门分类",
+    "aiNews": "AI 新闻",
+    "top10": "前 10",
+    "readMoreNews": "阅读更多"
+  },
+  "sections": {
+    "browseByCategory": "按分类浏览",
+    "newestTools": "最新工具",
+    "featuredTools": "精选工具",
+    "viewAll": "查看全部 →",
+    "justLaunched": "新上线",
+    "featuredThisWeek": "精选",
+    "featuredThisWeekSubtitle": "社区收藏和评分最高的工具。",
+    "browse": "浏览",
+    "editorsPicks": "编辑精选",
+    "sponsorBadge": "赞助",
+    "updatedDaily": "每日更新",
+    "viewMore": "查看更多 →",
+    "viewMoreTools": "查看更多 →",
+    "adLabel": "广告",
+    "tryNow": "立即试用"
+  },
+  "cta": {
+    "title": "有 AI 工具想要分享？",
+    "subtitle": "让正在寻找同类工具的人看到它。",
+    "button": "提交你的工具"
+  },
+  "empty": {
+    "noTools": "暂无数据。",
+    "noResults": "未找到工具"
+  },
+  "category": {
+    "breadcrumbHome": "首页",
+    "allTools": "所有工具",
+    "allToolsTitle": "所有 AI 工具",
+    "allPricing": "所有价格",
+    "sortNewest": "最新优先",
+    "sortFeatured": "精选优先",
+    "sortName": "名称 A–Z",
+    "toolsFound": "个工具 | 个工具",
+    "searchPlaceholder": "搜索工具...",
+    "filters": "筛选",
+    "viewGrid": "网格视图",
+    "viewList": "列表视图"
+  },
+  "pricing": {
+    "FREE": "免费",
+    "FREEMIUM": "免费增值",
+    "PAID": "付费"
+  },
+  "ranking": {
+    "title": "热门 AI 工具",
+    "subtitle": "根据我们目录中记录的流量和增长数据排名。",
+    "byGrowth1m": "1 个月增长",
+    "byGrowth3m": "3 个月增长",
+    "byGrowth6m": "6 个月增长",
+    "byTraffic": "月访问量",
+    "colRank": "排名",
+    "colTool": "工具",
+    "colVisits": "月访问量",
+    "colGrowth": "增长",
+    "colAuthority": "域名权重",
+    "colCategory": "分类",
+    "colRevenue": "收入",
+    "noData": "暂无排名数据。",
+    "selectCategory": "选择分类",
+    "selectRegion": "选择地区",
+    "selectSource": "选择来源",
+    "categoriesTitle": "按分类的热门 AI 工具",
+    "regionsTitle": "按地区的热门 AI 工具",
+    "sourceTitle": "按来源的热门 AI 工具",
+    "revenueTitle": "按收入的热门 AI 工具",
+    "noSelection": "请在上方选择一个选项查看排名。",
+    "dataMonth": "{month} 的流量数据。",
+    "colVisitsFrom": "来自 {name} 的访问量",
+    "growthNote": "仅对对比月份访问量至少 {min} 的工具进行增长排名。",
+    "loadMore": "加载更多",
+    "loading": "加载中…"
   },
   "socialListening": {
     "title": "社交聆听",
@@ -495,7 +513,38 @@
     "sortGrowthRateAsc": "增长率：低 → 高",
     "loading": "加载中…",
     "loadError": "无法加载数据，请重试。",
-    "popupBlocked": "浏览器拦截了部分标签页。请允许本站弹出窗口以全部打开。"
+    "popupBlocked": "浏览器拦截了部分标签页。请允许本站弹出窗口以全部打开。",
+    "creditsThisMonth": "本月 Data Credits",
+    "outOfCredits": "本月的 Data Credits 已用完 — 本页有 {n} 行被锁定。升级即可查看。",
+    "unlock": "升级以解锁",
+    "statsTitle": "统计",
+    "statsLocked": "月度统计仅在付费方案中提供。",
+    "statTools": "工具",
+    "statVisits": "总访问量",
+    "statGrowth": "访问量增长",
+    "statMedian": "增长中位数",
+    "statTopGrowth": "增长最快",
+    "statCategories": "按分类的访问量",
+    "statTrend": "总访问量，近 12 个月",
+    "statDistribution": "按增长分布的工具",
+    "statCategoryGrowth": "按分类的增长",
+    "advancedFilters": "筛选",
+    "clearFilters": "清除筛选",
+    "filterNeedsAdvanced": "Starter 及以上方案",
+    "filterNeedsFull": "Enterprise 方案",
+    "exportQuota": "导出：本月 {used}/{limit} 行 · 每次最多 {per} 行",
+    "exportError": "导出失败，请重试。",
+    "filter": {
+      "category": "分类",
+      "anyCategory": "任意分类",
+      "minVisits": "最低月访问量",
+      "maxVisits": "最高月访问量",
+      "minGrowthRate": "最低增长率（%）",
+      "maxGrowthRate": "最高增长率（%）",
+      "maxBounceRate": "最高跳出率（%）",
+      "minDuration": "最短访问时长（秒）",
+      "minPagesPerVisit": "每次访问最少页数"
+    }
   },
   "myAIsPage": {
     "title": "我的 AI",
@@ -518,7 +567,33 @@
     "colBalances": "余额",
     "colStatus": "状态",
     "colAction": "操作",
-    "emptyMessage": "您目前还没有广告，点击创建广告"
+    "emptyMessage": "您目前还没有广告，点击创建广告",
+    "colPerformance": "效果",
+    "tiers": {
+      "STANDARD": "Standard",
+      "FEATURED": "Featured"
+    },
+    "statuses": {
+      "PENDING_REVIEW": "审核中",
+      "ACTIVE": "投放中",
+      "PAUSED": "已暂停",
+      "EXHAUSTED": "点击已用完",
+      "REJECTED": "已拒绝"
+    },
+    "toolWebsite": "工具网站",
+    "pendingLanding": "审核中：{url}",
+    "remaining": "剩余点击",
+    "impressions": "展示次数",
+    "clicks": "点击次数",
+    "pausedByAdmin": "已被我们的团队暂停",
+    "reason": "原因：{reason}",
+    "pause": "暂停",
+    "resume": "恢复",
+    "editLanding": "修改落地页链接",
+    "save": "保存",
+    "cancel": "取消",
+    "landingHint": "留空则使用您工具的网站。其他网站的链接需先审核，审核期间继续使用当前链接投放。",
+    "reviewNote": "每个工具和广告类型都有独立的点击余额。广告直接链接到您的网站，每位访客 24 小时内只对首次点击计费。"
   },
   "myPostsPage": {
     "title": "我的文章 / 链接插入",
@@ -531,7 +606,28 @@
     "colArticleLink": "文章/链接",
     "colType": "类型",
     "colStatus": "状态",
-    "emptyMessage": "您目前还没有文章，点击创建"
+    "emptyMessage": "您目前还没有文章，点击创建",
+    "noCredits": "创建文章或链接插入需要积分 — 请在 Guest Post 页面购买。",
+    "creditsUsed": "{n} 积分",
+    "requestedArticle": "已指定文章",
+    "editorPicks": "由编辑选择",
+    "editorNote": "编辑",
+    "refunded": "已退回 {n} 积分",
+    "edit": "编辑",
+    "editResubmit": "编辑并重新提交",
+    "withdraw": "撤回",
+    "withdrawConfirm": "撤回此提交？{n} 积分将退回您的余额。",
+    "types": {
+      "GUEST_POST": "客座文章",
+      "LINK_INSERT": "链接插入"
+    },
+    "statuses": {
+      "PENDING": "审核中",
+      "CHANGES_REQUESTED": "需要修改",
+      "PUBLISHED": "已发布",
+      "REJECTED": "已拒绝",
+      "WITHDRAWN": "已撤回"
+    }
   },
   "myGPTsPage": {
     "title": "我的 GPTs",
@@ -571,7 +667,18 @@
     "loadError": "无法加载个人资料，请刷新页面。",
     "emailHint": "登录邮箱无法在此修改。",
     "saved": "已保存。",
-    "saveError": "保存失败，请重试。"
+    "saveError": "保存失败，请重试。",
+    "quotaResets": "配额将于 {date} 重置",
+    "cardInStripe": "已保存在 Stripe",
+    "endsOn": "方案结束于",
+    "researchPlan": "Research Plan",
+    "invoiceStatuses": {
+      "paid": "已支付",
+      "open": "未支付",
+      "uncollectible": "失败",
+      "void": "已作废",
+      "draft": "草稿"
+    }
   },
   "feedbackPage": {
     "title": "用户反馈",
@@ -605,6 +712,138 @@
       "RESOLVED": "已解决",
       "CLOSED": "已关闭"
     }
+  },
+  "tool": {
+    "openSite": "访问网站",
+    "save": "收藏",
+    "saved": "已收藏",
+    "featured": "精选",
+    "introduction": "简介",
+    "addedOn": "添加时间",
+    "monthlyVisitors": "月访问量",
+    "features": "主要功能",
+    "useCases": "使用场景",
+    "coreFeaturesHeading": "{name} 的核心功能",
+    "useCasesHeading": "{name} 的使用场景",
+    "prosAndCons": "优缺点",
+    "pros": "优点",
+    "cons": "缺点",
+    "faq": "常见问题",
+    "faqHeading": "{name} 的 FAQ",
+    "alternatives": "的替代品",
+    "backToCategory": "返回",
+    "notFound": "未找到该工具",
+    "similarTools": "相似工具",
+    "tabProductInfo": "产品信息",
+    "tabPricing": "价格",
+    "tabReviews": "评价",
+    "tabAnalytics": "数据分析",
+    "tabAlternatives": "替代品",
+    "productInformationHeading": "{name} 产品信息",
+    "whatIs": "{name} 是什么？",
+    "howToUseHeading": "如何使用 {name}？",
+    "reviewsHeading": "{name} 评价（{count}）",
+    "ratingPrompt": "你会推荐 {name} 吗？留下评论",
+    "whatDoYouThink": "你怎么看？",
+    "loginToComment": "登录后评论",
+    "loginToReview": "登录后评价",
+    "submitReview": "提交评价",
+    "pricingHeading": "{name} 价格",
+    "noPricingYet": "暂无价格信息。",
+    "analyticsHeading": "{name} 数据分析",
+    "trafficAnalysis": "{name} 网站流量分析",
+    "visitOverTime": "访问趋势",
+    "monthlyVisits": "月访问量",
+    "avgVisitDuration": "平均访问时长",
+    "pagePerVisit": "每次访问页数",
+    "bounceRate": "跳出率",
+    "noTrafficYet": "暂无流量数据。",
+    "badgeVerified": "已认证",
+    "badgeJustLaunched": "新上线",
+    "badgeFreeTool": "免费工具",
+    "affiliateLink": "推广链接",
+    "couponCode": "优惠码",
+    "ratings": "评分",
+    "upvotes": "点赞",
+    "outOf5": "分（满分5分）",
+    "enterReviewPrompt": "请输入您的评价",
+    "sortBy": "排序方式",
+    "sortNewest": "最新",
+    "sortOldest": "最早",
+    "loadMoreReviews": "加载更多评价",
+    "loadingMore": "加载中...",
+    "reviewsLabel": "条评价",
+    "socialAndEmail": "社交与邮箱",
+    "advertiseTool": "推广此工具",
+    "updateTool": "更新此工具",
+    "savedLabel": "次收藏",
+    "domainAuthority": "域名权重",
+    "trafficRank": "流量排名",
+    "viewCount": "浏览量",
+    "vsLastMonth": "较上月",
+    "trafficSources": "流量来源",
+    "geography": "地域分布",
+    "topRegions": "前 {count} 个地区",
+    "desktopOnly": "仅桌面端",
+    "sourceDirect": "直接访问",
+    "sourceSearch": "搜索",
+    "sourceReferral": "引荐",
+    "sourceSocial": "社交",
+    "sourceMail": "邮件",
+    "sourcePaidReferrals": "付费引荐",
+    "sourceOthers": "其他",
+    "allTraffic": "全部流量",
+    "globalRank": "全球排名",
+    "yearFounded": "成立时间",
+    "employees": "员工人数",
+    "topKeywords": "热门关键词",
+    "keyword": "关键词",
+    "searchVolume": "搜索量",
+    "keywordType": "类型",
+    "keywordOrganic": "自然",
+    "keywordPaid": "付费",
+    "mobileApps": "移动应用",
+    "submittingReview": "提交中...",
+    "reviewPendingNotice": "感谢！您的评价已提交，审核通过后将会显示。",
+    "reviewAlreadySubmitted": "您已经评价过此工具。",
+    "reviewSubmitError": "评价提交失败，请重试。",
+    "reviewSessionExpired": "登录已过期，请重新登录后提交评价。"
+  },
+  "alphabet": {
+    "title": "以此字母开头的 AI 工具",
+    "browse": "按字母浏览"
+  },
+  "archive": {
+    "title": "Top 1000 AI 工具",
+    "rank": "排名",
+    "name": "名称",
+    "introduction": "简介"
+  },
+  "footer": {
+    "tagline": "发现、比较和分享最好的 AI 工具 — 基于 Nuxt 与 PostgreSQL 构建。",
+    "product": "产品",
+    "home": "首页",
+    "allTools": "所有工具",
+    "submit": "提交工具",
+    "categories": "分类",
+    "company": "公司",
+    "language": "语言",
+    "copyright": "保留所有权利。",
+    "topAiTools": "热门 AI 工具",
+    "moreTools": "更多工具",
+    "categoryToolsCount": "{count} 个{name}工具",
+    "categoryTools": "{name}工具",
+    "browseByAlphabet": "按字母浏览",
+    "top1000Directory": "Top 1000 AI 工具目录",
+    "about": "关于",
+    "aboutUs": "关于我们",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "advertise": "广告合作",
+    "contact": "联系我们"
+  },
+  "language": {
+    "label": "语言"
   },
   "promote": {
     "title": "你在 {site} 上的 AI",
@@ -780,7 +1019,7 @@
           "title": "标准广告位",
           "points": [
             "以横幅形式在列表页轮播：今日、最新、最受推荐、分类、搜索结果和排行榜。",
-            "显示在首页信息流和“刚刚上线”板块中。",
+            "展示在首页的列表中。",
             "显示在其他工具的页面上：评论区上方和替代工具区上方。",
             "广告链接指向工具自己的网站时，立即上线。"
           ]
@@ -830,7 +1069,13 @@
           "q": "可以选择广告展示的位置吗？",
           "a": "不可以。广告位会自动选择，以尽快为你带来点击。"
         }
-      ]
+      ],
+      "chooseTier": "选择广告类型",
+      "tierHints": {
+        "STANDARD": "在列表页轮播展示。链接到您自己的网站时立即上线。",
+        "FEATURED": "置顶展示，外加赞助栏。每次点击费用更高；由我们的团队审核。"
+      },
+      "reviewNote": "Featured 广告系列，以及任何指向工具网站以外的落地页链接，都会在上线前由我们的团队检查。被拒绝的广告系列将全额退款。"
     },
     "guestPost": {
       "seoTitle": "投稿与插入链接 – {site}",
@@ -876,7 +1121,7 @@
         },
         {
           "q": "发布流程是怎样的？",
-          "a": "购买积分 → 提交内容或链接信息 → 编辑审核 → 发布。发布后你会通过邮件收到文章网址。"
+          "a": "购买积分 → 在控制台提交文章或链接信息 → 编辑审核 → 发布。发布后的链接会显示在控制台（Posts / Links）中。"
         },
         {
           "q": "投稿有内容要求吗？",
@@ -942,7 +1187,10 @@
           "q": "可以修改哪些信息？",
           "a": "上方列表中除网站网址以外的所有内容。"
         }
-      ]
+      ],
+      "loginToPick": "登录以选择您的工具",
+      "noOwnedTools": "您还没有已发布的工具 — 只有已收录工具的所有者才能更新它。",
+      "pickOwnTool": "选择您已发布的工具"
     },
     "submitGpt": {
       "seoTitle": "提交你的 GPT – {site}",
@@ -984,12 +1232,14 @@
       "statuses": {
         "PAID": "已支付",
         "PENDING": "待支付",
-        "EXPIRED": "已过期"
+        "EXPIRED": "已过期",
+        "REFUNDED": "已退款"
       },
       "loading": "加载中…",
       "empty": "暂无订单。",
       "clicks": "{n} 次点击",
-      "credits": "{n} 积分"
+      "credits": "{n} 积分",
+      "partlyRefunded": "已退款 {amount}（{credits}）"
     }
   },
   "errorPage": {
@@ -999,50 +1249,82 @@
     "errorMessage": "发生意外错误，请稍后重试。",
     "backHome": "返回首页"
   },
-  "alphabet": {
-    "title": "以此字母开头的 AI 工具",
-    "browse": "按字母浏览"
+  "myTool": {
+    "contentHeading": "收录内容（英文）",
+    "contentHint": "标有 * 的字段为提交必填项。每行一个功能 / 使用场景。",
+    "saveDraft": "保存草稿",
+    "submitForReview": "提交审核",
+    "saving": "保存中…",
+    "saved": "已保存。",
+    "submitted": "已提交 — 我们会尽快审核您的工具。",
+    "saveError": "保存失败，请重试。",
+    "reason": "原因",
+    "viewPage": "查看公开页面",
+    "stage": {
+      "draft": {
+        "title": "已收到付款 — 请完善您的收录信息",
+        "desc": "填写下方信息，然后提交工具审核。"
+      },
+      "review": {
+        "title": "审核中",
+        "desc": "我们的团队正在审核您的工具。发布前您仍可修改。"
+      },
+      "writing": {
+        "title": "我们正在撰写您的收录内容",
+        "desc": "我们的团队正在为您的工具准备内容，审核后即会发布。"
+      },
+      "rejected": {
+        "title": "需要修改",
+        "desc": "您的工具尚未通过审核。请修复下方问题后重新提交。"
+      },
+      "live": {
+        "title": "您的工具已上线",
+        "desc": "如需修改已发布的收录，请使用 Update AI。"
+      },
+      "updateDraft": {
+        "title": "更新已付款 — 编辑您的收录",
+        "desc": "修改下方信息并提交审核。更新获批前，线上收录不会改变。"
+      },
+      "updateReview": {
+        "title": "更新审核中",
+        "desc": "我们的团队正在审核您的修改。您仍可编辑 — 编辑后会退回草稿，直到您再次提交。"
+      }
+    },
+    "upload": {
+      "logo": "Logo",
+      "logoHint": "正方形图片，PNG / JPG / WebP / GIF，最大 5 MB。",
+      "none": "无 Logo",
+      "choose": "上传 Logo",
+      "change": "更换",
+      "remove": "移除",
+      "uploading": "上传中…",
+      "screenshots": "截图",
+      "screenshotsHint": "工具页面的图库最多显示 {n} 张图片，第一张为封面。建议 16:9，每张最大 5 MB。",
+      "add": "添加图片",
+      "cover": "封面",
+      "moveLeft": "左移",
+      "moveRight": "右移",
+      "tooLarge": "图片必须小于等于 5 MB。",
+      "error": "上传失败，请重试。"
+    },
+    "savedNeedsResubmit": "已保存。您的工具已退回草稿 — 完成后请再次点击「提交审核」。",
+    "update": {
+      "buy": "更新此工具",
+      "submit": "提交更新审核",
+      "submitted": "更新已提交 — 我们会尽快审核。在此之前线上收录保持不变。",
+      "last": {
+        "APPLIED": "您最近的更新已上线。",
+        "REJECTED": "您最近的更新未获批准 — 款项已退还。"
+      }
+    }
   },
-  "archive": {
-    "title": "Top 1000 AI 工具",
-    "rank": "排名",
-    "name": "名称",
-    "introduction": "简介"
-  },
-  "productsMenu": {
-    "newTitle": "最新 AI",
-    "newDesc": "每天更新的最新 AI 工具",
-    "savedTitle": "收藏最多的 AI",
-    "savedDesc": "本平台收藏数最多的 AI",
-    "usedTitle": "最常用的 AI",
-    "usedDesc": "网站流量最高的 AI",
-    "appsTitle": "AI 应用",
-    "appsDesc": "按分类整理的 AI 工具",
-    "discordTitle": "AI Discord",
-    "discordDesc": "发现 AI 相关的 Discord 社区",
-    "extensionsTitle": "AI Chrome 扩展",
-    "extensionsDesc": "浏览器扩展形式的 AI 工具",
-    "gptsTitle": "GPTs",
-    "gptsDesc": "来自 GPT Store 的 GPTs",
-    "modelsTitle": "AI 模型",
-    "modelsDesc": "发现最适合的 AI 模型"
-  },
-  "rankingMenu": {
-    "monthlyTitle": "月度 AI 排行",
-    "monthlyDesc": "按月份和月访问量排列的 AI 榜单",
-    "categoriesTitle": "分类 AI 排行",
-    "categoriesDesc": "按分类和月访问量排列的 AI 榜单",
-    "regionsTitle": "地区 AI 排行",
-    "regionsDesc": "按地区和月访问量排列的 AI 榜单",
-    "sourceTitle": "来源 AI 排行",
-    "sourceDesc": "按来源和月访问量排列的 AI 榜单"
-  },
-  "submitMenu": {
-    "submitTitle": "提交工具",
-    "advertiseTitle": "广告投放",
-    "guestPostsTitle": "客座文章 / 链接插入",
-    "updateAiTitle": "更新 AI",
-    "submitGptTitle": "提交 GPT"
+  "categoryPicker": {
+    "choose": "选择",
+    "done": "完成",
+    "search": "搜索分类…",
+    "limit": "最多 {n} 个分类",
+    "empty": "没有匹配的分类",
+    "remove": "移除"
   },
   "adminFeedback": {
     "title": "用户反馈",
@@ -1073,5 +1355,192 @@
       "BILLING": "账单",
       "OTHER": "其他"
     }
+  },
+  "adminAds": {
+    "title": "广告系列",
+    "filters": {
+      "review": "待审核",
+      "all": "全部广告系列"
+    },
+    "colCampaign": "广告系列",
+    "colLanding": "落地页",
+    "colBalance": "余额",
+    "colStatus": "状态",
+    "colActions": "操作",
+    "toolWebsite": "工具网站",
+    "landing": "落地页链接",
+    "sameAsWebsite": "与网站相同",
+    "pendingLanding": "新链接待审核：",
+    "approveCampaign": "批准广告系列",
+    "approveLanding": "批准新链接",
+    "rejectCampaign": "拒绝并退款",
+    "rejectLanding": "拒绝新链接",
+    "rejectCampaignPrompt": "拒绝原因（显示给广告主）。此广告系列的所有订单都将退款。",
+    "rejectLandingPrompt": "拒绝新落地页链接的原因（显示给广告主）：",
+    "addClicks": "添加点击",
+    "addClicksPrompt": "要添加多少次点击？",
+    "emptyReview": "没有待审核的内容。",
+    "empty": "暂无广告系列。"
+  },
+  "socialQueries": {
+    "title": "我的查询",
+    "subtitle": "在收集的社交帖子中追踪话题 — 每个查询最多 5 个关键词。不消耗 Data Credits。",
+    "usage": "{used}/{limit} 个启用中",
+    "new": "新建",
+    "namePlaceholder": "查询名称，例如：AI 视频",
+    "keywordsPlaceholder": "关键词，用逗号分隔：AI 视频, 文字生成视频",
+    "keywordsHint": "{n}/{max} 个关键词",
+    "save": "保存",
+    "cancel": "取消",
+    "paused": "已暂停",
+    "newPosts": "{n} 条新内容",
+    "results": "{n} 条帖子",
+    "view": "查看帖子",
+    "hide": "收起",
+    "edit": "编辑",
+    "pause": "暂停",
+    "resume": "恢复",
+    "delete": "删除",
+    "confirmDelete": "删除查询「{name}」？",
+    "noResults": "暂无与这些关键词匹配的帖子。",
+    "loadMore": "加载更多",
+    "empty": "暂无查询 — 创建一个来追踪话题。",
+    "none": "Social Listening 查询仅在付费方案中提供。",
+    "error": "出错了，请重试。",
+    "overLimit": "超出方案上限"
+  },
+  "publicLimits": {
+    "login": "登录查看更多",
+    "rankingTitle": "免费榜单仅显示前 {n} 名",
+    "rankingText": "开通付费 Research Plan，查看包含每个工具流量和增长的完整榜单。"
+  },
+  "aiNews": {
+    "title": "AI 资讯",
+    "sub": "来自 AI 工具领域的资讯、指南和故事。",
+    "seoDesc": "TopAICollection 上最新的 AI 资讯、指南和客座文章。",
+    "empty": "暂无文章。",
+    "guestPost": "客座文章",
+    "by": "作者：{name}",
+    "latest": "最新文章",
+    "writeForUs": "为我们撰稿",
+    "writeForUsSub": "发布客座文章，或在我们的文章中添加您的链接。",
+    "learnMore": "了解更多",
+    "guestPostNote": "这是一篇客座文章。文中的观点和链接属于作者本人。"
+  },
+  "articleEditor": {
+    "write": "撰写",
+    "preview": "预览",
+    "words": "{n} 个词",
+    "min": "至少 {n}",
+    "links": "链接 {n}/{max}",
+    "addImage": "添加图片",
+    "uploading": "上传中…",
+    "placeholder": "使用 Markdown 撰写：## 标题、**粗体**、[链接](https://…)、- 列表…",
+    "nothing": "暂无可预览的内容。",
+    "help": "Markdown：## 标题 · **粗体** · *斜体* · [文字](https://url) · - 列表 · > 引用。不允许使用 HTML。",
+    "uploadCover": "上传封面图（16:9）",
+    "changeCover": "更换",
+    "coverHint": "PNG、JPG、WebP 或 GIF，最大 5 MB。建议 1200×675。"
+  },
+  "postForm": {
+    "title": "新客座文章",
+    "editTitle": "编辑客座文章",
+    "rules": {
+      "cost": "一篇客座文章需要 {n} 积分，提交时扣除。如被拒绝或您撤回，积分将退回。",
+      "words": "至少 {n} 个英文单词，原创且使用英文撰写。",
+      "links": "指向其他网站的链接最多 {n} 个。",
+      "topic": "主题需与 AI 相关：工具、使用场景、教程、行业资讯。禁止成人、赌博或垃圾内容。",
+      "review": "编辑会审核每篇文章，并可能要求修改。发布后，链接会显示在您的列表中。"
+    },
+    "fieldTitle": "标题",
+    "fieldExcerpt": "摘要",
+    "excerptHint": "可选，最多 300 个字符 — 显示在卡片和搜索结果中。",
+    "fieldCover": "封面图",
+    "fieldContent": "正文",
+    "needTitle": "标题至少 10 个字符",
+    "needCover": "一张封面图",
+    "needWords": "至少 {n} 个词",
+    "tooManyLinks": "链接不超过 {n} 个",
+    "needCredits": "至少 {n} 积分",
+    "confirmSpend": "提交审核？将使用 {n} 积分。",
+    "submit": "提交审核（{n} 积分）",
+    "resubmit": "保存并重新提交",
+    "notEditable": "此提交无法编辑（已处理或已撤回）。"
+  },
+  "linkForm": {
+    "title": "新链接插入",
+    "editTitle": "编辑链接插入",
+    "intro": "我们会在已发布的文章中，找一句自然契合的句子加入您的链接。费用为 {n} 积分；如无法插入，积分将退回。",
+    "fieldUrl": "要插入的链接",
+    "fieldAnchor": "锚文本",
+    "fieldArticle": "文章",
+    "editorChooses": "让编辑选择最合适的文章",
+    "fieldNote": "给编辑的备注",
+    "notePlaceholder": "可选：文章中的位置、上下文、希望的措辞…",
+    "needUrl": "完整链接（https://…）",
+    "needAnchor": "锚文本"
+  },
+  "adminPosts": {
+    "title": "客座文章",
+    "filters": {
+      "review": "待审核",
+      "all": "全部"
+    },
+    "preview": "预览",
+    "hide": "收起",
+    "publish": "发布为文章",
+    "markDone": "标记为完成",
+    "pickArticle": "选择文章",
+    "editArticle": "编辑文章",
+    "requested": "指定的文章",
+    "requestChanges": "要求修改",
+    "reject": "拒绝并退回",
+    "changesPrompt": "客户需要修改什么？",
+    "rejectPrompt": "拒绝原因（积分将退回）：",
+    "emptyReview": "没有待审核的内容。",
+    "empty": "暂无提交。"
+  },
+  "adminArticles": {
+    "title": "文章",
+    "new": "新文章",
+    "colTitle": "标题",
+    "colKind": "类型",
+    "colStatus": "状态",
+    "colPublished": "发布时间",
+    "colLinks": "订单",
+    "empty": "暂无文章。",
+    "notFound": "未找到文章。",
+    "kinds": {
+      "EDITORIAL": "编辑部",
+      "GUEST_POST": "客座文章"
+    },
+    "statuses": {
+      "DRAFT": "草稿",
+      "PUBLISHED": "已发布"
+    },
+    "slug": "URL 别名",
+    "slugAuto": "根据标题自动生成",
+    "author": "作者名",
+    "linkInserts": "此文章的链接插入 — 将链接粘贴到正文中，然后在客座文章中标记为完成：",
+    "publish": "发布",
+    "saveLive": "保存",
+    "saveDraft": "保存草稿",
+    "unpublish": "取消发布（草稿）",
+    "delete": "删除",
+    "deleteConfirm": "永久删除这篇文章？",
+    "saved": "已保存。",
+    "view": "查看"
+  },
+  "adminCreditRefunds": {
+    "title": "客座文章积分",
+    "balance": "余额",
+    "hint": "只能退还未使用的积分，按该订单中每积分实际支付的价格计算。",
+    "bought": "已购买",
+    "refunded": "已退款",
+    "refund": "退还 {credits} 积分 · {amount}",
+    "confirm": "退还 {credits} 个未使用的积分，并通过 Stripe 将 {amount} 退回银行卡？积分将从余额中扣除。",
+    "done": "已退还 {credits} 积分 · {amount}。",
+    "nothing": "没有未使用的积分",
+    "empty": "暂无客座文章订单。"
   }
 }

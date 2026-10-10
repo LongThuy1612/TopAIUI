@@ -87,7 +87,15 @@ export const creditTotal = (credits: number) =>
 export const guestPost = {
   packages: [1, 2, 3, 10], // số credits; ghi chú ở promote.guestPost.packageNotes (cùng thứ tự)
   strongNotes: [0, 1], // chỉ số các dòng in đậm trong promote.guestPost.notes
+  // Giá credit và yêu cầu bài (kiểm tra cả ở form lẫn server — server/utils/articles.ts).
+  credits: { GUEST_POST: 2, LINK_INSERT: 1 } as Record<'GUEST_POST' | 'LINK_INSERT', number>,
+  minWords: 800,
+  maxLinks: 2, // link ra ngoài trong một guest post
+  // rel của link trong bài: 'dofollow' (như trang bán đang hứa) hoặc 'sponsored' (an toàn
+  // SEO theo chính sách Google). Áp dụng lúc hiển thị, nên đổi ở đây là mọi bài đổi theo.
+  linkRel: 'dofollow' as 'dofollow' | 'sponsored',
 }
+export type PostSubmissionType = 'GUEST_POST' | 'LINK_INSERT'
 
 /* ------------------------------------------------------------------ */
 /* Update AI                                                           */

@@ -1,12 +1,13 @@
 import type { SitemapUrlInput } from '@nuxtjs/sitemap'
 
 export default defineSitemapEventHandler(async () => {
-  const [tools, categories] = await Promise.all([
+  const [tools, categories, articles] = await Promise.all([
     prisma.tool.findMany({
       where: { status: 'PUBLISHED', deletedAt: null },
       select: { slug: true, updatedAt: true }
     }),
-    prisma.category.findMany({ select: { slug: true, updatedAt: true } })
+    prisma.category.findMany({ select: { slug: true, updatedAt: true } }),
+    prisma.article.findMany({ where: { status: 'PUBLISHED' }, select: { slug: true, updatedAt: true } })
   ])
 
   const toolUrls: SitemapUrlInput[] = tools.map((tool) => ({
@@ -19,5 +20,10 @@ export default defineSitemapEventHandler(async () => {
     lastmod: category.updatedAt
   }))
 
-  return [...toolUrls, ...categoryUrls]
+  const articleUrls: SitemapUrlInput[] = [
+    { loc: '/ai-news' },
+    ...articles.map((article) => ({ loc: `/ai-news/${article.slug}`, lastmod: article.updatedAt }))
+  ]
+
+  return [...toolUrls, ...categoryUrls, ...articleUrls]
 })

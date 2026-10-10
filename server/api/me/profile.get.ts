@@ -1,6 +1,6 @@
 // The logged-in user's own profile + invoice details (dashboard → Payment & Invoice).
 export default defineEventHandler(async (event) => {
-  const userId = requireUser(event)
+  const userId = await requireActiveUser(event)
 
   const user = await prisma.user.findUnique({
     where: { id: userId },

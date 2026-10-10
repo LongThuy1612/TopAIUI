@@ -145,6 +145,8 @@ export default defineNuxtConfig({
     // The ranking dataset itself is rebuilt hourly (server/utils/ranking.ts).
     '/ranking': pageCache(600),
     '/ranking/**': pageCache(600),
+    '/ai-news': pageCache(300),
+    '/ai-news/**': pageCache(600),
 
     // Dashboard (every logged-in user) and admin-only pages — always dynamic,
     // never cached, hidden from search engines.
@@ -200,7 +202,9 @@ export default defineNuxtConfig({
       '/archive/**': { cache: false },
       '/alphabet/**': { cache: false },
       '/ranking': { cache: false },
-      '/ranking/**': { cache: false }
+      '/ranking/**': { cache: false },
+      '/ai-news': { cache: false },
+      '/ai-news/**': { cache: false }
     }
   }
 })

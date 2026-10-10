@@ -738,7 +738,28 @@
     "colArticleLink": "Bài viết/Liên kết",
     "colType": "Loại",
     "colStatus": "Trạng thái",
-    "emptyMessage": "Bạn hiện chưa có bài viết nào, nhấn để tạo"
+    "emptyMessage": "Bạn hiện chưa có bài viết nào, nhấn để tạo",
+    "noCredits": "Cần có credit để tạo bài hoặc chèn link — mua ở trang Guest Post.",
+    "creditsUsed": "{n} credit",
+    "requestedArticle": "Đã chọn bài",
+    "editorPicks": "Biên tập sẽ chọn bài",
+    "editorNote": "Biên tập",
+    "refunded": "Đã hoàn {n} credit",
+    "edit": "Sửa",
+    "editResubmit": "Sửa và gửi lại",
+    "withdraw": "Rút lại",
+    "withdrawConfirm": "Rút lại yêu cầu này? {n} credit sẽ được hoàn vào số dư.",
+    "types": {
+      "GUEST_POST": "Bài khách mời",
+      "LINK_INSERT": "Chèn link"
+    },
+    "statuses": {
+      "PENDING": "Đang duyệt",
+      "CHANGES_REQUESTED": "Cần sửa",
+      "PUBLISHED": "Đã đăng",
+      "REJECTED": "Bị từ chối",
+      "WITHDRAWN": "Đã rút"
+    }
   },
   "myGPTsPage": {
     "title": "My GPTs",
@@ -998,7 +1019,7 @@
           "title": "Vị trí tiêu chuẩn",
           "points": [
             "Luân phiên dạng banner trên các trang danh sách: Hôm nay, Mới, Nổi bật nhất, danh mục, kết quả tìm kiếm và bảng xếp hạng.",
-            "Hiển thị trong danh sách ở trang chủ và khối \"Vừa ra mắt\".",
+            "Hiển thị trong danh sách ở trang chủ.",
             "Hiển thị trên trang của các công cụ khác, phía trên phần đánh giá và mục công cụ thay thế.",
             "Chạy ngay nếu quảng cáo dẫn về website của chính công cụ."
           ]
@@ -1100,7 +1121,7 @@
         },
         {
           "q": "Quy trình đăng bài diễn ra thế nào?",
-          "a": "Mua credit → gửi nội dung hoặc thông tin liên kết → biên tập duyệt → đăng bài. Bạn sẽ nhận URL bài viết qua email."
+          "a": "Mua credit → gửi bài viết hoặc thông tin liên kết trong dashboard → biên tập duyệt → đăng bài. Link bài đã đăng hiện ngay trong dashboard (Posts / Links)."
         },
         {
           "q": "Có quy định nội dung cho bài viết khách không?",
@@ -1217,7 +1238,8 @@
       "loading": "Đang tải…",
       "empty": "Chưa có đơn hàng nào.",
       "clicks": "{n} lượt nhấp",
-      "credits": "{n} credit"
+      "credits": "{n} credit",
+      "partlyRefunded": "Đã hoàn {amount} ({credits})"
     }
   },
   "errorPage": {
@@ -1391,5 +1413,134 @@
     "login": "Đăng nhập để xem thêm",
     "rankingTitle": "Bảng xếp hạng miễn phí hiển thị top {n}",
     "rankingText": "Xem toàn bộ bảng xếp hạng, kèm lượt truy cập và tăng trưởng của mọi công cụ, với gói Research trả phí."
+  },
+  "aiNews": {
+    "title": "Tin AI",
+    "sub": "Tin tức, hướng dẫn và câu chuyện từ thế giới công cụ AI.",
+    "seoDesc": "Tin AI mới nhất, hướng dẫn và bài viết khách mời trên TopAICollection.",
+    "empty": "Chưa có bài viết.",
+    "guestPost": "Bài khách mời",
+    "by": "Bởi {name}",
+    "latest": "Bài mới nhất",
+    "writeForUs": "Viết bài cho chúng tôi",
+    "writeForUsSub": "Đăng bài khách mời hoặc chèn link của bạn vào bài viết của chúng tôi.",
+    "learnMore": "Tìm hiểu thêm",
+    "guestPostNote": "Đây là bài khách mời. Quan điểm và các liên kết trong bài thuộc về tác giả."
+  },
+  "articleEditor": {
+    "write": "Soạn",
+    "preview": "Xem trước",
+    "words": "{n} từ",
+    "min": "tối thiểu {n}",
+    "links": "{n}/{max} link",
+    "addImage": "Thêm ảnh",
+    "uploading": "Đang tải…",
+    "placeholder": "Viết bằng Markdown: ## Tiêu đề, **đậm**, [link](https://…), - danh sách…",
+    "nothing": "Chưa có gì để xem trước.",
+    "help": "Markdown: ## tiêu đề · **đậm** · *nghiêng* · [chữ](https://url) · - danh sách · > trích dẫn. Không dùng HTML.",
+    "uploadCover": "Tải ảnh bìa (16:9)",
+    "changeCover": "Đổi ảnh",
+    "coverHint": "PNG, JPG, WebP hoặc GIF, tối đa 5 MB. Nên dùng 1200×675."
+  },
+  "postForm": {
+    "title": "Bài khách mời mới",
+    "editTitle": "Sửa bài khách mời",
+    "rules": {
+      "cost": "Mỗi bài tốn {n} credit, trừ khi gửi. Nếu bài bị từ chối hoặc bạn rút lại, credit được hoàn.",
+      "words": "Tối thiểu {n} từ, nội dung gốc, viết bằng tiếng Anh.",
+      "links": "Tối đa {n} link ra trang khác.",
+      "topic": "Chủ đề AI: công cụ, ứng dụng, hướng dẫn, tin ngành. Không nội dung người lớn, cờ bạc hay spam.",
+      "review": "Biên tập viên duyệt mọi bài và có thể yêu cầu sửa. Khi đăng, link bài hiện trong danh sách của bạn."
+    },
+    "fieldTitle": "Tiêu đề",
+    "fieldExcerpt": "Tóm tắt",
+    "excerptHint": "Không bắt buộc, tối đa 300 ký tự — hiện trên thẻ bài và kết quả tìm kiếm.",
+    "fieldCover": "Ảnh bìa",
+    "fieldContent": "Bài viết",
+    "needTitle": "Tiêu đề tối thiểu 10 ký tự",
+    "needCover": "Ảnh bìa",
+    "needWords": "Tối thiểu {n} từ",
+    "tooManyLinks": "Không quá {n} link",
+    "needCredits": "Cần ít nhất {n} credit",
+    "confirmSpend": "Gửi duyệt? Thao tác này dùng {n} credit.",
+    "submit": "Gửi duyệt ({n} credit)",
+    "resubmit": "Lưu và gửi lại",
+    "notEditable": "Không sửa được yêu cầu này (đã được xử lý hoặc đã rút)."
+  },
+  "linkForm": {
+    "title": "Chèn link mới",
+    "editTitle": "Sửa yêu cầu chèn link",
+    "intro": "Chúng tôi chèn link của bạn vào một bài đã đăng, trong câu phù hợp tự nhiên. Tốn {n} credit; nếu không chèn được, credit được hoàn.",
+    "fieldUrl": "Link cần chèn",
+    "fieldAnchor": "Anchor text",
+    "fieldArticle": "Bài viết",
+    "editorChooses": "Để biên tập chọn bài phù hợp nhất",
+    "fieldNote": "Ghi chú cho biên tập",
+    "notePlaceholder": "Không bắt buộc: vị trí trong bài, ngữ cảnh, cách diễn đạt mong muốn…",
+    "needUrl": "Link đầy đủ (https://…)",
+    "needAnchor": "Anchor text"
+  },
+  "adminPosts": {
+    "title": "Guest posts",
+    "filters": {
+      "review": "Chờ duyệt",
+      "all": "Tất cả"
+    },
+    "preview": "Xem trước",
+    "hide": "Ẩn",
+    "publish": "Đăng thành bài viết",
+    "markDone": "Đánh dấu đã chèn",
+    "pickArticle": "Chọn bài viết",
+    "editArticle": "Sửa bài",
+    "requested": "Bài khách chọn",
+    "requestChanges": "Yêu cầu sửa",
+    "reject": "Từ chối và hoàn credit",
+    "changesPrompt": "Khách cần sửa gì?",
+    "rejectPrompt": "Lý do từ chối (credit sẽ được hoàn):",
+    "emptyReview": "Không có yêu cầu chờ duyệt.",
+    "empty": "Chưa có yêu cầu nào."
+  },
+  "adminArticles": {
+    "title": "Bài viết",
+    "new": "Bài viết mới",
+    "colTitle": "Tiêu đề",
+    "colKind": "Loại",
+    "colStatus": "Trạng thái",
+    "colPublished": "Ngày đăng",
+    "colLinks": "Đơn",
+    "empty": "Chưa có bài viết.",
+    "notFound": "Không tìm thấy bài viết.",
+    "kinds": {
+      "EDITORIAL": "Biên tập",
+      "GUEST_POST": "Khách mời"
+    },
+    "statuses": {
+      "DRAFT": "Nháp",
+      "PUBLISHED": "Đã đăng"
+    },
+    "slug": "Slug URL",
+    "slugAuto": "Tự tạo từ tiêu đề",
+    "author": "Tên tác giả",
+    "linkInserts": "Link cần chèn vào bài này — dán link vào nội dung, rồi đánh dấu đã chèn ở Guest posts:",
+    "publish": "Đăng",
+    "saveLive": "Lưu",
+    "saveDraft": "Lưu nháp",
+    "unpublish": "Gỡ xuống (nháp)",
+    "delete": "Xóa",
+    "deleteConfirm": "Xóa vĩnh viễn bài này?",
+    "saved": "Đã lưu.",
+    "view": "Xem"
+  },
+  "adminCreditRefunds": {
+    "title": "Credit guest post",
+    "balance": "Số dư",
+    "hint": "chỉ hoàn credit chưa dùng, theo giá mỗi credit thực trả trong đơn đó.",
+    "bought": "Đã mua",
+    "refunded": "Đã hoàn",
+    "refund": "Hoàn {credits} credit · {amount}",
+    "confirm": "Hoàn {credits} credit chưa dùng — trả {amount} về thẻ qua Stripe? Số credit này sẽ bị trừ khỏi số dư.",
+    "done": "Đã hoàn {credits} credit · {amount}.",
+    "nothing": "Không còn credit chưa dùng",
+    "empty": "Chưa có đơn guest post."
   }
 }

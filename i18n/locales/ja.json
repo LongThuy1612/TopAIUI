@@ -1,14 +1,16 @@
 {
   "header": {
     "searchPlaceholder": "AIツールを検索...",
-    "categories": "カテゴリー",
-    "rankings": "ランキング",
-    "submit": "ツールを登録",
-    "admin": "ダッシュボード",
     "freeTools": "無料ツール",
     "products": "プロダクト",
+    "categories": "カテゴリー",
+    "rankings": "ランキング",
     "prompts": "プロンプト",
+    "jobs": "求人",
     "resource": "リソース",
+    "submit": "ツールを登録",
+    "adLibrary": "AI広告ライブラリ",
+    "admin": "ダッシュボード",
     "menu": "メニュー",
     "openMenu": "メニューを開く",
     "closeMenu": "メニューを閉じる"
@@ -40,217 +42,55 @@
     "accountBanned": "このアカウントは停止されています。",
     "googleEmailInUse": "このメールアドレスは既に登録されています。メールアドレスとパスワードでログインしてください。"
   },
-  "hero": {
-    "titlePrefix": "最高の",
-    "titleHighlight": "AIツール",
-    "subtitle": "カテゴリー別に数百のAI製品を閲覧し、価格を比較して、あなたのワークフローに合ったツールを見つけましょう。",
-    "searchPlaceholder": "AIツールを検索..."
+  "productsMenu": {
+    "newTitle": "新着AI",
+    "newDesc": "毎日更新される最新のAIツール",
+    "savedTitle": "保存数の多いAI",
+    "savedDesc": "当サイトでお気に入り数が最も多いAI",
+    "usedTitle": "よく使われるAI",
+    "usedDesc": "サイトのトラフィックが最も多いAI",
+    "appsTitle": "AIアプリ",
+    "appsDesc": "カテゴリ別のAIツール",
+    "discordTitle": "AIのDiscord",
+    "discordDesc": "AI関連のDiscordを見つける",
+    "extensionsTitle": "AI Chrome拡張機能",
+    "extensionsDesc": "ブラウザ拡張機能のAIツール",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPT StoreのGPTs",
+    "modelsTitle": "AIモデル",
+    "modelsDesc": "最適なAIモデルを見つける"
   },
-  "stats": {
-    "tools": "のAIと",
-    "categories": "のカテゴリーを掲載する、最高のAIツールディレクトリ。",
-    "featured": "注目のツール",
-    "updatedNote": "AIツールリストとGPTsストアはChatGPTによって毎日更新されます。"
+  "promptsMenu": {
+    "n8nTitle": "n8nワークフロー",
+    "midjourneyTitle": "Midjourneyプロンプト",
+    "openclawTitle": "Openclawスキル",
+    "gptImageTitle": "GPT Image 2 プロンプト",
+    "seedreamTitle": "Seedream 5 Pro プロンプト",
+    "seedanceTitle": "Seedance 2.5 プロンプト"
   },
-  "tabs": {
-    "heading": "ツールを探す",
-    "newest": "今日",
-    "featured": "新着",
-    "free": "注目",
-    "viewAll": "すべて見る →"
+  "resourceMenu": {
+    "checkDomainTitle": "ドメインチェック",
+    "aiDomainTitle": ".aiドメイン"
   },
-  "announcement": {
-    "featured": "注目",
-    "cta": "詳細を見る"
+  "submitMenu": {
+    "submitTitle": "ツールを登録",
+    "advertiseTitle": "広告掲載",
+    "guestPostsTitle": "ゲスト投稿 / リンク挿入",
+    "updateAiTitle": "AIを更新",
+    "submitGptTitle": "GPTを登録",
+    "moreBusinessTitle": "その他のビジネス"
   },
-  "sidebar": {
-    "featuredTools": "注目のツール",
-    "topCategories": "人気カテゴリー",
-    "aiNews": "AIニュース",
-    "top10": "トップ10",
-    "readMoreNews": "もっと見る"
-  },
-  "sections": {
-    "browseByCategory": "カテゴリーで見る",
-    "newestTools": "新着ツール",
-    "featuredTools": "注目のツール",
-    "viewAll": "すべて見る →",
-    "justLaunched": "新規リリース",
-    "featuredThisWeek": "注目",
-    "featuredThisWeekSubtitle": "コミュニティで最も保存・評価されたツール。",
-    "updatedDaily": "毎日更新",
-    "viewMore": "もっと見る →",
-    "browse": "閲覧",
-    "editorsPicks": "編集部のおすすめ",
-    "sponsorBadge": "スポンサー",
-    "viewMoreTools": "もっと見る →"
-  },
-  "cta": {
-    "title": "紹介したいAIツールはありますか？",
-    "subtitle": "同じようなツールを探している人たちに届けましょう。",
-    "button": "ツールを登録する"
-  },
-  "empty": {
-    "noTools": "データがありません。",
-    "noResults": "ツールが見つかりません"
-  },
-  "category": {
-    "breadcrumbHome": "ホーム",
-    "allTools": "すべてのツール",
-    "allToolsTitle": "すべてのAIツール",
-    "allPricing": "すべての価格帯",
-    "sortNewest": "新着順",
-    "sortFeatured": "注目順",
-    "sortName": "名前順 A–Z",
-    "toolsFound": "件のツールが見つかりました | 件のツールが見つかりました",
-    "searchPlaceholder": "ツールを検索...",
-    "filters": "フィルター",
-    "viewGrid": "グリッド表示",
-    "viewList": "リスト表示"
-  },
-  "pricing": {
-    "FREE": "無料",
-    "FREEMIUM": "フリーミアム",
-    "PAID": "有料"
-  },
-  "ranking": {
-    "title": "人気のAIツール",
-    "subtitle": "当ディレクトリで記録されたトラフィックと成長データに基づくランキングです。",
-    "byGrowth1m": "1か月の成長率",
-    "byGrowth3m": "3か月の成長率",
-    "byGrowth6m": "6か月の成長率",
-    "byTraffic": "月間訪問数",
-    "colRank": "順位",
-    "colTool": "ツール",
-    "colVisits": "月間訪問数",
-    "colGrowth": "成長率",
-    "colAuthority": "ドメインオーソリティ",
-    "colCategory": "カテゴリー",
-    "noData": "ランキングデータはまだありません。",
-    "dataMonth": "{month} のトラフィックデータ。",
-    "colVisitsFrom": "{name} からの訪問数",
-    "growthNote": "成長率は比較月の訪問数が {min} 以上のツールのみランク付けされます。",
-    "loadMore": "もっと見る",
-    "loading": "読み込み中…"
-  },
-  "tool": {
-    "openSite": "サイトを開く",
-    "save": "保存",
-    "saved": "保存済み",
-    "featured": "注目",
-    "introduction": "紹介",
-    "addedOn": "登録日",
-    "monthlyVisitors": "月間訪問者数",
-    "features": "主な機能",
-    "useCases": "使用例",
-    "coreFeaturesHeading": "{name} の主な機能",
-    "useCasesHeading": "{name} の使用例",
-    "prosAndCons": "メリット・デメリット",
-    "pros": "メリット",
-    "cons": "デメリット",
-    "faq": "よくある質問",
-    "faqHeading": "{name}のFAQ",
-    "alternatives": "の代替ツール",
-    "backToCategory": "戻る：",
-    "notFound": "ツールが見つかりません",
-    "similarTools": "似ているツール",
-    "tabProductInfo": "製品情報",
-    "tabPricing": "料金",
-    "tabReviews": "レビュー",
-    "tabAnalytics": "分析",
-    "tabAlternatives": "代替ツール",
-    "productInformationHeading": "{name} の製品情報",
-    "whatIs": "{name} とは？",
-    "howToUseHeading": "{name} の使い方は？",
-    "reviewsHeading": "{name} のレビュー（{count}件）",
-    "ratingPrompt": "{name} をおすすめしますか？コメントを残してください",
-    "whatDoYouThink": "あなたの感想は？",
-    "loginToComment": "コメントするにはログイン",
-    "pricingHeading": "{name} の料金",
-    "noPricingYet": "料金情報はまだありません。",
-    "analyticsHeading": "{name} の分析",
-    "trafficAnalysis": "{name} のウェブサイトトラフィック分析",
-    "visitOverTime": "訪問数の推移",
-    "monthlyVisits": "月間訪問数",
-    "avgVisitDuration": "平均滞在時間",
-    "pagePerVisit": "訪問あたりのページ数",
-    "bounceRate": "離脱率",
-    "noTrafficYet": "トラフィックデータはまだありません。",
-    "badgeVerified": "認証済み",
-    "badgeJustLaunched": "新規リリース",
-    "badgeFreeTool": "無料ツール",
-    "affiliateLink": "アフィリエイトリンク",
-    "couponCode": "クーポンコード",
-    "ratings": "件の評価",
-    "upvotes": "件のアップボート",
-    "domainAuthority": "ドメインオーソリティ",
-    "trafficRank": "トラフィック順位",
-    "viewCount": "ページビュー",
-    "outOf5": "（5点満点）",
-    "enterReviewPrompt": "レビューを入力してください",
-    "sortBy": "並び替え",
-    "sortNewest": "新しい順",
-    "sortOldest": "古い順",
-    "loadMoreReviews": "さらにレビューを読み込む",
-    "loadingMore": "読み込み中...",
-    "reviewsLabel": "件のレビュー",
-    "socialAndEmail": "SNS・メール",
-    "advertiseTool": "このツールを宣伝する",
-    "updateTool": "このツールを更新する",
-    "savedLabel": "件の保存",
-    "vsLastMonth": "前月比",
-    "trafficSources": "トラフィックソース",
-    "sourceDirect": "ダイレクト",
-    "sourceSearch": "検索",
-    "sourceReferral": "参照",
-    "sourceSocial": "ソーシャル",
-    "sourceMail": "メール",
-    "sourcePaidReferrals": "有料参照",
-    "sourceOthers": "その他",
-    "allTraffic": "全トラフィック",
-    "globalRank": "グローバルランク",
-    "yearFounded": "設立",
-    "employees": "従業員数",
-    "topKeywords": "上位キーワード",
-    "keyword": "キーワード",
-    "searchVolume": "検索ボリューム",
-    "keywordType": "種類",
-    "keywordOrganic": "オーガニック",
-    "keywordPaid": "有料",
-    "mobileApps": "モバイルアプリ",
-    "loginToReview": "ログインしてレビュー",
-    "submitReview": "レビューを送信",
-    "submittingReview": "送信中...",
-    "reviewPendingNotice": "ありがとうございます！レビューを送信しました。承認後に表示されます。",
-    "reviewAlreadySubmitted": "このツールはすでにレビュー済みです。",
-    "reviewSubmitError": "レビューを送信できませんでした。もう一度お試しください。",
-    "reviewSessionExpired": "セッションの有効期限が切れました。もう一度ログインしてレビューを送信してください。"
-  },
-  "footer": {
-    "tagline": "最高のAIツールを見つけて、比較して、共有しよう — Nuxt と PostgreSQL で構築。",
-    "product": "プロダクト",
-    "home": "ホーム",
-    "allTools": "すべてのツール",
-    "submit": "ツールを登録",
-    "categories": "カテゴリー",
-    "company": "会社情報",
-    "language": "言語",
-    "copyright": "全著作権所有。",
-    "topAiTools": "人気のAIツール",
-    "moreTools": "その他のツール",
-    "categoryToolsCount": "{name}ツール {count}件",
-    "categoryTools": "{name}ツール",
-    "browseByAlphabet": "アルファベットで探す",
-    "top1000Directory": "トップ1000 AIツール一覧",
-    "about": "概要",
-    "aboutUs": "私たちについて",
-    "terms": "利用規約",
-    "privacy": "プライバシーポリシー",
-    "advertise": "広告掲載",
-    "contact": "お問い合わせ"
-  },
-  "language": {
-    "label": "言語"
+  "rankingMenu": {
+    "monthlyTitle": "月別AIランキング",
+    "monthlyDesc": "月別・月間訪問数によるAIランキング",
+    "categoriesTitle": "カテゴリ別AIランキング",
+    "categoriesDesc": "カテゴリ別・月間訪問数によるAIランキング",
+    "regionsTitle": "地域別AIランキング",
+    "regionsDesc": "地域別・月間訪問数によるAIランキング",
+    "sourceTitle": "ソース別AIランキング",
+    "sourceDesc": "ソース別・月間訪問数によるAIランキング",
+    "revenueTitle": "売上別トップAI",
+    "revenueDesc": "売上と実際のトラフィックによるトップAIリスト。"
   },
   "admin": {
     "badge": "管理者",
@@ -297,7 +137,9 @@
         "queries": "Social Listening クエリ",
         "filtering": "高度なフィルタリング",
         "export": "データエクスポート",
-        "statistics": "基本データ統計"
+        "statistics": "基本データ統計",
+        "filteringFull": "すべての高度なフィルター",
+        "statisticsDeep": "詳細な統計"
       },
       "faq": {
         "title": "よくある質問",
@@ -305,7 +147,21 @@
           "question": "「データクレジット」とは？",
           "answer": "データクレジットは、当プラットフォームでリサーチを行う際に使用する通貨です。以下の方法で消費されます：\n1. データ利用：「Insights」または「Analysis」ページで読み込むデータ1行につき1クレジットを消費します。\n2. データエクスポート：CSVまたはExcelファイルにエクスポートするデータ1行につき1クレジットを消費します。\n3. 無料：Social Listening のクエリはデータクレジットを消費しません。\nご注意：クレジットは毎月の請求サイクル開始時にリセットされます。未使用分は繰り越されません。"
         }
-      }
+      },
+      "currentPlan": "現在のプラン",
+      "upgradeTo": "アップグレード",
+      "downgradeTo": "ダウングレード",
+      "switchTo": "切り替え",
+      "working": "お待ちください…",
+      "error": "問題が発生しました。もう一度お試しください。",
+      "confirmChange": "{plan} に切り替えますか？日割りの差額はすぐに請求（または返金）されます。",
+      "confirmCancel": "プランを解約しますか？{date} までは利用でき、その後 Free に移行します。",
+      "renewsOn": "{date} に更新",
+      "endsOn": "{date} に終了",
+      "pastDue": "お支払いに失敗しました — カード情報を更新してください。",
+      "manageBilling": "請求を管理",
+      "resume": "プランを継続する",
+      "cancelPlan": "プランを解約"
     },
     "business": "ビジネス",
     "myAIs": "マイAI",
@@ -453,7 +309,169 @@
       "deleteConfirm": "このレビューを完全に削除しますか？",
       "guest": "ゲスト",
       "empty": "レビューが見つかりません。"
-    }
+    },
+    "userSubmission": "ユーザー投稿",
+    "waitingUserContent": "オーナーのコンテンツ待ち",
+    "submission": {
+      "title": "ユーザー投稿",
+      "owner": "オーナー",
+      "mode": "掲載内容の作成者",
+      "reason": "却下理由",
+      "modes": {
+        "auto": "当社チーム（自動）",
+        "manual": "オーナー（手動）"
+      },
+      "publish": "公開",
+      "reject": "却下",
+      "reasonPlaceholder": "却下理由 — オーナーに表示されます",
+      "publishHint": "公開には英語の掲載内容がすべて必要です。下の「承認済み」スイッチで承認してください。却下するとツールはオーナーに戻され、修正して再提出できます。",
+      "ai": "AIコンテンツ",
+      "aiRerun": "AIを再実行",
+      "aiStatus": {
+        "none": "未リクエスト",
+        "queued": "待機中 — まもなくクローラーが処理します",
+        "done": "完了",
+        "failed": "失敗 — 自動で再試行中",
+        "invalid": "管理者の対応が必要 — サイトを読み取れないか、AIに必要な情報が不足しています"
+      },
+      "duplicate": "注意：既存の掲載と同じウェブサイトです —"
+    },
+    "update": {
+      "title": "有料アップデート",
+      "pendingTitle": "審査待ちのアップデート（{n}）",
+      "status": {
+        "DRAFT": "オーナーは支払い済みで、変更内容を準備中です。",
+        "SUBMITTED": "提出済み — 下の変更内容を確認してください。"
+      },
+      "field": "項目",
+      "current": "現在の公開内容",
+      "proposed": "変更案",
+      "fields": {
+        "name": "名前",
+        "logoUrl": "ロゴ",
+        "pricingType": "料金",
+        "twitterUrl": "Twitter URL",
+        "discordUrl": "Discord URL",
+        "images": "スクリーンショット",
+        "categories": "カテゴリー",
+        "shortDesc": "短い説明",
+        "description": "説明",
+        "whatIs": "概要",
+        "howToUse": "使い方",
+        "coreFeatures": "主な機能",
+        "useCases": "ユースケース"
+      },
+      "noChanges": "まだ変更はありません。",
+      "apply": "アップデートを適用",
+      "reject": "却下して返金",
+      "reasonPlaceholder": "却下理由 — オーナーに表示されます",
+      "hint": "適用すると変更が公開中の掲載に反映され、再翻訳されます。却下すると Stripe 経由で返金されます。"
+    },
+    "managePlan": "プランを管理"
+  },
+  "hero": {
+    "titlePrefix": "最高の",
+    "titleHighlight": "AIツール",
+    "subtitle": "カテゴリー別に数百のAI製品を閲覧し、価格を比較して、あなたのワークフローに合ったツールを見つけましょう。",
+    "searchPlaceholder": "AIツールを検索..."
+  },
+  "stats": {
+    "tools": "のAIと",
+    "categories": "のカテゴリーを掲載する、最高のAIツールディレクトリ。",
+    "featured": "注目のツール",
+    "updatedNote": "AIツールリストとGPTsストアはChatGPTによって毎日更新されます。"
+  },
+  "tabs": {
+    "heading": "ツールを探す",
+    "newest": "今日",
+    "featured": "新着",
+    "free": "注目",
+    "viewAll": "すべて見る →"
+  },
+  "announcement": {
+    "featured": "注目",
+    "cta": "詳細を見る"
+  },
+  "sidebar": {
+    "featuredTools": "注目のツール",
+    "topCategories": "人気カテゴリー",
+    "aiNews": "AIニュース",
+    "top10": "トップ10",
+    "readMoreNews": "もっと見る"
+  },
+  "sections": {
+    "browseByCategory": "カテゴリーで見る",
+    "newestTools": "新着ツール",
+    "featuredTools": "注目のツール",
+    "viewAll": "すべて見る →",
+    "justLaunched": "新規リリース",
+    "featuredThisWeek": "注目",
+    "featuredThisWeekSubtitle": "コミュニティで最も保存・評価されたツール。",
+    "browse": "閲覧",
+    "editorsPicks": "編集部のおすすめ",
+    "sponsorBadge": "スポンサー",
+    "updatedDaily": "毎日更新",
+    "viewMore": "もっと見る →",
+    "viewMoreTools": "もっと見る →",
+    "adLabel": "広告",
+    "tryNow": "今すぐ試す"
+  },
+  "cta": {
+    "title": "紹介したいAIツールはありますか？",
+    "subtitle": "同じようなツールを探している人たちに届けましょう。",
+    "button": "ツールを登録する"
+  },
+  "empty": {
+    "noTools": "データがありません。",
+    "noResults": "ツールが見つかりません"
+  },
+  "category": {
+    "breadcrumbHome": "ホーム",
+    "allTools": "すべてのツール",
+    "allToolsTitle": "すべてのAIツール",
+    "allPricing": "すべての価格帯",
+    "sortNewest": "新着順",
+    "sortFeatured": "注目順",
+    "sortName": "名前順 A–Z",
+    "toolsFound": "件のツールが見つかりました | 件のツールが見つかりました",
+    "searchPlaceholder": "ツールを検索...",
+    "filters": "フィルター",
+    "viewGrid": "グリッド表示",
+    "viewList": "リスト表示"
+  },
+  "pricing": {
+    "FREE": "無料",
+    "FREEMIUM": "フリーミアム",
+    "PAID": "有料"
+  },
+  "ranking": {
+    "title": "人気のAIツール",
+    "subtitle": "当ディレクトリで記録されたトラフィックと成長データに基づくランキングです。",
+    "byGrowth1m": "1か月の成長率",
+    "byGrowth3m": "3か月の成長率",
+    "byGrowth6m": "6か月の成長率",
+    "byTraffic": "月間訪問数",
+    "colRank": "順位",
+    "colTool": "ツール",
+    "colVisits": "月間訪問数",
+    "colGrowth": "成長率",
+    "colAuthority": "ドメインオーソリティ",
+    "colCategory": "カテゴリー",
+    "colRevenue": "売上",
+    "noData": "ランキングデータはまだありません。",
+    "selectCategory": "カテゴリーを選択",
+    "selectRegion": "地域を選択",
+    "selectSource": "ソースを選択",
+    "categoriesTitle": "カテゴリー別トップAIツール",
+    "regionsTitle": "地域別トップAIツール",
+    "sourceTitle": "ソース別トップAIツール",
+    "revenueTitle": "売上別トップAIツール",
+    "noSelection": "上のオプションを選ぶとランキングが表示されます。",
+    "dataMonth": "{month} のトラフィックデータ。",
+    "colVisitsFrom": "{name} からの訪問数",
+    "growthNote": "成長率は比較月の訪問数が {min} 以上のツールのみランク付けされます。",
+    "loadMore": "もっと見る",
+    "loading": "読み込み中…"
   },
   "socialListening": {
     "title": "Social Listening",
@@ -495,7 +513,38 @@
     "sortGrowthRateAsc": "成長率：低い順",
     "loading": "読み込み中…",
     "loadError": "データを読み込めませんでした。もう一度お試しください。",
-    "popupBlocked": "ブラウザが一部のタブをブロックしました。すべて開くにはこのサイトのポップアップを許可してください。"
+    "popupBlocked": "ブラウザが一部のタブをブロックしました。すべて開くにはこのサイトのポップアップを許可してください。",
+    "creditsThisMonth": "今月の Data Credits",
+    "outOfCredits": "今月の Data Credits を使い切りました — このページの {n} 行がロックされています。表示するにはアップグレードしてください。",
+    "unlock": "アップグレードして表示",
+    "statsTitle": "統計",
+    "statsLocked": "月次統計は有料プランでご利用いただけます。",
+    "statTools": "ツール",
+    "statVisits": "総訪問数",
+    "statGrowth": "訪問数の増加",
+    "statMedian": "成長率の中央値",
+    "statTopGrowth": "急成長ツール",
+    "statCategories": "カテゴリー別訪問数",
+    "statTrend": "総訪問数（過去12か月）",
+    "statDistribution": "成長率別ツール数",
+    "statCategoryGrowth": "カテゴリー別成長率",
+    "advancedFilters": "フィルター",
+    "clearFilters": "フィルターをクリア",
+    "filterNeedsAdvanced": "Starter プラン以上",
+    "filterNeedsFull": "Enterprise プラン",
+    "exportQuota": "エクスポート：今月 {used}/{limit} 行 · 1回あたり最大 {per} 行",
+    "exportError": "エクスポートに失敗しました。もう一度お試しください。",
+    "filter": {
+      "category": "カテゴリー",
+      "anyCategory": "すべてのカテゴリー",
+      "minVisits": "月間訪問数（最小）",
+      "maxVisits": "月間訪問数（最大）",
+      "minGrowthRate": "成長率（最小, %）",
+      "maxGrowthRate": "成長率（最大, %）",
+      "maxBounceRate": "直帰率（最大, %）",
+      "minDuration": "滞在時間（最小, 秒）",
+      "minPagesPerVisit": "訪問あたりページ数（最小）"
+    }
   },
   "myAIsPage": {
     "title": "マイAI",
@@ -518,7 +567,33 @@
     "colBalances": "残高",
     "colStatus": "ステータス",
     "colAction": "アクション",
-    "emptyMessage": "現在広告はありません。クリックして作成してください"
+    "emptyMessage": "現在広告はありません。クリックして作成してください",
+    "colPerformance": "パフォーマンス",
+    "tiers": {
+      "STANDARD": "Standard",
+      "FEATURED": "Featured"
+    },
+    "statuses": {
+      "PENDING_REVIEW": "審査中",
+      "ACTIVE": "配信中",
+      "PAUSED": "一時停止",
+      "EXHAUSTED": "クリック残なし",
+      "REJECTED": "却下"
+    },
+    "toolWebsite": "ツールのサイト",
+    "pendingLanding": "審査中：{url}",
+    "remaining": "残りクリック数",
+    "impressions": "表示回数",
+    "clicks": "クリック数",
+    "pausedByAdmin": "当社チームが一時停止",
+    "reason": "理由：{reason}",
+    "pause": "一時停止",
+    "resume": "再開",
+    "editLanding": "リンク先URLを変更",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "landingHint": "空欄にするとツールのサイトを使用します。別サイトのURLは先に審査され、その間は現在のURLで配信が続きます。",
+    "reviewNote": "ツールと広告タイプごとにクリック残高があります。広告はサイトに直接リンクし、課金されるのは訪問者ごとに24時間で最初の1クリックのみです。"
   },
   "myPostsPage": {
     "title": "マイ投稿＆記事 / リンク挿入",
@@ -531,7 +606,28 @@
     "colArticleLink": "記事/リンク",
     "colType": "タイプ",
     "colStatus": "ステータス",
-    "emptyMessage": "現在投稿はありません。クリックして作成してください"
+    "emptyMessage": "現在投稿はありません。クリックして作成してください",
+    "noCredits": "投稿やリンク挿入を作成するにはクレジットが必要です — Guest Post ページで購入してください。",
+    "creditsUsed": "{n} クレジット",
+    "requestedArticle": "記事指定あり",
+    "editorPicks": "編集部が選択",
+    "editorNote": "編集部",
+    "refunded": "{n} クレジット返却済み",
+    "edit": "編集",
+    "editResubmit": "編集して再提出",
+    "withdraw": "取り下げ",
+    "withdrawConfirm": "この申請を取り下げますか？{n} クレジットが残高に戻ります。",
+    "types": {
+      "GUEST_POST": "ゲスト投稿",
+      "LINK_INSERT": "リンク挿入"
+    },
+    "statuses": {
+      "PENDING": "審査中",
+      "CHANGES_REQUESTED": "修正依頼あり",
+      "PUBLISHED": "公開済み",
+      "REJECTED": "却下",
+      "WITHDRAWN": "取り下げ済み"
+    }
   },
   "myGPTsPage": {
     "title": "マイGPTs",
@@ -571,7 +667,18 @@
     "loadError": "プロフィールを読み込めませんでした。ページを再読み込みしてください。",
     "emailHint": "ログイン用メールアドレスはここでは変更できません。",
     "saved": "保存しました。",
-    "saveError": "保存できませんでした。もう一度お試しください。"
+    "saveError": "保存できませんでした。もう一度お試しください。",
+    "quotaResets": "{date} にクォータがリセットされます",
+    "cardInStripe": "Stripe に保存済み",
+    "endsOn": "プラン終了日",
+    "researchPlan": "Research Plan",
+    "invoiceStatuses": {
+      "paid": "支払い済み",
+      "open": "未払い",
+      "uncollectible": "失敗",
+      "void": "無効",
+      "draft": "下書き"
+    }
   },
   "feedbackPage": {
     "title": "ユーザーフィードバック",
@@ -605,6 +712,138 @@
       "RESOLVED": "解決済み",
       "CLOSED": "クローズ"
     }
+  },
+  "tool": {
+    "openSite": "サイトを開く",
+    "save": "保存",
+    "saved": "保存済み",
+    "featured": "注目",
+    "introduction": "紹介",
+    "addedOn": "登録日",
+    "monthlyVisitors": "月間訪問者数",
+    "features": "主な機能",
+    "useCases": "使用例",
+    "coreFeaturesHeading": "{name} の主な機能",
+    "useCasesHeading": "{name} の使用例",
+    "prosAndCons": "メリット・デメリット",
+    "pros": "メリット",
+    "cons": "デメリット",
+    "faq": "よくある質問",
+    "faqHeading": "{name}のFAQ",
+    "alternatives": "の代替ツール",
+    "backToCategory": "戻る：",
+    "notFound": "ツールが見つかりません",
+    "similarTools": "似ているツール",
+    "tabProductInfo": "製品情報",
+    "tabPricing": "料金",
+    "tabReviews": "レビュー",
+    "tabAnalytics": "分析",
+    "tabAlternatives": "代替ツール",
+    "productInformationHeading": "{name} の製品情報",
+    "whatIs": "{name} とは？",
+    "howToUseHeading": "{name} の使い方は？",
+    "reviewsHeading": "{name} のレビュー（{count}件）",
+    "ratingPrompt": "{name} をおすすめしますか？コメントを残してください",
+    "whatDoYouThink": "あなたの感想は？",
+    "loginToComment": "コメントするにはログイン",
+    "loginToReview": "ログインしてレビュー",
+    "submitReview": "レビューを送信",
+    "pricingHeading": "{name} の料金",
+    "noPricingYet": "料金情報はまだありません。",
+    "analyticsHeading": "{name} の分析",
+    "trafficAnalysis": "{name} のウェブサイトトラフィック分析",
+    "visitOverTime": "訪問数の推移",
+    "monthlyVisits": "月間訪問数",
+    "avgVisitDuration": "平均滞在時間",
+    "pagePerVisit": "訪問あたりのページ数",
+    "bounceRate": "離脱率",
+    "noTrafficYet": "トラフィックデータはまだありません。",
+    "badgeVerified": "認証済み",
+    "badgeJustLaunched": "新規リリース",
+    "badgeFreeTool": "無料ツール",
+    "affiliateLink": "アフィリエイトリンク",
+    "couponCode": "クーポンコード",
+    "ratings": "件の評価",
+    "upvotes": "件のアップボート",
+    "outOf5": "（5点満点）",
+    "enterReviewPrompt": "レビューを入力してください",
+    "sortBy": "並び替え",
+    "sortNewest": "新しい順",
+    "sortOldest": "古い順",
+    "loadMoreReviews": "さらにレビューを読み込む",
+    "loadingMore": "読み込み中...",
+    "reviewsLabel": "件のレビュー",
+    "socialAndEmail": "SNS・メール",
+    "advertiseTool": "このツールを宣伝する",
+    "updateTool": "このツールを更新する",
+    "savedLabel": "件の保存",
+    "domainAuthority": "ドメインオーソリティ",
+    "trafficRank": "トラフィック順位",
+    "viewCount": "ページビュー",
+    "vsLastMonth": "前月比",
+    "trafficSources": "トラフィックソース",
+    "geography": "地域",
+    "topRegions": "上位 {count} 地域",
+    "desktopOnly": "デスクトップのみ",
+    "sourceDirect": "ダイレクト",
+    "sourceSearch": "検索",
+    "sourceReferral": "参照",
+    "sourceSocial": "ソーシャル",
+    "sourceMail": "メール",
+    "sourcePaidReferrals": "有料参照",
+    "sourceOthers": "その他",
+    "allTraffic": "全トラフィック",
+    "globalRank": "グローバルランク",
+    "yearFounded": "設立",
+    "employees": "従業員数",
+    "topKeywords": "上位キーワード",
+    "keyword": "キーワード",
+    "searchVolume": "検索ボリューム",
+    "keywordType": "種類",
+    "keywordOrganic": "オーガニック",
+    "keywordPaid": "有料",
+    "mobileApps": "モバイルアプリ",
+    "submittingReview": "送信中...",
+    "reviewPendingNotice": "ありがとうございます！レビューを送信しました。承認後に表示されます。",
+    "reviewAlreadySubmitted": "このツールはすでにレビュー済みです。",
+    "reviewSubmitError": "レビューを送信できませんでした。もう一度お試しください。",
+    "reviewSessionExpired": "セッションの有効期限が切れました。もう一度ログインしてレビューを送信してください。"
+  },
+  "alphabet": {
+    "title": "次の文字で始まるAIツール",
+    "browse": "アルファベットで探す"
+  },
+  "archive": {
+    "title": "トップ1000 AIツール",
+    "rank": "順位",
+    "name": "名前",
+    "introduction": "紹介"
+  },
+  "footer": {
+    "tagline": "最高のAIツールを見つけて、比較して、共有しよう — Nuxt と PostgreSQL で構築。",
+    "product": "プロダクト",
+    "home": "ホーム",
+    "allTools": "すべてのツール",
+    "submit": "ツールを登録",
+    "categories": "カテゴリー",
+    "company": "会社情報",
+    "language": "言語",
+    "copyright": "全著作権所有。",
+    "topAiTools": "人気のAIツール",
+    "moreTools": "その他のツール",
+    "categoryToolsCount": "{name}ツール {count}件",
+    "categoryTools": "{name}ツール",
+    "browseByAlphabet": "アルファベットで探す",
+    "top1000Directory": "トップ1000 AIツール一覧",
+    "about": "概要",
+    "aboutUs": "私たちについて",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "advertise": "広告掲載",
+    "contact": "お問い合わせ"
+  },
+  "language": {
+    "label": "言語"
   },
   "promote": {
     "title": "{site} であなたの AI を紹介",
@@ -780,7 +1019,7 @@
           "title": "標準枠",
           "points": [
             "一覧ページでバナーとしてローテーション表示：今日、新着、注目、カテゴリ、検索結果、ランキング。",
-            "トップページのフィードと「新着リリース」ブロックに表示。",
+            "トップページのフィードに表示。",
             "他のツールのページで、レビューの上と代替ツールの上に表示。",
             "広告のリンク先がツール自身のウェブサイトなら、すぐに掲載開始。"
           ]
@@ -830,7 +1069,13 @@
           "q": "広告の表示場所を選べますか？",
           "a": "いいえ。できるだけ早くクリックを届けるため、表示場所は自動で選ばれます。"
         }
-      ]
+      ],
+      "chooseTier": "広告タイプを選択",
+      "tierHints": {
+        "STANDARD": "一覧ページでローテーション表示。自社サイトへのリンクならすぐに配信開始。",
+        "FEATURED": "最上部に固定表示＋スポンサーバー。クリック単価は高め、当社チームが審査します。"
+      },
+      "reviewNote": "Featured キャンペーン、およびツールのサイト以外のリンク先URLは、配信前に当社チームが確認します。却下されたキャンペーンは全額返金されます。"
     },
     "guestPost": {
       "seoTitle": "寄稿とリンク挿入 – {site}",
@@ -876,7 +1121,7 @@
         },
         {
           "q": "掲載までの流れは？",
-          "a": "クレジット購入 → コンテンツまたはリンク情報の送信 → 編集部の審査 → 掲載。公開 URL はメールでお知らせします。"
+          "a": "クレジット購入 → ダッシュボードから記事またはリンク情報を送信 → 編集部の審査 → 掲載。公開されたリンクはダッシュボード（Posts / Links）に表示されます。"
         },
         {
           "q": "寄稿記事に内容の基準はありますか？",
@@ -942,7 +1187,10 @@
           "q": "どの情報を変更できますか？",
           "a": "上記リストのうち、ウェブサイト URL 以外のすべてです。"
         }
-      ]
+      ],
+      "loginToPick": "ログインしてツールを選択",
+      "noOwnedTools": "公開済みのツールがまだありません — 掲載ツールを更新できるのはオーナーのみです。",
+      "pickOwnTool": "公開済みのツールを選択"
     },
     "submitGpt": {
       "seoTitle": "GPT を登録 – {site}",
@@ -984,12 +1232,14 @@
       "statuses": {
         "PAID": "支払い済み",
         "PENDING": "支払い待ち",
-        "EXPIRED": "期限切れ"
+        "EXPIRED": "期限切れ",
+        "REFUNDED": "返金済み"
       },
       "loading": "読み込み中…",
       "empty": "まだ注文はありません。",
       "clicks": "{n} クリック",
-      "credits": "{n} クレジット"
+      "credits": "{n} クレジット",
+      "partlyRefunded": "{amount} 返金済み（{credits}）"
     }
   },
   "errorPage": {
@@ -999,50 +1249,82 @@
     "errorMessage": "予期しないエラーが発生しました。しばらくしてから再度お試しください。",
     "backHome": "ホームに戻る"
   },
-  "alphabet": {
-    "title": "次の文字で始まるAIツール",
-    "browse": "アルファベットで探す"
+  "myTool": {
+    "contentHeading": "掲載内容（英語）",
+    "contentHint": "* の項目は提出に必須です。機能 / ユースケースは1行に1つ。",
+    "saveDraft": "下書きを保存",
+    "submitForReview": "審査に提出",
+    "saving": "保存中…",
+    "saved": "保存しました。",
+    "submitted": "提出しました — まもなくツールを審査します。",
+    "saveError": "保存できませんでした。もう一度お試しください。",
+    "reason": "理由",
+    "viewPage": "公開ページを見る",
+    "stage": {
+      "draft": {
+        "title": "お支払いを確認しました — 掲載内容を完成させてください",
+        "desc": "下の詳細を入力して、ツールを審査に提出してください。"
+      },
+      "review": {
+        "title": "審査中",
+        "desc": "当社チームがツールを審査中です。公開されるまでは変更できます。"
+      },
+      "writing": {
+        "title": "掲載内容を作成中です",
+        "desc": "当社チームがツールの内容を準備しています。審査後に公開されます。"
+      },
+      "rejected": {
+        "title": "修正が必要です",
+        "desc": "ツールはまだ承認されていません。下の問題を修正して再提出してください。"
+      },
+      "live": {
+        "title": "ツールが公開されました",
+        "desc": "公開済みの掲載を変更するには Update AI を使ってください。"
+      },
+      "updateDraft": {
+        "title": "アップデート支払い済み — 掲載内容を編集",
+        "desc": "下の詳細を変更して審査に提出してください。アップデートが承認されるまで公開中の掲載は変わりません。"
+      },
+      "updateReview": {
+        "title": "アップデート審査中",
+        "desc": "当社チームが変更内容を審査中です。まだ編集できますが、編集すると再提出まで下書きに戻ります。"
+      }
+    },
+    "upload": {
+      "logo": "ロゴ",
+      "logoHint": "正方形の画像、PNG / JPG / WebP / GIF、5 MB まで。",
+      "none": "ロゴなし",
+      "choose": "ロゴをアップロード",
+      "change": "変更",
+      "remove": "削除",
+      "uploading": "アップロード中…",
+      "screenshots": "スクリーンショット",
+      "screenshotsHint": "ツールページのギャラリーに最大 {n} 枚まで表示されます。1枚目がカバーです。16:9 推奨、1枚5 MB まで。",
+      "add": "画像を追加",
+      "cover": "カバー",
+      "moveLeft": "左へ移動",
+      "moveRight": "右へ移動",
+      "tooLarge": "画像は5 MB以下にしてください。",
+      "error": "アップロードに失敗しました。もう一度お試しください。"
+    },
+    "savedNeedsResubmit": "保存しました。ツールは下書きに戻りました — 完了したら「審査に提出」をもう一度押してください。",
+    "update": {
+      "buy": "このツールを更新",
+      "submit": "アップデートを審査に提出",
+      "submitted": "アップデートを提出しました — まもなく審査します。それまで公開中の掲載はそのままです。",
+      "last": {
+        "APPLIED": "前回のアップデートは公開済みです。",
+        "REJECTED": "前回のアップデートは承認されませんでした — お支払いは返金済みです。"
+      }
+    }
   },
-  "archive": {
-    "title": "トップ1000 AIツール",
-    "rank": "順位",
-    "name": "名前",
-    "introduction": "紹介"
-  },
-  "productsMenu": {
-    "newTitle": "新着AI",
-    "newDesc": "毎日更新される最新のAIツール",
-    "savedTitle": "保存数の多いAI",
-    "savedDesc": "当サイトでお気に入り数が最も多いAI",
-    "usedTitle": "よく使われるAI",
-    "usedDesc": "サイトのトラフィックが最も多いAI",
-    "appsTitle": "AIアプリ",
-    "appsDesc": "カテゴリ別のAIツール",
-    "discordTitle": "AIのDiscord",
-    "discordDesc": "AI関連のDiscordを見つける",
-    "extensionsTitle": "AI Chrome拡張機能",
-    "extensionsDesc": "ブラウザ拡張機能のAIツール",
-    "gptsTitle": "GPTs",
-    "gptsDesc": "GPT StoreのGPTs",
-    "modelsTitle": "AIモデル",
-    "modelsDesc": "最適なAIモデルを見つける"
-  },
-  "rankingMenu": {
-    "monthlyTitle": "月別AIランキング",
-    "monthlyDesc": "月別・月間訪問数によるAIランキング",
-    "categoriesTitle": "カテゴリ別AIランキング",
-    "categoriesDesc": "カテゴリ別・月間訪問数によるAIランキング",
-    "regionsTitle": "地域別AIランキング",
-    "regionsDesc": "地域別・月間訪問数によるAIランキング",
-    "sourceTitle": "ソース別AIランキング",
-    "sourceDesc": "ソース別・月間訪問数によるAIランキング"
-  },
-  "submitMenu": {
-    "submitTitle": "ツールを登録",
-    "advertiseTitle": "広告掲載",
-    "guestPostsTitle": "ゲスト投稿 / リンク挿入",
-    "updateAiTitle": "AIを更新",
-    "submitGptTitle": "GPTを登録"
+  "categoryPicker": {
+    "choose": "選択",
+    "done": "完了",
+    "search": "カテゴリーを検索…",
+    "limit": "最大 {n} カテゴリー",
+    "empty": "一致するカテゴリーがありません",
+    "remove": "削除"
   },
   "adminFeedback": {
     "title": "フィードバック",
@@ -1073,5 +1355,192 @@
       "BILLING": "請求",
       "OTHER": "その他"
     }
+  },
+  "adminAds": {
+    "title": "広告キャンペーン",
+    "filters": {
+      "review": "審査待ち",
+      "all": "すべてのキャンペーン"
+    },
+    "colCampaign": "キャンペーン",
+    "colLanding": "リンク先",
+    "colBalance": "残高",
+    "colStatus": "ステータス",
+    "colActions": "操作",
+    "toolWebsite": "ツールのサイト",
+    "landing": "リンク先URL",
+    "sameAsWebsite": "サイトと同じ",
+    "pendingLanding": "新しいURLが審査待ち：",
+    "approveCampaign": "キャンペーンを承認",
+    "approveLanding": "新しいURLを承認",
+    "rejectCampaign": "却下して返金",
+    "rejectLanding": "新しいURLを却下",
+    "rejectCampaignPrompt": "却下理由（広告主に表示されます）。このキャンペーンの注文はすべて返金されます。",
+    "rejectLandingPrompt": "新しいリンク先URLの却下理由（広告主に表示されます）：",
+    "addClicks": "クリックを追加",
+    "addClicksPrompt": "追加するクリック数は？",
+    "emptyReview": "審査待ちはありません。",
+    "empty": "キャンペーンはまだありません。"
+  },
+  "socialQueries": {
+    "title": "マイクエリ",
+    "subtitle": "収集したソーシャル投稿からトピックを追跡 — 1クエリにつきキーワード5個まで。Data Credits は消費しません。",
+    "usage": "{used}/{limit} 有効",
+    "new": "新規",
+    "namePlaceholder": "クエリ名（例：AI動画）",
+    "keywordsPlaceholder": "キーワードをカンマ区切りで：AI動画, テキストから動画",
+    "keywordsHint": "{n}/{max} キーワード",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "paused": "一時停止",
+    "newPosts": "新着 {n} 件",
+    "results": "{n} 件の投稿",
+    "view": "投稿を見る",
+    "hide": "閉じる",
+    "edit": "編集",
+    "pause": "一時停止",
+    "resume": "再開",
+    "delete": "削除",
+    "confirmDelete": "クエリ「{name}」を削除しますか？",
+    "noResults": "これらのキーワードに一致する投稿はまだありません。",
+    "loadMore": "さらに読み込む",
+    "empty": "クエリはまだありません — 作成してトピックを追跡しましょう。",
+    "none": "Social Listening クエリは有料プランでご利用いただけます。",
+    "error": "問題が発生しました。もう一度お試しください。",
+    "overLimit": "プランの上限超過"
+  },
+  "publicLimits": {
+    "login": "ログインしてさらに表示",
+    "rankingTitle": "無料ランキングは上位 {n} 件まで表示",
+    "rankingText": "有料の Research Plan なら、各ツールのトラフィックと成長率を含むランキング全体を見られます。"
+  },
+  "aiNews": {
+    "title": "AIニュース",
+    "sub": "AIツールの世界からのニュース、ガイド、ストーリー。",
+    "seoDesc": "TopAICollection の最新AIニュース、ガイド、ゲスト記事。",
+    "empty": "記事はまだありません。",
+    "guestPost": "ゲスト投稿",
+    "by": "{name} 著",
+    "latest": "最新記事",
+    "writeForUs": "寄稿する",
+    "writeForUsSub": "ゲスト記事を掲載するか、当サイトの記事にリンクを追加できます。",
+    "learnMore": "詳しく見る",
+    "guestPostNote": "これはゲスト投稿です。記事内の意見やリンクは著者によるものです。"
+  },
+  "articleEditor": {
+    "write": "書く",
+    "preview": "プレビュー",
+    "words": "{n} 語",
+    "min": "最低 {n}",
+    "links": "リンク {n}/{max}",
+    "addImage": "画像を追加",
+    "uploading": "アップロード中…",
+    "placeholder": "Markdown で記述：## 見出し、**太字**、[リンク](https://…)、- リスト…",
+    "nothing": "プレビューする内容はまだありません。",
+    "help": "Markdown：## 見出し · **太字** · *斜体* · [テキスト](https://url) · - リスト · > 引用。HTML は使用できません。",
+    "uploadCover": "カバー画像をアップロード（16:9）",
+    "changeCover": "変更",
+    "coverHint": "PNG、JPG、WebP、GIF、5 MB まで。推奨 1200×675。"
+  },
+  "postForm": {
+    "title": "新しいゲスト投稿",
+    "editTitle": "ゲスト投稿を編集",
+    "rules": {
+      "cost": "ゲスト投稿は {n} クレジットで、提出時に差し引かれます。却下されたり取り下げたりした場合は返却されます。",
+      "words": "{n} 語以上、オリジナルで英語で書かれていること。",
+      "links": "他サイトへのリンクは最大 {n} 個まで。",
+      "topic": "AIに関する内容：ツール、ユースケース、チュートリアル、業界ニュース。アダルト、ギャンブル、スパム的な内容は不可。",
+      "review": "編集部がすべての投稿を審査し、修正をお願いすることがあります。公開されるとリンクが一覧に表示されます。"
+    },
+    "fieldTitle": "タイトル",
+    "fieldExcerpt": "要約",
+    "excerptHint": "任意、300文字まで — カードや検索結果に表示されます。",
+    "fieldCover": "カバー画像",
+    "fieldContent": "記事",
+    "needTitle": "10文字以上のタイトル",
+    "needCover": "カバー画像",
+    "needWords": "{n} 語以上",
+    "tooManyLinks": "リンクは {n} 個まで",
+    "needCredits": "{n} クレジット以上",
+    "confirmSpend": "審査に提出しますか？{n} クレジットを使用します。",
+    "submit": "審査に提出（{n} クレジット）",
+    "resubmit": "保存して再提出",
+    "notEditable": "この申請は編集できません（すでに処理済みか取り下げ済みです）。"
+  },
+  "linkForm": {
+    "title": "新しいリンク挿入",
+    "editTitle": "リンク挿入を編集",
+    "intro": "公開済みの記事の中で、自然に合う文にあなたのリンクを追加します。費用は {n} クレジット。挿入できない場合は返却されます。",
+    "fieldUrl": "挿入するリンク",
+    "fieldAnchor": "アンカーテキスト",
+    "fieldArticle": "記事",
+    "editorChooses": "最適な記事を編集部に任せる",
+    "fieldNote": "編集部へのメモ",
+    "notePlaceholder": "任意：記事内の位置、文脈、希望する表現…",
+    "needUrl": "完全なリンク（https://…）",
+    "needAnchor": "アンカーテキスト"
+  },
+  "adminPosts": {
+    "title": "ゲスト投稿",
+    "filters": {
+      "review": "審査待ち",
+      "all": "すべて"
+    },
+    "preview": "プレビュー",
+    "hide": "閉じる",
+    "publish": "記事として公開",
+    "markDone": "完了にする",
+    "pickArticle": "記事を選択",
+    "editArticle": "記事を編集",
+    "requested": "指定された記事",
+    "requestChanges": "修正を依頼",
+    "reject": "却下して返却",
+    "changesPrompt": "お客様に何を修正してもらいますか？",
+    "rejectPrompt": "却下理由（クレジットは返却されます）：",
+    "emptyReview": "審査待ちはありません。",
+    "empty": "申請はまだありません。"
+  },
+  "adminArticles": {
+    "title": "記事",
+    "new": "新しい記事",
+    "colTitle": "タイトル",
+    "colKind": "種類",
+    "colStatus": "ステータス",
+    "colPublished": "公開日",
+    "colLinks": "注文",
+    "empty": "記事はまだありません。",
+    "notFound": "記事が見つかりません。",
+    "kinds": {
+      "EDITORIAL": "編集部",
+      "GUEST_POST": "ゲスト投稿"
+    },
+    "statuses": {
+      "DRAFT": "下書き",
+      "PUBLISHED": "公開済み"
+    },
+    "slug": "URL スラッグ",
+    "slugAuto": "タイトルから自動生成",
+    "author": "著者名",
+    "linkInserts": "この記事へのリンク挿入 — 本文にリンクを貼り付けてから、ゲスト投稿で完了にしてください：",
+    "publish": "公開",
+    "saveLive": "保存",
+    "saveDraft": "下書きを保存",
+    "unpublish": "非公開にする（下書き）",
+    "delete": "削除",
+    "deleteConfirm": "この記事を完全に削除しますか？",
+    "saved": "保存しました。",
+    "view": "表示"
+  },
+  "adminCreditRefunds": {
+    "title": "ゲスト投稿クレジット",
+    "balance": "残高",
+    "hint": "返金できるのは未使用のクレジットのみで、その注文で支払った1クレジットあたりの価格で計算されます。",
+    "bought": "購入数",
+    "refunded": "返金済み",
+    "refund": "{credits} クレジットを返金 · {amount}",
+    "confirm": "未使用の {credits} クレジットを返金し、Stripe 経由で {amount} をカードに戻しますか？クレジットは残高から差し引かれます。",
+    "done": "{credits} クレジットを返金しました · {amount}。",
+    "nothing": "未使用のクレジットはありません",
+    "empty": "ゲスト投稿の注文はありません。"
   }
 }

@@ -16,7 +16,7 @@ const MAX_LENGTH: Record<Field, number> = {
 }
 
 export default defineEventHandler(async (event) => {
-  const userId = requireUser(event)
+  const userId = await requireActiveUser(event)
   const body = await readBody<Partial<Record<Field, unknown>>>(event)
   if (!body || typeof body !== 'object') {
     throw createError({ statusCode: 400, statusMessage: 'Invalid body' })

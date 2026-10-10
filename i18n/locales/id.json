@@ -1,14 +1,16 @@
 {
   "header": {
     "searchPlaceholder": "Cari alat AI...",
-    "categories": "Kategori",
-    "rankings": "Peringkat",
-    "submit": "Kirim alat",
-    "admin": "Dasbor",
     "freeTools": "Alat Gratis",
     "products": "Produk",
+    "categories": "Kategori",
+    "rankings": "Peringkat",
     "prompts": "Prompt",
+    "jobs": "Lowongan",
     "resource": "Sumber Daya",
+    "submit": "Kirim alat",
+    "adLibrary": "Pustaka Iklan AI",
+    "admin": "Dasbor",
     "menu": "Menu",
     "openMenu": "Buka menu",
     "closeMenu": "Tutup menu"
@@ -40,217 +42,55 @@
     "accountBanned": "Akun ini telah diblokir.",
     "googleEmailInUse": "Email ini sudah terdaftar. Silakan masuk dengan email dan kata sandi Anda."
   },
-  "hero": {
-    "titlePrefix": "Temukan",
-    "titleHighlight": "alat AI terbaik",
-    "subtitle": "Jelajahi ratusan produk AI berdasarkan kategori, bandingkan harga, dan temukan alat yang tepat untuk alur kerja Anda.",
-    "searchPlaceholder": "Cari alat AI..."
+  "productsMenu": {
+    "newTitle": "AI Terbaru",
+    "newDesc": "Alat AI terbaru, setiap hari",
+    "savedTitle": "AI Paling Banyak Disimpan",
+    "savedDesc": "AI dengan favorit terbanyak di platform kami",
+    "usedTitle": "AI Paling Banyak Dipakai",
+    "usedDesc": "AI dengan trafik situs tertinggi",
+    "appsTitle": "Aplikasi AI",
+    "appsDesc": "Alat AI berdasarkan kategori",
+    "discordTitle": "Discord AI",
+    "discordDesc": "Temukan server Discord tentang AI",
+    "extensionsTitle": "Ekstensi Chrome AI",
+    "extensionsDesc": "Alat AI berupa ekstensi browser",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs dari GPT Store",
+    "modelsTitle": "Model AI",
+    "modelsDesc": "Temukan model AI terbaik"
   },
-  "stats": {
-    "tools": "AI dan",
-    "categories": "kategori di direktori alat AI terbaik.",
-    "featured": "Alat unggulan",
-    "updatedNote": "Daftar alat AI dan toko GPTs diperbarui setiap hari oleh ChatGPT."
+  "promptsMenu": {
+    "n8nTitle": "Workflow n8n",
+    "midjourneyTitle": "Prompt Midjourney",
+    "openclawTitle": "Skill Openclaw",
+    "gptImageTitle": "Prompt GPT Image 2",
+    "seedreamTitle": "Prompt Seedream 5 Pro",
+    "seedanceTitle": "Prompt Seedance 2.5"
   },
-  "tabs": {
-    "heading": "Jelajahi alat",
-    "newest": "Hari Ini",
-    "featured": "Terbaru",
-    "free": "Paling direkomendasikan",
-    "viewAll": "Lihat semua →"
+  "resourceMenu": {
+    "checkDomainTitle": "Cek Domain",
+    "aiDomainTitle": "Domain .ai"
   },
-  "announcement": {
-    "featured": "Unggulan",
-    "cta": "Pelajari lebih lanjut"
+  "submitMenu": {
+    "submitTitle": "Kirim Alat",
+    "advertiseTitle": "Beriklan",
+    "guestPostsTitle": "Guest Post / Sisip Tautan",
+    "updateAiTitle": "Perbarui AI",
+    "submitGptTitle": "Kirim GPT",
+    "moreBusinessTitle": "Bisnis Lainnya"
   },
-  "sidebar": {
-    "featuredTools": "Alat unggulan",
-    "topCategories": "Kategori teratas",
-    "aiNews": "Berita AI",
-    "top10": "10 Teratas",
-    "readMoreNews": "Baca selengkapnya"
-  },
-  "sections": {
-    "browseByCategory": "Jelajahi berdasarkan kategori",
-    "newestTools": "Alat terbaru",
-    "featuredTools": "Alat unggulan",
-    "viewAll": "Lihat semua →",
-    "justLaunched": "Baru diluncurkan",
-    "featuredThisWeek": "Unggulan",
-    "featuredThisWeekSubtitle": "Alat yang paling banyak disimpan dan dinilai oleh komunitas kami.",
-    "updatedDaily": "Diperbarui setiap hari",
-    "viewMore": "Lihat lebih banyak →",
-    "browse": "Jelajahi",
-    "editorsPicks": "Pilihan editor",
-    "sponsorBadge": "Sponsor",
-    "viewMoreTools": "Lihat lebih banyak →"
-  },
-  "cta": {
-    "title": "Punya alat AI yang ingin dibagikan?",
-    "subtitle": "Tampilkan kepada orang-orang yang mencari alat seperti milikmu.",
-    "button": "Kirim alatmu"
-  },
-  "empty": {
-    "noTools": "Tidak ada data.",
-    "noResults": "Tidak ada alat ditemukan"
-  },
-  "category": {
-    "breadcrumbHome": "Beranda",
-    "allTools": "Semua alat",
-    "allToolsTitle": "Semua alat AI",
-    "allPricing": "Semua harga",
-    "sortNewest": "Terbaru lebih dulu",
-    "sortFeatured": "Unggulan lebih dulu",
-    "sortName": "Nama A–Z",
-    "toolsFound": "alat ditemukan | alat ditemukan",
-    "searchPlaceholder": "Cari alat...",
-    "filters": "Filter",
-    "viewGrid": "Tampilan kisi",
-    "viewList": "Tampilan daftar"
-  },
-  "pricing": {
-    "FREE": "Gratis",
-    "FREEMIUM": "Freemium",
-    "PAID": "Berbayar"
-  },
-  "ranking": {
-    "title": "Alat AI terbaik",
-    "subtitle": "Diperingkat berdasarkan data trafik dan pertumbuhan yang tercatat di direktori kami.",
-    "byGrowth1m": "Pertumbuhan 1 bulan",
-    "byGrowth3m": "Pertumbuhan 3 bulan",
-    "byGrowth6m": "Pertumbuhan 6 bulan",
-    "byTraffic": "Kunjungan bulanan",
-    "colRank": "Peringkat",
-    "colTool": "Alat",
-    "colVisits": "Kunjungan bulanan",
-    "colGrowth": "Pertumbuhan",
-    "colAuthority": "Otoritas domain",
-    "colCategory": "Kategori",
-    "noData": "Belum ada data peringkat.",
-    "dataMonth": "Data trafik untuk {month}.",
-    "colVisitsFrom": "Kunjungan dari {name}",
-    "growthNote": "Pertumbuhan hanya diperingkat untuk alat dengan minimal {min} kunjungan di bulan pembanding.",
-    "loadMore": "Muat lebih banyak",
-    "loading": "Memuat…"
-  },
-  "tool": {
-    "openSite": "Buka situs",
-    "save": "Simpan",
-    "saved": "Tersimpan",
-    "featured": "Unggulan",
-    "introduction": "Pengantar",
-    "addedOn": "Ditambahkan pada",
-    "monthlyVisitors": "Pengunjung bulanan",
-    "features": "Fitur utama",
-    "useCases": "Kasus penggunaan",
-    "coreFeaturesHeading": "Fitur utama {name}",
-    "useCasesHeading": "Kasus penggunaan {name}",
-    "prosAndCons": "Kelebihan dan kekurangan",
-    "pros": "Kelebihan",
-    "cons": "Kekurangan",
-    "faq": "Pertanyaan yang sering diajukan",
-    "faqHeading": "FAQ dari {name}",
-    "alternatives": "Alternatif untuk",
-    "backToCategory": "Kembali ke",
-    "notFound": "Alat tidak ditemukan",
-    "similarTools": "Alat serupa",
-    "tabProductInfo": "Informasi produk",
-    "tabPricing": "Harga",
-    "tabReviews": "Ulasan",
-    "tabAnalytics": "Analitik",
-    "tabAlternatives": "Alternatif",
-    "productInformationHeading": "Informasi produk {name}",
-    "whatIs": "Apa itu {name}?",
-    "howToUseHeading": "Bagaimana cara menggunakan {name}?",
-    "reviewsHeading": "Ulasan {name} ({count})",
-    "ratingPrompt": "Apakah Anda merekomendasikan {name}? Tinggalkan komentar",
-    "whatDoYouThink": "Apa pendapat Anda?",
-    "loginToComment": "Masuk untuk berkomentar",
-    "pricingHeading": "Harga {name}",
-    "noPricingYet": "Belum ada informasi harga.",
-    "analyticsHeading": "Analitik {name}",
-    "trafficAnalysis": "Analisis trafik situs {name}",
-    "visitOverTime": "Kunjungan dari waktu ke waktu",
-    "monthlyVisits": "Kunjungan bulanan",
-    "avgVisitDuration": "Rata-rata durasi kunjungan",
-    "pagePerVisit": "Halaman per kunjungan",
-    "bounceRate": "Tingkat pentalan",
-    "noTrafficYet": "Belum ada data trafik.",
-    "badgeVerified": "Terverifikasi",
-    "badgeJustLaunched": "Baru diluncurkan",
-    "badgeFreeTool": "Alat gratis",
-    "affiliateLink": "Tautan afiliasi",
-    "couponCode": "Kode kupon",
-    "ratings": "penilaian",
-    "upvotes": "suara positif",
-    "domainAuthority": "Otoritas domain",
-    "trafficRank": "Peringkat trafik",
-    "viewCount": "Tampilan halaman",
-    "outOf5": "dari 5",
-    "enterReviewPrompt": "Silakan masukkan ulasan Anda",
-    "sortBy": "Urutkan berdasarkan",
-    "sortNewest": "Terbaru",
-    "sortOldest": "Terlama",
-    "loadMoreReviews": "Muat lebih banyak ulasan",
-    "loadingMore": "Memuat...",
-    "reviewsLabel": "Ulasan",
-    "socialAndEmail": "Sosial & Email",
-    "advertiseTool": "Iklankan alat ini",
-    "updateTool": "Perbarui alat ini",
-    "savedLabel": "Disimpan",
-    "vsLastMonth": "vs bulan lalu",
-    "trafficSources": "Sumber Lalu Lintas",
-    "sourceDirect": "Langsung",
-    "sourceSearch": "Pencarian",
-    "sourceReferral": "Rujukan",
-    "sourceSocial": "Media sosial",
-    "sourceMail": "Email",
-    "sourcePaidReferrals": "Rujukan berbayar",
-    "sourceOthers": "Lainnya",
-    "allTraffic": "Semua traffic",
-    "globalRank": "Peringkat global",
-    "yearFounded": "Didirikan",
-    "employees": "Karyawan",
-    "topKeywords": "Kata kunci teratas",
-    "keyword": "Kata kunci",
-    "searchVolume": "Volume pencarian",
-    "keywordType": "Jenis",
-    "keywordOrganic": "Organik",
-    "keywordPaid": "Berbayar",
-    "mobileApps": "Aplikasi seluler",
-    "loginToReview": "Masuk untuk mengulas",
-    "submitReview": "Kirim ulasan",
-    "submittingReview": "Mengirim...",
-    "reviewPendingNotice": "Terima kasih! Ulasan Anda telah dikirim dan akan tampil setelah disetujui.",
-    "reviewAlreadySubmitted": "Anda sudah mengulas tool ini.",
-    "reviewSubmitError": "Gagal mengirim ulasan. Silakan coba lagi.",
-    "reviewSessionExpired": "Sesi Anda telah berakhir. Silakan masuk lagi untuk mengirim ulasan."
-  },
-  "footer": {
-    "tagline": "Temukan, bandingkan, dan bagikan alat AI terbaik — dibangun dengan Nuxt & PostgreSQL.",
-    "product": "Produk",
-    "home": "Beranda",
-    "allTools": "Semua alat",
-    "submit": "Kirim alat",
-    "categories": "Kategori",
-    "company": "Perusahaan",
-    "language": "Bahasa",
-    "copyright": "Semua hak dilindungi.",
-    "topAiTools": "Alat AI Teratas",
-    "moreTools": "Alat Lainnya",
-    "categoryToolsCount": "{count} Alat {name}",
-    "categoryTools": "Alat {name}",
-    "browseByAlphabet": "Telusuri menurut abjad",
-    "top1000Directory": "Direktori Top 1000 Alat AI",
-    "about": "Tentang",
-    "aboutUs": "Tentang Kami",
-    "terms": "Ketentuan Layanan",
-    "privacy": "Kebijakan Privasi",
-    "advertise": "Beriklan",
-    "contact": "Kontak"
-  },
-  "language": {
-    "label": "Bahasa"
+  "rankingMenu": {
+    "monthlyTitle": "AI Teratas per Bulan",
+    "monthlyDesc": "Daftar AI per bulan dan kunjungan bulanan.",
+    "categoriesTitle": "AI Teratas per Kategori",
+    "categoriesDesc": "Daftar AI per kategori dan kunjungan bulanan.",
+    "regionsTitle": "AI Teratas per Wilayah",
+    "regionsDesc": "Daftar AI per wilayah dan kunjungan bulanan.",
+    "sourceTitle": "AI Teratas per Sumber",
+    "sourceDesc": "Daftar AI per sumber dan kunjungan bulanan.",
+    "revenueTitle": "AI Teratas berdasarkan Pendapatan",
+    "revenueDesc": "Daftar AI teratas berdasarkan pendapatan dan trafik nyata."
   },
   "admin": {
     "badge": "Admin",
@@ -297,7 +137,9 @@
         "queries": "Kueri Social Listening",
         "filtering": "Pemfilteran Lanjutan",
         "export": "Ekspor Data",
-        "statistics": "Statistik data dasar"
+        "statistics": "Statistik data dasar",
+        "filteringFull": "Semua filter lanjutan",
+        "statisticsDeep": "Statistik mendalam"
       },
       "faq": {
         "title": "Pertanyaan Umum",
@@ -305,7 +147,21 @@
           "question": "Apa itu \"Kredit Data\"?",
           "answer": "Kredit Data adalah mata uang yang Anda gunakan untuk melakukan riset di platform kami. Kredit ini digunakan dengan cara berikut:\n1. Penggunaan Data: 1 kredit digunakan untuk setiap baris data yang dimuat di halaman \"Insights\" atau \"Analysis\" kami.\n2. Ekspor Data: 1 kredit digunakan untuk setiap baris data yang diekspor ke file CSV atau Excel.\n3. Tanpa Biaya: kueri Social Listening tidak mengonsumsi Kredit Data.\nPerlu diketahui: kredit direset di awal setiap siklus penagihan bulanan. Kredit yang tidak terpakai tidak dapat dibawa ke periode berikutnya."
         }
-      }
+      },
+      "currentPlan": "Paket saat ini",
+      "upgradeTo": "Upgrade",
+      "downgradeTo": "Downgrade",
+      "switchTo": "Ganti",
+      "working": "Mohon tunggu…",
+      "error": "Terjadi kesalahan. Silakan coba lagi.",
+      "confirmChange": "Pindah ke {plan}? Selisih prorata langsung ditagih (atau dikreditkan).",
+      "confirmCancel": "Batalkan paket Anda? Paket tetap aktif hingga {date}, lalu beralih ke Free.",
+      "renewsOn": "Diperpanjang pada {date}",
+      "endsOn": "Berakhir pada {date}",
+      "pastDue": "Pembayaran gagal — silakan perbarui kartu Anda.",
+      "manageBilling": "Kelola tagihan",
+      "resume": "Pertahankan paket saya",
+      "cancelPlan": "Batalkan paket"
     },
     "business": "Bisnis",
     "myAIs": "AI Saya",
@@ -453,7 +309,169 @@
       "deleteConfirm": "Hapus ulasan ini secara permanen?",
       "guest": "Tamu",
       "empty": "Tidak ada ulasan ditemukan."
-    }
+    },
+    "userSubmission": "Kiriman pengguna",
+    "waitingUserContent": "Menunggu konten dari pemilik",
+    "submission": {
+      "title": "Kiriman pengguna",
+      "owner": "Pemilik",
+      "mode": "Siapa yang menulis listing",
+      "reason": "Alasan penolakan",
+      "modes": {
+        "auto": "Tim kami (otomatis)",
+        "manual": "Pemilik (manual)"
+      },
+      "publish": "Terbitkan",
+      "reject": "Tolak",
+      "reasonPlaceholder": "Alasan penolakan — ditampilkan ke pemilik",
+      "publishHint": "Untuk menerbitkan, listing berbahasa Inggris harus lengkap. Gunakan tombol \"Disetujui\" di bawah untuk menyetujuinya. Jika ditolak, tool dikembalikan ke pemilik untuk diperbaiki dan dikirim ulang.",
+      "ai": "Konten AI",
+      "aiRerun": "Jalankan AI lagi",
+      "aiStatus": {
+        "none": "Belum diminta",
+        "queued": "Dalam antrean — crawler akan segera memprosesnya",
+        "done": "Selesai",
+        "failed": "Gagal — dicoba ulang otomatis",
+        "invalid": "Butuh admin — situs tidak terbaca atau info tidak cukup untuk AI"
+      },
+      "duplicate": "Peringatan: situs sama dengan listing yang sudah ada —"
+    },
+    "update": {
+      "title": "Pembaruan berbayar",
+      "pendingTitle": "Pembaruan menunggu ditinjau ({n})",
+      "status": {
+        "DRAFT": "Pemilik sudah membayar dan masih menyiapkan perubahan.",
+        "SUBMITTED": "Terkirim — tinjau perubahan di bawah."
+      },
+      "field": "Kolom",
+      "current": "Tayang sekarang",
+      "proposed": "Diusulkan",
+      "fields": {
+        "name": "Nama",
+        "logoUrl": "Logo",
+        "pricingType": "Harga",
+        "twitterUrl": "URL Twitter",
+        "discordUrl": "URL Discord",
+        "images": "Tangkapan layar",
+        "categories": "Kategori",
+        "shortDesc": "Deskripsi singkat",
+        "description": "Deskripsi",
+        "whatIs": "Apa itu",
+        "howToUse": "Cara menggunakan",
+        "coreFeatures": "Fitur utama",
+        "useCases": "Kasus penggunaan"
+      },
+      "noChanges": "Belum ada perubahan.",
+      "apply": "Terapkan pembaruan",
+      "reject": "Tolak & kembalikan dana",
+      "reasonPlaceholder": "Alasan penolakan — ditampilkan ke pemilik",
+      "hint": "Menerapkan akan menulis perubahan ke listing yang tayang dan menerjemahkannya ulang. Menolak akan mengembalikan pembayaran melalui Stripe."
+    },
+    "managePlan": "Kelola paket"
+  },
+  "hero": {
+    "titlePrefix": "Temukan",
+    "titleHighlight": "alat AI terbaik",
+    "subtitle": "Jelajahi ratusan produk AI berdasarkan kategori, bandingkan harga, dan temukan alat yang tepat untuk alur kerja Anda.",
+    "searchPlaceholder": "Cari alat AI..."
+  },
+  "stats": {
+    "tools": "AI dan",
+    "categories": "kategori di direktori alat AI terbaik.",
+    "featured": "Alat unggulan",
+    "updatedNote": "Daftar alat AI dan toko GPTs diperbarui setiap hari oleh ChatGPT."
+  },
+  "tabs": {
+    "heading": "Jelajahi alat",
+    "newest": "Hari Ini",
+    "featured": "Terbaru",
+    "free": "Paling direkomendasikan",
+    "viewAll": "Lihat semua →"
+  },
+  "announcement": {
+    "featured": "Unggulan",
+    "cta": "Pelajari lebih lanjut"
+  },
+  "sidebar": {
+    "featuredTools": "Alat unggulan",
+    "topCategories": "Kategori teratas",
+    "aiNews": "Berita AI",
+    "top10": "10 Teratas",
+    "readMoreNews": "Baca selengkapnya"
+  },
+  "sections": {
+    "browseByCategory": "Jelajahi berdasarkan kategori",
+    "newestTools": "Alat terbaru",
+    "featuredTools": "Alat unggulan",
+    "viewAll": "Lihat semua →",
+    "justLaunched": "Baru diluncurkan",
+    "featuredThisWeek": "Unggulan",
+    "featuredThisWeekSubtitle": "Alat yang paling banyak disimpan dan dinilai oleh komunitas kami.",
+    "browse": "Jelajahi",
+    "editorsPicks": "Pilihan editor",
+    "sponsorBadge": "Sponsor",
+    "updatedDaily": "Diperbarui setiap hari",
+    "viewMore": "Lihat lebih banyak →",
+    "viewMoreTools": "Lihat lebih banyak →",
+    "adLabel": "Iklan",
+    "tryNow": "Coba Sekarang"
+  },
+  "cta": {
+    "title": "Punya alat AI yang ingin dibagikan?",
+    "subtitle": "Tampilkan kepada orang-orang yang mencari alat seperti milikmu.",
+    "button": "Kirim alatmu"
+  },
+  "empty": {
+    "noTools": "Tidak ada data.",
+    "noResults": "Tidak ada alat ditemukan"
+  },
+  "category": {
+    "breadcrumbHome": "Beranda",
+    "allTools": "Semua alat",
+    "allToolsTitle": "Semua alat AI",
+    "allPricing": "Semua harga",
+    "sortNewest": "Terbaru lebih dulu",
+    "sortFeatured": "Unggulan lebih dulu",
+    "sortName": "Nama A–Z",
+    "toolsFound": "alat ditemukan | alat ditemukan",
+    "searchPlaceholder": "Cari alat...",
+    "filters": "Filter",
+    "viewGrid": "Tampilan kisi",
+    "viewList": "Tampilan daftar"
+  },
+  "pricing": {
+    "FREE": "Gratis",
+    "FREEMIUM": "Freemium",
+    "PAID": "Berbayar"
+  },
+  "ranking": {
+    "title": "Alat AI terbaik",
+    "subtitle": "Diperingkat berdasarkan data trafik dan pertumbuhan yang tercatat di direktori kami.",
+    "byGrowth1m": "Pertumbuhan 1 bulan",
+    "byGrowth3m": "Pertumbuhan 3 bulan",
+    "byGrowth6m": "Pertumbuhan 6 bulan",
+    "byTraffic": "Kunjungan bulanan",
+    "colRank": "Peringkat",
+    "colTool": "Alat",
+    "colVisits": "Kunjungan bulanan",
+    "colGrowth": "Pertumbuhan",
+    "colAuthority": "Otoritas domain",
+    "colCategory": "Kategori",
+    "colRevenue": "Pendapatan",
+    "noData": "Belum ada data peringkat.",
+    "selectCategory": "Pilih kategori",
+    "selectRegion": "Pilih wilayah",
+    "selectSource": "Pilih sumber",
+    "categoriesTitle": "Tool AI Teratas per Kategori",
+    "regionsTitle": "Tool AI Teratas per Wilayah",
+    "sourceTitle": "Tool AI Teratas per Sumber",
+    "revenueTitle": "Tool AI Teratas berdasarkan Pendapatan",
+    "noSelection": "Pilih salah satu opsi di atas untuk melihat peringkat.",
+    "dataMonth": "Data trafik untuk {month}.",
+    "colVisitsFrom": "Kunjungan dari {name}",
+    "growthNote": "Pertumbuhan hanya diperingkat untuk alat dengan minimal {min} kunjungan di bulan pembanding.",
+    "loadMore": "Muat lebih banyak",
+    "loading": "Memuat…"
   },
   "socialListening": {
     "title": "Social Listening",
@@ -495,7 +513,38 @@
     "sortGrowthRateAsc": "Laju pertumbuhan: rendah → tinggi",
     "loading": "Memuat…",
     "loadError": "Gagal memuat data. Silakan coba lagi.",
-    "popupBlocked": "Browser memblokir beberapa tab. Izinkan pop-up untuk situs ini agar semuanya terbuka."
+    "popupBlocked": "Browser memblokir beberapa tab. Izinkan pop-up untuk situs ini agar semuanya terbuka.",
+    "creditsThisMonth": "Data Credits bulan ini",
+    "outOfCredits": "Data Credits Anda bulan ini sudah habis — {n} baris di halaman ini terkunci. Upgrade untuk melihatnya.",
+    "unlock": "Upgrade untuk membuka",
+    "statsTitle": "Statistik",
+    "statsLocked": "Statistik bulanan tersedia di paket berbayar.",
+    "statTools": "Tool",
+    "statVisits": "Total kunjungan",
+    "statGrowth": "Pertumbuhan kunjungan",
+    "statMedian": "Pertumbuhan median",
+    "statTopGrowth": "Tumbuh paling cepat",
+    "statCategories": "Kunjungan per kategori",
+    "statTrend": "Total kunjungan, 12 bulan terakhir",
+    "statDistribution": "Tool berdasarkan pertumbuhan",
+    "statCategoryGrowth": "Pertumbuhan per kategori",
+    "advancedFilters": "Filter",
+    "clearFilters": "Hapus filter",
+    "filterNeedsAdvanced": "Paket Starter atau lebih tinggi",
+    "filterNeedsFull": "Paket Enterprise",
+    "exportQuota": "Ekspor: {used}/{limit} baris bulan ini · maks. {per} per ekspor",
+    "exportError": "Ekspor gagal. Silakan coba lagi.",
+    "filter": {
+      "category": "Kategori",
+      "anyCategory": "Semua kategori",
+      "minVisits": "Min. kunjungan bulanan",
+      "maxVisits": "Maks. kunjungan bulanan",
+      "minGrowthRate": "Min. tingkat pertumbuhan (%)",
+      "maxGrowthRate": "Maks. tingkat pertumbuhan (%)",
+      "maxBounceRate": "Maks. bounce rate (%)",
+      "minDuration": "Min. durasi kunjungan (dtk)",
+      "minPagesPerVisit": "Min. halaman per kunjungan"
+    }
   },
   "myAIsPage": {
     "title": "AI Saya",
@@ -518,7 +567,33 @@
     "colBalances": "Saldo",
     "colStatus": "Status",
     "colAction": "Aksi",
-    "emptyMessage": "Anda belum memiliki iklan, klik untuk membuat iklan"
+    "emptyMessage": "Anda belum memiliki iklan, klik untuk membuat iklan",
+    "colPerformance": "Performa",
+    "tiers": {
+      "STANDARD": "Standard",
+      "FEATURED": "Featured"
+    },
+    "statuses": {
+      "PENDING_REVIEW": "Sedang ditinjau",
+      "ACTIVE": "Berjalan",
+      "PAUSED": "Dijeda",
+      "EXHAUSTED": "Klik habis",
+      "REJECTED": "Ditolak"
+    },
+    "toolWebsite": "Situs tool",
+    "pendingLanding": "Sedang ditinjau: {url}",
+    "remaining": "klik tersisa",
+    "impressions": "Tayangan",
+    "clicks": "Klik",
+    "pausedByAdmin": "Dijeda oleh tim kami",
+    "reason": "Alasan: {reason}",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "editLanding": "Ubah URL tujuan",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "landingHint": "Kosongkan untuk memakai situs tool Anda. URL di situs lain akan ditinjau dulu; sementara itu URL saat ini tetap berjalan.",
+    "reviewNote": "Setiap tool dan jenis iklan punya saldo klik sendiri. Iklan langsung mengarah ke situs Anda, dan hanya klik pertama per pengunjung dalam 24 jam yang ditagih."
   },
   "myPostsPage": {
     "title": "Postingan & Artikel Saya / Sisipan Tautan",
@@ -531,7 +606,28 @@
     "colArticleLink": "Artikel/Tautan",
     "colType": "Tipe",
     "colStatus": "Status",
-    "emptyMessage": "Anda belum memiliki postingan, klik untuk membuat"
+    "emptyMessage": "Anda belum memiliki postingan, klik untuk membuat",
+    "noCredits": "Anda perlu kredit untuk membuat postingan atau sisipan link — beli di halaman Guest Post.",
+    "creditsUsed": "{n} kredit",
+    "requestedArticle": "Artikel diminta",
+    "editorPicks": "Editor akan memilih",
+    "editorNote": "Editor",
+    "refunded": "{n} kredit dikembalikan",
+    "edit": "Edit",
+    "editResubmit": "Edit dan kirim ulang",
+    "withdraw": "Tarik",
+    "withdrawConfirm": "Tarik kiriman ini? {n} kredit kembali ke saldo Anda.",
+    "types": {
+      "GUEST_POST": "Guest post",
+      "LINK_INSERT": "Sisipan link"
+    },
+    "statuses": {
+      "PENDING": "Sedang ditinjau",
+      "CHANGES_REQUESTED": "Perlu perubahan",
+      "PUBLISHED": "Terbit",
+      "REJECTED": "Ditolak",
+      "WITHDRAWN": "Ditarik"
+    }
   },
   "myGPTsPage": {
     "title": "GPT Saya",
@@ -571,7 +667,18 @@
     "loadError": "Gagal memuat profil. Muat ulang halaman.",
     "emailHint": "Email masuk tidak dapat diubah di sini.",
     "saved": "Tersimpan.",
-    "saveError": "Gagal menyimpan. Silakan coba lagi."
+    "saveError": "Gagal menyimpan. Silakan coba lagi.",
+    "quotaResets": "Kuota direset pada {date}",
+    "cardInStripe": "Tersimpan di Stripe",
+    "endsOn": "Paket berakhir pada",
+    "researchPlan": "Research Plan",
+    "invoiceStatuses": {
+      "paid": "Lunas",
+      "open": "Belum dibayar",
+      "uncollectible": "Gagal",
+      "void": "Dibatalkan",
+      "draft": "Draf"
+    }
   },
   "feedbackPage": {
     "title": "Umpan Balik Pengguna",
@@ -605,6 +712,138 @@
       "RESOLVED": "Selesai",
       "CLOSED": "Ditutup"
     }
+  },
+  "tool": {
+    "openSite": "Buka situs",
+    "save": "Simpan",
+    "saved": "Tersimpan",
+    "featured": "Unggulan",
+    "introduction": "Pengantar",
+    "addedOn": "Ditambahkan pada",
+    "monthlyVisitors": "Pengunjung bulanan",
+    "features": "Fitur utama",
+    "useCases": "Kasus penggunaan",
+    "coreFeaturesHeading": "Fitur utama {name}",
+    "useCasesHeading": "Kasus penggunaan {name}",
+    "prosAndCons": "Kelebihan dan kekurangan",
+    "pros": "Kelebihan",
+    "cons": "Kekurangan",
+    "faq": "Pertanyaan yang sering diajukan",
+    "faqHeading": "FAQ dari {name}",
+    "alternatives": "Alternatif untuk",
+    "backToCategory": "Kembali ke",
+    "notFound": "Alat tidak ditemukan",
+    "similarTools": "Alat serupa",
+    "tabProductInfo": "Informasi produk",
+    "tabPricing": "Harga",
+    "tabReviews": "Ulasan",
+    "tabAnalytics": "Analitik",
+    "tabAlternatives": "Alternatif",
+    "productInformationHeading": "Informasi produk {name}",
+    "whatIs": "Apa itu {name}?",
+    "howToUseHeading": "Bagaimana cara menggunakan {name}?",
+    "reviewsHeading": "Ulasan {name} ({count})",
+    "ratingPrompt": "Apakah Anda merekomendasikan {name}? Tinggalkan komentar",
+    "whatDoYouThink": "Apa pendapat Anda?",
+    "loginToComment": "Masuk untuk berkomentar",
+    "loginToReview": "Masuk untuk mengulas",
+    "submitReview": "Kirim ulasan",
+    "pricingHeading": "Harga {name}",
+    "noPricingYet": "Belum ada informasi harga.",
+    "analyticsHeading": "Analitik {name}",
+    "trafficAnalysis": "Analisis trafik situs {name}",
+    "visitOverTime": "Kunjungan dari waktu ke waktu",
+    "monthlyVisits": "Kunjungan bulanan",
+    "avgVisitDuration": "Rata-rata durasi kunjungan",
+    "pagePerVisit": "Halaman per kunjungan",
+    "bounceRate": "Tingkat pentalan",
+    "noTrafficYet": "Belum ada data trafik.",
+    "badgeVerified": "Terverifikasi",
+    "badgeJustLaunched": "Baru diluncurkan",
+    "badgeFreeTool": "Alat gratis",
+    "affiliateLink": "Tautan afiliasi",
+    "couponCode": "Kode kupon",
+    "ratings": "penilaian",
+    "upvotes": "suara positif",
+    "outOf5": "dari 5",
+    "enterReviewPrompt": "Silakan masukkan ulasan Anda",
+    "sortBy": "Urutkan berdasarkan",
+    "sortNewest": "Terbaru",
+    "sortOldest": "Terlama",
+    "loadMoreReviews": "Muat lebih banyak ulasan",
+    "loadingMore": "Memuat...",
+    "reviewsLabel": "Ulasan",
+    "socialAndEmail": "Sosial & Email",
+    "advertiseTool": "Iklankan alat ini",
+    "updateTool": "Perbarui alat ini",
+    "savedLabel": "Disimpan",
+    "domainAuthority": "Otoritas domain",
+    "trafficRank": "Peringkat trafik",
+    "viewCount": "Tampilan halaman",
+    "vsLastMonth": "vs bulan lalu",
+    "trafficSources": "Sumber Lalu Lintas",
+    "geography": "Geografi",
+    "topRegions": "{count} Wilayah Teratas",
+    "desktopOnly": "Hanya desktop",
+    "sourceDirect": "Langsung",
+    "sourceSearch": "Pencarian",
+    "sourceReferral": "Rujukan",
+    "sourceSocial": "Media sosial",
+    "sourceMail": "Email",
+    "sourcePaidReferrals": "Rujukan berbayar",
+    "sourceOthers": "Lainnya",
+    "allTraffic": "Semua traffic",
+    "globalRank": "Peringkat global",
+    "yearFounded": "Didirikan",
+    "employees": "Karyawan",
+    "topKeywords": "Kata kunci teratas",
+    "keyword": "Kata kunci",
+    "searchVolume": "Volume pencarian",
+    "keywordType": "Jenis",
+    "keywordOrganic": "Organik",
+    "keywordPaid": "Berbayar",
+    "mobileApps": "Aplikasi seluler",
+    "submittingReview": "Mengirim...",
+    "reviewPendingNotice": "Terima kasih! Ulasan Anda telah dikirim dan akan tampil setelah disetujui.",
+    "reviewAlreadySubmitted": "Anda sudah mengulas tool ini.",
+    "reviewSubmitError": "Gagal mengirim ulasan. Silakan coba lagi.",
+    "reviewSessionExpired": "Sesi Anda telah berakhir. Silakan masuk lagi untuk mengirim ulasan."
+  },
+  "alphabet": {
+    "title": "Alat AI yang diawali dengan",
+    "browse": "Telusuri menurut abjad"
+  },
+  "archive": {
+    "title": "Top 1000 Alat AI",
+    "rank": "Peringkat",
+    "name": "Nama",
+    "introduction": "Pengantar"
+  },
+  "footer": {
+    "tagline": "Temukan, bandingkan, dan bagikan alat AI terbaik — dibangun dengan Nuxt & PostgreSQL.",
+    "product": "Produk",
+    "home": "Beranda",
+    "allTools": "Semua alat",
+    "submit": "Kirim alat",
+    "categories": "Kategori",
+    "company": "Perusahaan",
+    "language": "Bahasa",
+    "copyright": "Semua hak dilindungi.",
+    "topAiTools": "Alat AI Teratas",
+    "moreTools": "Alat Lainnya",
+    "categoryToolsCount": "{count} Alat {name}",
+    "categoryTools": "Alat {name}",
+    "browseByAlphabet": "Telusuri menurut abjad",
+    "top1000Directory": "Direktori Top 1000 Alat AI",
+    "about": "Tentang",
+    "aboutUs": "Tentang Kami",
+    "terms": "Ketentuan Layanan",
+    "privacy": "Kebijakan Privasi",
+    "advertise": "Beriklan",
+    "contact": "Kontak"
+  },
+  "language": {
+    "label": "Bahasa"
   },
   "promote": {
     "title": "AI Anda di {site}",
@@ -780,7 +1019,7 @@
           "title": "Penempatan standar",
           "points": [
             "Bergiliran sebagai banner di halaman daftar: Hari Ini, Terbaru, Paling Unggul, kategori, hasil pencarian, dan peringkat.",
-            "Tampil di feed beranda dan blok \"Baru Diluncurkan\".",
+            "Ditampilkan di daftar halaman beranda.",
             "Tampil di halaman alat lain, di atas ulasan dan di atas alternatif.",
             "Langsung tayang jika iklan mengarah ke situs web alat itu sendiri."
           ]
@@ -830,7 +1069,13 @@
           "q": "Bisakah saya memilih lokasi iklan muncul?",
           "a": "Tidak. Penempatan dipilih otomatis agar klik Anda terpenuhi secepat mungkin."
         }
-      ]
+      ],
+      "chooseTier": "Pilih jenis iklan",
+      "tierHints": {
+        "STANDARD": "Ditampilkan bergiliran di halaman daftar. Langsung tayang jika mengarah ke situs Anda sendiri.",
+        "FEATURED": "Disematkan paling atas, plus bilah sponsor. Lebih mahal per klik; ditinjau oleh tim kami."
+      },
+      "reviewNote": "Kampanye Featured, dan URL tujuan apa pun di luar situs tool Anda, diperiksa tim kami sebelum tayang. Kampanye yang ditolak dikembalikan dananya sepenuhnya."
     },
     "guestPost": {
       "seoTitle": "Guest Post & Sisipan Tautan – {site}",
@@ -876,7 +1121,7 @@
         },
         {
           "q": "Seperti apa proses penerbitannya?",
-          "a": "Beli kredit → kirim konten atau detail tautan → tinjauan editorial → terbit. Anda menerima URL yang sudah tayang lewat email."
+          "a": "Beli kredit → kirim artikel atau detail tautan dari dasbor → tinjauan editorial → publikasi. Tautan yang sudah terbit muncul di dasbor Anda (Posts / Links)."
         },
         {
           "q": "Apakah ada pedoman konten untuk guest post?",
@@ -942,7 +1187,10 @@
           "q": "Detail apa saja yang bisa saya ubah?",
           "a": "Semua yang ada di daftar di atas kecuali URL situs web."
         }
-      ]
+      ],
+      "loginToPick": "Masuk untuk memilih salah satu tool Anda",
+      "noOwnedTools": "Anda belum punya tool yang terbit — hanya pemilik tool yang terdaftar yang bisa memperbaruinya.",
+      "pickOwnTool": "Pilih salah satu tool Anda yang sudah terbit"
     },
     "submitGpt": {
       "seoTitle": "Kirim GPT Anda – {site}",
@@ -984,12 +1232,14 @@
       "statuses": {
         "PAID": "Dibayar",
         "PENDING": "Menunggu",
-        "EXPIRED": "Kedaluwarsa"
+        "EXPIRED": "Kedaluwarsa",
+        "REFUNDED": "Dikembalikan"
       },
       "loading": "Memuat…",
       "empty": "Belum ada pesanan.",
       "clicks": "{n} klik",
-      "credits": "{n} kredit"
+      "credits": "{n} kredit",
+      "partlyRefunded": "Dikembalikan {amount} ({credits})"
     }
   },
   "errorPage": {
@@ -999,50 +1249,82 @@
     "errorMessage": "Terjadi kesalahan yang tidak terduga. Silakan coba lagi nanti.",
     "backHome": "Kembali ke beranda"
   },
-  "alphabet": {
-    "title": "Alat AI yang diawali dengan",
-    "browse": "Telusuri menurut abjad"
+  "myTool": {
+    "contentHeading": "Konten listing (bahasa Inggris)",
+    "contentHint": "Kolom bertanda * wajib diisi untuk mengirim. Satu fitur / kasus penggunaan per baris.",
+    "saveDraft": "Simpan draf",
+    "submitForReview": "Kirim untuk ditinjau",
+    "saving": "Menyimpan…",
+    "saved": "Tersimpan.",
+    "submitted": "Terkirim — kami akan segera meninjau tool Anda.",
+    "saveError": "Tidak dapat menyimpan. Silakan coba lagi.",
+    "reason": "Alasan",
+    "viewPage": "Lihat halaman publik",
+    "stage": {
+      "draft": {
+        "title": "Pembayaran diterima — lengkapi listing Anda",
+        "desc": "Isi detail di bawah, lalu kirim tool Anda untuk ditinjau."
+      },
+      "review": {
+        "title": "Sedang ditinjau",
+        "desc": "Tim kami sedang meninjau tool Anda. Anda masih bisa mengubahnya sampai diterbitkan."
+      },
+      "writing": {
+        "title": "Kami sedang menulis listing Anda",
+        "desc": "Tim kami sedang menyiapkan konten untuk tool Anda. Tool akan diterbitkan setelah ditinjau."
+      },
+      "rejected": {
+        "title": "Perlu perubahan",
+        "desc": "Tool Anda belum disetujui. Perbaiki masalah di bawah dan kirim lagi."
+      },
+      "live": {
+        "title": "Tool Anda sudah tayang",
+        "desc": "Untuk mengubah listing yang sudah terbit, gunakan Update AI."
+      },
+      "updateDraft": {
+        "title": "Pembaruan sudah dibayar — edit listing Anda",
+        "desc": "Ubah detail di bawah dan kirim untuk ditinjau. Listing yang tayang tidak berubah sampai pembaruan disetujui."
+      },
+      "updateReview": {
+        "title": "Pembaruan sedang ditinjau",
+        "desc": "Tim kami sedang meninjau perubahan Anda. Anda masih bisa mengeditnya — perubahan akan kembali ke draf sampai Anda mengirim lagi."
+      }
+    },
+    "upload": {
+      "logo": "Logo",
+      "logoHint": "Gambar persegi, PNG / JPG / WebP / GIF, maks. 5 MB.",
+      "none": "Tanpa logo",
+      "choose": "Unggah logo",
+      "change": "Ganti",
+      "remove": "Hapus",
+      "uploading": "Mengunggah…",
+      "screenshots": "Tangkapan layar",
+      "screenshotsHint": "Hingga {n} gambar ditampilkan di galeri halaman tool Anda. Gambar pertama menjadi sampul. Rasio 16:9 paling baik, maks. 5 MB per gambar.",
+      "add": "Tambah gambar",
+      "cover": "Sampul",
+      "moveLeft": "Geser ke kiri",
+      "moveRight": "Geser ke kanan",
+      "tooLarge": "Ukuran gambar maksimal 5 MB.",
+      "error": "Unggahan gagal. Silakan coba lagi."
+    },
+    "savedNeedsResubmit": "Tersimpan. Tool Anda kembali ke draf — tekan \"Kirim untuk ditinjau\" lagi setelah selesai.",
+    "update": {
+      "buy": "Perbarui tool ini",
+      "submit": "Kirim pembaruan untuk ditinjau",
+      "submitted": "Pembaruan terkirim — kami akan segera meninjaunya. Listing yang tayang tetap seperti sekarang sampai saat itu.",
+      "last": {
+        "APPLIED": "Pembaruan terakhir Anda sudah tayang.",
+        "REJECTED": "Pembaruan terakhir Anda tidak disetujui — pembayaran sudah dikembalikan."
+      }
+    }
   },
-  "archive": {
-    "title": "Top 1000 Alat AI",
-    "rank": "Peringkat",
-    "name": "Nama",
-    "introduction": "Pengantar"
-  },
-  "productsMenu": {
-    "newTitle": "AI Terbaru",
-    "newDesc": "Alat AI terbaru, setiap hari",
-    "savedTitle": "AI Paling Banyak Disimpan",
-    "savedDesc": "AI dengan favorit terbanyak di platform kami",
-    "usedTitle": "AI Paling Banyak Dipakai",
-    "usedDesc": "AI dengan trafik situs tertinggi",
-    "appsTitle": "Aplikasi AI",
-    "appsDesc": "Alat AI berdasarkan kategori",
-    "discordTitle": "Discord AI",
-    "discordDesc": "Temukan server Discord tentang AI",
-    "extensionsTitle": "Ekstensi Chrome AI",
-    "extensionsDesc": "Alat AI berupa ekstensi browser",
-    "gptsTitle": "GPTs",
-    "gptsDesc": "GPTs dari GPT Store",
-    "modelsTitle": "Model AI",
-    "modelsDesc": "Temukan model AI terbaik"
-  },
-  "rankingMenu": {
-    "monthlyTitle": "AI Teratas per Bulan",
-    "monthlyDesc": "Daftar AI per bulan dan kunjungan bulanan.",
-    "categoriesTitle": "AI Teratas per Kategori",
-    "categoriesDesc": "Daftar AI per kategori dan kunjungan bulanan.",
-    "regionsTitle": "AI Teratas per Wilayah",
-    "regionsDesc": "Daftar AI per wilayah dan kunjungan bulanan.",
-    "sourceTitle": "AI Teratas per Sumber",
-    "sourceDesc": "Daftar AI per sumber dan kunjungan bulanan."
-  },
-  "submitMenu": {
-    "submitTitle": "Kirim Alat",
-    "advertiseTitle": "Beriklan",
-    "guestPostsTitle": "Guest Post / Sisip Tautan",
-    "updateAiTitle": "Perbarui AI",
-    "submitGptTitle": "Kirim GPT"
+  "categoryPicker": {
+    "choose": "Pilih",
+    "done": "Selesai",
+    "search": "Cari kategori…",
+    "limit": "Hingga {n} kategori",
+    "empty": "Tidak ada kategori yang cocok",
+    "remove": "Hapus"
   },
   "adminFeedback": {
     "title": "Masukan",
@@ -1073,5 +1355,192 @@
       "BILLING": "Tagihan",
       "OTHER": "Lainnya"
     }
+  },
+  "adminAds": {
+    "title": "Kampanye Iklan",
+    "filters": {
+      "review": "Menunggu ditinjau",
+      "all": "Semua kampanye"
+    },
+    "colCampaign": "Kampanye",
+    "colLanding": "Tujuan",
+    "colBalance": "Saldo",
+    "colStatus": "Status",
+    "colActions": "Aksi",
+    "toolWebsite": "Situs tool",
+    "landing": "URL tujuan",
+    "sameAsWebsite": "Sama dengan situs",
+    "pendingLanding": "URL baru menunggu:",
+    "approveCampaign": "Setujui kampanye",
+    "approveLanding": "Setujui URL baru",
+    "rejectCampaign": "Tolak & kembalikan dana",
+    "rejectLanding": "Tolak URL baru",
+    "rejectCampaignPrompt": "Alasan penolakan (ditampilkan ke pengiklan). Semua pesanan kampanye ini akan dikembalikan dananya.",
+    "rejectLandingPrompt": "Alasan menolak URL tujuan baru (ditampilkan ke pengiklan):",
+    "addClicks": "Tambah klik",
+    "addClicksPrompt": "Berapa klik yang ditambahkan?",
+    "emptyReview": "Tidak ada yang menunggu ditinjau.",
+    "empty": "Belum ada kampanye."
+  },
+  "socialQueries": {
+    "title": "Kueri saya",
+    "subtitle": "Pantau topik di postingan sosial yang terkumpul — hingga 5 kata kunci per kueri. Tidak memakai Data Credits.",
+    "usage": "{used}/{limit} aktif",
+    "new": "Baru",
+    "namePlaceholder": "Nama kueri, mis. Video AI",
+    "keywordsPlaceholder": "Kata kunci, dipisah koma: video AI, teks ke video",
+    "keywordsHint": "{n}/{max} kata kunci",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "paused": "Dijeda",
+    "newPosts": "{n} baru",
+    "results": "{n} postingan",
+    "view": "Lihat postingan",
+    "hide": "Sembunyikan",
+    "edit": "Edit",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "delete": "Hapus",
+    "confirmDelete": "Hapus kueri \"{name}\"?",
+    "noResults": "Belum ada postingan yang cocok dengan kata kunci ini.",
+    "loadMore": "Muat lebih banyak",
+    "empty": "Belum ada kueri — buat satu untuk mengikuti topik.",
+    "none": "Kueri Social Listening tersedia di paket berbayar.",
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
+    "overLimit": "Melebihi batas paket"
+  },
+  "publicLimits": {
+    "login": "Masuk untuk melihat lebih banyak",
+    "rankingTitle": "Peringkat gratis menampilkan {n} teratas",
+    "rankingText": "Lihat peringkat lengkap, dengan trafik dan pertumbuhan setiap tool, di Research Plan berbayar."
+  },
+  "aiNews": {
+    "title": "Berita AI",
+    "sub": "Berita, panduan, dan cerita dari dunia tool AI.",
+    "seoDesc": "Berita AI terbaru, panduan, dan artikel tamu di TopAICollection.",
+    "empty": "Belum ada artikel.",
+    "guestPost": "Artikel tamu",
+    "by": "Oleh {name}",
+    "latest": "Artikel terbaru",
+    "writeForUs": "Menulis untuk kami",
+    "writeForUsSub": "Terbitkan artikel tamu atau tambahkan link Anda di salah satu artikel kami.",
+    "learnMore": "Pelajari lebih lanjut",
+    "guestPostNote": "Ini adalah artikel tamu. Pandangan dan link di dalamnya milik penulis."
+  },
+  "articleEditor": {
+    "write": "Tulis",
+    "preview": "Pratinjau",
+    "words": "{n} kata",
+    "min": "min. {n}",
+    "links": "{n}/{max} link",
+    "addImage": "Tambah gambar",
+    "uploading": "Mengunggah…",
+    "placeholder": "Tulis dalam Markdown: ## Judul, **tebal**, [link](https://…), - daftar…",
+    "nothing": "Belum ada yang bisa dipratinjau.",
+    "help": "Markdown: ## judul · **tebal** · *miring* · [teks](https://url) · - daftar · > kutipan. HTML tidak diizinkan.",
+    "uploadCover": "Unggah gambar sampul (16:9)",
+    "changeCover": "Ganti",
+    "coverHint": "PNG, JPG, WebP, atau GIF, maks. 5 MB. Disarankan 1200×675."
+  },
+  "postForm": {
+    "title": "Artikel tamu baru",
+    "editTitle": "Edit artikel tamu",
+    "rules": {
+      "cost": "Satu artikel tamu memakai {n} kredit, dipotong saat dikirim. Jika ditolak atau Anda menariknya, kredit dikembalikan.",
+      "words": "Minimal {n} kata, orisinal, dan ditulis dalam bahasa Inggris.",
+      "links": "Maksimal {n} link ke situs lain.",
+      "topic": "Tentang AI: tool, kasus penggunaan, tutorial, berita industri. Tanpa konten dewasa, judi, atau spam.",
+      "review": "Editor kami meninjau setiap artikel dan bisa meminta perubahan. Setelah terbit, link-nya muncul di daftar Anda."
+    },
+    "fieldTitle": "Judul",
+    "fieldExcerpt": "Ringkasan",
+    "excerptHint": "Opsional, maks. 300 karakter — ditampilkan di kartu dan hasil pencarian.",
+    "fieldCover": "Gambar sampul",
+    "fieldContent": "Artikel",
+    "needTitle": "Judul minimal 10 karakter",
+    "needCover": "Gambar sampul",
+    "needWords": "Minimal {n} kata",
+    "tooManyLinks": "Tidak lebih dari {n} link",
+    "needCredits": "Minimal {n} kredit",
+    "confirmSpend": "Kirim untuk ditinjau? Ini memakai {n} kredit.",
+    "submit": "Kirim untuk ditinjau ({n} kredit)",
+    "resubmit": "Simpan dan kirim ulang",
+    "notEditable": "Kiriman ini tidak bisa diedit (sudah diproses atau ditarik)."
+  },
+  "linkForm": {
+    "title": "Sisipan link baru",
+    "editTitle": "Edit sisipan link",
+    "intro": "Kami menambahkan link Anda di salah satu artikel kami yang sudah terbit, dalam kalimat yang pas secara alami. Biayanya {n} kredit; jika tidak bisa kami tempatkan, kredit dikembalikan.",
+    "fieldUrl": "Link yang disisipkan",
+    "fieldAnchor": "Anchor text",
+    "fieldArticle": "Artikel",
+    "editorChooses": "Biarkan editor memilih artikel terbaik",
+    "fieldNote": "Catatan untuk editor",
+    "notePlaceholder": "Opsional: posisi di artikel, konteks, kata-kata yang diinginkan…",
+    "needUrl": "Link lengkap (https://…)",
+    "needAnchor": "Anchor text"
+  },
+  "adminPosts": {
+    "title": "Artikel tamu",
+    "filters": {
+      "review": "Menunggu ditinjau",
+      "all": "Semua"
+    },
+    "preview": "Pratinjau",
+    "hide": "Sembunyikan",
+    "publish": "Terbitkan sebagai artikel",
+    "markDone": "Tandai selesai",
+    "pickArticle": "Pilih artikel",
+    "editArticle": "Edit artikel",
+    "requested": "Artikel yang diminta",
+    "requestChanges": "Minta perubahan",
+    "reject": "Tolak dan kembalikan kredit",
+    "changesPrompt": "Apa yang perlu diubah pelanggan?",
+    "rejectPrompt": "Alasan penolakan (kredit dikembalikan):",
+    "emptyReview": "Tidak ada yang menunggu ditinjau.",
+    "empty": "Belum ada kiriman."
+  },
+  "adminArticles": {
+    "title": "Artikel",
+    "new": "Artikel baru",
+    "colTitle": "Judul",
+    "colKind": "Jenis",
+    "colStatus": "Status",
+    "colPublished": "Terbit",
+    "colLinks": "Pesanan",
+    "empty": "Belum ada artikel.",
+    "notFound": "Artikel tidak ditemukan.",
+    "kinds": {
+      "EDITORIAL": "Editorial",
+      "GUEST_POST": "Artikel tamu"
+    },
+    "statuses": {
+      "DRAFT": "Draf",
+      "PUBLISHED": "Terbit"
+    },
+    "slug": "Slug URL",
+    "slugAuto": "Dibuat dari judul",
+    "author": "Nama penulis",
+    "linkInserts": "Sisipan link untuk artikel ini — tempel link ke dalam teks, lalu tandai selesai di Artikel tamu:",
+    "publish": "Terbitkan",
+    "saveLive": "Simpan",
+    "saveDraft": "Simpan draf",
+    "unpublish": "Batalkan terbit (draf)",
+    "delete": "Hapus",
+    "deleteConfirm": "Hapus artikel ini secara permanen?",
+    "saved": "Tersimpan.",
+    "view": "Lihat"
+  },
+  "adminCreditRefunds": {
+    "title": "Kredit artikel tamu",
+    "balance": "Saldo",
+    "hint": "hanya kredit yang belum dipakai yang bisa dikembalikan, dengan harga per kredit yang dibayar di pesanan itu.",
+    "bought": "Dibeli",
+    "refunded": "Dikembalikan",
+    "refund": "Kembalikan {credits} kredit · {amount}",
+    "confirm": "Kembalikan {credits} kredit yang belum dipakai — {amount} ke kartu melalui Stripe? Kredit akan dipotong dari saldo.",
+    "done": "{credits} kredit dikembalikan · {amount}.",
+    "nothing": "Tidak ada kredit yang belum dipakai",
+    "empty": "Belum ada pesanan artikel tamu."
   }
 }

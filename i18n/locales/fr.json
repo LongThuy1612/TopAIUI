@@ -1,14 +1,16 @@
 {
   "header": {
     "searchPlaceholder": "Rechercher des outils IA...",
-    "categories": "Catégories",
-    "rankings": "Classements",
-    "submit": "Soumettre un outil",
-    "admin": "Tableau de bord",
     "freeTools": "Outils gratuits",
     "products": "Produits",
+    "categories": "Catégories",
+    "rankings": "Classements",
     "prompts": "Prompts",
+    "jobs": "Emplois",
     "resource": "Ressources",
+    "submit": "Soumettre un outil",
+    "adLibrary": "Bibliothèque de pubs IA",
+    "admin": "Tableau de bord",
     "menu": "Menu",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu"
@@ -40,217 +42,55 @@
     "accountBanned": "Ce compte a été banni.",
     "googleEmailInUse": "Cet e-mail est déjà enregistré. Veuillez vous connecter avec votre e-mail et votre mot de passe."
   },
-  "hero": {
-    "titlePrefix": "Découvrez les meilleurs",
-    "titleHighlight": "outils d'IA",
-    "subtitle": "Parcourez des centaines de produits IA par catégorie, comparez les prix et trouvez l'outil adapté à votre flux de travail.",
-    "searchPlaceholder": "Rechercher des outils IA..."
+  "productsMenu": {
+    "newTitle": "Nouvelles IA",
+    "newDesc": "Les derniers outils IA, chaque jour",
+    "savedTitle": "IA les plus enregistrées",
+    "savedDesc": "Les IA les plus mises en favori sur notre plateforme",
+    "usedTitle": "IA les plus utilisées",
+    "usedDesc": "Les IA au plus fort trafic web",
+    "appsTitle": "Applis IA",
+    "appsDesc": "Outils IA classés par catégorie",
+    "discordTitle": "Discord de l’IA",
+    "discordDesc": "Découvrez les Discord consacrés à l’IA",
+    "extensionsTitle": "Extensions Chrome IA",
+    "extensionsDesc": "Outils IA sous forme d’extensions de navigateur",
+    "gptsTitle": "GPTs",
+    "gptsDesc": "GPTs du GPT Store",
+    "modelsTitle": "Modèles d’IA",
+    "modelsDesc": "Découvrez le meilleur modèle d’IA"
   },
-  "stats": {
-    "tools": "IA et",
-    "categories": "catégories dans le meilleur annuaire d'outils IA.",
-    "featured": "Outils en vedette",
-    "updatedNote": "La liste des outils IA et la boutique GPTs sont mises à jour quotidiennement par ChatGPT."
+  "promptsMenu": {
+    "n8nTitle": "Workflows n8n",
+    "midjourneyTitle": "Prompts Midjourney",
+    "openclawTitle": "Skills Openclaw",
+    "gptImageTitle": "Prompts GPT Image 2",
+    "seedreamTitle": "Prompts Seedream 5 Pro",
+    "seedanceTitle": "Prompts Seedance 2.5"
   },
-  "tabs": {
-    "heading": "Explorer les outils",
-    "newest": "Aujourd'hui",
-    "featured": "Nouveau",
-    "free": "Les plus en vedette",
-    "viewAll": "Voir tout →"
+  "resourceMenu": {
+    "checkDomainTitle": "Vérifier un domaine",
+    "aiDomainTitle": "Domaine .ai"
   },
-  "announcement": {
-    "featured": "En vedette",
-    "cta": "En savoir plus"
+  "submitMenu": {
+    "submitTitle": "Soumettre un outil",
+    "advertiseTitle": "Publicité",
+    "guestPostsTitle": "Articles invités / Insertion de liens",
+    "updateAiTitle": "Actualiser une IA",
+    "submitGptTitle": "Ajouter un GPT",
+    "moreBusinessTitle": "Plus de business"
   },
-  "sidebar": {
-    "featuredTools": "Outils en vedette",
-    "topCategories": "Catégories principales",
-    "aiNews": "Actualités IA",
-    "top10": "Top 10",
-    "readMoreNews": "Lire la suite"
-  },
-  "sections": {
-    "browseByCategory": "Parcourir par catégorie",
-    "newestTools": "Derniers outils",
-    "featuredTools": "Outils en vedette",
-    "viewAll": "Voir tout →",
-    "justLaunched": "Nouveautés",
-    "featuredThisWeek": "En vedette",
-    "featuredThisWeekSubtitle": "Les outils les plus enregistrés et les mieux notés par notre communauté.",
-    "updatedDaily": "Mis à jour chaque jour",
-    "viewMore": "Voir plus →",
-    "browse": "Parcourir",
-    "editorsPicks": "Sélection de la rédaction",
-    "sponsorBadge": "Sponsorisé",
-    "viewMoreTools": "Voir plus →"
-  },
-  "cta": {
-    "title": "Vous avez un outil IA à partager ?",
-    "subtitle": "Présentez-le aux personnes qui recherchent des outils comme le vôtre.",
-    "button": "Soumettez votre outil"
-  },
-  "empty": {
-    "noTools": "Aucune donnée.",
-    "noResults": "Aucun outil trouvé"
-  },
-  "category": {
-    "breadcrumbHome": "Accueil",
-    "allTools": "Tous les outils",
-    "allToolsTitle": "Tous les outils d'IA",
-    "allPricing": "Tous les tarifs",
-    "sortNewest": "Plus récents d'abord",
-    "sortFeatured": "En vedette d'abord",
-    "sortName": "Nom A–Z",
-    "toolsFound": "outil trouvé | outils trouvés",
-    "searchPlaceholder": "Rechercher des outils...",
-    "filters": "Filtres",
-    "viewGrid": "Vue en grille",
-    "viewList": "Vue en liste"
-  },
-  "pricing": {
-    "FREE": "Gratuit",
-    "FREEMIUM": "Freemium",
-    "PAID": "Payant"
-  },
-  "ranking": {
-    "title": "Meilleurs outils d'IA",
-    "subtitle": "Classés selon les données de trafic et de croissance enregistrées dans notre annuaire.",
-    "byGrowth1m": "Croissance sur 1 mois",
-    "byGrowth3m": "Croissance sur 3 mois",
-    "byGrowth6m": "Croissance sur 6 mois",
-    "byTraffic": "Visites mensuelles",
-    "colRank": "Rang",
-    "colTool": "Outil",
-    "colVisits": "Visites mensuelles",
-    "colGrowth": "Croissance",
-    "colAuthority": "Autorité du domaine",
-    "colCategory": "Catégorie",
-    "noData": "Pas encore de données de classement.",
-    "dataMonth": "Données de trafic de {month}.",
-    "colVisitsFrom": "Visites depuis {name}",
-    "growthNote": "La croissance n'est classée que pour les outils ayant au moins {min} visites le mois de référence.",
-    "loadMore": "Charger plus",
-    "loading": "Chargement…"
-  },
-  "tool": {
-    "openSite": "Ouvrir le site",
-    "save": "Enregistrer",
-    "saved": "Enregistré",
-    "featured": "En vedette",
-    "introduction": "Présentation",
-    "addedOn": "Ajouté le",
-    "monthlyVisitors": "Visiteurs mensuels",
-    "features": "Fonctionnalités clés",
-    "useCases": "Cas d'usage",
-    "coreFeaturesHeading": "Fonctionnalités clés de {name}",
-    "useCasesHeading": "Cas d'usage de {name}",
-    "prosAndCons": "Avantages et inconvénients",
-    "pros": "Avantages",
-    "cons": "Inconvénients",
-    "faq": "Questions fréquentes",
-    "faqHeading": "FAQ sur {name}",
-    "alternatives": "Alternatives à",
-    "backToCategory": "Retour à",
-    "notFound": "Outil introuvable",
-    "similarTools": "Outils similaires",
-    "tabProductInfo": "Informations produit",
-    "tabPricing": "Tarifs",
-    "tabReviews": "Avis",
-    "tabAnalytics": "Analytique",
-    "tabAlternatives": "Alternatives",
-    "productInformationHeading": "Informations produit de {name}",
-    "whatIs": "Qu'est-ce que {name} ?",
-    "howToUseHeading": "Comment utiliser {name} ?",
-    "reviewsHeading": "Avis sur {name} ({count})",
-    "ratingPrompt": "Recommanderiez-vous {name} ? Laissez un commentaire",
-    "whatDoYouThink": "Qu'en pensez-vous ?",
-    "loginToComment": "Connectez-vous pour commenter",
-    "pricingHeading": "Tarifs de {name}",
-    "noPricingYet": "Pas encore d'informations tarifaires.",
-    "analyticsHeading": "Analytique de {name}",
-    "trafficAnalysis": "Analyse du trafic du site {name}",
-    "visitOverTime": "Évolution des visites",
-    "monthlyVisits": "Visites mensuelles",
-    "avgVisitDuration": "Durée moyenne de visite",
-    "pagePerVisit": "Pages par visite",
-    "bounceRate": "Taux de rebond",
-    "noTrafficYet": "Aucune donnée de trafic pour le moment.",
-    "badgeVerified": "Vérifié",
-    "badgeJustLaunched": "Nouveauté",
-    "badgeFreeTool": "Outil gratuit",
-    "affiliateLink": "Lien d'affiliation",
-    "couponCode": "Code promo",
-    "ratings": "avis",
-    "upvotes": "votes positifs",
-    "domainAuthority": "Autorité du domaine",
-    "trafficRank": "Classement du trafic",
-    "viewCount": "Vues de la page",
-    "outOf5": "sur 5",
-    "enterReviewPrompt": "Veuillez saisir votre avis",
-    "sortBy": "Trier par",
-    "sortNewest": "Plus récents",
-    "sortOldest": "Plus anciens",
-    "loadMoreReviews": "Charger plus d'avis",
-    "loadingMore": "Chargement...",
-    "reviewsLabel": "Avis",
-    "socialAndEmail": "Réseaux sociaux et e-mail",
-    "advertiseTool": "Promouvoir cet outil",
-    "updateTool": "Mettre à jour cet outil",
-    "savedLabel": "Enregistrements",
-    "vsLastMonth": "vs mois dernier",
-    "trafficSources": "Sources de trafic",
-    "sourceDirect": "Direct",
-    "sourceSearch": "Recherche",
-    "sourceReferral": "Référence",
-    "sourceSocial": "Réseaux sociaux",
-    "sourceMail": "E-mail",
-    "sourcePaidReferrals": "Références payantes",
-    "sourceOthers": "Autres",
-    "allTraffic": "Tout le trafic",
-    "globalRank": "Classement mondial",
-    "yearFounded": "Fondée",
-    "employees": "Employés",
-    "topKeywords": "Mots-clés principaux",
-    "keyword": "Mot-clé",
-    "searchVolume": "Volume de recherche",
-    "keywordType": "Type",
-    "keywordOrganic": "Organique",
-    "keywordPaid": "Payant",
-    "mobileApps": "Applications mobiles",
-    "loginToReview": "Connectez-vous pour donner votre avis",
-    "submitReview": "Envoyer l'avis",
-    "submittingReview": "Envoi...",
-    "reviewPendingNotice": "Merci ! Votre avis a été envoyé et sera publié après validation.",
-    "reviewAlreadySubmitted": "Vous avez déjà donné votre avis sur cet outil.",
-    "reviewSubmitError": "Impossible d'envoyer votre avis. Veuillez réessayer.",
-    "reviewSessionExpired": "Votre session a expiré. Reconnectez-vous pour envoyer votre avis."
-  },
-  "footer": {
-    "tagline": "Découvrez, comparez et partagez les meilleurs outils d'IA — propulsé par Nuxt & PostgreSQL.",
-    "product": "Produit",
-    "home": "Accueil",
-    "allTools": "Tous les outils",
-    "submit": "Soumettre un outil",
-    "categories": "Catégories",
-    "company": "Entreprise",
-    "language": "Langue",
-    "copyright": "Tous droits réservés.",
-    "topAiTools": "Meilleurs outils IA",
-    "moreTools": "Plus d’outils",
-    "categoryToolsCount": "{count} outils {name}",
-    "categoryTools": "Outils {name}",
-    "browseByAlphabet": "Parcourir par lettre",
-    "top1000Directory": "Annuaire des 1000 meilleurs outils IA",
-    "about": "À propos",
-    "aboutUs": "Qui sommes-nous",
-    "terms": "Conditions d’utilisation",
-    "privacy": "Politique de confidentialité",
-    "advertise": "Publicité",
-    "contact": "Contact"
-  },
-  "language": {
-    "label": "Langue"
+  "rankingMenu": {
+    "monthlyTitle": "Top IA par mois",
+    "monthlyDesc": "Classements IA par mois et visites mensuelles.",
+    "categoriesTitle": "Top IA par catégorie",
+    "categoriesDesc": "Classements IA par catégorie et visites mensuelles.",
+    "regionsTitle": "Top IA par région",
+    "regionsDesc": "Classements IA par région et visites mensuelles.",
+    "sourceTitle": "Top IA par source",
+    "sourceDesc": "Classements IA par source et visites mensuelles.",
+    "revenueTitle": "Top IA par chiffre d'affaires",
+    "revenueDesc": "Classements des IA par chiffre d'affaires et trafic réel."
   },
   "admin": {
     "badge": "Admin",
@@ -297,7 +137,9 @@
         "queries": "Requête Social Listening",
         "filtering": "Filtrage avancé",
         "export": "Export de données",
-        "statistics": "Statistiques de données de base"
+        "statistics": "Statistiques de données de base",
+        "filteringFull": "Tous les filtres avancés",
+        "statisticsDeep": "Statistiques approfondies"
       },
       "faq": {
         "title": "FAQ",
@@ -305,7 +147,21 @@
           "question": "Que sont les « Crédits de données » ?",
           "answer": "Les Crédits de données sont la monnaie que vous utilisez pour effectuer des recherches sur notre plateforme. Ils sont consommés de la façon suivante :\n1. Utilisation des données : 1 crédit est utilisé pour chaque ligne de données chargée sur nos pages « Insights » ou « Analysis ».\n2. Export de données : 1 crédit est utilisé pour chaque ligne de données exportée vers un fichier CSV ou Excel.\n3. Gratuit : les requêtes Social Listening ne consomment pas de Crédits de données.\nÀ noter : les crédits sont réinitialisés au début de chaque cycle de facturation mensuel. Les crédits non utilisés ne sont pas reportés."
         }
-      }
+      },
+      "currentPlan": "Forfait actuel",
+      "upgradeTo": "Passer au supérieur",
+      "downgradeTo": "Rétrograder",
+      "switchTo": "Changer",
+      "working": "Veuillez patienter…",
+      "error": "Une erreur s'est produite. Veuillez réessayer.",
+      "confirmChange": "Passer au forfait {plan} ? La différence au prorata est facturée (ou créditée) immédiatement.",
+      "confirmCancel": "Résilier votre forfait ? Vous le conservez jusqu'au {date}, puis vous passez à Free.",
+      "renewsOn": "Renouvellement le {date}",
+      "endsOn": "Se termine le {date}",
+      "pastDue": "Le paiement a échoué — veuillez mettre à jour votre carte.",
+      "manageBilling": "Gérer la facturation",
+      "resume": "Garder mon forfait",
+      "cancelPlan": "Résilier le forfait"
     },
     "business": "Business",
     "myAIs": "Mes IA",
@@ -453,7 +309,169 @@
       "deleteConfirm": "Supprimer définitivement cet avis ?",
       "guest": "Invité",
       "empty": "Aucun avis trouvé."
-    }
+    },
+    "userSubmission": "Soumission d'utilisateur",
+    "waitingUserContent": "En attente du contenu du propriétaire",
+    "submission": {
+      "title": "Soumission d'utilisateur",
+      "owner": "Propriétaire",
+      "mode": "Qui rédige la fiche",
+      "reason": "Motif du refus",
+      "modes": {
+        "auto": "Notre équipe (auto)",
+        "manual": "Le propriétaire (manuel)"
+      },
+      "publish": "Publier",
+      "reject": "Refuser",
+      "reasonPlaceholder": "Motif du refus — affiché au propriétaire",
+      "publishHint": "La publication nécessite la fiche complète en anglais. Utilisez l'interrupteur « Approuvé » ci-dessous pour l'approuver. Un refus renvoie l'outil au propriétaire pour correction et nouvelle soumission.",
+      "ai": "Contenu IA",
+      "aiRerun": "Relancer l'IA",
+      "aiStatus": {
+        "none": "Non demandé",
+        "queued": "En file d'attente — le crawler va le traiter sous peu",
+        "done": "Terminé",
+        "failed": "Échec — nouvelle tentative automatique",
+        "invalid": "Intervention admin requise — site illisible ou pas assez d'infos pour l'IA"
+      },
+      "duplicate": "Attention : même site web qu'une fiche existante —"
+    },
+    "update": {
+      "title": "Mise à jour payante",
+      "pendingTitle": "Mises à jour en attente de vérification ({n})",
+      "status": {
+        "DRAFT": "Le propriétaire a payé et prépare encore les modifications.",
+        "SUBMITTED": "Soumise — vérifiez les modifications ci-dessous."
+      },
+      "field": "Champ",
+      "current": "En ligne actuellement",
+      "proposed": "Proposé",
+      "fields": {
+        "name": "Nom",
+        "logoUrl": "Logo",
+        "pricingType": "Tarification",
+        "twitterUrl": "URL Twitter",
+        "discordUrl": "URL Discord",
+        "images": "Captures d'écran",
+        "categories": "Catégories",
+        "shortDesc": "Description courte",
+        "description": "Description",
+        "whatIs": "Qu'est-ce que c'est",
+        "howToUse": "Comment l'utiliser",
+        "coreFeatures": "Fonctionnalités clés",
+        "useCases": "Cas d'usage"
+      },
+      "noChanges": "Aucune modification pour l'instant.",
+      "apply": "Appliquer la mise à jour",
+      "reject": "Refuser et rembourser",
+      "reasonPlaceholder": "Motif du refus — affiché au propriétaire",
+      "hint": "Appliquer écrit les modifications dans la fiche en ligne et la retraduit. Refuser rembourse le paiement via Stripe."
+    },
+    "managePlan": "Gérer le forfait"
+  },
+  "hero": {
+    "titlePrefix": "Découvrez les meilleurs",
+    "titleHighlight": "outils d'IA",
+    "subtitle": "Parcourez des centaines de produits IA par catégorie, comparez les prix et trouvez l'outil adapté à votre flux de travail.",
+    "searchPlaceholder": "Rechercher des outils IA..."
+  },
+  "stats": {
+    "tools": "IA et",
+    "categories": "catégories dans le meilleur annuaire d'outils IA.",
+    "featured": "Outils en vedette",
+    "updatedNote": "La liste des outils IA et la boutique GPTs sont mises à jour quotidiennement par ChatGPT."
+  },
+  "tabs": {
+    "heading": "Explorer les outils",
+    "newest": "Aujourd'hui",
+    "featured": "Nouveau",
+    "free": "Les plus en vedette",
+    "viewAll": "Voir tout →"
+  },
+  "announcement": {
+    "featured": "En vedette",
+    "cta": "En savoir plus"
+  },
+  "sidebar": {
+    "featuredTools": "Outils en vedette",
+    "topCategories": "Catégories principales",
+    "aiNews": "Actualités IA",
+    "top10": "Top 10",
+    "readMoreNews": "Lire la suite"
+  },
+  "sections": {
+    "browseByCategory": "Parcourir par catégorie",
+    "newestTools": "Derniers outils",
+    "featuredTools": "Outils en vedette",
+    "viewAll": "Voir tout →",
+    "justLaunched": "Nouveautés",
+    "featuredThisWeek": "En vedette",
+    "featuredThisWeekSubtitle": "Les outils les plus enregistrés et les mieux notés par notre communauté.",
+    "browse": "Parcourir",
+    "editorsPicks": "Sélection de la rédaction",
+    "sponsorBadge": "Sponsorisé",
+    "updatedDaily": "Mis à jour chaque jour",
+    "viewMore": "Voir plus →",
+    "viewMoreTools": "Voir plus →",
+    "adLabel": "Pub",
+    "tryNow": "Essayer"
+  },
+  "cta": {
+    "title": "Vous avez un outil IA à partager ?",
+    "subtitle": "Présentez-le aux personnes qui recherchent des outils comme le vôtre.",
+    "button": "Soumettez votre outil"
+  },
+  "empty": {
+    "noTools": "Aucune donnée.",
+    "noResults": "Aucun outil trouvé"
+  },
+  "category": {
+    "breadcrumbHome": "Accueil",
+    "allTools": "Tous les outils",
+    "allToolsTitle": "Tous les outils d'IA",
+    "allPricing": "Tous les tarifs",
+    "sortNewest": "Plus récents d'abord",
+    "sortFeatured": "En vedette d'abord",
+    "sortName": "Nom A–Z",
+    "toolsFound": "outil trouvé | outils trouvés",
+    "searchPlaceholder": "Rechercher des outils...",
+    "filters": "Filtres",
+    "viewGrid": "Vue en grille",
+    "viewList": "Vue en liste"
+  },
+  "pricing": {
+    "FREE": "Gratuit",
+    "FREEMIUM": "Freemium",
+    "PAID": "Payant"
+  },
+  "ranking": {
+    "title": "Meilleurs outils d'IA",
+    "subtitle": "Classés selon les données de trafic et de croissance enregistrées dans notre annuaire.",
+    "byGrowth1m": "Croissance sur 1 mois",
+    "byGrowth3m": "Croissance sur 3 mois",
+    "byGrowth6m": "Croissance sur 6 mois",
+    "byTraffic": "Visites mensuelles",
+    "colRank": "Rang",
+    "colTool": "Outil",
+    "colVisits": "Visites mensuelles",
+    "colGrowth": "Croissance",
+    "colAuthority": "Autorité du domaine",
+    "colCategory": "Catégorie",
+    "colRevenue": "Chiffre d'affaires",
+    "noData": "Pas encore de données de classement.",
+    "selectCategory": "Choisir une catégorie",
+    "selectRegion": "Choisir une région",
+    "selectSource": "Choisir une source",
+    "categoriesTitle": "Meilleurs outils IA par catégorie",
+    "regionsTitle": "Meilleurs outils IA par région",
+    "sourceTitle": "Meilleurs outils IA par source",
+    "revenueTitle": "Meilleurs outils IA par chiffre d'affaires",
+    "noSelection": "Choisissez une option ci-dessus pour voir le classement.",
+    "dataMonth": "Données de trafic de {month}.",
+    "colVisitsFrom": "Visites depuis {name}",
+    "growthNote": "La croissance n'est classée que pour les outils ayant au moins {min} visites le mois de référence.",
+    "loadMore": "Charger plus",
+    "loading": "Chargement…"
   },
   "socialListening": {
     "title": "Social Listening",
@@ -495,7 +513,38 @@
     "sortGrowthRateAsc": "Taux de croissance : croissant",
     "loading": "Chargement…",
     "loadError": "Impossible de charger les données. Veuillez réessayer.",
-    "popupBlocked": "Votre navigateur a bloqué certains onglets. Autorisez les fenêtres pop-up pour ce site afin de tous les ouvrir."
+    "popupBlocked": "Votre navigateur a bloqué certains onglets. Autorisez les fenêtres pop-up pour ce site afin de tous les ouvrir.",
+    "creditsThisMonth": "Data Credits ce mois-ci",
+    "outOfCredits": "Vous n'avez plus de Data Credits ce mois-ci — {n} ligne(s) de cette page sont verrouillées. Passez à un forfait supérieur pour les voir.",
+    "unlock": "Passer au supérieur pour débloquer",
+    "statsTitle": "Statistiques",
+    "statsLocked": "Les statistiques mensuelles sont incluses dans les forfaits payants.",
+    "statTools": "Outils",
+    "statVisits": "Visites totales",
+    "statGrowth": "Croissance des visites",
+    "statMedian": "Croissance médiane",
+    "statTopGrowth": "Plus forte croissance",
+    "statCategories": "Visites par catégorie",
+    "statTrend": "Visites totales, 12 derniers mois",
+    "statDistribution": "Outils par croissance",
+    "statCategoryGrowth": "Croissance par catégorie",
+    "advancedFilters": "Filtres",
+    "clearFilters": "Effacer les filtres",
+    "filterNeedsAdvanced": "Forfait Starter ou supérieur",
+    "filterNeedsFull": "Forfait Enterprise",
+    "exportQuota": "Export : {used}/{limit} lignes ce mois-ci · jusqu'à {per} par export",
+    "exportError": "L'export a échoué. Veuillez réessayer.",
+    "filter": {
+      "category": "Catégorie",
+      "anyCategory": "Toutes les catégories",
+      "minVisits": "Visites mensuelles min.",
+      "maxVisits": "Visites mensuelles max.",
+      "minGrowthRate": "Taux de croissance min. (%)",
+      "maxGrowthRate": "Taux de croissance max. (%)",
+      "maxBounceRate": "Taux de rebond max. (%)",
+      "minDuration": "Durée de visite min. (s)",
+      "minPagesPerVisit": "Pages par visite min."
+    }
   },
   "myAIsPage": {
     "title": "Mes IA",
@@ -518,7 +567,33 @@
     "colBalances": "Soldes",
     "colStatus": "Statut",
     "colAction": "Action",
-    "emptyMessage": "Vous n'avez actuellement aucune publicité, cliquez pour en créer une"
+    "emptyMessage": "Vous n'avez actuellement aucune publicité, cliquez pour en créer une",
+    "colPerformance": "Performance",
+    "tiers": {
+      "STANDARD": "Standard",
+      "FEATURED": "Featured"
+    },
+    "statuses": {
+      "PENDING_REVIEW": "En vérification",
+      "ACTIVE": "En cours",
+      "PAUSED": "En pause",
+      "EXHAUSTED": "Plus de clics",
+      "REJECTED": "Refusée"
+    },
+    "toolWebsite": "Site de l'outil",
+    "pendingLanding": "En vérification : {url}",
+    "remaining": "clics restants",
+    "impressions": "Impressions",
+    "clicks": "Clics",
+    "pausedByAdmin": "Mise en pause par notre équipe",
+    "reason": "Motif : {reason}",
+    "pause": "Mettre en pause",
+    "resume": "Reprendre",
+    "editLanding": "Modifier l'URL de destination",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "landingHint": "Laissez vide pour utiliser le site de votre outil. Une URL sur un autre site est d'abord vérifiée ; l'actuelle continue de tourner en attendant.",
+    "reviewNote": "Chaque outil et type de pub a son propre solde de clics. Les pubs mènent directement à votre site, et seul le premier clic par visiteur sur 24 heures est facturé."
   },
   "myPostsPage": {
     "title": "Mes publications & articles / Insertion de liens",
@@ -531,7 +606,28 @@
     "colArticleLink": "Article/Lien",
     "colType": "Type",
     "colStatus": "Statut",
-    "emptyMessage": "Vous n'avez actuellement aucune publication, cliquez pour en créer une"
+    "emptyMessage": "Vous n'avez actuellement aucune publication, cliquez pour en créer une",
+    "noCredits": "Vous avez besoin de crédits pour créer un article ou une insertion de lien — achetez-les sur la page Guest Post.",
+    "creditsUsed": "{n} crédit(s)",
+    "requestedArticle": "Article demandé",
+    "editorPicks": "L'éditeur choisira",
+    "editorNote": "Éditeur",
+    "refunded": "{n} crédit(s) remboursé(s)",
+    "edit": "Modifier",
+    "editResubmit": "Modifier et renvoyer",
+    "withdraw": "Retirer",
+    "withdrawConfirm": "Retirer cette demande ? {n} crédit(s) retournent sur votre solde.",
+    "types": {
+      "GUEST_POST": "Article invité",
+      "LINK_INSERT": "Insertion de lien"
+    },
+    "statuses": {
+      "PENDING": "En vérification",
+      "CHANGES_REQUESTED": "Modifications demandées",
+      "PUBLISHED": "Publié",
+      "REJECTED": "Refusé",
+      "WITHDRAWN": "Retiré"
+    }
   },
   "myGPTsPage": {
     "title": "Mes GPTs",
@@ -571,7 +667,18 @@
     "loadError": "Impossible de charger votre profil. Rechargez la page.",
     "emailHint": "L’e-mail de connexion ne peut pas être modifié ici.",
     "saved": "Enregistré.",
-    "saveError": "Échec de l’enregistrement. Veuillez réessayer."
+    "saveError": "Échec de l’enregistrement. Veuillez réessayer.",
+    "quotaResets": "Le quota est réinitialisé le {date}",
+    "cardInStripe": "Enregistrée dans Stripe",
+    "endsOn": "Le forfait se termine le",
+    "researchPlan": "Research Plan",
+    "invoiceStatuses": {
+      "paid": "Payée",
+      "open": "Impayée",
+      "uncollectible": "Échouée",
+      "void": "Annulée",
+      "draft": "Brouillon"
+    }
   },
   "feedbackPage": {
     "title": "Retour des utilisateurs",
@@ -605,6 +712,138 @@
       "RESOLVED": "Résolu",
       "CLOSED": "Fermé"
     }
+  },
+  "tool": {
+    "openSite": "Ouvrir le site",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "featured": "En vedette",
+    "introduction": "Présentation",
+    "addedOn": "Ajouté le",
+    "monthlyVisitors": "Visiteurs mensuels",
+    "features": "Fonctionnalités clés",
+    "useCases": "Cas d'usage",
+    "coreFeaturesHeading": "Fonctionnalités clés de {name}",
+    "useCasesHeading": "Cas d'usage de {name}",
+    "prosAndCons": "Avantages et inconvénients",
+    "pros": "Avantages",
+    "cons": "Inconvénients",
+    "faq": "Questions fréquentes",
+    "faqHeading": "FAQ sur {name}",
+    "alternatives": "Alternatives à",
+    "backToCategory": "Retour à",
+    "notFound": "Outil introuvable",
+    "similarTools": "Outils similaires",
+    "tabProductInfo": "Informations produit",
+    "tabPricing": "Tarifs",
+    "tabReviews": "Avis",
+    "tabAnalytics": "Analytique",
+    "tabAlternatives": "Alternatives",
+    "productInformationHeading": "Informations produit de {name}",
+    "whatIs": "Qu'est-ce que {name} ?",
+    "howToUseHeading": "Comment utiliser {name} ?",
+    "reviewsHeading": "Avis sur {name} ({count})",
+    "ratingPrompt": "Recommanderiez-vous {name} ? Laissez un commentaire",
+    "whatDoYouThink": "Qu'en pensez-vous ?",
+    "loginToComment": "Connectez-vous pour commenter",
+    "loginToReview": "Connectez-vous pour donner votre avis",
+    "submitReview": "Envoyer l'avis",
+    "pricingHeading": "Tarifs de {name}",
+    "noPricingYet": "Pas encore d'informations tarifaires.",
+    "analyticsHeading": "Analytique de {name}",
+    "trafficAnalysis": "Analyse du trafic du site {name}",
+    "visitOverTime": "Évolution des visites",
+    "monthlyVisits": "Visites mensuelles",
+    "avgVisitDuration": "Durée moyenne de visite",
+    "pagePerVisit": "Pages par visite",
+    "bounceRate": "Taux de rebond",
+    "noTrafficYet": "Aucune donnée de trafic pour le moment.",
+    "badgeVerified": "Vérifié",
+    "badgeJustLaunched": "Nouveauté",
+    "badgeFreeTool": "Outil gratuit",
+    "affiliateLink": "Lien d'affiliation",
+    "couponCode": "Code promo",
+    "ratings": "avis",
+    "upvotes": "votes positifs",
+    "outOf5": "sur 5",
+    "enterReviewPrompt": "Veuillez saisir votre avis",
+    "sortBy": "Trier par",
+    "sortNewest": "Plus récents",
+    "sortOldest": "Plus anciens",
+    "loadMoreReviews": "Charger plus d'avis",
+    "loadingMore": "Chargement...",
+    "reviewsLabel": "Avis",
+    "socialAndEmail": "Réseaux sociaux et e-mail",
+    "advertiseTool": "Promouvoir cet outil",
+    "updateTool": "Mettre à jour cet outil",
+    "savedLabel": "Enregistrements",
+    "domainAuthority": "Autorité du domaine",
+    "trafficRank": "Classement du trafic",
+    "viewCount": "Vues de la page",
+    "vsLastMonth": "vs mois dernier",
+    "trafficSources": "Sources de trafic",
+    "geography": "Géographie",
+    "topRegions": "Top {count} régions",
+    "desktopOnly": "Ordinateur uniquement",
+    "sourceDirect": "Direct",
+    "sourceSearch": "Recherche",
+    "sourceReferral": "Référence",
+    "sourceSocial": "Réseaux sociaux",
+    "sourceMail": "E-mail",
+    "sourcePaidReferrals": "Références payantes",
+    "sourceOthers": "Autres",
+    "allTraffic": "Tout le trafic",
+    "globalRank": "Classement mondial",
+    "yearFounded": "Fondée",
+    "employees": "Employés",
+    "topKeywords": "Mots-clés principaux",
+    "keyword": "Mot-clé",
+    "searchVolume": "Volume de recherche",
+    "keywordType": "Type",
+    "keywordOrganic": "Organique",
+    "keywordPaid": "Payant",
+    "mobileApps": "Applications mobiles",
+    "submittingReview": "Envoi...",
+    "reviewPendingNotice": "Merci ! Votre avis a été envoyé et sera publié après validation.",
+    "reviewAlreadySubmitted": "Vous avez déjà donné votre avis sur cet outil.",
+    "reviewSubmitError": "Impossible d'envoyer votre avis. Veuillez réessayer.",
+    "reviewSessionExpired": "Votre session a expiré. Reconnectez-vous pour envoyer votre avis."
+  },
+  "alphabet": {
+    "title": "Outils IA commençant par",
+    "browse": "Parcourir par lettre"
+  },
+  "archive": {
+    "title": "Top 1000 des outils IA",
+    "rank": "Rang",
+    "name": "Nom",
+    "introduction": "Présentation"
+  },
+  "footer": {
+    "tagline": "Découvrez, comparez et partagez les meilleurs outils d'IA — propulsé par Nuxt & PostgreSQL.",
+    "product": "Produit",
+    "home": "Accueil",
+    "allTools": "Tous les outils",
+    "submit": "Soumettre un outil",
+    "categories": "Catégories",
+    "company": "Entreprise",
+    "language": "Langue",
+    "copyright": "Tous droits réservés.",
+    "topAiTools": "Meilleurs outils IA",
+    "moreTools": "Plus d’outils",
+    "categoryToolsCount": "{count} outils {name}",
+    "categoryTools": "Outils {name}",
+    "browseByAlphabet": "Parcourir par lettre",
+    "top1000Directory": "Annuaire des 1000 meilleurs outils IA",
+    "about": "À propos",
+    "aboutUs": "Qui sommes-nous",
+    "terms": "Conditions d’utilisation",
+    "privacy": "Politique de confidentialité",
+    "advertise": "Publicité",
+    "contact": "Contact"
+  },
+  "language": {
+    "label": "Langue"
   },
   "promote": {
     "title": "Vos IA sur {site}",
@@ -780,7 +1019,7 @@
           "title": "Emplacement standard",
           "points": [
             "Diffusé en bannière tournante sur les pages de liste : Aujourd'hui, Nouveautés, Les plus en vue, catégories, résultats de recherche et classements.",
-            "Affiché dans le fil de la page d'accueil et dans le bloc « Tout juste lancés ».",
+            "Affiché dans le fil de la page d'accueil.",
             "Affiché sur les pages d'autres outils, au-dessus des avis et des alternatives.",
             "Mis en ligne immédiatement si l'annonce renvoie vers le site de votre propre outil."
           ]
@@ -830,7 +1069,13 @@
           "q": "Puis-je choisir où apparaissent mes annonces ?",
           "a": "Non. Les emplacements sont choisis automatiquement pour livrer vos clics le plus vite possible."
         }
-      ]
+      ],
+      "chooseTier": "Choisissez un type de pub",
+      "tierHints": {
+        "STANDARD": "Diffusée en rotation sur les pages de liste. Mise en ligne immédiate si elle mène à votre propre site.",
+        "FEATURED": "Épinglée en tête, plus la barre sponsor. Plus chère par clic ; vérifiée par notre équipe."
+      },
+      "reviewNote": "Les campagnes Featured, et toute URL de destination hors du site de votre outil, sont vérifiées par notre équipe avant leur mise en ligne. Une campagne refusée est intégralement remboursée."
     },
     "guestPost": {
       "seoTitle": "Articles invités et insertion de liens – {site}",
@@ -876,7 +1121,7 @@
         },
         {
           "q": "Comment se déroule la publication ?",
-          "a": "Achat de crédits → envoi du contenu ou des informations du lien → relecture éditoriale → publication. Vous recevez l'URL en ligne par e-mail."
+          "a": "Achat de crédits → envoi de l'article ou des informations du lien depuis votre tableau de bord → relecture éditoriale → publication. Le lien en ligne apparaît dans votre tableau de bord (Posts / Links)."
         },
         {
           "q": "Y a-t-il des règles de contenu pour les articles invités ?",
@@ -942,7 +1187,10 @@
           "q": "Quelles informations puis-je modifier ?",
           "a": "Tout ce qui figure dans la liste ci-dessus, sauf l'URL du site web."
         }
-      ]
+      ],
+      "loginToPick": "Connectez-vous pour choisir l'un de vos outils",
+      "noOwnedTools": "Vous n'avez encore aucun outil publié — seul le propriétaire d'un outil référencé peut le mettre à jour.",
+      "pickOwnTool": "Choisissez l'un de vos outils publiés"
     },
     "submitGpt": {
       "seoTitle": "Soumettez votre GPT – {site}",
@@ -984,12 +1232,14 @@
       "statuses": {
         "PAID": "Payée",
         "PENDING": "En attente",
-        "EXPIRED": "Expirée"
+        "EXPIRED": "Expirée",
+        "REFUNDED": "Remboursée"
       },
       "loading": "Chargement…",
       "empty": "Aucune commande pour le moment.",
       "clicks": "{n} clics",
-      "credits": "{n} crédit | {n} crédits"
+      "credits": "{n} crédit | {n} crédits",
+      "partlyRefunded": "Remboursé {amount} ({credits})"
     }
   },
   "errorPage": {
@@ -999,50 +1249,82 @@
     "errorMessage": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
     "backHome": "Retour à l'accueil"
   },
-  "alphabet": {
-    "title": "Outils IA commençant par",
-    "browse": "Parcourir par lettre"
+  "myTool": {
+    "contentHeading": "Contenu de la fiche (anglais)",
+    "contentHint": "Les champs marqués * sont obligatoires pour soumettre. Une fonctionnalité / un cas d'usage par ligne.",
+    "saveDraft": "Enregistrer le brouillon",
+    "submitForReview": "Soumettre pour vérification",
+    "saving": "Enregistrement…",
+    "saved": "Enregistré.",
+    "submitted": "Soumis — nous vérifierons votre outil bientôt.",
+    "saveError": "Impossible d'enregistrer. Veuillez réessayer.",
+    "reason": "Motif",
+    "viewPage": "Voir la page publique",
+    "stage": {
+      "draft": {
+        "title": "Paiement reçu — complétez votre fiche",
+        "desc": "Remplissez les informations ci-dessous, puis soumettez votre outil pour vérification."
+      },
+      "review": {
+        "title": "En vérification",
+        "desc": "Notre équipe vérifie votre outil. Vous pouvez encore le modifier jusqu'à sa publication."
+      },
+      "writing": {
+        "title": "Nous rédigeons votre fiche",
+        "desc": "Notre équipe prépare le contenu de votre outil. Il sera publié après vérification."
+      },
+      "rejected": {
+        "title": "Modifications nécessaires",
+        "desc": "Votre outil n'a pas encore été approuvé. Corrigez le problème ci-dessous et soumettez-le à nouveau."
+      },
+      "live": {
+        "title": "Votre outil est en ligne",
+        "desc": "Pour modifier une fiche publiée, utilisez Update AI."
+      },
+      "updateDraft": {
+        "title": "Mise à jour payée — modifiez votre fiche",
+        "desc": "Modifiez les informations ci-dessous et soumettez-les pour vérification. Votre fiche en ligne ne change pas tant que la mise à jour n'est pas approuvée."
+      },
+      "updateReview": {
+        "title": "Mise à jour en vérification",
+        "desc": "Notre équipe vérifie vos modifications. Vous pouvez encore les modifier — elles repassent alors en brouillon jusqu'à votre nouvelle soumission."
+      }
+    },
+    "upload": {
+      "logo": "Logo",
+      "logoHint": "Image carrée, PNG / JPG / WebP / GIF, jusqu'à 5 Mo.",
+      "none": "Pas de logo",
+      "choose": "Importer un logo",
+      "change": "Changer",
+      "remove": "Supprimer",
+      "uploading": "Importation…",
+      "screenshots": "Captures d'écran",
+      "screenshotsHint": "Jusqu'à {n} images affichées dans la galerie de la page de votre outil. La première sert de couverture. Le format 16:9 est idéal, jusqu'à 5 Mo chacune.",
+      "add": "Ajouter des images",
+      "cover": "Couverture",
+      "moveLeft": "Déplacer à gauche",
+      "moveRight": "Déplacer à droite",
+      "tooLarge": "L'image doit faire 5 Mo maximum.",
+      "error": "L'importation a échoué. Veuillez réessayer."
+    },
+    "savedNeedsResubmit": "Enregistré. Votre outil est repassé en brouillon — cliquez à nouveau sur « Soumettre pour vérification » quand vous avez terminé.",
+    "update": {
+      "buy": "Mettre à jour cet outil",
+      "submit": "Soumettre la mise à jour pour vérification",
+      "submitted": "Mise à jour soumise — nous la vérifierons bientôt. Votre fiche en ligne reste inchangée d'ici là.",
+      "last": {
+        "APPLIED": "Votre dernière mise à jour est en ligne.",
+        "REJECTED": "Votre dernière mise à jour n'a pas été approuvée — le paiement a été remboursé."
+      }
+    }
   },
-  "archive": {
-    "title": "Top 1000 des outils IA",
-    "rank": "Rang",
-    "name": "Nom",
-    "introduction": "Présentation"
-  },
-  "productsMenu": {
-    "newTitle": "Nouvelles IA",
-    "newDesc": "Les derniers outils IA, chaque jour",
-    "savedTitle": "IA les plus enregistrées",
-    "savedDesc": "Les IA les plus mises en favori sur notre plateforme",
-    "usedTitle": "IA les plus utilisées",
-    "usedDesc": "Les IA au plus fort trafic web",
-    "appsTitle": "Applis IA",
-    "appsDesc": "Outils IA classés par catégorie",
-    "discordTitle": "Discord de l’IA",
-    "discordDesc": "Découvrez les Discord consacrés à l’IA",
-    "extensionsTitle": "Extensions Chrome IA",
-    "extensionsDesc": "Outils IA sous forme d’extensions de navigateur",
-    "gptsTitle": "GPTs",
-    "gptsDesc": "GPTs du GPT Store",
-    "modelsTitle": "Modèles d’IA",
-    "modelsDesc": "Découvrez le meilleur modèle d’IA"
-  },
-  "rankingMenu": {
-    "monthlyTitle": "Top IA par mois",
-    "monthlyDesc": "Classements IA par mois et visites mensuelles.",
-    "categoriesTitle": "Top IA par catégorie",
-    "categoriesDesc": "Classements IA par catégorie et visites mensuelles.",
-    "regionsTitle": "Top IA par région",
-    "regionsDesc": "Classements IA par région et visites mensuelles.",
-    "sourceTitle": "Top IA par source",
-    "sourceDesc": "Classements IA par source et visites mensuelles."
-  },
-  "submitMenu": {
-    "submitTitle": "Soumettre un outil",
-    "advertiseTitle": "Publicité",
-    "guestPostsTitle": "Articles invités / Insertion de liens",
-    "updateAiTitle": "Actualiser une IA",
-    "submitGptTitle": "Ajouter un GPT"
+  "categoryPicker": {
+    "choose": "Choisir",
+    "done": "Terminé",
+    "search": "Rechercher des catégories…",
+    "limit": "Jusqu'à {n} catégories",
+    "empty": "Aucune catégorie correspondante",
+    "remove": "Supprimer"
   },
   "adminFeedback": {
     "title": "Avis",
@@ -1073,5 +1355,192 @@
       "BILLING": "Facturation",
       "OTHER": "Autre"
     }
+  },
+  "adminAds": {
+    "title": "Campagnes publicitaires",
+    "filters": {
+      "review": "En attente de vérification",
+      "all": "Toutes les campagnes"
+    },
+    "colCampaign": "Campagne",
+    "colLanding": "Destination",
+    "colBalance": "Solde",
+    "colStatus": "Statut",
+    "colActions": "Actions",
+    "toolWebsite": "Site de l'outil",
+    "landing": "URL de destination",
+    "sameAsWebsite": "Identique au site",
+    "pendingLanding": "Nouvelle URL en attente :",
+    "approveCampaign": "Approuver la campagne",
+    "approveLanding": "Approuver la nouvelle URL",
+    "rejectCampaign": "Refuser et rembourser",
+    "rejectLanding": "Refuser la nouvelle URL",
+    "rejectCampaignPrompt": "Motif du refus (affiché à l'annonceur). Toutes les commandes de cette campagne seront remboursées.",
+    "rejectLandingPrompt": "Motif du refus de la nouvelle URL de destination (affiché à l'annonceur) :",
+    "addClicks": "Ajouter des clics",
+    "addClicksPrompt": "Combien de clics ajouter ?",
+    "emptyReview": "Rien en attente de vérification.",
+    "empty": "Aucune campagne pour l'instant."
+  },
+  "socialQueries": {
+    "title": "Mes requêtes",
+    "subtitle": "Suivez des sujets dans les publications sociales collectées — jusqu'à 5 mots-clés par requête. Aucun Data Credit n'est utilisé.",
+    "usage": "{used}/{limit} actives",
+    "new": "Nouvelle",
+    "namePlaceholder": "Nom de la requête, ex. Vidéo IA",
+    "keywordsPlaceholder": "Mots-clés séparés par des virgules : vidéo IA, texte en vidéo",
+    "keywordsHint": "{n}/{max} mots-clés",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "paused": "En pause",
+    "newPosts": "{n} nouvelles",
+    "results": "{n} publications",
+    "view": "Voir les publications",
+    "hide": "Masquer",
+    "edit": "Modifier",
+    "pause": "Mettre en pause",
+    "resume": "Reprendre",
+    "delete": "Supprimer",
+    "confirmDelete": "Supprimer la requête « {name} » ?",
+    "noResults": "Aucune publication ne correspond encore à ces mots-clés.",
+    "loadMore": "Charger plus",
+    "empty": "Aucune requête pour l'instant — créez-en une pour suivre un sujet.",
+    "none": "Les requêtes Social Listening sont incluses dans les forfaits payants.",
+    "error": "Une erreur s'est produite. Veuillez réessayer.",
+    "overLimit": "Au-delà de la limite du forfait"
+  },
+  "publicLimits": {
+    "login": "Connectez-vous pour en voir plus",
+    "rankingTitle": "Le classement gratuit affiche le top {n}",
+    "rankingText": "Consultez le classement complet, avec le trafic et la croissance de chaque outil, avec un Research Plan payant."
+  },
+  "aiNews": {
+    "title": "Actus IA",
+    "sub": "Actualités, guides et histoires du monde des outils IA.",
+    "seoDesc": "Les dernières actualités IA, guides et articles invités sur TopAICollection.",
+    "empty": "Aucun article pour l'instant.",
+    "guestPost": "Article invité",
+    "by": "Par {name}",
+    "latest": "Derniers articles",
+    "writeForUs": "Écrivez pour nous",
+    "writeForUsSub": "Publiez un article invité ou ajoutez votre lien dans l'un de nos articles.",
+    "learnMore": "En savoir plus",
+    "guestPostNote": "Ceci est un article invité. Les opinions et liens qu'il contient sont ceux de l'auteur."
+  },
+  "articleEditor": {
+    "write": "Rédiger",
+    "preview": "Aperçu",
+    "words": "{n} mots",
+    "min": "min. {n}",
+    "links": "{n}/{max} liens",
+    "addImage": "Ajouter une image",
+    "uploading": "Importation…",
+    "placeholder": "Rédigez en Markdown : ## Titre, **gras**, [lien](https://…), - liste…",
+    "nothing": "Rien à prévisualiser pour l'instant.",
+    "help": "Markdown : ## titre · **gras** · *italique* · [texte](https://url) · - liste · > citation. Le HTML n'est pas autorisé.",
+    "uploadCover": "Importer une image de couverture (16:9)",
+    "changeCover": "Changer",
+    "coverHint": "PNG, JPG, WebP ou GIF, jusqu'à 5 Mo. 1200×675 recommandé."
+  },
+  "postForm": {
+    "title": "Nouvel article invité",
+    "editTitle": "Modifier l'article invité",
+    "rules": {
+      "cost": "Un article invité coûte {n} crédits, prélevés à l'envoi. S'il est refusé ou si vous le retirez, ils vous sont rendus.",
+      "words": "Au moins {n} mots, original et rédigé en anglais.",
+      "links": "Au maximum {n} liens vers d'autres sites.",
+      "topic": "Sur l'IA : outils, cas d'usage, tutoriels, actualités du secteur. Pas de contenu pour adultes, de jeux d'argent ni de spam.",
+      "review": "Nos éditeurs vérifient chaque article et peuvent demander des modifications. Une fois publié, le lien apparaît dans votre liste."
+    },
+    "fieldTitle": "Titre",
+    "fieldExcerpt": "Résumé",
+    "excerptHint": "Facultatif, jusqu'à 300 caractères — affiché sur les cartes et dans les résultats de recherche.",
+    "fieldCover": "Image de couverture",
+    "fieldContent": "Article",
+    "needTitle": "Titre d'au moins 10 caractères",
+    "needCover": "Une image de couverture",
+    "needWords": "Au moins {n} mots",
+    "tooManyLinks": "Pas plus de {n} liens",
+    "needCredits": "Au moins {n} crédits",
+    "confirmSpend": "Envoyer pour vérification ? Cela utilise {n} crédit(s).",
+    "submit": "Envoyer pour vérification ({n} crédits)",
+    "resubmit": "Enregistrer et renvoyer",
+    "notEditable": "Cette demande ne peut pas être modifiée (elle a déjà été traitée ou retirée)."
+  },
+  "linkForm": {
+    "title": "Nouvelle insertion de lien",
+    "editTitle": "Modifier l'insertion de lien",
+    "intro": "Nous ajoutons votre lien dans l'un de nos articles publiés, dans une phrase où il s'intègre naturellement. Coût : {n} crédit ; si nous ne pouvons pas le placer, il vous est rendu.",
+    "fieldUrl": "Lien à insérer",
+    "fieldAnchor": "Texte d'ancrage",
+    "fieldArticle": "Article",
+    "editorChooses": "Laisser l'éditeur choisir l'article le plus adapté",
+    "fieldNote": "Note pour l'éditeur",
+    "notePlaceholder": "Facultatif : emplacement dans l'article, contexte, formulation souhaitée…",
+    "needUrl": "Un lien complet (https://…)",
+    "needAnchor": "Texte d'ancrage"
+  },
+  "adminPosts": {
+    "title": "Articles invités",
+    "filters": {
+      "review": "En attente de vérification",
+      "all": "Tous"
+    },
+    "preview": "Aperçu",
+    "hide": "Masquer",
+    "publish": "Publier comme article",
+    "markDone": "Marquer comme fait",
+    "pickArticle": "Choisir l'article",
+    "editArticle": "Modifier l'article",
+    "requested": "Article demandé",
+    "requestChanges": "Demander des modifications",
+    "reject": "Refuser et rembourser",
+    "changesPrompt": "Que doit modifier le client ?",
+    "rejectPrompt": "Motif du refus (les crédits sont remboursés) :",
+    "emptyReview": "Rien en attente de vérification.",
+    "empty": "Aucune demande pour l'instant."
+  },
+  "adminArticles": {
+    "title": "Articles",
+    "new": "Nouvel article",
+    "colTitle": "Titre",
+    "colKind": "Type",
+    "colStatus": "Statut",
+    "colPublished": "Publié",
+    "colLinks": "Commandes",
+    "empty": "Aucun article pour l'instant.",
+    "notFound": "Article introuvable.",
+    "kinds": {
+      "EDITORIAL": "Éditorial",
+      "GUEST_POST": "Article invité"
+    },
+    "statuses": {
+      "DRAFT": "Brouillon",
+      "PUBLISHED": "Publié"
+    },
+    "slug": "Slug d'URL",
+    "slugAuto": "Généré à partir du titre",
+    "author": "Nom de l'auteur",
+    "linkInserts": "Insertions de lien pour cet article — collez le lien dans le texte, puis marquez-le comme fait dans Articles invités :",
+    "publish": "Publier",
+    "saveLive": "Enregistrer",
+    "saveDraft": "Enregistrer le brouillon",
+    "unpublish": "Dépublier (brouillon)",
+    "delete": "Supprimer",
+    "deleteConfirm": "Supprimer définitivement cet article ?",
+    "saved": "Enregistré.",
+    "view": "Voir"
+  },
+  "adminCreditRefunds": {
+    "title": "Crédits d'articles invités",
+    "balance": "Solde",
+    "hint": "seuls les crédits inutilisés peuvent être remboursés, au prix payé par crédit dans cette commande.",
+    "bought": "Achetés",
+    "refunded": "Remboursés",
+    "refund": "Rembourser {credits} crédit(s) · {amount}",
+    "confirm": "Rembourser {credits} crédit(s) inutilisé(s) — {amount} sur la carte via Stripe ? Les crédits sont retirés du solde.",
+    "done": "{credits} crédit(s) remboursé(s) · {amount}.",
+    "nothing": "Aucun crédit inutilisé",
+    "empty": "Aucune commande d'article invité."
   }
 }

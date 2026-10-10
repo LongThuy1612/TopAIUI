@@ -16,6 +16,13 @@ export default defineEventHandler(async (event) => {
   // A deleted account must not keep paying for a Research Plan.
   await cancelSubscriptionsForDeletedUser(id)
 
+  // Its guest posts / link inserts still waiting leave the review queue (nobody to publish
+  // them for any more).
+  await prisma.postSubmission.updateMany({
+    where: { userId: id, status: { in: OPEN_STATUSES } },
+    data: { status: 'WITHDRAWN', adminNote: 'Account deleted', reviewedAt: new Date() }
+  })
+
   await prisma.user.update({
     where: { id },
     data: {
