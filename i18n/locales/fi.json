@@ -636,7 +636,17 @@
     "colDate": "Päivämäärä",
     "colStatus": "Tila",
     "emptyMessage": "Sinulla ei ole vielä GPT:tä, lähetä GPT:si",
-    "submitYourGPT": "Lähetä GPT:si"
+    "submitYourGPT": "Lähetä GPT:si",
+    "fetching": "Haetaan GPT:n tietoja…",
+    "statuses": {
+      "PENDING": "Tarkistettavana",
+      "PUBLISHED": "Julkaistu",
+      "HIDDEN": "Piilotettu",
+      "REJECTED": "Hylätty"
+    },
+    "viewListing": "Näytä sivu",
+    "pendingHint": "Tiimimme tarkistaa sen 48 tunnin kuluessa.",
+    "refundedHint": "Maksu on hyvitetty."
   },
   "paymentInvoicePage": {
     "title": "Tilaus",
@@ -1199,7 +1209,7 @@
       "label": "GPT-linkki",
       "required": "Anna GPT:si linkki.",
       "invalid": "Anna kelvollinen GPT-linkki, esim. {example}",
-      "hint": "Haemme GPT:n tiedot automaattisesti ja kirjoitamme loput listauksesta puolestasi.",
+      "hint": "Haemme GPT:si nimen, kuvauksen ja kuvan automaattisesti; tiimimme tarkistaa sen ennen julkaisua.",
       "faqTitle": "Usein kysytyt kysymykset – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "Hyvitetty {credits} krediittiä · {amount}.",
     "nothing": "Ei käyttämättömiä krediittejä",
     "empty": "Ei vierasartikkelitilauksia."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "ChatGPT:n mukautettuja GPT:itä, tiimimme valitsemia ja tarkistamia.",
+    "seoDesc": "Löydä parhaat mukautetut GPT:t ChatGPT:lle TopAICollectionista — kategorioittain, tiimimme tarkistamina.",
+    "submit": "Lähetä GPT:si",
+    "searchPlaceholder": "Hae GPT:itä nimellä…",
+    "search": "Hae",
+    "all": "Kaikki",
+    "noResults": "Hakuasi vastaavia GPT:itä ei löytynyt.",
+    "empty": "Ei vielä GPT:itä.",
+    "by": "Tekijä: {name}",
+    "added": "Lisätty {date}",
+    "open": "Avaa ChatGPT:ssä",
+    "related": "Samankaltaiset GPT:t",
+    "categories": {
+      "writing": "Kirjoittaminen",
+      "productivity": "Tuottavuus",
+      "research": "Tutkimus ja analyysi",
+      "education": "Koulutus",
+      "lifestyle": "Elämäntapa",
+      "programming": "Ohjelmointi",
+      "image": "Kuvat",
+      "other": "Muut"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Odottaa tarkistusta",
+      "all": "Kaikki"
+    },
+    "duplicate": "Sama linkki lähetetty vielä {n} kertaa",
+    "fetch": {
+      "QUEUED": "Haetaan tietoja…",
+      "OK": "Tiedot haettu",
+      "NOT_FOUND": "GPT:tä ei löydy / ei julkinen",
+      "FAILED": "ChatGPT:hen ei saatu yhteyttä — hae uudelleen"
+    },
+    "refetch": "Hae uudelleen",
+    "refetched": "Tiedot haettu uudelleen.",
+    "publish": "Julkaise",
+    "published": "Julkaistu.",
+    "hide": "Piilota",
+    "reject": "Hylkää ja hyvitä",
+    "rejected": "Hylätty — tilaus on hyvitetty.",
+    "rejectPrompt": "Hylkäyksen syy (näytetään asiakkaalle). Maksu hyvitetään.",
+    "changeIcon": "Vaihda kuva",
+    "content": "Pidempi kuvaus (valinnainen)",
+    "saveAndPublish": "Tallenna ja julkaise",
+    "emptyReview": "Mikään ei odota tarkistusta.",
+    "empty": "Ei vielä GPT:itä."
   }
 }

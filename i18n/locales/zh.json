@@ -636,7 +636,17 @@
     "colDate": "日期",
     "colStatus": "状态",
     "emptyMessage": "您目前还没有 GPT，请提交您的 GPT",
-    "submitYourGPT": "提交您的 GPT"
+    "submitYourGPT": "提交您的 GPT",
+    "fetching": "正在获取 GPT 信息…",
+    "statuses": {
+      "PENDING": "审核中",
+      "PUBLISHED": "已收录",
+      "HIDDEN": "已隐藏",
+      "REJECTED": "已拒绝"
+    },
+    "viewListing": "查看页面",
+    "pendingHint": "我们的团队会在 48 小时内审核。",
+    "refundedHint": "款项已退还。"
   },
   "paymentInvoicePage": {
     "title": "订阅",
@@ -1199,7 +1209,7 @@
       "label": "GPT 链接",
       "required": "请输入你的 GPT 链接。",
       "invalid": "请输入有效的 GPT 链接，例如 {example}",
-      "hint": "我们会自动获取 GPT 信息，并为你撰写其余介绍内容。",
+      "hint": "我们会自动获取 GPT 的名称、描述和图片；上线前由我们的团队审核。",
       "faqTitle": "常见问题 – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "已退还 {credits} 积分 · {amount}。",
     "nothing": "没有未使用的积分",
     "empty": "暂无客座文章订单。"
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "为 ChatGPT 打造的自定义 GPT，由我们的团队精选并审核。",
+    "seoDesc": "在 TopAICollection 按分类发现最好的 ChatGPT 自定义 GPT，均经我们的团队审核。",
+    "submit": "提交您的 GPT",
+    "searchPlaceholder": "按名称搜索 GPT…",
+    "search": "搜索",
+    "all": "全部",
+    "noResults": "没有与搜索匹配的 GPT。",
+    "empty": "暂无 GPT。",
+    "by": "作者：{name}",
+    "added": "收录于 {date}",
+    "open": "在 ChatGPT 中打开",
+    "related": "相关 GPT",
+    "categories": {
+      "writing": "写作",
+      "productivity": "效率",
+      "research": "研究与分析",
+      "education": "教育",
+      "lifestyle": "生活方式",
+      "programming": "编程",
+      "image": "图像",
+      "other": "其他"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "待审核",
+      "all": "全部"
+    },
+    "duplicate": "同一链接另外提交了 {n} 次",
+    "fetch": {
+      "QUEUED": "正在获取信息…",
+      "OK": "已获取信息",
+      "NOT_FOUND": "未找到 GPT / 非公开",
+      "FAILED": "无法连接 ChatGPT — 请重新获取"
+    },
+    "refetch": "重新获取",
+    "refetched": "已重新获取信息。",
+    "publish": "发布",
+    "published": "已发布。",
+    "hide": "隐藏",
+    "reject": "拒绝并退款",
+    "rejected": "已拒绝 — 订单已退款。",
+    "rejectPrompt": "拒绝原因（将显示给客户）。款项将被退还。",
+    "changeIcon": "更换图片",
+    "content": "详细描述（可选）",
+    "saveAndPublish": "保存并发布",
+    "emptyReview": "没有待审核的内容。",
+    "empty": "暂无 GPT。"
   }
 }

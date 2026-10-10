@@ -636,7 +636,17 @@
     "colDate": "Dato",
     "colStatus": "Status",
     "emptyMessage": "Du har ingen GPT ennå, send inn din GPT",
-    "submitYourGPT": "Send inn din GPT"
+    "submitYourGPT": "Send inn din GPT",
+    "fetching": "Henter GPT-opplysninger…",
+    "statuses": {
+      "PENDING": "Under gjennomgang",
+      "PUBLISHED": "Publisert",
+      "HIDDEN": "Skjult",
+      "REJECTED": "Avvist"
+    },
+    "viewListing": "Se oppføringen",
+    "pendingHint": "Teamet vårt går gjennom den innen 48 timer.",
+    "refundedHint": "Betalingen er refundert."
   },
   "paymentInvoicePage": {
     "title": "Abonnement",
@@ -1199,7 +1209,7 @@
       "label": "GPT-lenke",
       "required": "Skriv inn lenken til GPT-en din.",
       "invalid": "Skriv inn en gyldig GPT-lenke, f.eks. {example}",
-      "hint": "Vi henter GPT-opplysningene automatisk og skriver resten av oppføringen for deg.",
+      "hint": "Vi henter navn, beskrivelse og bilde for GPT-en din automatisk; teamet vårt går gjennom den før den publiseres.",
       "faqTitle": "Vanlige spørsmål – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "Refunderte {credits} kreditt(er) · {amount}.",
     "nothing": "Ingen ubrukte kreditter",
     "empty": "Ingen bestillinger av gjesteinnlegg."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "Tilpassede GPT-er for ChatGPT, valgt ut og gjennomgått av teamet vårt.",
+    "seoDesc": "Finn de beste tilpassede GPT-ene for ChatGPT på TopAICollection — etter kategori, gjennomgått av teamet vårt.",
+    "submit": "Send inn din GPT",
+    "searchPlaceholder": "Søk etter GPT-er på navn…",
+    "search": "Søk",
+    "all": "Alle",
+    "noResults": "Ingen GPT-er samsvarer med søket.",
+    "empty": "Ingen GPT-er ennå.",
+    "by": "Av {name}",
+    "added": "Lagt til {date}",
+    "open": "Åpne i ChatGPT",
+    "related": "Relaterte GPT-er",
+    "categories": {
+      "writing": "Skriving",
+      "productivity": "Produktivitet",
+      "research": "Research og analyse",
+      "education": "Utdanning",
+      "lifestyle": "Livsstil",
+      "programming": "Programmering",
+      "image": "Bilde",
+      "other": "Annet"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Venter på gjennomgang",
+      "all": "Alle"
+    },
+    "duplicate": "Samme lenke sendt inn {n} gang(er) til",
+    "fetch": {
+      "QUEUED": "Henter opplysninger…",
+      "OK": "Opplysninger hentet",
+      "NOT_FOUND": "GPT ikke funnet / ikke offentlig",
+      "FAILED": "Fikk ikke kontakt med ChatGPT — hent igjen"
+    },
+    "refetch": "Hent igjen",
+    "refetched": "Opplysningene er hentet på nytt.",
+    "publish": "Publiser",
+    "published": "Publisert.",
+    "hide": "Skjul",
+    "reject": "Avvis og refunder",
+    "rejected": "Avvist — bestillingen er refundert.",
+    "rejectPrompt": "Årsak til avvisning (vises for kunden). Betalingen refunderes.",
+    "changeIcon": "Bytt bilde",
+    "content": "Lengre beskrivelse (valgfritt)",
+    "saveAndPublish": "Lagre og publiser",
+    "emptyReview": "Ingenting venter på gjennomgang.",
+    "empty": "Ingen GPT-er ennå."
   }
 }

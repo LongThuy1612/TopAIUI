@@ -636,7 +636,17 @@
     "colDate": "Date",
     "colStatus": "Statut",
     "emptyMessage": "Vous n'avez actuellement aucun GPT, veuillez soumettre votre GPT",
-    "submitYourGPT": "Soumettez votre GPT"
+    "submitYourGPT": "Soumettez votre GPT",
+    "fetching": "Récupération des infos du GPT…",
+    "statuses": {
+      "PENDING": "En vérification",
+      "PUBLISHED": "Publié",
+      "HIDDEN": "Masqué",
+      "REJECTED": "Refusé"
+    },
+    "viewListing": "Voir la fiche",
+    "pendingHint": "Notre équipe le vérifie sous 48 heures.",
+    "refundedHint": "Le paiement a été remboursé."
   },
   "paymentInvoicePage": {
     "title": "Abonnement",
@@ -1199,7 +1209,7 @@
       "label": "Lien du GPT",
       "required": "Veuillez saisir le lien de votre GPT.",
       "invalid": "Saisissez un lien de GPT valide, ex. {example}",
-      "hint": "Nous récupérons automatiquement les informations du GPT et rédigeons le reste de la fiche pour vous.",
+      "hint": "Nous récupérons automatiquement le nom, la description et l'image de votre GPT ; notre équipe le vérifie avant sa mise en ligne.",
       "faqTitle": "Questions fréquentes – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "{credits} crédit(s) remboursé(s) · {amount}.",
     "nothing": "Aucun crédit inutilisé",
     "empty": "Aucune commande d'article invité."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "Des GPT personnalisés pour ChatGPT, sélectionnés et vérifiés par notre équipe.",
+    "seoDesc": "Découvrez les meilleurs GPT personnalisés pour ChatGPT sur TopAICollection — par catégorie, vérifiés par notre équipe.",
+    "submit": "Soumettre votre GPT",
+    "searchPlaceholder": "Rechercher un GPT par nom…",
+    "search": "Rechercher",
+    "all": "Tous",
+    "noResults": "Aucun GPT ne correspond à votre recherche.",
+    "empty": "Aucun GPT pour l'instant.",
+    "by": "Par {name}",
+    "added": "Ajouté le {date}",
+    "open": "Ouvrir dans ChatGPT",
+    "related": "GPT similaires",
+    "categories": {
+      "writing": "Écriture",
+      "productivity": "Productivité",
+      "research": "Recherche et analyse",
+      "education": "Éducation",
+      "lifestyle": "Style de vie",
+      "programming": "Programmation",
+      "image": "Image",
+      "other": "Autre"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "En attente de vérification",
+      "all": "Tous"
+    },
+    "duplicate": "Même lien soumis encore {n} fois",
+    "fetch": {
+      "QUEUED": "Récupération des infos…",
+      "OK": "Infos récupérées",
+      "NOT_FOUND": "GPT introuvable / non public",
+      "FAILED": "ChatGPT injoignable — réessayer"
+    },
+    "refetch": "Récupérer à nouveau",
+    "refetched": "Infos récupérées à nouveau.",
+    "publish": "Publier",
+    "published": "Publié.",
+    "hide": "Masquer",
+    "reject": "Refuser et rembourser",
+    "rejected": "Refusé — la commande a été remboursée.",
+    "rejectPrompt": "Motif du refus (affiché au client). Le paiement est remboursé.",
+    "changeIcon": "Changer l'image",
+    "content": "Description détaillée (facultatif)",
+    "saveAndPublish": "Enregistrer et publier",
+    "emptyReview": "Rien en attente de vérification.",
+    "empty": "Aucun GPT pour l'instant."
   }
 }

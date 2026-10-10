@@ -636,7 +636,17 @@
     "colDate": "Date",
     "colStatus": "Status",
     "emptyMessage": "You currently don't have a GPT, please submit your GPT",
-    "submitYourGPT": "Submit your GPT"
+    "submitYourGPT": "Submit your GPT",
+    "fetching": "Fetching GPT details…",
+    "statuses": {
+      "PENDING": "In review",
+      "PUBLISHED": "Listed",
+      "HIDDEN": "Hidden",
+      "REJECTED": "Rejected"
+    },
+    "viewListing": "View listing",
+    "pendingHint": "Our team reviews it within 48 hours.",
+    "refundedHint": "The payment has been refunded."
   },
   "paymentInvoicePage": {
     "title": "Subscription",
@@ -1199,7 +1209,7 @@
       "label": "GPT link",
       "required": "Please enter your GPT link.",
       "invalid": "Enter a valid GPT link, e.g. {example}",
-      "hint": "We fetch the GPT details automatically and write the rest of the listing for you.",
+      "hint": "We fetch your GPT's name, description and picture automatically; our team reviews it before it goes live.",
       "faqTitle": "Frequently Asked Questions – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "Refunded {credits} credit(s) · {amount}.",
     "nothing": "No unused credits",
     "empty": "No guest post orders."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "Custom GPTs for ChatGPT, picked and reviewed by our team.",
+    "seoDesc": "Discover the best custom GPTs for ChatGPT on TopAICollection — by category, reviewed by our team.",
+    "submit": "Submit your GPT",
+    "searchPlaceholder": "Search GPTs by name…",
+    "search": "Search",
+    "all": "All",
+    "noResults": "No GPTs match your search.",
+    "empty": "No GPTs listed yet.",
+    "by": "By {name}",
+    "added": "Added {date}",
+    "open": "Open in ChatGPT",
+    "related": "Related GPTs",
+    "categories": {
+      "writing": "Writing",
+      "productivity": "Productivity",
+      "research": "Research & Analysis",
+      "education": "Education",
+      "lifestyle": "Lifestyle",
+      "programming": "Programming",
+      "image": "Image",
+      "other": "Other"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Waiting for review",
+      "all": "All"
+    },
+    "duplicate": "Same link submitted {n} more time(s)",
+    "fetch": {
+      "QUEUED": "Fetching details…",
+      "OK": "Details fetched",
+      "NOT_FOUND": "GPT not found / not public",
+      "FAILED": "Could not reach ChatGPT — fetch again"
+    },
+    "refetch": "Fetch again",
+    "refetched": "Details fetched again.",
+    "publish": "Publish",
+    "published": "Published.",
+    "hide": "Hide",
+    "reject": "Reject and refund",
+    "rejected": "Rejected — the order was refunded.",
+    "rejectPrompt": "Reason for rejecting (shown to the customer). The payment is refunded.",
+    "changeIcon": "Change picture",
+    "content": "Longer description (optional)",
+    "saveAndPublish": "Save and publish",
+    "emptyReview": "Nothing waiting for review.",
+    "empty": "No GPTs yet."
   }
 }

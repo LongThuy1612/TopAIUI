@@ -30,7 +30,7 @@ const isUrl = (s: unknown) => {
   try { return ['http:', 'https:'].includes(new URL(String(s)).protocol) } catch { return false }
 }
 
-const bad = (message: string) => createError({ statusCode: 400, statusMessage: message, message })
+const bad = (message: string) => createError({ statusCode: 400, statusMessage: 'Bad Request', message })
 
 async function requireTool(toolId: unknown) {
   if (typeof toolId !== 'string' || !toolId) throw bad('Tool is required.')
@@ -57,7 +57,8 @@ async function priceOf(b: Body, userId: string): Promise<{ amount: number; label
       return { amount: submitAi.price, label: `Submit AI: ${name}`, payload: { name, url, mode, siteKey: siteKeyOf(url) } }
     }
     case 'submit-gpt': {
-      if (!isUrl(b.gptUrl)) throw bad('Invalid GPT link.')
+      // A real, public GPT that isn't listed or waiting already (server/utils/gpts.ts).
+      await assertGptSubmittable(b.gptUrl)
       return { amount: submitGpt.price, label: 'Submit GPT', payload: { gptUrl: String(b.gptUrl).trim() } }
     }
     case 'update-ai': {

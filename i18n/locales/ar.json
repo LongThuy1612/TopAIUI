@@ -636,7 +636,17 @@
     "colDate": "التاريخ",
     "colStatus": "الحالة",
     "emptyMessage": "ليس لديك GPT بعد، أرسل GPT الخاص بك",
-    "submitYourGPT": "أرسل GPT الخاص بك"
+    "submitYourGPT": "أرسل GPT الخاص بك",
+    "fetching": "جارٍ جلب بيانات GPT…",
+    "statuses": {
+      "PENDING": "قيد المراجعة",
+      "PUBLISHED": "منشور",
+      "HIDDEN": "مخفي",
+      "REJECTED": "مرفوض"
+    },
+    "viewListing": "عرض الصفحة",
+    "pendingHint": "يراجعه فريقنا خلال 48 ساعة.",
+    "refundedHint": "تم استرداد المبلغ."
   },
   "paymentInvoicePage": {
     "title": "الاشتراك",
@@ -1199,7 +1209,7 @@
       "label": "رابط GPT",
       "required": "يرجى إدخال رابط GPT الخاص بك.",
       "invalid": "أدخل رابط GPT صالحًا، مثال: {example}",
-      "hint": "نجلب بيانات GPT تلقائيًا ونكتب باقي صفحة الإدراج نيابةً عنك.",
+      "hint": "نجلب اسم GPT ووصفه وصورته تلقائيًا، ويراجعه فريقنا قبل نشره.",
       "faqTitle": "الأسئلة الشائعة – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "تم استرداد {credits} رصيد · {amount}.",
     "nothing": "لا توجد أرصدة غير مستخدمة",
     "empty": "لا توجد طلبات مقالات ضيوف."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "نماذج GPT مخصصة لـ ChatGPT، يختارها فريقنا ويراجعها.",
+    "seoDesc": "اكتشف أفضل نماذج GPT المخصصة لـ ChatGPT على TopAICollection — حسب الفئة، وبمراجعة فريقنا.",
+    "submit": "أرسل GPT الخاص بك",
+    "searchPlaceholder": "ابحث عن GPT بالاسم…",
+    "search": "بحث",
+    "all": "الكل",
+    "noResults": "لا توجد نماذج GPT تطابق بحثك.",
+    "empty": "لا توجد نماذج GPT بعد.",
+    "by": "بواسطة {name}",
+    "added": "أُضيف في {date}",
+    "open": "افتح في ChatGPT",
+    "related": "نماذج GPT مشابهة",
+    "categories": {
+      "writing": "الكتابة",
+      "productivity": "الإنتاجية",
+      "research": "البحث والتحليل",
+      "education": "التعليم",
+      "lifestyle": "أسلوب الحياة",
+      "programming": "البرمجة",
+      "image": "الصور",
+      "other": "أخرى"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "بانتظار المراجعة",
+      "all": "الكل"
+    },
+    "duplicate": "أُرسل الرابط نفسه {n} مرة أخرى",
+    "fetch": {
+      "QUEUED": "جارٍ جلب البيانات…",
+      "OK": "تم جلب البيانات",
+      "NOT_FOUND": "لم يُعثر على GPT / غير عام",
+      "FAILED": "تعذّر الوصول إلى ChatGPT — أعد الجلب"
+    },
+    "refetch": "إعادة الجلب",
+    "refetched": "تم جلب البيانات مجددًا.",
+    "publish": "نشر",
+    "published": "تم النشر.",
+    "hide": "إخفاء",
+    "reject": "رفض واسترداد",
+    "rejected": "تم الرفض — تم استرداد الطلب.",
+    "rejectPrompt": "سبب الرفض (يظهر للعميل). يُسترد المبلغ.",
+    "changeIcon": "تغيير الصورة",
+    "content": "وصف مفصّل (اختياري)",
+    "saveAndPublish": "حفظ ونشر",
+    "emptyReview": "لا شيء بانتظار المراجعة.",
+    "empty": "لا توجد نماذج GPT بعد."
   }
 }

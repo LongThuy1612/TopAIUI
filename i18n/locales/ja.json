@@ -636,7 +636,17 @@
     "colDate": "日付",
     "colStatus": "ステータス",
     "emptyMessage": "現在GPTをお持ちではありません。GPTを提出してください",
-    "submitYourGPT": "GPTを提出する"
+    "submitYourGPT": "GPTを提出する",
+    "fetching": "GPT の情報を取得中…",
+    "statuses": {
+      "PENDING": "審査中",
+      "PUBLISHED": "掲載中",
+      "HIDDEN": "非表示",
+      "REJECTED": "却下"
+    },
+    "viewListing": "掲載ページを見る",
+    "pendingHint": "当社チームが 48 時間以内に審査します。",
+    "refundedHint": "お支払いは返金されました。"
   },
   "paymentInvoicePage": {
     "title": "サブスクリプション",
@@ -1199,7 +1209,7 @@
       "label": "GPT リンク",
       "required": "GPT のリンクを入力してください。",
       "invalid": "有効な GPT リンクを入力してください（例：{example}）",
-      "hint": "GPT の情報を自動で取得し、残りの掲載文も私たちが作成します。",
+      "hint": "GPT の名前・説明・画像は自動で取得します。公開前に当社チームが審査します。",
       "faqTitle": "よくある質問 – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "{credits} クレジットを返金しました · {amount}。",
     "nothing": "未使用のクレジットはありません",
     "empty": "ゲスト投稿の注文はありません。"
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "ChatGPT 向けのカスタム GPT。当社チームが選定・審査しています。",
+    "seoDesc": "TopAICollection で ChatGPT 向けの優れたカスタム GPT をカテゴリー別に見つけましょう。すべて当社チームが審査済み。",
+    "submit": "GPT を登録する",
+    "searchPlaceholder": "名前で GPT を検索…",
+    "search": "検索",
+    "all": "すべて",
+    "noResults": "検索に一致する GPT はありません。",
+    "empty": "まだ GPT はありません。",
+    "by": "{name} 作",
+    "added": "{date} に追加",
+    "open": "ChatGPT で開く",
+    "related": "関連する GPT",
+    "categories": {
+      "writing": "ライティング",
+      "productivity": "生産性",
+      "research": "リサーチと分析",
+      "education": "教育",
+      "lifestyle": "ライフスタイル",
+      "programming": "プログラミング",
+      "image": "画像",
+      "other": "その他"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "審査待ち",
+      "all": "すべて"
+    },
+    "duplicate": "同じリンクがさらに {n} 件あります",
+    "fetch": {
+      "QUEUED": "情報を取得中…",
+      "OK": "情報を取得済み",
+      "NOT_FOUND": "GPT が見つからない / 非公開",
+      "FAILED": "ChatGPT に接続できません — 再取得してください"
+    },
+    "refetch": "再取得",
+    "refetched": "情報を再取得しました。",
+    "publish": "公開",
+    "published": "公開しました。",
+    "hide": "非表示にする",
+    "reject": "却下して返金",
+    "rejected": "却下しました — 注文は返金されました。",
+    "rejectPrompt": "却下理由（お客様に表示されます）。お支払いは返金されます。",
+    "changeIcon": "画像を変更",
+    "content": "詳しい説明（任意）",
+    "saveAndPublish": "保存して公開",
+    "emptyReview": "審査待ちはありません。",
+    "empty": "まだ GPT はありません。"
   }
 }

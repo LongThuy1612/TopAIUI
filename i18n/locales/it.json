@@ -636,7 +636,17 @@
     "colDate": "Data",
     "colStatus": "Stato",
     "emptyMessage": "Non hai ancora un GPT, invia il tuo GPT",
-    "submitYourGPT": "Invia il tuo GPT"
+    "submitYourGPT": "Invia il tuo GPT",
+    "fetching": "Recupero dei dati del GPT…",
+    "statuses": {
+      "PENDING": "In revisione",
+      "PUBLISHED": "Pubblicato",
+      "HIDDEN": "Nascosto",
+      "REJECTED": "Rifiutato"
+    },
+    "viewListing": "Vedi scheda",
+    "pendingHint": "Il nostro team lo verifica entro 48 ore.",
+    "refundedHint": "Il pagamento è stato rimborsato."
   },
   "paymentInvoicePage": {
     "title": "Abbonamento",
@@ -1199,7 +1209,7 @@
       "label": "Link del GPT",
       "required": "Inserisci il link del tuo GPT.",
       "invalid": "Inserisci un link GPT valido, es. {example}",
-      "hint": "Recuperiamo automaticamente i dettagli del GPT e scriviamo per te il resto della scheda.",
+      "hint": "Recuperiamo automaticamente nome, descrizione e immagine del tuo GPT; il nostro team lo verifica prima della pubblicazione.",
       "faqTitle": "Domande frequenti – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "Rimborsati {credits} credito/i · {amount}.",
     "nothing": "Nessun credito non usato",
     "empty": "Nessun ordine di articoli ospite."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "GPT personalizzati per ChatGPT, scelti e verificati dal nostro team.",
+    "seoDesc": "Scopri i migliori GPT personalizzati per ChatGPT su TopAICollection — per categoria, verificati dal nostro team.",
+    "submit": "Invia il tuo GPT",
+    "searchPlaceholder": "Cerca GPT per nome…",
+    "search": "Cerca",
+    "all": "Tutti",
+    "noResults": "Nessun GPT corrisponde alla ricerca.",
+    "empty": "Ancora nessun GPT.",
+    "by": "Di {name}",
+    "added": "Aggiunto il {date}",
+    "open": "Apri in ChatGPT",
+    "related": "GPT correlati",
+    "categories": {
+      "writing": "Scrittura",
+      "productivity": "Produttività",
+      "research": "Ricerca e analisi",
+      "education": "Istruzione",
+      "lifestyle": "Stile di vita",
+      "programming": "Programmazione",
+      "image": "Immagini",
+      "other": "Altro"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "In attesa di revisione",
+      "all": "Tutti"
+    },
+    "duplicate": "Stesso link inviato altre {n} volte",
+    "fetch": {
+      "QUEUED": "Recupero dati…",
+      "OK": "Dati recuperati",
+      "NOT_FOUND": "GPT non trovato / non pubblico",
+      "FAILED": "ChatGPT non raggiungibile — riprova"
+    },
+    "refetch": "Recupera di nuovo",
+    "refetched": "Dati recuperati di nuovo.",
+    "publish": "Pubblica",
+    "published": "Pubblicato.",
+    "hide": "Nascondi",
+    "reject": "Rifiuta e rimborsa",
+    "rejected": "Rifiutato — l'ordine è stato rimborsato.",
+    "rejectPrompt": "Motivo del rifiuto (mostrato al cliente). Il pagamento viene rimborsato.",
+    "changeIcon": "Cambia immagine",
+    "content": "Descrizione estesa (facoltativa)",
+    "saveAndPublish": "Salva e pubblica",
+    "emptyReview": "Niente in attesa di revisione.",
+    "empty": "Ancora nessun GPT."
   }
 }

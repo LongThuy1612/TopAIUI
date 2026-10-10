@@ -636,7 +636,17 @@
     "colDate": "Datum",
     "colStatus": "Status",
     "emptyMessage": "Je hebt nog geen GPT, dien je GPT in",
-    "submitYourGPT": "Dien je GPT in"
+    "submitYourGPT": "Dien je GPT in",
+    "fetching": "GPT-gegevens ophalen…",
+    "statuses": {
+      "PENDING": "In beoordeling",
+      "PUBLISHED": "Gepubliceerd",
+      "HIDDEN": "Verborgen",
+      "REJECTED": "Afgewezen"
+    },
+    "viewListing": "Vermelding bekijken",
+    "pendingHint": "Ons team beoordeelt het binnen 48 uur.",
+    "refundedHint": "De betaling is terugbetaald."
   },
   "paymentInvoicePage": {
     "title": "Abonnement",
@@ -1199,7 +1209,7 @@
       "label": "GPT-link",
       "required": "Voer de link naar je GPT in.",
       "invalid": "Voer een geldige GPT-link in, bijv. {example}",
-      "hint": "We halen de GPT-gegevens automatisch op en schrijven de rest van de vermelding voor je.",
+      "hint": "We halen de naam, beschrijving en afbeelding van je GPT automatisch op; ons team beoordeelt hem voordat hij live gaat.",
       "faqTitle": "Veelgestelde vragen – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "{credits} credit(s) terugbetaald · {amount}.",
     "nothing": "Geen ongebruikte credits",
     "empty": "Geen bestellingen voor gastartikelen."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "Eigen GPT's voor ChatGPT, gekozen en beoordeeld door ons team.",
+    "seoDesc": "Ontdek de beste eigen GPT's voor ChatGPT op TopAICollection — per categorie, beoordeeld door ons team.",
+    "submit": "Dien je GPT in",
+    "searchPlaceholder": "Zoek GPT's op naam…",
+    "search": "Zoeken",
+    "all": "Alle",
+    "noResults": "Geen GPT's gevonden voor je zoekopdracht.",
+    "empty": "Nog geen GPT's.",
+    "by": "Door {name}",
+    "added": "Toegevoegd op {date}",
+    "open": "Openen in ChatGPT",
+    "related": "Vergelijkbare GPT's",
+    "categories": {
+      "writing": "Schrijven",
+      "productivity": "Productiviteit",
+      "research": "Onderzoek & analyse",
+      "education": "Onderwijs",
+      "lifestyle": "Lifestyle",
+      "programming": "Programmeren",
+      "image": "Afbeeldingen",
+      "other": "Overig"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Wacht op beoordeling",
+      "all": "Alle"
+    },
+    "duplicate": "Dezelfde link nog {n} keer ingediend",
+    "fetch": {
+      "QUEUED": "Gegevens ophalen…",
+      "OK": "Gegevens opgehaald",
+      "NOT_FOUND": "GPT niet gevonden / niet openbaar",
+      "FAILED": "ChatGPT onbereikbaar — opnieuw ophalen"
+    },
+    "refetch": "Opnieuw ophalen",
+    "refetched": "Gegevens opnieuw opgehaald.",
+    "publish": "Publiceren",
+    "published": "Gepubliceerd.",
+    "hide": "Verbergen",
+    "reject": "Afwijzen en terugbetalen",
+    "rejected": "Afgewezen — de bestelling is terugbetaald.",
+    "rejectPrompt": "Reden van afwijzing (zichtbaar voor de klant). De betaling wordt terugbetaald.",
+    "changeIcon": "Afbeelding wijzigen",
+    "content": "Uitgebreide beschrijving (optioneel)",
+    "saveAndPublish": "Opslaan en publiceren",
+    "emptyReview": "Niets wacht op beoordeling.",
+    "empty": "Nog geen GPT's."
   }
 }

@@ -636,7 +636,17 @@
     "colDate": "Datum",
     "colStatus": "Status",
     "emptyMessage": "Du hast derzeit kein GPT. Bitte reiche dein GPT ein.",
-    "submitYourGPT": "Dein GPT einreichen"
+    "submitYourGPT": "Dein GPT einreichen",
+    "fetching": "GPT-Details werden abgerufen…",
+    "statuses": {
+      "PENDING": "In Prüfung",
+      "PUBLISHED": "Gelistet",
+      "HIDDEN": "Ausgeblendet",
+      "REJECTED": "Abgelehnt"
+    },
+    "viewListing": "Eintrag ansehen",
+    "pendingHint": "Unser Team prüft es innerhalb von 48 Stunden.",
+    "refundedHint": "Die Zahlung wurde erstattet."
   },
   "paymentInvoicePage": {
     "title": "Abonnement",
@@ -1199,7 +1209,7 @@
       "label": "GPT-Link",
       "required": "Bitte gib deinen GPT-Link ein.",
       "invalid": "Gib einen gültigen GPT-Link ein, z. B. {example}",
-      "hint": "Wir rufen die GPT-Angaben automatisch ab und schreiben den Rest des Eintrags für dich.",
+      "hint": "Wir rufen Name, Beschreibung und Bild deines GPTs automatisch ab; unser Team prüft es vor der Veröffentlichung.",
       "faqTitle": "Häufig gestellte Fragen – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "{credits} Credit(s) erstattet · {amount}.",
     "nothing": "Keine ungenutzten Credits",
     "empty": "Keine Gastbeitrags-Bestellungen."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "Eigene GPTs für ChatGPT, ausgewählt und geprüft von unserem Team.",
+    "seoDesc": "Entdecke die besten eigenen GPTs für ChatGPT auf TopAICollection — nach Kategorie, von unserem Team geprüft.",
+    "submit": "Dein GPT einreichen",
+    "searchPlaceholder": "GPTs nach Namen suchen…",
+    "search": "Suchen",
+    "all": "Alle",
+    "noResults": "Keine GPTs passen zu deiner Suche.",
+    "empty": "Noch keine GPTs gelistet.",
+    "by": "Von {name}",
+    "added": "Hinzugefügt am {date}",
+    "open": "In ChatGPT öffnen",
+    "related": "Ähnliche GPTs",
+    "categories": {
+      "writing": "Schreiben",
+      "productivity": "Produktivität",
+      "research": "Recherche & Analyse",
+      "education": "Bildung",
+      "lifestyle": "Lifestyle",
+      "programming": "Programmierung",
+      "image": "Bild",
+      "other": "Sonstiges"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Wartet auf Prüfung",
+      "all": "Alle"
+    },
+    "duplicate": "Gleicher Link noch {n}-mal eingereicht",
+    "fetch": {
+      "QUEUED": "Details werden abgerufen…",
+      "OK": "Details abgerufen",
+      "NOT_FOUND": "GPT nicht gefunden / nicht öffentlich",
+      "FAILED": "ChatGPT nicht erreichbar — erneut abrufen"
+    },
+    "refetch": "Erneut abrufen",
+    "refetched": "Details erneut abgerufen.",
+    "publish": "Veröffentlichen",
+    "published": "Veröffentlicht.",
+    "hide": "Ausblenden",
+    "reject": "Ablehnen und erstatten",
+    "rejected": "Abgelehnt — die Bestellung wurde erstattet.",
+    "rejectPrompt": "Ablehnungsgrund (wird dem Kunden angezeigt). Die Zahlung wird erstattet.",
+    "changeIcon": "Bild ändern",
+    "content": "Ausführliche Beschreibung (optional)",
+    "saveAndPublish": "Speichern und veröffentlichen",
+    "emptyReview": "Nichts wartet auf Prüfung.",
+    "empty": "Noch keine GPTs."
   }
 }

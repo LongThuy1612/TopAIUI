@@ -636,7 +636,17 @@
     "colDate": "תאריך",
     "colStatus": "סטטוס",
     "emptyMessage": "אין לכם עדיין GPT, הגישו את ה-GPT שלכם",
-    "submitYourGPT": "הגישו את ה-GPT שלכם"
+    "submitYourGPT": "הגישו את ה-GPT שלכם",
+    "fetching": "מאחזר את פרטי ה-GPT…",
+    "statuses": {
+      "PENDING": "בבדיקה",
+      "PUBLISHED": "פורסם",
+      "HIDDEN": "מוסתר",
+      "REJECTED": "נדחה"
+    },
+    "viewListing": "צפייה בדף",
+    "pendingHint": "הצוות שלנו יבדוק אותו תוך 48 שעות.",
+    "refundedHint": "התשלום הוחזר."
   },
   "paymentInvoicePage": {
     "title": "מנוי",
@@ -1199,7 +1209,7 @@
       "label": "קישור ל-GPT",
       "required": "הזן את הקישור ל-GPT שלך.",
       "invalid": "הזן קישור GPT תקין, לדוגמה {example}",
-      "hint": "אנחנו שולפים את פרטי ה-GPT אוטומטית וכותבים בשבילך את שאר הדף.",
+      "hint": "אנחנו מאחזרים אוטומטית את השם, התיאור והתמונה של ה-GPT; הצוות שלנו בודק אותו לפני הפרסום.",
       "faqTitle": "שאלות נפוצות – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "הוחזרו {credits} קרדיטים · {amount}.",
     "nothing": "אין קרדיטים שלא נוצלו",
     "empty": "אין הזמנות של פוסטים של אורחים."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "GPTs מותאמים ל-ChatGPT, שנבחרו ונבדקו על ידי הצוות שלנו.",
+    "seoDesc": "גלו את ה-GPTs המותאמים הטובים ביותר ל-ChatGPT ב-TopAICollection — לפי קטגוריה, אחרי בדיקה של הצוות שלנו.",
+    "submit": "הגישו את ה-GPT שלכם",
+    "searchPlaceholder": "חיפוש GPT לפי שם…",
+    "search": "חיפוש",
+    "all": "הכול",
+    "noResults": "אין GPTs שתואמים לחיפוש.",
+    "empty": "אין עדיין GPTs.",
+    "by": "מאת {name}",
+    "added": "נוסף ב-{date}",
+    "open": "פתיחה ב-ChatGPT",
+    "related": "GPTs דומים",
+    "categories": {
+      "writing": "כתיבה",
+      "productivity": "פרודוקטיביות",
+      "research": "מחקר וניתוח",
+      "education": "חינוך",
+      "lifestyle": "לייפסטייל",
+      "programming": "תכנות",
+      "image": "תמונות",
+      "other": "אחר"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "ממתינים לבדיקה",
+      "all": "הכול"
+    },
+    "duplicate": "אותו קישור הוגש עוד {n} פעמים",
+    "fetch": {
+      "QUEUED": "מאחזר פרטים…",
+      "OK": "הפרטים אוחזרו",
+      "NOT_FOUND": "GPT לא נמצא / לא ציבורי",
+      "FAILED": "אין חיבור ל-ChatGPT — נסו שוב"
+    },
+    "refetch": "אחזור מחדש",
+    "refetched": "הפרטים אוחזרו מחדש.",
+    "publish": "פרסום",
+    "published": "פורסם.",
+    "hide": "הסתרה",
+    "reject": "דחייה והחזר כספי",
+    "rejected": "נדחה — ההזמנה הוחזרה.",
+    "rejectPrompt": "סיבת הדחייה (תוצג ללקוח). התשלום יוחזר.",
+    "changeIcon": "החלפת תמונה",
+    "content": "תיאור מפורט (אופציונלי)",
+    "saveAndPublish": "שמירה ופרסום",
+    "emptyReview": "אין דבר שממתין לבדיקה.",
+    "empty": "אין עדיין GPTs."
   }
 }

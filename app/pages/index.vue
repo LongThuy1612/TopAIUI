@@ -18,7 +18,7 @@ const allCategories = computed(() => categories.value ?? [])
 
 // Home sidebar fallback while there are no AI News articles yet.
 const topCategories = computed(() =>
-  [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 7)
+  [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
 )
 const browseCategories = computed(() =>
   [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)

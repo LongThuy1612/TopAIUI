@@ -15,6 +15,7 @@ const onReviewsPage = computed(() => route.path.startsWith('/admin/reviews'))
 const onFeedbackPage = computed(() => route.path.startsWith('/admin/user-feedback'))
 const onAdsPage = computed(() => route.path.startsWith('/admin/ads'))
 const onPostsPage = computed(() => route.path.startsWith('/admin/posts') || route.path.startsWith('/admin/articles'))
+const onGptsPage = computed(() => route.path.startsWith('/admin/gpts'))
 
 function confirmLogout() {
   if (!confirm(t('admin.logoutConfirm'))) return
@@ -65,13 +66,14 @@ const otherItems = computed(() => [
   ...(isAdmin.value ? [] : [{ label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' }])
 ])
 
-// Admins manage every tool under Tool Management, so "My AIs" is customer-only.
-const businessItems = computed(() => [
-  ...(isAdmin.value ? [] : [{ label: t('admin.myAIs'), to: '/dashboard/my-ais', icon: 'M5 12h5m4 0h5M5 12a2 2 0 0 1 2-2h1m6 0h1a2 2 0 0 1 2 2m-12 0a2 2 0 0 0 2 2h1m6 0h1a2 2 0 0 0 2-2' }]),
+// The customer's own purchases. Admins manage all of them above instead (Tool Management,
+// Ad Campaigns, Guest posts, GPTs), so the Business section is customer-only — no item twice.
+const businessItems = computed(() => (isAdmin.value ? [] : [
+  { label: t('admin.myAIs'), to: '/dashboard/my-ais', icon: 'M5 12h5m4 0h5M5 12a2 2 0 0 1 2-2h1m6 0h1a2 2 0 0 1 2 2m-12 0a2 2 0 0 0 2 2h1m6 0h1a2 2 0 0 0 2-2' },
   { label: t('admin.advertiseAI'), to: '/dashboard/advertise', icon: 'M4 19h16M8 15v-4M12 15V9m4 6v-8' },
   { label: t('admin.postsLinks'), to: '/dashboard/my-posts', icon: 'M6 3h12v18H6V3Zm3 5h6m-6 4h6m-6 4h4' },
   { label: t('admin.myGPTs'), to: '/dashboard/my-gpts', icon: 'M12 2 2 7l10 5 10-5-10-5Zm0 10L2 7v10l10 5 10-5V7l-10 5Z' }
-])
+]))
 </script>
 
 <template>
@@ -153,6 +155,17 @@ const businessItems = computed(() => [
       {{ t('adminPosts.title') }}
     </NuxtLink>
 
+    <NuxtLink
+      v-if="isAdmin"
+      to="/admin/gpts"
+      :class="['-mt-5 flex items-center gap-2.5 rounded-lg px-3 py-2 text-base font-bold', onGptsPage ? 'bg-brand-50 text-brand-600' : 'text-ink-700 hover:bg-ink-100/60']"
+    >
+      <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2 2 7l10 5 10-5-10-5Zm0 10L2 7v10l10 5 10-5V7l-10 5Z" />
+      </svg>
+      {{ t('adminGpts.title') }}
+    </NuxtLink>
+
     <div>
       <div class="px-3 text-[11px] font-semibold uppercase tracking-wide text-ink-400">{{ t('admin.research') }}</div>
       <div class="mt-2 flex flex-col gap-0.5">
@@ -193,7 +206,7 @@ const businessItems = computed(() => [
       </button>
     </div>
 
-    <div>
+    <div v-if="businessItems.length">
       <div class="px-3 text-[11px] font-semibold uppercase tracking-wide text-ink-400">{{ t('admin.business') }}</div>
       <div class="mt-2 flex flex-col gap-0.5">
         <NuxtLink

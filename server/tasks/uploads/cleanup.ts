@@ -12,7 +12,8 @@ export default defineTask({
   async run() {
     // Every place that can reference an upload: a tool's logo, icon, cover and gallery; a
     // paid tool update still waiting for review (its new images live in `changes`); an
-    // article's cover and text; a guest post submission's cover and text.
+    // article's cover and text; a guest post submission's cover and text; a GPT's picture
+    // and text.
     const rows = await prisma.$queryRaw<{ refs: string }[]>`
       SELECT concat_ws(' ', "logoUrl", icon, "screenshotUrl", images::text) AS refs
       FROM "Tool"
@@ -26,6 +27,9 @@ export default defineTask({
       UNION ALL
       SELECT concat_ws(' ', "coverUrl", content) FROM "PostSubmission"
       WHERE "coverUrl" LIKE '%/uploads/%' OR content LIKE '%/uploads/%'
+      UNION ALL
+      SELECT concat_ws(' ', "iconUrl", content) FROM "Gpt"
+      WHERE "iconUrl" LIKE '%/uploads/%' OR content LIKE '%/uploads/%'
     `
     const used = new Set<string>()
     for (const { refs } of rows) {

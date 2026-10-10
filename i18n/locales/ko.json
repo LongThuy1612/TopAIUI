@@ -636,7 +636,17 @@
     "colDate": "날짜",
     "colStatus": "상태",
     "emptyMessage": "현재 등록된 GPT가 없습니다. GPT를 제출해 주세요",
-    "submitYourGPT": "GPT 제출하기"
+    "submitYourGPT": "GPT 제출하기",
+    "fetching": "GPT 정보를 가져오는 중…",
+    "statuses": {
+      "PENDING": "검토 중",
+      "PUBLISHED": "게시됨",
+      "HIDDEN": "숨김",
+      "REJECTED": "거절됨"
+    },
+    "viewListing": "등록 페이지 보기",
+    "pendingHint": "저희 팀이 48시간 내에 검토합니다.",
+    "refundedHint": "결제 금액이 환불되었습니다."
   },
   "paymentInvoicePage": {
     "title": "구독",
@@ -1199,7 +1209,7 @@
       "label": "GPT 링크",
       "required": "GPT 링크를 입력하세요.",
       "invalid": "올바른 GPT 링크를 입력하세요. 예: {example}",
-      "hint": "GPT 정보를 자동으로 가져오고 나머지 소개 글은 저희가 작성합니다.",
+      "hint": "GPT의 이름, 설명, 이미지는 자동으로 가져오며 게시 전에 저희 팀이 검토합니다.",
       "faqTitle": "자주 묻는 질문 – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "{credits} 크레딧 환불됨 · {amount}.",
     "nothing": "사용하지 않은 크레딧 없음",
     "empty": "게스트 포스트 주문이 없습니다."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "저희 팀이 선별하고 검토한 ChatGPT용 맞춤 GPT.",
+    "seoDesc": "TopAICollection에서 ChatGPT용 최고의 맞춤 GPT를 카테고리별로 찾아보세요. 모두 저희 팀이 검토했습니다.",
+    "submit": "GPT 등록하기",
+    "searchPlaceholder": "이름으로 GPT 검색…",
+    "search": "검색",
+    "all": "전체",
+    "noResults": "검색과 일치하는 GPT가 없습니다.",
+    "empty": "아직 등록된 GPT가 없습니다.",
+    "by": "제작자 {name}",
+    "added": "{date} 추가됨",
+    "open": "ChatGPT에서 열기",
+    "related": "관련 GPT",
+    "categories": {
+      "writing": "글쓰기",
+      "productivity": "생산성",
+      "research": "리서치 및 분석",
+      "education": "교육",
+      "lifestyle": "라이프스타일",
+      "programming": "프로그래밍",
+      "image": "이미지",
+      "other": "기타"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "검토 대기",
+      "all": "전체"
+    },
+    "duplicate": "같은 링크가 {n}번 더 제출됨",
+    "fetch": {
+      "QUEUED": "정보 가져오는 중…",
+      "OK": "정보 가져옴",
+      "NOT_FOUND": "GPT를 찾을 수 없음 / 비공개",
+      "FAILED": "ChatGPT에 연결할 수 없음 — 다시 가져오기"
+    },
+    "refetch": "다시 가져오기",
+    "refetched": "정보를 다시 가져왔습니다.",
+    "publish": "게시",
+    "published": "게시되었습니다.",
+    "hide": "숨기기",
+    "reject": "거절 및 환불",
+    "rejected": "거절됨 — 주문이 환불되었습니다.",
+    "rejectPrompt": "거절 사유 (고객에게 표시됨). 결제 금액이 환불됩니다.",
+    "changeIcon": "이미지 변경",
+    "content": "상세 설명 (선택)",
+    "saveAndPublish": "저장 후 게시",
+    "emptyReview": "검토 대기 중인 항목이 없습니다.",
+    "empty": "아직 GPT가 없습니다."
   }
 }

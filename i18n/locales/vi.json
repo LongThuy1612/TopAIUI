@@ -768,7 +768,17 @@
     "colDate": "Ngày",
     "colStatus": "Trạng thái",
     "emptyMessage": "Bạn hiện chưa có GPT nào, hãy đăng GPT của bạn",
-    "submitYourGPT": "Đăng GPT của bạn"
+    "submitYourGPT": "Đăng GPT của bạn",
+    "fetching": "Đang lấy thông tin GPT…",
+    "statuses": {
+      "PENDING": "Đang duyệt",
+      "PUBLISHED": "Đã đăng",
+      "HIDDEN": "Đã ẩn",
+      "REJECTED": "Bị từ chối"
+    },
+    "viewListing": "Xem trang GPT",
+    "pendingHint": "Đội ngũ của chúng tôi sẽ duyệt trong 48 giờ.",
+    "refundedHint": "Đã hoàn tiền."
   },
   "paymentInvoicePage": {
     "title": "Gói đăng ký",
@@ -1199,7 +1209,7 @@
       "label": "Liên kết GPT",
       "required": "Vui lòng nhập liên kết GPT.",
       "invalid": "Vui lòng nhập liên kết GPT hợp lệ, ví dụ: {example}",
-      "hint": "Chúng tôi tự động lấy thông tin GPT và viết phần còn lại của trang giới thiệu cho bạn.",
+      "hint": "Chúng tôi tự lấy tên, mô tả và ảnh của GPT; đội ngũ của chúng tôi sẽ duyệt trước khi đăng.",
       "faqTitle": "Câu hỏi thường gặp – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "Đã hoàn {credits} credit · {amount}.",
     "nothing": "Không còn credit chưa dùng",
     "empty": "Chưa có đơn guest post."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "Các GPT tùy chỉnh cho ChatGPT, được đội ngũ của chúng tôi chọn lọc và duyệt.",
+    "seoDesc": "Khám phá các GPT tùy chỉnh tốt nhất cho ChatGPT trên TopAICollection — theo danh mục, đã được duyệt.",
+    "submit": "Gửi GPT của bạn",
+    "searchPlaceholder": "Tìm GPT theo tên…",
+    "search": "Tìm",
+    "all": "Tất cả",
+    "noResults": "Không có GPT nào khớp với tìm kiếm.",
+    "empty": "Chưa có GPT nào.",
+    "by": "Bởi {name}",
+    "added": "Thêm ngày {date}",
+    "open": "Mở trong ChatGPT",
+    "related": "GPT liên quan",
+    "categories": {
+      "writing": "Viết lách",
+      "productivity": "Năng suất",
+      "research": "Nghiên cứu & Phân tích",
+      "education": "Giáo dục",
+      "lifestyle": "Phong cách sống",
+      "programming": "Lập trình",
+      "image": "Hình ảnh",
+      "other": "Khác"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Chờ duyệt",
+      "all": "Tất cả"
+    },
+    "duplicate": "Link này còn được gửi thêm {n} lần",
+    "fetch": {
+      "QUEUED": "Đang lấy thông tin…",
+      "OK": "Đã lấy thông tin",
+      "NOT_FOUND": "Không tìm thấy GPT / GPT không công khai",
+      "FAILED": "Không kết nối được ChatGPT — lấy lại"
+    },
+    "refetch": "Lấy lại thông tin",
+    "refetched": "Đã lấy lại thông tin.",
+    "publish": "Đăng",
+    "published": "Đã đăng.",
+    "hide": "Ẩn",
+    "reject": "Từ chối và hoàn tiền",
+    "rejected": "Đã từ chối — đơn đã được hoàn tiền.",
+    "rejectPrompt": "Lý do từ chối (khách sẽ thấy). Tiền sẽ được hoàn lại.",
+    "changeIcon": "Đổi ảnh",
+    "content": "Mô tả chi tiết (không bắt buộc)",
+    "saveAndPublish": "Lưu và đăng",
+    "emptyReview": "Không có GPT nào chờ duyệt.",
+    "empty": "Chưa có GPT nào."
   }
 }

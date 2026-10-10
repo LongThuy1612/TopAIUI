@@ -66,7 +66,7 @@ const productItems = [
     descKey: 'productsMenu.extensionsDesc'
   },
   {
-    to: '#',
+    to: '/gpts',
     icon: 'M12 2 2 7l10 5 10-5-10-5Zm0 8.5L4 6.75V16l8 4 8-4V6.75L12 10.5Z',
     titleKey: 'productsMenu.gptsTitle',
     descKey: 'productsMenu.gptsDesc'

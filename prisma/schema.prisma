@@ -339,6 +339,7 @@ model User {
   socialQueries SocialQuery[]
   articles      Article[]
   postSubmissions PostSubmission[]
+  gpts            Gpt[]
 
   @@map("User")
 }
@@ -1012,4 +1013,37 @@ model PostSubmission {
   @@index([userId, createdAt])
   @@index([status, submittedAt])
   @@map("PostSubmission")
+}
+
+// GPT Store (/gpts). A paid "Submit GPT" order creates one in PENDING; its name,
+// description and image are fetched from the GPT's public page (server/utils/gpts.ts),
+// an admin reviews / edits it and publishes it — or rejects it, refunding the order.
+model Gpt {
+  id              String    @id @default(cuid())
+  slug            String    @unique
+  gizmoId         String    // "g-abc123" from chatgpt.com/g/g-abc123-name
+  url             String    // https://chatgpt.com/g/<gizmoId>
+  name            String    @default("")
+  description     String    @default("") // short, shown on cards
+  content         String?   // optional longer Markdown text for the detail page
+  iconUrl         String?
+  author          String?
+  category        String    @default("other") // shared/gpts.ts GPT_CATEGORIES
+  status          String    @default("PENDING") // PENDING | PUBLISHED | HIDDEN | REJECTED
+  // Last automatic fetch of the GPT page: QUEUED | OK | NOT_FOUND | FAILED
+  fetchStatus     String    @default("QUEUED")
+  fetchedAt       DateTime?
+  rejectionReason String?
+  ownerId         String?
+  owner           User?     @relation(fields: [ownerId], references: [id], onDelete: SetNull)
+  orderId         String?   @unique
+  publishedAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([status, publishedAt])
+  @@index([status, category, publishedAt])
+  @@index([gizmoId])
+  @@index([ownerId, createdAt])
+  @@map("Gpt")
 }

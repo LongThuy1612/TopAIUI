@@ -5,13 +5,30 @@ const { t } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 // The logged-in user's own tools (admins see the full list under Tool Management).
-const { user, authHeaders } = useAuth()
+const { user, isAdmin, authHeaders } = useAuth()
 // Greet the logged-in person, not a fixed "Admin".
 const displayName = computed(() => user.value?.name || user.value?.email?.split('@')[0] || '')
 const { data } = await useFetch<AdminToolsResponse>('/api/me/tools', {
   headers: authHeaders(),
   watch: false
 })
+
+// Guest posts / link inserts and GPTs: "pending" = still with us, "published" = live.
+// A customer sees their own; an admin sees the whole site's and the tiles open the admin
+// pages (the customer pages aren't in an admin's menu).
+type StatusList = { items?: { status: string }[]; counts?: Record<string, number> }
+const [{ data: postsRes }, { data: gptsRes }] = await Promise.all([
+  useFetch<StatusList>(isAdmin.value ? '/api/admin/posts?only=counts' : '/api/me/posts', { headers: authHeaders(), watch: false }),
+  useFetch<StatusList>(isAdmin.value ? '/api/admin/gpts?only=counts' : '/api/me/gpts', { headers: authHeaders(), watch: false })
+])
+// Admin: counts over the whole table; customer: their own (short) list.
+const countOf = (res: StatusList | null | undefined, statuses: string[]) => res?.counts
+  ? statuses.reduce((n, s) => n + (res.counts![s] ?? 0), 0)
+  : (res?.items ?? []).filter(i => statuses.includes(i.status)).length
+const postsPending = computed(() => countOf(postsRes.value, ['PENDING', 'CHANGES_REQUESTED']))
+const postsPublished = computed(() => countOf(postsRes.value, ['PUBLISHED']))
+const gptsPending = computed(() => countOf(gptsRes.value, ['PENDING']))
+const gptsPublished = computed(() => countOf(gptsRes.value, ['PUBLISHED']))
 
 const allItems = computed(() => data.value?.items ?? [])
 const pendingCount = computed(() => allItems.value.filter(t => t.status === 'PENDING').length)
@@ -79,14 +96,20 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
           <span class="font-semibold text-ink-800">{{ advertisingCount }}</span> {{ t('admin.advertising') }} · 0 {{ t('admin.stopped') }}
         </div>
       </div>
-      <div class="rounded-xl border border-ink-100 bg-white p-4 opacity-60">
+      <NuxtLink :to="isAdmin ? '/admin/posts' : '/dashboard/my-posts'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.guestPosts') }}</div>
-        <div class="mt-2 text-xs text-ink-400">{{ t('admin.pendingProcessedPlaceholder') }}</div>
-      </div>
-      <div class="rounded-xl border border-ink-100 bg-white p-4 opacity-60">
+        <div class="mt-2 text-xs text-ink-500">
+          <span class="font-semibold text-amber-600">{{ postsPending }}</span> {{ t('admin.pending') }} ·
+          <span class="font-semibold text-emerald-600">{{ postsPublished }}</span> {{ t('admin.published') }}
+        </div>
+      </NuxtLink>
+      <NuxtLink :to="isAdmin ? '/admin/gpts' : '/dashboard/my-gpts'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.submitGPTs') }}</div>
-        <div class="mt-2 text-xs text-ink-400">{{ t('admin.pendingProcessedPlaceholder') }}</div>
-      </div>
+        <div class="mt-2 text-xs text-ink-500">
+          <span class="font-semibold text-amber-600">{{ gptsPending }}</span> {{ t('admin.pending') }} ·
+          <span class="font-semibold text-emerald-600">{{ gptsPublished }}</span> {{ t('admin.published') }}
+        </div>
+      </NuxtLink>
     </div>
 
     <div class="mt-6 flex items-center gap-5 border-b border-ink-100 text-sm font-semibold">

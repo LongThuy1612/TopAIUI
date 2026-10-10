@@ -17,9 +17,11 @@ export function useStripe(): Stripe {
 // count === 1. Guest-post credits are added to the user's balance; ad clicks
 // open or top up the tool's ad campaign (server/utils/ads.ts); a submit-ai order creates the user's PENDING tool (see
 // server/utils/userTools.ts); an update-ai order opens the owner's update request
-// (server/utils/toolUpdates.ts); GPT orders are left PAID for an admin.
+// (server/utils/toolUpdates.ts); a submit-gpt order creates the GPT waiting for review
+// (server/utils/gpts.ts), whose page is fetched once the transaction is committed.
 export async function fulfillPromoteOrder(sessionId: string) {
-  return prisma.$transaction(async (tx) => {
+  let gptToFetch: string | null = null
+  const result = await prisma.$transaction(async (tx) => {
     const order = await tx.promoteOrder.findUnique({ where: { stripeSessionId: sessionId } })
     if (!order) return null
 
@@ -44,7 +46,13 @@ export async function fulfillPromoteOrder(sessionId: string) {
     } else if (order.type === 'update-ai') {
       const { toolId } = await createUpdateRequest(tx, order)
       return tx.promoteOrder.update({ where: { id: order.id }, data: { toolId } })
+    } else if (order.type === 'submit-gpt') {
+      gptToFetch = await createGptForOrder(tx, order)
     }
     return order
   })
+  // Outside the transaction: reading chatgpt.com can take seconds. Not awaited — the
+  // webhook answers Stripe right away; a failed fetch shows in the admin queue.
+  if (gptToFetch) void fetchGptInfo(gptToFetch).catch(err => console.error('[gpts] fetch failed', gptToFetch, err))
+  return result
 }

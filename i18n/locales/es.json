@@ -636,7 +636,17 @@
     "colDate": "Fecha",
     "colStatus": "Estado",
     "emptyMessage": "Actualmente no tienes ningún GPT, envía tu GPT",
-    "submitYourGPT": "Envía tu GPT"
+    "submitYourGPT": "Envía tu GPT",
+    "fetching": "Obteniendo los datos del GPT…",
+    "statuses": {
+      "PENDING": "En revisión",
+      "PUBLISHED": "Publicado",
+      "HIDDEN": "Oculto",
+      "REJECTED": "Rechazado"
+    },
+    "viewListing": "Ver ficha",
+    "pendingHint": "Nuestro equipo lo revisa en 48 horas.",
+    "refundedHint": "El pago se ha reembolsado."
   },
   "paymentInvoicePage": {
     "title": "Suscripción",
@@ -1199,7 +1209,7 @@
       "label": "Enlace del GPT",
       "required": "Introduce el enlace de tu GPT.",
       "invalid": "Introduce un enlace de GPT válido, p. ej. {example}",
-      "hint": "Obtenemos los datos del GPT automáticamente y redactamos el resto de la ficha por ti.",
+      "hint": "Obtenemos automáticamente el nombre, la descripción y la imagen de tu GPT; nuestro equipo lo revisa antes de publicarlo.",
       "faqTitle": "Preguntas frecuentes – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "Reembolsado(s) {credits} crédito(s) · {amount}.",
     "nothing": "Sin créditos no usados",
     "empty": "No hay pedidos de artículos invitados."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "GPT personalizados para ChatGPT, seleccionados y revisados por nuestro equipo.",
+    "seoDesc": "Descubre los mejores GPT personalizados para ChatGPT en TopAICollection — por categoría, revisados por nuestro equipo.",
+    "submit": "Envía tu GPT",
+    "searchPlaceholder": "Buscar GPT por nombre…",
+    "search": "Buscar",
+    "all": "Todos",
+    "noResults": "Ningún GPT coincide con tu búsqueda.",
+    "empty": "Aún no hay GPT.",
+    "by": "Por {name}",
+    "added": "Añadido el {date}",
+    "open": "Abrir en ChatGPT",
+    "related": "GPT relacionados",
+    "categories": {
+      "writing": "Escritura",
+      "productivity": "Productividad",
+      "research": "Investigación y análisis",
+      "education": "Educación",
+      "lifestyle": "Estilo de vida",
+      "programming": "Programación",
+      "image": "Imagen",
+      "other": "Otros"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Pendientes de revisión",
+      "all": "Todos"
+    },
+    "duplicate": "El mismo enlace se envió {n} vez/veces más",
+    "fetch": {
+      "QUEUED": "Obteniendo datos…",
+      "OK": "Datos obtenidos",
+      "NOT_FOUND": "GPT no encontrado / no público",
+      "FAILED": "No se pudo conectar con ChatGPT — reintentar"
+    },
+    "refetch": "Obtener de nuevo",
+    "refetched": "Datos obtenidos de nuevo.",
+    "publish": "Publicar",
+    "published": "Publicado.",
+    "hide": "Ocultar",
+    "reject": "Rechazar y reembolsar",
+    "rejected": "Rechazado — el pedido se reembolsó.",
+    "rejectPrompt": "Motivo del rechazo (lo verá el cliente). Se reembolsa el pago.",
+    "changeIcon": "Cambiar imagen",
+    "content": "Descripción larga (opcional)",
+    "saveAndPublish": "Guardar y publicar",
+    "emptyReview": "Nada pendiente de revisión.",
+    "empty": "Aún no hay GPT."
   }
 }

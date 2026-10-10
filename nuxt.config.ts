@@ -147,6 +147,8 @@ export default defineNuxtConfig({
     '/ranking/**': pageCache(600),
     '/ai-news': pageCache(300),
     '/ai-news/**': pageCache(600),
+    '/gpts': pageCache(300),
+    '/gpts/**': pageCache(600),
 
     // Dashboard (every logged-in user) and admin-only pages — always dynamic,
     // never cached, hidden from search engines.
@@ -204,7 +206,9 @@ export default defineNuxtConfig({
       '/ranking': { cache: false },
       '/ranking/**': { cache: false },
       '/ai-news': { cache: false },
-      '/ai-news/**': { cache: false }
+      '/ai-news/**': { cache: false },
+      '/gpts': { cache: false },
+      '/gpts/**': { cache: false }
     }
   }
 })

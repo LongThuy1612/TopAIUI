@@ -636,7 +636,17 @@
     "colDate": "Tanggal",
     "colStatus": "Status",
     "emptyMessage": "Anda belum memiliki GPT, silakan kirim GPT Anda",
-    "submitYourGPT": "Kirim GPT Anda"
+    "submitYourGPT": "Kirim GPT Anda",
+    "fetching": "Mengambil detail GPT…",
+    "statuses": {
+      "PENDING": "Sedang ditinjau",
+      "PUBLISHED": "Tayang",
+      "HIDDEN": "Disembunyikan",
+      "REJECTED": "Ditolak"
+    },
+    "viewListing": "Lihat halaman",
+    "pendingHint": "Tim kami meninjaunya dalam 48 jam.",
+    "refundedHint": "Pembayaran sudah dikembalikan."
   },
   "paymentInvoicePage": {
     "title": "Langganan",
@@ -1199,7 +1209,7 @@
       "label": "Tautan GPT",
       "required": "Silakan masukkan tautan GPT Anda.",
       "invalid": "Masukkan tautan GPT yang valid, mis. {example}",
-      "hint": "Kami mengambil detail GPT secara otomatis dan menulis sisa listing untuk Anda.",
+      "hint": "Kami mengambil nama, deskripsi, dan gambar GPT Anda secara otomatis; tim kami meninjaunya sebelum tayang.",
       "faqTitle": "Pertanyaan yang Sering Diajukan – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "{credits} kredit dikembalikan · {amount}.",
     "nothing": "Tidak ada kredit yang belum dipakai",
     "empty": "Belum ada pesanan artikel tamu."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "GPT kustom untuk ChatGPT, dipilih dan ditinjau oleh tim kami.",
+    "seoDesc": "Temukan GPT kustom terbaik untuk ChatGPT di TopAICollection — per kategori, ditinjau oleh tim kami.",
+    "submit": "Kirim GPT Anda",
+    "searchPlaceholder": "Cari GPT berdasarkan nama…",
+    "search": "Cari",
+    "all": "Semua",
+    "noResults": "Tidak ada GPT yang cocok dengan pencarian Anda.",
+    "empty": "Belum ada GPT.",
+    "by": "Oleh {name}",
+    "added": "Ditambahkan {date}",
+    "open": "Buka di ChatGPT",
+    "related": "GPT terkait",
+    "categories": {
+      "writing": "Menulis",
+      "productivity": "Produktivitas",
+      "research": "Riset & Analisis",
+      "education": "Pendidikan",
+      "lifestyle": "Gaya hidup",
+      "programming": "Pemrograman",
+      "image": "Gambar",
+      "other": "Lainnya"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Menunggu ditinjau",
+      "all": "Semua"
+    },
+    "duplicate": "Link yang sama dikirim {n} kali lagi",
+    "fetch": {
+      "QUEUED": "Mengambil detail…",
+      "OK": "Detail berhasil diambil",
+      "NOT_FOUND": "GPT tidak ditemukan / tidak publik",
+      "FAILED": "Tidak dapat menghubungi ChatGPT — ambil ulang"
+    },
+    "refetch": "Ambil ulang",
+    "refetched": "Detail diambil ulang.",
+    "publish": "Terbitkan",
+    "published": "Diterbitkan.",
+    "hide": "Sembunyikan",
+    "reject": "Tolak dan kembalikan dana",
+    "rejected": "Ditolak — dana pesanan dikembalikan.",
+    "rejectPrompt": "Alasan penolakan (ditampilkan ke pelanggan). Pembayaran dikembalikan.",
+    "changeIcon": "Ganti gambar",
+    "content": "Deskripsi panjang (opsional)",
+    "saveAndPublish": "Simpan dan terbitkan",
+    "emptyReview": "Tidak ada yang menunggu ditinjau.",
+    "empty": "Belum ada GPT."
   }
 }

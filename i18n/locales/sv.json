@@ -636,7 +636,17 @@
     "colDate": "Datum",
     "colStatus": "Status",
     "emptyMessage": "Du har ingen GPT än, skicka in din GPT",
-    "submitYourGPT": "Skicka in din GPT"
+    "submitYourGPT": "Skicka in din GPT",
+    "fetching": "Hämtar GPT-uppgifter…",
+    "statuses": {
+      "PENDING": "Granskas",
+      "PUBLISHED": "Publicerad",
+      "HIDDEN": "Dold",
+      "REJECTED": "Avslagen"
+    },
+    "viewListing": "Visa sidan",
+    "pendingHint": "Vårt team granskar den inom 48 timmar.",
+    "refundedHint": "Betalningen har återbetalats."
   },
   "paymentInvoicePage": {
     "title": "Prenumeration",
@@ -1199,7 +1209,7 @@
       "label": "GPT-länk",
       "required": "Ange länken till din GPT.",
       "invalid": "Ange en giltig GPT-länk, t.ex. {example}",
-      "hint": "Vi hämtar GPT-uppgifterna automatiskt och skriver resten av listningen åt dig.",
+      "hint": "Vi hämtar din GPT:s namn, beskrivning och bild automatiskt; vårt team granskar den innan den publiceras.",
       "faqTitle": "Vanliga frågor – GPT",
       "faqs": [
         {
@@ -1542,5 +1552,57 @@
     "done": "Återbetalade {credits} kredit(er) · {amount}.",
     "nothing": "Inga oanvända krediter",
     "empty": "Inga beställningar av gästinlägg."
+  },
+  "gpts": {
+    "title": "GPTs",
+    "sub": "Anpassade GPT:er för ChatGPT, utvalda och granskade av vårt team.",
+    "seoDesc": "Hitta de bästa anpassade GPT:erna för ChatGPT på TopAICollection — per kategori, granskade av vårt team.",
+    "submit": "Skicka in din GPT",
+    "searchPlaceholder": "Sök GPT:er på namn…",
+    "search": "Sök",
+    "all": "Alla",
+    "noResults": "Inga GPT:er matchar din sökning.",
+    "empty": "Inga GPT:er än.",
+    "by": "Av {name}",
+    "added": "Tillagd {date}",
+    "open": "Öppna i ChatGPT",
+    "related": "Liknande GPT:er",
+    "categories": {
+      "writing": "Skrivande",
+      "productivity": "Produktivitet",
+      "research": "Research och analys",
+      "education": "Utbildning",
+      "lifestyle": "Livsstil",
+      "programming": "Programmering",
+      "image": "Bild",
+      "other": "Övrigt"
+    }
+  },
+  "adminGpts": {
+    "title": "GPTs",
+    "filters": {
+      "review": "Väntar på granskning",
+      "all": "Alla"
+    },
+    "duplicate": "Samma länk inskickad {n} gång(er) till",
+    "fetch": {
+      "QUEUED": "Hämtar uppgifter…",
+      "OK": "Uppgifter hämtade",
+      "NOT_FOUND": "GPT hittades inte / inte offentlig",
+      "FAILED": "Kunde inte nå ChatGPT — hämta igen"
+    },
+    "refetch": "Hämta igen",
+    "refetched": "Uppgifterna hämtades igen.",
+    "publish": "Publicera",
+    "published": "Publicerad.",
+    "hide": "Dölj",
+    "reject": "Avslå och återbetala",
+    "rejected": "Avslagen — beställningen har återbetalats.",
+    "rejectPrompt": "Orsak till avslag (visas för kunden). Betalningen återbetalas.",
+    "changeIcon": "Byt bild",
+    "content": "Längre beskrivning (valfri)",
+    "saveAndPublish": "Spara och publicera",
+    "emptyReview": "Inget väntar på granskning.",
+    "empty": "Inga GPT:er än."
   }
 }

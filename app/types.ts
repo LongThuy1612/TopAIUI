@@ -403,3 +403,51 @@ export interface AdminArticleRow {
   updatedAt: string
   _count: { submissions: number }
 }
+
+// ---- GPT Store (server/utils/gpts.ts) ----
+export interface GptCardData {
+  slug: string
+  name: string
+  description: string
+  iconUrl: string | null
+  author: string | null
+  category: string
+  url: string
+  publishedAt: string | null
+}
+export interface GptsResponse { items: GptCardData[]; total: number; page: number; pageCount: number }
+export interface GptDetail extends GptCardData { html: string; updatedAt: string; related: GptCardData[] }
+export type GptStatus = 'PENDING' | 'PUBLISHED' | 'HIDDEN' | 'REJECTED'
+export interface MyGpt {
+  id: string
+  slug: string
+  name: string
+  iconUrl: string | null
+  url: string
+  status: GptStatus
+  fetchStatus: 'QUEUED' | 'OK' | 'NOT_FOUND' | 'FAILED'
+  rejectionReason: string | null
+  createdAt: string
+  publishedAt: string | null
+}
+export interface AdminGpt {
+  id: string
+  slug: string
+  gizmoId: string
+  url: string
+  name: string
+  description: string
+  content: string | null
+  iconUrl: string | null
+  author: string | null
+  category: string
+  status: GptStatus
+  fetchStatus: 'QUEUED' | 'OK' | 'NOT_FOUND' | 'FAILED'
+  fetchedAt: string | null
+  rejectionReason: string | null
+  publishedAt: string | null
+  createdAt: string
+  updatedAt: string
+  owner: { email: string } | null
+  duplicates: number
+}
