@@ -23,7 +23,27 @@ useSeoMeta({
   ogTitle: () => article.value?.title ?? '',
   ogDescription: () => article.value?.excerpt ?? '',
   ogImage: () => (article.value?.coverUrl ? new URL(article.value.coverUrl, siteUrl).href : undefined),
-  ogType: 'article'
+  ogType: 'article',
+  twitterCard: () => (article.value?.coverUrl ? 'summary_large_image' : 'summary')
+})
+
+const abs = useAbsoluteUrl()
+const organization = useOrganizationNode()
+useBreadcrumbLd(() => [[t('aiNews.title'), '/ai-news'], [article.value?.title ?? '', `/ai-news/${slug.value}`]])
+useJsonLd('article', () => {
+  const a = article.value
+  if (!a) return null
+  return {
+    '@context': 'https://schema.org',
+    '@type': a.kind === 'GUEST_POST' ? 'Article' : 'NewsArticle',
+    headline: a.title,
+    description: a.excerpt ?? undefined,
+    url: abs(`/ai-news/${slug.value}`),
+    ...(a.coverUrl && { image: [abs(a.coverUrl)] }),
+    ...(a.publishedAt && { datePublished: a.publishedAt }),
+    author: a.authorName ? { '@type': 'Person', name: a.authorName } : organization,
+    publisher: organization
+  }
 })
 </script>
 

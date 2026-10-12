@@ -382,7 +382,9 @@
       "reasonPlaceholder": "거절 사유 — 소유자에게 표시됩니다",
       "hint": "적용하면 변경 사항이 게시 중인 등록에 반영되고 다시 번역됩니다. 거절하면 Stripe를 통해 결제가 환불됩니다."
     },
-    "managePlan": "플랜 관리"
+    "managePlan": "플랜 관리",
+    "myInquiries": "내 문의",
+    "contactMessages": "문의 메시지"
   },
   "hero": {
     "titlePrefix": "최고의",
@@ -865,7 +867,13 @@
     "terms": "서비스 약관",
     "privacy": "개인정보 처리방침",
     "advertise": "광고 문의",
-    "contact": "문의하기"
+    "contact": "문의하기",
+    "faq": "자주 묻는 질문",
+    "help": "고객센터",
+    "pricing": "요금제",
+    "cookies": "쿠키 정책",
+    "editorialGuidelines": "편집 가이드라인",
+    "reviewMethodology": "리뷰 방법론"
   },
   "language": {
     "label": "언어"
@@ -1646,5 +1654,336 @@
     "currentPasswordWrong": "현재 비밀번호가 올바르지 않습니다.",
     "signsOutOthers": "새 비밀번호를 저장하면 다른 모든 기기에서 로그아웃됩니다.",
     "menu": "계정 옵션"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "회사 소개 - TopAICollection",
+      "description": "귀하의 요구에 가장 적합한 AI 도구와 웹사이트를 찾는 데 도움을 주는 TopAICollection의 사명에 대해 알아보세요."
+    },
+    "badge": "회사 소개",
+    "hero": {
+      "title": "AI 혁명으로 가는 관문",
+      "subtitle": "우리는 AI 도구에 대한 액세스를 민주화하고 모든 사람이 인공 지능의 힘을 활용할 수 있도록 돕는 임무를 수행하고 있습니다."
+    },
+    "stats": {
+      "tools": "AI 도구",
+      "categories": "카테고리",
+      "languages": "언어"
+    },
+    "mission": {
+      "title": "우리의 사명",
+      "paragraph1": "TopAICollection에서는 모든 사람이 AI에 접근할 수 있어야 한다고 믿습니다. 우리 플랫폼은 최고의 AI 도구 및 웹사이트에 대한 포괄적인 디렉터리 역할을 하여 사용자가 업무와 일상 생활에서 인공 지능을 쉽게 발견하고 활용할 수 있도록 해줍니다.",
+      "paragraph2": "우리는 컬렉션의 각 도구를 신중하게 선별하고 검토하여 사용자가 최고 품질의 AI 솔루션에만 액세스할 수 있도록 보장합니다. 우리 전문가 팀은 기능, 사용자 경험, 가격 및 실제 응용 프로그램을 기반으로 도구를 평가합니다.",
+      "paragraph3": "개발자, 디자이너, 마케팅 담당자, 교육자 또는 비즈니스 소유자인지 여부에 관계없이 TopAICollection은 생산성과 창의성을 향상시키는 완벽한 AI 도구를 찾는 데 도움이 됩니다."
+    },
+    "features": {
+      "title": "TopAICollection을 선택하는 이유",
+      "global": {
+        "title": "글로벌 도달 범위",
+        "description": "전 세계 사용자를 위해 10개 언어로 제공"
+      },
+      "updated": {
+        "title": "일일 업데이트",
+        "description": "우리 컬렉션은 최신 AI 혁신으로 매일 업데이트됩니다."
+      },
+      "community": {
+        "title": "커뮤니티 중심",
+        "description": "사용자 리뷰 및 평점은 정보에 입각한 결정을 내리는 데 도움이 됩니다."
+      },
+      "verified": {
+        "title": "검증된 도구",
+        "description": "모든 도구는 우리 팀에서 신중하게 검토하고 검증합니다."
+      }
+    },
+    "cta": {
+      "title": "지금 AI 여정을 시작하세요",
+      "subtitle": "AI 도구 컬렉션을 살펴보거나 직접 제출해 보세요.",
+      "browse": "도구 찾아보기",
+      "submit": "도구 제출"
+    }
+  },
+  "cookiesPage": {
+    "meta": {
+      "title": "쿠키 정책 - TopAICollection",
+      "description": "TopAICollection이 쿠키 및 유사 기술을 사용하는 방법에 대해 알아보세요."
+    },
+    "title": "쿠키 정책",
+    "lastUpdated": "마지막 업데이트",
+    "sections": {
+      "whatAreCookies": {
+        "title": "쿠키란 무엇입니까?",
+        "description": "쿠키는 귀하가 당사 웹사이트를 방문할 때 귀하의 컴퓨터나 모바일 장치에 저장되는 작은 텍스트 파일입니다. 이는 귀하의 선호 사항을 기억하고 귀하가 당사 사이트를 사용하는 방식을 이해함으로써 귀하에게 더 나은 경험을 제공하는 데 도움이 됩니다."
+      },
+      "howWeUse": {
+        "title": "당사가 쿠키를 사용하는 방법",
+        "intro": "우리는 다음과 같은 목적을 위해 쿠키를 사용합니다:",
+        "preference": "기본 설정 쿠키: 언어, 지역 등 귀하의 설정과 기본 설정을 기억합니다.",
+        "noTracking": "분석용 또는 광고용 쿠키를 사용하지 않습니다.",
+        "storage": "브라우저 저장소: 로그인 세션과 일부 설정(리뷰 초안 등)은 쿠키가 아닌 브라우저의 로컬 저장소에 보관됩니다."
+      },
+      "managing": {
+        "title": "쿠키 관리",
+        "intro": "대부분의 웹 브라우저에서는 설정을 통해 쿠키를 제어할 수 있습니다. 다음을 선택할 수 있습니다.",
+        "blockAll": "모든 쿠키 차단",
+        "acceptAll": "모든 쿠키 허용",
+        "beNotified": "쿠키가 설정되면 알림을 받습니다.",
+        "deleteExisting": "이미 설정된 쿠키 삭제",
+        "note": "특정 쿠키를 차단하면 당사 웹사이트에서의 경험에 영향을 미칠 수 있습니다."
+      },
+      "thirdParty": {
+        "title": "제3자 쿠키",
+        "intro": "당사 사이트의 일부 쿠키는 다음을 포함하여 당사가 사용하는 제3자 서비스에 의해 설정됩니다.",
+        "stripe": "Stripe(결제): Stripe 자체 결제 페이지로 이동하며, 해당 페이지가 자체 쿠키를 설정합니다",
+        "google": "Google(로그인 및 회원가입 페이지의 Google로 로그인 버튼)"
+      },
+      "contact": {
+        "title": "문의하기",
+        "message": "당사의 쿠키 사용에 대해 질문이 있는 경우",
+        "contactLink": "저희에게 연락주세요"
+      }
+    }
+  },
+  "faqPage": {
+    "meta": {
+      "title": "자주 묻는 질문 - TopAICollection",
+      "description": "TopAICollection 및 AI 도구 디렉터리 사용 방법에 대한 일반적인 질문에 대한 답변을 찾아보세요."
+    },
+    "badge": "도움말 센터",
+    "title": "자주 묻는 질문",
+    "subtitle": "TopAICollection에 대한 일반적인 질문에 대한 답변 찾기",
+    "categories": {
+      "general": "일반적인 질문",
+      "tools": "AI 도구 정보",
+      "submission": "도구 제출",
+      "account": "계정 및 청구"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "TopAICollection이란 무엇입니까?",
+          "answer": "TopAICollection은 AI 도구 및 웹사이트의 포괄적인 디렉터리입니다. 우리는 생산성 도구부터 창의적인 애플리케이션에 이르기까지 사용자가 필요에 맞는 최고의 AI 솔루션을 찾을 수 있도록 돕습니다."
+        },
+        "1": {
+          "question": "적합한 AI 도구를 어떻게 찾나요?",
+          "answer": "카테고리별로 찾아보거나, 검색 기능을 사용하거나, 추천 섹션과 인기 섹션을 확인할 수 있습니다. 각 도구에는 정보를 바탕으로 결정을 내리는 데 도움이 되는 자세한 설명, 사용자 리뷰 및 평점이 포함되어 있습니다."
+        },
+        "2": {
+          "question": "TopAICollection은 무료로 사용할 수 있나요?",
+          "answer": "예! 우리 디렉토리를 탐색하고 검색하는 것은 완전히 무료입니다. 나열된 일부 도구에는 자체 가격이 있을 수 있으며, 이는 각 도구 페이지에 명확하게 표시되어 있습니다."
+        }
+      },
+      "tools": {
+        "0": {
+          "question": "디렉토리에 대한 도구는 어떻게 선택됩니까?",
+          "answer": "우리는 품질을 보장하기 위해 각 제출물을 주의 깊게 검토합니다. 도구는 기능적이어야 하며 사용자에게 가치를 제공해야 하며 당사의 지침을 준수해야 합니다. 우리는 또한 사용자 피드백과 평가를 고려합니다."
+        },
+        "1": {
+          "question": "각 도구에는 어떤 정보가 제공되나요?",
+          "answer": "각 도구 목록에는 설명, 주요 기능, 가격 정보, 사용자 리뷰, 트래픽 분석, 카테고리 및 도구 웹사이트에 대한 직접 링크가 포함되어 있습니다."
+        },
+        "2": {
+          "question": "디렉토리는 얼마나 자주 업데이트됩니까?",
+          "answer": "우리의 디렉토리는 새로운 도구와 정보로 매일 업데이트됩니다. 우리는 나열된 도구를 지속적으로 모니터링하여 정확성을 보장하고 더 이상 사용할 수 없는 도구를 제거합니다."
+        }
+      },
+      "submission": {
+        "0": {
+          "question": "AI 도구를 어떻게 제출하나요?",
+          "answer": "제출 페이지에서 도구 이름과 웹사이트를 입력하고, 소개 글을 저희가 작성할지 직접 작성할지 선택한 뒤 일회성 결제를 완료하세요. 48시간 이내에 등록됩니다."
+        },
+        "1": {
+          "question": "도구 제출 요구 사항은 무엇입니까?",
+          "answer": "도구는 기능적이어야 하고, 사용자에게 명확한 가치를 제공해야 하며, 전문적인 웹사이트를 보유하고 법적 요구 사항을 준수해야 합니다. 불법 행위를 조장하거나 사용자 개인정보를 침해하는 도구는 허용되지 않습니다."
+        },
+        "2": {
+          "question": "도구를 나열하는 데 비용이 얼마나 드나요?",
+          "answer": "제출 비용은 일회성 99달러이며 등록은 영구적입니다. 저희 팀이 직접 발견한 도구는 개발자에게 비용 없이 추가합니다. 광고와 게스트 포스트는 선택 가능한 유료 옵션입니다."
+        }
+      },
+      "account": {
+        "0": {
+          "question": "TopAICollection을 사용하려면 계정이 필요합니까?",
+          "answer": "디렉터리 탐색과 검색에는 계정이 필요하지 않습니다. 계정이 있으면 리뷰 작성, 제출한 도구와 GPT 관리, 광고 집행, Website Insights 및 Social Listening 이용이 가능합니다."
+        },
+        "1": {
+          "question": "내 도구를 홍보하려면 어떻게 하나요?",
+          "answer": "광고 페이지(또는 대시보드 → Advertise AI)에서 클릭 패키지(Standard 또는 Featured)를 구매하세요. 클릭이 소진될 때까지 도구가 스폰서 영역에 표시됩니다."
+        },
+        "2": {
+          "question": "구독은 언제든지 취소할 수 있나요?",
+          "answer": "네. Research Plan 구독은 대시보드 → 결제 및 청구서에서 언제든지 취소할 수 있으며, 결제한 기간이 끝날 때까지 이용할 수 있습니다. 클릭 패키지와 도구 제출은 일회성 구매입니다."
+        }
+      }
+    },
+    "cta": {
+      "title": "아직도 질문이 있으신가요?",
+      "subtitle": "우리 지원팀이 도와드리겠습니다.",
+      "button": "지원팀에 문의"
+    }
+  },
+  "helpPage": {
+    "meta": {
+      "title": "도움말 센터 - TopAICollection 지원",
+      "description": "TopAICollection에 대한 도움을 받으세요. 일반적인 질문에 대한 답변을 찾아보고 지원팀에 문의하세요."
+    },
+    "title": "도움말 센터",
+    "subtitle": "오늘은 어떻게 도와드릴까요?",
+    "sections": {
+      "faq": {
+        "title": "자주 묻는 질문(FAQ)",
+        "description": "자주 묻는 질문(FAQ)에 대한 답변을 찾아보세요.",
+        "link": "FAQ 보기"
+      },
+      "contact": {
+        "title": "지원팀에 문의",
+        "description": "필요한 것을 찾을 수 없나요? 우리에게 연락하세요.",
+        "link": "문의하기"
+      }
+    },
+    "commonTopics": {
+      "title": "공통 주제",
+      "submitTool": "AI 도구를 어떻게 제출하나요?",
+      "advertising": "광고는 어떻게 작동하나요?",
+      "privacy": "귀하의 개인 정보 보호 정책은 무엇입니까?",
+      "terms": "서비스 약관은 무엇입니까?"
+    }
+  },
+  "pricingPage": {
+    "meta": {
+      "title": "요금제 - TopAICollection",
+      "description": "AI 연구 및 소셜 리스닝을 위한 단순하고 투명한 가격 정책."
+    },
+    "title": "단순하고 투명한 가격 정책",
+    "subtitle": "무료로 시작하고 성장함에 따라 확장하세요. 놀라움은 없습니다.",
+    "freeDesc": "월간 한도 내에서 Website Insights와 Social Listening을 체험해 보세요.",
+    "freePrice": "무료",
+    "getStarted": "시작하기",
+    "otherTitle": "기타 서비스",
+    "otherSubtitle": "도구 개발자를 위한 일회성 구매"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "문의하기 - TopAICollection",
+      "description": "TopAICollection 팀에 문의하세요. AI 도구에 관한 모든 질문에 도움을 드리겠습니다."
+    },
+    "title": "문의하기",
+    "subtitle": "질문이나 의견이 있으신가요? 우리는 당신의 의견을 듣고 싶습니다. 우리 팀은 일반적으로 24시간 이내에 응답합니다.",
+    "form": {
+      "title": "메시지 보내기",
+      "fields": {
+        "name": {
+          "label": "당신의 이름",
+          "placeholder": "존 도"
+        },
+        "email": {
+          "label": "이메일 주소",
+          "placeholder": "you{'@'}example.com"
+        },
+        "subject": {
+          "label": "주제",
+          "placeholder": "과목을 선택하세요",
+          "options": {
+            "general": "일반문의",
+            "support": "기술지원",
+            "feedback": "피드백",
+            "partnership": "파트너십 기회",
+            "other": "다른"
+          }
+        },
+        "message": {
+          "label": "메시지",
+          "placeholder": "무슨 생각인지 말해 보세요..."
+        }
+      },
+      "submit": "메시지 보내기",
+      "submitting": "배상...",
+      "success": {
+        "title": "메시지가 성공적으로 전송되었습니다!",
+        "description": "귀하의 메시지가 접수되었으며 곧 연락드리겠습니다."
+      },
+      "error": {
+        "title": "메시지를 보내지 못했습니다.",
+        "description": "문제가 발생했습니다. 나중에 다시 시도해 주세요."
+      },
+      "signedInAs": "답변은 {email}(으)로 전송됩니다.",
+      "errName": "이름을 입력하세요.",
+      "errEmail": "올바른 이메일 주소를 입력하세요.",
+      "errMessage": "메시지는 10자 이상 5000자 이하여야 합니다.",
+      "errRateLimit": "최근 여러 메시지를 보내셨습니다. 잠시 후 다시 시도하세요.",
+      "trackHint": "답변은 대시보드 → 내 문의에서 확인할 수 있습니다.",
+      "sendAnother": "다른 메시지 보내기",
+      "emailUs": "이메일 문의"
+    },
+    "info": {
+      "title": "연락하세요",
+      "email": {
+        "title": "이메일을 보내주세요"
+      },
+      "support": {
+        "title": "지원시간",
+        "content": "우리 지원팀은 월요일부터 금요일까지 연락 가능합니다"
+      },
+      "hours": {
+        "title": "영업시간",
+        "content": "오전 9시 - 오후 6시(동부 표준시)"
+      },
+      "location": {
+        "title": "위치",
+        "content": "분산된 팀에서 전 세계 사용자에게 서비스 제공"
+      }
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "q1": "AI 도구를 어떻게 제출하나요?",
+      "a1": "탐색 메뉴에서 도구 제출 버튼을 클릭하고 제출 양식을 작성하세요.",
+      "q2": "승인은 얼마나 걸리나요?",
+      "a2": "유료 제출은 48시간 이내에 등록됩니다.",
+      "q3": "내 도구 목록을 업데이트할 수 있나요?",
+      "a3": "예, 대시보드에 로그인하여 AI 업데이트 기능을 사용하세요."
+    }
+  },
+  "legalPage": {
+    "englishOnly": "이 문서는 영어로 제공됩니다.",
+    "editorial": {
+      "title": "편집 가이드라인",
+      "description": "TopAICollection이 등록된 AI 도구를 발굴, 평가, 분류, 관리하는 방법."
+    },
+    "reviewMethodology": {
+      "title": "리뷰 방법론",
+      "description": "TopAICollection이 AI 도구를 평가하고 점수를 매기는 방법과 사용자 리뷰를 검토하는 방법."
+    },
+    "termsDescription": "TopAICollection의 서비스 및 웹사이트 사용에 대한 이용 약관을 읽어보세요.",
+    "privacyDescription": "TopAICollection이 귀하의 개인 정보를 수집, 사용 및 보호하는 방법을 알아보세요."
+  },
+  "myInquiries": {
+    "title": "내 문의",
+    "subtitle": "문의 페이지에서 보낸 메시지와 저희의 답변입니다.",
+    "newMessage": "새 메시지",
+    "empty": "아직 보낸 메시지가 없습니다.",
+    "reply": "저희의 답변",
+    "statuses": {
+      "NEW": "접수됨",
+      "REPLIED": "답변 완료",
+      "CLOSED": "종료"
+    }
+  },
+  "adminContact": {
+    "title": "문의 메시지",
+    "newBadge": "새 메시지 {n}개",
+    "total": "메시지 {n}개",
+    "statusAll": "모든 상태",
+    "searchPlaceholder": "이름, 이메일 또는 내용 검색…",
+    "colSender": "보낸 사람",
+    "colMessage": "메시지",
+    "colStatus": "상태",
+    "colReply": "답변",
+    "guest": "비회원",
+    "replyPlaceholder": "답변 작성 — 보낸 사람에게 이메일로 전송되고 문의 내역에 표시됩니다…",
+    "sendReply": "답변 보내기",
+    "repliedAt": "{date} 답변",
+    "replyEmailFailed": "답변은 저장되었지만 이메일을 보내지 못했습니다.",
+    "delete": "삭제",
+    "deleteConfirm": "이 메시지를 삭제할까요?",
+    "empty": "메시지가 없습니다."
   }
 }

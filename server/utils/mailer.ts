@@ -31,6 +31,8 @@ export interface MailMessage {
   subject: string
   text: string
   html: string
+  // Where "Reply" goes, e.g. the visitor who wrote through the contact form.
+  replyTo?: string
 }
 
 export async function sendMail(message: MailMessage): Promise<void> {
@@ -44,7 +46,7 @@ export async function sendMail(message: MailMessage): Promise<void> {
   await transport.sendMail({ from: useRuntimeConfig().mailFrom, ...message })
 }
 
-const escapeHtml = (s: string) => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', '\'': '&#39;' }[c]!))
+export const escapeHtml = (s: string) => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', '\'': '&#39;' }[c]!))
 
 // One call-to-action email: a short intro, a button, and the raw link for
 // clients that strip buttons.

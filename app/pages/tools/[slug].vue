@@ -574,8 +574,59 @@ onMounted(() => {
 })
 onBeforeUnmount(() => sectionObserver?.disconnect())
 
+// Meta description: the short description, else the start of the long one as plain text.
+const seoDescription = computed(() => {
+  const t = tool.value
+  if (!t) return ''
+  const text = (t.shortDesc || t.description || '').replace(/<[^>]*>/g, ' ').replace(/[#*_`>[\]()]/g, '').replace(/\s+/g, ' ').trim()
+  const fallback = `${t.name}: features, pricing, reviews and alternatives on TopAICollection.`
+  if (!text) return fallback
+  return text.length > 160 ? `${text.slice(0, 157).replace(/\s+\S*$/, '')}…` : text
+})
+const abs = useAbsoluteUrl()
+// heroImages falls back to the logo; a logo is not a screenshot and is too small for
+// a large share card, so it only becomes og:image with the "summary" card.
+const seoScreenshot = computed(() => {
+  const first = heroImages.value[0]
+  return first && first !== tool.value?.logoUrl ? abs(first) : undefined
+})
+const seoImage = computed(() => seoScreenshot.value ?? (tool.value?.logoUrl ? abs(tool.value.logoUrl) : undefined))
+
 useSeoMeta({
-  title: () => `${tool.value?.name} — TopAICollection`
+  title: () => `${tool.value?.name} — TopAICollection`,
+  description: seoDescription,
+  ogTitle: () => `${tool.value?.name} — TopAICollection`,
+  ogDescription: seoDescription,
+  ogImage: seoImage,
+  twitterCard: () => (seoScreenshot.value ? 'summary_large_image' : 'summary')
+})
+
+useBreadcrumbLd(() => [
+  ...(category.value ? [[category.value.name, `/category/${category.value.slug}`] as [string, string]] : []),
+  [tool.value?.name ?? '', `/tools/${slug.value}`]
+])
+
+// Rich result data. The rating is only claimed when there are approved reviews
+// (the page shows 5 stars as a placeholder otherwise); a free tool gets a $0 offer.
+useJsonLd('tool', () => {
+  const t = tool.value
+  if (!t) return null
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: t.name,
+    url: abs(`/tools/${t.slug}`),
+    description: seoDescription.value,
+    applicationCategory: category.value?.name,
+    operatingSystem: 'Web',
+    ...(t.logoUrl && { image: abs(t.logoUrl) }),
+    ...(seoScreenshot.value && { screenshot: seoScreenshot.value }),
+    ...(t.website && { sameAs: t.website }),
+    ...(t.reviewCount > 0 && {
+      aggregateRating: { '@type': 'AggregateRating', ratingValue: t.averageRating, reviewCount: t.reviewCount, bestRating: 5, worstRating: 1 }
+    }),
+    ...(t.pricingType === 'FREE' && { offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' } })
+  }
 })
 </script>
 

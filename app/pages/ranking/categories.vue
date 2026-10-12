@@ -13,7 +13,10 @@ function select(value: string) {
 }
 
 useSeoMeta({
-  title: 'Top AI By Categories — TopAICollection'
+  title: 'Top AI By Categories — TopAICollection',
+  description: 'Top AI tools in every category, ranked by monthly website traffic.',
+  ogTitle: 'Top AI By Categories — TopAICollection',
+  ogDescription: 'Top AI tools in every category, ranked by monthly website traffic.'
 })
 </script>
 

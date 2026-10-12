@@ -14,6 +14,22 @@ const i18nHead = useLocaleHead()
 useHead({
   htmlAttrs: computed(() => i18nHead.value.htmlAttrs)
 })
+
+// SEO defaults for every page; a page's own useSeoMeta (set later) wins.
+// Canonical = the path without query: filters (?q, ?sort, ?pricing) and tracking
+// parameters point back to the main page instead of counting as duplicates.
+const abs = useAbsoluteUrl()
+const canonical = computed(() => abs(route.path === '/' ? '/' : route.path.replace(/\/+$/, '')))
+useHead({ link: [{ rel: 'canonical', href: canonical }] })
+useSeoMeta({
+  ogSiteName: 'TopAICollection',
+  ogType: 'website',
+  ogUrl: canonical,
+  ogImage: abs('/topaicollection.png'),
+  ogLocale: () => i18nHead.value.htmlAttrs?.lang?.replace('-', '_'),
+  twitterCard: 'summary',
+  twitterSite: '@aicollectioninc'
+})
 </script>
 
 <template>

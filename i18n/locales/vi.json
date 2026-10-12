@@ -382,7 +382,9 @@
       "reasonPlaceholder": "Lý do từ chối — chủ tool sẽ thấy",
       "hint": "Áp dụng sẽ ghi thay đổi lên trang công khai và dịch lại. Từ chối sẽ hoàn tiền qua Stripe."
     },
-    "managePlan": "Quản lý gói"
+    "managePlan": "Quản lý gói",
+    "myInquiries": "Yêu cầu của tôi",
+    "contactMessages": "Tin nhắn liên hệ"
   },
   "hero": {
     "titlePrefix": "Khám phá những",
@@ -615,7 +617,13 @@
     "terms": "Điều khoản dịch vụ",
     "privacy": "Chính sách bảo mật",
     "advertise": "Quảng cáo",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "faq": "Câu hỏi thường gặp",
+    "help": "Trung tâm trợ giúp",
+    "pricing": "Bảng giá",
+    "cookies": "Chính sách cookie",
+    "editorialGuidelines": "Nguyên tắc biên tập",
+    "reviewMethodology": "Phương pháp đánh giá"
   },
   "language": {
     "label": "Ngôn ngữ"
@@ -1646,5 +1654,336 @@
     "currentPasswordWrong": "Mật khẩu hiện tại không đúng.",
     "signsOutOthers": "Khi lưu mật khẩu mới, bạn sẽ bị đăng xuất trên tất cả thiết bị khác.",
     "menu": "Tuỳ chọn tài khoản"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "Về chúng tôi - TopAICollection",
+      "description": "Tìm hiểu về sứ mệnh của TopAICollection trong việc giúp bạn khám phá các công cụ và trang web AI tốt nhất cho nhu cầu của bạn."
+    },
+    "badge": "Về chúng tôi",
+    "hero": {
+      "title": "Cửa ngõ của bạn đến cuộc cách mạng AI",
+      "subtitle": "Chúng tôi có sứ mệnh dân chủ hóa quyền truy cập vào các công cụ AI và giúp mọi người khai thác sức mạnh của trí tuệ nhân tạo."
+    },
+    "stats": {
+      "tools": "Công cụ AI",
+      "categories": "Danh mục",
+      "languages": "Ngôn ngữ"
+    },
+    "mission": {
+      "title": "Sứ mệnh của chúng tôi",
+      "paragraph1": "Tại TopAICollection, chúng tôi tin rằng AI nên được mọi người tiếp cận. Nền tảng của chúng tôi đóng vai trò là thư mục toàn diện về các công cụ và trang web AI tốt nhất, giúp người dùng dễ dàng khám phá và tận dụng trí tuệ nhân tạo trong công việc và cuộc sống hàng ngày.",
+      "paragraph2": "Chúng tôi cẩn thận tuyển chọn và đánh giá từng công cụ trong bộ sưu tập của mình, đảm bảo rằng người dùng của chúng tôi có quyền truy cập vào các giải pháp AI chất lượng cao nhất. Đội ngũ chuyên gia của chúng tôi đánh giá các công cụ dựa trên chức năng, trải nghiệm người dùng, giá cả và ứng dụng thực tế.",
+      "paragraph3": "Cho dù bạn là nhà phát triển, nhà thiết kế, nhà tiếp thị, nhà giáo dục hay chủ doanh nghiệp, TopAICollection giúp bạn tìm các công cụ AI hoàn hảo để nâng cao năng suất và sáng tạo của bạn."
+    },
+    "features": {
+      "title": "Tại sao chọn TopAICollection",
+      "global": {
+        "title": "Phạm vi toàn cầu",
+        "description": "Có sẵn 10 ngôn ngữ cho người dùng trên khắp thế giới"
+      },
+      "updated": {
+        "title": "Cập nhật hàng ngày",
+        "description": "Bộ sưu tập của chúng tôi được cập nhật hàng ngày với những đổi mới AI mới nhất"
+      },
+      "community": {
+        "title": "Cộng đồng điều khiển",
+        "description": "Đánh giá và xếp hạng của người dùng giúp bạn đưa ra quyết định sáng suốt"
+      },
+      "verified": {
+        "title": "Công cụ đã xác minh",
+        "description": "Mọi công cụ đều được nhóm của chúng tôi xem xét và xác minh cẩn thận"
+      }
+    },
+    "cta": {
+      "title": "Bắt đầu hành trình AI của bạn ngay hôm nay",
+      "subtitle": "Khám phá bộ sưu tập công cụ AI của chúng tôi hoặc gửi công cụ của riêng bạn",
+      "browse": "Duyệt công cụ",
+      "submit": "Gửi công cụ của bạn"
+    }
+  },
+  "cookiesPage": {
+    "meta": {
+      "title": "Chính Sách Cookie - TopAICollection",
+      "description": "Tìm hiểu về cách TopAICollection sử dụng cookie và các công nghệ tương tự."
+    },
+    "title": "Chính Sách Cookie",
+    "lastUpdated": "Cập nhật lần cuối",
+    "sections": {
+      "whatAreCookies": {
+        "title": "Cookie Là Gì",
+        "description": "Cookie là các tệp văn bản nhỏ được lưu trữ trên máy tính hoặc thiết bị di động của bạn khi bạn truy cập trang web của chúng tôi. Chúng giúp chúng tôi cung cấp cho bạn trải nghiệm tốt hơn bằng cách ghi nhớ tùy chọn của bạn và hiểu cách bạn sử dụng trang web của chúng tôi."
+      },
+      "howWeUse": {
+        "title": "Cách Chúng Tôi Sử Dụng Cookie",
+        "intro": "Chúng tôi sử dụng cookie cho các mục đích sau:",
+        "preference": "Cookie Tùy Chọn: Ghi nhớ cài đặt và tùy chọn của bạn, chẳng hạn như ngôn ngữ và địa phương.",
+        "noTracking": "Chúng tôi không dùng cookie phân tích hay cookie quảng cáo.",
+        "storage": "Bộ nhớ trình duyệt: phiên đăng nhập và một số tuỳ chọn (như bản nháp đánh giá) được lưu trong local storage của trình duyệt, không phải cookie."
+      },
+      "managing": {
+        "title": "Quản Lý Cookie",
+        "intro": "Hầu hết các trình duyệt web cho phép bạn kiểm soát cookie thông qua cài đặt của chúng. Bạn có thể chọn:",
+        "blockAll": "Chặn tất cả cookie",
+        "acceptAll": "Chấp nhận tất cả cookie",
+        "beNotified": "Được thông báo khi cookie được đặt",
+        "deleteExisting": "Xóa cookie đã được đặt",
+        "note": "Xin lưu ý rằng việc chặn một số cookie nhất định có thể ảnh hưởng đến trải nghiệm của bạn trên trang web của chúng tôi."
+      },
+      "thirdParty": {
+        "title": "Cookie Của Bên Thứ Ba",
+        "intro": "Một số cookie trên trang web của chúng tôi được đặt bởi các dịch vụ bên thứ ba mà chúng tôi sử dụng, bao gồm:",
+        "stripe": "Stripe (thanh toán): bạn được chuyển sang trang thanh toán riêng của Stripe, nơi Stripe tự đặt cookie của họ",
+        "google": "Google (nút Đăng nhập bằng Google trên trang đăng nhập và đăng ký)"
+      },
+      "contact": {
+        "title": "Liên Hệ Với Chúng Tôi",
+        "message": "Nếu bạn có câu hỏi về việc sử dụng cookie của chúng tôi, vui lòng",
+        "contactLink": "liên hệ với chúng tôi"
+      }
+    }
+  },
+  "faqPage": {
+    "meta": {
+      "title": "Câu hỏi thường gặp - TopAICollection",
+      "description": "Tìm câu trả lời cho các câu hỏi phổ biến về TopAICollection và cách sử dụng thư mục công cụ AI của chúng tôi."
+    },
+    "badge": "Trung tâm trợ giúp",
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Tìm câu trả lời cho các câu hỏi phổ biến về TopAICollection",
+    "categories": {
+      "general": "Câu hỏi chung",
+      "tools": "Về công cụ AI",
+      "submission": "Gửi công cụ",
+      "account": "Tài khoản & Thanh toán"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "TopAICollection là gì?",
+          "answer": "TopAICollection là thư mục toàn diện về các công cụ và trang web AI. Chúng tôi giúp người dùng khám phá các giải pháp AI tốt nhất cho nhu cầu của họ, từ công cụ năng suất đến ứng dụng sáng tạo."
+        },
+        "1": {
+          "question": "Làm thế nào để tìm công cụ AI phù hợp?",
+          "answer": "Bạn có thể duyệt theo danh mục, sử dụng chức năng tìm kiếm hoặc kiểm tra các phần nổi bật và xu hướng. Mỗi công cụ bao gồm mô tả chi tiết, đánh giá và xếp hạng của người dùng để giúp bạn đưa ra quyết định sáng suốt."
+        },
+        "2": {
+          "question": "TopAICollection có miễn phí không?",
+          "answer": "Có! Duyệt và tìm kiếm thư mục của chúng tôi hoàn toàn miễn phí. Một số công cụ được liệt kê có thể có giá riêng, được chỉ rõ trên trang của mỗi công cụ."
+        }
+      },
+      "tools": {
+        "0": {
+          "question": "Công cụ được chọn cho thư mục như thế nào?",
+          "answer": "Chúng tôi xem xét cẩn thận từng bài gửi để đảm bảo chất lượng. Công cụ phải hoạt động tốt, mang lại giá trị cho người dùng và tuân thủ hướng dẫn của chúng tôi. Chúng tôi cũng xem xét phản hồi và xếp hạng của người dùng."
+        },
+        "1": {
+          "question": "Thông tin nào được cung cấp cho mỗi công cụ?",
+          "answer": "Mỗi danh sách công cụ bao gồm mô tả, tính năng chính, thông tin giá, đánh giá của người dùng, phân tích lưu lượng, danh mục và liên kết trực tiếp đến trang web của công cụ."
+        },
+        "2": {
+          "question": "Thư mục được cập nhật bao lâu một lần?",
+          "answer": "Thư mục của chúng tôi được cập nhật hàng ngày với các công cụ và thông tin mới. Chúng tôi liên tục theo dõi các công cụ được liệt kê để đảm bảo độ chính xác và loại bỏ bất kỳ công cụ nào không còn khả dụng."
+        }
+      },
+      "submission": {
+        "0": {
+          "question": "Làm thế nào để gửi công cụ AI của tôi?",
+          "answer": "Mở trang Gửi công cụ, nhập tên và website của công cụ, chọn chúng tôi viết bài giới thiệu hay bạn tự viết, rồi thanh toán một lần. Công cụ của bạn sẽ được đăng trong vòng 48 giờ."
+        },
+        "1": {
+          "question": "Yêu cầu để gửi công cụ là gì?",
+          "answer": "Công cụ của bạn phải hoạt động tốt, mang lại giá trị rõ ràng cho người dùng, có trang web chuyên nghiệp và tuân thủ các yêu cầu pháp lý. Chúng tôi không chấp nhận các công cụ quảng bá hoạt động bất hợp pháp hoặc vi phạm quyền riêng tư của người dùng."
+        },
+        "2": {
+          "question": "Chi phí để liệt kê công cụ là bao nhiêu?",
+          "answer": "Mỗi lượt gửi có phí một lần 99 USD và bài đăng tồn tại vĩnh viễn. Đội ngũ của chúng tôi cũng tự thêm các công cụ tìm thấy mà không thu phí của nhà phát triển. Quảng cáo và guest post là các dịch vụ trả phí tuỳ chọn."
+        }
+      },
+      "account": {
+        "0": {
+          "question": "Tôi có cần tài khoản để sử dụng TopAICollection không?",
+          "answer": "Không cần tài khoản để duyệt và tìm kiếm danh mục. Khi có tài khoản, bạn có thể viết đánh giá, quản lý công cụ và GPT đã gửi, chạy quảng cáo, và dùng Website Insights cùng Social Listening."
+        },
+        "1": {
+          "question": "Làm thế nào để quảng bá công cụ của tôi?",
+          "answer": "Vào trang Quảng cáo (hoặc Dashboard → Advertise AI) và mua một gói click, Standard hoặc Featured. Công cụ của bạn sẽ xuất hiện ở các vị trí tài trợ cho đến khi dùng hết số click."
+        },
+        "2": {
+          "question": "Tôi có thể huỷ gói đăng ký bất cứ lúc nào không?",
+          "answer": "Có. Gói Research Plan có thể huỷ bất cứ lúc nào tại Dashboard → Thanh toán & Hoá đơn; bạn vẫn dùng được đến hết kỳ đã thanh toán. Gói click và lượt gửi công cụ là các khoản mua một lần."
+        }
+      }
+    },
+    "cta": {
+      "title": "Vẫn còn câu hỏi?",
+      "subtitle": "Đội ngũ hỗ trợ của chúng tôi sẵn sàng giúp đỡ",
+      "button": "Liên hệ hỗ trợ"
+    }
+  },
+  "helpPage": {
+    "meta": {
+      "title": "Trung Tâm Trợ Giúp - Hỗ Trợ TopAICollection",
+      "description": "Nhận trợ giúp với TopAICollection. Tìm câu trả lời cho các câu hỏi thường gặp và liên hệ với đội ngũ hỗ trợ của chúng tôi."
+    },
+    "title": "Trung Tâm Trợ Giúp",
+    "subtitle": "Chúng tôi có thể giúp gì cho bạn hôm nay?",
+    "sections": {
+      "faq": {
+        "title": "Câu Hỏi Thường Gặp",
+        "description": "Tìm câu trả lời cho các câu hỏi thường gặp.",
+        "link": "Xem FAQ"
+      },
+      "contact": {
+        "title": "Liên Hệ Hỗ Trợ",
+        "description": "Không tìm thấy thông tin bạn cần? Hãy liên hệ với chúng tôi.",
+        "link": "Liên Hệ"
+      }
+    },
+    "commonTopics": {
+      "title": "Chủ Đề Thường Gặp",
+      "submitTool": "Làm thế nào để gửi công cụ AI của tôi?",
+      "advertising": "Quảng cáo hoạt động như thế nào?",
+      "privacy": "Chính sách quyền riêng tư của bạn là gì?",
+      "terms": "Điều khoản dịch vụ của bạn là gì?"
+    }
+  },
+  "pricingPage": {
+    "meta": {
+      "title": "Bảng Giá - TopAICollection",
+      "description": "Bảng giá đơn giản và minh bạch cho nghiên cứu AI và theo dõi mạng xã hội."
+    },
+    "title": "Bảng giá Đơn giản & Minh bạch",
+    "subtitle": "Bắt đầu miễn phí và mở rộng khi bạn phát triển. Không có bất ngờ.",
+    "freeDesc": "Dùng thử Website Insights và Social Listening với hạn mức hằng tháng.",
+    "freePrice": "Miễn phí",
+    "getStarted": "Bắt đầu",
+    "otherTitle": "Dịch vụ khác",
+    "otherSubtitle": "Thanh toán một lần dành cho nhà phát triển công cụ"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Liên hệ - TopAICollection",
+      "description": "Liên hệ với đội ngũ TopAICollection. Chúng tôi sẵn sàng giúp đỡ với mọi câu hỏi về công cụ AI."
+    },
+    "title": "Liên hệ với chúng tôi",
+    "subtitle": "Có câu hỏi hoặc phản hồi? Chúng tôi rất mong nhận được ý kiến từ bạn. Đội ngũ của chúng tôi thường phản hồi trong vòng 24 giờ.",
+    "form": {
+      "title": "Gửi tin nhắn cho chúng tôi",
+      "fields": {
+        "name": {
+          "label": "Tên của bạn",
+          "placeholder": "Nguyễn Văn A"
+        },
+        "email": {
+          "label": "Địa chỉ Email",
+          "placeholder": "you{'@'}example.com"
+        },
+        "subject": {
+          "label": "Chủ đề",
+          "placeholder": "Chọn chủ đề",
+          "options": {
+            "general": "Yêu cầu chung",
+            "support": "Hỗ trợ kỹ thuật",
+            "feedback": "Phản hồi",
+            "partnership": "Cơ hội hợp tác",
+            "other": "Khác"
+          }
+        },
+        "message": {
+          "label": "Tin nhắn",
+          "placeholder": "Cho chúng tôi biết bạn đang nghĩ gì..."
+        }
+      },
+      "submit": "Gửi tin nhắn",
+      "submitting": "Đang gửi...",
+      "success": {
+        "title": "Gửi tin nhắn thành công!",
+        "description": "Chúng tôi đã nhận được tin nhắn của bạn và sẽ phản hồi sớm."
+      },
+      "error": {
+        "title": "Không thể gửi tin nhắn",
+        "description": "Đã xảy ra lỗi. Vui lòng thử lại sau."
+      },
+      "signedInAs": "Phản hồi sẽ được gửi tới {email}.",
+      "errName": "Vui lòng nhập tên của bạn.",
+      "errEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+      "errMessage": "Nội dung phải dài từ 10 đến 5000 ký tự.",
+      "errRateLimit": "Bạn đã gửi khá nhiều tin nhắn gần đây. Vui lòng thử lại sau.",
+      "trackHint": "Bạn có thể theo dõi phản hồi tại Dashboard → Yêu cầu của tôi.",
+      "sendAnother": "Gửi tin nhắn khác",
+      "emailUs": "Gửi email cho chúng tôi"
+    },
+    "info": {
+      "title": "Liên lạc",
+      "email": {
+        "title": "Email cho chúng tôi"
+      },
+      "support": {
+        "title": "Giờ hỗ trợ",
+        "content": "Đội ngũ hỗ trợ làm việc từ Thứ Hai đến Thứ Sáu"
+      },
+      "hours": {
+        "title": "Giờ làm việc",
+        "content": "9:00 SA - 6:00 CH EST"
+      },
+      "location": {
+        "title": "Vị trí",
+        "content": "Phục vụ người dùng toàn cầu từ đội ngũ phân tán của chúng tôi"
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "q1": "Làm cách nào để gửi công cụ AI của tôi?",
+      "a1": "Nhấp vào nút Gửi công cụ trong điều hướng và điền vào biểu mẫu gửi.",
+      "q2": "Quá trình phê duyệt mất bao lâu?",
+      "a2": "Công cụ gửi có trả phí sẽ được đăng trong vòng 48 giờ.",
+      "q3": "Tôi có thể cập nhật danh sách công cụ của mình không?",
+      "a3": "Có, đăng nhập vào bảng điều khiển của bạn và sử dụng tính năng Cập nhật AI."
+    }
+  },
+  "legalPage": {
+    "englishOnly": "Tài liệu này được cung cấp bằng tiếng Anh.",
+    "editorial": {
+      "title": "Nguyên tắc biên tập",
+      "description": "Cách TopAICollection tìm kiếm, đánh giá, phân loại và duy trì các công cụ AI được liệt kê."
+    },
+    "reviewMethodology": {
+      "title": "Phương pháp đánh giá",
+      "description": "Cách TopAICollection đánh giá, chấm điểm công cụ AI và kiểm duyệt đánh giá của người dùng."
+    },
+    "termsDescription": "Đọc các điều khoản và điều kiện để sử dụng dịch vụ và trang web của TopAICollection.",
+    "privacyDescription": "Tìm hiểu cách TopAICollection thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn."
+  },
+  "myInquiries": {
+    "title": "Yêu cầu của tôi",
+    "subtitle": "Các tin nhắn bạn đã gửi qua trang Liên hệ và phản hồi của chúng tôi.",
+    "newMessage": "Tin nhắn mới",
+    "empty": "Bạn chưa gửi tin nhắn nào.",
+    "reply": "Phản hồi của chúng tôi",
+    "statuses": {
+      "NEW": "Đã nhận",
+      "REPLIED": "Đã trả lời",
+      "CLOSED": "Đã đóng"
+    }
+  },
+  "adminContact": {
+    "title": "Tin nhắn liên hệ",
+    "newBadge": "{n} mới",
+    "total": "{n} tin nhắn",
+    "statusAll": "Tất cả trạng thái",
+    "searchPlaceholder": "Tìm theo tên, email hoặc nội dung…",
+    "colSender": "Người gửi",
+    "colMessage": "Nội dung",
+    "colStatus": "Trạng thái",
+    "colReply": "Trả lời",
+    "guest": "Khách",
+    "replyPlaceholder": "Viết phản hồi — sẽ được gửi email cho người gửi và hiển thị trong mục yêu cầu của họ…",
+    "sendReply": "Gửi phản hồi",
+    "repliedAt": "Đã trả lời {date}",
+    "replyEmailFailed": "Đã lưu phản hồi nhưng không gửi được email.",
+    "delete": "Xoá",
+    "deleteConfirm": "Xoá tin nhắn này?",
+    "empty": "Không có tin nhắn."
   }
 }

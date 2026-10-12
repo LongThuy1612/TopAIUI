@@ -114,6 +114,9 @@ export default defineNuxtConfig({
     smtpUser: process.env.SMTP_USER || '',
     smtpPass: process.env.SMTP_PASS || '',
     mailFrom: process.env.MAIL_FROM || 'TopAICollection <no-reply@topaicollection.com>',
+    // Where new Contact-page messages are announced (Reply-To = the sender). Empty =
+    // SUPPORT_EMAIL in shared/site.ts. Override at runtime with NUXT_CONTACT_INBOX.
+    contactInbox: process.env.CONTACT_INBOX || '',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
       // OAuth Web client ID for "Sign in with Google" (not a secret). Also
@@ -157,6 +160,18 @@ export default defineNuxtConfig({
     '/ai-news/**': pageCache(600),
     '/gpts': pageCache(300),
     '/gpts/**': pageCache(600),
+    // Company, help and legal pages: static text. The contact form posts to the API
+    // and shows the signed-in prefill only in the browser, so its HTML is shared too.
+    '/about': pageCache(3600),
+    '/pricing': pageCache(3600),
+    '/faq': pageCache(3600),
+    '/help': pageCache(3600),
+    '/contact': pageCache(3600),
+    '/terms': pageCache(3600),
+    '/privacy': pageCache(3600),
+    '/cookies': pageCache(3600),
+    '/editorial-guidelines': pageCache(3600),
+    '/review-methodology': pageCache(3600),
 
     // Dashboard (every logged-in user) and admin-only pages — always dynamic,
     // never cached, hidden from search engines.
@@ -193,6 +208,12 @@ export default defineNuxtConfig({
     '/ranking/revenue': { redirect: '/ranking' },
 
     // API — data endpoints stay dynamic; admin API additionally is not CORS-open
+    // Account and order pages: nothing for search engines (also keeps them out of the sitemap).
+    '/login': { robots: false },
+    '/register': { robots: false },
+    '/forgetPassword': { robots: false },
+    '/orders': { robots: false },
+
     // One-time token in the query string: never cached, indexed or leaked to
     // other sites through the Referer header.
     '/reset-password': { robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } },
@@ -222,7 +243,17 @@ export default defineNuxtConfig({
       '/ai-news': { cache: false },
       '/ai-news/**': { cache: false },
       '/gpts': { cache: false },
-      '/gpts/**': { cache: false }
+      '/gpts/**': { cache: false },
+      '/about': { cache: false },
+      '/pricing': { cache: false },
+      '/faq': { cache: false },
+      '/help': { cache: false },
+      '/contact': { cache: false },
+      '/terms': { cache: false },
+      '/privacy': { cache: false },
+      '/cookies': { cache: false },
+      '/editorial-guidelines': { cache: false },
+      '/review-methodology': { cache: false }
     }
   }
 })

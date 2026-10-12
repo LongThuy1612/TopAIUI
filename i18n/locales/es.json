@@ -382,7 +382,9 @@
       "reasonPlaceholder": "Motivo del rechazo — se muestra al propietario",
       "hint": "Al aplicar, los cambios se escriben en la ficha publicada y se vuelve a traducir. Al rechazar, el pago se reembolsa a través de Stripe."
     },
-    "managePlan": "Gestionar plan"
+    "managePlan": "Gestionar plan",
+    "myInquiries": "Mis consultas",
+    "contactMessages": "Mensajes de contacto"
   },
   "hero": {
     "titlePrefix": "Descubre las mejores",
@@ -865,7 +867,13 @@
     "terms": "Términos del servicio",
     "privacy": "Política de privacidad",
     "advertise": "Publicidad",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "faq": "Preguntas frecuentes",
+    "help": "Centro de ayuda",
+    "pricing": "Precios",
+    "cookies": "Política de cookies",
+    "editorialGuidelines": "Directrices editoriales",
+    "reviewMethodology": "Metodología de evaluación"
   },
   "language": {
     "label": "Idioma"
@@ -1646,5 +1654,336 @@
     "currentPasswordWrong": "Tu contraseña actual no es correcta.",
     "signsOutOthers": "Al guardar una nueva contraseña se cerrará tu sesión en todos los demás dispositivos.",
     "menu": "Opciones de la cuenta"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "Sobre nosotros - TopAICollection",
+      "description": "Conozca la misión de TopAICollection de ayudarlo a descubrir las mejores herramientas de inteligencia artificial y sitios web para sus necesidades."
+    },
+    "badge": "Sobre nosotros",
+    "hero": {
+      "title": "Su puerta de entrada a la revolución de la IA",
+      "subtitle": "Tenemos la misión de democratizar el acceso a las herramientas de IA y ayudar a todos a aprovechar el poder de la inteligencia artificial."
+    },
+    "stats": {
+      "tools": "Herramientas de IA",
+      "categories": "Categorías",
+      "languages": "Idiomas"
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "paragraph1": "En TopAICollection creemos que la IA debería ser accesible para todos. Nuestra plataforma sirve como un directorio completo de las mejores herramientas y sitios web de IA, lo que facilita a los usuarios descubrir y aprovechar la inteligencia artificial en su trabajo y vida diaria.",
+      "paragraph2": "Seleccionamos y revisamos cuidadosamente cada herramienta de nuestra colección, asegurando que nuestros usuarios tengan acceso solo a soluciones de IA de la más alta calidad. Nuestro equipo de expertos evalúa herramientas en función de la funcionalidad, la experiencia del usuario, los precios y las aplicaciones del mundo real.",
+      "paragraph3": "Ya sea desarrollador, diseñador, comercializador, educador o propietario de un negocio, TopAICollection lo ayuda a encontrar las herramientas de inteligencia artificial perfectas para mejorar su productividad y creatividad."
+    },
+    "features": {
+      "title": "Por qué elegir TopAICollection",
+      "global": {
+        "title": "Alcance global",
+        "description": "Disponible en 10 idiomas para personas de todo el mundo"
+      },
+      "updated": {
+        "title": "Actualizaciones diarias",
+        "description": "Nuestra colección se actualiza diariamente con las últimas innovaciones en IA."
+      },
+      "community": {
+        "title": "Impulsado por la comunidad",
+        "description": "Las reseñas y calificaciones de los usuarios lo ayudan a tomar decisiones informadas"
+      },
+      "verified": {
+        "title": "Herramientas verificadas",
+        "description": "Cada herramienta es cuidadosamente revisada y verificada por nuestro equipo."
+      }
+    },
+    "cta": {
+      "title": "Comience su viaje hacia la IA hoy",
+      "subtitle": "Explore nuestra colección de herramientas de IA o envíe la suya propia",
+      "browse": "Explorar herramientas",
+      "submit": "Envíe su herramienta"
+    }
+  },
+  "cookiesPage": {
+    "meta": {
+      "title": "Política de cookies - TopAICollection",
+      "description": "Obtenga información sobre cómo TopAICollection utiliza cookies y tecnologías similares."
+    },
+    "title": "Política de cookies",
+    "lastUpdated": "Última actualización",
+    "sections": {
+      "whatAreCookies": {
+        "title": "¿Qué son las cookies?",
+        "description": "Las cookies son pequeños archivos de texto que se almacenan en su computadora o dispositivo móvil cuando visita nuestro sitio web. Nos ayudan a brindarle una mejor experiencia al recordar sus preferencias y comprender cómo utiliza nuestro sitio."
+      },
+      "howWeUse": {
+        "title": "Cómo utilizamos las cookies",
+        "intro": "Utilizamos cookies para los siguientes propósitos:",
+        "preference": "Cookies de preferencias: recuerdan su configuración y preferencias, como el idioma y la configuración regional.",
+        "noTracking": "No usamos cookies de analítica ni de publicidad.",
+        "storage": "Almacenamiento del navegador: tu sesión y algunas preferencias (como borradores de reseñas) se guardan en el almacenamiento local del navegador, no en cookies."
+      },
+      "managing": {
+        "title": "Gestión de cookies",
+        "intro": "La mayoría de los navegadores web le permiten controlar las cookies a través de su configuración. Puedes elegir:",
+        "blockAll": "Bloquear todas las cookies",
+        "acceptAll": "Aceptar todas las cookies",
+        "beNotified": "Recibir una notificación cuando se establezca una cookie",
+        "deleteExisting": "Eliminar las cookies que ya se han configurado",
+        "note": "Tenga en cuenta que bloquear ciertas cookies puede afectar su experiencia en nuestro sitio web."
+      },
+      "thirdParty": {
+        "title": "Cookies de terceros",
+        "intro": "Algunas cookies de nuestro sitio son configuradas por servicios de terceros que utilizamos, incluidos:",
+        "stripe": "Stripe (pagos): se te redirige a la página de pago de Stripe, que establece sus propias cookies",
+        "google": "Google (el botón Iniciar sesión con Google en las páginas de inicio de sesión y registro)"
+      },
+      "contact": {
+        "title": "Contáctenos",
+        "message": "Si tiene preguntas sobre nuestro uso de cookies, por favor",
+        "contactLink": "contáctanos"
+      }
+    }
+  },
+  "faqPage": {
+    "meta": {
+      "title": "Preguntas frecuentes - TopAICollection",
+      "description": "Encuentre respuestas a preguntas comunes sobre TopAICollection y cómo utilizar nuestro directorio de herramientas de IA."
+    },
+    "badge": "Centro de ayuda",
+    "title": "Preguntas frecuentes",
+    "subtitle": "Encuentre respuestas a preguntas comunes sobre TopAICollection",
+    "categories": {
+      "general": "Preguntas generales",
+      "tools": "Acerca de las herramientas de IA",
+      "submission": "Envío de herramientas",
+      "account": "Cuenta y facturación"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "¿Qué es TopAICollection?",
+          "answer": "TopAICollection es un directorio completo de sitios web y herramientas de inteligencia artificial. Ayudamos a los usuarios a descubrir las mejores soluciones de IA para sus necesidades, desde herramientas de productividad hasta aplicaciones creativas."
+        },
+        "1": {
+          "question": "¿Cómo encuentro la herramienta de IA adecuada?",
+          "answer": "Puede navegar por categoría, utilizar nuestra función de búsqueda o consultar nuestras secciones destacadas y de tendencias. Cada herramienta incluye descripciones detalladas, reseñas de usuarios y calificaciones para ayudarlo a tomar una decisión informada."
+        },
+        "2": {
+          "question": "¿TopAICollection es de uso gratuito?",
+          "answer": "¡Sí! Navegar y buscar en nuestro directorio es completamente gratuito. Algunas herramientas enumeradas pueden tener su propio precio, que se indica claramente en la página de cada herramienta."
+        }
+      },
+      "tools": {
+        "0": {
+          "question": "¿Cómo se seleccionan las herramientas para el directorio?",
+          "answer": "Revisamos cuidadosamente cada envío para garantizar la calidad. Las herramientas deben ser funcionales, aportar valor a los usuarios y cumplir con nuestras directrices. También consideramos los comentarios y calificaciones de los usuarios."
+        },
+        "1": {
+          "question": "¿Qué información se proporciona para cada herramienta?",
+          "answer": "Cada lista de herramientas incluye una descripción, funciones clave, información de precios, reseñas de usuarios, análisis de tráfico, categorías y enlaces directos al sitio web de la herramienta."
+        },
+        "2": {
+          "question": "¿Con qué frecuencia se actualiza el directorio?",
+          "answer": "Nuestro directorio se actualiza diariamente con nuevas herramientas e información. Supervisamos continuamente las herramientas enumeradas para garantizar la precisión y eliminar las que ya no están disponibles."
+        }
+      },
+      "submission": {
+        "0": {
+          "question": "¿Cómo puedo enviar mi herramienta de IA?",
+          "answer": "Abre la página Enviar, introduce el nombre y el sitio web de tu herramienta, elige si escribimos nosotros la ficha o la escribes tú y completa el pago único. Tu herramienta se publica en 48 horas."
+        },
+        "1": {
+          "question": "¿Cuáles son los requisitos para el envío de herramientas?",
+          "answer": "Tu herramienta debe ser funcional, aportar un valor claro a los usuarios, tener un sitio web profesional y cumplir con los requisitos legales. No aceptamos herramientas que promuevan actividades ilegales o violen la privacidad del usuario."
+        },
+        "2": {
+          "question": "¿Cuánto cuesta listar una herramienta?",
+          "answer": "Cada envío cuesta un pago único de 99 USD y la ficha es permanente. Nuestro equipo también añade herramientas que descubre sin coste para sus creadores. La publicidad y los artículos de invitado son extras de pago opcionales."
+        }
+      },
+      "account": {
+        "0": {
+          "question": "¿Necesito una cuenta para usar TopAICollection?",
+          "answer": "No necesitas cuenta para explorar y buscar en el directorio. Con una cuenta puedes escribir reseñas, gestionar tus herramientas y GPT enviados, anunciarte y usar Website Insights y Social Listening."
+        },
+        "1": {
+          "question": "¿Cómo promociono mi herramienta?",
+          "answer": "Ve a Publicidad (o Panel → Advertise AI) y compra un paquete de clics, Standard o Featured. Tu herramienta aparecerá en espacios patrocinados hasta agotar los clics."
+        },
+        "2": {
+          "question": "¿Puedo cancelar mi suscripción en cualquier momento?",
+          "answer": "Sí. Las suscripciones al Research Plan se pueden cancelar en cualquier momento desde Panel → Pagos y facturas; mantienes el acceso hasta el final del periodo pagado. Los paquetes de clics y los envíos son compras únicas."
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Aún tienes preguntas?",
+      "subtitle": "Nuestro equipo de soporte está aquí para ayudar",
+      "button": "Contactar con soporte"
+    }
+  },
+  "helpPage": {
+    "meta": {
+      "title": "Centro de ayuda - Soporte de TopAICollection",
+      "description": "Obtenga ayuda con TopAICollection. Encuentre respuestas a preguntas comunes y comuníquese con nuestro equipo de soporte."
+    },
+    "title": "Centro de ayuda",
+    "subtitle": "¿Cómo podemos ayudarte hoy?",
+    "sections": {
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "description": "Encuentre respuestas a preguntas frecuentes.",
+        "link": "Ver preguntas frecuentes"
+      },
+      "contact": {
+        "title": "Contactar con soporte",
+        "description": "¿No encuentras lo que necesitas? Comuníquese con nosotros.",
+        "link": "Contáctenos"
+      }
+    },
+    "commonTopics": {
+      "title": "Temas comunes",
+      "submitTool": "¿Cómo envío mi herramienta de IA?",
+      "advertising": "¿Cómo funciona la publicidad?",
+      "privacy": "¿Cuál es su política de privacidad?",
+      "terms": "¿Cuáles son sus términos de servicio?"
+    }
+  },
+  "pricingPage": {
+    "meta": {
+      "title": "Planes de Precios - TopAICollection",
+      "description": "Precios simples y transparentes para investigación de IA y escucha social."
+    },
+    "title": "Precios simples y transparentes",
+    "subtitle": "Comienza gratis y escala a medida que creces. Sin sorpresas.",
+    "freeDesc": "Prueba Website Insights y Social Listening con límites mensuales.",
+    "freePrice": "Gratis",
+    "getStarted": "Empezar",
+    "otherTitle": "Otros servicios",
+    "otherSubtitle": "Compras únicas para creadores de herramientas"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contáctenos - TopAICollection",
+      "description": "Póngase en contacto con el equipo de TopAICollection. Estamos aquí para ayudarle con cualquier pregunta sobre las herramientas de IA."
+    },
+    "title": "Contáctenos",
+    "subtitle": "¿Tiene alguna pregunta o comentario? Nos encantaría saber de usted. Nuestro equipo normalmente responde dentro de las 24 horas.",
+    "form": {
+      "title": "Envíanos un mensaje",
+      "fields": {
+        "name": {
+          "label": "Su nombre",
+          "placeholder": "Juan Pérez"
+        },
+        "email": {
+          "label": "Dirección de correo electrónico",
+          "placeholder": "you{'@'}example.com"
+        },
+        "subject": {
+          "label": "Sujeto",
+          "placeholder": "Seleccione un tema",
+          "options": {
+            "general": "Consulta general",
+            "support": "Apoyo técnico",
+            "feedback": "Comentario",
+            "partnership": "Oportunidad de asociación",
+            "other": "Otro"
+          }
+        },
+        "message": {
+          "label": "Mensaje",
+          "placeholder": "Cuéntanos qué tienes en mente..."
+        }
+      },
+      "submit": "Enviar mensaje",
+      "submitting": "Envío...",
+      "success": {
+        "title": "¡Mensaje enviado exitosamente!",
+        "description": "Hemos recibido su mensaje y nos comunicaremos con usted pronto."
+      },
+      "error": {
+        "title": "No se pudo enviar el mensaje",
+        "description": "Algo salió mal. Inténtelo de nuevo más tarde."
+      },
+      "signedInAs": "Las respuestas se enviarán a {email}.",
+      "errName": "Introduce tu nombre.",
+      "errEmail": "Introduce una dirección de correo válida.",
+      "errMessage": "El mensaje debe tener entre 10 y 5000 caracteres.",
+      "errRateLimit": "Has enviado varios mensajes recientemente. Inténtalo más tarde.",
+      "trackHint": "Puedes seguir la respuesta en Panel → Mis consultas.",
+      "sendAnother": "Enviar otro mensaje",
+      "emailUs": "Escríbenos"
+    },
+    "info": {
+      "title": "Ponte en contacto",
+      "email": {
+        "title": "Envíenos un correo electrónico"
+      },
+      "support": {
+        "title": "Horas de soporte",
+        "content": "Nuestro equipo de soporte está disponible de lunes a viernes."
+      },
+      "hours": {
+        "title": "Horario comercial",
+        "content": "9:00 a. m. - 6:00 p. m. hora del Este"
+      },
+      "location": {
+        "title": "Ubicación",
+        "content": "Sirviendo a los usuarios globalmente desde nuestro equipo distribuido"
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Cómo envío mi herramienta de IA?",
+      "a1": "Haga clic en el botón Enviar herramienta en la navegación y complete el formulario de envío.",
+      "q2": "¿Cuánto tiempo lleva la aprobación?",
+      "a2": "Los envíos de pago se publican en 48 horas.",
+      "q3": "¿Puedo actualizar mi listado de herramientas?",
+      "a3": "Sí, inicie sesión en su panel y use la función Actualizar IA."
+    }
+  },
+  "legalPage": {
+    "englishOnly": "Este documento se ofrece en inglés.",
+    "editorial": {
+      "title": "Directrices editoriales",
+      "description": "Cómo TopAICollection descubre, evalúa, clasifica y mantiene las herramientas de IA que publica."
+    },
+    "reviewMethodology": {
+      "title": "Metodología de evaluación",
+      "description": "Cómo TopAICollection evalúa y puntúa las herramientas de IA y cómo modera las reseñas de usuarios."
+    },
+    "termsDescription": "Lea los términos y condiciones para utilizar los servicios y el sitio web de TopAICollection.",
+    "privacyDescription": "Descubra cómo TopAICollection recopila, utiliza y protege su información personal."
+  },
+  "myInquiries": {
+    "title": "Mis consultas",
+    "subtitle": "Mensajes que enviaste desde la página de contacto y nuestras respuestas.",
+    "newMessage": "Nuevo mensaje",
+    "empty": "Aún no has enviado ningún mensaje.",
+    "reply": "Nuestra respuesta",
+    "statuses": {
+      "NEW": "Recibido",
+      "REPLIED": "Respondido",
+      "CLOSED": "Cerrado"
+    }
+  },
+  "adminContact": {
+    "title": "Mensajes de contacto",
+    "newBadge": "{n} nuevos",
+    "total": "{n} mensajes",
+    "statusAll": "Todos los estados",
+    "searchPlaceholder": "Buscar nombre, correo o mensaje…",
+    "colSender": "Remitente",
+    "colMessage": "Mensaje",
+    "colStatus": "Estado",
+    "colReply": "Respuesta",
+    "guest": "Invitado",
+    "replyPlaceholder": "Escribe una respuesta: se envía por correo al remitente y aparece en sus consultas…",
+    "sendReply": "Enviar respuesta",
+    "repliedAt": "Respondido {date}",
+    "replyEmailFailed": "Respuesta guardada, pero no se pudo enviar el correo.",
+    "delete": "Eliminar",
+    "deleteConfirm": "¿Eliminar este mensaje?",
+    "empty": "No hay mensajes."
   }
 }

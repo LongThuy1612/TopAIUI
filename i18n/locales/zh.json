@@ -382,7 +382,9 @@
       "reasonPlaceholder": "拒绝原因 — 将显示给所有者",
       "hint": "应用后，修改将写入线上收录并重新翻译。拒绝则通过 Stripe 退还款项。"
     },
-    "managePlan": "管理方案"
+    "managePlan": "管理方案",
+    "myInquiries": "我的咨询",
+    "contactMessages": "联系消息"
   },
   "hero": {
     "titlePrefix": "发现最好的",
@@ -865,7 +867,13 @@
     "terms": "服务条款",
     "privacy": "隐私政策",
     "advertise": "广告合作",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "faq": "常见问题",
+    "help": "帮助中心",
+    "pricing": "价格",
+    "cookies": "Cookie 政策",
+    "editorialGuidelines": "编辑准则",
+    "reviewMethodology": "评测方法"
   },
   "language": {
     "label": "语言"
@@ -1646,5 +1654,336 @@
     "currentPasswordWrong": "当前密码不正确。",
     "signsOutOthers": "保存新密码后，您将在所有其他设备上退出登录。",
     "menu": "账户选项"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "关于我们 - TopAICollection",
+      "description": "了解 TopAICollection 的使命是帮助您发现满足您需求的最佳 AI 工具和网站。"
+    },
+    "badge": "关于我们",
+    "hero": {
+      "title": "通往人工智能革命的大门",
+      "subtitle": "我们的使命是实现人工智能工具的民主化，并帮助每个人利用人工智能的力量。"
+    },
+    "stats": {
+      "tools": "人工智能工具",
+      "categories": "类别",
+      "languages": "语言"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "paragraph1": "在 TopAICollection，我们相信每个人都应该可以使用人工智能。我们的平台提供了最佳人工智能工具和网站的综合目录，使用户可以轻松地在工作和日常生活中发现和利用人工智能。",
+      "paragraph2": "我们仔细策划和审查我们集合中的每个工具，确保我们的用户只能访问最高质量的人工智能解决方案。我们的专家团队根据功能、用户体验、定价和实际应用来评估工具。",
+      "paragraph3": "无论您是开发人员、设计师、营销人员、教育工作者还是企业主，TopAICollection 都可以帮助您找到完美的 AI 工具来提高您的生产力和创造力。"
+    },
+    "features": {
+      "title": "为什么选择TopAICollection",
+      "global": {
+        "title": "全球影响力",
+        "description": "支持 10 种语言，服务全球用户"
+      },
+      "updated": {
+        "title": "每日更新",
+        "description": "我们的收藏每天都会更新最新的人工智能创新"
+      },
+      "community": {
+        "title": "社区驱动",
+        "description": "用户评论和评级可帮助您做出明智的决定"
+      },
+      "verified": {
+        "title": "经过验证的工具",
+        "description": "每个工具都经过我们团队的仔细审查和验证"
+      }
+    },
+    "cta": {
+      "title": "立即开始您的人工智能之旅",
+      "subtitle": "探索我们的人工智能工具集合或提交您自己的工具",
+      "browse": "浏览工具",
+      "submit": "提交您的工具"
+    }
+  },
+  "cookiesPage": {
+    "meta": {
+      "title": "Cookie 政策 - TopAICollection",
+      "description": "了解 TopAICollection 如何使用 cookie 和类似技术。"
+    },
+    "title": "Cookie 政策",
+    "lastUpdated": "最后更新",
+    "sections": {
+      "whatAreCookies": {
+        "title": "什么是 Cookie",
+        "description": "Cookie 是当您访问我们的网站时存储在您的计算机或移动设备上的小文本文件。它们通过记住您的偏好并了解您如何使用我们的网站来帮助我们为您提供更好的体验。"
+      },
+      "howWeUse": {
+        "title": "我们如何使用 Cookie",
+        "intro": "我们将 cookie 用于以下目的：",
+        "preference": "偏好 Cookie：记住您的设置和偏好，例如语言和区域设置。",
+        "noTracking": "我们不使用分析类或广告类 Cookie。",
+        "storage": "浏览器存储：您的登录会话和部分偏好设置（如评价草稿）保存在浏览器的本地存储中，而不是 Cookie 中。"
+      },
+      "managing": {
+        "title": "管理 Cookie",
+        "intro": "大多数网络浏览器允许您通过其设置来控制 cookie。您可以选择：",
+        "blockAll": "阻止所有 cookie",
+        "acceptAll": "接受所有cookie",
+        "beNotified": "设置 cookie 时收到通知",
+        "deleteExisting": "删除已经设置的cookie",
+        "note": "请注意，阻止某些 cookie 可能会影响您在我们网站上的体验。"
+      },
+      "thirdParty": {
+        "title": "第三方 Cookie",
+        "intro": "我们网站上的一些 cookie 是由我们使用的第三方服务设置的，包括：",
+        "stripe": "Stripe（支付）：您会被转到 Stripe 自己的结账页面，由其设置自身的 Cookie",
+        "google": "Google（登录和注册页面上的“使用 Google 登录”按钮）"
+      },
+      "contact": {
+        "title": "联系我们",
+        "message": "如果您对我们使用 cookie 有疑问，请",
+        "contactLink": "联系我们"
+      }
+    }
+  },
+  "faqPage": {
+    "meta": {
+      "title": "常见问题 - TopAICollection",
+      "description": "查找有关 TopAICollection 以及如何使用我们的 AI 工具目录的常见问题的答案。"
+    },
+    "badge": "帮助中心",
+    "title": "常见问题解答",
+    "subtitle": "查找有关 TopAICollection 的常见问题的答案",
+    "categories": {
+      "general": "一般问题",
+      "tools": "关于人工智能工具",
+      "submission": "工具提交",
+      "account": "账户与账单"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "什么是 TopAICollection？",
+          "answer": "TopAICollection 是人工智能工具和网站的综合目录。我们帮助用户发现满足其需求的最佳人工智能解决方案，从生产力工具到创意应用程序。"
+        },
+        "1": {
+          "question": "如何找到合适的人工智能工具？",
+          "answer": "您可以按类别浏览、使用我们的搜索功能或查看我们的特色和趋势部分。每个工具都包含详细的描述、用户评论和评级，以帮助您做出明智的决定。"
+        },
+        "2": {
+          "question": "TopAICollection 可以免费使用吗？",
+          "answer": "是的！浏览和搜索我们的目录是完全免费的。某些列出的工具可能有自己的定价，每个工具的页面上都清楚地标明了该定价。"
+        }
+      },
+      "tools": {
+        "0": {
+          "question": "如何为目录选择工具？",
+          "answer": "我们仔细审查每份提交内容以确保质量。工具必须实用、为用户提供价值并符合我们的准则。我们还考虑用户反馈和评级。"
+        },
+        "1": {
+          "question": "为每个工具提供了哪些信息？",
+          "answer": "每个工具列表都包括描述、主要功能、定价信息、用户评论、流量分析、类别以及工具网站的直接链接。"
+        },
+        "2": {
+          "question": "目录多久更新一次？",
+          "answer": "我们的目录每天都会更新新的工具和信息。我们持续监控列出的工具，以确保准确性并删除任何不再可用的工具。"
+        }
+      },
+      "submission": {
+        "0": {
+          "question": "我如何提交我的人工智能工具？",
+          "answer": "打开提交页面，填写工具名称和网站，选择由我们撰写介绍还是由您自己撰写，然后完成一次性付款。您的工具将在 48 小时内上线。"
+        },
+        "1": {
+          "question": "工具提交有什么要求？",
+          "answer": "您的工具必​​须功能齐全，为用户提供明确的价值，拥有专业的网站，并遵守法律要求。我们不接受促进非法活动或侵犯用户隐私的工具。"
+        },
+        "2": {
+          "question": "列出一个工具需要多少钱？",
+          "answer": "每次提交需一次性支付 99 美元，收录永久有效。我们的团队也会自行收录发现的工具，不向开发者收费。广告和客座文章是可选的付费服务。"
+        }
+      },
+      "account": {
+        "0": {
+          "question": "我需要一个帐户才能使用 TopAICollection 吗？",
+          "answer": "浏览和搜索目录无需账户。拥有账户后，您可以撰写评价、管理已提交的工具和 GPT、投放广告，并使用 Website Insights 和 Social Listening。"
+        },
+        "1": {
+          "question": "如何推广我的工具？",
+          "answer": "前往广告页面（或控制台 → Advertise AI）购买点击套餐（Standard 或 Featured）。您的工具将显示在赞助位，直到点击次数用完。"
+        },
+        "2": {
+          "question": "我可以随时取消订阅吗？",
+          "answer": "可以。Research Plan 订阅可随时在控制台 → 付款与发票中取消，您可以使用到已付费周期结束。点击套餐和工具提交均为一次性购买。"
+        }
+      }
+    },
+    "cta": {
+      "title": "还有疑问吗？",
+      "subtitle": "我们的支持团队随时为您提供帮助",
+      "button": "联系支持人员"
+    }
+  },
+  "helpPage": {
+    "meta": {
+      "title": "帮助中心 - TopAICollection 支持",
+      "description": "获取有关 TopAICollection 的帮助。查找常见问题的答案并联系我们的支持团队。"
+    },
+    "title": "帮助中心",
+    "subtitle": "今天我们能为您提供什么帮助？",
+    "sections": {
+      "faq": {
+        "title": "常问问题",
+        "description": "查找常见问题的答案。",
+        "link": "查看常见问题解答"
+      },
+      "contact": {
+        "title": "联系支持人员",
+        "description": "找不到您需要的东西？联系我们。",
+        "link": "联系我们"
+      }
+    },
+    "commonTopics": {
+      "title": "常见主题",
+      "submitTool": "如何提交我的 AI 工具？",
+      "advertising": "广告是如何运作的？",
+      "privacy": "您的隐私政策是什么？",
+      "terms": "你们的服务条款是什么？"
+    }
+  },
+  "pricingPage": {
+    "meta": {
+      "title": "定价计划 - TopAICollection",
+      "description": "为AI研究和社媒监听提供简单、透明的定价。"
+    },
+    "title": "简单、透明的定价",
+    "subtitle": "免费开始，随业务增长而扩展。无隐藏费用。",
+    "freeDesc": "在每月额度内试用 Website Insights 和 Social Listening。",
+    "freePrice": "免费",
+    "getStarted": "开始使用",
+    "otherTitle": "其他服务",
+    "otherSubtitle": "面向工具开发者的一次性购买"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "联系我们 - TopAICollection",
+      "description": "与 TopAICollection 团队取得联系。我们随时为您解答有关人工智能工具的任何问题。"
+    },
+    "title": "联系我们",
+    "subtitle": "有问题或反馈吗？我们很乐意听取您的意见。我们的团队通常会在 24 小时内回复。",
+    "form": {
+      "title": "给我们留言",
+      "fields": {
+        "name": {
+          "label": "你的名字",
+          "placeholder": "约翰·多伊"
+        },
+        "email": {
+          "label": "电子邮件",
+          "placeholder": "you{'@'}example.com"
+        },
+        "subject": {
+          "label": "主题",
+          "placeholder": "选择一个主题",
+          "options": {
+            "general": "一般查询",
+            "support": "技术支援",
+            "feedback": "反馈",
+            "partnership": "合作机会",
+            "other": "其他"
+          }
+        },
+        "message": {
+          "label": "信息",
+          "placeholder": "告诉我们你的想法......"
+        }
+      },
+      "submit": "发送消息",
+      "submitting": "正在发送...",
+      "success": {
+        "title": "消息发送成功！",
+        "description": "我们已收到您的留言，并将尽快回复您。"
+      },
+      "error": {
+        "title": "发送消息失败",
+        "description": "出了点问题。请稍后重试。"
+      },
+      "signedInAs": "回复将发送至 {email}。",
+      "errName": "请输入您的姓名。",
+      "errEmail": "请输入有效的邮箱地址。",
+      "errMessage": "留言长度须在 10 到 5000 个字符之间。",
+      "errRateLimit": "您最近发送的消息较多，请稍后再试。",
+      "trackHint": "您可以在控制台 → 我的咨询中查看回复。",
+      "sendAnother": "再发一条消息",
+      "emailUs": "发送邮件给我们"
+    },
+    "info": {
+      "title": "联系我们",
+      "email": {
+        "title": "给我们发电子邮件"
+      },
+      "support": {
+        "title": "支持时间",
+        "content": "我们的支持团队周一至周五提供服务"
+      },
+      "hours": {
+        "title": "营业时间",
+        "content": "上午 9:00 - 下午 6:00（美国东部时间）"
+      },
+      "location": {
+        "title": "地点",
+        "content": "我们的分布式团队为全球用户提供服务"
+      }
+    },
+    "faq": {
+      "title": "常见问题解答",
+      "q1": "如何提交我的 AI 工具？",
+      "a1": "单击导航中的提交工具按钮并填写提交表格。",
+      "q2": "审批需要多长时间？",
+      "a2": "付费提交的工具将在 48 小时内上线。",
+      "q3": "我可以更新我的工具列表吗？",
+      "a3": "是的，登录您的仪表板并使用更新 AI 功能。"
+    }
+  },
+  "legalPage": {
+    "englishOnly": "本文档以英文提供。",
+    "editorial": {
+      "title": "编辑准则",
+      "description": "TopAICollection 如何发现、评估、分类和维护所收录的 AI 工具。"
+    },
+    "reviewMethodology": {
+      "title": "评测方法",
+      "description": "TopAICollection 如何评估和评分 AI 工具，以及如何审核用户评价。"
+    },
+    "termsDescription": "阅读使用 TopAICollection 服务和网站的条款和条件。",
+    "privacyDescription": "了解 TopAICollection 如何收集、使用和保护您的个人信息。"
+  },
+  "myInquiries": {
+    "title": "我的咨询",
+    "subtitle": "您通过联系页面发送的消息以及我们的回复。",
+    "newMessage": "新消息",
+    "empty": "您还没有发送过消息。",
+    "reply": "我们的回复",
+    "statuses": {
+      "NEW": "已收到",
+      "REPLIED": "已回复",
+      "CLOSED": "已关闭"
+    }
+  },
+  "adminContact": {
+    "title": "联系消息",
+    "newBadge": "{n} 条新消息",
+    "total": "共 {n} 条消息",
+    "statusAll": "全部状态",
+    "searchPlaceholder": "搜索姓名、邮箱或内容…",
+    "colSender": "发送者",
+    "colMessage": "内容",
+    "colStatus": "状态",
+    "colReply": "回复",
+    "guest": "访客",
+    "replyPlaceholder": "撰写回复——将通过邮件发送给对方，并显示在其咨询记录中…",
+    "sendReply": "发送回复",
+    "repliedAt": "已于 {date} 回复",
+    "replyEmailFailed": "回复已保存，但邮件发送失败。",
+    "delete": "删除",
+    "deleteConfirm": "删除这条消息？",
+    "empty": "暂无消息。"
   }
 }

@@ -56,6 +56,8 @@ services:
       NUXT_SMTP_USER: ${SMTP_USER:-}
       NUXT_SMTP_PASS: ${SMTP_PASS:-}
       NUXT_MAIL_FROM: ${MAIL_FROM:-TopAICollection <no-reply@topaicollection.com>}
+      # Inbox notified of new Contact-page messages. Empty = SUPPORT_EMAIL (shared/site.ts).
+      NUXT_CONTACT_INBOX: ${CONTACT_INBOX:-}
     volumes:
       # Uploaded tool logos / screenshots (nitro storage "uploads", ./.data/uploads).
       - uploads_data:/app/.data/uploads

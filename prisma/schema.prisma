@@ -20,6 +20,22 @@ enum Role {
   ADMIN
 }
 
+// Contact page: the subject picked on the form.
+enum ContactSubject {
+  GENERAL
+  SUPPORT
+  FEEDBACK
+  PARTNERSHIP
+  OTHER
+}
+
+// Contact message lifecycle: NEW until an admin replies (REPLIED) or closes it.
+enum ContactStatus {
+  NEW
+  REPLIED
+  CLOSED
+}
+
 // Dashboard → Feedback: the four choices on the form.
 enum FeedbackType {
   FEATURE // request a new feature
@@ -332,6 +348,7 @@ model User {
   promoteOrders PromoteOrder[]
   toolUpdateRequests ToolUpdateRequest[]
   feedbacks     Feedback[]
+  contactMessages ContactMessage[]
   adCampaigns   AdCampaign[]
   subscriptions Subscription[]
   researchUsage ResearchUsage[]
@@ -373,6 +390,34 @@ model Feedback {
   // Admin list filtered by status, newest first.
   @@index([status, createdAt])
   @@map("Feedback")
+}
+
+// Messages from the public Contact page. Guests can write too (userId null); a
+// signed-in sender is linked so the message shows under Dashboard → My inquiries.
+model ContactMessage {
+  id        String         @id @default(cuid())
+  userId    String?
+  user      User?          @relation(fields: [userId], references: [id], onDelete: SetNull)
+  name      String
+  email     String
+  subject   ContactSubject
+  message   String         // 10–5000 characters (checked by the API)
+  status    ContactStatus  @default(NEW)
+  reply     String?        // the admin's answer: emailed to the sender and shown in their inquiries
+  repliedAt DateTime?
+  locale    String?
+  ipHash    String?        // HMAC of the sender's IP, for rate limiting — never the raw address
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
+
+  // "My inquiries", newest first.
+  @@index([userId, createdAt])
+  // Admin inbox filtered by status, newest first.
+  @@index([status, createdAt])
+  // Rate limits (per IP / per email address).
+  @@index([ipHash, createdAt])
+  @@index([email, createdAt])
+  @@map("ContactMessage")
 }
 
 // One row per Stripe Checkout session from the promote pages (submit AI,

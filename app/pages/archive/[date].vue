@@ -118,7 +118,10 @@ function shiftMonth(delta: number) {
 }
 
 useSeoMeta({
-  title: () => `${t('archive.title')} ${dateLabel.value} — TopAICollection`
+  title: () => `${t('archive.title')} ${dateLabel.value} — TopAICollection`,
+  description: () => `AI tools added to TopAICollection on ${dateLabel.value}.`,
+  ogTitle: () => `${t('archive.title')} ${dateLabel.value} — TopAICollection`,
+  ogDescription: () => `AI tools added to TopAICollection on ${dateLabel.value}.`
 })
 </script>
 

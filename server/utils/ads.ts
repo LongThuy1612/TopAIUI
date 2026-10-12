@@ -463,8 +463,8 @@ function visitorKey(ip: string) {
   return `${groups.slice(0, 4).map(g => g.replace(/^0+(?=.)/, '')).join(':')}::/64`
 }
 
-// Hashed so the click log never holds raw IPs.
-const hashIp = (ip: string) => createHmac('sha256', useRuntimeConfig().userTokenSecret).update(visitorKey(ip)).digest('hex').slice(0, 32)
+// Hashed so the click log (and the contact form's rate limit) never holds raw IPs.
+export const hashIp = (ip: string) => createHmac('sha256', useRuntimeConfig().userTokenSecret).update(visitorKey(ip)).digest('hex').slice(0, 32)
 
 // Records a click on a sponsored slot and returns where to send the visitor. Charged only
 // for a live campaign with balance, a browser-looking visitor and the first click from

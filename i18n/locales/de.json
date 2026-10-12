@@ -382,7 +382,9 @@
       "reasonPlaceholder": "Ablehnungsgrund — wird dem Inhaber angezeigt",
       "hint": "Beim Übernehmen werden die Änderungen in den Live-Eintrag geschrieben und neu übersetzt. Bei Ablehnung wird die Zahlung über Stripe erstattet."
     },
-    "managePlan": "Plan verwalten"
+    "managePlan": "Plan verwalten",
+    "myInquiries": "Meine Anfragen",
+    "contactMessages": "Kontaktnachrichten"
   },
   "hero": {
     "titlePrefix": "Entdecke die besten",
@@ -865,7 +867,13 @@
     "terms": "Nutzungsbedingungen",
     "privacy": "Datenschutzerklärung",
     "advertise": "Werbung",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "help": "Hilfe-Center",
+    "pricing": "Preise",
+    "cookies": "Cookie-Richtlinie",
+    "editorialGuidelines": "Redaktionelle Richtlinien",
+    "reviewMethodology": "Bewertungsmethodik"
   },
   "language": {
     "label": "Sprache"
@@ -1646,5 +1654,336 @@
     "currentPasswordWrong": "Dein aktuelles Passwort ist falsch.",
     "signsOutOthers": "Mit einem neuen Passwort wirst du auf allen anderen Geräten abgemeldet.",
     "menu": "Kontooptionen"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "Über uns - TopAICollection",
+      "description": "Erfahren Sie mehr über die Mission von TopAICollection, Ihnen dabei zu helfen, die besten KI-Tools und Websites für Ihre Bedürfnisse zu finden."
+    },
+    "badge": "Über uns",
+    "hero": {
+      "title": "Ihr Tor zur KI-Revolution",
+      "subtitle": "Unser Ziel ist es, den Zugang zu KI-Tools zu demokratisieren und allen dabei zu helfen, die Leistungsfähigkeit der künstlichen Intelligenz zu nutzen."
+    },
+    "stats": {
+      "tools": "KI-Tools",
+      "categories": "Kategorien",
+      "languages": "Sprachen"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "paragraph1": "Wir bei TopAICollection glauben, dass KI für jeden zugänglich sein sollte. Unsere Plattform dient als umfassendes Verzeichnis der besten KI-Tools und Websites und macht es Benutzern leicht, künstliche Intelligenz in ihrer Arbeit und ihrem täglichen Leben zu entdecken und zu nutzen.",
+      "paragraph2": "Wir kuratieren und überprüfen jedes Tool in unserer Sammlung sorgfältig und stellen so sicher, dass unsere Benutzer nur Zugriff auf KI-Lösungen höchster Qualität haben. Unser Expertenteam bewertet Tools auf der Grundlage von Funktionalität, Benutzererfahrung, Preisgestaltung und realen Anwendungen.",
+      "paragraph3": "Ob Sie Entwickler, Designer, Vermarkter, Pädagoge oder Geschäftsinhaber sind, TopAICollection hilft Ihnen dabei, die perfekten KI-Tools zu finden, um Ihre Produktivität und Kreativität zu steigern."
+    },
+    "features": {
+      "title": "Warum sollten Sie sich für TopAICollection entscheiden?",
+      "global": {
+        "title": "Globale Reichweite",
+        "description": "In 10 Sprachen für Menschen auf der ganzen Welt verfügbar"
+      },
+      "updated": {
+        "title": "Tägliche Updates",
+        "description": "Unsere Sammlung wird täglich mit den neuesten KI-Innovationen aktualisiert"
+      },
+      "community": {
+        "title": "Community-orientiert",
+        "description": "Benutzerrezensionen und -bewertungen helfen Ihnen, fundierte Entscheidungen zu treffen"
+      },
+      "verified": {
+        "title": "Verifizierte Tools",
+        "description": "Jedes Werkzeug wird von unserem Team sorgfältig geprüft und verifiziert"
+      }
+    },
+    "cta": {
+      "title": "Beginnen Sie noch heute Ihre KI-Reise",
+      "subtitle": "Entdecken Sie unsere Sammlung von KI-Tools oder reichen Sie Ihre eigenen ein",
+      "browse": "Durchsuchen Sie Tools",
+      "submit": "Senden Sie Ihr Werkzeug"
+    }
+  },
+  "cookiesPage": {
+    "meta": {
+      "title": "Cookie-Richtlinie – TopAICollection",
+      "description": "Erfahren Sie, wie TopAICollection Cookies und ähnliche Technologien verwendet."
+    },
+    "title": "Cookie-Richtlinie",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "sections": {
+      "whatAreCookies": {
+        "title": "Was sind Cookies?",
+        "description": "Cookies sind kleine Textdateien, die auf Ihrem Computer oder Mobilgerät gespeichert werden, wenn Sie unsere Website besuchen. Sie helfen uns, Ihnen ein besseres Erlebnis zu bieten, indem sie sich an Ihre Präferenzen erinnern und verstehen, wie Sie unsere Website nutzen."
+      },
+      "howWeUse": {
+        "title": "Wie wir Cookies verwenden",
+        "intro": "Wir verwenden Cookies für folgende Zwecke:",
+        "preference": "Präferenz-Cookies: Merken sich Ihre Einstellungen und Präferenzen, wie z. B. Sprache und Gebietsschema.",
+        "noTracking": "Wir verwenden keine Analyse- oder Werbe-Cookies.",
+        "storage": "Browserspeicher: Deine Anmeldesitzung und einige Einstellungen (z. B. Bewertungsentwürfe) liegen im lokalen Speicher deines Browsers, nicht in Cookies."
+      },
+      "managing": {
+        "title": "Cookies verwalten",
+        "intro": "Bei den meisten Webbrowsern können Sie Cookies über ihre Einstellungen steuern. Sie können wählen zwischen:",
+        "blockAll": "Blockieren Sie alle Cookies",
+        "acceptAll": "Akzeptieren Sie alle Cookies",
+        "beNotified": "Werden Sie benachrichtigt, wenn ein Cookie gesetzt wird",
+        "deleteExisting": "Bereits gesetzte Cookies löschen",
+        "note": "Bitte beachten Sie, dass das Blockieren bestimmter Cookies Ihr Erlebnis auf unserer Website beeinträchtigen kann."
+      },
+      "thirdParty": {
+        "title": "Cookies von Drittanbietern",
+        "intro": "Einige Cookies auf unserer Website werden von den von uns genutzten Drittanbieterdiensten gesetzt, darunter:",
+        "stripe": "Stripe (Zahlungen): Du wirst zur eigenen Bezahlseite von Stripe weitergeleitet, die ihre eigenen Cookies setzt",
+        "google": "Google (die Schaltfläche „Mit Google anmelden“ auf den Anmelde- und Registrierungsseiten)"
+      },
+      "contact": {
+        "title": "Kontaktieren Sie uns",
+        "message": "Wenn Sie Fragen zu unserer Verwendung von Cookies haben, wenden Sie sich bitte an uns",
+        "contactLink": "Kontaktieren Sie uns"
+      }
+    }
+  },
+  "faqPage": {
+    "meta": {
+      "title": "Häufig gestellte Fragen – TopAICollection",
+      "description": "Finden Sie Antworten auf häufige Fragen zu TopAICollection und zur Verwendung unseres KI-Tools-Verzeichnisses."
+    },
+    "badge": "Hilfecenter",
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Finden Sie Antworten auf häufig gestellte Fragen zu TopAICollection",
+    "categories": {
+      "general": "Allgemeine Fragen",
+      "tools": "Über KI-Tools",
+      "submission": "Tool-Einreichung",
+      "account": "Konto und Abrechnung"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "Was ist TopAICollection?",
+          "answer": "TopAICollection ist ein umfassendes Verzeichnis von KI-Tools und Websites. Wir helfen Benutzern dabei, die besten KI-Lösungen für ihre Anforderungen zu finden, von Produktivitätstools bis hin zu kreativen Anwendungen."
+        },
+        "1": {
+          "question": "Wie finde ich das richtige KI-Tool?",
+          "answer": "Sie können nach Kategorien stöbern, unsere Suchfunktion verwenden oder unsere Rubriken „Featured“ und „Trends“ durchsehen. Jedes Tool enthält detaillierte Beschreibungen, Benutzerrezensionen und Bewertungen, die Ihnen helfen, eine fundierte Entscheidung zu treffen."
+        },
+        "2": {
+          "question": "Ist die Nutzung von TopAICollection kostenlos?",
+          "answer": "Ja! Das Durchsuchen und Durchsuchen unseres Verzeichnisses ist völlig kostenlos. Für einige der aufgeführten Tools gelten möglicherweise eigene Preise, die auf der jeweiligen Tool-Seite deutlich angegeben sind."
+        }
+      },
+      "tools": {
+        "0": {
+          "question": "Wie werden die Tools für das Verzeichnis ausgewählt?",
+          "answer": "Wir prüfen jede Einreichung sorgfältig, um die Qualität sicherzustellen. Werkzeuge müssen funktionsfähig sein, den Benutzern einen Mehrwert bieten und unseren Richtlinien entsprechen. Wir berücksichtigen auch Benutzerfeedback und Bewertungen."
+        },
+        "1": {
+          "question": "Welche Informationen werden für jedes Tool bereitgestellt?",
+          "answer": "Jede Tool-Liste enthält eine Beschreibung, wichtige Funktionen, Preisinformationen, Benutzerbewertungen, Verkehrsanalysen, Kategorien und direkte Links zur Website des Tools."
+        },
+        "2": {
+          "question": "Wie oft wird das Verzeichnis aktualisiert?",
+          "answer": "Unser Verzeichnis wird täglich mit neuen Tools und Informationen aktualisiert. Wir überwachen die aufgeführten Tools kontinuierlich, um ihre Richtigkeit sicherzustellen, und entfernen alle nicht mehr verfügbaren Tools."
+        }
+      },
+      "submission": {
+        "0": {
+          "question": "Wie kann ich mein KI-Tool einreichen?",
+          "answer": "Öffne die Seite „Einreichen“, gib Name und Website deines Tools ein, wähle, ob wir den Eintrag schreiben oder du, und schließe die einmalige Zahlung ab. Dein Tool wird innerhalb von 48 Stunden veröffentlicht."
+        },
+        "1": {
+          "question": "Was sind die Voraussetzungen für die Werkzeugeinreichung?",
+          "answer": "Ihr Tool muss funktionsfähig sein, den Benutzern einen klaren Mehrwert bieten, über eine professionelle Website verfügen und den gesetzlichen Anforderungen entsprechen. Wir akzeptieren keine Tools, die illegale Aktivitäten fördern oder die Privatsphäre der Benutzer verletzen."
+        },
+        "2": {
+          "question": "Wie viel kostet es, ein Werkzeug aufzulisten?",
+          "answer": "Eine Einreichung kostet einmalig 99 US-Dollar, der Eintrag bleibt dauerhaft. Unser Team nimmt außerdem selbst entdeckte Tools kostenlos für deren Hersteller auf. Werbung und Gastbeiträge sind optionale kostenpflichtige Extras."
+        }
+      },
+      "account": {
+        "0": {
+          "question": "Benötige ich ein Konto, um TopAICollection nutzen zu können?",
+          "answer": "Zum Durchsuchen des Verzeichnisses brauchst du kein Konto. Mit einem Konto kannst du Bewertungen schreiben, eingereichte Tools und GPTs verwalten, Werbung schalten sowie Website Insights und Social Listening nutzen."
+        },
+        "1": {
+          "question": "Wie bewerbe ich mein Tool?",
+          "answer": "Gehe zu „Werbung“ (oder Dashboard → Advertise AI) und kaufe ein Klickpaket, Standard oder Featured. Dein Tool erscheint dann auf gesponserten Plätzen, bis die Klicks aufgebraucht sind."
+        },
+        "2": {
+          "question": "Kann ich mein Abo jederzeit kündigen?",
+          "answer": "Ja. Research-Plan-Abos lassen sich jederzeit unter Dashboard → Zahlung & Rechnung kündigen; der Zugang bleibt bis zum Ende des bezahlten Zeitraums. Klickpakete und Einreichungen sind Einmalkäufe."
+        }
+      }
+    },
+    "cta": {
+      "title": "Sie haben noch Fragen?",
+      "subtitle": "Unser Support-Team ist für Sie da",
+      "button": "Kontaktieren Sie den Support"
+    }
+  },
+  "helpPage": {
+    "meta": {
+      "title": "Hilfecenter – TopAICollection-Support",
+      "description": "Holen Sie sich Hilfe zu TopAICollection. Finden Sie Antworten auf häufig gestellte Fragen und kontaktieren Sie unser Support-Team."
+    },
+    "title": "Hilfecenter",
+    "subtitle": "Wie können wir Ihnen heute helfen?",
+    "sections": {
+      "faq": {
+        "title": "„FAQ“",
+        "description": "Finden Sie Antworten auf häufig gestellte Fragen.",
+        "link": "FAQ anzeigen"
+      },
+      "contact": {
+        "title": "Kontaktieren Sie den Support",
+        "description": "Sie können nicht finden, was Sie brauchen? Kontaktieren Sie uns.",
+        "link": "Kontaktieren Sie uns"
+      }
+    },
+    "commonTopics": {
+      "title": "Häufige Themen",
+      "submitTool": "Wie reiche ich mein KI-Tool ein?",
+      "advertising": "Wie funktioniert Werbung?",
+      "privacy": "Wie lauten Ihre Datenschutzbestimmungen?",
+      "terms": "Wie lauten Ihre Nutzungsbedingungen?"
+    }
+  },
+  "pricingPage": {
+    "meta": {
+      "title": "Preispläne - TopAICollection",
+      "description": "Einfache, transparente Preisgestaltung für KI-Forschung und Social Listening."
+    },
+    "title": "Einfache, transparente Preise",
+    "subtitle": "Kostenlos starten und mit dem Wachstum skalieren. Keine Überraschungen.",
+    "freeDesc": "Teste Website Insights und Social Listening mit monatlichen Limits.",
+    "freePrice": "Kostenlos",
+    "getStarted": "Loslegen",
+    "otherTitle": "Weitere Leistungen",
+    "otherSubtitle": "Einmalkäufe für Tool-Anbieter"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Kontaktieren Sie uns – TopAICollection",
+      "description": "Nehmen Sie Kontakt mit dem TopAICollection-Team auf. Wir helfen Ihnen gerne bei allen Fragen zu KI-Tools weiter."
+    },
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Haben Sie eine Frage oder Feedback? Wir würden uns freuen, von Ihnen zu hören. Unser Team antwortet in der Regel innerhalb von 24 Stunden.",
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "fields": {
+        "name": {
+          "label": "Ihr Name",
+          "placeholder": "Erika Mustermann"
+        },
+        "email": {
+          "label": "E-Mail-Adresse",
+          "placeholder": "you{'@'}example.com"
+        },
+        "subject": {
+          "label": "Thema",
+          "placeholder": "Wählen Sie ein Thema aus",
+          "options": {
+            "general": "Allgemeine Anfrage",
+            "support": "Technische Unterstützung",
+            "feedback": "Rückmeldung",
+            "partnership": "Möglichkeit einer Partnerschaft",
+            "other": "Andere"
+          }
+        },
+        "message": {
+          "label": "Nachricht",
+          "placeholder": "Sagen Sie uns, was Sie denken..."
+        }
+      },
+      "submit": "Nachricht senden",
+      "submitting": "Senden...",
+      "success": {
+        "title": "Nachricht erfolgreich gesendet!",
+        "description": "Wir haben Ihre Nachricht erhalten und werden uns bald bei Ihnen melden."
+      },
+      "error": {
+        "title": "Nachricht konnte nicht gesendet werden",
+        "description": "Etwas ist schief gelaufen. Bitte versuchen Sie es später noch einmal."
+      },
+      "signedInAs": "Antworten gehen an {email}.",
+      "errName": "Bitte gib deinen Namen ein.",
+      "errEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "errMessage": "Deine Nachricht muss zwischen 10 und 5000 Zeichen lang sein.",
+      "errRateLimit": "Du hast kürzlich mehrere Nachrichten gesendet. Bitte versuche es später erneut.",
+      "trackHint": "Die Antwort findest du unter Dashboard → Meine Anfragen.",
+      "sendAnother": "Weitere Nachricht senden",
+      "emailUs": "Schreib uns"
+    },
+    "info": {
+      "title": "Nehmen Sie Kontakt auf",
+      "email": {
+        "title": "Schicken Sie uns eine E-Mail"
+      },
+      "support": {
+        "title": "Support-Stunden",
+        "content": "Unser Support-Team ist von Montag bis Freitag für Sie da"
+      },
+      "hours": {
+        "title": "Geschäftszeiten",
+        "content": "9:00 - 18:00 Uhr EST"
+      },
+      "location": {
+        "title": "Standort",
+        "content": "Betreuung von Benutzern weltweit durch unser verteiltes Team"
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Wie reiche ich mein KI-Tool ein?",
+      "a1": "Klicken Sie in der Navigation auf die Schaltfläche „Tool senden“ und füllen Sie das Einreichungsformular aus.",
+      "q2": "Wie lange dauert die Genehmigung?",
+      "a2": "Bezahlte Einreichungen werden innerhalb von 48 Stunden veröffentlicht.",
+      "q3": "Kann ich meine Werkzeugliste aktualisieren?",
+      "a3": "Ja, melden Sie sich bei Ihrem Dashboard an und nutzen Sie die Funktion „KI aktualisieren“."
+    }
+  },
+  "legalPage": {
+    "englishOnly": "Dieses Dokument ist auf Englisch verfügbar.",
+    "editorial": {
+      "title": "Redaktionelle Richtlinien",
+      "description": "Wie TopAICollection KI-Tools findet, bewertet, kategorisiert und pflegt."
+    },
+    "reviewMethodology": {
+      "title": "Bewertungsmethodik",
+      "description": "Wie TopAICollection KI-Tools bewertet und einstuft und wie Nutzerbewertungen moderiert werden."
+    },
+    "termsDescription": "Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung der Dienste und der Website von TopAICollection.",
+    "privacyDescription": "Erfahren Sie, wie TopAICollection Ihre persönlichen Daten sammelt, verwendet und schützt."
+  },
+  "myInquiries": {
+    "title": "Meine Anfragen",
+    "subtitle": "Nachrichten, die du über die Kontaktseite gesendet hast, und unsere Antworten.",
+    "newMessage": "Neue Nachricht",
+    "empty": "Du hast noch keine Nachrichten gesendet.",
+    "reply": "Unsere Antwort",
+    "statuses": {
+      "NEW": "Eingegangen",
+      "REPLIED": "Beantwortet",
+      "CLOSED": "Geschlossen"
+    }
+  },
+  "adminContact": {
+    "title": "Kontaktnachrichten",
+    "newBadge": "{n} neu",
+    "total": "{n} Nachrichten",
+    "statusAll": "Alle Status",
+    "searchPlaceholder": "Name, E-Mail oder Nachricht suchen…",
+    "colSender": "Absender",
+    "colMessage": "Nachricht",
+    "colStatus": "Status",
+    "colReply": "Antwort",
+    "guest": "Gast",
+    "replyPlaceholder": "Antwort schreiben – sie wird dem Absender per E-Mail geschickt und in seinen Anfragen angezeigt…",
+    "sendReply": "Antwort senden",
+    "repliedAt": "Beantwortet {date}",
+    "replyEmailFailed": "Antwort gespeichert, aber die E-Mail konnte nicht gesendet werden.",
+    "delete": "Löschen",
+    "deleteConfirm": "Diese Nachricht löschen?",
+    "empty": "Keine Nachrichten."
   }
 }

@@ -382,7 +382,9 @@
       "reasonPlaceholder": "Alasan penolakan — ditampilkan ke pemilik",
       "hint": "Menerapkan akan menulis perubahan ke listing yang tayang dan menerjemahkannya ulang. Menolak akan mengembalikan pembayaran melalui Stripe."
     },
-    "managePlan": "Kelola paket"
+    "managePlan": "Kelola paket",
+    "myInquiries": "Pertanyaan saya",
+    "contactMessages": "Pesan kontak"
   },
   "hero": {
     "titlePrefix": "Temukan",
@@ -865,7 +867,13 @@
     "terms": "Ketentuan Layanan",
     "privacy": "Kebijakan Privasi",
     "advertise": "Beriklan",
-    "contact": "Kontak"
+    "contact": "Kontak",
+    "faq": "FAQ",
+    "help": "Pusat Bantuan",
+    "pricing": "Harga",
+    "cookies": "Kebijakan Cookie",
+    "editorialGuidelines": "Pedoman Editorial",
+    "reviewMethodology": "Metodologi Ulasan"
   },
   "language": {
     "label": "Bahasa"
@@ -1646,5 +1654,336 @@
     "currentPasswordWrong": "Kata sandi saat ini salah.",
     "signsOutOthers": "Menyimpan kata sandi baru akan mengeluarkan Anda dari semua perangkat lain.",
     "menu": "Opsi akun"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "Tentang Kami - TopAICollection",
+      "description": "Pelajari misi TopAICollection untuk membantu Anda menemukan alat AI dan situs web terbaik untuk kebutuhan Anda."
+    },
+    "badge": "Tentang Kami",
+    "hero": {
+      "title": "Gerbang Anda menuju Revolusi AI",
+      "subtitle": "Misi kami adalah mendemokratisasikan akses terhadap alat AI dan membantu semua orang memanfaatkan kekuatan kecerdasan buatan."
+    },
+    "stats": {
+      "tools": "Alat AI",
+      "categories": "Kategori",
+      "languages": "Bahasa"
+    },
+    "mission": {
+      "title": "Misi kami",
+      "paragraph1": "Di TopAICollection, kami percaya bahwa AI harus dapat diakses oleh semua orang. Platform kami berfungsi sebagai direktori komprehensif berisi alat dan situs AI terbaik, sehingga memudahkan pengguna menemukan dan memanfaatkan kecerdasan buatan dalam pekerjaan dan kehidupan sehari-hari.",
+      "paragraph2": "Kami dengan cermat menyusun dan meninjau setiap alat dalam koleksi kami, memastikan bahwa pengguna kami hanya memiliki akses ke solusi AI dengan kualitas terbaik. Tim ahli kami mengevaluasi alat berdasarkan fungsionalitas, pengalaman pengguna, harga, dan aplikasi di dunia nyata.",
+      "paragraph3": "Baik Anda seorang pengembang, desainer, pemasar, pendidik, atau pemilik bisnis, TopAICollection membantu Anda menemukan alat AI yang sempurna untuk meningkatkan produktivitas dan kreativitas Anda."
+    },
+    "features": {
+      "title": "Mengapa Memilih TopAICollection",
+      "global": {
+        "title": "Jangkauan Global",
+        "description": "Tersedia dalam 10 bahasa untuk pengguna di seluruh dunia"
+      },
+      "updated": {
+        "title": "Pembaruan Harian",
+        "description": "Koleksi kami diperbarui setiap hari dengan inovasi AI terbaru"
+      },
+      "community": {
+        "title": "Berbasis Komunitas",
+        "description": "Ulasan dan penilaian pengguna membantu Anda membuat keputusan yang tepat"
+      },
+      "verified": {
+        "title": "Alat Terverifikasi",
+        "description": "Setiap alat ditinjau dan diverifikasi dengan cermat oleh tim kami"
+      }
+    },
+    "cta": {
+      "title": "Mulailah Perjalanan AI Anda Sekarang",
+      "subtitle": "Jelajahi koleksi alat AI kami atau kirimkan milik Anda",
+      "browse": "Telusuri Alat",
+      "submit": "Kirimkan Alat Anda"
+    }
+  },
+  "cookiesPage": {
+    "meta": {
+      "title": "Kebijakan Cookie - TopAICollection",
+      "description": "Pelajari tentang bagaimana TopAICollection menggunakan cookie dan teknologi serupa."
+    },
+    "title": "Kebijakan Cookie",
+    "lastUpdated": "Terakhir diperbarui",
+    "sections": {
+      "whatAreCookies": {
+        "title": "Apa Itu Cookie",
+        "description": "Cookies adalah file teks kecil yang disimpan di komputer atau perangkat seluler Anda saat Anda mengunjungi situs web kami. Mereka membantu kami memberi Anda pengalaman yang lebih baik dengan mengingat preferensi Anda dan memahami cara Anda menggunakan situs kami."
+      },
+      "howWeUse": {
+        "title": "Bagaimana Kami Menggunakan Cookie",
+        "intro": "Kami menggunakan cookie untuk tujuan berikut:",
+        "preference": "Cookie Preferensi: Ingat pengaturan dan preferensi Anda, seperti bahasa dan lokal.",
+        "noTracking": "Kami tidak menggunakan cookie analitik atau iklan.",
+        "storage": "Penyimpanan browser: sesi masuk dan beberapa preferensi (seperti draf ulasan) disimpan di local storage browser, bukan di cookie."
+      },
+      "managing": {
+        "title": "Mengelola Cookie",
+        "intro": "Sebagian besar browser web mengizinkan Anda mengontrol cookie melalui pengaturannya. Anda dapat memilih untuk:",
+        "blockAll": "Blokir semua cookie",
+        "acceptAll": "Terima semua cookie",
+        "beNotified": "Diberitahu ketika cookie disetel",
+        "deleteExisting": "Hapus cookie yang sudah disetel",
+        "note": "Harap diperhatikan bahwa memblokir cookie tertentu dapat memengaruhi pengalaman Anda di situs web kami."
+      },
+      "thirdParty": {
+        "title": "Cookie Pihak Ketiga",
+        "intro": "Beberapa cookie di situs kami disetel oleh layanan pihak ketiga yang kami gunakan, termasuk:",
+        "stripe": "Stripe (pembayaran): Anda diarahkan ke halaman checkout milik Stripe, yang memasang cookie-nya sendiri",
+        "google": "Google (tombol Masuk dengan Google di halaman masuk dan daftar)"
+      },
+      "contact": {
+        "title": "Hubungi kami",
+        "message": "Jika Anda memiliki pertanyaan tentang penggunaan cookie kami, silakan",
+        "contactLink": "Hubungi kami"
+      }
+    }
+  },
+  "faqPage": {
+    "meta": {
+      "title": "Pertanyaan yang Sering Diajukan - TopAICollection",
+      "description": "Temukan jawaban atas pertanyaan umum tentang TopAICollection dan cara menggunakan direktori alat AI kami."
+    },
+    "badge": "Pusat Bantuan",
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Temukan jawaban atas pertanyaan umum tentang TopAICollection",
+    "categories": {
+      "general": "Pertanyaan Umum",
+      "tools": "Tentang Alat AI",
+      "submission": "Penyerahan Alat",
+      "account": "Akun & Penagihan"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "Apa itu TopAICollection?",
+          "answer": "TopAICollection adalah direktori lengkap alat dan situs AI. Kami membantu pengguna menemukan solusi AI terbaik untuk kebutuhan mereka, mulai dari alat produktivitas hingga aplikasi kreatif."
+        },
+        "1": {
+          "question": "Bagaimana cara menemukan alat AI yang tepat?",
+          "answer": "Anda dapat menelusuri berdasarkan kategori, menggunakan fungsi pencarian kami, atau memeriksa bagian unggulan dan tren kami. Setiap alat mencakup deskripsi terperinci, ulasan pengguna, dan penilaian untuk membantu Anda membuat keputusan yang tepat."
+        },
+        "2": {
+          "question": "Apakah TopAICollection gratis untuk digunakan?",
+          "answer": "Ya! Menjelajah dan mencari direktori kami sepenuhnya gratis. Beberapa alat yang terdaftar mungkin memiliki harganya sendiri, yang ditunjukkan dengan jelas di halaman masing-masing alat."
+        }
+      },
+      "tools": {
+        "0": {
+          "question": "Bagaimana alat dipilih untuk direktori?",
+          "answer": "Kami dengan cermat meninjau setiap kiriman untuk memastikan kualitas. Alat harus berfungsi, memberikan nilai kepada pengguna, dan mematuhi pedoman kami. Kami juga mempertimbangkan masukan dan penilaian pengguna."
+        },
+        "1": {
+          "question": "Informasi apa yang disediakan untuk setiap alat?",
+          "answer": "Setiap daftar alat mencakup deskripsi, fitur utama, informasi harga, ulasan pengguna, analisis lalu lintas, kategori, dan tautan langsung ke situs web alat tersebut."
+        },
+        "2": {
+          "question": "Seberapa sering direktori diperbarui?",
+          "answer": "Direktori kami diperbarui setiap hari dengan alat dan informasi baru. Kami terus memantau alat yang terdaftar untuk memastikan keakuratan dan menghapus alat yang tidak lagi tersedia."
+        }
+      },
+      "submission": {
+        "0": {
+          "question": "Bagaimana cara mengirimkan alat AI saya?",
+          "answer": "Buka halaman Kirim, masukkan nama dan situs web alat Anda, pilih apakah kami yang menulis listing atau Anda sendiri, lalu selesaikan pembayaran satu kali. Alat Anda akan tayang dalam 48 jam."
+        },
+        "1": {
+          "question": "Apa saja persyaratan penyerahan alat?",
+          "answer": "Alat Anda harus berfungsi, memberikan nilai yang jelas kepada pengguna, memiliki situs web profesional, dan mematuhi persyaratan hukum. Kami tidak menerima alat yang mendorong aktivitas ilegal atau melanggar privasi pengguna."
+        },
+        "2": {
+          "question": "Berapa biaya untuk membuat daftar alat?",
+          "answer": "Pengiriman dikenai biaya satu kali sebesar 99 USD dan listing berlaku permanen. Tim kami juga menambahkan alat yang kami temukan sendiri tanpa biaya bagi pembuatnya. Iklan dan guest post adalah tambahan berbayar opsional."
+        }
+      },
+      "account": {
+        "0": {
+          "question": "Apakah saya memerlukan akun untuk menggunakan TopAICollection?",
+          "answer": "Tidak perlu akun untuk menjelajah dan mencari di direktori. Dengan akun, Anda dapat menulis ulasan, mengelola alat dan GPT yang dikirim, beriklan, serta memakai Website Insights dan Social Listening."
+        },
+        "1": {
+          "question": "Bagaimana cara mempromosikan alat saya?",
+          "answer": "Buka halaman Iklan (atau Dasbor → Advertise AI) dan beli paket klik, Standard atau Featured. Alat Anda akan tampil di slot sponsor sampai klik habis."
+        },
+        "2": {
+          "question": "Bisakah saya membatalkan langganan kapan saja?",
+          "answer": "Bisa. Langganan Research Plan dapat dibatalkan kapan saja di Dasbor → Pembayaran & Faktur; akses tetap berlaku hingga akhir periode yang dibayar. Paket klik dan pengiriman alat adalah pembelian satu kali."
+        }
+      }
+    },
+    "cta": {
+      "title": "Masih ada pertanyaan?",
+      "subtitle": "Tim dukungan kami siap membantu",
+      "button": "Hubungi Dukungan"
+    }
+  },
+  "helpPage": {
+    "meta": {
+      "title": "Pusat Bantuan - Dukungan TopAICollection",
+      "description": "Dapatkan bantuan dengan TopAICollection. Temukan jawaban atas pertanyaan umum dan hubungi tim dukungan kami."
+    },
+    "title": "Pusat Bantuan",
+    "subtitle": "Apa yang bisa kami bantu hari ini?",
+    "sections": {
+      "faq": {
+        "title": "Pertanyaan Umum",
+        "description": "Temukan jawaban atas pertanyaan yang sering diajukan.",
+        "link": "Lihat FAQ"
+      },
+      "contact": {
+        "title": "Hubungi Dukungan",
+        "description": "Tidak dapat menemukan apa yang Anda butuhkan? Hubungi kami.",
+        "link": "Hubungi kami"
+      }
+    },
+    "commonTopics": {
+      "title": "Topik Umum",
+      "submitTool": "Bagaimana cara mengirimkan alat AI saya?",
+      "advertising": "Bagaimana cara kerja periklanan?",
+      "privacy": "Apa kebijakan privasi Anda?",
+      "terms": "Apa persyaratan layanan Anda?"
+    }
+  },
+  "pricingPage": {
+    "meta": {
+      "title": "Paket Harga - TopAICollection",
+      "description": "Harga sederhana dan transparan untuk riset AI dan pemantauan media sosial."
+    },
+    "title": "Harga Sederhana & Transparan",
+    "subtitle": "Mulai gratis dan kembangkan seiring pertumbuhan Anda. Tanpa kejutan.",
+    "freeDesc": "Coba Website Insights dan Social Listening dengan batas bulanan.",
+    "freePrice": "Gratis",
+    "getStarted": "Mulai",
+    "otherTitle": "Layanan lain",
+    "otherSubtitle": "Pembelian satu kali untuk pembuat alat"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Hubungi Kami - TopAICollection",
+      "description": "Hubungi tim TopAICollection. Kami siap membantu menjawab pertanyaan apa pun tentang alat AI."
+    },
+    "title": "Hubungi kami",
+    "subtitle": "Punya pertanyaan atau masukan? Kami ingin mendengar pendapat Anda. Tim kami biasanya merespons dalam waktu 24 jam.",
+    "form": {
+      "title": "Kirimkan pesan kepada kami",
+      "fields": {
+        "name": {
+          "label": "Nama Anda",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "Alamat Surel",
+          "placeholder": "you{'@'}example.com"
+        },
+        "subject": {
+          "label": "Subjek",
+          "placeholder": "Pilih subjek",
+          "options": {
+            "general": "Pertanyaan Umum",
+            "support": "Dukungan Teknis",
+            "feedback": "Masukan",
+            "partnership": "Peluang Kemitraan",
+            "other": "Lainnya"
+          }
+        },
+        "message": {
+          "label": "Pesan",
+          "placeholder": "Beritahu kami apa yang ada dalam pikiran Anda..."
+        }
+      },
+      "submit": "Kirim Pesan",
+      "submitting": "Mengirim...",
+      "success": {
+        "title": "Pesan berhasil terkirim!",
+        "description": "Kami telah menerima pesan Anda dan akan segera menghubungi Anda kembali."
+      },
+      "error": {
+        "title": "Gagal mengirim pesan",
+        "description": "Ada yang tidak beres. Silakan coba lagi nanti."
+      },
+      "signedInAs": "Balasan akan dikirim ke {email}.",
+      "errName": "Masukkan nama Anda.",
+      "errEmail": "Masukkan alamat email yang valid.",
+      "errMessage": "Pesan harus terdiri dari 10 hingga 5000 karakter.",
+      "errRateLimit": "Anda baru saja mengirim beberapa pesan. Silakan coba lagi nanti.",
+      "trackHint": "Anda dapat memantau balasan di Dasbor → Pertanyaan saya.",
+      "sendAnother": "Kirim pesan lain",
+      "emailUs": "Kirim email"
+    },
+    "info": {
+      "title": "Hubungi kami",
+      "email": {
+        "title": "Email Kami"
+      },
+      "support": {
+        "title": "Jam Dukungan",
+        "content": "Tim dukungan kami tersedia Senin hingga Jumat"
+      },
+      "hours": {
+        "title": "Jam Kerja",
+        "content": "09.00 - 18.00 EST"
+      },
+      "location": {
+        "title": "Lokasi",
+        "content": "Melayani pengguna secara global dari tim terdistribusi kami"
+      }
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "q1": "Bagaimana cara mengirimkan alat AI saya?",
+      "a1": "Klik tombol Kirim Alat di navigasi dan isi formulir pengiriman.",
+      "q2": "Berapa lama waktu yang dibutuhkan untuk persetujuan?",
+      "a2": "Pengiriman berbayar tayang dalam 48 jam.",
+      "q3": "Bisakah saya memperbarui daftar alat saya?",
+      "a3": "Ya, masuk ke dashboard Anda dan gunakan fitur Update AI."
+    }
+  },
+  "legalPage": {
+    "englishOnly": "Dokumen ini tersedia dalam bahasa Inggris.",
+    "editorial": {
+      "title": "Pedoman Editorial",
+      "description": "Cara TopAICollection menemukan, menilai, mengategorikan, dan memelihara alat AI yang dicantumkan."
+    },
+    "reviewMethodology": {
+      "title": "Metodologi Ulasan",
+      "description": "Cara TopAICollection menilai dan memberi skor alat AI serta memoderasi ulasan pengguna."
+    },
+    "termsDescription": "Baca syarat dan ketentuan penggunaan layanan dan website TopAICollection.",
+    "privacyDescription": "Pelajari bagaimana TopAICollection mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda."
+  },
+  "myInquiries": {
+    "title": "Pertanyaan saya",
+    "subtitle": "Pesan yang Anda kirim melalui halaman Kontak dan balasan kami.",
+    "newMessage": "Pesan baru",
+    "empty": "Anda belum mengirim pesan.",
+    "reply": "Balasan kami",
+    "statuses": {
+      "NEW": "Diterima",
+      "REPLIED": "Dibalas",
+      "CLOSED": "Ditutup"
+    }
+  },
+  "adminContact": {
+    "title": "Pesan kontak",
+    "newBadge": "{n} baru",
+    "total": "{n} pesan",
+    "statusAll": "Semua status",
+    "searchPlaceholder": "Cari nama, email, atau pesan…",
+    "colSender": "Pengirim",
+    "colMessage": "Pesan",
+    "colStatus": "Status",
+    "colReply": "Balasan",
+    "guest": "Tamu",
+    "replyPlaceholder": "Tulis balasan — dikirim lewat email ke pengirim dan ditampilkan di daftar pertanyaannya…",
+    "sendReply": "Kirim balasan",
+    "repliedAt": "Dibalas {date}",
+    "replyEmailFailed": "Balasan disimpan, tetapi email tidak dapat dikirim.",
+    "delete": "Hapus",
+    "deleteConfirm": "Hapus pesan ini?",
+    "empty": "Tidak ada pesan."
   }
 }

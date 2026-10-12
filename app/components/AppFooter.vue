@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Category } from '~/types'
+import { SUPPORT_EMAIL, SOCIAL_LINKS } from '#shared/site'
 
 const { t, locale, locales, setLocale } = useI18n()
 
@@ -23,7 +24,17 @@ const moreToolsLinks = computed(() =>
     .map(cat => ({ label: t('footer.categoryTools', { name: cat.name }), to: `/category/${cat.slug}` }))
 )
 
-const aboutLinks = ['aboutUs', 'terms', 'privacy', 'advertise']
+const aboutLinks = [
+  { key: 'aboutUs', to: '/about' },
+  { key: 'pricing', to: '/pricing' },
+  { key: 'faq', to: '/faq' },
+  { key: 'help', to: '/help' },
+  { key: 'editorialGuidelines', to: '/editorial-guidelines' },
+  { key: 'reviewMethodology', to: '/review-methodology' },
+  { key: 'terms', to: '/terms' },
+  { key: 'privacy', to: '/privacy' },
+  { key: 'cookies', to: '/cookies' }
+]
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 // Last 9 days before today, in UTC so server and client render the same dates
 // and they match the /archive/[date] filter on addedOn.
@@ -66,18 +77,30 @@ const archiveDates = Array.from({ length: 9 }, (_, i) => {
       <div>
         <div class="eyebrow-strong">{{ t('footer.about') }}</div>
         <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px]">
-          <NuxtLink to="/submit" class="text-ink-800 hover:text-brand-500">{{ t('footer.submit') }}</NuxtLink>
-          <a v-for="key in aboutLinks" :key="key" href="#" class="text-ink-800 hover:text-brand-500">{{ t(`footer.${key}`) }}</a>
+          <NuxtLink v-for="link in aboutLinks" :key="link.key" :to="link.to" class="text-ink-800 hover:text-brand-500">{{ t(`footer.${link.key}`) }}</NuxtLink>
         </div>
       </div>
 
       <div>
         <div class="eyebrow-strong">{{ t('footer.contact') }}</div>
-        <div class="pt-[18px] text-[13.5px]"><a href="mailto:hello@topaicollection.com" class="text-brand-500 hover:text-brand-600">hello@topaicollection.com</a></div>
+        <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px]">
+          <NuxtLink to="/contact" class="text-ink-800 hover:text-brand-500">{{ t('contactPage.title') }}</NuxtLink>
+          <a :href="`mailto:${SUPPORT_EMAIL}`" class="text-brand-500 hover:text-brand-600">{{ SUPPORT_EMAIL }}</a>
+        </div>
 
         <div class="flex gap-2 pt-4">
-          <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-[9px] border border-ink-200 text-[13px] font-bold text-ink-800 hover:border-brand-500 hover:text-brand-500">X</a>
-          <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-[9px] border border-ink-200 text-[13px] font-bold text-ink-800 hover:border-brand-500 hover:text-brand-500">in</a>
+          <a
+            v-for="s in SOCIAL_LINKS"
+            :key="s.name"
+            :href="s.url"
+            :title="s.name"
+            :aria-label="s.name"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex h-8 w-8 items-center justify-center rounded-[9px] border border-ink-200 text-ink-800 hover:border-brand-500 hover:text-brand-500"
+          >
+            <svg class="h-[15px] w-[15px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path :d="s.icon" /></svg>
+          </a>
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ const onUsersPage = computed(() => route.path.startsWith('/admin/users'))
 const onReviewsPage = computed(() => route.path.startsWith('/admin/reviews'))
 // /admin/feedback is taken by the redirect for the old user Feedback URL (nuxt.config.ts).
 const onFeedbackPage = computed(() => route.path.startsWith('/admin/user-feedback'))
+const onContactPage = computed(() => route.path.startsWith('/admin/contact-messages'))
 const onAdsPage = computed(() => route.path.startsWith('/admin/ads'))
 const onPostsPage = computed(() => route.path.startsWith('/admin/posts') || route.path.startsWith('/admin/articles'))
 const onGptsPage = computed(() => route.path.startsWith('/admin/gpts'))
@@ -57,7 +58,10 @@ onMounted(async () => {
 const otherItems = computed(() => [
   { label: t('admin.paymentInvoice'), to: '/dashboard/payment-invoice', icon: 'M7 3h10a1 1 0 0 1 1 1v17l-3-2-2 2-2-2-2 2-3-2V4a1 1 0 0 1 1-1Zm2 5h6m-6 4h6m-6 4h3' },
   // Admins read everyone's feedback under the admin "Feedback" link instead.
-  ...(isAdmin.value ? [] : [{ label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' }])
+  ...(isAdmin.value ? [] : [
+    { label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' },
+    { label: t('admin.myInquiries'), to: '/dashboard/my-inquiries', icon: 'M4 6h16v12H4V6Zm0 0 8 7 8-7' }
+  ])
 ])
 
 // The customer's own purchases. Admins manage all of them above instead (Tool Management,
@@ -125,6 +129,17 @@ const businessItems = computed(() => (isAdmin.value ? [] : [
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6" />
       </svg>
       {{ t('adminFeedback.title') }}
+    </NuxtLink>
+
+    <NuxtLink
+      v-if="isAdmin"
+      to="/admin/contact-messages"
+      :class="['-mt-5 flex items-center gap-2.5 rounded-lg px-3 py-2 text-base font-bold', onContactPage ? 'bg-brand-50 text-brand-600' : 'text-ink-700 hover:bg-ink-100/60']"
+    >
+      <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4V6Zm0 0 8 7 8-7" />
+      </svg>
+      {{ t('admin.contactMessages') }}
     </NuxtLink>
 
     <NuxtLink

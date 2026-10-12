@@ -76,7 +76,10 @@ onMounted(() => {
 onBeforeUnmount(() => observer?.disconnect())
 
 useSeoMeta({
-  title: () => `${t('alphabet.title')} ${letter.value} — TopAICollection`
+  title: () => `${t('alphabet.title')} ${letter.value} — TopAICollection`,
+  description: () => `AI tools starting with ${letter.value}: browse the TopAICollection directory alphabetically.`,
+  ogTitle: () => `${t('alphabet.title')} ${letter.value} — TopAICollection`,
+  ogDescription: () => `AI tools starting with ${letter.value}: browse the TopAICollection directory alphabetically.`
 })
 </script>
 

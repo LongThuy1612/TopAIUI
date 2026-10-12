@@ -65,9 +65,17 @@ const pageCount = computed(() => {
   return mounted.value && token.value ? all : Math.min(all, Math.ceil(PUBLIC_LIMITS.guestListTools / 24))
 })
 
+const seoTitle = computed(() => isAll.value ? 'All AI Tools — TopAICollection' : `${activeCategory.value?.name ?? slug.value} AI Tools — TopAICollection`)
+const seoDescription = computed(() => isAll.value
+  ? 'Browse every AI tool in the TopAICollection directory. Filter by pricing, sort by popularity or rating, and find the right AI for your work.'
+  : `The best ${activeCategory.value?.name ?? slug.value} AI tools: compare features, pricing, ratings and reviews on TopAICollection.`)
 useSeoMeta({
-  title: () => isAll.value ? 'All AI Tools — TopAICollection' : `${activeCategory.value?.name ?? slug.value} AI Tools — TopAICollection`
+  title: seoTitle,
+  description: seoDescription,
+  ogTitle: seoTitle,
+  ogDescription: seoDescription
 })
+useBreadcrumbLd(() => [[isAll.value ? 'All AI Tools' : (activeCategory.value?.name ?? slug.value), `/category/${slug.value}`]])
 </script>
 
 <template>

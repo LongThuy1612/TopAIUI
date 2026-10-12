@@ -382,7 +382,9 @@
       "reasonPlaceholder": "Motif du refus — affiché au propriétaire",
       "hint": "Appliquer écrit les modifications dans la fiche en ligne et la retraduit. Refuser rembourse le paiement via Stripe."
     },
-    "managePlan": "Gérer le forfait"
+    "managePlan": "Gérer le forfait",
+    "myInquiries": "Mes demandes",
+    "contactMessages": "Messages de contact"
   },
   "hero": {
     "titlePrefix": "Découvrez les meilleurs",
@@ -865,7 +867,13 @@
     "terms": "Conditions d’utilisation",
     "privacy": "Politique de confidentialité",
     "advertise": "Publicité",
-    "contact": "Contact"
+    "contact": "Contact",
+    "faq": "FAQ",
+    "help": "Centre d’aide",
+    "pricing": "Tarifs",
+    "cookies": "Politique de cookies",
+    "editorialGuidelines": "Lignes directrices éditoriales",
+    "reviewMethodology": "Méthodologie d’évaluation"
   },
   "language": {
     "label": "Langue"
@@ -1646,5 +1654,336 @@
     "currentPasswordWrong": "Votre mot de passe actuel est incorrect.",
     "signsOutOthers": "Enregistrer un nouveau mot de passe vous déconnecte de tous vos autres appareils.",
     "menu": "Options du compte"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "À propos de nous - TopAICollection",
+      "description": "Découvrez la mission de TopAICollection : vous aider à découvrir les meilleurs outils et sites Web d'IA pour vos besoins."
+    },
+    "badge": "À propos de nous",
+    "hero": {
+      "title": "Votre passerelle vers la révolution de l'IA",
+      "subtitle": "Nous avons pour mission de démocratiser l'accès aux outils d'IA et d'aider chacun à exploiter la puissance de l'intelligence artificielle."
+    },
+    "stats": {
+      "tools": "Outils d'IA",
+      "categories": "Catégories",
+      "languages": "Langues"
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "paragraph1": "Chez TopAICollection, nous pensons que l'IA doit être accessible à tous. Notre plateforme sert de répertoire complet des meilleurs outils et sites Web d'IA, permettant aux utilisateurs de découvrir et d'exploiter facilement l'intelligence artificielle dans leur travail et leur vie quotidienne.",
+      "paragraph2": "Nous sélectionnons et examinons soigneusement chaque outil de notre collection, garantissant que nos utilisateurs n'ont accès qu'à des solutions d'IA de la plus haute qualité. Notre équipe d'experts évalue les outils en fonction de leurs fonctionnalités, de leur expérience utilisateur, de leur prix et de leurs applications réelles.",
+      "paragraph3": "Que vous soyez développeur, concepteur, spécialiste du marketing, éducateur ou propriétaire d'entreprise, TopAICollection vous aide à trouver les outils d'IA parfaits pour améliorer votre productivité et votre créativité."
+    },
+    "features": {
+      "title": "Pourquoi choisir TopAICollection",
+      "global": {
+        "title": "Portée mondiale",
+        "description": "Disponible en 10 langues pour des utilisateurs du monde entier"
+      },
+      "updated": {
+        "title": "Mises à jour quotidiennes",
+        "description": "Notre collection est mise à jour quotidiennement avec les dernières innovations en matière d'IA"
+      },
+      "community": {
+        "title": "Axé sur la communauté",
+        "description": "Les avis et évaluations des utilisateurs vous aident à prendre des décisions éclairées"
+      },
+      "verified": {
+        "title": "Outils vérifiés",
+        "description": "Chaque outil est soigneusement examiné et vérifié par notre équipe"
+      }
+    },
+    "cta": {
+      "title": "Commencez votre voyage vers l'IA dès aujourd'hui",
+      "subtitle": "Explorez notre collection d'outils d'IA ou soumettez la vôtre",
+      "browse": "Parcourir les outils",
+      "submit": "Soumettez votre outil"
+    }
+  },
+  "cookiesPage": {
+    "meta": {
+      "title": "Politique en matière de cookies - TopAICollection",
+      "description": "Découvrez comment TopAICollection utilise les cookies et les technologies similaires."
+    },
+    "title": "Politique en matière de cookies",
+    "lastUpdated": "Dernière mise à jour",
+    "sections": {
+      "whatAreCookies": {
+        "title": "Que sont les cookies",
+        "description": "Les cookies sont de petits fichiers texte stockés sur votre ordinateur ou appareil mobile lorsque vous visitez notre site Web. Ils nous aident à vous offrir une meilleure expérience en mémorisant vos préférences et en comprenant comment vous utilisez notre site."
+      },
+      "howWeUse": {
+        "title": "Comment nous utilisons les cookies",
+        "intro": "Nous utilisons des cookies aux fins suivantes :",
+        "preference": "Cookies de préférence : mémorisez vos paramètres et préférences, tels que la langue et les paramètres régionaux.",
+        "noTracking": "Nous n’utilisons pas de cookies d’analyse ni de publicité.",
+        "storage": "Stockage du navigateur : votre session de connexion et certaines préférences (comme les brouillons d’avis) sont conservées dans le stockage local du navigateur, pas dans des cookies."
+      },
+      "managing": {
+        "title": "Gestion des cookies",
+        "intro": "La plupart des navigateurs Web vous permettent de contrôler les cookies via leurs paramètres. Vous pouvez choisir de :",
+        "blockAll": "Bloquer tous les cookies",
+        "acceptAll": "Acceptez tous les cookies",
+        "beNotified": "Être averti lorsqu'un cookie est installé",
+        "deleteExisting": "Supprimer les cookies déjà installés",
+        "note": "Veuillez noter que le blocage de certains cookies peut avoir un impact sur votre expérience sur notre site Web."
+      },
+      "thirdParty": {
+        "title": "Cookies tiers",
+        "intro": "Certains cookies de notre site sont définis par des services tiers que nous utilisons, notamment :",
+        "stripe": "Stripe (paiements) : vous êtes redirigé vers la page de paiement de Stripe, qui dépose ses propres cookies",
+        "google": "Google (le bouton Se connecter avec Google sur les pages de connexion et d’inscription)"
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "message": "Si vous avez des questions sur notre utilisation des cookies, veuillez",
+        "contactLink": "Contactez-nous"
+      }
+    }
+  },
+  "faqPage": {
+    "meta": {
+      "title": "Foire aux questions - TopAICollection",
+      "description": "Trouvez des réponses aux questions courantes sur TopAICollection et comment utiliser notre répertoire d'outils d'IA."
+    },
+    "badge": "Centre d'aide",
+    "title": "Foire aux questions",
+    "subtitle": "Trouvez des réponses aux questions courantes sur TopAICollection",
+    "categories": {
+      "general": "Questions générales",
+      "tools": "À propos des outils d'IA",
+      "submission": "Soumission d'outils",
+      "account": "Compte et facturation"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "Qu'est-ce que TopAICollection ?",
+          "answer": "TopAICollection est un répertoire complet d'outils et de sites Web d'IA. Nous aidons les utilisateurs à découvrir les meilleures solutions d'IA adaptées à leurs besoins, des outils de productivité aux applications créatives."
+        },
+        "1": {
+          "question": "Comment trouver le bon outil d’IA ?",
+          "answer": "Vous pouvez parcourir par catégorie, utiliser notre fonction de recherche ou consulter nos sections en vedette et tendances. Chaque outil comprend des descriptions détaillées, des avis d'utilisateurs et des notes pour vous aider à prendre une décision éclairée."
+        },
+        "2": {
+          "question": "L'utilisation de TopAICollection est-elle gratuite ?",
+          "answer": "Oui! La navigation et la recherche dans notre annuaire sont entièrement gratuites. Certains outils répertoriés peuvent avoir leur propre prix, qui est clairement indiqué sur la page de chaque outil."
+        }
+      },
+      "tools": {
+        "0": {
+          "question": "Comment les outils sont-ils sélectionnés pour le répertoire ?",
+          "answer": "Nous examinons attentivement chaque soumission pour garantir la qualité. Les outils doivent être fonctionnels, apporter de la valeur aux utilisateurs et être conformes à nos directives. Nous prenons également en compte les commentaires et les évaluations des utilisateurs."
+        },
+        "1": {
+          "question": "Quelles informations sont fournies pour chaque outil ?",
+          "answer": "Chaque liste d'outils comprend une description, des fonctionnalités clés, des informations sur les prix, des avis d'utilisateurs, des analyses de trafic, des catégories et des liens directs vers le site Web de l'outil."
+        },
+        "2": {
+          "question": "À quelle fréquence l'annuaire est-il mis à jour ?",
+          "answer": "Notre annuaire est mis à jour quotidiennement avec de nouveaux outils et informations. Nous surveillons en permanence les outils répertoriés pour garantir leur exactitude et supprimons ceux qui ne sont plus disponibles."
+        }
+      },
+      "submission": {
+        "0": {
+          "question": "Comment puis-je soumettre mon outil d'IA ?",
+          "answer": "Ouvrez la page Soumettre, indiquez le nom et le site de votre outil, choisissez si nous rédigeons la fiche ou si vous le faites, puis effectuez le paiement unique. Votre outil est publié sous 48 heures."
+        },
+        "1": {
+          "question": "Quelles sont les exigences pour la soumission des outils ?",
+          "answer": "Votre outil doit être fonctionnel, apporter une valeur claire aux utilisateurs, disposer d'un site Web professionnel et être conforme aux exigences légales. Nous n'acceptons pas les outils qui favorisent des activités illégales ou violent la vie privée des utilisateurs."
+        },
+        "2": {
+          "question": "Combien coûte le référencement d’un outil ?",
+          "answer": "Une soumission coûte 99 USD en paiement unique et la fiche est permanente. Notre équipe ajoute aussi gratuitement les outils qu’elle découvre elle-même. La publicité et les articles invités sont des options payantes."
+        }
+      },
+      "account": {
+        "0": {
+          "question": "Ai-je besoin d’un compte pour utiliser TopAICollection ?",
+          "answer": "Aucun compte n’est nécessaire pour parcourir et rechercher l’annuaire. Avec un compte, vous pouvez rédiger des avis, gérer vos outils et GPT soumis, faire de la publicité et utiliser Website Insights et Social Listening."
+        },
+        "1": {
+          "question": "Comment promouvoir mon outil ?",
+          "answer": "Allez dans Publicité (ou Tableau de bord → Advertise AI) et achetez un pack de clics, Standard ou Featured. Votre outil apparaît alors dans les emplacements sponsorisés jusqu’à épuisement des clics."
+        },
+        "2": {
+          "question": "Puis-je annuler mon abonnement à tout moment ?",
+          "answer": "Oui. Les abonnements Research Plan peuvent être annulés à tout moment depuis Tableau de bord → Paiement et factures ; l’accès reste actif jusqu’à la fin de la période payée. Les packs de clics et les soumissions sont des achats uniques."
+        }
+      }
+    },
+    "cta": {
+      "title": "Vous avez encore des questions ?",
+      "subtitle": "Notre équipe d'assistance est là pour vous aider",
+      "button": "Contacter l'assistance"
+    }
+  },
+  "helpPage": {
+    "meta": {
+      "title": "Centre d'aide - Assistance TopAICollection",
+      "description": "Obtenez de l'aide avec TopAICollection. Trouvez des réponses aux questions courantes et contactez notre équipe d’assistance."
+    },
+    "title": "Centre d'aide",
+    "subtitle": "Comment pouvons-nous vous aider aujourd’hui ?",
+    "sections": {
+      "faq": {
+        "title": "FAQ",
+        "description": "Trouvez les réponses aux questions fréquemment posées.",
+        "link": "Voir la FAQ"
+      },
+      "contact": {
+        "title": "Contacter l'assistance",
+        "description": "Vous ne trouvez pas ce dont vous avez besoin ? Contactez-nous.",
+        "link": "Contactez-nous"
+      }
+    },
+    "commonTopics": {
+      "title": "Sujets communs",
+      "submitTool": "Comment soumettre mon outil d'IA ?",
+      "advertising": "Comment fonctionne la publicité ?",
+      "privacy": "Quelle est votre politique de confidentialité ?",
+      "terms": "Quelles sont vos conditions de service ?"
+    }
+  },
+  "pricingPage": {
+    "meta": {
+      "title": "Tarifs - TopAICollection",
+      "description": "Une tarification simple et transparente pour la recherche IA et l'écoute sociale."
+    },
+    "title": "Une tarification simple et transparente",
+    "subtitle": "Commencez gratuitement et évoluez-en même temps que vous. Aucune surprise.",
+    "freeDesc": "Essayez Website Insights et Social Listening avec des limites mensuelles.",
+    "freePrice": "Gratuit",
+    "getStarted": "Commencer",
+    "otherTitle": "Autres services",
+    "otherSubtitle": "Achats uniques pour les créateurs d’outils"
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contactez-nous - TopAICollection",
+      "description": "Entrez en contact avec l’équipe TopAICollection. Nous sommes là pour répondre à toutes vos questions sur les outils d'IA."
+    },
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez une question ou un commentaire ? Nous aimerions avoir de vos nouvelles. Notre équipe répond généralement dans les 24 heures.",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "fields": {
+        "name": {
+          "label": "Votre nom",
+          "placeholder": "Nkomon Sergio"
+        },
+        "email": {
+          "label": "Adresse email",
+          "placeholder": "you{'@'}example.com"
+        },
+        "subject": {
+          "label": "Sujet",
+          "placeholder": "Sélectionnez un sujet",
+          "options": {
+            "general": "Enquête générale",
+            "support": "Assistance technique",
+            "feedback": "Retour",
+            "partnership": "Opportunité de partenariat",
+            "other": "Autre"
+          }
+        },
+        "message": {
+          "placeholder": "Dites-nous ce que vous pensez...",
+          "label": "Message"
+        }
+      },
+      "submit": "Envoyer un message",
+      "submitting": "Envoi...",
+      "success": {
+        "title": "Message envoyé avec succès !",
+        "description": "Nous avons reçu votre message et vous répondrons bientôt."
+      },
+      "error": {
+        "title": "Échec de l'envoi du message",
+        "description": "Quelque chose s'est mal passé. Veuillez réessayer plus tard."
+      },
+      "signedInAs": "Les réponses seront envoyées à {email}.",
+      "errName": "Veuillez saisir votre nom.",
+      "errEmail": "Veuillez saisir une adresse e-mail valide.",
+      "errMessage": "Votre message doit contenir entre 10 et 5000 caractères.",
+      "errRateLimit": "Vous avez envoyé plusieurs messages récemment. Veuillez réessayer plus tard.",
+      "trackHint": "Vous pouvez suivre la réponse dans Tableau de bord → Mes demandes.",
+      "sendAnother": "Envoyer un autre message",
+      "emailUs": "Écrivez-nous"
+    },
+    "info": {
+      "title": "Entrer en contact",
+      "email": {
+        "title": "Envoyez-nous un courriel"
+      },
+      "support": {
+        "title": "Heures d'assistance",
+        "content": "Notre équipe d'assistance est disponible du lundi au vendredi"
+      },
+      "hours": {
+        "title": "Heures d'ouverture",
+        "content": "9h00 à 18h00 HNE"
+      },
+      "location": {
+        "title": "Emplacement",
+        "content": "Servir les utilisateurs du monde entier à partir de notre équipe distribuée"
+      }
+    },
+    "faq": {
+      "title": "Foire aux questions",
+      "q1": "Comment soumettre mon outil d'IA ?",
+      "a1": "Cliquez sur le bouton Outil de soumission dans la navigation et remplissez le formulaire de soumission.",
+      "q2": "Combien de temps prend l'approbation ?",
+      "a2": "Les soumissions payantes sont publiées sous 48 heures.",
+      "q3": "Puis-je mettre à jour ma liste d'outils ?",
+      "a3": "Oui, connectez-vous à votre tableau de bord et utilisez la fonctionnalité Mettre à jour l'IA."
+    }
+  },
+  "legalPage": {
+    "englishOnly": "Ce document est fourni en anglais.",
+    "editorial": {
+      "title": "Lignes directrices éditoriales",
+      "description": "Comment TopAICollection découvre, évalue, classe et maintient les outils d’IA référencés."
+    },
+    "reviewMethodology": {
+      "title": "Méthodologie d’évaluation",
+      "description": "Comment TopAICollection évalue et note les outils d’IA et modère les avis des utilisateurs."
+    },
+    "termsDescription": "Lisez les termes et conditions d'utilisation des services et du site Web de TopAICollection.",
+    "privacyDescription": "Découvrez comment TopAICollection collecte, utilise et protège vos informations personnelles."
+  },
+  "myInquiries": {
+    "title": "Mes demandes",
+    "subtitle": "Les messages envoyés depuis la page Contact et nos réponses.",
+    "newMessage": "Nouveau message",
+    "empty": "Vous n’avez encore envoyé aucun message.",
+    "reply": "Notre réponse",
+    "statuses": {
+      "NEW": "Reçu",
+      "REPLIED": "Répondu",
+      "CLOSED": "Clôturé"
+    }
+  },
+  "adminContact": {
+    "title": "Messages de contact",
+    "newBadge": "{n} nouveaux",
+    "total": "{n} messages",
+    "statusAll": "Tous les statuts",
+    "searchPlaceholder": "Rechercher un nom, un e-mail ou un message…",
+    "colSender": "Expéditeur",
+    "colMessage": "Message",
+    "colStatus": "Statut",
+    "colReply": "Réponse",
+    "guest": "Invité",
+    "replyPlaceholder": "Rédigez une réponse : elle est envoyée par e-mail à l’expéditeur et affichée dans ses demandes…",
+    "sendReply": "Envoyer la réponse",
+    "repliedAt": "Répondu le {date}",
+    "replyEmailFailed": "Réponse enregistrée, mais l’e-mail n’a pas pu être envoyé.",
+    "delete": "Supprimer",
+    "deleteConfirm": "Supprimer ce message ?",
+    "empty": "Aucun message."
   }
 }

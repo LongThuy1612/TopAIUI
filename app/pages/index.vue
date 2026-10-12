@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Category, ToolsResponse } from '~/types'
 import { advertise } from '~/data/promote'
+import { SUPPORT_EMAIL, SOCIAL_LINKS } from '#shared/site'
 
 const { t, locale } = useI18n()
 
@@ -50,10 +51,43 @@ function categoryStyle(i: number) {
   return categoryPalette[i % categoryPalette.length]!
 }
 
+const SEO_TITLE = 'TopAICollection — Discover the Best AI Tools'
+const SEO_DESCRIPTION = 'Explore hundreds of AI tools by category — find the right AI for coding, writing, design, video and more.'
 useSeoMeta({
-  title: 'TopAICollection — Discover the Best AI Tools',
-  description: 'Explore hundreds of AI tools by category — find the right AI for coding, writing, design, video and more.'
+  title: SEO_TITLE,
+  description: SEO_DESCRIPTION,
+  ogTitle: SEO_TITLE,
+  ogDescription: SEO_DESCRIPTION
 })
+
+// Site name, logo, social profiles and the search box for search results.
+const abs = useAbsoluteUrl()
+useJsonLd('site', () => [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': abs('/#organization'),
+    name: 'TopAICollection',
+    url: abs('/'),
+    logo: abs('/topaicollection.png'),
+    email: SUPPORT_EMAIL,
+    sameAs: SOCIAL_LINKS.map(s => s.url),
+    contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: SUPPORT_EMAIL, url: abs('/contact') }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': abs('/#website'),
+    name: 'TopAICollection',
+    url: abs('/'),
+    publisher: { '@id': abs('/#organization') },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${abs('/category/all')}?q={search_term_string}` },
+      'query-input': 'required name=search_term_string'
+    }
+  }
+])
 </script>
 
 <template>
