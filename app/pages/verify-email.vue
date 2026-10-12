@@ -28,10 +28,10 @@ useSeoMeta({ title: () => `${t('auth.verifyEmailTitle')} — TopAICollection`, r
 
 <template>
   <div class="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-4 py-16 sm:px-6">
-    <NuxtLink to="/" class="flex items-center gap-2.5">
+    <NuxtLinkLocale to="/" class="flex items-center gap-2.5">
       <IconLogo class="h-9 w-9 rounded-[11px]" width="36" height="36" />
       <span class="text-2xl font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <h1 class="mt-8 text-2xl font-extrabold text-ink-900">{{ t('auth.verifyEmailTitle') }}</h1>
 
@@ -47,13 +47,13 @@ useSeoMeta({ title: () => `${t('auth.verifyEmailTitle')} — TopAICollection`, r
         {{ t('auth.verifyLinkInvalid') }}
       </p>
 
-      <NuxtLink
+      <NuxtLinkLocale
         v-if="state !== 'pending'"
         to="/dashboard"
         class="mt-6 inline-block rounded-xl bg-brand-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-600"
       >
         {{ t('auth.goToDashboard') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
   </div>
 </template>

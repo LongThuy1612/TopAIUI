@@ -25,7 +25,7 @@ useSeoMeta({
 <template>
   <div class="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+      <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
       <span>›</span>
       <span class="text-ink-600">{{ t('aiNews.title') }}</span>
     </nav>
@@ -34,9 +34,9 @@ useSeoMeta({
         <h1 class="text-3xl font-extrabold text-ink-900">{{ t('aiNews.title') }}</h1>
         <p class="mt-1 text-sm text-ink-500">{{ t('aiNews.sub') }}</p>
       </div>
-      <NuxtLink to="/post-or-insert" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-900 hover:border-brand-300">
+      <NuxtLinkLocale to="/post-or-insert" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-900 hover:border-brand-300">
         {{ t('aiNews.writeForUs') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <div v-if="items.length" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -66,12 +66,12 @@ useSeoMeta({
     </div>
 
     <nav v-if="pageCount > 1" class="mt-10 flex flex-wrap justify-center gap-1.5">
-      <NuxtLink
+      <NuxtLinkLocale
         v-for="p in pageCount"
         :key="p"
         :to="{ query: p === 1 ? {} : { page: p } }"
         :class="['min-w-9 rounded-lg border px-3 py-1.5 text-center text-sm font-semibold', p === page ? 'border-brand-500 bg-brand-500 text-white' : 'border-ink-200 text-ink-700 hover:border-brand-300']"
-      >{{ p }}</NuxtLink>
+      >{{ p }}</NuxtLinkLocale>
     </nav>
   </div>
 </template>

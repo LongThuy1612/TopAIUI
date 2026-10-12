@@ -34,12 +34,12 @@ useSeoMeta({ title: 'Quản lý Tool — TopAICollection' })
           <span>🛠️</span> {{ t('admin.manageTools') }}
         </h1>
       </div>
-      <NuxtLink to="/admin/tools/new" class="flex items-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
+      <NuxtLinkLocale to="/admin/tools/new" class="flex items-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-7-7h14" />
         </svg>
         {{ t('admin.newTool') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
@@ -54,7 +54,7 @@ useSeoMeta({ title: 'Quản lý Tool — TopAICollection' })
       <h2 class="text-sm font-extrabold text-ink-900">{{ t('admin.update.pendingTitle', { n: updates.items.length }) }}</h2>
       <ul class="mt-2 divide-y divide-amber-100 text-sm">
         <li v-for="u in updates.items" :key="u.id" class="flex flex-wrap items-center justify-between gap-2 py-2">
-          <NuxtLink :to="`/admin/tools/${u.tool.id}`" class="font-semibold text-brand-600 hover:underline">{{ u.tool.name }}</NuxtLink>
+          <NuxtLinkLocale :to="`/admin/tools/${u.tool.id}`" class="font-semibold text-brand-600 hover:underline">{{ u.tool.name }}</NuxtLinkLocale>
           <span class="text-ink-500">{{ u.user.email }} · {{ new Date(u.submittedAt).toLocaleString() }}</span>
         </li>
       </ul>

@@ -1,13 +1,31 @@
+import { defaultLocale, locales } from './i18n/settings'
+
 // Page HTML cache rule. A cached render only sees the request headers listed
 // in `varies`, and they're part of the cache key:
-//   - cookie: reduced to just the locale cookie by
-//     server/middleware/01.page-cache-locale.ts → one cache entry per language,
-//     rendered in that language
+//   - cookie: dropped by server/middleware/01.page-cache-locale.ts (the language
+//     is in the URL), except on "/" where it is reduced to the locale cookie that
+//     decides the redirect to /vi, /ja… → one cache entry per language there
 //   - host / x-forwarded-proto: so useRequestURL() (share links) sees the real
 //     site URL instead of http://localhost. Not x-forwarded-host: h3 ignores it
 //     unless asked to, so it would only let any client mint new cache entries.
 function pageCache(maxAge: number) {
   return { cache: { maxAge, swr: true, varies: ['cookie', 'host', 'x-forwarded-proto'] } }
+}
+
+// English lives at /…, every other language under its prefix (/vi/…, i18n strategy
+// prefix_except_default). Page rules are written once for the English paths and
+// repeated here for each prefix; a redirect's target moves under the same prefix.
+type RouteRule = Record<string, unknown>
+const PREFIXED_LOCALES = locales.filter(code => code !== defaultLocale)
+function localized(rules: Record<string, RouteRule>) {
+  const out: Record<string, RouteRule> = { ...rules }
+  for (const code of PREFIXED_LOCALES) {
+    for (const [path, rule] of Object.entries(rules)) {
+      const target = typeof rule.redirect === 'string' ? `/${code}${rule.redirect === '/' ? '' : rule.redirect}` : undefined
+      out[path === '/' ? `/${code}` : `/${code}${path}`] = target ? { ...rule, redirect: target } : rule
+    }
+  }
+  return out
 }
 
 export default defineNuxtConfig({
@@ -40,19 +58,22 @@ export default defineNuxtConfig({
     baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     langDir: 'locales/',
     defaultLocale: 'en',
-    strategy: 'no_prefix',
+    strategy: 'prefix_except_default',
+    // language = hreflang / <html lang>. Language-only on purpose (es, not es-ES): a
+    // region code would aim each version at one country, and Spanish speakers in
+    // Mexico or Portuguese speakers in Brazil would be sent to English instead.
     locales: [
-      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
-      { code: 'zh', language: 'zh-CN', name: '中文', file: 'zh.json' },
-      { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' },
-      { code: 'de', language: 'de-DE', name: 'Deutsch', file: 'de.json' },
-      { code: 'ja', language: 'ja-JP', name: '日本語', file: 'ja.json' },
-      { code: 'fr', language: 'fr-FR', name: 'Français', file: 'fr.json' },
-      { code: 'ko', language: 'ko-KR', name: '한국어', file: 'ko.json' },
+      { code: 'en', language: 'en', name: 'English', file: 'en.json' },
+      { code: 'zh', language: 'zh', name: '中文', file: 'zh.json' },
+      { code: 'es', language: 'es', name: 'Español', file: 'es.json' },
+      { code: 'de', language: 'de', name: 'Deutsch', file: 'de.json' },
+      { code: 'ja', language: 'ja', name: '日本語', file: 'ja.json' },
+      { code: 'fr', language: 'fr', name: 'Français', file: 'fr.json' },
+      { code: 'ko', language: 'ko', name: '한국어', file: 'ko.json' },
       // { code: 'it', name: 'Italiano', file: 'it.json' },
       // { code: 'nl', name: 'Nederlands', file: 'nl.json' },
       // { code: 'ru', name: 'Русский', file: 'ru.json' },
-      { code: 'pt', language: 'pt-PT', name: 'Português', file: 'pt.json' },
+      { code: 'pt', language: 'pt', name: 'Português', file: 'pt.json' },
       // { code: 'sv', name: 'Svenska', file: 'sv.json' },
       // { code: 'da', name: 'Dansk', file: 'da.json' },
       // { code: 'no', name: 'Norsk', file: 'no.json' },
@@ -60,8 +81,8 @@ export default defineNuxtConfig({
       // { code: 'ar', name: 'العربية', file: 'ar.json', dir: 'rtl' },
       // { code: 'he', name: 'עברית', file: 'he.json', dir: 'rtl' },
       // { code: 'th', name: 'ภาษาไทย', file: 'th.json' },
-      { code: 'id', language: 'id-ID', name: 'Bahasa Indonesia', file: 'id.json' },
-      { code: 'vi', language: 'vi-VN', name: 'Tiếng Việt', file: 'vi.json' }
+      { code: 'id', language: 'id', name: 'Bahasa Indonesia', file: 'id.json' },
+      { code: 'vi', language: 'vi', name: 'Tiếng Việt', file: 'vi.json' }
     ],
     detectBrowserLanguage: {
       useCookie: true,
@@ -143,83 +164,85 @@ export default defineNuxtConfig({
   // USER / personalized pages (dashboard, "my submissions") → same reasoning,
   // each response is specific to the logged-in user, so caching is unsafe.
   routeRules: {
-    // Public — safe to cache, identical for everyone in the same language
-    // (see pageCache below).
-    '/': pageCache(60),
-    '/category/**': pageCache(300),
-    '/tools/**': pageCache(3600),
-    '/new': pageCache(60),
-    '/today': pageCache(60),
-    '/most-featured': pageCache(300),
-    '/archive/**': pageCache(600),
-    '/alphabet/**': pageCache(600),
-    // The ranking dataset itself is rebuilt hourly (server/utils/ranking.ts).
-    '/ranking': pageCache(600),
-    '/ranking/**': pageCache(600),
-    '/ai-news': pageCache(300),
-    '/ai-news/**': pageCache(600),
-    '/gpts': pageCache(300),
-    '/gpts/**': pageCache(600),
-    // Company, help and legal pages: static text. The contact form posts to the API
-    // and shows the signed-in prefill only in the browser, so its HTML is shared too.
-    '/about': pageCache(3600),
-    '/pricing': pageCache(3600),
-    '/faq': pageCache(3600),
-    '/help': pageCache(3600),
-    '/contact': pageCache(3600),
-    '/terms': pageCache(3600),
-    '/privacy': pageCache(3600),
-    '/cookies': pageCache(3600),
-    '/editorial-guidelines': pageCache(3600),
-    '/review-methodology': pageCache(3600),
+    ...localized({
+      // Public — safe to cache, identical for everyone in the same language
+      // (see pageCache below).
+      '/': pageCache(60),
+      '/category/**': pageCache(300),
+      '/tools/**': pageCache(3600),
+      '/new': pageCache(60),
+      '/today': pageCache(60),
+      '/most-featured': pageCache(300),
+      '/archive/**': pageCache(600),
+      '/alphabet/**': pageCache(600),
+      // The ranking dataset itself is rebuilt hourly (server/utils/ranking.ts).
+      '/ranking': pageCache(600),
+      '/ranking/**': pageCache(600),
+      '/ai-news': pageCache(300),
+      '/ai-news/**': pageCache(600),
+      '/gpts': pageCache(300),
+      '/gpts/**': pageCache(600),
+      // Company, help and legal pages: static text. The contact form posts to the API
+      // and shows the signed-in prefill only in the browser, so its HTML is shared too.
+      '/about': pageCache(3600),
+      '/pricing': pageCache(3600),
+      '/faq': pageCache(3600),
+      '/help': pageCache(3600),
+      '/contact': pageCache(3600),
+      '/terms': pageCache(3600),
+      '/privacy': pageCache(3600),
+      '/cookies': pageCache(3600),
+      '/editorial-guidelines': pageCache(3600),
+      '/review-methodology': pageCache(3600),
 
-    // Dashboard (every logged-in user) and admin-only pages — always dynamic,
-    // never cached, hidden from search engines.
-    // ssr: false is required here: the user session token only lives in the
-    // browser's storage (see useAuth.ts), so a server-rendered request never
-    // has it, and the auth / admin route middleware can only decide
-    // client-side, where the token actually exists.
-    '/dashboard/**': {
-      ssr: false,
-      robots: false,
-      headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
-    },
-    '/admin/**': {
-      ssr: false,
-      robots: false,
-      headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
-    },
+      // Dashboard (every logged-in user) and admin-only pages — always dynamic,
+      // never cached, hidden from search engines.
+      // ssr: false is required here: the user session token only lives in the
+      // browser's storage (see useAuth.ts), so a server-rendered request never
+      // has it, and the auth / admin route middleware can only decide
+      // client-side, where the token actually exists.
+      '/dashboard/**': {
+        ssr: false,
+        robots: false,
+        headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
+      },
+      '/admin/**': {
+        ssr: false,
+        robots: false,
+        headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' }
+      },
 
-    // Old admin URLs → their new dashboard home (keeps bookmarks working).
-    '/admin': { redirect: '/dashboard' },
-    '/admin/insights': { redirect: '/dashboard/insights' },
-    '/admin/social-listening': { redirect: '/dashboard/social-listening' },
-    // Research Report was removed.
-    '/admin/research-report': { redirect: '/dashboard' },
-    '/dashboard/research-report': { redirect: '/dashboard' },
-    '/admin/my-ais': { redirect: '/dashboard/my-ais' },
-    '/admin/advertise': { redirect: '/dashboard/advertise' },
-    '/admin/my-posts': { redirect: '/dashboard/my-posts' },
-    '/admin/my-gpts': { redirect: '/dashboard/my-gpts' },
-    '/admin/payment-invoice': { redirect: '/dashboard/payment-invoice' },
-    '/admin/feedback': { redirect: '/dashboard/feedback' },
+      // Old admin URLs → their new dashboard home (keeps bookmarks working).
+      '/admin': { redirect: '/dashboard' },
+      '/admin/insights': { redirect: '/dashboard/insights' },
+      '/admin/social-listening': { redirect: '/dashboard/social-listening' },
+      // Research Report was removed.
+      '/admin/research-report': { redirect: '/dashboard' },
+      '/dashboard/research-report': { redirect: '/dashboard' },
+      '/admin/my-ais': { redirect: '/dashboard/my-ais' },
+      '/admin/advertise': { redirect: '/dashboard/advertise' },
+      '/admin/my-posts': { redirect: '/dashboard/my-posts' },
+      '/admin/my-gpts': { redirect: '/dashboard/my-gpts' },
+      '/admin/payment-invoice': { redirect: '/dashboard/payment-invoice' },
+      '/admin/feedback': { redirect: '/dashboard/feedback' },
 
-    // Revenue ranking is hidden until there is revenue data to rank by.
-    '/ranking/revenue': { redirect: '/ranking' },
+      // Revenue ranking is hidden until there is revenue data to rank by.
+      '/ranking/revenue': { redirect: '/ranking' },
+
+      // Account and order pages: nothing for search engines (also keeps them out of the sitemap).
+      '/login': { robots: false },
+      '/register': { robots: false },
+      '/forgetPassword': { robots: false },
+      '/orders': { robots: false },
+
+      // One-time token in the query string: never cached, indexed or leaked to
+      // other sites through the Referer header.
+      '/reset-password': { robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } },
+      // ssr: false — confirming needs the session token, which only the browser has.
+      '/verify-email': { ssr: false, robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } }
+    }),
 
     // API — data endpoints stay dynamic; admin API additionally is not CORS-open
-    // Account and order pages: nothing for search engines (also keeps them out of the sitemap).
-    '/login': { robots: false },
-    '/register': { robots: false },
-    '/forgetPassword': { robots: false },
-    '/orders': { robots: false },
-
-    // One-time token in the query string: never cached, indexed or leaked to
-    // other sites through the Referer header.
-    '/reset-password': { robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } },
-    // ssr: false — confirming needs the session token, which only the browser has.
-    '/verify-email': { ssr: false, robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } },
-
     '/api/admin/**': { cors: false, headers: { 'Cache-Control': 'no-store' } },
     '/api/me/**': { headers: { 'Cache-Control': 'no-store' } },
     '/api/**': { cors: true }
@@ -229,31 +252,31 @@ export default defineNuxtConfig({
   // rendered by old component code for up to an hour; Vue then hydrates it with
   // the new code but doesn't patch mismatched classes, so edits look broken.
   $development: {
-    routeRules: {
-      '/': { cache: false },
-      '/category/**': { cache: false },
-      '/tools/**': { cache: false },
-      '/new': { cache: false },
-      '/today': { cache: false },
-      '/most-featured': { cache: false },
-      '/archive/**': { cache: false },
-      '/alphabet/**': { cache: false },
-      '/ranking': { cache: false },
-      '/ranking/**': { cache: false },
-      '/ai-news': { cache: false },
-      '/ai-news/**': { cache: false },
-      '/gpts': { cache: false },
-      '/gpts/**': { cache: false },
-      '/about': { cache: false },
-      '/pricing': { cache: false },
-      '/faq': { cache: false },
-      '/help': { cache: false },
-      '/contact': { cache: false },
-      '/terms': { cache: false },
-      '/privacy': { cache: false },
-      '/cookies': { cache: false },
-      '/editorial-guidelines': { cache: false },
-      '/review-methodology': { cache: false }
-    }
+    routeRules: localized({
+        '/': { cache: false },
+        '/category/**': { cache: false },
+        '/tools/**': { cache: false },
+        '/new': { cache: false },
+        '/today': { cache: false },
+        '/most-featured': { cache: false },
+        '/archive/**': { cache: false },
+        '/alphabet/**': { cache: false },
+        '/ranking': { cache: false },
+        '/ranking/**': { cache: false },
+        '/ai-news': { cache: false },
+        '/ai-news/**': { cache: false },
+        '/gpts': { cache: false },
+        '/gpts/**': { cache: false },
+        '/about': { cache: false },
+        '/pricing': { cache: false },
+        '/faq': { cache: false },
+        '/help': { cache: false },
+        '/contact': { cache: false },
+        '/terms': { cache: false },
+        '/privacy': { cache: false },
+        '/cookies': { cache: false },
+        '/editorial-guidelines': { cache: false },
+        '/review-methodology': { cache: false }
+    })
   }
 })

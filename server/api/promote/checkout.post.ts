@@ -131,7 +131,7 @@ export default defineEventHandler(async (event) => {
 
   const stripe = useStripe()
   const { public: { siteUrl } } = useRuntimeConfig()
-  const back = `${siteUrl}${returnPath[body.type]}`
+  const back = `${siteUrl}${localizedPath((body as { locale?: unknown }).locale, returnPath[body.type])}`
 
   const createSession = (customerId: string | null) => stripe.checkout.sessions.create({
     mode: 'payment',

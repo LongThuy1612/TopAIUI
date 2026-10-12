@@ -3,6 +3,7 @@ import type { Tool, ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
 const route = useRoute()
+const localePath = useLocalePath()
 
 // /alphabet/a — published tools whose name starts with that letter, A → Z.
 const letter = computed(() => String(route.params.letter).toUpperCase())
@@ -12,7 +13,7 @@ if (!/^[A-Z]$/.test(letter.value)) {
 // One URL per letter: /alphabet/C → /alphabet/c, so search engines and the
 // page cache don't see two copies of the same page.
 if (route.params.letter !== letter.value.toLowerCase()) {
-  await navigateTo(`/alphabet/${letter.value.toLowerCase()}`, { redirectCode: 301, replace: true })
+  await navigateTo(localePath(`/alphabet/${letter.value.toLowerCase()}`), { redirectCode: 301, replace: true })
 }
 
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
@@ -87,7 +88,7 @@ useSeoMeta({
   <div class="bg-white">
     <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
       <nav class="flex flex-wrap items-center gap-3 text-sm text-ink-900">
-        <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+        <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
         <span>/</span>
         <span>{{ t('alphabet.title') }}</span>
         <span>/</span>
@@ -108,7 +109,7 @@ useSeoMeta({
               <tr v-for="(tool, i) in tools" :key="tool.slug" class="hover:bg-ink-100/40">
                 <td class="px-4 py-2.5 text-center text-ink-600">{{ i + 1 }}</td>
                 <td class="px-4 py-2.5">
-                  <NuxtLink :to="`/tools/${tool.slug}`" class="text-ink-600 hover:text-brand-600">{{ tool.name }}</NuxtLink>
+                  <NuxtLinkLocale :to="`/tools/${tool.slug}`" class="text-ink-600 hover:text-brand-600">{{ tool.name }}</NuxtLinkLocale>
                 </td>
                 <td class="hidden px-4 py-2.5 text-ink-500 md:table-cell">
                   <span class="line-clamp-2">{{ tool.shortDesc }}</span>
@@ -126,12 +127,12 @@ useSeoMeta({
         <div class="overflow-hidden rounded-lg border border-ink-200">
           <div class="bg-brand-500 px-4 py-2.5 text-base font-medium text-white">{{ t('alphabet.browse') }}</div>
           <div class="grid grid-cols-6 gap-1 p-3 text-center text-sm">
-            <NuxtLink
+            <NuxtLinkLocale
               v-for="l in alphabet"
               :key="l"
               :to="`/alphabet/${l.toLowerCase()}`"
               :class="['flex h-9 items-center justify-center rounded-md', l === letter ? 'bg-brand-500 font-semibold text-white' : 'text-ink-700 hover:bg-ink-100 hover:text-brand-600']"
-            >{{ l }}</NuxtLink>
+            >{{ l }}</NuxtLinkLocale>
           </div>
         </div>
       </div>

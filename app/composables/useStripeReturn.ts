@@ -4,6 +4,7 @@
 // once the page is left, so a late answer never navigates the buyer from elsewhere.
 export function useStripeReturn() {
   const route = useRoute()
+  const localePath = useLocalePath()
   const { token, load } = useAuth()
   let alive = true
   onBeforeUnmount(() => { alive = false })
@@ -17,8 +18,8 @@ export function useStripeReturn() {
         headers: { 'x-user-token': token.value }
       }).catch(() => null)
       if (!alive) return
-      if (order?.type === 'advertise' && order.status === 'PAID') return navigateTo('/dashboard/advertise')
-      if (order?.toolId && order.type !== 'advertise') return navigateTo(`/dashboard/my-ais/${order.toolId}`)
+      if (order?.type === 'advertise' && order.status === 'PAID') return navigateTo(localePath('/dashboard/advertise'))
+      if (order?.toolId && order.type !== 'advertise') return navigateTo(localePath(`/dashboard/my-ais/${order.toolId}`))
       if (!order || order.status === 'EXPIRED') return
       await new Promise(r => setTimeout(r, 2000))
     }

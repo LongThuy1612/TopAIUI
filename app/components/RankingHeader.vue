@@ -12,9 +12,9 @@ const { t, locale } = useI18n()
 
 <template>
   <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-    <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+    <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
     <span>›</span>
-    <NuxtLink v-if="crumb" to="/ranking" class="hover:text-brand-600">{{ t('header.rankings') }}</NuxtLink>
+    <NuxtLinkLocale v-if="crumb" to="/ranking" class="hover:text-brand-600">{{ t('header.rankings') }}</NuxtLinkLocale>
     <span v-else class="text-ink-600">{{ t('header.rankings') }}</span>
     <template v-if="crumb">
       <span>›</span>

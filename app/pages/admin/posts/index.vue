@@ -69,7 +69,7 @@ useSeoMeta({ title: () => `${t('adminPosts.title')} — TopAICollection` })
   <div>
     <div class="flex flex-wrap items-center justify-between gap-3">
       <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900"><span>📝</span> {{ t('adminPosts.title') }}</h1>
-      <NuxtLink to="/admin/articles" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-900 hover:border-brand-300">{{ t('adminArticles.title') }}</NuxtLink>
+      <NuxtLinkLocale to="/admin/articles" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-900 hover:border-brand-300">{{ t('adminArticles.title') }}</NuxtLinkLocale>
     </div>
 
     <div class="mt-5 flex flex-wrap items-center gap-2">
@@ -106,7 +106,7 @@ useSeoMeta({ title: () => `${t('adminPosts.title')} — TopAICollection` })
               <div class="text-xs text-ink-500">{{ t('adminPosts.requested') }}: {{ s.article ? s.article.title : t('linkForm.editorChooses') }}</div>
               <p v-if="s.note" class="mt-1 whitespace-pre-line text-xs text-ink-600">{{ s.note }}</p>
             </template>
-            <NuxtLink v-if="s.status === 'PUBLISHED' && s.article" :to="`/ai-news/${s.article.slug}`" target="_blank" class="mt-1 block text-xs font-semibold text-emerald-700 hover:underline">{{ s.article.title }} ↗</NuxtLink>
+            <NuxtLinkLocale v-if="s.status === 'PUBLISHED' && s.article" :to="`/ai-news/${s.article.slug}`" target="_blank" class="mt-1 block text-xs font-semibold text-emerald-700 hover:underline">{{ s.article.title }} ↗</NuxtLinkLocale>
             <p v-if="s.adminNote" class="mt-1 whitespace-pre-line text-xs text-ink-500"><b>{{ t('myPostsPage.editorNote') }}:</b> {{ s.adminNote }}</p>
           </div>
 
@@ -127,7 +127,7 @@ useSeoMeta({ title: () => `${t('adminPosts.title')} — TopAICollection` })
                 <option value="">{{ t('adminPosts.pickArticle') }}</option>
                 <option v-for="a in published" :key="a.id" :value="a.id">{{ a.title }}</option>
               </select>
-              <NuxtLink v-if="doneArticle[s.id] ?? s.articleId" :to="`/admin/articles/${doneArticle[s.id] ?? s.articleId}`" target="_blank" class="text-xs text-ink-700 hover:text-brand-600">{{ t('adminPosts.editArticle') }} ↗</NuxtLink>
+              <NuxtLinkLocale v-if="doneArticle[s.id] ?? s.articleId" :to="`/admin/articles/${doneArticle[s.id] ?? s.articleId}`" target="_blank" class="text-xs text-ink-700 hover:text-brand-600">{{ t('adminPosts.editArticle') }} ↗</NuxtLinkLocale>
               <button type="button" :disabled="busyId === s.id" class="text-emerald-600 hover:text-emerald-700 disabled:opacity-50" @click="markDone(s)">{{ t('adminPosts.markDone') }}</button>
             </template>
             <button type="button" :disabled="busyId === s.id" class="text-orange-600 hover:text-orange-700 disabled:opacity-50" @click="withNote(s, 'requestChanges')">{{ t('adminPosts.requestChanges') }}</button>

@@ -120,11 +120,11 @@
     "pendingCount": "herramienta pendiente de aprobación | herramientas pendientes de aprobación",
     "searchPlaceholder": "Buscar por nombre o slug...",
     "research": "Investigación",
-    "websiteInsights": "Website Insights",
-    "socialListening": "Social Listening",
+    "websiteInsights": "Análisis de sitios web",
+    "socialListening": "Escucha social",
     "freePlan": "Gratis",
-    "websiteInsightsQuota": "Cuota de Website Insights",
-    "socialListeningQueries": "Consultas de Social Listening",
+    "websiteInsightsQuota": "Cuota de Análisis de sitios web",
+    "socialListeningQueries": "Consultas de Escucha social",
     "upgrade": "Mejorar plan",
     "upgradeModal": {
       "close": "Cerrar",
@@ -138,9 +138,9 @@
       "mostPopular": "Más popular",
       "subscribe": "Suscribirse",
       "plan": {
-        "starter": "Starter",
-        "professional": "Professional",
-        "enterprise": "Enterprise"
+        "starter": "Inicial",
+        "professional": "Profesional",
+        "enterprise": "Empresa"
       },
       "desc": {
         "starter": "Ideal para investigadores individuales y startups de IA en etapa inicial.",
@@ -149,7 +149,7 @@
       },
       "feature": {
         "credits": "Créditos de datos",
-        "queries": "Consulta de Social Listening",
+        "queries": "consultas activas de Escucha social",
         "filtering": "Filtrado avanzado",
         "export": "Exportación de datos",
         "statistics": "Estadísticas básicas de datos",
@@ -160,7 +160,7 @@
         "title": "Preguntas frecuentes",
         "q1": {
           "question": "¿Qué son los \"Créditos de datos\"?",
-          "answer": "Los Créditos de datos son la moneda que usas para investigar en nuestra plataforma. Se consumen de las siguientes maneras:\n1. Uso de datos: se usa 1 crédito por cada fila de datos cargada en nuestras páginas de \"Insights\" o \"Analysis\".\n2. Exportar datos: se usa 1 crédito por cada fila de datos exportada a un archivo CSV o Excel.\n3. Sin costo: las consultas de Social Listening no consumen Créditos de datos.\nTen en cuenta: los créditos se reinician al comienzo de tu ciclo de facturación cada mes. Los créditos no utilizados no se acumulan."
+          "answer": "Los créditos de datos son la moneda que usas para investigar en nuestra plataforma. Se consumen de la siguiente manera:\n1. Uso de datos: se usa 1 crédito por cada fila de datos cargada en la página «Análisis de sitios web». Volver a cargar la misma fila en el mismo mes es gratis.\n2. Exportar datos: puedes exportar las filas que ya cargaste sin créditos adicionales, hasta el límite de exportación de tu plan (filas por exportación y filas por mes).\n3. Sin costo: las consultas de Escucha social no consumen créditos de datos; tu plan limita cuántas consultas pueden estar activas a la vez.\nTen en cuenta: los créditos y las filas de exportación se reinician cada mes (también en los planes anuales). Los créditos no utilizados no se acumulan."
         }
       },
       "currentPlan": "Plan actual",
@@ -206,7 +206,7 @@
     "statusAll": "Todos",
     "statusPending": "Pendiente",
     "statusPublished": "Publicado",
-    "socialListeningComingSoon": "Social Listening estará disponible próximamente.",
+    "socialListeningComingSoon": "Escucha social estará disponible próximamente.",
     "colTool": "Herramienta",
     "colOrganicClicks": "Clics orgánicos",
     "colPaidClicks": "Clics de pago",
@@ -491,7 +491,7 @@
     "loading": "Cargando…"
   },
   "socialListening": {
-    "title": "Social Listening",
+    "title": "Escucha social",
     "subtitle": "Rastrea al instante el rendimiento de video social de cualquier sitio de IA en YouTube y TikTok.",
     "allCategories": "Todas las categorías",
     "searchPlaceholder": "Ingresa el nombre de la herramienta o el dominio",
@@ -507,7 +507,7 @@
     "noResults": "Ninguna herramienta coincide con tu búsqueda."
   },
   "websiteInsights": {
-    "title": "Website Insights",
+    "title": "Análisis de sitios web",
     "searchPlaceholder": "Ingresa el nombre de la herramienta o el dominio",
     "advancedFilter": "Filtro avanzado",
     "bulkOpen": "Abrir sitios en masa",
@@ -531,8 +531,8 @@
     "loading": "Cargando…",
     "loadError": "No se pudieron cargar los datos. Inténtalo de nuevo.",
     "popupBlocked": "El navegador bloqueó algunas pestañas. Permite las ventanas emergentes de este sitio para abrirlas todas.",
-    "creditsThisMonth": "Data Credits este mes",
-    "outOfCredits": "Te quedaste sin Data Credits este mes — {n} fila(s) de esta página están bloqueadas. Mejora tu plan para verlas.",
+    "creditsThisMonth": "Créditos de datos este mes",
+    "outOfCredits": "Te quedaste sin créditos de datos este mes — {n} fila(s) de esta página están bloqueadas. Mejora tu plan para verlas.",
     "unlock": "Mejora para desbloquear",
     "statsTitle": "Estadísticas",
     "statsLocked": "Las estadísticas mensuales vienen con los planes de pago.",
@@ -547,8 +547,8 @@
     "statCategoryGrowth": "Crecimiento por categoría",
     "advancedFilters": "Filtros",
     "clearFilters": "Borrar filtros",
-    "filterNeedsAdvanced": "Plan Starter o superior",
-    "filterNeedsFull": "Plan Enterprise",
+    "filterNeedsAdvanced": "Plan Inicial o superior",
+    "filterNeedsFull": "Plan Empresa",
     "exportQuota": "Exportación: {used}/{limit} filas este mes · hasta {per} por exportación",
     "exportError": "La exportación falló. Inténtalo de nuevo.",
     "filter": {
@@ -669,7 +669,7 @@
     "title": "Suscripción",
     "research": "Investigación",
     "monthlyQueries": "Consultas mensuales",
-    "socialListeningQueries": "Consultas de Social Listening",
+    "socialListeningQueries": "Consultas de Escucha social",
     "selectPlan": "Elegir plan",
     "subscription": "Suscripción",
     "subscriptionPlan": "Plan de suscripción",
@@ -698,7 +698,7 @@
     "quotaResets": "La cuota se reinicia el {date}",
     "cardInStripe": "Guardada en Stripe",
     "endsOn": "El plan finaliza el",
-    "researchPlan": "Research Plan",
+    "researchPlan": "Plan de investigación",
     "invoiceStatuses": {
       "paid": "Pagada",
       "open": "Pendiente de pago",
@@ -1417,7 +1417,7 @@
   },
   "socialQueries": {
     "title": "Mis consultas",
-    "subtitle": "Sigue temas en las publicaciones sociales recopiladas — hasta 5 palabras clave por consulta. No consume Data Credits.",
+    "subtitle": "Sigue temas en las publicaciones sociales recopiladas — hasta 5 palabras clave por consulta. No consume créditos de datos.",
     "usage": "{used}/{limit} activas",
     "new": "Nueva",
     "namePlaceholder": "Nombre de la consulta, p. ej. Vídeo IA",
@@ -1438,14 +1438,14 @@
     "noResults": "Aún no hay publicaciones que coincidan con estas palabras clave.",
     "loadMore": "Cargar más",
     "empty": "Aún no hay consultas — crea una para seguir un tema.",
-    "none": "Las consultas de Social Listening vienen con los planes de pago.",
+    "none": "Las consultas de Escucha social vienen con los planes de pago.",
     "error": "Algo salió mal. Inténtalo de nuevo.",
     "overLimit": "Supera el límite del plan"
   },
   "publicLimits": {
     "login": "Inicia sesión para ver más",
     "rankingTitle": "El ranking gratuito muestra el top {n}",
-    "rankingText": "Consulta el ranking completo, con el tráfico y el crecimiento de cada herramienta, con un Research Plan de pago."
+    "rankingText": "Consulta el ranking completo, con el tráfico y el crecimiento de cada herramienta, con un plan de investigación de pago."
   },
   "aiNews": {
     "title": "Noticias IA",
@@ -1803,7 +1803,7 @@
       "account": {
         "0": {
           "question": "¿Necesito una cuenta para usar TopAICollection?",
-          "answer": "No necesitas cuenta para explorar y buscar en el directorio. Con una cuenta puedes escribir reseñas, gestionar tus herramientas y GPT enviados, anunciarte y usar Website Insights y Social Listening."
+          "answer": "No necesitas cuenta para explorar y buscar en el directorio. Con una cuenta puedes escribir reseñas, gestionar tus herramientas y GPT enviados, anunciarte y usar Análisis de sitios web y Escucha social."
         },
         "1": {
           "question": "¿Cómo promociono mi herramienta?",
@@ -1811,7 +1811,7 @@
         },
         "2": {
           "question": "¿Puedo cancelar mi suscripción en cualquier momento?",
-          "answer": "Sí. Las suscripciones al Research Plan se pueden cancelar en cualquier momento desde Panel → Pagos y facturas; mantienes el acceso hasta el final del periodo pagado. Los paquetes de clics y los envíos son compras únicas."
+          "answer": "Sí. Las suscripciones al plan de investigación se pueden cancelar en cualquier momento desde Panel → Pagos y facturas; mantienes el acceso hasta el final del periodo pagado. Los paquetes de clics y los envíos son compras únicas."
         }
       }
     },
@@ -1855,7 +1855,7 @@
     },
     "title": "Precios simples y transparentes",
     "subtitle": "Comienza gratis y escala a medida que creces. Sin sorpresas.",
-    "freeDesc": "Prueba Website Insights y Social Listening con límites mensuales.",
+    "freeDesc": "Prueba Análisis de sitios web y Escucha social con límites mensuales.",
     "freePrice": "Gratis",
     "getStarted": "Empezar",
     "otherTitle": "Otros servicios",

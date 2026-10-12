@@ -3,6 +3,7 @@ import type { Category } from '~/types'
 
 const { t } = useI18n()
 const router = useRouter()
+const localePath = useLocalePath()
 
 definePageMeta({ layout: 'dashboard', middleware: ['auth', 'admin'] })
 const { authHeaders } = useAuth()
@@ -11,11 +12,11 @@ const { data: categories } = await useFetch<Category[]>('/api/categories')
 
 
 function goBack() {
-  router.push('/admin/tools')
+  router.push(localePath('/admin/tools'))
 }
 
 function onSaved(id: string) {
-  router.push(`/admin/tools/${id}`)
+  router.push(localePath(`/admin/tools/${id}`))
 }
 
 useSeoMeta({ title: 'New Tool — TopAICollection' })

@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import type { AuthUser } from '~/composables/useAuth'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const route = useRoute()
+const localePath = useLocalePath()
 const { setSession } = useAuth()
 
-const redirect = computed(() => (typeof route.query.redirect === 'string' ? route.query.redirect : '/'))
+const redirect = computed(() => (typeof route.query.redirect === 'string' ? route.query.redirect : localePath('/')))
 
 const email = ref('')
 const password = ref('')
@@ -19,7 +20,7 @@ async function submit() {
   try {
     const res = await $fetch<{ token: string; user: AuthUser }>('/api/auth/register', {
       method: 'POST',
-      body: { email: email.value.trim(), password: password.value }
+      body: { email: email.value.trim(), password: password.value, locale: locale.value }
     })
     setSession(res.token, res.user)
     await navigateTo(redirect.value)
@@ -52,10 +53,10 @@ useSeoMeta({ title: () => `${t('auth.signUpTitle')} — TopAICollection` })
 
 <template>
   <div class="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-4 py-16 sm:px-6">
-    <NuxtLink to="/" class="flex items-center gap-2.5">
+    <NuxtLinkLocale to="/" class="flex items-center gap-2.5">
       <IconLogo class="h-9 w-9 rounded-[11px]" width="36" height="36" />
       <span class="text-2xl font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <h1 class="mt-8 text-2xl font-extrabold text-ink-900">{{ t('auth.signUpTitle') }}</h1>
 
@@ -115,7 +116,7 @@ useSeoMeta({ title: () => `${t('auth.signUpTitle')} — TopAICollection` })
       </form>
 
       <p class="mt-5 text-center text-sm text-ink-600">
-        {{ t('auth.hasAccount') }} <NuxtLink :to="{ path: '/login', query: route.query }" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.signIn') }}</NuxtLink>
+        {{ t('auth.hasAccount') }} <NuxtLinkLocale :to="{ path: '/login', query: route.query }" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.signIn') }}</NuxtLinkLocale>
       </p>
     </div>
 

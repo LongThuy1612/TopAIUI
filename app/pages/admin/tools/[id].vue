@@ -74,7 +74,7 @@ useSeoMeta({ title: 'Tool Details — TopAICollection' })
         <h2 class="text-sm font-extrabold text-ink-900">{{ t('admin.submission.title') }}</h2>
         <p v-if="tool.duplicateOf" class="mt-2 rounded-lg border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-800">
           {{ t('admin.submission.duplicate') }}
-          <NuxtLink :to="`/admin/tools/${tool.duplicateOf.id}`" class="font-semibold underline">{{ tool.duplicateOf.name }}</NuxtLink>
+          <NuxtLinkLocale :to="`/admin/tools/${tool.duplicateOf.id}`" class="font-semibold underline">{{ tool.duplicateOf.name }}</NuxtLinkLocale>
         </p>
         <dl class="mt-2 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm">
           <dt class="text-ink-500">{{ t('admin.submission.owner') }}</dt>

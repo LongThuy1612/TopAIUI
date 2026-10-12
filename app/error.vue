@@ -7,6 +7,7 @@ import type { ToolsResponse } from '~/types'
 const props = defineProps<{ error: NuxtError }>()
 
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 // Same announcement bar as app.vue, so the page keeps the site chrome.
 const { data: featuredRes } = await useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ featured: 'true', limit: 1, locale: locale.value })) })
@@ -20,7 +21,7 @@ useSeoMeta({
 })
 
 function goHome() {
-  clearError({ redirect: '/' })
+  clearError({ redirect: localePath('/') })
 }
 </script>
 

@@ -5,9 +5,9 @@ import { isResearchPlan, isBillingInterval } from '#shared/research'
 
 export default defineEventHandler(async (event) => {
   const userId = await requireActiveUser(event)
-  const body = await readBody<{ plan?: unknown; interval?: unknown }>(event)
+  const body = await readBody<{ plan?: unknown; interval?: unknown; locale?: unknown }>(event)
   if (!isResearchPlan(body?.plan) || !isBillingInterval(body?.interval)) {
     throw createError({ statusCode: 400, statusMessage: 'Invalid plan.', message: 'Invalid plan.' })
   }
-  return subscribe(userId, body.plan, body.interval)
+  return subscribe(userId, body.plan, body.interval, body.locale)
 })

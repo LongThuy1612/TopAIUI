@@ -22,12 +22,12 @@ useSeoMeta({
     <h1 class="text-xl font-extrabold text-ink-900">{{ t('myAIsPage.title') }}</h1>
 
     <div class="mt-4 flex flex-wrap gap-3">
-      <NuxtLink to="/submit" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+      <NuxtLinkLocale to="/submit" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
         {{ t('myAIsPage.submitNewAI') }}
-      </NuxtLink>
-      <NuxtLink to="/update-ai" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+      </NuxtLinkLocale>
+      <NuxtLinkLocale to="/update-ai" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
         {{ t('myAIsPage.updateNewAI') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <ToolsTable class="mt-5" :tools="items" />

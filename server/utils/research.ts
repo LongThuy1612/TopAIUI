@@ -252,7 +252,8 @@ const addInterval = (d: Date, interval: BillingIntervalKey) => addMonths(d, inte
 
 // Free → a paid plan: a Stripe Checkout URL. Already on a plan: changes it in place.
 // FAKE_PAYMENT (dev only): no Stripe — the subscription is written directly.
-export async function subscribe(userId: string, plan: ResearchPlanKey, interval: BillingIntervalKey) {
+// `locale`: the visitor's language, for the page Stripe sends them back to.
+export async function subscribe(userId: string, plan: ResearchPlanKey, interval: BillingIntervalKey, locale?: unknown) {
   const user = await prisma.user.findUnique({ where: { id: userId } })
   if (!user || user.isBanned || user.deletedAt) throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
 
@@ -302,8 +303,8 @@ export async function subscribe(userId: string, plan: ResearchPlanKey, interval:
     client_reference_id: user.id,
     metadata: { kind: 'research_plan', userId: user.id, plan, interval },
     subscription_data: { metadata: { kind: 'research_plan', userId: user.id, plan, interval } },
-    success_url: `${siteUrl}/dashboard?plan_session={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${siteUrl}/dashboard?plan_canceled=1`
+    success_url: `${siteUrl}${localizedPath(locale, '/dashboard')}?plan_session={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${siteUrl}${localizedPath(locale, '/dashboard')}?plan_canceled=1`
   })
   return { checkoutUrl: session.url! }
 }
@@ -389,14 +390,14 @@ export async function cancelSubscriptionsForDeletedUser(userId: string) {
 }
 
 // Stripe's billing portal: card, invoices, cancel — for a real (non-fake) customer.
-export async function billingPortalUrl(userId: string) {
+export async function billingPortalUrl(userId: string, locale?: unknown) {
   const user = await prisma.user.findUnique({ where: { id: userId }, select: { stripeCustomerId: true } })
   const current = await currentSubscription(userId)
   if (!user?.stripeCustomerId || (current && isFakeSubscription(current.stripeSubscriptionId))) {
     throw bad('There is no billing account to manage yet.')
   }
   const { public: { siteUrl } } = useRuntimeConfig()
-  const session = await useStripe().billingPortal.sessions.create({ customer: user.stripeCustomerId, return_url: `${siteUrl}/dashboard` })
+  const session = await useStripe().billingPortal.sessions.create({ customer: user.stripeCustomerId, return_url: `${siteUrl}${localizedPath(locale, '/dashboard')}` })
   return session.url
 }
 

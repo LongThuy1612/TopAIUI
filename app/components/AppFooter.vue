@@ -51,40 +51,40 @@ const archiveDates = Array.from({ length: 9 }, (_, i) => {
       <div>
         <div class="eyebrow-strong">{{ t('footer.topAiTools') }}</div>
         <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px] leading-relaxed">
-          <NuxtLink v-for="link in topAiToolsLinks" :key="link.to" :to="link.to" class="text-[rgb(107,114,128)] hover:text-brand-500">{{ link.label }}</NuxtLink>
+          <NuxtLinkLocale v-for="link in topAiToolsLinks" :key="link.to" :to="link.to" class="text-[rgb(107,114,128)] hover:text-brand-500">{{ link.label }}</NuxtLinkLocale>
         </div>
       </div>
 
       <div>
         <div class="eyebrow-strong">{{ t('footer.moreTools') }}</div>
         <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px] leading-relaxed">
-          <NuxtLink v-for="link in moreToolsLinks" :key="link.to" :to="link.to" class="text-[rgb(107,114,128)] hover:text-brand-500">{{ link.label }}</NuxtLink>
+          <NuxtLinkLocale v-for="link in moreToolsLinks" :key="link.to" :to="link.to" class="text-[rgb(107,114,128)] hover:text-brand-500">{{ link.label }}</NuxtLinkLocale>
         </div>
       </div>
 
       <div>
         <div class="eyebrow-strong">{{ t('footer.browseByAlphabet') }}</div>
         <div class="flex flex-wrap gap-x-3 gap-y-[9px] pt-[18px] text-[13px]">
-          <NuxtLink v-for="letter in alphabet" :key="letter" :to="`/alphabet/${letter.toLowerCase()}`" class="text-ink-800 hover:text-brand-500">{{ letter }}</NuxtLink>
+          <NuxtLinkLocale v-for="letter in alphabet" :key="letter" :to="`/alphabet/${letter.toLowerCase()}`" class="text-ink-800 hover:text-brand-500">{{ letter }}</NuxtLinkLocale>
         </div>
 
         <div class="eyebrow-strong pt-[30px]">{{ t('footer.top1000Directory') }}</div>
         <div class="grid grid-cols-3 gap-[11px] pt-[18px] text-[13px]">
-          <NuxtLink v-for="date in archiveDates" :key="date.iso" :to="`/archive/${date.iso}`" class="text-ink-800 hover:text-brand-500">{{ date.label }}</NuxtLink>
+          <NuxtLinkLocale v-for="date in archiveDates" :key="date.iso" :to="`/archive/${date.iso}`" class="text-ink-800 hover:text-brand-500">{{ date.label }}</NuxtLinkLocale>
         </div>
       </div>
 
       <div>
         <div class="eyebrow-strong">{{ t('footer.about') }}</div>
         <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px]">
-          <NuxtLink v-for="link in aboutLinks" :key="link.key" :to="link.to" class="text-ink-800 hover:text-brand-500">{{ t(`footer.${link.key}`) }}</NuxtLink>
+          <NuxtLinkLocale v-for="link in aboutLinks" :key="link.key" :to="link.to" class="text-ink-800 hover:text-brand-500">{{ t(`footer.${link.key}`) }}</NuxtLinkLocale>
         </div>
       </div>
 
       <div>
         <div class="eyebrow-strong">{{ t('footer.contact') }}</div>
         <div class="flex flex-col gap-[11px] pt-[18px] text-[13.5px]">
-          <NuxtLink to="/contact" class="text-ink-800 hover:text-brand-500">{{ t('contactPage.title') }}</NuxtLink>
+          <NuxtLinkLocale to="/contact" class="text-ink-800 hover:text-brand-500">{{ t('contactPage.title') }}</NuxtLinkLocale>
           <a :href="`mailto:${SUPPORT_EMAIL}`" class="text-brand-500 hover:text-brand-600">{{ SUPPORT_EMAIL }}</a>
         </div>
 

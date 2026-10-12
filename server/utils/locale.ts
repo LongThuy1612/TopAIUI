@@ -1,3 +1,5 @@
+import { defaultLocale as routedDefaultLocale, locales as routedLocales } from '../../i18n/settings'
+
 // Locale-fallback helpers for translated content (ToolTranslation / CategoryTranslation /
 // TagTranslation / PricingPlan / Faq). When the requested locale has no row, we fall back to
 // English first, then to whichever locale actually has data — so the UI never shows an empty
@@ -33,4 +35,14 @@ export function pickLocaleGroup<T extends { locale: string }>(rows: T[], locale:
   if (!rows.length) return []
   const fallbackLocale = rows[0]!.locale
   return rows.filter(r => r.locale === fallbackLocale)
+}
+
+// A site path in the visitor's language, for URLs the server hands out (email links,
+// Stripe return pages): English has no prefix, other languages /vi/…, /ja/…. Only
+// the languages that have routes (i18n/settings.ts) — not every messages file above.
+const ROUTED_LOCALES = new Set<string>(routedLocales)
+export function localizedPath(locale: unknown, path: string) {
+  const code = String(locale ?? '').toLowerCase()
+  if (code === routedDefaultLocale || !ROUTED_LOCALES.has(code)) return path
+  return `/${code}${path === '/' ? '' : path}`
 }

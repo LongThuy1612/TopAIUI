@@ -64,9 +64,9 @@ useSeoMeta({
     <h1 class="text-xl font-extrabold text-ink-900">{{ t('advertisePage.title') }}</h1>
 
     <div class="mt-4 flex flex-wrap items-center gap-4">
-      <NuxtLink to="/advertise" class="inline-block rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+      <NuxtLinkLocale to="/advertise" class="inline-block rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
         {{ t('advertisePage.createNew') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
       <p class="text-sm text-ink-900">
         {{ t('promote.orders.adClicks') }} <strong>{{ nf.format(adClicks) }}</strong>
       </p>
@@ -161,7 +161,7 @@ useSeoMeta({
                     @click="editing = { id: c.id, url: c.pendingLandingUrl ?? c.landingUrl ?? '' }"
                   >{{ t('advertisePage.editLanding') }}</button>
                 </template>
-                <NuxtLink :to="{ path: '/advertise', query: { tier: c.tier } }" class="text-brand-600 hover:text-brand-700">{{ t('myPostsPage.buyMore') }}</NuxtLink>
+                <NuxtLinkLocale :to="{ path: '/advertise', query: { tier: c.tier } }" class="text-brand-600 hover:text-brand-700">{{ t('myPostsPage.buyMore') }}</NuxtLinkLocale>
               </div>
             </td>
           </tr>
@@ -172,9 +172,9 @@ useSeoMeta({
       <p v-else-if="pending && !campaigns.length" class="py-16 text-center text-sm text-ink-400">{{ t('promote.orders.loading') }}</p>
       <div v-else-if="!campaigns.length" class="flex flex-col items-center gap-4 py-16">
         <p class="text-sm text-ink-900">{{ t('advertisePage.emptyMessage') }}</p>
-        <NuxtLink to="/advertise" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+        <NuxtLinkLocale to="/advertise" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
           {{ t('advertisePage.createNew') }}
-        </NuxtLink>
+        </NuxtLinkLocale>
       </div>
     </div>
   </div>

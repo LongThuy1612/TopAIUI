@@ -23,7 +23,7 @@ export interface MyPlan {
 
 export function useResearchPlan() {
   const { authHeaders } = useAuth()
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
   const fetched = useFetch<MyPlan>('/api/me/plan', { key: 'my-plan', headers: () => authHeaders() })
   const busy = useState<string | null>('my-plan-busy', () => null)
   const error = useState<string>('my-plan-error', () => '')
@@ -49,7 +49,7 @@ export function useResearchPlan() {
   // Free → Stripe Checkout (leaves the page); on a plan → changed in place.
   const subscribe = (plan: ResearchPlanKey, interval: BillingIntervalKey) => run(`subscribe:${plan}:${interval}`, async () => {
     const res = await $fetch<{ checkoutUrl?: string; changed?: boolean }>('/api/billing/subscribe', {
-      method: 'POST', headers: authHeaders(), body: { plan, interval }
+      method: 'POST', headers: authHeaders(), body: { plan, interval, locale: locale.value }
     })
     if (res.checkoutUrl) {
       await navigateTo(res.checkoutUrl, { external: true })
@@ -65,7 +65,7 @@ export function useResearchPlan() {
   })
 
   const openBillingPortal = () => run('portal', async () => {
-    const { url } = await $fetch<{ url: string }>('/api/billing/portal', { method: 'POST', headers: authHeaders() })
+    const { url } = await $fetch<{ url: string }>('/api/billing/portal', { method: 'POST', headers: authHeaders(), body: { locale: locale.value } })
     await navigateTo(url, { external: true })
     return 'redirect' as const
   })

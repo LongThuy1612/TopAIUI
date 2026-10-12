@@ -120,6 +120,7 @@ export interface Tool {
   submitMode?: 'auto' | 'manual'
   duplicateOf?: { id: string; name: string; website: string | null } | null // admin endpoint only
   updateRequest?: ToolUpdateRequest | null // paid update of a published tool (owner: latest; admin: open one)
+  availableLocales?: string[] // public detail endpoint: languages with a real description (always includes en)
   canEdit?: boolean // owner endpoint only
 
   // Only populated by the tool-detail endpoint

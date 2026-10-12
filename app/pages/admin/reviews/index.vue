@@ -107,7 +107,7 @@ useSeoMeta({ title: () => `${t('admin.reviews.title')} — TopAICollection` })
         <tbody>
           <tr v-for="r in items" :key="r.id" class="border-t border-ink-100 align-top">
             <td class="px-4 py-3">
-              <NuxtLink :to="`/tools/${r.tool.slug}`" target="_blank" class="font-semibold text-ink-900 hover:text-brand-600">{{ r.tool.name }}</NuxtLink>
+              <NuxtLinkLocale :to="`/tools/${r.tool.slug}`" target="_blank" class="font-semibold text-ink-900 hover:text-brand-600">{{ r.tool.name }}</NuxtLinkLocale>
             </td>
             <td class="px-4 py-3">
               <span class="block font-semibold text-ink-900">{{ authorName(r) }}</span>

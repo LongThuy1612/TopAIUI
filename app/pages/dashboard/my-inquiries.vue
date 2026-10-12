@@ -35,7 +35,7 @@ useSeoMeta({ title: () => `${t('myInquiries.title')} — TopAICollection` })
         <h1 class="text-xl font-extrabold text-ink-900">{{ t('myInquiries.title') }}</h1>
         <p class="mt-1 text-sm text-ink-500">{{ t('myInquiries.subtitle') }}</p>
       </div>
-      <NuxtLink to="/contact" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-bold text-white hover:bg-brand-600">{{ t('myInquiries.newMessage') }}</NuxtLink>
+      <NuxtLinkLocale to="/contact" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-bold text-white hover:bg-brand-600">{{ t('myInquiries.newMessage') }}</NuxtLinkLocale>
     </div>
 
     <p v-if="error" class="mt-4 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">{{ t('auth.registerError') }}</p>

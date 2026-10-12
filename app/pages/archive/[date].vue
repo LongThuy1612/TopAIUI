@@ -129,7 +129,7 @@ useSeoMeta({
   <div class="bg-white">
     <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
       <nav class="flex flex-wrap items-center gap-3 text-sm text-ink-900">
-        <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+        <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
         <span>/</span>
         <span>{{ t('archive.title') }}</span>
         <span>/</span>
@@ -150,7 +150,7 @@ useSeoMeta({
               <tr v-for="(tool, i) in tools" :key="tool.slug" class="hover:bg-ink-100/40">
                 <td class="px-4 py-2.5 text-center text-ink-600">{{ i + 1 }}</td>
                 <td class="px-4 py-2.5">
-                  <NuxtLink :to="`/tools/${tool.slug}`" class="text-ink-600 hover:text-brand-600">{{ tool.name }}</NuxtLink>
+                  <NuxtLinkLocale :to="`/tools/${tool.slug}`" class="text-ink-600 hover:text-brand-600">{{ tool.name }}</NuxtLinkLocale>
                 </td>
                 <td class="hidden px-4 py-2.5 text-ink-500 md:table-cell">
                   <span class="line-clamp-2">{{ tool.shortDesc }}</span>
@@ -179,13 +179,13 @@ useSeoMeta({
             <span v-for="(w, i) in weekdays" :key="i" class="py-2.5 text-ink-500">{{ w }}</span>
             <template v-for="(cell, i) in calendarCells" :key="cell ? cell.iso : `blank-${i}`">
               <span v-if="!cell" />
-              <NuxtLink
+              <NuxtLinkLocale
                 v-else-if="!cell.future || cell.selected"
                 :to="`/archive/${cell.iso}`"
                 :class="['mx-auto flex h-10 w-7 items-center justify-center', cell.selected ? '' : cell.hasTools ? 'font-semibold text-ink-900 hover:text-brand-600' : 'text-ink-600 hover:text-brand-600']"
               >
                 <span :class="cell.selected ? 'flex h-7 w-7 items-center justify-center rounded-full bg-brand-500 text-white' : ''">{{ cell.day }}</span>
-              </NuxtLink>
+              </NuxtLinkLocale>
               <span v-else class="flex h-10 items-center justify-center text-ink-300">{{ cell.day }}</span>
             </template>
           </div>

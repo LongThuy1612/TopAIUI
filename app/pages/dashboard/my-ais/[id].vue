@@ -168,12 +168,12 @@ const label = 'mb-1 block text-xs font-semibold text-ink-600'
 
 <template>
   <div>
-    <NuxtLink to="/dashboard/my-ais" class="flex items-center gap-1.5 text-sm font-semibold text-ink-500 hover:text-brand-600">
+    <NuxtLinkLocale to="/dashboard/my-ais" class="flex items-center gap-1.5 text-sm font-semibold text-ink-500 hover:text-brand-600">
       <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
       </svg>
       {{ t('myAIsPage.title') }}
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <div v-if="loadError || !tool" class="mt-10 text-sm text-ink-400">{{ t('admin.loadError') }}</div>
 
@@ -188,8 +188,8 @@ const label = 'mb-1 block text-xs font-semibold text-ink-600'
           <span class="font-semibold">{{ t('myTool.reason') }}:</span> {{ tool.rejectionReason }}
         </p>
         <div v-if="tool.status === 'PUBLISHED'" class="mt-2 flex flex-wrap gap-3">
-          <NuxtLink :to="`/tools/${tool.slug}`" class="font-semibold underline">{{ t('myTool.viewPage') }}</NuxtLink>
-          <NuxtLink v-if="!updating" :to="{ path: '/update-ai', query: { toolId: tool.id } }" class="font-semibold underline">{{ t('myTool.update.buy') }}</NuxtLink>
+          <NuxtLinkLocale :to="`/tools/${tool.slug}`" class="font-semibold underline">{{ t('myTool.viewPage') }}</NuxtLinkLocale>
+          <NuxtLinkLocale v-if="!updating" :to="{ path: '/update-ai', query: { toolId: tool.id } }" class="font-semibold underline">{{ t('myTool.update.buy') }}</NuxtLinkLocale>
         </div>
       </div>
 

@@ -24,7 +24,7 @@ const news = computed(() => data.value?.items ?? [])
       </AiNewsLink>
     </div>
     <div class="mt-4 border-t border-ink-100 pt-4 text-center">
-      <NuxtLink to="/ai-news" class="text-base font-bold text-brand-500 hover:text-brand-600">{{ t('sidebar.readMoreNews') }} →</NuxtLink>
+      <NuxtLinkLocale to="/ai-news" class="text-base font-bold text-brand-500 hover:text-brand-600">{{ t('sidebar.readMoreNews') }} →</NuxtLinkLocale>
     </div>
   </div>
   <slot v-else />

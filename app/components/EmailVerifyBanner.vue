@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Dashboard notice until the sign-up email address is confirmed.
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const { user, authHeaders } = useAuth()
 
 const state = ref<'idle' | 'sending' | 'sent' | 'wait' | 'error'>('idle')
@@ -11,7 +11,8 @@ async function resend() {
   try {
     const res = await $fetch<{ sent?: boolean; alreadyVerified?: boolean }>('/api/auth/resend-verification', {
       method: 'POST',
-      headers: authHeaders()
+      headers: authHeaders(),
+      body: { locale: locale.value }
     })
     if (res.alreadyVerified && user.value) user.value = { ...user.value, emailVerified: true }
     state.value = 'sent'

@@ -44,12 +44,12 @@ useSeoMeta({ title: () => `${t('admin.users.title')} — TopAICollection` })
       <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900">
         <span>👥</span> {{ t('admin.users.title') }}
       </h1>
-      <NuxtLink to="/admin/users/new" class="flex items-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
+      <NuxtLinkLocale to="/admin/users/new" class="flex items-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-7-7h14" />
         </svg>
         {{ t('admin.users.newUser') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
@@ -82,11 +82,11 @@ useSeoMeta({ title: () => `${t('admin.users.title')} — TopAICollection` })
         <tbody>
           <tr v-for="u in items" :key="u.id" class="border-t border-ink-100">
             <td class="px-4 py-3">
-              <NuxtLink :to="`/admin/users/${u.id}`" class="block hover:opacity-80">
+              <NuxtLinkLocale :to="`/admin/users/${u.id}`" class="block hover:opacity-80">
                 <span class="font-semibold text-ink-900">{{ u.name || '—' }}</span>
                 <span v-if="u.id === me?.id" class="ml-1.5 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700">{{ t('admin.users.you') }}</span>
                 <span class="block text-xs text-ink-500">{{ u.email }}</span>
-              </NuxtLink>
+              </NuxtLinkLocale>
             </td>
             <td class="px-4 py-3">
               <span :class="['rounded-full px-2.5 py-0.5 text-xs font-semibold', roleClass[u.role]]">{{ t(`admin.users.roles.${u.role}`) }}</span>
@@ -99,7 +99,7 @@ useSeoMeta({ title: () => `${t('admin.users.title')} — TopAICollection` })
             <td class="px-4 py-3 text-ink-600">{{ u._count.promoteOrders }}</td>
             <td class="px-4 py-3 text-ink-500">{{ formatDate(u.createdAt) }}</td>
             <td class="px-4 py-3 text-right">
-              <NuxtLink :to="`/admin/users/${u.id}`" class="text-sm font-semibold text-brand-600 hover:text-brand-700">{{ t('admin.users.edit') }}</NuxtLink>
+              <NuxtLinkLocale :to="`/admin/users/${u.id}`" class="text-sm font-semibold text-brand-600 hover:text-brand-700">{{ t('admin.users.edit') }}</NuxtLinkLocale>
               <button
                 v-if="u.id !== me?.id"
                 type="button"

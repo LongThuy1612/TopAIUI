@@ -9,7 +9,7 @@ const { t, tp } = usePromoteText()
   <section class="services">
     <div class="services__bar">{{ t('promote.chooseService') }}</div>
     <div class="services__grid">
-      <NuxtLink
+      <NuxtLinkLocale
         v-for="s in services"
         :key="s.key"
         :to="s.to"
@@ -20,7 +20,7 @@ const { t, tp } = usePromoteText()
           {{ t(`promote.services.${s.i18n}.title`) }}<span v-if="s.hot" class="card__hot" :title="t('promote.popular')">🔥</span>
         </h3>
         <p class="card__desc">{{ tp(`promote.services.${s.i18n}.desc`) }}</p>
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
   </section>
 </template>

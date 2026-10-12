@@ -120,11 +120,11 @@
     "pendingCount": "tool menunggu persetujuan | tool menunggu persetujuan",
     "searchPlaceholder": "Cari berdasarkan nama atau slug...",
     "research": "Riset",
-    "websiteInsights": "Website Insights",
-    "socialListening": "Social Listening",
+    "websiteInsights": "Wawasan Situs Web",
+    "socialListening": "Pemantauan Media Sosial",
     "freePlan": "Gratis",
-    "websiteInsightsQuota": "Kuota Website Insights",
-    "socialListeningQueries": "Kueri Social Listening",
+    "websiteInsightsQuota": "Kuota Wawasan Situs Web",
+    "socialListeningQueries": "Kueri Pemantauan Media Sosial",
     "upgrade": "Tingkatkan",
     "upgradeModal": {
       "close": "Tutup",
@@ -138,9 +138,9 @@
       "mostPopular": "Paling Populer",
       "subscribe": "Berlangganan",
       "plan": {
-        "starter": "Starter",
-        "professional": "Professional",
-        "enterprise": "Enterprise"
+        "starter": "Pemula",
+        "professional": "Profesional",
+        "enterprise": "Perusahaan"
       },
       "desc": {
         "starter": "Ideal untuk peneliti individu dan startup AI tahap awal.",
@@ -149,7 +149,7 @@
       },
       "feature": {
         "credits": "Kredit Data",
-        "queries": "Kueri Social Listening",
+        "queries": "kueri Pemantauan Media Sosial aktif",
         "filtering": "Pemfilteran Lanjutan",
         "export": "Ekspor Data",
         "statistics": "Statistik data dasar",
@@ -160,7 +160,7 @@
         "title": "Pertanyaan Umum",
         "q1": {
           "question": "Apa itu \"Kredit Data\"?",
-          "answer": "Kredit Data adalah mata uang yang Anda gunakan untuk melakukan riset di platform kami. Kredit ini digunakan dengan cara berikut:\n1. Penggunaan Data: 1 kredit digunakan untuk setiap baris data yang dimuat di halaman \"Insights\" atau \"Analysis\" kami.\n2. Ekspor Data: 1 kredit digunakan untuk setiap baris data yang diekspor ke file CSV atau Excel.\n3. Tanpa Biaya: kueri Social Listening tidak mengonsumsi Kredit Data.\nPerlu diketahui: kredit direset di awal setiap siklus penagihan bulanan. Kredit yang tidak terpakai tidak dapat dibawa ke periode berikutnya."
+          "answer": "Kredit Data adalah mata uang yang Anda gunakan untuk melakukan riset di platform kami. Kredit digunakan dengan cara berikut:\n1. Penggunaan Data: 1 kredit digunakan untuk setiap baris data yang dimuat di halaman \"Wawasan Situs Web\". Memuat baris yang sama lagi di bulan yang sama gratis.\n2. Ekspor Data: Anda dapat mengekspor baris yang sudah dimuat tanpa kredit tambahan, hingga batas ekspor paket Anda (baris per ekspor dan per bulan).\n3. Gratis: Kueri Pemantauan Media Sosial tidak memakai Kredit Data; paket Anda membatasi jumlah kueri yang aktif bersamaan.\nCatatan: Kredit dan baris ekspor diatur ulang setiap bulan (juga pada paket tahunan). Kredit yang tidak terpakai tidak terbawa ke bulan berikutnya."
         }
       },
       "currentPlan": "Paket saat ini",
@@ -206,7 +206,7 @@
     "statusAll": "Semua",
     "statusPending": "Menunggu",
     "statusPublished": "Diterbitkan",
-    "socialListeningComingSoon": "Social Listening akan segera hadir.",
+    "socialListeningComingSoon": "Pemantauan Media Sosial akan segera hadir.",
     "colTool": "Tool",
     "colOrganicClicks": "Klik organik",
     "colPaidClicks": "Klik berbayar",
@@ -491,7 +491,7 @@
     "loading": "Memuat…"
   },
   "socialListening": {
-    "title": "Social Listening",
+    "title": "Pemantauan Media Sosial",
     "subtitle": "Pantau performa video sosial dari situs AI mana pun secara instan di YouTube dan TikTok.",
     "allCategories": "Semua Kategori",
     "searchPlaceholder": "Masukkan nama tool atau domain",
@@ -507,7 +507,7 @@
     "noResults": "Tidak ada tool yang cocok dengan pencarian Anda."
   },
   "websiteInsights": {
-    "title": "Website Insights",
+    "title": "Wawasan Situs Web",
     "searchPlaceholder": "Masukkan nama tool atau domain",
     "advancedFilter": "Filter Lanjutan",
     "bulkOpen": "Buka Situs Massal",
@@ -531,8 +531,8 @@
     "loading": "Memuat…",
     "loadError": "Gagal memuat data. Silakan coba lagi.",
     "popupBlocked": "Browser memblokir beberapa tab. Izinkan pop-up untuk situs ini agar semuanya terbuka.",
-    "creditsThisMonth": "Data Credits bulan ini",
-    "outOfCredits": "Data Credits Anda bulan ini sudah habis — {n} baris di halaman ini terkunci. Upgrade untuk melihatnya.",
+    "creditsThisMonth": "Kredit Data bulan ini",
+    "outOfCredits": "Kredit Data Anda bulan ini sudah habis — {n} baris di halaman ini terkunci. Upgrade untuk melihatnya.",
     "unlock": "Upgrade untuk membuka",
     "statsTitle": "Statistik",
     "statsLocked": "Statistik bulanan tersedia di paket berbayar.",
@@ -547,8 +547,8 @@
     "statCategoryGrowth": "Pertumbuhan per kategori",
     "advancedFilters": "Filter",
     "clearFilters": "Hapus filter",
-    "filterNeedsAdvanced": "Paket Starter atau lebih tinggi",
-    "filterNeedsFull": "Paket Enterprise",
+    "filterNeedsAdvanced": "Paket Pemula atau lebih tinggi",
+    "filterNeedsFull": "Paket Perusahaan",
     "exportQuota": "Ekspor: {used}/{limit} baris bulan ini · maks. {per} per ekspor",
     "exportError": "Ekspor gagal. Silakan coba lagi.",
     "filter": {
@@ -669,7 +669,7 @@
     "title": "Langganan",
     "research": "Riset",
     "monthlyQueries": "Kueri Bulanan",
-    "socialListeningQueries": "Kueri Social Listening",
+    "socialListeningQueries": "Kueri Pemantauan Media Sosial",
     "selectPlan": "Pilih Paket",
     "subscription": "Langganan",
     "subscriptionPlan": "Paket Langganan",
@@ -698,7 +698,7 @@
     "quotaResets": "Kuota direset pada {date}",
     "cardInStripe": "Tersimpan di Stripe",
     "endsOn": "Paket berakhir pada",
-    "researchPlan": "Research Plan",
+    "researchPlan": "Paket Riset",
     "invoiceStatuses": {
       "paid": "Lunas",
       "open": "Belum dibayar",
@@ -1417,7 +1417,7 @@
   },
   "socialQueries": {
     "title": "Kueri saya",
-    "subtitle": "Pantau topik di postingan sosial yang terkumpul — hingga 5 kata kunci per kueri. Tidak memakai Data Credits.",
+    "subtitle": "Pantau topik di postingan sosial yang terkumpul — hingga 5 kata kunci per kueri. Tidak memakai Kredit Data.",
     "usage": "{used}/{limit} aktif",
     "new": "Baru",
     "namePlaceholder": "Nama kueri, mis. Video AI",
@@ -1438,14 +1438,14 @@
     "noResults": "Belum ada postingan yang cocok dengan kata kunci ini.",
     "loadMore": "Muat lebih banyak",
     "empty": "Belum ada kueri — buat satu untuk mengikuti topik.",
-    "none": "Kueri Social Listening tersedia di paket berbayar.",
+    "none": "Kueri Pemantauan Media Sosial tersedia di paket berbayar.",
     "error": "Terjadi kesalahan. Silakan coba lagi.",
     "overLimit": "Melebihi batas paket"
   },
   "publicLimits": {
     "login": "Masuk untuk melihat lebih banyak",
     "rankingTitle": "Peringkat gratis menampilkan {n} teratas",
-    "rankingText": "Lihat peringkat lengkap, dengan trafik dan pertumbuhan setiap tool, di Research Plan berbayar."
+    "rankingText": "Lihat peringkat lengkap, dengan trafik dan pertumbuhan setiap tool, di Paket Riset berbayar."
   },
   "aiNews": {
     "title": "Berita AI",
@@ -1803,7 +1803,7 @@
       "account": {
         "0": {
           "question": "Apakah saya memerlukan akun untuk menggunakan TopAICollection?",
-          "answer": "Tidak perlu akun untuk menjelajah dan mencari di direktori. Dengan akun, Anda dapat menulis ulasan, mengelola alat dan GPT yang dikirim, beriklan, serta memakai Website Insights dan Social Listening."
+          "answer": "Tidak perlu akun untuk menjelajah dan mencari di direktori. Dengan akun, Anda dapat menulis ulasan, mengelola alat dan GPT yang dikirim, beriklan, serta memakai Wawasan Situs Web dan Pemantauan Media Sosial."
         },
         "1": {
           "question": "Bagaimana cara mempromosikan alat saya?",
@@ -1811,7 +1811,7 @@
         },
         "2": {
           "question": "Bisakah saya membatalkan langganan kapan saja?",
-          "answer": "Bisa. Langganan Research Plan dapat dibatalkan kapan saja di Dasbor → Pembayaran & Faktur; akses tetap berlaku hingga akhir periode yang dibayar. Paket klik dan pengiriman alat adalah pembelian satu kali."
+          "answer": "Bisa. Langganan Paket Riset dapat dibatalkan kapan saja di Dasbor → Pembayaran & Faktur; akses tetap berlaku hingga akhir periode yang dibayar. Paket klik dan pengiriman alat adalah pembelian satu kali."
         }
       }
     },
@@ -1855,7 +1855,7 @@
     },
     "title": "Harga Sederhana & Transparan",
     "subtitle": "Mulai gratis dan kembangkan seiring pertumbuhan Anda. Tanpa kejutan.",
-    "freeDesc": "Coba Website Insights dan Social Listening dengan batas bulanan.",
+    "freeDesc": "Coba Wawasan Situs Web dan Pemantauan Media Sosial dengan batas bulanan.",
     "freePrice": "Gratis",
     "getStarted": "Mulai",
     "otherTitle": "Layanan lain",

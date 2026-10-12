@@ -2,16 +2,16 @@ import { defaultLocale, locales } from '../../i18n/settings'
 
 // Cached pages (routeRules `cache` in nuxt.config.ts) are rendered with only
 // the request headers listed in `varies`, and the cache key is the URL plus
-// those headers. The language comes from the locale cookie or, failing that,
-// Accept-Language (i18n strategy no_prefix), so neither can just be listed:
-// the raw Cookie header would split the cache per visitor, and without it
-// every cached page was rendered in the default language.
+// those headers.
 //
-// So for cached pages the locale is resolved here, the way i18n would, and the
-// Cookie header is replaced with just that locale cookie: `varies: ['cookie']`
-// then keys the cache by locale (one entry per language) and the render sees
-// the right language. These pages are public; the user session lives in
-// localStorage, not a cookie, so nothing else is lost.
+// The language is in the URL (i18n strategy prefix_except_default: /vi/…), so a
+// cached page needs no cookie at all — it is dropped, giving one entry per URL
+// instead of one per visitor. The exception is the site root "/": i18n sends a
+// first-time visitor there to their language (detectBrowserLanguage, redirectOn
+// "root") from the locale cookie or Accept-Language. For "/" the locale is
+// resolved here the way i18n would, and the Cookie header is replaced with just
+// that locale cookie, so `varies: ['cookie']` keeps one entry (page or redirect)
+// per language. These pages are public; the user session lives in localStorage.
 const COOKIE_KEY = 'topainew_locale'
 const SUPPORTED = new Set<string>(locales)
 
@@ -42,7 +42,11 @@ export default defineEventHandler((event) => {
   if (!getRouteRules(event).cache) return
 
   const headers = event.node.req.headers
-  const locale = fromCookie(headers.cookie) ?? fromAcceptLanguage(headers['accept-language']) ?? defaultLocale
-  headers.cookie = `${COOKIE_KEY}=${locale}`
+  if (event.path.split('?')[0] === '/') {
+    const locale = fromCookie(headers.cookie) ?? fromAcceptLanguage(headers['accept-language']) ?? defaultLocale
+    headers.cookie = `${COOKIE_KEY}=${locale}`
+  } else {
+    delete headers.cookie
+  }
   delete headers['accept-language']
 })

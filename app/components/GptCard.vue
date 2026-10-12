@@ -8,7 +8,7 @@ const initials = (name: string) => name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2)
 </script>
 
 <template>
-  <NuxtLink
+  <NuxtLinkLocale
     :to="`/gpts/${gpt.slug}`"
     class="group flex h-full flex-col rounded-2xl border border-ink-200 bg-white p-5 transition hover:border-brand-200 hover:shadow-sm"
   >
@@ -23,5 +23,5 @@ const initials = (name: string) => name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2)
       </div>
     </div>
     <p class="mt-3 line-clamp-3 text-sm leading-relaxed text-ink-600">{{ gpt.description }}</p>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>

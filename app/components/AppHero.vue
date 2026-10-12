@@ -2,6 +2,7 @@
 import type { Category, ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 const [{ data: totalRes }, { data: categories }] = await Promise.all([
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 1, sort: 'newest', locale: locale.value })) }),
@@ -13,7 +14,7 @@ const totalTools = computed(() => totalRes.value?.total ?? 0)
 
 const heroQuery = ref('')
 function onSearch(q: string) {
-  navigateTo({ path: '/category/all', query: q ? { q } : {} })
+  navigateTo(localePath({ path: '/category/all', query: q ? { q } : {} }))
 }
 </script>
 
@@ -40,14 +41,14 @@ function onSearch(q: string) {
       </div>
 
       <div v-if="allCategories.length" class="mx-auto mt-[22px] flex flex-wrap justify-center gap-2 text-[13.5px] font-medium">
-        <NuxtLink
+        <NuxtLinkLocale
           v-for="cat in allCategories.slice(0, 8)"
           :key="cat.slug"
           :to="`/category/${cat.slug}`"
           class="rounded-full border border-ink-200 bg-white px-[15px] py-[7px] text-ink-800 hover:border-brand-200 hover:bg-brand-50 hover:text-brand-500"
         >
           {{ cat.name }}
-        </NuxtLink>
+        </NuxtLinkLocale>
       </div>
     </div>
   </section>

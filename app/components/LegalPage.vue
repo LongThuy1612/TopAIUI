@@ -14,10 +14,13 @@ const filled = computed(() => props.source
   .replaceAll('%SUPPORT_EMAIL%', SUPPORT_EMAIL)
   .replaceAll('%SITE_URL%', siteUrl.replace(/\/+$/, '')))
 const heading = computed(() => filled.value.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? props.seoTitle)
-const html = computed(() => markdownRenderer('dofollow').render(filled.value.replace(/^#\s+.+$/m, '')))
+const localePath = useLocalePath()
+// Site links in the Markdown (/privacy, /contact) are written without a language prefix.
+const html = computed(() => markdownRenderer('dofollow').render(filled.value.replace(/^#\s+.+$/m, ''))
+  .replace(/href="(\/[^"]*)"/g, (_, path: string) => `href="${localePath(path) || path}"`))
 
-const route = useRoute()
-useBreadcrumbLd(() => [[props.seoTitle, route.path]])
+const basePath = useBasePath()
+useBreadcrumbLd(() => [[props.seoTitle, basePath.value]])
 
 useSeoMeta({
   title: () => `${props.seoTitle} — TopAICollection`,
@@ -30,7 +33,7 @@ useSeoMeta({
 <template>
   <div class="mx-auto max-w-[860px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+      <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
       <span>›</span>
       <span>{{ seoTitle }}</span>
     </nav>

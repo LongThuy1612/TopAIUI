@@ -28,7 +28,7 @@ export default defineEventHandler(async (event) => {
 
   // Signing up isn't blocked on it: the account works right away and the
   // dashboard keeps asking to confirm until the link is clicked.
-  sendVerificationEmail(user).catch(err => console.error('[mail] verification email failed', err))
+  sendVerificationEmail(user, body?.locale).catch(err => console.error('[mail] verification email failed', err))
 
   const token = createUserToken(user.id)
   return { token, user: authUserPayload(user) }

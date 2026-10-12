@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
 
   // Google-only accounts get one too: resetting is how they add a password.
   try {
-    await sendPasswordResetEmail(user)
+    await sendPasswordResetEmail(user, body?.locale)
   } catch (err) {
     console.error('[mail] password reset email failed', err)
     throw createError({ statusCode: 502, statusMessage: 'Could not send the email. Please try again later.' })

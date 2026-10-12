@@ -6,6 +6,6 @@ export default defineNuxtRouteMiddleware(async () => {
 
   const user = await useAuth().ensureUser()
   if (user?.role !== 'ADMIN') {
-    return navigateTo('/dashboard')
+    return navigateTo(useLocalePath()('/dashboard'))
   }
 })

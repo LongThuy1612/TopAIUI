@@ -5,6 +5,6 @@ export default defineNuxtRouteMiddleware(async (to) => {
 
   const user = await useAuth().ensureUser()
   if (!user) {
-    return navigateTo({ path: '/login', query: { redirect: to.fullPath } })
+    return navigateTo(useLocalePath()({ path: '/login', query: { redirect: to.fullPath } }))
   }
 })

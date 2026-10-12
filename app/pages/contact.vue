@@ -66,6 +66,7 @@ const infoItems = [
 const inputClass = 'w-full rounded-xl border border-ink-200 px-3.5 py-2.5 text-sm outline-none focus:border-brand-400'
 
 const abs = useAbsoluteUrl()
+const localePath = useLocalePath()
 const organization = useOrganizationNode()
 useBreadcrumbLd(() => [[t('contactPage.title'), '/contact']])
 useJsonLd('page', () => ({
@@ -73,7 +74,7 @@ useJsonLd('page', () => ({
   '@type': 'ContactPage',
   name: t('contactPage.meta.title'),
   description: t('contactPage.meta.description'),
-  url: abs('/contact'),
+  url: abs(localePath('/contact')),
   about: organization
 }))
 
@@ -101,7 +102,7 @@ useSeoMeta({
           <h2 class="mt-4 text-xl font-extrabold text-ink-900">{{ t('contactPage.form.success.title') }}</h2>
           <p class="mt-2 text-ink-600">{{ t('contactPage.form.success.description') }}</p>
           <p v-if="user" class="mt-2 text-sm text-ink-500">
-            <NuxtLink to="/dashboard/my-inquiries" class="font-semibold text-brand-600 hover:text-brand-700">{{ t('contactPage.form.trackHint') }}</NuxtLink>
+            <NuxtLinkLocale to="/dashboard/my-inquiries" class="font-semibold text-brand-600 hover:text-brand-700">{{ t('contactPage.form.trackHint') }}</NuxtLinkLocale>
           </p>
           <button type="button" class="mt-6 rounded-xl border border-ink-300 px-5 py-2.5 text-sm font-semibold text-ink-700 hover:bg-ink-100/60" @click="sendAnother">
             {{ t('contactPage.form.sendAnother') }}
@@ -188,7 +189,7 @@ useSeoMeta({
             <div class="text-sm font-bold text-ink-900">{{ t(`contactPage.faq.q${n}`) }}</div>
             <p class="mt-0.5 text-sm text-ink-600">{{ t(`contactPage.faq.a${n}`) }}</p>
           </div>
-          <NuxtLink to="/faq" class="mt-4 inline-block text-sm font-bold text-brand-600 hover:text-brand-700">{{ t('helpPage.sections.faq.link') }} →</NuxtLink>
+          <NuxtLinkLocale to="/faq" class="mt-4 inline-block text-sm font-bold text-brand-600 hover:text-brand-700">{{ t('helpPage.sections.faq.link') }} →</NuxtLinkLocale>
         </div>
       </aside>
     </div>

@@ -55,7 +55,7 @@ function close() { setTimeout(() => (open.value = false), 150) }
     <ul v-if="open" class="picker__list" role="listbox">
       <li v-if="loading" class="picker__empty">{{ t('promote.toolPicker.searching') }}</li>
       <i18n-t v-else-if="!results.length" keypath="promote.toolPicker.notFound" tag="li" class="picker__empty">
-        <template #link><NuxtLink to="/submit">{{ t('promote.toolPicker.submitFirst') }}</NuxtLink></template>
+        <template #link><NuxtLinkLocale to="/submit">{{ t('promote.toolPicker.submitFirst') }}</NuxtLinkLocale></template>
       </i18n-t>
       <template v-else>
         <li v-for="item in results" :key="item.id" role="option" class="picker__item" @mousedown.prevent="pick(item)">

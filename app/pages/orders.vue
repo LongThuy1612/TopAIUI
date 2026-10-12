@@ -13,6 +13,7 @@ interface OrderRow {
 
 const route = useRoute()
 const { t } = useI18n()
+const localePath = useLocalePath()
 const { token, load } = useAuth()
 
 const postCredits = ref(0)
@@ -23,7 +24,7 @@ const loading = ref(true)
 onMounted(async () => {
   load()
   if (!token.value) {
-    await navigateTo({ path: '/login', query: { redirect: route.path } })
+    await navigateTo(localePath({ path: '/login', query: { redirect: route.fullPath } }))
     return
   }
   try {
@@ -34,7 +35,7 @@ onMounted(async () => {
     adClicks.value = res.adClicks
     orders.value = res.orders
   } catch {
-    await navigateTo({ path: '/login', query: { redirect: route.path } })
+    await navigateTo(localePath({ path: '/login', query: { redirect: route.fullPath } }))
   } finally {
     loading.value = false
   }
@@ -77,9 +78,9 @@ useSeoMeta({ title: () => `${t('promote.myOrders')} — TopAICollection`, robots
   <div class="mx-auto max-w-5xl px-4 py-10 sm:px-6">
     <div class="flex flex-wrap items-center justify-between gap-3">
       <h1 class="text-2xl font-extrabold text-ink-900">{{ t('promote.myOrders') }}</h1>
-      <NuxtLink to="/submit" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
+      <NuxtLinkLocale to="/submit" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
         {{ t('promote.orders.newOrder') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <div class="mt-4 flex flex-wrap gap-6 text-sm text-ink-600">

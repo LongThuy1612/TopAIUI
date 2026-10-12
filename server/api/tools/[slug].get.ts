@@ -110,6 +110,19 @@ export default defineCachedEventHandler(async (event) => {
     faqs = any?.faqs ?? faqs
   }
   const translation = pickByLocale(translations, locale)
+  // Languages with a real description: the tool's other language pages show the
+  // English text, so they point search engines at the English page (useSeoLocales).
+  const localeRows = await prisma.toolTranslation.findMany({
+    where: {
+      toolId: tool.id,
+      OR: [
+        { AND: [{ shortDesc: { not: null } }, { shortDesc: { not: '' } }] },
+        { AND: [{ description: { not: null } }, { description: { not: '' } }] }
+      ]
+    },
+    select: { locale: true }
+  })
+  const availableLocales = [...new Set(['en', ...localeRows.map(r => r.locale)])]
 
   return {
     ...rest,
@@ -127,7 +140,8 @@ export default defineCachedEventHandler(async (event) => {
     faqs: pickLocaleGroup(faqs, locale).map((f) => ({ question: f.question, answer: f.answer })),
     categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug })),
     tags: tags.map((tg) => ({ slug: tg.slug, name: cleanText(pickByLocale(tg.translations, locale)?.name) ?? tg.slug })),
-    analytics: normalizeAnalytics(analyticsRow)
+    analytics: normalizeAnalytics(analyticsRow),
+    availableLocales
   }
 }, { name: 'api-tool', maxAge: 300, swr: true, shouldBypassCache: () => import.meta.dev })
 

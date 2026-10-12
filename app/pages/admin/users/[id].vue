@@ -5,6 +5,7 @@ const { t } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: ['auth', 'admin'] })
 const route = useRoute()
 const router = useRouter()
+const localePath = useLocalePath()
 const { authHeaders } = useAuth()
 
 const { data: user } = await useFetch<AdminUser>(`/api/admin/users/${route.params.id}`, {
@@ -18,7 +19,7 @@ function onSaved(u: AdminUser) {
   savedNotice.value = true
 }
 
-const goBack = () => router.push('/admin/users')
+const goBack = () => router.push(localePath('/admin/users'))
 
 useSeoMeta({ title: () => `${t('admin.users.editTitle')} — TopAICollection` })
 </script>

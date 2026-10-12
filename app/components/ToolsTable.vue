@@ -47,7 +47,7 @@ function formatDate(d?: string) {
       <tbody>
         <tr v-for="tool in tools" :key="tool.id" class="border-t border-ink-100">
           <td class="px-4 py-3">
-            <NuxtLink :to="rowLink(tool)" class="flex items-center gap-2.5 hover:opacity-80">
+            <NuxtLinkLocale :to="rowLink(tool)" class="flex items-center gap-2.5 hover:opacity-80">
               <div v-if="tool.logoUrl" class="h-8 w-8 shrink-0 overflow-hidden rounded-lg">
                 <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
               </div>
@@ -63,7 +63,7 @@ function formatDate(d?: string) {
                   {{ tool.step2 || tool.status !== 'PENDING' ? t('admin.userSubmission') : t('admin.waitingUserContent') }}
                 </span>
               </div>
-            </NuxtLink>
+            </NuxtLinkLocale>
           </td>
           <td class="px-4 py-3 text-ink-600">{{ formatCompact(tool.clicksOrganic) }}</td>
           <td class="px-4 py-3 text-ink-600">{{ formatCompact(tool.clicksPaid) }}</td>
@@ -79,8 +79,8 @@ function formatDate(d?: string) {
     <div v-if="!tools.length" class="flex flex-col items-center gap-4 py-16">
       <p class="text-sm text-ink-400">{{ t('admin.noToolsMatch') }}</p>
       <div class="flex gap-3">
-        <NuxtLink :to="admin ? '/admin/tools/new' : '/submit'" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">{{ admin ? t('admin.newTool') : t('admin.submitYourTool') }}</NuxtLink>
-        <NuxtLink v-if="!admin" to="/advertise" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-700 hover:border-brand-300">{{ t('admin.advertiseYourTool') }}</NuxtLink>
+        <NuxtLinkLocale :to="admin ? '/admin/tools/new' : '/submit'" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">{{ admin ? t('admin.newTool') : t('admin.submitYourTool') }}</NuxtLinkLocale>
+        <NuxtLinkLocale v-if="!admin" to="/advertise" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-700 hover:border-brand-300">{{ t('admin.advertiseYourTool') }}</NuxtLinkLocale>
       </div>
     </div>
   </div>

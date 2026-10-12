@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <NuxtLink
+  <NuxtLinkLocale
     :to="`/category/${category.slug}`"
     :class="[
       'flex items-center justify-between gap-3 rounded-lg border px-3 py-2.5 text-sm transition',
@@ -18,5 +18,5 @@ defineProps<{
       <span class="truncate">{{ category.name }}</span>
     </span>
     <span class="shrink-0 text-xs text-ink-400">{{ category.count }}</span>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>

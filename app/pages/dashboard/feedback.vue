@@ -2,11 +2,12 @@
 import type { FeedbackStatus, FeedbackType, MyFeedback } from '~/types'
 
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 const { authHeaders, isAdmin } = useAuth()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 // Admins don't send feedback; they manage it (old links / bookmarks land here).
-if (isAdmin.value) await navigateTo('/admin/user-feedback', { replace: true })
+if (isAdmin.value) await navigateTo(localePath('/admin/user-feedback'), { replace: true })
 
 const feedbackTypes: { key: FeedbackType; labelKey: string }[] = [
   { key: 'FEATURE', labelKey: 'typeFeature' },

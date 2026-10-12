@@ -94,7 +94,7 @@ useSeoMeta({ title: () => `${t('adminAds.title')} — TopAICollection` })
           <tr v-for="c in items" :key="c.id" class="border-t border-ink-100 align-top">
             <td class="w-[240px] px-4 py-3">
               <div class="flex items-center gap-2">
-                <NuxtLink :to="`/tools/${c.tool.slug}`" target="_blank" class="font-semibold text-ink-900 hover:text-brand-600">{{ c.tool.name }}</NuxtLink>
+                <NuxtLinkLocale :to="`/tools/${c.tool.slug}`" target="_blank" class="font-semibold text-ink-900 hover:text-brand-600">{{ c.tool.name }}</NuxtLinkLocale>
                 <span :class="['rounded-full px-2 py-0.5 text-[11px] font-semibold', c.tier === 'FEATURED' ? 'bg-brand-500 text-white' : 'bg-ink-100 text-ink-600']">
                   {{ t(`advertisePage.tiers.${c.tier}`) }}
                 </span>

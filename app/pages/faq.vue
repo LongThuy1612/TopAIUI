@@ -54,7 +54,7 @@ useJsonLd('page', () => ({
     <section class="mt-14 rounded-3xl bg-gradient-to-br from-brand-50 to-white px-6 py-10 text-center">
       <h2 class="text-2xl font-extrabold text-ink-900">{{ t('faqPage.cta.title') }}</h2>
       <p class="mt-2 text-ink-600">{{ t('faqPage.cta.subtitle') }}</p>
-      <NuxtLink to="/contact" class="mt-6 inline-block rounded-xl bg-brand-500 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-600">{{ t('faqPage.cta.button') }}</NuxtLink>
+      <NuxtLinkLocale to="/contact" class="mt-6 inline-block rounded-xl bg-brand-500 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-600">{{ t('faqPage.cta.button') }}</NuxtLinkLocale>
     </section>
   </div>
 </template>

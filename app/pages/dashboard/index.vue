@@ -50,7 +50,7 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
     </div>
 
     <div class="mt-6 grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-4">
-      <NuxtLink
+      <NuxtLinkLocale
         v-for="card in featureCards"
         :key="card.label"
         :to="card.to"
@@ -65,38 +65,38 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
             <path stroke-linecap="round" stroke-linejoin="round" :d="card.icon" />
           </svg>
         </span>
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <div class="mt-3.5 grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-4">
-      <NuxtLink :to="isAdmin ? '/admin/tools' : '/dashboard/my-ais'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
+      <NuxtLinkLocale :to="isAdmin ? '/admin/tools' : '/dashboard/my-ais'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.myAIsData') }}</div>
         <div class="mt-2 text-xs text-ink-500">
           <span class="font-semibold text-amber-600">{{ n('tools', 'pending') }}</span> {{ t('admin.pending') }} ·
           <span class="font-semibold text-emerald-600">{{ n('tools', 'published') }}</span> {{ t('admin.published') }}
         </div>
-      </NuxtLink>
-      <NuxtLink :to="isAdmin ? '/admin/ads' : '/dashboard/advertise'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
+      </NuxtLinkLocale>
+      <NuxtLinkLocale :to="isAdmin ? '/admin/ads' : '/dashboard/advertise'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.advertise') }}</div>
         <div class="mt-2 text-xs text-ink-500">
           <span class="font-semibold text-emerald-600">{{ n('ads', 'running') }}</span> {{ t('admin.advertising') }} ·
           <span class="font-semibold text-ink-800">{{ n('ads', 'stopped') }}</span> {{ t('admin.stopped') }}
         </div>
-      </NuxtLink>
-      <NuxtLink :to="isAdmin ? '/admin/posts' : '/dashboard/my-posts'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
+      </NuxtLinkLocale>
+      <NuxtLinkLocale :to="isAdmin ? '/admin/posts' : '/dashboard/my-posts'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.guestPosts') }}</div>
         <div class="mt-2 text-xs text-ink-500">
           <span class="font-semibold text-amber-600">{{ n('posts', 'pending') }}</span> {{ t('admin.pending') }} ·
           <span class="font-semibold text-emerald-600">{{ n('posts', 'published') }}</span> {{ t('admin.published') }}
         </div>
-      </NuxtLink>
-      <NuxtLink :to="isAdmin ? '/admin/gpts' : '/dashboard/my-gpts'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
+      </NuxtLinkLocale>
+      <NuxtLinkLocale :to="isAdmin ? '/admin/gpts' : '/dashboard/my-gpts'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.submitGPTs') }}</div>
         <div class="mt-2 text-xs text-ink-500">
           <span class="font-semibold text-amber-600">{{ n('gpts', 'pending') }}</span> {{ t('admin.pending') }} ·
           <span class="font-semibold text-emerald-600">{{ n('gpts', 'published') }}</span> {{ t('admin.published') }}
         </div>
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <div class="mt-6 flex items-center gap-5 border-b border-ink-100 text-sm font-semibold">

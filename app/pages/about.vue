@@ -23,6 +23,7 @@ const features = [
 ]
 
 const abs = useAbsoluteUrl()
+const localePath = useLocalePath()
 const organization = useOrganizationNode()
 useBreadcrumbLd(() => [[t('footer.aboutUs'), '/about']])
 useJsonLd('page', () => ({
@@ -30,7 +31,7 @@ useJsonLd('page', () => ({
   '@type': 'AboutPage',
   name: t('aboutPage.meta.title'),
   description: t('aboutPage.meta.description'),
-  url: abs('/about'),
+  url: abs(localePath('/about')),
   about: organization
 }))
 
@@ -83,8 +84,8 @@ useSeoMeta({
       <h2 class="text-2xl font-extrabold text-ink-900">{{ t('aboutPage.cta.title') }}</h2>
       <p class="mt-2 text-ink-600">{{ t('aboutPage.cta.subtitle') }}</p>
       <div class="mt-6 flex flex-wrap justify-center gap-3">
-        <NuxtLink to="/category/all" class="rounded-xl bg-brand-500 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-600">{{ t('aboutPage.cta.browse') }}</NuxtLink>
-        <NuxtLink to="/submit" class="rounded-xl border border-brand-300 bg-white px-5 py-2.5 text-sm font-bold text-brand-600 hover:bg-brand-50">{{ t('aboutPage.cta.submit') }}</NuxtLink>
+        <NuxtLinkLocale to="/category/all" class="rounded-xl bg-brand-500 px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-600">{{ t('aboutPage.cta.browse') }}</NuxtLinkLocale>
+        <NuxtLinkLocale to="/submit" class="rounded-xl border border-brand-300 bg-white px-5 py-2.5 text-sm font-bold text-brand-600 hover:bg-brand-50">{{ t('aboutPage.cta.submit') }}</NuxtLinkLocale>
       </div>
     </section>
   </div>

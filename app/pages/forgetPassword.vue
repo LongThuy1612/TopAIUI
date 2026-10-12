@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const email = ref('')
 const loading = ref(false)
@@ -22,7 +22,7 @@ async function submit() {
   error.value = ''
   notRegistered.value = false
   try {
-    await $fetch('/api/auth/forgot-password', { method: 'POST', body: { email: email.value.trim() } })
+    await $fetch('/api/auth/forgot-password', { method: 'POST', body: { email: email.value.trim(), locale: locale.value } })
     sent.value = true
   } catch (err: unknown) {
     const statusCode = (err as { statusCode?: number })?.statusCode ?? 0
@@ -38,10 +38,10 @@ useSeoMeta({ title: () => `${t('auth.resetPasswordTitle')} — TopAICollection` 
 
 <template>
   <div class="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-4 py-16 sm:px-6">
-    <NuxtLink to="/" class="flex items-center gap-2.5">
+    <NuxtLinkLocale to="/" class="flex items-center gap-2.5">
       <IconLogo class="h-9 w-9 rounded-[11px]" width="36" height="36" />
       <span class="text-2xl font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <h1 class="mt-8 text-2xl font-extrabold text-ink-900">{{ t('auth.resetPasswordTitle') }}</h1>
 
@@ -66,7 +66,7 @@ useSeoMeta({ title: () => `${t('auth.resetPasswordTitle')} — TopAICollection` 
 
         <p v-if="error" class="text-sm text-red-600">
           {{ error }}
-          <NuxtLink v-if="notRegistered" to="/register" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.signUp') }}</NuxtLink>
+          <NuxtLinkLocale v-if="notRegistered" to="/register" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.signUp') }}</NuxtLinkLocale>
         </p>
 
         <button
@@ -78,7 +78,7 @@ useSeoMeta({ title: () => `${t('auth.resetPasswordTitle')} — TopAICollection` 
       </form>
 
       <p class="mt-5 text-center text-sm text-ink-600">
-        <NuxtLink to="/login" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.backToSignIn') }}</NuxtLink>
+        <NuxtLinkLocale to="/login" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.backToSignIn') }}</NuxtLinkLocale>
       </p>
     </div>
 

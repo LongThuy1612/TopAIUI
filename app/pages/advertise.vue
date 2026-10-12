@@ -56,7 +56,7 @@ const nf = new Intl.NumberFormat('en-US')
         <div class="p-label">
           <span><span class="req">*</span>{{ t('promote.form.tool') }}</span>
           <i18n-t keypath="promote.toolPicker.notListed" tag="small">
-            <template #link><NuxtLink to="/submit">{{ t('promote.toolPicker.submitFirst') }}</NuxtLink></template>
+            <template #link><NuxtLinkLocale to="/submit">{{ t('promote.toolPicker.submitFirst') }}</NuxtLinkLocale></template>
           </i18n-t>
         </div>
         <PromoteToolPicker v-model="tool" :error="touched ? errors.tool : ''" />

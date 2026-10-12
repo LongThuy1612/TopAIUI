@@ -15,6 +15,9 @@ const { siteUrl } = useRuntimeConfig().public
 const initials = (name: string) => name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'G'
 const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'long', day: 'numeric' }) : '')
 
+// GPT listings are in English only: other language URLs point at it.
+useSeoLocales(() => ['en'])
+
 useSeoMeta({
   title: () => `${gpt.value?.name ?? ''} — ${t('gpts.title')} — TopAICollection`,
   description: () => gpt.value?.description ?? '',
@@ -27,11 +30,11 @@ useSeoMeta({
 <template>
   <div v-if="gpt" class="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+      <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
       <span>›</span>
-      <NuxtLink to="/gpts" class="hover:text-brand-600">{{ t('gpts.title') }}</NuxtLink>
+      <NuxtLinkLocale to="/gpts" class="hover:text-brand-600">{{ t('gpts.title') }}</NuxtLinkLocale>
       <span>›</span>
-      <NuxtLink :to="{ path: '/gpts', query: { category: gpt.category } }" class="hover:text-brand-600">{{ t(`gpts.categories.${gpt.category}`) }}</NuxtLink>
+      <NuxtLinkLocale :to="{ path: '/gpts', query: { category: gpt.category } }" class="hover:text-brand-600">{{ t(`gpts.categories.${gpt.category}`) }}</NuxtLinkLocale>
     </nav>
 
     <div class="mt-6 flex flex-col gap-6 rounded-2xl border border-ink-200 bg-white p-6 sm:flex-row sm:items-center">

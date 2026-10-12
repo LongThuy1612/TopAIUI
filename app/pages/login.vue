@@ -3,9 +3,10 @@ import type { AuthUser } from '~/composables/useAuth'
 
 const { t } = useI18n()
 const route = useRoute()
+const localePath = useLocalePath()
 const { setSession } = useAuth()
 
-const redirect = computed(() => (typeof route.query.redirect === 'string' ? route.query.redirect : '/'))
+const redirect = computed(() => (typeof route.query.redirect === 'string' ? route.query.redirect : localePath('/')))
 
 const email = ref('')
 const password = ref('')
@@ -52,10 +53,10 @@ useSeoMeta({ title: () => `${t('auth.signInTitle')} — TopAICollection` })
 
 <template>
   <div class="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-4 py-16 sm:px-6">
-    <NuxtLink to="/" class="flex items-center gap-2.5">
+    <NuxtLinkLocale to="/" class="flex items-center gap-2.5">
       <IconLogo class="h-9 w-9 rounded-[11px]" width="36" height="36" />
       <span class="text-2xl font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <h1 class="mt-8 text-2xl font-extrabold text-ink-900">{{ t('auth.signInTitle') }}</h1>
 
@@ -111,7 +112,7 @@ useSeoMeta({ title: () => `${t('auth.signInTitle')} — TopAICollection` })
             <input v-model="rememberMe" type="checkbox" class="h-4 w-4 rounded border-ink-300 text-brand-500 focus:ring-brand-400">
             {{ t('auth.rememberMe') }}
           </label>
-          <NuxtLink to="/forgetPassword" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.forgotPassword') }}</NuxtLink>
+          <NuxtLinkLocale to="/forgetPassword" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.forgotPassword') }}</NuxtLinkLocale>
         </div>
 
         <p v-if="error" class="text-sm text-red-600">{{ error }}</p>
@@ -125,7 +126,7 @@ useSeoMeta({ title: () => `${t('auth.signInTitle')} — TopAICollection` })
       </form>
 
       <p class="mt-5 text-center text-sm text-ink-600">
-        {{ t('auth.noAccount') }} <NuxtLink :to="{ path: '/register', query: route.query }" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.signUp') }}</NuxtLink>
+        {{ t('auth.noAccount') }} <NuxtLinkLocale :to="{ path: '/register', query: route.query }" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.signUp') }}</NuxtLinkLocale>
       </p>
     </div>
 

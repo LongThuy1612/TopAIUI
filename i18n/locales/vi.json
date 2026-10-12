@@ -108,8 +108,8 @@
     "revenueDesc": "Danh sách Top AI theo doanh thu và lượt truy cập thực."
   },
   "admin": {
-    "badge": "Admin",
-    "dashboard": "Dashboard",
+    "badge": "Quản trị",
+    "dashboard": "Bảng điều khiển",
     "manageTools": "Quản lý Tool",
     "newTool": "Tạo Tool mới",
     "newToolTitle": "Tạo Tool mới",
@@ -119,18 +119,18 @@
     "editLockedHint": "Các trường thông tin cơ bản đã bị khóa sau khi tạo. Bạn vẫn có thể đổi logo, ảnh chụp màn hình, bật/tắt Approved và chỉnh nội dung bản dịch.",
     "pendingCount": "tool đang chờ duyệt | tool đang chờ duyệt",
     "searchPlaceholder": "Tìm theo tên hoặc slug...",
-    "research": "Research",
-    "websiteInsights": "Website Insights",
-    "socialListening": "Social Listening",
-    "freePlan": "Free",
-    "websiteInsightsQuota": "Website Insights Quota",
-    "socialListeningQueries": "Social Listening Queries",
+    "research": "Nghiên cứu",
+    "websiteInsights": "Phân tích Website",
+    "socialListening": "Lắng nghe Mạng xã hội",
+    "freePlan": "Miễn phí",
+    "websiteInsightsQuota": "Hạn mức Phân tích Website",
+    "socialListeningQueries": "Số truy vấn Lắng nghe Mạng xã hội",
     "upgrade": "Nâng cấp",
-    "business": "Business",
-    "myAIs": "My AIs",
-    "advertiseAI": "Advertise AI",
-    "postsLinks": "Posts / Links",
-    "myGPTs": "My GPTs",
+    "business": "Kinh doanh",
+    "myAIs": "AI của tôi",
+    "advertiseAI": "Quảng cáo AI",
+    "postsLinks": "Bài viết / Liên kết",
+    "myGPTs": "GPT của tôi",
     "other": "Khác",
     "sharedLogin": "Tài khoản dùng chung",
     "logout": "Đăng xuất",
@@ -138,28 +138,28 @@
     "greeting": "Chào {name}",
     "greetingSubtitle": "Theo dõi công cụ AI, chiến dịch và đơn hàng của bạn tại một nơi.",
     "comingSoon": "Sắp ra mắt",
-    "aiAdvertisingLibrary": "AI Advertising Library",
-    "myAIsData": "My AI's Data",
+    "aiAdvertisingLibrary": "Thư viện quảng cáo AI",
+    "myAIsData": "Dữ liệu AI của tôi",
     "pending": "chờ duyệt",
     "published": "đã đăng",
-    "advertise": "Advertise",
+    "advertise": "Quảng cáo",
     "advertising": "đang chạy quảng cáo",
     "stopped": "đã dừng",
-    "guestPosts": "Guest Posts / Link Insert",
-    "submitGPTs": "Submit GPTs",
+    "guestPosts": "Bài viết khách / Chèn liên kết",
+    "submitGPTs": "Gửi GPT",
     "pendingProcessedPlaceholder": "0 chờ duyệt · 0 đã xử lý",
     "aiDataHeading": "Dữ liệu Tool",
     "statusAll": "Tất cả",
     "statusPending": "Chờ duyệt",
     "statusPublished": "Đã đăng",
-    "socialListeningComingSoon": "Social Listening sắp ra mắt.",
-    "colTool": "Tool",
-    "colOrganicClicks": "Organic clicks",
-    "colPaidClicks": "Paid clicks",
-    "colTotalClicks": "Total clicks",
-    "colOpenDetails": "Open details",
-    "colSave": "Save",
-    "colImpressions": "Total Impressions",
+    "socialListeningComingSoon": "Lắng nghe Mạng xã hội sắp ra mắt.",
+    "colTool": "Công cụ",
+    "colOrganicClicks": "Lượt nhấp tự nhiên",
+    "colPaidClicks": "Lượt nhấp trả phí",
+    "colTotalClicks": "Tổng lượt nhấp",
+    "colOpenDetails": "Xem chi tiết",
+    "colSave": "Lưu",
+    "colImpressions": "Tổng lượt hiển thị",
     "colAddedOn": "Ngày tạo",
     "noToolsMatch": "Không có tool nào khớp bộ lọc.",
     "submitYourTool": "Đăng công cụ của bạn",
@@ -180,7 +180,7 @@
     "cancel": "Hủy",
     "fieldName": "Tên",
     "fieldSlug": "Slug",
-    "fieldWebsite": "Website",
+    "fieldWebsite": "Trang web",
     "fieldLogoUrl": "Logo URL",
     "fieldPricingType": "Giá",
     "fieldStatus": "Trạng thái",
@@ -189,7 +189,7 @@
     "fieldRegion": "Khu vực",
     "fieldSource": "Nguồn",
     "fieldMonthlyRevenue": "Doanh thu / tháng",
-    "fieldAffiliateUrl": "Affiliate URL",
+    "fieldAffiliateUrl": "URL tiếp thị liên kết",
     "fieldCouponCode": "Mã giảm giá",
     "fieldTwitterUrl": "Twitter URL",
     "fieldDiscordUrl": "Discord URL",
@@ -221,9 +221,9 @@
       "mostPopular": "Phổ biến nhất",
       "subscribe": "Đăng ký",
       "plan": {
-        "starter": "Starter",
-        "professional": "Professional",
-        "enterprise": "Enterprise"
+        "starter": "Khởi đầu",
+        "professional": "Chuyên nghiệp",
+        "enterprise": "Doanh nghiệp"
       },
       "desc": {
         "starter": "Phù hợp cho nhà nghiên cứu cá nhân và startup AI giai đoạn đầu.",
@@ -231,8 +231,8 @@
         "enterprise": "Thiết kế cho các công ty đầu tư dựa trên dữ liệu và doanh nghiệp quy mô lớn."
       },
       "feature": {
-        "credits": "Data Credits / tháng",
-        "queries": "query Social Listening đang hoạt động",
+        "credits": "Tín dụng dữ liệu / tháng",
+        "queries": "truy vấn Lắng nghe Mạng xã hội đang hoạt động",
         "filtering": "Lọc nâng cao",
         "export": "dòng xuất / tháng",
         "statistics": "Thống kê cơ bản",
@@ -242,8 +242,8 @@
       "faq": {
         "title": "Câu hỏi thường gặp",
         "q1": {
-          "question": "\"Data Credits\" là gì?",
-          "answer": "Data Credits là đơn vị bạn dùng để nghiên cứu trên nền tảng. Credit được tính như sau:\n1. Xem dữ liệu: mỗi dòng dữ liệu tải trên trang \"Insights\" tốn 1 credit. Xem lại cùng dòng đó trong cùng tháng thì không tốn thêm.\n2. Xuất dữ liệu: bạn xuất được các dòng đã tải mà không tốn thêm credit, trong hạn mức xuất của gói (số dòng mỗi lần và mỗi tháng).\n3. Miễn phí: query Social Listening không tốn Data Credits; gói của bạn giới hạn số query hoạt động cùng lúc.\nLưu ý: Credit và hạn mức xuất được làm mới mỗi tháng (kể cả gói năm). Credit chưa dùng không được cộng dồn."
+          "question": "\"Tín dụng dữ liệu\" là gì?",
+          "answer": "Tín dụng dữ liệu là đơn vị bạn dùng để nghiên cứu trên nền tảng. Tín dụng được tính như sau:\n1. Xem dữ liệu: mỗi dòng dữ liệu tải trên trang \"Phân tích Website\" tốn 1 tín dụng. Xem lại cùng dòng đó trong cùng tháng thì không tốn thêm.\n2. Xuất dữ liệu: bạn xuất được các dòng đã tải mà không tốn thêm tín dụng, trong hạn mức xuất của gói (số dòng mỗi lần và mỗi tháng).\n3. Miễn phí: truy vấn Lắng nghe Mạng xã hội không tốn tín dụng dữ liệu; gói của bạn giới hạn số truy vấn hoạt động cùng lúc.\nLưu ý: Tín dụng và hạn mức xuất được làm mới mỗi tháng (kể cả gói năm). Tín dụng chưa dùng không được cộng dồn."
         }
       },
       "currentPlan": "Gói hiện tại",
@@ -312,7 +312,7 @@
         "APPROVED": "Đã duyệt",
         "REJECTED": "Từ chối"
       },
-      "colTool": "Tool",
+      "colTool": "Công cụ",
       "colAuthor": "Người viết",
       "colReview": "Đánh giá",
       "colStatus": "Trạng thái",
@@ -472,7 +472,7 @@
     "colTool": "Công cụ",
     "colVisits": "Lượt truy cập / tháng",
     "colGrowth": "Tăng trưởng",
-    "colAuthority": "Domain Authority",
+    "colAuthority": "Độ uy tín tên miền",
     "colCategory": "Danh mục",
     "colRevenue": "Doanh thu",
     "noData": "Chưa có dữ liệu xếp hạng.",
@@ -542,7 +542,7 @@
     "couponCode": "Mã giảm giá",
     "ratings": "đánh giá",
     "upvotes": "lượt upvote",
-    "domainAuthority": "Domain Authority",
+    "domainAuthority": "Độ uy tín tên miền",
     "trafficRank": "Xếp hạng traffic",
     "viewCount": "Lượt xem trang",
     "outOf5": "trên 5",
@@ -629,11 +629,11 @@
     "label": "Ngôn ngữ"
   },
   "socialListening": {
-    "title": "Social Listening",
+    "title": "Lắng nghe Mạng xã hội",
     "subtitle": "Theo dõi tức thì hiệu suất video mạng xã hội của bất kỳ website AI nào trên YouTube và TikTok.",
     "allCategories": "Tất cả danh mục",
     "searchPlaceholder": "Nhập tên tool hoặc domain",
-    "colTool": "AI Tool",
+    "colTool": "Công cụ AI",
     "colIntroduce": "Giới thiệu",
     "colVideoCount": "Số video",
     "colCreatorsCount": "Số nhà sáng tạo",
@@ -645,13 +645,13 @@
     "noResults": "Không có tool nào khớp với tìm kiếm của bạn."
   },
   "websiteInsights": {
-    "title": "Website Insights",
+    "title": "Phân tích Website",
     "searchPlaceholder": "Nhập tên tool hoặc domain",
     "advancedFilter": "Bộ lọc nâng cao",
     "bulkOpen": "Mở hàng loạt website",
     "sortDefault": "Giảm dần: Mặc định",
     "export": "Xuất dữ liệu",
-    "colTool": "Tool",
+    "colTool": "Công cụ",
     "colMonthlyVisits": "Lượt truy cập / tháng",
     "colGrowth": "Tăng trưởng",
     "colGrowthRate": "Tỷ lệ tăng trưởng",
@@ -669,8 +669,8 @@
     "loading": "Đang tải…",
     "loadError": "Không tải được dữ liệu. Vui lòng thử lại.",
     "popupBlocked": "Trình duyệt đã chặn một số tab. Hãy cho phép cửa sổ bật lên cho trang này để mở tất cả.",
-    "creditsThisMonth": "Data Credits tháng này",
-    "outOfCredits": "Bạn đã dùng hết Data Credits của tháng này — {n} dòng trên trang đang bị khoá. Nâng cấp để xem.",
+    "creditsThisMonth": "Tín dụng dữ liệu tháng này",
+    "outOfCredits": "Bạn đã dùng hết tín dụng dữ liệu của tháng này — {n} dòng trên trang đang bị khoá. Nâng cấp để xem.",
     "unlock": "Nâng cấp để mở khoá",
     "statsTitle": "Thống kê",
     "statsLocked": "Thống kê theo tháng có ở các gói trả phí.",
@@ -685,8 +685,8 @@
     "statCategoryGrowth": "Tăng trưởng theo danh mục",
     "advancedFilters": "Bộ lọc",
     "clearFilters": "Xoá bộ lọc",
-    "filterNeedsAdvanced": "Từ gói Starter",
-    "filterNeedsFull": "Gói Enterprise",
+    "filterNeedsAdvanced": "Từ gói Khởi đầu",
+    "filterNeedsFull": "Gói Doanh nghiệp",
     "exportQuota": "Xuất: {used}/{limit} dòng tháng này · tối đa {per} dòng mỗi lần",
     "exportError": "Xuất thất bại. Vui lòng thử lại.",
     "filter": {
@@ -702,11 +702,11 @@
     }
   },
   "myAIsPage": {
-    "title": "My AIs",
+    "title": "AI của tôi",
     "submitNewAI": "Đăng AI mới",
     "updateNewAI": "Cập nhật AI",
-    "colTool": "Tool",
-    "colWebsite": "Website",
+    "colTool": "Công cụ",
+    "colWebsite": "Trang web",
     "colType": "Loại",
     "colDate": "Ngày",
     "colStatus": "Trạng thái",
@@ -717,7 +717,7 @@
   "advertisePage": {
     "title": "Quảng cáo của tôi",
     "createNew": "Tạo quảng cáo mới",
-    "colTool": "Tool",
+    "colTool": "Công cụ",
     "colAdLandingLink": "Link đích quảng cáo",
     "colBalances": "Số dư",
     "colStatus": "Trạng thái",
@@ -725,8 +725,8 @@
     "emptyMessage": "Bạn hiện chưa có quảng cáo nào, nhấn để tạo quảng cáo",
     "colPerformance": "Hiệu quả",
     "tiers": {
-      "STANDARD": "Standard",
-      "FEATURED": "Featured"
+      "STANDARD": "Tiêu chuẩn",
+      "FEATURED": "Nổi bật"
     },
     "statuses": {
       "PENDING_REVIEW": "Đang duyệt",
@@ -785,9 +785,9 @@
     }
   },
   "myGPTsPage": {
-    "title": "My GPTs",
+    "title": "GPT của tôi",
     "submitNewGPT": "Đăng GPT mới",
-    "colTool": "Tool",
+    "colTool": "Công cụ",
     "colDate": "Ngày",
     "colStatus": "Trạng thái",
     "emptyMessage": "Bạn hiện chưa có GPT nào, hãy đăng GPT của bạn",
@@ -805,9 +805,9 @@
   },
   "paymentInvoicePage": {
     "title": "Gói đăng ký",
-    "research": "Research",
+    "research": "Nghiên cứu",
     "monthlyQueries": "Lượt truy vấn / tháng",
-    "socialListeningQueries": "Lượt truy vấn Social Listening",
+    "socialListeningQueries": "Lượt truy vấn Lắng nghe Mạng xã hội",
     "selectPlan": "Chọn gói",
     "subscription": "Gói đăng ký",
     "subscriptionPlan": "Gói hiện tại",
@@ -836,7 +836,7 @@
     "quotaResets": "Hạn mức làm mới vào {date}",
     "cardInStripe": "Lưu trên Stripe",
     "endsOn": "Gói kết thúc",
-    "researchPlan": "Gói Research",
+    "researchPlan": "Gói Nghiên cứu",
     "invoiceStatuses": {
       "paid": "Đã thanh toán",
       "open": "Chưa thanh toán",
@@ -1396,12 +1396,12 @@
       "all": "Tất cả"
     },
     "colCampaign": "Chiến dịch",
-    "colLanding": "Landing",
+    "colLanding": "Trang đích",
     "colBalance": "Số dư",
     "colStatus": "Trạng thái",
     "colActions": "Thao tác",
     "toolWebsite": "Website của tool",
-    "landing": "Landing URL",
+    "landing": "URL trang đích",
     "sameAsWebsite": "Giống website",
     "pendingLanding": "URL mới chờ duyệt:",
     "approveCampaign": "Duyệt chiến dịch",
@@ -1416,11 +1416,11 @@
     "empty": "Chưa có chiến dịch nào."
   },
   "socialQueries": {
-    "title": "Query của tôi",
-    "subtitle": "Theo dõi chủ đề trong các bài đăng mạng xã hội đã thu thập — tối đa 5 từ khoá mỗi query. Không tốn Data Credits.",
+    "title": "Truy vấn của tôi",
+    "subtitle": "Theo dõi chủ đề trong các bài đăng mạng xã hội đã thu thập — tối đa 5 từ khoá mỗi truy vấn. Không tốn tín dụng dữ liệu.",
     "usage": "{used}/{limit} đang hoạt động",
     "new": "Mới",
-    "namePlaceholder": "Tên query, ví dụ AI Video",
+    "namePlaceholder": "Tên truy vấn, ví dụ AI Video",
     "keywordsPlaceholder": "Từ khoá, cách nhau bằng dấu phẩy: AI video, text to video",
     "keywordsHint": "{n}/{max} từ khoá",
     "save": "Lưu",
@@ -1434,18 +1434,18 @@
     "pause": "Tạm dừng",
     "resume": "Tiếp tục",
     "delete": "Xoá",
-    "confirmDelete": "Xoá query \"{name}\"?",
+    "confirmDelete": "Xoá truy vấn \"{name}\"?",
     "noResults": "Chưa có bài đăng nào khớp các từ khoá này.",
     "loadMore": "Tải thêm",
-    "empty": "Chưa có query nào — tạo query để theo dõi một chủ đề.",
-    "none": "Query Social Listening có ở các gói trả phí.",
+    "empty": "Chưa có truy vấn nào — tạo truy vấn để theo dõi một chủ đề.",
+    "none": "Truy vấn Lắng nghe Mạng xã hội có trong các gói trả phí.",
     "error": "Có lỗi xảy ra. Vui lòng thử lại.",
     "overLimit": "Vượt hạn mức gói"
   },
   "publicLimits": {
     "login": "Đăng nhập để xem thêm",
     "rankingTitle": "Bảng xếp hạng miễn phí hiển thị top {n}",
-    "rankingText": "Xem toàn bộ bảng xếp hạng, kèm lượt truy cập và tăng trưởng của mọi công cụ, với gói Research trả phí."
+    "rankingText": "Xem toàn bộ bảng xếp hạng, kèm lượt truy cập và tăng trưởng của mọi công cụ, với gói Nghiên cứu trả phí."
   },
   "aiNews": {
     "title": "Tin AI",
@@ -1505,16 +1505,16 @@
     "editTitle": "Sửa yêu cầu chèn link",
     "intro": "Chúng tôi chèn link của bạn vào một bài đã đăng, trong câu phù hợp tự nhiên. Tốn {n} credit; nếu không chèn được, credit được hoàn.",
     "fieldUrl": "Link cần chèn",
-    "fieldAnchor": "Anchor text",
+    "fieldAnchor": "Văn bản neo (anchor text)",
     "fieldArticle": "Bài viết",
     "editorChooses": "Để biên tập chọn bài phù hợp nhất",
     "fieldNote": "Ghi chú cho biên tập",
     "notePlaceholder": "Không bắt buộc: vị trí trong bài, ngữ cảnh, cách diễn đạt mong muốn…",
     "needUrl": "Link đầy đủ (https://…)",
-    "needAnchor": "Anchor text"
+    "needAnchor": "Văn bản neo"
   },
   "adminPosts": {
-    "title": "Guest posts",
+    "title": "Bài viết khách",
     "filters": {
       "review": "Chờ duyệt",
       "all": "Tất cả"
@@ -1803,7 +1803,7 @@
       "account": {
         "0": {
           "question": "Tôi có cần tài khoản để sử dụng TopAICollection không?",
-          "answer": "Không cần tài khoản để duyệt và tìm kiếm danh mục. Khi có tài khoản, bạn có thể viết đánh giá, quản lý công cụ và GPT đã gửi, chạy quảng cáo, và dùng Website Insights cùng Social Listening."
+          "answer": "Không cần tài khoản để duyệt và tìm kiếm danh mục. Khi có tài khoản, bạn có thể viết đánh giá, quản lý công cụ và GPT đã gửi, chạy quảng cáo, và dùng Phân tích Website cùng Lắng nghe Mạng xã hội."
         },
         "1": {
           "question": "Làm thế nào để quảng bá công cụ của tôi?",
@@ -1811,7 +1811,7 @@
         },
         "2": {
           "question": "Tôi có thể huỷ gói đăng ký bất cứ lúc nào không?",
-          "answer": "Có. Gói Research Plan có thể huỷ bất cứ lúc nào tại Dashboard → Thanh toán & Hoá đơn; bạn vẫn dùng được đến hết kỳ đã thanh toán. Gói click và lượt gửi công cụ là các khoản mua một lần."
+          "answer": "Có. Gói Nghiên cứu có thể huỷ bất cứ lúc nào tại Dashboard → Thanh toán & Hoá đơn; bạn vẫn dùng được đến hết kỳ đã thanh toán. Gói click và lượt gửi công cụ là các khoản mua một lần."
         }
       }
     },
@@ -1855,7 +1855,7 @@
     },
     "title": "Bảng giá Đơn giản & Minh bạch",
     "subtitle": "Bắt đầu miễn phí và mở rộng khi bạn phát triển. Không có bất ngờ.",
-    "freeDesc": "Dùng thử Website Insights và Social Listening với hạn mức hằng tháng.",
+    "freeDesc": "Dùng thử Phân tích Website và Lắng nghe Mạng xã hội với hạn mức hằng tháng.",
     "freePrice": "Miễn phí",
     "getStarted": "Bắt đầu",
     "otherTitle": "Dịch vụ khác",

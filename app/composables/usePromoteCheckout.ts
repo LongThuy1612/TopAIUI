@@ -14,12 +14,13 @@ export type PromoteOrder =
 export function usePromoteCheckout() {
   const route = useRoute()
   const { token, load } = useAuth()
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
+  const localePath = useLocalePath()
   const loading = ref(false)
   const error = ref<string | null>(null)
 
   // Chưa đăng nhập → sang trang login user, xong quay lại đúng trang này.
-  const goLogin = () => navigateTo({ path: '/login', query: { redirect: route.path } })
+  const goLogin = () => navigateTo(localePath({ path: '/login', query: { redirect: route.fullPath } }))
 
   async function checkout(order: PromoteOrder) {
     load()
@@ -30,7 +31,7 @@ export function usePromoteCheckout() {
     try {
       const res = await $fetch<{ orderId: string; checkoutUrl?: string; redirect?: string }>('/api/promote/checkout', {
         method: 'POST',
-        body: order,
+        body: { ...order, locale: locale.value },
         headers: { 'x-user-token': token.value },
       })
       if (res.checkoutUrl) {
@@ -38,7 +39,7 @@ export function usePromoteCheckout() {
         await navigateTo(res.checkoutUrl, { external: true })
         return
       }
-      await navigateTo(res.redirect ?? `/orders?new=${res.orderId}`)
+      await navigateTo(localePath(res.redirect ?? `/orders?new=${res.orderId}`))
     } catch (e: any) {
       if (e?.statusCode === 401) return goLogin()
       error.value = e?.statusCode === 400 && e?.data?.message ? e.data.message : t('promote.genericError')

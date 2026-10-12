@@ -40,7 +40,7 @@ useSeoMeta({
 <template>
   <div class="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+      <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
       <span>›</span>
       <span class="text-ink-600">{{ t('gpts.title') }}</span>
     </nav>
@@ -49,9 +49,9 @@ useSeoMeta({
         <h1 class="text-3xl font-extrabold text-ink-900">{{ t('gpts.title') }}</h1>
         <p class="mt-1 text-sm text-ink-500">{{ t('gpts.sub') }}</p>
       </div>
-      <NuxtLink to="/submit-gpt" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
+      <NuxtLinkLocale to="/submit-gpt" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
         {{ t('gpts.submit') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <form class="mt-6 flex max-w-xl gap-2" @submit.prevent="go({ q: search.trim(), page: 1 })">

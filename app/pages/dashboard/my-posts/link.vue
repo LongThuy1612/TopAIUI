@@ -7,6 +7,7 @@ const { t } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: 'auth', key: route => route.fullPath })
 const { authHeaders } = useAuth()
 const route = useRoute()
+const localePath = useLocalePath()
 const editId = computed(() => (typeof route.query.id === 'string' ? route.query.id : ''))
 
 const [{ data }, { data: articles }, { data: one }] = await Promise.all([
@@ -44,7 +45,7 @@ async function submit() {
     if (existing.value) await $fetch(`/api/me/posts/${existing.value.id}`, { method: 'PATCH', headers: authHeaders(), body })
     else await $fetch('/api/me/posts', { method: 'POST', headers: authHeaders(), body })
     await Promise.all([refreshNuxtData('my-posts'), refreshNuxtData('my-orders')])
-    await navigateTo('/dashboard/my-posts')
+    await navigateTo(localePath('/dashboard/my-posts'))
   } catch (e: any) {
     error.value = e?.data?.message || t('admin.saveError')
     saving.value = false
@@ -56,7 +57,7 @@ useSeoMeta({ title: () => `${t('linkForm.title')} — TopAICollection` })
 
 <template>
   <div class="max-w-2xl">
-    <NuxtLink to="/dashboard/my-posts" class="text-sm text-ink-500 hover:text-brand-600">← {{ t('myPostsPage.title') }}</NuxtLink>
+    <NuxtLinkLocale to="/dashboard/my-posts" class="text-sm text-ink-500 hover:text-brand-600">← {{ t('myPostsPage.title') }}</NuxtLinkLocale>
     <h1 class="mt-2 text-xl font-extrabold text-ink-900">{{ existing ? t('linkForm.editTitle') : t('linkForm.title') }}</h1>
 
     <p v-if="editId && !existing" class="mt-4 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">{{ t('postForm.notEditable') }}</p>
@@ -98,7 +99,7 @@ useSeoMeta({ title: () => `${t('linkForm.title')} — TopAICollection` })
           {{ existing ? t('postForm.resubmit') : t('postForm.submit', { n: cost }) }}
         </button>
         <span class="text-sm text-ink-500">{{ t('myPostsPage.myCredits') }}: <b>{{ credits }}</b></span>
-        <NuxtLink v-if="!existing && credits < cost" to="/post-or-insert" class="text-sm font-semibold text-brand-600 hover:underline">{{ t('myPostsPage.buyMore') }}</NuxtLink>
+        <NuxtLinkLocale v-if="!existing && credits < cost" to="/post-or-insert" class="text-sm font-semibold text-brand-600 hover:underline">{{ t('myPostsPage.buyMore') }}</NuxtLinkLocale>
       </div>
       <ul v-if="problems.length" class="mt-2 list-disc pl-5 text-xs text-ink-500">
         <li v-for="p in problems" :key="p">{{ p }}</li>

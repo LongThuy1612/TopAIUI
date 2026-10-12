@@ -5,7 +5,8 @@ const { locale } = useI18n()
 const route = useRoute()
 // Dashboard pages (user + admin) bring their own header/sidebar via layouts/dashboard.vue.
 const isDashboard = computed(() => route.meta.layout === 'dashboard')
-const isMinimalRoute = computed(() => ['/login', '/register', '/forgetPassword'].includes(route.path))
+const basePath = useBasePath()
+const isMinimalRoute = computed(() => ['/login', '/register', '/forgetPassword'].includes(basePath.value))
 
 const { data: featuredRes } = await useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ featured: 'true', limit: 1, locale: locale.value })) })
 const announcementTool = computed(() => featuredRes.value?.items?.[0])
@@ -17,16 +18,22 @@ useHead({
 
 // SEO defaults for every page; a page's own useSeoMeta (set later) wins.
 // Canonical = the path without query: filters (?q, ?sort, ?pricing) and tracking
-// parameters point back to the main page instead of counting as duplicates.
+// parameters point back to the main page instead of counting as duplicates. A
+// language version without its own content points at English (useSeoLocales).
+// hreflang tells search engines which URLs are the same page in other languages.
 const abs = useAbsoluteUrl()
-const canonical = computed(() => abs(route.path === '/' ? '/' : route.path.replace(/\/+$/, '')))
-useHead({ link: [{ rel: 'canonical', href: canonical }] })
+const { canonical, alternates } = usePageSeoUrls()
+// Open Graph wants language_TERRITORY; hreflang uses language-only codes.
+const OG_LOCALES: Record<string, string> = {
+  en: 'en_US', zh: 'zh_CN', es: 'es_ES', de: 'de_DE', ja: 'ja_JP', fr: 'fr_FR', ko: 'ko_KR', pt: 'pt_PT', id: 'id_ID', vi: 'vi_VN'
+}
+useHead({ link: computed(() => [{ rel: 'canonical', href: canonical.value }, ...alternates.value]) })
 useSeoMeta({
   ogSiteName: 'TopAICollection',
   ogType: 'website',
   ogUrl: canonical,
   ogImage: abs('/topaicollection.png'),
-  ogLocale: () => i18nHead.value.htmlAttrs?.lang?.replace('-', '_'),
+  ogLocale: () => OG_LOCALES[locale.value] ?? 'en_US',
   twitterCard: 'summary',
   twitterSite: '@aicollectioninc'
 })

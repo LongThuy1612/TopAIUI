@@ -67,7 +67,7 @@ function formatGrowth(n: number) {
               </span>
             </td>
             <td class="px-4 py-3">
-              <NuxtLink :to="`/tools/${item.slug}`" class="group flex items-center gap-3">
+              <NuxtLinkLocale :to="`/tools/${item.slug}`" class="group flex items-center gap-3">
                 <div v-if="item.logoUrl" class="h-8 w-8 shrink-0 overflow-hidden rounded-lg">
                   <img :src="item.logoUrl" :alt="item.name" loading="lazy" class="h-full w-full object-cover">
                 </div>
@@ -75,7 +75,7 @@ function formatGrowth(n: number) {
                   {{ item.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI' }}
                 </div>
                 <span class="font-semibold text-ink-900 group-hover:text-brand-600">{{ item.name }}</span>
-              </NuxtLink>
+              </NuxtLinkLocale>
             </td>
             <td v-if="scoreLabel" class="px-4 py-3">
               <span class="font-semibold text-ink-800">{{ formatCompact(item.score) }}</span>
@@ -95,7 +95,7 @@ function formatGrowth(n: number) {
             <td class="px-4 py-3 text-ink-500">
               <template v-if="item.categories.length">
                 <template v-for="(c, i) in item.categories" :key="c.slug">
-                  <NuxtLink :to="`/category/${c.slug}`" class="hover:text-brand-600">{{ c.name }}</NuxtLink><span v-if="i < item.categories.length - 1">, </span>
+                  <NuxtLinkLocale :to="`/category/${c.slug}`" class="hover:text-brand-600">{{ c.name }}</NuxtLinkLocale><span v-if="i < item.categories.length - 1">, </span>
                 </template>
               </template>
               <span v-else>—</span>

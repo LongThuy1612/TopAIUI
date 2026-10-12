@@ -56,25 +56,25 @@ useSeoMeta({
     <h1 class="text-xl font-extrabold text-ink-900">{{ t('myPostsPage.title') }}</h1>
 
     <div class="mt-4 flex flex-wrap items-center gap-3">
-      <NuxtLink
+      <NuxtLinkLocale
         :to="canPost ? '/dashboard/my-posts/post' : '/post-or-insert'"
         class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600"
       >
         {{ t('myPostsPage.createNewPost') }}
-      </NuxtLink>
-      <NuxtLink
+      </NuxtLinkLocale>
+      <NuxtLinkLocale
         :to="canLink ? '/dashboard/my-posts/link' : '/post-or-insert'"
         class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600"
       >
         {{ t('myPostsPage.createNewLinkInsert') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
       <span class="text-sm text-ink-900">
         <span class="font-bold">{{ t('myPostsPage.myCredits') }}: {{ credits }}</span>
         {{ t('myPostsPage.creditsHint') }}
       </span>
-      <NuxtLink to="/post-or-insert" class="rounded-lg border border-ink-200 px-4 py-2.5 text-sm font-semibold text-ink-900 hover:border-brand-300">
+      <NuxtLinkLocale to="/post-or-insert" class="rounded-lg border border-ink-200 px-4 py-2.5 text-sm font-semibold text-ink-900 hover:border-brand-300">
         {{ t('myPostsPage.buyMore') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
     <p v-if="!canLink" class="mt-2 text-xs text-ink-500">{{ t('myPostsPage.noCredits') }}</p>
     <p v-if="actionError" class="mt-3 text-sm text-red-600">{{ actionError }}</p>
@@ -100,7 +100,7 @@ useSeoMeta({
               <div class="mt-1 text-xs text-ink-400">{{ formatDate(s.submittedAt) }} · {{ t('myPostsPage.creditsUsed', { n: s.credits }) }}</div>
             </td>
             <td class="max-w-[260px] px-4 py-3">
-              <NuxtLink v-if="s.article" :to="`/ai-news/${s.article.slug}`" target="_blank" class="text-brand-600 hover:underline">{{ s.article.title }}</NuxtLink>
+              <NuxtLinkLocale v-if="s.article" :to="`/ai-news/${s.article.slug}`" target="_blank" class="text-brand-600 hover:underline">{{ s.article.title }}</NuxtLinkLocale>
               <span v-else-if="s.type === 'LINK_INSERT'" class="text-xs text-ink-500">{{ s.articleId ? t('myPostsPage.requestedArticle') : t('myPostsPage.editorPicks') }}</span>
               <span v-else class="text-ink-300">—</span>
             </td>
@@ -114,9 +114,9 @@ useSeoMeta({
             </td>
             <td class="whitespace-nowrap px-4 py-3 text-right">
               <div v-if="editable(s)" class="flex flex-col items-end gap-1.5 text-sm font-semibold">
-                <NuxtLink :to="editLink(s)" class="text-brand-600 hover:text-brand-700">
+                <NuxtLinkLocale :to="editLink(s)" class="text-brand-600 hover:text-brand-700">
                   {{ s.status === 'CHANGES_REQUESTED' ? t('myPostsPage.editResubmit') : t('myPostsPage.edit') }}
-                </NuxtLink>
+                </NuxtLinkLocale>
                 <button type="button" :disabled="busyId === s.id" class="text-ink-500 hover:text-red-600 disabled:opacity-50" @click="withdraw(s)">
                   {{ t('myPostsPage.withdraw') }}
                 </button>

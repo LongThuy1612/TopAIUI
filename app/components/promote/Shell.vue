@@ -17,7 +17,7 @@ const canceled = computed(() => route.query.canceled === '1')
     <div class="p-container">
       <header class="head">
         <h1 class="head__title">{{ tp('promote.title') }}</h1>
-        <NuxtLink to="/orders" class="head__orders">{{ t('promote.myOrders') }} <span aria-hidden="true">›</span></NuxtLink>
+        <NuxtLinkLocale to="/orders" class="head__orders">{{ t('promote.myOrders') }} <span aria-hidden="true">›</span></NuxtLinkLocale>
       </header>
       <p class="intro">{{ tp('promote.intro') }}</p>
 
@@ -38,7 +38,7 @@ const canceled = computed(() => route.query.canceled === '1')
       <PromoteServiceTabs :active="active" />
 
       <i18n-t v-if="paid" keypath="promote.notice.paid" tag="p" class="notice notice--ok">
-        <template #link><NuxtLink to="/orders">{{ t('promote.myOrders') }}</NuxtLink></template>
+        <template #link><NuxtLinkLocale to="/orders">{{ t('promote.myOrders') }}</NuxtLinkLocale></template>
       </i18n-t>
       <p v-else-if="canceled" class="notice">{{ t('promote.notice.canceled') }}</p>
 

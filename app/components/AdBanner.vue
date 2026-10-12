@@ -13,7 +13,7 @@ const initials = computed(() => props.ad.tool.name.replace(/[^A-Za-z0-9]/g, '').
 </script>
 
 <template>
-  <NuxtLink
+  <NuxtLinkLocale
     :to="ad.clickUrl"
     external
     target="_blank"
@@ -41,5 +41,5 @@ const initials = computed(() => props.ad.tool.name.replace(/[^A-Za-z0-9]/g, '').
     <span class="shrink-0 rounded-lg bg-gradient-to-r from-brand-500 to-brand-600 px-4 py-2 text-sm font-semibold text-white transition-opacity group-hover:opacity-90 sm:px-6 sm:py-2.5">
       {{ t('sections.tryNow') }}
     </span>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>

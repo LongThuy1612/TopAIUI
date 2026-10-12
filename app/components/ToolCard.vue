@@ -25,7 +25,7 @@ const rankStyle = computed(() => {
 </script>
 
 <template>
-  <NuxtLink
+  <NuxtLinkLocale
     v-if="featured"
     :to="`/tools/${tool.slug}`"
     class="relative flex flex-col gap-3 overflow-hidden rounded-[18px] border border-ink-100 bg-white p-5 transition-shadow hover:shadow-[0_16px_32px_-20px_rgba(23,18,26,.45)]"
@@ -49,9 +49,9 @@ const rankStyle = computed(() => {
     </div>
     <p v-if="tool.shortDesc" class="relative line-clamp-2 text-sm leading-[1.6] text-[#7A5566]">{{ tool.shortDesc }}</p>
     <p v-else-if="tool.categories?.length" class="relative line-clamp-2 text-sm leading-[1.6] text-[#7A5566]">{{ tool.categories.map(c => c.name).join(', ') }}</p>
-  </NuxtLink>
+  </NuxtLinkLocale>
 
-  <NuxtLink v-else :to="`/tools/${tool.slug}`" class="group flex items-start gap-3 rounded-xl border border-ink-100 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md">
+  <NuxtLinkLocale v-else :to="`/tools/${tool.slug}`" class="group flex items-start gap-3 rounded-xl border border-ink-100 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md">
     <span v-if="rank" :class="['flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold', rankStyle]">
       {{ rank }}
     </span>
@@ -69,5 +69,5 @@ const rankStyle = computed(() => {
       <p v-if="tool.shortDesc" class="mt-1 line-clamp-2 text-sm leading-relaxed text-ink-600">{{ tool.shortDesc }}</p>
       <p v-else-if="tool.categories?.length" class="mt-1 line-clamp-2 text-sm leading-relaxed text-ink-600">{{ tool.categories.map(c => c.name).join(', ') }}</p>
     </div>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>

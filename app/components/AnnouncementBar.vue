@@ -10,7 +10,7 @@ const shown = computed(() => ad.value?.tool ?? props.tool)
 </script>
 
 <template>
-  <NuxtLink
+  <NuxtLinkLocale
     v-if="shown"
     :to="ad ? ad.clickUrl : `/tools/${shown.slug}`"
     :external="!!ad"
@@ -26,5 +26,5 @@ const shown = computed(() => ad.value?.tool ?? props.tool)
     <span class="font-bold">{{ shown.name }}</span>
     <span v-if="shown.shortDesc" class="max-w-md truncate text-white/60">{{ shown.shortDesc }}</span>
     <span class="font-semibold text-brand-200">{{ t('announcement.cta') }} →</span>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>

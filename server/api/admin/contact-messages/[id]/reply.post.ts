@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: message, message })
   }
 
-  const msg = await prisma.contactMessage.findUnique({ where: { id }, select: { name: true, email: true, subject: true, message: true } })
+  const msg = await prisma.contactMessage.findUnique({ where: { id }, select: { name: true, email: true, subject: true, message: true, locale: true } })
   if (!msg) throw createError({ statusCode: 404, statusMessage: 'Message not found' })
 
   const repliedAt = new Date()

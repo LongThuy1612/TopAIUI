@@ -3,7 +3,7 @@ const { t, locale } = useI18n()
 const { authHeaders } = useAuth()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
-import { NuxtLink } from '#components'
+import { NuxtLinkLocale } from '#components'
 
 interface SocialTool {
   slug: string
@@ -159,7 +159,7 @@ useSeoMeta({
             <td class="px-4 py-4">
               <!-- Tools listed here open their page; crawled-only ones open their website. -->
               <component
-                :is="item.hasPage ? NuxtLink : (item.website ? 'a' : 'span')"
+                :is="item.hasPage ? NuxtLinkLocale : (item.website ? 'a' : 'span')"
                 v-bind="item.hasPage ? { to: `/tools/${item.slug}` } : (item.website ? { href: item.website, target: '_blank', rel: 'noopener noreferrer nofollow' } : {})"
                 class="flex items-center gap-2.5 hover:opacity-80"
               >

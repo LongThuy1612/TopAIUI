@@ -24,7 +24,7 @@ const rankStyle = computed(() => {
 </script>
 
 <template>
-  <NuxtLink
+  <NuxtLinkLocale
     :to="href ?? `/tools/${tool.slug}`"
     :external="!!href"
     :target="href ? '_blank' : undefined"
@@ -67,5 +67,5 @@ const rankStyle = computed(() => {
       </div>
       <span v-else-if="categoryLabel" class="text-xs text-ink-500">#{{ categoryLabel }}</span>
     </div>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>

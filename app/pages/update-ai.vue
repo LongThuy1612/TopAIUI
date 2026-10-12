@@ -46,11 +46,11 @@ function pay() {
         <div class="p-label">
           <span><span class="req">*</span>{{ t('promote.form.tool') }}</span>
           <i18n-t keypath="promote.toolPicker.notListed" tag="small">
-            <template #link><NuxtLink to="/submit">{{ t('promote.toolPicker.submitFirst') }}</NuxtLink></template>
+            <template #link><NuxtLinkLocale to="/submit">{{ t('promote.toolPicker.submitFirst') }}</NuxtLinkLocale></template>
           </i18n-t>
         </div>
         <p v-if="!loggedIn" class="p-hint">
-          <NuxtLink :to="{ path: '/login', query: { redirect: route.fullPath } }">{{ t('promote.update.loginToPick') }}</NuxtLink>
+          <NuxtLinkLocale :to="{ path: '/login', query: { redirect: route.fullPath } }">{{ t('promote.update.loginToPick') }}</NuxtLinkLocale>
         </p>
         <p v-else-if="!myTools.length" class="p-hint">{{ t('promote.update.noOwnedTools') }}</p>
         <select v-else v-model="toolId" class="p-input" :class="{ 'p-input--error': touched && !toolId }">

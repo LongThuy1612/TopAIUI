@@ -120,11 +120,11 @@
     "pendingCount": "outil en attente d'approbation | outils en attente d'approbation",
     "searchPlaceholder": "Rechercher par nom ou slug...",
     "research": "Recherche",
-    "websiteInsights": "Website Insights",
-    "socialListening": "Social Listening",
+    "websiteInsights": "Analyse de sites web",
+    "socialListening": "Écoute sociale",
     "freePlan": "Gratuit",
-    "websiteInsightsQuota": "Quota Website Insights",
-    "socialListeningQueries": "Requêtes Social Listening",
+    "websiteInsightsQuota": "Quota d’analyse de sites web",
+    "socialListeningQueries": "Requêtes d’écoute sociale",
     "upgrade": "Mettre à niveau",
     "upgradeModal": {
       "close": "Fermer",
@@ -138,9 +138,9 @@
       "mostPopular": "Le plus populaire",
       "subscribe": "S'abonner",
       "plan": {
-        "starter": "Starter",
-        "professional": "Professional",
-        "enterprise": "Enterprise"
+        "starter": "Essentiel",
+        "professional": "Professionnel",
+        "enterprise": "Entreprise"
       },
       "desc": {
         "starter": "Idéal pour les chercheurs individuels et les startups IA en phase de démarrage.",
@@ -149,7 +149,7 @@
       },
       "feature": {
         "credits": "Crédits de données",
-        "queries": "Requête Social Listening",
+        "queries": "requêtes d’écoute sociale actives",
         "filtering": "Filtrage avancé",
         "export": "Export de données",
         "statistics": "Statistiques de données de base",
@@ -160,7 +160,7 @@
         "title": "FAQ",
         "q1": {
           "question": "Que sont les « Crédits de données » ?",
-          "answer": "Les Crédits de données sont la monnaie que vous utilisez pour effectuer des recherches sur notre plateforme. Ils sont consommés de la façon suivante :\n1. Utilisation des données : 1 crédit est utilisé pour chaque ligne de données chargée sur nos pages « Insights » ou « Analysis ».\n2. Export de données : 1 crédit est utilisé pour chaque ligne de données exportée vers un fichier CSV ou Excel.\n3. Gratuit : les requêtes Social Listening ne consomment pas de Crédits de données.\nÀ noter : les crédits sont réinitialisés au début de chaque cycle de facturation mensuel. Les crédits non utilisés ne sont pas reportés."
+          "answer": "Les crédits de données sont la monnaie que vous utilisez pour effectuer des recherches sur notre plateforme. Ils sont consommés de la façon suivante :\n1. Utilisation des données : 1 crédit est utilisé pour chaque ligne de données chargée sur la page « Analyse de sites web ». Recharger la même ligne au cours du même mois est gratuit.\n2. Export de données : vous pouvez exporter les lignes déjà chargées sans crédit supplémentaire, dans la limite d’export de votre forfait (lignes par export et par mois).\n3. Gratuit : les requêtes d’écoute sociale ne consomment pas de crédits de données ; votre forfait limite le nombre de requêtes actives en même temps.\nÀ noter : les crédits et les lignes d’export sont réinitialisés chaque mois (y compris pour les forfaits annuels). Les crédits non utilisés ne sont pas reportés."
         }
       },
       "currentPlan": "Forfait actuel",
@@ -206,7 +206,7 @@
     "statusAll": "Tous",
     "statusPending": "En attente",
     "statusPublished": "Publié",
-    "socialListeningComingSoon": "Social Listening arrive bientôt.",
+    "socialListeningComingSoon": "L’écoute sociale arrive bientôt.",
     "colTool": "Outil",
     "colOrganicClicks": "Clics organiques",
     "colPaidClicks": "Clics payants",
@@ -491,7 +491,7 @@
     "loading": "Chargement…"
   },
   "socialListening": {
-    "title": "Social Listening",
+    "title": "Écoute sociale",
     "subtitle": "Suivez instantanément la performance vidéo sociale de tout site IA sur YouTube et TikTok.",
     "allCategories": "Toutes les catégories",
     "searchPlaceholder": "Entrez le nom de l'outil ou le domaine",
@@ -507,7 +507,7 @@
     "noResults": "Aucun outil ne correspond à votre recherche."
   },
   "websiteInsights": {
-    "title": "Website Insights",
+    "title": "Analyse de sites web",
     "searchPlaceholder": "Entrez le nom de l'outil ou le domaine",
     "advancedFilter": "Filtre avancé",
     "bulkOpen": "Ouvrir les sites en masse",
@@ -531,8 +531,8 @@
     "loading": "Chargement…",
     "loadError": "Impossible de charger les données. Veuillez réessayer.",
     "popupBlocked": "Votre navigateur a bloqué certains onglets. Autorisez les fenêtres pop-up pour ce site afin de tous les ouvrir.",
-    "creditsThisMonth": "Data Credits ce mois-ci",
-    "outOfCredits": "Vous n'avez plus de Data Credits ce mois-ci — {n} ligne(s) de cette page sont verrouillées. Passez à un forfait supérieur pour les voir.",
+    "creditsThisMonth": "Crédits de données ce mois-ci",
+    "outOfCredits": "Vous n'avez plus de crédits de données ce mois-ci — {n} ligne(s) de cette page sont verrouillées. Passez à un forfait supérieur pour les voir.",
     "unlock": "Passer au supérieur pour débloquer",
     "statsTitle": "Statistiques",
     "statsLocked": "Les statistiques mensuelles sont incluses dans les forfaits payants.",
@@ -547,8 +547,8 @@
     "statCategoryGrowth": "Croissance par catégorie",
     "advancedFilters": "Filtres",
     "clearFilters": "Effacer les filtres",
-    "filterNeedsAdvanced": "Forfait Starter ou supérieur",
-    "filterNeedsFull": "Forfait Enterprise",
+    "filterNeedsAdvanced": "Forfait Essentiel ou supérieur",
+    "filterNeedsFull": "Forfait Entreprise",
     "exportQuota": "Export : {used}/{limit} lignes ce mois-ci · jusqu'à {per} par export",
     "exportError": "L'export a échoué. Veuillez réessayer.",
     "filter": {
@@ -669,7 +669,7 @@
     "title": "Abonnement",
     "research": "Recherche",
     "monthlyQueries": "Requêtes mensuelles",
-    "socialListeningQueries": "Requêtes Social Listening",
+    "socialListeningQueries": "Requêtes d’écoute sociale",
     "selectPlan": "Choisir un plan",
     "subscription": "Abonnement",
     "subscriptionPlan": "Plan d'abonnement",
@@ -698,7 +698,7 @@
     "quotaResets": "Le quota est réinitialisé le {date}",
     "cardInStripe": "Enregistrée dans Stripe",
     "endsOn": "Le forfait se termine le",
-    "researchPlan": "Research Plan",
+    "researchPlan": "Forfait Recherche",
     "invoiceStatuses": {
       "paid": "Payée",
       "open": "Impayée",
@@ -1417,7 +1417,7 @@
   },
   "socialQueries": {
     "title": "Mes requêtes",
-    "subtitle": "Suivez des sujets dans les publications sociales collectées — jusqu'à 5 mots-clés par requête. Aucun Data Credit n'est utilisé.",
+    "subtitle": "Suivez des sujets dans les publications sociales collectées — jusqu'à 5 mots-clés par requête. Aucun crédit de données n'est utilisé.",
     "usage": "{used}/{limit} actives",
     "new": "Nouvelle",
     "namePlaceholder": "Nom de la requête, ex. Vidéo IA",
@@ -1438,14 +1438,14 @@
     "noResults": "Aucune publication ne correspond encore à ces mots-clés.",
     "loadMore": "Charger plus",
     "empty": "Aucune requête pour l'instant — créez-en une pour suivre un sujet.",
-    "none": "Les requêtes Social Listening sont incluses dans les forfaits payants.",
+    "none": "Les requêtes d’écoute sociale sont incluses dans les forfaits payants.",
     "error": "Une erreur s'est produite. Veuillez réessayer.",
     "overLimit": "Au-delà de la limite du forfait"
   },
   "publicLimits": {
     "login": "Connectez-vous pour en voir plus",
     "rankingTitle": "Le classement gratuit affiche le top {n}",
-    "rankingText": "Consultez le classement complet, avec le trafic et la croissance de chaque outil, avec un Research Plan payant."
+    "rankingText": "Consultez le classement complet, avec le trafic et la croissance de chaque outil, avec un forfait Recherche payant."
   },
   "aiNews": {
     "title": "Actus IA",
@@ -1803,7 +1803,7 @@
       "account": {
         "0": {
           "question": "Ai-je besoin d’un compte pour utiliser TopAICollection ?",
-          "answer": "Aucun compte n’est nécessaire pour parcourir et rechercher l’annuaire. Avec un compte, vous pouvez rédiger des avis, gérer vos outils et GPT soumis, faire de la publicité et utiliser Website Insights et Social Listening."
+          "answer": "Aucun compte n’est nécessaire pour parcourir et rechercher l’annuaire. Avec un compte, vous pouvez rédiger des avis, gérer vos outils et GPT soumis, faire de la publicité et utiliser l’analyse de sites web et l’écoute sociale."
         },
         "1": {
           "question": "Comment promouvoir mon outil ?",
@@ -1811,7 +1811,7 @@
         },
         "2": {
           "question": "Puis-je annuler mon abonnement à tout moment ?",
-          "answer": "Oui. Les abonnements Research Plan peuvent être annulés à tout moment depuis Tableau de bord → Paiement et factures ; l’accès reste actif jusqu’à la fin de la période payée. Les packs de clics et les soumissions sont des achats uniques."
+          "answer": "Oui. Les abonnements au forfait Recherche peuvent être annulés à tout moment depuis Tableau de bord → Paiement et factures ; l’accès reste actif jusqu’à la fin de la période payée. Les packs de clics et les soumissions sont des achats uniques."
         }
       }
     },
@@ -1855,7 +1855,7 @@
     },
     "title": "Une tarification simple et transparente",
     "subtitle": "Commencez gratuitement et évoluez-en même temps que vous. Aucune surprise.",
-    "freeDesc": "Essayez Website Insights et Social Listening avec des limites mensuelles.",
+    "freeDesc": "Essayez l’analyse de sites web et l’écoute sociale avec des limites mensuelles.",
     "freePrice": "Gratuit",
     "getStarted": "Commencer",
     "otherTitle": "Autres services",

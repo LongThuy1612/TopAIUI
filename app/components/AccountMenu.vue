@@ -13,6 +13,7 @@ const props = withDefaults(defineProps<{
 const { t } = useI18n()
 const { user, logout } = useAuth()
 const route = useRoute()
+const localePath = useLocalePath()
 // The dialog lives in the dashboard layout, shared by both menus.
 const changePasswordOpen = useState('change-password-open', () => false)
 
@@ -47,7 +48,7 @@ function confirmLogout() {
   open.value = false
   if (!confirm(t('admin.logoutConfirm'))) return
   logout()
-  navigateTo('/login')
+  navigateTo(localePath('/login'))
 }
 
 function onPointerDown(e: PointerEvent) {

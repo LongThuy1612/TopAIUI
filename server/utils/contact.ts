@@ -48,9 +48,9 @@ export function contactNotificationMail(m: { name: string; email: string; subjec
 }
 
 // Admin reply → the sender, quoting their message.
-export function contactReplyMail(m: { name: string; email: string; subject: ContactSubject; message: string }, reply: string) {
+export function contactReplyMail(m: { name: string; email: string; subject: ContactSubject; message: string; locale: string | null }, reply: string) {
   const { siteUrl } = useRuntimeConfig().public
-  const inquiries = `${siteUrl.replace(/\/+$/, '')}/dashboard/my-inquiries`
+  const inquiries = `${siteUrl.replace(/\/+$/, '')}${localizedPath(m.locale, '/dashboard/my-inquiries')}`
   return {
     to: m.email,
     replyTo: useRuntimeConfig().contactInbox || SUPPORT_EMAIL,

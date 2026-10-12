@@ -26,25 +26,25 @@ useSeoMeta({
     </section>
 
     <section class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-      <NuxtLink to="/faq" class="group rounded-2xl border border-ink-200 bg-white p-6 transition hover:border-brand-300 hover:shadow-sm">
+      <NuxtLinkLocale to="/faq" class="group rounded-2xl border border-ink-200 bg-white p-6 transition hover:border-brand-300 hover:shadow-sm">
         <h2 class="text-lg font-extrabold text-ink-900">{{ t('helpPage.sections.faq.title') }}</h2>
         <p class="mt-1 text-sm text-ink-600">{{ t('helpPage.sections.faq.description') }}</p>
         <span class="mt-4 inline-block text-sm font-bold text-brand-600 group-hover:text-brand-700">{{ t('helpPage.sections.faq.link') }} →</span>
-      </NuxtLink>
-      <NuxtLink to="/contact" class="group rounded-2xl border border-ink-200 bg-white p-6 transition hover:border-brand-300 hover:shadow-sm">
+      </NuxtLinkLocale>
+      <NuxtLinkLocale to="/contact" class="group rounded-2xl border border-ink-200 bg-white p-6 transition hover:border-brand-300 hover:shadow-sm">
         <h2 class="text-lg font-extrabold text-ink-900">{{ t('helpPage.sections.contact.title') }}</h2>
         <p class="mt-1 text-sm text-ink-600">{{ t('helpPage.sections.contact.description') }}</p>
         <span class="mt-4 inline-block text-sm font-bold text-brand-600 group-hover:text-brand-700">{{ t('helpPage.sections.contact.link') }} →</span>
-      </NuxtLink>
+      </NuxtLinkLocale>
     </section>
 
     <section class="mt-10">
       <h2 class="text-xl font-extrabold text-ink-900">{{ t('helpPage.commonTopics.title') }}</h2>
       <div class="mt-4 divide-y divide-ink-100 overflow-hidden rounded-2xl border border-ink-200 bg-white">
-        <NuxtLink v-for="topic in topics" :key="topic.key" :to="topic.to" class="flex items-center justify-between gap-4 px-5 py-4 font-semibold text-ink-900 hover:bg-ink-100/40">
+        <NuxtLinkLocale v-for="topic in topics" :key="topic.key" :to="topic.to" class="flex items-center justify-between gap-4 px-5 py-4 font-semibold text-ink-900 hover:bg-ink-100/40">
           {{ t(`helpPage.commonTopics.${topic.key}`) }}
           <svg class="h-4 w-4 shrink-0 text-ink-400" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m7.5 5 5 5-5 5" /></svg>
-        </NuxtLink>
+        </NuxtLinkLocale>
       </div>
     </section>
   </div>

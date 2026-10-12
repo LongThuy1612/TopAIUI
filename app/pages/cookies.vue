@@ -18,7 +18,7 @@ useSeoMeta({
 <template>
   <div class="mx-auto max-w-[860px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+      <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
       <span>›</span>
       <span>{{ t('cookiesPage.title') }}</span>
     </nav>
@@ -66,7 +66,7 @@ useSeoMeta({
         <h2 class="text-2xl font-extrabold text-ink-900">{{ t('cookiesPage.sections.contact.title') }}</h2>
         <p class="mt-3">
           {{ t('cookiesPage.sections.contact.message') }}
-          <NuxtLink to="/contact" class="font-semibold text-brand-600 underline underline-offset-2 hover:text-brand-700">{{ t('cookiesPage.sections.contact.contactLink') }}</NuxtLink>.
+          <NuxtLinkLocale to="/contact" class="font-semibold text-brand-600 underline underline-offset-2 hover:text-brand-700">{{ t('cookiesPage.sections.contact.contactLink') }}</NuxtLinkLocale>.
         </p>
       </section>
     </div>

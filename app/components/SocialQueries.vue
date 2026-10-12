@@ -153,7 +153,7 @@ const date = (iso: string | null) => (iso ? new Date(iso).toLocaleDateString(loc
                 <span class="rounded bg-ink-100 px-1.5 py-0.5 font-semibold uppercase text-ink-700">{{ p.platform }}</span>
                 <span v-if="p.creator">{{ p.creator }}</span>
                 <span v-if="p.publishedAt">· {{ date(p.publishedAt) }}</span>
-                <NuxtLink v-if="p.tool.name" :to="`/tools/${p.tool.slug}`" class="text-brand-600 hover:text-brand-700">· {{ p.tool.name }}</NuxtLink>
+                <NuxtLinkLocale v-if="p.tool.name" :to="`/tools/${p.tool.slug}`" class="text-brand-600 hover:text-brand-700">· {{ p.tool.name }}</NuxtLinkLocale>
                 <span v-if="p.isNew" class="rounded-full bg-brand-50 px-1.5 font-semibold text-brand-600">{{ t('socialQueries.new') }}</span>
               </div>
               <a v-if="p.url" :href="p.url" target="_blank" rel="noopener noreferrer nofollow" class="mt-1 block truncate font-semibold text-ink-900 hover:text-brand-600">{{ p.title || p.description || p.url }}</a>

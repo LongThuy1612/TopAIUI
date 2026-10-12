@@ -11,7 +11,7 @@ const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').sli
 </script>
 
 <template>
-  <NuxtLink
+  <NuxtLinkLocale
     :to="href ?? `/tools/${tool.slug}`"
     :external="!!href"
     :target="href ? '_blank' : undefined"
@@ -40,5 +40,5 @@ const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').sli
       <span v-if="href" class="ml-auto shrink-0 rounded-full bg-brand-500 px-2 py-0.5 text-[10px] font-semibold text-white">{{ t('sections.sponsorBadge') }}</span>
     </div>
     <p v-if="tool.shortDesc" class="relative mt-[9px] line-clamp-2 text-[13.5px] leading-[1.55] text-ink-800">{{ tool.shortDesc }}</p>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>

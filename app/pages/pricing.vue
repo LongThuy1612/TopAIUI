@@ -81,9 +81,9 @@ useSeoMeta({
           </div>
           <div class="mt-1 text-base text-ink-500">{{ t('pricingPage.freePrice') }}</div>
           <p class="mt-4 min-h-[3rem] text-sm leading-6 text-ink-500">{{ t('pricingPage.freeDesc') }}</p>
-          <NuxtLink to="/dashboard" class="mt-5 flex h-10 w-full items-center justify-center rounded-lg border border-ink-300 text-sm font-semibold text-ink-700 hover:bg-ink-100/60">
+          <NuxtLinkLocale to="/dashboard" class="mt-5 flex h-10 w-full items-center justify-center rounded-lg border border-ink-300 text-sm font-semibold text-ink-700 hover:bg-ink-100/60">
             {{ t('pricingPage.getStarted') }}
-          </NuxtLink>
+          </NuxtLinkLocale>
         </div>
         <div class="mt-5 space-y-3 border-t border-ink-100 px-5 pt-4 text-sm leading-5 text-ink-700">
           <div v-for="f in freeFeatures" :key="f.key" class="flex items-center gap-2">
@@ -112,7 +112,7 @@ useSeoMeta({
           </div>
           <div class="mt-1 text-base text-ink-500">${{ billing === 'monthly' ? plan.monthly * 12 : plan.yearly }} /{{ t('admin.upgradeModal.year') }}</div>
           <p class="mt-4 min-h-[3rem] text-sm leading-6 text-ink-500">{{ t(`admin.upgradeModal.desc.${plan.i18n}`) }}</p>
-          <NuxtLink
+          <NuxtLinkLocale
             :to="UPGRADE_URL"
             :class="[
               'mt-5 flex h-10 w-full items-center justify-center rounded-lg text-sm font-semibold transition',
@@ -120,7 +120,7 @@ useSeoMeta({
             ]"
           >
             {{ t('admin.upgradeModal.subscribe') }}
-          </NuxtLink>
+          </NuxtLinkLocale>
         </div>
         <div class="mt-5 space-y-3 border-t border-ink-100 px-5 pt-4 text-sm leading-5 text-ink-700">
           <div v-for="f in plan.features" :key="f.key" class="flex items-center gap-2">
@@ -143,10 +143,10 @@ useSeoMeta({
       <h2 class="text-center text-2xl font-extrabold text-ink-900">{{ t('pricingPage.otherTitle') }}</h2>
       <p class="mt-2 text-center text-ink-600">{{ t('pricingPage.otherSubtitle') }}</p>
       <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
-        <NuxtLink v-for="s in services" :key="s.key" :to="s.to" class="group rounded-2xl border border-ink-200 bg-white p-5 transition hover:border-brand-300 hover:shadow-sm">
+        <NuxtLinkLocale v-for="s in services" :key="s.key" :to="s.to" class="group rounded-2xl border border-ink-200 bg-white p-5 transition hover:border-brand-300 hover:shadow-sm">
           <h3 class="font-bold text-ink-900 group-hover:text-brand-600">{{ t(`promote.services.${s.i18n}.title`) }}</h3>
           <p class="mt-1 text-sm leading-relaxed text-ink-600">{{ t(`promote.services.${s.i18n}.desc`, { site: SITE_NAME }) }}</p>
-        </NuxtLink>
+        </NuxtLinkLocale>
       </div>
     </section>
   </div>

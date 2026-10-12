@@ -137,7 +137,7 @@ useSeoMeta({ title: () => `${t('adminGpts.title')} — TopAICollection` })
           </div>
 
           <div class="flex flex-col items-end gap-1.5 text-sm font-semibold">
-            <NuxtLink v-if="g.status === 'PUBLISHED'" :to="`/gpts/${g.slug}`" target="_blank" class="text-ink-700 hover:text-brand-600">{{ t('adminArticles.view') }} ↗</NuxtLink>
+            <NuxtLinkLocale v-if="g.status === 'PUBLISHED'" :to="`/gpts/${g.slug}`" target="_blank" class="text-ink-700 hover:text-brand-600">{{ t('adminArticles.view') }} ↗</NuxtLinkLocale>
             <template v-if="g.status !== 'REJECTED'">
               <button type="button" class="text-ink-700 hover:text-brand-600" @click="editingId === g.id ? (editingId = null) : edit(g)">{{ editingId === g.id ? t('adminPosts.hide') : t('myPostsPage.edit') }}</button>
               <button type="button" :disabled="busyId === g.id" class="text-ink-700 hover:text-brand-600 disabled:opacity-50" @click="refetch(g)">{{ t('adminGpts.refetch') }}</button>

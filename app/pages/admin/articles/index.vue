@@ -17,8 +17,8 @@ useSeoMeta({ title: () => `${t('adminArticles.title')} — TopAICollection` })
     <div class="flex flex-wrap items-center justify-between gap-3">
       <h1 class="flex items-center gap-2 text-xl font-extrabold text-ink-900"><span>📰</span> {{ t('adminArticles.title') }}</h1>
       <div class="flex gap-2">
-        <NuxtLink to="/admin/posts" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-900 hover:border-brand-300">{{ t('adminPosts.title') }}</NuxtLink>
-        <NuxtLink to="/admin/articles/new" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">{{ t('adminArticles.new') }}</NuxtLink>
+        <NuxtLinkLocale to="/admin/posts" class="rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-900 hover:border-brand-300">{{ t('adminPosts.title') }}</NuxtLinkLocale>
+        <NuxtLinkLocale to="/admin/articles/new" class="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">{{ t('adminArticles.new') }}</NuxtLinkLocale>
       </div>
     </div>
 
@@ -36,7 +36,7 @@ useSeoMeta({ title: () => `${t('adminArticles.title')} — TopAICollection` })
         <tbody>
           <tr v-for="a in items" :key="a.id" class="border-t border-ink-100">
             <td class="max-w-[420px] px-4 py-3">
-              <NuxtLink :to="`/admin/articles/${a.id}`" class="font-semibold text-ink-900 hover:text-brand-600">{{ a.title }}</NuxtLink>
+              <NuxtLinkLocale :to="`/admin/articles/${a.id}`" class="font-semibold text-ink-900 hover:text-brand-600">{{ a.title }}</NuxtLinkLocale>
               <div class="truncate text-xs text-ink-400">{{ a.externalUrl ? `↗ ${a.externalUrl}` : `/ai-news/${a.slug}` }}<template v-if="a.authorName"> · {{ a.authorName }}</template></div>
             </td>
             <td class="whitespace-nowrap px-4 py-3 text-ink-700">{{ t(`adminArticles.kinds.${a.kind}`) }}</td>

@@ -4,6 +4,7 @@ const { t } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: ['auth', 'admin'], key: route => route.fullPath })
 const { authHeaders } = useAuth()
 const route = useRoute()
+const localePath = useLocalePath()
 const id = computed(() => String(route.params.id))
 const isNew = computed(() => id.value === 'new')
 
@@ -69,7 +70,7 @@ async function save(status?: 'DRAFT' | 'PUBLISHED') {
     const body = { ...form, externalUrl: mode.value === 'link' ? form.externalUrl : '' }
     if (isNew.value) {
       const res = await $fetch<{ id: string }>('/api/admin/articles', { method: 'POST', headers: authHeaders(), body })
-      await navigateTo(`/admin/articles/${res.id}`, { replace: true })
+      await navigateTo(localePath(`/admin/articles/${res.id}`), { replace: true })
     } else {
       await $fetch(`/api/admin/articles/${id.value}`, { method: 'PATCH', headers: authHeaders(), body })
       // Reload: the View link needs the saved status / slug.
@@ -88,7 +89,7 @@ async function remove() {
   if (!confirm(t('adminArticles.deleteConfirm'))) return
   try {
     await $fetch(`/api/admin/articles/${id.value}`, { method: 'DELETE', headers: authHeaders() })
-    await navigateTo('/admin/articles')
+    await navigateTo(localePath('/admin/articles'))
   } catch (e: any) {
     error.value = e?.data?.message || t('admin.saveError')
   }
@@ -99,13 +100,13 @@ useSeoMeta({ title: () => `${t('adminArticles.title')} — TopAICollection` })
 
 <template>
   <div class="max-w-4xl">
-    <NuxtLink to="/admin/articles" class="text-sm text-ink-500 hover:text-brand-600">← {{ t('adminArticles.title') }}</NuxtLink>
+    <NuxtLinkLocale to="/admin/articles" class="text-sm text-ink-500 hover:text-brand-600">← {{ t('adminArticles.title') }}</NuxtLinkLocale>
     <p v-if="!isNew && loadError" class="mt-4 text-sm text-red-600">{{ t('adminArticles.notFound') }}</p>
     <template v-else>
       <div class="mt-2 flex flex-wrap items-center justify-between gap-3">
         <h1 class="text-xl font-extrabold text-ink-900">{{ isNew ? t('adminArticles.new') : form.title }}</h1>
         <a v-if="!isNew && article?.status === 'PUBLISHED' && article.externalUrl" :href="article.externalUrl" target="_blank" rel="noopener" class="text-sm font-semibold text-brand-600 hover:underline">{{ t('adminArticles.view') }} ↗</a>
-        <NuxtLink v-else-if="!isNew && article?.status === 'PUBLISHED'" :to="`/ai-news/${article.slug}`" target="_blank" class="text-sm font-semibold text-brand-600 hover:underline">{{ t('adminArticles.view') }} ↗</NuxtLink>
+        <NuxtLinkLocale v-else-if="!isNew && article?.status === 'PUBLISHED'" :to="`/ai-news/${article.slug}`" target="_blank" class="text-sm font-semibold text-brand-600 hover:underline">{{ t('adminArticles.view') }} ↗</NuxtLinkLocale>
       </div>
       <p v-if="article?.kind === 'GUEST_POST'" class="mt-1 text-xs text-ink-500">{{ t('adminArticles.kinds.GUEST_POST') }}</p>
 

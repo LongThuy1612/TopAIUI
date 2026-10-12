@@ -1,6 +1,7 @@
 // Dashboard banner → "Resend email" for a not-yet-confirmed address.
 export default defineEventHandler(async (event) => {
   const userId = await requireActiveUser(event)
+  const body = await readBody(event).catch(() => null)
   const user = await prisma.user.findUniqueOrThrow({
     where: { id: userId },
     select: { id: true, email: true, emailVerified: true, verificationTokenExpiry: true }
@@ -11,7 +12,7 @@ export default defineEventHandler(async (event) => {
   }
 
   try {
-    await sendVerificationEmail(user)
+    await sendVerificationEmail(user, body?.locale)
   } catch (err) {
     console.error('[mail] verification email failed', err)
     throw createError({ statusCode: 502, statusMessage: 'Could not send the email. Please try again later.' })

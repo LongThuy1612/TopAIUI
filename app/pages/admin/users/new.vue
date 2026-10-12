@@ -4,9 +4,10 @@ import type { AdminUser } from '~/types'
 const { t } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: ['auth', 'admin'] })
 const router = useRouter()
+const localePath = useLocalePath()
 
-const goBack = () => router.push('/admin/users')
-const onSaved = (u: AdminUser) => router.push(`/admin/users/${u.id}`)
+const goBack = () => router.push(localePath('/admin/users'))
+const onSaved = (u: AdminUser) => router.push(localePath(`/admin/users/${u.id}`))
 
 useSeoMeta({ title: () => `${t('admin.users.newTitle')} — TopAICollection` })
 </script>

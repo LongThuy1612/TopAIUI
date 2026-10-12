@@ -29,6 +29,8 @@ useSeoMeta({
 
 const abs = useAbsoluteUrl()
 const organization = useOrganizationNode()
+// Articles are written in one language (English): other language URLs point at it.
+useSeoLocales(() => ['en'])
 useBreadcrumbLd(() => [[t('aiNews.title'), '/ai-news'], [article.value?.title ?? '', `/ai-news/${slug.value}`]])
 useJsonLd('article', () => {
   const a = article.value
@@ -50,9 +52,9 @@ useJsonLd('article', () => {
 <template>
   <div v-if="article" class="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+      <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
       <span>›</span>
-      <NuxtLink to="/ai-news" class="hover:text-brand-600">{{ t('aiNews.title') }}</NuxtLink>
+      <NuxtLinkLocale to="/ai-news" class="hover:text-brand-600">{{ t('aiNews.title') }}</NuxtLinkLocale>
     </nav>
 
     <div class="mt-4 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_300px]">
@@ -81,9 +83,9 @@ useJsonLd('article', () => {
         <div class="rounded-[18px] border border-brand-100 bg-brand-50/50 p-5">
           <div class="font-semibold text-ink-900">{{ t('aiNews.writeForUs') }}</div>
           <p class="mt-1 text-sm text-ink-600">{{ t('aiNews.writeForUsSub') }}</p>
-          <NuxtLink to="/post-or-insert" class="mt-3 inline-block rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
+          <NuxtLinkLocale to="/post-or-insert" class="mt-3 inline-block rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
             {{ t('aiNews.learnMore') }}
-          </NuxtLink>
+          </NuxtLinkLocale>
         </div>
       </aside>
     </div>

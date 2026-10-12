@@ -160,7 +160,7 @@
         "title": "常见问题",
         "q1": {
           "question": "什么是“数据额度”？",
-          "answer": "数据额度是您在本平台进行研究所使用的货币，消耗方式如下：\n1. 数据使用：在“洞察”或“分析”页面每加载一行数据消耗 1 点额度。\n2. 导出数据：每导出一行数据到 CSV 或 Excel 文件消耗 1 点额度。\n3. 免费项目：社交聆听查询不消耗数据额度。\n请注意：额度每月在计费周期开始时重置，未使用的额度不会结转到下一周期。"
+          "answer": "数据积分是您在平台上进行研究时使用的计量单位，按以下方式消耗：\n1. 数据使用：在“网站洞察”页面每加载一行数据消耗 1 积分。同一月内再次加载同一行免费。\n2. 导出数据：已加载的行可以导出，不额外消耗积分，但受套餐导出上限限制（每次导出行数和每月行数）。\n3. 免费：社交聆听查询不消耗数据积分；您的套餐限制同时启用的查询数量。\n请注意：积分和导出行数每月重置（年付套餐同样如此）。未使用的积分不会累计到下月。"
         }
       },
       "currentPlan": "当前方案",
@@ -531,8 +531,8 @@
     "loading": "加载中…",
     "loadError": "无法加载数据，请重试。",
     "popupBlocked": "浏览器拦截了部分标签页。请允许本站弹出窗口以全部打开。",
-    "creditsThisMonth": "本月 Data Credits",
-    "outOfCredits": "本月的 Data Credits 已用完 — 本页有 {n} 行被锁定。升级即可查看。",
+    "creditsThisMonth": "本月数据积分",
+    "outOfCredits": "本月的数据积分已用完 — 本页有 {n} 行被锁定。升级即可查看。",
     "unlock": "升级以解锁",
     "statsTitle": "统计",
     "statsLocked": "月度统计仅在付费方案中提供。",
@@ -547,8 +547,8 @@
     "statCategoryGrowth": "按分类的增长",
     "advancedFilters": "筛选",
     "clearFilters": "清除筛选",
-    "filterNeedsAdvanced": "Starter 及以上方案",
-    "filterNeedsFull": "Enterprise 方案",
+    "filterNeedsAdvanced": "入门版及以上方案",
+    "filterNeedsFull": "企业版方案",
     "exportQuota": "导出：本月 {used}/{limit} 行 · 每次最多 {per} 行",
     "exportError": "导出失败，请重试。",
     "filter": {
@@ -698,7 +698,7 @@
     "quotaResets": "配额将于 {date} 重置",
     "cardInStripe": "已保存在 Stripe",
     "endsOn": "方案结束于",
-    "researchPlan": "Research Plan",
+    "researchPlan": "研究套餐",
     "invoiceStatuses": {
       "paid": "已支付",
       "open": "未支付",
@@ -1417,7 +1417,7 @@
   },
   "socialQueries": {
     "title": "我的查询",
-    "subtitle": "在收集的社交帖子中追踪话题 — 每个查询最多 5 个关键词。不消耗 Data Credits。",
+    "subtitle": "在收集的社交帖子中追踪话题 — 每个查询最多 5 个关键词。不消耗数据积分。",
     "usage": "{used}/{limit} 个启用中",
     "new": "新建",
     "namePlaceholder": "查询名称，例如：AI 视频",
@@ -1438,14 +1438,14 @@
     "noResults": "暂无与这些关键词匹配的帖子。",
     "loadMore": "加载更多",
     "empty": "暂无查询 — 创建一个来追踪话题。",
-    "none": "Social Listening 查询仅在付费方案中提供。",
+    "none": "社交聆听查询仅在付费方案中提供。",
     "error": "出错了，请重试。",
     "overLimit": "超出方案上限"
   },
   "publicLimits": {
     "login": "登录查看更多",
     "rankingTitle": "免费榜单仅显示前 {n} 名",
-    "rankingText": "开通付费 Research Plan，查看包含每个工具流量和增长的完整榜单。"
+    "rankingText": "开通付费研究套餐，查看包含每个工具流量和增长的完整榜单。"
   },
   "aiNews": {
     "title": "AI 资讯",
@@ -1803,7 +1803,7 @@
       "account": {
         "0": {
           "question": "我需要一个帐户才能使用 TopAICollection 吗？",
-          "answer": "浏览和搜索目录无需账户。拥有账户后，您可以撰写评价、管理已提交的工具和 GPT、投放广告，并使用 Website Insights 和 Social Listening。"
+          "answer": "浏览和搜索目录无需账户。拥有账户后，您可以撰写评价、管理已提交的工具和 GPT、投放广告，并使用网站洞察和社交聆听。"
         },
         "1": {
           "question": "如何推广我的工具？",
@@ -1811,7 +1811,7 @@
         },
         "2": {
           "question": "我可以随时取消订阅吗？",
-          "answer": "可以。Research Plan 订阅可随时在控制台 → 付款与发票中取消，您可以使用到已付费周期结束。点击套餐和工具提交均为一次性购买。"
+          "answer": "可以。研究套餐订阅可随时在控制台 → 付款与发票中取消，您可以使用到已付费周期结束。点击套餐和工具提交均为一次性购买。"
         }
       }
     },
@@ -1855,7 +1855,7 @@
     },
     "title": "简单、透明的定价",
     "subtitle": "免费开始，随业务增长而扩展。无隐藏费用。",
-    "freeDesc": "在每月额度内试用 Website Insights 和 Social Listening。",
+    "freeDesc": "在每月额度内试用网站洞察和社交聆听。",
     "freePrice": "免费",
     "getStarted": "开始使用",
     "otherTitle": "其他服务",

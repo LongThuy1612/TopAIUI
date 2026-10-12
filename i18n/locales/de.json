@@ -120,8 +120,8 @@
     "pendingCount": "Tool wartet auf Genehmigung | Tools warten auf Genehmigung",
     "searchPlaceholder": "Nach Name oder Slug suchen...",
     "research": "Recherche",
-    "websiteInsights": "Website Insights",
-    "socialListening": "Social Listening",
+    "websiteInsights": "Website-Analysen",
+    "socialListening": "Social-Media-Monitoring",
     "freePlan": "Kostenlos",
     "websiteInsightsQuota": "Website-Insights-Kontingent",
     "socialListeningQueries": "Social-Listening-Abfragen",
@@ -138,9 +138,9 @@
       "mostPopular": "Am beliebtesten",
       "subscribe": "Abonnieren",
       "plan": {
-        "starter": "Starter",
-        "professional": "Professional",
-        "enterprise": "Enterprise"
+        "starter": "Einsteiger",
+        "professional": "Profi",
+        "enterprise": "Unternehmen"
       },
       "desc": {
         "starter": "Ideal für einzelne Forscher und KI-Startups in der Frühphase.",
@@ -160,7 +160,7 @@
         "title": "Häufig gestellte Fragen",
         "q1": {
           "question": "Was sind „Daten-Credits“?",
-          "answer": "Daten-Credits sind die Währung, mit der du auf unserer Plattform recherchierst. Sie werden wie folgt verbraucht:\n1. Datennutzung: 1 Credit wird für jede geladene Datenzeile auf unseren „Insights“- oder „Analysis“-Seiten verwendet.\n2. Datenexport: 1 Credit wird für jede in eine CSV- oder Excel-Datei exportierte Zeile verwendet.\n3. Keine Kosten: Social-Listening-Abfragen verbrauchen keine Daten-Credits.\nBitte beachte: Credits werden zu Beginn jedes Abrechnungszyklus zurückgesetzt. Nicht genutzte Credits werden nicht übertragen."
+          "answer": "Daten-Credits sind die Währung, mit der du auf unserer Plattform recherchierst. Sie werden so verbraucht:\n1. Datennutzung: Für jede auf der Seite „Website-Analysen“ geladene Datenzeile wird 1 Credit verbraucht. Dieselbe Zeile im selben Monat erneut zu laden ist kostenlos.\n2. Datenexport: Bereits geladene Zeilen kannst du ohne zusätzliche Credits exportieren – bis zum Exportlimit deines Tarifs (Zeilen pro Export und pro Monat).\n3. Kostenlos: Abfragen im Social-Media-Monitoring verbrauchen keine Daten-Credits; dein Tarif begrenzt, wie viele Abfragen gleichzeitig aktiv sind.\nHinweis: Credits und Exportzeilen werden jeden Monat zurückgesetzt (auch bei Jahrestarifen). Nicht genutzte Credits verfallen."
         }
       },
       "currentPlan": "Aktueller Plan",
@@ -206,7 +206,7 @@
     "statusAll": "Alle",
     "statusPending": "Ausstehend",
     "statusPublished": "Veröffentlicht",
-    "socialListeningComingSoon": "Social Listening ist demnächst verfügbar.",
+    "socialListeningComingSoon": "Social-Media-Monitoring ist demnächst verfügbar.",
     "colTool": "Tool",
     "colOrganicClicks": "Organische Klicks",
     "colPaidClicks": "Bezahlte Klicks",
@@ -491,7 +491,7 @@
     "loading": "Wird geladen…"
   },
   "socialListening": {
-    "title": "Social Listening",
+    "title": "Social-Media-Monitoring",
     "subtitle": "Verfolge sofort die Social-Video-Performance jeder KI-Website auf YouTube und TikTok.",
     "allCategories": "Alle Kategorien",
     "searchPlaceholder": "Tool-Namen oder Domain eingeben",
@@ -507,7 +507,7 @@
     "noResults": "Keine Tools entsprechen deiner Suche."
   },
   "websiteInsights": {
-    "title": "Website Insights",
+    "title": "Website-Analysen",
     "searchPlaceholder": "Tool-Namen oder Domain eingeben",
     "advancedFilter": "Erweiterter Filter",
     "bulkOpen": "Websites gesammelt öffnen",
@@ -531,8 +531,8 @@
     "loading": "Wird geladen…",
     "loadError": "Daten konnten nicht geladen werden. Bitte erneut versuchen.",
     "popupBlocked": "Dein Browser hat einige Tabs blockiert. Erlaube Pop-ups für diese Seite, um alle zu öffnen.",
-    "creditsThisMonth": "Data Credits diesen Monat",
-    "outOfCredits": "Deine Data Credits für diesen Monat sind aufgebraucht — {n} Zeile(n) auf dieser Seite sind gesperrt. Upgrade, um sie zu sehen.",
+    "creditsThisMonth": "Daten-Credits diesen Monat",
+    "outOfCredits": "Deine Daten-Credits für diesen Monat sind aufgebraucht — {n} Zeile(n) auf dieser Seite sind gesperrt. Upgrade, um sie zu sehen.",
     "unlock": "Zum Freischalten upgraden",
     "statsTitle": "Statistiken",
     "statsLocked": "Monatliche Statistiken gibt es in kostenpflichtigen Plänen.",
@@ -547,8 +547,8 @@
     "statCategoryGrowth": "Wachstum nach Kategorie",
     "advancedFilters": "Filter",
     "clearFilters": "Filter zurücksetzen",
-    "filterNeedsAdvanced": "Ab Starter-Plan",
-    "filterNeedsFull": "Enterprise-Plan",
+    "filterNeedsAdvanced": "Ab Tarif „Einsteiger“",
+    "filterNeedsFull": "Tarif „Unternehmen“",
     "exportQuota": "Export: {used}/{limit} Zeilen diesen Monat · bis zu {per} pro Export",
     "exportError": "Export fehlgeschlagen. Bitte versuche es erneut.",
     "filter": {
@@ -698,7 +698,7 @@
     "quotaResets": "Kontingent wird am {date} zurückgesetzt",
     "cardInStripe": "In Stripe gespeichert",
     "endsOn": "Plan endet am",
-    "researchPlan": "Research Plan",
+    "researchPlan": "Recherche-Tarif",
     "invoiceStatuses": {
       "paid": "Bezahlt",
       "open": "Unbezahlt",
@@ -1417,7 +1417,7 @@
   },
   "socialQueries": {
     "title": "Meine Abfragen",
-    "subtitle": "Verfolge Themen in gesammelten Social-Posts — bis zu 5 Keywords pro Abfrage. Es werden keine Data Credits verbraucht.",
+    "subtitle": "Verfolge Themen in gesammelten Social-Posts — bis zu 5 Keywords pro Abfrage. Es werden keine Daten-Credits verbraucht.",
     "usage": "{used}/{limit} aktiv",
     "new": "Neu",
     "namePlaceholder": "Name der Abfrage, z. B. KI-Video",
@@ -1445,7 +1445,7 @@
   "publicLimits": {
     "login": "Anmelden, um mehr zu sehen",
     "rankingTitle": "Das kostenlose Ranking zeigt die Top {n}",
-    "rankingText": "Sieh das komplette Ranking mit Traffic und Wachstum jedes Tools in einem kostenpflichtigen Research Plan."
+    "rankingText": "Sieh das komplette Ranking mit Traffic und Wachstum jedes Tools in einem kostenpflichtigen Recherche-Tarif."
   },
   "aiNews": {
     "title": "KI-News",
@@ -1803,7 +1803,7 @@
       "account": {
         "0": {
           "question": "Benötige ich ein Konto, um TopAICollection nutzen zu können?",
-          "answer": "Zum Durchsuchen des Verzeichnisses brauchst du kein Konto. Mit einem Konto kannst du Bewertungen schreiben, eingereichte Tools und GPTs verwalten, Werbung schalten sowie Website Insights und Social Listening nutzen."
+          "answer": "Zum Durchsuchen des Verzeichnisses brauchst du kein Konto. Mit einem Konto kannst du Bewertungen schreiben, eingereichte Tools und GPTs verwalten, Werbung schalten sowie Website-Analysen und Social-Media-Monitoring nutzen."
         },
         "1": {
           "question": "Wie bewerbe ich mein Tool?",
@@ -1851,11 +1851,11 @@
   "pricingPage": {
     "meta": {
       "title": "Preispläne - TopAICollection",
-      "description": "Einfache, transparente Preisgestaltung für KI-Forschung und Social Listening."
+      "description": "Einfache, transparente Preisgestaltung für KI-Forschung und Social-Media-Monitoring."
     },
     "title": "Einfache, transparente Preise",
     "subtitle": "Kostenlos starten und mit dem Wachstum skalieren. Keine Überraschungen.",
-    "freeDesc": "Teste Website Insights und Social Listening mit monatlichen Limits.",
+    "freeDesc": "Teste Website-Analysen und Social-Media-Monitoring mit monatlichen Limits.",
     "freePrice": "Kostenlos",
     "getStarted": "Loslegen",
     "otherTitle": "Weitere Leistungen",

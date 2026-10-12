@@ -81,7 +81,7 @@ useBreadcrumbLd(() => [[isAll.value ? 'All AI Tools' : (activeCategory.value?.na
 <template>
   <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
-      <NuxtLink to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLink>
+      <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
       <span>›</span>
       <span class="text-ink-600">{{ activeCategory?.name ?? (isAll ? t('category.allToolsTitle') : slug) }}</span>
     </nav>
@@ -113,7 +113,7 @@ useBreadcrumbLd(() => [[isAll.value ? 'All AI Tools' : (activeCategory.value?.na
       </button>
 
       <aside :class="['space-y-2', filtersOpen ? 'block' : 'hidden', 'lg:block']">
-        <NuxtLink
+        <NuxtLinkLocale
           to="/category/all"
           :class="[
             'flex items-center gap-2 rounded-lg border px-3 py-2.5 text-sm transition',
@@ -121,7 +121,7 @@ useBreadcrumbLd(() => [[isAll.value ? 'All AI Tools' : (activeCategory.value?.na
           ]"
         >
           <span>🗂️</span> {{ t('category.allTools') }}
-        </NuxtLink>
+        </NuxtLinkLocale>
         <CategoryCard v-for="cat in categories" :key="cat.slug" :category="cat" :active="cat.slug === slug" />
       </aside>
 

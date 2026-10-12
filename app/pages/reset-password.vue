@@ -3,6 +3,7 @@ import type { AuthUser } from '~/composables/useAuth'
 
 const { t } = useI18n()
 const route = useRoute()
+const localePath = useLocalePath()
 const { setSession } = useAuth()
 
 // From the emailed link: /reset-password?token=…
@@ -32,7 +33,7 @@ async function submit() {
     })
     // Every other session was just signed out; this one starts fresh.
     setSession(res.token, res.user)
-    await navigateTo('/dashboard')
+    await navigateTo(localePath('/dashboard'))
   } catch (err: unknown) {
     const statusCode = (err as { statusCode?: number })?.statusCode
     error.value = statusCode === 403
@@ -48,10 +49,10 @@ useSeoMeta({ title: () => `${t('auth.newPasswordTitle')} — TopAICollection`, r
 
 <template>
   <div class="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-4 py-16 sm:px-6">
-    <NuxtLink to="/" class="flex items-center gap-2.5">
+    <NuxtLinkLocale to="/" class="flex items-center gap-2.5">
       <IconLogo class="h-9 w-9 rounded-[11px]" width="36" height="36" />
       <span class="text-2xl font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
-    </NuxtLink>
+    </NuxtLinkLocale>
 
     <h1 class="mt-8 text-2xl font-extrabold text-ink-900">{{ t('auth.newPasswordTitle') }}</h1>
 
@@ -102,7 +103,7 @@ useSeoMeta({ title: () => `${t('auth.newPasswordTitle')} — TopAICollection`, r
       </form>
 
       <p class="mt-5 text-center text-sm text-ink-600">
-        <NuxtLink to="/forgetPassword" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.requestNewLink') }}</NuxtLink>
+        <NuxtLinkLocale to="/forgetPassword" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.requestNewLink') }}</NuxtLinkLocale>
       </p>
     </div>
 

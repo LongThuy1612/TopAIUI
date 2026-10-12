@@ -10,5 +10,5 @@ const rel = externalLinkRel(guestPost.linkRel)
 
 <template>
   <a v-if="item.externalUrl" :href="item.externalUrl" target="_blank" :rel="rel"><slot /></a>
-  <NuxtLink v-else :to="`/ai-news/${item.slug}`"><slot /></NuxtLink>
+  <NuxtLinkLocale v-else :to="`/ai-news/${item.slug}`"><slot /></NuxtLinkLocale>
 </template>

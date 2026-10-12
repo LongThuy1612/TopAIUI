@@ -435,7 +435,7 @@ useSeoMeta({
               <div v-if="item.bounceRate !== null" class="text-xs text-ink-900">{{ t('websiteInsights.bounceRate') }}: {{ item.bounceRate.toFixed(2) }}%</div>
             </td>
             <td class="px-4 py-4">
-              <NuxtLink :to="`/tools/${item.slug}`" class="text-sm font-semibold text-brand-600 hover:text-brand-700">{{ t('websiteInsights.view') }}</NuxtLink>
+              <NuxtLinkLocale :to="`/tools/${item.slug}`" class="text-sm font-semibold text-brand-600 hover:text-brand-700">{{ t('websiteInsights.view') }}</NuxtLinkLocale>
             </td>
             </template>
           </tr>

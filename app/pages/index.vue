@@ -102,7 +102,7 @@ useJsonLd('site', () => [
           <div v-if="!justLaunched.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
             {{ t('empty.noTools') }}
           </div>
-          <NuxtLink to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
+          <NuxtLinkLocale to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
         </aside>
 
         <div class="min-w-0 rounded-[18px] border border-ink-200 bg-white pt-[22px] pr-[26px] pb-[26px] pl-[26px] lg:order-2">
@@ -113,18 +113,18 @@ useJsonLd('site', () => [
             >
               {{ t('tabs.newest') }}
             </button>
-            <NuxtLink
+            <NuxtLinkLocale
               to="/new"
               class="rounded-full px-[15px] py-[7px] text-[13.5px] font-semibold text-ink-800 transition-colors hover:bg-ink-100"
             >
               {{ t('tabs.featured') }}
-            </NuxtLink>
-            <NuxtLink
+            </NuxtLinkLocale>
+            <NuxtLinkLocale
               to="/most-featured"
               class="rounded-full px-[15px] py-[7px] text-[13.5px] font-semibold text-ink-800 transition-colors hover:bg-ink-100"
             >
               {{ t('tabs.free') }}
-            </NuxtLink>
+            </NuxtLinkLocale>
           </div>
 
           <div v-if="tabTools.length" class="flex flex-col divide-y divide-ink-100">
@@ -144,9 +144,9 @@ useJsonLd('site', () => [
           </div>
 
           <div class="flex justify-center pt-[22px]">
-            <NuxtLink to="/today" class="text-[14.5px] font-bold text-brand-500 hover:text-brand-600">
+            <NuxtLinkLocale to="/today" class="text-[14.5px] font-bold text-brand-500 hover:text-brand-600">
               {{ t('sections.viewMoreTools') }}
-            </NuxtLink>
+            </NuxtLinkLocale>
           </div>
         </div>
 
@@ -163,10 +163,10 @@ useJsonLd('site', () => [
       <div class="mx-auto max-w-[1440px]">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <h2 class="text-[clamp(26px,3.2vw,36px)] font-extrabold tracking-[-0.03em] text-ink-900">{{ t('sections.browseByCategory') }}</h2>
-          <NuxtLink to="/category/all" class="text-[14.5px] font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
+          <NuxtLinkLocale to="/category/all" class="text-[14.5px] font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
         </div>
         <div class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-3.5 pt-8">
-          <NuxtLink
+          <NuxtLinkLocale
             v-for="(cat, i) in browseCategories"
             :key="cat.slug"
             :to="`/category/${cat.slug}`"
@@ -182,7 +182,7 @@ useJsonLd('site', () => [
               <span class="block text-base font-bold tracking-[-.01em] text-ink-900">{{ cat.name }}</span>
               <span class="block pt-1.5 text-[13.5px] text-ink-600">{{ cat.count }}</span>
             </span>
-          </NuxtLink>
+          </NuxtLinkLocale>
         </div>
       </div>
     </section>
@@ -192,7 +192,7 @@ useJsonLd('site', () => [
         <h2 class="mb-1.5 text-[clamp(26px,3.2vw,36px)] font-extrabold tracking-[-0.03em] text-ink-900">{{ t('sections.featuredThisWeek') }}</h2>
         <p class="text-base text-ink-600">{{ t('sections.featuredThisWeekSubtitle') }}</p>
         <div v-if="featuredHighlights.length" class="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4 pt-[30px]">
-          <NuxtLink
+          <NuxtLinkLocale
             v-for="tool in featuredHighlights"
             :key="tool.slug"
             :to="`/tools/${tool.slug}`"
@@ -217,7 +217,7 @@ useJsonLd('site', () => [
             </div>
             <p v-if="tool.shortDesc" class="relative line-clamp-2 text-sm leading-[1.6] text-[#7A5566]">{{ tool.shortDesc }}</p>
             <p v-else-if="tool.categories?.length" class="relative line-clamp-2 text-sm leading-[1.6] text-[#7A5566]">{{ tool.categories.map(c => c.name).join(', ') }}</p>
-          </NuxtLink>
+          </NuxtLinkLocale>
         </div>
         <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
           {{ t('empty.noTools') }}

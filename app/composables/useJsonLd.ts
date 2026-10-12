@@ -21,9 +21,11 @@ export function useAbsoluteUrl() {
   return (path: string) => (/^https?:\/\//i.test(path) ? path : `${base}${path.startsWith('/') ? '' : '/'}${path}`)
 }
 
-// Home › … › current page. `items` are [name, path] pairs after Home.
+// Home › … › current page. `items` are [name, path] pairs after Home, with English
+// paths; they get the current language's prefix.
 export function useBreadcrumbLd(items: () => [name: string, path: string][]) {
   const abs = useAbsoluteUrl()
+  const localePath = useLocalePath()
   useJsonLd('breadcrumb', () => ({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -31,7 +33,7 @@ export function useBreadcrumbLd(items: () => [name: string, path: string][]) {
       '@type': 'ListItem',
       position: i + 1,
       name,
-      item: abs(path)
+      item: abs(localePath(path))
     }))
   }))
 }

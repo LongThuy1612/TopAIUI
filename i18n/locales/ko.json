@@ -120,11 +120,11 @@
     "pendingCount": "개 도구가 승인 대기 중 | 개 도구가 승인 대기 중",
     "searchPlaceholder": "이름 또는 슬러그로 검색...",
     "research": "리서치",
-    "websiteInsights": "Website Insights",
-    "socialListening": "Social Listening",
+    "websiteInsights": "웹사이트 인사이트",
+    "socialListening": "소셜 리스닝",
     "freePlan": "무료",
-    "websiteInsightsQuota": "Website Insights 할당량",
-    "socialListeningQueries": "Social Listening 쿼리 수",
+    "websiteInsightsQuota": "웹사이트 인사이트 할당량",
+    "socialListeningQueries": "소셜 리스닝 쿼리 수",
     "upgrade": "업그레이드",
     "upgradeModal": {
       "close": "닫기",
@@ -138,9 +138,9 @@
       "mostPopular": "가장 인기",
       "subscribe": "구독하기",
       "plan": {
-        "starter": "Starter",
-        "professional": "Professional",
-        "enterprise": "Enterprise"
+        "starter": "스타터",
+        "professional": "프로페셔널",
+        "enterprise": "엔터프라이즈"
       },
       "desc": {
         "starter": "개인 연구자 및 초기 단계 AI 스타트업에 적합합니다.",
@@ -149,7 +149,7 @@
       },
       "feature": {
         "credits": "데이터 크레딧",
-        "queries": "Social Listening 쿼리",
+        "queries": "소셜 리스닝 쿼리",
         "filtering": "고급 필터링",
         "export": "데이터 내보내기",
         "statistics": "기본 데이터 통계",
@@ -160,7 +160,7 @@
         "title": "자주 묻는 질문",
         "q1": {
           "question": "\"데이터 크레딧\"이란 무엇인가요?",
-          "answer": "데이터 크레딧은 플랫폼에서 리서치를 수행할 때 사용하는 화폐입니다. 소비 방식은 다음과 같습니다:\n1. 데이터 사용: \"Insights\" 또는 \"Analysis\" 페이지에서 로드되는 데이터 1행당 1크레딧이 사용됩니다.\n2. 데이터 내보내기: CSV 또는 Excel 파일로 내보내는 데이터 1행당 1크레딧이 사용됩니다.\n3. 무료: Social Listening 쿼리는 데이터 크레딧을 소비하지 않습니다.\n참고: 크레딧은 매월 결제 주기 시작 시 초기화되며, 사용하지 않은 크레딧은 이월되지 않습니다."
+          "answer": "데이터 크레딧은 플랫폼에서 리서치를 수행할 때 사용하는 화폐입니다. 소비 방식은 다음과 같습니다:\n1. 데이터 사용: \"웹사이트 인사이트\" 페이지에서 로드되는 데이터 1행당 1크레딧이 사용됩니다. 같은 달에 같은 행을 다시 로드하면 무료입니다.\n2. 데이터 내보내기: 이미 로드한 행은 플랜의 내보내기 한도(1회당 행 수 및 월간 행 수) 내에서 추가 크레딧 없이 내보낼 수 있습니다.\n3. 무료: 소셜 리스닝 쿼리는 데이터 크레딧을 소비하지 않으며, 동시에 활성화할 수 있는 쿼리 수는 플랜에 따라 제한됩니다.\n참고: 크레딧과 내보내기 행 수는 매월 초기화됩니다(연간 플랜도 동일). 사용하지 않은 크레딧은 이월되지 않습니다."
         }
       },
       "currentPlan": "현재 플랜",
@@ -206,7 +206,7 @@
     "statusAll": "전체",
     "statusPending": "대기 중",
     "statusPublished": "게시됨",
-    "socialListeningComingSoon": "Social Listening은 곧 출시됩니다.",
+    "socialListeningComingSoon": "소셜 리스닝은 곧 출시됩니다.",
     "colTool": "도구",
     "colOrganicClicks": "오가닉 클릭수",
     "colPaidClicks": "유료 클릭수",
@@ -491,7 +491,7 @@
     "loading": "불러오는 중…"
   },
   "socialListening": {
-    "title": "Social Listening",
+    "title": "소셜 리스닝",
     "subtitle": "YouTube 및 TikTok에서 모든 AI 웹사이트의 소셜 동영상 성과를 즉시 추적하세요.",
     "allCategories": "전체 카테고리",
     "searchPlaceholder": "도구 이름 또는 도메인을 입력하세요",
@@ -507,7 +507,7 @@
     "noResults": "검색 조건에 맞는 도구가 없습니다."
   },
   "websiteInsights": {
-    "title": "Website Insights",
+    "title": "웹사이트 인사이트",
     "searchPlaceholder": "도구 이름 또는 도메인을 입력하세요",
     "advancedFilter": "고급 필터",
     "bulkOpen": "사이트 일괄 열기",
@@ -531,8 +531,8 @@
     "loading": "불러오는 중…",
     "loadError": "데이터를 불러오지 못했습니다. 다시 시도해 주세요.",
     "popupBlocked": "브라우저가 일부 탭을 차단했습니다. 모두 열려면 이 사이트의 팝업을 허용하세요.",
-    "creditsThisMonth": "이번 달 Data Credits",
-    "outOfCredits": "이번 달 Data Credits를 모두 사용했습니다 — 이 페이지의 {n}개 행이 잠겨 있습니다. 보려면 업그레이드하세요.",
+    "creditsThisMonth": "이번 달 데이터 크레딧",
+    "outOfCredits": "이번 달 데이터 크레딧을 모두 사용했습니다 — 이 페이지의 {n}개 행이 잠겨 있습니다. 보려면 업그레이드하세요.",
     "unlock": "업그레이드하여 잠금 해제",
     "statsTitle": "통계",
     "statsLocked": "월간 통계는 유료 플랜에서 제공됩니다.",
@@ -547,8 +547,8 @@
     "statCategoryGrowth": "카테고리별 성장률",
     "advancedFilters": "필터",
     "clearFilters": "필터 초기화",
-    "filterNeedsAdvanced": "Starter 플랜 이상",
-    "filterNeedsFull": "Enterprise 플랜",
+    "filterNeedsAdvanced": "스타터 플랜 이상",
+    "filterNeedsFull": "엔터프라이즈 플랜",
     "exportQuota": "내보내기: 이번 달 {used}/{limit}행 · 1회 최대 {per}행",
     "exportError": "내보내기에 실패했습니다. 다시 시도해 주세요.",
     "filter": {
@@ -669,7 +669,7 @@
     "title": "구독",
     "research": "리서치",
     "monthlyQueries": "월간 쿼리 수",
-    "socialListeningQueries": "Social Listening 쿼리 수",
+    "socialListeningQueries": "소셜 리스닝 쿼리 수",
     "selectPlan": "플랜 선택",
     "subscription": "구독 정보",
     "subscriptionPlan": "구독 플랜",
@@ -698,7 +698,7 @@
     "quotaResets": "{date}에 할당량이 초기화됩니다",
     "cardInStripe": "Stripe에 저장됨",
     "endsOn": "플랜 종료일",
-    "researchPlan": "Research Plan",
+    "researchPlan": "리서치 플랜",
     "invoiceStatuses": {
       "paid": "결제 완료",
       "open": "미결제",
@@ -1417,7 +1417,7 @@
   },
   "socialQueries": {
     "title": "내 쿼리",
-    "subtitle": "수집된 소셜 게시물에서 주제를 추적하세요 — 쿼리당 키워드 최대 5개. Data Credits를 사용하지 않습니다.",
+    "subtitle": "수집된 소셜 게시물에서 주제를 추적하세요 — 쿼리당 키워드 최대 5개. 데이터 크레딧을 사용하지 않습니다.",
     "usage": "{used}/{limit} 활성",
     "new": "새로 만들기",
     "namePlaceholder": "쿼리 이름, 예: AI 동영상",
@@ -1438,14 +1438,14 @@
     "noResults": "아직 이 키워드와 일치하는 게시물이 없습니다.",
     "loadMore": "더 보기",
     "empty": "아직 쿼리가 없습니다 — 주제를 추적하려면 쿼리를 만드세요.",
-    "none": "Social Listening 쿼리는 유료 플랜에서 제공됩니다.",
+    "none": "소셜 리스닝 쿼리는 유료 플랜에서 제공됩니다.",
     "error": "문제가 발생했습니다. 다시 시도해 주세요.",
     "overLimit": "플랜 한도 초과"
   },
   "publicLimits": {
     "login": "로그인하여 더 보기",
     "rankingTitle": "무료 순위는 상위 {n}개까지 표시됩니다",
-    "rankingText": "유료 Research Plan으로 모든 도구의 트래픽과 성장률을 포함한 전체 순위를 확인하세요."
+    "rankingText": "유료 리서치 플랜으로 모든 도구의 트래픽과 성장률을 포함한 전체 순위를 확인하세요."
   },
   "aiNews": {
     "title": "AI 뉴스",
@@ -1803,7 +1803,7 @@
       "account": {
         "0": {
           "question": "TopAICollection을 사용하려면 계정이 필요합니까?",
-          "answer": "디렉터리 탐색과 검색에는 계정이 필요하지 않습니다. 계정이 있으면 리뷰 작성, 제출한 도구와 GPT 관리, 광고 집행, Website Insights 및 Social Listening 이용이 가능합니다."
+          "answer": "디렉터리 탐색과 검색에는 계정이 필요하지 않습니다. 계정이 있으면 리뷰 작성, 제출한 도구와 GPT 관리, 광고 집행, 웹사이트 인사이트 및 소셜 리스닝 이용이 가능합니다."
         },
         "1": {
           "question": "내 도구를 홍보하려면 어떻게 하나요?",
@@ -1811,7 +1811,7 @@
         },
         "2": {
           "question": "구독은 언제든지 취소할 수 있나요?",
-          "answer": "네. Research Plan 구독은 대시보드 → 결제 및 청구서에서 언제든지 취소할 수 있으며, 결제한 기간이 끝날 때까지 이용할 수 있습니다. 클릭 패키지와 도구 제출은 일회성 구매입니다."
+          "answer": "네. 리서치 플랜 구독은 대시보드 → 결제 및 청구서에서 언제든지 취소할 수 있으며, 결제한 기간이 끝날 때까지 이용할 수 있습니다. 클릭 패키지와 도구 제출은 일회성 구매입니다."
         }
       }
     },
@@ -1855,7 +1855,7 @@
     },
     "title": "단순하고 투명한 가격 정책",
     "subtitle": "무료로 시작하고 성장함에 따라 확장하세요. 놀라움은 없습니다.",
-    "freeDesc": "월간 한도 내에서 Website Insights와 Social Listening을 체험해 보세요.",
+    "freeDesc": "월간 한도 내에서 웹사이트 인사이트와 소셜 리스닝을 체험해 보세요.",
     "freePrice": "무료",
     "getStarted": "시작하기",
     "otherTitle": "기타 서비스",

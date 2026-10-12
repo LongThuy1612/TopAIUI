@@ -120,11 +120,11 @@
     "pendingCount": "件のツールが承認待ちです | 件のツールが承認待ちです",
     "searchPlaceholder": "名前またはスラッグで検索...",
     "research": "リサーチ",
-    "websiteInsights": "Website Insights",
-    "socialListening": "Social Listening",
+    "websiteInsights": "ウェブサイト分析",
+    "socialListening": "ソーシャルリスニング",
     "freePlan": "無料プラン",
-    "websiteInsightsQuota": "Website Insights の利用枠",
-    "socialListeningQueries": "Social Listening のクエリ数",
+    "websiteInsightsQuota": "ウェブサイト分析の利用枠",
+    "socialListeningQueries": "ソーシャルリスニングのクエリ数",
     "upgrade": "アップグレード",
     "upgradeModal": {
       "close": "閉じる",
@@ -149,7 +149,7 @@
       },
       "feature": {
         "credits": "データクレジット",
-        "queries": "Social Listening クエリ",
+        "queries": "ソーシャルリスニングクエリ",
         "filtering": "高度なフィルタリング",
         "export": "データエクスポート",
         "statistics": "基本データ統計",
@@ -160,7 +160,7 @@
         "title": "よくある質問",
         "q1": {
           "question": "「データクレジット」とは？",
-          "answer": "データクレジットは、当プラットフォームでリサーチを行う際に使用する通貨です。以下の方法で消費されます：\n1. データ利用：「Insights」または「Analysis」ページで読み込むデータ1行につき1クレジットを消費します。\n2. データエクスポート：CSVまたはExcelファイルにエクスポートするデータ1行につき1クレジットを消費します。\n3. 無料：Social Listening のクエリはデータクレジットを消費しません。\nご注意：クレジットは毎月の請求サイクル開始時にリセットされます。未使用分は繰り越されません。"
+          "answer": "データクレジットは、当プラットフォームでリサーチを行う際に使用する通貨です。以下の方法で消費されます：\n1. データ利用：「ウェブサイト分析」ページで読み込むデータ1行につき1クレジットを消費します。同じ月に同じ行を再度読み込む場合は無料です。\n2. データエクスポート：読み込み済みの行は、プランのエクスポート上限（1回あたりの行数と月間行数）まで追加クレジットなしでエクスポートできます。\n3. 無料：ソーシャルリスニングのクエリはデータクレジットを消費しません。同時に有効にできるクエリ数はプランによって異なります。\nご注意：クレジットとエクスポート行数は毎月リセットされます（年間プランも同様）。未使用のクレジットは翌月に繰り越されません。"
         }
       },
       "currentPlan": "現在のプラン",
@@ -206,7 +206,7 @@
     "statusAll": "すべて",
     "statusPending": "承認待ち",
     "statusPublished": "公開済み",
-    "socialListeningComingSoon": "Social Listening は近日公開予定です。",
+    "socialListeningComingSoon": "ソーシャルリスニングは近日公開予定です。",
     "colTool": "ツール",
     "colOrganicClicks": "オーガニッククリック数",
     "colPaidClicks": "有料クリック数",
@@ -491,7 +491,7 @@
     "loading": "読み込み中…"
   },
   "socialListening": {
-    "title": "Social Listening",
+    "title": "ソーシャルリスニング",
     "subtitle": "YouTubeとTikTokにおける任意のAIサイトのソーシャル動画パフォーマンスを即座に追跡。",
     "allCategories": "すべてのカテゴリー",
     "searchPlaceholder": "ツール名またはドメインを入力",
@@ -507,7 +507,7 @@
     "noResults": "検索条件に一致するツールがありません。"
   },
   "websiteInsights": {
-    "title": "Website Insights",
+    "title": "ウェブサイト分析",
     "searchPlaceholder": "ツール名またはドメインを入力",
     "advancedFilter": "詳細フィルター",
     "bulkOpen": "サイトを一括で開く",
@@ -531,8 +531,8 @@
     "loading": "読み込み中…",
     "loadError": "データを読み込めませんでした。もう一度お試しください。",
     "popupBlocked": "ブラウザが一部のタブをブロックしました。すべて開くにはこのサイトのポップアップを許可してください。",
-    "creditsThisMonth": "今月の Data Credits",
-    "outOfCredits": "今月の Data Credits を使い切りました — このページの {n} 行がロックされています。表示するにはアップグレードしてください。",
+    "creditsThisMonth": "今月のデータクレジット",
+    "outOfCredits": "今月のデータクレジットを使い切りました — このページの {n} 行がロックされています。表示するにはアップグレードしてください。",
     "unlock": "アップグレードして表示",
     "statsTitle": "統計",
     "statsLocked": "月次統計は有料プランでご利用いただけます。",
@@ -547,8 +547,8 @@
     "statCategoryGrowth": "カテゴリー別成長率",
     "advancedFilters": "フィルター",
     "clearFilters": "フィルターをクリア",
-    "filterNeedsAdvanced": "Starter プラン以上",
-    "filterNeedsFull": "Enterprise プラン",
+    "filterNeedsAdvanced": "スタータープラン以上",
+    "filterNeedsFull": "エンタープライズプラン",
     "exportQuota": "エクスポート：今月 {used}/{limit} 行 · 1回あたり最大 {per} 行",
     "exportError": "エクスポートに失敗しました。もう一度お試しください。",
     "filter": {
@@ -669,7 +669,7 @@
     "title": "サブスクリプション",
     "research": "リサーチ",
     "monthlyQueries": "月間クエリ数",
-    "socialListeningQueries": "Social Listening のクエリ数",
+    "socialListeningQueries": "ソーシャルリスニングのクエリ数",
     "selectPlan": "プランを選択",
     "subscription": "サブスクリプション情報",
     "subscriptionPlan": "サブスクリプションプラン",
@@ -698,7 +698,7 @@
     "quotaResets": "{date} にクォータがリセットされます",
     "cardInStripe": "Stripe に保存済み",
     "endsOn": "プラン終了日",
-    "researchPlan": "Research Plan",
+    "researchPlan": "リサーチプラン",
     "invoiceStatuses": {
       "paid": "支払い済み",
       "open": "未払い",
@@ -1417,7 +1417,7 @@
   },
   "socialQueries": {
     "title": "マイクエリ",
-    "subtitle": "収集したソーシャル投稿からトピックを追跡 — 1クエリにつきキーワード5個まで。Data Credits は消費しません。",
+    "subtitle": "収集したソーシャル投稿からトピックを追跡 — 1クエリにつきキーワード5個まで。データクレジットは消費しません。",
     "usage": "{used}/{limit} 有効",
     "new": "新規",
     "namePlaceholder": "クエリ名（例：AI動画）",
@@ -1438,14 +1438,14 @@
     "noResults": "これらのキーワードに一致する投稿はまだありません。",
     "loadMore": "さらに読み込む",
     "empty": "クエリはまだありません — 作成してトピックを追跡しましょう。",
-    "none": "Social Listening クエリは有料プランでご利用いただけます。",
+    "none": "ソーシャルリスニングクエリは有料プランでご利用いただけます。",
     "error": "問題が発生しました。もう一度お試しください。",
     "overLimit": "プランの上限超過"
   },
   "publicLimits": {
     "login": "ログインしてさらに表示",
     "rankingTitle": "無料ランキングは上位 {n} 件まで表示",
-    "rankingText": "有料の Research Plan なら、各ツールのトラフィックと成長率を含むランキング全体を見られます。"
+    "rankingText": "有料のリサーチプランなら、各ツールのトラフィックと成長率を含むランキング全体を見られます。"
   },
   "aiNews": {
     "title": "AIニュース",
@@ -1803,7 +1803,7 @@
       "account": {
         "0": {
           "question": "TopAICollectionを使用するにはアカウントが必要ですか?",
-          "answer": "ディレクトリの閲覧・検索にアカウントは不要です。アカウントがあると、レビューの投稿、申請したツールや GPT の管理、広告出稿、Website Insights と Social Listening の利用ができます。"
+          "answer": "ディレクトリの閲覧・検索にアカウントは不要です。アカウントがあると、レビューの投稿、申請したツールや GPT の管理、広告出稿、ウェブサイト分析とソーシャルリスニングの利用ができます。"
         },
         "1": {
           "question": "自分のツールを宣伝するには？",
@@ -1811,7 +1811,7 @@
         },
         "2": {
           "question": "サブスクリプションはいつでも解約できますか？",
-          "answer": "はい。Research Plan のサブスクリプションはダッシュボード → お支払いと請求書からいつでも解約でき、支払済み期間の終了まで利用できます。クリックパッケージと掲載申請は買い切りです。"
+          "answer": "はい。リサーチプランのサブスクリプションはダッシュボード → お支払いと請求書からいつでも解約でき、支払済み期間の終了まで利用できます。クリックパッケージと掲載申請は買い切りです。"
         }
       }
     },
@@ -1855,7 +1855,7 @@
     },
     "title": "シンプルで透明性の高い料金体系",
     "subtitle": "無料で開始し、成長に合わせて拡張します。追加費用はありません。",
-    "freeDesc": "月間上限内で Website Insights と Social Listening をお試しいただけます。",
+    "freeDesc": "月間上限内でウェブサイト分析とソーシャルリスニングをお試しいただけます。",
     "freePrice": "無料",
     "getStarted": "始める",
     "otherTitle": "その他のサービス",

@@ -28,9 +28,9 @@ useSeoMeta({
     <h1 class="text-xl font-extrabold text-ink-900">{{ t('myGPTsPage.title') }}</h1>
 
     <div class="mt-4">
-      <NuxtLink to="/submit-gpt" class="inline-block rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+      <NuxtLinkLocale to="/submit-gpt" class="inline-block rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
         {{ t('myGPTsPage.submitNewGPT') }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
 
     <div class="mt-5 overflow-x-auto rounded-xl border border-ink-100">
@@ -57,7 +57,7 @@ useSeoMeta({
             <td class="whitespace-nowrap px-4 py-3 text-ink-600">{{ date(g.publishedAt ?? g.createdAt) }}</td>
             <td class="w-[260px] px-4 py-3">
               <span :class="['whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold', statusClass[g.status]]">{{ t(`myGPTsPage.statuses.${g.status}`) }}</span>
-              <NuxtLink v-if="g.status === 'PUBLISHED'" :to="`/gpts/${g.slug}`" target="_blank" class="mt-1 block text-xs font-semibold text-brand-600 hover:underline">{{ t('myGPTsPage.viewListing') }} ↗</NuxtLink>
+              <NuxtLinkLocale v-if="g.status === 'PUBLISHED'" :to="`/gpts/${g.slug}`" target="_blank" class="mt-1 block text-xs font-semibold text-brand-600 hover:underline">{{ t('myGPTsPage.viewListing') }} ↗</NuxtLinkLocale>
               <p v-if="g.status === 'PENDING'" class="mt-1 text-xs text-ink-500">{{ t('myGPTsPage.pendingHint') }}</p>
               <p v-if="g.status === 'REJECTED'" class="mt-1 whitespace-pre-line text-xs text-ink-600">
                 <template v-if="g.rejectionReason"><b>{{ t('myTool.reason') }}:</b> {{ g.rejectionReason }}<br></template>{{ t('myGPTsPage.refundedHint') }}
@@ -71,9 +71,9 @@ useSeoMeta({
       <p v-else-if="pending && !gpts.length" class="py-16 text-center text-sm text-ink-400">{{ t('promote.orders.loading') }}</p>
       <div v-else-if="!gpts.length" class="flex flex-col items-center gap-4 py-16">
         <p class="text-sm text-ink-900">{{ t('myGPTsPage.emptyMessage') }}</p>
-        <NuxtLink to="/submit-gpt" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
+        <NuxtLinkLocale to="/submit-gpt" class="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-600">
           {{ t('myGPTsPage.submitYourGPT') }}
-        </NuxtLink>
+        </NuxtLinkLocale>
       </div>
     </div>
   </div>

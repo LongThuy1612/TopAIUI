@@ -12,14 +12,14 @@ defineProps<{
     <div class="border-b border-ink-100 pb-3.5 text-base font-semibold text-ink-900">{{ t('sidebar.topCategories') }}</div>
     <ol class="flex flex-col gap-3.5 pt-3.5">
       <li v-for="(cat, i) in categories" :key="cat.slug">
-        <NuxtLink :to="`/category/${cat.slug}`" class="grid grid-cols-[18px_minmax(0,1fr)] gap-2.5 text-base leading-[1.5] text-ink-900 hover:text-brand-500">
+        <NuxtLinkLocale :to="`/category/${cat.slug}`" class="grid grid-cols-[18px_minmax(0,1fr)] gap-2.5 text-base leading-[1.5] text-ink-900 hover:text-brand-500">
           <span :class="['font-semibold', i < 3 ? 'text-brand-500' : 'text-ink-400']">{{ i + 1 }}</span>
           <span class="min-w-0 truncate"><CategoryIcon :icon="cat.icon" /> {{ cat.name }} <span class="text-ink-500">({{ cat.count }})</span></span>
-        </NuxtLink>
+        </NuxtLinkLocale>
       </li>
     </ol>
     <div class="mt-4 border-t border-ink-100 pt-4 text-center">
-      <NuxtLink to="/category/all" class="text-base font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLink>
+      <NuxtLinkLocale to="/category/all" class="text-base font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
     </div>
   </div>
 </template>

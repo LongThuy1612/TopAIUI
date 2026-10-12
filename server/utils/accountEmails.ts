@@ -45,12 +45,12 @@ async function sendOrForget(forget: () => Promise<unknown>, message: MailMessage
   }
 }
 
-function link(path: string, token: string) {
+function link(path: string, token: string, locale: unknown) {
   const base = useRuntimeConfig().public.siteUrl.replace(/\/+$/, '')
-  return `${base}${path}?token=${token}`
+  return `${base}${localizedPath(locale, path)}?token=${token}`
 }
 
-export async function sendVerificationEmail(user: { id: string; email: string }) {
+export async function sendVerificationEmail(user: { id: string; email: string }, locale?: unknown) {
   const { token, hash } = newEmailToken()
   await prisma.user.update({
     where: { id: user.id },
@@ -64,12 +64,12 @@ export async function sendVerificationEmail(user: { id: string; email: string })
     subject: 'Confirm your email — TopAICollection',
     intro: 'Thanks for signing up to TopAICollection. Please confirm this is your email address.',
     action: 'Confirm email',
-    url: link('/verify-email', token),
+    url: link('/verify-email', token, locale),
     outro: 'This link expires in 24 hours. If you didn\'t create an account, you can ignore this email.'
   }))
 }
 
-export async function sendPasswordResetEmail(user: { id: string; email: string }) {
+export async function sendPasswordResetEmail(user: { id: string; email: string }, locale?: unknown) {
   const { token, hash } = newEmailToken()
   await prisma.user.update({
     where: { id: user.id },
@@ -83,7 +83,7 @@ export async function sendPasswordResetEmail(user: { id: string; email: string }
     subject: 'Reset your password — TopAICollection',
     intro: 'We received a request to reset the password for your TopAICollection account.',
     action: 'Reset password',
-    url: link('/reset-password', token),
+    url: link('/reset-password', token, locale),
     outro: 'This link expires in 1 hour and can be used once. If you didn\'t ask for this, ignore this email — your password stays the same.'
   }))
 }
