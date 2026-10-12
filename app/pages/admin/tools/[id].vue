@@ -10,7 +10,7 @@ definePageMeta({ layout: 'dashboard', middleware: ['auth', 'admin'] })
 const { authHeaders } = useAuth()
 
 const { data: tool, refresh } = await useFetch<Tool>(`/api/admin/tools/${toolId}`, {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: false
 })
 

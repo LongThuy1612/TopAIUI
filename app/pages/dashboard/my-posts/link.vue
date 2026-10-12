@@ -10,9 +10,9 @@ const route = useRoute()
 const editId = computed(() => (typeof route.query.id === 'string' ? route.query.id : ''))
 
 const [{ data }, { data: articles }, { data: one }] = await Promise.all([
-  useFetch<{ postCredits: number; items: MyPostSubmission[] }>('/api/me/posts', { key: 'my-posts', headers: authHeaders() }),
-  useFetch<{ id: string; title: string; slug: string }[]>('/api/articles/options', { headers: authHeaders() }),
-  useFetch<PostSubmission>(() => `/api/me/posts/${editId.value}`, { headers: authHeaders(), immediate: !!editId.value })
+  useFetch<{ postCredits: number; items: MyPostSubmission[] }>('/api/me/posts', { key: 'my-posts', headers: () => authHeaders() }),
+  useFetch<{ id: string; title: string; slug: string }[]>('/api/articles/options', { headers: () => authHeaders() }),
+  useFetch<PostSubmission>(() => `/api/me/posts/${editId.value}`, { headers: () => authHeaders(), immediate: !!editId.value })
 ])
 const existing = computed(() => (editId.value && one.value?.id === editId.value && one.value.type === 'LINK_INSERT' && ['PENDING', 'CHANGES_REQUESTED'].includes(one.value.status) ? one.value : null))
 const credits = computed(() => data.value?.postCredits ?? 0)

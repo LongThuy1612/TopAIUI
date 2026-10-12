@@ -32,7 +32,7 @@
     "signUpTitle": "新規登録",
     "hasAccount": "すでにアカウントをお持ちですか？",
     "resetPasswordTitle": "パスワードをリセット",
-    "resetPasswordSent": "このメールアドレスのアカウントが存在する場合、パスワードリセット用のリンクを送信しました。",
+    "resetPasswordSent": "{email} にパスワード再設定用のリンクを送信しました。受信トレイ（迷惑メールフォルダも）をご確認ください。",
     "send": "送信",
     "backToSignIn": "サインインに戻る",
     "emailInUse": "このメールアドレスはすでに登録されています。",
@@ -40,7 +40,22 @@
     "passwordMinLength": "6文字以上で入力してください。",
     "invalidCredentials": "メールアドレスまたはパスワードが正しくありません。",
     "accountBanned": "このアカウントは停止されています。",
-    "googleEmailInUse": "このメールアドレスは既に登録されています。メールアドレスとパスワードでログインしてください。"
+    "googleEmailInUse": "このメールアドレスは既に登録されています。メールアドレスとパスワードでログインしてください。",
+    "passwordMismatch": "パスワードが一致しません。",
+    "newPasswordTitle": "新しいパスワードを設定",
+    "newPasswordLabel": "新しいパスワード",
+    "confirmPasswordLabel": "新しいパスワード（確認）",
+    "setNewPassword": "新しいパスワードを保存",
+    "resetLinkInvalid": "このリセットリンクは無効か、有効期限が切れています。もう一度リクエストしてください。",
+    "requestNewLink": "新しいリンクをリクエスト",
+    "verifyEmailTitle": "メールアドレスの確認",
+    "verifyingEmail": "メールアドレスを確認しています…",
+    "emailVerified": "メールアドレスが確認されました。ありがとうございます！",
+    "verifyLinkInvalid": "この確認リンクは無効か、有効期限が切れています。ログインしてダッシュボードから再送信してください。",
+    "goToDashboard": "ダッシュボードへ",
+    "verifyWrongAccount": "この確認リンクは別のアカウントのものです。現在 {email} でログインしています。ログアウトし、メールを受け取ったアカウントでログインしてください。",
+    "emailNotRegistered": "このメールアドレスは登録されていません。",
+    "invalidEmail": "有効なメールアドレスを入力してください。"
   },
   "productsMenu": {
     "newTitle": "新着AI",
@@ -1614,5 +1629,22 @@
     "saveAndPublish": "保存して公開",
     "emptyReview": "審査待ちはありません。",
     "empty": "まだ GPT はありません。"
+  },
+  "account": {
+    "verifyBanner": "メールアドレス {email} はまだ確認されていません。",
+    "verifyResend": "確認メールを送信",
+    "verifySent": "メールを送信しました。受信トレイをご確認ください。",
+    "verifyWait": "1分ほど待ってから再度お試しください。",
+    "verifyError": "メールを送信できませんでした。しばらくしてから再度お試しください。",
+    "changePasswordTitle": "パスワードの変更",
+    "setPasswordTitle": "パスワードの設定",
+    "setPasswordHint": "現在 Google でログインしています。パスワードを設定するとメールアドレスでもログインできます。",
+    "currentPassword": "現在のパスワード",
+    "changePasswordButton": "パスワードを変更",
+    "setPasswordButton": "パスワードを設定",
+    "passwordChanged": "パスワードを更新しました。",
+    "currentPasswordWrong": "現在のパスワードが正しくありません。",
+    "signsOutOthers": "新しいパスワードを保存すると、他のすべてのデバイスからログアウトされます。",
+    "menu": "アカウントのオプション"
   }
 }

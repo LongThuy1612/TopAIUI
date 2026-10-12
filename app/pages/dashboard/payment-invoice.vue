@@ -29,7 +29,9 @@ const form = reactive<Record<typeof EDITABLE[number], string>>({
 })
 
 const [{ data: profile, error: profileError }, { data: ordersRes, pending: ordersPending }] = await Promise.all([
-  useFetch<Profile>('/api/me/profile', { headers: authHeaders() }),
+  // Fixed key: otherwise it derives from the token, and the new token after a
+  // password change would refetch and wipe unsaved edits in the form below.
+  useFetch<Profile>('/api/me/profile', { key: 'my-profile', headers: () => authHeaders() }),
   useMyOrders()
 ])
 

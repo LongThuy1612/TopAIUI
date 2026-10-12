@@ -32,6 +32,10 @@ services:
       # process.env.ADMIN_* only at build time, so setting the unprefixed
       # names here has no effect without rebuilding the image).
       NUXT_ADMIN_TOKEN: ${ADMIN_TOKEN:-changeme-prod-token}
+      # Signs every login token (server/utils/userAuth.ts). Required: without it the
+      # image's built-in dev default is used and anyone reading the code can forge
+      # sessions. Changing it signs everyone out.
+      NUXT_USER_TOKEN_SECRET: ${USER_TOKEN_SECRET:?Set USER_TOKEN_SECRET in .env (e.g. openssl rand -hex 32)}
       NUXT_ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin}
       # Stripe checkout (/api/promote/checkout) + webhook (/api/stripe/webhook).
       # Without the secret key every "Pay" returns 500 "Stripe is not configured".
@@ -46,6 +50,12 @@ services:
       # to this container and appends the client IP to X-Forwarded-For; false when
       # visitors reach port 3000 directly (the header would be theirs to fake).
       NUXT_TRUST_PROXY: ${TRUST_PROXY:-false}
+      # SMTP for email confirmation + password reset. Empty host = no mail is sent.
+      NUXT_SMTP_HOST: ${SMTP_HOST:-}
+      NUXT_SMTP_PORT: ${SMTP_PORT:-587}
+      NUXT_SMTP_USER: ${SMTP_USER:-}
+      NUXT_SMTP_PASS: ${SMTP_PASS:-}
+      NUXT_MAIL_FROM: ${MAIL_FROM:-TopAICollection <no-reply@topaicollection.com>}
     volumes:
       # Uploaded tool logos / screenshots (nitro storage "uploads", ./.data/uploads).
       - uploads_data:/app/.data/uploads

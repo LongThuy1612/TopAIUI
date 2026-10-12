@@ -135,5 +135,5 @@ export default defineEventHandler(async (event) => {
   assertActive(user)
 
   const token = createUserToken(user.id)
-  return { token, user: { id: user.id, email: user.email, name: user.name, role: user.role } }
+  return { token, user: authUserPayload(user) }
 })

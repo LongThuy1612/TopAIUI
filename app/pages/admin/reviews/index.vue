@@ -14,7 +14,7 @@ watch([searchQuery, statusFilter], () => { page.value = 1 })
 
 const { data, refresh } = await useFetch<AdminReviewsResponse>('/api/admin/reviews', {
   query: computed(() => ({ q: searchQuery.value || undefined, status: statusFilter.value || undefined, page: page.value })),
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: [searchQuery, statusFilter, page]
 })
 const items = computed(() => data.value?.items ?? [])

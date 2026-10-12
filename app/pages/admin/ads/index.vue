@@ -10,7 +10,7 @@ const filter = ref<'review' | 'all'>('review')
 
 const { data, refresh } = await useFetch<{ items: AdminAdCampaign[] }>('/api/admin/ads', {
   query: computed(() => ({ filter: filter.value })),
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: [filter]
 })
 const items = computed(() => data.value?.items ?? [])

@@ -9,14 +9,14 @@ const { user, isAdmin, authHeaders } = useAuth()
 // Greet the logged-in person, not a fixed "Admin".
 const displayName = computed(() => user.value?.name || user.value?.email?.split('@')[0] || '')
 const { data } = await useFetch<AdminToolsResponse>('/api/me/tools', {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: false
 })
 
 // Tile counters: an admin gets the whole site's numbers and the tiles open the admin
 // pages (the customer pages aren't in an admin's menu); a customer gets their own.
 type Pair = Record<string, number>
-const { data: stats } = await useFetch<{ tools: Pair; ads: Pair; posts: Pair; gpts: Pair }>('/api/dashboard/stats', { headers: authHeaders(), watch: false })
+const { data: stats } = await useFetch<{ tools: Pair; ads: Pair; posts: Pair; gpts: Pair }>('/api/dashboard/stats', { headers: () => authHeaders(), watch: false })
 const n = (group: 'tools' | 'ads' | 'posts' | 'gpts', key: string) => stats.value?.[group]?.[key] ?? 0
 
 const allItems = computed(() => data.value?.items ?? [])

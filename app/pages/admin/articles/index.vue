@@ -5,7 +5,7 @@ const { t, locale } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: ['auth', 'admin'] })
 const { authHeaders } = useAuth()
 
-const { data } = await useFetch<{ items: AdminArticleRow[] }>('/api/admin/articles', { headers: authHeaders() })
+const { data } = await useFetch<{ items: AdminArticleRow[] }>('/api/admin/articles', { headers: () => authHeaders() })
 const items = computed(() => data.value?.items ?? [])
 const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'short', day: 'numeric' }) : '—')
 

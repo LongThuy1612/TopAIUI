@@ -32,7 +32,7 @@
     "signUpTitle": "Registrieren",
     "hasAccount": "Bereits ein Konto?",
     "resetPasswordTitle": "Passwort zurücksetzen",
-    "resetPasswordSent": "Falls für diese E-Mail ein Konto existiert, haben wir einen Link zum Zurücksetzen des Passworts gesendet.",
+    "resetPasswordSent": "Wir haben einen Link zum Zurücksetzen des Passworts an {email} gesendet. Bitte sieh in deinem Posteingang (und im Spam-Ordner) nach.",
     "send": "Senden",
     "backToSignIn": "Zurück zur Anmeldung",
     "emailInUse": "Diese E-Mail-Adresse ist bereits registriert.",
@@ -40,7 +40,22 @@
     "passwordMinLength": "Mindestens 6 Zeichen.",
     "invalidCredentials": "Ungültige E-Mail-Adresse oder Passwort.",
     "accountBanned": "Dieses Konto wurde gesperrt.",
-    "googleEmailInUse": "Diese E-Mail ist bereits registriert. Bitte melde dich mit E-Mail und Passwort an."
+    "googleEmailInUse": "Diese E-Mail ist bereits registriert. Bitte melde dich mit E-Mail und Passwort an.",
+    "passwordMismatch": "Die Passwörter stimmen nicht überein.",
+    "newPasswordTitle": "Neues Passwort wählen",
+    "newPasswordLabel": "Neues Passwort",
+    "confirmPasswordLabel": "Neues Passwort bestätigen",
+    "setNewPassword": "Neues Passwort speichern",
+    "resetLinkInvalid": "Dieser Link ist ungültig oder abgelaufen. Bitte fordere einen neuen an.",
+    "requestNewLink": "Neuen Link anfordern",
+    "verifyEmailTitle": "E-Mail bestätigen",
+    "verifyingEmail": "E-Mail wird bestätigt…",
+    "emailVerified": "Deine E-Mail-Adresse ist bestätigt. Danke!",
+    "verifyLinkInvalid": "Dieser Bestätigungslink ist ungültig oder abgelaufen. Melde dich an und fordere im Dashboard einen neuen an.",
+    "goToDashboard": "Zum Dashboard",
+    "verifyWrongAccount": "Dieser Bestätigungslink gehört zu einem anderen Konto. Du bist als {email} angemeldet – melde dich ab und mit dem Konto an, das die E-Mail erhalten hat.",
+    "emailNotRegistered": "Diese E-Mail-Adresse ist nicht registriert.",
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
   },
   "productsMenu": {
     "newTitle": "Neue KIs",
@@ -1614,5 +1629,22 @@
     "saveAndPublish": "Speichern und veröffentlichen",
     "emptyReview": "Nichts wartet auf Prüfung.",
     "empty": "Noch keine GPTs."
+  },
+  "account": {
+    "verifyBanner": "Deine E-Mail-Adresse {email} ist noch nicht bestätigt.",
+    "verifyResend": "Bestätigungs-E-Mail senden",
+    "verifySent": "E-Mail gesendet – sieh in deinem Posteingang nach.",
+    "verifyWait": "Bitte warte eine Minute, bevor du es erneut versuchst.",
+    "verifyError": "Die E-Mail konnte nicht gesendet werden. Bitte versuche es später erneut.",
+    "changePasswordTitle": "Passwort ändern",
+    "setPasswordTitle": "Passwort festlegen",
+    "setPasswordHint": "Du meldest dich mit Google an. Lege ein Passwort fest, um dich auch mit deiner E-Mail anzumelden.",
+    "currentPassword": "Aktuelles Passwort",
+    "changePasswordButton": "Passwort ändern",
+    "setPasswordButton": "Passwort festlegen",
+    "passwordChanged": "Passwort aktualisiert.",
+    "currentPasswordWrong": "Dein aktuelles Passwort ist falsch.",
+    "signsOutOthers": "Mit einem neuen Passwort wirst du auf allen anderen Geräten abgemeldet.",
+    "menu": "Kontooptionen"
   }
 }

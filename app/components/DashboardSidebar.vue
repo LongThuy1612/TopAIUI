@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
-const { user, isAdmin, logout } = useAuth()
+const { user, isAdmin } = useAuth()
 const route = useRoute()
 
 const accountInitial = computed(() => (user.value?.name || user.value?.email || 'U').slice(0, 1).toUpperCase())
@@ -16,12 +16,6 @@ const onFeedbackPage = computed(() => route.path.startsWith('/admin/user-feedbac
 const onAdsPage = computed(() => route.path.startsWith('/admin/ads'))
 const onPostsPage = computed(() => route.path.startsWith('/admin/posts') || route.path.startsWith('/admin/articles'))
 const onGptsPage = computed(() => route.path.startsWith('/admin/gpts'))
-
-function confirmLogout() {
-  if (!confirm(t('admin.logoutConfirm'))) return
-  logout()
-  navigateTo('/login')
-}
 
 const researchItems = computed(() => [
   { label: t('admin.websiteInsights'), to: '/dashboard/insights', icon: 'M4 19h16M6 15l3-4 3 2 4-6 2 3', color: 'bg-orange-50 text-orange-500' },
@@ -246,11 +240,12 @@ const businessItems = computed(() => (isAdmin.value ? [] : [
         <span class="block truncate text-xs font-bold text-ink-900">{{ accountName }}</span>
         <span class="block truncate text-[11px] text-ink-400">{{ accountSubtitle }}</span>
       </span>
-      <button type="button" :title="t('admin.logout')" class="shrink-0 text-ink-400 hover:text-brand-500" @click="confirmLogout">
-        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0-4-4m4 4H7m4 8H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6" />
-        </svg>
-      </button>
+      <AccountMenu
+        placement="side"
+        button-class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-ink-500 hover:bg-ink-100 hover:text-ink-900 data-[open]:bg-ink-100 data-[open]:text-ink-900"
+      >
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.75" /><circle cx="12" cy="12" r="1.75" /><circle cx="12" cy="19" r="1.75" /></svg>
+      </AccountMenu>
     </div>
   </aside>
 

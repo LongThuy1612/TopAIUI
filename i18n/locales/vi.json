@@ -32,7 +32,7 @@
     "signUpTitle": "Đăng ký",
     "hasAccount": "Đã có tài khoản?",
     "resetPasswordTitle": "Đặt lại mật khẩu",
-    "resetPasswordSent": "Nếu email này có tài khoản, chúng tôi đã gửi liên kết đặt lại mật khẩu.",
+    "resetPasswordSent": "Chúng tôi đã gửi liên kết đặt lại mật khẩu tới {email}. Vui lòng kiểm tra hộp thư (kể cả thư rác).",
     "send": "Gửi",
     "backToSignIn": "Quay lại đăng nhập",
     "emailInUse": "Email này đã được đăng ký.",
@@ -40,7 +40,22 @@
     "passwordMinLength": "Tối thiểu 6 ký tự.",
     "invalidCredentials": "Email hoặc mật khẩu không đúng.",
     "accountBanned": "Tài khoản này đã bị khóa.",
-    "googleEmailInUse": "Email này đã được đăng ký. Vui lòng đăng nhập bằng email và mật khẩu."
+    "googleEmailInUse": "Email này đã được đăng ký. Vui lòng đăng nhập bằng email và mật khẩu.",
+    "passwordMismatch": "Mật khẩu nhập lại không khớp.",
+    "newPasswordTitle": "Đặt mật khẩu mới",
+    "newPasswordLabel": "Mật khẩu mới",
+    "confirmPasswordLabel": "Nhập lại mật khẩu mới",
+    "setNewPassword": "Lưu mật khẩu mới",
+    "resetLinkInvalid": "Liên kết đặt lại mật khẩu không hợp lệ hoặc đã hết hạn. Vui lòng yêu cầu liên kết mới.",
+    "requestNewLink": "Yêu cầu liên kết mới",
+    "verifyEmailTitle": "Xác nhận email",
+    "verifyingEmail": "Đang xác nhận email…",
+    "emailVerified": "Email của bạn đã được xác nhận. Cảm ơn bạn!",
+    "verifyLinkInvalid": "Liên kết xác nhận không hợp lệ hoặc đã hết hạn. Hãy đăng nhập và yêu cầu liên kết mới trong trang quản lý.",
+    "goToDashboard": "Đến trang quản lý",
+    "verifyWrongAccount": "Liên kết xác nhận này thuộc về tài khoản khác. Bạn đang đăng nhập bằng {email} — hãy đăng xuất và đăng nhập bằng tài khoản đã nhận email.",
+    "emailNotRegistered": "Email này chưa được đăng ký.",
+    "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ."
   },
   "productsMenu": {
     "newTitle": "AI mới",
@@ -1614,5 +1629,22 @@
     "saveAndPublish": "Lưu và đăng",
     "emptyReview": "Không có GPT nào chờ duyệt.",
     "empty": "Chưa có GPT nào."
+  },
+  "account": {
+    "verifyBanner": "Địa chỉ email {email} của bạn chưa được xác nhận.",
+    "verifyResend": "Gửi email xác nhận",
+    "verifySent": "Đã gửi email — hãy kiểm tra hộp thư.",
+    "verifyWait": "Vui lòng đợi một phút rồi thử lại.",
+    "verifyError": "Không gửi được email. Vui lòng thử lại sau.",
+    "changePasswordTitle": "Đổi mật khẩu",
+    "setPasswordTitle": "Tạo mật khẩu",
+    "setPasswordHint": "Bạn đang đăng nhập bằng Google. Tạo mật khẩu để có thể đăng nhập bằng email.",
+    "currentPassword": "Mật khẩu hiện tại",
+    "changePasswordButton": "Đổi mật khẩu",
+    "setPasswordButton": "Tạo mật khẩu",
+    "passwordChanged": "Đã cập nhật mật khẩu.",
+    "currentPasswordWrong": "Mật khẩu hiện tại không đúng.",
+    "signsOutOthers": "Khi lưu mật khẩu mới, bạn sẽ bị đăng xuất trên tất cả thiết bị khác.",
+    "menu": "Tuỳ chọn tài khoản"
   }
 }

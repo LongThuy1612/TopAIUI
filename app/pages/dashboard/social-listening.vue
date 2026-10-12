@@ -52,7 +52,7 @@ onBeforeUnmount(() => { if (searchTimer) clearTimeout(searchTimer) })
 watch([activeCategory, debouncedSearch, sortKey, sortDir, locale], () => { page.value = 1 })
 
 const { data, pending, error } = await useFetch<SocialResponse>('/api/social-listening', {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   query: computed(() => ({
     category: activeCategory.value || undefined,
     q: debouncedSearch.value || undefined,

@@ -5,6 +5,9 @@ export interface AuthUser {
   email: string
   name: string | null
   role: 'USER' | 'MANAGER' | 'ADMIN'
+  emailVerified: boolean
+  // false for a Google-only account that never set one.
+  hasPassword: boolean
 }
 
 export function useAuth() {
@@ -50,6 +53,13 @@ export function useAuth() {
     if (import.meta.client) persistToken(newToken, remember)
   }
 
+  // A fresh token for the same login (after a password change ends every other
+  // session), kept in whichever storage "remember me" chose.
+  function replaceToken(newToken: string) {
+    token.value = newToken
+    if (import.meta.client) persistToken(newToken, !!localStorage.getItem(STORAGE_KEY))
+  }
+
   function logout() {
     token.value = null
     user.value = null
@@ -85,5 +95,5 @@ export function useAuth() {
     return token.value ? { 'x-user-token': token.value } : {}
   }
 
-  return { token, user, isAdmin, load, ensureUser, setSession, logout, fetchMe, authHeaders }
+  return { token, user, isAdmin, load, ensureUser, setSession, replaceToken, logout, fetchMe, authHeaders }
 }

@@ -13,10 +13,10 @@ const renderer = markdownRenderer(guestPost.linkRel)
 const [{ data, refresh }, { data: articlesRes, refresh: refreshArticles }] = await Promise.all([
   useFetch<{ items: AdminPostSubmission[] }>('/api/admin/posts', {
     query: computed(() => ({ filter: filter.value })),
-    headers: authHeaders(),
+    headers: () => authHeaders(),
     watch: [filter]
   }),
-  useFetch<{ items: AdminArticleRow[] }>('/api/admin/articles', { headers: authHeaders() })
+  useFetch<{ items: AdminArticleRow[] }>('/api/admin/articles', { headers: () => authHeaders() })
 ])
 const items = computed(() => data.value?.items ?? [])
 // Words / links of each guest post, computed once per response (not on every render).

@@ -24,7 +24,7 @@ interface Stats {
 const open = ref(true)
 // Fetched only while the plan has statistics (Free would just get 403 on every filter change).
 const { data, pending, error, execute } = useFetch<Stats | null>('/api/insights/stats', {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   query: computed(() => props.query),
   immediate: false,
   watch: false

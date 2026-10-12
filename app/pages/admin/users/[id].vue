@@ -8,7 +8,7 @@ const router = useRouter()
 const { authHeaders } = useAuth()
 
 const { data: user } = await useFetch<AdminUser>(`/api/admin/users/${route.params.id}`, {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: false
 })
 

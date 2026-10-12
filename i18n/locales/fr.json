@@ -32,7 +32,7 @@
     "signUpTitle": "Inscription",
     "hasAccount": "Vous avez déjà un compte ?",
     "resetPasswordTitle": "Réinitialisez votre mot de passe",
-    "resetPasswordSent": "Si un compte existe pour cet e-mail, nous avons envoyé un lien de réinitialisation du mot de passe.",
+    "resetPasswordSent": "Nous avons envoyé un lien de réinitialisation à {email}. Vérifiez votre boîte de réception (et vos spams).",
     "send": "Envoyer",
     "backToSignIn": "Retour à la connexion",
     "emailInUse": "Cet e-mail est déjà enregistré.",
@@ -40,7 +40,22 @@
     "passwordMinLength": "Au moins 6 caractères.",
     "invalidCredentials": "E-mail ou mot de passe invalide.",
     "accountBanned": "Ce compte a été banni.",
-    "googleEmailInUse": "Cet e-mail est déjà enregistré. Veuillez vous connecter avec votre e-mail et votre mot de passe."
+    "googleEmailInUse": "Cet e-mail est déjà enregistré. Veuillez vous connecter avec votre e-mail et votre mot de passe.",
+    "passwordMismatch": "Les mots de passe ne correspondent pas.",
+    "newPasswordTitle": "Choisissez un nouveau mot de passe",
+    "newPasswordLabel": "Nouveau mot de passe",
+    "confirmPasswordLabel": "Confirmer le nouveau mot de passe",
+    "setNewPassword": "Enregistrer le mot de passe",
+    "resetLinkInvalid": "Ce lien de réinitialisation est invalide ou a expiré. Veuillez en demander un nouveau.",
+    "requestNewLink": "Demander un nouveau lien",
+    "verifyEmailTitle": "Confirmez votre e-mail",
+    "verifyingEmail": "Confirmation de votre e-mail…",
+    "emailVerified": "Votre adresse e-mail est confirmée. Merci !",
+    "verifyLinkInvalid": "Ce lien de confirmation est invalide ou a expiré. Connectez-vous et demandez-en un nouveau depuis votre tableau de bord.",
+    "goToDashboard": "Aller au tableau de bord",
+    "verifyWrongAccount": "Ce lien de confirmation appartient à un autre compte. Vous êtes connecté en tant que {email} — déconnectez-vous et connectez-vous avec le compte qui a reçu l’e-mail.",
+    "emailNotRegistered": "Cette adresse e-mail n’est pas enregistrée.",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide."
   },
   "productsMenu": {
     "newTitle": "Nouvelles IA",
@@ -1614,5 +1629,22 @@
     "saveAndPublish": "Enregistrer et publier",
     "emptyReview": "Rien en attente de vérification.",
     "empty": "Aucun GPT pour l'instant."
+  },
+  "account": {
+    "verifyBanner": "Votre adresse e-mail {email} n’est pas encore confirmée.",
+    "verifyResend": "Envoyer l’e-mail de confirmation",
+    "verifySent": "E-mail envoyé — vérifiez votre boîte de réception.",
+    "verifyWait": "Veuillez patienter une minute avant de réessayer.",
+    "verifyError": "Impossible d’envoyer l’e-mail. Veuillez réessayer plus tard.",
+    "changePasswordTitle": "Changer le mot de passe",
+    "setPasswordTitle": "Définir un mot de passe",
+    "setPasswordHint": "Vous vous connectez avec Google. Définissez un mot de passe pour pouvoir aussi vous connecter avec votre e-mail.",
+    "currentPassword": "Mot de passe actuel",
+    "changePasswordButton": "Changer le mot de passe",
+    "setPasswordButton": "Définir le mot de passe",
+    "passwordChanged": "Mot de passe mis à jour.",
+    "currentPasswordWrong": "Votre mot de passe actuel est incorrect.",
+    "signsOutOthers": "Enregistrer un nouveau mot de passe vous déconnecte de tous vos autres appareils.",
+    "menu": "Options du compte"
   }
 }

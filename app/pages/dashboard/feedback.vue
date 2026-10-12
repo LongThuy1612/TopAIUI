@@ -39,7 +39,7 @@ const errorMessage = ref('')
 const sent = ref(false)
 
 const { data: history, refresh: refreshHistory } = await useFetch<{ items: MyFeedback[] }>('/api/feedback', {
-  headers: authHeaders()
+  headers: () => authHeaders()
 })
 const myFeedback = computed(() => history.value?.items ?? [])
 

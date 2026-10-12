@@ -8,7 +8,7 @@ const { authHeaders } = useAuth()
 
 // One campaign per tool and ad type; buying more clicks tops it up (server/utils/ads.ts).
 const { data, pending, error, refresh } = await useFetch<{ items: AdCampaign[] }>('/api/me/ads', {
-  headers: authHeaders()
+  headers: () => authHeaders()
 })
 const campaigns = computed(() => data.value?.items ?? [])
 const adClicks = computed(() => campaigns.value.filter(c => c.status !== 'REJECTED').reduce((sum, c) => sum + c.clicksRemaining, 0))

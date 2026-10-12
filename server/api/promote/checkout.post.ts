@@ -103,9 +103,9 @@ async function priceOf(b: Body, userId: string): Promise<{ amount: number; label
 }
 
 export default defineEventHandler(async (event) => {
-  const userId = requireUser(event)
+  const { userId, issuedAt } = requireUserSession(event)
   const user = await prisma.user.findUnique({ where: { id: userId } })
-  if (!user || user.isBanned || user.deletedAt) {
+  if (!user || !isSessionUsable(user, issuedAt)) {
     throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
   }
 

@@ -6,7 +6,7 @@ definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 const { authHeaders } = useAuth()
 
 // GPTs created from the user's paid Submit GPT orders (server/utils/gpts.ts).
-const { data, pending, error } = await useFetch<{ items: MyGpt[] }>('/api/me/gpts', { headers: authHeaders() })
+const { data, pending, error } = await useFetch<{ items: MyGpt[] }>('/api/me/gpts', { headers: () => authHeaders() })
 const gpts = computed(() => data.value?.items ?? [])
 
 const statusClass: Record<GptStatus, string> = {

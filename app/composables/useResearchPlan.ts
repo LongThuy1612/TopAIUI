@@ -24,7 +24,7 @@ export interface MyPlan {
 export function useResearchPlan() {
   const { authHeaders } = useAuth()
   const { t } = useI18n()
-  const fetched = useFetch<MyPlan>('/api/me/plan', { key: 'my-plan', headers: authHeaders() })
+  const fetched = useFetch<MyPlan>('/api/me/plan', { key: 'my-plan', headers: () => authHeaders() })
   const busy = useState<string | null>('my-plan-busy', () => null)
   const error = useState<string>('my-plan-error', () => '')
 

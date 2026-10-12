@@ -23,7 +23,7 @@ const { data, refresh } = await useFetch<AdminFeedbackResponse>('/api/admin/feed
     type: typeFilter.value || undefined,
     page: page.value
   })),
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: [searchQuery, statusFilter, typeFilter, page]
 })
 const items = computed(() => data.value?.items ?? [])

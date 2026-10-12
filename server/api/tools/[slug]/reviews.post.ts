@@ -1,14 +1,9 @@
 // Submit a review for a tool. Login required; the review is saved as PENDING
 // and only shows on the tool page after an admin approves it.
 export default defineEventHandler(async (event) => {
-  const userId = requireUser(event)
+  const userId = await requireActiveUser(event)
   const slug = getRouterParam(event, 'slug')
   const body = await readBody<{ rating?: number; comment?: string; locale?: string }>(event)
-
-  const user = await prisma.user.findUnique({ where: { id: userId }, select: { isBanned: true, deletedAt: true } })
-  if (!user || user.isBanned || user.deletedAt) {
-    throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
-  }
 
   // Only a number or numeric string — not `true`, `[5]` etc. that Number() would coerce.
   const rawRating = body?.rating as unknown

@@ -32,7 +32,7 @@
     "signUpTitle": "注册",
     "hasAccount": "已经有账户？",
     "resetPasswordTitle": "重置密码",
-    "resetPasswordSent": "如果该邮箱存在账户，我们已发送密码重置链接。",
+    "resetPasswordSent": "我们已向 {email} 发送了密码重置链接，请查收邮件（包括垃圾邮件）。",
     "send": "发送",
     "backToSignIn": "返回登录",
     "emailInUse": "该邮箱已被注册。",
@@ -40,7 +40,22 @@
     "passwordMinLength": "至少 6 个字符。",
     "invalidCredentials": "邮箱或密码不正确。",
     "accountBanned": "该账户已被封禁。",
-    "googleEmailInUse": "该邮箱已注册，请使用邮箱和密码登录。"
+    "googleEmailInUse": "该邮箱已注册，请使用邮箱和密码登录。",
+    "passwordMismatch": "两次输入的密码不一致。",
+    "newPasswordTitle": "设置新密码",
+    "newPasswordLabel": "新密码",
+    "confirmPasswordLabel": "确认新密码",
+    "setNewPassword": "保存新密码",
+    "resetLinkInvalid": "此重置链接无效或已过期，请重新申请。",
+    "requestNewLink": "重新获取链接",
+    "verifyEmailTitle": "验证邮箱",
+    "verifyingEmail": "正在验证邮箱…",
+    "emailVerified": "您的邮箱已验证，谢谢！",
+    "verifyLinkInvalid": "此验证链接无效或已过期。请登录后在控制台重新发送。",
+    "goToDashboard": "前往控制台",
+    "verifyWrongAccount": "此验证链接属于其他账户。您当前登录的是 {email}，请退出后使用收到该邮件的账户登录。",
+    "emailNotRegistered": "该邮箱尚未注册。",
+    "invalidEmail": "请输入有效的邮箱地址。"
   },
   "productsMenu": {
     "newTitle": "最新 AI",
@@ -1614,5 +1629,22 @@
     "saveAndPublish": "保存并发布",
     "emptyReview": "没有待审核的内容。",
     "empty": "暂无 GPT。"
+  },
+  "account": {
+    "verifyBanner": "您的邮箱 {email} 尚未验证。",
+    "verifyResend": "发送验证邮件",
+    "verifySent": "邮件已发送，请查收。",
+    "verifyWait": "请稍等一分钟后再试。",
+    "verifyError": "邮件发送失败，请稍后再试。",
+    "changePasswordTitle": "修改密码",
+    "setPasswordTitle": "设置密码",
+    "setPasswordHint": "您目前使用 Google 登录。设置密码后也可以使用邮箱登录。",
+    "currentPassword": "当前密码",
+    "changePasswordButton": "修改密码",
+    "setPasswordButton": "设置密码",
+    "passwordChanged": "密码已更新。",
+    "currentPasswordWrong": "当前密码不正确。",
+    "signsOutOthers": "保存新密码后，您将在所有其他设备上退出登录。",
+    "menu": "账户选项"
   }
 }

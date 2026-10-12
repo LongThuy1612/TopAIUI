@@ -53,6 +53,6 @@ export function useMyOrders() {
   const { authHeaders } = useAuth()
   return useFetch<MyOrdersResponse>('/api/orders', {
     key: 'my-orders',
-    headers: authHeaders()
+    headers: () => authHeaders()
   })
 }

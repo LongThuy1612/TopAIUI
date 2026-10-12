@@ -23,6 +23,13 @@ export default defineEventHandler(async (event) => {
         throw createError({ statusCode: 409, statusMessage: 'Email already registered', message: 'Email already registered' })
       }
       data.email = email
+      // Nobody has proven the new address yet, and links already mailed to the
+      // old one must not keep working for the account.
+      data.emailVerified = false
+      data.verificationToken = null
+      data.verificationTokenExpiry = null
+      data.passwordResetToken = null
+      data.passwordResetTokenExpiry = null
     }
   }
 

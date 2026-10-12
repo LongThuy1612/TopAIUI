@@ -15,7 +15,7 @@ interface Post {
   tool: { slug: string; name: string | null }; isNew: boolean
 }
 
-const { data, refresh } = useFetch<{ items: QueryRow[]; active: number; limit: number }>('/api/social-queries', { headers: authHeaders() })
+const { data, refresh } = useFetch<{ items: QueryRow[]; active: number; limit: number }>('/api/social-queries', { headers: () => authHeaders() })
 const queries = computed(() => data.value?.items ?? [])
 const full = computed(() => !!data.value && data.value.active >= data.value.limit)
 

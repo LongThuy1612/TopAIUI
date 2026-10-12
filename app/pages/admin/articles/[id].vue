@@ -14,7 +14,7 @@ interface AdminArticle {
 }
 
 const { data: article, error: loadError, refresh } = await useFetch<AdminArticle>(() => `/api/admin/articles/${id.value}`, {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   immediate: !isNew.value
 })
 

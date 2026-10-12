@@ -4,12 +4,12 @@ import type { Role } from '@prisma/client'
 // Loads the logged-in user (x-user-token) and checks their role in the DB.
 // Throws 401 when not logged in / banned, 403 when the role is not allowed.
 export async function requireRole(event: H3Event, roles: Role[]) {
-  const userId = requireUser(event)
+  const { userId, issuedAt } = requireUserSession(event)
   const user = await prisma.user.findUnique({
     where: { id: userId },
-    select: { id: true, role: true, isBanned: true, deletedAt: true }
+    select: { id: true, role: true, isBanned: true, deletedAt: true, passwordChangedAt: true }
   })
-  if (!user || user.isBanned || user.deletedAt) {
+  if (!user || !isSessionUsable(user, issuedAt)) {
     throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
   }
   if (!roles.includes(user.role)) {

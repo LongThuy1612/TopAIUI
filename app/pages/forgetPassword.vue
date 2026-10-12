@@ -4,12 +4,33 @@ const { t } = useI18n()
 const email = ref('')
 const loading = ref(false)
 const sent = ref(false)
+const error = ref('')
+// Shown with a "Sign up" link when no account uses the address.
+const notRegistered = ref(false)
 
-function submit() {
-  if (!email.value.trim()) return
+const errorKeys: Record<number, string> = {
+  400: 'auth.invalidEmail',
+  403: 'auth.accountBanned',
+  404: 'auth.emailNotRegistered',
+  429: 'account.verifyWait',
+  502: 'account.verifyError'
+}
+
+async function submit() {
+  if (!email.value.trim() || loading.value) return
   loading.value = true
-  sent.value = true
-  loading.value = false
+  error.value = ''
+  notRegistered.value = false
+  try {
+    await $fetch('/api/auth/forgot-password', { method: 'POST', body: { email: email.value.trim() } })
+    sent.value = true
+  } catch (err: unknown) {
+    const statusCode = (err as { statusCode?: number })?.statusCode ?? 0
+    notRegistered.value = statusCode === 404
+    error.value = t(errorKeys[statusCode] ?? 'auth.registerError')
+  } finally {
+    loading.value = false
+  }
 }
 
 useSeoMeta({ title: () => `${t('auth.resetPasswordTitle')} — TopAICollection` })
@@ -26,7 +47,7 @@ useSeoMeta({ title: () => `${t('auth.resetPasswordTitle')} — TopAICollection` 
 
     <div class="mt-8 w-full">
       <p v-if="sent" class="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
-        {{ t('auth.resetPasswordSent') }}
+        {{ t('auth.resetPasswordSent', { email: email.trim() }) }}
       </p>
 
       <form v-else class="space-y-4" @submit.prevent="submit">
@@ -42,6 +63,11 @@ useSeoMeta({ title: () => `${t('auth.resetPasswordTitle')} — TopAICollection` 
             class="w-full rounded-xl border border-ink-200 px-3.5 py-2.5 text-sm outline-none focus:border-brand-400"
           >
         </div>
+
+        <p v-if="error" class="text-sm text-red-600">
+          {{ error }}
+          <NuxtLink v-if="notRegistered" to="/register" class="font-semibold text-brand-500 hover:text-brand-600">{{ t('auth.signUp') }}</NuxtLink>
+        </p>
 
         <button
           :disabled="loading"

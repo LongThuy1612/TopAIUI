@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { AuthUser } from '~/composables/useAuth'
+
 const { t } = useI18n()
 const route = useRoute()
 const { setSession } = useAuth()
@@ -16,7 +18,7 @@ async function submit() {
   loading.value = true
   error.value = ''
   try {
-    const res = await $fetch<{ token: string; user: { id: string; email: string; name: string | null } }>('/api/auth/login', {
+    const res = await $fetch<{ token: string; user: AuthUser }>('/api/auth/login', {
       method: 'POST',
       body: { email: email.value.trim(), password: password.value }
     })

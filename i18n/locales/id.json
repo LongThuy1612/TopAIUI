@@ -32,7 +32,7 @@
     "signUpTitle": "Daftar",
     "hasAccount": "Sudah punya akun?",
     "resetPasswordTitle": "Atur ulang kata sandi Anda",
-    "resetPasswordSent": "Jika akun dengan email tersebut ada, kami telah mengirimkan tautan reset kata sandi.",
+    "resetPasswordSent": "Kami telah mengirim tautan reset kata sandi ke {email}. Silakan periksa kotak masuk (dan folder spam) Anda.",
     "send": "Kirim",
     "backToSignIn": "Kembali ke masuk",
     "emailInUse": "Email ini sudah terdaftar.",
@@ -40,7 +40,22 @@
     "passwordMinLength": "Minimal 6 karakter.",
     "invalidCredentials": "Email atau kata sandi salah.",
     "accountBanned": "Akun ini telah diblokir.",
-    "googleEmailInUse": "Email ini sudah terdaftar. Silakan masuk dengan email dan kata sandi Anda."
+    "googleEmailInUse": "Email ini sudah terdaftar. Silakan masuk dengan email dan kata sandi Anda.",
+    "passwordMismatch": "Kata sandi tidak cocok.",
+    "newPasswordTitle": "Buat kata sandi baru",
+    "newPasswordLabel": "Kata sandi baru",
+    "confirmPasswordLabel": "Konfirmasi kata sandi baru",
+    "setNewPassword": "Simpan kata sandi baru",
+    "resetLinkInvalid": "Tautan reset ini tidak valid atau sudah kedaluwarsa. Silakan minta tautan baru.",
+    "requestNewLink": "Minta tautan baru",
+    "verifyEmailTitle": "Konfirmasi email Anda",
+    "verifyingEmail": "Mengonfirmasi email Anda…",
+    "emailVerified": "Alamat email Anda telah dikonfirmasi. Terima kasih!",
+    "verifyLinkInvalid": "Tautan konfirmasi ini tidak valid atau sudah kedaluwarsa. Masuk dan minta tautan baru dari dasbor Anda.",
+    "goToDashboard": "Ke dasbor",
+    "verifyWrongAccount": "Tautan konfirmasi ini milik akun lain. Anda masuk sebagai {email} — keluar lalu masuk dengan akun yang menerima email tersebut.",
+    "emailNotRegistered": "Email ini belum terdaftar.",
+    "invalidEmail": "Masukkan alamat email yang valid."
   },
   "productsMenu": {
     "newTitle": "AI Terbaru",
@@ -1614,5 +1629,22 @@
     "saveAndPublish": "Simpan dan terbitkan",
     "emptyReview": "Tidak ada yang menunggu ditinjau.",
     "empty": "Belum ada GPT."
+  },
+  "account": {
+    "verifyBanner": "Alamat email {email} Anda belum dikonfirmasi.",
+    "verifyResend": "Kirim email konfirmasi",
+    "verifySent": "Email terkirim — periksa kotak masuk Anda.",
+    "verifyWait": "Harap tunggu satu menit sebelum mencoba lagi.",
+    "verifyError": "Email tidak dapat dikirim. Silakan coba lagi nanti.",
+    "changePasswordTitle": "Ubah kata sandi",
+    "setPasswordTitle": "Buat kata sandi",
+    "setPasswordHint": "Anda masuk dengan Google. Buat kata sandi agar bisa juga masuk dengan email.",
+    "currentPassword": "Kata sandi saat ini",
+    "changePasswordButton": "Ubah kata sandi",
+    "setPasswordButton": "Buat kata sandi",
+    "passwordChanged": "Kata sandi diperbarui.",
+    "currentPasswordWrong": "Kata sandi saat ini salah.",
+    "signsOutOthers": "Menyimpan kata sandi baru akan mengeluarkan Anda dari semua perangkat lain.",
+    "menu": "Opsi akun"
   }
 }

@@ -9,9 +9,7 @@ export default defineEventHandler(async (event) => {
   if (!EMAIL_RE.test(email)) {
     throw createError({ statusCode: 400, statusMessage: 'Invalid email address' })
   }
-  if (password.length < 6) {
-    throw createError({ statusCode: 400, statusMessage: 'Password must be at least 6 characters' })
-  }
+  assertValidPassword(password)
 
   // Also catches the same Gmail inbox written differently (a.b@ vs ab@gmail.com).
   if (await isEmailTaken(email)) {
@@ -28,6 +26,10 @@ export default defineEventHandler(async (event) => {
     }
   })
 
+  // Signing up isn't blocked on it: the account works right away and the
+  // dashboard keeps asking to confirm until the link is clicked.
+  sendVerificationEmail(user).catch(err => console.error('[mail] verification email failed', err))
+
   const token = createUserToken(user.id)
-  return { token, user: { id: user.id, email: user.email, name: user.name, role: user.role } }
+  return { token, user: authUserPayload(user) }
 })

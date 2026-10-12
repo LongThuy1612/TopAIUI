@@ -9,7 +9,7 @@ const searchQuery = ref('')
 
 const { data } = await useFetch<AdminToolsResponse>('/api/admin/tools', {
   query: computed(() => ({ isApproved: 'false', q: searchQuery.value || undefined })),
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: [searchQuery]
 })
 
@@ -19,7 +19,7 @@ const items = computed(() => data.value?.items ?? [])
 // Paid updates of published tools waiting for review — those tools are approved, so
 // they don't show up in the list below.
 const { data: updates } = await useFetch<{ items: { id: string; submittedAt: string; tool: { id: string; name: string }; user: { email: string } }[] }>('/api/admin/update-requests', {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: false
 })
 

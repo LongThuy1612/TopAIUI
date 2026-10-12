@@ -32,7 +32,7 @@
     "signUpTitle": "Sign up",
     "hasAccount": "Already have an account?",
     "resetPasswordTitle": "Reset your password",
-    "resetPasswordSent": "If an account exists for that email, we've sent a password reset link.",
+    "resetPasswordSent": "We've sent a password reset link to {email}. Please check your inbox (and spam folder).",
     "send": "Send",
     "backToSignIn": "Back to sign in",
     "emailInUse": "This email is already registered.",
@@ -40,7 +40,22 @@
     "passwordMinLength": "At least 6 characters.",
     "invalidCredentials": "Invalid email or password.",
     "accountBanned": "This account has been banned.",
-    "googleEmailInUse": "This email is already registered. Please sign in with your email and password."
+    "googleEmailInUse": "This email is already registered. Please sign in with your email and password.",
+    "passwordMismatch": "Passwords do not match.",
+    "newPasswordTitle": "Choose a new password",
+    "newPasswordLabel": "New password",
+    "confirmPasswordLabel": "Confirm new password",
+    "setNewPassword": "Save new password",
+    "resetLinkInvalid": "This reset link is invalid or has expired. Please request a new one.",
+    "requestNewLink": "Request a new link",
+    "verifyEmailTitle": "Confirm your email",
+    "verifyingEmail": "Confirming your email…",
+    "emailVerified": "Your email address is confirmed. Thank you!",
+    "verifyLinkInvalid": "This confirmation link is invalid or has expired. Sign in and request a new one from your dashboard.",
+    "goToDashboard": "Go to dashboard",
+    "verifyWrongAccount": "This confirmation link belongs to a different account. You are signed in as {email} — sign out and sign in with the account that received the email.",
+    "emailNotRegistered": "This email is not registered.",
+    "invalidEmail": "Please enter a valid email address."
   },
   "productsMenu": {
     "newTitle": "New AIs",
@@ -1614,5 +1629,22 @@
     "saveAndPublish": "Save and publish",
     "emptyReview": "Nothing waiting for review.",
     "empty": "No GPTs yet."
+  },
+  "account": {
+    "verifyBanner": "Your email address {email} is not confirmed yet.",
+    "verifyResend": "Send confirmation email",
+    "verifySent": "Email sent — check your inbox.",
+    "verifyWait": "Please wait a minute before trying again.",
+    "verifyError": "Could not send the email. Please try again later.",
+    "changePasswordTitle": "Change password",
+    "setPasswordTitle": "Set a password",
+    "setPasswordHint": "You sign in with Google. Set a password to also sign in with your email.",
+    "currentPassword": "Current password",
+    "changePasswordButton": "Change password",
+    "setPasswordButton": "Set password",
+    "passwordChanged": "Password updated.",
+    "currentPasswordWrong": "Your current password is incorrect.",
+    "signsOutOthers": "Saving a new password signs you out on all other devices.",
+    "menu": "Account options"
   }
 }

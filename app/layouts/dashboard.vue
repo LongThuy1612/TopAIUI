@@ -6,8 +6,15 @@
     <div class="flex min-h-[calc(100vh-64px)] w-full">
       <DashboardSidebar />
       <div class="min-w-0 flex-1 px-6 py-6 lg:px-8">
+        <EmailVerifyBanner />
         <slot />
       </div>
     </div>
+    <!-- Opened from the account menu (sidebar on desktop, header on mobile). -->
+    <ChangePasswordModal :open="changePasswordOpen" @close="changePasswordOpen = false" />
   </div>
 </template>
+
+<script setup lang="ts">
+const changePasswordOpen = useState('change-password-open', () => false)
+</script>

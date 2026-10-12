@@ -10,7 +10,7 @@ const { authHeaders } = useAuth()
 // takes 2, a link insert 1 (server/utils/articles.ts). Rejected / withdrawn ones give them back.
 const { data, refresh } = await useFetch<{ postCredits: number; items: MyPostSubmission[] }>('/api/me/posts', {
   key: 'my-posts',
-  headers: authHeaders()
+  headers: () => authHeaders()
 })
 const credits = computed(() => data.value?.postCredits ?? 0)
 const items = computed(() => data.value?.items ?? [])

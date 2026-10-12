@@ -10,7 +10,7 @@ const { authHeaders } = useAuth()
 const filter = ref<'review' | 'all'>('review')
 const { data, refresh } = await useFetch<{ items: AdminGpt[] }>('/api/admin/gpts', {
   query: computed(() => ({ filter: filter.value })),
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: [filter]
 })
 const items = computed(() => data.value?.items ?? [])

@@ -10,7 +10,7 @@ const roleFilter = ref<'' | UserRole>('')
 
 const { data, refresh } = await useFetch<AdminUsersResponse>('/api/admin/users', {
   query: computed(() => ({ q: searchQuery.value || undefined, role: roleFilter.value || undefined })),
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: [searchQuery, roleFilter]
 })
 const items = computed(() => data.value?.items ?? [])

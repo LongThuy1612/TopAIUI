@@ -12,8 +12,8 @@ const editId = computed(() => (typeof route.query.id === 'string' ? route.query.
 
 // Balance from the list (shared key); the full text of the one being edited on its own.
 const [{ data }, { data: one }] = await Promise.all([
-  useFetch<{ postCredits: number; items: MyPostSubmission[] }>('/api/me/posts', { key: 'my-posts', headers: authHeaders() }),
-  useFetch<PostSubmission>(() => `/api/me/posts/${editId.value}`, { headers: authHeaders(), immediate: !!editId.value })
+  useFetch<{ postCredits: number; items: MyPostSubmission[] }>('/api/me/posts', { key: 'my-posts', headers: () => authHeaders() }),
+  useFetch<PostSubmission>(() => `/api/me/posts/${editId.value}`, { headers: () => authHeaders(), immediate: !!editId.value })
 ])
 const existing = computed(() => (editId.value && one.value?.id === editId.value && one.value.type === 'GUEST_POST' && ['PENDING', 'CHANGES_REQUESTED'].includes(one.value.status) ? one.value : null))
 const credits = computed(() => data.value?.postCredits ?? 0)

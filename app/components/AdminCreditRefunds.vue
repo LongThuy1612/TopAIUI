@@ -19,7 +19,7 @@ interface CreditOrder {
 }
 
 const { data, refresh } = await useFetch<{ postCredits: number; orders: CreditOrder[] }>(() => `/api/admin/users/${props.userId}/credit-orders`, {
-  headers: authHeaders()
+  headers: () => authHeaders()
 })
 
 const money = (cents: number, currency: string) =>

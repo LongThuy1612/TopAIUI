@@ -7,7 +7,7 @@ definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 // Only the tools this user owns — same table component as Tool Management.
 const { authHeaders } = useAuth()
 const { data } = await useFetch<AdminToolsResponse>('/api/me/tools', {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: false
 })
 const items = computed(() => data.value?.items ?? [])

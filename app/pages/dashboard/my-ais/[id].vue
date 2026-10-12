@@ -11,7 +11,7 @@ const { authHeaders } = useAuth()
 const toolId = String(route.params.id)
 
 const { data: tool, refresh, error: loadError } = await useFetch<Tool>(`/api/me/tools/${toolId}`, {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   watch: false
 })
 const { data: categories } = await useFetch<Category[]>('/api/categories')

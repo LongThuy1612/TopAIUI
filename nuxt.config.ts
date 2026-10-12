@@ -106,6 +106,14 @@ export default defineNuxtConfig({
     // true when the app runs behind our own reverse proxy that appends the client IP to
     // X-Forwarded-For (server/utils/ads.ts, visitorIp). Override with NUXT_TRUST_PROXY.
     trustProxy: process.env.TRUST_PROXY === 'true',
+    // Outgoing mail (server/utils/mailer.ts): email confirmation + password reset.
+    // Override at runtime with NUXT_SMTP_HOST / NUXT_SMTP_PORT / NUXT_SMTP_USER /
+    // NUXT_SMTP_PASS / NUXT_MAIL_FROM. No host = mail is only logged (dev) or fails (production).
+    smtpHost: process.env.SMTP_HOST || '',
+    smtpPort: process.env.SMTP_PORT || '587',
+    smtpUser: process.env.SMTP_USER || '',
+    smtpPass: process.env.SMTP_PASS || '',
+    mailFrom: process.env.MAIL_FROM || 'TopAICollection <no-reply@topaicollection.com>',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
       // OAuth Web client ID for "Sign in with Google" (not a secret). Also
@@ -185,6 +193,12 @@ export default defineNuxtConfig({
     '/ranking/revenue': { redirect: '/ranking' },
 
     // API — data endpoints stay dynamic; admin API additionally is not CORS-open
+    // One-time token in the query string: never cached, indexed or leaked to
+    // other sites through the Referer header.
+    '/reset-password': { robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } },
+    // ssr: false — confirming needs the session token, which only the browser has.
+    '/verify-email': { ssr: false, robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } },
+
     '/api/admin/**': { cors: false, headers: { 'Cache-Control': 'no-store' } },
     '/api/me/**': { headers: { 'Cache-Control': 'no-store' } },
     '/api/**': { cors: true }

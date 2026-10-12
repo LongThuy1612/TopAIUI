@@ -86,7 +86,7 @@ const filterQuery = computed(() => Object.fromEntries(Object.entries(appliedFilt
 watch([month, sortOption, debouncedSearch, locale, appliedFilters], () => { page.value = 1 })
 
 const { data, pending, error } = await useFetch<InsightsResponse>('/api/insights', {
-  headers: authHeaders(),
+  headers: () => authHeaders(),
   query: computed(() => {
     const [sort, dir] = sortOption.value.split('-') as [string, string]
     return {
