@@ -13,27 +13,13 @@ const { data } = await useFetch<AdminToolsResponse>('/api/me/tools', {
   watch: false
 })
 
-// Guest posts / link inserts and GPTs: "pending" = still with us, "published" = live.
-// A customer sees their own; an admin sees the whole site's and the tiles open the admin
-// pages (the customer pages aren't in an admin's menu).
-type StatusList = { items?: { status: string }[]; counts?: Record<string, number> }
-const [{ data: postsRes }, { data: gptsRes }] = await Promise.all([
-  useFetch<StatusList>(isAdmin.value ? '/api/admin/posts?only=counts' : '/api/me/posts', { headers: authHeaders(), watch: false }),
-  useFetch<StatusList>(isAdmin.value ? '/api/admin/gpts?only=counts' : '/api/me/gpts', { headers: authHeaders(), watch: false })
-])
-// Admin: counts over the whole table; customer: their own (short) list.
-const countOf = (res: StatusList | null | undefined, statuses: string[]) => res?.counts
-  ? statuses.reduce((n, s) => n + (res.counts![s] ?? 0), 0)
-  : (res?.items ?? []).filter(i => statuses.includes(i.status)).length
-const postsPending = computed(() => countOf(postsRes.value, ['PENDING', 'CHANGES_REQUESTED']))
-const postsPublished = computed(() => countOf(postsRes.value, ['PUBLISHED']))
-const gptsPending = computed(() => countOf(gptsRes.value, ['PENDING']))
-const gptsPublished = computed(() => countOf(gptsRes.value, ['PUBLISHED']))
+// Tile counters: an admin gets the whole site's numbers and the tiles open the admin
+// pages (the customer pages aren't in an admin's menu); a customer gets their own.
+type Pair = Record<string, number>
+const { data: stats } = await useFetch<{ tools: Pair; ads: Pair; posts: Pair; gpts: Pair }>('/api/dashboard/stats', { headers: authHeaders(), watch: false })
+const n = (group: 'tools' | 'ads' | 'posts' | 'gpts', key: string) => stats.value?.[group]?.[key] ?? 0
 
 const allItems = computed(() => data.value?.items ?? [])
-const pendingCount = computed(() => allItems.value.filter(t => t.status === 'PENDING').length)
-const publishedCount = computed(() => allItems.value.filter(t => t.status === 'PUBLISHED').length)
-const advertisingCount = computed(() => allItems.value.filter(t => t.isAd).length)
 
 const statusFilter = ref<'all' | 'PENDING' | 'PUBLISHED'>('all')
 const items = computed(() => statusFilter.value === 'all' ? allItems.value : allItems.value.filter(t => t.status === statusFilter.value))
@@ -83,31 +69,32 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
     </div>
 
     <div class="mt-3.5 grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-4">
-      <div class="rounded-xl border border-ink-100 bg-white p-4">
+      <NuxtLink :to="isAdmin ? '/admin/tools' : '/dashboard/my-ais'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.myAIsData') }}</div>
         <div class="mt-2 text-xs text-ink-500">
-          <span class="font-semibold text-amber-600">{{ pendingCount }}</span> {{ t('admin.pending') }} ·
-          <span class="font-semibold text-emerald-600">{{ publishedCount }}</span> {{ t('admin.published') }}
+          <span class="font-semibold text-amber-600">{{ n('tools', 'pending') }}</span> {{ t('admin.pending') }} ·
+          <span class="font-semibold text-emerald-600">{{ n('tools', 'published') }}</span> {{ t('admin.published') }}
         </div>
-      </div>
-      <div class="rounded-xl border border-ink-100 bg-white p-4">
+      </NuxtLink>
+      <NuxtLink :to="isAdmin ? '/admin/ads' : '/dashboard/advertise'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.advertise') }}</div>
         <div class="mt-2 text-xs text-ink-500">
-          <span class="font-semibold text-ink-800">{{ advertisingCount }}</span> {{ t('admin.advertising') }} · 0 {{ t('admin.stopped') }}
+          <span class="font-semibold text-emerald-600">{{ n('ads', 'running') }}</span> {{ t('admin.advertising') }} ·
+          <span class="font-semibold text-ink-800">{{ n('ads', 'stopped') }}</span> {{ t('admin.stopped') }}
         </div>
-      </div>
+      </NuxtLink>
       <NuxtLink :to="isAdmin ? '/admin/posts' : '/dashboard/my-posts'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.guestPosts') }}</div>
         <div class="mt-2 text-xs text-ink-500">
-          <span class="font-semibold text-amber-600">{{ postsPending }}</span> {{ t('admin.pending') }} ·
-          <span class="font-semibold text-emerald-600">{{ postsPublished }}</span> {{ t('admin.published') }}
+          <span class="font-semibold text-amber-600">{{ n('posts', 'pending') }}</span> {{ t('admin.pending') }} ·
+          <span class="font-semibold text-emerald-600">{{ n('posts', 'published') }}</span> {{ t('admin.published') }}
         </div>
       </NuxtLink>
       <NuxtLink :to="isAdmin ? '/admin/gpts' : '/dashboard/my-gpts'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.submitGPTs') }}</div>
         <div class="mt-2 text-xs text-ink-500">
-          <span class="font-semibold text-amber-600">{{ gptsPending }}</span> {{ t('admin.pending') }} ·
-          <span class="font-semibold text-emerald-600">{{ gptsPublished }}</span> {{ t('admin.published') }}
+          <span class="font-semibold text-amber-600">{{ n('gpts', 'pending') }}</span> {{ t('admin.pending') }} ·
+          <span class="font-semibold text-emerald-600">{{ n('gpts', 'published') }}</span> {{ t('admin.published') }}
         </div>
       </NuxtLink>
     </div>

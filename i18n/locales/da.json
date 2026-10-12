@@ -1539,7 +1539,17 @@
     "delete": "Slet",
     "deleteConfirm": "Slet denne artikel permanent?",
     "saved": "Gemt.",
-    "view": "Vis"
+    "view": "Vis",
+    "modes": {
+      "article": "Artikel",
+      "link": "Eksternt link"
+    },
+    "externalUrl": "Link-URL",
+    "fetchInfo": "Hent info",
+    "fetching": "Henter…",
+    "externalHint": "På AI News åbner titlen denne side direkte i en ny fane. “Hent info” udfylder titel, resumé og forsidebillede.",
+    "optional": "valgfrit",
+    "replaceFetched": "Erstat den nuværende titel, resumé og forsidebillede med de hentede?"
   },
   "adminCreditRefunds": {
     "title": "Kreditter til gæsteindlæg",

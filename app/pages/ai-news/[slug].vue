@@ -11,6 +11,9 @@ if (error.value) {
   throw createError({ statusCode: notFound ? 404 : 503, statusMessage: notFound ? 'Article not found' : 'Service unavailable' })
 }
 
+// A link item has no page of its own: send the visitor to the outside page.
+if (article.value?.externalUrl) await navigateTo(article.value.externalUrl, { external: true, redirectCode: 302 })
+
 const { siteUrl } = useRuntimeConfig().public
 const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'long', day: 'numeric' }) : '')
 
@@ -50,9 +53,9 @@ useSeoMeta({
         <div v-if="article.related.length" class="rounded-[18px] border border-ink-200 p-5">
           <div class="border-b border-ink-100 pb-3 text-base font-semibold text-ink-900">{{ t('aiNews.latest') }}</div>
           <div class="flex flex-col gap-3 pt-3">
-            <NuxtLink v-for="r in article.related" :key="r.slug" :to="`/ai-news/${r.slug}`" class="text-sm leading-snug text-ink-800 hover:text-brand-600">
-              {{ r.title }}
-            </NuxtLink>
+            <AiNewsLink v-for="r in article.related" :key="r.slug" :item="r" class="text-sm leading-snug text-ink-800 hover:text-brand-600">
+              {{ r.title }}<span v-if="r.externalUrl" class="text-ink-400"> ↗</span>
+            </AiNewsLink>
           </div>
         </div>
         <div class="rounded-[18px] border border-brand-100 bg-brand-50/50 p-5">

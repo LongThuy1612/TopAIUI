@@ -1539,7 +1539,17 @@
     "delete": "削除",
     "deleteConfirm": "この記事を完全に削除しますか？",
     "saved": "保存しました。",
-    "view": "表示"
+    "view": "表示",
+    "modes": {
+      "article": "記事",
+      "link": "外部リンク"
+    },
+    "externalUrl": "リンクURL",
+    "fetchInfo": "情報を取得",
+    "fetching": "取得中…",
+    "externalHint": "AI News ではタイトルをクリックするとこのページが新しいタブで直接開きます。「情報を取得」でタイトル・概要・カバー画像を自動入力します。",
+    "optional": "任意",
+    "replaceFetched": "現在のタイトル・概要・カバー画像を取得した内容に置き換えますか？"
   },
   "adminCreditRefunds": {
     "title": "ゲスト投稿クレジット",

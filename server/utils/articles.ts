@@ -173,7 +173,7 @@ export async function reviewSubmission(id: string, input: ReviewAction) {
         if (sub.type !== 'LINK_INSERT') throw bad('Only a link insert is marked as done.')
         // Locked so it can't be deleted / unpublished between this check and the claim.
         await tx.$queryRaw`SELECT id FROM "Article" WHERE id = ${input.articleId} FOR UPDATE`
-        const article = await tx.article.findFirst({ where: { id: input.articleId, status: 'PUBLISHED' } })
+        const article = await tx.article.findFirst({ where: { id: input.articleId, status: 'PUBLISHED', externalUrl: null } })
         if (!article) throw bad('Pick a published article.')
         // The admin edits the article first; make sure the link really is in it — as a link
         // (not just text, nor a longer URL that merely starts the same). A trailing slash
@@ -209,7 +209,7 @@ export async function reviewSubmission(id: string, input: ReviewAction) {
 /* ------------------------------------------------------------------ */
 
 export const articleCardSelect = {
-  slug: true, title: true, excerpt: true, coverUrl: true, kind: true, authorName: true, publishedAt: true
+  slug: true, title: true, excerpt: true, coverUrl: true, kind: true, authorName: true, publishedAt: true, externalUrl: true
 } satisfies Prisma.ArticleSelect
 
 // A summary for cards when the author left none: the start of the text, without markup.
@@ -235,16 +235,20 @@ export function cleanArticleInput(body: Record<string, unknown>) {
   const title = str(body.title)
   const excerpt = str(body.excerpt)
   const content = typeof body.content === 'string' ? body.content.replace(/\r\n/g, '\n').trim() : ''
+  // A link item (an AI News entry that opens someone else's page): the text is optional.
+  const rawUrl = str(body.externalUrl)
+  const externalUrl = rawUrl ? publicHttpUrl(rawUrl)?.href ?? null : null
   const coverUrl = str(body.coverUrl)
   const authorName = str(body.authorName)
   const slug = str(body.slug).toLowerCase()
   const status = body.status === 'PUBLISHED' ? 'PUBLISHED' : 'DRAFT'
   if (title.length < 3 || title.length > 200) throw bad('The title must be 3–200 characters.')
   if (excerpt.length > 300) throw bad('The summary must be 300 characters or less.')
-  if (!content) throw bad('The article is empty.')
+  if (rawUrl && (!externalUrl || externalUrl.length > 2000)) throw bad('Enter a valid http(s) link.')
+  if (!content && !externalUrl) throw bad('The article is empty.')
   if (content.length > 200_000) throw bad('The article is too long.')
   if (coverUrl && !isImageUrl(coverUrl)) throw bad('Invalid cover image.')
   if (authorName.length > 80) throw bad('The author name is too long.')
   if (slug && !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(slug)) throw bad('The slug may only contain a–z, 0–9 and dashes.')
-  return { title, excerpt: excerpt || null, content, coverUrl: coverUrl || null, authorName: authorName || null, slug, status }
+  return { title, excerpt: excerpt || null, content, externalUrl, coverUrl: coverUrl || null, authorName: authorName || null, slug, status }
 }

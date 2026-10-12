@@ -1539,7 +1539,17 @@
     "delete": "삭제",
     "deleteConfirm": "이 기사를 영구 삭제할까요?",
     "saved": "저장되었습니다.",
-    "view": "보기"
+    "view": "보기",
+    "modes": {
+      "article": "기사",
+      "link": "외부 링크"
+    },
+    "externalUrl": "링크 URL",
+    "fetchInfo": "정보 가져오기",
+    "fetching": "가져오는 중…",
+    "externalHint": "AI News에서 제목을 클릭하면 이 페이지가 새 탭에서 바로 열립니다. “정보 가져오기”는 제목, 요약, 커버 이미지를 채웁니다.",
+    "optional": "선택 사항",
+    "replaceFetched": "현재 제목, 요약, 커버 이미지를 가져온 내용으로 바꿀까요?"
   },
   "adminCreditRefunds": {
     "title": "게스트 포스트 크레딧",

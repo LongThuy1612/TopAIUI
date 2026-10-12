@@ -1539,7 +1539,17 @@
     "delete": "Verwijderen",
     "deleteConfirm": "Dit artikel definitief verwijderen?",
     "saved": "Opgeslagen.",
-    "view": "Bekijken"
+    "view": "Bekijken",
+    "modes": {
+      "article": "Artikel",
+      "link": "Externe link"
+    },
+    "externalUrl": "Link-URL",
+    "fetchInfo": "Info ophalen",
+    "fetching": "Ophalen…",
+    "externalHint": "Op AI News opent de titel deze pagina direct in een nieuw tabblad. “Info ophalen” vult de titel, samenvatting en omslagafbeelding in.",
+    "optional": "optioneel",
+    "replaceFetched": "De huidige titel, samenvatting en omslag vervangen door de opgehaalde?"
   },
   "adminCreditRefunds": {
     "title": "Gastartikel-credits",

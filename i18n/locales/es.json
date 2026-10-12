@@ -1539,7 +1539,17 @@
     "delete": "Eliminar",
     "deleteConfirm": "¿Eliminar este artículo para siempre?",
     "saved": "Guardado.",
-    "view": "Ver"
+    "view": "Ver",
+    "modes": {
+      "article": "Artículo",
+      "link": "Enlace externo"
+    },
+    "externalUrl": "URL del enlace",
+    "fetchInfo": "Obtener datos",
+    "fetching": "Obteniendo…",
+    "externalHint": "En AI News, el título abre esta página directamente en una pestaña nueva. «Obtener datos» rellena el título, el resumen y la portada.",
+    "optional": "opcional",
+    "replaceFetched": "¿Reemplazar el título, el resumen y la portada actuales por los obtenidos?"
   },
   "adminCreditRefunds": {
     "title": "Créditos de artículos invitados",

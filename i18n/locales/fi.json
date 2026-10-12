@@ -1539,7 +1539,17 @@
     "delete": "Poista",
     "deleteConfirm": "Poistetaanko artikkeli pysyvästi?",
     "saved": "Tallennettu.",
-    "view": "Näytä"
+    "view": "Näytä",
+    "modes": {
+      "article": "Artikkeli",
+      "link": "Ulkoinen linkki"
+    },
+    "externalUrl": "Linkin URL",
+    "fetchInfo": "Hae tiedot",
+    "fetching": "Haetaan…",
+    "externalHint": "AI Newsissä otsikko avaa tämän sivun suoraan uuteen välilehteen. ”Hae tiedot” täyttää otsikon, tiivistelmän ja kansikuvan.",
+    "optional": "valinnainen",
+    "replaceFetched": "Korvataanko nykyinen otsikko, tiivistelmä ja kansikuva haetuilla?"
   },
   "adminCreditRefunds": {
     "title": "Vierasartikkelikrediitit",

@@ -13,6 +13,7 @@ if (error.value) throw createError({ statusCode: 503, statusMessage: 'Service un
 
 const items = computed(() => data.value?.items ?? [])
 const pageCount = computed(() => data.value?.pageCount ?? 1)
+const hostOf = (url: string) => { try { return new URL(url).hostname.replace(/^www\./, '') } catch { return '' } }
 const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'short', day: 'numeric' }) : '')
 
 useSeoMeta({
@@ -39,10 +40,10 @@ useSeoMeta({
     </div>
 
     <div v-if="items.length" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <NuxtLink
+      <AiNewsLink
         v-for="a in items"
         :key="a.slug"
-        :to="`/ai-news/${a.slug}`"
+        :item="a"
         class="group flex flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white transition hover:border-brand-200 hover:shadow-sm"
       >
         <div class="aspect-[16/9] overflow-hidden bg-brand-50">
@@ -56,8 +57,9 @@ useSeoMeta({
           </div>
           <h2 class="mt-2 line-clamp-2 text-lg font-bold leading-snug text-ink-900 group-hover:text-brand-600">{{ a.title }}</h2>
           <p class="mt-2 line-clamp-3 text-sm text-ink-500">{{ a.excerpt }}</p>
+          <span v-if="a.externalUrl" class="mt-auto truncate pt-3 text-xs font-semibold text-brand-600">{{ hostOf(a.externalUrl) }} ↗</span>
         </div>
-      </NuxtLink>
+      </AiNewsLink>
     </div>
     <div v-else class="mt-8 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
       {{ t('aiNews.empty') }}

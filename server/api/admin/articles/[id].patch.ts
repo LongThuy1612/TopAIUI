@@ -6,8 +6,12 @@ export default defineEventHandler(async (event) => {
   const input = cleanArticleInput(await readBody<Record<string, unknown>>(event) ?? {})
   return prisma.$transaction(async (tx) => {
     await lockArticleSlugs(tx)
-    const article = await tx.article.findUnique({ where: { id }, select: { slug: true, publishedAt: true } })
+    const article = await tx.article.findUnique({ where: { id }, select: { slug: true, publishedAt: true, externalUrl: true, _count: { select: { submissions: true } } } })
     if (!article) throw createError({ statusCode: 404, statusMessage: 'Article not found' })
+    // Link inserts live in the text of our own page; a link item has none.
+    if (input.externalUrl && !article.externalUrl && article._count.submissions) {
+      throw createError({ statusCode: 409, statusMessage: 'Conflict', message: 'This article has link inserts / a guest post tied to it, so it cannot become a link item.' })
+    }
     const slug = input.slug || article.slug
     if (slug !== article.slug && await tx.article.findFirst({ where: { slug, id: { not: id } }, select: { id: true } })) {
       throw createError({ statusCode: 409, statusMessage: 'Conflict', message: 'Another article already uses that slug.' })

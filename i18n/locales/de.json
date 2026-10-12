@@ -1539,7 +1539,17 @@
     "delete": "Löschen",
     "deleteConfirm": "Diesen Artikel endgültig löschen?",
     "saved": "Gespeichert.",
-    "view": "Ansehen"
+    "view": "Ansehen",
+    "modes": {
+      "article": "Artikel",
+      "link": "Externer Link"
+    },
+    "externalUrl": "Link-URL",
+    "fetchInfo": "Infos abrufen",
+    "fetching": "Wird abgerufen…",
+    "externalHint": "Auf AI News öffnet der Titel diese Seite direkt in einem neuen Tab. „Infos abrufen“ füllt Titel, Zusammenfassung und Titelbild aus.",
+    "optional": "optional",
+    "replaceFetched": "Aktuellen Titel, Zusammenfassung und Titelbild durch die abgerufenen ersetzen?"
   },
   "adminCreditRefunds": {
     "title": "Gastbeitrags-Credits",

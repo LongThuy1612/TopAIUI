@@ -1539,7 +1539,17 @@
     "delete": "Delete",
     "deleteConfirm": "Delete this article for good?",
     "saved": "Saved.",
-    "view": "View"
+    "view": "View",
+    "modes": {
+      "article": "Article",
+      "link": "External link"
+    },
+    "externalUrl": "Link URL",
+    "fetchInfo": "Fetch info",
+    "fetching": "Fetching…",
+    "externalHint": "On AI News the title opens this page directly in a new tab. “Fetch info” fills in the title, summary and cover image.",
+    "optional": "optional",
+    "replaceFetched": "Replace the current title, summary and cover with the fetched ones?"
   },
   "adminCreditRefunds": {
     "title": "Guest post credits",

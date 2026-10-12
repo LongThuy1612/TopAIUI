@@ -1539,7 +1539,17 @@
     "delete": "Xóa",
     "deleteConfirm": "Xóa vĩnh viễn bài này?",
     "saved": "Đã lưu.",
-    "view": "Xem"
+    "view": "Xem",
+    "modes": {
+      "article": "Bài viết",
+      "link": "Link ngoài"
+    },
+    "externalUrl": "URL liên kết",
+    "fetchInfo": "Lấy thông tin",
+    "fetching": "Đang lấy…",
+    "externalHint": "Trên AI News, tiêu đề sẽ mở thẳng trang này trong tab mới. “Lấy thông tin” sẽ điền sẵn tiêu đề, tóm tắt và ảnh bìa.",
+    "optional": "không bắt buộc",
+    "replaceFetched": "Thay tiêu đề, tóm tắt và ảnh bìa hiện tại bằng thông tin vừa lấy?"
   },
   "adminCreditRefunds": {
     "title": "Credit guest post",

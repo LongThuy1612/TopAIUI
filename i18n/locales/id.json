@@ -1539,7 +1539,17 @@
     "delete": "Hapus",
     "deleteConfirm": "Hapus artikel ini secara permanen?",
     "saved": "Tersimpan.",
-    "view": "Lihat"
+    "view": "Lihat",
+    "modes": {
+      "article": "Artikel",
+      "link": "Tautan eksternal"
+    },
+    "externalUrl": "URL tautan",
+    "fetchInfo": "Ambil info",
+    "fetching": "Mengambil…",
+    "externalHint": "Di AI News, judul langsung membuka halaman ini di tab baru. “Ambil info” mengisi judul, ringkasan, dan gambar sampul.",
+    "optional": "opsional",
+    "replaceFetched": "Ganti judul, ringkasan, dan sampul saat ini dengan yang baru diambil?"
   },
   "adminCreditRefunds": {
     "title": "Kredit artikel tamu",

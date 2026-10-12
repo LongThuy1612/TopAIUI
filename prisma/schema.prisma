@@ -962,7 +962,10 @@ model Article {
   slug         String    @unique
   title        String
   excerpt      String?
-  content      String    // Markdown
+  content      String    // Markdown ("" for a link item)
+  // A link item: the card's title opens this outside page (no page of ours, not in the
+  // sitemap, can't take link inserts). Null = a normal article.
+  externalUrl  String?
   coverUrl     String?
   kind         String    @default("EDITORIAL") // EDITORIAL | GUEST_POST
   status       String    @default("DRAFT")     // DRAFT | PUBLISHED

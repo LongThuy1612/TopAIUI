@@ -1539,7 +1539,17 @@
     "delete": "Supprimer",
     "deleteConfirm": "Supprimer définitivement cet article ?",
     "saved": "Enregistré.",
-    "view": "Voir"
+    "view": "Voir",
+    "modes": {
+      "article": "Article",
+      "link": "Lien externe"
+    },
+    "externalUrl": "URL du lien",
+    "fetchInfo": "Récupérer les infos",
+    "fetching": "Récupération…",
+    "externalHint": "Sur AI News, le titre ouvre directement cette page dans un nouvel onglet. « Récupérer les infos » remplit le titre, le résumé et l’image de couverture.",
+    "optional": "facultatif",
+    "replaceFetched": "Remplacer le titre, le résumé et l’image de couverture actuels par ceux récupérés ?"
   },
   "adminCreditRefunds": {
     "title": "Crédits d'articles invités",

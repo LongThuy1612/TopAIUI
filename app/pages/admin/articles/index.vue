@@ -37,7 +37,7 @@ useSeoMeta({ title: () => `${t('adminArticles.title')} — TopAICollection` })
           <tr v-for="a in items" :key="a.id" class="border-t border-ink-100">
             <td class="max-w-[420px] px-4 py-3">
               <NuxtLink :to="`/admin/articles/${a.id}`" class="font-semibold text-ink-900 hover:text-brand-600">{{ a.title }}</NuxtLink>
-              <div class="truncate text-xs text-ink-400">/ai-news/{{ a.slug }}<template v-if="a.authorName"> · {{ a.authorName }}</template></div>
+              <div class="truncate text-xs text-ink-400">{{ a.externalUrl ? `↗ ${a.externalUrl}` : `/ai-news/${a.slug}` }}<template v-if="a.authorName"> · {{ a.authorName }}</template></div>
             </td>
             <td class="whitespace-nowrap px-4 py-3 text-ink-700">{{ t(`adminArticles.kinds.${a.kind}`) }}</td>
             <td class="px-4 py-3">

@@ -7,7 +7,7 @@ export default defineSitemapEventHandler(async () => {
       select: { slug: true, updatedAt: true }
     }),
     prisma.category.findMany({ select: { slug: true, updatedAt: true } }),
-    prisma.article.findMany({ where: { status: 'PUBLISHED' }, select: { slug: true, updatedAt: true } }),
+    prisma.article.findMany({ where: { status: 'PUBLISHED', externalUrl: null }, select: { slug: true, updatedAt: true } }),
     prisma.gpt.findMany({ where: { status: 'PUBLISHED' }, select: { slug: true, updatedAt: true } })
   ])
 

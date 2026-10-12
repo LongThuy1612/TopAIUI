@@ -9,6 +9,8 @@ import MarkdownIt from 'markdown-it'
 // "noopener"; 'sponsored' → "sponsored noopener"). # headings become <h2> (the page
 // title is the only <h1>).
 
+export const externalLinkRel = (linkRel: 'dofollow' | 'sponsored') => linkRel === 'sponsored' ? 'sponsored noopener' : 'noopener'
+
 export interface ArticleStats { words: number; externalLinks: string[]; images: string[] }
 
 function createRenderer(linkRel: 'dofollow' | 'sponsored') {
@@ -25,7 +27,7 @@ function createRenderer(linkRel: 'dofollow' | 'sponsored') {
     const href = token.attrGet('href') ?? ''
     if (isExternal(href)) {
       token.attrSet('target', '_blank')
-      token.attrSet('rel', linkRel === 'sponsored' ? 'sponsored noopener' : 'noopener')
+      token.attrSet('rel', externalLinkRel(linkRel))
     }
     return self.renderToken(tokens, idx, options)
   }

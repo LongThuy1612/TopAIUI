@@ -1539,7 +1539,17 @@
     "delete": "Radera",
     "deleteConfirm": "Radera den här artikeln permanent?",
     "saved": "Sparat.",
-    "view": "Visa"
+    "view": "Visa",
+    "modes": {
+      "article": "Artikel",
+      "link": "Extern länk"
+    },
+    "externalUrl": "Länk-URL",
+    "fetchInfo": "Hämta info",
+    "fetching": "Hämtar…",
+    "externalHint": "På AI News öppnar rubriken den här sidan direkt i en ny flik. ”Hämta info” fyller i rubrik, sammanfattning och omslagsbild.",
+    "optional": "valfritt",
+    "replaceFetched": "Ersätta nuvarande rubrik, sammanfattning och omslag med de hämtade?"
   },
   "adminCreditRefunds": {
     "title": "Krediter för gästinlägg",

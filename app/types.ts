@@ -358,12 +358,13 @@ export interface ArticleCard {
   kind: 'EDITORIAL' | 'GUEST_POST'
   authorName: string | null
   publishedAt: string | null
+  externalUrl: string | null // a link item: the title opens this page
 }
 export interface ArticlesResponse { items: ArticleCard[]; total: number; page: number; pageCount: number }
 export interface ArticleDetail extends ArticleCard {
   html: string
   updatedAt: string
-  related: { slug: string; title: string; publishedAt: string | null }[]
+  related: { slug: string; title: string; publishedAt: string | null; externalUrl: string | null }[]
 }
 
 export type PostSubmissionStatus = 'PENDING' | 'CHANGES_REQUESTED' | 'PUBLISHED' | 'REJECTED' | 'WITHDRAWN'
@@ -396,6 +397,7 @@ export interface AdminArticleRow {
   id: string
   slug: string
   title: string
+  externalUrl: string | null
   kind: 'EDITORIAL' | 'GUEST_POST'
   status: 'DRAFT' | 'PUBLISHED'
   authorName: string | null

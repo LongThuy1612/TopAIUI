@@ -1539,7 +1539,17 @@
     "delete": "Elimina",
     "deleteConfirm": "Eliminare definitivamente questo articolo?",
     "saved": "Salvato.",
-    "view": "Vedi"
+    "view": "Vedi",
+    "modes": {
+      "article": "Articolo",
+      "link": "Link esterno"
+    },
+    "externalUrl": "URL del link",
+    "fetchInfo": "Recupera info",
+    "fetching": "Recupero…",
+    "externalHint": "Su AI News il titolo apre questa pagina direttamente in una nuova scheda. “Recupera info” compila titolo, riepilogo e immagine di copertina.",
+    "optional": "facoltativo",
+    "replaceFetched": "Sostituire titolo, riepilogo e copertina attuali con quelli recuperati?"
   },
   "adminCreditRefunds": {
     "title": "Crediti articoli ospite",

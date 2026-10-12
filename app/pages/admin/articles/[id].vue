@@ -8,7 +8,7 @@ const id = computed(() => String(route.params.id))
 const isNew = computed(() => id.value === 'new')
 
 interface AdminArticle {
-  id: string; slug: string; title: string; excerpt: string | null; content: string; coverUrl: string | null
+  id: string; slug: string; title: string; excerpt: string | null; content: string; coverUrl: string | null; externalUrl: string | null
   kind: 'EDITORIAL' | 'GUEST_POST'; status: 'DRAFT' | 'PUBLISHED'; authorName: string | null; publishedAt: string | null
   submissions: { id: string; type: string; status: string; targetUrl: string | null; anchorText: string | null; user: { email: string } }[]
 }
@@ -18,10 +18,35 @@ const { data: article, error: loadError, refresh } = await useFetch<AdminArticle
   immediate: !isNew.value
 })
 
-const form = reactive({ title: '', slug: '', excerpt: '', coverUrl: '', authorName: 'TopAICollection', content: '', status: 'DRAFT' as 'DRAFT' | 'PUBLISHED' })
+const form = reactive({ title: '', slug: '', excerpt: '', coverUrl: '', authorName: 'TopAICollection', content: '', externalUrl: '', status: 'DRAFT' as 'DRAFT' | 'PUBLISHED' })
+// "link": an AI News entry whose title opens someone else's page (the text is optional).
+const mode = ref<'article' | 'link'>('article')
 watch(article, (a) => {
-  if (a) Object.assign(form, { title: a.title, slug: a.slug, excerpt: a.excerpt ?? '', coverUrl: a.coverUrl ?? '', authorName: a.authorName ?? '', content: a.content, status: a.status })
+  if (!a) return
+  Object.assign(form, { title: a.title, slug: a.slug, excerpt: a.excerpt ?? '', coverUrl: a.coverUrl ?? '', authorName: a.authorName ?? '', content: a.content, externalUrl: a.externalUrl ?? '', status: a.status })
+  mode.value = a.externalUrl ? 'link' : 'article'
 }, { immediate: true })
+// Guest posts and articles carrying link inserts stay normal articles.
+const canBeLink = computed(() => isNew.value || (article.value?.kind !== 'GUEST_POST' && !article.value?.submissions.length))
+
+// Reads the page's title / summary / image; fills the empty fields (or all, when asked).
+const fetching = ref(false)
+async function fetchPreview() {
+  if (fetching.value || !form.externalUrl.trim()) return
+  fetching.value = true
+  error.value = ''
+  try {
+    const p = await $fetch<{ title: string; excerpt: string; coverUrl: string | null }>('/api/admin/articles/preview', { method: 'POST', headers: authHeaders(), body: { url: form.externalUrl } })
+    const replace = !form.title && !form.excerpt && !form.coverUrl ? true : confirm(t('adminArticles.replaceFetched'))
+    if (p.title && (replace || !form.title)) form.title = p.title
+    if (p.excerpt && (replace || !form.excerpt)) form.excerpt = p.excerpt
+    if (p.coverUrl && (replace || !form.coverUrl)) form.coverUrl = p.coverUrl
+  } catch (e: any) {
+    error.value = e?.data?.message || t('admin.saveError')
+  } finally {
+    fetching.value = false
+  }
+}
 
 const busyCover = ref(false)
 const busyBody = ref(false)
@@ -41,11 +66,12 @@ async function save(status?: 'DRAFT' | 'PUBLISHED') {
   error.value = ''
   saved.value = false
   try {
+    const body = { ...form, externalUrl: mode.value === 'link' ? form.externalUrl : '' }
     if (isNew.value) {
-      const res = await $fetch<{ id: string }>('/api/admin/articles', { method: 'POST', headers: authHeaders(), body: form })
+      const res = await $fetch<{ id: string }>('/api/admin/articles', { method: 'POST', headers: authHeaders(), body })
       await navigateTo(`/admin/articles/${res.id}`, { replace: true })
     } else {
-      await $fetch(`/api/admin/articles/${id.value}`, { method: 'PATCH', headers: authHeaders(), body: form })
+      await $fetch(`/api/admin/articles/${id.value}`, { method: 'PATCH', headers: authHeaders(), body })
       // Reload: the View link needs the saved status / slug.
       await refresh()
       saved.value = true
@@ -78,7 +104,8 @@ useSeoMeta({ title: () => `${t('adminArticles.title')} — TopAICollection` })
     <template v-else>
       <div class="mt-2 flex flex-wrap items-center justify-between gap-3">
         <h1 class="text-xl font-extrabold text-ink-900">{{ isNew ? t('adminArticles.new') : form.title }}</h1>
-        <NuxtLink v-if="!isNew && article?.status === 'PUBLISHED'" :to="`/ai-news/${article.slug}`" target="_blank" class="text-sm font-semibold text-brand-600 hover:underline">{{ t('adminArticles.view') }} ↗</NuxtLink>
+        <a v-if="!isNew && article?.status === 'PUBLISHED' && article.externalUrl" :href="article.externalUrl" target="_blank" rel="noopener" class="text-sm font-semibold text-brand-600 hover:underline">{{ t('adminArticles.view') }} ↗</a>
+        <NuxtLink v-else-if="!isNew && article?.status === 'PUBLISHED'" :to="`/ai-news/${article.slug}`" target="_blank" class="text-sm font-semibold text-brand-600 hover:underline">{{ t('adminArticles.view') }} ↗</NuxtLink>
       </div>
       <p v-if="article?.kind === 'GUEST_POST'" class="mt-1 text-xs text-ink-500">{{ t('adminArticles.kinds.GUEST_POST') }}</p>
 
@@ -93,7 +120,29 @@ useSeoMeta({ title: () => `${t('adminArticles.title')} — TopAICollection` })
         </ul>
       </div>
 
+      <div v-if="canBeLink" class="mt-5 flex gap-2">
+        <button
+          v-for="m in (['article', 'link'] as const)"
+          :key="m"
+          type="button"
+          :class="['rounded-full border px-3 py-1.5 text-sm font-semibold transition', mode === m ? 'border-brand-500 bg-brand-500 text-white' : 'border-ink-200 text-ink-600 hover:border-brand-300']"
+          @click="mode = m"
+        >
+          {{ t(`adminArticles.modes.${m}`) }}
+        </button>
+      </div>
+
       <div class="mt-6 space-y-5">
+        <div v-if="mode === 'link'">
+          <span class="text-sm font-semibold text-ink-900">{{ t('adminArticles.externalUrl') }} *</span>
+          <div class="mt-1.5 flex gap-2">
+            <input v-model="form.externalUrl" type="url" maxlength="2000" placeholder="https://" class="w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400" @keydown.enter.prevent="fetchPreview">
+            <button type="button" :disabled="fetching || !form.externalUrl.trim()" class="shrink-0 rounded-lg border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-900 hover:border-brand-300 disabled:opacity-50" @click="fetchPreview">
+              {{ fetching ? t('adminArticles.fetching') : t('adminArticles.fetchInfo') }}
+            </button>
+          </div>
+          <p class="mt-1 text-xs text-ink-400">{{ t('adminArticles.externalHint') }}</p>
+        </div>
         <label class="block">
           <span class="text-sm font-semibold text-ink-900">{{ t('postForm.fieldTitle') }} *</span>
           <input v-model="form.title" maxlength="200" class="mt-1.5 w-full rounded-lg border border-ink-200 px-3 py-2 text-sm outline-none focus:border-brand-400">
@@ -117,16 +166,16 @@ useSeoMeta({ title: () => `${t('adminArticles.title')} — TopAICollection` })
           <CoverImageField v-model="form.coverUrl" v-model:busy="busyCover" upload-url="/api/admin/articles/images" class="mt-1.5" />
         </div>
         <div>
-          <span class="text-sm font-semibold text-ink-900">{{ t('postForm.fieldContent') }} *</span>
+          <span class="text-sm font-semibold text-ink-900">{{ t('postForm.fieldContent') }}{{ mode === 'link' ? ` (${t('adminArticles.optional')})` : ' *' }}</span>
           <MarkdownEditor v-model="form.content" v-model:busy="busyBody" upload-url="/api/admin/articles/images" class="mt-1.5" />
         </div>
       </div>
 
       <div class="mt-6 flex flex-wrap items-center gap-3">
-        <button type="button" :disabled="saving || busyCover || busyBody" class="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-600 disabled:opacity-50" @click="save('PUBLISHED')">
+        <button type="button" :disabled="saving || busyCover || busyBody || fetching" class="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-600 disabled:opacity-50" @click="save('PUBLISHED')">
           {{ form.status === 'PUBLISHED' && !isNew ? t('adminArticles.saveLive') : t('adminArticles.publish') }}
         </button>
-        <button type="button" :disabled="saving || busyCover || busyBody" class="rounded-lg border border-ink-200 px-5 py-2.5 text-sm font-semibold text-ink-900 hover:border-brand-300 disabled:opacity-50" @click="save('DRAFT')">
+        <button type="button" :disabled="saving || busyCover || busyBody || fetching" class="rounded-lg border border-ink-200 px-5 py-2.5 text-sm font-semibold text-ink-900 hover:border-brand-300 disabled:opacity-50" @click="save('DRAFT')">
           {{ form.status === 'PUBLISHED' && !isNew ? t('adminArticles.unpublish') : t('adminArticles.saveDraft') }}
         </button>
         <button v-if="!isNew" type="button" class="ml-auto text-sm font-semibold text-red-500 hover:text-red-600" @click="remove">{{ t('adminArticles.delete') }}</button>

@@ -1539,7 +1539,17 @@
     "delete": "删除",
     "deleteConfirm": "永久删除这篇文章？",
     "saved": "已保存。",
-    "view": "查看"
+    "view": "查看",
+    "modes": {
+      "article": "文章",
+      "link": "外部链接"
+    },
+    "externalUrl": "链接 URL",
+    "fetchInfo": "获取信息",
+    "fetching": "获取中…",
+    "externalHint": "在 AI News 中，点击标题会在新标签页直接打开此页面。“获取信息”会自动填写标题、摘要和封面图。",
+    "optional": "可选",
+    "replaceFetched": "用获取到的内容替换当前的标题、摘要和封面图吗？"
   },
   "adminCreditRefunds": {
     "title": "客座文章积分",

@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     orderBy: { updatedAt: 'desc' },
     take: 500,
     select: {
-      id: true, slug: true, title: true, kind: true, status: true, authorName: true, publishedAt: true, updatedAt: true,
+      id: true, slug: true, title: true, externalUrl: true, kind: true, status: true, authorName: true, publishedAt: true, updatedAt: true,
       _count: { select: { submissions: true } }
     }
   })

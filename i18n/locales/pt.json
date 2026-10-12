@@ -1539,7 +1539,17 @@
     "delete": "Excluir",
     "deleteConfirm": "Excluir este artigo definitivamente?",
     "saved": "Salvo.",
-    "view": "Ver"
+    "view": "Ver",
+    "modes": {
+      "article": "Artigo",
+      "link": "Link externo"
+    },
+    "externalUrl": "URL do link",
+    "fetchInfo": "Buscar informações",
+    "fetching": "Buscando…",
+    "externalHint": "No AI News, o título abre esta página diretamente em uma nova aba. “Buscar informações” preenche o título, o resumo e a imagem de capa.",
+    "optional": "opcional",
+    "replaceFetched": "Substituir o título, o resumo e a capa atuais pelos obtidos?"
   },
   "adminCreditRefunds": {
     "title": "Créditos de artigos convidados",
