@@ -69,7 +69,7 @@ function formatGrowth(n: number) {
             <td class="px-4 py-3">
               <NuxtLinkLocale :to="`/tools/${item.slug}`" class="group flex items-center gap-3">
                 <div v-if="item.logoUrl" class="h-8 w-8 shrink-0 overflow-hidden rounded-lg">
-                  <img :src="item.logoUrl" :alt="item.name" loading="lazy" class="h-full w-full object-cover">
+                  <img :src="sizedImage(item.logoUrl, 64, 64)" :alt="item.name" loading="lazy" class="h-full w-full object-cover">
                 </div>
                 <div v-else class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-bold text-white">
                   {{ item.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI' }}

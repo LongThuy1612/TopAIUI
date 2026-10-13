@@ -20,8 +20,9 @@ const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').sli
   >
     <img
       v-if="tool.logoUrl"
-      :src="tool.logoUrl"
+      :src="sizedImage(tool.logoUrl, 96, 96)"
       alt=""
+      loading="lazy"
       aria-hidden="true"
       class="pointer-events-none absolute -top-3 -right-4 h-24 w-24 rounded-full object-cover opacity-[0.16]"
     >
@@ -31,7 +32,7 @@ const initials = computed(() => props.tool.name.replace(/[^A-Za-z0-9]/g, '').sli
     </template>
     <div class="relative flex items-center gap-2.5">
       <div v-if="tool.logoUrl" class="h-[26px] w-[26px] shrink-0 overflow-hidden rounded-lg">
-        <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
+        <img :src="sizedImage(tool.logoUrl, 64, 64)" :alt="tool.name" loading="lazy" class="h-full w-full object-cover">
       </div>
       <span v-else class="inline-flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded-lg bg-brand-50 text-xs font-extrabold text-brand-500">
         {{ initials }}

@@ -49,7 +49,7 @@ function formatDate(d?: string) {
           <td class="px-4 py-3">
             <NuxtLinkLocale :to="rowLink(tool)" class="flex items-center gap-2.5 hover:opacity-80">
               <div v-if="tool.logoUrl" class="h-8 w-8 shrink-0 overflow-hidden rounded-lg">
-                <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
+                <img :src="sizedImage(tool.logoUrl, 64, 64)" :alt="tool.name" loading="lazy" class="h-full w-full object-cover">
               </div>
               <div v-else class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-bold text-white">
                 {{ tool.name.slice(0, 2).toUpperCase() }}

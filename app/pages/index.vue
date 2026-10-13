@@ -200,8 +200,9 @@ useJsonLd('site', () => [
           >
             <img
               v-if="tool.logoUrl"
-              :src="tool.logoUrl"
+              :src="sizedImage(tool.logoUrl, 112, 112)"
               :alt="tool.name"
+              loading="lazy"
               class="pointer-events-none absolute -top-3 -right-4 h-28 w-28 rounded-full object-cover opacity-[0.16]"
             >
             <template v-else>
@@ -210,7 +211,7 @@ useJsonLd('site', () => [
             </template>
             <div class="relative flex items-start gap-[11px]">
               <div v-if="tool.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-full">
-                <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
+                <img :src="sizedImage(tool.logoUrl, 64, 64)" :alt="tool.name" loading="lazy" class="h-full w-full object-cover">
               </div>
               <span v-else class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-[12.5px] font-extrabold text-white">{{ initialsOf(tool.name) }}</span>
               <span class="line-clamp-2 min-w-0 text-[17px] font-extrabold tracking-[-.02em] text-ink-900">{{ tool.name }}</span>

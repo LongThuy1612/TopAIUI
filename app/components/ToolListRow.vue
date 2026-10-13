@@ -33,8 +33,9 @@ const rankStyle = computed(() => {
   >
     <img
       v-if="hoverGlow && tool.logoUrl"
-      :src="tool.logoUrl"
+      :src="sizedImage(tool.logoUrl, 112, 112)"
       alt=""
+      loading="lazy"
       aria-hidden="true"
       class="pointer-events-none absolute -top-4 -right-4 h-28 w-28 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.16]"
     >
@@ -44,7 +45,7 @@ const rankStyle = computed(() => {
     </template>
     <span v-if="rank" :class="['relative w-5 shrink-0 pt-3.5 text-center text-sm font-bold', rankStyle]">{{ rank }}</span>
     <div v-if="tool.logoUrl" class="relative h-[52px] w-[52px] shrink-0 overflow-hidden rounded-[14px]">
-      <img :src="tool.logoUrl" :alt="tool.name" class="h-full w-full object-cover">
+      <img :src="sizedImage(tool.logoUrl, 64, 64)" :alt="tool.name" loading="lazy" class="h-full w-full object-cover">
     </div>
     <span
       v-else
