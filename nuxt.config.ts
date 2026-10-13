@@ -91,8 +91,21 @@ export default defineNuxtConfig({
     }
   },
 
+  experimental: {
+    // Pages are cached on the server (routeRules), so a client-side navigation just
+    // calls their APIs. A separate _payload.json would be fetched on top of those
+    // calls (every page carries ~100KB+ of shared lists) — twice the download.
+    payloadExtraction: false,
+    // Only prefetch a link's page on hover/focus. On visibility, every tool and
+    // category link on screen was fetched after each navigation (MBs per switch).
+    defaults: { nuxtLink: { prefetchOn: { visibility: false, interaction: true } } }
+  },
+
   nitro: {
     preset: 'node-server',
+    // Pre-compressed .br/.gz copies of the JS/CSS bundles, served by Accept-Encoding.
+    // Dynamic responses are gzipped by server/plugins/compress.ts.
+    compressPublicAssets: true,
     // Uploaded images (server/utils/uploads.ts). Local disk for now — mount it
     // as a volume in Docker (see docker-compose.yml); swap the driver for S3/R2
     // later without touching the upload code.

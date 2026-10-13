@@ -6,8 +6,8 @@ export interface Toast {
 }
 
 let nextId = 1
-// Browser-only module state rather than useState(): a navigation to a cached page
-// restores server-rendered state from its _payload.json, which would wipe toasts.
+// Browser-only module state rather than useState(): toasts belong to this tab, not
+// to a server render, and must outlive the navigation that may follow show().
 const toasts = ref<Toast[]>([])
 
 export function useToast() {

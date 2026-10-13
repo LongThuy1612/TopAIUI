@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Category, ToolsResponse } from '~/types'
+import type { ToolsResponse } from '~/types'
 import { advertise } from '~/data/promote'
 import { SUPPORT_EMAIL, SOCIAL_LINKS } from '#shared/site'
 
@@ -9,7 +9,7 @@ const [{ data: newRes }, { data: todayRes }, { data: categories }, { data: topRa
   // 8, not 5: up to 3 of them may be sponsored in the feed and are left out of Just Launched.
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 8, newToday: 'true', locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 15, today: 'true', locale: locale.value })) }),
-  useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
+  useCategories(),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 100, locale: locale.value })) })
 ])
 

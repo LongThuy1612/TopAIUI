@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Category, ToolsResponse } from '~/types'
+import type { ToolsResponse } from '~/types'
 import { advertise } from '~/data/promote'
 import { PUBLIC_LIMITS } from '#shared/research'
 
@@ -25,7 +25,7 @@ watch([pricingFilter, sortBy, searchQuery, slug], () => { page.value = 1 })
 
 const { authHeaders, token } = useAuth()
 const [{ data: categories }, { data: toolsRes }] = await Promise.all([
-  useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) }),
+  useCategories(),
   useFetch<ToolsResponse>('/api/tools', {
     // Deeper pages carry the login token: guests stop at PUBLIC_LIMITS.guestListTools tools.
     headers: computed(() => (page.value > 1 ? authHeaders() : {})),

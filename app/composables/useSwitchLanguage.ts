@@ -11,9 +11,9 @@ const SWITCH_WINDOW_MS = 10_000
 const BLOCK_MS = 30_000
 const BLOCK_KEY = 'topainew:lang-switch-blocked-until'
 
-// Browser-only module state, deliberately not useState(): a navigation to a cached
-// page loads its _payload.json, whose server-rendered state would reset these on
-// every switch. Only ever changed in the browser, so the server copy stays empty.
+// Browser-only module state, deliberately not useState(): it belongs to this tab,
+// not to a server render, and must survive the navigation each switch makes. Only
+// ever changed in the browser, so the server copy stays empty.
 const pending = ref<string | null>(null) // the language being switched to, so the picker shows it at once
 let recent: number[] = []
 let blockedUntil = 0

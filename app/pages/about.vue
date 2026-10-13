@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { Category, ToolsResponse } from '~/types'
+import type { ToolsResponse } from '~/types'
 
 const { t, locale, locales } = useI18n()
 
 // Same requests as the home hero (both cached), so the numbers match it.
 const [{ data: totalRes }, { data: categories }] = await Promise.all([
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 1, sort: 'newest', locale: locale.value })) }),
-  useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) })
+  useCategories()
 ])
 const nf = computed(() => new Intl.NumberFormat(locale.value))
 const stats = computed(() => [

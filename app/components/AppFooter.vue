@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { Category } from '~/types'
 import { SUPPORT_EMAIL, SOCIAL_LINKS } from '#shared/site'
 
 const { t, locale, locales } = useI18n()
@@ -15,7 +14,7 @@ function onLanguageClick(e: MouseEvent, code: string) {
 
 const year = new Date().getFullYear()
 
-const { data: footerCategories } = await useFetch<Category[]>('/api/categories', { query: computed(() => ({ locale: locale.value })) })
+const { data: footerCategories } = await useCategories()
 
 const sortedFooterCategories = computed(() =>
   [...(footerCategories.value ?? [])].sort((a, b) => b.count - a.count)
