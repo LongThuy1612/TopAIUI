@@ -1991,5 +1991,19 @@
   },
   "discordPage": {
     "join": "Tham gia Discord"
+  },
+  "searchPage": {
+    "title": "Tìm kiếm công cụ AI",
+    "resultsFor": "Kết quả cho “{q}”",
+    "toolCount": "{n} công cụ AI",
+    "tools": "Công cụ AI",
+    "categories": "Danh mục",
+    "gpts": "GPTs",
+    "seeAllGpts": "Xem tất cả GPTs",
+    "noResults": "Không có công cụ AI nào khớp với “{q}”. Hãy thử từ khoá ngắn hơn hoặc khác.",
+    "prompt": "Nhập tên công cụ để tìm trong danh bạ."
+  },
+  "tagPage": {
+    "count": "{n} công cụ AI"
   }
 }

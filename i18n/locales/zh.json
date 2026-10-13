@@ -1991,5 +1991,19 @@
   },
   "discordPage": {
     "join": "加入 Discord"
+  },
+  "searchPage": {
+    "title": "搜索 AI 工具",
+    "resultsFor": "“{q}”的搜索结果",
+    "toolCount": "{n} 个 AI 工具",
+    "tools": "AI 工具",
+    "categories": "分类",
+    "gpts": "GPTs",
+    "seeAllGpts": "查看全部 GPTs",
+    "noResults": "没有与“{q}”匹配的 AI 工具。请尝试更短或不同的关键词。",
+    "prompt": "输入工具名称以搜索目录。"
+  },
+  "tagPage": {
+    "count": "{n} 个 AI 工具"
   }
 }

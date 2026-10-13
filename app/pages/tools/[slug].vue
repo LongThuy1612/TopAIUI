@@ -881,7 +881,7 @@ useJsonLd('tool', () => {
 
           <section v-if="tool.tags?.length" class="py-7 first:pt-0">
             <div class="flex flex-wrap gap-2">
-              <span v-for="tag in tool.tags" :key="tag.slug" class="rounded-full bg-ink-100 px-3 py-1 text-sm text-ink-700">#{{ tag.name }}</span>
+              <NuxtLinkLocale v-for="tag in tool.tags" :key="tag.slug" :to="`/tag/${tag.slug}`" class="rounded-full bg-ink-100 px-3 py-1 text-sm text-ink-700 transition hover:bg-brand-50 hover:text-brand-600">#{{ tag.name }}</NuxtLinkLocale>
             </div>
           </section>
 

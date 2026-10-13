@@ -182,6 +182,7 @@ export default defineNuxtConfig({
       // (see pageCache below).
       '/': pageCache(60),
       '/category/**': pageCache(300),
+      '/tag/**': pageCache(600),
       '/tools/**': pageCache(3600),
       '/new': pageCache(60),
       '/today': pageCache(60),
@@ -248,6 +249,8 @@ export default defineNuxtConfig({
       '/register': { robots: false },
       '/forgetPassword': { robots: false },
       '/orders': { robots: false },
+      // Search results: endless thin pages for any query (not cached either).
+      '/search': { robots: false },
 
       // One-time token in the query string: never cached, indexed or leaked to
       // other sites through the Referer header.
@@ -269,6 +272,7 @@ export default defineNuxtConfig({
     routeRules: localized({
         '/': { cache: false },
         '/category/**': { cache: false },
+        '/tag/**': { cache: false },
         '/tools/**': { cache: false },
         '/new': { cache: false },
         '/today': { cache: false },

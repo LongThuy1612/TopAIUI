@@ -29,8 +29,6 @@ const statusLabels: Record<'all' | 'PENDING' | 'PUBLISHED', string> = {
   PUBLISHED: 'admin.statusPublished'
 }
 
-const activeTab = ref<'data' | 'social'>('data')
-
 const featureCards = computed(() => [
   { label: t('admin.websiteInsights'), to: '/dashboard/insights', color: 'bg-orange-50 text-orange-500', icon: 'M4 19h16M6 15l3-4 3 2 4-6 2 3' },
   { label: t('admin.socialListening'), to: '/dashboard/social-listening', color: 'bg-pink-50 text-pink-500', icon: 'M12 3a7 7 0 0 0-7 7c0 3.5 2 5.5 3 7l1 2h6l1-2c1-1.5 3-3.5 3-7a7 7 0 0 0-7-7Zm-2 18h4' },
@@ -100,42 +98,27 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
     </div>
 
     <div class="mt-6 flex items-center gap-5 border-b border-ink-100 text-sm font-semibold">
-      <button
-        type="button"
-        :class="['border-b-2 pb-2.5', activeTab === 'data' ? 'border-brand-500 text-brand-600' : 'border-transparent text-ink-400 hover:text-ink-600']"
-        @click="activeTab = 'data'"
-      >
-        {{ t('admin.myAIsData') }}
-      </button>
-      <button
-        type="button"
-        :class="['border-b-2 pb-2.5', activeTab === 'social' ? 'border-brand-500 text-brand-600' : 'border-transparent text-ink-400 hover:text-ink-600']"
-        @click="activeTab = 'social'"
-      >
+      <span class="border-b-2 border-brand-500 pb-2.5 text-brand-600">{{ t('admin.myAIsData') }}</span>
+      <!-- Social listening has its own page. -->
+      <NuxtLinkLocale to="/dashboard/social-listening" class="border-b-2 border-transparent pb-2.5 text-ink-400 hover:text-ink-600">
         {{ t('admin.socialListening') }}
-      </button>
+      </NuxtLinkLocale>
     </div>
 
-    <template v-if="activeTab === 'data'">
-      <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
-        <h2 class="text-lg font-extrabold text-ink-900">{{ t('admin.aiDataHeading') }}</h2>
-        <div class="flex gap-2">
-          <button
-            v-for="s in (['all', 'PENDING', 'PUBLISHED'] as const)"
-            :key="s"
-            :class="['rounded-full border px-3 py-1.5 text-xs font-semibold', statusFilter === s ? 'border-brand-500 bg-brand-500 text-white' : 'border-ink-200 text-ink-600']"
-            @click="statusFilter = s"
-          >
-            {{ t(statusLabels[s]) }}
-          </button>
-        </div>
+    <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
+      <h2 class="text-lg font-extrabold text-ink-900">{{ t('admin.aiDataHeading') }}</h2>
+      <div class="flex gap-2">
+        <button
+          v-for="s in (['all', 'PENDING', 'PUBLISHED'] as const)"
+          :key="s"
+          :class="['rounded-full border px-3 py-1.5 text-xs font-semibold', statusFilter === s ? 'border-brand-500 bg-brand-500 text-white' : 'border-ink-200 text-ink-600']"
+          @click="statusFilter = s"
+        >
+          {{ t(statusLabels[s]) }}
+        </button>
       </div>
-
-      <ToolsTable class="mt-4" :tools="items" />
-    </template>
-
-    <div v-else class="mt-10 rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
-      {{ t('admin.socialListeningComingSoon') }}
     </div>
+
+    <ToolsTable class="mt-4" :tools="items" />
   </div>
 </template>

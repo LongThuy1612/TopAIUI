@@ -1991,5 +1991,19 @@
   },
   "discordPage": {
     "join": "Rejoindre Discord"
+  },
+  "searchPage": {
+    "title": "Rechercher des outils IA",
+    "resultsFor": "Résultats pour « {q} »",
+    "toolCount": "{n} outil IA | {n} outils IA",
+    "tools": "Outils IA",
+    "categories": "Catégories",
+    "gpts": "GPTs",
+    "seeAllGpts": "Voir tous les GPTs",
+    "noResults": "Aucun outil IA ne correspond à « {q} ». Essayez un mot-clé plus court ou différent.",
+    "prompt": "Saisissez le nom d’un outil pour rechercher dans l’annuaire."
+  },
+  "tagPage": {
+    "count": "{n} outil IA | {n} outils IA"
   }
 }

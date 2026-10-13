@@ -1,5 +1,6 @@
 import type { SitemapUrlInput } from '@nuxtjs/sitemap'
 import { defaultLocale, locales } from '../../../i18n/settings'
+import { TAG_INDEX_MIN_TOOLS } from '#shared/site'
 
 // Dynamic pages for the sitemap (static pages such as /about, /ai-news or /gpts are
 // added by @nuxtjs/sitemap itself, in every language). English lives at /…, other
@@ -7,6 +8,11 @@ import { defaultLocale, locales } from '../../../i18n/settings'
 // engines treat them as one page. Only versions with their own content are listed:
 // a tool in the languages it has a description in, articles and GPTs in English
 // (their pages in other languages point their canonical at English).
+
+// One sitemap file holds at most 50,000 URLs, and each language's file already has a
+// URL per tool (~30k). Tags are numerous (nearly one per tool), so only the biggest
+// ones are listed; the rest are still found through the links on tool pages.
+const MAX_SITEMAP_TAGS = 5000
 
 const prefixed = (code: string, path: string) => (code === defaultLocale ? path : `/${code}${path}`)
 
@@ -19,7 +25,7 @@ function inLanguages(path: string, codes: readonly string[], lastmod?: Date): Si
 }
 
 export default defineSitemapEventHandler(async () => {
-  const [tools, translated, categories, articles, gpts] = await Promise.all([
+  const [tools, translated, categories, tags, articles, gpts] = await Promise.all([
     prisma.tool.findMany({
       where: { status: 'PUBLISHED', deletedAt: null },
       select: { id: true, slug: true, updatedAt: true }
@@ -37,6 +43,10 @@ export default defineSitemapEventHandler(async () => {
       select: { toolId: true, locale: true }
     }),
     prisma.category.findMany({ select: { slug: true, updatedAt: true } }),
+    prisma.tag.findMany({
+      where: { tools: { some: { status: 'PUBLISHED', deletedAt: null } } },
+      select: { slug: true, updatedAt: true, _count: { select: { tools: { where: { status: 'PUBLISHED', deletedAt: null } } } } }
+    }),
     prisma.article.findMany({ where: { status: 'PUBLISHED', externalUrl: null }, select: { slug: true, updatedAt: true } }),
     prisma.gpt.findMany({ where: { status: 'PUBLISHED' }, select: { slug: true, updatedAt: true } })
   ])
@@ -54,6 +64,12 @@ export default defineSitemapEventHandler(async () => {
     ...tools.flatMap(tool => inLanguages(`/tools/${tool.slug}`, toolLocales.get(tool.id) ?? [defaultLocale], tool.updatedAt)),
     // Category pages are fully translated (interface, names, tool cards).
     ...categories.flatMap(category => inLanguages(`/category/${category.slug}`, locales, category.updatedAt)),
+    // Tag pages with too few tools are thin (and noindex — app/pages/tag/[slug].vue).
+    ...tags
+      .filter(tag => tag._count.tools >= TAG_INDEX_MIN_TOOLS)
+      .sort((a, b) => b._count.tools - a._count.tools)
+      .slice(0, MAX_SITEMAP_TAGS)
+      .flatMap(tag => inLanguages(`/tag/${tag.slug}`, locales, tag.updatedAt)),
     ...articles.flatMap(article => inLanguages(`/ai-news/${article.slug}`, [defaultLocale], article.updatedAt)),
     ...gpts.flatMap(gpt => inLanguages(`/gpts/${gpt.slug}`, [defaultLocale], gpt.updatedAt))
   ]

@@ -1991,5 +1991,19 @@
   },
   "discordPage": {
     "join": "Gabung Discord"
+  },
+  "searchPage": {
+    "title": "Cari alat AI",
+    "resultsFor": "Hasil untuk “{q}”",
+    "toolCount": "{n} alat AI",
+    "tools": "Alat AI",
+    "categories": "Kategori",
+    "gpts": "GPTs",
+    "seeAllGpts": "Lihat semua GPTs",
+    "noResults": "Tidak ada alat AI yang cocok dengan “{q}”. Coba kata kunci yang lebih pendek atau berbeda.",
+    "prompt": "Ketik nama alat untuk mencari di direktori."
+  },
+  "tagPage": {
+    "count": "{n} alat AI"
   }
 }

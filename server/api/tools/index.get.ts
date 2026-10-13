@@ -16,15 +16,15 @@ async function listTools(event: H3Event, isGuest: boolean) {
   // server/api/admin/tools/index.get.ts instead.
   const where: Prisma.ToolWhereInput = { status: 'PUBLISHED', deletedAt: null }
   if (query.category) where.categories = { some: { slug: String(query.category) } }
+  if (query.tag) where.tags = { some: { slug: String(query.tag) } }
   // Unknown values are ignored (Prisma would reject them with a 500).
   if (['FREE', 'FREEMIUM', 'PAID'].includes(String(query.pricing))) where.pricingType = String(query.pricing) as Prisma.ToolWhereInput['pricingType']
   if (query.featured === 'true') where.isFeatured = true
   // "Discord of AI": tools with a Discord community link (the rows then carry it).
   const hasDiscord = query.hasDiscord === 'true'
   if (hasDiscord) where.NOT = [{ discordUrl: null }, { discordUrl: '' }]
-  if (query.q) {
-    where.name = { contains: String(query.q), mode: 'insensitive' }
-  }
+  const q = typeof query.q === 'string' ? query.q.trim().slice(0, 80) : ''
+  if (q) where.name = { contains: q, mode: 'insensitive' }
   if (query.minRating && Number.isFinite(Number(query.minRating))) where.averageRating = { gt: Number(query.minRating) }
   if (query.region) where.region = String(query.region)
   if (query.source) where.source = String(query.source)
@@ -143,7 +143,7 @@ const listForGuests = defineCachedEventHandler(event => listTools(event, true), 
   name: 'api-tools',
   maxAge: 60,
   swr: true,
-  shouldBypassCache: (event) => import.meta.dev || !!getQuery(event).q
+  shouldBypassCache: (event) => import.meta.dev || !!String(getQuery(event).q ?? '').trim() // same test as listTools: blank q lists everything
 })
 
 export default defineEventHandler((event) => {

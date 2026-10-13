@@ -1991,5 +1991,19 @@
   },
   "discordPage": {
     "join": "Join Discord"
+  },
+  "searchPage": {
+    "title": "Search AI tools",
+    "resultsFor": "Results for “{q}”",
+    "toolCount": "{n} AI tool | {n} AI tools",
+    "tools": "AI tools",
+    "categories": "Categories",
+    "gpts": "GPTs",
+    "seeAllGpts": "See all GPTs",
+    "noResults": "No AI tools match “{q}”. Try a shorter or different keyword.",
+    "prompt": "Type a tool name to search the directory."
+  },
+  "tagPage": {
+    "count": "{n} AI tool | {n} AI tools"
   }
 }

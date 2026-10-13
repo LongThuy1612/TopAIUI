@@ -1991,5 +1991,19 @@
   },
   "discordPage": {
     "join": "Discord beitreten"
+  },
+  "searchPage": {
+    "title": "KI-Tools suchen",
+    "resultsFor": "Ergebnisse für „{q}“",
+    "toolCount": "{n} KI-Tool | {n} KI-Tools",
+    "tools": "KI-Tools",
+    "categories": "Kategorien",
+    "gpts": "GPTs",
+    "seeAllGpts": "Alle GPTs ansehen",
+    "noResults": "Keine KI-Tools passen zu „{q}“. Versuche ein kürzeres oder anderes Stichwort.",
+    "prompt": "Gib den Namen eines Tools ein, um das Verzeichnis zu durchsuchen."
+  },
+  "tagPage": {
+    "count": "{n} KI-Tool | {n} KI-Tools"
   }
 }

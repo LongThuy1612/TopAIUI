@@ -1991,5 +1991,19 @@
   },
   "discordPage": {
     "join": "Discord 참여하기"
+  },
+  "searchPage": {
+    "title": "AI 도구 검색",
+    "resultsFor": "“{q}” 검색 결과",
+    "toolCount": "AI 도구 {n}개",
+    "tools": "AI 도구",
+    "categories": "카테고리",
+    "gpts": "GPTs",
+    "seeAllGpts": "모든 GPTs 보기",
+    "noResults": "“{q}”와 일치하는 AI 도구가 없습니다. 더 짧거나 다른 키워드를 시도해 보세요.",
+    "prompt": "도구 이름을 입력해 디렉터리를 검색하세요."
+  },
+  "tagPage": {
+    "count": "AI 도구 {n}개"
   }
 }

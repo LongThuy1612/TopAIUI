@@ -14,7 +14,8 @@ const totalTools = computed(() => totalRes.value?.total ?? 0)
 
 const heroQuery = ref('')
 function onSearch(q: string) {
-  navigateTo(localePath({ path: '/category/all', query: q ? { q } : {} }))
+  const query = q.trim()
+  navigateTo(localePath(query ? { path: '/search', query: { q: query } } : '/category/all'))
 }
 </script>
 

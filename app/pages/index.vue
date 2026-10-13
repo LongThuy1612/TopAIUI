@@ -83,7 +83,7 @@ useJsonLd('site', () => [
     publisher: { '@id': abs('/#organization') },
     potentialAction: {
       '@type': 'SearchAction',
-      target: { '@type': 'EntryPoint', urlTemplate: `${abs('/category/all')}?q={search_term_string}` },
+      target: { '@type': 'EntryPoint', urlTemplate: `${abs('/search')}?q={search_term_string}` },
       'query-input': 'required name=search_term_string'
     }
   }

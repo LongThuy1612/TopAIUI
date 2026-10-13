@@ -2,8 +2,11 @@
 // và API checkout (server tính lại giá từ đây).
 // Toàn bộ chữ hiển thị nằm trong i18n/locales/*.json, key "promote".
 
+import { SUPPORT_EMAIL } from './site'
+
 export const SITE_NAME = 'TopAICollection'
-export const CONTACT_EMAIL = 'business@example.com' // TODO: email thật
+// Advertising / promotion questions go to the public contact address.
+export const CONTACT_EMAIL = SUPPORT_EMAIL
 
 /* ------------------------------------------------------------------ */
 /* Dùng chung                                                          */

@@ -1991,5 +1991,19 @@
   },
   "discordPage": {
     "join": "Discordに参加"
+  },
+  "searchPage": {
+    "title": "AIツールを検索",
+    "resultsFor": "「{q}」の検索結果",
+    "toolCount": "{n}件のAIツール",
+    "tools": "AIツール",
+    "categories": "カテゴリー",
+    "gpts": "GPTs",
+    "seeAllGpts": "すべてのGPTsを見る",
+    "noResults": "「{q}」に一致するAIツールはありません。短い、または別のキーワードをお試しください。",
+    "prompt": "ツール名を入力してディレクトリを検索します。"
+  },
+  "tagPage": {
+    "count": "{n}件のAIツール"
   }
 }
