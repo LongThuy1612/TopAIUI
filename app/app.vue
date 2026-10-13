@@ -51,5 +51,6 @@ useSeoMeta({
     </main>
     <AppFooter v-if="!isDashboard && !isMinimalRoute" />
     <ScrollToTop v-if="!isDashboard" />
+    <AppToaster />
   </div>
 </template>

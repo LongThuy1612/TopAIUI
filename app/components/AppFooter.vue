@@ -2,7 +2,16 @@
 import type { Category } from '~/types'
 import { SUPPORT_EMAIL, SOCIAL_LINKS } from '#shared/site'
 
-const { t, locale, locales, setLocale } = useI18n()
+const { t, locale, locales } = useI18n()
+const { switchLanguage, pathFor } = useSwitchLanguage()
+
+// Plain clicks switch in place; Ctrl/Cmd/Shift/middle clicks keep the browser's
+// own behaviour (new tab / window) on these real links.
+function onLanguageClick(e: MouseEvent, code: string) {
+  if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return
+  e.preventDefault()
+  switchLanguage(code)
+}
 
 const year = new Date().getFullYear()
 
@@ -115,13 +124,15 @@ const archiveDates = Array.from({ length: 9 }, (_, i) => {
     </div>
 
     <div class="mx-auto mt-5 flex max-w-[1440px] flex-wrap gap-x-5 gap-y-3 text-[13px]">
-      <button
+      <!-- Real links to this page in each language (crawlable); a click switches in place. -->
+      <a
         v-for="loc in locales"
         :key="loc.code"
-        type="button"
+        :href="pathFor(loc.code)"
+        :hreflang="loc.code"
         :class="loc.code === locale ? 'font-bold text-ink-900' : 'cursor-pointer text-ink-600 hover:text-brand-500'"
-        @click="setLocale(loc.code)"
-      >{{ loc.name }}</button>
+        @click="onLanguageClick($event, loc.code)"
+      >{{ loc.name }}</a>
     </div>
   </footer>
 </template>

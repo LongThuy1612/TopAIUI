@@ -1985,5 +1985,8 @@
     "delete": "Eliminar",
     "deleteConfirm": "Eliminar esta mensagem?",
     "empty": "Sem mensagens."
+  },
+  "languageSwitch": {
+    "tooFast": "Está a mudar de idioma demasiado depressa. Tente novamente mais tarde."
   }
 }

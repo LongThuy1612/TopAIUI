@@ -51,7 +51,7 @@ function categoryStyle(i: number) {
   return categoryPalette[i % categoryPalette.length]!
 }
 
-const SEO_TITLE = 'TopAICollection — Discover the Best AI Tools'
+const SEO_TITLE = 'Discover The Best AI Websites & Tools'
 const SEO_DESCRIPTION = 'Explore hundreds of AI tools by category — find the right AI for coding, writing, design, video and more.'
 useSeoMeta({
   title: SEO_TITLE,

@@ -1985,5 +1985,8 @@
     "delete": "삭제",
     "deleteConfirm": "이 메시지를 삭제할까요?",
     "empty": "메시지가 없습니다."
+  },
+  "languageSwitch": {
+    "tooFast": "너무 빠르게 조작하셨습니다. 잠시 후 다시 시도해 주세요."
   }
 }

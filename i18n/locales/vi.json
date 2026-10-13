@@ -1985,5 +1985,8 @@
     "delete": "Xoá",
     "deleteConfirm": "Xoá tin nhắn này?",
     "empty": "Không có tin nhắn."
+  },
+  "languageSwitch": {
+    "tooFast": "Bạn đã thao tác quá nhanh, xin vui lòng thử lại sau."
   }
 }

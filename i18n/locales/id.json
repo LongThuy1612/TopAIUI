@@ -1985,5 +1985,8 @@
     "delete": "Hapus",
     "deleteConfirm": "Hapus pesan ini?",
     "empty": "Tidak ada pesan."
+  },
+  "languageSwitch": {
+    "tooFast": "Anda beralih bahasa terlalu cepat. Silakan coba lagi nanti."
   }
 }
