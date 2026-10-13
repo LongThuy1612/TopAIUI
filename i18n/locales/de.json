@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "Neue KIs",
     "newDesc": "Die neuesten KI-Tools, jeden Tag",
-    "savedTitle": "Bestbewertete KIs",
-    "savedDesc": "KIs mit den besten Nutzerbewertungen",
+    "savedTitle": "Meistgespeicherte KIs",
+    "savedDesc": "KIs mit den meisten Favoriten auf unserer Plattform",
     "usedTitle": "Meistgenutzte KIs",
     "usedDesc": "KIs mit dem meisten Website-Traffic",
     "appsTitle": "KI-Apps",
@@ -2005,5 +2005,11 @@
   },
   "tagPage": {
     "count": "{n} KI-Tool | {n} KI-Tools"
+  },
+  "savedPage": {
+    "title": "Gespeicherte KIs",
+    "subtitle": "Mit Stern markierte Tools: {n}",
+    "remove": "Entfernen",
+    "empty": "Du hast noch keine KI-Tools gespeichert. Tippe auf der Seite eines Tools auf den Stern, um es hier zu behalten."
   }
 }

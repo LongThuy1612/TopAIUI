@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "New AIs",
     "newDesc": "The latest AI tools, every day",
-    "savedTitle": "Top Rated AIs",
-    "savedDesc": "AIs with the highest user ratings",
+    "savedTitle": "Most Saved AIs",
+    "savedDesc": "AIs with the most favorites on our platform",
     "usedTitle": "Most Used AIs",
     "usedDesc": "AIs with the highest website traffic",
     "appsTitle": "AI Apps",
@@ -2005,5 +2005,11 @@
   },
   "tagPage": {
     "count": "{n} AI tool | {n} AI tools"
+  },
+  "savedPage": {
+    "title": "Saved AIs",
+    "subtitle": "Tools you starred: {n}",
+    "remove": "Remove",
+    "empty": "You haven’t saved any AI tools yet. Tap the star on a tool page to keep it here."
   }
 }

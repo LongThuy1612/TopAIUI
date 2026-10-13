@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "Nouvelles IA",
     "newDesc": "Les derniers outils IA, chaque jour",
-    "savedTitle": "IA les mieux notées",
-    "savedDesc": "Les IA les mieux notées par les utilisateurs",
+    "savedTitle": "IA les plus enregistrées",
+    "savedDesc": "Les IA les plus mises en favori sur notre plateforme",
     "usedTitle": "IA les plus utilisées",
     "usedDesc": "Les IA au plus fort trafic web",
     "appsTitle": "Applis IA",
@@ -2005,5 +2005,11 @@
   },
   "tagPage": {
     "count": "{n} outil IA | {n} outils IA"
+  },
+  "savedPage": {
+    "title": "IA enregistrées",
+    "subtitle": "Outils marqués d’une étoile : {n}",
+    "remove": "Retirer",
+    "empty": "Vous n’avez encore enregistré aucun outil IA. Touchez l’étoile sur la page d’un outil pour le garder ici."
   }
 }

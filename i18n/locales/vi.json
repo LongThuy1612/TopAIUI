@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "AI mới",
     "newDesc": "Các công cụ AI mới nhất, cập nhật mỗi ngày",
-    "savedTitle": "AI được đánh giá cao nhất",
-    "savedDesc": "Các AI có điểm đánh giá cao nhất từ người dùng",
+    "savedTitle": "AI được lưu nhiều nhất",
+    "savedDesc": "Các AI được lưu yêu thích nhiều nhất trên nền tảng",
     "usedTitle": "AI dùng nhiều nhất",
     "usedDesc": "Các AI có lượt truy cập website cao nhất",
     "appsTitle": "Ứng dụng AI",
@@ -2005,5 +2005,11 @@
   },
   "tagPage": {
     "count": "{n} công cụ AI"
+  },
+  "savedPage": {
+    "title": "AI đã lưu",
+    "subtitle": "Công cụ bạn đã gắn sao: {n}",
+    "remove": "Bỏ lưu",
+    "empty": "Bạn chưa lưu công cụ AI nào. Bấm vào ngôi sao trên trang công cụ để lưu lại tại đây."
   }
 }

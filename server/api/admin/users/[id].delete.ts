@@ -23,6 +23,8 @@ export default defineEventHandler(async (event) => {
     data: { status: 'WITHDRAWN', adminNote: 'Account deleted', reviewedAt: new Date() }
   })
 
+  await removeUserSaves(id)
+
   await prisma.user.update({
     where: { id },
     data: {

@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "IAs novas",
     "newDesc": "As ferramentas de IA mais recentes, todos os dias",
-    "savedTitle": "IAs mais bem avaliadas",
-    "savedDesc": "IAs com as melhores avaliações dos usuários",
+    "savedTitle": "IAs mais salvas",
+    "savedDesc": "IAs com mais favoritos na nossa plataforma",
     "usedTitle": "IAs mais usadas",
     "usedDesc": "IAs com mais tráfego no site",
     "appsTitle": "Apps de IA",
@@ -2005,5 +2005,11 @@
   },
   "tagPage": {
     "count": "{n} ferramenta de IA | {n} ferramentas de IA"
+  },
+  "savedPage": {
+    "title": "IAs salvas",
+    "subtitle": "Ferramentas marcadas com estrela: {n}",
+    "remove": "Remover",
+    "empty": "Você ainda não salvou nenhuma ferramenta de IA. Toque na estrela na página de uma ferramenta para guardá-la aqui."
   }
 }

@@ -35,8 +35,8 @@ const productItems = [
     descKey: 'productsMenu.newDesc'
   },
   {
-    // Sorted by rating: saves aren't recorded per user yet, so "most saved" has no data.
-    to: '/most-featured',
+    // By saves (per account, Dashboard → Saved AIs), then rating.
+    to: '/most-saved',
     icon: 'M12 2.5l2.94 5.96 6.58.96-4.76 4.64 1.12 6.55L12 17.52l-5.88 3.09 1.12-6.55L2.48 9.42l6.58-.96L12 2.5Z',
     titleKey: 'productsMenu.savedTitle',
     descKey: 'productsMenu.savedDesc'

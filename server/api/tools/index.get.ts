@@ -58,6 +58,8 @@ async function listTools(event: H3Event, isGuest: boolean) {
     traffic: { monthlyVisits: 'desc' },
     trending: { monthlyVisits: 'desc' },
     rating: { averageRating: 'desc' },
+    // Most Saved AIs: by saves, then rating — while few tools have saves the list still reads well.
+    saved: [{ collectionCount: 'desc' }, { averageRating: 'desc' }],
     growth1m: { last1MonthGrowth: 'desc' },
     growth3m: { last3MonthGrowth: 'desc' },
     growth6m: { last6MonthGrowth: 'desc' },
@@ -79,52 +81,16 @@ async function listTools(event: H3Event, isGuest: boolean) {
       orderBy,
       skip: (page - 1) * limit,
       take: Math.min(limit, guestRoom),
-      // Only what the cards / rows / alternatives render. The full row carries
-      // large JSON columns (nuxtTraffic, companyInfo, attributes…) and every
-      // locale's long description — the home page alone asks for 200 tools, and
-      // the SSR payload embeds the response a second time in the HTML.
-      select: {
-        id: true,
-        slug: true,
-        name: true,
-        icon: true,
-        logoUrl: true,
-        screenshotUrl: true,
-        website: true,
-        pricingType: true,
-        isFeatured: true,
-        isAd: true,
-        isVerified: true,
-        averageRating: true,
-        reviewCount: true,
-        upvoteCount: true,
-        collectionCount: true,
-        discordUrl: hasDiscord,
-        createdAt: true,
-        addedOn: true,
-        categories: { select: { slug: true, icon: true, name: true, translations: { select: { locale: true, name: true } } } },
-        tags: { select: { slug: true, translations: { select: { locale: true, name: true } } } },
-        translations: { select: { locale: true, shortDesc: true } }
-      }
+      select: { ...TOOL_CARD_SELECT, discordUrl: hasDiscord }
     }),
     prisma.tool.count({ where })
   ])
 
   return {
-    items: items.map(({ translations, categories, tags, ...tool }) => {
-      const translation = pickByLocale(translations, locale)
-      return {
-        ...tool,
-        icon: resolveToolImage(tool.icon),
-        logoUrl: resolveToolImage(tool.logoUrl),
-        screenshotUrl: resolveToolImage(tool.screenshotUrl),
-        website: safeLinkUrl(tool.website),
-        ...(hasDiscord && { discordUrl: safeLinkUrl(tool.discordUrl) }),
-        shortDesc: cleanText(translation?.shortDesc),
-        categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug })),
-        tags: tags.map((tg) => ({ slug: tg.slug, name: cleanText(pickByLocale(tg.translations, locale)?.name) ?? tg.slug }))
-      }
-    }),
+    items: items.map(row => ({
+      ...toToolCard(row, locale),
+      ...(hasDiscord && { discordUrl: safeLinkUrl(row.discordUrl) })
+    })),
     total,
     page,
     pageCount: Math.ceil(total / limit),

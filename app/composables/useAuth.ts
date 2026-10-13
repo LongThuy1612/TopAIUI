@@ -1,4 +1,6 @@
 const STORAGE_KEY = 'topainew:user-token'
+// The /api/auth/me request in flight (browser only: the token lives in browser storage).
+let pendingMe: Promise<AuthUser | null> | null = null
 
 export interface AuthUser {
   id: string
@@ -66,19 +68,29 @@ export function useAuth() {
     if (import.meta.client) clearStoredToken()
   }
 
-  async function fetchMe() {
-    if (!token.value) return null
+  // Callers at the same moment (load() on app mount, a page's ensureUser, route
+  // middleware) share one /api/auth/me request.
+  function fetchMe(): Promise<AuthUser | null> {
+    if (!token.value) return Promise.resolve(null)
+    if (pendingMe) return pendingMe
     fetchingMe.value = true
-    try {
-      const me = await $fetch<AuthUser>('/api/auth/me', { headers: { 'x-user-token': token.value } })
-      user.value = me
-      return me
-    } catch {
-      logout()
-      return null
-    } finally {
-      fetchingMe.value = false
-    }
+    const sent = token.value
+    pendingMe = (async () => {
+      try {
+        const me = await $fetch<AuthUser>('/api/auth/me', { headers: { 'x-user-token': sent } })
+        // Logged out (or in as someone else) while this was on its way: not this session's user.
+        if (token.value !== sent) return null
+        user.value = me
+        return me
+      } catch {
+        if (token.value === sent) logout()
+        return null
+      } finally {
+        fetchingMe.value = false
+        pendingMe = null
+      }
+    })()
+    return pendingMe
   }
 
   // Restores the session and waits for /api/auth/me, so callers (route

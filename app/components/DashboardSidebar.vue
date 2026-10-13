@@ -58,6 +58,7 @@ onMounted(async () => {
 })
 
 const otherItems = computed(() => [
+  { label: t('savedPage.title'), to: '/dashboard/saved', icon: 'M6 4h12v17l-6-4-6 4V4Z' },
   { label: t('admin.paymentInvoice'), to: '/dashboard/payment-invoice', icon: 'M7 3h10a1 1 0 0 1 1 1v17l-3-2-2 2-2-2-2 2-3-2V4a1 1 0 0 1 1-1Zm2 5h6m-6 4h6m-6 4h3' },
   // Admins read everyone's feedback under the admin "Feedback" link instead.
   ...(isAdmin.value ? [] : [

@@ -45,8 +45,8 @@
   "productsMenu": {
     "newTitle": "AI ใหม่",
     "newDesc": "เครื่องมือ AI ล่าสุด อัปเดตทุกวัน",
-    "savedTitle": "AI ที่ได้คะแนนสูงสุด",
-    "savedDesc": "AI ที่ได้คะแนนจากผู้ใช้สูงสุด",
+    "savedTitle": "AI ที่ถูกบันทึกมากที่สุด",
+    "savedDesc": "AI ที่มีคนกดชื่นชอบมากที่สุดบนแพลตฟอร์ม",
     "usedTitle": "AI ที่ใช้มากที่สุด",
     "usedDesc": "AI ที่มีทราฟฟิกเว็บไซต์สูงสุด",
     "appsTitle": "แอป AI",

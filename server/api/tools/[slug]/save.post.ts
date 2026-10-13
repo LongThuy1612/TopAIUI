@@ -1,19 +1,28 @@
+// Save / unsave a tool for the logged-in user (the star on a tool page). collectionCount
+// moves only when a ToolSave row is really added or removed, in the same transaction —
+// repeating a request, or saving twice from two tabs, can't inflate it.
 export default defineEventHandler(async (event) => {
-  const slug = getRouterParam(event, 'slug')
-  const body = await readBody<{ saved?: boolean }>(event)
-  const saved = Boolean(body?.saved)
+  const userId = await requireActiveUser(event)
+  const slug = getRouterParam(event, 'slug') ?? ''
+  const body = await readBody<{ saved?: unknown }>(event)
+  const saved = body?.saved === true
 
-  // One atomic UPDATE instead of read-then-write, so concurrent clicks can't
-  // overwrite each other's count. Unsaving never takes it below 0.
-  await prisma.tool.updateMany({
-    where: saved ? { slug } : { slug, collectionCount: { gt: 0 } },
-    data: { collectionCount: saved ? { increment: 1 } : { decrement: 1 } }
+  const tool = await prisma.tool.findFirst({ where: { slug, status: 'PUBLISHED', deletedAt: null }, select: { id: true } })
+  if (!tool) throw createError({ statusCode: 404, statusMessage: 'Tool not found' })
+
+  const collectionCount = await prisma.$transaction(async (tx) => {
+    // Raw UPDATEs: through Prisma they would also bump Tool.updatedAt (@updatedAt), and a
+    // save is not an edit of the tool (updatedAt is the sitemap's lastmod).
+    if (saved) {
+      const { count } = await tx.toolSave.createMany({ data: [{ userId, toolId: tool.id }], skipDuplicates: true })
+      if (count) await tx.$executeRaw`UPDATE "Tool" SET "collectionCount" = "collectionCount" + 1 WHERE "id" = ${tool.id}`
+    } else {
+      const { count } = await tx.toolSave.deleteMany({ where: { userId, toolId: tool.id } })
+      // Never below 0 (counts from before saves were per account may not match the rows).
+      if (count) await tx.$executeRaw`UPDATE "Tool" SET "collectionCount" = GREATEST("collectionCount" - 1, 0) WHERE "id" = ${tool.id}`
+    }
+    return (await tx.tool.findUniqueOrThrow({ where: { id: tool.id }, select: { collectionCount: true } })).collectionCount
   })
 
-  const tool = await prisma.tool.findUnique({ where: { slug }, select: { collectionCount: true } })
-  if (!tool) {
-    throw createError({ statusCode: 404, statusMessage: `Tool "${slug}" not found` })
-  }
-
-  return { collectionCount: tool.collectionCount }
+  return { saved, collectionCount }
 })

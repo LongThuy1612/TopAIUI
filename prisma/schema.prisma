@@ -176,6 +176,7 @@ model Tool {
   reviews       Review[]
   updateRequests ToolUpdateRequest[]
   adCampaigns   AdCampaign[]
+  saves         ToolSave[]
 
   @@index([status])
   // /new, /today, home "new" list: ORDER BY addedOn DESC NULLS LAST, id ASC.
@@ -349,6 +350,7 @@ model User {
   toolUpdateRequests ToolUpdateRequest[]
   feedbacks     Feedback[]
   contactMessages ContactMessage[]
+  savedTools    ToolSave[]
   adCampaigns   AdCampaign[]
   subscriptions Subscription[]
   researchUsage ResearchUsage[]
@@ -394,6 +396,22 @@ model Feedback {
 
 // Messages from the public Contact page. Guests can write too (userId null); a
 // signed-in sender is linked so the message shows under Dashboard → My inquiries.
+// A tool a user saved (the star on a tool page; Dashboard → Saved AIs). Tool.collectionCount
+// is the number of these rows, kept in step by POST /api/tools/<slug>/save.
+model ToolSave {
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  toolId    String
+  tool      Tool     @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@id([userId, toolId])
+  // "Saved AIs", newest first.
+  @@index([userId, createdAt])
+  @@index([toolId])
+  @@map("ToolSave")
+}
+
 model ContactMessage {
   id        String         @id @default(cuid())
   userId    String?

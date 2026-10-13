@@ -489,48 +489,64 @@ const shareUrl = computed(() => requestUrl.href)
 const twitterShareUrl = computed(() => `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl.value)}&text=${encodeURIComponent(tool.value?.name ?? '')}`)
 const facebookShareUrl = computed(() => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl.value)}`)
 
+// The star: saves the tool to the user's account (Dashboard → Saved AIs). Guests are
+// sent to log in first and come back here.
 const isSaved = ref(false)
-const favoritesKey = 'topainew:favorites'
+const savePending = ref(false)
 
-function readFavorites(): string[] {
+// Asked once per user: on mount when the session is already known (client-side
+// navigation), otherwise when it resolves (the review code above calls ensureUser) —
+// and again after old localStorage favorites were moved into the account.
+async function loadSaved() {
+  if (!user.value) {
+    isSaved.value = false
+    return
+  }
   try {
-    return JSON.parse(localStorage.getItem(favoritesKey) ?? '[]')
+    const res = await $fetch<{ saved: boolean; collectionCount: number }>(`/api/tools/${slug.value}/save`, { headers: authHeaders() })
+    // A click while this was loading wins.
+    if (savePending.value) return
+    isSaved.value = res.saved
+    // Live count: the page (and its API) is cached and may predate this user's own save.
+    if (tool.value) tool.value.collectionCount = res.collectionCount
   } catch {
-    return []
+    // keep what is shown
   }
 }
-
-onMounted(() => {
-  if (import.meta.client) isSaved.value = readFavorites().includes(slug.value)
-})
-
-function writeFavorites(nextSaved: boolean) {
-  const favorites = new Set(readFavorites())
-  if (nextSaved) {
-    favorites.add(slug.value)
-  } else {
-    favorites.delete(slug.value)
-  }
-  localStorage.setItem(favoritesKey, JSON.stringify([...favorites]))
-  isSaved.value = nextSaved
-}
+const savedImportVersion = useState('saved-import-version', () => 0)
+onMounted(() => { if (user.value) loadSaved() })
+watch([() => user.value?.id, savedImportVersion], () => loadSaved())
 
 async function toggleSaved() {
+  if (!(await ensureUser())) {
+    await navigateTo(localePath(loginLink.value))
+    return
+  }
+  if (savePending.value) return
   const nextSaved = !isSaved.value
   const previousCount = tool.value?.collectionCount ?? 0
 
-  writeFavorites(nextSaved)
+  isSaved.value = nextSaved
   if (tool.value) tool.value.collectionCount = Math.max(0, previousCount + (nextSaved ? 1 : -1))
-
+  savePending.value = true
   try {
-    const res = await $fetch<{ collectionCount: number }>(`/api/tools/${slug.value}/save`, {
+    const res = await $fetch<{ saved: boolean; collectionCount: number }>(`/api/tools/${slug.value}/save`, {
       method: 'POST',
+      headers: authHeaders(),
       body: { saved: nextSaved }
     })
+    isSaved.value = res.saved
     if (tool.value) tool.value.collectionCount = res.collectionCount
-  } catch {
-    writeFavorites(!nextSaved)
+  } catch (e: unknown) {
+    isSaved.value = !nextSaved
     if (tool.value) tool.value.collectionCount = previousCount
+    // Session no longer valid (banned, password changed elsewhere): log in again.
+    if ((e as { statusCode?: number })?.statusCode === 401) {
+      logout()
+      await navigateTo(localePath(loginLink.value))
+    }
+  } finally {
+    savePending.value = false
   }
 }
 
@@ -724,6 +740,8 @@ useJsonLd('tool', () => {
               isSaved ? 'text-brand-500' : 'text-ink-500 hover:text-brand-500'
             ]"
             :title="isSaved ? t('tool.saved') : t('tool.save')"
+            :aria-pressed="isSaved"
+            :disabled="savePending"
             @click="toggleSaved"
           >
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.563.563 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>

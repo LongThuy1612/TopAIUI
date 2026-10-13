@@ -45,8 +45,8 @@
   "productsMenu": {
     "newTitle": "Uudet tekoälyt",
     "newDesc": "Uusimmat tekoälytyökalut joka päivä",
-    "savedTitle": "Parhaiten arvioidut tekoälyt",
-    "savedDesc": "Tekoälyt, joilla on parhaat käyttäjäarviot",
+    "savedTitle": "Tallennetuimmat tekoälyt",
+    "savedDesc": "Alustamme suosikeissa useimmin olevat tekoälyt",
     "usedTitle": "Käytetyimmät tekoälyt",
     "usedDesc": "Tekoälyt, joilla on eniten verkkoliikennettä",
     "appsTitle": "Tekoälysovellukset",
