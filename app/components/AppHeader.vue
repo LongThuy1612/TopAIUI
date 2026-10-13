@@ -35,13 +35,15 @@ const productItems = [
     descKey: 'productsMenu.newDesc'
   },
   {
+    // Sorted by rating: saves aren't recorded per user yet, so "most saved" has no data.
     to: '/most-featured',
-    icon: 'M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75v16.5a.75.75 0 0 1-1.164.624L12 17.9l-4.836 2.974A.75.75 0 0 1 6 20.25V3.75Z',
+    icon: 'M12 2.5l2.94 5.96 6.58.96-4.76 4.64 1.12 6.55L12 17.52l-5.88 3.09 1.12-6.55L2.48 9.42l6.58-.96L12 2.5Z',
     titleKey: 'productsMenu.savedTitle',
     descKey: 'productsMenu.savedDesc'
   },
   {
-    to: '/today',
+    // Ranked by monthly website visits.
+    to: '/ranking',
     icon: 'M3 17.25 8.25 12l3 3L21 6.75M21 6.75h-4.5M21 6.75v4.5',
     titleKey: 'productsMenu.usedTitle',
     descKey: 'productsMenu.usedDesc',
@@ -54,13 +56,13 @@ const productItems = [
     descKey: 'productsMenu.appsDesc'
   },
   {
-    to: '#',
+    to: '/discord',
     icon: 'M18.9 6.4a15.6 15.6 0 0 0-3.86-1.2l-.2.37c1.32.32 2.06.79 2.8 1.29a10.7 10.7 0 0 0-9.28 0c.7-.53 1.6-1 2.8-1.3l-.2-.36c-1.36.24-2.66.65-3.86 1.2C4.5 9.6 3.6 12.7 3.9 15.75a15.7 15.7 0 0 0 4.79 2.42c.39-.53.73-1.1 1.02-1.7a10.2 10.2 0 0 1-1.6-.77c.14-.1.27-.2.4-.31 3.06 1.42 6.4 1.42 9.42 0 .13.11.26.21.4.31-.5.3-1.04.56-1.6.77.29.6.63 1.17 1.02 1.7a15.6 15.6 0 0 0 4.79-2.42c.36-3.53-.56-6.6-2.64-9.35ZM9.7 13.9c-.9 0-1.64-.83-1.64-1.85 0-1.02.72-1.85 1.64-1.85.93 0 1.66.85 1.65 1.85 0 1.02-.72 1.85-1.65 1.85Zm4.6 0c-.9 0-1.64-.83-1.64-1.85 0-1.02.72-1.85 1.64-1.85.93 0 1.66.85 1.65 1.85 0 1.02-.72 1.85-1.65 1.85Z',
     titleKey: 'productsMenu.discordTitle',
     descKey: 'productsMenu.discordDesc'
   },
   {
-    to: '#',
+    to: '/category/chrome-extensions',
     icon: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 3.2A6.8 6.8 0 0 1 18.4 10H12V5.2Zm-1.2 0v6.15L6.1 16.7A6.79 6.79 0 0 1 10.8 5.2ZM12 18.8a6.78 6.78 0 0 1-4.98-2.17l5.63-5.63h6.75A6.8 6.8 0 0 1 12 18.8Z',
     titleKey: 'productsMenu.extensionsTitle',
     descKey: 'productsMenu.extensionsDesc'
@@ -72,7 +74,7 @@ const productItems = [
     descKey: 'productsMenu.gptsDesc'
   },
   {
-    to: '#',
+    to: '/category/llms',
     icon: 'M12 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 14a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm-9-7a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm18 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM6.5 8.5l3 2.5m4 0 3-2.5m-10 6 3-2.5m4 0 3 2.5',
     titleKey: 'productsMenu.modelsTitle',
     descKey: 'productsMenu.modelsDesc',

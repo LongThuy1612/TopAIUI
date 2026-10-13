@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "AI mới",
     "newDesc": "Các công cụ AI mới nhất, cập nhật mỗi ngày",
-    "savedTitle": "AI được lưu nhiều nhất",
-    "savedDesc": "Các AI được lưu yêu thích nhiều nhất trên nền tảng",
+    "savedTitle": "AI được đánh giá cao nhất",
+    "savedDesc": "Các AI có điểm đánh giá cao nhất từ người dùng",
     "usedTitle": "AI dùng nhiều nhất",
     "usedDesc": "Các AI có lượt truy cập website cao nhất",
     "appsTitle": "Ứng dụng AI",
@@ -1988,5 +1988,8 @@
   },
   "languageSwitch": {
     "tooFast": "Bạn đã thao tác quá nhanh, xin vui lòng thử lại sau."
+  },
+  "discordPage": {
+    "join": "Tham gia Discord"
   }
 }

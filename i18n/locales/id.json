@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "AI Terbaru",
     "newDesc": "Alat AI terbaru, setiap hari",
-    "savedTitle": "AI Paling Banyak Disimpan",
-    "savedDesc": "AI dengan favorit terbanyak di platform kami",
+    "savedTitle": "AI dengan Rating Tertinggi",
+    "savedDesc": "AI dengan rating pengguna tertinggi",
     "usedTitle": "AI Paling Banyak Dipakai",
     "usedDesc": "AI dengan trafik situs tertinggi",
     "appsTitle": "Aplikasi AI",
@@ -1988,5 +1988,8 @@
   },
   "languageSwitch": {
     "tooFast": "Anda beralih bahasa terlalu cepat. Silakan coba lagi nanti."
+  },
+  "discordPage": {
+    "join": "Gabung Discord"
   }
 }

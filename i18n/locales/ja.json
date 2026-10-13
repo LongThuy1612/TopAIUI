@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "新着AI",
     "newDesc": "毎日更新される最新のAIツール",
-    "savedTitle": "保存数の多いAI",
-    "savedDesc": "当サイトでお気に入り数が最も多いAI",
+    "savedTitle": "高評価のAI",
+    "savedDesc": "ユーザー評価が最も高いAI",
     "usedTitle": "よく使われるAI",
     "usedDesc": "サイトのトラフィックが最も多いAI",
     "appsTitle": "AIアプリ",
@@ -1988,5 +1988,8 @@
   },
   "languageSwitch": {
     "tooFast": "操作が速すぎます。しばらくしてからもう一度お試しください。"
+  },
+  "discordPage": {
+    "join": "Discordに参加"
   }
 }

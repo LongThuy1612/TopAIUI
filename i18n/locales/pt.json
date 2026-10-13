@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "IAs novas",
     "newDesc": "As ferramentas de IA mais recentes, todos os dias",
-    "savedTitle": "IAs mais salvas",
-    "savedDesc": "IAs com mais favoritos na nossa plataforma",
+    "savedTitle": "IAs mais bem avaliadas",
+    "savedDesc": "IAs com as melhores avaliações dos usuários",
     "usedTitle": "IAs mais usadas",
     "usedDesc": "IAs com mais tráfego no site",
     "appsTitle": "Apps de IA",
@@ -1988,5 +1988,8 @@
   },
   "languageSwitch": {
     "tooFast": "Está a mudar de idioma demasiado depressa. Tente novamente mais tarde."
+  },
+  "discordPage": {
+    "join": "Entrar no Discord"
   }
 }

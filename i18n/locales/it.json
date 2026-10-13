@@ -45,8 +45,8 @@
   "productsMenu": {
     "newTitle": "Nuove IA",
     "newDesc": "Gli strumenti IA più recenti, ogni giorno",
-    "savedTitle": "IA più salvate",
-    "savedDesc": "Le IA con più preferiti sulla piattaforma",
+    "savedTitle": "IA più votate",
+    "savedDesc": "Le IA con le valutazioni più alte degli utenti",
     "usedTitle": "IA più usate",
     "usedDesc": "Le IA con più traffico web",
     "appsTitle": "App IA",
@@ -1614,5 +1614,8 @@
     "saveAndPublish": "Salva e pubblica",
     "emptyReview": "Niente in attesa di revisione.",
     "empty": "Ancora nessun GPT."
+  },
+  "discordPage": {
+    "join": "Unisciti a Discord"
   }
 }

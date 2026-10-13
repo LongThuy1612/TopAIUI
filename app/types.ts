@@ -58,9 +58,9 @@ export interface Tool {
   affiliateUrl?: string
   couponCode?: string
   pricingType: 'FREE' | 'FREEMIUM' | 'PAID'
-  website?: string
-  twitterUrl?: string
-  discordUrl?: string
+  website?: string | null
+  twitterUrl?: string | null
+  discordUrl?: string | null
   productHuntUrl?: string
   socialLinks?: unknown
   isFeatured: boolean

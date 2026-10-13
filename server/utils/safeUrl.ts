@@ -11,3 +11,12 @@ export function safeHttpUrl(value: string | null | undefined): string | null {
     return null
   }
 }
+
+// Same, for imported profile links (website, X, Discord), which often lack the
+// scheme ("discord.gg/…") and would otherwise become a relative link on our site.
+// Display only — input validation keeps using safeHttpUrl.
+export function safeLinkUrl(value: string | null | undefined): string | null {
+  const s = value?.trim()
+  if (!s) return null
+  return safeHttpUrl(/^[a-z][a-z\d+.-]*:/i.test(s) ? s : `https://${s}`)
+}

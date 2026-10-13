@@ -45,8 +45,8 @@
   "productsMenu": {
     "newTitle": "AI חדשים",
     "newDesc": "כלי ה-AI החדשים ביותר, כל יום",
-    "savedTitle": "ה-AI השמורים ביותר",
-    "savedDesc": "כלי AI עם הכי הרבה מועדפים בפלטפורמה",
+    "savedTitle": "כלי AI בדירוג הגבוה ביותר",
+    "savedDesc": "כלי AI עם דירוג המשתמשים הגבוה ביותר",
     "usedTitle": "ה-AI הנפוצים ביותר",
     "usedDesc": "כלי AI עם התנועה הגבוהה ביותר",
     "appsTitle": "אפליקציות AI",
@@ -1614,5 +1614,8 @@
     "saveAndPublish": "שמירה ופרסום",
     "emptyReview": "אין דבר שממתין לבדיקה.",
     "empty": "אין עדיין GPTs."
+  },
+  "discordPage": {
+    "join": "הצטרפו ל-Discord"
   }
 }

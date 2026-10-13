@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "Neue KIs",
     "newDesc": "Die neuesten KI-Tools, jeden Tag",
-    "savedTitle": "Meistgespeicherte KIs",
-    "savedDesc": "KIs mit den meisten Favoriten auf unserer Plattform",
+    "savedTitle": "Bestbewertete KIs",
+    "savedDesc": "KIs mit den besten Nutzerbewertungen",
     "usedTitle": "Meistgenutzte KIs",
     "usedDesc": "KIs mit dem meisten Website-Traffic",
     "appsTitle": "KI-Apps",
@@ -1988,5 +1988,8 @@
   },
   "languageSwitch": {
     "tooFast": "Du wechselst die Sprache zu schnell. Bitte versuche es später erneut."
+  },
+  "discordPage": {
+    "join": "Discord beitreten"
   }
 }

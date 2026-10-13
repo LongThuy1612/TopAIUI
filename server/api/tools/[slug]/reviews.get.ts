@@ -13,7 +13,7 @@ export default defineCachedEventHandler(async (event) => {
     prisma.review.findMany({
       where,
       select: { rating: true, comment: true, createdAt: true, userInfo: true, user: { select: { name: true } } },
-      orderBy: { createdAt: orderDir },
+      orderBy: [{ createdAt: orderDir }, { id: 'asc' }], // id: imported reviews can share a timestamp
       skip: (page - 1) * limit,
       take: limit
     }),

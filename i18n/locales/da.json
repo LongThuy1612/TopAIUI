@@ -45,8 +45,8 @@
   "productsMenu": {
     "newTitle": "Nye AI",
     "newDesc": "De nyeste AI-værktøjer, hver dag",
-    "savedTitle": "Mest gemte AI",
-    "savedDesc": "AI med flest favoritter på vores platform",
+    "savedTitle": "Bedst bedømte AI'er",
+    "savedDesc": "AI'er med de højeste brugervurderinger",
     "usedTitle": "Mest brugte AI",
     "usedDesc": "AI med mest websitetrafik",
     "appsTitle": "AI-apps",
@@ -1614,5 +1614,8 @@
     "saveAndPublish": "Gem og udgiv",
     "emptyReview": "Intet venter på gennemgang.",
     "empty": "Ingen GPT'er endnu."
+  },
+  "discordPage": {
+    "join": "Deltag på Discord"
   }
 }

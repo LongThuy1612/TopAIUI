@@ -60,8 +60,8 @@
   "productsMenu": {
     "newTitle": "New AIs",
     "newDesc": "The latest AI tools, every day",
-    "savedTitle": "Most Saved AIs",
-    "savedDesc": "AIs with the most favorites on our platform",
+    "savedTitle": "Top Rated AIs",
+    "savedDesc": "AIs with the highest user ratings",
     "usedTitle": "Most Used AIs",
     "usedDesc": "AIs with the highest website traffic",
     "appsTitle": "AI Apps",
@@ -1988,5 +1988,8 @@
   },
   "languageSwitch": {
     "tooFast": "You are switching languages too fast. Please try again later."
+  },
+  "discordPage": {
+    "join": "Join Discord"
   }
 }

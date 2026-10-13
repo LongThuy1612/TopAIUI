@@ -19,6 +19,9 @@ async function listTools(event: H3Event, isGuest: boolean) {
   // Unknown values are ignored (Prisma would reject them with a 500).
   if (['FREE', 'FREEMIUM', 'PAID'].includes(String(query.pricing))) where.pricingType = String(query.pricing) as Prisma.ToolWhereInput['pricingType']
   if (query.featured === 'true') where.isFeatured = true
+  // "Discord of AI": tools with a Discord community link (the rows then carry it).
+  const hasDiscord = query.hasDiscord === 'true'
+  if (hasDiscord) where.NOT = [{ discordUrl: null }, { discordUrl: '' }]
   if (query.q) {
     where.name = { contains: String(query.q), mode: 'insensitive' }
   }
@@ -60,13 +63,15 @@ async function listTools(event: H3Event, isGuest: boolean) {
     growth6m: { last6MonthGrowth: 'desc' },
     revenue: { monthlyRevenue: 'desc' }
   }
-  // id only breaks ties (every tool without addedOn ties), so pages of the
-  // infinite scroll don't repeat or skip tools.
-  const orderBy = isTodayTab || isNewTab || isArchiveDay
-    ? [{ addedOn: { sort: 'desc' as const, nulls: 'last' as const } }, { id: 'asc' as const }]
+  // id last breaks ties, in every order: thousands of tools share an addedOn, a
+  // viewCount of 0 or a 5.0 rating, and Postgres returns tied rows in any order —
+  // pages of the infinite scroll then repeat some tools and skip others.
+  const primary = isTodayTab || isNewTab || isArchiveDay
+    ? [{ addedOn: { sort: 'desc' as const, nulls: 'last' as const } }]
     : letter
-      ? [{ name: 'asc' as const }, { id: 'asc' as const }]
-      : (sortMap[String(query.sort)] ?? sortMap.newest)
+      ? [{ name: 'asc' as const }]
+      : [sortMap[String(query.sort)] ?? { createdAt: 'desc' as const }].flat()
+  const orderBy: Prisma.ToolOrderByWithRelationInput[] = [...primary, { id: 'asc' }]
 
   const [items, total] = await Promise.all([
     guestRoom <= 0 ? Promise.resolve([]) : prisma.tool.findMany({
@@ -94,6 +99,7 @@ async function listTools(event: H3Event, isGuest: boolean) {
         reviewCount: true,
         upvoteCount: true,
         collectionCount: true,
+        discordUrl: hasDiscord,
         createdAt: true,
         addedOn: true,
         categories: { select: { slug: true, icon: true, name: true, translations: { select: { locale: true, name: true } } } },
@@ -112,6 +118,8 @@ async function listTools(event: H3Event, isGuest: boolean) {
         icon: resolveToolImage(tool.icon),
         logoUrl: resolveToolImage(tool.logoUrl),
         screenshotUrl: resolveToolImage(tool.screenshotUrl),
+        website: safeLinkUrl(tool.website),
+        ...(hasDiscord && { discordUrl: safeLinkUrl(tool.discordUrl) }),
         shortDesc: cleanText(translation?.shortDesc),
         categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug })),
         tags: tags.map((tg) => ({ slug: tg.slug, name: cleanText(pickByLocale(tg.translations, locale)?.name) ?? tg.slug }))

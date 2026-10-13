@@ -130,6 +130,10 @@ export default defineCachedEventHandler(async (event) => {
     logoUrl: resolveToolImage(rest.logoUrl),
     screenshotUrl: resolveToolImage(rest.screenshotUrl),
     images: resolveToolImages(rest.images),
+    // Rendered as links; imported values aren't validated (javascript:, missing scheme).
+    website: safeLinkUrl(rest.website),
+    twitterUrl: safeLinkUrl(rest.twitterUrl),
+    discordUrl: safeLinkUrl(rest.discordUrl),
     shortDesc: cleanText(translation?.shortDesc),
     description: cleanText(translation?.description),
     whatIs: translation?.whatIs ?? null,

@@ -45,8 +45,8 @@
   "productsMenu": {
     "newTitle": "Uudet tekoälyt",
     "newDesc": "Uusimmat tekoälytyökalut joka päivä",
-    "savedTitle": "Tallennetuimmat tekoälyt",
-    "savedDesc": "Alustamme suosikeissa useimmin olevat tekoälyt",
+    "savedTitle": "Parhaiten arvioidut tekoälyt",
+    "savedDesc": "Tekoälyt, joilla on parhaat käyttäjäarviot",
     "usedTitle": "Käytetyimmät tekoälyt",
     "usedDesc": "Tekoälyt, joilla on eniten verkkoliikennettä",
     "appsTitle": "Tekoälysovellukset",
@@ -1614,5 +1614,8 @@
     "saveAndPublish": "Tallenna ja julkaise",
     "emptyReview": "Mikään ei odota tarkistusta.",
     "empty": "Ei vielä GPT:itä."
+  },
+  "discordPage": {
+    "join": "Liity Discordiin"
   }
 }
