@@ -2018,5 +2018,43 @@
     "subtitle": "Mit Stern markierte Tools: {n}",
     "remove": "Entfernen",
     "empty": "Du hast noch keine KI-Tools gespeichert. Tippe auf der Seite eines Tools auf den Stern, um es hier zu behalten."
+  },
+  "adminOrders": {
+    "title": "Bestellungen",
+    "tabs": {
+      "orders": "Service-Bestellungen",
+      "plans": "Research-Pläne"
+    },
+    "all": "Alle",
+    "allServices": "Alle Services",
+    "planFilters": {
+      "live": "Aktiv",
+      "ended": "Beendet",
+      "all": "Alle (inkl. unvollständige)"
+    },
+    "searchEmail": "Kunden-E-Mail suchen…",
+    "customer": "Kunde",
+    "started": "Begonnen",
+    "period": "Aktueller Zeitraum",
+    "charges": "Zahlungen",
+    "cancelsAtEnd": "Endet zum Periodenende",
+    "noCharge": "Noch keine Zahlung erfasst",
+    "totalOrders": "Bezahlte Service-Bestellungen",
+    "totalPlans": "Research-Plan-Zahlungen",
+    "livePlans": "Aktive Research-Pläne",
+    "count": "{n} Zahlungen",
+    "empty": "Noch nichts vorhanden.",
+    "planStatuses": {
+      "active": "Aktiv",
+      "trialing": "Testphase",
+      "past_due": "Zahlung überfällig",
+      "canceled": "Gekündigt",
+      "unpaid": "Unbezahlt",
+      "incomplete": "Wartet auf Zahlung",
+      "incomplete_expired": "Abgebrochen",
+      "duplicate": "Doppelt (erstattet)",
+      "refused": "Abgelehnt (erstattet)",
+      "paused": "Pausiert"
+    }
   }
 }

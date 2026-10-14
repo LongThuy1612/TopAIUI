@@ -2018,5 +2018,43 @@
     "subtitle": "Tools you starred: {n}",
     "remove": "Remove",
     "empty": "You haven’t saved any AI tools yet. Tap the star on a tool page to keep it here."
+  },
+  "adminOrders": {
+    "title": "Orders",
+    "tabs": {
+      "orders": "Service orders",
+      "plans": "Research Plans"
+    },
+    "all": "All",
+    "allServices": "All services",
+    "planFilters": {
+      "live": "Active",
+      "ended": "Ended",
+      "all": "All (incl. unfinished)"
+    },
+    "searchEmail": "Search customer email…",
+    "customer": "Customer",
+    "started": "Started",
+    "period": "Current period",
+    "charges": "Charges",
+    "cancelsAtEnd": "Cancels at period end",
+    "noCharge": "No charge recorded yet",
+    "totalOrders": "Service orders paid",
+    "totalPlans": "Research Plan charges",
+    "livePlans": "Active Research Plans",
+    "count": "{n} payments",
+    "empty": "Nothing here yet.",
+    "planStatuses": {
+      "active": "Active",
+      "trialing": "Trial",
+      "past_due": "Payment overdue",
+      "canceled": "Cancelled",
+      "unpaid": "Unpaid",
+      "incomplete": "Awaiting payment",
+      "incomplete_expired": "Abandoned",
+      "duplicate": "Duplicate (refunded)",
+      "refused": "Refused (refunded)",
+      "paused": "Paused"
+    }
   }
 }

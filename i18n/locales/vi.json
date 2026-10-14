@@ -2018,5 +2018,43 @@
     "subtitle": "Công cụ bạn đã gắn sao: {n}",
     "remove": "Bỏ lưu",
     "empty": "Bạn chưa lưu công cụ AI nào. Bấm vào ngôi sao trên trang công cụ để lưu lại tại đây."
+  },
+  "adminOrders": {
+    "title": "Đơn hàng",
+    "tabs": {
+      "orders": "Đơn dịch vụ",
+      "plans": "Gói Research"
+    },
+    "all": "Tất cả",
+    "allServices": "Mọi dịch vụ",
+    "planFilters": {
+      "live": "Đang hoạt động",
+      "ended": "Đã kết thúc",
+      "all": "Tất cả (gồm chưa hoàn tất)"
+    },
+    "searchEmail": "Tìm email khách hàng…",
+    "customer": "Khách hàng",
+    "started": "Bắt đầu",
+    "period": "Kỳ hiện tại",
+    "charges": "Các lần thanh toán",
+    "cancelsAtEnd": "Sẽ hủy khi hết kỳ",
+    "noCharge": "Chưa ghi nhận thanh toán",
+    "totalOrders": "Đơn dịch vụ đã thanh toán",
+    "totalPlans": "Thanh toán gói Research",
+    "livePlans": "Gói Research đang hoạt động",
+    "count": "{n} lần thanh toán",
+    "empty": "Chưa có dữ liệu.",
+    "planStatuses": {
+      "active": "Đang hoạt động",
+      "trialing": "Dùng thử",
+      "past_due": "Quá hạn thanh toán",
+      "canceled": "Đã hủy",
+      "unpaid": "Chưa thanh toán",
+      "incomplete": "Chờ thanh toán",
+      "incomplete_expired": "Bỏ dở",
+      "duplicate": "Trùng (đã hoàn tiền)",
+      "refused": "Từ chối (đã hoàn tiền)",
+      "paused": "Tạm dừng"
+    }
   }
 }

@@ -2018,5 +2018,43 @@
     "subtitle": "スターを付けたツール：{n}",
     "remove": "削除",
     "empty": "まだAIツールを保存していません。ツールページの星をタップするとここに保存されます。"
+  },
+  "adminOrders": {
+    "title": "注文",
+    "tabs": {
+      "orders": "サービス注文",
+      "plans": "Research プラン"
+    },
+    "all": "すべて",
+    "allServices": "すべてのサービス",
+    "planFilters": {
+      "live": "有効",
+      "ended": "終了",
+      "all": "すべて（未完了を含む）"
+    },
+    "searchEmail": "顧客のメールを検索…",
+    "customer": "顧客",
+    "started": "開始日",
+    "period": "現在の期間",
+    "charges": "支払い",
+    "cancelsAtEnd": "期間終了時に解約",
+    "noCharge": "支払いはまだ記録されていません",
+    "totalOrders": "支払い済みサービス注文",
+    "totalPlans": "Research プランの支払い",
+    "livePlans": "有効な Research プラン",
+    "count": "{n} 件の支払い",
+    "empty": "まだ何もありません。",
+    "planStatuses": {
+      "active": "有効",
+      "trialing": "トライアル",
+      "past_due": "支払い遅延",
+      "canceled": "解約済み",
+      "unpaid": "未払い",
+      "incomplete": "支払い待ち",
+      "incomplete_expired": "放棄",
+      "duplicate": "重複（返金済み）",
+      "refused": "拒否（返金済み）",
+      "paused": "一時停止"
+    }
   }
 }

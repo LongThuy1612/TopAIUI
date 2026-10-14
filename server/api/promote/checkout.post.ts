@@ -146,7 +146,7 @@ export default defineEventHandler(async (event) => {
     return { orderId: order.id, checkoutUrl: paypalOrder.approveUrl }
   }
 
-  if (!isStripeCheckoutEnabled()) throw bad('Please pay with PayPal.')
+  if (!isStripeCheckoutEnabled()) throw bad('Card payment is no longer available. Please reload the page and pay with PayPal.')
   const stripe = useStripe()
 
   const createSession = (customerId: string | null) => stripe.checkout.sessions.create({

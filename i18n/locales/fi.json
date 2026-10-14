@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "Liity Discordiin"
+  },
+  "adminOrders": {
+    "title": "Tilaukset",
+    "tabs": {
+      "orders": "Palvelutilaukset",
+      "plans": "Research-paketit"
+    },
+    "all": "Kaikki",
+    "allServices": "Kaikki palvelut",
+    "planFilters": {
+      "live": "Aktiiviset",
+      "ended": "Päättyneet",
+      "all": "Kaikki (myös keskeneräiset)"
+    },
+    "searchEmail": "Hae asiakkaan sähköpostia…",
+    "customer": "Asiakas",
+    "started": "Aloitettu",
+    "period": "Nykyinen jakso",
+    "charges": "Maksut",
+    "cancelsAtEnd": "Päättyy jakson lopussa",
+    "noCharge": "Maksua ei ole vielä kirjattu",
+    "totalOrders": "Maksetut palvelutilaukset",
+    "totalPlans": "Research-pakettien maksut",
+    "livePlans": "Aktiiviset Research-paketit",
+    "count": "{n} maksua",
+    "empty": "Ei vielä mitään.",
+    "planStatuses": {
+      "active": "Aktiivinen",
+      "trialing": "Kokeilu",
+      "past_due": "Maksu myöhässä",
+      "canceled": "Peruttu",
+      "unpaid": "Maksamatta",
+      "incomplete": "Odottaa maksua",
+      "incomplete_expired": "Keskeytetty",
+      "duplicate": "Kaksoiskappale (hyvitetty)",
+      "refused": "Hylätty (hyvitetty)",
+      "paused": "Tauolla"
+    }
   }
 }

@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "เข้าร่วม Discord"
+  },
+  "adminOrders": {
+    "title": "คำสั่งซื้อ",
+    "tabs": {
+      "orders": "คำสั่งซื้อบริการ",
+      "plans": "แพ็กเกจ Research"
+    },
+    "all": "ทั้งหมด",
+    "allServices": "ทุกบริการ",
+    "planFilters": {
+      "live": "ใช้งานอยู่",
+      "ended": "สิ้นสุดแล้ว",
+      "all": "ทั้งหมด (รวมที่ยังไม่เสร็จ)"
+    },
+    "searchEmail": "ค้นหาอีเมลลูกค้า…",
+    "customer": "ลูกค้า",
+    "started": "เริ่มเมื่อ",
+    "period": "รอบปัจจุบัน",
+    "charges": "การชำระเงิน",
+    "cancelsAtEnd": "ยกเลิกเมื่อสิ้นรอบ",
+    "noCharge": "ยังไม่มีการชำระเงินที่บันทึกไว้",
+    "totalOrders": "คำสั่งซื้อบริการที่ชำระแล้ว",
+    "totalPlans": "การชำระเงินแพ็กเกจ Research",
+    "livePlans": "แพ็กเกจ Research ที่ใช้งานอยู่",
+    "count": "ชำระเงิน {n} ครั้ง",
+    "empty": "ยังไม่มีข้อมูล",
+    "planStatuses": {
+      "active": "ใช้งานอยู่",
+      "trialing": "ทดลองใช้",
+      "past_due": "ค้างชำระ",
+      "canceled": "ยกเลิกแล้ว",
+      "unpaid": "ยังไม่ชำระ",
+      "incomplete": "รอชำระเงิน",
+      "incomplete_expired": "ถูกละทิ้ง",
+      "duplicate": "ซ้ำ (คืนเงินแล้ว)",
+      "refused": "ถูกปฏิเสธ (คืนเงินแล้ว)",
+      "paused": "หยุดชั่วคราว"
+    }
   }
 }

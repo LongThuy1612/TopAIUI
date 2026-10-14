@@ -2,6 +2,9 @@
 // box, Upgrade modal, Payment & Invoice, Insights, Social Listening).
 export default defineEventHandler(async (event) => {
   const userId = await requireActiveUser(event)
+  // A PayPal approval whose way back never reached us (PayPal's page hung, tab closed, no
+  // webhook) shows up on the next page load instead.
+  if (!await currentSubscription(userId)) await syncPendingPaypalSubscriptions(userId)
   const [sub, usage, access, activeQueries] = await Promise.all([
     currentSubscription(userId),
     currentUsage(userId),

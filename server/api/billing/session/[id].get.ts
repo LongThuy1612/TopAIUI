@@ -5,5 +5,7 @@ export default defineEventHandler(async (event) => {
   const userId = await requireActiveUser(event)
   const id = getRouterParam(event, 'id') ?? ''
   const sub = id.startsWith('I-') ? await syncPaypalReturn(userId, id) : await syncCheckoutSession(userId, id)
-  return { plan: sub?.plan ?? null }
+  // Only a plan that gives access: an approval not paid yet (or whose first payment failed)
+  // is still an 'incomplete' row with a plan on it.
+  return { plan: sub && ACCESS_STATUSES.includes(sub.status) ? sub.plan : null }
 })

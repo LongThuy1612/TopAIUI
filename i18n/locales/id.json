@@ -2018,5 +2018,43 @@
     "subtitle": "Alat yang Anda beri bintang: {n}",
     "remove": "Hapus",
     "empty": "Anda belum menyimpan alat AI apa pun. Ketuk bintang di halaman alat untuk menyimpannya di sini."
+  },
+  "adminOrders": {
+    "title": "Pesanan",
+    "tabs": {
+      "orders": "Pesanan layanan",
+      "plans": "Paket Research"
+    },
+    "all": "Semua",
+    "allServices": "Semua layanan",
+    "planFilters": {
+      "live": "Aktif",
+      "ended": "Berakhir",
+      "all": "Semua (termasuk belum selesai)"
+    },
+    "searchEmail": "Cari email pelanggan…",
+    "customer": "Pelanggan",
+    "started": "Mulai",
+    "period": "Periode saat ini",
+    "charges": "Pembayaran",
+    "cancelsAtEnd": "Berhenti di akhir periode",
+    "noCharge": "Belum ada pembayaran tercatat",
+    "totalOrders": "Pesanan layanan dibayar",
+    "totalPlans": "Pembayaran paket Research",
+    "livePlans": "Paket Research aktif",
+    "count": "{n} pembayaran",
+    "empty": "Belum ada data.",
+    "planStatuses": {
+      "active": "Aktif",
+      "trialing": "Uji coba",
+      "past_due": "Pembayaran terlambat",
+      "canceled": "Dibatalkan",
+      "unpaid": "Belum dibayar",
+      "incomplete": "Menunggu pembayaran",
+      "incomplete_expired": "Ditinggalkan",
+      "duplicate": "Duplikat (dikembalikan)",
+      "refused": "Ditolak (dikembalikan)",
+      "paused": "Dijeda"
+    }
   }
 }

@@ -62,13 +62,12 @@ function quotaMonth(now: Date, sub: { currentPeriodStart: Date; currentPeriodEnd
     const start = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1))
     return { start, end: addMonths(start, 1) }
   }
-  let start = sub.currentPeriodStart
-  for (let i = 1; i <= 12; i++) {
-    const next = addMonths(sub.currentPeriodStart, i)
-    if (next > now) break
-    start = next
-  }
-  const end = addMonths(start, 1)
+  // Each month boundary counts from the period start (Jul 31 → Aug 31, Sep 30, Oct 31…), not
+  // from the previous clamped boundary — Sep 30 + 1 month would end that month on Oct 30.
+  let n = 0
+  while (n < 12 && addMonths(sub.currentPeriodStart, n + 1) <= now) n++
+  const start = n ? addMonths(sub.currentPeriodStart, n) : sub.currentPeriodStart
+  const end = addMonths(sub.currentPeriodStart, n + 1)
   // Cut the month at the period end only while the period covers it. In the grace days
   // after a period (renewal webhook late) the month starts at that end — where the
   // renewed period will start too — and runs a full month.

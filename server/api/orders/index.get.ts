@@ -1,6 +1,8 @@
 // The logged-in user's promote orders plus their credit balances.
 export default defineEventHandler(async (event) => {
   const userId = await requireActiveUser(event)
+  // A PayPal plan whose payment the webhook never brought gets its invoice here.
+  await ensurePaypalInvoices(userId)
 
   const [user, ads, orders, invoices] = await Promise.all([
     prisma.user.findUnique({ where: { id: userId }, select: { postCredits: true } }),

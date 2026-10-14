@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "Word lid van Discord"
+  },
+  "adminOrders": {
+    "title": "Bestellingen",
+    "tabs": {
+      "orders": "Servicebestellingen",
+      "plans": "Research-plannen"
+    },
+    "all": "Alle",
+    "allServices": "Alle services",
+    "planFilters": {
+      "live": "Actief",
+      "ended": "Beëindigd",
+      "all": "Alle (incl. onvoltooid)"
+    },
+    "searchEmail": "Zoek e-mail van klant…",
+    "customer": "Klant",
+    "started": "Gestart",
+    "period": "Huidige periode",
+    "charges": "Betalingen",
+    "cancelsAtEnd": "Stopt aan einde periode",
+    "noCharge": "Nog geen betaling geregistreerd",
+    "totalOrders": "Betaalde servicebestellingen",
+    "totalPlans": "Betalingen Research-plannen",
+    "livePlans": "Actieve Research-plannen",
+    "count": "{n} betalingen",
+    "empty": "Nog niets.",
+    "planStatuses": {
+      "active": "Actief",
+      "trialing": "Proef",
+      "past_due": "Betaling achterstallig",
+      "canceled": "Opgezegd",
+      "unpaid": "Onbetaald",
+      "incomplete": "Wacht op betaling",
+      "incomplete_expired": "Afgebroken",
+      "duplicate": "Dubbel (terugbetaald)",
+      "refused": "Geweigerd (terugbetaald)",
+      "paused": "Gepauzeerd"
+    }
   }
 }

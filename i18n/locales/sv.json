@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "Gå med i Discord"
+  },
+  "adminOrders": {
+    "title": "Beställningar",
+    "tabs": {
+      "orders": "Tjänstebeställningar",
+      "plans": "Research-planer"
+    },
+    "all": "Alla",
+    "allServices": "Alla tjänster",
+    "planFilters": {
+      "live": "Aktiva",
+      "ended": "Avslutade",
+      "all": "Alla (inkl. ofullständiga)"
+    },
+    "searchEmail": "Sök kundens e-post…",
+    "customer": "Kund",
+    "started": "Startad",
+    "period": "Nuvarande period",
+    "charges": "Betalningar",
+    "cancelsAtEnd": "Avslutas vid periodens slut",
+    "noCharge": "Ingen betalning registrerad ännu",
+    "totalOrders": "Betalda tjänstebeställningar",
+    "totalPlans": "Betalningar för Research-planer",
+    "livePlans": "Aktiva Research-planer",
+    "count": "{n} betalningar",
+    "empty": "Inget här ännu.",
+    "planStatuses": {
+      "active": "Aktiv",
+      "trialing": "Provperiod",
+      "past_due": "Betalning försenad",
+      "canceled": "Avslutad",
+      "unpaid": "Obetald",
+      "incomplete": "Väntar på betalning",
+      "incomplete_expired": "Övergiven",
+      "duplicate": "Dubblett (återbetald)",
+      "refused": "Nekad (återbetald)",
+      "paused": "Pausad"
+    }
   }
 }

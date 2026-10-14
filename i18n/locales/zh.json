@@ -2018,5 +2018,43 @@
     "subtitle": "已加星标的工具：{n}",
     "remove": "移除",
     "empty": "你还没有收藏任何 AI 工具。在工具页面点击星标即可收藏到这里。"
+  },
+  "adminOrders": {
+    "title": "订单",
+    "tabs": {
+      "orders": "服务订单",
+      "plans": "Research 套餐"
+    },
+    "all": "全部",
+    "allServices": "所有服务",
+    "planFilters": {
+      "live": "生效中",
+      "ended": "已结束",
+      "all": "全部（含未完成）"
+    },
+    "searchEmail": "搜索客户邮箱…",
+    "customer": "客户",
+    "started": "开始时间",
+    "period": "当前周期",
+    "charges": "付款记录",
+    "cancelsAtEnd": "周期结束时取消",
+    "noCharge": "尚未记录付款",
+    "totalOrders": "已付款的服务订单",
+    "totalPlans": "Research 套餐付款",
+    "livePlans": "生效中的 Research 套餐",
+    "count": "{n} 笔付款",
+    "empty": "暂无数据。",
+    "planStatuses": {
+      "active": "生效中",
+      "trialing": "试用",
+      "past_due": "付款逾期",
+      "canceled": "已取消",
+      "unpaid": "未付款",
+      "incomplete": "等待付款",
+      "incomplete_expired": "已放弃",
+      "duplicate": "重复（已退款）",
+      "refused": "已拒绝（已退款）",
+      "paused": "已暂停"
+    }
   }
 }

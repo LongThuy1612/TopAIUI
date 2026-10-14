@@ -2018,5 +2018,43 @@
     "subtitle": "Outils marqués d’une étoile : {n}",
     "remove": "Retirer",
     "empty": "Vous n’avez encore enregistré aucun outil IA. Touchez l’étoile sur la page d’un outil pour le garder ici."
+  },
+  "adminOrders": {
+    "title": "Commandes",
+    "tabs": {
+      "orders": "Commandes de services",
+      "plans": "Plans Research"
+    },
+    "all": "Toutes",
+    "allServices": "Tous les services",
+    "planFilters": {
+      "live": "Actifs",
+      "ended": "Terminés",
+      "all": "Tous (y compris inachevés)"
+    },
+    "searchEmail": "Rechercher l’e-mail du client…",
+    "customer": "Client",
+    "started": "Début",
+    "period": "Période en cours",
+    "charges": "Paiements",
+    "cancelsAtEnd": "S’arrête en fin de période",
+    "noCharge": "Aucun paiement enregistré",
+    "totalOrders": "Commandes de services payées",
+    "totalPlans": "Paiements des plans Research",
+    "livePlans": "Plans Research actifs",
+    "count": "{n} paiements",
+    "empty": "Rien pour l’instant.",
+    "planStatuses": {
+      "active": "Actif",
+      "trialing": "Essai",
+      "past_due": "Paiement en retard",
+      "canceled": "Annulé",
+      "unpaid": "Impayé",
+      "incomplete": "En attente de paiement",
+      "incomplete_expired": "Abandonné",
+      "duplicate": "Doublon (remboursé)",
+      "refused": "Refusé (remboursé)",
+      "paused": "En pause"
+    }
   }
 }

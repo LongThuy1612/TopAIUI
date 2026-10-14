@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "انضم إلى Discord"
+  },
+  "adminOrders": {
+    "title": "الطلبات",
+    "tabs": {
+      "orders": "طلبات الخدمات",
+      "plans": "خطط Research"
+    },
+    "all": "الكل",
+    "allServices": "كل الخدمات",
+    "planFilters": {
+      "live": "نشطة",
+      "ended": "منتهية",
+      "all": "الكل (بما فيها غير المكتملة)"
+    },
+    "searchEmail": "ابحث عن بريد العميل…",
+    "customer": "العميل",
+    "started": "البداية",
+    "period": "الفترة الحالية",
+    "charges": "المدفوعات",
+    "cancelsAtEnd": "تُلغى في نهاية الفترة",
+    "noCharge": "لم تُسجل أي دفعة بعد",
+    "totalOrders": "طلبات خدمات مدفوعة",
+    "totalPlans": "مدفوعات خطط Research",
+    "livePlans": "خطط Research النشطة",
+    "count": "{n} دفعات",
+    "empty": "لا يوجد شيء بعد.",
+    "planStatuses": {
+      "active": "نشطة",
+      "trialing": "تجربة",
+      "past_due": "دفع متأخر",
+      "canceled": "ملغاة",
+      "unpaid": "غير مدفوعة",
+      "incomplete": "بانتظار الدفع",
+      "incomplete_expired": "متروكة",
+      "duplicate": "مكررة (مستردة)",
+      "refused": "مرفوضة (مستردة)",
+      "paused": "متوقفة مؤقتًا"
+    }
   }
 }

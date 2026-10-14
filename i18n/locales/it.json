@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "Unisciti a Discord"
+  },
+  "adminOrders": {
+    "title": "Ordini",
+    "tabs": {
+      "orders": "Ordini di servizi",
+      "plans": "Piani Research"
+    },
+    "all": "Tutti",
+    "allServices": "Tutti i servizi",
+    "planFilters": {
+      "live": "Attivi",
+      "ended": "Terminati",
+      "all": "Tutti (inclusi non completati)"
+    },
+    "searchEmail": "Cerca email cliente…",
+    "customer": "Cliente",
+    "started": "Inizio",
+    "period": "Periodo attuale",
+    "charges": "Pagamenti",
+    "cancelsAtEnd": "Si annulla a fine periodo",
+    "noCharge": "Nessun pagamento registrato",
+    "totalOrders": "Ordini di servizi pagati",
+    "totalPlans": "Pagamenti piani Research",
+    "livePlans": "Piani Research attivi",
+    "count": "{n} pagamenti",
+    "empty": "Ancora niente.",
+    "planStatuses": {
+      "active": "Attivo",
+      "trialing": "Prova",
+      "past_due": "Pagamento scaduto",
+      "canceled": "Annullato",
+      "unpaid": "Non pagato",
+      "incomplete": "In attesa di pagamento",
+      "incomplete_expired": "Abbandonato",
+      "duplicate": "Duplicato (rimborsato)",
+      "refused": "Rifiutato (rimborsato)",
+      "paused": "In pausa"
+    }
   }
 }

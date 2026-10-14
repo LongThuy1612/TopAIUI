@@ -2018,5 +2018,43 @@
     "subtitle": "Herramientas marcadas con estrella: {n}",
     "remove": "Quitar",
     "empty": "Aún no has guardado ninguna herramienta de IA. Toca la estrella en la página de una herramienta para guardarla aquí."
+  },
+  "adminOrders": {
+    "title": "Pedidos",
+    "tabs": {
+      "orders": "Pedidos de servicios",
+      "plans": "Planes Research"
+    },
+    "all": "Todos",
+    "allServices": "Todos los servicios",
+    "planFilters": {
+      "live": "Activos",
+      "ended": "Finalizados",
+      "all": "Todos (incl. sin terminar)"
+    },
+    "searchEmail": "Buscar email del cliente…",
+    "customer": "Cliente",
+    "started": "Inicio",
+    "period": "Periodo actual",
+    "charges": "Cobros",
+    "cancelsAtEnd": "Se cancela al final del periodo",
+    "noCharge": "Aún no hay cobros registrados",
+    "totalOrders": "Pedidos de servicios pagados",
+    "totalPlans": "Cobros de planes Research",
+    "livePlans": "Planes Research activos",
+    "count": "{n} pagos",
+    "empty": "Aún no hay nada.",
+    "planStatuses": {
+      "active": "Activo",
+      "trialing": "Prueba",
+      "past_due": "Pago vencido",
+      "canceled": "Cancelado",
+      "unpaid": "Impago",
+      "incomplete": "Esperando pago",
+      "incomplete_expired": "Abandonado",
+      "duplicate": "Duplicado (reembolsado)",
+      "refused": "Rechazado (reembolsado)",
+      "paused": "En pausa"
+    }
   }
 }

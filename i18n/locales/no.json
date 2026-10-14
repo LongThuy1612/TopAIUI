@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "Bli med på Discord"
+  },
+  "adminOrders": {
+    "title": "Bestillinger",
+    "tabs": {
+      "orders": "Tjenestebestillinger",
+      "plans": "Research-planer"
+    },
+    "all": "Alle",
+    "allServices": "Alle tjenester",
+    "planFilters": {
+      "live": "Aktive",
+      "ended": "Avsluttede",
+      "all": "Alle (inkl. uferdige)"
+    },
+    "searchEmail": "Søk etter kundens e-post…",
+    "customer": "Kunde",
+    "started": "Startet",
+    "period": "Nåværende periode",
+    "charges": "Betalinger",
+    "cancelsAtEnd": "Avsluttes ved periodens slutt",
+    "noCharge": "Ingen betaling registrert ennå",
+    "totalOrders": "Betalte tjenestebestillinger",
+    "totalPlans": "Betalinger for Research-planer",
+    "livePlans": "Aktive Research-planer",
+    "count": "{n} betalinger",
+    "empty": "Ingenting her ennå.",
+    "planStatuses": {
+      "active": "Aktiv",
+      "trialing": "Prøveperiode",
+      "past_due": "Betaling forfalt",
+      "canceled": "Avsluttet",
+      "unpaid": "Ubetalt",
+      "incomplete": "Venter på betaling",
+      "incomplete_expired": "Forlatt",
+      "duplicate": "Duplikat (refundert)",
+      "refused": "Avvist (refundert)",
+      "paused": "Satt på pause"
+    }
   }
 }

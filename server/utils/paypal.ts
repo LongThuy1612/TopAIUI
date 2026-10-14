@@ -24,7 +24,9 @@ type PaypalOrder = {
 
 let token: { value: string; expiresAt: number } | null = null
 
-const apiBase = () => useRuntimeConfig().paypalMode === 'live' ? 'https://api-m.paypal.com' : 'https://api-m.sandbox.paypal.com'
+// PAYPAL_API_BASE: `nuxt dev` only — a local stand-in for PayPal when testing the flows.
+const apiBase = () => (import.meta.dev && process.env.PAYPAL_API_BASE)
+  || (useRuntimeConfig().paypalMode === 'live' ? 'https://api-m.paypal.com' : 'https://api-m.sandbox.paypal.com')
 
 export function isPaypalConfigured() {
   const config = useRuntimeConfig()
@@ -63,6 +65,8 @@ export async function paypalApi<T>(path: string, opts: { method?: 'GET' | 'POST'
   const method = opts.method ?? 'GET'
   const call = async () => $fetch<T>(`${apiBase()}${path}`, {
     method,
+    // A hanging PayPal must not hang our pages (the plan is synced on page loads).
+    timeout: 15_000,
     // A string goes as is (the webhook check must send the event exactly as received).
     body: method === 'POST' ? (opts.body ?? {}) as Record<string, unknown> | string : undefined,
     headers: {
@@ -101,6 +105,7 @@ export async function createPaypalOrder(o: { amountCents: number; label: string;
       payment_source: {
         paypal: {
           experience_context: {
+            brand_name: 'TopAICollection', // shown on PayPal's page instead of the account's name
             return_url: o.returnUrl,
             cancel_url: o.cancelUrl,
             user_action: 'PAY_NOW',

@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "Присоединиться к Discord"
+  },
+  "adminOrders": {
+    "title": "Заказы",
+    "tabs": {
+      "orders": "Заказы услуг",
+      "plans": "Планы Research"
+    },
+    "all": "Все",
+    "allServices": "Все услуги",
+    "planFilters": {
+      "live": "Активные",
+      "ended": "Завершённые",
+      "all": "Все (вкл. незавершённые)"
+    },
+    "searchEmail": "Поиск по email клиента…",
+    "customer": "Клиент",
+    "started": "Начало",
+    "period": "Текущий период",
+    "charges": "Платежи",
+    "cancelsAtEnd": "Отменится в конце периода",
+    "noCharge": "Платежей пока нет",
+    "totalOrders": "Оплаченные заказы услуг",
+    "totalPlans": "Платежи по планам Research",
+    "livePlans": "Активные планы Research",
+    "count": "Платежей: {n}",
+    "empty": "Пока ничего нет.",
+    "planStatuses": {
+      "active": "Активен",
+      "trialing": "Пробный",
+      "past_due": "Просрочен платёж",
+      "canceled": "Отменён",
+      "unpaid": "Не оплачен",
+      "incomplete": "Ожидает оплаты",
+      "incomplete_expired": "Брошен",
+      "duplicate": "Дубликат (возвращено)",
+      "refused": "Отклонён (возвращено)",
+      "paused": "Приостановлен"
+    }
   }
 }

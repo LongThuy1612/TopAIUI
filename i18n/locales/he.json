@@ -1624,5 +1624,43 @@
   },
   "discordPage": {
     "join": "הצטרפו ל-Discord"
+  },
+  "adminOrders": {
+    "title": "הזמנות",
+    "tabs": {
+      "orders": "הזמנות שירות",
+      "plans": "תוכניות Research"
+    },
+    "all": "הכול",
+    "allServices": "כל השירותים",
+    "planFilters": {
+      "live": "פעילות",
+      "ended": "הסתיימו",
+      "all": "הכול (כולל לא הושלמו)"
+    },
+    "searchEmail": "חיפוש אימייל של לקוח…",
+    "customer": "לקוח",
+    "started": "התחלה",
+    "period": "תקופה נוכחית",
+    "charges": "תשלומים",
+    "cancelsAtEnd": "יבוטל בסוף התקופה",
+    "noCharge": "עדיין לא נרשם תשלום",
+    "totalOrders": "הזמנות שירות ששולמו",
+    "totalPlans": "תשלומי תוכניות Research",
+    "livePlans": "תוכניות Research פעילות",
+    "count": "{n} תשלומים",
+    "empty": "אין כאן עדיין כלום.",
+    "planStatuses": {
+      "active": "פעילה",
+      "trialing": "ניסיון",
+      "past_due": "תשלום באיחור",
+      "canceled": "בוטלה",
+      "unpaid": "לא שולמה",
+      "incomplete": "ממתינה לתשלום",
+      "incomplete_expired": "ננטשה",
+      "duplicate": "כפולה (הוחזר)",
+      "refused": "נדחתה (הוחזר)",
+      "paused": "מושהית"
+    }
   }
 }

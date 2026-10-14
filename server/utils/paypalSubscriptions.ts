@@ -180,11 +180,16 @@ async function createPaypalSubscription(
 }
 
 // The user's PayPal subscriptions approved but not mirrored yet (webhook on its way) —
-// checked before opening a new one, so a second click can't pay twice. Returns the one
-// now giving access, if any.
+// checked before opening a new one, so a second click can't pay twice, and when the plan
+// is loaded (GET /api/me/plan). Returns the one now giving access, if any. Each is asked
+// at most every 15 s: the plan is loaded on every dashboard page.
 export async function syncPendingPaypalSubscriptions(userId: string) {
   const pending = await prisma.subscription.findMany({
-    where: { userId, provider: 'paypal', status: 'incomplete', createdAt: { gt: new Date(Date.now() - 3 * 60 * 60 * 1000) } },
+    where: {
+      userId, provider: 'paypal', status: 'incomplete',
+      createdAt: { gt: new Date(Date.now() - 3 * 60 * 60 * 1000) },
+      updatedAt: { lt: new Date(Date.now() - 15_000) }
+    },
     orderBy: { createdAt: 'desc' },
     take: 5
   })
@@ -193,7 +198,10 @@ export async function syncPendingPaypalSubscriptions(userId: string) {
       console.error('[paypal] sync of a pending subscription failed', row.stripeSubscriptionId, err)
       return null
     })
-    if (synced && ACCESS_STATUSES.includes(synced.status)) return synced
+    if (synced && ACCESS_STATUSES.includes(synced.status)) {
+      await recordQuietly(synced)
+      return synced
+    }
   }
   return null
 }
@@ -521,6 +529,57 @@ export async function recordPaypalPayment(sale: PaypalSale) {
   return invoice
 }
 
+// The subscription's completed payments, read from PayPal and recorded like the webhook's
+// PAYMENT.SALE.COMPLETED would (same sale id, so never twice). Without it a plan activated
+// on the way back from PayPal has no invoice until the webhook arrives — or ever, when the
+// webhook isn't set up. Called after a plan goes live and nightly for live plans.
+type PaypalTransaction = { id: string; status: string; time?: string; amount_with_breakdown?: { gross_amount?: Money } }
+export async function recordPaypalTransactions(sub: Subscription, sinceDays = 45) {
+  if (sub.provider !== 'paypal' || !ACCESS_STATUSES.includes(sub.status)) return 0
+  const end = new Date(Date.now() + 24 * 60 * 60 * 1000)
+  const start = new Date(Math.max(sub.createdAt.getTime() - 24 * 60 * 60 * 1000, Date.now() - sinceDays * 24 * 60 * 60 * 1000))
+  const res = await paypalApi<{ transactions?: PaypalTransaction[] }>(
+    subPath(sub.stripeSubscriptionId, `/transactions?start_time=${start.toISOString()}&end_time=${end.toISOString()}`)
+  )
+  const done = (res.transactions ?? []).filter(t => t.status === 'COMPLETED' && t.id)
+  if (!done.length) return 0
+  const known = new Set((await prisma.subscriptionInvoice.findMany({
+    where: { stripeInvoiceId: { in: done.map(t => t.id) } }, select: { stripeInvoiceId: true }
+  })).map(i => i.stripeInvoiceId))
+  let recorded = 0
+  for (const t of done.filter(t => !known.has(t.id))) {
+    const gross = t.amount_with_breakdown?.gross_amount
+    await recordPaypalPayment({
+      id: t.id,
+      billing_agreement_id: sub.stripeSubscriptionId,
+      amount: { total: gross?.value ?? '0', currency: gross?.currency_code ?? 'USD' },
+      create_time: t.time
+    })
+    recorded++
+  }
+  return recorded
+}
+const recordQuietly = (sub: Subscription | null) => {
+  if (sub && ACCESS_STATUSES.includes(sub.status)) {
+    return recordPaypalTransactions(sub).catch(err => console.error('[paypal] reading payments failed', sub.stripeSubscriptionId, err))
+  }
+}
+
+// Invoice history (GET /api/orders): a live PayPal plan with no payment recorded yet is
+// read from PayPal — at most once a minute per plan (the page may be reloaded).
+const lastInvoiceCheck = new Map<string, number>()
+export async function ensurePaypalInvoices(userId: string) {
+  if (!isPaypalConfigured()) return
+  const subs = await prisma.subscription.findMany({
+    where: { userId, provider: 'paypal', status: { in: ACCESS_STATUSES }, invoices: { none: {} } }
+  })
+  for (const sub of subs) {
+    if (Date.now() - (lastInvoiceCheck.get(sub.id) ?? 0) < 60_000) continue
+    lastInvoiceCheck.set(sub.id, Date.now())
+    await recordQuietly(sub)
+  }
+}
+
 // Back from PayPal (?subscription_id=I-…): mirror it now, for the user it belongs to.
 // The first payment can land a few seconds after the approval: wait a little for it, so
 // the dashboard shows the new plan instead of Free.
@@ -532,6 +591,7 @@ export async function syncPaypalReturn(userId: string, id: string): Promise<Subs
     await new Promise(r => setTimeout(r, 2000))
     sub = await syncPaypalSubscription(id)
   }
+  await recordQuietly(sub)
   return sub
 }
 
@@ -586,10 +646,20 @@ export async function cleanUpPaypalSubscriptions() {
       console.error('[paypal] cleanup: given-up approval failed', s.stripeSubscriptionId, err)
     }
   }
+  // Payments the webhook never brought (not set up, or down): read from PayPal.
+  const live = await prisma.subscription.findMany({ where: { provider: 'paypal', status: { in: ACCESS_STATUSES } } })
+  let paymentsRecorded = 0
+  for (const s of live) {
+    try {
+      paymentsRecorded += await recordPaypalTransactions(s)
+    } catch (err) {
+      console.error('[paypal] cleanup: reading payments failed', s.stripeSubscriptionId, err)
+    }
+  }
   // Refunds PayPal refused earlier: once more, with the same key.
   const owed = await prisma.subscriptionInvoice.findMany({ where: { refundDue: { gt: 0 }, refundKey: { not: null } } })
   for (const inv of owed) {
     await refundInvoice(prisma, inv, inv.refundDue, inv.refundKey!, inv.refundedAmount === 0 && inv.refundDue >= inv.amount)
   }
-  return { cancelled: ended.length + unpaid.length, expired, expiredOrders: await expireAbandonedPaypalOrders(), refundsRetried: owed.length }
+  return { cancelled: ended.length + unpaid.length, expired, paymentsRecorded, expiredOrders: await expireAbandonedPaypalOrders(), refundsRetried: owed.length }
 }
