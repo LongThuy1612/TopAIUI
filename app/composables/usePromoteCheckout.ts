@@ -14,11 +14,12 @@ export type PromoteOrder =
 export type PaymentProvider = 'stripe' | 'paypal'
 
 // Cổng nào được hiện: PayPal là chính (khi có cấu hình); Stripe chỉ hiện khi bật
-// NUXT_PUBLIC_STRIPE_ENABLED, hoặc khi chưa có PayPal (dev) — khớp isStripeCheckoutEnabled ở server.
+// NUXT_PUBLIC_STRIPE_ENABLED, hoặc khi `nuxt dev` chưa có PayPal — khớp isStripeCheckoutEnabled
+// ở server. Production thiếu key PayPal thì không hiện Stripe thay thế.
 export function usePaymentProviders() {
   const config = useRuntimeConfig().public
   const paypal = !!config.paypalClientId
-  return { paypal, stripe: !!config.stripeEnabled || !paypal }
+  return { paypal, stripe: !!config.stripeEnabled || (import.meta.dev && !paypal) }
 }
 
 export function usePromoteCheckout() {

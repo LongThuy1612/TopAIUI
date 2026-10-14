@@ -32,10 +32,11 @@ export function isPaypalConfigured() {
 }
 
 // Whether new payments (promote orders, Research Plans) may go through Stripe: PayPal is
-// the main checkout; Stripe only when switched on (NUXT_PUBLIC_STRIPE_ENABLED), or when
-// PayPal has no keys (local dev).
+// the main checkout; Stripe only when switched on (NUXT_PUBLIC_STRIPE_ENABLED), or in
+// `nuxt dev` without PayPal keys. A production server missing its PayPal keys never falls
+// back to Stripe: paying fails instead of going through a checkout that was switched off.
 export function isStripeCheckoutEnabled() {
-  return !!useRuntimeConfig().public.stripeEnabled || !isPaypalConfigured()
+  return !!useRuntimeConfig().public.stripeEnabled || (import.meta.dev && !isPaypalConfigured())
 }
 
 async function accessToken() {

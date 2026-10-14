@@ -172,7 +172,7 @@ export default defineNuxtConfig({
       googleClientId: process.env.GOOGLE_CLIENT_ID || '',
       paypalClientId: process.env.PAYPAL_CLIENT_ID || '',
       // Stripe checkout for promote orders is switched off (PayPal is the main payment);
-      // its code stays for later. Without PayPal keys (local dev) the Stripe button shows
+      // its code stays for later. In `nuxt dev` without PayPal keys the Stripe button shows
       // anyway, so FAKE_PAYMENT keeps working. Override at runtime with NUXT_PUBLIC_STRIPE_ENABLED.
       stripeEnabled: process.env.STRIPE_ENABLED === 'true'
     }
