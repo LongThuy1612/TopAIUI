@@ -694,7 +694,8 @@
       "draft": "Luonnos"
     },
     "refundedAmount": "{amount} hyvitetty",
-    "refundPending": "Hyvitys {amount} käsittelyssä"
+    "refundPending": "Hyvitys {amount} käsittelyssä",
+    "adminOrdersHint": "Tämä on oman tilisi historia. Asiakkaiden maksut löytyvät kohdasta"
   },
   "feedbackPage": {
     "title": "Käyttäjäpalaute",
@@ -1635,8 +1636,9 @@
     "allServices": "Kaikki palvelut",
     "planFilters": {
       "live": "Aktiiviset",
+      "pending": "Odottaa maksua",
       "ended": "Päättyneet",
-      "all": "Kaikki (myös keskeneräiset)"
+      "all": "Kaikki"
     },
     "searchEmail": "Hae asiakkaan sähköpostia…",
     "customer": "Asiakas",

@@ -711,7 +711,8 @@
       "draft": "Draf"
     },
     "refundedAmount": "{amount} dikembalikan",
-    "refundPending": "Pengembalian {amount} sedang diproses"
+    "refundPending": "Pengembalian {amount} sedang diproses",
+    "adminOrdersHint": "Ini riwayat akun Anda sendiri. Pembayaran pelanggan ada di"
   },
   "feedbackPage": {
     "title": "Umpan Balik Pengguna",
@@ -2029,8 +2030,9 @@
     "allServices": "Semua layanan",
     "planFilters": {
       "live": "Aktif",
+      "pending": "Menunggu pembayaran",
       "ended": "Berakhir",
-      "all": "Semua (termasuk belum selesai)"
+      "all": "Semua"
     },
     "searchEmail": "Cari email pelanggan…",
     "customer": "Pelanggan",

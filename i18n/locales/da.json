@@ -694,7 +694,8 @@
       "draft": "Kladde"
     },
     "refundedAmount": "{amount} refunderet",
-    "refundPending": "Refusion af {amount} i gang"
+    "refundPending": "Refusion af {amount} i gang",
+    "adminOrdersHint": "Dette er din egen kontos historik. Kundernes betalinger findes under"
   },
   "feedbackPage": {
     "title": "Brugerfeedback",
@@ -1635,8 +1636,9 @@
     "allServices": "Alle services",
     "planFilters": {
       "live": "Aktive",
+      "pending": "Afventer betaling",
       "ended": "Afsluttede",
-      "all": "Alle (inkl. ufærdige)"
+      "all": "Alle"
     },
     "searchEmail": "Søg kundens e-mail…",
     "customer": "Kunde",

@@ -711,7 +711,8 @@
       "draft": "초안"
     },
     "refundedAmount": "{amount} 환불됨",
-    "refundPending": "{amount} 환불 처리 중"
+    "refundPending": "{amount} 환불 처리 중",
+    "adminOrdersHint": "내 계정의 내역입니다. 고객 결제는 여기에서 확인하세요:"
   },
   "feedbackPage": {
     "title": "사용자 피드백",
@@ -2029,8 +2030,9 @@
     "allServices": "모든 서비스",
     "planFilters": {
       "live": "활성",
+      "pending": "결제 대기",
       "ended": "종료",
-      "all": "전체(미완료 포함)"
+      "all": "전체"
     },
     "searchEmail": "고객 이메일 검색…",
     "customer": "고객",

@@ -694,7 +694,8 @@
       "draft": "Черновик"
     },
     "refundedAmount": "Возвращено {amount}",
-    "refundPending": "Возврат {amount} в обработке"
+    "refundPending": "Возврат {amount} в обработке",
+    "adminOrdersHint": "Это история вашего аккаунта. Платежи клиентов — в разделе"
   },
   "feedbackPage": {
     "title": "Обратная связь",
@@ -1635,8 +1636,9 @@
     "allServices": "Все услуги",
     "planFilters": {
       "live": "Активные",
+      "pending": "Ожидают оплаты",
       "ended": "Завершённые",
-      "all": "Все (вкл. незавершённые)"
+      "all": "Все"
     },
     "searchEmail": "Поиск по email клиента…",
     "customer": "Клиент",

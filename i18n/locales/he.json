@@ -694,7 +694,8 @@
       "draft": "טיוטה"
     },
     "refundedAmount": "הוחזרו {amount}",
-    "refundPending": "החזר של {amount} בתהליך"
+    "refundPending": "החזר של {amount} בתהליך",
+    "adminOrdersHint": "זו ההיסטוריה של החשבון שלך. תשלומי הלקוחות נמצאים תחת"
   },
   "feedbackPage": {
     "title": "משוב משתמשים",
@@ -1635,8 +1636,9 @@
     "allServices": "כל השירותים",
     "planFilters": {
       "live": "פעילות",
+      "pending": "ממתין לתשלום",
       "ended": "הסתיימו",
-      "all": "הכול (כולל לא הושלמו)"
+      "all": "הכול"
     },
     "searchEmail": "חיפוש אימייל של לקוח…",
     "customer": "לקוח",

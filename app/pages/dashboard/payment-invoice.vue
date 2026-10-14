@@ -83,6 +83,7 @@ const orders = computed(() => ordersRes.value?.orders ?? [])
 
 // Research Plan: current plan, this month's quota, and its Stripe charges.
 const { data: myPlan, busy: planBusy, error: planError, setCancel, openBillingPortal } = useResearchPlan()
+const showPlan = computed(() => !isAdmin.value || !!myPlan.value?.status)
 const isPaid = computed(() => !!myPlan.value && myPlan.value.plan !== 'FREE')
 const planName = computed(() => (isPaid.value ? t(`admin.upgradeModal.plan.${myPlan.value!.plan.toLowerCase()}`) : t('admin.freePlan')))
 const quotaPct = (q: { used: number; limit: number } | undefined) => (q?.limit ? Math.min(100, Math.round((q.used / q.limit) * 100)) : 0)
@@ -151,6 +152,9 @@ useSeoMeta({
 
 <template>
   <div>
+    <!-- Admins get every plan feature without a subscription: no plan box for them (unless
+         one did subscribe). -->
+    <template v-if="showPlan">
     <h1 class="text-xl font-extrabold text-ink-900">{{ t('paymentInvoicePage.title') }}</h1>
 
     <div class="mt-4 grid grid-cols-1 gap-6 rounded-xl border border-ink-100 p-6 lg:grid-cols-2 lg:divide-x lg:divide-ink-100">
@@ -231,7 +235,7 @@ useSeoMeta({
           <button
             v-else
             type="button"
-            :disabled="!isPaid || !!planBusy"
+            :disabled="!isPaid || !myPlan?.status || !!planBusy"
             class="rounded-lg bg-ink-100 px-4 py-2.5 text-sm font-bold text-ink-700 hover:bg-ink-200 disabled:cursor-not-allowed disabled:text-ink-400 disabled:hover:bg-ink-100"
             @click="cancelPlan"
           >
@@ -242,7 +246,13 @@ useSeoMeta({
       </div>
     </div>
 
-    <h2 class="mt-8 text-lg font-extrabold text-ink-900">{{ t('paymentInvoicePage.invoiceHistory') }}</h2>
+    </template>
+
+    <h2 :class="['text-lg font-extrabold text-ink-900', showPlan && 'mt-8']">{{ t('paymentInvoicePage.invoiceHistory') }}</h2>
+    <p v-if="isAdmin" class="mt-1 text-sm text-ink-500">
+      {{ t('paymentInvoicePage.adminOrdersHint') }}
+      <NuxtLinkLocale to="/admin/orders" class="font-semibold text-brand-600 hover:underline">{{ t('adminOrders.title') }} →</NuxtLinkLocale>
+    </p>
 
     <div class="mt-4 overflow-x-auto rounded-xl border border-ink-100">
       <table class="w-full min-w-[680px] text-left text-sm">

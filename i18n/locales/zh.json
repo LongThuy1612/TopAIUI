@@ -711,7 +711,8 @@
       "draft": "草稿"
     },
     "refundedAmount": "已退款 {amount}",
-    "refundPending": "{amount} 退款处理中"
+    "refundPending": "{amount} 退款处理中",
+    "adminOrdersHint": "这是你自己账户的记录。客户的付款请查看"
   },
   "feedbackPage": {
     "title": "用户反馈",
@@ -2029,8 +2030,9 @@
     "allServices": "所有服务",
     "planFilters": {
       "live": "生效中",
+      "pending": "等待付款",
       "ended": "已结束",
-      "all": "全部（含未完成）"
+      "all": "全部"
     },
     "searchEmail": "搜索客户邮箱…",
     "customer": "客户",

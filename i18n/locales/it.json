@@ -694,7 +694,8 @@
       "draft": "Bozza"
     },
     "refundedAmount": "{amount} rimborsati",
-    "refundPending": "Rimborso di {amount} in corso"
+    "refundPending": "Rimborso di {amount} in corso",
+    "adminOrdersHint": "Questa è la cronologia del tuo account. I pagamenti dei clienti sono in"
   },
   "feedbackPage": {
     "title": "Feedback utenti",
@@ -1635,8 +1636,9 @@
     "allServices": "Tutti i servizi",
     "planFilters": {
       "live": "Attivi",
+      "pending": "In attesa di pagamento",
       "ended": "Terminati",
-      "all": "Tutti (inclusi non completati)"
+      "all": "Tutti"
     },
     "searchEmail": "Cerca email cliente…",
     "customer": "Cliente",

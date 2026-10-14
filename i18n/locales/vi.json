@@ -849,7 +849,8 @@
       "draft": "Nháp"
     },
     "refundedAmount": "Đã hoàn {amount}",
-    "refundPending": "Đang hoàn {amount}"
+    "refundPending": "Đang hoàn {amount}",
+    "adminOrdersHint": "Đây là lịch sử của chính tài khoản bạn. Thanh toán của khách hàng xem tại"
   },
   "feedbackPage": {
     "title": "Phản hồi người dùng",
@@ -2029,8 +2030,9 @@
     "allServices": "Mọi dịch vụ",
     "planFilters": {
       "live": "Đang hoạt động",
+      "pending": "Chờ thanh toán",
       "ended": "Đã kết thúc",
-      "all": "Tất cả (gồm chưa hoàn tất)"
+      "all": "Tất cả"
     },
     "searchEmail": "Tìm email khách hàng…",
     "customer": "Khách hàng",

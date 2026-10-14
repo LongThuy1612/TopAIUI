@@ -711,7 +711,8 @@
       "draft": "下書き"
     },
     "refundedAmount": "{amount} 返金済み",
-    "refundPending": "{amount} の返金を処理中"
+    "refundPending": "{amount} の返金を処理中",
+    "adminOrdersHint": "これはご自身のアカウントの履歴です。顧客の支払いはこちら："
   },
   "feedbackPage": {
     "title": "ユーザーフィードバック",
@@ -2029,8 +2030,9 @@
     "allServices": "すべてのサービス",
     "planFilters": {
       "live": "有効",
+      "pending": "支払い待ち",
       "ended": "終了",
-      "all": "すべて（未完了を含む）"
+      "all": "すべて"
     },
     "searchEmail": "顧客のメールを検索…",
     "customer": "顧客",

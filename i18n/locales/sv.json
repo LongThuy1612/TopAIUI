@@ -694,7 +694,8 @@
       "draft": "Utkast"
     },
     "refundedAmount": "{amount} återbetalt",
-    "refundPending": "Återbetalning av {amount} pågår"
+    "refundPending": "Återbetalning av {amount} pågår",
+    "adminOrdersHint": "Det här är ditt eget kontos historik. Kundernas betalningar finns under"
   },
   "feedbackPage": {
     "title": "Användarfeedback",
@@ -1635,8 +1636,9 @@
     "allServices": "Alla tjänster",
     "planFilters": {
       "live": "Aktiva",
+      "pending": "Väntar på betalning",
       "ended": "Avslutade",
-      "all": "Alla (inkl. ofullständiga)"
+      "all": "Alla"
     },
     "searchEmail": "Sök kundens e-post…",
     "customer": "Kund",

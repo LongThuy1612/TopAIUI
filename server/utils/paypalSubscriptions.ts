@@ -343,10 +343,22 @@ async function refundInvoice(db: Prisma.TransactionClient, invoice: Subscription
 async function endReplaced(tx: Prisma.TransactionClient, old: Subscription) {
   await cancelRemote(old.stripeSubscriptionId, 'Replaced by a new plan')
   const now = new Date()
-  const last = await tx.subscriptionInvoice.findFirst({
+  const lastPaid = () => tx.subscriptionInvoice.findFirst({
     where: { subscriptionId: old.id, status: 'paid' },
     orderBy: { paidAt: 'desc' }
   })
+  let last = await lastPaid()
+  // The running period's payment not recorded yet (webhook late or missing): read it from
+  // PayPal now, or the unused part below could not be refunded. Written here, in this
+  // transaction — recordPaypalPayment would wait on the lock this one holds.
+  if (!last?.paidAt || last.paidAt.getTime() < old.currentPeriodStart.getTime() - 2 * 24 * 60 * 60 * 1000) {
+    const missing = await paidTransactions(old, new Date(old.currentPeriodStart.getTime() - 2 * 24 * 60 * 60 * 1000))
+      .catch((err) => { console.error('[paypal] reading payments of a replaced plan failed', old.stripeSubscriptionId, err); return [] })
+    for (const t of missing) {
+      await tx.subscriptionInvoice.upsert({ where: { stripeInvoiceId: t.id }, create: invoiceOfTransaction(old, t), update: {} })
+    }
+    if (missing.length) last = await lastPaid()
+  }
   const span = old.currentPeriodEnd.getTime() - old.currentPeriodStart.getTime()
   const left = old.currentPeriodEnd.getTime() - now.getTime()
   // Only a payment for the running period is prorated back: past_due means this period's
@@ -534,14 +546,32 @@ export async function recordPaypalPayment(sale: PaypalSale) {
 // on the way back from PayPal has no invoice until the webhook arrives — or ever, when the
 // webhook isn't set up. Called after a plan goes live and nightly for live plans.
 type PaypalTransaction = { id: string; status: string; time?: string; amount_with_breakdown?: { gross_amount?: Money } }
-export async function recordPaypalTransactions(sub: Subscription, sinceDays = 45) {
-  if (sub.provider !== 'paypal' || !ACCESS_STATUSES.includes(sub.status)) return 0
+// Completed payments of a PayPal subscription made after `since` (PayPal's list).
+async function paidTransactions(sub: Subscription, since: Date) {
+  const start = new Date(Math.max(sub.createdAt.getTime(), since.getTime()) - 24 * 60 * 60 * 1000)
   const end = new Date(Date.now() + 24 * 60 * 60 * 1000)
-  const start = new Date(Math.max(sub.createdAt.getTime() - 24 * 60 * 60 * 1000, Date.now() - sinceDays * 24 * 60 * 60 * 1000))
   const res = await paypalApi<{ transactions?: PaypalTransaction[] }>(
     subPath(sub.stripeSubscriptionId, `/transactions?start_time=${start.toISOString()}&end_time=${end.toISOString()}`)
   )
-  const done = (res.transactions ?? []).filter(t => t.status === 'COMPLETED' && t.id)
+  return (res.transactions ?? []).filter(t => t.status === 'COMPLETED' && t.id)
+}
+const invoiceOfTransaction = (sub: Subscription, t: PaypalTransaction): Prisma.SubscriptionInvoiceUncheckedCreateInput => ({
+  userId: sub.userId,
+  subscriptionId: sub.id,
+  stripeInvoiceId: t.id,
+  amount: cents(t.amount_with_breakdown?.gross_amount),
+  currency: (t.amount_with_breakdown?.gross_amount?.currency_code ?? 'usd').toLowerCase(),
+  status: 'paid',
+  plan: sub.plan,
+  interval: sub.interval,
+  periodStart: sub.currentPeriodStart,
+  periodEnd: sub.currentPeriodEnd,
+  paidAt: toDate(t.time) ?? new Date()
+})
+
+export async function recordPaypalTransactions(sub: Subscription, sinceDays = 45) {
+  if (sub.provider !== 'paypal' || !ACCESS_STATUSES.includes(sub.status)) return 0
+  const done = await paidTransactions(sub, new Date(Date.now() - sinceDays * 24 * 60 * 60 * 1000))
   if (!done.length) return 0
   const known = new Set((await prisma.subscriptionInvoice.findMany({
     where: { stripeInvoiceId: { in: done.map(t => t.id) } }, select: { stripeInvoiceId: true }

@@ -711,7 +711,8 @@
       "draft": "Rascunho"
     },
     "refundedAmount": "{amount} reembolsado",
-    "refundPending": "Reembolso de {amount} em andamento"
+    "refundPending": "Reembolso de {amount} em andamento",
+    "adminOrdersHint": "Este é o histórico da sua própria conta. Os pagamentos dos clientes ficam em"
   },
   "feedbackPage": {
     "title": "Feedback do usuário",
@@ -2029,8 +2030,9 @@
     "allServices": "Todos os serviços",
     "planFilters": {
       "live": "Ativos",
+      "pending": "Aguardando pagamento",
       "ended": "Encerrados",
-      "all": "Todos (incl. não concluídos)"
+      "all": "Todos"
     },
     "searchEmail": "Buscar e-mail do cliente…",
     "customer": "Cliente",

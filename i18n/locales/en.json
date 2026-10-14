@@ -711,7 +711,8 @@
       "draft": "Draft"
     },
     "refundedAmount": "{amount} refunded",
-    "refundPending": "Refund of {amount} in progress"
+    "refundPending": "Refund of {amount} in progress",
+    "adminOrdersHint": "This is your own account’s history. Customers’ payments are under"
   },
   "feedbackPage": {
     "title": "User Feedback",
@@ -2029,8 +2030,9 @@
     "allServices": "All services",
     "planFilters": {
       "live": "Active",
+      "pending": "Awaiting payment",
       "ended": "Ended",
-      "all": "All (incl. unfinished)"
+      "all": "All"
     },
     "searchEmail": "Search customer email…",
     "customer": "Customer",

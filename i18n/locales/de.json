@@ -711,7 +711,8 @@
       "draft": "Entwurf"
     },
     "refundedAmount": "{amount} erstattet",
-    "refundPending": "Erstattung von {amount} läuft"
+    "refundPending": "Erstattung von {amount} läuft",
+    "adminOrdersHint": "Dies ist der Verlauf deines eigenen Kontos. Zahlungen der Kunden findest du unter"
   },
   "feedbackPage": {
     "title": "Nutzerfeedback",
@@ -2029,8 +2030,9 @@
     "allServices": "Alle Services",
     "planFilters": {
       "live": "Aktiv",
+      "pending": "Wartet auf Zahlung",
       "ended": "Beendet",
-      "all": "Alle (inkl. unvollständige)"
+      "all": "Alle"
     },
     "searchEmail": "Kunden-E-Mail suchen…",
     "customer": "Kunde",

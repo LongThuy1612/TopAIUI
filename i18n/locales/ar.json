@@ -694,7 +694,8 @@
       "draft": "مسودة"
     },
     "refundedAmount": "تم استرداد {amount}",
-    "refundPending": "جارٍ استرداد {amount}"
+    "refundPending": "جارٍ استرداد {amount}",
+    "adminOrdersHint": "هذا سجل حسابك أنت. مدفوعات العملاء موجودة في"
   },
   "feedbackPage": {
     "title": "ملاحظات المستخدمين",
@@ -1635,8 +1636,9 @@
     "allServices": "كل الخدمات",
     "planFilters": {
       "live": "نشطة",
+      "pending": "بانتظار الدفع",
       "ended": "منتهية",
-      "all": "الكل (بما فيها غير المكتملة)"
+      "all": "الكل"
     },
     "searchEmail": "ابحث عن بريد العميل…",
     "customer": "العميل",

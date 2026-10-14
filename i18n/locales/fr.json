@@ -711,7 +711,8 @@
       "draft": "Brouillon"
     },
     "refundedAmount": "{amount} remboursé",
-    "refundPending": "Remboursement de {amount} en cours"
+    "refundPending": "Remboursement de {amount} en cours",
+    "adminOrdersHint": "Voici l’historique de votre propre compte. Les paiements des clients se trouvent dans"
   },
   "feedbackPage": {
     "title": "Retour des utilisateurs",
@@ -2029,8 +2030,9 @@
     "allServices": "Tous les services",
     "planFilters": {
       "live": "Actifs",
+      "pending": "En attente de paiement",
       "ended": "Terminés",
-      "all": "Tous (y compris inachevés)"
+      "all": "Tous"
     },
     "searchEmail": "Rechercher l’e-mail du client…",
     "customer": "Client",

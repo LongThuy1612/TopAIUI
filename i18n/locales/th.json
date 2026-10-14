@@ -694,7 +694,8 @@
       "draft": "ฉบับร่าง"
     },
     "refundedAmount": "คืนเงินแล้ว {amount}",
-    "refundPending": "กำลังคืนเงิน {amount}"
+    "refundPending": "กำลังคืนเงิน {amount}",
+    "adminOrdersHint": "นี่คือประวัติของบัญชีคุณเอง ดูการชำระเงินของลูกค้าได้ที่"
   },
   "feedbackPage": {
     "title": "ความคิดเห็นจากผู้ใช้",
@@ -1635,8 +1636,9 @@
     "allServices": "ทุกบริการ",
     "planFilters": {
       "live": "ใช้งานอยู่",
+      "pending": "รอชำระเงิน",
       "ended": "สิ้นสุดแล้ว",
-      "all": "ทั้งหมด (รวมที่ยังไม่เสร็จ)"
+      "all": "ทั้งหมด"
     },
     "searchEmail": "ค้นหาอีเมลลูกค้า…",
     "customer": "ลูกค้า",

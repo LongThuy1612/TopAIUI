@@ -23,7 +23,7 @@ const { authHeaders } = useAuth()
 
 const tab = ref<'orders' | 'plans'>('orders')
 const orderStatus = ref<'PAID' | 'PENDING' | 'EXPIRED' | 'REFUNDED' | 'all'>('PAID')
-const planStatus = ref<'live' | 'ended' | 'all'>('live')
+const planStatus = ref<'live' | 'pending' | 'ended' | 'all'>('live')
 const type = ref<'' | OrderType>('')
 const search = ref('')
 // The search box asks the server once typing pauses.
@@ -128,7 +128,7 @@ useSeoMeta({ title: () => `${t('adminOrders.title')} — TopAICollection` })
         </select>
       </template>
       <template v-else>
-        <button v-for="s in (['live', 'ended', 'all'] as const)" :key="s" type="button" :class="pill(planStatus === s)" @click="planStatus = s">
+        <button v-for="s in (['live', 'pending', 'ended', 'all'] as const)" :key="s" type="button" :class="pill(planStatus === s)" @click="planStatus = s">
           {{ t(`adminOrders.planFilters.${s}`) }}
         </button>
       </template>
@@ -150,7 +150,7 @@ useSeoMeta({ title: () => `${t('adminOrders.title')} — TopAICollection` })
         <tbody class="divide-y divide-ink-100">
           <tr v-for="o in orders" :key="o.id">
             <td class="whitespace-nowrap px-4 py-3 text-ink-600">{{ date(o.paidAt ?? o.createdAt) }}</td>
-            <td class="max-w-[220px] truncate px-4 py-3"><NuxtLinkLocale :to="`/admin/users/${o.user.id}`" class="text-brand-600 hover:underline">{{ o.user.email }}</NuxtLinkLocale></td>
+            <td class="max-w-[200px] truncate px-4 py-3" :title="o.user.email"><NuxtLinkLocale :to="`/admin/users/${o.user.id}`" class="text-brand-600 hover:underline">{{ o.user.email }}</NuxtLinkLocale></td>
             <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ serviceOf(o) }}</td>
             <td class="max-w-[260px] px-4 py-3 text-ink-600">
               <div class="truncate" :title="detail(o)">{{ detail(o) }}</div>
@@ -181,8 +181,8 @@ useSeoMeta({ title: () => `${t('adminOrders.title')} — TopAICollection` })
         <tbody class="divide-y divide-ink-100">
           <tr v-for="p in plans" :key="p.id" class="align-top">
             <td class="whitespace-nowrap px-4 py-3 text-ink-600">{{ date(p.createdAt) }}</td>
-            <td class="max-w-[220px] truncate px-4 py-3"><NuxtLinkLocale :to="`/admin/users/${p.user.id}`" class="text-brand-600 hover:underline">{{ p.user.email }}</NuxtLinkLocale></td>
-            <td class="px-4 py-3 text-ink-900">
+            <td class="max-w-[200px] truncate px-4 py-3" :title="p.user.email"><NuxtLinkLocale :to="`/admin/users/${p.user.id}`" class="text-brand-600 hover:underline">{{ p.user.email }}</NuxtLinkLocale></td>
+            <td class="max-w-[230px] px-4 py-3 text-ink-900">
               {{ planName(p) }}
               <div class="truncate text-xs text-ink-400" :title="p.stripeSubscriptionId">{{ p.provider === 'paypal' ? 'PayPal' : 'Stripe' }} · {{ p.stripeSubscriptionId }}</div>
             </td>
@@ -190,9 +190,9 @@ useSeoMeta({ title: () => `${t('adminOrders.title')} — TopAICollection` })
               {{ date(p.currentPeriodStart) }} – {{ date(p.currentPeriodEnd) }}
               <div v-if="p.cancelAtPeriodEnd" class="text-xs text-amber-700">{{ t('adminOrders.cancelsAtEnd') }}</div>
             </td>
-            <td class="px-4 py-3 text-ink-900">
+            <td class="min-w-[170px] px-4 py-3 text-ink-900">
               <div class="font-semibold">{{ money(paidOf(p), p.invoices[0]?.currency) }}</div>
-              <div v-for="i in p.invoices.slice(0, 3)" :key="i.id" class="whitespace-nowrap text-xs text-ink-500">
+              <div v-for="i in p.invoices.slice(0, 3)" :key="i.id" class="text-xs text-ink-500">
                 {{ date(i.paidAt ?? i.createdAt) }} · {{ money(i.amount, i.currency) }} · {{ t(`paymentInvoicePage.invoiceStatuses.${i.status}`) }}
                 <span v-if="i.refundedAmount" class="text-sky-700">· {{ t('paymentInvoicePage.refundedAmount', { amount: money(i.refundedAmount, i.currency) }) }}</span>
               </div>

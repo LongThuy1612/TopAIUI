@@ -4,7 +4,7 @@ import type { Prisma } from '@prisma/client'
 //   ?tab=orders  promote orders (Submit AI, Advertise, credits, Update AI, Submit GPT)
 //                ?status= PAID (default) | PENDING | EXPIRED | REFUNDED | all, ?type=
 //   ?tab=plans   Research Plan subscriptions with their charges
-//                ?status= live (default) | ended | all (all includes unfinished approvals)
+//                ?status= live (default) | pending (not paid yet) | ended | all
 // ?q= customer email, ?page= (50 a page). Totals are over every customer, all time.
 const ORDER_STATUSES = ['PAID', 'PENDING', 'EXPIRED', 'REFUNDED']
 const ORDER_TYPES = ['submit-ai', 'advertise', 'guest-post', 'update-ai', 'submit-gpt']
@@ -32,6 +32,7 @@ export default defineEventHandler(async (event) => {
     const where: Prisma.SubscriptionWhereInput = { user }
     if (status === 'live') where.status = { in: ACCESS_STATUSES }
     else if (status === 'ended') where.status = { notIn: [...ACCESS_STATUSES, 'incomplete', 'incomplete_expired'] }
+    else if (status === 'pending') where.status = 'incomplete' // sent to PayPal / Stripe, not paid yet
     const [items, total] = await Promise.all([
       prisma.subscription.findMany({
         where,

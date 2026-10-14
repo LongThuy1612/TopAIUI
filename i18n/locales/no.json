@@ -694,7 +694,8 @@
       "draft": "Utkast"
     },
     "refundedAmount": "{amount} refundert",
-    "refundPending": "Refusjon av {amount} pågår"
+    "refundPending": "Refusjon av {amount} pågår",
+    "adminOrdersHint": "Dette er historikken til din egen konto. Kundenes betalinger finner du under"
   },
   "feedbackPage": {
     "title": "Tilbakemeldinger fra brukere",
@@ -1635,8 +1636,9 @@
     "allServices": "Alle tjenester",
     "planFilters": {
       "live": "Aktive",
+      "pending": "Venter på betaling",
       "ended": "Avsluttede",
-      "all": "Alle (inkl. uferdige)"
+      "all": "Alle"
     },
     "searchEmail": "Søk etter kundens e-post…",
     "customer": "Kunde",

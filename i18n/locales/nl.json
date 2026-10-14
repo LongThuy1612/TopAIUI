@@ -694,7 +694,8 @@
       "draft": "Concept"
     },
     "refundedAmount": "{amount} terugbetaald",
-    "refundPending": "Terugbetaling van {amount} loopt"
+    "refundPending": "Terugbetaling van {amount} loopt",
+    "adminOrdersHint": "Dit is de geschiedenis van je eigen account. Betalingen van klanten staan onder"
   },
   "feedbackPage": {
     "title": "Feedback van gebruikers",
@@ -1635,8 +1636,9 @@
     "allServices": "Alle services",
     "planFilters": {
       "live": "Actief",
+      "pending": "Wacht op betaling",
       "ended": "Beëindigd",
-      "all": "Alle (incl. onvoltooid)"
+      "all": "Alle"
     },
     "searchEmail": "Zoek e-mail van klant…",
     "customer": "Klant",
