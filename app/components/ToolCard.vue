@@ -32,7 +32,8 @@ const rankStyle = computed(() => {
   >
     <img
       v-if="tool.logoUrl"
-      :src="sizedImage(tool.logoUrl, 112, 112)"
+      data-logo
+      :src="sizedImage(tool.logoUrl, 64, 64)"
       :alt="tool.name"
       loading="lazy"
       class="pointer-events-none absolute -top-3 -right-4 h-28 w-28 rounded-full object-cover opacity-[0.16]"
@@ -43,7 +44,7 @@ const rankStyle = computed(() => {
     </template>
     <div class="relative flex items-start gap-[11px]">
       <div v-if="tool.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-full">
-        <img :src="sizedImage(tool.logoUrl, 64, 64)" :alt="tool.name" loading="lazy" class="h-full w-full object-cover">
+        <img data-logo :src="sizedImage(tool.logoUrl, 64, 64)" :alt="tool.name" loading="lazy" class="h-full w-full object-cover">
       </div>
       <span v-else class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-[12.5px] font-extrabold text-white">{{ initials }}</span>
       <span class="line-clamp-2 min-w-0 text-[17px] font-extrabold tracking-[-.02em] text-ink-900">{{ tool.name }}</span>
@@ -57,7 +58,7 @@ const rankStyle = computed(() => {
       {{ rank }}
     </span>
     <div v-if="tool.logoUrl" class="h-11 w-11 shrink-0 overflow-hidden rounded-lg">
-      <img :src="sizedImage(tool.logoUrl, 64, 64)" :alt="tool.name" loading="lazy" class="h-full w-full object-cover">
+      <img data-logo :src="sizedImage(tool.logoUrl, 64, 64)" :alt="tool.name" loading="lazy" class="h-full w-full object-cover">
     </div>
     <div v-else class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-sm font-bold text-white">
       {{ initials }}

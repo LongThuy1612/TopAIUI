@@ -32,7 +32,8 @@ const statusLabels: Record<'all' | 'PENDING' | 'PUBLISHED', string> = {
 const featureCards = computed(() => [
   { label: t('admin.websiteInsights'), to: '/dashboard/insights', color: 'bg-orange-50 text-orange-500', icon: 'M4 19h16M6 15l3-4 3 2 4-6 2 3' },
   { label: t('admin.socialListening'), to: '/dashboard/social-listening', color: 'bg-pink-50 text-pink-500', icon: 'M12 3a7 7 0 0 0-7 7c0 3.5 2 5.5 3 7l1 2h6l1-2c1-1.5 3-3.5 3-7a7 7 0 0 0-7-7Zm-2 18h4' },
-  { label: t('admin.aiAdvertisingLibrary'), to: '#', color: 'bg-emerald-50 text-emerald-500', icon: 'M4 6h16v12H4V6Zm0 4h16', comingSoon: true }
+  // Hidden until the AI Advertising Library exists (the card was a "Coming soon" dead link):
+  // { label: t('admin.aiAdvertisingLibrary'), to: '#', color: 'bg-emerald-50 text-emerald-500', icon: 'M4 6h16v12H4V6Zm0 4h16', comingSoon: true }
 ])
 
 useSeoMeta({ title: 'Dashboard — TopAICollection' })

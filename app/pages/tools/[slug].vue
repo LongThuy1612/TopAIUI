@@ -840,7 +840,7 @@ useJsonLd('tool', () => {
       >
         <div class="flex items-center gap-2.5">
           <div v-if="alt.logoUrl" class="h-7 w-7 shrink-0 overflow-hidden rounded-full">
-            <img :src="sizedImage(alt.logoUrl, 64, 64)" :alt="alt.name" loading="lazy" class="h-full w-full object-cover">
+            <img data-logo :src="sizedImage(alt.logoUrl, 64, 64)" :alt="alt.name" loading="lazy" class="h-full w-full object-cover">
           </div>
           <div v-else class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-brand-700 text-[10px] font-bold text-white">
             {{ alt.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI' }}
@@ -1296,7 +1296,7 @@ useJsonLd('tool', () => {
                 class="h-full w-full rounded-t-md object-cover object-top shadow-sm"
               >
               <div v-else class="flex h-full w-full items-center justify-center rounded-t-md bg-white/70">
-                <img v-if="alt.logoUrl" :src="sizedImage(alt.logoUrl, 80, 80)" :alt="alt.name" loading="lazy" class="h-20 w-20 rounded-2xl object-cover">
+                <img data-logo v-if="alt.logoUrl" :src="sizedImage(alt.logoUrl, 80, 80)" :alt="alt.name" loading="lazy" class="h-20 w-20 rounded-2xl object-cover">
                 <span v-else class="text-4xl font-extrabold text-brand-500">{{ alt.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'AI' }}</span>
               </div>
             </NuxtLinkLocale>

@@ -114,15 +114,20 @@ export default defineNuxtConfig({
       // Feedback attachments (server/utils/feedback.ts): private — never served
       // by /uploads, only through /api/feedback/<id>/attachment to the sender
       // and admins — and kept apart so the nightly uploads cleanup can't see them.
-      feedback: { driver: 'fs', base: process.env.FEEDBACK_UPLOAD_DIR || './.data/feedback' }
+      feedback: { driver: 'fs', base: process.env.FEEDBACK_UPLOAD_DIR || './.data/feedback' },
+      // Resized tool images (server/routes/img.get.ts). Only a cache — safe to delete,
+      // and fine to lose on redeploy (it refills on demand).
+      'image-cache': { driver: 'fs', base: process.env.IMAGE_CACHE_DIR || './.data/image-cache' }
     },
     devStorage: {
       uploads: { driver: 'fs', base: process.env.UPLOAD_DIR || './.data/uploads' },
-      feedback: { driver: 'fs', base: process.env.FEEDBACK_UPLOAD_DIR || './.data/feedback' }
+      feedback: { driver: 'fs', base: process.env.FEEDBACK_UPLOAD_DIR || './.data/feedback' },
+      'image-cache': { driver: 'fs', base: process.env.IMAGE_CACHE_DIR || './.data/image-cache' }
     },
-    // Nightly cleanup of uploaded images no tool uses (server/tasks/uploads/cleanup.ts).
+    // Nightly cleanup of uploaded images no tool uses (server/tasks/uploads/cleanup.ts)
+    // and of resized images older than 30 days (server/tasks/image-cache/prune.ts).
     experimental: { tasks: true },
-    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'] }
+    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'], '0 4 * * *': ['image-cache:prune'] }
   },
 
   runtimeConfig: {

@@ -63,6 +63,10 @@ services:
       - uploads_data:/app/.data/uploads
       # Feedback attachments (nitro storage "feedback", ./.data/feedback) — private.
       - feedback_data:/app/.data/feedback
+      # Resized tool images (nitro storage "image-cache", ./.data/image-cache — see
+      # server/routes/img.get.ts). Only a cache, but kept across redeploys so images
+      # aren't all resized again after each one. Safe to delete at any time.
+      - image_cache:/app/.data/image-cache
     depends_on:
       postgres:
         condition: service_healthy
@@ -80,3 +84,4 @@ volumes:
   postgres_data:
   uploads_data:
   feedback_data:
+  image_cache:

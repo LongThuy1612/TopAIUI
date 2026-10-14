@@ -29,7 +29,7 @@ const initials = computed(() => props.ad.tool.name.replace(/[^A-Za-z0-9]/g, '').
       {{ t('sections.adLabel') }}
     </span>
     <div v-if="ad.tool.logoUrl" class="h-12 w-12 shrink-0 overflow-hidden rounded-lg">
-      <img :src="sizedImage(ad.tool.logoUrl, 64, 64)" :alt="ad.tool.name" loading="lazy" class="h-full w-full object-cover">
+      <img data-logo :src="sizedImage(ad.tool.logoUrl, 64, 64)" :alt="ad.tool.name" loading="lazy" class="h-full w-full object-cover">
     </div>
     <span v-else class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-ink-900 text-base font-extrabold text-white">
       {{ initials }}
