@@ -57,7 +57,8 @@
     "goToDashboard": "前往控制台",
     "verifyWrongAccount": "此验证链接属于其他账户。您当前登录的是 {email}，请退出后使用收到该邮件的账户登录。",
     "emailNotRegistered": "该邮箱尚未注册。",
-    "invalidEmail": "请输入有效的邮箱地址。"
+    "invalidEmail": "请输入有效的邮箱地址。",
+    "tooManyAttempts": "登录尝试次数过多，请在 15 分钟后重试。"
   },
   "productsMenu": {
     "newTitle": "最新 AI",

@@ -453,7 +453,7 @@ export function visitorIp(event: H3Event) {
 
 // One visitor = one IPv4 address, or one IPv6 /64: an IPv6 device rotates through
 // addresses of its /64 (privacy extensions), which would otherwise count as new visitors.
-function visitorKey(ip: string) {
+export function visitorKey(ip: string) {
   const v4 = ip.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/i)
   if (v4) return v4[1]!
   if (!ip.includes(':')) return ip

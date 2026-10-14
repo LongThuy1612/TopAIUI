@@ -32,6 +32,8 @@ async function submit() {
       error.value = t('auth.invalidCredentials')
     } else if (statusCode === 403) {
       error.value = t('auth.accountBanned')
+    } else if (statusCode === 429) {
+      error.value = t('auth.tooManyAttempts')
     } else {
       error.value = t('auth.registerError')
     }

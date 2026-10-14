@@ -4,12 +4,14 @@ import type { AdminToolsResponse } from '~/types'
 const { t } = useI18n()
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
-// The logged-in user's own tools (admins see the full list under Tool Management).
+// The logged-in user's own tools — customers only: admins manage every tool under Tool
+// Management, and their tiles above count the whole site.
 const { user, isAdmin, authHeaders } = useAuth()
 // Greet the logged-in person, not a fixed "Admin".
 const displayName = computed(() => user.value?.name || user.value?.email?.split('@')[0] || '')
 const { data } = await useFetch<AdminToolsResponse>('/api/me/tools', {
   headers: () => authHeaders(),
+  immediate: !isAdmin.value,
   watch: false
 })
 
@@ -29,13 +31,6 @@ const statusLabels: Record<'all' | 'PENDING' | 'PUBLISHED', string> = {
   PUBLISHED: 'admin.statusPublished'
 }
 
-const featureCards = computed(() => [
-  { label: t('admin.websiteInsights'), to: '/dashboard/insights', color: 'bg-orange-50 text-orange-500', icon: 'M4 19h16M6 15l3-4 3 2 4-6 2 3' },
-  { label: t('admin.socialListening'), to: '/dashboard/social-listening', color: 'bg-pink-50 text-pink-500', icon: 'M12 3a7 7 0 0 0-7 7c0 3.5 2 5.5 3 7l1 2h6l1-2c1-1.5 3-3.5 3-7a7 7 0 0 0-7-7Zm-2 18h4' },
-  // Hidden until the AI Advertising Library exists (the card was a "Coming soon" dead link):
-  // { label: t('admin.aiAdvertisingLibrary'), to: '#', color: 'bg-emerald-50 text-emerald-500', icon: 'M4 6h16v12H4V6Zm0 4h16', comingSoon: true }
-])
-
 useSeoMeta({ title: 'Dashboard — TopAICollection' })
 </script>
 
@@ -49,25 +44,6 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
     </div>
 
     <div class="mt-6 grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-4">
-      <NuxtLinkLocale
-        v-for="card in featureCards"
-        :key="card.label"
-        :to="card.to"
-        class="relative flex items-center justify-between rounded-xl border border-ink-100 bg-white p-4 transition hover:border-brand-200"
-      >
-        <div>
-          <div class="text-sm font-bold text-ink-900">{{ card.label }}</div>
-          <span v-if="card.comingSoon" class="mt-1.5 inline-block rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-bold text-red-500">{{ t('admin.comingSoon') }}</span>
-        </div>
-        <span :class="['flex h-10 w-10 shrink-0 items-center justify-center rounded-full', card.color]">
-          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" :d="card.icon" />
-          </svg>
-        </span>
-      </NuxtLinkLocale>
-    </div>
-
-    <div class="mt-3.5 grid grid-cols-1 gap-3.5 sm:grid-cols-2 xl:grid-cols-4">
       <NuxtLinkLocale :to="isAdmin ? '/admin/tools' : '/dashboard/my-ais'" class="rounded-xl border border-ink-100 bg-white p-4 hover:border-brand-200">
         <div class="text-sm font-bold text-ink-900">{{ t('admin.myAIsData') }}</div>
         <div class="mt-2 text-xs text-ink-500">
@@ -98,15 +74,8 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
       </NuxtLinkLocale>
     </div>
 
-    <div class="mt-6 flex items-center gap-5 border-b border-ink-100 text-sm font-semibold">
-      <span class="border-b-2 border-brand-500 pb-2.5 text-brand-600">{{ t('admin.myAIsData') }}</span>
-      <!-- Social listening has its own page. -->
-      <NuxtLinkLocale to="/dashboard/social-listening" class="border-b-2 border-transparent pb-2.5 text-ink-400 hover:text-ink-600">
-        {{ t('admin.socialListening') }}
-      </NuxtLinkLocale>
-    </div>
-
-    <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
+    <template v-if="!isAdmin">
+    <div class="mt-8 flex flex-wrap items-center justify-between gap-3">
       <h2 class="text-lg font-extrabold text-ink-900">{{ t('admin.aiDataHeading') }}</h2>
       <div class="flex gap-2">
         <button
@@ -121,5 +90,6 @@ useSeoMeta({ title: 'Dashboard — TopAICollection' })
     </div>
 
     <ToolsTable class="mt-4" :tools="items" />
+    </template>
   </div>
 </template>

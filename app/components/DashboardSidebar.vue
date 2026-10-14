@@ -59,15 +59,14 @@ onMounted(async () => {
   navigateTo({ query }, { replace: true })
 })
 
-const otherItems = computed(() => [
+// Customers only. Admins see everyone's payments under Orders and everyone's feedback under
+// the admin "Feedback" link; their own saved tools / invoices aren't needed.
+const otherItems = computed(() => (isAdmin.value ? [] : [
   { label: t('savedPage.title'), to: '/dashboard/saved', icon: 'M6 4h12v17l-6-4-6 4V4Z' },
   { label: t('admin.paymentInvoice'), to: '/dashboard/payment-invoice', icon: 'M7 3h10a1 1 0 0 1 1 1v17l-3-2-2 2-2-2-2 2-3-2V4a1 1 0 0 1 1-1Zm2 5h6m-6 4h6m-6 4h3' },
-  // Admins read everyone's feedback under the admin "Feedback" link instead.
-  ...(isAdmin.value ? [] : [
-    { label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' },
-    { label: t('admin.myInquiries'), to: '/dashboard/my-inquiries', icon: 'M4 6h16v12H4V6Zm0 0 8 7 8-7' }
-  ])
-])
+  { label: t('admin.feedback'), to: '/dashboard/feedback', icon: 'M4 5h16v11H8l-4 4V5Zm3 4h10m-10 3h6' },
+  { label: t('admin.myInquiries'), to: '/dashboard/my-inquiries', icon: 'M4 6h16v12H4V6Zm0 0 8 7 8-7' }
+]))
 
 // The customer's own purchases. Admins manage all of them above instead (Tool Management,
 // Ad Campaigns, Guest posts, GPTs), so the Business section is customer-only — no item twice.
@@ -248,7 +247,7 @@ const businessItems = computed(() => (isAdmin.value ? [] : [
       </div>
     </div>
 
-    <div>
+    <div v-if="otherItems.length">
       <div class="px-3 text-[11px] font-semibold uppercase tracking-wide text-ink-400">{{ t('admin.other') }}</div>
       <div class="mt-2 flex flex-col gap-0.5">
         <NuxtLinkLocale

@@ -57,7 +57,8 @@
     "goToDashboard": "Ir para o painel",
     "verifyWrongAccount": "Este link de confirmação pertence a outra conta. Tem sessão iniciada como {email} — termine a sessão e entre com a conta que recebeu o e-mail.",
     "emailNotRegistered": "Este e-mail não está registado.",
-    "invalidEmail": "Introduza um endereço de e-mail válido."
+    "invalidEmail": "Introduza um endereço de e-mail válido.",
+    "tooManyAttempts": "Muitas tentativas de login. Tente novamente em 15 minutos."
   },
   "productsMenu": {
     "newTitle": "IAs novas",

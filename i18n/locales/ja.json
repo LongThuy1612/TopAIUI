@@ -57,7 +57,8 @@
     "goToDashboard": "ダッシュボードへ",
     "verifyWrongAccount": "この確認リンクは別のアカウントのものです。現在 {email} でログインしています。ログアウトし、メールを受け取ったアカウントでログインしてください。",
     "emailNotRegistered": "このメールアドレスは登録されていません。",
-    "invalidEmail": "有効なメールアドレスを入力してください。"
+    "invalidEmail": "有効なメールアドレスを入力してください。",
+    "tooManyAttempts": "ログインの試行回数が多すぎます。15分後にもう一度お試しください。"
   },
   "productsMenu": {
     "newTitle": "新着AI",

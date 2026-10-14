@@ -57,7 +57,8 @@
     "goToDashboard": "Go to dashboard",
     "verifyWrongAccount": "This confirmation link belongs to a different account. You are signed in as {email} — sign out and sign in with the account that received the email.",
     "emailNotRegistered": "This email is not registered.",
-    "invalidEmail": "Please enter a valid email address."
+    "invalidEmail": "Please enter a valid email address.",
+    "tooManyAttempts": "Too many sign-in attempts. Please try again in 15 minutes."
   },
   "productsMenu": {
     "newTitle": "New AIs",

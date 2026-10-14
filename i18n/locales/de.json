@@ -57,7 +57,8 @@
     "goToDashboard": "Zum Dashboard",
     "verifyWrongAccount": "Dieser Bestätigungslink gehört zu einem anderen Konto. Du bist als {email} angemeldet – melde dich ab und mit dem Konto an, das die E-Mail erhalten hat.",
     "emailNotRegistered": "Diese E-Mail-Adresse ist nicht registriert.",
-    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "tooManyAttempts": "Zu viele Anmeldeversuche. Bitte versuche es in 15 Minuten erneut."
   },
   "productsMenu": {
     "newTitle": "Neue KIs",

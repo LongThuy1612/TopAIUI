@@ -42,7 +42,8 @@
     "passwordMinLength": "לפחות 6 תווים.",
     "invalidCredentials": "אימייל או סיסמה שגויים.",
     "accountBanned": "החשבון הזה נחסם.",
-    "googleEmailInUse": "האימייל הזה כבר רשום. התחברו עם האימייל והסיסמה."
+    "googleEmailInUse": "האימייל הזה כבר רשום. התחברו עם האימייל והסיסמה.",
+    "tooManyAttempts": "יותר מדי ניסיונות התחברות. נסו שוב בעוד 15 דקות."
   },
   "productsMenu": {
     "newTitle": "AI חדשים",

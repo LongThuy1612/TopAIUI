@@ -57,7 +57,8 @@
     "goToDashboard": "Đến trang quản lý",
     "verifyWrongAccount": "Liên kết xác nhận này thuộc về tài khoản khác. Bạn đang đăng nhập bằng {email} — hãy đăng xuất và đăng nhập bằng tài khoản đã nhận email.",
     "emailNotRegistered": "Email này chưa được đăng ký.",
-    "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ."
+    "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "tooManyAttempts": "Bạn đã thử đăng nhập quá nhiều lần. Vui lòng thử lại sau 15 phút."
   },
   "productsMenu": {
     "newTitle": "AI mới",

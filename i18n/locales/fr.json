@@ -57,7 +57,8 @@
     "goToDashboard": "Aller au tableau de bord",
     "verifyWrongAccount": "Ce lien de confirmation appartient à un autre compte. Vous êtes connecté en tant que {email} — déconnectez-vous et connectez-vous avec le compte qui a reçu l’e-mail.",
     "emailNotRegistered": "Cette adresse e-mail n’est pas enregistrée.",
-    "invalidEmail": "Veuillez saisir une adresse e-mail valide."
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+    "tooManyAttempts": "Trop de tentatives de connexion. Réessayez dans 15 minutes."
   },
   "productsMenu": {
     "newTitle": "Nouvelles IA",

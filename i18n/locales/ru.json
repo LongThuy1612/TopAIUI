@@ -42,7 +42,8 @@
     "passwordMinLength": "Не менее 6 символов.",
     "invalidCredentials": "Неверный email или пароль.",
     "accountBanned": "Этот аккаунт заблокирован.",
-    "googleEmailInUse": "Этот email уже зарегистрирован. Войдите с помощью email и пароля."
+    "googleEmailInUse": "Этот email уже зарегистрирован. Войдите с помощью email и пароля.",
+    "tooManyAttempts": "Слишком много попыток входа. Повторите через 15 минут."
   },
   "productsMenu": {
     "newTitle": "Новые ИИ",

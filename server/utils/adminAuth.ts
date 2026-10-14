@@ -1,3 +1,4 @@
+import { timingSafeEqual } from 'node:crypto'
 import type { H3Event } from 'h3'
 import type { Role } from '@prisma/client'
 
@@ -22,9 +23,19 @@ export async function requireRole(event: H3Event, roles: Role[]) {
 //  - a logged-in user whose role is ADMIN (the dashboard UI), or
 //  - the shared `x-admin-token` (ADMIN_TOKEN) — kept for server-to-server
 //    callers such as the crawl scripts that post to /api/toolify and /api/ph.
+// The placeholder values shipped in nuxt.config.ts / docker-compose.yml / .env.example are
+// public: a server left on one of them (or on a short token) accepts no admin token at all.
+const PLACEHOLDER_TOKENS = ['changeme-dev-token', 'changeme-prod-token']
+function isAdminToken(given: string | undefined) {
+  const expected = String(useRuntimeConfig().adminToken ?? '')
+  if (!given || expected.length < 24 || PLACEHOLDER_TOKENS.includes(expected)) return false
+  const a = Buffer.from(given)
+  const b = Buffer.from(expected)
+  return a.length === b.length && timingSafeEqual(a, b)
+}
+
 export async function requireAdmin(event: H3Event) {
-  const adminToken = getHeader(event, 'x-admin-token')
-  if (adminToken && adminToken === useRuntimeConfig().adminToken) return
+  if (isAdminToken(getHeader(event, 'x-admin-token'))) return
 
   await requireRole(event, ['ADMIN'])
 }

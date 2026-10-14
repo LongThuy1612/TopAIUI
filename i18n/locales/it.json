@@ -42,7 +42,8 @@
     "passwordMinLength": "Almeno 6 caratteri.",
     "invalidCredentials": "Email o password non valide.",
     "accountBanned": "Questo account è stato bloccato.",
-    "googleEmailInUse": "Questa email è già registrata. Accedi con email e password."
+    "googleEmailInUse": "Questa email è già registrata. Accedi con email e password.",
+    "tooManyAttempts": "Troppi tentativi di accesso. Riprova tra 15 minuti."
   },
   "productsMenu": {
     "newTitle": "Nuove IA",

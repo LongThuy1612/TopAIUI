@@ -38,7 +38,9 @@ services:
       # the image during `npm run build` (nuxt.config.ts reads plain
       # process.env.ADMIN_* only at build time, so setting the unprefixed
       # names here has no effect without rebuilding the image).
-      NUXT_ADMIN_TOKEN: ${ADMIN_TOKEN:-changeme-prod-token}
+      # x-admin-token for the crawl scripts. Empty (the default) = no token login; a
+      # placeholder or anything under 24 characters is refused (server/utils/adminAuth.ts).
+      NUXT_ADMIN_TOKEN: ${ADMIN_TOKEN:-}
       # Signs every login token (server/utils/userAuth.ts). Required: without it the
       # image's built-in dev default is used and anyone reading the code can forge
       # sessions. Changing it signs everyone out.

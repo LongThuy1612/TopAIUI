@@ -57,7 +57,8 @@
     "goToDashboard": "Ke dasbor",
     "verifyWrongAccount": "Tautan konfirmasi ini milik akun lain. Anda masuk sebagai {email} — keluar lalu masuk dengan akun yang menerima email tersebut.",
     "emailNotRegistered": "Email ini belum terdaftar.",
-    "invalidEmail": "Masukkan alamat email yang valid."
+    "invalidEmail": "Masukkan alamat email yang valid.",
+    "tooManyAttempts": "Terlalu banyak percobaan masuk. Coba lagi dalam 15 menit."
   },
   "productsMenu": {
     "newTitle": "AI Terbaru",

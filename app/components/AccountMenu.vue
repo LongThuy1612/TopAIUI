@@ -11,7 +11,7 @@ const props = withDefaults(defineProps<{
 }>(), { placement: 'side', buttonClass: '' })
 
 const { t } = useI18n()
-const { user, logout } = useAuth()
+const { user, isAdmin, logout } = useAuth()
 const route = useRoute()
 const localePath = useLocalePath()
 // The dialog lives in the dashboard layout, shared by both menus.
@@ -102,8 +102,8 @@ watch(() => route.fullPath, close)
         <span class="block truncate text-sm font-bold text-ink-900">{{ user.name || user.email }}</span>
         <span class="block truncate text-xs text-ink-400">{{ user.email }}</span>
       </div>
-      <!-- Also the way to Saved AIs on phones, where the dashboard sidebar is hidden. -->
-      <NuxtLinkLocale to="/dashboard/saved" role="menuitem" class="flex w-full items-center gap-2.5 rounded-md px-3 py-2 text-left text-sm font-medium text-ink-800 hover:bg-ink-100/60" @click="close">
+      <!-- Also the way to Saved AIs on phones, where the dashboard sidebar is hidden (customers only). -->
+      <NuxtLinkLocale v-if="!isAdmin" to="/dashboard/saved" role="menuitem" class="flex w-full items-center gap-2.5 rounded-md px-3 py-2 text-left text-sm font-medium text-ink-800 hover:bg-ink-100/60" @click="close">
         <svg class="h-4 w-4 shrink-0 text-ink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 4h12v17l-6-4-6 4V4Z" />
         </svg>

@@ -57,7 +57,8 @@
     "goToDashboard": "대시보드로 이동",
     "verifyWrongAccount": "이 인증 링크는 다른 계정의 것입니다. 현재 {email}(으)로 로그인되어 있습니다. 로그아웃한 후 이메일을 받은 계정으로 로그인하세요.",
     "emailNotRegistered": "등록되지 않은 이메일입니다.",
-    "invalidEmail": "올바른 이메일 주소를 입력하세요."
+    "invalidEmail": "올바른 이메일 주소를 입력하세요.",
+    "tooManyAttempts": "로그인 시도가 너무 많습니다. 15분 후에 다시 시도해 주세요."
   },
   "productsMenu": {
     "newTitle": "새로운 AI",

@@ -42,7 +42,8 @@
     "passwordMinLength": "Minstens 6 tekens.",
     "invalidCredentials": "Ongeldig e-mailadres of wachtwoord.",
     "accountBanned": "Dit account is geblokkeerd.",
-    "googleEmailInUse": "Dit e-mailadres is al geregistreerd. Log in met je e-mailadres en wachtwoord."
+    "googleEmailInUse": "Dit e-mailadres is al geregistreerd. Log in met je e-mailadres en wachtwoord.",
+    "tooManyAttempts": "Te veel inlogpogingen. Probeer het over 15 minuten opnieuw."
   },
   "productsMenu": {
     "newTitle": "Nieuwe AI’s",

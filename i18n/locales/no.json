@@ -42,7 +42,8 @@
     "passwordMinLength": "Minst 6 tegn.",
     "invalidCredentials": "Feil e-postadresse eller passord.",
     "accountBanned": "Denne kontoen er sperret.",
-    "googleEmailInUse": "Denne e-postadressen er allerede registrert. Logg inn med e-postadresse og passord."
+    "googleEmailInUse": "Denne e-postadressen er allerede registrert. Logg inn med e-postadresse og passord.",
+    "tooManyAttempts": "For mange påloggingsforsøk. Prøv igjen om 15 minutter."
   },
   "productsMenu": {
     "newTitle": "Nye AI",

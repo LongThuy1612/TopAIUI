@@ -42,7 +42,8 @@
     "passwordMinLength": "Vähintään 6 merkkiä.",
     "invalidCredentials": "Virheellinen sähköposti tai salasana.",
     "accountBanned": "Tämä tili on estetty.",
-    "googleEmailInUse": "Tämä sähköposti on jo rekisteröity. Kirjaudu sähköpostilla ja salasanalla."
+    "googleEmailInUse": "Tämä sähköposti on jo rekisteröity. Kirjaudu sähköpostilla ja salasanalla.",
+    "tooManyAttempts": "Liian monta kirjautumisyritystä. Yritä uudelleen 15 minuutin kuluttua."
   },
   "productsMenu": {
     "newTitle": "Uudet tekoälyt",

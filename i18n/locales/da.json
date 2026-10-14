@@ -42,7 +42,8 @@
     "passwordMinLength": "Mindst 6 tegn.",
     "invalidCredentials": "Forkert e-mail eller adgangskode.",
     "accountBanned": "Denne konto er blevet spærret.",
-    "googleEmailInUse": "Denne e-mail er allerede registreret. Log ind med din e-mail og adgangskode."
+    "googleEmailInUse": "Denne e-mail er allerede registreret. Log ind med din e-mail og adgangskode.",
+    "tooManyAttempts": "For mange loginforsøg. Prøv igen om 15 minutter."
   },
   "productsMenu": {
     "newTitle": "Nye AI",

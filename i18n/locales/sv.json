@@ -42,7 +42,8 @@
     "passwordMinLength": "Minst 6 tecken.",
     "invalidCredentials": "Fel e-postadress eller lösenord.",
     "accountBanned": "Det här kontot har spärrats.",
-    "googleEmailInUse": "Den här e-postadressen är redan registrerad. Logga in med din e-postadress och ditt lösenord."
+    "googleEmailInUse": "Den här e-postadressen är redan registrerad. Logga in med din e-postadress och ditt lösenord.",
+    "tooManyAttempts": "För många inloggningsförsök. Försök igen om 15 minuter."
   },
   "productsMenu": {
     "newTitle": "Nya AI",
