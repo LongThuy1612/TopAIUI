@@ -25,6 +25,8 @@
     "passwordLabel": "Kata sandi",
     "passwordPlaceholder": "Silakan masukkan kata sandi Anda",
     "rememberMe": "Ingat saya",
+    "showPassword": "Tampilkan kata sandi",
+    "hidePassword": "Sembunyikan kata sandi",
     "forgotPassword": "Lupa kata sandi?",
     "signIn": "Masuk",
     "noAccount": "Belum punya akun?",

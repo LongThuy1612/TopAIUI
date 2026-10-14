@@ -25,6 +25,8 @@
     "passwordLabel": "Salasana",
     "passwordPlaceholder": "Anna salasanasi",
     "rememberMe": "Muista minut",
+    "showPassword": "Näytä salasana",
+    "hidePassword": "Piilota salasana",
     "forgotPassword": "Unohditko salasanasi?",
     "signIn": "Kirjaudu sisään",
     "noAccount": "Eikö sinulla ole vielä tiliä?",

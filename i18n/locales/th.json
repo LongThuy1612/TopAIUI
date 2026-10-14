@@ -25,6 +25,8 @@
     "passwordLabel": "รหัสผ่าน",
     "passwordPlaceholder": "กรอกรหัสผ่านของคุณ",
     "rememberMe": "จดจำฉัน",
+    "showPassword": "แสดงรหัสผ่าน",
+    "hidePassword": "ซ่อนรหัสผ่าน",
     "forgotPassword": "ลืมรหัสผ่าน?",
     "signIn": "เข้าสู่ระบบ",
     "noAccount": "ยังไม่มีบัญชีใช่ไหม",

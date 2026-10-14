@@ -25,6 +25,8 @@
     "passwordLabel": "Mot de passe",
     "passwordPlaceholder": "Veuillez saisir votre mot de passe",
     "rememberMe": "Se souvenir de moi",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
     "forgotPassword": "Mot de passe oublié ?",
     "signIn": "Se connecter",
     "noAccount": "Vous n'avez pas encore de compte ?",

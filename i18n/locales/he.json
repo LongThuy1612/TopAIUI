@@ -25,6 +25,8 @@
     "passwordLabel": "סיסמה",
     "passwordPlaceholder": "הזינו את הסיסמה",
     "rememberMe": "זכור אותי",
+    "showPassword": "הצג סיסמה",
+    "hidePassword": "הסתר סיסמה",
     "forgotPassword": "שכחתם את הסיסמה?",
     "signIn": "התחברות",
     "noAccount": "אין לכם עדיין חשבון?",

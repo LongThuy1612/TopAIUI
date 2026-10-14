@@ -25,6 +25,8 @@
     "passwordLabel": "비밀번호",
     "passwordPlaceholder": "비밀번호를 입력하세요",
     "rememberMe": "로그인 상태 유지",
+    "showPassword": "비밀번호 표시",
+    "hidePassword": "비밀번호 숨기기",
     "forgotPassword": "비밀번호를 잊으셨나요?",
     "signIn": "로그인",
     "noAccount": "아직 계정이 없으신가요?",

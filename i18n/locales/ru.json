@@ -25,6 +25,8 @@
     "passwordLabel": "Пароль",
     "passwordPlaceholder": "Введите пароль",
     "rememberMe": "Запомнить меня",
+    "showPassword": "Показать пароль",
+    "hidePassword": "Скрыть пароль",
     "forgotPassword": "Забыли пароль?",
     "signIn": "Войти",
     "noAccount": "Ещё нет аккаунта?",

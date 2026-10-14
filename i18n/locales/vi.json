@@ -25,6 +25,8 @@
     "passwordLabel": "Mật khẩu",
     "passwordPlaceholder": "Vui lòng nhập mật khẩu",
     "rememberMe": "Ghi nhớ đăng nhập",
+    "showPassword": "Hiện mật khẩu",
+    "hidePassword": "Ẩn mật khẩu",
     "forgotPassword": "Quên mật khẩu?",
     "signIn": "Đăng nhập",
     "noAccount": "Chưa có tài khoản?",

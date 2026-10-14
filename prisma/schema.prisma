@@ -197,6 +197,8 @@ model Tool {
   // Name search (?q= on /api/tools, /api/promote/tools, admin) is ILIKE '%q%',
   // which a btree can't serve; a trigram GIN index can.
   @@index([name(ops: raw("gin_trgm_ops"))], type: Gin, map: "Tool_name_trgm_idx")
+  // Search by website domain (GET /api/tools?q=).
+  @@index([website(ops: raw("gin_trgm_ops"))], type: Gin, map: "Tool_website_trgm_idx")
   @@map("Tool")
 }
 
@@ -292,6 +294,8 @@ model Tag {
   translations TagTranslation[]
   tools        Tool[] @relation("ToolToTag")
 
+  // Search by tag (GET /api/tools?q=).
+  @@index([slug(ops: raw("gin_trgm_ops"))], type: Gin, map: "Tag_slug_trgm_idx")
   @@map("Tag")
 }
 
@@ -306,6 +310,8 @@ model TagTranslation {
   tag Tag @relation(fields: [tagId], references: [id])
 
   @@unique([tagId, locale])
+  // Search by tag name (GET /api/tools?q=).
+  @@index([name(ops: raw("gin_trgm_ops"))], type: Gin, map: "TagTranslation_name_trgm_idx")
   @@map("TagTranslation")
 }
 

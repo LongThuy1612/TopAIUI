@@ -25,6 +25,8 @@
     "passwordLabel": "Wachtwoord",
     "passwordPlaceholder": "Vul je wachtwoord in",
     "rememberMe": "Onthoud mij",
+    "showPassword": "Wachtwoord tonen",
+    "hidePassword": "Wachtwoord verbergen",
     "forgotPassword": "Wachtwoord vergeten?",
     "signIn": "Inloggen",
     "noAccount": "Nog geen account?",

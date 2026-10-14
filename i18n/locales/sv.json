@@ -25,6 +25,8 @@
     "passwordLabel": "Lösenord",
     "passwordPlaceholder": "Ange ditt lösenord",
     "rememberMe": "Kom ihåg mig",
+    "showPassword": "Visa lösenord",
+    "hidePassword": "Dölj lösenord",
     "forgotPassword": "Glömt lösenordet?",
     "signIn": "Logga in",
     "noAccount": "Har du inget konto än?",

@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
   if (q.length < 2) return []
 
   const tools = await prisma.tool.findMany({
-    where: { status: 'PUBLISHED', deletedAt: null, name: { contains: q, mode: 'insensitive' } },
+    where: { status: 'PUBLISHED', deletedAt: null, name: { contains: likeText(q), mode: 'insensitive' } },
     orderBy: { name: 'asc' },
     take: 10,
     select: { id: true, name: true, slug: true, logoUrl: true, icon: true }

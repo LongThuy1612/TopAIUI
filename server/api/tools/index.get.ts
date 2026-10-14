@@ -1,6 +1,90 @@
-import type { Prisma } from '@prisma/client'
+import { Prisma } from '@prisma/client'
 import type { H3Event } from 'h3'
 import { PUBLIC_LIMITS } from '#shared/research'
+
+// Free-text search (?q=): tools whose name contains the text, or the domain of their
+// website ("openai.com", or a pasted URL — "https://www.notion.so/pricing" looks for
+// notion.so), or one of their tags (slug or translated name). Phrases with spaces don't
+// look at websites; under 3 characters ("ai") only names count — every .ai website and
+// half the tags would match.
+//
+// The ids of all matching tools (published or not — callers filter), as SQL to use in a
+// WITH clause: a UNION of one query per kind of match, each served by its own index
+// (trigram on name, website, tag slug and tag name; the tag join table's primary key).
+// Written as `name ILIKE … OR website ILIKE … OR <tag filter>` instead, no index applies
+// to the OR: Postgres reads the whole Tool table and runs the tag lookup for every row.
+// And kept in the database on purpose: sending the ids back in as a parameter costs Prisma
+// ~50 ms for a couple of thousand of them, ten times the query itself.
+const MAX_MATCHING_TAGS = 500
+
+function searchMatchesSql(q: string): Prisma.Sql {
+  const nameLike = `%${likeText(q)}%`
+  const parts = [Prisma.sql`SELECT id FROM "Tool" WHERE name ILIKE ${nameLike}`]
+  if (q.length >= 3) {
+    if (!/\s/.test(q)) parts.push(Prisma.sql`SELECT id FROM "Tool" WHERE website ILIKE ${`%${likeText(websiteTerm(q))}%`}`)
+    // The slug only for slug-like text ("chat gpt" → "chat-gpt"); anything else would have
+    // to be stripped down to it ("_a_" → "a") and match unrelated tags.
+    const tagSlug = q.toLowerCase().replace(/\s+/g, '-')
+    const bySlug = /^[a-z0-9-]{3,}$/.test(tagSlug)
+      ? Prisma.sql`(SELECT id FROM "Tag" WHERE slug LIKE ${`%${tagSlug}%`} LIMIT ${MAX_MATCHING_TAGS}) UNION `
+      : Prisma.empty
+    parts.push(Prisma.sql`SELECT tt."B" FROM "_ToolToTag" tt WHERE tt."A" IN (
+      ${bySlug}(SELECT "tagId" FROM "TagTranslation" WHERE name ILIKE ${nameLike} LIMIT ${MAX_MATCHING_TAGS * 4})
+    )`)
+  }
+  return Prisma.join(parts, ' UNION ')
+}
+
+// A pasted URL or domain → its host without "www."; other text as typed.
+function websiteTerm(q: string): string {
+  if (!q.includes('.')) return q
+  try {
+    return new URL(/^[a-z][a-z\d+.-]*:\/\//i.test(q) ? q : `https://${q}`).hostname.replace(/^www\./, '') || q
+  } catch {
+    return q // not a URL
+  }
+}
+
+// Every matching tool id, for the general path below (filters searchPage doesn't take).
+// Capped: past that many, a text this common has plenty of matches in front of these.
+async function searchMatchIds(q: string): Promise<string[]> {
+  const rows = await prisma.$queryRaw<{ id: string }[]>`WITH matches AS (${searchMatchesSql(q)}) SELECT id FROM matches LIMIT 5000`
+  return rows.map(row => row.id)
+}
+
+// A search page of tool ids, in order, and the total — two queries, all in the database.
+async function searchPage(opts: {
+  q: string
+  category?: string
+  pricing?: string
+  nameFirst: boolean
+  orderBy: Prisma.ToolOrderByWithRelationInput[]
+  skip: number
+  take: number
+}): Promise<{ ids: string[]; total: number }> {
+  const nameLike = `%${likeText(opts.q)}%`
+  const matches = Prisma.sql`WITH matches AS (${searchMatchesSql(opts.q)})`
+  const from = Prisma.sql`
+    FROM matches m JOIN "Tool" t ON t.id = m.id
+    WHERE t.status = 'PUBLISHED' AND t."deletedAt" IS NULL
+    ${opts.category ? Prisma.sql`AND EXISTS (SELECT 1 FROM "_ToolToCategory" tc JOIN "Category" c ON c.id = tc."A" WHERE tc."B" = t.id AND c.slug = ${opts.category})` : Prisma.empty}
+    ${opts.pricing ? Prisma.sql`AND t."pricingType" = ${opts.pricing}::"PricingType"` : Prisma.empty}`
+  // ORDER BY from the orderBy built above — field names from sortMap, never from the request.
+  const order = opts.orderBy.flatMap(entry => Object.entries(entry).map(([field, dir]) => {
+    if (dir !== 'asc' && dir !== 'desc') throw new Error(`searchPage: unsupported order on ${field}`)
+    return Prisma.raw(`t."${field}" ${dir === 'asc' ? 'ASC' : 'DESC'}`)
+  }))
+  const [rows, counted] = await Promise.all([
+    opts.take > 0
+      ? prisma.$queryRaw<{ id: string }[]>`
+          ${matches} SELECT t.id ${from}
+          ORDER BY ${opts.nameFirst ? Prisma.sql`(t.name ILIKE ${nameLike}) DESC, ` : Prisma.empty}${Prisma.join(order)}
+          LIMIT ${opts.take} OFFSET ${opts.skip}`
+      : [],
+    prisma.$queryRaw<{ total: bigint }[]>`${matches} SELECT count(*) AS total ${from}`
+  ])
+  return { ids: rows.map(row => row.id), total: Number(counted[0]?.total ?? 0) }
+}
 
 // The list itself. `isGuest`: no valid login token — guests only reach the first
 // PUBLIC_LIMITS.guestListTools tools of any list, then get loginRequired and nothing more.
@@ -24,7 +108,6 @@ async function listTools(event: H3Event, isGuest: boolean) {
   const hasDiscord = query.hasDiscord === 'true'
   if (hasDiscord) where.NOT = [{ discordUrl: null }, { discordUrl: '' }]
   const q = typeof query.q === 'string' ? query.q.trim().slice(0, 80) : ''
-  if (q) where.name = { contains: q, mode: 'insensitive' }
   if (query.minRating && Number.isFinite(Number(query.minRating))) where.averageRating = { gt: Number(query.minRating) }
   if (query.region) where.region = String(query.region)
   if (query.source) where.source = String(query.source)
@@ -47,8 +130,17 @@ async function listTools(event: H3Event, isGuest: boolean) {
 
   // Footer "Browse by Alphabet": tools whose name starts with one letter A–Z.
   const letter = /^[a-z]$/i.test(String(query.letter ?? '')) ? String(query.letter).toUpperCase() : null
-  // Goes in AND so it doesn't overwrite the ?q= name filter above.
-  if (letter) where.AND = [{ name: { startsWith: letter, mode: 'insensitive' } }]
+  const and: Prisma.ToolWhereInput[] = []
+  if (letter) and.push({ name: { startsWith: letter, mode: 'insensitive' } })
+
+  // Search: by name, website or tag (searchMatchesSql). What the site sends — the search
+  // page, a category's search box: q with at most a category, a price filter and a sort —
+  // runs in the database in one go (searchPage). Any other filter alongside q (nothing on
+  // the site combines them) takes the general path: the matching ids, then Prisma.
+  const simpleSearch = !!q && !query.featured && !hasDiscord && !query.minRating && !query.region && !query.source
+    && !isTodayTab && !query.days && !isNewTab && !isArchiveDay && !letter && !query.tag
+  if (q && !simpleSearch) and.push({ id: { in: await searchMatchIds(q) } })
+  if (and.length) where.AND = and
 
   const sortMap: Record<string, Prisma.ToolOrderByWithRelationInput | Prisma.ToolOrderByWithRelationInput[]> = {
     newest: { createdAt: 'desc' },
@@ -75,16 +167,34 @@ async function listTools(event: H3Event, isGuest: boolean) {
       : [sortMap[String(query.sort)] ?? { createdAt: 'desc' as const }].flat()
   const orderBy: Prisma.ToolOrderByWithRelationInput[] = [...primary, { id: 'asc' }]
 
-  const [items, total] = await Promise.all([
-    guestRoom <= 0 ? Promise.resolve([]) : prisma.tool.findMany({
-      where,
+  const select = { ...TOOL_CARD_SELECT, discordUrl: hasDiscord }
+  const skip = (page - 1) * limit
+  const take = Math.min(limit, guestRoom)
+  let items: Prisma.ToolGetPayload<{ select: typeof select }>[]
+  let total: number
+  if (simpleSearch) {
+    const found = await searchPage({
+      q,
+      category: query.category ? String(query.category) : undefined,
+      pricing: where.pricingType as string | undefined,
+      // No sort asked (the search page): name matches first — "chat" mustn't bury tools
+      // called Chat… under every tool tagged "chatbot". A list's own sort (a category's
+      // search box) is kept over both kinds of match.
+      nameFirst: !query.sort,
       orderBy,
-      skip: (page - 1) * limit,
-      take: Math.min(limit, guestRoom),
-      select: { ...TOOL_CARD_SELECT, discordUrl: hasDiscord }
-    }),
-    prisma.tool.count({ where })
-  ])
+      skip,
+      take
+    })
+    total = found.total
+    const rows = found.ids.length ? await prisma.tool.findMany({ where: { id: { in: found.ids } }, select }) : []
+    const byId = new Map(rows.map(row => [row.id, row]))
+    items = found.ids.map(id => byId.get(id)).filter(row => !!row)
+  } else {
+    [items, total] = await Promise.all([
+      take <= 0 ? Promise.resolve([]) : prisma.tool.findMany({ where, orderBy, skip, take, select }),
+      prisma.tool.count({ where })
+    ])
+  }
 
   return {
     items: items.map(row => ({

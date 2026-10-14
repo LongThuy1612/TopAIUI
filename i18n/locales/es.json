@@ -25,6 +25,8 @@
     "passwordLabel": "Contraseña",
     "passwordPlaceholder": "Introduce tu contraseña",
     "rememberMe": "Recuérdame",
+    "showPassword": "Mostrar contraseña",
+    "hidePassword": "Ocultar contraseña",
     "forgotPassword": "¿Olvidaste tu contraseña?",
     "signIn": "Iniciar sesión",
     "noAccount": "¿Aún no tienes una cuenta?",

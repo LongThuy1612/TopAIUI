@@ -25,6 +25,8 @@
     "passwordLabel": "Passord",
     "passwordPlaceholder": "Skriv inn passordet ditt",
     "rememberMe": "Husk meg",
+    "showPassword": "Vis passord",
+    "hidePassword": "Skjul passord",
     "forgotPassword": "Glemt passordet?",
     "signIn": "Logg inn",
     "noAccount": "Har du ikke en konto ennå?",

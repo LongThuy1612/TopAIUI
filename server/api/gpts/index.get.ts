@@ -10,7 +10,7 @@ export default defineCachedEventHandler(async (event) => {
   const where: Prisma.GptWhereInput = { status: 'PUBLISHED' }
   if (isGptCategory(query.category)) where.category = query.category
   const q = typeof query.q === 'string' ? query.q.trim().slice(0, 80) : ''
-  if (q) where.name = { contains: q, mode: 'insensitive' }
+  if (q) where.name = { contains: likeText(q), mode: 'insensitive' }
   const [items, total] = await Promise.all([
     prisma.gpt.findMany({ where, orderBy: [{ publishedAt: 'desc' }, { id: 'asc' }], skip: (page - 1) * limit, take: limit, select: gptCardSelect }),
     prisma.gpt.count({ where })

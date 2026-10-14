@@ -25,6 +25,8 @@
     "passwordLabel": "Senha",
     "passwordPlaceholder": "Digite a sua senha",
     "rememberMe": "Lembrar de mim",
+    "showPassword": "Mostrar senha",
+    "hidePassword": "Ocultar senha",
     "forgotPassword": "Esqueceu a senha?",
     "signIn": "Entrar",
     "noAccount": "Ainda não tem uma conta?",

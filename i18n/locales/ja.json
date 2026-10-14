@@ -25,6 +25,8 @@
     "passwordLabel": "パスワード",
     "passwordPlaceholder": "パスワードを入力してください",
     "rememberMe": "ログイン状態を保持する",
+    "showPassword": "パスワードを表示",
+    "hidePassword": "パスワードを隠す",
     "forgotPassword": "パスワードをお忘れですか？",
     "signIn": "サインイン",
     "noAccount": "アカウントをお持ちでないですか？",

@@ -25,6 +25,8 @@
     "passwordLabel": "密码",
     "passwordPlaceholder": "请输入您的密码",
     "rememberMe": "记住我",
+    "showPassword": "显示密码",
+    "hidePassword": "隐藏密码",
     "forgotPassword": "忘记密码？",
     "signIn": "登录",
     "noAccount": "还没有账户？",

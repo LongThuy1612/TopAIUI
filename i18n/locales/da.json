@@ -25,6 +25,8 @@
     "passwordLabel": "Adgangskode",
     "passwordPlaceholder": "Indtast din adgangskode",
     "rememberMe": "Husk mig",
+    "showPassword": "Vis adgangskode",
+    "hidePassword": "Skjul adgangskode",
     "forgotPassword": "Glemt din adgangskode?",
     "signIn": "Log ind",
     "noAccount": "Har du ikke en konto endnu?",
