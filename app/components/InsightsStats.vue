@@ -14,7 +14,7 @@ interface Stats {
   totalVisits: number
   totalGrowthRate: number | null
   medianGrowthRate: number | null
-  topGrowth: { slug: string; name: string; growthRate: number; monthlyVisits: number }[]
+  topGrowth: { slug: string; name: string; growthRate: number; monthlyVisits: number; previousVisits: number }[]
   categories: { name: string; visits: number; share: number }[]
   trend?: { month: string; visits: number }[]
   growthDistribution?: { label: string; count: number }[]
@@ -67,7 +67,10 @@ const distMax = computed(() => Math.max(1, ...(data.value?.growthDistribution ??
             <ol class="space-y-1.5">
               <li v-for="(r, i) in data.topGrowth" :key="r.slug" class="flex items-center justify-between gap-3">
                 <span class="truncate"><span class="text-ink-400">{{ i + 1 }}.</span> {{ r.name }}</span>
-                <span class="shrink-0 font-semibold text-emerald-600">{{ pct(r.growthRate) }}</span>
+                <span class="shrink-0 text-right">
+                  <span class="font-semibold text-emerald-600">{{ pct(r.growthRate) }}</span>
+                  <span class="ml-1.5 text-xs text-ink-400">{{ compact(r.previousVisits) }} → {{ compact(r.monthlyVisits) }}</span>
+                </span>
               </li>
               <li v-if="!data.topGrowth.length" class="text-ink-400">—</li>
             </ol>

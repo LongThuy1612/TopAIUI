@@ -268,6 +268,13 @@ const median = (xs: number[]) => {
   return s.length % 2 ? s[mid]! : (s[mid - 1]! + s[mid]!) / 2
 }
 
+// "Fastest growing": at least this many visits the month before.
+const TOP_GROWTH_MIN_PREVIOUS = 10_000
+function topGrowthOf(withPrev: InsightItem[]) {
+  const established = withPrev.filter(r => r.monthlyVisits - r.growth! >= TOP_GROWTH_MIN_PREVIOUS)
+  return [...(established.length ? established : withPrev)].sort((a, b) => b.growthRate! - a.growthRate!).slice(0, 5)
+}
+
 // Aggregates over the (filtered) tools of one month — no row figures, so no Data Credits.
 // basic: overview, top growth, visits by category · deep: + 12-month trend, growth
 // distribution, growth by category. Category names in the page's language (`names`).
@@ -292,8 +299,11 @@ export function insightStats(rows: InsightRow[], months: string[], month: string
     // Growth of the tools that have both months, so newcomers don't inflate it.
     totalGrowthRate: prevOfThem ? (nowOfThem - prevOfThem) / prevOfThem * 100 : null,
     medianGrowthRate: median(withPrev.map(r => r.growthRate!)),
-    topGrowth: [...withPrev].sort((a, b) => b.growthRate! - a.growthRate!).slice(0, 5)
-      .map(r => ({ slug: r.slug, name: r.name, growthRate: r.growthRate!, monthlyVisits: r.monthlyVisits })),
+    // Ranked by growth rate among tools that already had real traffic: on a tiny base
+    // (300 → 10,000 visits = +3,233%) the rate says nothing. Below that, only when the
+    // filtered set has no such tool at all.
+    topGrowth: topGrowthOf(withPrev)
+      .map(r => ({ slug: r.slug, name: r.name, growthRate: r.growthRate!, monthlyVisits: r.monthlyVisits, previousVisits: r.monthlyVisits - r.growth! })),
     categories: [...byCategory.values()].sort((a, b) => b.visits - a.visits).slice(0, 8)
       .map(c => ({ name: c.name, visits: c.visits, share: totalVisits ? c.visits / totalVisits * 100 : 0 }))
   }
