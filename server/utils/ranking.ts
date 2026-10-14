@@ -194,7 +194,9 @@ async function loadRankingDataset(): Promise<RankingDataset> {
 // cache storage JSON-serializes entries, so every uncached /api/ranking call
 // would re-parse the whole multi-MB dataset. Stale-while-revalidate: after an
 // hour the current copy keeps being served while one rebuild runs; a failed
-// rebuild keeps the old copy and is retried on the next request.
+// rebuild keeps the old copy and is retried a minute later — not on the next
+// request: while the database struggles, every ranking view would otherwise fire
+// the ~40k-row query again (as memoryCached does, server/utils/memoryCached.ts).
 // Dev keeps it only a minute: reloading ~40k rows / ~18 MB of JSON on every
 // request made each ranking tab click take seconds, and a minute is still
 // short enough for DB edits to show up while working on it.
@@ -202,11 +204,17 @@ const DATASET_MAX_AGE = (import.meta.dev ? 60 : 60 * 60) * 1000
 let dataset: { value: RankingDataset; at: number } | null = null
 let building: Promise<RankingDataset> | null = null
 
+const RETRY_AFTER_FAILURE_MS = 60 * 1000
+
 function rebuildRankingDataset() {
   building ??= loadRankingDataset()
     .then((value) => {
       dataset = { value, at: Date.now() }
       return value
+    })
+    .catch((err) => {
+      if (dataset) dataset.at = Date.now() - DATASET_MAX_AGE + RETRY_AFTER_FAILURE_MS
+      throw err
     })
     .finally(() => { building = null })
   return building
@@ -214,7 +222,8 @@ function rebuildRankingDataset() {
 
 export async function getRankingDataset(): Promise<RankingDataset> {
   if (!dataset) return rebuildRankingDataset()
-  if (Date.now() - dataset.at > DATASET_MAX_AGE) {
+  // One background rebuild at a time, logged once if it fails.
+  if (!building && Date.now() - dataset.at > DATASET_MAX_AGE) {
     rebuildRankingDataset().catch(err => console.error('[ranking] dataset rebuild failed', err))
   }
   return dataset.value

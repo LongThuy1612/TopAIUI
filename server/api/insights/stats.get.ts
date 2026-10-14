@@ -14,10 +14,11 @@ export default defineEventHandler(async (event) => {
 
   const filters = readInsightFilters(query)
   if (!isAdmin) assertFiltersAllowed(filters, access.filters)
-  const rows = await loadInsightRows(normalizeLocale(query.locale))
-  const months = insightMonths(rows)
+  const [rows, names] = await Promise.all([loadInsightRows(), categoryNames(normalizeLocale(query.locale))])
+  const index = insightIndex(rows)
+  const months = index.months
   const month = months.includes(String(query.month ?? '')) ? String(query.month) : months[0]
   if (!month) return null
-  const items = applyInsightFilters(insightItemsFor(rows, months, month), filters)
-  return insightStats(rows, months, month, items, level)
+  const items = applyInsightFilters(index.items(month), filters)
+  return insightStats(rows, months, month, items, level, names)
 })

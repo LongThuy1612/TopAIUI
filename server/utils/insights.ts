@@ -10,7 +10,7 @@ export interface InsightRow {
   website: string | null
   domain: string | null
   logo: string | null
-  categories: string[]
+  // Names in the page's language are added per request (categoryNames).
   categorySlugs: string[]
   // month key ("YYYY-MM") -> visits
   visits: Record<string, number>
@@ -33,35 +33,33 @@ function finiteOrNull(value: unknown) {
   return Number.isFinite(n) ? n : null
 }
 
-// Same for every user, so built once per locale and cached; the handler below
-// only filters / sorts / pages it.
-export const loadInsightRows = defineCachedFunction(async (locale: string): Promise<InsightRow[]> => {
-  const analytics = await prisma.toolAnalyticsData.findMany({
-    select: { toolSlug: true, trafficVisits: true, engagement: true }
-  })
-  const bySlug = new Map(analytics.map(a => [a.toolSlug, a]))
-
-  const tools = await prisma.tool.findMany({
-    where: { slug: { in: [...bySlug.keys()] }, status: 'PUBLISHED', deletedAt: null },
-    select: {
-      slug: true,
-      name: true,
-      website: true,
-      logoUrl: true,
-      icon: true,
-      categories: { select: { slug: true, name: true, translations: { select: { locale: true, name: true } } } }
-    }
-  })
+// Same for every user and every language, so built once and kept in memory (memoryCached;
+// one copy — per language it took ~18 MB each at 33k tools); the handlers only filter /
+// sort / page it, through insightIndex.
+//
+// Published tools with analytics, joined in SQL: listing the analytics slugs in a
+// `slug IN (…)` filter — and loading categories through the relation — binds one
+// parameter per tool, which fails past PostgreSQL's 32,767.
+export const loadInsightRows = memoryCached('insights', async (): Promise<InsightRow[]> => {
+  const [tools, { slugsByTool }] = await Promise.all([
+    prisma.$queryRaw<{
+      id: string; slug: string; name: string; website: string | null; logoUrl: string | null; icon: string | null
+      trafficVisits: unknown; engagement: unknown
+    }[]>`
+      SELECT t.id, t.slug, t.name, t.website, t."logoUrl", t.icon, a."trafficVisits", a.engagement
+      FROM "ToolAnalyticsData" a JOIN "Tool" t ON t.slug = a."toolSlug"
+      WHERE t.status = 'PUBLISHED' AND t."deletedAt" IS NULL`,
+    loadToolCategories()
+  ])
 
   return tools.map((tool) => {
-    const a = bySlug.get(tool.slug)!
     const visits: Record<string, number> = {}
-    const traffic = (a.trafficVisits ?? {}) as Record<string, unknown>
+    const traffic = (tool.trafficVisits ?? {}) as Record<string, unknown>
     for (const [day, value] of Object.entries(traffic)) {
       const n = finiteOrNull(value)
       if (n !== null && /^\d{4}-\d{2}/.test(day)) visits[day.slice(0, 7)] = n
     }
-    const engagement = (a.engagement ?? {}) as Record<string, unknown>
+    const engagement = (tool.engagement ?? {}) as Record<string, unknown>
     const bounce = finiteOrNull(engagement.bounceRate)
     const website = safeHttpUrl(tool.website)
     return {
@@ -70,21 +68,14 @@ export const loadInsightRows = defineCachedFunction(async (locale: string): Prom
       website,
       domain: domainOf(website),
       logo: resolveToolImage(tool.logoUrl) ?? resolveToolImage(tool.icon),
-      categories: tool.categories.map(c => cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug),
-      categorySlugs: tool.categories.map(c => c.slug),
+      categorySlugs: slugsByTool[tool.id] ?? [],
       visits,
       avgVisitDuration: finiteOrNull(engagement.timeOnSite),
       bounceRate: bounce === null ? null : bounce * 100,
       pagesPerVisit: finiteOrNull(engagement.pagePerVisit)
     }
   })
-}, {
-  name: 'insight-rows-v2',
-  maxAge: 600,
-  swr: true,
-  getKey: (locale: string) => locale,
-  shouldBypassCache: () => import.meta.dev
-})
+}, 10 * 60 * 1000)
 
 export function previousMonth(month: string) {
   const [y, m] = month.split('-').map(Number) as [number, number]
@@ -97,8 +88,8 @@ export const insightKey = (month: string, slug: string) => `insights:${month}:${
 
 export type InsightItem = ReturnType<typeof insightItemsFor>[number]
 
-// One month's figures for every tool that has them.
-export function insightItemsFor(rows: InsightRow[], months: string[], month: string) {
+// One month's figures for every tool that has them (category names: withCategoryNames).
+function insightItemsFor(rows: InsightRow[], months: string[], month: string) {
   const prev = previousMonth(month)
   // Sparkline: up to the last 6 months ending at the selected one.
   const trendMonths = months.filter(m => m <= month).slice(0, 6).reverse()
@@ -113,7 +104,6 @@ export function insightItemsFor(rows: InsightRow[], months: string[], month: str
         website: r.website,
         domain: r.domain,
         logo: r.logo,
-        categories: r.categories,
         categorySlugs: r.categorySlugs,
         monthlyVisits: visits,
         growth: before === undefined ? null : visits - before,
@@ -126,8 +116,79 @@ export function insightItemsFor(rows: InsightRow[], months: string[], month: str
     })
 }
 
-export function insightMonths(rows: InsightRow[]) {
-  return [...new Set(rows.flatMap(r => Object.keys(r.visits)))].sort().reverse()
+// An item as the API sends it: with its category names in the page's language
+// (`names`: categoryNames()), fields in their usual order. Only for the rows sent.
+export function withCategoryNames(r: InsightItem, names: Map<string, string>) {
+  return {
+    slug: r.slug,
+    name: r.name,
+    website: r.website,
+    domain: r.domain,
+    logo: r.logo,
+    categories: r.categorySlugs.map(slug => names.get(slug) ?? slug),
+    categorySlugs: r.categorySlugs,
+    monthlyVisits: r.monthlyVisits,
+    growth: r.growth,
+    growthRate: r.growthRate,
+    trend: r.trend,
+    avgVisitDuration: r.avgVisitDuration,
+    bounceRate: r.bounceRate,
+    pagesPerVisit: r.pagesPerVisit
+  }
+}
+
+export type InsightSort = 'visits' | 'growth' | 'growthRate'
+
+// Sorts in place. Tools without a previous month (no growth figure) always go last.
+export function sortInsightItems(items: InsightItem[], sort: InsightSort, dir: 1 | -1) {
+  const value = (r: InsightItem) => (sort === 'visits' ? r.monthlyVisits : sort === 'growth' ? r.growth : r.growthRate)
+  return items.sort((a, b) => {
+    const va = value(a), vb = value(b)
+    if (va === null && vb === null) return a.name.localeCompare(b.name)
+    if (va === null) return 1
+    if (vb === null) return -1
+    return (va - vb) * dir || a.name.localeCompare(b.name)
+  })
+}
+
+// What every request needs from the cached rows, worked out once per copy of them (the
+// rows only change when loadInsightRows rebuilds them, every 10 minutes): the months,
+// the categories in use and — per month, when first asked for — the month's items
+// already in the default order (most visits first). A page view without filters or
+// another sort then only slices that list instead of building, filtering and sorting
+// ~30k items. Only the last MONTHS_KEPT months asked for stay built.
+const MONTHS_KEPT = 3
+const indexes = new WeakMap<InsightRow[], ReturnType<typeof buildIndex>>()
+
+function buildIndex(rows: InsightRow[]) {
+  const months = [...new Set(rows.flatMap(r => Object.keys(r.visits)))].sort().reverse()
+  const categorySlugs = [...new Set(rows.flatMap(r => r.categorySlugs))]
+  const byMonth = new Map<string, InsightItem[]>()
+  return {
+    months,
+    categorySlugs,
+    // Shared: callers must not change the list or its items (sort a copy).
+    items(month: string) {
+      let items = byMonth.get(month)
+      if (items) {
+        byMonth.delete(month) // re-inserted below: the Map's order is the recency order
+      } else {
+        items = sortInsightItems(insightItemsFor(rows, months, month), 'visits', -1)
+      }
+      byMonth.set(month, items)
+      if (byMonth.size > MONTHS_KEPT) byMonth.delete(byMonth.keys().next().value!)
+      return items
+    }
+  }
+}
+
+export function insightIndex(rows: InsightRow[]) {
+  let index = indexes.get(rows)
+  if (!index) {
+    index = buildIndex(rows)
+    indexes.set(rows, index)
+  }
+  return index
 }
 
 /* ------------------------------------------------------------------ */
@@ -172,7 +233,10 @@ export function assertFiltersAllowed(f: InsightFilters, allowed: FilterLevel) {
   }
 }
 
+// Returns `items` itself when no filter is set (no copy of ~30k items).
 export function applyInsightFilters(items: InsightItem[], f: InsightFilters) {
+  const any = f.q || f.category || [f.minVisits, f.maxVisits, f.minGrowthRate, f.maxGrowthRate, f.maxBounceRate, f.minDuration, f.minPagesPerVisit].some(v => v !== null)
+  if (!any) return items
   return items.filter(r =>
     (!f.q || r.name.toLowerCase().includes(f.q) || !!r.domain?.includes(f.q)) &&
     (!f.category || r.categorySlugs.includes(f.category)) &&
@@ -187,10 +251,10 @@ export function applyInsightFilters(items: InsightItem[], f: InsightFilters) {
 }
 
 // Category options for the filter: every category with at least one tool.
-export function insightCategories(rows: InsightRow[]) {
-  const map = new Map<string, string>()
-  for (const r of rows) r.categorySlugs.forEach((slug, i) => map.set(slug, r.categories[i] ?? slug))
-  return [...map].map(([slug, name]) => ({ slug, name })).sort((a, b) => a.name.localeCompare(b.name))
+export function insightCategories(rows: InsightRow[], names: Map<string, string>) {
+  return insightIndex(rows).categorySlugs
+    .map(slug => ({ slug, name: names.get(slug) ?? slug }))
+    .sort((a, b) => a.name.localeCompare(b.name))
 }
 
 /* ------------------------------------------------------------------ */
@@ -206,16 +270,16 @@ const median = (xs: number[]) => {
 
 // Aggregates over the (filtered) tools of one month — no row figures, so no Data Credits.
 // basic: overview, top growth, visits by category · deep: + 12-month trend, growth
-// distribution, growth by category.
-export function insightStats(rows: InsightRow[], months: string[], month: string, items: InsightItem[], level: 'basic' | 'deep') {
+// distribution, growth by category. Category names in the page's language (`names`).
+export function insightStats(rows: InsightRow[], months: string[], month: string, items: InsightItem[], level: 'basic' | 'deep', names: Map<string, string>) {
   const totalVisits = items.reduce((s, r) => s + r.monthlyVisits, 0)
   const withPrev = items.filter(r => r.growth !== null && r.growthRate !== null)
   const prevOfThem = withPrev.reduce((s, r) => s + (r.monthlyVisits - r.growth!), 0)
   const nowOfThem = withPrev.reduce((s, r) => s + r.monthlyVisits, 0)
   const byCategory = new Map<string, { name: string; visits: number; now: number; prev: number }>()
   for (const r of items) {
-    r.categorySlugs.forEach((slug, i) => {
-      const c = byCategory.get(slug) ?? { name: r.categories[i] ?? slug, visits: 0, now: 0, prev: 0 }
+    r.categorySlugs.forEach((slug) => {
+      const c = byCategory.get(slug) ?? { name: names.get(slug) ?? slug, visits: 0, now: 0, prev: 0 }
       c.visits += r.monthlyVisits
       if (r.growth !== null) { c.now += r.monthlyVisits; c.prev += r.monthlyVisits - r.growth }
       byCategory.set(slug, c)

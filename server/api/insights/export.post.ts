@@ -30,12 +30,13 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 403, statusMessage: 'Locked rows', message: 'These rows are locked — load them with Data Credits first.' })
   }
 
-  const rows = await loadInsightRows(normalizeLocale(body?.locale))
-  const months = insightMonths(rows)
-  if (!months.includes(month)) throw createError({ statusCode: 400, statusMessage: 'Unknown month' })
+  const [rows, names] = await Promise.all([loadInsightRows(), categoryNames(normalizeLocale(body?.locale))])
+  const index = insightIndex(rows)
+  if (!index.months.includes(month)) throw createError({ statusCode: 400, statusMessage: 'Unknown month' })
   const wanted = new Set(exportSlugs)
-  const items = insightItemsFor(rows, months, month).filter(r => wanted.has(r.slug))
+  const items = index.items(month).filter(r => wanted.has(r.slug))
     .sort((a, b) => b.monthlyVisits - a.monthlyVisits)
+    .map(r => withCategoryNames(r, names))
 
   if (!isAdmin) await chargeExport(userId, items.length)
 

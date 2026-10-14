@@ -6,7 +6,6 @@
 // minDuration, minPagesPerVisit). Filters above the plan → 403.
 
 const SORTS = ['visits', 'growth', 'growthRate'] as const
-type Sort = typeof SORTS[number]
 
 // Shown in place of a row the user has no Data Credits left for: no figures at all, so
 // the data can't be read from the response either.
@@ -27,30 +26,23 @@ export default defineEventHandler(async (event) => {
   const filters = readInsightFilters(query)
   if (!isAdmin) assertFiltersAllowed(filters, access.filters)
 
-  const rows = await loadInsightRows(locale)
-  const months = insightMonths(rows)
+  const [rows, names] = await Promise.all([loadInsightRows(), categoryNames(locale)])
+  const index = insightIndex(rows)
+  const months = index.months
   const requested = String(query.month ?? '')
   const month = months.includes(requested) ? requested : months[0] ?? null
-  const sort: Sort = (SORTS as readonly string[]).includes(String(query.sort)) ? query.sort as Sort : 'visits'
+  const sort: InsightSort = (SORTS as readonly string[]).includes(String(query.sort)) ? query.sort as InsightSort : 'visits'
   const dir = query.dir === 'asc' ? 1 : -1
   const page = Math.max(1, Number(query.page) || 1)
   const limit = Math.min(100, Math.max(1, Number(query.limit) || 50))
-  const categories = insightCategories(rows)
+  const categories = insightCategories(rows, names)
 
   if (!month) return { months, month, total: 0, page: 1, pageCount: 0, items: [], categories, credits: null }
 
-  const items = applyInsightFilters(insightItemsFor(rows, months, month), filters)
-
-  const sortValue = (r: typeof items[number]) =>
-    sort === 'visits' ? r.monthlyVisits : sort === 'growth' ? r.growth : r.growthRate
-  // Tools without a previous month (no growth figure) always go last.
-  items.sort((a, b) => {
-    const va = sortValue(a), vb = sortValue(b)
-    if (va === null && vb === null) return a.name.localeCompare(b.name)
-    if (va === null) return 1
-    if (vb === null) return -1
-    return (va - vb) * dir || a.name.localeCompare(b.name)
-  })
+  // The month's list comes already in the default order (most visits first) and is shared
+  // between requests: another order sorts a copy.
+  const filtered = applyInsightFilters(index.items(month), filters)
+  const items = sort === 'visits' && dir === -1 ? filtered : sortInsightItems([...filtered], sort, dir)
 
   const total = items.length
   const pageItems = items.slice((page - 1) * limit, page * limit)
@@ -67,7 +59,7 @@ export default defineEventHandler(async (event) => {
     page,
     pageCount: Math.ceil(total / limit),
     categories,
-    items: pageItems.map((r, i) => (!credits || credits.allowed.has(keyOf(r.slug)) ? { ...r, locked: false } : lockedRow(i))),
+    items: pageItems.map((r, i) => (!credits || credits.allowed.has(keyOf(r.slug)) ? { ...withCategoryNames(r, names), locked: false } : lockedRow(i))),
     credits: credits && { used: credits.used, limit: credits.limit, charged: credits.charged }
   }
 })
