@@ -172,12 +172,14 @@
       "working": "Please wait…",
       "error": "Something went wrong. Please try again.",
       "confirmChange": "Switch to {plan}? The prorated difference is charged (or credited) right away.",
+      "confirmChangePaypal": "Switch to {plan}? You approve the new plan on PayPal, then the unused part of your current plan is refunded.",
       "confirmCancel": "Cancel your plan? You keep it until {date}, then move to Free.",
       "renewsOn": "Renews on {date}",
       "endsOn": "Ends on {date}",
-      "pastDue": "Payment failed — please update your card.",
+      "pastDue": "Payment failed — please update your payment method in PayPal.",
       "manageBilling": "Manage billing",
       "resume": "Keep my plan",
+      "cancelledInPaypal": "Cancelled in your PayPal account — subscribe again to keep it.",
       "cancelPlan": "Cancel plan"
     },
     "business": "Business",
@@ -382,7 +384,7 @@
       "apply": "Apply update",
       "reject": "Reject & refund",
       "reasonPlaceholder": "Reason for rejecting — shown to the owner",
-      "hint": "Applying writes the changes to the live listing and re-translates it. Rejecting refunds the payment through Stripe."
+      "hint": "Applying writes the changes to the live listing and re-translates it. Rejecting refunds the payment through PayPal."
     },
     "managePlan": "Manage plan",
     "myInquiries": "My inquiries",
@@ -675,10 +677,10 @@
     "selectPlan": "Select Plan",
     "subscription": "Subscription",
     "subscriptionPlan": "Subscription Plan",
-    "subscriptionCard": "Subscription Card",
+    "subscriptionCard": "Payment Method",
     "nextChargeAmount": "Next Charge Amount",
     "nextChargeDate": "Next Charge Date",
-    "changeCard": "Change Card",
+    "changeCard": "Manage Payment",
     "unsubscribe": "Unsubscribe",
     "profileTitle": "Profile & Invoice Information",
     "fieldEmail": "Email",
@@ -707,7 +709,9 @@
       "uncollectible": "Failed",
       "void": "Void",
       "draft": "Draft"
-    }
+    },
+    "refundedAmount": "{amount} refunded",
+    "refundPending": "Refund of {amount} in progress"
   },
   "feedbackPage": {
     "title": "User Feedback",
@@ -932,6 +936,7 @@
     "needToKnow": "Need to know:",
     "total": "Total: {amount}",
     "pay": "Pay {amount}",
+    "payPaypal": "Pay {amount} with PayPal",
     "processing": "Processing…",
     "genericError": "Something went wrong. Please try again.",
     "eta": "Skip the queue — live within 48 hours",
@@ -1583,7 +1588,7 @@
     "bought": "Bought",
     "refunded": "Refunded",
     "refund": "Refund {credits} credit(s) · {amount}",
-    "confirm": "Refund {credits} unused credit(s) — {amount} back to the card through Stripe? The credits are taken off the balance.",
+    "confirm": "Refund {credits} unused credit(s) — {amount} back to the buyer's original payment method? The credits are taken off the balance.",
     "done": "Refunded {credits} credit(s) · {amount}.",
     "nothing": "No unused credits",
     "empty": "No guest post orders."
@@ -1735,7 +1740,7 @@
       "thirdParty": {
         "title": "Third-Party Cookies",
         "intro": "Some cookies on our site are set by third-party services we use, including:",
-        "stripe": "Stripe (payments): you are sent to Stripe's own checkout page, which sets its own cookies",
+        "paypal": "PayPal (payments): you are sent to PayPal's own checkout page, which sets its own cookies",
         "google": "Google (the Sign in with Google button on the sign-in and sign-up pages)"
       },
       "contact": {

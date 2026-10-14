@@ -172,12 +172,14 @@
       "working": "Espera un momento…",
       "error": "Algo salió mal. Inténtalo de nuevo.",
       "confirmChange": "¿Cambiar a {plan}? La diferencia prorrateada se cobra (o se abona) de inmediato.",
+      "confirmChangePaypal": "¿Cambiar a {plan}? Apruebas el nuevo plan en PayPal y luego se reembolsa la parte no usada de tu plan actual.",
       "confirmCancel": "¿Cancelar tu plan? Lo conservas hasta el {date} y luego pasas a Free.",
       "renewsOn": "Se renueva el {date}",
       "endsOn": "Finaliza el {date}",
-      "pastDue": "El pago falló — actualiza tu tarjeta.",
+      "pastDue": "El pago falló — actualiza tu método de pago en PayPal.",
       "manageBilling": "Gestionar facturación",
       "resume": "Mantener mi plan",
+      "cancelledInPaypal": "Cancelado en tu cuenta de PayPal — suscríbete de nuevo para conservarlo.",
       "cancelPlan": "Cancelar plan"
     },
     "business": "Negocio",
@@ -382,7 +384,7 @@
       "apply": "Aplicar actualización",
       "reject": "Rechazar y reembolsar",
       "reasonPlaceholder": "Motivo del rechazo — se muestra al propietario",
-      "hint": "Al aplicar, los cambios se escriben en la ficha publicada y se vuelve a traducir. Al rechazar, el pago se reembolsa a través de Stripe."
+      "hint": "Al aplicar, los cambios se escriben en la ficha publicada y se vuelve a traducir. Al rechazar, el pago se reembolsa a través de PayPal."
     },
     "managePlan": "Gestionar plan",
     "myInquiries": "Mis consultas",
@@ -675,10 +677,10 @@
     "selectPlan": "Elegir plan",
     "subscription": "Suscripción",
     "subscriptionPlan": "Plan de suscripción",
-    "subscriptionCard": "Tarjeta de suscripción",
+    "subscriptionCard": "Método de pago",
     "nextChargeAmount": "Importe del próximo cargo",
     "nextChargeDate": "Fecha del próximo cargo",
-    "changeCard": "Cambiar tarjeta",
+    "changeCard": "Gestionar pago",
     "unsubscribe": "Cancelar suscripción",
     "profileTitle": "Información de perfil y facturación",
     "fieldEmail": "Correo electrónico",
@@ -707,7 +709,9 @@
       "uncollectible": "Fallida",
       "void": "Anulada",
       "draft": "Borrador"
-    }
+    },
+    "refundedAmount": "{amount} reembolsado",
+    "refundPending": "Reembolso de {amount} en curso"
   },
   "feedbackPage": {
     "title": "Comentarios de usuarios",
@@ -932,6 +936,7 @@
     "needToKnow": "Debes saber:",
     "total": "Total: {amount}",
     "pay": "Pagar {amount}",
+    "payPaypal": "Pagar {amount} con PayPal",
     "processing": "Procesando…",
     "genericError": "Algo salió mal. Inténtalo de nuevo.",
     "eta": "Sin cola — publicado en 48 horas",
@@ -1583,7 +1588,7 @@
     "bought": "Comprados",
     "refunded": "Reembolsados",
     "refund": "Reembolsar {credits} crédito(s) · {amount}",
-    "confirm": "¿Reembolsar {credits} crédito(s) no usado(s) — {amount} a la tarjeta a través de Stripe? Los créditos se descuentan del saldo.",
+    "confirm": "¿Reembolsar {credits} crédito(s) no usado(s) — {amount} al método de pago original del comprador? Los créditos se descuentan del saldo.",
     "done": "Reembolsado(s) {credits} crédito(s) · {amount}.",
     "nothing": "Sin créditos no usados",
     "empty": "No hay pedidos de artículos invitados."
@@ -1735,7 +1740,7 @@
       "thirdParty": {
         "title": "Cookies de terceros",
         "intro": "Algunas cookies de nuestro sitio son configuradas por servicios de terceros que utilizamos, incluidos:",
-        "stripe": "Stripe (pagos): se te redirige a la página de pago de Stripe, que establece sus propias cookies",
+        "paypal": "PayPal (pagos): se te redirige a la página de pago de PayPal, que establece sus propias cookies",
         "google": "Google (el botón Iniciar sesión con Google en las páginas de inicio de sesión y registro)"
       },
       "contact": {

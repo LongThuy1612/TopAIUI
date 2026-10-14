@@ -14,8 +14,13 @@ export default defineEventHandler(async (event) => {
     status: sub?.status ?? null,
     currentPeriodEnd: sub?.currentPeriodEnd ?? null,
     cancelAtPeriodEnd: sub?.cancelAtPeriodEnd ?? false,
+    // A cancelled plan "Keep my plan" can still undo. Not a PayPal plan cancelled from the
+    // PayPal account or past its period: the same plan is then subscribed again instead.
+    canResume: !!sub?.cancelAtPeriodEnd && (sub.provider !== 'paypal' || isPaypalResumable(sub)),
     // A fake (dev) subscription has no Stripe billing account to open.
     canManageBilling: !!sub && !isFakeSubscription(sub.stripeSubscriptionId),
+    // stripe | paypal: where the plan is paid (Payment & Invoice shows it).
+    provider: sub && !isFakeSubscription(sub.stripeSubscriptionId) ? sub.provider : null,
     filters: access.filters,
     stats: access.stats,
     usage: {

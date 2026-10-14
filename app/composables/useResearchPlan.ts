@@ -2,15 +2,18 @@ import type { BillingIntervalKey, FilterLevel, ResearchPlanKey, StatsLevel } fro
 
 // The logged-in user's Research Plan + this month's quota (GET /api/me/plan), shared by
 // the sidebar box, the Upgrade modal and Payment & Invoice (one key → one request), and
-// the actions on it. Paying for a plan goes through Stripe Checkout; changing, cancelling
-// and resuming are done in place (server/utils/research.ts).
+// the actions on it. Paying for a plan — and, with PayPal, changing it — goes through
+// PayPal (or Stripe Checkout); cancelling and resuming are done in place
+// (server/utils/research.ts, server/utils/paypalSubscriptions.ts).
 export interface MyPlan {
   plan: ResearchPlanKey | 'FREE'
   interval: BillingIntervalKey | null
   status: string | null
   currentPeriodEnd: string | null
   cancelAtPeriodEnd: boolean
+  canResume: boolean
   canManageBilling: boolean
+  provider: 'stripe' | 'paypal' | null
   filters: FilterLevel
   stats: StatsLevel
   usage: {
@@ -34,7 +37,7 @@ export function useResearchPlan() {
     let leaving = false
     try {
       const result = await fn()
-      // Off to Stripe: stay busy until the browser has left, so a second click can't
+      // Off to PayPal / Stripe: stay busy until the browser has left, so a second click can't
       // open a second checkout.
       leaving = result === 'redirect'
       return result
@@ -46,7 +49,8 @@ export function useResearchPlan() {
     }
   }
 
-  // Free → Stripe Checkout (leaves the page); on a plan → changed in place.
+  // Free → PayPal / Stripe Checkout (leaves the page); on a plan → changed in place
+  // (Stripe) or approved on PayPal (leaves the page too).
   const subscribe = (plan: ResearchPlanKey, interval: BillingIntervalKey) => run(`subscribe:${plan}:${interval}`, async () => {
     const res = await $fetch<{ checkoutUrl?: string; changed?: boolean }>('/api/billing/subscribe', {
       method: 'POST', headers: authHeaders(), body: { plan, interval, locale: locale.value }

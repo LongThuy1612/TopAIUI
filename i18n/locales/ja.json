@@ -172,12 +172,14 @@
       "working": "お待ちください…",
       "error": "問題が発生しました。もう一度お試しください。",
       "confirmChange": "{plan} に切り替えますか？日割りの差額はすぐに請求（または返金）されます。",
+      "confirmChangePaypal": "{plan} に切り替えますか？PayPal で新しいプランを承認すると、現在のプランの未使用分が返金されます。",
       "confirmCancel": "プランを解約しますか？{date} までは利用でき、その後 Free に移行します。",
       "renewsOn": "{date} に更新",
       "endsOn": "{date} に終了",
-      "pastDue": "お支払いに失敗しました — カード情報を更新してください。",
+      "pastDue": "お支払いに失敗しました — PayPal でお支払い方法を更新してください。",
       "manageBilling": "請求を管理",
       "resume": "プランを継続する",
+      "cancelledInPaypal": "PayPal アカウントで解約されました — 続けるには再度購読してください。",
       "cancelPlan": "プランを解約"
     },
     "business": "ビジネス",
@@ -382,7 +384,7 @@
       "apply": "アップデートを適用",
       "reject": "却下して返金",
       "reasonPlaceholder": "却下理由 — オーナーに表示されます",
-      "hint": "適用すると変更が公開中の掲載に反映され、再翻訳されます。却下すると Stripe 経由で返金されます。"
+      "hint": "適用すると変更が公開中の掲載に反映され、再翻訳されます。却下すると PayPal 経由で返金されます。"
     },
     "managePlan": "プランを管理",
     "myInquiries": "お問い合わせ履歴",
@@ -675,10 +677,10 @@
     "selectPlan": "プランを選択",
     "subscription": "サブスクリプション情報",
     "subscriptionPlan": "サブスクリプションプラン",
-    "subscriptionCard": "サブスクリプションカード",
+    "subscriptionCard": "お支払い方法",
     "nextChargeAmount": "次回請求額",
     "nextChargeDate": "次回請求日",
-    "changeCard": "カードを変更",
+    "changeCard": "お支払いを管理",
     "unsubscribe": "解約する",
     "profileTitle": "プロフィール＆請求情報",
     "fieldEmail": "メールアドレス",
@@ -707,7 +709,9 @@
       "uncollectible": "失敗",
       "void": "無効",
       "draft": "下書き"
-    }
+    },
+    "refundedAmount": "{amount} 返金済み",
+    "refundPending": "{amount} の返金を処理中"
   },
   "feedbackPage": {
     "title": "ユーザーフィードバック",
@@ -932,6 +936,7 @@
     "needToKnow": "ご注意：",
     "total": "合計：{amount}",
     "pay": "{amount} を支払う",
+    "payPaypal": "PayPal で {amount} を支払う",
     "processing": "処理中…",
     "genericError": "問題が発生しました。もう一度お試しください。",
     "eta": "待ち時間なし — 48 時間以内に公開",
@@ -1583,7 +1588,7 @@
     "bought": "購入数",
     "refunded": "返金済み",
     "refund": "{credits} クレジットを返金 · {amount}",
-    "confirm": "未使用の {credits} クレジットを返金し、Stripe 経由で {amount} をカードに戻しますか？クレジットは残高から差し引かれます。",
+    "confirm": "未使用の {credits} クレジットを返金し、{amount} を購入者の元のお支払い方法に戻しますか？クレジットは残高から差し引かれます。",
     "done": "{credits} クレジットを返金しました · {amount}。",
     "nothing": "未使用のクレジットはありません",
     "empty": "ゲスト投稿の注文はありません。"
@@ -1735,7 +1740,7 @@
       "thirdParty": {
         "title": "サードパーティCookie",
         "intro": "当社サイトの一部の Cookie は、当社が使用する次のようなサードパーティ サービスによって設定されます。",
-        "stripe": "Stripe（決済）：Stripe 独自の決済ページに移動し、そのページが独自の Cookie を設定します",
+        "paypal": "PayPal（決済）：PayPal 独自の決済ページに移動し、そのページが独自の Cookie を設定します",
         "google": "Google（ログイン・登録ページの「Google でログイン」ボタン）"
       },
       "contact": {

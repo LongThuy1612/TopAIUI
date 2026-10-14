@@ -157,12 +157,14 @@
       "working": "Vent litt…",
       "error": "Noe gikk galt. Prøv igjen.",
       "confirmChange": "Bytte til {plan}? Den forholdsmessige differansen belastes (eller krediteres) med en gang.",
+      "confirmChangePaypal": "Bytte til {plan}? Du godkjenner den nye planen hos PayPal, og den ubrukte delen av nåværende plan refunderes.",
       "confirmCancel": "Si opp abonnementet? Du beholder det til {date}, deretter går du over til Free.",
       "renewsOn": "Fornyes {date}",
       "endsOn": "Utløper {date}",
-      "pastDue": "Betalingen mislyktes — oppdater kortet ditt.",
+      "pastDue": "Betalingen mislyktes — oppdater betalingsmåten din i PayPal.",
       "manageBilling": "Administrer fakturering",
       "resume": "Behold abonnementet",
+      "cancelledInPaypal": "Avsluttet i PayPal-kontoen din — abonner på nytt for å beholde den.",
       "cancelPlan": "Si opp abonnement"
     },
     "business": "Bedrift",
@@ -367,7 +369,7 @@
       "apply": "Bruk oppdateringen",
       "reject": "Avvis og refunder",
       "reasonPlaceholder": "Årsak til avvisning — vises for eieren",
-      "hint": "Når du bruker oppdateringen, skrives endringene inn i den publiserte oppføringen, som oversettes på nytt. Ved avvisning refunderes betalingen via Stripe."
+      "hint": "Når du bruker oppdateringen, skrives endringene inn i den publiserte oppføringen, som oversettes på nytt. Ved avvisning refunderes betalingen via PayPal."
     },
     "managePlan": "Administrer abonnement"
   },
@@ -658,10 +660,10 @@
     "selectPlan": "Velg abonnement",
     "subscription": "Abonnement",
     "subscriptionPlan": "Abonnement",
-    "subscriptionCard": "Kort for abonnementet",
+    "subscriptionCard": "Betalingsmåte",
     "nextChargeAmount": "Neste belastning",
     "nextChargeDate": "Dato for neste belastning",
-    "changeCard": "Bytt kort",
+    "changeCard": "Administrer betaling",
     "unsubscribe": "Si opp",
     "profileTitle": "Profil- og fakturaopplysninger",
     "fieldEmail": "E-post",
@@ -690,7 +692,9 @@
       "uncollectible": "Mislyktes",
       "void": "Annullert",
       "draft": "Utkast"
-    }
+    },
+    "refundedAmount": "{amount} refundert",
+    "refundPending": "Refusjon av {amount} pågår"
   },
   "feedbackPage": {
     "title": "Tilbakemeldinger fra brukere",
@@ -909,6 +913,7 @@
     "needToKnow": "Greit å vite:",
     "total": "Totalt: {amount}",
     "pay": "Betal {amount}",
+    "payPaypal": "Betal {amount} med PayPal",
     "processing": "Behandler…",
     "genericError": "Noe gikk galt. Prøv igjen.",
     "eta": "Ingen kø — publisert innen 48 timer",
@@ -1560,7 +1565,7 @@
     "bought": "Kjøpt",
     "refunded": "Refundert",
     "refund": "Refunder {credits} kreditt(er) · {amount}",
-    "confirm": "Refundere {credits} ubrukte kreditt(er) — {amount} tilbake til kortet via Stripe? Kredittene trekkes fra saldoen.",
+    "confirm": "Refundere {credits} ubrukte kreditt(er) — {amount} tilbake til kjøperens opprinnelige betalingsmåte? Kredittene trekkes fra saldoen.",
     "done": "Refunderte {credits} kreditt(er) · {amount}.",
     "nothing": "Ingen ubrukte kreditter",
     "empty": "Ingen bestillinger av gjesteinnlegg."

@@ -157,12 +157,14 @@
       "working": "רגע…",
       "error": "משהו השתבש. נסו שוב.",
       "confirmChange": "לעבור ל-{plan}? ההפרש היחסי יחויב (או יזוכה) מיד.",
+      "confirmChangePaypal": "לעבור ל-{plan}? מאשרים את התוכנית החדשה ב-PayPal, ואז החלק שלא נוצל מהתוכנית הנוכחית מוחזר.",
       "confirmCancel": "לבטל את התוכנית? היא תישאר בתוקף עד {date}, ואז תעברו ל-Free.",
       "renewsOn": "מתחדשת ב-{date}",
       "endsOn": "מסתיימת ב-{date}",
-      "pastDue": "התשלום נכשל — עדכנו את הכרטיס.",
+      "pastDue": "התשלום נכשל — עדכנו את אמצעי התשלום ב-PayPal.",
       "manageBilling": "ניהול חיובים",
       "resume": "להשאיר את התוכנית",
+      "cancelledInPaypal": "בוטל בחשבון ה-PayPal שלכם — הירשמו שוב כדי לשמור עליו.",
       "cancelPlan": "ביטול התוכנית"
     },
     "business": "עסקים",
@@ -367,7 +369,7 @@
       "apply": "החלת העדכון",
       "reject": "דחייה והחזר כספי",
       "reasonPlaceholder": "סיבת הדחייה — תוצג לבעלים",
-      "hint": "החלה כותבת את השינויים לדף שבאוויר ומתרגמת אותו מחדש. דחייה מחזירה את התשלום דרך Stripe."
+      "hint": "החלה כותבת את השינויים לדף שבאוויר ומתרגמת אותו מחדש. דחייה מחזירה את התשלום דרך PayPal."
     },
     "managePlan": "ניהול התוכנית"
   },
@@ -658,10 +660,10 @@
     "selectPlan": "בחירת תוכנית",
     "subscription": "מנוי",
     "subscriptionPlan": "תוכנית המנוי",
-    "subscriptionCard": "כרטיס המנוי",
+    "subscriptionCard": "אמצעי תשלום",
     "nextChargeAmount": "סכום החיוב הבא",
     "nextChargeDate": "תאריך החיוב הבא",
-    "changeCard": "החלפת כרטיס",
+    "changeCard": "ניהול תשלום",
     "unsubscribe": "ביטול מנוי",
     "profileTitle": "פרופיל ופרטי חשבונית",
     "fieldEmail": "אימייל",
@@ -690,7 +692,9 @@
       "uncollectible": "נכשל",
       "void": "מבוטל",
       "draft": "טיוטה"
-    }
+    },
+    "refundedAmount": "הוחזרו {amount}",
+    "refundPending": "החזר של {amount} בתהליך"
   },
   "feedbackPage": {
     "title": "משוב משתמשים",
@@ -909,6 +913,7 @@
     "needToKnow": "חשוב לדעת:",
     "total": "סה\"כ: {amount}",
     "pay": "לתשלום {amount}",
+    "payPaypal": "תשלום {amount} ב-PayPal",
     "processing": "מעבד…",
     "genericError": "משהו השתבש. נסה שוב.",
     "eta": "בלי תור — עולה לאוויר תוך 48 שעות",
@@ -1560,7 +1565,7 @@
     "bought": "נקנו",
     "refunded": "הוחזרו",
     "refund": "החזר {credits} קרדיטים · {amount}",
-    "confirm": "להחזיר {credits} קרדיטים שלא נוצלו — {amount} חזרה לכרטיס דרך Stripe? הקרדיטים יורדו מהיתרה.",
+    "confirm": "להחזיר {credits} קרדיטים שלא נוצלו — {amount} חזרה לאמצעי התשלום המקורי של הקונה? הקרדיטים יורדו מהיתרה.",
     "done": "הוחזרו {credits} קרדיטים · {amount}.",
     "nothing": "אין קרדיטים שלא נוצלו",
     "empty": "אין הזמנות של פוסטים של אורחים."

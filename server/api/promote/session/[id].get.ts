@@ -1,5 +1,6 @@
 // GET /api/promote/session/:sessionId → { status, type, toolId }
-// Polled by a promote page after Stripe sends the buyer back (?session_id=…), so a
+// Polled by a promote page after Stripe sends the buyer back (?session_id=…) — or PayPal
+// (?paypal=1&token=<PayPal order id>, captured here: server/utils/paypal.ts) — so a
 // "Submit AI" buyer can be taken straight to their new tool. The webhook normally
 // fulfils the order first; if it hasn't arrived yet (or isn't configured, e.g. local
 // dev without `stripe listen`), ask Stripe directly and fulfil here —
@@ -10,13 +11,17 @@ export default defineEventHandler(async (event) => {
 
   const find = () => prisma.promoteOrder.findFirst({
     where: { stripeSessionId: sessionId, userId },
-    select: { status: true, type: true, toolId: true }
+    select: { status: true, type: true, toolId: true, provider: true }
   })
 
   let order = await find()
   if (!order) throw createError({ statusCode: 404, statusMessage: 'Order not found' })
 
-  if (order.status === 'PENDING' && !sessionId.startsWith('fake_')) {
+  if (order.status === 'PENDING' && order.provider === 'paypal') {
+    // A declined capture etc. leaves the order PENDING; the page simply stops waiting.
+    await syncPaypalOrder(sessionId).catch(err => console.error('[paypal] sync failed', sessionId, err))
+    order = await find()
+  } else if (order.status === 'PENDING' && !sessionId.startsWith('fake_')) {
     const session = await useStripe().checkout.sessions.retrieve(sessionId).catch(() => null)
     if (session?.payment_status === 'paid') {
       await fulfillPromoteOrder(sessionId)
@@ -24,5 +29,5 @@ export default defineEventHandler(async (event) => {
     }
   }
 
-  return order
+  return order && { status: order.status, type: order.type, toolId: order.toolId }
 })

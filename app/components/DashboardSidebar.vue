@@ -37,8 +37,9 @@ const planLabel = computed(() => (!myPlan.value || myPlan.value.plan === 'FREE'
 const quotaPct = (q: { used: number; limit: number } | undefined) => (q?.limit ? Math.min(100, Math.round((q.used / q.limit) * 100)) : 0)
 const nf = computed(() => new Intl.NumberFormat(locale.value))
 
-// Back from Stripe Checkout (?plan_session=…): mirror the new subscription right away
-// instead of waiting for the webhook, then drop the query from the URL.
+// Back from Stripe Checkout (?plan_session=…) or PayPal (?plan_provider=paypal&subscription_id=I-…):
+// mirror the new subscription right away instead of waiting for the webhook, then drop the
+// query from the URL.
 onMounted(async () => {
   // From the public Ranking's "Upgrade" (?upgrade=1): open the plan picker.
   if (route.query.upgrade) {
@@ -47,13 +48,13 @@ onMounted(async () => {
     navigateTo({ query: rest }, { replace: true })
     return
   }
-  const sessionId = route.query.plan_session
-  if (typeof sessionId !== 'string' && !route.query.plan_canceled) return
+  const sessionId = route.query.plan_provider === 'paypal' ? route.query.subscription_id : route.query.plan_session
+  if (typeof sessionId !== 'string' && !route.query.plan_canceled && !route.query.plan_provider) return
   if (typeof sessionId === 'string') {
     await $fetch(`/api/billing/session/${sessionId}`, { headers: authHeaders() }).catch(() => {})
     await refreshPlan()
   }
-  const { plan_session: _s, plan_canceled: _c, ...query } = route.query
+  const { plan_session: _s, plan_canceled: _c, plan_provider: _p, subscription_id: _i, ba_token: _b, token: _t, ...query } = route.query
   navigateTo({ query }, { replace: true })
 })
 

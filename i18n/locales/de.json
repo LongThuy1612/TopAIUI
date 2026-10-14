@@ -172,12 +172,14 @@
       "working": "Bitte warten…",
       "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
       "confirmChange": "Zu {plan} wechseln? Die anteilige Differenz wird sofort berechnet (oder gutgeschrieben).",
+      "confirmChangePaypal": "Zu {plan} wechseln? Du bestätigst den neuen Plan bei PayPal, danach wird der ungenutzte Teil deines aktuellen Plans erstattet.",
       "confirmCancel": "Plan kündigen? Du behältst ihn bis {date}, danach wechselst du zu Free.",
       "renewsOn": "Verlängert sich am {date}",
       "endsOn": "Endet am {date}",
-      "pastDue": "Zahlung fehlgeschlagen — bitte aktualisiere deine Karte.",
+      "pastDue": "Zahlung fehlgeschlagen — bitte aktualisiere deine Zahlungsmethode bei PayPal.",
       "manageBilling": "Abrechnung verwalten",
       "resume": "Plan behalten",
+      "cancelledInPaypal": "In deinem PayPal-Konto gekündigt — abonniere erneut, um ihn zu behalten.",
       "cancelPlan": "Plan kündigen"
     },
     "business": "Business",
@@ -382,7 +384,7 @@
       "apply": "Update übernehmen",
       "reject": "Ablehnen & erstatten",
       "reasonPlaceholder": "Ablehnungsgrund — wird dem Inhaber angezeigt",
-      "hint": "Beim Übernehmen werden die Änderungen in den Live-Eintrag geschrieben und neu übersetzt. Bei Ablehnung wird die Zahlung über Stripe erstattet."
+      "hint": "Beim Übernehmen werden die Änderungen in den Live-Eintrag geschrieben und neu übersetzt. Bei Ablehnung wird die Zahlung über PayPal erstattet."
     },
     "managePlan": "Plan verwalten",
     "myInquiries": "Meine Anfragen",
@@ -675,10 +677,10 @@
     "selectPlan": "Plan auswählen",
     "subscription": "Abonnement",
     "subscriptionPlan": "Abonnementplan",
-    "subscriptionCard": "Zahlungskarte",
+    "subscriptionCard": "Zahlungsmethode",
     "nextChargeAmount": "Nächster Abbuchungsbetrag",
     "nextChargeDate": "Nächstes Abbuchungsdatum",
-    "changeCard": "Karte ändern",
+    "changeCard": "Zahlung verwalten",
     "unsubscribe": "Kündigen",
     "profileTitle": "Profil- und Rechnungsinformationen",
     "fieldEmail": "E-Mail",
@@ -707,7 +709,9 @@
       "uncollectible": "Fehlgeschlagen",
       "void": "Storniert",
       "draft": "Entwurf"
-    }
+    },
+    "refundedAmount": "{amount} erstattet",
+    "refundPending": "Erstattung von {amount} läuft"
   },
   "feedbackPage": {
     "title": "Nutzerfeedback",
@@ -932,6 +936,7 @@
     "needToKnow": "Gut zu wissen:",
     "total": "Gesamt: {amount}",
     "pay": "{amount} bezahlen",
+    "payPaypal": "{amount} mit PayPal bezahlen",
     "processing": "Wird verarbeitet…",
     "genericError": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
     "eta": "Ohne Warteschlange — online innerhalb von 48 Stunden",
@@ -1583,7 +1588,7 @@
     "bought": "Gekauft",
     "refunded": "Erstattet",
     "refund": "{credits} Credit(s) erstatten · {amount}",
-    "confirm": "{credits} ungenutzte Credit(s) erstatten — {amount} zurück auf die Karte über Stripe? Die Credits werden vom Guthaben abgezogen.",
+    "confirm": "{credits} ungenutzte Credit(s) erstatten — {amount} zurück an die ursprüngliche Zahlungsmethode des Käufers? Die Credits werden vom Guthaben abgezogen.",
     "done": "{credits} Credit(s) erstattet · {amount}.",
     "nothing": "Keine ungenutzten Credits",
     "empty": "Keine Gastbeitrags-Bestellungen."
@@ -1735,7 +1740,7 @@
       "thirdParty": {
         "title": "Cookies von Drittanbietern",
         "intro": "Einige Cookies auf unserer Website werden von den von uns genutzten Drittanbieterdiensten gesetzt, darunter:",
-        "stripe": "Stripe (Zahlungen): Du wirst zur eigenen Bezahlseite von Stripe weitergeleitet, die ihre eigenen Cookies setzt",
+        "paypal": "PayPal (Zahlungen): Du wirst zur eigenen Bezahlseite von PayPal weitergeleitet, die ihre eigenen Cookies setzt",
         "google": "Google (die Schaltfläche „Mit Google anmelden“ auf den Anmelde- und Registrierungsseiten)"
       },
       "contact": {

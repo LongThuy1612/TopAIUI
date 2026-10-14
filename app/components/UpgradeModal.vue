@@ -40,20 +40,25 @@ const plans = RESEARCH_PLANS.map((key) => {
 type Plan = (typeof plans)[number]
 
 const currentPlan = computed(() => myPlan.value?.plan ?? 'FREE')
-const isCurrent = (plan: Plan) => currentPlan.value === plan.key && myPlan.value?.interval === interval.value
+// A cancelled plan that can't be resumed (cancelled from the PayPal account, or past its
+// period) is not "current": picking it again subscribes anew.
+const restartable = computed(() => !!myPlan.value?.cancelAtPeriodEnd && !myPlan.value.canResume)
+const isCurrent = (plan: Plan) => currentPlan.value === plan.key && myPlan.value?.interval === interval.value && !restartable.value
 
 // Button label: Subscribe on Free; Upgrade / Downgrade / Switch (monthly ↔ yearly) on a plan.
 function actionLabel(plan: Plan) {
   if (isCurrent(plan)) return t('admin.upgradeModal.currentPlan')
-  if (currentPlan.value === 'FREE') return t('admin.upgradeModal.subscribe')
+  if (currentPlan.value === 'FREE' || (restartable.value && currentPlan.value === plan.key && myPlan.value?.interval === interval.value)) return t('admin.upgradeModal.subscribe')
   const diff = planRank(plan.key) - planRank(currentPlan.value)
   return t(diff > 0 ? 'admin.upgradeModal.upgradeTo' : diff < 0 ? 'admin.upgradeModal.downgradeTo' : 'admin.upgradeModal.switchTo')
 }
 
 async function subscribe(plan: Plan) {
   if (isCurrent(plan) || busy.value) return
-  // On a plan already, Stripe charges (or credits) the prorated difference right away.
-  if (currentPlan.value !== 'FREE' && !confirm(t('admin.upgradeModal.confirmChange', { plan: t(`admin.upgradeModal.plan.${plan.i18n}`) }))) return
+  // On a plan already: Stripe charges (or credits) the prorated difference right away; a
+  // PayPal plan is replaced by a new one approved on PayPal, the unused part refunded.
+  const confirmKey = myPlan.value?.provider === 'paypal' ? 'admin.upgradeModal.confirmChangePaypal' : 'admin.upgradeModal.confirmChange'
+  if (currentPlan.value !== 'FREE' && !confirm(t(confirmKey, { plan: t(`admin.upgradeModal.plan.${plan.i18n}`) }))) return
   const done = await subscribeTo(plan.key as ResearchPlanKey, interval.value)
   if (done === 'changed') emit('close')
 }
@@ -167,9 +172,10 @@ function cancelPlan() {
             <button v-if="myPlan?.canManageBilling" type="button" :disabled="!!busy" class="text-brand-600 hover:text-brand-700 disabled:opacity-50" @click="openBillingPortal()">
               {{ t('admin.upgradeModal.manageBilling') }}
             </button>
-            <button v-if="myPlan?.cancelAtPeriodEnd" type="button" :disabled="!!busy" class="text-emerald-600 hover:text-emerald-700 disabled:opacity-50" @click="setCancel(false)">
+            <button v-if="myPlan?.cancelAtPeriodEnd && myPlan.canResume" type="button" :disabled="!!busy" class="text-emerald-600 hover:text-emerald-700 disabled:opacity-50" @click="setCancel(false)">
               {{ t('admin.upgradeModal.resume') }}
             </button>
+            <span v-else-if="myPlan?.cancelAtPeriodEnd" class="font-normal text-ink-500">{{ t('admin.upgradeModal.cancelledInPaypal') }}</span>
             <button v-else type="button" :disabled="!!busy" class="text-red-500 hover:text-red-600 disabled:opacity-50" @click="cancelPlan">
               {{ t('admin.upgradeModal.cancelPlan') }}
             </button>

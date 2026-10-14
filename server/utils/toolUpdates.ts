@@ -88,8 +88,9 @@ export async function applyUpdateRequest(requestId: string) {
 
 // Refunds the order behind a request. The idempotency key makes a retry (double click,
 // a failure after Stripe already refunded) return the same refund instead of a second one.
-async function refundOrder(order: { id: string; stripeSessionId: string }, requestId: string) {
+async function refundOrder(order: RefundableOrder, requestId: string) {
   if (order.stripeSessionId.startsWith('fake_')) return 'fake_refund' // dev FAKE_PAYMENT orders
+  if (order.provider === 'paypal') return refundPaypalOrder(order, `tool-update-refund-${requestId}`)
   const stripe = useStripe()
   const session = await stripe.checkout.sessions.retrieve(order.stripeSessionId)
   const paymentIntent = typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent?.id
@@ -106,7 +107,7 @@ export async function rejectUpdateRequest(requestId: string, reason: string) {
   if (!OPEN_UPDATE_STATUSES.includes(request.status as (typeof OPEN_UPDATE_STATUSES)[number])) {
     throw conflict('This update request is already closed.')
   }
-  const order = await prisma.promoteOrder.findUnique({ where: { id: request.orderId }, select: { id: true, stripeSessionId: true } })
+  const order = await prisma.promoteOrder.findUnique({ where: { id: request.orderId }, select: refundableOrderSelect })
   if (!order) throw createError({ statusCode: 404, statusMessage: 'Order not found' })
 
   let refundId: string

@@ -11,6 +11,10 @@ RUN npm config set fetch-timeout 300000 && \
     npm install
 
 COPY . .
+# The public site URL is baked into the build (canonical / hreflang links, sitemap):
+# nuxt.config.ts reads it for `site.url` and `i18n.baseUrl`.
+ARG NUXT_PUBLIC_SITE_URL=https://www.topaicollection.com
+ENV NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL
 RUN npm run build
 
 # ---- Production stage ----

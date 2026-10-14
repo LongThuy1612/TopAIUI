@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { updateAi } from '~/data/promote'
+import type { PaymentProvider } from '~/composables/usePromoteCheckout'
 
 const { t, tp, list, faqs } = usePromoteText()
 
@@ -30,10 +31,10 @@ const { checkout, loading, error } = usePromoteCheckout()
 // Back from Stripe: go to the tool, where the update form is waiting.
 useStripeReturn()
 
-function pay() {
+function pay(provider: PaymentProvider) {
   touched.value = true
   if (!toolId.value) return
-  checkout({ type: 'update-ai', toolId: toolId.value })
+  checkout({ type: 'update-ai', toolId: toolId.value }, provider)
 }
 </script>
 

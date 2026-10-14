@@ -172,12 +172,14 @@
       "working": "请稍候…",
       "error": "出错了，请重试。",
       "confirmChange": "切换到 {plan}？按比例计算的差额将立即扣款（或退回）。",
+      "confirmChangePaypal": "切换到 {plan}？您在 PayPal 上确认新方案后，当前方案未使用的部分将被退还。",
       "confirmCancel": "取消方案？您可使用到 {date}，之后转为 Free。",
       "renewsOn": "{date} 续订",
       "endsOn": "{date} 结束",
-      "pastDue": "付款失败 — 请更新您的银行卡。",
+      "pastDue": "付款失败 — 请在 PayPal 中更新您的付款方式。",
       "manageBilling": "管理账单",
       "resume": "保留我的方案",
+      "cancelledInPaypal": "已在您的 PayPal 账户中取消 — 重新订阅即可继续使用。",
       "cancelPlan": "取消方案"
     },
     "business": "业务",
@@ -382,7 +384,7 @@
       "apply": "应用更新",
       "reject": "拒绝并退款",
       "reasonPlaceholder": "拒绝原因 — 将显示给所有者",
-      "hint": "应用后，修改将写入线上收录并重新翻译。拒绝则通过 Stripe 退还款项。"
+      "hint": "应用后，修改将写入线上收录并重新翻译。拒绝则通过 PayPal 退还款项。"
     },
     "managePlan": "管理方案",
     "myInquiries": "我的咨询",
@@ -675,10 +677,10 @@
     "selectPlan": "选择方案",
     "subscription": "订阅信息",
     "subscriptionPlan": "订阅方案",
-    "subscriptionCard": "订阅卡片",
+    "subscriptionCard": "付款方式",
     "nextChargeAmount": "下次扣费金额",
     "nextChargeDate": "下次扣费日期",
-    "changeCard": "更换卡片",
+    "changeCard": "管理付款",
     "unsubscribe": "取消订阅",
     "profileTitle": "个人资料与发票信息",
     "fieldEmail": "邮箱",
@@ -707,7 +709,9 @@
       "uncollectible": "失败",
       "void": "已作废",
       "draft": "草稿"
-    }
+    },
+    "refundedAmount": "已退款 {amount}",
+    "refundPending": "{amount} 退款处理中"
   },
   "feedbackPage": {
     "title": "用户反馈",
@@ -932,6 +936,7 @@
     "needToKnow": "须知：",
     "total": "合计：{amount}",
     "pay": "支付 {amount}",
+    "payPaypal": "使用 PayPal 支付 {amount}",
     "processing": "处理中…",
     "genericError": "出了点问题，请重试。",
     "eta": "无需排队——48 小时内上线",
@@ -1583,7 +1588,7 @@
     "bought": "已购买",
     "refunded": "已退款",
     "refund": "退还 {credits} 积分 · {amount}",
-    "confirm": "退还 {credits} 个未使用的积分，并通过 Stripe 将 {amount} 退回银行卡？积分将从余额中扣除。",
+    "confirm": "退还 {credits} 个未使用的积分，并将 {amount} 退回买家原付款方式？积分将从余额中扣除。",
     "done": "已退还 {credits} 积分 · {amount}。",
     "nothing": "没有未使用的积分",
     "empty": "暂无客座文章订单。"
@@ -1735,7 +1740,7 @@
       "thirdParty": {
         "title": "第三方 Cookie",
         "intro": "我们网站上的一些 cookie 是由我们使用的第三方服务设置的，包括：",
-        "stripe": "Stripe（支付）：您会被转到 Stripe 自己的结账页面，由其设置自身的 Cookie",
+        "paypal": "PayPal（支付）：您会被转到 PayPal 自己的结账页面，由其设置自身的 Cookie",
         "google": "Google（登录和注册页面上的“使用 Google 登录”按钮）"
       },
       "contact": {

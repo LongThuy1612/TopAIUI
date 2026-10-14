@@ -255,12 +255,14 @@
       "working": "Đang xử lý…",
       "error": "Có lỗi xảy ra. Vui lòng thử lại.",
       "confirmChange": "Chuyển sang gói {plan}? Phần chênh lệch được tính (hoặc hoàn) ngay.",
+      "confirmChangePaypal": "Chuyển sang gói {plan}? Bạn xác nhận gói mới trên PayPal, sau đó phần chưa dùng của gói hiện tại sẽ được hoàn lại.",
       "confirmCancel": "Huỷ gói? Bạn vẫn dùng được đến {date}, sau đó chuyển về gói Free.",
       "renewsOn": "Gia hạn vào {date}",
       "endsOn": "Kết thúc vào {date}",
-      "pastDue": "Thanh toán thất bại — vui lòng cập nhật thẻ.",
+      "pastDue": "Thanh toán thất bại — vui lòng cập nhật phương thức thanh toán trong PayPal.",
       "manageBilling": "Quản lý thanh toán",
       "resume": "Giữ gói",
+      "cancelledInPaypal": "Đã hủy trong tài khoản PayPal — đăng ký lại để tiếp tục dùng.",
       "cancelPlan": "Huỷ gói"
     },
     "paymentInvoice": "Thanh toán & Hóa đơn",
@@ -382,7 +384,7 @@
       "apply": "Áp dụng cập nhật",
       "reject": "Từ chối & hoàn tiền",
       "reasonPlaceholder": "Lý do từ chối — chủ tool sẽ thấy",
-      "hint": "Áp dụng sẽ ghi thay đổi lên trang công khai và dịch lại. Từ chối sẽ hoàn tiền qua Stripe."
+      "hint": "Áp dụng sẽ ghi thay đổi lên trang công khai và dịch lại. Từ chối sẽ hoàn tiền qua PayPal."
     },
     "managePlan": "Quản lý gói",
     "myInquiries": "Yêu cầu của tôi",
@@ -813,10 +815,10 @@
     "selectPlan": "Chọn gói",
     "subscription": "Gói đăng ký",
     "subscriptionPlan": "Gói hiện tại",
-    "subscriptionCard": "Thẻ thanh toán",
+    "subscriptionCard": "Phương thức thanh toán",
     "nextChargeAmount": "Số tiền thanh toán tiếp theo",
     "nextChargeDate": "Ngày thanh toán tiếp theo",
-    "changeCard": "Đổi thẻ",
+    "changeCard": "Quản lý thanh toán",
     "unsubscribe": "Hủy gói",
     "profileTitle": "Thông tin hồ sơ & hóa đơn",
     "fieldEmail": "Email",
@@ -845,7 +847,9 @@
       "uncollectible": "Thất bại",
       "void": "Đã huỷ",
       "draft": "Nháp"
-    }
+    },
+    "refundedAmount": "Đã hoàn {amount}",
+    "refundPending": "Đang hoàn {amount}"
   },
   "feedbackPage": {
     "title": "Phản hồi người dùng",
@@ -932,6 +936,7 @@
     "needToKnow": "Cần biết:",
     "total": "Tổng cộng: {amount}",
     "pay": "Thanh toán {amount}",
+    "payPaypal": "Thanh toán {amount} qua PayPal",
     "processing": "Đang xử lý…",
     "genericError": "Đã xảy ra lỗi. Vui lòng thử lại.",
     "eta": "Không cần xếp hàng — hiển thị trong vòng 48 giờ",
@@ -1583,7 +1588,7 @@
     "bought": "Đã mua",
     "refunded": "Đã hoàn",
     "refund": "Hoàn {credits} credit · {amount}",
-    "confirm": "Hoàn {credits} credit chưa dùng — trả {amount} về thẻ qua Stripe? Số credit này sẽ bị trừ khỏi số dư.",
+    "confirm": "Hoàn {credits} credit chưa dùng — trả {amount} về phương thức thanh toán ban đầu của người mua? Số credit này sẽ bị trừ khỏi số dư.",
     "done": "Đã hoàn {credits} credit · {amount}.",
     "nothing": "Không còn credit chưa dùng",
     "empty": "Chưa có đơn guest post."
@@ -1735,7 +1740,7 @@
       "thirdParty": {
         "title": "Cookie Của Bên Thứ Ba",
         "intro": "Một số cookie trên trang web của chúng tôi được đặt bởi các dịch vụ bên thứ ba mà chúng tôi sử dụng, bao gồm:",
-        "stripe": "Stripe (thanh toán): bạn được chuyển sang trang thanh toán riêng của Stripe, nơi Stripe tự đặt cookie của họ",
+        "paypal": "PayPal (thanh toán): bạn được chuyển sang trang thanh toán riêng của PayPal, nơi PayPal tự đặt cookie của họ",
         "google": "Google (nút Đăng nhập bằng Google trên trang đăng nhập và đăng ký)"
       },
       "contact": {

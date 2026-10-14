@@ -157,12 +157,14 @@
       "working": "Even geduld…",
       "error": "Er ging iets mis. Probeer het opnieuw.",
       "confirmChange": "Overstappen naar {plan}? Het naar rato berekende verschil wordt direct in rekening gebracht (of verrekend).",
+      "confirmChangePaypal": "Overstappen naar {plan}? Je keurt het nieuwe abonnement goed bij PayPal, daarna wordt het ongebruikte deel van je huidige abonnement terugbetaald.",
       "confirmCancel": "Je abonnement opzeggen? Je houdt het tot {date}, daarna ga je naar Free.",
       "renewsOn": "Verlengt op {date}",
       "endsOn": "Eindigt op {date}",
-      "pastDue": "Betaling mislukt — werk je kaart bij.",
+      "pastDue": "Betaling mislukt — werk je betaalmethode bij in PayPal.",
       "manageBilling": "Facturatie beheren",
       "resume": "Abonnement behouden",
+      "cancelledInPaypal": "Opgezegd in je PayPal-account — abonneer opnieuw om het te houden.",
       "cancelPlan": "Abonnement opzeggen"
     },
     "business": "Zakelijk",
@@ -367,7 +369,7 @@
       "apply": "Update toepassen",
       "reject": "Afwijzen & terugbetalen",
       "reasonPlaceholder": "Reden van afwijzing — zichtbaar voor de eigenaar",
-      "hint": "Toepassen zet de wijzigingen in de live vermelding en vertaalt die opnieuw. Afwijzen betaalt het bedrag terug via Stripe."
+      "hint": "Toepassen zet de wijzigingen in de live vermelding en vertaalt die opnieuw. Afwijzen betaalt het bedrag terug via PayPal."
     },
     "managePlan": "Abonnement beheren"
   },
@@ -658,10 +660,10 @@
     "selectPlan": "Kies abonnement",
     "subscription": "Abonnement",
     "subscriptionPlan": "Abonnement",
-    "subscriptionCard": "Kaart van het abonnement",
+    "subscriptionCard": "Betaalmethode",
     "nextChargeAmount": "Bedrag volgende afschrijving",
     "nextChargeDate": "Datum volgende afschrijving",
-    "changeCard": "Kaart wijzigen",
+    "changeCard": "Betaling beheren",
     "unsubscribe": "Opzeggen",
     "profileTitle": "Profiel- en factuurgegevens",
     "fieldEmail": "E-mail",
@@ -690,7 +692,9 @@
       "uncollectible": "Mislukt",
       "void": "Ongeldig",
       "draft": "Concept"
-    }
+    },
+    "refundedAmount": "{amount} terugbetaald",
+    "refundPending": "Terugbetaling van {amount} loopt"
   },
   "feedbackPage": {
     "title": "Feedback van gebruikers",
@@ -909,6 +913,7 @@
     "needToKnow": "Goed om te weten:",
     "total": "Totaal: {amount}",
     "pay": "{amount} betalen",
+    "payPaypal": "{amount} betalen met PayPal",
     "processing": "Bezig met verwerken…",
     "genericError": "Er ging iets mis. Probeer het opnieuw.",
     "eta": "Geen wachtrij — binnen 48 uur online",
@@ -1560,7 +1565,7 @@
     "bought": "Gekocht",
     "refunded": "Terugbetaald",
     "refund": "{credits} credit(s) terugbetalen · {amount}",
-    "confirm": "{credits} ongebruikte credit(s) terugbetalen — {amount} terug naar de kaart via Stripe? De credits worden van het saldo afgehaald.",
+    "confirm": "{credits} ongebruikte credit(s) terugbetalen — {amount} terug naar de oorspronkelijke betaalmethode van de koper? De credits worden van het saldo afgehaald.",
     "done": "{credits} credit(s) terugbetaald · {amount}.",
     "nothing": "Geen ongebruikte credits",
     "empty": "Geen bestellingen voor gastartikelen."

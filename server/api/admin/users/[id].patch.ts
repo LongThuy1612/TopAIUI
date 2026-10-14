@@ -55,6 +55,10 @@ export default defineEventHandler(async (event) => {
     if (await countOtherActiveAdmins(target.id) === 0) throw badRequest('At least one active admin is required')
   }
   if (newBanned === true && target.id === me.id) throw badRequest('You cannot ban yourself')
+  // A banned user's PayPal plan runs to the end of its period but is not renewed (Stripe
+  // plans are stopped at renewal time instead, server/utils/research.ts stopRenewalIfBanned).
+  // Before the ban is saved: if PayPal fails, nothing changed and the admin tries again.
+  if (newBanned === true && !target.isBanned) await stopPaypalRenewalsOfUser(target.id)
 
   return prisma.user.update({ where: { id }, data, select: adminUserSelect })
 })

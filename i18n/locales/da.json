@@ -157,12 +157,14 @@
       "working": "Vent venligst…",
       "error": "Noget gik galt. Prøv igen.",
       "confirmChange": "Skift til {plan}? Den forholdsmæssige forskel opkræves (eller krediteres) med det samme.",
+      "confirmChangePaypal": "Skift til {plan}? Du godkender den nye plan hos PayPal, og den ubrugte del af din nuværende plan refunderes.",
       "confirmCancel": "Opsig dit abonnement? Du beholder det til {date}, derefter skifter du til Free.",
       "renewsOn": "Fornyes {date}",
       "endsOn": "Udløber {date}",
-      "pastDue": "Betalingen mislykkedes — opdater dit kort.",
+      "pastDue": "Betalingen mislykkedes — opdater din betalingsmetode i PayPal.",
       "manageBilling": "Administrer betaling",
       "resume": "Behold mit abonnement",
+      "cancelledInPaypal": "Opsagt i din PayPal-konto — abonner igen for at beholde den.",
       "cancelPlan": "Opsig abonnement"
     },
     "business": "Forretning",
@@ -367,7 +369,7 @@
       "apply": "Anvend opdatering",
       "reject": "Afvis & refunder",
       "reasonPlaceholder": "Årsag til afvisning — vises for ejeren",
-      "hint": "Når du anvender, skrives ændringerne ind i det live opslag, som oversættes igen. Ved afvisning refunderes betalingen via Stripe."
+      "hint": "Når du anvender, skrives ændringerne ind i det live opslag, som oversættes igen. Ved afvisning refunderes betalingen via PayPal."
     },
     "managePlan": "Administrer abonnement"
   },
@@ -658,10 +660,10 @@
     "selectPlan": "Vælg abonnement",
     "subscription": "Abonnement",
     "subscriptionPlan": "Abonnement",
-    "subscriptionCard": "Kort til abonnement",
+    "subscriptionCard": "Betalingsmetode",
     "nextChargeAmount": "Næste opkrævning",
     "nextChargeDate": "Dato for næste opkrævning",
-    "changeCard": "Skift kort",
+    "changeCard": "Administrer betaling",
     "unsubscribe": "Opsig",
     "profileTitle": "Profil- og fakturaoplysninger",
     "fieldEmail": "E-mail",
@@ -690,7 +692,9 @@
       "uncollectible": "Mislykkedes",
       "void": "Annulleret",
       "draft": "Kladde"
-    }
+    },
+    "refundedAmount": "{amount} refunderet",
+    "refundPending": "Refusion af {amount} i gang"
   },
   "feedbackPage": {
     "title": "Brugerfeedback",
@@ -909,6 +913,7 @@
     "needToKnow": "Godt at vide:",
     "total": "I alt: {amount}",
     "pay": "Betal {amount}",
+    "payPaypal": "Betal {amount} med PayPal",
     "processing": "Behandler…",
     "genericError": "Noget gik galt. Prøv igen.",
     "eta": "Ingen kø — online inden for 48 timer",
@@ -1560,7 +1565,7 @@
     "bought": "Købt",
     "refunded": "Refunderet",
     "refund": "Refunder {credits} kredit(ter) · {amount}",
-    "confirm": "Refunder {credits} ubrugte kredit(ter) — {amount} tilbage til kortet via Stripe? Kreditterne trækkes fra saldoen.",
+    "confirm": "Refunder {credits} ubrugte kredit(ter) — {amount} tilbage til køberens oprindelige betalingsmetode? Kreditterne trækkes fra saldoen.",
     "done": "Refunderet {credits} kredit(ter) · {amount}.",
     "nothing": "Ingen ubrugte kreditter",
     "empty": "Ingen ordrer på gæsteindlæg."

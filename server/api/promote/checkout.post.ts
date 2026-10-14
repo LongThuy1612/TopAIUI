@@ -2,6 +2,8 @@
 // Nhận đơn từ các trang promote, kiểm tra lại giá ở server (không tin số tiền
 // từ client), tạo đơn PENDING + phiên Stripe Checkout rồi trả về checkoutUrl.
 // Việc ghi nhận thanh toán do webhook /api/stripe/webhook làm.
+// provider: 'paypal' → tạo đơn PayPal thay cho Stripe; tiền được capture khi người mua
+// quay về trang (hoặc qua webhook /api/paypal/webhook) — xem server/utils/paypal.ts.
 // FAKE_PAYMENT=true (chỉ dùng khi dev): bỏ qua Stripe, coi như đã trả tiền
 // và chạy luôn fulfillPromoteOrder như webhook.
 import { randomUUID } from 'node:crypto'
@@ -129,9 +131,23 @@ export default defineEventHandler(async (event) => {
     }
   }
 
-  const stripe = useStripe()
   const { public: { siteUrl } } = useRuntimeConfig()
   const back = `${siteUrl}${localizedPath((body as { locale?: unknown }).locale, returnPath[body.type])}`
+
+  if ((body as { provider?: unknown }).provider === 'paypal') {
+    if (!isPaypalConfigured()) throw bad('PayPal is not available right now.')
+    // PayPal adds &token=<order id> to the return URL.
+    const paypalOrder = await createPaypalOrder({
+      amountCents, label, userId: user.id, returnUrl: `${back}?paypal=1`, cancelUrl: `${back}?canceled=1`
+    })
+    const order = await prisma.promoteOrder.create({
+      data: { userId: user.id, type: body.type, payload, provider: 'paypal', stripeSessionId: paypalOrder.id, amount: amountCents }
+    })
+    return { orderId: order.id, checkoutUrl: paypalOrder.approveUrl }
+  }
+
+  if (!isStripeCheckoutEnabled()) throw bad('Please pay with PayPal.')
+  const stripe = useStripe()
 
   const createSession = (customerId: string | null) => stripe.checkout.sessions.create({
     mode: 'payment',

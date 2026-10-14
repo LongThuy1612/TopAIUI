@@ -45,7 +45,7 @@ useSeoMeta({
         <h2 class="text-2xl font-extrabold text-ink-900">{{ t('cookiesPage.sections.thirdParty.title') }}</h2>
         <p class="mt-3">{{ t('cookiesPage.sections.thirdParty.intro') }}</p>
         <ul class="mt-3 list-disc space-y-1.5 pl-6">
-          <li>{{ t('cookiesPage.sections.thirdParty.stripe') }}</li>
+          <li>{{ t('cookiesPage.sections.thirdParty.paypal') }}</li>
           <li>{{ t('cookiesPage.sections.thirdParty.google') }}</li>
         </ul>
       </section>

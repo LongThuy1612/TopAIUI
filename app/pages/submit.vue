@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { submitAi } from '~/data/promote'
-import { isHttpUrl } from '~/composables/usePromoteCheckout'
+import { isHttpUrl, type PaymentProvider } from '~/composables/usePromoteCheckout'
 
 const { t, tp, items, faqs } = usePromoteText()
 
@@ -22,10 +22,10 @@ const { checkout, loading, error } = usePromoteCheckout()
 // Back from Stripe: go straight to the new tool once the order is fulfilled.
 useStripeReturn()
 
-function pay() {
+function pay(provider: PaymentProvider) {
   touched.value = true
   if (!valid.value) return
-  checkout({ type: 'submit-ai', name: form.name.trim(), url: form.url.trim(), mode: form.mode })
+  checkout({ type: 'submit-ai', name: form.name.trim(), url: form.url.trim(), mode: form.mode }, provider)
 }
 </script>
 

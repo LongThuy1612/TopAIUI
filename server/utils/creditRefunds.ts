@@ -58,8 +58,9 @@ export async function creditOrdersOf(userId: string) {
   }
 }
 
-async function stripeRefund(order: { id: string; stripeSessionId: string }, amount: number, key: string) {
+async function stripeRefund(order: RefundableOrder, amount: number, key: string) {
   if (order.stripeSessionId.startsWith('fake_')) return // dev FAKE_PAYMENT orders
+  if (order.provider === 'paypal') return void await refundPaypalOrder(order, key, amount)
   const stripe = useStripe()
   const session = await stripe.checkout.sessions.retrieve(order.stripeSessionId)
   const paymentIntent = typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent?.id

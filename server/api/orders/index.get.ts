@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
       where: { userId },
       orderBy: { createdAt: 'desc' },
       take: 100,
-      select: { id: true, amount: true, currency: true, status: true, plan: true, interval: true, periodStart: true, periodEnd: true, hostedInvoiceUrl: true, invoicePdf: true, paidAt: true, createdAt: true }
+      select: { id: true, amount: true, currency: true, status: true, plan: true, interval: true, periodStart: true, periodEnd: true, hostedInvoiceUrl: true, invoicePdf: true, paidAt: true, createdAt: true, refundedAmount: true, refundDue: true }
     })
   ])
   if (!user) throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { advertise, AD_TIERS, type AdTier } from '~/data/promote'
-import { isHttpUrl, type ToolOption } from '~/composables/usePromoteCheckout'
+import { isHttpUrl, type ToolOption, type PaymentProvider } from '~/composables/usePromoteCheckout'
 
 const { t, tp, list, faqs } = usePromoteText()
 const { tm } = useI18n()
@@ -39,10 +39,10 @@ const adTypes = computed(() =>
 
 const { checkout, loading, error } = usePromoteCheckout()
 useStripeReturn()
-function pay() {
+function pay(provider: PaymentProvider) {
   touched.value = true
   if (errors.value.tool || errors.value.landing || !pkg.value) return
-  checkout({ type: 'advertise', toolId: tool.value!.id, tier: tier.value, landingUrl: landingUrl.value.trim() || undefined, clicks: pkg.value.clicks })
+  checkout({ type: 'advertise', toolId: tool.value!.id, tier: tier.value, landingUrl: landingUrl.value.trim() || undefined, clicks: pkg.value.clicks }, provider)
 }
 const nf = new Intl.NumberFormat('en-US')
 </script>

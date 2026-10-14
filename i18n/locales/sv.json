@@ -157,12 +157,14 @@
       "working": "Vänta…",
       "error": "Något gick fel. Försök igen.",
       "confirmChange": "Byta till {plan}? Den proportionella skillnaden debiteras (eller krediteras) direkt.",
+      "confirmChangePaypal": "Byta till {plan}? Du godkänner den nya planen hos PayPal, sedan återbetalas den oanvända delen av din nuvarande plan.",
       "confirmCancel": "Säga upp din plan? Du behåller den till {date}, sedan går du över till Free.",
       "renewsOn": "Förnyas {date}",
       "endsOn": "Upphör {date}",
-      "pastDue": "Betalningen misslyckades — uppdatera ditt kort.",
+      "pastDue": "Betalningen misslyckades — uppdatera din betalningsmetod i PayPal.",
       "manageBilling": "Hantera fakturering",
       "resume": "Behåll min plan",
+      "cancelledInPaypal": "Avslutad i ditt PayPal-konto — prenumerera igen för att behålla den.",
       "cancelPlan": "Säg upp plan"
     },
     "business": "Företag",
@@ -367,7 +369,7 @@
       "apply": "Verkställ uppdatering",
       "reject": "Avslå & återbetala",
       "reasonPlaceholder": "Orsak till avslag — visas för ägaren",
-      "hint": "När du verkställer skrivs ändringarna till den publicerade listningen, som översätts på nytt. Vid avslag återbetalas betalningen via Stripe."
+      "hint": "När du verkställer skrivs ändringarna till den publicerade listningen, som översätts på nytt. Vid avslag återbetalas betalningen via PayPal."
     },
     "managePlan": "Hantera plan"
   },
@@ -658,10 +660,10 @@
     "selectPlan": "Välj plan",
     "subscription": "Prenumeration",
     "subscriptionPlan": "Plan",
-    "subscriptionCard": "Kort för prenumerationen",
+    "subscriptionCard": "Betalningsmetod",
     "nextChargeAmount": "Nästa debitering",
     "nextChargeDate": "Datum för nästa debitering",
-    "changeCard": "Byt kort",
+    "changeCard": "Hantera betalning",
     "unsubscribe": "Säg upp",
     "profileTitle": "Profil- och faktureringsuppgifter",
     "fieldEmail": "E-post",
@@ -690,7 +692,9 @@
       "uncollectible": "Misslyckad",
       "void": "Makulerad",
       "draft": "Utkast"
-    }
+    },
+    "refundedAmount": "{amount} återbetalt",
+    "refundPending": "Återbetalning av {amount} pågår"
   },
   "feedbackPage": {
     "title": "Användarfeedback",
@@ -909,6 +913,7 @@
     "needToKnow": "Bra att veta:",
     "total": "Totalt: {amount}",
     "pay": "Betala {amount}",
+    "payPaypal": "Betala {amount} med PayPal",
     "processing": "Bearbetar…",
     "genericError": "Något gick fel. Försök igen.",
     "eta": "Ingen kö — publicerad inom 48 timmar",
@@ -1560,7 +1565,7 @@
     "bought": "Köpta",
     "refunded": "Återbetalade",
     "refund": "Återbetala {credits} kredit(er) · {amount}",
-    "confirm": "Återbetala {credits} oanvända kredit(er) — {amount} tillbaka till kortet via Stripe? Krediterna dras från saldot.",
+    "confirm": "Återbetala {credits} oanvända kredit(er) — {amount} tillbaka till köparens ursprungliga betalningsmetod? Krediterna dras från saldot.",
     "done": "Återbetalade {credits} kredit(er) · {amount}.",
     "nothing": "Inga oanvända krediter",
     "empty": "Inga beställningar av gästinlägg."

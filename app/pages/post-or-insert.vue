@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { BULK_DISCOUNT } from '~/data/promote'
+import type { PaymentProvider } from '~/composables/usePromoteCheckout'
 
 const { t, tp, faqs } = usePromoteText()
 
@@ -11,7 +12,9 @@ useSeoMeta({
 const faqParams = { min: BULK_DISCOUNT.minExclusive, percent: BULK_DISCOUNT.percent }
 
 const { checkout, loading, error } = usePromoteCheckout()
-const onPay = ({ credits }: { credits: number }) => checkout({ type: 'guest-post', credits })
+const onPay = ({ credits, provider }: { credits: number; provider: PaymentProvider }) => checkout({ type: 'guest-post', credits }, provider)
+// Back from PayPal: captures the payment (Stripe needs nothing more).
+useStripeReturn()
 </script>
 
 <template>

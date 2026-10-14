@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Effective date:** October 12, 2026
+**Effective date:** October 14, 2026
 
 Welcome to TopAICollection. By accessing or using %SITE_URL% (the "website"), you agree to these Terms of Service. Please read them carefully before using the website.
 
@@ -67,9 +67,9 @@ We may restrict access if we detect misuse or harmful activity.
 
 We offer paid services, including tool submission, advertising (click packages), guest posts and link inserts, and Research Plan subscriptions.
 
-1. Prices are shown before you pay. Payments are processed by Stripe; we do not receive or store your full card details.
+1. Prices are shown before you pay. Payments are processed by PayPal; we do not receive or store your PayPal, card or bank details.
 2. One-time services (submissions, click packages, guest post and link insert credits) are charged once and do not renew.
-3. Research Plan subscriptions renew automatically at the end of each billing period until you cancel. You can cancel at any time from your dashboard; you keep access until the end of the period you have paid for.
+3. Research Plan subscriptions renew automatically at the end of each billing period until you cancel. You can cancel at any time from your dashboard or your PayPal account; you keep access until the end of the period you have paid for.
 4. Advertising clicks are counted by our system, which filters repeated clicks from the same visitor. Unused clicks stay on your campaign balance.
 5. If you believe you were charged in error, contact us at %SUPPORT_EMAIL% and we will review the payment. Refunds are handled case by case, without affecting any rights you have under applicable consumer law.
 

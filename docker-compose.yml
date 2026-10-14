@@ -2,8 +2,10 @@ services:
   postgres:
     image: postgres:16-alpine
     restart: unless-stopped
+    # Localhost only — the app reaches it over the compose network; from your PC use
+    # an SSH tunnel (ssh -L 5432:127.0.0.1:5432 user@server).
     ports:
-      - '5432:5432'
+      - '127.0.0.1:5432:5432'
     command: postgres -c idle_in_transaction_session_timeout=60000 -c statement_timeout=30000
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
@@ -21,9 +23,14 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
+      args:
+        NUXT_PUBLIC_SITE_URL: ${NUXT_PUBLIC_SITE_URL:-https://www.topaicollection.com}
     restart: unless-stopped
+    # Localhost only: nginx on the host (docker/nginx/topaicollection.conf) proxies
+    # https://www.topaicollection.com here. Must not be reachable directly, since
+    # NUXT_TRUST_PROXY trusts the X-Forwarded-For hop nginx appends.
     ports:
-      - '3000:3000'
+      - '127.0.0.1:3693:3000'
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-topainew}
       # NUXT_-prefixed vars are read by Nitro at container startup and always
@@ -41,15 +48,23 @@ services:
       # Without the secret key every "Pay" returns 500 "Stripe is not configured".
       NUXT_STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-}
       NUXT_STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
-      # Public URL of the site — Stripe sends customers back here after paying.
-      NUXT_PUBLIC_SITE_URL: ${NUXT_PUBLIC_SITE_URL:-http://localhost:3000}
+      # false = no Stripe button on promote orders (PayPal is the main payment).
+      NUXT_PUBLIC_STRIPE_ENABLED: ${STRIPE_ENABLED:-false}
+      # PayPal checkout (beside Stripe) + webhook (/api/paypal/webhook). Empty client ID =
+      # no "Pay with PayPal" button. PAYPAL_MODE: sandbox | live.
+      NUXT_PUBLIC_PAYPAL_CLIENT_ID: ${PAYPAL_CLIENT_ID:-}
+      NUXT_PAYPAL_CLIENT_SECRET: ${PAYPAL_CLIENT_SECRET:-}
+      NUXT_PAYPAL_WEBHOOK_ID: ${PAYPAL_WEBHOOK_ID:-}
+      NUXT_PAYPAL_MODE: ${PAYPAL_MODE:-sandbox}
+      # Public URL of the site — PayPal / Stripe send customers back here after paying.
+      NUXT_PUBLIC_SITE_URL: ${NUXT_PUBLIC_SITE_URL:-https://www.topaicollection.com}
       # Sign in with Google (OAuth Web client ID). Empty = Google button hidden.
       NUXT_PUBLIC_GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
       # Ad clicks are charged once per visitor IP per day (server/utils/ads.ts).
-      # true only when a reverse proxy of yours (nginx, Caddy… on the host) forwards
-      # to this container and appends the client IP to X-Forwarded-For; false when
-      # visitors reach port 3000 directly (the header would be theirs to fake).
-      NUXT_TRUST_PROXY: ${TRUST_PROXY:-false}
+      # true: nginx on the host forwards to this container and appends the client IP
+      # to X-Forwarded-For. Set false only if visitors reach the port directly (the
+      # header would then be theirs to fake).
+      NUXT_TRUST_PROXY: ${TRUST_PROXY:-true}
       # SMTP for email confirmation + password reset. Empty host = no mail is sent.
       NUXT_SMTP_HOST: ${SMTP_HOST:-}
       NUXT_SMTP_PORT: ${SMTP_PORT:-587}
@@ -74,8 +89,9 @@ services:
   adminer:
     image: adminer:latest
     restart: unless-stopped
+    # Localhost only — open via ssh -L 8081:127.0.0.1:8081 user@server.
     ports:
-      - '8081:8080'
+      - '127.0.0.1:8081:8080'
     depends_on:
       postgres:
         condition: service_healthy

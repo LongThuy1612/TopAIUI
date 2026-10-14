@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date:** October 12, 2026
+**Effective date:** October 14, 2026
 
 TopAICollection ("we", "our" or "us") respects your privacy. This Privacy Policy explains what information we collect when you use %SITE_URL%, how we use it, and the choices you have.
 
@@ -20,7 +20,7 @@ We also record whether your email address has been confirmed.
 
 When you buy a service or subscribe to a plan, you may give us invoice details: company name, country, phone number, address, city, state or province, postal code and VAT number.
 
-Payments are processed by Stripe. Your card details go directly to Stripe; we never receive or store full card numbers. We keep records of your orders, subscriptions and invoices, and the customer identifier Stripe gives us.
+Payments are processed by PayPal. Your PayPal login and card or bank details go directly to PayPal; we never receive or store them. We keep records of your orders, subscriptions and invoices, and the payment and subscription identifiers PayPal gives us.
 
 ### 1.3 Content you submit
 
@@ -70,7 +70,7 @@ We use a cookie to remember your language. Your sign-in session is kept in your 
 
 We share information only with providers that help us run the website:
 
-- **Stripe**: payment processing and invoicing
+- **PayPal**: payment processing and subscription billing
 - **Google**: Sign in with Google, if you use it
 - **Our email delivery provider**: sending service emails
 - **Our hosting provider**: running the website and storing data

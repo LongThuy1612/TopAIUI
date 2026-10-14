@@ -157,12 +157,14 @@
       "working": "Odota hetki…",
       "error": "Jokin meni pieleen. Yritä uudelleen.",
       "confirmChange": "Vaihdetaanko tilaukseen {plan}? Suhteutettu erotus veloitetaan (tai hyvitetään) heti.",
+      "confirmChangePaypal": "Vaihdetaanko tilaukseen {plan}? Hyväksyt uuden tilauksen PayPalissa, minkä jälkeen nykyisen tilauksen käyttämätön osa hyvitetään.",
       "confirmCancel": "Perutaanko tilaus? Se on voimassa {date} asti, minkä jälkeen siirryt Free-tasolle.",
       "renewsOn": "Uusitaan {date}",
       "endsOn": "Päättyy {date}",
-      "pastDue": "Maksu epäonnistui — päivitä korttisi.",
+      "pastDue": "Maksu epäonnistui — päivitä maksutapasi PayPalissa.",
       "manageBilling": "Hallinnoi laskutusta",
       "resume": "Pidä tilaukseni",
+      "cancelledInPaypal": "Peruttu PayPal-tililläsi — tilaa uudelleen pitääksesi sen.",
       "cancelPlan": "Peru tilaus"
     },
     "business": "Liiketoiminta",
@@ -367,7 +369,7 @@
       "apply": "Ota päivitys käyttöön",
       "reject": "Hylkää ja hyvitä",
       "reasonPlaceholder": "Hylkäyksen syy — näytetään omistajalle",
-      "hint": "Käyttöönotto kirjoittaa muutokset julkaistuun listaukseen ja kääntää sen uudelleen. Hylkäys hyvittää maksun Stripen kautta."
+      "hint": "Käyttöönotto kirjoittaa muutokset julkaistuun listaukseen ja kääntää sen uudelleen. Hylkäys hyvittää maksun PayPalin kautta."
     },
     "managePlan": "Hallinnoi tilausta"
   },
@@ -658,10 +660,10 @@
     "selectPlan": "Valitse tilaus",
     "subscription": "Tilaus",
     "subscriptionPlan": "Tilaus",
-    "subscriptionCard": "Tilauksen kortti",
+    "subscriptionCard": "Maksutapa",
     "nextChargeAmount": "Seuraavan veloituksen summa",
     "nextChargeDate": "Seuraavan veloituksen päivä",
-    "changeCard": "Vaihda korttia",
+    "changeCard": "Hallitse maksua",
     "unsubscribe": "Peru tilaus",
     "profileTitle": "Profiili- ja laskutustiedot",
     "fieldEmail": "Sähköposti",
@@ -690,7 +692,9 @@
       "uncollectible": "Epäonnistui",
       "void": "Mitätöity",
       "draft": "Luonnos"
-    }
+    },
+    "refundedAmount": "{amount} hyvitetty",
+    "refundPending": "Hyvitys {amount} käsittelyssä"
   },
   "feedbackPage": {
     "title": "Käyttäjäpalaute",
@@ -909,6 +913,7 @@
     "needToKnow": "Hyvä tietää:",
     "total": "Yhteensä: {amount}",
     "pay": "Maksa {amount}",
+    "payPaypal": "Maksa {amount} PayPalilla",
     "processing": "Käsitellään…",
     "genericError": "Jokin meni vikaan. Yritä uudelleen.",
     "eta": "Ei jonoa — julki 48 tunnin sisällä",
@@ -1560,7 +1565,7 @@
     "bought": "Ostettu",
     "refunded": "Hyvitetty",
     "refund": "Hyvitä {credits} krediittiä · {amount}",
-    "confirm": "Hyvitetäänkö {credits} käyttämätöntä krediittiä — {amount} takaisin kortille Stripen kautta? Krediitit vähennetään saldosta.",
+    "confirm": "Hyvitetäänkö {credits} käyttämätöntä krediittiä — {amount} takaisin ostajan alkuperäiselle maksutavalle? Krediitit vähennetään saldosta.",
     "done": "Hyvitetty {credits} krediittiä · {amount}.",
     "nothing": "Ei käyttämättömiä krediittejä",
     "empty": "Ei vierasartikkelitilauksia."

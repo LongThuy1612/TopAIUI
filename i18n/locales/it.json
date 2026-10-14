@@ -157,12 +157,14 @@
       "working": "Attendi…",
       "error": "Qualcosa è andato storto. Riprova.",
       "confirmChange": "Passare a {plan}? La differenza proporzionale viene addebitata (o accreditata) subito.",
+      "confirmChangePaypal": "Passare a {plan}? Approvi il nuovo piano su PayPal, poi la parte non usata del piano attuale viene rimborsata.",
       "confirmCancel": "Annullare il piano? Lo mantieni fino al {date}, poi passi a Free.",
       "renewsOn": "Si rinnova il {date}",
       "endsOn": "Termina il {date}",
-      "pastDue": "Pagamento non riuscito — aggiorna la tua carta.",
+      "pastDue": "Pagamento non riuscito — aggiorna il tuo metodo di pagamento su PayPal.",
       "manageBilling": "Gestisci fatturazione",
       "resume": "Mantieni il mio piano",
+      "cancelledInPaypal": "Annullato nel tuo account PayPal — abbonati di nuovo per mantenerlo.",
       "cancelPlan": "Annulla piano"
     },
     "business": "Business",
@@ -367,7 +369,7 @@
       "apply": "Applica aggiornamento",
       "reject": "Rifiuta e rimborsa",
       "reasonPlaceholder": "Motivo del rifiuto — mostrato al proprietario",
-      "hint": "Applicando, le modifiche vengono scritte nella scheda online e ritradotte. Rifiutando, il pagamento viene rimborsato tramite Stripe."
+      "hint": "Applicando, le modifiche vengono scritte nella scheda online e ritradotte. Rifiutando, il pagamento viene rimborsato tramite PayPal."
     },
     "managePlan": "Gestisci piano"
   },
@@ -658,10 +660,10 @@
     "selectPlan": "Scegli piano",
     "subscription": "Abbonamento",
     "subscriptionPlan": "Piano di abbonamento",
-    "subscriptionCard": "Carta dell'abbonamento",
+    "subscriptionCard": "Metodo di pagamento",
     "nextChargeAmount": "Importo del prossimo addebito",
     "nextChargeDate": "Data del prossimo addebito",
-    "changeCard": "Cambia carta",
+    "changeCard": "Gestisci pagamento",
     "unsubscribe": "Annulla abbonamento",
     "profileTitle": "Profilo e dati di fatturazione",
     "fieldEmail": "Email",
@@ -690,7 +692,9 @@
       "uncollectible": "Non riuscita",
       "void": "Annullata",
       "draft": "Bozza"
-    }
+    },
+    "refundedAmount": "{amount} rimborsati",
+    "refundPending": "Rimborso di {amount} in corso"
   },
   "feedbackPage": {
     "title": "Feedback utenti",
@@ -909,6 +913,7 @@
     "needToKnow": "Da sapere:",
     "total": "Totale: {amount}",
     "pay": "Paga {amount}",
+    "payPaypal": "Paga {amount} con PayPal",
     "processing": "Elaborazione…",
     "genericError": "Si è verificato un errore. Riprova.",
     "eta": "Nessuna coda — online entro 48 ore",
@@ -1560,7 +1565,7 @@
     "bought": "Acquistati",
     "refunded": "Rimborsati",
     "refund": "Rimborsa {credits} credito/i · {amount}",
-    "confirm": "Rimborsare {credits} credito/i non usato/i — {amount} sulla carta tramite Stripe? I crediti vengono tolti dal saldo.",
+    "confirm": "Rimborsare {credits} credito/i non usato/i — {amount} sul metodo di pagamento originale dell'acquirente? I crediti vengono tolti dal saldo.",
     "done": "Rimborsati {credits} credito/i · {amount}.",
     "nothing": "Nessun credito non usato",
     "empty": "Nessun ordine di articoli ospite."

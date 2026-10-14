@@ -11,6 +11,16 @@ export type PromoteOrder =
   | { type: 'update-ai'; toolId: string | number }
   | { type: 'submit-gpt'; gptUrl: string }
 
+export type PaymentProvider = 'stripe' | 'paypal'
+
+// Cổng nào được hiện: PayPal là chính (khi có cấu hình); Stripe chỉ hiện khi bật
+// NUXT_PUBLIC_STRIPE_ENABLED, hoặc khi chưa có PayPal (dev) — khớp isStripeCheckoutEnabled ở server.
+export function usePaymentProviders() {
+  const config = useRuntimeConfig().public
+  const paypal = !!config.paypalClientId
+  return { paypal, stripe: !!config.stripeEnabled || !paypal }
+}
+
 export function usePromoteCheckout() {
   const route = useRoute()
   const { token, load } = useAuth()
@@ -22,7 +32,7 @@ export function usePromoteCheckout() {
   // Chưa đăng nhập → sang trang login user, xong quay lại đúng trang này.
   const goLogin = () => navigateTo(localePath({ path: '/login', query: { redirect: route.fullPath } }))
 
-  async function checkout(order: PromoteOrder) {
+  async function checkout(order: PromoteOrder, provider: PaymentProvider = 'stripe') {
     load()
     if (!token.value) return goLogin()
 
@@ -31,11 +41,11 @@ export function usePromoteCheckout() {
     try {
       const res = await $fetch<{ orderId: string; checkoutUrl?: string; redirect?: string }>('/api/promote/checkout', {
         method: 'POST',
-        body: { ...order, locale: locale.value },
+        body: { ...order, provider, locale: locale.value },
         headers: { 'x-user-token': token.value },
       })
       if (res.checkoutUrl) {
-        // Giữ loading cho tới khi trình duyệt rời trang sang Stripe.
+        // Giữ loading cho tới khi trình duyệt rời trang sang Stripe / PayPal.
         await navigateTo(res.checkoutUrl, { external: true })
         return
       }

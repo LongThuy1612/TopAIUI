@@ -453,7 +453,11 @@ model PromoteOrder {
   user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   type            String    // submit-ai | advertise | guest-post | update-ai | submit-gpt
   payload         Json      // validated order details (tool, URL, credits, clicks…)
+  // Payment reference: the Stripe Checkout session id, the PayPal order id (provider
+  // "paypal", server/utils/paypal.ts) or fake_… for dev FAKE_PAYMENT orders.
   stripeSessionId String    @unique
+  provider        String    @default("stripe") // stripe | paypal
+  paypalCaptureId String?   // paypal: the capture holding the money (refunds go through it)
   amount          Int       // cents
   currency        String    @default("usd")
   status          String    @default("PENDING") // PENDING | PAID | EXPIRED
@@ -921,8 +925,16 @@ model Subscription {
   interval             BillingInterval
   // Stripe's own status, as is: incomplete | incomplete_expired | trialing | active |
   // past_due | canceled | unpaid | paused
+  // Stripe: Stripe's own status, as above. PayPal (provider "paypal") is mapped onto the
+  // same values (server/utils/paypalSubscriptions.ts), plus "duplicate" (a second plan
+  // paid by mistake) and "refused" (approved by a banned / deleted user): both cancelled
+  // and refunded.
   status               String
+  provider             String          @default("stripe") // stripe | paypal
+  providerStatus       String? // paypal: PayPal's own status (ACTIVE, SUSPENDED, CANCELLED…)
+  // The Stripe subscription id — or the PayPal one (I-…) for provider "paypal".
   stripeSubscriptionId String          @unique
+  // The Stripe price id — or the PayPal plan id (P-…).
   stripePriceId        String
   currentPeriodStart   DateTime
   currentPeriodEnd     DateTime
@@ -977,7 +989,7 @@ model SubscriptionInvoice {
   user             User             @relation(fields: [userId], references: [id], onDelete: Cascade)
   subscriptionId   String?
   subscription     Subscription?    @relation(fields: [subscriptionId], references: [id], onDelete: SetNull)
-  stripeInvoiceId  String           @unique
+  stripeInvoiceId  String           @unique // or the PayPal sale (payment) id
   amount           Int // cents, what was charged
   currency         String           @default("usd")
   status           String // Stripe invoice status: draft | open | paid | uncollectible | void
@@ -988,10 +1000,28 @@ model SubscriptionInvoice {
   hostedInvoiceUrl String?
   invoicePdf       String?
   paidAt           DateTime?
+  // PayPal refunds of this payment (server/utils/paypalSubscriptions.ts refundInvoice):
+  // refundedAmount is back with the customer (status "void" once all of it is); refundDue
+  // failed on PayPal and is retried nightly with the same refundKey (never paid twice).
+  refundedAmount   Int              @default(0) // cents
+  refundDue        Int              @default(0) // cents
+  refundKey        String?
   createdAt        DateTime         @default(now())
 
   @@index([userId, createdAt])
+  @@index([refundDue])
   @@map("SubscriptionInvoice")
+}
+
+// The PayPal catalog product and billing plans of the Research Plans, created on first
+// use (server/utils/paypalSubscriptions.ts). key: "research_product_<mode>" or
+// "research_<plan>_<interval>_<cents>_<mode>" — a new price in code gets a new plan.
+model PaypalPlan {
+  key       String   @id
+  planId    String // PayPal plan id (P-…), or the product id for the product row
+  createdAt DateTime @default(now())
+
+  @@map("PaypalPlan")
 }
 
 // A data row already paid for in a quota month (key e.g. "insights:2026-09:<tool slug>"):

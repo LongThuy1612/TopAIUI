@@ -220,8 +220,9 @@ export type AdminAdAction =
 
 // Refunds one paid order of a rejected campaign. The idempotency key makes a retry
 // return the same refund instead of a second one.
-async function refundAdOrder(order: { id: string; stripeSessionId: string }) {
+async function refundAdOrder(order: RefundableOrder) {
   if (order.stripeSessionId.startsWith('fake_')) return // dev FAKE_PAYMENT orders
+  if (order.provider === 'paypal') return void await refundPaypalOrder(order, `ad-reject-refund-${order.id}`)
   const stripe = useStripe()
   const session = await stripe.checkout.sessions.retrieve(order.stripeSessionId)
   const paymentIntent = typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent?.id
@@ -256,7 +257,7 @@ export async function adminAdAction(id: string, input: AdminAdAction) {
       if (campaign.status === 'PENDING_REVIEW') {
         // Never ran, so every paid order behind it goes back. Refund first: if Stripe
         // fails, nothing is marked and the admin can simply try again.
-        const orders = await prisma.promoteOrder.findMany({ where: { campaignId: id, status: 'PAID' }, select: { id: true, stripeSessionId: true } })
+        const orders = await prisma.promoteOrder.findMany({ where: { campaignId: id, status: 'PAID' }, select: refundableOrderSelect })
         for (const order of orders) {
           try {
             await refundAdOrder(order)

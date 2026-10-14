@@ -6,7 +6,9 @@ import {
 } from '#shared/research'
 
 // Research Plan subscriptions (models Subscription, ResearchUsage, SubscriptionInvoice).
-// Stripe is the source of truth; these rows mirror it:
+// New plans are paid with PayPal (server/utils/paypalSubscriptions.ts) unless Stripe
+// checkout is switched on (isStripeCheckoutEnabled); a row's `provider` says which one
+// it lives on. For Stripe, Stripe is the source of truth; these rows mirror it:
 //
 //   subscribe → Stripe Checkout (mode: subscription) → checkout.session.completed /
 //     customer.subscription.created → syncStripeSubscription → Subscription row
@@ -248,19 +250,21 @@ async function stripeCustomerFor(user: { id: string; email: string; name: string
   return customer.id
 }
 
-const addInterval = (d: Date, interval: BillingIntervalKey) => addMonths(d, interval === 'YEAR' ? 12 : 1)
+export const addInterval = (d: Date, interval: BillingIntervalKey) => addMonths(d, interval === 'YEAR' ? 12 : 1)
 
-// Free → a paid plan: a Stripe Checkout URL. Already on a plan: changes it in place.
-// FAKE_PAYMENT (dev only): no Stripe — the subscription is written directly.
-// `locale`: the visitor's language, for the page Stripe sends them back to.
+// Free → a paid plan: a PayPal approval URL (or Stripe Checkout when switched on). Already
+// on a plan: Stripe changes it in place; PayPal needs the new plan approved (a URL again).
+// FAKE_PAYMENT (dev only): no payment — the subscription is written directly.
+// `locale`: the visitor's language, for the page PayPal / Stripe sends them back to.
 export async function subscribe(userId: string, plan: ResearchPlanKey, interval: BillingIntervalKey, locale?: unknown) {
   const user = await prisma.user.findUnique({ where: { id: userId } })
   if (!user || user.isBanned || user.deletedAt) throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })
 
   let current = await currentSubscription(userId)
+  const fake = import.meta.dev && useRuntimeConfig().fakePayment
   // A subscription paid a moment ago may not be mirrored yet (webhook on its way): look
-  // on Stripe first, so a second click doesn't open a second paid subscription.
-  if (!current && user.stripeCustomerId && !(import.meta.dev && useRuntimeConfig().fakePayment)) {
+  // on Stripe / PayPal first, so a second click doesn't open a second paid subscription.
+  if (!current && user.stripeCustomerId && useRuntimeConfig().stripeSecretKey && !fake) {
     const live = await liveResearchSubscriptions(user.stripeCustomerId)
     if (live[0]) {
       current = await syncStripeSubscription(live[0])
@@ -270,12 +274,14 @@ export async function subscribe(userId: string, plan: ResearchPlanKey, interval:
       }
     }
   }
+  if (!current && !fake) current = await syncPendingPaypalSubscriptions(userId)
+  if (current?.provider === 'paypal') return changePaypalPlan(current, user, plan, interval, locale)
   if (current) {
     await changePlan(current, plan, interval)
     return { changed: true as const }
   }
 
-  if (import.meta.dev && useRuntimeConfig().fakePayment) {
+  if (fake) {
     const now = new Date()
     const sub = await prisma.subscription.create({
       data: {
@@ -293,6 +299,8 @@ export async function subscribe(userId: string, plan: ResearchPlanKey, interval:
     })
     return { changed: true as const }
   }
+
+  if (!isStripeCheckoutEnabled()) return startPaypalSubscription(user, plan, interval, locale)
 
   const stripe = useStripe()
   const { public: { siteUrl } } = useRuntimeConfig()
@@ -358,6 +366,7 @@ export async function setCancelAtPeriodEnd(userId: string, cancel: boolean) {
   if (isFakeSubscription(current.stripeSubscriptionId)) {
     return prisma.subscription.update({ where: { id: current.id }, data: { cancelAtPeriodEnd: cancel, canceledAt: cancel ? new Date() : null } })
   }
+  if (current.provider === 'paypal') return setPaypalCancel(current, cancel)
   const stripe = useStripe()
   const params = cancel
     ? { cancel_at_period_end: true }
@@ -370,10 +379,17 @@ export async function setCancelAtPeriodEnd(userId: string, cancel: boolean) {
 // access is cancelled now on Stripe (no further charge); fake (dev) ones locally.
 // Throws if Stripe refuses, so the account isn't deleted while still being billed.
 export async function cancelSubscriptionsForDeletedUser(userId: string) {
-  const subs = await prisma.subscription.findMany({ where: { userId, status: { in: ACCESS_STATUSES } } })
+  // PayPal 'incomplete': an approval in progress, which would start billing once approved.
+  const subs = await prisma.subscription.findMany({
+    where: { userId, OR: [{ status: { in: ACCESS_STATUSES } }, { provider: 'paypal', status: 'incomplete' }] }
+  })
   for (const s of subs) {
     if (isFakeSubscription(s.stripeSubscriptionId)) {
       await prisma.subscription.update({ where: { id: s.id }, data: { status: 'canceled', canceledAt: new Date(), endedAt: new Date() } })
+      continue
+    }
+    if (s.provider === 'paypal') {
+      await cancelPaypalSubscriptionNow(s)
       continue
     }
     try {
@@ -389,10 +405,12 @@ export async function cancelSubscriptionsForDeletedUser(userId: string) {
   }
 }
 
-// Stripe's billing portal: card, invoices, cancel — for a real (non-fake) customer.
+// Stripe's billing portal: card, invoices, cancel — for a real (non-fake) customer. A
+// PayPal plan is managed in the buyer's own PayPal account.
 export async function billingPortalUrl(userId: string, locale?: unknown) {
   const user = await prisma.user.findUnique({ where: { id: userId }, select: { stripeCustomerId: true } })
   const current = await currentSubscription(userId)
+  if (current?.provider === 'paypal') return paypalAutopayUrl()
   if (!user?.stripeCustomerId || (current && isFakeSubscription(current.stripeSubscriptionId))) {
     throw bad('There is no billing account to manage yet.')
   }

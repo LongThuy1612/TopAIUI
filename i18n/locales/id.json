@@ -172,12 +172,14 @@
       "working": "Mohon tunggu…",
       "error": "Terjadi kesalahan. Silakan coba lagi.",
       "confirmChange": "Pindah ke {plan}? Selisih prorata langsung ditagih (atau dikreditkan).",
+      "confirmChangePaypal": "Pindah ke {plan}? Anda menyetujui paket baru di PayPal, lalu bagian paket saat ini yang belum terpakai dikembalikan.",
       "confirmCancel": "Batalkan paket Anda? Paket tetap aktif hingga {date}, lalu beralih ke Free.",
       "renewsOn": "Diperpanjang pada {date}",
       "endsOn": "Berakhir pada {date}",
-      "pastDue": "Pembayaran gagal — silakan perbarui kartu Anda.",
+      "pastDue": "Pembayaran gagal — silakan perbarui metode pembayaran Anda di PayPal.",
       "manageBilling": "Kelola tagihan",
       "resume": "Pertahankan paket saya",
+      "cancelledInPaypal": "Dibatalkan di akun PayPal Anda — berlangganan lagi untuk mempertahankannya.",
       "cancelPlan": "Batalkan paket"
     },
     "business": "Bisnis",
@@ -382,7 +384,7 @@
       "apply": "Terapkan pembaruan",
       "reject": "Tolak & kembalikan dana",
       "reasonPlaceholder": "Alasan penolakan — ditampilkan ke pemilik",
-      "hint": "Menerapkan akan menulis perubahan ke listing yang tayang dan menerjemahkannya ulang. Menolak akan mengembalikan pembayaran melalui Stripe."
+      "hint": "Menerapkan akan menulis perubahan ke listing yang tayang dan menerjemahkannya ulang. Menolak akan mengembalikan pembayaran melalui PayPal."
     },
     "managePlan": "Kelola paket",
     "myInquiries": "Pertanyaan saya",
@@ -675,10 +677,10 @@
     "selectPlan": "Pilih Paket",
     "subscription": "Langganan",
     "subscriptionPlan": "Paket Langganan",
-    "subscriptionCard": "Kartu Langganan",
+    "subscriptionCard": "Metode Pembayaran",
     "nextChargeAmount": "Jumlah Tagihan Berikutnya",
     "nextChargeDate": "Tanggal Tagihan Berikutnya",
-    "changeCard": "Ganti Kartu",
+    "changeCard": "Kelola Pembayaran",
     "unsubscribe": "Berhenti Berlangganan",
     "profileTitle": "Informasi Profil & Faktur",
     "fieldEmail": "Email",
@@ -707,7 +709,9 @@
       "uncollectible": "Gagal",
       "void": "Dibatalkan",
       "draft": "Draf"
-    }
+    },
+    "refundedAmount": "{amount} dikembalikan",
+    "refundPending": "Pengembalian {amount} sedang diproses"
   },
   "feedbackPage": {
     "title": "Umpan Balik Pengguna",
@@ -932,6 +936,7 @@
     "needToKnow": "Perlu diketahui:",
     "total": "Total: {amount}",
     "pay": "Bayar {amount}",
+    "payPaypal": "Bayar {amount} dengan PayPal",
     "processing": "Memproses…",
     "genericError": "Terjadi kesalahan. Silakan coba lagi.",
     "eta": "Tanpa antre — tayang dalam 48 jam",
@@ -1583,7 +1588,7 @@
     "bought": "Dibeli",
     "refunded": "Dikembalikan",
     "refund": "Kembalikan {credits} kredit · {amount}",
-    "confirm": "Kembalikan {credits} kredit yang belum dipakai — {amount} ke kartu melalui Stripe? Kredit akan dipotong dari saldo.",
+    "confirm": "Kembalikan {credits} kredit yang belum dipakai — {amount} ke metode pembayaran asli pembeli? Kredit akan dipotong dari saldo.",
     "done": "{credits} kredit dikembalikan · {amount}.",
     "nothing": "Tidak ada kredit yang belum dipakai",
     "empty": "Belum ada pesanan artikel tamu."
@@ -1735,7 +1740,7 @@
       "thirdParty": {
         "title": "Cookie Pihak Ketiga",
         "intro": "Beberapa cookie di situs kami disetel oleh layanan pihak ketiga yang kami gunakan, termasuk:",
-        "stripe": "Stripe (pembayaran): Anda diarahkan ke halaman checkout milik Stripe, yang memasang cookie-nya sendiri",
+        "paypal": "PayPal (pembayaran): Anda diarahkan ke halaman checkout milik PayPal, yang memasang cookie-nya sendiri",
         "google": "Google (tombol Masuk dengan Google di halaman masuk dan daftar)"
       },
       "contact": {

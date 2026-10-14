@@ -172,12 +172,14 @@
       "working": "잠시 기다려 주세요…",
       "error": "문제가 발생했습니다. 다시 시도해 주세요.",
       "confirmChange": "{plan}(으)로 변경할까요? 일할 계산된 차액이 즉시 청구(또는 환급)됩니다.",
+      "confirmChangePaypal": "{plan}(으)로 변경할까요? PayPal에서 새 플랜을 승인하면 현재 플랜의 미사용분이 환불됩니다.",
       "confirmCancel": "플랜을 해지할까요? {date}까지 유지된 후 Free로 전환됩니다.",
       "renewsOn": "{date}에 갱신",
       "endsOn": "{date}에 종료",
-      "pastDue": "결제에 실패했습니다 — 카드를 업데이트해 주세요.",
+      "pastDue": "결제에 실패했습니다 — PayPal에서 결제 수단을 업데이트해 주세요.",
       "manageBilling": "결제 관리",
       "resume": "플랜 유지",
+      "cancelledInPaypal": "PayPal 계정에서 해지됨 — 계속 사용하려면 다시 구독하세요.",
       "cancelPlan": "플랜 해지"
     },
     "business": "비즈니스",
@@ -382,7 +384,7 @@
       "apply": "업데이트 적용",
       "reject": "거절 및 환불",
       "reasonPlaceholder": "거절 사유 — 소유자에게 표시됩니다",
-      "hint": "적용하면 변경 사항이 게시 중인 등록에 반영되고 다시 번역됩니다. 거절하면 Stripe를 통해 결제가 환불됩니다."
+      "hint": "적용하면 변경 사항이 게시 중인 등록에 반영되고 다시 번역됩니다. 거절하면 PayPal를 통해 결제가 환불됩니다."
     },
     "managePlan": "플랜 관리",
     "myInquiries": "내 문의",
@@ -675,10 +677,10 @@
     "selectPlan": "플랜 선택",
     "subscription": "구독 정보",
     "subscriptionPlan": "구독 플랜",
-    "subscriptionCard": "구독 카드",
+    "subscriptionCard": "결제 수단",
     "nextChargeAmount": "다음 청구 금액",
     "nextChargeDate": "다음 청구일",
-    "changeCard": "카드 변경",
+    "changeCard": "결제 관리",
     "unsubscribe": "구독 취소",
     "profileTitle": "프로필 및 인보이스 정보",
     "fieldEmail": "이메일",
@@ -707,7 +709,9 @@
       "uncollectible": "실패",
       "void": "무효",
       "draft": "초안"
-    }
+    },
+    "refundedAmount": "{amount} 환불됨",
+    "refundPending": "{amount} 환불 처리 중"
   },
   "feedbackPage": {
     "title": "사용자 피드백",
@@ -932,6 +936,7 @@
     "needToKnow": "알아두세요:",
     "total": "합계: {amount}",
     "pay": "{amount} 결제",
+    "payPaypal": "PayPal로 {amount} 결제",
     "processing": "처리 중…",
     "genericError": "문제가 발생했습니다. 다시 시도해 주세요.",
     "eta": "대기 없이 — 48시간 이내 게시",
@@ -1583,7 +1588,7 @@
     "bought": "구매",
     "refunded": "환불됨",
     "refund": "{credits} 크레딧 환불 · {amount}",
-    "confirm": "사용하지 않은 {credits} 크레딧을 환불하고 Stripe를 통해 {amount}을(를) 카드로 돌려줄까요? 크레딧은 잔액에서 차감됩니다.",
+    "confirm": "사용하지 않은 {credits} 크레딧을 환불하고 {amount}을(를) 구매자의 원래 결제 수단으로 돌려줄까요? 크레딧은 잔액에서 차감됩니다.",
     "done": "{credits} 크레딧 환불됨 · {amount}.",
     "nothing": "사용하지 않은 크레딧 없음",
     "empty": "게스트 포스트 주문이 없습니다."
@@ -1735,7 +1740,7 @@
       "thirdParty": {
         "title": "제3자 쿠키",
         "intro": "당사 사이트의 일부 쿠키는 다음을 포함하여 당사가 사용하는 제3자 서비스에 의해 설정됩니다.",
-        "stripe": "Stripe(결제): Stripe 자체 결제 페이지로 이동하며, 해당 페이지가 자체 쿠키를 설정합니다",
+        "paypal": "PayPal(결제): PayPal 자체 결제 페이지로 이동하며, 해당 페이지가 자체 쿠키를 설정합니다",
         "google": "Google(로그인 및 회원가입 페이지의 Google로 로그인 버튼)"
       },
       "contact": {

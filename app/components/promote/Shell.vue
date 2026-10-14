@@ -6,10 +6,13 @@ defineProps<{ active: ServiceKey; faqTitle?: string; faqs?: FaqItem[] }>()
 
 const { t, tp, list } = usePromoteText()
 
-// Stripe trả người dùng về trang với ?session_id=… (đã trả) hoặc ?canceled=1.
+// Stripe trả người dùng về trang với ?session_id=… (đã trả) hoặc ?canceled=1;
+// PayPal với ?paypal=1&token=… — mới là đã duyệt: báo "đã trả" khi useStripeReturn capture
+// được tiền, báo "chưa bị trừ tiền" khi thẻ bị từ chối lúc capture.
 const route = useRoute()
-const paid = computed(() => typeof route.query.session_id === 'string')
-const canceled = computed(() => route.query.canceled === '1')
+const paypalResult = usePaypalResult()
+const paid = computed(() => typeof route.query.session_id === 'string' || paypalResult.value === 'paid')
+const canceled = computed(() => route.query.canceled === '1' || paypalResult.value === 'failed')
 </script>
 
 <template>

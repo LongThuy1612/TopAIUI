@@ -218,8 +218,9 @@ export function cleanGptInput(body: Record<string, unknown>) {
 
 // Refunds the order behind a rejected GPT. The idempotency key makes a retry return the
 // same refund instead of a second one.
-async function refundGptOrder(order: { id: string; stripeSessionId: string }, gptId: string) {
+async function refundGptOrder(order: RefundableOrder, gptId: string) {
   if (order.stripeSessionId.startsWith('fake_')) return // dev FAKE_PAYMENT orders
+  if (order.provider === 'paypal') return void await refundPaypalOrder(order, `gpt-reject-refund-${gptId}`)
   const stripe = useStripe()
   const session = await stripe.checkout.sessions.retrieve(order.stripeSessionId)
   const paymentIntent = typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent?.id

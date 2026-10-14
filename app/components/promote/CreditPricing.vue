@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { CREDIT_PRICE, BULK_DISCOUNT, guestPost } from '~/data/promote'
+import type { PaymentProvider } from '~/composables/usePromoteCheckout'
 
 const { packages, strongNotes } = guestPost
 defineProps<{ loading?: boolean; error?: string | null }>()
@@ -8,7 +9,8 @@ const { t, tp, list } = usePromoteText()
 const noteParams = { price: `$${CREDIT_PRICE}`, min: BULK_DISCOUNT.minExclusive, percent: BULK_DISCOUNT.percent }
 const notes = computed(() => list('promote.guestPost.notes', noteParams).map((text, i) => ({ text, strong: strongNotes.includes(i) })))
 
-const emit = defineEmits<{ pay: [payload: { credits: number; amount: number }] }>()
+const emit = defineEmits<{ pay: [payload: { credits: number; amount: number; provider: PaymentProvider }] }>()
+const providers = usePaymentProviders()
 
 // 'custom' = hàng stepper (mặc định được chọn), hoặc số credits của gói có sẵn
 const selected = ref<number | 'custom'>('custom')
@@ -78,7 +80,11 @@ function onInput(e: Event) {
       {{ t('promote.guestPost.tip', { min: BULK_DISCOUNT.minExclusive, percent: BULK_DISCOUNT.percent }) }}
     </p>
 
-    <button type="button" class="pay" :disabled="loading" @click="emit('pay', { credits, amount: total })">
+    <button v-if="providers.paypal" type="button" class="pay pay--paypal" :disabled="loading" @click="emit('pay', { credits, amount: total, provider: 'paypal' })">
+      {{ loading ? t('promote.processing') : t('promote.payPaypal', { amount: usd(total) }) }}
+      <small v-if="hasDiscount" class="pay__old">{{ usd(subtotal) }}</small>
+    </button>
+    <button v-if="providers.stripe" type="button" class="pay" :disabled="loading" @click="emit('pay', { credits, amount: total, provider: 'stripe' })">
       {{ loading ? t('promote.processing') : t('promote.pay', { amount: usd(total) }) }}
       <small v-if="hasDiscount" class="pay__old">{{ usd(subtotal) }}</small>
     </button>
@@ -142,6 +148,9 @@ function onInput(e: Event) {
 }
 .pay:hover { background: var(--p-primary-dark); }
 .pay:disabled { opacity: .6; cursor: not-allowed; }
+.pay--paypal { background: #ffc439; color: #111; }
+.pay + .pay { margin-top: 10px; }
+.pay--paypal:hover { background: #f2ba36; }
 .pay__old { margin-left: 8px; font-weight: 400; text-decoration: line-through; opacity: .7; }
 
 .benefits { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; padding: 0; margin: 22px 0; font-size: 14px; }

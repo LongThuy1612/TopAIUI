@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { submitGpt } from '~/data/promote'
-import { isHttpUrl } from '~/composables/usePromoteCheckout'
+import { isHttpUrl, type PaymentProvider } from '~/composables/usePromoteCheckout'
 
 const { t, tp, faqs } = usePromoteText()
 
@@ -17,10 +17,12 @@ const err = computed(() => {
 })
 
 const { checkout, loading, error } = usePromoteCheckout()
-function pay() {
+// Back from PayPal: captures the payment (Stripe needs nothing more).
+useStripeReturn()
+function pay(provider: PaymentProvider) {
   touched.value = true
   if (err.value) return
-  checkout({ type: 'submit-gpt', gptUrl: gptUrl.value.trim() })
+  checkout({ type: 'submit-gpt', gptUrl: gptUrl.value.trim() }, provider)
 }
 </script>
 

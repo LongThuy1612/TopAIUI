@@ -126,8 +126,9 @@ export default defineNuxtConfig({
     },
     // Nightly cleanup of uploaded images no tool uses (server/tasks/uploads/cleanup.ts)
     // and of resized images older than 30 days (server/tasks/image-cache/prune.ts).
+    // PayPal Research Plans whose cancelled period is over (server/tasks/research/paypal-cleanup.ts).
     experimental: { tasks: true },
-    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'], '0 4 * * *': ['image-cache:prune'] }
+    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'], '0 4 * * *': ['image-cache:prune'], '30 4 * * *': ['research:paypal-cleanup'] }
   },
 
   runtimeConfig: {
@@ -137,6 +138,13 @@ export default defineNuxtConfig({
     // Override at runtime with NUXT_STRIPE_SECRET_KEY / NUXT_STRIPE_WEBHOOK_SECRET.
     stripeSecretKey: process.env.STRIPE_SECRET_KEY || '',
     stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '',
+    // PayPal checkout for promote orders (server/utils/paypal.ts). The client ID is in
+    // `public` (the Pay with PayPal buttons only show when it is set). Override at runtime
+    // with NUXT_PAYPAL_CLIENT_SECRET / NUXT_PAYPAL_WEBHOOK_ID / NUXT_PAYPAL_MODE
+    // ('sandbox' | 'live') / NUXT_PUBLIC_PAYPAL_CLIENT_ID.
+    paypalClientSecret: process.env.PAYPAL_CLIENT_SECRET || '',
+    paypalWebhookId: process.env.PAYPAL_WEBHOOK_ID || '',
+    paypalMode: process.env.PAYPAL_MODE || 'sandbox',
     // DEV ONLY: treat every promote order as paid without going through
     // Stripe (see server/api/promote/checkout.post.ts). Ignored by production
     // builds (`nuxt build`) — only `nuxt dev` honours it.
@@ -161,7 +169,12 @@ export default defineNuxtConfig({
       // OAuth Web client ID for "Sign in with Google" (not a secret). Also
       // used server-side as the expected ID-token audience.
       // Override at runtime with NUXT_PUBLIC_GOOGLE_CLIENT_ID.
-      googleClientId: process.env.GOOGLE_CLIENT_ID || ''
+      googleClientId: process.env.GOOGLE_CLIENT_ID || '',
+      paypalClientId: process.env.PAYPAL_CLIENT_ID || '',
+      // Stripe checkout for promote orders is switched off (PayPal is the main payment);
+      // its code stays for later. Without PayPal keys (local dev) the Stripe button shows
+      // anyway, so FAKE_PAYMENT keeps working. Override at runtime with NUXT_PUBLIC_STRIPE_ENABLED.
+      stripeEnabled: process.env.STRIPE_ENABLED === 'true'
     }
   },
 

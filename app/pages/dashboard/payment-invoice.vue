@@ -192,7 +192,7 @@ useSeoMeta({
             <span class="font-semibold">{{ t('paymentInvoicePage.subscriptionPlan') }}:</span> {{ planName }}
             <template v-if="isPaid && myPlan?.interval"> · {{ t(myPlan.interval === 'YEAR' ? 'admin.upgradeModal.yearly' : 'admin.upgradeModal.monthly') }}</template>
           </div>
-          <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.subscriptionCard') }}:</span> {{ myPlan?.canManageBilling ? t('paymentInvoicePage.cardInStripe') : '--' }}</div>
+          <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.subscriptionCard') }}:</span> {{ !myPlan?.canManageBilling ? '--' : myPlan.provider === 'paypal' ? 'PayPal' : t('paymentInvoicePage.cardInStripe') }}</div>
           <div class="text-ink-900"><span class="font-semibold">{{ t('paymentInvoicePage.nextChargeAmount') }}:</span> {{ nextCharge ? money(nextCharge.amount, 'usd') : '--' }}</div>
           <div class="text-ink-900">
             <span class="font-semibold">{{ isPaid && myPlan?.cancelAtPeriodEnd ? t('paymentInvoicePage.endsOn') : t('paymentInvoicePage.nextChargeDate') }}:</span>
@@ -211,13 +211,22 @@ useSeoMeta({
             {{ t('paymentInvoicePage.changeCard') }}
           </button>
           <button
-            v-if="isPaid && myPlan?.cancelAtPeriodEnd"
+            v-if="isPaid && myPlan?.cancelAtPeriodEnd && myPlan.canResume"
             type="button"
             :disabled="!!planBusy"
             class="rounded-lg bg-emerald-50 px-4 py-2.5 text-sm font-bold text-emerald-700 hover:bg-emerald-100 disabled:opacity-50"
             @click="setCancel(false)"
           >
             {{ t('admin.upgradeModal.resume') }}
+          </button>
+          <!-- Cancelled from the PayPal account: can't be resumed, only subscribed again. -->
+          <button
+            v-else-if="isPaid && myPlan?.cancelAtPeriodEnd"
+            type="button"
+            class="rounded-lg bg-emerald-50 px-4 py-2.5 text-sm font-bold text-emerald-700 hover:bg-emerald-100"
+            @click="upgradeModalOpen = true"
+          >
+            {{ t('admin.upgradeModal.subscribe') }}
           </button>
           <button
             v-else
@@ -270,6 +279,12 @@ useSeoMeta({
               <td class="whitespace-nowrap px-4 py-3 text-ink-900">{{ money(row.invoice.amount, row.invoice.currency) }}</td>
               <td class="px-4 py-3">
                 <span :class="['whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-semibold', invoiceStatusClass[row.invoice.status] ?? 'bg-ink-100 text-ink-500']">{{ t(`paymentInvoicePage.invoiceStatuses.${row.invoice.status}`) }}</span>
+                <p v-if="row.invoice.refundedAmount > 0" class="mt-1 whitespace-nowrap text-xs text-sky-700">
+                  {{ t('paymentInvoicePage.refundedAmount', { amount: money(row.invoice.refundedAmount, row.invoice.currency) }) }}
+                </p>
+                <p v-if="row.invoice.refundDue > 0" class="mt-1 whitespace-nowrap text-xs text-amber-700">
+                  {{ t('paymentInvoicePage.refundPending', { amount: money(row.invoice.refundDue, row.invoice.currency) }) }}
+                </p>
               </td>
             </template>
           </tr>

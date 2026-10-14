@@ -19,7 +19,8 @@ export interface OrderRow {
   refundedAmount: number
 }
 
-// One Stripe charge of a Research Plan subscription (first payment, renewal, plan change).
+// One charge of a Research Plan subscription (first payment, renewal, plan change) — a
+// Stripe invoice or a PayPal payment.
 export interface SubscriptionInvoiceRow {
   id: string
   amount: number
@@ -33,6 +34,9 @@ export interface SubscriptionInvoiceRow {
   invoicePdf: string | null
   paidAt: string | null
   createdAt: string
+  // PayPal: refunded back to the customer / refund still being retried (cents)
+  refundedAmount: number
+  refundDue: number
 }
 
 export interface MyOrdersResponse {
