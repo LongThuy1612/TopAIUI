@@ -378,7 +378,8 @@
     "titlePrefix": "Найдите лучшие",
     "titleHighlight": "AI-инструменты",
     "subtitle": "Просматривайте сотни AI-продуктов по категориям, сравнивайте цены и находите подходящий инструмент для своей работы.",
-    "searchPlaceholder": "Поиск AI-инструментов..."
+    "searchPlaceholder": "Поиск AI-инструментов...",
+    "popularSearches": "Популярные запросы:"
   },
   "stats": {
     "tools": "ИИ и",
@@ -402,7 +403,10 @@
     "topCategories": "Популярные категории",
     "aiNews": "Новости ИИ",
     "top10": "Топ 10",
-    "readMoreNews": "Читать далее"
+    "readMoreNews": "Читать далее",
+    "trendingCategories": "Популярные категории",
+    "newThisWeek": "+{n} за неделю",
+    "newThisMonth": "+{n} за месяц"
   },
   "sections": {
     "browseByCategory": "Обзор по категориям",

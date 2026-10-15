@@ -54,6 +54,16 @@ const matchingCategories = computed(() => {
 // token only exists in the browser, and the server-rendered page is a guest's.
 const mounted = ref(false)
 onMounted(() => { mounted.value = true })
+
+// Reported for the home page's Popular searches (server/utils/searchTerms.ts) — from the
+// browser only, so crawlers and the page cache don't count, and once per search, not per
+// page of results. Fire and forget.
+function reportSearch(term: string) {
+  if (!term || page.value > 1) return
+  $fetch('/api/search/log', { method: 'POST', body: { q: term, locale: locale.value } }).catch(() => {})
+}
+onMounted(() => reportSearch(q.value))
+watch(q, term => reportSearch(term))
 const pageCount = computed(() => {
   const all = toolsRes.value?.pageCount ?? 1
   return mounted.value && token.value ? all : Math.min(all, Math.ceil(PUBLIC_LIMITS.guestListTools / PER_PAGE))

@@ -177,6 +177,7 @@ model Tool {
   updateRequests ToolUpdateRequest[]
   adCampaigns   AdCampaign[]
   saves         ToolSave[]
+  dailyStats    ToolDailyStat[]
 
   @@index([status])
   // /new, /today, home "new" list: ORDER BY addedOn DESC NULLS LAST, id ASC.
@@ -1152,3 +1153,33 @@ model Gpt {
   @@index([ownerId, createdAt])
   @@map("Gpt")
 }
+
+// Home "Popular searches" (server/utils/searchTerms.ts): visitors who searched each term,
+// per day and language — one count per visitor, term and day; only searches that found
+// tools. The hero shows the most searched of the last 30 days.
+model SearchTermDaily {
+  day     DateTime @db.Date
+  locale  String
+  term    String // normalized: lowercase, single spaces
+  display String // as last typed (casing kept), shown on the chip
+  count   Int      @default(0)
+
+  @@id([day, locale, term])
+  @@index([locale, day])
+  @@map("SearchTermDaily")
+}
+
+// Home "Hot this week" (server/utils/toolStats.ts): a tool's page views and "Visit website"
+// clicks per day — one of each per visitor, tool and day, reported by the browser.
+model ToolDailyStat {
+  day    DateTime @db.Date
+  toolId String
+  tool   Tool     @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  views  Int      @default(0)
+  visits Int      @default(0)
+
+  @@id([day, toolId])
+  @@index([day])
+  @@map("ToolDailyStat")
+}
+

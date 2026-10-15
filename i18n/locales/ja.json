@@ -395,7 +395,8 @@
     "titlePrefix": "最高の",
     "titleHighlight": "AIツール",
     "subtitle": "カテゴリー別に数百のAI製品を閲覧し、価格を比較して、あなたのワークフローに合ったツールを見つけましょう。",
-    "searchPlaceholder": "AIツールを検索..."
+    "searchPlaceholder": "AIツールを検索...",
+    "popularSearches": "人気の検索："
   },
   "stats": {
     "tools": "のAIと",
@@ -419,7 +420,10 @@
     "topCategories": "人気カテゴリー",
     "aiNews": "AIニュース",
     "top10": "トップ10",
-    "readMoreNews": "もっと見る"
+    "readMoreNews": "もっと見る",
+    "trendingCategories": "注目のカテゴリー",
+    "newThisWeek": "今週 +{n}",
+    "newThisMonth": "今月 +{n}"
   },
   "sections": {
     "browseByCategory": "カテゴリーで見る",

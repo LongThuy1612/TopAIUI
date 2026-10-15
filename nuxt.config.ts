@@ -128,7 +128,7 @@ export default defineNuxtConfig({
     // and of resized images older than 30 days (server/tasks/image-cache/prune.ts).
     // PayPal Research Plans whose cancelled period is over (server/tasks/research/paypal-cleanup.ts).
     experimental: { tasks: true },
-    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'], '0 4 * * *': ['image-cache:prune'], '30 4 * * *': ['research:paypal-cleanup'] }
+    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'], '0 4 * * *': ['image-cache:prune'], '30 4 * * *': ['research:paypal-cleanup'], '45 4 * * *': ['search:cleanup', 'tools:stats-cleanup'] }
   },
 
   runtimeConfig: {

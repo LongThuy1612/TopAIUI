@@ -36,11 +36,11 @@ const rankStyle = computed(() => {
       :src="sizedImage(tool.logoUrl, 64, 64)"
       :alt="tool.name"
       loading="lazy"
-      class="pointer-events-none absolute -top-3 -right-4 h-28 w-28 rounded-full object-cover opacity-[0.16]"
+      class="pointer-events-none absolute -top-3 -right-4 h-28 w-28 rounded-full object-cover opacity-[0.08]"
     >
     <template v-else>
-      <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-[0.06]"></span>
-      <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-[0.12]">{{ initials }}</span>
+      <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-[0.04]"></span>
+      <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-[0.07]">{{ initials }}</span>
     </template>
     <div class="relative flex items-start gap-[11px]">
       <div v-if="tool.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-full">

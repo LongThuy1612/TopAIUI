@@ -515,6 +515,18 @@ async function loadSaved() {
 }
 const savedImportVersion = useState('saved-import-version', () => 0)
 onMounted(() => { if (user.value) loadSaved() })
+
+// Hot this week on the home page (server/utils/toolStats.ts): a view of this page and the
+// "Visit website" clicks — sent from the browser, so crawlers don't count. A click is sent
+// with sendBeacon: it still goes out while the browser leaves for the other site.
+function track(toolSlug: string, kind: 'view' | 'visit') {
+  const url = `/api/tools/${encodeURIComponent(toolSlug)}/track`
+  const body = JSON.stringify({ kind })
+  if (kind === 'visit' && navigator.sendBeacon?.(url, new Blob([body], { type: 'application/json' }))) return
+  $fetch(url, { method: 'POST', body: { kind } }).catch(() => {})
+}
+onMounted(() => track(slug.value, 'view'))
+watch(slug, s => track(s, 'view'))
 watch([() => user.value?.id, savedImportVersion], () => loadSaved())
 
 async function toggleSaved() {
@@ -627,26 +639,44 @@ useBreadcrumbLd(() => [
   [tool.value?.name ?? '', `/tools/${slug.value}`]
 ])
 
-// Rich result data. The rating is only claimed when there are approved reviews
-// (the page shows 5 stars as a placeholder otherwise); a free tool gets a $0 offer.
+// Rich result data. Google's software-app result needs an offer AND a rating (or review);
+// a WebApplication missing either is reported as an error. So: a tool with approved
+// reviews (the page shows 5 stars as a placeholder otherwise) and a known price — free or
+// freemium = a $0 offer; paid tools carry no price — is a WebApplication; any other tool
+// is described as the WebPage about it, which has no required fields.
 useJsonLd('tool', () => {
   const t = tool.value
   if (!t) return null
+  const offers = t.pricingType === 'FREE' || t.pricingType === 'FREEMIUM'
+    ? { '@type': 'Offer', price: 0, priceCurrency: 'USD' }
+    : null
+  const about = {
+    name: t.name,
+    description: seoDescription.value,
+    ...(t.logoUrl && { image: abs(t.logoUrl) }),
+    ...(t.website && { sameAs: t.website })
+  }
+  if (offers && t.reviewCount > 0) {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      ...about,
+      url: canonical.value,
+      applicationCategory: category.value?.name,
+      operatingSystem: 'Web',
+      ...(seoScreenshot.value && { screenshot: seoScreenshot.value }),
+      aggregateRating: { '@type': 'AggregateRating', ratingValue: t.averageRating, reviewCount: t.reviewCount, bestRating: 5, worstRating: 1 },
+      offers
+    }
+  }
   return {
     '@context': 'https://schema.org',
-    '@type': 'WebApplication',
+    '@type': 'WebPage',
     name: t.name,
     url: canonical.value,
     description: seoDescription.value,
-    applicationCategory: category.value?.name,
-    operatingSystem: 'Web',
-    ...(t.logoUrl && { image: abs(t.logoUrl) }),
-    ...(seoScreenshot.value && { screenshot: seoScreenshot.value }),
-    ...(t.website && { sameAs: t.website }),
-    ...(t.reviewCount > 0 && {
-      aggregateRating: { '@type': 'AggregateRating', ratingValue: t.averageRating, reviewCount: t.reviewCount, bestRating: 5, worstRating: 1 }
-    }),
-    ...(t.pricingType === 'FREE' && { offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' } })
+    ...(seoScreenshot.value && { primaryImageOfPage: seoScreenshot.value }),
+    about: { '@type': 'Thing', ...about }
   }
 })
 </script>
@@ -673,6 +703,8 @@ useJsonLd('tool', () => {
             :href="tool.website"
             target="_blank"
             rel="noopener noreferrer nofollow"
+            @click="track(tool.slug, 'visit')"
+            @auxclick="track(tool.slug, 'visit')"
             class="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-md bg-brand-500 px-6 py-2.5 text-lg text-white transition hover:bg-brand-600"
           >
             <svg class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H18m0 0v4.5M18 6l-7.5 7.5M6 6.75h3M6 12h3m-3 5.25h9a1.5 1.5 0 001.5-1.5V13.5" /></svg>
@@ -1319,6 +1351,8 @@ useJsonLd('tool', () => {
                   :href="alt.website"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  @click="track(alt.slug, 'visit')"
+                  @auxclick="track(alt.slug, 'visit')"
                   class="rounded-full border border-brand-500 px-8 py-2 text-base text-brand-600 transition hover:bg-brand-50"
                 >
                   {{ t('tool.openSite') }}

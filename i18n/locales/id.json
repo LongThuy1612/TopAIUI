@@ -395,7 +395,8 @@
     "titlePrefix": "Temukan",
     "titleHighlight": "alat AI terbaik",
     "subtitle": "Jelajahi ratusan produk AI berdasarkan kategori, bandingkan harga, dan temukan alat yang tepat untuk alur kerja Anda.",
-    "searchPlaceholder": "Cari alat AI..."
+    "searchPlaceholder": "Cari alat AI...",
+    "popularSearches": "Pencarian populer:"
   },
   "stats": {
     "tools": "AI dan",
@@ -419,7 +420,10 @@
     "topCategories": "Kategori teratas",
     "aiNews": "Berita AI",
     "top10": "10 Teratas",
-    "readMoreNews": "Baca selengkapnya"
+    "readMoreNews": "Baca selengkapnya",
+    "trendingCategories": "Kategori trending",
+    "newThisWeek": "+{n} minggu ini",
+    "newThisMonth": "+{n} bulan ini"
   },
   "sections": {
     "browseByCategory": "Jelajahi berdasarkan kategori",

@@ -4,10 +4,13 @@ import type { ToolsResponse } from '~/types'
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
-const [{ data: totalRes }, { data: categories }] = await Promise.all([
+const [{ data: totalRes }, { data: categories }, { data: popular }] = await Promise.all([
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 1, sort: 'newest', locale: locale.value })) }),
-  useCategories()
+  useCategories(),
+  // What visitors search for most (server/utils/searchTerms.ts) — intent, not tool counts.
+  useFetch<string[]>('/api/search/popular', { query: computed(() => ({ locale: locale.value })) })
 ])
+const popularSearches = computed(() => popular.value ?? [])
 
 const allCategories = computed(() => categories.value ?? [])
 const totalTools = computed(() => totalRes.value?.total ?? 0)
@@ -41,14 +44,15 @@ function onSearch(q: string) {
         <SearchBar v-model="heroQuery" :placeholder="t('hero.searchPlaceholder')" @submit="onSearch" />
       </div>
 
-      <div v-if="allCategories.length" class="mx-auto mt-[22px] flex flex-wrap justify-center gap-2 text-[13.5px] font-medium">
+      <div v-if="popularSearches.length" class="mx-auto mt-[22px] flex flex-wrap items-center justify-center gap-2 text-[13.5px] font-medium">
+        <span class="mr-1 text-ink-500">{{ t('hero.popularSearches') }}</span>
         <NuxtLinkLocale
-          v-for="cat in allCategories.slice(0, 8)"
-          :key="cat.slug"
-          :to="`/category/${cat.slug}`"
+          v-for="term in popularSearches"
+          :key="term"
+          :to="{ path: '/search', query: { q: term } }"
           class="rounded-full border border-ink-200 bg-white px-[15px] py-[7px] text-ink-800 hover:border-brand-200 hover:bg-brand-50 hover:text-brand-500"
         >
-          {{ cat.name }}
+          {{ term }}
         </NuxtLinkLocale>
       </div>
     </div>

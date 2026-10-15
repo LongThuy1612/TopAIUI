@@ -395,7 +395,8 @@
     "titlePrefix": "Entdecke die besten",
     "titleHighlight": "KI-Tools",
     "subtitle": "Durchsuche Hunderte von KI-Produkten nach Kategorie, vergleiche Preise und finde das richtige Tool für deinen Workflow.",
-    "searchPlaceholder": "KI-Tools durchsuchen..."
+    "searchPlaceholder": "KI-Tools durchsuchen...",
+    "popularSearches": "Beliebte Suchen:"
   },
   "stats": {
     "tools": "KIs und",
@@ -419,7 +420,10 @@
     "topCategories": "Top-Kategorien",
     "aiNews": "KI-News",
     "top10": "Top 10",
-    "readMoreNews": "Mehr lesen"
+    "readMoreNews": "Mehr lesen",
+    "trendingCategories": "Trendende Kategorien",
+    "newThisWeek": "+{n} diese Woche",
+    "newThisMonth": "+{n} diesen Monat"
   },
   "sections": {
     "browseByCategory": "Nach Kategorie durchsuchen",

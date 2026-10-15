@@ -395,7 +395,8 @@
     "titlePrefix": "Discover The Best",
     "titleHighlight": "AI Websites & Tools",
     "subtitle": "Browse hundreds of AI products by category, compare pricing, and find the right tool for your workflow.",
-    "searchPlaceholder": "Search AI tools..."
+    "searchPlaceholder": "Search AI tools...",
+    "popularSearches": "Popular searches:"
   },
   "stats": {
     "tools": "AIs and",
@@ -419,7 +420,10 @@
     "topCategories": "Top categories",
     "aiNews": "AI News",
     "top10": "Top 10",
-    "readMoreNews": "Read more"
+    "readMoreNews": "Read more",
+    "trendingCategories": "Trending categories",
+    "newThisWeek": "+{n} this week",
+    "newThisMonth": "+{n} this month"
   },
   "sections": {
     "browseByCategory": "Browse by category",

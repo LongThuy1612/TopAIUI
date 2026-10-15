@@ -437,6 +437,13 @@ export async function countAdImpressions(ids: string[]) {
 /* ------------------------------------------------------------------ */
 
 const BOT_UA = /bot|crawl|spider|slurp|preview|facebookexternalhit|headless|lighthouse|curl|wget|python|axios|node-fetch|go-http|java\/|okhttp|scrapy/i
+// A request from a person's browser, not a crawler or script (by user agent). Also used by
+// Hot this week and Popular searches, which count what people do.
+export function isHumanRequest(event: H3Event) {
+  const ua = getHeader(event, 'user-agent') ?? ''
+  return !!ua && !BOT_UA.test(ua)
+}
+
 const REPEAT_WINDOW_MS = 24 * 60 * 60 * 1000
 
 // The visitor's IP. X-Forwarded-For is written by the client unless a proxy of ours

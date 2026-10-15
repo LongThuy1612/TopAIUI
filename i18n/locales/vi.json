@@ -395,7 +395,8 @@
     "titlePrefix": "Khám phá những",
     "titleHighlight": "trang web & công cụ AI tốt nhất",
     "subtitle": "Duyệt hàng trăm sản phẩm AI theo danh mục, so sánh giá và tìm công cụ phù hợp với công việc của bạn.",
-    "searchPlaceholder": "Tìm kiếm công cụ AI..."
+    "searchPlaceholder": "Tìm kiếm công cụ AI...",
+    "popularSearches": "Tìm kiếm phổ biến:"
   },
   "stats": {
     "tools": "AI và",
@@ -419,7 +420,10 @@
     "topCategories": "Danh mục hàng đầu",
     "aiNews": "Tin tức AI",
     "top10": "Top 10",
-    "readMoreNews": "Xem thêm"
+    "readMoreNews": "Xem thêm",
+    "trendingCategories": "Danh mục thịnh hành",
+    "newThisWeek": "+{n} tuần này",
+    "newThisMonth": "+{n} tháng này"
   },
   "sections": {
     "browseByCategory": "Duyệt theo danh mục",

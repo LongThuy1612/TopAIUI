@@ -378,7 +378,8 @@
     "titlePrefix": "Scopri i migliori",
     "titleHighlight": "strumenti IA",
     "subtitle": "Sfoglia centinaia di prodotti IA per categoria, confronta i prezzi e trova lo strumento giusto per il tuo flusso di lavoro.",
-    "searchPlaceholder": "Cerca strumenti IA..."
+    "searchPlaceholder": "Cerca strumenti IA...",
+    "popularSearches": "Ricerche popolari:"
   },
   "stats": {
     "tools": "IA e",
@@ -402,7 +403,10 @@
     "topCategories": "Categorie principali",
     "aiNews": "Notizie IA",
     "top10": "Top 10",
-    "readMoreNews": "Leggi di più"
+    "readMoreNews": "Leggi di più",
+    "trendingCategories": "Categorie di tendenza",
+    "newThisWeek": "+{n} questa settimana",
+    "newThisMonth": "+{n} questo mese"
   },
   "sections": {
     "browseByCategory": "Sfoglia per categoria",

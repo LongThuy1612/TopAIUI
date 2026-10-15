@@ -395,7 +395,8 @@
     "titlePrefix": "Découvrez les meilleurs",
     "titleHighlight": "outils d'IA",
     "subtitle": "Parcourez des centaines de produits IA par catégorie, comparez les prix et trouvez l'outil adapté à votre flux de travail.",
-    "searchPlaceholder": "Rechercher des outils IA..."
+    "searchPlaceholder": "Rechercher des outils IA...",
+    "popularSearches": "Recherches populaires :"
   },
   "stats": {
     "tools": "IA et",
@@ -419,7 +420,10 @@
     "topCategories": "Catégories principales",
     "aiNews": "Actualités IA",
     "top10": "Top 10",
-    "readMoreNews": "Lire la suite"
+    "readMoreNews": "Lire la suite",
+    "trendingCategories": "Catégories tendance",
+    "newThisWeek": "+{n} cette semaine",
+    "newThisMonth": "+{n} ce mois-ci"
   },
   "sections": {
     "browseByCategory": "Parcourir par catégorie",

@@ -38,11 +38,11 @@ const rankStyle = computed(() => {
       alt=""
       loading="lazy"
       aria-hidden="true"
-      class="pointer-events-none absolute -top-4 -right-4 h-28 w-28 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.16]"
+      class="pointer-events-none absolute -top-4 -right-4 h-28 w-28 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]"
     >
     <template v-else-if="hoverGlow">
-      <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.06]"></span>
-      <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.12]">{{ initials }}</span>
+      <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.04]"></span>
+      <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07]">{{ initials }}</span>
     </template>
     <span v-if="rank" :class="['relative w-5 shrink-0 pt-3.5 text-center text-sm font-bold', rankStyle]">{{ rank }}</span>
     <div v-if="tool.logoUrl" class="relative h-[52px] w-[52px] shrink-0 overflow-hidden rounded-[14px]">

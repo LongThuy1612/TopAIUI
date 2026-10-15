@@ -5,33 +5,34 @@ import { SUPPORT_EMAIL, SOCIAL_LINKS } from '#shared/site'
 
 const { t, locale } = useI18n()
 
-const [{ data: newRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }] = await Promise.all([
-  // 8, not 5: up to 3 of them may be sponsored in the feed and are left out of Just Launched.
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 8, newToday: 'true', locale: locale.value })) }),
+type Trending = { period: 'week' | 'month' | 'all'; items: { slug: string; name: string; count: number }[] }
+const [{ data: hotRes }, { data: todayRes }, { data: categories }, { data: topRatedRes }, { data: trendingRes }] = await Promise.all([
+  // Hot this week (server/utils/toolStats.ts): 10, not 5 — tools in an ad slot of the feed
+  // are left out of it.
+  useFetch<{ items: ToolsResponse['items'] }>('/api/hot-tools', { query: computed(() => ({ locale: locale.value })) }),
   useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ limit: 15, today: 'true', locale: locale.value })) }),
   useCategories(),
-  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 100, locale: locale.value })) })
+  useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ minRating: 4, sort: 'rating', limit: 100, locale: locale.value })) }),
+  useFetch<Trending>('/api/categories/trending', { query: computed(() => ({ locale: locale.value })) })
 ])
 
-const newTools = computed(() => newRes.value?.items ?? [])
+const hotList = computed(() => hotRes.value?.items ?? [])
 const todayTools = computed(() => todayRes.value?.items ?? [])
 const allCategories = computed(() => categories.value ?? [])
 
-// Home sidebar fallback while there are no AI News articles yet.
-const topCategories = computed(() =>
-  [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
-)
+// Home sidebar fallback while there are no AI News articles yet: Trending categories.
+const trendingCategories = computed(() => trendingRes.value?.items ?? [])
 const browseCategories = computed(() =>
   [...allCategories.value].sort((a, b) => b.count - a.count).slice(0, 15)
 )
-// Sponsored tools only go into the feed (positions 1, 4, 12) — "Just Launched" stays
+// Sponsored tools only go into the feed (positions 1, 4, 12) — "Hot this week" stays
 // organic. A tool in an ad slot isn't repeated in the organic lists.
 const { feed } = useAdSlots('home', { limit: advertise.slotPositions.length })
 const tabTools = computed(() => feed(todayTools.value).slice(0, 15))
 const advertisedSlugs = computed(() => new Set(tabTools.value.flatMap(item => (item.ad ? [item.ad.tool.slug] : []))))
-// First 5 tools of the /new page (same query and order), less the advertised ones.
-const justLaunched = computed(() =>
-  newTools.value.filter(tool => !advertisedSlugs.value.has(tool.slug)).slice(0, 5))
+// The 5 most viewed / visited / saved tools of the last 7 days, less the advertised ones.
+const hotTools = computed(() =>
+  hotList.value.filter(tool => !advertisedSlugs.value.has(tool.slug)).slice(0, 5))
 const featuredHighlights = computed(() => topRatedRes.value?.items ?? [])
 
 function initialsOf(name: string) {
@@ -98,11 +99,11 @@ useJsonLd('site', () => [
       <div class="mx-auto grid max-w-[1440px] grid-cols-1 gap-5 lg:grid-cols-[260px_1fr_380px] lg:items-start">
 
         <aside class="flex min-w-0 flex-col gap-3 lg:order-1">
-          <SidebarToolItem v-for="tool in justLaunched" :key="tool.slug" :tool="tool" />
-          <div v-if="!justLaunched.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
+          <SidebarToolItem v-for="tool in hotTools" :key="tool.slug" :tool="tool" />
+          <div v-if="!hotTools.length" class="rounded-xl border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
             {{ t('empty.noTools') }}
           </div>
-          <NuxtLinkLocale to="/new" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
+          <NuxtLinkLocale to="/ranking" class="text-sm font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
         </aside>
 
         <div class="min-w-0 rounded-[18px] border border-ink-200 bg-white pt-[22px] pr-[26px] pb-[26px] pl-[26px] lg:order-2">
@@ -153,7 +154,7 @@ useJsonLd('site', () => [
         <aside class="flex min-w-0 flex-col gap-[18px] lg:order-3">
           <!-- Top Categories only while there is no AI News article yet (AiNewsWidget's slot). -->
           <AiNewsWidget>
-            <TopCategoriesWidget v-if="topCategories.length" :categories="topCategories" />
+            <TopCategoriesWidget v-if="trendingCategories.length" :period="trendingRes!.period" :categories="trendingCategories" />
           </AiNewsWidget>
         </aside>
       </div>
@@ -204,11 +205,11 @@ useJsonLd('site', () => [
               :src="sizedImage(tool.logoUrl, 64, 64)"
               :alt="tool.name"
               loading="lazy"
-              class="pointer-events-none absolute -top-3 -right-4 h-28 w-28 rounded-full object-cover opacity-[0.16]"
+              class="pointer-events-none absolute -top-3 -right-4 h-28 w-28 rounded-full object-cover opacity-[0.08]"
             >
             <template v-else>
-              <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-[0.06]"></span>
-              <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-[0.12]">{{ initialsOf(tool.name) }}</span>
+              <span class="pointer-events-none absolute -top-[18px] -right-[22px] h-32 w-32 rounded-full bg-brand-500 opacity-[0.04]"></span>
+              <span class="pointer-events-none absolute top-2 right-0.5 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-[0.07]">{{ initialsOf(tool.name) }}</span>
             </template>
             <div class="relative flex items-start gap-[11px]">
               <div v-if="tool.logoUrl" class="h-9 w-9 shrink-0 overflow-hidden rounded-full">

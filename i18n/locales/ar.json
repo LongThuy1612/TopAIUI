@@ -378,7 +378,8 @@
     "titlePrefix": "اكتشف أفضل",
     "titleHighlight": "أدوات الذكاء الاصطناعي",
     "subtitle": "تصفّح مئات منتجات الذكاء الاصطناعي حسب الفئة، وقارن الأسعار، واعثر على الأداة المناسبة لسير عملك.",
-    "searchPlaceholder": "ابحث عن أدوات الذكاء الاصطناعي..."
+    "searchPlaceholder": "ابحث عن أدوات الذكاء الاصطناعي...",
+    "popularSearches": "عمليات البحث الشائعة:"
   },
   "stats": {
     "tools": "أداة ذكاء اصطناعي و",
@@ -402,7 +403,10 @@
     "topCategories": "أفضل الفئات",
     "aiNews": "أخبار الذكاء الاصطناعي",
     "top10": "أفضل 10",
-    "readMoreNews": "اقرأ المزيد"
+    "readMoreNews": "اقرأ المزيد",
+    "trendingCategories": "الفئات الرائجة",
+    "newThisWeek": "+{n} هذا الأسبوع",
+    "newThisMonth": "+{n} هذا الشهر"
   },
   "sections": {
     "browseByCategory": "تصفح حسب الفئة",
