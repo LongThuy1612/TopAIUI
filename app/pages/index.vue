@@ -52,8 +52,9 @@ function categoryStyle(i: number) {
   return categoryPalette[i % categoryPalette.length]!
 }
 
-const SEO_TITLE = 'Discover The Best AI Websites & Tools'
-const SEO_DESCRIPTION = 'Explore hundreds of AI tools by category — find the right AI for coding, writing, design, video and more.'
+// Lengths search engines show in full: title 50–60 characters, description 120–160.
+const SEO_TITLE = 'Discover The Best AI Websites & Tools | TopAICollection'
+const SEO_DESCRIPTION = 'Discover thousands of AI tools by category, updated daily. Compare pricing, reviews and traffic to find the best AI for coding, writing, design and video.'
 useSeoMeta({
   title: SEO_TITLE,
   description: SEO_DESCRIPTION,
