@@ -378,8 +378,7 @@
     "titlePrefix": "ค้นพบ",
     "titleHighlight": "เครื่องมือ AI ที่ดีที่สุด",
     "subtitle": "เรียกดูผลิตภัณฑ์ AI หลายร้อยรายการตามหมวดหมู่ เปรียบเทียบราคา และค้นหาเครื่องมือที่เหมาะกับงานของคุณ",
-    "searchPlaceholder": "ค้นหาเครื่องมือ AI...",
-    "popularSearches": "คำค้นหายอดนิยม:"
+    "searchPlaceholder": "ค้นหาเครื่องมือ AI..."
   },
   "stats": {
     "tools": "AI และ",
@@ -404,9 +403,8 @@
     "aiNews": "ข่าว AI",
     "top10": "อันดับ 10",
     "readMoreNews": "อ่านเพิ่มเติม",
-    "trendingCategories": "หมวดหมู่มาแรง",
-    "newThisWeek": "+{n} สัปดาห์นี้",
-    "newThisMonth": "+{n} เดือนนี้"
+    "trendingThisWeek": "หมวดหมู่มาแรง (สัปดาห์นี้)",
+    "trendingThisMonth": "หมวดหมู่มาแรง (เดือนนี้)"
   },
   "sections": {
     "browseByCategory": "เรียกดูตามหมวดหมู่",

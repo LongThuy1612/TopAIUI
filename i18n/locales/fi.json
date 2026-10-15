@@ -378,8 +378,7 @@
     "titlePrefix": "Löydä parhaat",
     "titleHighlight": "tekoälytyökalut",
     "subtitle": "Selaa satoja tekoälytuotteita kategorioittain, vertaile hintoja ja löydä oikea työkalu työnkulkuusi.",
-    "searchPlaceholder": "Hae tekoälytyökaluja...",
-    "popularSearches": "Suositut haut:"
+    "searchPlaceholder": "Hae tekoälytyökaluja..."
   },
   "stats": {
     "tools": "tekoälyä ja",
@@ -404,9 +403,8 @@
     "aiNews": "Tekoälyuutiset",
     "top10": "Top 10",
     "readMoreNews": "Lue lisää",
-    "trendingCategories": "Nousevat kategoriat",
-    "newThisWeek": "+{n} tällä viikolla",
-    "newThisMonth": "+{n} tässä kuussa"
+    "trendingThisWeek": "Nousevat kategoriat (tällä viikolla)",
+    "trendingThisMonth": "Nousevat kategoriat (tässä kuussa)"
   },
   "sections": {
     "browseByCategory": "Selaa kategorioittain",

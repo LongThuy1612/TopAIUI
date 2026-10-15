@@ -8,11 +8,13 @@ defineProps<{
   period: 'week' | 'month' | 'all'
   categories: { slug: string; name: string; count: number }[]
 }>()
+const titleKey = { week: 'sidebar.trendingThisWeek', month: 'sidebar.trendingThisMonth', all: 'sidebar.topCategories' } as const
 </script>
 
 <template>
   <div class="rounded-[18px] border border-ink-200 p-5">
-    <div class="border-b border-ink-100 pb-3.5 text-base font-semibold text-ink-900">{{ t(period === 'all' ? 'sidebar.topCategories' : 'sidebar.trendingCategories') }}</div>
+    <!-- The period once in the title; each row only shows its count of new tools. -->
+    <div class="border-b border-ink-100 pb-3.5 text-base font-semibold text-ink-900">{{ t(titleKey[period]) }}</div>
     <ol class="flex flex-col gap-3.5 pt-3.5">
       <li v-for="(cat, i) in categories" :key="cat.slug">
         <NuxtLinkLocale :to="`/category/${cat.slug}`" class="grid grid-cols-[18px_minmax(0,1fr)] gap-2.5 text-base leading-[1.5] text-ink-900 hover:text-brand-500">
@@ -20,7 +22,7 @@ defineProps<{
           <span class="flex min-w-0 items-baseline justify-between gap-2">
             <span class="line-clamp-2 min-w-0">{{ cat.name }}</span>
             <span v-if="period === 'all'" class="shrink-0 text-sm text-ink-500">({{ cat.count }})</span>
-            <span v-else class="shrink-0 whitespace-nowrap text-sm font-semibold text-emerald-600">{{ t(period === 'week' ? 'sidebar.newThisWeek' : 'sidebar.newThisMonth', { n: cat.count }) }}</span>
+            <span v-else class="shrink-0 whitespace-nowrap text-sm font-semibold text-emerald-600">+{{ cat.count }}</span>
           </span>
         </NuxtLinkLocale>
       </li>

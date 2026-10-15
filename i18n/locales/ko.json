@@ -395,8 +395,7 @@
     "titlePrefix": "최고의",
     "titleHighlight": "AI 도구",
     "subtitle": "수백 개의 AI 제품을 카테고리별로 살펴보고, 가격을 비교하고, 워크플로우에 맞는 도구를 찾아보세요.",
-    "searchPlaceholder": "AI 도구 검색...",
-    "popularSearches": "인기 검색어:"
+    "searchPlaceholder": "AI 도구 검색..."
   },
   "stats": {
     "tools": "개의 AI와",
@@ -421,9 +420,8 @@
     "aiNews": "AI 뉴스",
     "top10": "상위 10개",
     "readMoreNews": "더 보기",
-    "trendingCategories": "인기 급상승 카테고리",
-    "newThisWeek": "이번 주 +{n}",
-    "newThisMonth": "이번 달 +{n}"
+    "trendingThisWeek": "인기 급상승 카테고리 (이번 주)",
+    "trendingThisMonth": "인기 급상승 카테고리 (이번 달)"
   },
   "sections": {
     "browseByCategory": "카테고리별 보기",

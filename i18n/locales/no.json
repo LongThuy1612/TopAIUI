@@ -378,8 +378,7 @@
     "titlePrefix": "Finn de beste",
     "titleHighlight": "AI-verktøyene",
     "subtitle": "Bla gjennom hundrevis av AI-produkter etter kategori, sammenlign priser, og finn det rette verktøyet for arbeidsflyten din.",
-    "searchPlaceholder": "Søk etter AI-verktøy...",
-    "popularSearches": "Populære søk:"
+    "searchPlaceholder": "Søk etter AI-verktøy..."
   },
   "stats": {
     "tools": "AI-er og",
@@ -404,9 +403,8 @@
     "aiNews": "AI-nyheter",
     "top10": "Topp 10",
     "readMoreNews": "Les mer",
-    "trendingCategories": "Populære kategorier",
-    "newThisWeek": "+{n} denne uken",
-    "newThisMonth": "+{n} denne måneden"
+    "trendingThisWeek": "Populære kategorier (denne uken)",
+    "trendingThisMonth": "Populære kategorier (denne måneden)"
   },
   "sections": {
     "browseByCategory": "Bla gjennom etter kategori",

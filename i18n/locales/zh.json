@@ -395,8 +395,7 @@
     "titlePrefix": "发现最好的",
     "titleHighlight": "AI 工具",
     "subtitle": "按分类浏览数百款 AI 产品，比较价格，找到最适合你工作流程的工具。",
-    "searchPlaceholder": "搜索 AI 工具...",
-    "popularSearches": "热门搜索："
+    "searchPlaceholder": "搜索 AI 工具..."
   },
   "stats": {
     "tools": "个 AI 和",
@@ -421,9 +420,8 @@
     "aiNews": "AI 新闻",
     "top10": "前 10",
     "readMoreNews": "阅读更多",
-    "trendingCategories": "热门分类",
-    "newThisWeek": "本周 +{n}",
-    "newThisMonth": "本月 +{n}"
+    "trendingThisWeek": "热门分类（本周）",
+    "trendingThisMonth": "热门分类（本月）"
   },
   "sections": {
     "browseByCategory": "按分类浏览",

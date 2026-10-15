@@ -44,8 +44,7 @@ function onSearch(q: string) {
         <SearchBar v-model="heroQuery" :placeholder="t('hero.searchPlaceholder')" @submit="onSearch" />
       </div>
 
-      <div v-if="popularSearches.length" class="mx-auto mt-[22px] flex flex-wrap items-center justify-center gap-2 text-[13.5px] font-medium">
-        <span class="mr-1 text-ink-500">{{ t('hero.popularSearches') }}</span>
+      <div v-if="popularSearches.length" class="mx-auto mt-[22px] flex flex-wrap justify-center gap-2 text-[13.5px] font-medium">
         <NuxtLinkLocale
           v-for="term in popularSearches"
           :key="term"

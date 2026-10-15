@@ -378,8 +378,7 @@
     "titlePrefix": "Ontdek de beste",
     "titleHighlight": "AI-tools",
     "subtitle": "Blader door honderden AI-producten per categorie, vergelijk prijzen en vind de juiste tool voor jouw workflow.",
-    "searchPlaceholder": "AI-tools zoeken...",
-    "popularSearches": "Populaire zoekopdrachten:"
+    "searchPlaceholder": "AI-tools zoeken..."
   },
   "stats": {
     "tools": "AI's en",
@@ -404,9 +403,8 @@
     "aiNews": "AI-nieuws",
     "top10": "Top 10",
     "readMoreNews": "Lees meer",
-    "trendingCategories": "Trending categorieën",
-    "newThisWeek": "+{n} deze week",
-    "newThisMonth": "+{n} deze maand"
+    "trendingThisWeek": "Trending categorieën (deze week)",
+    "trendingThisMonth": "Trending categorieën (deze maand)"
   },
   "sections": {
     "browseByCategory": "Bladeren op categorie",

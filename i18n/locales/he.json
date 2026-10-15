@@ -378,8 +378,7 @@
     "titlePrefix": "גלה את",
     "titleHighlight": "כלי הבינה המלאכותית הטובים ביותר",
     "subtitle": "עיין במאות מוצרי בינה מלאכותית לפי קטגוריה, השווה מחירים ומצא את הכלי המתאים לתהליך העבודה שלך.",
-    "searchPlaceholder": "חיפוש כלי בינה מלאכותית...",
-    "popularSearches": "חיפושים פופולריים:"
+    "searchPlaceholder": "חיפוש כלי בינה מלאכותית..."
   },
   "stats": {
     "tools": "כלי בינה מלאכותית ו-",
@@ -404,9 +403,8 @@
     "aiNews": "חדשות בינה מלאכותית",
     "top10": "10 המובילים",
     "readMoreNews": "קרא עוד",
-    "trendingCategories": "קטגוריות חמות",
-    "newThisWeek": "+{n} השבוע",
-    "newThisMonth": "+{n} החודש"
+    "trendingThisWeek": "קטגוריות חמות (השבוע)",
+    "trendingThisMonth": "קטגוריות חמות (החודש)"
   },
   "sections": {
     "browseByCategory": "עיון לפי קטגוריה",
