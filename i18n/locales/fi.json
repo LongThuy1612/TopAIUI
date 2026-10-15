@@ -840,7 +840,7 @@
     "introduction": "Esittely"
   },
   "footer": {
-    "tagline": "Löydä, vertaile ja jaa parhaat tekoälytyökalut — rakennettu Nuxtilla ja PostgreSQL:llä.",
+    "tagline": "Löydä, vertaile ja jaa parhaat tekoälytyökalut",
     "product": "Tuote",
     "home": "Etusivu",
     "allTools": "Kaikki työkalut",

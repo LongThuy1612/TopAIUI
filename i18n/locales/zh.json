@@ -857,7 +857,7 @@
     "introduction": "简介"
   },
   "footer": {
-    "tagline": "发现、比较和分享最好的 AI 工具 — 基于 Nuxt 与 PostgreSQL 构建。",
+    "tagline": "发现、比较和分享最好的 AI 工具",
     "product": "产品",
     "home": "首页",
     "allTools": "所有工具",
