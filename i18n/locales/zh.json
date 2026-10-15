@@ -420,8 +420,8 @@
     "aiNews": "AI 新闻",
     "top10": "前 10",
     "readMoreNews": "阅读更多",
-    "trendingThisWeek": "热门分类（本周）",
-    "trendingThisMonth": "热门分类（本月）"
+    "trendingThisWeek": "本周热门分类",
+    "trendingThisMonth": "本月热门分类"
   },
   "sections": {
     "browseByCategory": "按分类浏览",

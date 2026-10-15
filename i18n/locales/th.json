@@ -403,8 +403,8 @@
     "aiNews": "ข่าว AI",
     "top10": "อันดับ 10",
     "readMoreNews": "อ่านเพิ่มเติม",
-    "trendingThisWeek": "หมวดหมู่มาแรง (สัปดาห์นี้)",
-    "trendingThisMonth": "หมวดหมู่มาแรง (เดือนนี้)"
+    "trendingThisWeek": "หมวดหมู่มาแรงสัปดาห์นี้",
+    "trendingThisMonth": "หมวดหมู่มาแรงเดือนนี้"
   },
   "sections": {
     "browseByCategory": "เรียกดูตามหมวดหมู่",

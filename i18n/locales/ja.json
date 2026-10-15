@@ -420,8 +420,8 @@
     "aiNews": "AIニュース",
     "top10": "トップ10",
     "readMoreNews": "もっと見る",
-    "trendingThisWeek": "注目のカテゴリー（今週）",
-    "trendingThisMonth": "注目のカテゴリー（今月）"
+    "trendingThisWeek": "今週の注目カテゴリー",
+    "trendingThisMonth": "今月の注目カテゴリー"
   },
   "sections": {
     "browseByCategory": "カテゴリーで見る",

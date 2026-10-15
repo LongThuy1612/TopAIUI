@@ -420,8 +420,8 @@
     "aiNews": "Berita AI",
     "top10": "10 Teratas",
     "readMoreNews": "Baca selengkapnya",
-    "trendingThisWeek": "Kategori trending (minggu ini)",
-    "trendingThisMonth": "Kategori trending (bulan ini)"
+    "trendingThisWeek": "Kategori trending minggu ini",
+    "trendingThisMonth": "Kategori trending bulan ini"
   },
   "sections": {
     "browseByCategory": "Jelajahi berdasarkan kategori",

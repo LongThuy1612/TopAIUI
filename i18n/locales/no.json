@@ -403,8 +403,8 @@
     "aiNews": "AI-nyheter",
     "top10": "Topp 10",
     "readMoreNews": "Les mer",
-    "trendingThisWeek": "Populære kategorier (denne uken)",
-    "trendingThisMonth": "Populære kategorier (denne måneden)"
+    "trendingThisWeek": "Populære kategorier denne uken",
+    "trendingThisMonth": "Populære kategorier denne måneden"
   },
   "sections": {
     "browseByCategory": "Bla gjennom etter kategori",

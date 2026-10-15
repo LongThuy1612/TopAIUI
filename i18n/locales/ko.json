@@ -420,8 +420,8 @@
     "aiNews": "AI 뉴스",
     "top10": "상위 10개",
     "readMoreNews": "더 보기",
-    "trendingThisWeek": "인기 급상승 카테고리 (이번 주)",
-    "trendingThisMonth": "인기 급상승 카테고리 (이번 달)"
+    "trendingThisWeek": "이번 주 인기 급상승 카테고리",
+    "trendingThisMonth": "이번 달 인기 급상승 카테고리"
   },
   "sections": {
     "browseByCategory": "카테고리별 보기",

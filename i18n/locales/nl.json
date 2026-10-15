@@ -403,8 +403,8 @@
     "aiNews": "AI-nieuws",
     "top10": "Top 10",
     "readMoreNews": "Lees meer",
-    "trendingThisWeek": "Trending categorieën (deze week)",
-    "trendingThisMonth": "Trending categorieën (deze maand)"
+    "trendingThisWeek": "Trending categorieën deze week",
+    "trendingThisMonth": "Trending categorieën deze maand"
   },
   "sections": {
     "browseByCategory": "Bladeren op categorie",

@@ -403,8 +403,8 @@
     "aiNews": "Новости ИИ",
     "top10": "Топ 10",
     "readMoreNews": "Читать далее",
-    "trendingThisWeek": "Популярные категории (за неделю)",
-    "trendingThisMonth": "Популярные категории (за месяц)"
+    "trendingThisWeek": "Популярные категории недели",
+    "trendingThisMonth": "Популярные категории месяца"
   },
   "sections": {
     "browseByCategory": "Обзор по категориям",

@@ -403,8 +403,8 @@
     "aiNews": "Tekoälyuutiset",
     "top10": "Top 10",
     "readMoreNews": "Lue lisää",
-    "trendingThisWeek": "Nousevat kategoriat (tällä viikolla)",
-    "trendingThisMonth": "Nousevat kategoriat (tässä kuussa)"
+    "trendingThisWeek": "Viikon nousevat kategoriat",
+    "trendingThisMonth": "Kuukauden nousevat kategoriat"
   },
   "sections": {
     "browseByCategory": "Selaa kategorioittain",

@@ -403,8 +403,8 @@
     "aiNews": "חדשות בינה מלאכותית",
     "top10": "10 המובילים",
     "readMoreNews": "קרא עוד",
-    "trendingThisWeek": "קטגוריות חמות (השבוע)",
-    "trendingThisMonth": "קטגוריות חמות (החודש)"
+    "trendingThisWeek": "קטגוריות חמות השבוע",
+    "trendingThisMonth": "קטגוריות חמות החודש"
   },
   "sections": {
     "browseByCategory": "עיון לפי קטגוריה",

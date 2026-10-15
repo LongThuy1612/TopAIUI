@@ -420,8 +420,8 @@
     "aiNews": "Actualités IA",
     "top10": "Top 10",
     "readMoreNews": "Lire la suite",
-    "trendingThisWeek": "Catégories tendance (cette semaine)",
-    "trendingThisMonth": "Catégories tendance (ce mois-ci)"
+    "trendingThisWeek": "Catégories tendance de la semaine",
+    "trendingThisMonth": "Catégories tendance du mois"
   },
   "sections": {
     "browseByCategory": "Parcourir par catégorie",
