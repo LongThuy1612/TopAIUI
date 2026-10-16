@@ -11,6 +11,14 @@ const root = ref<HTMLElement | null>(null)
 const trigger = ref<HTMLButtonElement | null>(null)
 const items = ref<HTMLButtonElement[]>([])
 const current = computed(() => pending.value ?? locale.value)
+// Language → the flag shown beside it (app/assets/flags, from flag-icons, MIT). Bundled
+// by Vite, so the files always ship with the code (kept as files, not inlined into the script).
+const FLAG_FILES = import.meta.glob<string>('../assets/flags/*.svg', { eager: true, query: '?no-inline', import: 'default' })
+const COUNTRY: Record<string, string> = {
+  en: 'us', zh: 'cn', es: 'es', de: 'de', ja: 'jp', fr: 'fr', ko: 'kr', pt: 'pt', id: 'id', vi: 'vn',
+  it: 'it', nl: 'nl', ru: 'ru', sv: 'se', da: 'dk', no: 'no', fi: 'fi', ar: 'sa', he: 'il', th: 'th'
+}
+const flagOf = (code: string) => Object.entries(FLAG_FILES).find(([path]) => path.endsWith(`/${COUNTRY[code]}.svg`))?.[1]
 // As tall as the room below the pill allows (the list scrolls inside past that).
 const maxHeight = ref(480)
 
@@ -95,7 +103,8 @@ onBeforeUnmount(() => document.removeEventListener('click', onDocClick))
           :class="['flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-left text-sm outline-none transition-colors focus-visible:bg-ink-100/70', loc.code === current ? 'bg-brand-50 font-semibold text-ink-900' : 'text-ink-800 hover:bg-ink-100/60']"
           @click="choose(loc.code)"
         >
-          <span :class="['w-8 shrink-0 rounded-md py-0.5 text-center text-[11px] font-semibold', loc.code === current ? 'bg-brand-500 text-white' : 'bg-ink-100 text-ink-700']">{{ loc.code.toUpperCase() }}</span>
+          <img v-if="flagOf(loc.code)" :src="flagOf(loc.code)" alt="" width="24" height="18" loading="lazy" class="h-[18px] w-6 shrink-0 rounded-[3px] object-cover ring-1 ring-black/10">
+          <span v-else class="w-6 shrink-0 text-center text-[11px] font-semibold text-ink-500">{{ loc.code.toUpperCase() }}</span>
           <span class="min-w-0 flex-1 truncate">{{ loc.name }}</span>
           <svg v-if="loc.code === current" class="h-4 w-4 shrink-0 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7" />

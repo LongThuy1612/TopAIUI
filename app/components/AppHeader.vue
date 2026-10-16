@@ -321,6 +321,30 @@ function closeMobileMenu(restoreFocus = true) {
   if (restoreFocus) nextTick(() => burgerEl.value?.focus())
 }
 
+// On a tool's page (it starts with the light orange band) the header takes the same
+// colour and loses its line, fading to the usual white as the page scrolls.
+const tintedPage = computed(() => String(route.name ?? '').split('___')[0] === 'tools-slug')
+// 0 at the top → 1 after 160px: the colour and the line fade with the scroll, not at once.
+const scrollFade = ref(0)
+let scrollFrame = 0
+function onScroll() {
+  if (scrollFrame) return
+  scrollFrame = requestAnimationFrame(() => {
+    scrollFrame = 0
+    scrollFade.value = Math.min(1, Math.max(0, window.scrollY / 160))
+  })
+}
+// #FFF3F0 → white, and the bottom line (ink-100 #EFEFF2) fading in.
+const headerStyle = computed(() => {
+  if (!tintedPage.value) return undefined
+  const f = scrollFade.value
+  const mix = (a: number) => Math.round(a + (255 - a) * f)
+  return {
+    backgroundColor: `rgba(255, ${mix(243)}, ${mix(240)}, ${1 - 0.08 * f})`,
+    borderBottomColor: `rgba(239, 239, 242, ${f})`
+  }
+})
+
 // Close on navigation — also covers links that point at the current page.
 watch(() => route.fullPath, () => closeMobileMenu(false))
 
@@ -356,6 +380,8 @@ watch(navLevel, (level) => {
 
 onMounted(() => {
   window.addEventListener('keydown', onKeydown)
+  window.addEventListener('scroll', onScroll, { passive: true })
+  onScroll()
   measureNav()
   // nav: window / logo size changes. inner: language switch, web fonts loading.
   navObserver = new ResizeObserver(scheduleMeasureNav)
@@ -364,6 +390,8 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
+  window.removeEventListener('scroll', onScroll)
+  cancelAnimationFrame(scrollFrame)
   window.removeEventListener('keydown', onKeydown)
   navObserver?.disconnect()
   cancelAnimationFrame(measureFrame)
@@ -372,7 +400,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <header class="sticky top-0 z-40 border-b border-ink-100 bg-white/[.92] backdrop-blur-md">
+  <header :class="['sticky top-0 z-40 border-b backdrop-blur-md', !headerStyle && 'border-ink-100 bg-white/[.92]']" :style="headerStyle">
     <div class="flex h-[64px] items-center gap-5 px-4 sm:px-6 lg:px-10">
       <NuxtLinkLocale to="/" class="flex shrink-0 items-center gap-2.5">
         <IconLogo class="h-8 w-8" width="32" height="32" />
