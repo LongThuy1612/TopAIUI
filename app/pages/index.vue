@@ -152,10 +152,10 @@ useJsonLd('site', () => [
       <div class="min-w-0 flex-[999_1_560px]">
         <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
           <div class="flex flex-col">
-            <span class="text-[13px] font-semibold text-brand-600">{{ launchDayLabel }}</span>
-            <h2 class="mt-1.5 text-[32px] font-bold tracking-[-.03em] text-ink-900">{{ t('home.topLaunches') }}</h2>
+            <span class="text-sm font-semibold text-brand-600">{{ launchDayLabel }}</span>
+            <h2 class="mt-1.5 text-[34px] font-bold tracking-[-.03em] text-ink-900">{{ t('home.topLaunches') }}</h2>
           </div>
-          <div class="flex gap-1.5 text-sm font-medium" role="tablist">
+          <div class="flex gap-1.5 text-[15px] font-medium" role="tablist">
             <button
               v-for="item in tabs"
               :key="item.key"
@@ -188,7 +188,7 @@ useJsonLd('site', () => [
             class="pointer-events-none absolute -top-4 right-16 h-28 w-28 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-20"
           >
           <span v-else class="pointer-events-none absolute right-[72px] top-1 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-[92px]" aria-hidden="true">{{ initialsOf(row.tool.name) }}</span>
-          <span class="relative hidden text-[15px] font-semibold text-ink-400 sm:block">{{ i + 1 }}</span>
+          <span class="relative hidden text-base font-semibold text-ink-400 sm:block">{{ i + 1 }}</span>
           <NuxtLinkLocale
             :to="row.ad ? row.ad.clickUrl : `/tools/${row.tool.slug}`"
             :external="!!row.ad"
@@ -208,12 +208,12 @@ useJsonLd('site', () => [
             :rel="row.ad ? 'sponsored nofollow noopener' : undefined"
             class="relative flex min-w-0 flex-col gap-1"
           >
-            <span class="flex flex-wrap items-center gap-2 text-base font-semibold text-ink-900">
+            <span class="flex flex-wrap items-center gap-2 text-[17px] font-semibold text-ink-900">
               {{ row.tool.name }}
               <span v-if="row.ad" class="rounded-full bg-brand-500 px-2 py-[2px] text-[11px] font-semibold text-white">{{ t('sections.sponsorBadge') }}</span>
             </span>
-            <span v-if="row.tool.shortDesc" class="line-clamp-2 text-sm leading-[1.45] text-ink-700">{{ row.tool.shortDesc }}</span>
-            <span class="flex flex-wrap gap-2.5 text-xs text-ink-600">
+            <span v-if="row.tool.shortDesc" class="line-clamp-2 text-[15px] leading-[1.45] text-ink-700">{{ row.tool.shortDesc }}</span>
+            <span class="flex flex-wrap gap-2.5 text-[13px] text-ink-600">
               <template v-if="row.tool.categories?.[0]"><span>{{ row.tool.categories[0].name }}</span><span aria-hidden="true">·</span></template>
               <span>{{ t(`pricing.${row.tool.pricingType}`) }}</span>
               <template v-if="!row.ad"><span aria-hidden="true">·</span><span>{{ reviewsLabel(row.tool as Tool) }}</span></template>
@@ -238,7 +238,7 @@ useJsonLd('site', () => [
           {{ tab === 'today' || otherTabs[tab] ? t('empty.noTools') : '…' }}
         </div>
 
-        <NuxtLinkLocale :to="tabLink[tab]" class="mt-3 block rounded-full border border-ink-200 p-3.5 text-center text-sm font-semibold text-ink-900 hover:border-ink-400">
+        <NuxtLinkLocale :to="tabLink[tab]" class="mt-3 block rounded-full border border-ink-200 p-3.5 text-center text-[15px] font-semibold text-ink-900 hover:border-ink-400">
           {{ tab === 'today' && launchCount ? t('home.seeAllLaunches', { n: nf.format(launchCount) }, launchCount) : t('sections.viewAll') }}
         </NuxtLinkLocale>
       </div>
@@ -249,32 +249,32 @@ useJsonLd('site', () => [
 
         <div v-if="news.length">
           <div class="mb-2 flex items-baseline justify-between gap-3">
-            <span class="text-base font-bold text-ink-900">{{ t('sidebar.aiNews') }}</span>
-            <NuxtLinkLocale to="/ai-news" class="shrink-0 text-[13px] font-semibold text-brand-600">{{ t('home.viewAll') }}</NuxtLinkLocale>
+            <span class="text-[17px] font-bold text-ink-900">{{ t('sidebar.aiNews') }}</span>
+            <NuxtLinkLocale to="/ai-news" class="shrink-0 text-sm font-semibold text-brand-600">{{ t('home.viewAll') }}</NuxtLinkLocale>
           </div>
           <AiNewsLink
             v-for="(item, i) in news"
             :key="item.slug"
             :item="item"
-            class="flex gap-3 border-b border-[#F3F3F5] py-2 text-sm text-ink-900 hover:text-ink-700"
+            class="flex gap-3 border-b border-[#F3F3F5] py-2 text-[15px] text-ink-900 hover:text-ink-700"
           >
-            <span class="w-[18px] shrink-0 text-[13px] text-ink-400">{{ i + 1 }}</span>
+            <span class="w-5 shrink-0 text-sm text-ink-400">{{ i + 1 }}</span>
             <span class="min-w-0 flex-1">{{ item.title }}<span v-if="item.externalUrl" class="text-ink-400"> ↗</span></span>
           </AiNewsLink>
         </div>
 
         <div v-if="trendingCategories.length">
           <div class="mb-2 flex items-baseline justify-between gap-3">
-            <span class="text-base font-bold text-ink-900">{{ trendingTitle }}</span>
-            <NuxtLinkLocale to="/category/all" class="shrink-0 text-[13px] font-semibold text-brand-600">{{ t('home.viewAll') }}</NuxtLinkLocale>
+            <span class="text-[17px] font-bold text-ink-900">{{ trendingTitle }}</span>
+            <NuxtLinkLocale to="/category/all" class="shrink-0 text-sm font-semibold text-brand-600">{{ t('home.viewAll') }}</NuxtLinkLocale>
           </div>
           <NuxtLinkLocale
             v-for="(cat, i) in trendingCategories"
             :key="cat.slug"
             :to="`/category/${cat.slug}`"
-            class="flex gap-3 border-b border-[#F3F3F5] py-2 text-sm text-ink-900 hover:text-ink-700"
+            class="flex gap-3 border-b border-[#F3F3F5] py-2 text-[15px] text-ink-900 hover:text-ink-700"
           >
-            <span class="w-[18px] shrink-0 text-[13px] text-ink-400">{{ i + 1 }}</span>
+            <span class="w-5 shrink-0 text-sm text-ink-400">{{ i + 1 }}</span>
             <span class="min-w-0 flex-1">{{ cat.name }}</span>
             <span v-if="trendingRes?.period === 'all'" class="shrink-0 text-ink-400">{{ nf.format(cat.count) }}</span>
             <span v-else class="shrink-0 font-semibold text-[#298646]">+{{ nf.format(cat.count) }}</span>
@@ -282,13 +282,13 @@ useJsonLd('site', () => [
         </div>
 
         <div v-if="!news.length && trendingTools.length">
-          <div class="mb-2 text-base font-bold text-ink-900">{{ t('home.trendingTools') }}</div>
+          <div class="mb-2 text-[17px] font-bold text-ink-900">{{ t('home.trendingTools') }}</div>
           <NuxtLinkLocale v-for="tool in trendingTools" :key="tool.slug" :to="`/tools/${tool.slug}`" class="flex items-center gap-3 py-2">
             <img v-if="tool.logoUrl" data-logo :src="sizedImage(tool.logoUrl, 64, 64)" alt="" loading="lazy" class="h-9 w-9 shrink-0 rounded-lg object-cover">
             <span v-else class="grid h-9 w-9 shrink-0 place-items-center rounded-lg text-xs font-bold" :style="tintOf(tool.name)">{{ initialsOf(tool.name) }}</span>
             <span class="flex min-w-0 flex-col gap-0.5">
-              <span class="truncate text-sm font-semibold text-ink-900">{{ tool.name }}</span>
-              <span v-if="tool.shortDesc" class="line-clamp-1 text-xs text-ink-600">{{ tool.shortDesc }}</span>
+              <span class="truncate text-[15px] font-semibold text-ink-900">{{ tool.name }}</span>
+              <span v-if="tool.shortDesc" class="line-clamp-1 text-[13px] text-ink-600">{{ tool.shortDesc }}</span>
             </span>
           </NuxtLinkLocale>
         </div>
@@ -299,8 +299,8 @@ useJsonLd('site', () => [
     <section class="border-y border-ink-100 bg-[#FAFAFB] px-4 py-12 sm:px-10">
       <div class="mx-auto max-w-[1200px]">
         <div class="mb-[18px] flex items-baseline justify-between gap-4">
-          <h2 class="text-[26px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.browseByCategory') }}</h2>
-          <NuxtLinkLocale to="/category/all" class="text-[13px] font-semibold text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
+          <h2 class="text-[28px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.browseByCategory') }}</h2>
+          <NuxtLinkLocale to="/category/all" class="text-sm font-semibold text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
         </div>
         <div class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-2.5">
           <NuxtLinkLocale
@@ -309,10 +309,10 @@ useJsonLd('site', () => [
             :to="`/category/${cat.slug}`"
             class="flex items-center gap-3 rounded-2xl border border-ink-100 bg-white px-4 py-3.5 hover:border-[#DCDCE2]"
           >
-            <span class="h-8 w-8 shrink-0 rounded-[10px]" :style="categoryTint(i)" aria-hidden="true" />
+            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-[10px] text-base" :style="categoryTint(i)" aria-hidden="true"><CategoryIcon :icon="cat.icon" /></span>
             <span class="flex min-w-0 flex-col gap-0.5">
-              <span class="truncate text-sm font-semibold text-ink-900">{{ cat.name }}</span>
-              <span class="text-xs text-ink-400">{{ nf.format(cat.count) }}</span>
+              <span class="truncate text-[15px] font-semibold text-ink-900">{{ cat.name }}</span>
+              <span class="text-[13px] text-ink-400">{{ nf.format(cat.count) }}</span>
             </span>
           </NuxtLinkLocale>
         </div>
@@ -322,8 +322,8 @@ useJsonLd('site', () => [
     <!-- Featured -->
     <section class="px-4 pt-14 pb-16 sm:px-10">
       <div class="mx-auto max-w-[1200px]">
-        <h2 class="mb-1 text-[26px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.featuredThisWeek') }}</h2>
-        <p class="mb-[22px] text-sm text-ink-600">{{ t('sections.featuredThisWeekSubtitle') }}</p>
+        <h2 class="mb-1 text-[28px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.featuredThisWeek') }}</h2>
+        <p class="mb-[22px] text-[15px] text-ink-600">{{ t('sections.featuredThisWeekSubtitle') }}</p>
         <div v-if="featuredTools.length" class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-3">
           <NuxtLinkLocale
             v-for="tool in featuredTools"
@@ -335,9 +335,9 @@ useJsonLd('site', () => [
             <span class="relative flex items-center gap-2.5">
               <img v-if="tool.logoUrl" data-logo :src="sizedImage(tool.logoUrl, 64, 64)" alt="" loading="lazy" class="h-[30px] w-[30px] shrink-0 rounded-full object-cover">
               <span v-else class="grid h-[30px] w-[30px] shrink-0 place-items-center rounded-full text-xs font-bold" :style="tintOf(tool.name)">{{ initialsOf(tool.name) }}</span>
-              <span class="text-sm font-bold leading-tight text-ink-900">{{ tool.name }}</span>
+              <span class="text-[15px] font-bold leading-tight text-ink-900">{{ tool.name }}</span>
             </span>
-            <span v-if="tool.shortDesc" class="relative line-clamp-2 text-xs leading-normal text-ink-700">{{ tool.shortDesc }}</span>
+            <span v-if="tool.shortDesc" class="relative line-clamp-2 text-[13px] leading-normal text-ink-700">{{ tool.shortDesc }}</span>
           </NuxtLinkLocale>
         </div>
         <div v-else class="rounded-xl border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">{{ t('empty.noTools') }}</div>

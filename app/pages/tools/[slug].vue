@@ -843,7 +843,7 @@ useJsonLd('tool', () => {
       </div>
     </div>
 
-    <div class="sticky top-[73px] z-30 mt-6 border-b border-ink-200 bg-white/95 backdrop-blur">
+    <div class="sticky top-[65px] z-30 mt-6 border-b border-ink-200 bg-white/95 backdrop-blur">
       <nav class="-mb-px flex gap-8 overflow-x-auto">
         <button
           v-for="tab in tabs"

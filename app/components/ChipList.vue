@@ -90,7 +90,7 @@ onBeforeUnmount(() => { document.removeEventListener('click', onDocClick); docum
     <div
       v-if="open && hidden.length"
       ref="popover"
-      class="absolute left-0 right-0 top-full z-30 mt-2 max-h-60 overflow-y-auto rounded-xl border border-ink-100 bg-white p-3 shadow-[0_12px_32px_-12px_rgba(23,18,26,.35)] sm:right-auto sm:w-[440px]"
+      class="absolute left-0 right-0 top-full z-[35] mt-2 max-h-60 overflow-y-auto rounded-xl border border-ink-100 bg-white p-3 shadow-[0_12px_32px_-12px_rgba(23,18,26,.35)] sm:right-auto sm:w-[440px]"
     >
       <div class="flex flex-wrap gap-2.5">
         <template v-for="chip in hidden" :key="chip.key">

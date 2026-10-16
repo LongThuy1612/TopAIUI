@@ -26,8 +26,8 @@ async function subscribe() {
 
 <template>
   <div class="flex flex-col gap-2.5 rounded-[22px] bg-[#FFEBE4] p-[22px]">
-    <span class="text-base font-bold text-ink-900">{{ t('home.newsletterTitle') }}</span>
-    <span class="text-[13px] text-[#6B5B55]">{{ t('home.newsletterSub') }}</span>
+    <span class="text-[17px] font-bold text-ink-900">{{ t('home.newsletterTitle') }}</span>
+    <span class="text-sm text-[#6B5B55]">{{ t('home.newsletterSub') }}</span>
     <form class="flex items-center gap-1.5 rounded-full bg-white py-[5px] pr-[5px] pl-3.5" @submit.prevent="subscribe">
       <input v-model="website" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden">
       <input
@@ -37,9 +37,9 @@ async function subscribe() {
         maxlength="254"
         :placeholder="t('home.newsletterPlaceholder')"
         :aria-label="t('home.newsletterPlaceholder')"
-        class="min-w-0 flex-1 border-none bg-transparent text-[13px] text-ink-900 outline-none"
+        class="min-w-0 flex-1 border-none bg-transparent text-sm text-ink-900 outline-none"
       >
-      <button type="submit" :disabled="state === 'busy'" class="rounded-full bg-brand-500 px-3.5 py-2 text-[13px] font-semibold text-white hover:bg-brand-600 disabled:opacity-60">
+      <button type="submit" :disabled="state === 'busy'" class="rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 disabled:opacity-60">
         {{ t('home.subscribe') }}
       </button>
     </form>

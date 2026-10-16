@@ -30,7 +30,7 @@ function onSearch() {
       {{ t('hero.titlePrefix') }} <span class="brand-gradient-text">{{ t('hero.titleHighlight') }}</span>{{ t('hero.titleSuffix') ? ` ${t('hero.titleSuffix')}` : '' }}
     </h1>
 
-    <p class="m-0 max-w-[640px] text-[17px] leading-normal text-ink-700">
+    <p class="m-0 max-w-[680px] text-lg leading-normal text-ink-700">
       {{ totalTools }} {{ t('stats.tools') }} {{ totalCategories }} {{ t('stats.categories') }} {{ t('stats.updatedNote') }}
     </p>
 
@@ -43,9 +43,9 @@ function onSearch() {
         type="search"
         :placeholder="t('hero.searchPlaceholder')"
         :aria-label="t('hero.searchPlaceholder')"
-        class="min-w-0 flex-1 border-none bg-transparent text-[15px] text-ink-900 outline-none"
+        class="min-w-0 flex-1 border-none bg-transparent text-base text-ink-900 outline-none"
       >
-      <button type="submit" class="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-600">{{ t('hero.search') }}</button>
+      <button type="submit" class="rounded-full bg-brand-500 px-6 py-3 text-[15px] font-semibold text-white hover:bg-brand-600">{{ t('hero.search') }}</button>
     </form>
 
     <div v-if="popularSearches.length" class="flex flex-wrap justify-center gap-2">
@@ -53,7 +53,7 @@ function onSearch() {
         v-for="term in popularSearches"
         :key="term"
         :to="{ path: '/search', query: { q: term } }"
-        class="rounded-full border border-ink-200 bg-white px-3.5 py-[7px] text-[13px] font-medium text-ink-800 hover:border-ink-400"
+        class="rounded-full border border-ink-200 bg-white px-4 py-2 text-sm font-medium text-ink-800 hover:border-ink-400"
       >
         {{ term }}
       </NuxtLinkLocale>
