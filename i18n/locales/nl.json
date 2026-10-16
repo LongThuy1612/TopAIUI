@@ -827,7 +827,8 @@
     "reviewPendingNotice": "Bedankt! Je review is verstuurd en verschijnt na goedkeuring.",
     "reviewAlreadySubmitted": "Je hebt deze tool al beoordeeld.",
     "reviewSubmitError": "Je review kon niet worden verstuurd. Probeer het opnieuw.",
-    "reviewSessionExpired": "Je sessie is verlopen. Log opnieuw in om je review te versturen."
+    "reviewSessionExpired": "Je sessie is verlopen. Log opnieuw in om je review te versturen.",
+    "moreCategories": "Alle categorieën tonen"
   },
   "alphabet": {
     "title": "AI-tools die beginnen met",

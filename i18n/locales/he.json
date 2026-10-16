@@ -827,7 +827,8 @@
     "reviewPendingNotice": "תודה! הביקורת שלך נשלחה ותוצג לאחר אישור.",
     "reviewAlreadySubmitted": "כבר כתבת ביקורת על הכלי הזה.",
     "reviewSubmitError": "לא ניתן היה לשלוח את הביקורת. נסה שוב.",
-    "reviewSessionExpired": "פג תוקף ההתחברות. התחבר שוב כדי לשלוח את הביקורת."
+    "reviewSessionExpired": "פג תוקף ההתחברות. התחבר שוב כדי לשלוח את הביקורת.",
+    "moreCategories": "הצג את כל הקטגוריות"
   },
   "alphabet": {
     "title": "כלי AI שמתחילים באות",

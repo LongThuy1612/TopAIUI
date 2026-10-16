@@ -844,7 +844,8 @@
     "reviewPendingNotice": "Terima kasih! Ulasan Anda telah dikirim dan akan tampil setelah disetujui.",
     "reviewAlreadySubmitted": "Anda sudah mengulas tool ini.",
     "reviewSubmitError": "Gagal mengirim ulasan. Silakan coba lagi.",
-    "reviewSessionExpired": "Sesi Anda telah berakhir. Silakan masuk lagi untuk mengirim ulasan."
+    "reviewSessionExpired": "Sesi Anda telah berakhir. Silakan masuk lagi untuk mengirim ulasan.",
+    "moreCategories": "Lihat semua kategori"
   },
   "alphabet": {
     "title": "Alat AI yang diawali dengan",

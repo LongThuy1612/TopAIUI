@@ -827,7 +827,8 @@
     "reviewPendingNotice": "Tack! Din recension har skickats och visas när den har godkänts.",
     "reviewAlreadySubmitted": "Du har redan recenserat det här verktyget.",
     "reviewSubmitError": "Det gick inte att skicka recensionen. Försök igen.",
-    "reviewSessionExpired": "Din session har gått ut. Logga in igen för att skicka recensionen."
+    "reviewSessionExpired": "Din session har gått ut. Logga in igen för att skicka recensionen.",
+    "moreCategories": "Visa alla kategorier"
   },
   "alphabet": {
     "title": "AI-verktyg som börjar på",

@@ -827,7 +827,8 @@
     "reviewPendingNotice": "Kiitos! Arvostelusi on lähetetty ja se näytetään hyväksynnän jälkeen.",
     "reviewAlreadySubmitted": "Olet jo arvostellut tämän työkalun.",
     "reviewSubmitError": "Arvostelun lähettäminen epäonnistui. Yritä uudelleen.",
-    "reviewSessionExpired": "Istuntosi on vanhentunut. Kirjaudu uudelleen lähettääksesi arvostelun."
+    "reviewSessionExpired": "Istuntosi on vanhentunut. Kirjaudu uudelleen lähettääksesi arvostelun.",
+    "moreCategories": "Näytä kaikki kategoriat"
   },
   "alphabet": {
     "title": "Tekoälytyökalut, jotka alkavat kirjaimella",

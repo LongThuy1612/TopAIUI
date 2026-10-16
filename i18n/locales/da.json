@@ -827,7 +827,8 @@
     "reviewPendingNotice": "Tak! Din anmeldelse er sendt og vises, når den er godkendt.",
     "reviewAlreadySubmitted": "Du har allerede anmeldt dette værktøj.",
     "reviewSubmitError": "Anmeldelsen kunne ikke sendes. Prøv igen.",
-    "reviewSessionExpired": "Din session er udløbet. Log ind igen for at sende din anmeldelse."
+    "reviewSessionExpired": "Din session er udløbet. Log ind igen for at sende din anmeldelse.",
+    "moreCategories": "Vis alle kategorier"
   },
   "alphabet": {
     "title": "AI-værktøjer der starter med",

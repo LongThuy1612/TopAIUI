@@ -844,7 +844,8 @@
     "reviewPendingNotice": "ありがとうございます！レビューを送信しました。承認後に表示されます。",
     "reviewAlreadySubmitted": "このツールはすでにレビュー済みです。",
     "reviewSubmitError": "レビューを送信できませんでした。もう一度お試しください。",
-    "reviewSessionExpired": "セッションの有効期限が切れました。もう一度ログインしてレビューを送信してください。"
+    "reviewSessionExpired": "セッションの有効期限が切れました。もう一度ログインしてレビューを送信してください。",
+    "moreCategories": "すべてのカテゴリーを表示"
   },
   "alphabet": {
     "title": "次の文字で始まるAIツール",

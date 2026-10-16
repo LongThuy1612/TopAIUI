@@ -844,7 +844,8 @@
     "reviewPendingNotice": "Danke! Deine Bewertung wurde gesendet und erscheint nach der Freigabe.",
     "reviewAlreadySubmitted": "Du hast dieses Tool bereits bewertet.",
     "reviewSubmitError": "Bewertung konnte nicht gesendet werden. Bitte versuche es erneut.",
-    "reviewSessionExpired": "Deine Sitzung ist abgelaufen. Bitte melde dich erneut an, um deine Bewertung zu senden."
+    "reviewSessionExpired": "Deine Sitzung ist abgelaufen. Bitte melde dich erneut an, um deine Bewertung zu senden.",
+    "moreCategories": "Alle Kategorien anzeigen"
   },
   "alphabet": {
     "title": "KI-Tools, die beginnen mit",

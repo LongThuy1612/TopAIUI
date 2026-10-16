@@ -157,6 +157,15 @@ const pricingStyle: Record<string, string> = {
   PAID: 'bg-amber-50 text-amber-700'
 }
 
+// The chips under the introduction: pricing, then categories, then badges.
+const headerChips = computed(() => {
+  if (!tool.value) return []
+  return [
+    { key: 'pricing', label: t(`pricing.${tool.value.pricingType}`), class: 'border border-ink-300 bg-white text-ink-900' },
+    ...(tool.value.categories ?? []).map(cat => ({ key: `cat:${cat.slug}`, label: cat.name, to: `/category/${cat.slug}`, class: 'border border-brand-200 bg-white text-brand-500 hover:border-brand-400' })),
+    ...badges.value.map(b => ({ key: `badge:${b.label}`, label: b.label, class: b.style }))
+  ]
+})
 const badges = computed(() => {
   if (!tool.value) return []
   return [
@@ -747,20 +756,8 @@ useJsonLd('tool', () => {
           </div>
         </dl>
 
-        <div class="mt-7 flex flex-wrap gap-3">
-          <span class="rounded-full border border-ink-300 bg-white px-3 py-1 text-sm text-ink-900">{{ t(`pricing.${tool.pricingType}`) }}</span>
-          <NuxtLinkLocale
-            v-for="cat in tool.categories ?? []"
-            :key="cat.slug"
-            :to="`/category/${cat.slug}`"
-            class="rounded-full border border-brand-200 bg-white px-3 py-1 text-sm text-brand-500 hover:border-brand-400"
-          >
-            {{ cat.name }}
-          </NuxtLinkLocale>
-          <span v-for="badge in badges" :key="badge.label" :class="['rounded-full px-3 py-1 text-sm', badge.style]">
-            {{ badge.label }}
-          </span>
-        </div>
+        <!-- Pricing, categories and badges on two lines at most; the rest behind "⋯". -->
+        <ChipList class="mt-7" :chips="headerChips" :more-label="t('tool.moreCategories')" />
       </div>
 
       <div>

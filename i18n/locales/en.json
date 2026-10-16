@@ -844,7 +844,8 @@
     "reviewPendingNotice": "Thanks! Your review has been submitted and will appear after it is approved.",
     "reviewAlreadySubmitted": "You have already reviewed this tool.",
     "reviewSubmitError": "Could not submit your review. Please try again.",
-    "reviewSessionExpired": "Your session has expired. Please log in again to submit your review."
+    "reviewSessionExpired": "Your session has expired. Please log in again to submit your review.",
+    "moreCategories": "Show all categories"
   },
   "alphabet": {
     "title": "AI Tools starting with",

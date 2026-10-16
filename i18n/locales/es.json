@@ -844,7 +844,8 @@
     "reviewPendingNotice": "¡Gracias! Tu opinión se ha enviado y aparecerá cuando sea aprobada.",
     "reviewAlreadySubmitted": "Ya has opinado sobre esta herramienta.",
     "reviewSubmitError": "No se pudo enviar tu opinión. Inténtalo de nuevo.",
-    "reviewSessionExpired": "Tu sesión ha caducado. Inicia sesión de nuevo para enviar tu opinión."
+    "reviewSessionExpired": "Tu sesión ha caducado. Inicia sesión de nuevo para enviar tu opinión.",
+    "moreCategories": "Ver todas las categorías"
   },
   "alphabet": {
     "title": "Herramientas de IA que empiezan por",

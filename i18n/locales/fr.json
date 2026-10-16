@@ -844,7 +844,8 @@
     "reviewPendingNotice": "Merci ! Votre avis a été envoyé et sera publié après validation.",
     "reviewAlreadySubmitted": "Vous avez déjà donné votre avis sur cet outil.",
     "reviewSubmitError": "Impossible d'envoyer votre avis. Veuillez réessayer.",
-    "reviewSessionExpired": "Votre session a expiré. Reconnectez-vous pour envoyer votre avis."
+    "reviewSessionExpired": "Votre session a expiré. Reconnectez-vous pour envoyer votre avis.",
+    "moreCategories": "Voir toutes les catégories"
   },
   "alphabet": {
     "title": "Outils IA commençant par",

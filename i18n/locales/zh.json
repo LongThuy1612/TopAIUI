@@ -844,7 +844,8 @@
     "reviewPendingNotice": "感谢！您的评价已提交，审核通过后将会显示。",
     "reviewAlreadySubmitted": "您已经评价过此工具。",
     "reviewSubmitError": "评价提交失败，请重试。",
-    "reviewSessionExpired": "登录已过期，请重新登录后提交评价。"
+    "reviewSessionExpired": "登录已过期，请重新登录后提交评价。",
+    "moreCategories": "查看全部分类"
   },
   "alphabet": {
     "title": "以此字母开头的 AI 工具",

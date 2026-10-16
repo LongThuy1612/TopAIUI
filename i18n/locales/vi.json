@@ -591,7 +591,8 @@
     "reviewPendingNotice": "Cảm ơn bạn! Đánh giá đã được gửi và sẽ hiển thị sau khi được duyệt.",
     "reviewAlreadySubmitted": "Bạn đã đánh giá công cụ này rồi.",
     "reviewSubmitError": "Không gửi được đánh giá. Vui lòng thử lại.",
-    "reviewSessionExpired": "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại để gửi đánh giá."
+    "reviewSessionExpired": "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại để gửi đánh giá.",
+    "moreCategories": "Xem tất cả danh mục"
   },
   "alphabet": {
     "title": "Công cụ AI bắt đầu bằng",

@@ -844,7 +844,8 @@
     "reviewPendingNotice": "감사합니다! 리뷰가 제출되었으며 승인 후 표시됩니다.",
     "reviewAlreadySubmitted": "이미 이 도구에 리뷰를 작성했습니다.",
     "reviewSubmitError": "리뷰를 제출하지 못했습니다. 다시 시도해 주세요.",
-    "reviewSessionExpired": "세션이 만료되었습니다. 다시 로그인한 후 리뷰를 제출해 주세요."
+    "reviewSessionExpired": "세션이 만료되었습니다. 다시 로그인한 후 리뷰를 제출해 주세요.",
+    "moreCategories": "모든 카테고리 보기"
   },
   "alphabet": {
     "title": "다음 글자로 시작하는 AI 도구",

@@ -827,7 +827,8 @@
     "reviewPendingNotice": "Grazie! La tua recensione è stata inviata e sarà visibile dopo l'approvazione.",
     "reviewAlreadySubmitted": "Hai già recensito questo strumento.",
     "reviewSubmitError": "Impossibile inviare la recensione. Riprova.",
-    "reviewSessionExpired": "La sessione è scaduta. Accedi di nuovo per inviare la recensione."
+    "reviewSessionExpired": "La sessione è scaduta. Accedi di nuovo per inviare la recensione.",
+    "moreCategories": "Mostra tutte le categorie"
   },
   "alphabet": {
     "title": "Strumenti IA che iniziano con",
