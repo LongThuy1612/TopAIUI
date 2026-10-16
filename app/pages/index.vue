@@ -29,14 +29,43 @@ const tabs: { key: Tab; label: string }[] = [
   { key: 'featured', label: 'tabs.free' }
 ]
 const otherTabs = reactive<Record<'new' | 'featured', Tool[] | null>>({ new: null, featured: null })
+// `tab` is the pressed button; `shownTab` is the list on screen. The old list stays (dimmed)
+// until the new one has arrived, so the box never goes blank.
+const shownTab = ref<Tab>('today')
+const loadingTab = ref<Tab | null>(null)
+const inFlightTabs: Partial<Record<'new' | 'featured', Promise<void>>> = {}
+function fetchTab(key: 'new' | 'featured') {
+  if (otherTabs[key]) return Promise.resolve()
+  const lang = locale.value
+  const query = key === 'new' ? { newToday: 'true', limit: 10, locale: lang } : { sort: 'rating', limit: 10, locale: lang }
+  return (inFlightTabs[key] ??= $fetch<ToolsResponse>('/api/tools', { query })
+    .then((res) => { if (lang === locale.value) otherTabs[key] = res?.items ?? [] })
+    .catch(() => { if (lang === locale.value) otherTabs[key] = [] })
+    .finally(() => { delete inFlightTabs[key] }))
+}
 async function openTab(next: Tab) {
   tab.value = next
-  if (next === 'today' || otherTabs[next]) return
-  const query = next === 'new' ? { newToday: 'true', limit: 10, locale: locale.value } : { sort: 'rating', limit: 10, locale: locale.value }
-  const res = await $fetch<ToolsResponse>('/api/tools', { query }).catch(() => null)
-  otherTabs[next] = res?.items ?? []
+  if (next !== 'today' && !otherTabs[next]) {
+    loadingTab.value = next
+    await fetchTab(next)
+    if (tab.value !== next) return
+  }
+  loadingTab.value = null
+  shownTab.value = next
 }
-watch(locale, () => { otherTabs.new = otherTabs.featured = null; tab.value = 'today' })
+// Fetched in the background once the page is idle, so a click usually shows them at once.
+function prefetchTabs() {
+  const run = () => { fetchTab('new'); fetchTab('featured') }
+  if ('requestIdleCallback' in window) requestIdleCallback(run, { timeout: 3000 })
+  else setTimeout(run, 1500)
+}
+onMounted(prefetchTabs)
+watch(locale, () => {
+  otherTabs.new = otherTabs.featured = null
+  tab.value = shownTab.value = 'today'
+  loadingTab.value = null
+  if (import.meta.client) prefetchTabs()
+})
 
 const { countOf, isVoted, toggle, loadVoted, busy } = useUpvotes()
 const todayRanked = computed(() => [...(todayRes.value?.items ?? [])]
@@ -50,8 +79,8 @@ const todayRanked = computed(() => [...(todayRes.value?.items ?? [])]
 // isn't repeated in the organic lists.
 const { feed } = useAdSlots('home', { limit: advertise.slotPositions.length })
 const rows = computed(() => {
-  if (tab.value === 'today') return feed(todayRanked.value).slice(0, 10)
-  return (otherTabs[tab.value] ?? []).slice(0, 10).map(tool => ({ key: tool.slug, tool, ad: undefined }))
+  if (shownTab.value === 'today') return feed(todayRanked.value).slice(0, 10)
+  return (otherTabs[shownTab.value] ?? []).slice(0, 10).map(tool => ({ key: tool.slug, tool, ad: undefined }))
 })
 const advertisedSlugs = computed(() => new Set(feed(todayRanked.value).flatMap(item => (item.ad ? [item.ad.tool.slug] : []))))
 // Once mounted (the token lives in browser storage), and again when the list changes.
@@ -86,7 +115,7 @@ const trendingTools = computed(() =>
 /* ---- Browse by category / Featured ----------------------------------------- */
 
 const browseCategories = computed(() =>
-  [...(categories.value ?? [])].sort((a, b) => b.count - a.count).slice(0, 15))
+  [...(categories.value ?? [])].sort((a, b) => b.count - a.count).slice(0, 10))
 const featuredTools = computed(() => topRatedRes.value?.items ?? [])
 
 const nf = computed(() => new Intl.NumberFormat(locale.value))
@@ -147,7 +176,7 @@ useJsonLd('site', () => [
   <div>
     <AppHero />
 
-    <section class="mx-auto flex max-w-[1432px] flex-wrap gap-12 px-4 pt-6 pb-14 sm:px-10">
+    <section class="mx-auto flex max-w-[1356px] flex-wrap gap-12 px-4 pt-6 pb-14 sm:px-10">
       <!-- Top AI launches -->
       <div class="min-w-0 flex-[999_1_560px]">
         <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
@@ -175,7 +204,7 @@ useJsonLd('site', () => [
           :key="row.key"
           :data-ad-slot="row.ad?.campaignId"
           :data-ad-placement="row.ad ? 'home' : undefined"
-          class="group relative grid grid-cols-[44px_minmax(0,1fr)_52px] items-center gap-4 overflow-hidden rounded-[18px] px-3 py-4 hover:bg-[#FAFAFB] sm:grid-cols-[28px_60px_minmax(0,1fr)_64px]"
+          :class="['group relative grid grid-cols-[44px_minmax(0,1fr)_52px] items-center gap-4 overflow-hidden rounded-[18px] px-3 py-4 transition-opacity hover:bg-[#FAFAFB] sm:grid-cols-[28px_60px_minmax(0,1fr)_64px]', loadingTab && 'opacity-50']"
         >
           <!-- On hover, the old logo / initials watermark, very faint, left of the vote box. -->
           <img
@@ -235,7 +264,7 @@ useJsonLd('site', () => [
           <span v-else />
         </div>
         <div v-if="!rows.length" class="rounded-[18px] border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
-          {{ tab === 'today' || otherTabs[tab] ? t('empty.noTools') : '…' }}
+          {{ t('empty.noTools') }}
         </div>
 
         <NuxtLinkLocale :to="tabLink[tab]" class="mt-3 block rounded-full border border-ink-200 p-3.5 text-center text-[15px] font-semibold text-ink-900 hover:border-ink-400">
@@ -297,12 +326,12 @@ useJsonLd('site', () => [
 
     <!-- Browse by category -->
     <section class="border-y border-ink-100 bg-[#FAFAFB] px-4 py-12 sm:px-10">
-      <div class="mx-auto max-w-[1352px]">
+      <div class="mx-auto max-w-[1276px]">
         <div class="mb-[18px] flex items-baseline justify-between gap-4">
           <h2 class="text-[28px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.browseByCategory') }}</h2>
           <NuxtLinkLocale to="/category/all" class="text-sm font-semibold text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
         </div>
-        <div class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-2.5">
+        <div class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-2.5 lg:grid-cols-5">
           <NuxtLinkLocale
             v-for="(cat, i) in browseCategories"
             :key="cat.slug"
@@ -321,7 +350,7 @@ useJsonLd('site', () => [
 
     <!-- Featured -->
     <section class="px-4 pt-14 pb-16 sm:px-10">
-      <div class="mx-auto max-w-[1352px]">
+      <div class="mx-auto max-w-[1276px]">
         <h2 class="mb-1 text-[28px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.featuredThisWeek') }}</h2>
         <p class="mb-[22px] text-[15px] text-ink-600">{{ t('sections.featuredThisWeekSubtitle') }}</p>
         <div v-if="featuredTools.length" class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-3">
