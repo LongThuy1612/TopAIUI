@@ -13,7 +13,8 @@
     "admin": "Dashboard",
     "menu": "Menu",
     "openMenu": "Apri menu",
-    "closeMenu": "Chiudi menu"
+    "closeMenu": "Chiudi menu",
+    "language": "Lingua"
   },
   "auth": {
     "signInTitle": "Accedi al tuo account",
@@ -378,7 +379,9 @@
     "titlePrefix": "Scopri i migliori",
     "titleHighlight": "strumenti IA",
     "subtitle": "Sfoglia centinaia di prodotti IA per categoria, confronta i prezzi e trova lo strumento giusto per il tuo flusso di lavoro.",
-    "searchPlaceholder": "Cerca strumenti IA..."
+    "searchPlaceholder": "Cerca strumenti IA, es. video da testo",
+    "search": "Cerca",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "IA e",
@@ -861,7 +864,8 @@
     "terms": "Termini di servizio",
     "privacy": "Informativa sulla privacy",
     "advertise": "Pubblicità",
-    "contact": "Contatti"
+    "contact": "Contatti",
+    "resources": "Risorse"
   },
   "language": {
     "label": "Lingua"
@@ -1668,5 +1672,45 @@
       "refused": "Rifiutato (rimborsato)",
       "paused": "In pausa"
     }
+  },
+  "home": {
+    "topLaunches": "Lanci IA in evidenza",
+    "seeAllLaunches": "Vedi tutti i {n} lanci di oggi",
+    "reviews": "{n} recensione | {n} recensioni",
+    "vote": "Vota",
+    "upvote": "Vota a favore",
+    "viewAll": "Vedi tutto",
+    "trendingTools": "Strumenti di tendenza",
+    "newsletterTitle": "I migliori strumenti IA, ogni settimana",
+    "newsletterSub": "Una email ogni venerdì con gli strumenti IA che vale la pena provare.",
+    "subscribe": "Iscriviti",
+    "subscribed": "Grazie! Sei nella lista.",
+    "subscribeInvalid": "Inserisci un indirizzo email valido.",
+    "subscribeLater": "Troppi tentativi. Riprova più tardi.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Conferma il tuo indirizzo email per votare: controlla la posta o invia di nuovo l’email dalla dashboard.",
+    "voteTooFast": "Troppi voti. Attendi un minuto.",
+    "voteFailed": "Impossibile salvare il voto. Riprova."
+  },
+  "adminNewsletter": {
+    "title": "Newsletter",
+    "export": "Esporta CSV",
+    "count": "{n} iscritto | {n} iscritti",
+    "note": "Il sito non invia ancora nulla: esporta la lista nel tuo strumento di email.",
+    "email": "Email",
+    "language": "Lingua",
+    "date": "Iscritto il",
+    "member": "Membro",
+    "empty": "Ancora nessun iscritto.",
+    "total": "Iscritti",
+    "lastWeek": "Nuovi negli ultimi 7 giorni",
+    "add": "Aggiungi",
+    "added": "{email} aggiunto.",
+    "exists": "Questo indirizzo è già nella lista.",
+    "invalid": "Inserisci un indirizzo email valido.",
+    "remove": "Rimuovi",
+    "confirmRemove": "Rimuovere {email} dalla lista?",
+    "removed": "{email} rimosso.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

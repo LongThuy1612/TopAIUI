@@ -13,7 +13,8 @@
     "admin": "Dashboard",
     "menu": "Menu",
     "openMenu": "Menu openen",
-    "closeMenu": "Menu sluiten"
+    "closeMenu": "Menu sluiten",
+    "language": "Taal"
   },
   "auth": {
     "signInTitle": "Log in op je account",
@@ -378,7 +379,9 @@
     "titlePrefix": "Ontdek de beste",
     "titleHighlight": "AI-tools",
     "subtitle": "Blader door honderden AI-producten per categorie, vergelijk prijzen en vind de juiste tool voor jouw workflow.",
-    "searchPlaceholder": "AI-tools zoeken..."
+    "searchPlaceholder": "Zoek AI-tools, bijv. video uit tekst",
+    "search": "Zoeken",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "AI's en",
@@ -861,7 +864,8 @@
     "terms": "Servicevoorwaarden",
     "privacy": "Privacybeleid",
     "advertise": "Adverteren",
-    "contact": "Contact"
+    "contact": "Contact",
+    "resources": "Bronnen"
   },
   "language": {
     "label": "Taal"
@@ -1668,5 +1672,45 @@
       "refused": "Geweigerd (terugbetaald)",
       "paused": "Gepauzeerd"
     }
+  },
+  "home": {
+    "topLaunches": "Top AI-lanceringen",
+    "seeAllLaunches": "Bekijk alle {n} lanceringen van vandaag",
+    "reviews": "{n} review | {n} reviews",
+    "vote": "Stem",
+    "upvote": "Upvote",
+    "viewAll": "Alles bekijken",
+    "trendingTools": "Populaire tools",
+    "newsletterTitle": "Elke week de beste AI-tools",
+    "newsletterSub": "Elke vrijdag één e-mail met AI-tools die de moeite waard zijn.",
+    "subscribe": "Aanmelden",
+    "subscribed": "Bedankt! Je staat op de lijst.",
+    "subscribeInvalid": "Voer een geldig e-mailadres in.",
+    "subscribeLater": "Te veel pogingen. Probeer het later opnieuw.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Bevestig je e-mailadres om te stemmen — controleer je inbox of verstuur de e-mail opnieuw via je dashboard.",
+    "voteTooFast": "Te veel stemmen. Wacht even een minuut.",
+    "voteFailed": "Je stem kon niet worden opgeslagen. Probeer het opnieuw."
+  },
+  "adminNewsletter": {
+    "title": "Nieuwsbrief",
+    "export": "CSV exporteren",
+    "count": "{n} abonnee | {n} abonnees",
+    "note": "De site verstuurt nog niets — exporteer de lijst naar je mailtool.",
+    "email": "E-mail",
+    "language": "Taal",
+    "date": "Aangemeld",
+    "member": "Lid",
+    "empty": "Nog geen abonnees.",
+    "total": "Abonnees",
+    "lastWeek": "Nieuw in de laatste 7 dagen",
+    "add": "Toevoegen",
+    "added": "{email} toegevoegd.",
+    "exists": "Dit adres staat al op de lijst.",
+    "invalid": "Voer een geldig e-mailadres in.",
+    "remove": "Verwijderen",
+    "confirmRemove": "{email} van de lijst verwijderen?",
+    "removed": "{email} verwijderd.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

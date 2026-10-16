@@ -24,6 +24,7 @@ export default defineEventHandler(async (event) => {
   })
 
   await removeUserSaves(id)
+  await removeUserUpvotes(id)
 
   await prisma.user.update({
     where: { id },

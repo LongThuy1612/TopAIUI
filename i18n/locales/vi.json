@@ -13,7 +13,8 @@
     "admin": "Bảng điều khiển",
     "menu": "Menu",
     "openMenu": "Mở menu",
-    "closeMenu": "Đóng menu"
+    "closeMenu": "Đóng menu",
+    "language": "Ngôn ngữ"
   },
   "auth": {
     "signInTitle": "Đăng nhập vào tài khoản",
@@ -395,7 +396,9 @@
     "titlePrefix": "Khám phá những",
     "titleHighlight": "trang web & công cụ AI tốt nhất",
     "subtitle": "Duyệt hàng trăm sản phẩm AI theo danh mục, so sánh giá và tìm công cụ phù hợp với công việc của bạn.",
-    "searchPlaceholder": "Tìm kiếm công cụ AI..."
+    "searchPlaceholder": "Tìm công cụ AI, vd: tạo video từ văn bản",
+    "search": "Tìm kiếm",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "AI và",
@@ -631,7 +634,8 @@
     "pricing": "Bảng giá",
     "cookies": "Chính sách cookie",
     "editorialGuidelines": "Nguyên tắc biên tập",
-    "reviewMethodology": "Phương pháp đánh giá"
+    "reviewMethodology": "Phương pháp đánh giá",
+    "resources": "Tài nguyên"
   },
   "language": {
     "label": "Ngôn ngữ"
@@ -2062,5 +2066,45 @@
       "refused": "Từ chối (đã hoàn tiền)",
       "paused": "Tạm dừng"
     }
+  },
+  "home": {
+    "topLaunches": "Công cụ AI mới ra mắt",
+    "seeAllLaunches": "Xem tất cả {n} công cụ ra mắt hôm nay",
+    "reviews": "{n} đánh giá",
+    "vote": "Bình chọn",
+    "upvote": "Bình chọn",
+    "viewAll": "Xem tất cả",
+    "trendingTools": "Công cụ đang hot",
+    "newsletterTitle": "Nhận công cụ AI hay nhất mỗi tuần",
+    "newsletterSub": "Mỗi thứ Sáu một email với những công cụ AI đáng thử.",
+    "subscribe": "Đăng ký",
+    "subscribed": "Cảm ơn! Bạn đã có trong danh sách.",
+    "subscribeInvalid": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "subscribeLater": "Bạn thử quá nhiều lần. Vui lòng thử lại sau.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Vui lòng xác nhận địa chỉ email để bình chọn — kiểm tra hộp thư hoặc gửi lại email từ trang quản lý.",
+    "voteTooFast": "Bạn bình chọn quá nhanh. Vui lòng đợi một phút.",
+    "voteFailed": "Không lưu được bình chọn. Vui lòng thử lại."
+  },
+  "adminNewsletter": {
+    "title": "Bản tin",
+    "export": "Xuất CSV",
+    "count": "{n} người đăng ký",
+    "note": "Trang web chưa gửi email — hãy xuất danh sách sang công cụ gửi thư.",
+    "email": "Email",
+    "language": "Ngôn ngữ",
+    "date": "Ngày đăng ký",
+    "member": "Thành viên",
+    "empty": "Chưa có người đăng ký.",
+    "total": "Người đăng ký",
+    "lastWeek": "Mới trong 7 ngày qua",
+    "add": "Thêm",
+    "added": "Đã thêm {email}.",
+    "exists": "Địa chỉ này đã có trong danh sách.",
+    "invalid": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "remove": "Xóa",
+    "confirmRemove": "Xóa {email} khỏi danh sách?",
+    "removed": "Đã xóa {email}.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

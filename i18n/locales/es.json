@@ -13,7 +13,8 @@
     "admin": "Panel",
     "menu": "Menú",
     "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
+    "closeMenu": "Cerrar menú",
+    "language": "Idioma"
   },
   "auth": {
     "signInTitle": "Inicia sesión en tu cuenta",
@@ -395,7 +396,9 @@
     "titlePrefix": "Descubre las mejores",
     "titleHighlight": "herramientas de IA",
     "subtitle": "Explora cientos de productos de IA por categoría, compara precios y encuentra la herramienta adecuada para tu flujo de trabajo.",
-    "searchPlaceholder": "Buscar herramientas de IA..."
+    "searchPlaceholder": "Busca herramientas de IA, p. ej. video desde texto",
+    "search": "Buscar",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "IAs y",
@@ -884,7 +887,8 @@
     "pricing": "Precios",
     "cookies": "Política de cookies",
     "editorialGuidelines": "Directrices editoriales",
-    "reviewMethodology": "Metodología de evaluación"
+    "reviewMethodology": "Metodología de evaluación",
+    "resources": "Recursos"
   },
   "language": {
     "label": "Idioma"
@@ -2062,5 +2066,45 @@
       "refused": "Rechazado (reembolsado)",
       "paused": "En pausa"
     }
+  },
+  "home": {
+    "topLaunches": "Lanzamientos de IA destacados",
+    "seeAllLaunches": "Ver los {n} lanzamientos de hoy",
+    "reviews": "{n} reseña | {n} reseñas",
+    "vote": "Votar",
+    "upvote": "Votar a favor",
+    "viewAll": "Ver todo",
+    "trendingTools": "Herramientas en tendencia",
+    "newsletterTitle": "Las mejores herramientas de IA, cada semana",
+    "newsletterSub": "Un correo cada viernes con las herramientas de IA que valen la pena.",
+    "subscribe": "Suscribirse",
+    "subscribed": "¡Gracias! Ya estás en la lista.",
+    "subscribeInvalid": "Introduce un correo electrónico válido.",
+    "subscribeLater": "Demasiados intentos. Inténtalo más tarde.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Confirma tu correo electrónico para votar: revisa tu bandeja o reenvía el correo desde tu panel.",
+    "voteTooFast": "Demasiados votos. Espera un minuto.",
+    "voteFailed": "No se pudo guardar tu voto. Inténtalo de nuevo."
+  },
+  "adminNewsletter": {
+    "title": "Boletín",
+    "export": "Exportar CSV",
+    "count": "{n} suscriptor | {n} suscriptores",
+    "note": "El sitio aún no envía correos: exporta la lista a tu herramienta de envío.",
+    "email": "Correo",
+    "language": "Idioma",
+    "date": "Suscrito",
+    "member": "Miembro",
+    "empty": "Aún no hay suscriptores.",
+    "total": "Suscriptores",
+    "lastWeek": "Nuevos en los últimos 7 días",
+    "add": "Añadir",
+    "added": "Se añadió {email}.",
+    "exists": "Esta dirección ya está en la lista.",
+    "invalid": "Introduce un correo electrónico válido.",
+    "remove": "Quitar",
+    "confirmRemove": "¿Quitar {email} de la lista?",
+    "removed": "Se quitó {email}.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

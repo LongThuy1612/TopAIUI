@@ -40,7 +40,7 @@ useSeoMeta({ title: () => `${t('auth.resetPasswordTitle')} — TopAICollection` 
   <div class="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center px-4 py-16 sm:px-6">
     <NuxtLinkLocale to="/" class="flex items-center gap-2.5">
       <IconLogo class="h-9 w-9 rounded-[11px]" width="36" height="36" />
-      <span class="text-2xl font-extrabold tracking-[-0.02em] text-ink-900">TopAI<span class="text-brand-500">Collection</span></span>
+      <span class="text-2xl font-extrabold tracking-[-0.02em] text-ink-900">TopAICollection</span>
     </NuxtLinkLocale>
 
     <h1 class="mt-8 text-2xl font-extrabold text-ink-900">{{ t('auth.resetPasswordTitle') }}</h1>

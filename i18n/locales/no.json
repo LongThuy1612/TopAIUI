@@ -13,7 +13,8 @@
     "admin": "Kontrollpanel",
     "menu": "Meny",
     "openMenu": "Åpne meny",
-    "closeMenu": "Lukk meny"
+    "closeMenu": "Lukk meny",
+    "language": "Språk"
   },
   "auth": {
     "signInTitle": "Logg inn på kontoen din",
@@ -378,7 +379,9 @@
     "titlePrefix": "Finn de beste",
     "titleHighlight": "AI-verktøyene",
     "subtitle": "Bla gjennom hundrevis av AI-produkter etter kategori, sammenlign priser, og finn det rette verktøyet for arbeidsflyten din.",
-    "searchPlaceholder": "Søk etter AI-verktøy..."
+    "searchPlaceholder": "Søk etter AI-verktøy, f.eks. video fra tekst",
+    "search": "Søk",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "AI-er og",
@@ -861,7 +864,8 @@
     "terms": "Vilkår for bruk",
     "privacy": "Personvernerklæring",
     "advertise": "Annonser",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "resources": "Ressurser"
   },
   "language": {
     "label": "Språk"
@@ -1668,5 +1672,45 @@
       "refused": "Avvist (refundert)",
       "paused": "Satt på pause"
     }
+  },
+  "home": {
+    "topLaunches": "Topp AI-lanseringer",
+    "seeAllLaunches": "Se alle {n} lanseringer i dag",
+    "reviews": "{n} anmeldelse | {n} anmeldelser",
+    "vote": "Stem",
+    "upvote": "Stem opp",
+    "viewAll": "Se alle",
+    "trendingTools": "Populære verktøy",
+    "newsletterTitle": "Få de beste AI-verktøyene hver uke",
+    "newsletterSub": "Én e-post hver fredag med AI-verktøy som er verdt å prøve.",
+    "subscribe": "Abonner",
+    "subscribed": "Takk! Du står på listen.",
+    "subscribeInvalid": "Skriv inn en gyldig e-postadresse.",
+    "subscribeLater": "For mange forsøk. Prøv igjen senere.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Bekreft e-postadressen din for å stemme – sjekk innboksen eller send e-posten på nytt fra dashbordet.",
+    "voteTooFast": "For mange stemmer. Vent et minutt.",
+    "voteFailed": "Stemmen kunne ikke lagres. Prøv igjen."
+  },
+  "adminNewsletter": {
+    "title": "Nyhetsbrev",
+    "export": "Eksporter CSV",
+    "count": "{n} abonnent | {n} abonnenter",
+    "note": "Nettstedet sender ikke noe ennå – eksporter listen til e-postverktøyet ditt.",
+    "email": "E-post",
+    "language": "Språk",
+    "date": "Abonnert",
+    "member": "Medlem",
+    "empty": "Ingen abonnenter ennå.",
+    "total": "Abonnenter",
+    "lastWeek": "Nye siste 7 dager",
+    "add": "Legg til",
+    "added": "{email} lagt til.",
+    "exists": "Denne adressen står allerede på listen.",
+    "invalid": "Skriv inn en gyldig e-postadresse.",
+    "remove": "Fjern",
+    "confirmRemove": "Fjerne {email} fra listen?",
+    "removed": "{email} fjernet.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

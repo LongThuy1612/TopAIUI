@@ -13,7 +13,8 @@
     "admin": "Hallintapaneeli",
     "menu": "Valikko",
     "openMenu": "Avaa valikko",
-    "closeMenu": "Sulje valikko"
+    "closeMenu": "Sulje valikko",
+    "language": "Kieli"
   },
   "auth": {
     "signInTitle": "Kirjaudu tilillesi",
@@ -378,7 +379,9 @@
     "titlePrefix": "Löydä parhaat",
     "titleHighlight": "tekoälytyökalut",
     "subtitle": "Selaa satoja tekoälytuotteita kategorioittain, vertaile hintoja ja löydä oikea työkalu työnkulkuusi.",
-    "searchPlaceholder": "Hae tekoälytyökaluja..."
+    "searchPlaceholder": "Hae tekoälytyökaluja, esim. video tekstistä",
+    "search": "Hae",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "tekoälyä ja",
@@ -861,7 +864,8 @@
     "terms": "Käyttöehdot",
     "privacy": "Tietosuojakäytäntö",
     "advertise": "Mainosta",
-    "contact": "Yhteystiedot"
+    "contact": "Yhteystiedot",
+    "resources": "Resurssit"
   },
   "language": {
     "label": "Kieli"
@@ -1668,5 +1672,45 @@
       "refused": "Hylätty (hyvitetty)",
       "paused": "Tauolla"
     }
+  },
+  "home": {
+    "topLaunches": "Suosituimmat tekoälyjulkaisut",
+    "seeAllLaunches": "Näytä kaikki tämän päivän {n} julkaisua",
+    "reviews": "{n} arvostelu | {n} arvostelua",
+    "vote": "Äänestä",
+    "upvote": "Peukuta",
+    "viewAll": "Näytä kaikki",
+    "trendingTools": "Suositut työkalut",
+    "newsletterTitle": "Parhaat tekoälytyökalut viikoittain",
+    "newsletterSub": "Yksi sähköposti joka perjantai kokeilemisen arvoisista tekoälytyökaluista.",
+    "subscribe": "Tilaa",
+    "subscribed": "Kiitos! Olet listalla.",
+    "subscribeInvalid": "Anna kelvollinen sähköpostiosoite.",
+    "subscribeLater": "Liian monta yritystä. Yritä myöhemmin uudelleen.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Vahvista sähköpostiosoitteesi äänestääksesi – tarkista postilaatikkosi tai lähetä viesti uudelleen hallintapaneelista.",
+    "voteTooFast": "Liian monta ääntä. Odota hetki.",
+    "voteFailed": "Ääntäsi ei voitu tallentaa. Yritä uudelleen."
+  },
+  "adminNewsletter": {
+    "title": "Uutiskirje",
+    "export": "Vie CSV",
+    "count": "{n} tilaaja | {n} tilaajaa",
+    "note": "Sivusto ei vielä lähetä mitään – vie lista postitustyökaluusi.",
+    "email": "Sähköposti",
+    "language": "Kieli",
+    "date": "Tilattu",
+    "member": "Jäsen",
+    "empty": "Ei vielä tilaajia.",
+    "total": "Tilaajat",
+    "lastWeek": "Uudet viim. 7 päivänä",
+    "add": "Lisää",
+    "added": "{email} lisätty.",
+    "exists": "Osoite on jo listalla.",
+    "invalid": "Anna kelvollinen sähköpostiosoite.",
+    "remove": "Poista",
+    "confirmRemove": "Poistetaanko {email} listalta?",
+    "removed": "{email} poistettu.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

@@ -85,7 +85,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="after-dot-grid [--after-dot-grid-bg:#FDFAFB]">
+  <div class="after-dot-grid [--after-dot-grid-bg:#FAFAFB]">
   <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
     <nav class="flex items-center gap-1.5 text-xs text-ink-400">
       <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>

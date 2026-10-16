@@ -49,7 +49,11 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'icon', type: 'image/png', href: '/topaicollection.png' },
         { rel: 'apple-touch-icon', href: '/topaicollection.png' },
-        { rel: 'manifest', href: '/manifest.json' }
+        { rel: 'manifest', href: '/manifest.json' },
+        // Geist, the site font (tailwind.config.ts fontFamily.sans).
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap' }
       ]
     }
   },

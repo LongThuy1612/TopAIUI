@@ -60,5 +60,8 @@ export default defineEventHandler(async (event) => {
   // Before the ban is saved: if PayPal fails, nothing changed and the admin tries again.
   if (newBanned === true && !target.isBanned) await stopPaypalRenewalsOfUser(target.id)
 
-  return prisma.user.update({ where: { id }, data, select: adminUserSelect })
+  const updated = await prisma.user.update({ where: { id }, data, select: adminUserSelect })
+  // A banned account's upvotes stop counting (a spam account can't keep a tool on top).
+  if (newBanned === true && !target.isBanned) await removeUserUpvotes(target.id)
+  return updated
 })

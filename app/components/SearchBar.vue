@@ -33,7 +33,7 @@ function onSubmit() {
   </form>
   <form
     v-else
-    class="mx-auto flex max-w-[660px] items-center gap-3 rounded-2xl border border-ink-300 bg-white py-[7px] pl-[18px] pr-[7px] shadow-[0_1px_2px_rgba(23,18,26,.04),0_12px_32px_-12px_rgba(190,24,93,.18)] transition hover:border-brand-400 hover:ring-4 hover:ring-brand-100 focus-within:border-brand-400 focus-within:ring-4 focus-within:ring-brand-100"
+    class="mx-auto flex max-w-[660px] items-center gap-3 rounded-2xl border border-ink-300 bg-white py-[7px] pl-[18px] pr-[7px] shadow-[0_1px_2px_rgba(23,18,26,.04),0_12px_32px_-12px_rgba(228,89,55,.16)] transition hover:border-brand-400 hover:ring-4 hover:ring-brand-100 focus-within:border-brand-400 focus-within:ring-4 focus-within:ring-brand-100"
     @submit.prevent="onSubmit"
   >
     <svg class="h-5 w-5 shrink-0 text-ink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.25">

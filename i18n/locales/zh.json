@@ -13,7 +13,8 @@
     "admin": "控制台",
     "menu": "菜单",
     "openMenu": "打开菜单",
-    "closeMenu": "关闭菜单"
+    "closeMenu": "关闭菜单",
+    "language": "语言"
   },
   "auth": {
     "signInTitle": "登录您的账户",
@@ -395,7 +396,9 @@
     "titlePrefix": "发现最好的",
     "titleHighlight": "AI 工具",
     "subtitle": "按分类浏览数百款 AI 产品，比较价格，找到最适合你工作流程的工具。",
-    "searchPlaceholder": "搜索 AI 工具..."
+    "searchPlaceholder": "搜索 AI 工具，例如：文字生成视频",
+    "search": "搜索",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "个 AI 和",
@@ -884,7 +887,8 @@
     "pricing": "价格",
     "cookies": "Cookie 政策",
     "editorialGuidelines": "编辑准则",
-    "reviewMethodology": "评测方法"
+    "reviewMethodology": "评测方法",
+    "resources": "资源"
   },
   "language": {
     "label": "语言"
@@ -2062,5 +2066,45 @@
       "refused": "已拒绝（已退款）",
       "paused": "已暂停"
     }
+  },
+  "home": {
+    "topLaunches": "今日 AI 新品",
+    "seeAllLaunches": "查看今天全部 {n} 款新品",
+    "reviews": "{n} 条评价",
+    "vote": "投票",
+    "upvote": "点赞",
+    "viewAll": "查看全部",
+    "trendingTools": "热门工具",
+    "newsletterTitle": "每周获取最佳 AI 工具",
+    "newsletterSub": "每周五一封邮件，精选值得一试的 AI 工具。",
+    "subscribe": "订阅",
+    "subscribed": "谢谢！你已加入订阅列表。",
+    "subscribeInvalid": "请输入有效的邮箱地址。",
+    "subscribeLater": "尝试次数过多，请稍后再试。",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "请先验证邮箱后再投票——请查看收件箱，或在控制台重新发送验证邮件。",
+    "voteTooFast": "投票过于频繁，请稍候一分钟。",
+    "voteFailed": "投票未能保存，请重试。"
+  },
+  "adminNewsletter": {
+    "title": "邮件订阅",
+    "export": "导出 CSV",
+    "count": "{n} 位订阅者",
+    "note": "网站暂不发送邮件——请将列表导出到邮件工具。",
+    "email": "邮箱",
+    "language": "语言",
+    "date": "订阅时间",
+    "member": "会员",
+    "empty": "暂无订阅者。",
+    "total": "订阅者",
+    "lastWeek": "最近 7 天新增",
+    "add": "添加",
+    "added": "已添加 {email}。",
+    "exists": "该地址已在列表中。",
+    "invalid": "请输入有效的邮箱地址。",
+    "remove": "移除",
+    "confirmRemove": "将 {email} 从列表中移除？",
+    "removed": "已移除 {email}。",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

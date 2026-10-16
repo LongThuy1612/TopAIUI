@@ -13,7 +13,8 @@
     "admin": "Dashboard",
     "menu": "Menu",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "language": "Language"
   },
   "auth": {
     "signInTitle": "Sign in to your account",
@@ -393,9 +394,11 @@
   },
   "hero": {
     "titlePrefix": "Discover The Best",
-    "titleHighlight": "AI Websites & Tools",
+    "titleHighlight": "AI Websites",
     "subtitle": "Browse hundreds of AI products by category, compare pricing, and find the right tool for your workflow.",
-    "searchPlaceholder": "Search AI tools..."
+    "searchPlaceholder": "Search AI tools, e.g. video from text",
+    "search": "Search",
+    "titleSuffix": "& Tools"
   },
   "stats": {
     "tools": "AIs and",
@@ -884,7 +887,8 @@
     "pricing": "Pricing",
     "cookies": "Cookie Policy",
     "editorialGuidelines": "Editorial Guidelines",
-    "reviewMethodology": "Review Methodology"
+    "reviewMethodology": "Review Methodology",
+    "resources": "Resources"
   },
   "language": {
     "label": "Language"
@@ -2062,5 +2066,45 @@
       "refused": "Refused (refunded)",
       "paused": "Paused"
     }
+  },
+  "home": {
+    "topLaunches": "Top AI launches",
+    "seeAllLaunches": "See all of today’s {n} launch | See all of today’s {n} launches",
+    "reviews": "{n} review | {n} reviews",
+    "vote": "Vote",
+    "upvote": "Upvote",
+    "viewAll": "View all",
+    "trendingTools": "Trending tools",
+    "newsletterTitle": "Get the best AI tools, weekly",
+    "newsletterSub": "One email every Friday with the AI tools worth your time.",
+    "subscribe": "Subscribe",
+    "subscribed": "Thanks! You're on the list.",
+    "subscribeInvalid": "Please enter a valid email address.",
+    "subscribeLater": "Too many attempts. Please try again later.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Please confirm your email address to vote — check your inbox or resend the email from your dashboard.",
+    "voteTooFast": "Too many votes. Please wait a minute.",
+    "voteFailed": "Your vote couldn't be saved. Please try again."
+  },
+  "adminNewsletter": {
+    "title": "Newsletter",
+    "export": "Export CSV",
+    "count": "{n} subscriber | {n} subscribers",
+    "note": "Nothing is sent from the site yet — export the list to your mailing tool.",
+    "email": "Email",
+    "language": "Language",
+    "date": "Subscribed",
+    "member": "Member",
+    "empty": "No subscribers yet.",
+    "total": "Subscribers",
+    "lastWeek": "New in the last 7 days",
+    "add": "Add",
+    "added": "Added {email}.",
+    "exists": "This address is already on the list.",
+    "invalid": "Please enter a valid email address.",
+    "remove": "Remove",
+    "confirmRemove": "Remove {email} from the list?",
+    "removed": "Removed {email}.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

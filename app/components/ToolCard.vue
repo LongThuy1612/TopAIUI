@@ -49,8 +49,8 @@ const rankStyle = computed(() => {
       <span v-else class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-[12.5px] font-extrabold text-white">{{ initials }}</span>
       <span class="line-clamp-2 min-w-0 text-[17px] font-extrabold tracking-[-.02em] text-ink-900">{{ tool.name }}</span>
     </div>
-    <p v-if="tool.shortDesc" class="relative line-clamp-2 text-sm leading-[1.6] text-[#7A5566]">{{ tool.shortDesc }}</p>
-    <p v-else-if="tool.categories?.length" class="relative line-clamp-2 text-sm leading-[1.6] text-[#7A5566]">{{ tool.categories.map(c => c.name).join(', ') }}</p>
+    <p v-if="tool.shortDesc" class="relative line-clamp-2 text-sm leading-[1.6] text-[#6B6B75]">{{ tool.shortDesc }}</p>
+    <p v-else-if="tool.categories?.length" class="relative line-clamp-2 text-sm leading-[1.6] text-[#6B6B75]">{{ tool.categories.map(c => c.name).join(', ') }}</p>
   </NuxtLinkLocale>
 
   <NuxtLinkLocale v-else :to="`/tools/${tool.slug}`" class="group flex items-start gap-3 rounded-xl border border-ink-100 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md">

@@ -3,6 +3,7 @@
 export default defineTask({
   meta: { name: 'tools:stats-cleanup', description: 'Delete old tool view / visit counts' },
   async run() {
-    return { result: { deleted: await cleanUpToolStats() } }
+    // Also repairs upvote counts that drifted from their rows (server/utils/toolUpvotes.ts).
+    return { result: { deleted: await cleanUpToolStats(), upvoteCountsFixed: await reconcileUpvoteCounts() } }
   }
 })

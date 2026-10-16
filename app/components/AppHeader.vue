@@ -177,9 +177,10 @@ const submitItems = [
     titleKey: 'submitMenu.submitTitle'
   },
   {
-    to: '/advertise',
-    icon: 'M11.99 2.01a.75.75 0 0 1 .53.22l3.72 3.72 3.44-1.15a.75.75 0 0 1 .99.71v13a.75.75 0 0 1-.99.71l-3.44-1.15-3.72 3.72a.75.75 0 0 1-1.28-.53V16.5H8a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3.25V2.76a.75.75 0 0 1 .74-.75Z',
-    titleKey: 'submitMenu.advertiseTitle'
+    to: '/update-ai',
+    icon: 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99',
+    titleKey: 'submitMenu.updateAiTitle',
+    stroke: true
   },
   {
     to: '/post-or-insert',
@@ -189,18 +190,19 @@ const submitItems = [
   }
 ]
 
-// Top-level header links when the nav has room for them; otherwise they move
-// into the Submit menu (see navLevel below).
+// Top-level header links (Advertise, Submit GPT) when the nav has room for them;
+// otherwise they move into the Submit menu (see navLevel below).
 const submitLinks = [
   {
-    to: '/update-ai',
-    icon: 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99',
-    titleKey: 'submitMenu.updateAiTitle'
+    to: '/advertise',
+    icon: 'M11.99 2.01a.75.75 0 0 1 .53.22l3.72 3.72 3.44-1.15a.75.75 0 0 1 .99.71v13a.75.75 0 0 1-.99.71l-3.44-1.15-3.72 3.72a.75.75 0 0 1-1.28-.53V16.5H8a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3.25V2.76a.75.75 0 0 1 .74-.75Z',
+    titleKey: 'submitMenu.advertiseTitle'
   },
   {
     to: '/submit-gpt',
     icon: 'M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z',
-    titleKey: 'submitMenu.submitGptTitle'
+    titleKey: 'submitMenu.submitGptTitle',
+    stroke: true
   }
 ]
 
@@ -370,24 +372,24 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <header class="sticky top-0 z-40 border-b border-ink-200 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex h-[72px] max-w-[1440px] items-center gap-[clamp(8px,1.4vw,30px)] px-4 sm:px-6 lg:px-8">
+  <header class="sticky top-0 z-40 border-b border-ink-100 bg-white/[.92] backdrop-blur-md">
+    <div class="flex h-[64px] items-center gap-5 px-4 sm:px-6 lg:px-10">
       <NuxtLinkLocale to="/" class="flex shrink-0 items-center gap-2.5">
-        <IconLogo class="h-[30px] w-[30px] rounded-[9px]" width="30" height="30" />
-        <span class="text-[19px] font-extrabold tracking-[-0.02em] text-ink-900 sm:text-[22px]">TopAI<span class="text-brand-500">Collection</span></span>
+        <IconLogo class="h-8 w-8" width="32" height="32" />
+        <span class="whitespace-nowrap text-[17px] font-bold text-ink-900">TopAICollection</span>
       </NuxtLinkLocale>
 
-      <nav ref="navEl" class="min-w-0 flex-1 items-center justify-center" :class="navClass">
+      <nav ref="navEl" class="min-w-0 flex-1 items-center justify-start pl-1" :class="navClass">
         <!-- Gaps shrink with the window, so items close in before the nav collapses. -->
-        <div ref="navInner" class="relative flex w-max shrink-0 items-center gap-[clamp(0px,1.2vw,16px)]">
-          <NuxtLinkLocale to="/category/all?pricing=FREE" class="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
+        <div ref="navInner" class="relative flex w-max shrink-0 items-center gap-[clamp(0px,0.9vw,12px)]">
+          <NuxtLinkLocale to="/category/all?pricing=FREE" class="whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900">
             {{ t('header.freeTools') }}
           </NuxtLinkLocale>
           <div class="relative" @mouseenter="openProductsMenu" @mouseleave="scheduleCloseProductsMenu">
             <a
               href="#"
-              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-              :class="productsMenuOpen && 'text-brand-500'"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900"
+              :class="productsMenuOpen && 'text-ink-900'"
               @click.prevent
             >
               {{ t('header.products') }}
@@ -398,7 +400,7 @@ onBeforeUnmount(() => {
 
             <div
               v-if="productsMenuOpen"
-              class="absolute left-0 top-full w-[360px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+              class="menu-in absolute left-0 top-full w-[360px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
             >
               <NuxtLinkLocale
                 v-for="item in productItems"
@@ -420,15 +422,15 @@ onBeforeUnmount(() => {
               </NuxtLinkLocale>
             </div>
           </div>
-          <NuxtLinkLocale to="/category/all" class="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500">
+          <NuxtLinkLocale to="/category/all" class="whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900">
             {{ t('header.categories') }}
           </NuxtLinkLocale>
 
           <div class="relative" @mouseenter="openRankingMenu" @mouseleave="scheduleCloseRankingMenu">
             <NuxtLinkLocale
               to="/ranking"
-              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-              :class="rankingMenuOpen && 'text-brand-500'"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900"
+              :class="rankingMenuOpen && 'text-ink-900'"
             >
               {{ t('header.rankings') }}
               <svg class="h-3.5 w-3.5 transition-transform" :class="rankingMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
@@ -438,7 +440,7 @@ onBeforeUnmount(() => {
 
             <div
               v-if="rankingMenuOpen"
-              class="absolute left-0 top-full w-[360px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+              class="menu-in absolute left-0 top-full w-[360px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
             >
               <NuxtLinkLocale
                 v-for="item in rankingItems"
@@ -461,8 +463,8 @@ onBeforeUnmount(() => {
           <div v-if="SHOW_PROMPTS_RESOURCE" class="relative" @mouseenter="openPromptsMenu" @mouseleave="scheduleClosePromptsMenu">
             <a
               href="#"
-              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-              :class="promptsMenuOpen && 'text-brand-500'"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900"
+              :class="promptsMenuOpen && 'text-ink-900'"
               @click.prevent
             >
               {{ t('header.prompts') }}
@@ -473,7 +475,7 @@ onBeforeUnmount(() => {
 
             <div
               v-if="promptsMenuOpen"
-              class="absolute left-0 top-full w-[260px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+              class="menu-in absolute left-0 top-full w-[260px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
             >
               <NuxtLinkLocale
                 v-for="item in promptItems"
@@ -495,8 +497,8 @@ onBeforeUnmount(() => {
           <div v-if="SHOW_PROMPTS_RESOURCE" class="relative" @mouseenter="openResourceMenu" @mouseleave="scheduleCloseResourceMenu">
             <a
               href="#"
-              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-              :class="resourceMenuOpen && 'text-brand-500'"
+              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900"
+              :class="resourceMenuOpen && 'text-ink-900'"
               @click.prevent
             >
               {{ t('header.resource') }}
@@ -507,7 +509,7 @@ onBeforeUnmount(() => {
 
             <div
               v-if="resourceMenuOpen"
-              class="absolute left-0 top-full w-[240px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+              class="menu-in absolute left-0 top-full w-[240px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
             >
               <NuxtLinkLocale
                 v-for="item in resourceItems"
@@ -523,21 +525,34 @@ onBeforeUnmount(() => {
               </NuxtLinkLocale>
             </div>
           </div>
-          <div class="relative" @mouseenter="openSubmitMenu" @mouseleave="scheduleCloseSubmitMenu">
+          <div ref="submitLinksEl" class="items-center gap-[clamp(0px,0.9vw,12px)]" :class="submitLinksClass">
+            <NuxtLinkLocale
+              v-for="item in submitLinks"
+              :key="item.to"
+              :to="item.to"
+              class="whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900"
+            >
+              {{ t(item.titleKey) }}
+            </NuxtLinkLocale>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="ml-auto flex shrink-0 items-center gap-3">
+        <LanguageSwitcher class="hidden sm:block" />
+        <!-- Submit: an outline pill with the submit / advertise / guest post menu. -->
+          <div class="relative hidden sm:block" @mouseenter="openSubmitMenu" @mouseleave="scheduleCloseSubmitMenu">
             <NuxtLinkLocale
               to="/submit"
-              class="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-              :class="submitMenuOpen && 'text-brand-500'"
+              class="flex items-center whitespace-nowrap rounded-full border border-ink-200 bg-white px-4 py-[9px] text-sm font-semibold text-ink-900 transition-colors hover:border-ink-400"
+              :class="submitMenuOpen && 'border-ink-400'"
             >
               {{ t('header.submit') }}
-              <svg class="h-3.5 w-3.5 transition-transform" :class="submitMenuOpen && 'rotate-180'" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" />
-              </svg>
             </NuxtLinkLocale>
 
             <div
               v-if="submitMenuOpen"
-              class="absolute left-0 top-full w-[260px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
+              class="menu-in absolute right-0 top-full z-10 w-[260px] rounded-2xl border border-ink-100 bg-white p-2 shadow-[0_16px_40px_-16px_rgba(23,18,26,.25)]"
             >
               <NuxtLinkLocale
                 v-for="item in submitItems"
@@ -564,32 +579,18 @@ onBeforeUnmount(() => {
                 @click="submitMenuOpen = false"
               >
                 <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
-                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+                  <svg v-if="item.stroke" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
                     <path stroke-linecap="round" stroke-linejoin="round" :d="item.icon" />
                   </svg>
+                  <svg v-else class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path :d="item.icon" /></svg>
                 </span>
                 <span class="text-sm font-bold text-ink-900">{{ t(item.titleKey) }}</span>
               </NuxtLinkLocale>
             </div>
           </div>
-          <div ref="submitLinksEl" class="items-center gap-[clamp(0px,1.2vw,16px)]" :class="submitLinksClass">
-            <NuxtLinkLocale
-              v-for="item in submitLinks"
-              :key="item.to"
-              :to="item.to"
-              class="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-ink-800 hover:text-brand-500"
-            >
-              {{ t(item.titleKey) }}
-            </NuxtLinkLocale>
-          </div>
-        </div>
-      </nav>
-
-      <nav class="ml-auto flex shrink-0 items-center gap-3 sm:gap-4">
-        <LanguageSwitcher class="hidden sm:block" />
         <NuxtLinkLocale
           :to="user ? '/dashboard' : '/login'"
-          class="hidden whitespace-nowrap rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 sm:block"
+          class="hidden whitespace-nowrap rounded-full bg-ink-900 px-[18px] py-2.5 text-sm font-semibold text-white hover:bg-black sm:block"
         >
           {{ t('header.admin') }}
         </NuxtLinkLocale>
@@ -623,15 +624,15 @@ onBeforeUnmount(() => {
       >
         <!-- Mirrors the header bar: from sm up the language switcher and
              Dashboard live up here, below sm in the footer row instead. -->
-        <div class="flex h-[72px] shrink-0 items-center gap-3 border-b border-ink-200 px-4 sm:gap-4 sm:px-6 lg:px-8">
+        <div class="flex h-[64px] shrink-0 items-center gap-3 border-b border-ink-100 px-4 sm:gap-4 sm:px-6 lg:px-10">
           <NuxtLinkLocale to="/" class="mr-auto flex items-center gap-2.5" @click="closeMobileMenu(false)">
-            <IconLogo class="h-[30px] w-[30px] rounded-[9px]" width="30" height="30" />
-            <span class="text-[19px] font-extrabold tracking-[-0.02em] text-ink-900 sm:text-[22px]">TopAI<span class="text-brand-500">Collection</span></span>
+            <IconLogo class="h-8 w-8" width="32" height="32" />
+            <span class="whitespace-nowrap text-[17px] font-bold text-ink-900">TopAICollection</span>
           </NuxtLinkLocale>
           <LanguageSwitcher class="hidden sm:block" />
           <NuxtLinkLocale
             :to="user ? '/dashboard' : '/login'"
-            class="hidden whitespace-nowrap rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 sm:block"
+            class="hidden whitespace-nowrap rounded-full bg-ink-900 px-[18px] py-2.5 text-sm font-semibold text-white hover:bg-black sm:block"
             @click="closeMobileMenu(false)"
           >
             {{ t('header.admin') }}
@@ -716,7 +717,7 @@ onBeforeUnmount(() => {
           </button>
           <div v-if="mobileSection === 'submit'" class="pb-2 pl-3">
             <NuxtLinkLocale
-              v-for="item in [...submitItems, ...submitLinks.map(l => ({ ...l, stroke: true }))]"
+              v-for="item in [...submitItems, ...submitLinks]"
               :key="item.to"
               :to="item.to"
               class="flex items-center gap-3 rounded-xl p-2.5 hover:bg-ink-100/60"
@@ -732,10 +733,10 @@ onBeforeUnmount(() => {
         </nav>
 
         <div class="flex shrink-0 items-center gap-3 border-t border-ink-200 px-4 py-4 sm:hidden">
-          <LanguageSwitcher />
+          <LanguageSwitcher align-left />
           <NuxtLinkLocale
             :to="user ? '/dashboard' : '/login'"
-            class="ml-auto whitespace-nowrap rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-600"
+            class="ml-auto whitespace-nowrap rounded-full bg-ink-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-black"
             @click="closeMobileMenu(false)"
           >
             {{ t('header.admin') }}

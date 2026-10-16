@@ -13,7 +13,8 @@
     "admin": "Kontrollpanel",
     "menu": "Meny",
     "openMenu": "Öppna meny",
-    "closeMenu": "Stäng meny"
+    "closeMenu": "Stäng meny",
+    "language": "Språk"
   },
   "auth": {
     "signInTitle": "Logga in på ditt konto",
@@ -378,7 +379,9 @@
     "titlePrefix": "Upptäck de bästa",
     "titleHighlight": "AI-verktygen",
     "subtitle": "Bläddra bland hundratals AI-produkter per kategori, jämför priser och hitta rätt verktyg för ditt arbetsflöde.",
-    "searchPlaceholder": "Sök AI-verktyg..."
+    "searchPlaceholder": "Sök AI-verktyg, t.ex. video från text",
+    "search": "Sök",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "AI:er och",
@@ -861,7 +864,8 @@
     "terms": "Användarvillkor",
     "privacy": "Integritetspolicy",
     "advertise": "Annonsera",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "resources": "Resurser"
   },
   "language": {
     "label": "Språk"
@@ -1668,5 +1672,45 @@
       "refused": "Nekad (återbetald)",
       "paused": "Pausad"
     }
+  },
+  "home": {
+    "topLaunches": "Topp AI-lanseringar",
+    "seeAllLaunches": "Se alla {n} lanseringar i dag",
+    "reviews": "{n} recension | {n} recensioner",
+    "vote": "Rösta",
+    "upvote": "Rösta upp",
+    "viewAll": "Visa alla",
+    "trendingTools": "Populära verktyg",
+    "newsletterTitle": "Få de bästa AI-verktygen varje vecka",
+    "newsletterSub": "Ett mejl varje fredag med AI-verktyg som är värda att testa.",
+    "subscribe": "Prenumerera",
+    "subscribed": "Tack! Du står på listan.",
+    "subscribeInvalid": "Ange en giltig e-postadress.",
+    "subscribeLater": "För många försök. Försök igen senare.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Bekräfta din e-postadress för att rösta – kolla inkorgen eller skicka mejlet igen från din panel.",
+    "voteTooFast": "För många röster. Vänta en minut.",
+    "voteFailed": "Din röst kunde inte sparas. Försök igen."
+  },
+  "adminNewsletter": {
+    "title": "Nyhetsbrev",
+    "export": "Exportera CSV",
+    "count": "{n} prenumerant | {n} prenumeranter",
+    "note": "Webbplatsen skickar inget ännu – exportera listan till ditt utskicksverktyg.",
+    "email": "E-post",
+    "language": "Språk",
+    "date": "Prenumererar sedan",
+    "member": "Medlem",
+    "empty": "Inga prenumeranter ännu.",
+    "total": "Prenumeranter",
+    "lastWeek": "Nya senaste 7 dagarna",
+    "add": "Lägg till",
+    "added": "{email} tillagd.",
+    "exists": "Adressen finns redan på listan.",
+    "invalid": "Ange en giltig e-postadress.",
+    "remove": "Ta bort",
+    "confirmRemove": "Ta bort {email} från listan?",
+    "removed": "{email} borttagen.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

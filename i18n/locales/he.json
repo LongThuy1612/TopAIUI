@@ -13,7 +13,8 @@
     "admin": "לוח בקרה",
     "menu": "תפריט",
     "openMenu": "פתיחת תפריט",
-    "closeMenu": "סגירת תפריט"
+    "closeMenu": "סגירת תפריט",
+    "language": "שפה"
   },
   "auth": {
     "signInTitle": "התחברות לחשבון",
@@ -378,7 +379,9 @@
     "titlePrefix": "גלה את",
     "titleHighlight": "כלי הבינה המלאכותית הטובים ביותר",
     "subtitle": "עיין במאות מוצרי בינה מלאכותית לפי קטגוריה, השווה מחירים ומצא את הכלי המתאים לתהליך העבודה שלך.",
-    "searchPlaceholder": "חיפוש כלי בינה מלאכותית..."
+    "searchPlaceholder": "חיפוש כלי AI, למשל וידאו מטקסט",
+    "search": "חיפוש",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "כלי בינה מלאכותית ו-",
@@ -861,7 +864,8 @@
     "terms": "תנאי שימוש",
     "privacy": "מדיניות פרטיות",
     "advertise": "פרסום",
-    "contact": "צור קשר"
+    "contact": "צור קשר",
+    "resources": "משאבים"
   },
   "language": {
     "label": "שפה"
@@ -1668,5 +1672,45 @@
       "refused": "נדחתה (הוחזר)",
       "paused": "מושהית"
     }
+  },
+  "home": {
+    "topLaunches": "השקות AI מובילות",
+    "seeAllLaunches": "הצגת כל {n} ההשקות של היום",
+    "reviews": "ביקורת {n} | {n} ביקורות",
+    "vote": "הצבעה",
+    "upvote": "הצבעה בעד",
+    "viewAll": "הצג הכול",
+    "trendingTools": "כלים חמים",
+    "newsletterTitle": "קבלו את כלי ה-AI הטובים ביותר בכל שבוע",
+    "newsletterSub": "מייל אחד בכל יום שישי עם כלי AI ששווה לנסות.",
+    "subscribe": "הרשמה",
+    "subscribed": "תודה! נרשמתם לרשימה.",
+    "subscribeInvalid": "נא להזין כתובת אימייל תקינה.",
+    "subscribeLater": "יותר מדי ניסיונות. נסו שוב מאוחר יותר.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "יש לאשר את כתובת האימייל כדי להצביע — בדקו את תיבת הדואר או שלחו שוב מלוח הבקרה.",
+    "voteTooFast": "יותר מדי הצבעות. המתינו דקה.",
+    "voteFailed": "לא ניתן היה לשמור את ההצבעה. נסו שוב."
+  },
+  "adminNewsletter": {
+    "title": "ניוזלטר",
+    "export": "ייצוא CSV",
+    "count": "מנוי {n} | {n} מנויים",
+    "note": "האתר עדיין לא שולח מיילים — ייצאו את הרשימה לכלי הדיוור שלכם.",
+    "email": "אימייל",
+    "language": "שפה",
+    "date": "תאריך הרשמה",
+    "member": "חבר",
+    "empty": "אין עדיין מנויים.",
+    "total": "מנויים",
+    "lastWeek": "חדשים ב-7 הימים האחרונים",
+    "add": "הוספה",
+    "added": "{email} נוסף.",
+    "exists": "הכתובת כבר ברשימה.",
+    "invalid": "נא להזין כתובת אימייל תקינה.",
+    "remove": "הסרה",
+    "confirmRemove": "להסיר את {email} מהרשימה?",
+    "removed": "{email} הוסר.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

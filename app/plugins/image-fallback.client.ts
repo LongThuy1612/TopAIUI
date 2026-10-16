@@ -60,6 +60,6 @@ function originalOf(src: string): string | null {
 // Same look as the initials shown for tools without a logo.
 function initialsAvatar(name: string): string {
   const initials = name.replace(/[^\p{L}\p{N}]/gu, '').slice(0, 2).toUpperCase() || 'AI'
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#fdf2f8"/><text x="32" y="41" font-family="system-ui,sans-serif" font-size="24" font-weight="800" fill="#db2777" text-anchor="middle">${initials.replace(/[<&>"]/g, '')}</text></svg>`
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#FFF3F0"/><text x="32" y="41" font-family="system-ui,sans-serif" font-size="24" font-weight="800" fill="#E45937" text-anchor="middle">${initials.replace(/[<&>"]/g, '')}</text></svg>`
   return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`
 }

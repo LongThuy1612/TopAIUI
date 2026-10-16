@@ -691,7 +691,7 @@ useJsonLd('tool', () => {
 </script>
 
 <template>
-  <div v-if="tool" class="bg-[linear-gradient(180deg,#FDF2F8_0px,#FFFFFF_520px)]">
+  <div v-if="tool" class="bg-[linear-gradient(180deg,#FFF3F0_0px,#FFFFFF_520px)]">
   <div class="mx-auto max-w-[1300px] px-4 py-8 sm:px-6 lg:px-8">
     <nav class="flex flex-wrap items-center gap-2 text-base text-ink-900">
       <NuxtLinkLocale to="/" class="hover:text-brand-600">Home</NuxtLinkLocale>
@@ -1148,12 +1148,12 @@ useJsonLd('tool', () => {
                     <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute inset-0 h-full w-full overflow-visible">
                       <defs>
                         <linearGradient id="traffic-fill" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stop-color="#DB2777" stop-opacity="0.22" />
-                          <stop offset="100%" stop-color="#DB2777" stop-opacity="0" />
+                          <stop offset="0%" stop-color="#E45937" stop-opacity="0.22" />
+                          <stop offset="100%" stop-color="#E45937" stop-opacity="0" />
                         </linearGradient>
                       </defs>
                       <path :d="trafficChart.area" fill="url(#traffic-fill)" />
-                      <path :d="trafficChart.line" fill="none" stroke="#DB2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+                      <path :d="trafficChart.line" fill="none" stroke="#E45937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
                     </svg>
                     <!-- One hover column per point: guide line, hollow dot, tooltip -->
                     <div
@@ -1316,7 +1316,7 @@ useJsonLd('tool', () => {
             :key="alt.slug"
             class="flex flex-col overflow-hidden rounded-xl border border-ink-100 bg-white shadow-[0_2px_10px_rgba(23,18,26,.06)] transition hover:border-brand-300 hover:shadow-[0_12px_28px_-16px_rgba(23,18,26,.35)]"
           >
-            <NuxtLinkLocale :to="`/tools/${alt.slug}`" class="block h-[220px] bg-gradient-to-b from-[#FBCFE8] to-[#FDF2F8] px-8 pt-9">
+            <NuxtLinkLocale :to="`/tools/${alt.slug}`" class="block h-[220px] bg-gradient-to-b from-[#FEDCD3] to-[#FFF3F0] px-8 pt-9">
               <img
                 v-if="alt.screenshotUrl"
                 :src="sizedImage(alt.screenshotUrl, 480)"

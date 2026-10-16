@@ -13,7 +13,8 @@
     "admin": "Dashboard",
     "menu": "Menü",
     "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen"
+    "closeMenu": "Menü schließen",
+    "language": "Sprache"
   },
   "auth": {
     "signInTitle": "Melde dich bei deinem Konto an",
@@ -395,7 +396,9 @@
     "titlePrefix": "Entdecke die besten",
     "titleHighlight": "KI-Tools",
     "subtitle": "Durchsuche Hunderte von KI-Produkten nach Kategorie, vergleiche Preise und finde das richtige Tool für deinen Workflow.",
-    "searchPlaceholder": "KI-Tools durchsuchen..."
+    "searchPlaceholder": "KI-Tools suchen, z. B. Video aus Text",
+    "search": "Suchen",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "KIs und",
@@ -884,7 +887,8 @@
     "pricing": "Preise",
     "cookies": "Cookie-Richtlinie",
     "editorialGuidelines": "Redaktionelle Richtlinien",
-    "reviewMethodology": "Bewertungsmethodik"
+    "reviewMethodology": "Bewertungsmethodik",
+    "resources": "Ressourcen"
   },
   "language": {
     "label": "Sprache"
@@ -2062,5 +2066,45 @@
       "refused": "Abgelehnt (erstattet)",
       "paused": "Pausiert"
     }
+  },
+  "home": {
+    "topLaunches": "Neue KI-Tools",
+    "seeAllLaunches": "Alle {n} Launches von heute ansehen",
+    "reviews": "{n} Bewertung | {n} Bewertungen",
+    "vote": "Abstimmen",
+    "upvote": "Upvote",
+    "viewAll": "Alle ansehen",
+    "trendingTools": "Angesagte Tools",
+    "newsletterTitle": "Die besten KI-Tools, jede Woche",
+    "newsletterSub": "Jeden Freitag eine E-Mail mit den KI-Tools, die sich lohnen.",
+    "subscribe": "Abonnieren",
+    "subscribed": "Danke! Du stehst auf der Liste.",
+    "subscribeInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "subscribeLater": "Zu viele Versuche. Bitte später erneut versuchen.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Bitte bestätige deine E-Mail-Adresse, um abzustimmen – prüfe dein Postfach oder sende die E-Mail im Dashboard erneut.",
+    "voteTooFast": "Zu viele Stimmen. Bitte warte eine Minute.",
+    "voteFailed": "Deine Stimme konnte nicht gespeichert werden. Bitte versuche es erneut."
+  },
+  "adminNewsletter": {
+    "title": "Newsletter",
+    "export": "CSV exportieren",
+    "count": "{n} Abonnent | {n} Abonnenten",
+    "note": "Die Website versendet noch nichts – exportiere die Liste in dein Mailing-Tool.",
+    "email": "E-Mail",
+    "language": "Sprache",
+    "date": "Angemeldet",
+    "member": "Mitglied",
+    "empty": "Noch keine Abonnenten.",
+    "total": "Abonnenten",
+    "lastWeek": "Neu in den letzten 7 Tagen",
+    "add": "Hinzufügen",
+    "added": "{email} hinzugefügt.",
+    "exists": "Diese Adresse steht bereits auf der Liste.",
+    "invalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "remove": "Entfernen",
+    "confirmRemove": "{email} von der Liste entfernen?",
+    "removed": "{email} entfernt.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

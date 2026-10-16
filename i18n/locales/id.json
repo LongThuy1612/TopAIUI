@@ -13,7 +13,8 @@
     "admin": "Dasbor",
     "menu": "Menu",
     "openMenu": "Buka menu",
-    "closeMenu": "Tutup menu"
+    "closeMenu": "Tutup menu",
+    "language": "Bahasa"
   },
   "auth": {
     "signInTitle": "Masuk ke akun Anda",
@@ -395,7 +396,9 @@
     "titlePrefix": "Temukan",
     "titleHighlight": "alat AI terbaik",
     "subtitle": "Jelajahi ratusan produk AI berdasarkan kategori, bandingkan harga, dan temukan alat yang tepat untuk alur kerja Anda.",
-    "searchPlaceholder": "Cari alat AI..."
+    "searchPlaceholder": "Cari alat AI, mis. video dari teks",
+    "search": "Cari",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "AI dan",
@@ -884,7 +887,8 @@
     "pricing": "Harga",
     "cookies": "Kebijakan Cookie",
     "editorialGuidelines": "Pedoman Editorial",
-    "reviewMethodology": "Metodologi Ulasan"
+    "reviewMethodology": "Metodologi Ulasan",
+    "resources": "Sumber daya"
   },
   "language": {
     "label": "Bahasa"
@@ -2062,5 +2066,45 @@
       "refused": "Ditolak (dikembalikan)",
       "paused": "Dijeda"
     }
+  },
+  "home": {
+    "topLaunches": "Peluncuran AI teratas",
+    "seeAllLaunches": "Lihat semua {n} peluncuran hari ini",
+    "reviews": "{n} ulasan",
+    "vote": "Pilih",
+    "upvote": "Dukung",
+    "viewAll": "Lihat semua",
+    "trendingTools": "Alat yang sedang tren",
+    "newsletterTitle": "Dapatkan alat AI terbaik setiap minggu",
+    "newsletterSub": "Satu email setiap Jumat berisi alat AI yang layak dicoba.",
+    "subscribe": "Berlangganan",
+    "subscribed": "Terima kasih! Anda sudah terdaftar.",
+    "subscribeInvalid": "Masukkan alamat email yang valid.",
+    "subscribeLater": "Terlalu banyak percobaan. Coba lagi nanti.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Konfirmasi alamat email Anda untuk memilih — cek kotak masuk atau kirim ulang email dari dasbor.",
+    "voteTooFast": "Terlalu banyak suara. Tunggu sebentar.",
+    "voteFailed": "Suara Anda gagal disimpan. Coba lagi."
+  },
+  "adminNewsletter": {
+    "title": "Buletin",
+    "export": "Ekspor CSV",
+    "count": "{n} pelanggan",
+    "note": "Situs belum mengirim email — ekspor daftar ke alat pengirim email Anda.",
+    "email": "Email",
+    "language": "Bahasa",
+    "date": "Berlangganan",
+    "member": "Anggota",
+    "empty": "Belum ada pelanggan.",
+    "total": "Pelanggan",
+    "lastWeek": "Baru dalam 7 hari terakhir",
+    "add": "Tambah",
+    "added": "{email} ditambahkan.",
+    "exists": "Alamat ini sudah ada di daftar.",
+    "invalid": "Masukkan alamat email yang valid.",
+    "remove": "Hapus",
+    "confirmRemove": "Hapus {email} dari daftar?",
+    "removed": "{email} dihapus.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

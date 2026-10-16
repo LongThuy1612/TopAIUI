@@ -178,6 +178,7 @@ model Tool {
   adCampaigns   AdCampaign[]
   saves         ToolSave[]
   dailyStats    ToolDailyStat[]
+  upvotes       ToolUpvote[]
 
   @@index([status])
   // /new, /today, home "new" list: ORDER BY addedOn DESC NULLS LAST, id ASC.
@@ -358,6 +359,7 @@ model User {
   feedbacks     Feedback[]
   contactMessages ContactMessage[]
   savedTools    ToolSave[]
+  upvotes       ToolUpvote[]
   adCampaigns   AdCampaign[]
   subscriptions Subscription[]
   researchUsage ResearchUsage[]
@@ -1181,5 +1183,33 @@ model ToolDailyStat {
   @@id([day, toolId])
   @@index([day])
   @@map("ToolDailyStat")
+}
+
+// An upvote (the ▲ on the home page's Top AI launches and on tool pages): one per
+// account and tool, taken back by clicking again. Tool.upvoteCount is the number of these
+// rows, kept in step by POST /api/tools/<slug>/upvote.
+model ToolUpvote {
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  toolId    String
+  tool      Tool     @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@id([userId, toolId])
+  @@index([toolId])
+  @@map("ToolUpvote")
+}
+
+// Home "Get the best AI tools, weekly": addresses that signed up (POST
+// /api/newsletter). Nothing is sent yet; admins export the list (Admin → Newsletter).
+model NewsletterSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  locale    String   @default("en")
+  userId    String?  // signed in when subscribing
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("NewsletterSubscriber")
 }
 

@@ -4,22 +4,25 @@ export default <Partial<Config>>{
   content: [
     './app/components/**/*.{vue,js,ts}',
     './app/pages/**/*.vue',
-    './app/app.vue'
+    './app/app.vue',
+    './app/layouts/**/*.vue'
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Helvetica', 'Arial', 'sans-serif']
+        sans: ['Geist', 'system-ui', '-apple-system', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif']
       },
       colors: {
-        // Pink/rose brand identity — primary #BE185D, gradient db2777 → e11d48
+        // Orange brand (oklch hue 35): 500 = the accent, 600 = accent text / hover.
         brand: {
-          50: '#FDF2F8', 100: '#FCE7F3', 200: '#FBCFE8', 300: '#F5B8CD',
-          400: '#DB2777', 500: '#BE185D', 600: '#9F1239', 700: '#831843', 800: '#4C0519'
+          50: '#FFF3F0', 100: '#FFEBE4', 200: '#FEDCD3', 300: '#FDBCAB',
+          400: '#F37E61', 500: '#E45937', 600: '#C0401F', 700: '#AB3415', 800: '#75220C'
         },
+        // Neutral greys: 900 text, 800/700 secondary text, 600/500 muted, 400 faint,
+        // 300/200 borders, 100 hairlines and soft backgrounds.
         ink: {
-          900: '#17121A', 800: '#5C5259', 700: '#6B5F66', 600: '#8B7F86',
-          500: '#8B7F86', 400: '#C3B6BC', 300: '#E4D8DE', 200: '#EAE4E7', 100: '#F3EEF0'
+          900: '#17171A', 800: '#55555F', 700: '#6B6B75', 600: '#8B8B95',
+          500: '#8B8B95', 400: '#A0A0AA', 300: '#E4E4EA', 200: '#E4E4EA', 100: '#EFEFF2'
         }
       }
     }

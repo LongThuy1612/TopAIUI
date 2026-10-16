@@ -41,7 +41,7 @@ useSeoMeta({
 
 <template>
   <div class="flex min-h-screen flex-col">
-    <NuxtLoadingIndicator color="linear-gradient(90deg,#db2777,#e11d48)" :height="3" />
+    <NuxtLoadingIndicator color="linear-gradient(90deg,#E45937,#C0401F)" :height="3" />
     <AnnouncementBar v-if="!isDashboard && !isMinimalRoute" :tool="announcementTool" />
     <AppHeader v-if="!isDashboard && !isMinimalRoute" />
     <main class="flex-1">

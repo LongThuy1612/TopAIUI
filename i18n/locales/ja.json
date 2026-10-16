@@ -13,7 +13,8 @@
     "admin": "ダッシュボード",
     "menu": "メニュー",
     "openMenu": "メニューを開く",
-    "closeMenu": "メニューを閉じる"
+    "closeMenu": "メニューを閉じる",
+    "language": "言語"
   },
   "auth": {
     "signInTitle": "アカウントにサインイン",
@@ -395,7 +396,9 @@
     "titlePrefix": "最高の",
     "titleHighlight": "AIツール",
     "subtitle": "カテゴリー別に数百のAI製品を閲覧し、価格を比較して、あなたのワークフローに合ったツールを見つけましょう。",
-    "searchPlaceholder": "AIツールを検索..."
+    "searchPlaceholder": "AIツールを検索（例：テキストから動画）",
+    "search": "検索",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "のAIと",
@@ -884,7 +887,8 @@
     "pricing": "料金",
     "cookies": "Cookie ポリシー",
     "editorialGuidelines": "編集ガイドライン",
-    "reviewMethodology": "レビュー方法"
+    "reviewMethodology": "レビュー方法",
+    "resources": "リソース"
   },
   "language": {
     "label": "言語"
@@ -2062,5 +2066,45 @@
       "refused": "拒否（返金済み）",
       "paused": "一時停止"
     }
+  },
+  "home": {
+    "topLaunches": "注目のAIローンチ",
+    "seeAllLaunches": "今日の {n} 件のローンチをすべて見る",
+    "reviews": "レビュー {n} 件",
+    "vote": "投票",
+    "upvote": "投票する",
+    "viewAll": "すべて見る",
+    "trendingTools": "話題のツール",
+    "newsletterTitle": "最高のAIツールを毎週お届け",
+    "newsletterSub": "毎週金曜日、試す価値のあるAIツールをメールでお届けします。",
+    "subscribe": "登録",
+    "subscribed": "ありがとうございます！登録が完了しました。",
+    "subscribeInvalid": "有効なメールアドレスを入力してください。",
+    "subscribeLater": "試行回数が多すぎます。しばらくしてからお試しください。",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "投票するにはメールアドレスの確認が必要です。受信箱を確認するか、ダッシュボードから確認メールを再送してください。",
+    "voteTooFast": "投票が多すぎます。1分ほどお待ちください。",
+    "voteFailed": "投票を保存できませんでした。もう一度お試しください。"
+  },
+  "adminNewsletter": {
+    "title": "ニュースレター",
+    "export": "CSVをエクスポート",
+    "count": "登録者 {n} 人",
+    "note": "サイトからはまだ送信していません。リストをメール配信ツールにエクスポートしてください。",
+    "email": "メール",
+    "language": "言語",
+    "date": "登録日",
+    "member": "メンバー",
+    "empty": "まだ登録者はいません。",
+    "total": "登録者",
+    "lastWeek": "過去 7 日間の新規",
+    "add": "追加",
+    "added": "{email} を追加しました。",
+    "exists": "このアドレスはすでにリストにあります。",
+    "invalid": "有効なメールアドレスを入力してください。",
+    "remove": "削除",
+    "confirmRemove": "{email} をリストから削除しますか？",
+    "removed": "{email} を削除しました。",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

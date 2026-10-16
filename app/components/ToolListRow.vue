@@ -29,7 +29,7 @@ const rankStyle = computed(() => {
     :external="!!href"
     :target="href ? '_blank' : undefined"
     :rel="href ? 'sponsored nofollow noopener' : undefined"
-    :class="['group relative flex items-start gap-4 py-5', hoverGlow && '-mx-3 overflow-hidden rounded-[14px] px-3 transition-colors hover:bg-[#FDFAFB]']"
+    :class="['group relative flex items-start gap-4 py-5', hoverGlow && '-mx-3 overflow-hidden rounded-[14px] px-3 transition-colors hover:bg-[#FAFAFB]']"
   >
     <img
       v-if="hoverGlow && tool.logoUrl"

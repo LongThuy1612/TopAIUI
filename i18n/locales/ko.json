@@ -13,7 +13,8 @@
     "admin": "대시보드",
     "menu": "메뉴",
     "openMenu": "메뉴 열기",
-    "closeMenu": "메뉴 닫기"
+    "closeMenu": "메뉴 닫기",
+    "language": "언어"
   },
   "auth": {
     "signInTitle": "계정에 로그인",
@@ -395,7 +396,9 @@
     "titlePrefix": "최고의",
     "titleHighlight": "AI 도구",
     "subtitle": "수백 개의 AI 제품을 카테고리별로 살펴보고, 가격을 비교하고, 워크플로우에 맞는 도구를 찾아보세요.",
-    "searchPlaceholder": "AI 도구 검색..."
+    "searchPlaceholder": "AI 도구 검색 (예: 텍스트로 동영상 만들기)",
+    "search": "검색",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "개의 AI와",
@@ -884,7 +887,8 @@
     "pricing": "요금제",
     "cookies": "쿠키 정책",
     "editorialGuidelines": "편집 가이드라인",
-    "reviewMethodology": "리뷰 방법론"
+    "reviewMethodology": "리뷰 방법론",
+    "resources": "리소스"
   },
   "language": {
     "label": "언어"
@@ -2062,5 +2066,45 @@
       "refused": "거부(환불됨)",
       "paused": "일시 중지"
     }
+  },
+  "home": {
+    "topLaunches": "오늘의 AI 런칭",
+    "seeAllLaunches": "오늘 런칭한 {n}개 모두 보기",
+    "reviews": "리뷰 {n}개",
+    "vote": "투표",
+    "upvote": "추천하기",
+    "viewAll": "모두 보기",
+    "trendingTools": "인기 도구",
+    "newsletterTitle": "최고의 AI 도구를 매주 받아보세요",
+    "newsletterSub": "매주 금요일, 써볼 만한 AI 도구를 이메일로 보내드려요.",
+    "subscribe": "구독",
+    "subscribed": "감사합니다! 구독되었습니다.",
+    "subscribeInvalid": "올바른 이메일 주소를 입력해 주세요.",
+    "subscribeLater": "시도 횟수가 너무 많습니다. 나중에 다시 시도해 주세요.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "투표하려면 이메일 주소를 인증해 주세요. 받은편지함을 확인하거나 대시보드에서 인증 메일을 다시 보내세요.",
+    "voteTooFast": "투표가 너무 잦습니다. 1분 후에 다시 시도해 주세요.",
+    "voteFailed": "투표를 저장하지 못했습니다. 다시 시도해 주세요."
+  },
+  "adminNewsletter": {
+    "title": "뉴스레터",
+    "export": "CSV 내보내기",
+    "count": "구독자 {n}명",
+    "note": "아직 사이트에서 메일을 보내지 않습니다. 목록을 메일 도구로 내보내세요.",
+    "email": "이메일",
+    "language": "언어",
+    "date": "구독일",
+    "member": "회원",
+    "empty": "아직 구독자가 없습니다.",
+    "total": "구독자",
+    "lastWeek": "최근 7일 신규",
+    "add": "추가",
+    "added": "{email}을(를) 추가했습니다.",
+    "exists": "이미 목록에 있는 주소입니다.",
+    "invalid": "올바른 이메일 주소를 입력해 주세요.",
+    "remove": "삭제",
+    "confirmRemove": "{email}을(를) 목록에서 삭제할까요?",
+    "removed": "{email}을(를) 삭제했습니다.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

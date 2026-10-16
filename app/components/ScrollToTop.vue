@@ -31,7 +31,7 @@ onBeforeUnmount(() => {
       v-if="visible"
       type="button"
       aria-label="Scroll to top"
-      class="fixed right-5 bottom-5 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-brand-500 text-white shadow-[0_8px_24px_-8px_rgba(219,39,119,.6)] transition-colors hover:bg-brand-600"
+      class="fixed right-5 bottom-5 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-brand-500 text-white shadow-[0_8px_24px_-8px_rgba(228,89,55,.6)] transition-colors hover:bg-brand-600"
       @click="scrollToTop"
     >
       <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

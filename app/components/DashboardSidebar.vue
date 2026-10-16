@@ -20,6 +20,7 @@ const onAdsPage = computed(() => basePath.value.startsWith('/admin/ads'))
 const onPostsPage = computed(() => basePath.value.startsWith('/admin/posts') || basePath.value.startsWith('/admin/articles'))
 const onGptsPage = computed(() => basePath.value.startsWith('/admin/gpts'))
 const onOrdersPage = computed(() => basePath.value.startsWith('/admin/orders'))
+const onNewsletterPage = computed(() => basePath.value.startsWith('/admin/newsletter'))
 
 const researchItems = computed(() => [
   { label: t('admin.websiteInsights'), to: '/dashboard/insights', icon: 'M4 19h16M6 15l3-4 3 2 4-6 2 3', color: 'bg-orange-50 text-orange-500' },
@@ -188,6 +189,17 @@ const businessItems = computed(() => (isAdmin.value ? [] : [
         <path stroke-linecap="round" stroke-linejoin="round" d="M7 3h10a1 1 0 0 1 1 1v17l-3-2-2 2-2-2-2 2-3-2V4a1 1 0 0 1 1-1Zm2 5h6m-6 4h6m-6 4h3" />
       </svg>
       {{ t('adminOrders.title') }}
+    </NuxtLinkLocale>
+
+    <NuxtLinkLocale
+      v-if="isAdmin"
+      to="/admin/newsletter"
+      :class="['-mt-5 flex items-center gap-2.5 rounded-lg px-3 py-2 text-base font-bold', onNewsletterPage ? 'bg-brand-50 text-brand-600' : 'text-ink-700 hover:bg-ink-100/60']"
+    >
+      <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4V6Zm0 0 8 7 8-7" />
+      </svg>
+      {{ t('adminNewsletter.title') }}
     </NuxtLinkLocale>
 
     <div>

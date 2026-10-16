@@ -13,7 +13,8 @@
     "admin": "Kontrolpanel",
     "menu": "Menu",
     "openMenu": "Åbn menu",
-    "closeMenu": "Luk menu"
+    "closeMenu": "Luk menu",
+    "language": "Sprog"
   },
   "auth": {
     "signInTitle": "Log ind på din konto",
@@ -378,7 +379,9 @@
     "titlePrefix": "Find de bedste",
     "titleHighlight": "AI-værktøjer",
     "subtitle": "Gennemse hundredvis af AI-produkter efter kategori, sammenlign priser, og find det rette værktøj til din arbejdsgang.",
-    "searchPlaceholder": "Søg efter AI-værktøjer..."
+    "searchPlaceholder": "Søg i AI-værktøjer, f.eks. video fra tekst",
+    "search": "Søg",
+    "titleSuffix": ""
   },
   "stats": {
     "tools": "AI'er og",
@@ -861,7 +864,8 @@
     "terms": "Servicevilkår",
     "privacy": "Privatlivspolitik",
     "advertise": "Annoncér",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "resources": "Ressourcer"
   },
   "language": {
     "label": "Sprog"
@@ -1668,5 +1672,45 @@
       "refused": "Afvist (refunderet)",
       "paused": "Sat på pause"
     }
+  },
+  "home": {
+    "topLaunches": "Top AI-lanceringer",
+    "seeAllLaunches": "Se alle {n} lanceringer i dag",
+    "reviews": "{n} anmeldelse | {n} anmeldelser",
+    "vote": "Stem",
+    "upvote": "Stem op",
+    "viewAll": "Se alle",
+    "trendingTools": "Populære værktøjer",
+    "newsletterTitle": "Få de bedste AI-værktøjer hver uge",
+    "newsletterSub": "Én e-mail hver fredag med de AI-værktøjer, der er værd at prøve.",
+    "subscribe": "Tilmeld",
+    "subscribed": "Tak! Du er på listen.",
+    "subscribeInvalid": "Indtast en gyldig e-mailadresse.",
+    "subscribeLater": "For mange forsøg. Prøv igen senere.",
+    "newsletterPlaceholder": "you{'@'}email.com",
+    "voteVerify": "Bekræft din e-mailadresse for at stemme — tjek din indbakke eller send e-mailen igen fra dit dashboard.",
+    "voteTooFast": "For mange stemmer. Vent et minut.",
+    "voteFailed": "Din stemme kunne ikke gemmes. Prøv igen."
+  },
+  "adminNewsletter": {
+    "title": "Nyhedsbrev",
+    "export": "Eksportér CSV",
+    "count": "{n} abonnent | {n} abonnenter",
+    "note": "Sitet sender ikke noget endnu — eksportér listen til dit mailværktøj.",
+    "email": "E-mail",
+    "language": "Sprog",
+    "date": "Tilmeldt",
+    "member": "Medlem",
+    "empty": "Ingen abonnenter endnu.",
+    "total": "Abonnenter",
+    "lastWeek": "Nye de seneste 7 dage",
+    "add": "Tilføj",
+    "added": "{email} tilføjet.",
+    "exists": "Denne adresse er allerede på listen.",
+    "invalid": "Indtast en gyldig e-mailadresse.",
+    "remove": "Fjern",
+    "confirmRemove": "Fjern {email} fra listen?",
+    "removed": "{email} fjernet.",
+    "addPlaceholder": "name{'@'}example.com"
   }
 }

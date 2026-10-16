@@ -7,11 +7,8 @@ body {
 }
 
 .brand-gradient-text {
-  background: linear-gradient(90deg, #db2777 0%, #e11d48 50%, #f472b6 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: theme('colors.brand.500');
+  /* The accent words of a headline ("AI Websites"). */
+  color: #DD5230;
 }
 
 .eyebrow {
@@ -25,7 +22,7 @@ body {
 .dot-grid-bg {
   position: relative;
   background-color: #fff;
-  background-image: radial-gradient(circle at 50% -10%, rgba(219, 39, 119, .10), rgba(255, 255, 255, 0) 55%);
+  background-image: radial-gradient(circle at 50% -10%, rgba(228, 89, 55, .10), rgba(255, 255, 255, 0) 55%);
 }
 
 /* The dots sit on their own layer that runs past the bottom of the section
@@ -35,7 +32,7 @@ body {
   content: '';
   position: absolute;
   inset: 0 0 -140px;
-  background-image: radial-gradient(#EDE3E8 1px, transparent 1px);
+  background-image: radial-gradient(#EFEFF2 1px, transparent 1px);
   background-size: 22px 22px;
   -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 260px), transparent);
   mask-image: linear-gradient(to bottom, #000 calc(100% - 260px), transparent);
@@ -53,4 +50,14 @@ body {
   position: relative;
   z-index: 1;
   background: linear-gradient(to bottom, transparent, var(--after-dot-grid-bg, #fff) 160px);
+}
+
+/* Header dropdowns (Products, Ranking, Submit): a short fade-and-grow as they open. */
+@keyframes menu-in {
+  from { opacity: 0; transform: translateY(-4px) scale(.97); }
+  to { opacity: 1; transform: none; }
+}
+.menu-in {
+  animation: menu-in .15s ease-out;
+  transform-origin: top;
 }

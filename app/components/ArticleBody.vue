@@ -20,7 +20,7 @@ defineProps<{ html: string }>()
 .article-body :deep(ul) { list-style: disc; padding-left: 1.5em; }
 .article-body :deep(ol) { list-style: decimal; padding-left: 1.5em; }
 .article-body :deep(li + li) { margin-top: 0.35em; }
-.article-body :deep(blockquote) { border-left: 4px solid #fbcfe8; padding-left: 1em; color: #4b5563; font-style: italic; }
+.article-body :deep(blockquote) { border-left: 4px solid #FEDCD3; padding-left: 1em; color: #4b5563; font-style: italic; }
 .article-body :deep(img) { max-width: 100%; height: auto; border-radius: 12px; }
 .article-body :deep(code) { background: #f3f4f6; border-radius: 4px; padding: 0.1em 0.35em; font-size: 0.9em; }
 .article-body :deep(pre) { background: #111827; color: #f9fafb; border-radius: 12px; padding: 1em; overflow-x: auto; font-size: 0.875rem; }
