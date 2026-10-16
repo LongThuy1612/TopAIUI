@@ -24,8 +24,6 @@ function onSearch() {
 
 <template>
   <section class="flex flex-col items-center gap-5 bg-gradient-to-b from-[#FFF3F0] to-white px-4 pt-[72px] pb-14 text-center sm:px-10">
-    <span class="rounded-full border border-brand-200 bg-white px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[.04em] text-brand-700">● {{ t('sections.updatedDaily') }}</span>
-
     <h1 class="m-0 text-[clamp(34px,4.2vw,58px)] font-extrabold leading-[1.05] tracking-[-.04em] text-ink-900 [text-wrap:balance] lg:whitespace-nowrap">
       {{ t('hero.titlePrefix') }} <span class="brand-gradient-text">{{ t('hero.titleHighlight') }}</span>{{ t('hero.titleSuffix') ? ` ${t('hero.titleSuffix')}` : '' }}
     </h1>

@@ -33,7 +33,7 @@ const aboutLinks = [
 
 <template>
   <footer class="w-full border-t border-ink-100 bg-[#FAFAFB] px-4 pt-12 pb-8 sm:px-6 lg:px-10">
-    <div class="mx-auto grid max-w-[1200px] grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-10 text-[13px] text-ink-700">
+    <div class="mx-auto grid max-w-[1352px] grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-10 text-[13px] text-ink-700">
       <div class="flex flex-col gap-3">
         <NuxtLinkLocale to="/" class="flex items-center gap-2.5 text-base font-bold text-ink-900">
           <IconLogo class="h-7 w-7" width="28" height="28" />
@@ -80,7 +80,7 @@ const aboutLinks = [
       </div>
     </div>
 
-    <div class="mx-auto mt-8 flex max-w-[1200px] flex-wrap items-center justify-between gap-3 border-t border-ink-100 pt-5 text-xs text-ink-400">
+    <div class="mx-auto mt-8 flex max-w-[1352px] flex-wrap items-center justify-between gap-3 border-t border-ink-100 pt-5 text-xs text-ink-400">
       <span>© {{ year }} TopAICollection — {{ t('footer.copyright') }}</span>
       <!-- Real links to this page in each language (crawlable); a click switches in place. -->
       <span class="flex flex-wrap items-center gap-x-1.5 gap-y-1">

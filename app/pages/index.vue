@@ -147,7 +147,7 @@ useJsonLd('site', () => [
   <div>
     <AppHero />
 
-    <section class="mx-auto flex max-w-[1280px] flex-wrap gap-12 px-4 pt-6 pb-14 sm:px-10">
+    <section class="mx-auto flex max-w-[1432px] flex-wrap gap-12 px-4 pt-6 pb-14 sm:px-10">
       <!-- Top AI launches -->
       <div class="min-w-0 flex-[999_1_560px]">
         <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
@@ -297,7 +297,7 @@ useJsonLd('site', () => [
 
     <!-- Browse by category -->
     <section class="border-y border-ink-100 bg-[#FAFAFB] px-4 py-12 sm:px-10">
-      <div class="mx-auto max-w-[1200px]">
+      <div class="mx-auto max-w-[1352px]">
         <div class="mb-[18px] flex items-baseline justify-between gap-4">
           <h2 class="text-[28px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.browseByCategory') }}</h2>
           <NuxtLinkLocale to="/category/all" class="text-sm font-semibold text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
@@ -321,7 +321,7 @@ useJsonLd('site', () => [
 
     <!-- Featured -->
     <section class="px-4 pt-14 pb-16 sm:px-10">
-      <div class="mx-auto max-w-[1200px]">
+      <div class="mx-auto max-w-[1352px]">
         <h2 class="mb-1 text-[28px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.featuredThisWeek') }}</h2>
         <p class="mb-[22px] text-[15px] text-ink-600">{{ t('sections.featuredThisWeekSubtitle') }}</p>
         <div v-if="featuredTools.length" class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-3">
