@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { siteDay } from '#shared/time'
 import type { Tool, ToolsResponse } from '~/types'
 
 const { t, locale } = useI18n()
@@ -100,7 +101,7 @@ const weekdays = computed(() => {
   return distinct(narrow) ? narrow : short.map(s => s.replace(/\.$/, ''))
 })
 // Any past or current day can be picked; days that have tools are just shown darker.
-const todayIso = new Date().toISOString().slice(0, 10)
+const todayIso = siteDay()
 const calendarCells = computed(() => {
   const start = monthStart.value
   const daysInMonth = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + 1, 0)).getUTCDate()

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SITE_TIME_ZONE } from '#shared/time'
 import type { ArticleDetail } from '~/types'
 
 const { t, locale } = useI18n()
@@ -15,7 +16,7 @@ if (error.value) {
 if (article.value?.externalUrl) await navigateTo(article.value.externalUrl, { external: true, redirectCode: 302 })
 
 const { siteUrl } = useRuntimeConfig().public
-const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'long', day: 'numeric' }) : '')
+const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'long', day: 'numeric', timeZone: SITE_TIME_ZONE }) : '')
 
 useSeoMeta({
   title: () => `${article.value?.title ?? ''} — TopAICollection`,

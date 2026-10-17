@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SITE_TIME_ZONE } from '#shared/time'
 import type { Review, ReviewsResponse, Tool, ToolsResponse } from '~/types'
 
 const { t, te, locale } = useI18n()
@@ -148,7 +149,7 @@ async function changeReviewsSort(sort: 'newest' | 'oldest') {
 
 function formatReviewDate(iso: string) {
   const d = new Date(iso)
-  return d.toLocaleDateString(locale.value, { month: 'long', day: 'numeric', year: 'numeric' }).replace(',', '')
+  return d.toLocaleDateString(locale.value, { month: 'long', day: 'numeric', year: 'numeric', timeZone: SITE_TIME_ZONE }).replace(',', '')
 }
 
 const pricingStyle: Record<string, string> = {
@@ -291,9 +292,9 @@ async function submitNewReview() {
 const addedOn = computed(() => {
   const date = tool.value?.addedOn
   if (!date) return '—'
-  // addedOn is stored in UTC; show the UTC day so it matches the DB and the /archive/[date] page.
+  // The day in Vietnam time, like the /archive/[date] page (shared/time.ts).
   return new Date(date).toLocaleDateString(locale.value === 'vi' ? 'vi-VN' : 'en-US', {
-    year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'
+    year: 'numeric', month: 'short', day: 'numeric', timeZone: SITE_TIME_ZONE
   })
 })
 
@@ -814,7 +815,7 @@ useJsonLd('tool', () => {
               :alt="`${tool.name} screenshot ${i + 1}`"
               :loading="i === 0 ? 'eager' : 'lazy'"
               draggable="false"
-              class="aspect-video w-full shrink-0 snap-start object-cover"
+              class="aspect-video w-full shrink-0 snap-start bg-[#F6F6F8] object-contain"
             >
           </div>
 

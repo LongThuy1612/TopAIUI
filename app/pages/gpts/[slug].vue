@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SITE_TIME_ZONE } from '#shared/time'
 import type { GptDetail } from '~/types'
 
 const { t, locale } = useI18n()
@@ -13,7 +14,7 @@ if (error.value) {
 
 const { siteUrl } = useRuntimeConfig().public
 const initials = (name: string) => name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase() || 'G'
-const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'long', day: 'numeric' }) : '')
+const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'long', day: 'numeric', timeZone: SITE_TIME_ZONE }) : '')
 
 // GPT listings are in English only: other language URLs point at it.
 useSeoLocales(() => ['en'])

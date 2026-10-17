@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SITE_TIME_ZONE } from '#shared/time'
 import type { ArticlesResponse } from '~/types'
 
 const { t, locale } = useI18n()
@@ -14,7 +15,7 @@ if (error.value) throw createError({ statusCode: 503, statusMessage: 'Service un
 const items = computed(() => data.value?.items ?? [])
 const pageCount = computed(() => data.value?.pageCount ?? 1)
 const hostOf = (url: string) => { try { return new URL(url).hostname.replace(/^www\./, '') } catch { return '' } }
-const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'short', day: 'numeric' }) : '')
+const formatDate = (d: string | null) => (d ? new Date(d).toLocaleDateString(locale.value, { year: 'numeric', month: 'short', day: 'numeric', timeZone: SITE_TIME_ZONE }) : '')
 
 useSeoMeta({
   title: () => `${t('aiNews.title')} — TopAICollection`,

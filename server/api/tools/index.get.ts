@@ -1,3 +1,4 @@
+import { siteDayStart } from '#shared/time'
 import { Prisma } from '@prisma/client'
 import type { H3Event } from 'h3'
 import { PUBLIC_LIMITS } from '#shared/research'
@@ -80,9 +81,10 @@ async function listTools(event: H3Event, isGuest: boolean) {
     where.createdAt = { gte: since }
   }
   const isNewTab = query.newToday === 'true'
-  // Footer archive: tools whose addedOn falls on one UTC calendar day (YYYY-MM-DD).
-  const addedDate = /^\d{4}-\d{2}-\d{2}$/.test(String(query.addedDate ?? '')) ? new Date(`${query.addedDate}T00:00:00Z`) : null
-  const isArchiveDay = !!addedDate && !Number.isNaN(addedDate.getTime())
+  // Footer archive: tools whose addedOn falls on one calendar day (YYYY-MM-DD) in
+  // Vietnam time (shared/time.ts).
+  const addedDate = siteDayStart(String(query.addedDate ?? ''))
+  const isArchiveDay = !!addedDate
   if (isArchiveDay) {
     where.addedOn = { gte: addedDate, lt: new Date(addedDate.getTime() + 24 * 60 * 60 * 1000) }
   }

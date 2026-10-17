@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { siteDay } from '#shared/time'
 import type { ArticlesResponse, ToolsResponse } from '~/types'
 import { advertise } from '~/data/promote'
 import { SUPPORT_EMAIL, SOCIAL_LINKS } from '#shared/site'
@@ -88,11 +89,10 @@ onMounted(() => {
   watch(rows, list => loadVoted(list.flatMap(r => (r.ad ? [] : [r.tool.slug]))), { immediate: true })
 })
 
-// The launch day the list starts with ("Thursday, Oct 15") and how many tools it had.
-const launchDay = computed(() => {
-  const added = todayRes.value?.items?.[0]?.addedOn
-  return added ? added.slice(0, 10) : new Date().toISOString().slice(0, 10)
-})
+// Today ("Thursday, Oct 15") in Vietnam time (shared/time.ts), like the archive, and how
+// many tools were added today. The page is cached for a minute, so the date can lag
+// that long after midnight.
+const launchDay = computed(() => siteDay())
 const launchDayLabel = computed(() => new Date(`${launchDay.value}T12:00:00Z`)
   .toLocaleDateString(locale.value, { weekday: 'long', month: 'short', day: 'numeric', timeZone: 'UTC' }))
 const { data: dayRes } = await useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ addedDate: launchDay.value, limit: 1, locale: locale.value })) })
