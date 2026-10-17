@@ -1209,7 +1209,45 @@ model NewsletterSubscriber {
   userId    String?  // signed in when subscribing
   createdAt DateTime @default(now())
 
+  deliveries NewsletterDelivery[]
+
   @@index([createdAt])
   @@map("NewsletterSubscriber")
+}
+
+// One weekly email (server/utils/newsletter.ts). Its content is fixed when it is created
+// (toolIds / articleIds), then it goes out a few dozen addresses an hour within the daily
+// limit — to the subscribers who had signed up by then.
+model NewsletterIssue {
+  id          String    @id @default(cuid())
+  status      String    @default("SENDING") // SENDING | DONE | CANCELED
+  source      String    @default("schedule") // schedule | admin
+  toolIds     String[]
+  articleIds  String[]
+  recipients  Int       @default(0) // subscribers when it was created
+  createdAt   DateTime  @default(now())
+  finishedAt  DateTime?
+
+  deliveries NewsletterDelivery[]
+
+  @@index([createdAt])
+  @@map("NewsletterIssue")
+}
+
+// One address of one issue: sent or failed. Also what the daily limit counts — so it
+// stays when the address unsubscribes (subscriberId → null), or the count would drop.
+model NewsletterDelivery {
+  id           String                @id @default(cuid())
+  issueId      String
+  issue        NewsletterIssue       @relation(fields: [issueId], references: [id], onDelete: Cascade)
+  subscriberId String?
+  subscriber   NewsletterSubscriber? @relation(fields: [subscriberId], references: [id], onDelete: SetNull)
+  status       String // SENT | FAILED
+  error        String?
+  sentAt       DateTime             @default(now())
+
+  @@unique([issueId, subscriberId])
+  @@index([sentAt])
+  @@map("NewsletterDelivery")
 }
 

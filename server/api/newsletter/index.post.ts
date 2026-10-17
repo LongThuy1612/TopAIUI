@@ -1,5 +1,6 @@
 // POST /api/newsletter { email, locale, website } — the home page's "Get the best AI
-// tools, weekly" box. Stores the address (nothing is sent yet; admins export the list).
+// tools, weekly" box. Stores the address; the weekly email goes out from
+// server/utils/newsletter.ts.
 // Always answers the same for a new or an already-listed address, so the form can't be
 // used to find out who subscribed. `website` is a field people never see: bots fill it.
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/

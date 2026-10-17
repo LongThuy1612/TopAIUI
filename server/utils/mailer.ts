@@ -33,6 +33,8 @@ export interface MailMessage {
   html: string
   // Where "Reply" goes, e.g. the visitor who wrote through the contact form.
   replyTo?: string
+  // Extra headers, e.g. the newsletter's List-Unsubscribe.
+  headers?: Record<string, string>
 }
 
 export async function sendMail(message: MailMessage): Promise<void> {

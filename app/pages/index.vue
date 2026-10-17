@@ -98,7 +98,17 @@ const launchDayLabel = computed(() => new Date(`${launchDay.value}T12:00:00Z`)
 const { data: dayRes } = await useFetch<ToolsResponse>('/api/tools', { query: computed(() => ({ addedDate: launchDay.value, limit: 1, locale: locale.value })) })
 const launchCount = computed(() => dayRes.value?.total ?? 0)
 const tabLink: Record<Tab, string> = { today: '/today', new: '/new', featured: '/most-featured' }
-const reviewsLabel = (tool: Tool) => t('home.reviews', { n: nf.value.format(tool.reviewCount ?? 0) }, tool.reviewCount ?? 0)
+// The grey line under a row: category · pricing · reviews. Each part only when it has a
+// value (no "0 reviews", no "pricing.undefined"), so the dots never dangle.
+const PRICING = new Set(['FREE', 'FREEMIUM', 'PAID'])
+function metaParts(tool: Tool) {
+  const reviews = tool.reviewCount ?? 0
+  return [
+    tool.categories?.[0]?.name,
+    tool.pricingType && PRICING.has(tool.pricingType) ? t(`pricing.${tool.pricingType}`) : null,
+    reviews > 0 ? t('home.reviews', { n: nf.value.format(reviews) }, reviews) : null
+  ].filter((part): part is string => !!part)
+}
 
 /* ---- Sidebar --------------------------------------------------------------- */
 
@@ -206,7 +216,7 @@ useJsonLd('site', () => [
           :data-ad-placement="row.ad ? 'home' : undefined"
           :class="['group relative grid grid-cols-[44px_minmax(0,1fr)_52px] items-center gap-4 overflow-hidden rounded-[18px] px-3 py-4 transition-opacity hover:bg-[#FAFAFB] sm:grid-cols-[28px_60px_minmax(0,1fr)_64px]', loadingTab && 'opacity-50']"
         >
-          <!-- On hover, the old logo / initials watermark, very faint, left of the vote box. -->
+          <!-- On hover, the old logo / initials watermark, very faint, left of the vote box and centred on the row's height. -->
           <img
             v-if="row.tool.logoUrl"
             data-logo
@@ -214,9 +224,9 @@ useJsonLd('site', () => [
             alt=""
             loading="lazy"
             aria-hidden="true"
-            class="pointer-events-none absolute -top-4 right-16 h-28 w-28 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-20"
+            class="pointer-events-none absolute right-16 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-20"
           >
-          <span v-else class="pointer-events-none absolute right-[72px] top-1 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-[92px]" aria-hidden="true">{{ initialsOf(row.tool.name) }}</span>
+          <span v-else class="pointer-events-none absolute right-[72px] top-1/2 -translate-y-1/2 text-[46px] font-extrabold leading-none tracking-[.02em] text-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-[92px]" aria-hidden="true">{{ initialsOf(row.tool.name) }}</span>
           <span class="relative hidden text-base font-semibold text-ink-400 sm:block">{{ i + 1 }}</span>
           <NuxtLinkLocale
             :to="row.ad ? row.ad.clickUrl : `/tools/${row.tool.slug}`"
@@ -242,10 +252,8 @@ useJsonLd('site', () => [
               <span v-if="row.ad" class="rounded-full bg-brand-500 px-2 py-[2px] text-[11px] font-semibold text-white">{{ t('sections.sponsorBadge') }}</span>
             </span>
             <span v-if="row.tool.shortDesc" class="line-clamp-2 text-[15px] leading-[1.45] text-ink-700">{{ row.tool.shortDesc }}</span>
-            <span class="flex flex-wrap gap-2.5 text-[13px] text-ink-600">
-              <template v-if="row.tool.categories?.[0]"><span>{{ row.tool.categories[0].name }}</span><span aria-hidden="true">·</span></template>
-              <span>{{ t(`pricing.${row.tool.pricingType}`) }}</span>
-              <template v-if="!row.ad"><span aria-hidden="true">·</span><span>{{ reviewsLabel(row.tool as Tool) }}</span></template>
+            <span v-if="metaParts(row.tool as Tool).length" class="flex flex-wrap gap-2.5 text-[13px] text-ink-600">
+              <template v-for="(part, p) in metaParts(row.tool as Tool)" :key="p"><span v-if="p" aria-hidden="true">·</span><span>{{ part }}</span></template>
             </span>
           </NuxtLinkLocale>
           <button
@@ -254,7 +262,7 @@ useJsonLd('site', () => [
             :aria-pressed="isVoted(row.tool.slug)"
             :aria-label="t('home.upvote')"
             :disabled="busy === row.tool.slug"
-            :class="['relative flex flex-col items-center gap-0.5 rounded-[14px] border py-2.5 text-sm font-bold transition-colors', isVoted(row.tool.slug) ? 'border-brand-500 bg-brand-500 text-white' : 'border-ink-200 bg-white text-brand-600 hover:border-brand-300']"
+            :class="['relative flex flex-col items-center gap-0.5 rounded-[14px] border py-2.5 text-sm font-bold transition-colors', isVoted(row.tool.slug) ? 'border-ink-200 bg-white text-brand-600' : 'border-ink-200 bg-white text-ink-500 hover:border-ink-400 hover:text-ink-800']"
             @click="toggle(row.tool as Tool)"
           >
             <span class="text-[11px]" aria-hidden="true">▲</span>

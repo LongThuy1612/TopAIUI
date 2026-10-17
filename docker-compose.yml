@@ -73,6 +73,8 @@ services:
       NUXT_SMTP_USER: ${SMTP_USER:-}
       NUXT_SMTP_PASS: ${SMTP_PASS:-}
       NUXT_MAIL_FROM: ${MAIL_FROM:-TopAICollection <no-reply@topaicollection.com>}
+      # Newsletter mails per 24 hours (empty = 300, for plain Gmail).
+      NUXT_NEWSLETTER_DAILY_LIMIT: ${NEWSLETTER_DAILY_LIMIT:-}
       # Inbox notified of new Contact-page messages. Empty = SUPPORT_EMAIL (shared/site.ts).
       NUXT_CONTACT_INBOX: ${CONTACT_INBOX:-}
     volumes:

@@ -131,8 +131,9 @@ export default defineNuxtConfig({
     // Nightly cleanup of uploaded images no tool uses (server/tasks/uploads/cleanup.ts)
     // and of resized images older than 30 days (server/tasks/image-cache/prune.ts).
     // PayPal Research Plans whose cancelled period is over (server/tasks/research/paypal-cleanup.ts).
+    // Hourly: the weekly newsletter, a few dozen addresses at a time (server/tasks/newsletter/send.ts).
     experimental: { tasks: true },
-    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'], '0 4 * * *': ['image-cache:prune'], '30 4 * * *': ['research:paypal-cleanup'], '45 4 * * *': ['search:cleanup', 'tools:stats-cleanup'] }
+    scheduledTasks: { '30 3 * * *': ['uploads:cleanup'], '0 4 * * *': ['image-cache:prune'], '30 4 * * *': ['research:paypal-cleanup'], '45 4 * * *': ['search:cleanup', 'tools:stats-cleanup'], '5 * * * *': ['newsletter:send'] }
   },
 
   runtimeConfig: {
@@ -165,6 +166,9 @@ export default defineNuxtConfig({
     smtpUser: process.env.SMTP_USER || '',
     smtpPass: process.env.SMTP_PASS || '',
     mailFrom: process.env.MAIL_FROM || 'TopAICollection <no-reply@topaicollection.com>',
+    // Newsletter mails per rolling 24 hours (server/utils/newsletter.ts). Empty = 300, for
+    // a plain Gmail account (~500 a day, shared with the account emails).
+    newsletterDailyLimit: process.env.NEWSLETTER_DAILY_LIMIT || '',
     // Where new Contact-page messages are announced (Reply-To = the sender). Empty =
     // SUPPORT_EMAIL in shared/site.ts. Override at runtime with NUXT_CONTACT_INBOX.
     contactInbox: process.env.CONTACT_INBOX || '',
@@ -279,7 +283,9 @@ export default defineNuxtConfig({
       // other sites through the Referer header.
       '/reset-password': { robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } },
       // ssr: false — confirming needs the session token, which only the browser has.
-      '/verify-email': { ssr: false, robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } }
+      '/verify-email': { ssr: false, robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } },
+      // The newsletter's unsubscribe link (signed id in the query string).
+      '/newsletter/unsubscribe': { robots: false, headers: { 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer' } }
     }),
 
     // API — data endpoints stay dynamic; admin API additionally is not CORS-open
