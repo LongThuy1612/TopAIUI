@@ -69,12 +69,10 @@ watch(locale, () => {
 })
 
 const { countOf, isVoted, toggle, loadVoted, busy } = useUpvotes()
-const todayRanked = computed(() => [...(todayRes.value?.items ?? [])]
-  .map((tool, i) => ({ tool, i }))
-  // The listed counts, not this viewer's fresh ones: a vote must not move the row away
-  // from under the cursor.
-  .sort((a, b) => ((b.tool.upvoteCount ?? 0) - (a.tool.upvoteCount ?? 0)) || (a.i - b.i))
-  .map(({ tool }) => tool))
+// In the API's Today order: newest launch day first (Vietnam time), then the most upvoted
+// within a day (server/api/tools/index.get.ts). By the listed counts, not this viewer's
+// fresh ones: a vote must not move the row away from under the cursor.
+const todayRanked = computed(() => todayRes.value?.items ?? [])
 
 // Sponsored tools only go into the Today feed (positions 1, 4, 12); a tool in an ad slot
 // isn't repeated in the organic lists.

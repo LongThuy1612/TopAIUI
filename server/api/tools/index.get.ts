@@ -1,4 +1,4 @@
-import { siteDayStart } from '#shared/time'
+import { SITE_TIME_ZONE, siteDayStart } from '#shared/time'
 import { Prisma } from '@prisma/client'
 import type { H3Event } from 'h3'
 import { PUBLIC_LIMITS } from '#shared/research'
@@ -133,7 +133,29 @@ async function listTools(event: H3Event, isGuest: boolean) {
   const take = Math.min(limit, guestRoom)
   let items: Prisma.ToolGetPayload<{ select: typeof select }>[]
   let total: number
-  if (simpleSearch) {
+  // Today (the /today page, the home list): newest launch day first in Vietnam time, the
+  // most upvoted first within a day — an older tool's votes must not put it above today's
+  // launches. Prisma can't sort on the day of a timestamp, so the page's ids come from
+  // SQL (Today alone; with any other filter it keeps the plain addedOn order).
+  const todayOnly = isTodayTab && !q && !query.category && !query.tag && !where.pricingType && !query.featured && !hasDiscord
+    && !query.minRating && !query.region && !query.source && !query.days && !isNewTab && !isArchiveDay && !letter
+  if (todayOnly) {
+    const [rows, counted] = await Promise.all([
+      take > 0
+        ? prisma.$queryRaw<{ id: string }[]>`
+            SELECT id FROM "Tool"
+            WHERE status = 'PUBLISHED' AND "deletedAt" IS NULL AND "isApproved" = true
+            ORDER BY ((("addedOn" AT TIME ZONE 'UTC') AT TIME ZONE ${SITE_TIME_ZONE})::date) DESC NULLS LAST,
+              "upvoteCount" DESC, "addedOn" DESC NULLS LAST, id ASC
+            LIMIT ${take} OFFSET ${skip}`
+        : Promise.resolve([]),
+      prisma.tool.count({ where })
+    ])
+    total = counted
+    const found = rows.length ? await prisma.tool.findMany({ where: { id: { in: rows.map(r => r.id) } }, select }) : []
+    const byId = new Map(found.map(row => [row.id, row]))
+    items = rows.map(r => byId.get(r.id)).filter(row => !!row)
+  } else if (simpleSearch) {
     const found = await searchPage({
       q,
       category: query.category ? String(query.category) : undefined,
