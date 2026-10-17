@@ -50,7 +50,7 @@ const aboutLinks = [
             :aria-label="social.name"
             target="_blank"
             rel="noopener"
-            class="grid h-8 w-8 place-items-center rounded-lg border border-ink-200 bg-white text-ink-800 transition-colors hover:border-ink-400 hover:text-ink-900"
+            class="grid h-8 w-8 place-items-center rounded-lg border border-ink-200 bg-white text-ink-500 transition duration-200 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-brand-50 hover:text-brand-600 hover:shadow-[0_6px_16px_-8px_rgba(228,89,55,.55)] focus-visible:border-brand-200 focus-visible:text-brand-600"
           >
             <svg class="h-[15px] w-[15px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path :d="social.icon" /></svg>
           </a>

@@ -262,7 +262,7 @@ useJsonLd('site', () => [
             :aria-pressed="isVoted(row.tool.slug)"
             :aria-label="t('home.upvote')"
             :disabled="busy === row.tool.slug"
-            :class="['relative flex flex-col items-center gap-0.5 rounded-[14px] border py-2.5 text-sm font-bold transition-colors', isVoted(row.tool.slug) ? 'border-ink-200 bg-white text-brand-600' : 'border-ink-200 bg-white text-ink-500 hover:border-ink-400 hover:text-ink-800']"
+            :class="['relative flex flex-col items-center gap-0.5 rounded-[14px] border py-2.5 text-sm font-bold transition-colors', isVoted(row.tool.slug) ? 'border-brand-200 bg-white text-brand-600' : 'border-ink-200 bg-white text-brand-600 hover:border-brand-200']"
             @click="toggle(row.tool as Tool)"
           >
             <span class="text-[11px]" aria-hidden="true">▲</span>
