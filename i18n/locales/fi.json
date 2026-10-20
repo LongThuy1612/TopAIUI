@@ -1754,5 +1754,45 @@
     "done": "Tilaus on peruttu. Et saa enää uutiskirjeitä.",
     "invalid": "Tämä peruutuslinkki ei ole kelvollinen.",
     "home": "Takaisin etusivulle"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Kategoriat",
+    "title": "Tekoälytyökalujen kategoriat",
+    "subtitle": "{tools} työkalua, {groups} ryhmää ja {categories} kategoriaa",
+    "filterPlaceholder": "Suodata kategorioita, esim. video, ääni…",
+    "empty": "Yksikään kategoria ei vastaa.",
+    "groups": "Kategoriaryhmät",
+    "categoriesCount": "{n} kategoria | {n} kategoriaa",
+    "toolsCount": "{n} työkalu | {n} työkalua"
+  },
+  "categoryPage": {
+    "heading": "{count} parasta {name}-työkalua vuonna {year}",
+    "introEnd": "ovat parhaat maksulliset / ilmaiset {name}-työkalut.",
+    "sortLabel": "Lajittele",
+    "typeLabel": "Tyyppi",
+    "typeAll": "Kaikki tyypit",
+    "shareX": "Jaa X:ssä",
+    "shareFacebook": "Jaa Facebookissa",
+    "visit": "Avaa {name}",
+    "tryIt": "Kokeile {name}",
+    "pricing": "{name} hinnoittelu",
+    "whatIs": "Mikä on {name}",
+    "coreFeatures": "{name} – keskeiset ominaisuudet",
+    "useCases": "{name} – käyttötapaukset",
+    "reviews": "{n} arvostelu | {n} arvostelua",
+    "saved": "{n} tallennusta",
+    "featured": "Esittelyssä",
+    "launchTitle": "Julkaise oma {name}-työkalusi jo tänään!",
+    "launchText": "Lisää se TopAICollectioniin ja tavoita ihmiset, jotka etsivät kaltaisiasi tekoälytyökaluja.",
+    "launchButton": "Lähetä työkalusi",
+    "loginMore": "Kirjaudu nähdäksesi lisää tämän kategorian työkaluja",
+    "empty": "Tässä kategoriassa ei ole vielä työkaluja.",
+    "sort": {
+      "default": "Oletus",
+      "newest": "Uusimmat",
+      "saved": "Eniten tallennetut",
+      "rating": "Parhaiten arvioidut",
+      "name": "Nimi A–Ö"
+    }
   }
 }

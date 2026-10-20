@@ -2148,5 +2148,45 @@
     "done": "你已退订，之后不会再收到通讯邮件。",
     "invalid": "此退订链接无效。",
     "home": "返回首页"
+  },
+  "categoriesPage": {
+    "breadcrumb": "分类",
+    "title": "AI 工具分类",
+    "subtitle": "{groups} 个分组、{categories} 个分类，共 {tools} 款工具",
+    "filterPlaceholder": "筛选分类，例如：视频、语音…",
+    "empty": "没有匹配的分类。",
+    "groups": "分类分组",
+    "categoriesCount": "{n} 个分类",
+    "toolsCount": "{n} 款工具"
+  },
+  "categoryPage": {
+    "heading": "{year} 年最佳 {count} 款 {name} 工具",
+    "introEnd": "是最佳的付费 / 免费 {name} 工具。",
+    "sortLabel": "排序",
+    "typeLabel": "类型",
+    "typeAll": "全部类型",
+    "shareX": "分享到 X",
+    "shareFacebook": "分享到 Facebook",
+    "visit": "访问 {name}",
+    "tryIt": "试用 {name}",
+    "pricing": "{name} 价格",
+    "whatIs": "什么是 {name}",
+    "coreFeatures": "{name} 核心功能",
+    "useCases": "{name} 使用场景",
+    "reviews": "{n} 条评价",
+    "saved": "{n} 次收藏",
+    "featured": "精选",
+    "launchTitle": "今天就发布你的 {name} 工具！",
+    "launchText": "在 TopAICollection 上架，让正在寻找同类 AI 工具的人找到你。",
+    "launchButton": "提交工具",
+    "loginMore": "登录以查看此分类的更多工具",
+    "empty": "此分类暂无工具。",
+    "sort": {
+      "default": "默认排序",
+      "newest": "最新",
+      "saved": "收藏最多",
+      "rating": "评分最高",
+      "name": "名称 A–Z"
+    }
   }
 }

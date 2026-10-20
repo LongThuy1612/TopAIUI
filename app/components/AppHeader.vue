@@ -450,7 +450,7 @@ onBeforeUnmount(() => {
               </NuxtLinkLocale>
             </div>
           </div>
-          <NuxtLinkLocale to="/category/all" class="whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900">
+          <NuxtLinkLocale to="/categories" class="whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-ink-800 hover:text-ink-900">
             {{ t('header.categories') }}
           </NuxtLinkLocale>
 
@@ -706,7 +706,7 @@ onBeforeUnmount(() => {
             </NuxtLinkLocale>
           </div>
 
-          <NuxtLinkLocale to="/category/all" class="block rounded-lg px-3 py-3 text-base font-semibold text-ink-900 hover:bg-ink-100/60" @click="closeMobileMenu(false)">
+          <NuxtLinkLocale to="/categories" class="block rounded-lg px-3 py-3 text-base font-semibold text-ink-900 hover:bg-ink-100/60" @click="closeMobileMenu(false)">
             {{ t('header.categories') }}
           </NuxtLinkLocale>
 

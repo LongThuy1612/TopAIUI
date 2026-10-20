@@ -2148,5 +2148,45 @@
     "done": "Vous êtes désabonné. Vous ne recevrez plus d'e-mails de la newsletter.",
     "invalid": "Ce lien de désabonnement n'est pas valide.",
     "home": "Retour à l'accueil"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Catégories",
+    "title": "Catégories d'outils d'IA",
+    "subtitle": "{tools} outils dans {groups} groupes et {categories} catégories",
+    "filterPlaceholder": "Filtrer les catégories, ex. : vidéo, voix…",
+    "empty": "Aucune catégorie ne correspond.",
+    "groups": "Groupes de catégories",
+    "categoriesCount": "{n} catégorie | {n} catégories",
+    "toolsCount": "{n} outil | {n} outils"
+  },
+  "categoryPage": {
+    "heading": "Les {count} meilleurs outils {name} en {year}",
+    "introEnd": "sont les meilleurs outils {name} payants / gratuits.",
+    "sortLabel": "Trier",
+    "typeLabel": "Type",
+    "typeAll": "Tous les types",
+    "shareX": "Partager sur X",
+    "shareFacebook": "Partager sur Facebook",
+    "visit": "Visiter {name}",
+    "tryIt": "Essayer {name}",
+    "pricing": "Tarifs de {name}",
+    "whatIs": "Qu'est-ce que {name}",
+    "coreFeatures": "Fonctionnalités clés de {name}",
+    "useCases": "Cas d'usage de {name}",
+    "reviews": "{n} avis | {n} avis",
+    "saved": "{n} enregistrements",
+    "featured": "À la une",
+    "launchTitle": "Lancez votre propre outil {name} dès aujourd'hui !",
+    "launchText": "Publiez-le sur TopAICollection et touchez ceux qui cherchent des outils d'IA comme le vôtre.",
+    "launchButton": "Soumettre votre outil",
+    "loginMore": "Connectez-vous pour voir plus d'outils de cette catégorie",
+    "empty": "Aucun outil dans cette catégorie pour l'instant.",
+    "sort": {
+      "default": "Tri par défaut",
+      "newest": "Plus récents",
+      "saved": "Les plus enregistrés",
+      "rating": "Mieux notés",
+      "name": "Nom A–Z"
+    }
   }
 }

@@ -303,7 +303,7 @@ useJsonLd('site', () => [
         <div v-if="trendingCategories.length">
           <div class="mb-2 flex items-baseline justify-between gap-3">
             <span class="text-[17px] font-bold text-ink-900">{{ trendingTitle }}</span>
-            <NuxtLinkLocale to="/category/all" class="shrink-0 text-sm font-semibold text-brand-600">{{ t('home.viewAll') }}</NuxtLinkLocale>
+            <NuxtLinkLocale to="/categories" class="shrink-0 text-sm font-semibold text-brand-600">{{ t('home.viewAll') }}</NuxtLinkLocale>
           </div>
           <NuxtLinkLocale
             v-for="(cat, i) in trendingCategories"
@@ -337,7 +337,7 @@ useJsonLd('site', () => [
       <div class="mx-auto max-w-[1276px]">
         <div class="mb-[18px] flex items-baseline justify-between gap-4">
           <h2 class="text-[28px] font-bold tracking-[-.02em] text-ink-900">{{ t('sections.browseByCategory') }}</h2>
-          <NuxtLinkLocale to="/category/all" class="text-sm font-semibold text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
+          <NuxtLinkLocale to="/categories" class="text-sm font-semibold text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
         </div>
         <div class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-2.5 lg:grid-cols-5">
           <NuxtLinkLocale

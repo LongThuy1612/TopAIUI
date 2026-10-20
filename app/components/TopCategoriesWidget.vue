@@ -28,7 +28,7 @@ const titleKey = { week: 'sidebar.trendingThisWeek', month: 'sidebar.trendingThi
       </li>
     </ol>
     <div class="mt-4 border-t border-ink-100 pt-4 text-center">
-      <NuxtLinkLocale to="/category/all" class="text-base font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
+      <NuxtLinkLocale to="/categories" class="text-base font-bold text-brand-500 hover:text-brand-600">{{ t('sections.viewAll') }}</NuxtLinkLocale>
     </div>
   </div>
 </template>

@@ -1754,5 +1754,45 @@
     "done": "Je bent afgemeld en ontvangt geen nieuwsbrieven meer.",
     "invalid": "Deze afmeldlink is ongeldig.",
     "home": "Terug naar home"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Categorieën",
+    "title": "Categorieën AI-tools",
+    "subtitle": "{tools} tools in {groups} groepen en {categories} categorieën",
+    "filterPlaceholder": "Categorieën filteren, bijv. video, stem…",
+    "empty": "Geen categorie gevonden.",
+    "groups": "Categoriegroepen",
+    "categoriesCount": "{n} categorie | {n} categorieën",
+    "toolsCount": "{n} tool | {n} tools"
+  },
+  "categoryPage": {
+    "heading": "De {count} beste {name}-tools in {year}",
+    "introEnd": "zijn de beste betaalde / gratis {name}-tools.",
+    "sortLabel": "Sorteren",
+    "typeLabel": "Type",
+    "typeAll": "Alle typen",
+    "shareX": "Delen op X",
+    "shareFacebook": "Delen op Facebook",
+    "visit": "{name} bezoeken",
+    "tryIt": "{name} proberen",
+    "pricing": "Prijzen van {name}",
+    "whatIs": "Wat is {name}",
+    "coreFeatures": "Kernfuncties van {name}",
+    "useCases": "Toepassingen van {name}",
+    "reviews": "{n} review | {n} reviews",
+    "saved": "{n} keer bewaard",
+    "featured": "Uitgelicht",
+    "launchTitle": "Lanceer vandaag je eigen {name}-tool!",
+    "launchText": "Zet hem op TopAICollection en bereik mensen die AI-tools zoals de jouwe zoeken.",
+    "launchButton": "Tool indienen",
+    "loginMore": "Log in om meer tools in deze categorie te zien",
+    "empty": "Nog geen tools in deze categorie.",
+    "sort": {
+      "default": "Standaard",
+      "newest": "Nieuwste",
+      "saved": "Meest bewaard",
+      "rating": "Best beoordeeld",
+      "name": "Naam A–Z"
+    }
   }
 }

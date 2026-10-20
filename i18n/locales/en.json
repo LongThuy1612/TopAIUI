@@ -2148,5 +2148,45 @@
     "done": "You're unsubscribed. You won't get any more newsletter emails.",
     "invalid": "This unsubscribe link is not valid.",
     "home": "Back to home"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Categories",
+    "title": "AI tool categories",
+    "subtitle": "{tools} tools in {groups} groups and {categories} categories",
+    "filterPlaceholder": "Filter categories, e.g. video, voice…",
+    "empty": "No category matches.",
+    "groups": "Category groups",
+    "categoriesCount": "{n} category | {n} categories",
+    "toolsCount": "{n} tool | {n} tools"
+  },
+  "categoryPage": {
+    "heading": "Best {count} {name} Tools in {year}",
+    "introEnd": "are the best paid / free {name} tools.",
+    "sortLabel": "Sort",
+    "typeLabel": "Type",
+    "typeAll": "All types",
+    "shareX": "Share on X",
+    "shareFacebook": "Share on Facebook",
+    "visit": "Visit {name}",
+    "tryIt": "Try {name}",
+    "pricing": "{name} pricing",
+    "whatIs": "What is {name}",
+    "coreFeatures": "{name} core features",
+    "useCases": "{name} use cases",
+    "reviews": "{n} review | {n} reviews",
+    "saved": "{n} saved",
+    "featured": "Featured",
+    "launchTitle": "Launch your own {name} tool today!",
+    "launchText": "List it on TopAICollection and reach people looking for AI tools like yours.",
+    "launchButton": "Submit your tool",
+    "loginMore": "Log in to see more tools in this category",
+    "empty": "No tools in this category yet.",
+    "sort": {
+      "default": "Default sort",
+      "newest": "Newest",
+      "saved": "Most saved",
+      "rating": "Top rated",
+      "name": "Name A–Z"
+    }
   }
 }

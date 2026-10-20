@@ -2148,5 +2148,45 @@
     "done": "配信を停止しました。今後ニュースレターは届きません。",
     "invalid": "この配信停止リンクは無効です。",
     "home": "ホームに戻る"
+  },
+  "categoriesPage": {
+    "breadcrumb": "カテゴリ",
+    "title": "AI ツールのカテゴリ",
+    "subtitle": "{groups} グループ・{categories} カテゴリに {tools} 件のツール",
+    "filterPlaceholder": "カテゴリを絞り込む（例：動画、音声）…",
+    "empty": "一致するカテゴリはありません。",
+    "groups": "カテゴリグループ",
+    "categoriesCount": "{n} カテゴリ",
+    "toolsCount": "{n} 件のツール"
+  },
+  "categoryPage": {
+    "heading": "{year} 年のおすすめ {name} ツール {count} 選",
+    "introEnd": "は有料 / 無料のおすすめ {name} ツールです。",
+    "sortLabel": "並べ替え",
+    "typeLabel": "種類",
+    "typeAll": "すべての種類",
+    "shareX": "X でシェア",
+    "shareFacebook": "Facebook でシェア",
+    "visit": "{name} にアクセス",
+    "tryIt": "{name} を試す",
+    "pricing": "{name} の料金",
+    "whatIs": "{name} とは",
+    "coreFeatures": "{name} の主な機能",
+    "useCases": "{name} の活用例",
+    "reviews": "{n} 件のレビュー",
+    "saved": "{n} 件の保存",
+    "featured": "注目",
+    "launchTitle": "あなたの {name} ツールを今すぐ公開しよう！",
+    "launchText": "TopAICollection に掲載して、同じような AI ツールを探している人に届けましょう。",
+    "launchButton": "ツールを登録",
+    "loginMore": "ログインしてこのカテゴリのツールをさらに表示",
+    "empty": "このカテゴリにはまだツールがありません。",
+    "sort": {
+      "default": "標準",
+      "newest": "新着",
+      "saved": "保存数順",
+      "rating": "評価順",
+      "name": "名前 A–Z"
+    }
   }
 }

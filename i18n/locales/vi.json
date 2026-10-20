@@ -2148,5 +2148,45 @@
     "done": "Bạn đã hủy đăng ký. Bạn sẽ không nhận thêm email nào nữa.",
     "invalid": "Link hủy đăng ký này không hợp lệ.",
     "home": "Về trang chủ"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Danh mục",
+    "title": "Danh mục công cụ AI",
+    "subtitle": "{tools} công cụ trong {groups} nhóm và {categories} danh mục",
+    "filterPlaceholder": "Lọc danh mục, VD: video, giọng nói…",
+    "empty": "Không có danh mục phù hợp.",
+    "groups": "Nhóm danh mục",
+    "categoriesCount": "{n} danh mục",
+    "toolsCount": "{n} công cụ"
+  },
+  "categoryPage": {
+    "heading": "{count} công cụ {name} tốt nhất năm {year}",
+    "introEnd": "là những công cụ {name} trả phí / miễn phí tốt nhất.",
+    "sortLabel": "Sắp xếp",
+    "typeLabel": "Loại",
+    "typeAll": "Tất cả loại",
+    "shareX": "Chia sẻ lên X",
+    "shareFacebook": "Chia sẻ lên Facebook",
+    "visit": "Truy cập {name}",
+    "tryIt": "Dùng thử {name}",
+    "pricing": "Bảng giá {name}",
+    "whatIs": "{name} là gì",
+    "coreFeatures": "Tính năng chính của {name}",
+    "useCases": "Trường hợp sử dụng {name}",
+    "reviews": "{n} đánh giá",
+    "saved": "{n} lượt lưu",
+    "featured": "Nổi bật",
+    "launchTitle": "Ra mắt công cụ {name} của bạn ngay hôm nay!",
+    "launchText": "Đăng công cụ lên TopAICollection để tiếp cận người đang tìm công cụ AI như của bạn.",
+    "launchButton": "Đăng công cụ",
+    "loginMore": "Đăng nhập để xem thêm công cụ trong danh mục này",
+    "empty": "Danh mục này chưa có công cụ nào.",
+    "sort": {
+      "default": "Mặc định",
+      "newest": "Mới nhất",
+      "saved": "Lưu nhiều nhất",
+      "rating": "Đánh giá cao nhất",
+      "name": "Tên A–Z"
+    }
   }
 }

@@ -2148,5 +2148,45 @@
     "done": "Du bist abgemeldet und erhältst keine Newsletter-E-Mails mehr.",
     "invalid": "Dieser Abmeldelink ist ungültig.",
     "home": "Zur Startseite"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Kategorien",
+    "title": "KI-Tool-Kategorien",
+    "subtitle": "{tools} Tools in {groups} Gruppen und {categories} Kategorien",
+    "filterPlaceholder": "Kategorien filtern, z. B. Video, Stimme…",
+    "empty": "Keine passende Kategorie.",
+    "groups": "Kategoriegruppen",
+    "categoriesCount": "{n} Kategorie | {n} Kategorien",
+    "toolsCount": "{n} Tool | {n} Tools"
+  },
+  "categoryPage": {
+    "heading": "Die {count} besten {name}-Tools {year}",
+    "introEnd": "sind die besten kostenpflichtigen / kostenlosen {name}-Tools.",
+    "sortLabel": "Sortieren",
+    "typeLabel": "Typ",
+    "typeAll": "Alle Typen",
+    "shareX": "Auf X teilen",
+    "shareFacebook": "Auf Facebook teilen",
+    "visit": "{name} besuchen",
+    "tryIt": "{name} testen",
+    "pricing": "{name} Preise",
+    "whatIs": "Was ist {name}",
+    "coreFeatures": "{name} Kernfunktionen",
+    "useCases": "{name} Anwendungsfälle",
+    "reviews": "{n} Bewertung | {n} Bewertungen",
+    "saved": "{n} gespeichert",
+    "featured": "Empfohlen",
+    "launchTitle": "Starte noch heute dein eigenes {name}-Tool!",
+    "launchText": "Trage es auf TopAICollection ein und erreiche Menschen, die KI-Tools wie deins suchen.",
+    "launchButton": "Tool einreichen",
+    "loginMore": "Melde dich an, um mehr Tools dieser Kategorie zu sehen",
+    "empty": "In dieser Kategorie gibt es noch keine Tools.",
+    "sort": {
+      "default": "Standard",
+      "newest": "Neueste",
+      "saved": "Am häufigsten gespeichert",
+      "rating": "Am besten bewertet",
+      "name": "Name A–Z"
+    }
   }
 }

@@ -1754,5 +1754,45 @@
     "done": "ההרשמה בוטלה. לא תקבלו יותר מיילים של הניוזלטר.",
     "invalid": "קישור ביטול ההרשמה אינו תקין.",
     "home": "חזרה לדף הבית"
+  },
+  "categoriesPage": {
+    "breadcrumb": "קטגוריות",
+    "title": "קטגוריות של כלי AI",
+    "subtitle": "{tools} כלים ב-{groups} קבוצות ו-{categories} קטגוריות",
+    "filterPlaceholder": "סינון קטגוריות, למשל: וידאו, קול…",
+    "empty": "אין קטגוריה תואמת.",
+    "groups": "קבוצות קטגוריות",
+    "categoriesCount": "{n} קטגוריה | {n} קטגוריות",
+    "toolsCount": "{n} כלי | {n} כלים"
+  },
+  "categoryPage": {
+    "heading": "{count} כלי ה-{name} הטובים ביותר ב-{year}",
+    "introEnd": "הם כלי ה-{name} הטובים ביותר בתשלום / בחינם.",
+    "sortLabel": "מיון",
+    "typeLabel": "סוג",
+    "typeAll": "כל הסוגים",
+    "shareX": "שיתוף ב-X",
+    "shareFacebook": "שיתוף בפייסבוק",
+    "visit": "כניסה ל-{name}",
+    "tryIt": "נסו את {name}",
+    "pricing": "תמחור {name}",
+    "whatIs": "מה זה {name}",
+    "coreFeatures": "תכונות עיקריות של {name}",
+    "useCases": "שימושים של {name}",
+    "reviews": "{n} ביקורת | {n} ביקורות",
+    "saved": "{n} שמירות",
+    "featured": "מומלצים",
+    "launchTitle": "השיקו היום כלי {name} משלכם!",
+    "launchText": "פרסמו אותו ב-TopAICollection והגיעו לאנשים שמחפשים כלי AI כמו שלכם.",
+    "launchButton": "שליחת כלי",
+    "loginMore": "התחברו כדי לראות עוד כלים בקטגוריה זו",
+    "empty": "אין עדיין כלים בקטגוריה זו.",
+    "sort": {
+      "default": "ברירת מחדל",
+      "newest": "החדשים ביותר",
+      "saved": "הכי נשמרו",
+      "rating": "הדירוג הגבוה ביותר",
+      "name": "שם א–ת"
+    }
   }
 }

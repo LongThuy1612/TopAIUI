@@ -1754,5 +1754,45 @@
     "done": "ยกเลิกการรับแล้ว คุณจะไม่ได้รับจดหมายข่าวอีก",
     "invalid": "ลิงก์ยกเลิกการรับนี้ไม่ถูกต้อง",
     "home": "กลับหน้าแรก"
+  },
+  "categoriesPage": {
+    "breadcrumb": "หมวดหมู่",
+    "title": "หมวดหมู่เครื่องมือ AI",
+    "subtitle": "เครื่องมือ {tools} รายการใน {groups} กลุ่มและ {categories} หมวดหมู่",
+    "filterPlaceholder": "กรองหมวดหมู่ เช่น วิดีโอ เสียง…",
+    "empty": "ไม่พบหมวดหมู่ที่ตรงกัน",
+    "groups": "กลุ่มหมวดหมู่",
+    "categoriesCount": "{n} หมวดหมู่",
+    "toolsCount": "เครื่องมือ {n} รายการ"
+  },
+  "categoryPage": {
+    "heading": "เครื่องมือ {name} ที่ดีที่สุด {count} รายการในปี {year}",
+    "introEnd": "คือเครื่องมือ {name} แบบเสียเงิน / ฟรีที่ดีที่สุด",
+    "sortLabel": "เรียงลำดับ",
+    "typeLabel": "ประเภท",
+    "typeAll": "ทุกประเภท",
+    "shareX": "แชร์ไปที่ X",
+    "shareFacebook": "แชร์ไปที่ Facebook",
+    "visit": "ไปที่ {name}",
+    "tryIt": "ลองใช้ {name}",
+    "pricing": "ราคา {name}",
+    "whatIs": "{name} คืออะไร",
+    "coreFeatures": "ฟีเจอร์หลักของ {name}",
+    "useCases": "กรณีการใช้งาน {name}",
+    "reviews": "{n} รีวิว",
+    "saved": "บันทึก {n} ครั้ง",
+    "featured": "แนะนำ",
+    "launchTitle": "เปิดตัวเครื่องมือ {name} ของคุณวันนี้!",
+    "launchText": "ลงรายการบน TopAICollection เพื่อเข้าถึงผู้ที่กำลังหาเครื่องมือ AI แบบของคุณ",
+    "launchButton": "ส่งเครื่องมือของคุณ",
+    "loginMore": "เข้าสู่ระบบเพื่อดูเครื่องมือเพิ่มเติมในหมวดนี้",
+    "empty": "หมวดนี้ยังไม่มีเครื่องมือ",
+    "sort": {
+      "default": "ค่าเริ่มต้น",
+      "newest": "ใหม่ล่าสุด",
+      "saved": "บันทึกมากที่สุด",
+      "rating": "คะแนนสูงสุด",
+      "name": "ชื่อ A–Z"
+    }
   }
 }

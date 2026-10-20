@@ -2148,5 +2148,45 @@
     "done": "Anda sudah berhenti berlangganan dan tidak akan menerima email buletin lagi.",
     "invalid": "Tautan berhenti berlangganan ini tidak valid.",
     "home": "Kembali ke beranda"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Kategori",
+    "title": "Kategori alat AI",
+    "subtitle": "{tools} alat dalam {groups} grup dan {categories} kategori",
+    "filterPlaceholder": "Saring kategori, mis.: video, suara…",
+    "empty": "Tidak ada kategori yang cocok.",
+    "groups": "Grup kategori",
+    "categoriesCount": "{n} kategori",
+    "toolsCount": "{n} alat"
+  },
+  "categoryPage": {
+    "heading": "{count} alat {name} terbaik tahun {year}",
+    "introEnd": "adalah alat {name} berbayar / gratis terbaik.",
+    "sortLabel": "Urutkan",
+    "typeLabel": "Jenis",
+    "typeAll": "Semua jenis",
+    "shareX": "Bagikan ke X",
+    "shareFacebook": "Bagikan ke Facebook",
+    "visit": "Kunjungi {name}",
+    "tryIt": "Coba {name}",
+    "pricing": "Harga {name}",
+    "whatIs": "Apa itu {name}",
+    "coreFeatures": "Fitur utama {name}",
+    "useCases": "Kasus penggunaan {name}",
+    "reviews": "{n} ulasan",
+    "saved": "{n} disimpan",
+    "featured": "Unggulan",
+    "launchTitle": "Luncurkan alat {name} Anda hari ini!",
+    "launchText": "Daftarkan di TopAICollection dan jangkau orang yang mencari alat AI seperti milik Anda.",
+    "launchButton": "Kirim alat Anda",
+    "loginMore": "Masuk untuk melihat lebih banyak alat di kategori ini",
+    "empty": "Belum ada alat di kategori ini.",
+    "sort": {
+      "default": "Urutan bawaan",
+      "newest": "Terbaru",
+      "saved": "Paling banyak disimpan",
+      "rating": "Rating tertinggi",
+      "name": "Nama A–Z"
+    }
   }
 }

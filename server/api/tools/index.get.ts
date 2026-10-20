@@ -128,7 +128,8 @@ async function listTools(event: H3Event, isGuest: boolean) {
     ? [{ addedOn: { sort: 'desc' as const, nulls: 'last' as const } }]
     : letter
       ? [{ name: 'asc' as const }]
-      : [sortMap[String(query.sort)] ?? { createdAt: 'desc' as const }].flat()
+      // Own keys only: "?sort=toString" must not pick up Object.prototype's function (→ 500).
+      : [(Object.hasOwn(sortMap, String(query.sort)) ? sortMap[String(query.sort)] : undefined) ?? { createdAt: 'desc' as const }].flat()
   const orderBy: Prisma.ToolOrderByWithRelationInput[] = [...primary, { id: 'asc' }]
 
   const select = { ...TOOL_CARD_SELECT, discordUrl: hasDiscord }

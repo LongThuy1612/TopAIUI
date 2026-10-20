@@ -1754,5 +1754,45 @@
     "done": "Du er afmeldt og får ikke flere nyhedsbreve.",
     "invalid": "Dette afmeldingslink er ikke gyldigt.",
     "home": "Tilbage til forsiden"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Kategorier",
+    "title": "Kategorier af AI-værktøjer",
+    "subtitle": "{tools} værktøjer i {groups} grupper og {categories} kategorier",
+    "filterPlaceholder": "Filtrer kategorier, fx video, stemme…",
+    "empty": "Ingen kategori matcher.",
+    "groups": "Kategorigrupper",
+    "categoriesCount": "{n} kategori | {n} kategorier",
+    "toolsCount": "{n} værktøj | {n} værktøjer"
+  },
+  "categoryPage": {
+    "heading": "De {count} bedste {name}-værktøjer i {year}",
+    "introEnd": "er de bedste betalte / gratis {name}-værktøjer.",
+    "sortLabel": "Sortér",
+    "typeLabel": "Type",
+    "typeAll": "Alle typer",
+    "shareX": "Del på X",
+    "shareFacebook": "Del på Facebook",
+    "visit": "Besøg {name}",
+    "tryIt": "Prøv {name}",
+    "pricing": "Priser for {name}",
+    "whatIs": "Hvad er {name}",
+    "coreFeatures": "Kernefunktioner i {name}",
+    "useCases": "Anvendelser af {name}",
+    "reviews": "{n} anmeldelse | {n} anmeldelser",
+    "saved": "{n} gemt",
+    "featured": "Fremhævet",
+    "launchTitle": "Lancér dit eget {name}-værktøj i dag!",
+    "launchText": "Tilføj det på TopAICollection og nå folk, der leder efter AI-værktøjer som dit.",
+    "launchButton": "Indsend dit værktøj",
+    "loginMore": "Log ind for at se flere værktøjer i denne kategori",
+    "empty": "Der er endnu ingen værktøjer i denne kategori.",
+    "sort": {
+      "default": "Standard",
+      "newest": "Nyeste",
+      "saved": "Mest gemt",
+      "rating": "Bedst bedømt",
+      "name": "Navn A–Z"
+    }
   }
 }

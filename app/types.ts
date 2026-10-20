@@ -314,7 +314,7 @@ export interface AdminFeedbackResponse {
 // Pay-per-click ads (server/utils/ads.ts).
 export type AdTier = 'STANDARD' | 'FEATURED'
 export type AdCampaignStatus = 'PENDING_REVIEW' | 'ACTIVE' | 'PAUSED' | 'EXHAUSTED' | 'REJECTED'
-export type AdPlacement = 'home' | 'today' | 'new' | 'most-featured' | 'category' | 'tool' | 'ranking' | 'bar'
+export type AdPlacement = 'home' | 'today' | 'new' | 'most-featured' | 'category' | 'categories' | 'tool' | 'ranking' | 'bar'
 
 export interface AdSlot {
   campaignId: string

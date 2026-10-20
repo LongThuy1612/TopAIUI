@@ -2148,5 +2148,45 @@
     "done": "Inscrição cancelada. Você não vai receber mais e-mails da newsletter.",
     "invalid": "Este link de cancelamento não é válido.",
     "home": "Voltar ao início"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Categorias",
+    "title": "Categorias de ferramentas de IA",
+    "subtitle": "{tools} ferramentas em {groups} grupos e {categories} categorias",
+    "filterPlaceholder": "Filtrar categorias, ex.: vídeo, voz…",
+    "empty": "Nenhuma categoria corresponde.",
+    "groups": "Grupos de categorias",
+    "categoriesCount": "{n} categoria | {n} categorias",
+    "toolsCount": "{n} ferramenta | {n} ferramentas"
+  },
+  "categoryPage": {
+    "heading": "As {count} melhores ferramentas de {name} em {year}",
+    "introEnd": "são as melhores ferramentas de {name} pagas / gratuitas.",
+    "sortLabel": "Ordenar",
+    "typeLabel": "Tipo",
+    "typeAll": "Todos os tipos",
+    "shareX": "Compartilhar no X",
+    "shareFacebook": "Compartilhar no Facebook",
+    "visit": "Visitar {name}",
+    "tryIt": "Experimentar {name}",
+    "pricing": "Preços do {name}",
+    "whatIs": "O que é {name}",
+    "coreFeatures": "Principais recursos do {name}",
+    "useCases": "Casos de uso do {name}",
+    "reviews": "{n} avaliação | {n} avaliações",
+    "saved": "{n} salvos",
+    "featured": "Destaques",
+    "launchTitle": "Lance hoje sua própria ferramenta de {name}!",
+    "launchText": "Publique no TopAICollection e alcance quem procura ferramentas de IA como a sua.",
+    "launchButton": "Enviar sua ferramenta",
+    "loginMore": "Entre para ver mais ferramentas desta categoria",
+    "empty": "Ainda não há ferramentas nesta categoria.",
+    "sort": {
+      "default": "Ordem padrão",
+      "newest": "Mais recentes",
+      "saved": "Mais salvas",
+      "rating": "Mais bem avaliadas",
+      "name": "Nome A–Z"
+    }
   }
 }

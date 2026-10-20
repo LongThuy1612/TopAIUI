@@ -1754,5 +1754,45 @@
     "done": "تم إلغاء اشتراكك. لن تصلك رسائل النشرة بعد الآن.",
     "invalid": "رابط إلغاء الاشتراك هذا غير صالح.",
     "home": "العودة إلى الرئيسية"
+  },
+  "categoriesPage": {
+    "breadcrumb": "الفئات",
+    "title": "فئات أدوات الذكاء الاصطناعي",
+    "subtitle": "{tools} أداة في {groups} مجموعة و{categories} فئة",
+    "filterPlaceholder": "تصفية الفئات، مثل: فيديو، صوت…",
+    "empty": "لا توجد فئة مطابقة.",
+    "groups": "مجموعات الفئات",
+    "categoriesCount": "{n} فئة",
+    "toolsCount": "{n} أداة"
+  },
+  "categoryPage": {
+    "heading": "أفضل {count} أداة {name} في {year}",
+    "introEnd": "هي أفضل أدوات {name} المدفوعة / المجانية.",
+    "sortLabel": "الترتيب",
+    "typeLabel": "النوع",
+    "typeAll": "كل الأنواع",
+    "shareX": "مشاركة على X",
+    "shareFacebook": "مشاركة على Facebook",
+    "visit": "زيارة {name}",
+    "tryIt": "جرّب {name}",
+    "pricing": "أسعار {name}",
+    "whatIs": "ما هو {name}",
+    "coreFeatures": "الميزات الأساسية لـ {name}",
+    "useCases": "حالات استخدام {name}",
+    "reviews": "{n} مراجعة",
+    "saved": "{n} حفظ",
+    "featured": "مميز",
+    "launchTitle": "أطلق أداة {name} الخاصة بك اليوم!",
+    "launchText": "أدرجها على TopAICollection وصِل إلى من يبحثون عن أدوات ذكاء اصطناعي مثلها.",
+    "launchButton": "أرسل أداتك",
+    "loginMore": "سجّل الدخول لعرض المزيد من أدوات هذه الفئة",
+    "empty": "لا توجد أدوات في هذه الفئة بعد.",
+    "sort": {
+      "default": "الترتيب الافتراضي",
+      "newest": "الأحدث",
+      "saved": "الأكثر حفظًا",
+      "rating": "الأعلى تقييمًا",
+      "name": "الاسم أ–ي"
+    }
   }
 }

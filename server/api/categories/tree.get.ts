@@ -4,7 +4,7 @@ import { Prisma } from '@prisma/client'
 // categories under them, and the top-level categories without a group (shown as an
 // "Other" group, `ungroupedCount` its distinct tools), from server/utils/categoryTree.ts.
 // Only categories with published tools; a group's count is its distinct tools (one tool
-// in two of its categories counts once).
+// in two of its categories counts once). `totalTools`: every published tool.
 // Cached per language; counts can lag a few minutes.
 interface Node { slug: string; name: string; icon: string; count: number }
 
@@ -23,7 +23,7 @@ export default defineCachedEventHandler(async (event) => {
     ...groupSlugs.flatMap(g => tree.coverage.get(g)!.map(slug => [slug, g] as const)),
     ...tree.ungrouped.map(slug => [slug, OTHER] as const)
   ]
-  const [direct, grouped] = await Promise.all([
+  const [direct, grouped, totalTools] = await Promise.all([
     prisma.$queryRaw<{ slug: string; count: number }[]>`
       SELECT c.slug, count(*)::int AS count
       FROM "_ToolToCategory" tc
@@ -38,7 +38,8 @@ export default defineCachedEventHandler(async (event) => {
           JOIN "_ToolToCategory" tc ON tc."A" = c.id
           JOIN "Tool" t ON t.id = tc."B" AND ${published}
           GROUP BY m.grp`
-      : Promise.resolve([])
+      : Promise.resolve([]),
+    prisma.tool.count({ where: { status: 'PUBLISHED', deletedAt: null } })
   ])
   const directCount = new Map(direct.map(r => [r.slug, r.count]))
   const groupCount = new Map(grouped.map(r => [r.slug, r.count]))
@@ -72,5 +73,5 @@ export default defineCachedEventHandler(async (event) => {
     .filter((n): n is Node => !!n)
     .sort(byCount)
 
-  return { groups, ungrouped, ungroupedCount: groupCount.get(OTHER) ?? 0 }
+  return { groups, ungrouped, ungroupedCount: groupCount.get(OTHER) ?? 0, totalTools }
 }, { name: 'api-categories-tree', maxAge: 300, swr: true, getKey: event => normalizeLocale(getQuery(event).locale), shouldBypassCache: () => import.meta.dev })

@@ -21,7 +21,8 @@ import { advertise, type AdTier } from '#shared/promote'
 
 type Db = Prisma.TransactionClient | typeof prisma
 
-export const AD_PLACEMENTS = ['home', 'today', 'new', 'most-featured', 'category', 'tool', 'ranking', 'bar'] as const
+// categories: the /categories directory, one slot under each group.
+export const AD_PLACEMENTS = ['home', 'today', 'new', 'most-featured', 'category', 'categories', 'tool', 'ranking', 'bar'] as const
 export type AdPlacement = (typeof AD_PLACEMENTS)[number]
 
 const conflict = (message: string) => createError({ statusCode: 409, statusMessage: message, message })
@@ -338,7 +339,10 @@ function drawOne<T>(items: T[], weight: (item: T) => number) {
 const MAX_SLOTS: Partial<Record<AdPlacement, number>> = {
   bar: 1,
   home: advertise.slotPositions.length,
-  tool: 2
+  tool: 2,
+  // A category's page: one banner in the /category/all grid, or the side column's list.
+  category: 8,
+  categories: 40
 }
 
 // Up to `limit` (at most MAX_SLOTS) sponsored tools for one page (the sponsor bar: one

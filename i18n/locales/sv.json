@@ -1754,5 +1754,45 @@
     "done": "Prenumerationen är avslutad. Du får inga fler nyhetsbrev.",
     "invalid": "Den här avregistreringslänken är ogiltig.",
     "home": "Till startsidan"
+  },
+  "categoriesPage": {
+    "breadcrumb": "Kategorier",
+    "title": "Kategorier av AI-verktyg",
+    "subtitle": "{tools} verktyg i {groups} grupper och {categories} kategorier",
+    "filterPlaceholder": "Filtrera kategorier, t.ex. video, röst…",
+    "empty": "Ingen kategori matchar.",
+    "groups": "Kategorigrupper",
+    "categoriesCount": "{n} kategori | {n} kategorier",
+    "toolsCount": "{n} verktyg | {n} verktyg"
+  },
+  "categoryPage": {
+    "heading": "De {count} bästa {name}-verktygen {year}",
+    "introEnd": "är de bästa betalda / gratis {name}-verktygen.",
+    "sortLabel": "Sortera",
+    "typeLabel": "Typ",
+    "typeAll": "Alla typer",
+    "shareX": "Dela på X",
+    "shareFacebook": "Dela på Facebook",
+    "visit": "Besök {name}",
+    "tryIt": "Prova {name}",
+    "pricing": "Priser för {name}",
+    "whatIs": "Vad är {name}",
+    "coreFeatures": "Kärnfunktioner i {name}",
+    "useCases": "Användningsområden för {name}",
+    "reviews": "{n} recension | {n} recensioner",
+    "saved": "{n} sparade",
+    "featured": "Utvalda",
+    "launchTitle": "Lansera ditt eget {name}-verktyg i dag!",
+    "launchText": "Lägg upp det på TopAICollection och nå dem som letar efter AI-verktyg som ditt.",
+    "launchButton": "Skicka in ditt verktyg",
+    "loginMore": "Logga in för att se fler verktyg i den här kategorin",
+    "empty": "Inga verktyg i den här kategorin än.",
+    "sort": {
+      "default": "Standard",
+      "newest": "Nyaste",
+      "saved": "Mest sparade",
+      "rating": "Högst betyg",
+      "name": "Namn A–Ö"
+    }
   }
 }

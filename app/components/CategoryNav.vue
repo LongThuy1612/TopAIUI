@@ -13,8 +13,7 @@ const nf = computed(() => new Intl.NumberFormat(locale.value))
 
 const OTHER = ' other' // no slug has a space
 const query = ref('')
-// Accents don't count: "thiet ke" finds "Thiết kế", "categoria" finds "Categoría".
-const fold = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase()
+const fold = foldText
 const q = computed(() => fold(query.value.trim()))
 const matches = (n: CategoryNode) => fold(n.name).includes(q.value) || n.slug.includes(q.value)
 

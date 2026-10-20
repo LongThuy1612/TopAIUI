@@ -208,6 +208,7 @@ export default defineNuxtConfig({
       // (see pageCache below).
       '/': pageCache(60),
       '/category/**': pageCache(300),
+      '/categories': pageCache(300),
       '/tag/**': pageCache(600),
       '/tools/**': pageCache(3600),
       '/new': pageCache(60),

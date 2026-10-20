@@ -2148,5 +2148,45 @@
     "done": "구독이 취소되었습니다. 더 이상 뉴스레터를 받지 않습니다.",
     "invalid": "유효하지 않은 구독 취소 링크입니다.",
     "home": "홈으로"
+  },
+  "categoriesPage": {
+    "breadcrumb": "카테고리",
+    "title": "AI 도구 카테고리",
+    "subtitle": "{groups}개 그룹, {categories}개 카테고리에 도구 {tools}개",
+    "filterPlaceholder": "카테고리 필터 (예: 동영상, 음성)…",
+    "empty": "일치하는 카테고리가 없습니다.",
+    "groups": "카테고리 그룹",
+    "categoriesCount": "카테고리 {n}개",
+    "toolsCount": "도구 {n}개"
+  },
+  "categoryPage": {
+    "heading": "{year}년 최고의 {name} 도구 {count}개",
+    "introEnd": "은(는) 최고의 유료 / 무료 {name} 도구입니다.",
+    "sortLabel": "정렬",
+    "typeLabel": "유형",
+    "typeAll": "모든 유형",
+    "shareX": "X에 공유",
+    "shareFacebook": "Facebook에 공유",
+    "visit": "{name} 방문",
+    "tryIt": "{name} 사용해 보기",
+    "pricing": "{name} 가격",
+    "whatIs": "{name}란?",
+    "coreFeatures": "{name} 핵심 기능",
+    "useCases": "{name} 활용 사례",
+    "reviews": "리뷰 {n}개",
+    "saved": "저장 {n}회",
+    "featured": "추천",
+    "launchTitle": "지금 바로 나만의 {name} 도구를 출시하세요!",
+    "launchText": "TopAICollection에 등록하고 비슷한 AI 도구를 찾는 사람들에게 알리세요.",
+    "launchButton": "도구 등록",
+    "loginMore": "로그인하고 이 카테고리의 도구를 더 보기",
+    "empty": "이 카테고리에는 아직 도구가 없습니다.",
+    "sort": {
+      "default": "기본 정렬",
+      "newest": "최신순",
+      "saved": "저장 많은 순",
+      "rating": "평점 높은 순",
+      "name": "이름순 A–Z"
+    }
   }
 }
