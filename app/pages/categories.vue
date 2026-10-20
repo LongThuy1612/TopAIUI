@@ -16,7 +16,15 @@ const { data: tree } = await useFetch<{ groups: CategoryGroup[]; ungrouped: Cate
 interface Section { key: string; slug: string | null; name: string; count: number; children: CategoryNode[] }
 const OTHER = '_other' // slugs have no underscore: never a group's key or anchor
 const sections = computed<Section[]>(() => {
-  const list: Section[] = (tree.value?.groups ?? []).map(g => ({ key: g.slug, slug: g.slug, name: g.name, count: g.count, children: g.children }))
+  // A group whose tools all sit on the group itself (none of its categories has any) shows
+  // itself as its one card, so its tools can still be reached from here.
+  const list: Section[] = (tree.value?.groups ?? []).map(g => ({
+    key: g.slug,
+    slug: g.slug,
+    name: g.name,
+    count: g.count,
+    children: g.children.length ? g.children : [{ slug: g.slug, name: g.name, icon: g.icon, count: g.count }]
+  }))
   if (tree.value?.ungrouped.length) {
     list.push({ key: OTHER, slug: null, name: t('category.other'), count: tree.value.ungroupedCount, children: tree.value.ungrouped })
   }
@@ -52,6 +60,24 @@ function observeSections() {
   }, { rootMargin: '-96px 0px -65% 0px' })
   document.querySelectorAll<HTMLElement>('[data-category-section]').forEach(el => spy!.observe(el))
 }
+// With many groups the side list (and the phones' row) scrolls on its own: keep the active
+// one in sight. Only that box moves — scrollIntoView would also move the window and cut
+// a smooth jump short.
+const sideNav = ref<HTMLElement | null>(null)
+const chipRow = ref<HTMLElement | null>(null)
+function reveal(box: HTMLElement | null, key: string, axis: 'y' | 'x') {
+  const el = box?.querySelector<HTMLElement>(`[data-side-key="${key}"]`)
+  if (!box || !el) return
+  const [start, size, view, pos] = axis === 'y'
+    ? [el.offsetTop, el.offsetHeight, box.clientHeight, box.scrollTop]
+    : [el.offsetLeft, el.offsetWidth, box.clientWidth, box.scrollLeft]
+  const to = start < pos ? start - 8 : start + size > pos + view ? start + size - view + 8 : null
+  if (to !== null) box.scrollTo(axis === 'y' ? { top: to } : { left: to })
+}
+watch(active, key => nextTick(() => {
+  reveal(sideNav.value, key, 'y')
+  reveal(chipRow.value, key, 'x')
+}))
 function jump(key: string) {
   active.value = key
   jumping = Date.now() + 800 // the smooth scroll passes other sections
@@ -104,11 +130,12 @@ useBreadcrumbLd(() => [[t('categoriesPage.breadcrumb'), '/categories']])
     </div>
 
     <!-- Phones: the groups as a sliding row. -->
-    <div class="sticky top-[64px] z-10 -mx-4 mt-5 overflow-x-auto border-b border-ink-100 bg-white px-4 py-2.5 [scrollbar-width:none] lg:hidden [&::-webkit-scrollbar]:hidden">
+    <div ref="chipRow" class="sticky top-[64px] z-10 -mx-4 mt-5 overflow-x-auto border-b border-ink-100 bg-white px-4 py-2.5 [scrollbar-width:none] lg:hidden [&::-webkit-scrollbar]:hidden">
       <div class="flex w-max gap-2">
         <button
           v-for="s in shown"
           :key="s.key"
+          :data-side-key="s.key"
           type="button"
           :class="['whitespace-nowrap rounded-full border px-3.5 py-1.5 text-sm transition-colors', active === s.key ? 'border-brand-500 bg-brand-50 font-semibold text-brand-700' : 'border-ink-200 text-ink-700']"
           @click="jump(s.key)"
@@ -118,13 +145,14 @@ useBreadcrumbLd(() => [[t('categoriesPage.breadcrumb'), '/categories']])
       </div>
     </div>
 
-    <div class="mt-6 grid grid-cols-1 gap-8 lg:mt-8 lg:grid-cols-[220px_minmax(0,1fr)]">
+    <div class="mt-6 grid grid-cols-1 gap-8 lg:mt-8 lg:grid-cols-[260px_minmax(0,1fr)]">
       <aside class="hidden border-r border-ink-100 pr-4 lg:block">
-        <nav class="sticky top-[88px] max-h-[calc(100vh-112px)] space-y-0.5 overflow-y-auto overscroll-contain" :aria-label="t('categoriesPage.groups')">
+        <nav ref="sideNav" class="sticky top-[88px] max-h-[calc(100vh-112px)] space-y-0.5 overflow-y-auto overscroll-contain" :aria-label="t('categoriesPage.groups')">
           <a
             v-for="s in shown"
             :key="s.key"
             :href="`#${anchor(s.key)}`"
+            :data-side-key="s.key"
             :class="['block rounded-lg px-3 py-2 text-[15px] leading-snug transition-colors', active === s.key ? 'bg-brand-50 font-semibold text-brand-700' : 'text-ink-700 hover:bg-ink-100/60 hover:text-ink-900']"
             @click.prevent="jump(s.key)"
           >

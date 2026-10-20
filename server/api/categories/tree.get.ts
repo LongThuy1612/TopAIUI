@@ -58,6 +58,10 @@ export default defineCachedEventHandler(async (event) => {
     return i && count > 0 ? { slug, name: i.name, icon: i.icon, count } : null
   }
   const byCount = (a: Node, b: Node) => b.count - a.count || a.name.localeCompare(b.name)
+  // Catch-all groups ("other-tools", "other-1"…) go last, whatever their size — just
+  // before the ungrouped categories, which the pages list after every group.
+  const isCatchAll = (n: Node) => /^others?(-|$)/.test(n.slug)
+  const groupOrder = (a: Node, b: Node) => Number(isCatchAll(a)) - Number(isCatchAll(b)) || byCount(a, b)
 
   const groups = groupSlugs.flatMap((g) => {
     const head = node(g, groupCount.get(g) ?? 0)
@@ -67,7 +71,7 @@ export default defineCachedEventHandler(async (event) => {
       .filter((n): n is Node => !!n)
       .sort(byCount)
     return [{ ...head, children }]
-  }).sort(byCount)
+  }).sort(groupOrder)
   const ungrouped = tree.ungrouped
     .map(slug => node(slug, directCount.get(slug) ?? 0))
     .filter((n): n is Node => !!n)
