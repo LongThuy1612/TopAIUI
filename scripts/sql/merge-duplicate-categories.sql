@@ -6,7 +6,8 @@
 --   apply:
 --     docker compose exec -T postgres sh -c 'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -P pager=off -v apply=1' < scripts/sql/merge-duplicate-categories.sql
 --
--- Duplicates: categories with tools whose names are the same words once filler is
+-- Duplicates: categories in use (with tools, or with categories under them — a group)
+-- whose names are the same words once filler is
 -- dropped ("AI", "tools", "software", plural "s"…; any word order, except around "to":
 -- speech to text ≠ text to speech), plus the pairs in `extra`, minus the slugs in
 -- `keep_apart`. Kept: the Toolify category (Toolify's tree is the one the groups follow),
@@ -35,13 +36,15 @@ INSERT INTO extra VALUES
 CREATE TEMP TABLE keep_apart (slug text) ON COMMIT DROP;
 -- INSERT INTO keep_apart VALUES ('some-slug');
 
--- Categories in use and the words they're compared by.
+-- Categories in use — with tools, or a group with categories under it — and the words
+-- they're compared by.
 CREATE TEMP TABLE k ON COMMIT DROP AS
 SELECT c.id, c.slug, coalesce(nullif(trim(c.name), ''), replace(c.slug, '-', ' ')) AS name, c."parentId" AS parent_id,
        (SELECT count(*) FROM "_ToolToCategory" tc WHERE tc."A" = c.id)::int AS tools,
-       EXISTS (SELECT 1 FROM "ToolifyCategory" t WHERE t.handle = c.slug) AS toolify
+       EXISTS (SELECT 1 FROM "ToolifyCategory" t WHERE t.handle = c.slug) AS toolify,
+       (SELECT count(*) FROM "Category" ch WHERE ch."parentId" = c.id)::int AS children
 FROM "Category" c;
-DELETE FROM k WHERE tools = 0;
+DELETE FROM k WHERE tools = 0 AND children = 0;
 
 ALTER TABLE k ADD COLUMN key text;
 UPDATE k SET key = (
@@ -59,27 +62,40 @@ UPDATE k a SET key = c.key FROM extra e JOIN k c ON c.slug = e.keep WHERE a.slug
 
 -- The kept one per key, and every duplicate → its kept one.
 CREATE TEMP TABLE keep ON COMMIT DROP AS
-SELECT DISTINCT ON (key) key, id, slug, name, tools FROM k
+SELECT DISTINCT ON (key) key, id, slug, name, tools, children FROM k
 ORDER BY key, toolify DESC, tools DESC, length(slug), slug;
 CREATE TEMP TABLE merge_map ON COMMIT DROP AS
-SELECT a.id AS alias_id, a.slug AS alias, a.name AS alias_name, a.tools AS alias_tools,
-       p.id AS keep_id, p.slug AS keep, p.name AS keep_name, p.tools AS keep_tools
+SELECT a.id AS alias_id, a.slug AS alias, a.name AS alias_name, a.tools AS alias_tools, a.children AS alias_children,
+       p.id AS keep_id, p.slug AS keep, p.name AS keep_name, p.tools AS keep_tools, p.children AS keep_children
 FROM k a JOIN keep p ON p.key = a.key
 WHERE a.id <> p.id;
 
-\echo '=== Plan: duplicate → kept (tools) ==='
-SELECT keep_name || ' (' || keep || ', ' || keep_tools || ')' AS kept,
-       string_agg(alias_name || ' (' || alias || ', ' || alias_tools || ')', '  |  ' ORDER BY alias_tools DESC) AS merged_into_it
-FROM merge_map GROUP BY keep, keep_name, keep_tools ORDER BY count(*) DESC, keep;
+-- "(slug, tools)", plus "+N sub" for a group: its sub-categories move along with it.
+\echo '=== Plan: duplicate -> kept (slug, tools, +sub-categories) ==='
+SELECT keep_name || ' (' || keep || ', ' || keep_tools || CASE WHEN keep_children > 0 THEN ', +' || keep_children || ' sub' ELSE '' END || ')' AS kept,
+       string_agg(alias_name || ' (' || alias || ', ' || alias_tools || CASE WHEN alias_children > 0 THEN ', +' || alias_children || ' sub' ELSE '' END || ')', '  |  ' ORDER BY alias_tools DESC) AS merged_into_it
+FROM merge_map GROUP BY keep, keep_name, keep_tools, keep_children ORDER BY count(*) DESC, keep;
 
-\echo '=== Categories in use: now → after ==='
+\echo '=== Categories in use: now -> after ==='
 SELECT (SELECT count(*) FROM k) AS now, (SELECT count(*) FROM k) - (SELECT count(*) FROM merge_map) AS after,
        (SELECT count(*) FROM merge_map) AS duplicates;
 
--- 1. The kept one sitting under its duplicate takes the duplicate's place.
+-- 1. The kept one somewhere under one of its duplicates (A > X > kept) moves up to the
+--    place of the highest such duplicate — otherwise step 2 would hang X under the kept
+--    one while the kept one still hangs under X: a loop.
+WITH RECURSIVE up AS (
+  SELECT k.id AS keep_id, k."parentId" AS id, 1 AS depth FROM "Category" k WHERE k.id IN (SELECT keep_id FROM merge_map)
+  UNION ALL
+  SELECT up.keep_id, c."parentId", up.depth + 1 FROM up JOIN "Category" c ON c.id = up.id
+  WHERE up.id IS NOT NULL AND up.depth < 50
+), top_alias AS (
+  SELECT DISTINCT ON (up.keep_id) up.keep_id, up.id AS alias_id
+  FROM up JOIN merge_map m ON m.keep_id = up.keep_id AND m.alias_id = up.id
+  ORDER BY up.keep_id, up.depth DESC
+)
 UPDATE "Category" c SET "parentId" = a."parentId"
-FROM merge_map m JOIN "Category" a ON a.id = m.alias_id
-WHERE c.id = m.keep_id AND c."parentId" = m.alias_id;
+FROM top_alias t JOIN "Category" a ON a.id = t.alias_id
+WHERE c.id = t.keep_id;
 -- 2. Sub-categories of a duplicate hang under the kept one.
 UPDATE "Category" ch SET "parentId" = m.keep_id
 FROM merge_map m WHERE ch."parentId" = m.alias_id AND ch.id <> m.keep_id;
@@ -88,7 +104,11 @@ INSERT INTO "_ToolToCategory" ("A", "B")
 SELECT m.keep_id, tc."B" FROM merge_map m JOIN "_ToolToCategory" tc ON tc."A" = m.alias_id
 ON CONFLICT DO NOTHING;
 DELETE FROM "_ToolToCategory" tc USING merge_map m WHERE tc."A" = m.alias_id;
--- 4. Translations the kept one lacks.
+-- 4. Translations the kept one lacks — whole languages, and descriptions it has none of.
+UPDATE "CategoryTranslation" kt SET description = at.description
+FROM merge_map m JOIN "CategoryTranslation" at ON at."categoryId" = m.alias_id
+WHERE kt."categoryId" = m.keep_id AND kt.locale = at.locale
+  AND coalesce(kt.description, '') = '' AND coalesce(at.description, '') <> '';
 INSERT INTO "CategoryTranslation" (id, "categoryId", locale, name, description, "seoTitle", "seoDesc", "isManualOverride", updated_at)
 SELECT 'm' || md5(m.alias_id || a.locale), m.keep_id, a.locale, a.name, a.description, a."seoTitle", a."seoDesc", false, now()
 FROM merge_map m JOIN "CategoryTranslation" a ON a."categoryId" = m.alias_id
@@ -100,13 +120,36 @@ FROM (SELECT m.keep_id, sum(a."viewCount") AS views, bool_or(a."isFeatured") AS 
 WHERE c.id = s.keep_id;
 UPDATE "Category" a SET "viewCount" = 0, "isFeatured" = false FROM merge_map m WHERE a.id = m.alias_id;
 
+-- Safety net: no category may end up its own ancestor. A loop aborts the whole run
+-- (nothing is changed).
+DO $$
+DECLARE loops int;
+BEGIN
+  WITH RECURSIVE walk AS (
+    SELECT id AS start, "parentId" AS id, 1 AS depth FROM "Category" WHERE "parentId" IS NOT NULL
+    UNION ALL
+    SELECT w.start, c."parentId", w.depth + 1 FROM walk w JOIN "Category" c ON c.id = w.id
+    WHERE c."parentId" IS NOT NULL AND w.id <> w.start AND w.depth < 50
+  )
+  SELECT count(DISTINCT start) INTO loops FROM walk WHERE id = start;
+  IF loops > 0 THEN
+    RAISE EXCEPTION 'Merge would leave % categories in a parent loop: nothing changed.', loops;
+  END IF;
+END $$;
+
 \echo '=== After: tool links per kept category (top 20) ==='
 SELECT p.slug, (SELECT count(*) FROM "_ToolToCategory" tc WHERE tc."A" = p.keep_id) AS tools
 FROM (SELECT DISTINCT keep_id, keep AS slug FROM merge_map) p ORDER BY 2 DESC LIMIT 20;
 
+-- Only -v apply=1 (or true/on/yes) commits; no variable, or apply=0, is a preview.
 \if :{?apply}
-  COMMIT;
-  \echo '=== APPLIED ==='
+  \if :apply
+    COMMIT;
+    \echo '=== APPLIED ==='
+  \else
+    ROLLBACK;
+    \echo '=== PREVIEW ONLY: nothing changed. Add -v apply=1 to apply. ==='
+  \endif
 \else
   ROLLBACK;
   \echo '=== PREVIEW ONLY: nothing changed. Add -v apply=1 to apply. ==='
