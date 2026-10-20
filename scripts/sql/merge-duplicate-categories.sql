@@ -33,7 +33,15 @@ INSERT INTO extra VALUES
   ('testing-and-qa', 'ai-testing'),
   ('development-it', 'development-it-infrastructure'),
   ('development-it-tech-infrastructure', 'development-it-infrastructure'),
-  ('development-it-operations', 'development-it-infrastructure');
+  ('development-it-operations', 'development-it-infrastructure'),
+  ('no-code-platforms', 'no-code-low-code'),
+  ('design-inspiration', 'design-inspiration-websites'),
+  ('web-hosting', 'web-hosting-services'),
+  ('customer-support', 'ai-customer-service'),
+  ('customer-service-support', 'ai-customer-service'),
+  ('social-media-management', 'ai-social-media'),
+  ('data-business-intelligence', 'business-intelligence'),
+  ('data-management-analytics', 'ai-for-data-analytics');
 
 -- Same words, different things: never merged.
 CREATE TEMP TABLE keep_apart (slug text) ON COMMIT DROP;
