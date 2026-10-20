@@ -83,6 +83,18 @@ model Category {
   @@map("Category")
 }
 
+// Slug of a merged duplicate category → the category kept (written by
+// scripts/sql/merge-duplicate-categories.sql). Read by the crawler: tools it links to a
+// duplicate's slug go to the kept category instead. The site itself doesn't use it.
+model CategoryAlias {
+  aliasSlug String   @id @map("alias_slug")
+  keepSlug  String   @map("keep_slug")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([keepSlug])
+  @@map("CategoryAlias")
+}
+
 model CategoryTranslation {
   id               String   @id @default(cuid())
   categoryId       String

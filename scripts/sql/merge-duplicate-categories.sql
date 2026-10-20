@@ -30,24 +30,24 @@ INSERT INTO extra VALUES
   ('ai-presentation-software', 'ai-presentation-generator'),
   ('presentations', 'ai-presentation-generator'),
   ('digital-whiteboards', 'whiteboard-ai'),
-  ('testing-and-qa', 'ai-testing');
+  ('testing-and-qa', 'ai-testing'),
+  ('development-it', 'development-it-infrastructure');
 
 -- Same words, different things: never merged.
 CREATE TEMP TABLE keep_apart (slug text) ON COMMIT DROP;
 -- INSERT INTO keep_apart VALUES ('some-slug');
 
--- Categories in use — with tools, or a group with categories under it — and the words
--- they're compared by.
-CREATE TEMP TABLE k ON COMMIT DROP AS
+-- Every category and the words it's compared by; `k` below keeps those in use — with
+-- tools, or a group with categories under it.
+CREATE TEMP TABLE allc ON COMMIT DROP AS
 SELECT c.id, c.slug, coalesce(nullif(trim(c.name), ''), replace(c.slug, '-', ' ')) AS name, c."parentId" AS parent_id,
        (SELECT count(*) FROM "_ToolToCategory" tc WHERE tc."A" = c.id)::int AS tools,
        EXISTS (SELECT 1 FROM "ToolifyCategory" t WHERE t.handle = c.slug) AS toolify,
        (SELECT count(*) FROM "Category" ch WHERE ch."parentId" = c.id)::int AS children
 FROM "Category" c;
-DELETE FROM k WHERE tools = 0 AND children = 0;
 
-ALTER TABLE k ADD COLUMN key text;
-UPDATE k SET key = (
+ALTER TABLE allc ADD COLUMN key text;
+UPDATE allc k SET key = (
   WITH w AS (
     SELECT CASE WHEN length(x) > 3 THEN regexp_replace(x, 's$', '') ELSE x END AS x, n
     FROM regexp_split_to_table(lower(k.name), '[^a-z0-9]+') WITH ORDINALITY AS t(x, n)
@@ -57,13 +57,16 @@ UPDATE k SET key = (
               ELSE array_to_string(ARRAY(SELECT DISTINCT x FROM w ORDER BY 1), ' ') END
   FROM w
 );
-UPDATE k SET key = 'keep:' || slug WHERE slug IN (SELECT slug FROM keep_apart) OR coalesce(key, '') = '';
-UPDATE k a SET key = c.key FROM extra e JOIN k c ON c.slug = e.keep WHERE a.slug = e.alias;
+UPDATE allc SET key = 'keep:' || slug WHERE slug IN (SELECT slug FROM keep_apart) OR coalesce(key, '') = '';
+UPDATE allc a SET key = c.key FROM extra e JOIN allc c ON c.slug = e.keep WHERE a.slug = e.alias;
+
+CREATE TEMP TABLE k ON COMMIT DROP AS SELECT * FROM allc WHERE tools > 0 OR children > 0;
 
 -- The kept one per key, and every duplicate → its kept one.
 CREATE TEMP TABLE keep ON COMMIT DROP AS
 SELECT DISTINCT ON (key) key, id, slug, name, tools, children FROM k
-ORDER BY key, toolify DESC, tools DESC, length(slug), slug;
+-- A slug named as the one to keep in `extra` wins; then Toolify, then the most tools.
+ORDER BY key, (slug IN (SELECT keep FROM extra)) DESC, toolify DESC, tools DESC, length(slug), slug;
 CREATE TEMP TABLE merge_map ON COMMIT DROP AS
 SELECT a.id AS alias_id, a.slug AS alias, a.name AS alias_name, a.tools AS alias_tools, a.children AS alias_children,
        p.id AS keep_id, p.slug AS keep, p.name AS keep_name, p.tools AS keep_tools, p.children AS keep_children
@@ -119,6 +122,19 @@ FROM (SELECT m.keep_id, sum(a."viewCount") AS views, bool_or(a."isFeatured") AS 
       FROM merge_map m JOIN "Category" a ON a.id = m.alias_id GROUP BY m.keep_id) s
 WHERE c.id = s.keep_id;
 UPDATE "Category" a SET "viewCount" = 0, "isFeatured" = false FROM merge_map m WHERE a.id = m.alias_id;
+
+-- 6. Duplicate slug → kept slug, for the crawler (it links tools by the source's slug):
+--    this run's merges, and the empty duplicates of earlier runs (same words as a kept
+--    category). Rebuilt whole on every run from the lists above, so a slug added to
+--    `keep_apart` or a pair taken out of `extra` stops being followed. Always a kept
+--    category on the right: never a chain. (The crawler keeps reading the old table
+--    until this transaction commits.)
+DELETE FROM "CategoryAlias";
+INSERT INTO "CategoryAlias" (alias_slug, keep_slug)
+SELECT e.slug, p.slug FROM allc e JOIN keep p ON p.key = e.key
+WHERE e.id <> p.id AND e.key NOT LIKE 'keep:%';
+\echo '=== Aliases the crawler follows ==='
+SELECT count(*) AS aliases FROM "CategoryAlias";
 
 -- Safety net: no category may end up its own ancestor. A loop aborts the whole run
 -- (nothing is changed).
