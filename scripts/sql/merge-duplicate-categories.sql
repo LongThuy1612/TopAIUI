@@ -31,7 +31,9 @@ INSERT INTO extra VALUES
   ('presentations', 'ai-presentation-generator'),
   ('digital-whiteboards', 'whiteboard-ai'),
   ('testing-and-qa', 'ai-testing'),
-  ('development-it', 'development-it-infrastructure');
+  ('development-it', 'development-it-infrastructure'),
+  ('development-it-tech-infrastructure', 'development-it-infrastructure'),
+  ('development-it-operations', 'development-it-infrastructure');
 
 -- Same words, different things: never merged.
 CREATE TEMP TABLE keep_apart (slug text) ON COMMIT DROP;
@@ -58,7 +60,33 @@ UPDATE allc k SET key = (
   FROM w
 );
 UPDATE allc SET key = 'keep:' || slug WHERE slug IN (SELECT slug FROM keep_apart) OR coalesce(key, '') = '';
-UPDATE allc a SET key = c.key FROM extra e JOIN allc c ON c.slug = e.keep WHERE a.slug = e.alias;
+-- `extra` must be unambiguous: no chain (a → b and b → c: write a → c), and two duplicates
+-- with the same words can't go to two different kept categories. Otherwise: stop.
+DO $$
+DECLARE bad text;
+BEGIN
+  SELECT string_agg(a.alias || ' -> ' || a.keep || ' -> ' || b.keep, ', ') INTO bad
+  FROM extra a JOIN extra b ON b.alias = a.keep;
+  IF bad IS NOT NULL THEN
+    RAISE EXCEPTION 'extra has a chain (point it at the last one): %', bad;
+  END IF;
+  SELECT string_agg(x.slug || ' -> ' || e.keep, ', ') INTO bad
+  FROM extra e JOIN allc x ON x.slug = e.alias JOIN allc c ON c.slug = e.keep
+  WHERE x.key IN (
+    SELECT x2.key FROM extra e2 JOIN allc x2 ON x2.slug = e2.alias JOIN allc c2 ON c2.slug = e2.keep
+    GROUP BY x2.key HAVING count(DISTINCT c2.key) > 1
+  );
+  IF bad IS NOT NULL THEN
+    RAISE EXCEPTION 'extra sends duplicates with the same words to different categories: %', bad;
+  END IF;
+END $$;
+
+-- An `extra` duplicate joins the kept one's cluster, and so does everything with its own
+-- words (its own duplicates: "Development and IT Operations" goes along with "Development
+-- & IT Operations"). One statement: every row compares against the keys as they were.
+UPDATE allc a SET key = c.key
+FROM extra e JOIN allc x ON x.slug = e.alias JOIN allc c ON c.slug = e.keep
+WHERE a.key = x.key;
 
 CREATE TEMP TABLE k ON COMMIT DROP AS SELECT * FROM allc WHERE tools > 0 OR children > 0;
 
