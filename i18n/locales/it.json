@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "Home",
-    "allTools": "Tutti gli strumenti",
     "allToolsTitle": "Tutti gli strumenti IA",
     "allPricing": "Tutti i prezzi",
     "sortNewest": "Prima i più recenti",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "Cerca strumenti...",
     "filters": "Filtri",
     "viewGrid": "Vista griglia",
-    "viewList": "Vista elenco"
+    "viewList": "Vista elenco",
+    "browse": "Categorie",
+    "searchCategories": "Cerca categorie…",
+    "noCategoryMatch": "Nessuna categoria corrisponde.",
+    "expandGroup": "Mostra le categorie di {name}",
+    "close": "Chiudi",
+    "other": "Altre"
   },
   "pricing": {
     "FREE": "Gratis",

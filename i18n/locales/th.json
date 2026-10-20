@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "หน้าแรก",
-    "allTools": "เครื่องมือทั้งหมด",
     "allToolsTitle": "เครื่องมือ AI ทั้งหมด",
     "allPricing": "ราคาทั้งหมด",
     "sortNewest": "ใหม่สุดก่อน",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "ค้นหาเครื่องมือ...",
     "filters": "ตัวกรอง",
     "viewGrid": "มุมมองตาราง",
-    "viewList": "มุมมองรายการ"
+    "viewList": "มุมมองรายการ",
+    "browse": "หมวดหมู่",
+    "searchCategories": "ค้นหาหมวดหมู่…",
+    "noCategoryMatch": "ไม่พบหมวดหมู่ที่ตรงกัน",
+    "expandGroup": "ดูหมวดหมู่ใน {name}",
+    "close": "ปิด",
+    "other": "อื่นๆ"
   },
   "pricing": {
     "FREE": "ฟรี",

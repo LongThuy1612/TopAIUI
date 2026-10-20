@@ -454,7 +454,6 @@
   },
   "category": {
     "breadcrumbHome": "Trang chủ",
-    "allTools": "Tất cả công cụ",
     "allToolsTitle": "Tất cả công cụ AI",
     "allPricing": "Tất cả mức giá",
     "sortNewest": "Mới nhất",
@@ -464,7 +463,13 @@
     "searchPlaceholder": "Tìm kiếm công cụ...",
     "filters": "Bộ lọc",
     "viewGrid": "Xem dạng lưới",
-    "viewList": "Xem dạng danh sách"
+    "viewList": "Xem dạng danh sách",
+    "browse": "Danh mục",
+    "searchCategories": "Tìm danh mục…",
+    "noCategoryMatch": "Không có danh mục phù hợp.",
+    "expandGroup": "Xem các danh mục trong {name}",
+    "close": "Đóng",
+    "other": "Khác"
   },
   "pricing": {
     "FREE": "Miễn phí",

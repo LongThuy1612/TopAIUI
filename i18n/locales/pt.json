@@ -454,7 +454,6 @@
   },
   "category": {
     "breadcrumbHome": "Início",
-    "allTools": "Todas as ferramentas",
     "allToolsTitle": "Todas as ferramentas de IA",
     "allPricing": "Todos os preços",
     "sortNewest": "Mais recentes primeiro",
@@ -464,7 +463,13 @@
     "searchPlaceholder": "Pesquisar ferramentas...",
     "filters": "Filtros",
     "viewGrid": "Visualização em grade",
-    "viewList": "Visualização em lista"
+    "viewList": "Visualização em lista",
+    "browse": "Categorias",
+    "searchCategories": "Pesquisar categorias…",
+    "noCategoryMatch": "Nenhuma categoria corresponde.",
+    "expandGroup": "Ver as categorias de {name}",
+    "close": "Fechar",
+    "other": "Outras"
   },
   "pricing": {
     "FREE": "Gratuito",

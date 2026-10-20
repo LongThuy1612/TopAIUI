@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "Hem",
-    "allTools": "Alla verktyg",
     "allToolsTitle": "Alla AI-verktyg",
     "allPricing": "Alla priser",
     "sortNewest": "Nyaste först",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "Sök verktyg...",
     "filters": "Filter",
     "viewGrid": "Rutnätsvy",
-    "viewList": "Listvy"
+    "viewList": "Listvy",
+    "browse": "Kategorier",
+    "searchCategories": "Sök kategorier…",
+    "noCategoryMatch": "Ingen kategori matchar.",
+    "expandGroup": "Visa kategorierna i {name}",
+    "close": "Stäng",
+    "other": "Övrigt"
   },
   "pricing": {
     "FREE": "Gratis",

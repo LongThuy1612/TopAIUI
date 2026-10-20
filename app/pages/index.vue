@@ -68,6 +68,8 @@ watch(locale, () => {
   if (import.meta.client) prefetchTabs()
 })
 
+// The ▲ vote box on each row is hidden for now (true shows it again, with its column).
+const SHOW_VOTE = false
 const { countOf, isVoted, toggle, loadVoted, busy } = useUpvotes()
 // In the API's Today order: newest launch day first (Vietnam time), then the most upvoted
 // within a day (server/api/tools/index.get.ts). By the listed counts, not this viewer's
@@ -84,7 +86,7 @@ const rows = computed(() => {
 const advertisedSlugs = computed(() => new Set(feed(todayRanked.value).flatMap(item => (item.ad ? [item.ad.tool.slug] : []))))
 // Once mounted (the token lives in browser storage), and again when the list changes.
 onMounted(() => {
-  watch(rows, list => loadVoted(list.flatMap(r => (r.ad ? [] : [r.tool.slug]))), { immediate: true })
+  if (SHOW_VOTE) watch(rows, list => loadVoted(list.flatMap(r => (r.ad ? [] : [r.tool.slug]))), { immediate: true })
 })
 
 // Today ("Thursday, Oct 15") in Vietnam time (shared/time.ts), like the archive, and how
@@ -212,9 +214,9 @@ useJsonLd('site', () => [
           :key="row.key"
           :data-ad-slot="row.ad?.campaignId"
           :data-ad-placement="row.ad ? 'home' : undefined"
-          :class="['group relative grid grid-cols-[44px_minmax(0,1fr)_52px] items-center gap-4 overflow-hidden rounded-[18px] px-3 py-4 transition-opacity hover:bg-[#FAFAFB] sm:grid-cols-[28px_60px_minmax(0,1fr)_64px]', loadingTab && 'opacity-50']"
+          :class="['group relative grid items-center gap-4 overflow-hidden rounded-[18px] px-3 py-4 transition-opacity hover:bg-[#FAFAFB]', SHOW_VOTE ? 'grid-cols-[44px_minmax(0,1fr)_52px] sm:grid-cols-[28px_60px_minmax(0,1fr)_64px]' : 'grid-cols-[44px_minmax(0,1fr)] sm:grid-cols-[28px_60px_minmax(0,1fr)]', loadingTab && 'opacity-50']"
         >
-          <!-- On hover, the old logo / initials watermark, very faint, left of the vote box and centred on the row's height. -->
+          <!-- On hover, the old logo / initials watermark, very faint, at the row's top right. -->
           <img
             v-if="row.tool.logoUrl"
             data-logo
@@ -222,9 +224,9 @@ useJsonLd('site', () => [
             alt=""
             loading="lazy"
             aria-hidden="true"
-            class="pointer-events-none absolute right-16 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-20"
+            class="pointer-events-none absolute -top-4 right-4 h-28 w-28 rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-6"
           >
-          <span v-else class="pointer-events-none absolute right-[72px] top-1/2 -translate-y-1/2 text-[46px] font-extrabold leading-none tracking-[.02em] text-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-[92px]" aria-hidden="true">{{ initialsOf(row.tool.name) }}</span>
+          <span v-else class="pointer-events-none absolute right-6 top-1 text-[46px] font-extrabold tracking-[.02em] text-brand-500 opacity-0 transition-opacity duration-300 group-hover:opacity-[0.07] sm:right-8" aria-hidden="true">{{ initialsOf(row.tool.name) }}</span>
           <span class="relative hidden text-base font-semibold text-ink-400 sm:block">{{ i + 1 }}</span>
           <NuxtLinkLocale
             :to="row.ad ? row.ad.clickUrl : `/tools/${row.tool.slug}`"
@@ -255,7 +257,7 @@ useJsonLd('site', () => [
             </span>
           </NuxtLinkLocale>
           <button
-            v-if="!row.ad"
+            v-if="SHOW_VOTE && !row.ad"
             type="button"
             :aria-pressed="isVoted(row.tool.slug)"
             :aria-label="t('home.upvote')"
@@ -267,7 +269,7 @@ useJsonLd('site', () => [
             <span v-if="countOf(row.tool as Tool)">{{ nf.format(countOf(row.tool as Tool)) }}</span>
             <span v-else class="text-[11px] font-semibold">{{ t('home.vote') }}</span>
           </button>
-          <span v-else />
+          <span v-else-if="SHOW_VOTE" />
         </div>
         <div v-if="!rows.length" class="rounded-[18px] border border-dashed border-ink-200 py-16 text-center text-sm text-ink-400">
           {{ t('empty.noTools') }}

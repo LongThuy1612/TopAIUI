@@ -454,7 +454,6 @@
   },
   "category": {
     "breadcrumbHome": "Home",
-    "allTools": "All tools",
     "allToolsTitle": "All AI Tools",
     "allPricing": "All pricing",
     "sortNewest": "Newest first",
@@ -464,7 +463,13 @@
     "searchPlaceholder": "Search tools...",
     "filters": "Filters",
     "viewGrid": "Grid view",
-    "viewList": "List view"
+    "viewList": "List view",
+    "browse": "Categories",
+    "searchCategories": "Search categories…",
+    "noCategoryMatch": "No category matches.",
+    "expandGroup": "Show the categories in {name}",
+    "close": "Close",
+    "other": "Other"
   },
   "pricing": {
     "FREE": "Free",

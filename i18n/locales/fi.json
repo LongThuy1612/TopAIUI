@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "Etusivu",
-    "allTools": "Kaikki työkalut",
     "allToolsTitle": "Kaikki tekoälytyökalut",
     "allPricing": "Kaikki hinnat",
     "sortNewest": "Uusimmat ensin",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "Hae työkaluja...",
     "filters": "Suodattimet",
     "viewGrid": "Ruudukkonäkymä",
-    "viewList": "Listanäkymä"
+    "viewList": "Listanäkymä",
+    "browse": "Kategoriat",
+    "searchCategories": "Hae kategorioita…",
+    "noCategoryMatch": "Yksikään kategoria ei vastaa.",
+    "expandGroup": "Näytä kategorian {name} alakategoriat",
+    "close": "Sulje",
+    "other": "Muut"
   },
   "pricing": {
     "FREE": "Ilmainen",

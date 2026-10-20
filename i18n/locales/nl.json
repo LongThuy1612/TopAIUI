@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "Home",
-    "allTools": "Alle tools",
     "allToolsTitle": "Alle AI-tools",
     "allPricing": "Alle prijzen",
     "sortNewest": "Nieuwste eerst",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "Tools zoeken...",
     "filters": "Filters",
     "viewGrid": "Rasterweergave",
-    "viewList": "Lijstweergave"
+    "viewList": "Lijstweergave",
+    "browse": "Categorieën",
+    "searchCategories": "Categorieën zoeken…",
+    "noCategoryMatch": "Geen categorie gevonden.",
+    "expandGroup": "Categorieën in {name} tonen",
+    "close": "Sluiten",
+    "other": "Overig"
   },
   "pricing": {
     "FREE": "Gratis",

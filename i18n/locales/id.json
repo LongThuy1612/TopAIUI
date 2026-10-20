@@ -454,7 +454,6 @@
   },
   "category": {
     "breadcrumbHome": "Beranda",
-    "allTools": "Semua alat",
     "allToolsTitle": "Semua alat AI",
     "allPricing": "Semua harga",
     "sortNewest": "Terbaru lebih dulu",
@@ -464,7 +463,13 @@
     "searchPlaceholder": "Cari alat...",
     "filters": "Filter",
     "viewGrid": "Tampilan kisi",
-    "viewList": "Tampilan daftar"
+    "viewList": "Tampilan daftar",
+    "browse": "Kategori",
+    "searchCategories": "Cari kategori…",
+    "noCategoryMatch": "Tidak ada kategori yang cocok.",
+    "expandGroup": "Lihat kategori di {name}",
+    "close": "Tutup",
+    "other": "Lainnya"
   },
   "pricing": {
     "FREE": "Gratis",

@@ -454,7 +454,6 @@
   },
   "category": {
     "breadcrumbHome": "Start",
-    "allTools": "Alle Tools",
     "allToolsTitle": "Alle KI-Tools",
     "allPricing": "Alle Preise",
     "sortNewest": "Neueste zuerst",
@@ -464,7 +463,13 @@
     "searchPlaceholder": "Tools durchsuchen...",
     "filters": "Filter",
     "viewGrid": "Rasteransicht",
-    "viewList": "Listenansicht"
+    "viewList": "Listenansicht",
+    "browse": "Kategorien",
+    "searchCategories": "Kategorien suchen…",
+    "noCategoryMatch": "Keine passende Kategorie.",
+    "expandGroup": "Kategorien in {name} anzeigen",
+    "close": "Schließen",
+    "other": "Sonstige"
   },
   "pricing": {
     "FREE": "Kostenlos",

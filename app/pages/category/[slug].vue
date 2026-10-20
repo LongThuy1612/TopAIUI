@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ToolsResponse } from '~/types'
+import type { CategoryGroup, CategoryNode } from '~/components/CategoryNav.vue'
 import { advertise } from '~/data/promote'
 import { PUBLIC_LIMITS } from '#shared/research'
 
@@ -19,13 +20,26 @@ const sortBy = ref<'newest' | 'featured' | 'name'>(initialSort)
 const searchQuery = ref(String(route.query.q ?? ''))
 const page = ref(1)
 const viewMode = ref<'grid' | 'list'>('grid')
-const filtersOpen = ref(false)
+// Phones: the category browser opens as a sheet.
+const browserOpen = ref(false)
+watch(slug, () => { browserOpen.value = false })
+watch(browserOpen, (open) => { if (import.meta.client) document.documentElement.style.overflow = open ? 'hidden' : '' })
+const closeOnEscape = (e: KeyboardEvent) => { if (e.key === 'Escape') browserOpen.value = false }
+onMounted(() => document.addEventListener('keydown', closeOnEscape))
+onBeforeUnmount(() => {
+  document.removeEventListener('keydown', closeOnEscape)
+  document.documentElement.style.overflow = ''
+})
 
 watch([pricingFilter, sortBy, searchQuery, slug], () => { page.value = 1 })
 
 const { authHeaders, token } = useAuth()
-const [{ data: categories }, { data: toolsRes }] = await Promise.all([
-  useCategories(),
+// Two levels from the categories' own parents (server/api/categories/tree.get.ts).
+const [{ data: tree }, { data: toolsRes }] = await Promise.all([
+  useFetch<{ groups: CategoryGroup[]; ungrouped: CategoryNode[]; ungroupedCount: number }>('/api/categories/tree', {
+    key: computed(() => `category-tree:${locale.value}`),
+    query: computed(() => ({ locale: locale.value }))
+  }),
   useFetch<ToolsResponse>('/api/tools', {
     // Deeper pages carry the login token: guests stop at PUBLIC_LIMITS.guestListTools tools.
     headers: computed(() => (page.value > 1 ? authHeaders() : {})),
@@ -40,7 +54,16 @@ const [{ data: categories }, { data: toolsRes }] = await Promise.all([
     }))
   })
 ])
-const activeCategory = computed(() => isAll.value ? undefined : categories.value?.find(c => c.slug === slug.value))
+const groups = computed(() => tree.value?.groups ?? [])
+const ungrouped = computed(() => tree.value?.ungrouped ?? [])
+// The open category's group: itself when it is one, else the group it sits in.
+const activeGroup = computed(() => (isAll.value ? undefined : groups.value.find(g => g.slug === slug.value || g.children.some(c => c.slug === slug.value))))
+const activeCategory = computed<CategoryNode | undefined>(() => {
+  if (isAll.value) return undefined
+  if (activeGroup.value?.slug === slug.value) return activeGroup.value
+  return activeGroup.value?.children.find(c => c.slug === slug.value) ?? ungrouped.value.find(c => c.slug === slug.value)
+})
+const title = computed(() => activeCategory.value?.name ?? (isAll.value ? t('category.allToolsTitle') : slug.value))
 
 // Sponsored slots of this category (any category on /category/all), on page 1.
 // One banner under row 3 of the grid, whatever its column count: pinned with
@@ -65,33 +88,42 @@ const pageCount = computed(() => {
   return mounted.value && token.value ? all : Math.min(all, Math.ceil(PUBLIC_LIMITS.guestListTools / 24))
 })
 
-const seoTitle = computed(() => isAll.value ? 'All AI Tools — TopAICollection' : `${activeCategory.value?.name ?? slug.value} AI Tools — TopAICollection`)
+const seoTitle = computed(() => isAll.value ? 'All AI Tools — TopAICollection' : `${title.value} AI Tools — TopAICollection`)
 const seoDescription = computed(() => isAll.value
   ? 'Browse every AI tool in the TopAICollection directory. Filter by pricing, sort by popularity or rating, and find the right AI for your work.'
-  : `The best ${activeCategory.value?.name ?? slug.value} AI tools: compare features, pricing, ratings and reviews on TopAICollection.`)
+  : `The best ${title.value} AI tools: compare features, pricing, ratings and reviews on TopAICollection.`)
 useSeoMeta({
   title: seoTitle,
   description: seoDescription,
   ogTitle: seoTitle,
   ogDescription: seoDescription
 })
-useBreadcrumbLd(() => [[isAll.value ? 'All AI Tools' : (activeCategory.value?.name ?? slug.value), `/category/${slug.value}`]])
+useBreadcrumbLd(() => [
+  ...(activeGroup.value && activeGroup.value.slug !== slug.value ? [[activeGroup.value.name, `/category/${activeGroup.value.slug}`] as [string, string]] : []),
+  [isAll.value ? 'All AI Tools' : title.value, `/category/${slug.value}`]
+])
 </script>
 
 <template>
-  <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
-    <nav class="flex items-center gap-1.5 text-xs text-ink-400">
+  <div class="mx-auto max-w-[1440px] px-4 py-8 sm:px-6 lg:px-8">
+    <nav class="flex flex-wrap items-center gap-1.5 text-xs text-ink-400">
       <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
-      <span>›</span>
-      <span class="text-ink-600">{{ activeCategory?.name ?? (isAll ? t('category.allToolsTitle') : slug) }}</span>
+      <span aria-hidden="true">›</span>
+      <template v-if="activeGroup && activeGroup.slug !== slug">
+        <NuxtLinkLocale :to="`/category/${activeGroup.slug}`" class="hover:text-brand-600">{{ activeGroup.name }}</NuxtLinkLocale>
+        <span aria-hidden="true">›</span>
+      </template>
+      <span class="text-ink-600">{{ title }}</span>
     </nav>
 
     <div class="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-      <div>
-        <h1 class="flex items-center gap-2 text-3xl font-extrabold text-ink-900">
-          <CategoryIcon v-if="activeCategory" :icon="activeCategory.icon" />
-          <span v-else>🗂️</span>
-          {{ activeCategory?.name ?? (isAll ? t('category.allToolsTitle') : slug) }}
+      <div class="min-w-0">
+        <h1 class="flex items-center gap-2.5 text-3xl font-extrabold tracking-[-.02em] text-ink-900">
+          <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-50 text-xl text-brand-600" aria-hidden="true">
+            <CategoryIcon v-if="activeCategory" :icon="activeCategory.icon" />
+            <template v-else>🗂️</template>
+          </span>
+          <span class="min-w-0 break-words">{{ title }}</span>
         </h1>
         <p class="mt-1.5 text-sm text-ink-500">{{ total }} {{ t('category.toolsFound', total) }}</p>
       </div>
@@ -100,32 +132,25 @@ useBreadcrumbLd(() => [[isAll.value ? 'All AI Tools' : (activeCategory.value?.na
       </div>
     </div>
 
-    <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[260px_1fr]">
-      <button
-        type="button"
-        class="flex items-center justify-between rounded-lg border border-ink-200 px-3 py-2.5 text-sm font-semibold text-ink-600 lg:hidden"
-        @click="filtersOpen = !filtersOpen"
-      >
-        {{ t('category.filters') }}
-        <svg :class="['h-4 w-4 transition-transform', filtersOpen ? 'rotate-180' : '']" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-
-      <aside :class="['space-y-2', filtersOpen ? 'block' : 'hidden', 'lg:block']">
-        <NuxtLinkLocale
-          to="/category/all"
-          :class="[
-            'flex items-center gap-2 rounded-lg border px-3 py-2.5 text-sm transition',
-            isAll ? 'border-brand-300 bg-brand-50 font-semibold text-brand-700' : 'border-ink-100 text-ink-600 hover:border-brand-200 hover:text-brand-700'
-          ]"
-        >
-          <span>🗂️</span> {{ t('category.allTools') }}
-        </NuxtLinkLocale>
-        <CategoryCard v-for="cat in categories" :key="cat.slug" :category="cat" :active="cat.slug === slug" />
+    <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
+      <!-- Desktop: the category browser, sticky, scrolling inside itself. -->
+      <aside class="hidden lg:block">
+        <div class="sticky top-[88px] flex h-[calc(100vh-112px)] flex-col">
+          <CategoryNav :groups="groups" :ungrouped="ungrouped" :ungrouped-count="tree?.ungroupedCount ?? 0" :active="slug" class="h-full" />
+        </div>
       </aside>
 
-      <div>
+      <div class="min-w-0">
+        <!-- Phones: a button that opens the browser as a sheet. -->
+        <button
+          type="button"
+          class="mb-4 flex w-full items-center justify-between gap-3 rounded-xl border border-ink-200 bg-white px-4 py-3 text-left text-sm lg:hidden"
+          @click="browserOpen = true"
+        >
+          <span class="min-w-0 truncate"><span class="text-ink-500">{{ t('category.browse') }}:</span> <span class="font-semibold text-ink-900">{{ title }}</span></span>
+          <svg class="h-4 w-4 shrink-0 text-ink-400" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 7.5 5 5 5-5" /></svg>
+        </button>
+
         <div class="flex flex-wrap items-center justify-between gap-3 border-b border-ink-100 pb-4">
           <div class="flex flex-wrap gap-2">
             <button
@@ -197,5 +222,19 @@ useBreadcrumbLd(() => [[isAll.value ? 'All AI Tools' : (activeCategory.value?.na
         <Pagination v-model:page="page" :page-count="pageCount" />
       </div>
     </div>
+
+    <Teleport to="body">
+      <div v-if="browserOpen" class="fixed inset-0 z-50 flex items-end bg-black/40 lg:hidden" @click.self="browserOpen = false">
+        <div class="flex h-[85dvh] w-full flex-col rounded-t-2xl bg-white p-4 shadow-xl" role="dialog" aria-modal="true" :aria-label="t('category.browse')">
+          <div class="mb-3 flex items-center justify-between">
+            <span class="text-base font-bold text-ink-900">{{ t('category.browse') }}</span>
+            <button type="button" class="grid h-9 w-9 place-items-center rounded-lg text-ink-500 hover:bg-ink-100" :aria-label="t('category.close')" @click="browserOpen = false">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
+            </button>
+          </div>
+          <CategoryNav :groups="groups" :ungrouped="ungrouped" :ungrouped-count="tree?.ungroupedCount ?? 0" :active="slug" class="min-h-0 flex-1" @navigate="browserOpen = false" />
+        </div>
+      </div>
+    </Teleport>
   </div>
 </template>

@@ -454,7 +454,6 @@
   },
   "category": {
     "breadcrumbHome": "首页",
-    "allTools": "所有工具",
     "allToolsTitle": "所有 AI 工具",
     "allPricing": "所有价格",
     "sortNewest": "最新优先",
@@ -464,7 +463,13 @@
     "searchPlaceholder": "搜索工具...",
     "filters": "筛选",
     "viewGrid": "网格视图",
-    "viewList": "列表视图"
+    "viewList": "列表视图",
+    "browse": "分类",
+    "searchCategories": "搜索分类…",
+    "noCategoryMatch": "没有匹配的分类。",
+    "expandGroup": "查看 {name} 中的分类",
+    "close": "关闭",
+    "other": "其他"
   },
   "pricing": {
     "FREE": "免费",

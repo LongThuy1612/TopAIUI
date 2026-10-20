@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "Hjem",
-    "allTools": "Alle værktøjer",
     "allToolsTitle": "Alle AI-værktøjer",
     "allPricing": "Alle priser",
     "sortNewest": "Nyeste først",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "Søg efter værktøjer...",
     "filters": "Filtre",
     "viewGrid": "Gittervisning",
-    "viewList": "Listevisning"
+    "viewList": "Listevisning",
+    "browse": "Kategorier",
+    "searchCategories": "Søg i kategorier…",
+    "noCategoryMatch": "Ingen kategori matcher.",
+    "expandGroup": "Vis kategorierne i {name}",
+    "close": "Luk",
+    "other": "Andre"
   },
   "pricing": {
     "FREE": "Gratis",

@@ -454,7 +454,6 @@
   },
   "category": {
     "breadcrumbHome": "ホーム",
-    "allTools": "すべてのツール",
     "allToolsTitle": "すべてのAIツール",
     "allPricing": "すべての価格帯",
     "sortNewest": "新着順",
@@ -464,7 +463,13 @@
     "searchPlaceholder": "ツールを検索...",
     "filters": "フィルター",
     "viewGrid": "グリッド表示",
-    "viewList": "リスト表示"
+    "viewList": "リスト表示",
+    "browse": "カテゴリ",
+    "searchCategories": "カテゴリを検索…",
+    "noCategoryMatch": "一致するカテゴリはありません。",
+    "expandGroup": "{name} のカテゴリを表示",
+    "close": "閉じる",
+    "other": "その他"
   },
   "pricing": {
     "FREE": "無料",

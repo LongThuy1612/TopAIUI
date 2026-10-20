@@ -42,7 +42,13 @@ export default defineSitemapEventHandler(async () => {
       },
       select: { toolId: true, locale: true }
     }),
-    prisma.category.findMany({ select: { slug: true, updatedAt: true } }),
+    // Pages with tools only: a category without any is an empty page. A group with none of
+    // its own still lists its categories' tools (server/utils/categoryTree.ts).
+    prisma.category.findMany({ select: { slug: true, updatedAt: true, _count: { select: { tools: { where: { status: 'PUBLISHED', deletedAt: null } } } } } }).then(async (rows) => {
+      const withTools = new Set(rows.filter(r => r._count.tools > 0).map(r => r.slug))
+      const { coverage } = await categoryTreeIndex()
+      return rows.filter(r => withTools.has(r.slug) || (coverage.get(r.slug) ?? []).some(s => withTools.has(s)))
+    }),
     prisma.tag.findMany({
       where: { tools: { some: { status: 'PUBLISHED', deletedAt: null } } },
       select: { slug: true, updatedAt: true, _count: { select: { tools: { where: { status: 'PUBLISHED', deletedAt: null } } } } }

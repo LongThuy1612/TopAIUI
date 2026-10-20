@@ -735,22 +735,24 @@ useJsonLd('tool', () => {
           <span class="text-ink-900">{{ tool.collectionCount || 0 }} {{ t('tool.savedLabel') }}</span>
         </div>
 
-        <dl class="mt-7 space-y-4 text-base">
-          <div v-if="tool.shortDesc" class="flex gap-4">
-            <dt class="w-[130px] shrink-0 whitespace-nowrap font-bold text-ink-900">{{ t('tool.introduction') }}:</dt>
-            <dd class="min-w-0 flex-1 leading-relaxed text-ink-900">{{ tool.shortDesc }}</dd>
+        <!-- Label column as wide as its longest label (Vietnamese ones are much longer than
+             English), so a value never runs into its label. Phones: each label above its value. -->
+        <dl class="mt-7 grid grid-cols-1 items-baseline gap-y-1 text-base sm:grid-cols-[auto_minmax(0,1fr)] sm:gap-x-6 sm:gap-y-4">
+          <div v-if="tool.shortDesc" class="contents">
+            <dt class="font-bold text-ink-900 sm:whitespace-nowrap">{{ t('tool.introduction') }}:</dt>
+            <dd class="mb-3 min-w-0 leading-relaxed text-ink-900 sm:mb-0">{{ tool.shortDesc }}</dd>
           </div>
-          <div class="flex gap-4">
-            <dt class="w-[130px] shrink-0 whitespace-nowrap font-bold text-ink-900">{{ t('tool.addedOn') }}:</dt>
-            <dd class="text-ink-900">{{ addedOn }}</dd>
+          <div class="contents">
+            <dt class="font-bold text-ink-900 sm:whitespace-nowrap">{{ t('tool.addedOn') }}:</dt>
+            <dd class="mb-3 text-ink-900 sm:mb-0">{{ addedOn }}</dd>
           </div>
-          <div class="flex gap-4">
-            <dt class="w-[130px] shrink-0 whitespace-nowrap font-bold text-ink-900">{{ t('tool.monthlyVisitors') }}:</dt>
-            <dd class="text-ink-900">{{ tool.monthlyVisits ? tool.monthlyVisits.toLocaleString() : '--' }}</dd>
+          <div class="contents">
+            <dt class="font-bold text-ink-900 sm:whitespace-nowrap">{{ t('tool.monthlyVisitors') }}:</dt>
+            <dd class="mb-3 text-ink-900 sm:mb-0">{{ tool.monthlyVisits ? tool.monthlyVisits.toLocaleString(numberLocale) : '--' }}</dd>
           </div>
-          <div v-if="tool.twitterUrl || tool.discordUrl" class="flex items-center gap-4">
-            <dt class="w-[130px] shrink-0 whitespace-nowrap font-bold text-ink-900">{{ t('tool.socialAndEmail') }}:</dt>
-            <dd class="flex items-center gap-2">
+          <div v-if="tool.twitterUrl || tool.discordUrl" class="contents">
+            <dt class="font-bold text-ink-900 sm:whitespace-nowrap">{{ t('tool.socialAndEmail') }}:</dt>
+            <dd class="flex items-center gap-2 sm:self-center">
               <a v-if="tool.twitterUrl" :href="tool.twitterUrl" target="_blank" rel="noopener noreferrer" title="Twitter / X" class="flex h-6 w-6 items-center justify-center rounded-full bg-ink-900 text-xs font-bold text-white hover:bg-brand-500">𝕏</a>
               <a v-if="tool.discordUrl" :href="tool.discordUrl" target="_blank" rel="noopener noreferrer" title="Discord" class="flex h-6 w-6 items-center justify-center rounded-full bg-[#5865F2] text-[10px] font-bold text-white hover:opacity-80">D</a>
             </dd>

@@ -454,7 +454,6 @@
   },
   "category": {
     "breadcrumbHome": "홈",
-    "allTools": "모든 도구",
     "allToolsTitle": "모든 AI 도구",
     "allPricing": "모든 가격대",
     "sortNewest": "최신순",
@@ -464,7 +463,13 @@
     "searchPlaceholder": "도구 검색...",
     "filters": "필터",
     "viewGrid": "그리드 보기",
-    "viewList": "목록 보기"
+    "viewList": "목록 보기",
+    "browse": "카테고리",
+    "searchCategories": "카테고리 검색…",
+    "noCategoryMatch": "일치하는 카테고리가 없습니다.",
+    "expandGroup": "{name}의 카테고리 보기",
+    "close": "닫기",
+    "other": "기타"
   },
   "pricing": {
     "FREE": "무료",

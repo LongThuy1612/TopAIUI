@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "בית",
-    "allTools": "כל הכלים",
     "allToolsTitle": "כל כלי הבינה המלאכותית",
     "allPricing": "כל טווחי המחיר",
     "sortNewest": "החדש ביותר קודם",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "חיפוש כלים...",
     "filters": "מסננים",
     "viewGrid": "תצוגת רשת",
-    "viewList": "תצוגת רשימה"
+    "viewList": "תצוגת רשימה",
+    "browse": "קטגוריות",
+    "searchCategories": "חיפוש קטגוריות…",
+    "noCategoryMatch": "אין קטגוריה תואמת.",
+    "expandGroup": "הצגת הקטגוריות ב-{name}",
+    "close": "סגירה",
+    "other": "אחר"
   },
   "pricing": {
     "FREE": "חינם",

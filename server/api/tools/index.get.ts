@@ -15,7 +15,8 @@ async function searchMatchIds(q: string): Promise<string[]> {
 // A search page of tool ids, in order, and the total — two queries, all in the database.
 async function searchPage(opts: {
   q: string
-  category?: string
+  // A category and, for a group, everything under it (categoryFilterSlugs).
+  categories?: string[]
   pricing?: string
   nameFirst: boolean
   orderBy: Prisma.ToolOrderByWithRelationInput[]
@@ -27,7 +28,7 @@ async function searchPage(opts: {
   const from = Prisma.sql`
     FROM matches m JOIN "Tool" t ON t.id = m.id
     WHERE t.status = 'PUBLISHED' AND t."deletedAt" IS NULL
-    ${opts.category ? Prisma.sql`AND EXISTS (SELECT 1 FROM "_ToolToCategory" tc JOIN "Category" c ON c.id = tc."A" WHERE tc."B" = t.id AND c.slug = ${opts.category})` : Prisma.empty}
+    ${opts.categories?.length ? Prisma.sql`AND EXISTS (SELECT 1 FROM "_ToolToCategory" tc JOIN "Category" c ON c.id = tc."A" WHERE tc."B" = t.id AND c.slug = ANY(${opts.categories}::text[]))` : Prisma.empty}
     ${opts.pricing ? Prisma.sql`AND t."pricingType" = ${opts.pricing}::"PricingType"` : Prisma.empty}`
   // ORDER BY from the orderBy built above — field names from sortMap, never from the request.
   const order = opts.orderBy.flatMap(entry => Object.entries(entry).map(([field, dir]) => {
@@ -59,7 +60,9 @@ async function listTools(event: H3Event, isGuest: boolean) {
   // (unapproved) submissions to the public. Admin-only visibility lives in
   // server/api/admin/tools/index.get.ts instead.
   const where: Prisma.ToolWhereInput = { status: 'PUBLISHED', deletedAt: null }
-  if (query.category) where.categories = { some: { slug: String(query.category) } }
+  // A group's page lists the tools of every category under it (server/utils/categoryTree.ts).
+  const categorySlugs = query.category ? await categoryFilterSlugs(String(query.category)) : undefined
+  if (categorySlugs) where.categories = { some: { slug: { in: categorySlugs } } }
   if (query.tag) where.tags = { some: { slug: String(query.tag) } }
   // Unknown values are ignored (Prisma would reject them with a 500).
   if (['FREE', 'FREEMIUM', 'PAID'].includes(String(query.pricing))) where.pricingType = String(query.pricing) as Prisma.ToolWhereInput['pricingType']
@@ -158,7 +161,7 @@ async function listTools(event: H3Event, isGuest: boolean) {
   } else if (simpleSearch) {
     const found = await searchPage({
       q,
-      category: query.category ? String(query.category) : undefined,
+      categories: categorySlugs,
       pricing: where.pricingType as string | undefined,
       // No sort asked (the search page): name matches first — "chat" mustn't bury tools
       // called Chat… under every tool tagged "chatbot". A list's own sort (a category's

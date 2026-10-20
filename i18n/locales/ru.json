@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "Главная",
-    "allTools": "Все инструменты",
     "allToolsTitle": "Все AI-инструменты",
     "allPricing": "Все цены",
     "sortNewest": "Сначала новые",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "Поиск инструментов...",
     "filters": "Фильтры",
     "viewGrid": "Вид сеткой",
-    "viewList": "Вид списком"
+    "viewList": "Вид списком",
+    "browse": "Категории",
+    "searchCategories": "Поиск категорий…",
+    "noCategoryMatch": "Подходящих категорий нет.",
+    "expandGroup": "Показать категории в {name}",
+    "close": "Закрыть",
+    "other": "Другое"
   },
   "pricing": {
     "FREE": "Бесплатно",

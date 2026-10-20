@@ -437,7 +437,6 @@
   },
   "category": {
     "breadcrumbHome": "الرئيسية",
-    "allTools": "جميع الأدوات",
     "allToolsTitle": "جميع أدوات الذكاء الاصطناعي",
     "allPricing": "جميع الأسعار",
     "sortNewest": "الأحدث أولاً",
@@ -447,7 +446,13 @@
     "searchPlaceholder": "ابحث عن أدوات...",
     "filters": "التصفية",
     "viewGrid": "عرض شبكي",
-    "viewList": "عرض قائمة"
+    "viewList": "عرض قائمة",
+    "browse": "الفئات",
+    "searchCategories": "ابحث في الفئات…",
+    "noCategoryMatch": "لا توجد فئة مطابقة.",
+    "expandGroup": "عرض الفئات في {name}",
+    "close": "إغلاق",
+    "other": "أخرى"
   },
   "pricing": {
     "FREE": "مجاني",

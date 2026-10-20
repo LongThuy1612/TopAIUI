@@ -356,8 +356,8 @@ export async function pickAdSlots(placement: AdPlacement, opts: { category?: str
         status: 'PUBLISHED',
         deletedAt: null,
         ...(opts.exclude ? { slug: { not: opts.exclude } } : {}),
-        // On a category page, only tools of that category.
-        ...(placement === 'category' && opts.category ? { categories: { some: { slug: opts.category } } } : {})
+        // On a category page, only tools of that category (a group: of any category under it).
+        ...(placement === 'category' && opts.category ? { categories: { some: { slug: { in: await categoryFilterSlugs(opts.category) } } } } : {})
       }
     },
     select: { id: true, tier: true, toolId: true, clicksRemaining: true }
