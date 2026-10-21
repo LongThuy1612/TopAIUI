@@ -14,7 +14,7 @@ export default defineCachedEventHandler(async (event) => {
   if (!tag || !tag._count.tools) throw createError({ statusCode: 404, statusMessage: 'Tag not found' })
   return {
     slug: tag.slug,
-    name: cleanText(pickByLocale(tag.translations, locale)?.name) ?? tag.slug,
+    name: localizedName(tag.translations, locale, null, tag.slug),
     count: tag._count.tools
   }
 }, { name: 'api-tag', maxAge: 300, swr: true, shouldBypassCache: () => import.meta.dev })

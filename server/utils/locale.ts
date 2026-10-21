@@ -24,6 +24,27 @@ export function cleanText(value: string | null | undefined): string | null {
   return value && value !== 'undefined' ? value : null
 }
 
+const JUNK_NAMES = new Set(['', 'undefined', 'null', 'none', 'n/a'])
+const usableName = (value: string | null | undefined) => {
+  const v = value?.trim()
+  return v && !JUNK_NAMES.has(v.toLowerCase()) ? v : null
+}
+const titleOfSlug = (slug: string) => slug.split('-').filter(Boolean).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+
+/**
+ * Display name for a category or tag: the first usable name among the locale's translation,
+ * English, the base name (English), then the slug made readable. Unlike pickByLocale, an empty
+ * or junk row for the locale does not hide a good English one, and a page never borrows a
+ * third language's name.
+ */
+export function localizedName(rows: { locale: string; name: string | null }[] | undefined, locale: string, base: string | null | undefined, slug: string): string {
+  const inLocale = (loc: string) => usableName(rows?.find(r => r.locale === loc && usableName(r.name))?.name)
+  return inLocale(locale)
+    ?? inLocale('en')
+    ?? usableName(base)
+    ?? titleOfSlug(slug)
+}
+
 /** Pick the full set of rows for the best-matching locale group (e.g. all PricingPlan rows for one locale). */
 export function pickLocaleGroup<T extends { locale: string }>(rows: T[], locale: string): T[] {
   const forLocale = rows.filter(r => r.locale === locale)

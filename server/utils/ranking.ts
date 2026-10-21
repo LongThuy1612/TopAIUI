@@ -230,7 +230,7 @@ export async function getRankingDataset(): Promise<RankingDataset> {
 }
 
 export function categoryName(category: RankingCategory, locale: string) {
-  return cleanText(pickByLocale(category.translations, locale)?.name) ?? cleanText(category.name) ?? category.slug
+  return localizedName(category.translations, locale, category.name, category.slug)
 }
 
 // Some tools were imported with their URL as the name — show the bare domain.

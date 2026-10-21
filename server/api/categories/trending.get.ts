@@ -58,7 +58,7 @@ export default defineCachedEventHandler(async (event) => {
 })
 
 // The category's name in this language — without a leading emoji some imported names carry.
-function categoryName(c: { slug: string; name: string; translations: { locale: string; name: string }[] }, locale: string) {
-  const name = cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug
+function categoryName(c: { slug: string; name: string | null; translations: { locale: string; name: string }[] }, locale: string) {
+  const name = localizedName(c.translations, locale, c.name, c.slug)
   return name.replace(/^[\p{Extended_Pictographic}\u{1F3FB}-\u{1F3FF}️‍\s]+/u, '').trim() || name
 }

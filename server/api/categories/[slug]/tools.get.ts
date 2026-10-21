@@ -81,15 +81,16 @@ async function categoryTools(event: H3Event, isGuest: boolean) {
       })]
 
   const nameOf = (c: { slug: string; name: string | null; translations: { locale: string; name: string }[] }) =>
-    cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug
-  const translation = category && pickByLocale(category.translations, locale)
+    localizedName(c.translations, locale, c.name, c.slug)
+  // The description in this language, else English — a row with only a name does not hide it.
+  const describe = (loc: string) => cleanText(category?.translations.find(t => t.locale === loc && cleanText(t.description?.trim()))?.description)
 
   return {
     category: category && {
       slug: category.slug,
       name: nameOf(category),
       icon: category.icon,
-      description: cleanText(translation?.description),
+      description: describe(locale) ?? describe('en'),
       group: group && { slug: group.slug, name: nameOf(group) }
     },
     items: rows.map((tool) => {

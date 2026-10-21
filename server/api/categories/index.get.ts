@@ -23,10 +23,9 @@ export default defineCachedEventHandler(async (event) => {
   })
 
   return categories.map((c) => {
-    const translation = pickByLocale(c.translations, locale)
     return {
       slug: c.slug,
-      name: cleanText(translation?.name) ?? cleanText(c.name) ?? c.slug,
+      name: localizedName(c.translations, locale, c.name, c.slug),
       icon: c.icon,
       isFeatured: c.isFeatured,
       viewCount: c.viewCount,

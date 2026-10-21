@@ -9,7 +9,6 @@ import { Prisma } from '@prisma/client'
 interface Node { slug: string; name: string; icon: string; count: number }
 
 // "other-tools" → "Other Tools", for the few categories without a name.
-const titleOf = (slug: string) => slug.split('-').filter(Boolean).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 
 export default defineCachedEventHandler(async (event) => {
   const locale = normalizeLocale(getQuery(event).locale)
@@ -50,7 +49,7 @@ export default defineCachedEventHandler(async (event) => {
     select: { slug: true, name: true, icon: true, translations: { select: { locale: true, name: true } } }
   })
   const info = new Map(rows.map(r => [r.slug, {
-    name: cleanText(pickByLocale(r.translations, locale)?.name) ?? cleanText(r.name) ?? titleOf(r.slug),
+    name: localizedName(r.translations, locale, r.name, r.slug),
     icon: r.icon
   }]))
   const node = (slug: string, count: number): Node | null => {

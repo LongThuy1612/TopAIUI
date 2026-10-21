@@ -36,7 +36,7 @@ export const NEWSLETTER_TOOL_SELECT = {
   logoUrl: true,
   pricingType: true,
   upvoteCount: true,
-  categories: { take: 1, select: { name: true, translations: { select: { locale: true, name: true } } } },
+  categories: { take: 1, select: { slug: true, name: true, translations: { select: { locale: true, name: true } } } },
   translations: { select: { locale: true, shortDesc: true } }
 } satisfies Prisma.ToolSelect
 
@@ -141,7 +141,7 @@ export function renderNewsletter(content: { tools: NewsletterTool[]; articles: N
       url: page(`/tools/${tool.slug}`),
       logo: emailLogo(tool.logoUrl),
       desc: truncate(cleanText(pickByLocale(tool.translations, locale)?.shortDesc) ?? '', 160),
-      meta: [category ? (pickByLocale(category.translations, locale)?.name ?? category.name) : null, tool.pricingType ? tx.pricing[tool.pricingType as keyof typeof tx.pricing] : null].filter(Boolean).join(' · '),
+      meta: [category ? localizedName(category.translations, locale, category.name, category.slug) : null, tool.pricingType ? tx.pricing[tool.pricingType as keyof typeof tx.pricing] : null].filter(Boolean).join(' · '),
       upvotes: tool.upvoteCount ? tx.upvotes(tool.upvoteCount) : ''
     }
   })

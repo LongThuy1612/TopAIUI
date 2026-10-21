@@ -29,7 +29,7 @@ export const loadToolCategories = memoryCached('tool categories', async () => {
 // Category slug → its name in one language (the translation, else the default name).
 export async function categoryNames(locale: string) {
   const { categories } = await loadToolCategories()
-  return new Map(categories.map(c => [c.slug, cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug]))
+  return new Map(categories.map(c => [c.slug, localizedName(c.translations, locale, c.name, c.slug)]))
 }
 
 // Validates a list of category slugs and returns the Prisma relation update that

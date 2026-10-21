@@ -420,8 +420,8 @@ export async function pickAdSlots(placement: AdPlacement, opts: { category?: str
         isAd: true,
         logoUrl: resolveToolImage(rest.logoUrl),
         shortDesc: cleanText(pickByLocale(translations, opts.locale)?.shortDesc),
-        categories: categories.map(cat => ({ slug: cat.slug, name: cleanText(pickByLocale(cat.translations, opts.locale)?.name) ?? cleanText(cat.name) ?? cat.slug })),
-        tags: tags.map(tg => ({ slug: tg.slug, name: cleanText(pickByLocale(tg.translations, opts.locale)?.name) ?? tg.slug }))
+        categories: categories.map(cat => ({ slug: cat.slug, name: localizedName(cat.translations, opts.locale, cat.name, cat.slug) })),
+        tags: tags.map(tg => ({ slug: tg.slug, name: localizedName(tg.translations, opts.locale, null, tg.slug) }))
       }
     }]
   })

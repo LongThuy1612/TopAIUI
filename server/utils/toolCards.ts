@@ -39,7 +39,7 @@ export function toToolCard<T extends ToolCardRow>({ translations, categories, ta
     screenshotUrl: resolveToolImage(tool.screenshotUrl),
     website: safeLinkUrl(tool.website),
     shortDesc: cleanText(translation?.shortDesc),
-    categories: categories.map(c => ({ slug: c.slug, icon: c.icon, name: cleanText(pickByLocale(c.translations, locale)?.name) ?? cleanText(c.name) ?? c.slug })),
-    tags: tags.map(tg => ({ slug: tg.slug, name: cleanText(pickByLocale(tg.translations, locale)?.name) ?? tg.slug }))
+    categories: categories.map(c => ({ slug: c.slug, icon: c.icon, name: localizedName(c.translations, locale, c.name, c.slug) })),
+    tags: tags.map(tg => ({ slug: tg.slug, name: localizedName(tg.translations, locale, null, tg.slug) }))
   }
 }
