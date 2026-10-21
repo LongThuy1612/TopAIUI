@@ -245,14 +245,15 @@ useJsonLd('site', () => [
             :external="!!row.ad"
             :target="row.ad ? '_blank' : undefined"
             :rel="row.ad ? 'sponsored nofollow noopener' : undefined"
-            class="relative flex min-w-0 flex-col gap-1"
+            class="flex min-w-0 flex-col gap-1 after:absolute after:inset-0 after:content-['']"
           >
-            <span class="flex flex-wrap items-center gap-2 text-[17px] font-semibold text-ink-900">
+            <!-- The link's ::after stretches over the whole row so any spot in it is clickable; the vote button sits above it. -->
+            <span class="relative flex flex-wrap items-center gap-2 text-[17px] font-semibold text-ink-900">
               {{ row.tool.name }}
               <span v-if="row.ad" class="rounded-full bg-brand-500 px-2 py-[2px] text-[11px] font-semibold text-white">{{ t('sections.sponsorBadge') }}</span>
             </span>
-            <span v-if="row.tool.shortDesc" class="line-clamp-2 text-[15px] leading-[1.45] text-ink-700">{{ row.tool.shortDesc }}</span>
-            <span v-if="metaParts(row.tool as Tool).length" class="flex flex-wrap gap-2.5 text-[13px] text-ink-600">
+            <span v-if="row.tool.shortDesc" class="relative line-clamp-2 text-[15px] leading-[1.45] text-ink-700">{{ row.tool.shortDesc }}</span>
+            <span v-if="metaParts(row.tool as Tool).length" class="relative flex flex-wrap gap-2.5 text-[13px] text-ink-600">
               <template v-for="(part, p) in metaParts(row.tool as Tool)" :key="p"><span v-if="p" aria-hidden="true">·</span><span>{{ part }}</span></template>
             </span>
           </NuxtLinkLocale>
