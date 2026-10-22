@@ -2188,5 +2188,62 @@
       "rating": "Rating tertinggi",
       "name": "Nama A–Z"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Temukan Situs dan Alat AI Terbaik",
+      "description": "Temukan ribuan alat AI per kategori, diperbarui setiap hari. Bandingkan harga, ulasan, dan trafik untuk menemukan AI terbaik untuk coding, menulis, desain, dan video."
+    },
+    "new": {
+      "title": "Alat AI Baru",
+      "description": "Alat AI terbaru di TopAICollection — rilisan baru untuk menulis, desain, coding, video, dan lainnya, diperbarui setiap hari."
+    },
+    "today": {
+      "title": "Alat AI Hari Ini",
+      "description": "Alat AI yang ditambahkan ke TopAICollection hari ini. Temukan rilisan AI terbaru setiap hari."
+    },
+    "mostFeatured": {
+      "title": "Alat AI Paling Unggulan",
+      "description": "Alat AI paling unggulan dan berperingkat tertinggi di TopAICollection, dipilih dari ribuan aplikasi AI."
+    },
+    "mostSaved": {
+      "title": "AI Paling Banyak Disimpan",
+      "description": "Alat AI yang paling sering disimpan pengguna TopAICollection: pilihan komunitas berisi situs dan aplikasi AI paling berguna."
+    },
+    "discord": {
+      "title": "Komunitas Discord AI",
+      "description": "Komunitas Discord alat AI: bergabunglah dengan server tempat produk AI berbagi kabar, dukungan, dan tips."
+    },
+    "ranking": {
+      "title": "Peringkat Alat AI",
+      "description": "Alat AI yang paling banyak dikunjungi, diurutkan menurut trafik bulanan dan pertumbuhan, dengan sumber trafik dan negara teratas."
+    },
+    "rankingCategories": {
+      "title": "AI Teratas per Kategori",
+      "description": "Alat AI teratas di setiap kategori, diurutkan menurut trafik situs bulanan."
+    },
+    "rankingRegions": {
+      "title": "AI Teratas per Wilayah",
+      "description": "Alat AI yang paling banyak dikunjungi di setiap negara dan wilayah, diurutkan menurut trafik situs."
+    },
+    "rankingSource": {
+      "title": "AI Teratas per Sumber",
+      "description": "Alat AI diurutkan menurut asal trafiknya: langsung, pencarian, media sosial, rujukan, dan lainnya."
+    },
+    "alphabet": {
+      "description": "Alat AI yang diawali huruf {letter}: jelajahi direktori TopAICollection menurut abjad."
+    },
+    "archive": {
+      "description": "Alat AI yang ditambahkan ke TopAICollection pada {date}."
+    },
+    "search": {
+      "title": "Cari Alat AI",
+      "titleQuery": "{q} — Pencarian",
+      "description": "Cari alat AI, kategori, dan GPTs di direktori TopAICollection."
+    },
+    "tag": {
+      "title": "Alat AI #{name}",
+      "description": "{count} alat AI dengan tag {name}: bandingkan fitur, harga, peringkat, dan ulasan di TopAICollection."
+    }
   }
 }

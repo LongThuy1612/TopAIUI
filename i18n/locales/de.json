@@ -2188,5 +2188,62 @@
       "rating": "Am besten bewertet",
       "name": "Name A–Z"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Entdecke die besten KI-Websites und -Tools",
+      "description": "Entdecke tausende KI-Tools nach Kategorie, täglich aktualisiert. Vergleiche Preise, Bewertungen und Traffic und finde die beste KI für Coding, Schreiben, Design und Video."
+    },
+    "new": {
+      "title": "Neue KI-Tools",
+      "description": "Die neuesten KI-Tools auf TopAICollection — frische Launches für Schreiben, Design, Coding, Video und mehr, täglich aktualisiert."
+    },
+    "today": {
+      "title": "KI-Tools von heute",
+      "description": "Heute zu TopAICollection hinzugefügte KI-Tools. Entdecke jeden Tag die neuesten KI-Launches."
+    },
+    "mostFeatured": {
+      "title": "Meistempfohlene KI-Tools",
+      "description": "Die meistempfohlenen und bestbewerteten KI-Tools auf TopAICollection, ausgewählt aus tausenden KI-Apps."
+    },
+    "mostSaved": {
+      "title": "Meistgespeicherte KIs",
+      "description": "Die KI-Tools, die TopAICollection-Nutzer am häufigsten speichern: eine Community-Auswahl der nützlichsten KI-Websites und -Apps."
+    },
+    "discord": {
+      "title": "KI-Discord-Communitys",
+      "description": "Discord-Communitys von KI-Tools: Tritt den Servern bei, auf denen KI-Produkte Updates, Support und Tipps teilen."
+    },
+    "ranking": {
+      "title": "KI-Tool-Ranking",
+      "description": "Die meistbesuchten KI-Tools nach monatlichem Website-Traffic und Wachstum, mit Traffic-Quellen und Top-Ländern je Tool."
+    },
+    "rankingCategories": {
+      "title": "Top-KI nach Kategorien",
+      "description": "Die besten KI-Tools jeder Kategorie, sortiert nach monatlichem Website-Traffic."
+    },
+    "rankingRegions": {
+      "title": "Top-KI nach Regionen",
+      "description": "Die meistbesuchten KI-Tools in jedem Land und jeder Region, sortiert nach Website-Traffic."
+    },
+    "rankingSource": {
+      "title": "Top-KI nach Quelle",
+      "description": "KI-Tools sortiert nach Herkunft ihres Traffics: direkt, Suche, Social Media, Verweise und mehr."
+    },
+    "alphabet": {
+      "description": "KI-Tools mit dem Anfangsbuchstaben {letter}: das TopAICollection-Verzeichnis alphabetisch durchsuchen."
+    },
+    "archive": {
+      "description": "Am {date} zu TopAICollection hinzugefügte KI-Tools."
+    },
+    "search": {
+      "title": "KI-Tools suchen",
+      "titleQuery": "{q} — Suche",
+      "description": "Durchsuche das TopAICollection-Verzeichnis nach KI-Tools, Kategorien und GPTs."
+    },
+    "tag": {
+      "title": "#{name} KI-Tools",
+      "description": "{count} KI-Tools mit dem Tag {name}: Funktionen, Preise, Bewertungen und Rezensionen auf TopAICollection vergleichen."
+    }
   }
 }

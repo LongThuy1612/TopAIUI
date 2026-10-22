@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { ToolsResponse } from '~/types'
 
+// Only the home page uses the headline as its h1; the other pages that show the hero have their own.
+const props = defineProps<{ primary?: boolean }>()
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
@@ -24,9 +26,9 @@ function onSearch() {
 
 <template>
   <section class="flex flex-col items-center gap-5 bg-gradient-to-b from-[#FFF3F0] to-white px-4 pt-[72px] pb-14 text-center sm:px-10">
-    <h1 class="m-0 text-[clamp(34px,4.2vw,58px)] font-extrabold leading-[1.05] tracking-[-.04em] text-ink-900 [text-wrap:balance] lg:whitespace-nowrap">
+    <component :is="props.primary ? 'h1' : 'p'" class="m-0 text-[clamp(34px,4.2vw,58px)] font-extrabold leading-[1.05] tracking-[-.04em] text-ink-900 [text-wrap:balance] lg:whitespace-nowrap">
       {{ t('hero.titlePrefix') }} <span class="brand-gradient-text">{{ t('hero.titleHighlight') }}</span>{{ t('hero.titleSuffix') ? ` ${t('hero.titleSuffix')}` : '' }}
-    </h1>
+    </component>
 
     <p class="m-0 max-w-[680px] text-lg leading-normal text-ink-700">
       {{ totalTools }} {{ t('stats.tools') }} {{ totalCategories }} {{ t('stats.categories') }} {{ t('stats.updatedNote') }}

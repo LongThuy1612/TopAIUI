@@ -10,7 +10,7 @@ export default defineCachedEventHandler(async (event) => {
       where: { tools: { some: published } },
       orderBy: { tools: { _count: 'desc' } },
       take: 40,
-      select: { slug: true, name: true, _count: { select: { tools: { where: published } } } }
+      select: { slug: true, name: true, translations: { where: { locale: 'en' }, select: { locale: true, name: true } }, _count: { select: { tools: { where: published } } } }
     })
   ])
   const clean = (name: string) => name.replace(/^[\p{Extended_Pictographic}\u{1F3FB}-\u{1F3FF}️‍\s]+/u, '').trim() || name
@@ -32,7 +32,7 @@ export default defineCachedEventHandler(async (event) => {
     '',
     '## Top categories',
     '',
-    ...categories.map(c => `- [${clean(c.name)}](${site}/category/${c.slug}): ${c._count.tools} tools`),
+    ...categories.map(c => `- [${clean(localizedName(c.translations, 'en', c.name, c.slug))}](${site}/category/${c.slug}): ${c._count.tools} tools`),
     '',
     '## Optional',
     '',

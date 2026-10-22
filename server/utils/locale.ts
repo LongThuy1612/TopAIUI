@@ -29,6 +29,11 @@ const usableName = (value: string | null | undefined) => {
   const v = value?.trim()
   return v && !JUNK_NAMES.has(v.toLowerCase()) ? v : null
 }
+/** Text from an import, or null when it is empty or junk ("undefined", "null", …). */
+export const usableText = (value: string | null | undefined) => usableName(value)
+/** A list from an import without its empty or junk items. */
+export const usableList = (values: (string | null)[] | null | undefined) =>
+  (values ?? []).map(usableName).filter((v): v is string => v !== null)
 const titleOfSlug = (slug: string) => slug.split('-').filter(Boolean).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 
 /**

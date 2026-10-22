@@ -120,15 +120,16 @@ function shiftMonth(delta: number) {
 
 useSeoMeta({
   title: () => `${t('archive.title')} ${dateLabel.value} — TopAICollection`,
-  description: () => `AI tools added to TopAICollection on ${dateLabel.value}.`,
+  description: () => t('seo.archive.description', { date: dateLabel.value }),
   ogTitle: () => `${t('archive.title')} ${dateLabel.value} — TopAICollection`,
-  ogDescription: () => `AI tools added to TopAICollection on ${dateLabel.value}.`
+  ogDescription: () => t('seo.archive.description', { date: dateLabel.value })
 })
 </script>
 
 <template>
   <div class="bg-white">
     <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
+      <h1 class="sr-only">{{ t('archive.title') }} {{ dateLabel }}</h1>
       <nav class="flex flex-wrap items-center gap-3 text-sm text-ink-900">
         <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
         <span>/</span>

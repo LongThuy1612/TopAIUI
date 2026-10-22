@@ -13,10 +13,10 @@ function select(value: string) {
 }
 
 useSeoMeta({
-  title: 'Top AI By Source — TopAICollection',
-  description: 'AI tools ranked by where their traffic comes from: direct, search, social, referrals and more.',
-  ogTitle: 'Top AI By Source — TopAICollection',
-  ogDescription: 'AI tools ranked by where their traffic comes from: direct, search, social, referrals and more.'
+  title: () => `${t('seo.rankingSource.title')} — TopAICollection`,
+  description: () => t('seo.rankingSource.description'),
+  ogTitle: () => `${t('seo.rankingSource.title')} — TopAICollection`,
+  ogDescription: () => t('seo.rankingSource.description')
 })
 </script>
 

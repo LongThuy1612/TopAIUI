@@ -2188,5 +2188,62 @@
       "rating": "评分最高",
       "name": "名称 A–Z"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "发现最佳 AI 网站与工具",
+      "description": "按分类发现数千款 AI 工具，每日更新。比较价格、评价和流量，找到最适合编程、写作、设计和视频的 AI。"
+    },
+    "new": {
+      "title": "最新 AI 工具",
+      "description": "TopAICollection 最新收录的 AI 工具——写作、设计、编程、视频等领域的新品，每日更新。"
+    },
+    "today": {
+      "title": "今日 AI 工具",
+      "description": "今天新收录到 TopAICollection 的 AI 工具，每天发现最新的 AI 产品。"
+    },
+    "mostFeatured": {
+      "title": "最受推荐的 AI 工具",
+      "description": "TopAICollection 上最受推荐、评分最高的 AI 工具，从数千款 AI 应用中精选。"
+    },
+    "mostSaved": {
+      "title": "收藏最多的 AI",
+      "description": "TopAICollection 用户收藏最多的 AI 工具：由社区选出的最实用 AI 网站和应用。"
+    },
+    "discord": {
+      "title": "AI Discord 社区",
+      "description": "AI 工具的 Discord 社区：加入 AI 产品与用户分享动态、支持和技巧的服务器。"
+    },
+    "ranking": {
+      "title": "AI 工具排行榜",
+      "description": "按月访问量和增长排名的热门 AI 工具，并显示每个工具的流量来源和主要国家。"
+    },
+    "rankingCategories": {
+      "title": "各分类热门 AI",
+      "description": "各分类中的热门 AI 工具，按网站月访问量排名。"
+    },
+    "rankingRegions": {
+      "title": "各地区热门 AI",
+      "description": "各国家和地区访问量最高的 AI 工具，按网站流量排名。"
+    },
+    "rankingSource": {
+      "title": "按流量来源排名的 AI",
+      "description": "按流量来源排名的 AI 工具：直接访问、搜索、社交、引荐等。"
+    },
+    "alphabet": {
+      "description": "以 {letter} 开头的 AI 工具：按字母浏览 TopAICollection 目录。"
+    },
+    "archive": {
+      "description": "{date} 收录到 TopAICollection 的 AI 工具。"
+    },
+    "search": {
+      "title": "搜索 AI 工具",
+      "titleQuery": "{q} — 搜索",
+      "description": "在 TopAICollection 目录中搜索 AI 工具、分类和 GPTs。"
+    },
+    "tag": {
+      "title": "#{name} AI 工具",
+      "description": "{count} 款标记为 {name} 的 AI 工具：在 TopAICollection 上比较功能、价格、评分和评价。"
+    }
   }
 }

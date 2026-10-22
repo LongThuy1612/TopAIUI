@@ -2188,5 +2188,62 @@
       "rating": "Đánh giá cao nhất",
       "name": "Tên A–Z"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Khám phá công cụ và website AI tốt nhất",
+      "description": "Khám phá hàng nghìn công cụ AI theo danh mục, cập nhật mỗi ngày. So sánh giá, đánh giá và lượng truy cập để chọn AI tốt nhất cho lập trình, viết, thiết kế và video."
+    },
+    "new": {
+      "title": "Công cụ AI mới",
+      "description": "Những công cụ AI mới nhất trên TopAICollection — ra mắt mới về viết, thiết kế, lập trình, video và nhiều lĩnh vực khác, cập nhật mỗi ngày."
+    },
+    "today": {
+      "title": "Công cụ AI hôm nay",
+      "description": "Các công cụ AI được thêm vào TopAICollection hôm nay. Khám phá những sản phẩm AI mới ra mắt mỗi ngày."
+    },
+    "mostFeatured": {
+      "title": "Công cụ AI nổi bật nhất",
+      "description": "Những công cụ AI nổi bật và được đánh giá cao nhất trên TopAICollection, chọn lọc từ hàng nghìn ứng dụng AI."
+    },
+    "mostSaved": {
+      "title": "AI được lưu nhiều nhất",
+      "description": "Các công cụ AI được người dùng TopAICollection lưu nhiều nhất: danh sách do cộng đồng chọn gồm những website và ứng dụng AI hữu ích nhất."
+    },
+    "discord": {
+      "title": "Cộng đồng Discord về AI",
+      "description": "Cộng đồng Discord của các công cụ AI: tham gia các server nơi sản phẩm AI chia sẻ cập nhật, hỗ trợ và mẹo với người dùng."
+    },
+    "ranking": {
+      "title": "Bảng xếp hạng công cụ AI",
+      "description": "Các công cụ AI được truy cập nhiều nhất, xếp hạng theo lượng truy cập hàng tháng và mức tăng trưởng, kèm nguồn truy cập và quốc gia hàng đầu."
+    },
+    "rankingCategories": {
+      "title": "Top AI theo danh mục",
+      "description": "Công cụ AI hàng đầu trong từng danh mục, xếp hạng theo lượng truy cập website hàng tháng."
+    },
+    "rankingRegions": {
+      "title": "Top AI theo khu vực",
+      "description": "Các công cụ AI được truy cập nhiều nhất ở từng quốc gia và khu vực, xếp hạng theo lượng truy cập."
+    },
+    "rankingSource": {
+      "title": "Top AI theo nguồn truy cập",
+      "description": "Công cụ AI xếp hạng theo nguồn truy cập: trực tiếp, tìm kiếm, mạng xã hội, giới thiệu và nhiều nguồn khác."
+    },
+    "alphabet": {
+      "description": "Công cụ AI bắt đầu bằng chữ {letter}: duyệt danh bạ TopAICollection theo bảng chữ cái."
+    },
+    "archive": {
+      "description": "Các công cụ AI được thêm vào TopAICollection ngày {date}."
+    },
+    "search": {
+      "title": "Tìm kiếm công cụ AI",
+      "titleQuery": "{q} — Tìm kiếm",
+      "description": "Tìm kiếm công cụ AI, danh mục và GPTs trong danh bạ TopAICollection."
+    },
+    "tag": {
+      "title": "Công cụ AI #{name}",
+      "description": "{count} công cụ AI gắn thẻ {name}: so sánh tính năng, giá, xếp hạng và đánh giá trên TopAICollection."
+    }
   }
 }

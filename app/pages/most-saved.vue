@@ -61,14 +61,13 @@ onMounted(() => {
 
 onBeforeUnmount(() => observer?.disconnect())
 
-const SEO_DESCRIPTION = 'The AI tools TopAICollection users save most: a community-picked shortlist of the most useful AI websites and apps.'
 useSeoMeta({
-  title: 'Most Saved AIs — TopAICollection',
-  description: SEO_DESCRIPTION,
-  ogTitle: 'Most Saved AIs — TopAICollection',
-  ogDescription: SEO_DESCRIPTION
+  title: () => `${t('seo.mostSaved.title')} — TopAICollection`,
+  description: () => t('seo.mostSaved.description'),
+  ogTitle: () => `${t('seo.mostSaved.title')} — TopAICollection`,
+  ogDescription: () => t('seo.mostSaved.description')
 })
-useBreadcrumbLd(() => [['Most Saved AIs', '/most-saved']])
+useBreadcrumbLd(() => [[t('seo.mostSaved.title'), '/most-saved']])
 </script>
 
 <template>

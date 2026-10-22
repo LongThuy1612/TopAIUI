@@ -2188,5 +2188,62 @@
       "rating": "Mejor valoradas",
       "name": "Nombre A–Z"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Descubre los mejores sitios y herramientas de IA",
+      "description": "Descubre miles de herramientas de IA por categoría, actualizadas a diario. Compara precios, reseñas y tráfico para encontrar la mejor IA para programar, escribir, diseñar y crear vídeo."
+    },
+    "new": {
+      "title": "Nuevas herramientas de IA",
+      "description": "Las herramientas de IA más recientes en TopAICollection: lanzamientos de escritura, diseño, programación, vídeo y más, actualizados a diario."
+    },
+    "today": {
+      "title": "Herramientas de IA de hoy",
+      "description": "Herramientas de IA añadidas hoy a TopAICollection. Descubre cada día los últimos lanzamientos de IA."
+    },
+    "mostFeatured": {
+      "title": "Herramientas de IA más destacadas",
+      "description": "Las herramientas de IA más destacadas y mejor valoradas de TopAICollection, elegidas entre miles de apps de IA."
+    },
+    "mostSaved": {
+      "title": "IA más guardadas",
+      "description": "Las herramientas de IA que más guardan los usuarios de TopAICollection: una selección de la comunidad con las webs y apps de IA más útiles."
+    },
+    "discord": {
+      "title": "Discord de IA",
+      "description": "Comunidades de Discord de herramientas de IA: únete a los servidores donde los productos de IA comparten novedades, soporte y consejos."
+    },
+    "ranking": {
+      "title": "Ranking de herramientas de IA",
+      "description": "Las herramientas de IA más visitadas, clasificadas por tráfico web mensual y crecimiento, con fuentes de tráfico y países principales."
+    },
+    "rankingCategories": {
+      "title": "Top IA por categorías",
+      "description": "Las mejores herramientas de IA de cada categoría, clasificadas por tráfico web mensual."
+    },
+    "rankingRegions": {
+      "title": "Top IA por regiones",
+      "description": "Las herramientas de IA más visitadas en cada país y región, clasificadas por tráfico web."
+    },
+    "rankingSource": {
+      "title": "Top IA por fuente",
+      "description": "Herramientas de IA clasificadas según el origen de su tráfico: directo, búsqueda, redes sociales, referencias y más."
+    },
+    "alphabet": {
+      "description": "Herramientas de IA que empiezan por {letter}: explora el directorio de TopAICollection por orden alfabético."
+    },
+    "archive": {
+      "description": "Herramientas de IA añadidas a TopAICollection el {date}."
+    },
+    "search": {
+      "title": "Buscar herramientas de IA",
+      "titleQuery": "{q} — Búsqueda",
+      "description": "Busca herramientas de IA, categorías y GPTs en el directorio de TopAICollection."
+    },
+    "tag": {
+      "title": "Herramientas de IA #{name}",
+      "description": "{count} herramientas de IA con la etiqueta {name}: compara funciones, precios, valoraciones y reseñas en TopAICollection."
+    }
   }
 }

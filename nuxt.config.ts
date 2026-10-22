@@ -40,7 +40,12 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    sources: ['/api/__sitemap__/urls']
+    // One sitemap per language (i18n), each split in parts of 15,000 URLs: with the
+    // hreflang links a URL takes ~1 KB, and a sitemap file may hold at most 50 MB /
+    // 50,000 URLs. Files: /__sitemap__/en-pages-0.xml, … listed in /sitemap_index.xml.
+    sitemaps: {
+      pages: { includeAppSources: true, sources: ['/api/__sitemap__/urls'], chunks: 15000 }
+    }
   },
 
   app: {
@@ -203,6 +208,9 @@ export default defineNuxtConfig({
   // USER / personalized pages (dashboard, "my submissions") → same reasoning,
   // each response is specific to the logged-in user, so caching is unsafe.
   routeRules: {
+    // The language sitemaps used to be one file each (/__sitemap__/vi.xml); now they are
+    // split in parts (sitemap above). Search engines that knew the old files go to the index.
+    ...Object.fromEntries(locales.map(code => [`/__sitemap__/${code}.xml`, { redirect: { to: '/sitemap_index.xml', statusCode: 301 } }])),
     ...localized({
       // Public — safe to cache, identical for everyone in the same language
       // (see pageCache below).

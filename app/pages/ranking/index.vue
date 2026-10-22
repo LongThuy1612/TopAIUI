@@ -20,10 +20,10 @@ function select(value: string) {
 }
 
 useSeoMeta({
-  title: 'AI Tools Ranking — TopAICollection',
-  description: 'The most visited AI tools ranked by monthly website traffic and growth, with traffic sources and top countries for each tool.',
-  ogTitle: 'AI Tools Ranking — TopAICollection',
-  ogDescription: 'The most visited AI tools ranked by monthly website traffic and growth, with traffic sources and top countries for each tool.'
+  title: () => `${t('seo.ranking.title')} — TopAICollection`,
+  description: () => t('seo.ranking.description'),
+  ogTitle: () => `${t('seo.ranking.title')} — TopAICollection`,
+  ogDescription: () => t('seo.ranking.description')
 })
 </script>
 

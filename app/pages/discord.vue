@@ -62,14 +62,13 @@ onMounted(() => {
 
 onBeforeUnmount(() => observer?.disconnect())
 
-const SEO_DESCRIPTION = 'Discord communities of AI tools: join the servers where AI products share updates, support and tips with their users.'
 useSeoMeta({
-  title: 'Discord of AI — TopAICollection',
-  description: SEO_DESCRIPTION,
-  ogTitle: 'Discord of AI — TopAICollection',
-  ogDescription: SEO_DESCRIPTION
+  title: () => `${t('seo.discord.title')} — TopAICollection`,
+  description: () => t('seo.discord.description'),
+  ogTitle: () => `${t('seo.discord.title')} — TopAICollection`,
+  ogDescription: () => t('seo.discord.description')
 })
-useBreadcrumbLd(() => [['Discord of AI', '/discord']])
+useBreadcrumbLd(() => [[t('seo.discord.title'), '/discord']])
 </script>
 
 <template>

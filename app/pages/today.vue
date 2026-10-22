@@ -70,10 +70,10 @@ onMounted(() => {
 onBeforeUnmount(() => observer?.disconnect())
 
 useSeoMeta({
-  title: 'Today — TopAICollection',
-  description: 'AI tools added to TopAICollection today. Discover the latest AI launches every day.',
-  ogTitle: 'Today — TopAICollection',
-  ogDescription: 'AI tools added to TopAICollection today. Discover the latest AI launches every day.'
+  title: () => `${t('seo.today.title')} — TopAICollection`,
+  description: () => t('seo.today.description'),
+  ogTitle: () => `${t('seo.today.title')} — TopAICollection`,
+  ogDescription: () => t('seo.today.description')
 })
 </script>
 

@@ -24,7 +24,22 @@ function inLanguages(path: string, codes: readonly string[], lastmod?: Date): Si
   return codes.map(code => ({ loc: prefixed(code, path), lastmod, alternatives, _i18nTransform: false }))
 }
 
-export default defineSitemapEventHandler(async () => {
+// Each sitemap file (one per language, split in parts — nuxt.config.ts sitemap) and the
+// index fetch this list again; building it reads every tool. Kept for 10 minutes, shared
+// by the requests meanwhile.
+const URLS_MAX_AGE = 10 * 60 * 1000
+let memo: { at: number; urls: Promise<SitemapUrlInput[]> } | null = null
+
+export default defineSitemapEventHandler(() => {
+  if (import.meta.dev || !memo || Date.now() - memo.at > URLS_MAX_AGE) {
+    const urls = buildUrls()
+    memo = { at: Date.now(), urls }
+    urls.catch(() => { if (memo?.urls === urls) memo = null }) // a failed build is not kept
+  }
+  return memo.urls
+})
+
+async function buildUrls(): Promise<SitemapUrlInput[]> {
   const [tools, translated, categories, tags, articles, gpts] = await Promise.all([
     prisma.tool.findMany({
       where: { status: 'PUBLISHED', deletedAt: null },
@@ -36,8 +51,8 @@ export default defineSitemapEventHandler(async () => {
         locale: { not: defaultLocale },
         tool: { status: 'PUBLISHED', deletedAt: null },
         OR: [
-          { AND: [{ shortDesc: { not: null } }, { shortDesc: { not: '' } }] },
-          { AND: [{ description: { not: null } }, { description: { not: '' } }] }
+          { AND: [{ shortDesc: { not: null } }, { shortDesc: { notIn: ['', 'undefined'] } }] },
+          { AND: [{ description: { not: null } }, { description: { notIn: ['', 'undefined'] } }] }
         ]
       },
       select: { toolId: true, locale: true }
@@ -79,4 +94,4 @@ export default defineSitemapEventHandler(async () => {
     ...articles.flatMap(article => inLanguages(`/ai-news/${article.slug}`, [defaultLocale], article.updatedAt)),
     ...gpts.flatMap(gpt => inLanguages(`/gpts/${gpt.slug}`, [defaultLocale], gpt.updatedAt))
   ]
-})
+}

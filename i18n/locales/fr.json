@@ -2188,5 +2188,62 @@
       "rating": "Mieux notés",
       "name": "Nom A–Z"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Découvrez les meilleurs sites et outils d'IA",
+      "description": "Découvrez des milliers d'outils d'IA par catégorie, mis à jour chaque jour. Comparez prix, avis et trafic pour trouver la meilleure IA pour coder, écrire, designer et créer des vidéos."
+    },
+    "new": {
+      "title": "Nouveaux outils d'IA",
+      "description": "Les derniers outils d'IA ajoutés à TopAICollection : nouveautés en rédaction, design, code, vidéo et plus, mises à jour chaque jour."
+    },
+    "today": {
+      "title": "Outils d'IA du jour",
+      "description": "Les outils d'IA ajoutés aujourd'hui à TopAICollection. Découvrez chaque jour les derniers lancements d'IA."
+    },
+    "mostFeatured": {
+      "title": "Outils d'IA les plus mis en avant",
+      "description": "Les outils d'IA les plus mis en avant et les mieux notés de TopAICollection, sélectionnés parmi des milliers d'applications."
+    },
+    "mostSaved": {
+      "title": "IA les plus enregistrées",
+      "description": "Les outils d'IA les plus enregistrés par les utilisateurs de TopAICollection : une sélection communautaire des sites et apps d'IA les plus utiles."
+    },
+    "discord": {
+      "title": "Discord de l'IA",
+      "description": "Communautés Discord des outils d'IA : rejoignez les serveurs où les produits d'IA partagent nouveautés, support et astuces."
+    },
+    "ranking": {
+      "title": "Classement des outils d'IA",
+      "description": "Les outils d'IA les plus visités, classés par trafic web mensuel et croissance, avec sources de trafic et principaux pays."
+    },
+    "rankingCategories": {
+      "title": "Top IA par catégorie",
+      "description": "Les meilleurs outils d'IA de chaque catégorie, classés par trafic web mensuel."
+    },
+    "rankingRegions": {
+      "title": "Top IA par région",
+      "description": "Les outils d'IA les plus visités dans chaque pays et région, classés par trafic web."
+    },
+    "rankingSource": {
+      "title": "Top IA par source",
+      "description": "Outils d'IA classés selon l'origine de leur trafic : direct, recherche, réseaux sociaux, référents et plus."
+    },
+    "alphabet": {
+      "description": "Outils d'IA commençant par {letter} : parcourez l'annuaire TopAICollection par ordre alphabétique."
+    },
+    "archive": {
+      "description": "Outils d'IA ajoutés à TopAICollection le {date}."
+    },
+    "search": {
+      "title": "Rechercher des outils d'IA",
+      "titleQuery": "{q} — Recherche",
+      "description": "Recherchez des outils d'IA, des catégories et des GPTs dans l'annuaire TopAICollection."
+    },
+    "tag": {
+      "title": "Outils d'IA #{name}",
+      "description": "{count} outils d'IA avec le tag {name} : comparez fonctionnalités, prix, notes et avis sur TopAICollection."
+    }
   }
 }

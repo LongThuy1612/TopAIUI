@@ -78,15 +78,16 @@ onBeforeUnmount(() => observer?.disconnect())
 
 useSeoMeta({
   title: () => `${t('alphabet.title')} ${letter.value} — TopAICollection`,
-  description: () => `AI tools starting with ${letter.value}: browse the TopAICollection directory alphabetically.`,
+  description: () => t('seo.alphabet.description', { letter: letter.value }),
   ogTitle: () => `${t('alphabet.title')} ${letter.value} — TopAICollection`,
-  ogDescription: () => `AI tools starting with ${letter.value}: browse the TopAICollection directory alphabetically.`
+  ogDescription: () => t('seo.alphabet.description', { letter: letter.value })
 })
 </script>
 
 <template>
   <div class="bg-white">
     <div class="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-8">
+      <h1 class="sr-only">{{ t('alphabet.title') }} {{ letter }}</h1>
       <nav class="flex flex-wrap items-center gap-3 text-sm text-ink-900">
         <NuxtLinkLocale to="/" class="hover:text-brand-600">{{ t('category.breadcrumbHome') }}</NuxtLinkLocale>
         <span>/</span>

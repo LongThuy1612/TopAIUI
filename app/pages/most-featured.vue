@@ -70,10 +70,10 @@ onMounted(() => {
 onBeforeUnmount(() => observer?.disconnect())
 
 useSeoMeta({
-  title: 'Most Featured — TopAICollection',
-  description: 'The most featured and highest-rated AI tools on TopAICollection, picked from thousands of AI apps.',
-  ogTitle: 'Most Featured — TopAICollection',
-  ogDescription: 'The most featured and highest-rated AI tools on TopAICollection, picked from thousands of AI apps.'
+  title: () => `${t('seo.mostFeatured.title')} — TopAICollection`,
+  description: () => t('seo.mostFeatured.description'),
+  ogTitle: () => `${t('seo.mostFeatured.title')} — TopAICollection`,
+  ogDescription: () => t('seo.mostFeatured.description')
 })
 </script>
 

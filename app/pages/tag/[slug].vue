@@ -76,8 +76,8 @@ onMounted(() => {
 onBeforeUnmount(() => observer?.disconnect())
 
 const tagName = computed(() => tag.value?.name ?? slug.value)
-const seoTitle = computed(() => `#${tagName.value} AI Tools — TopAICollection`)
-const seoDescription = computed(() => `${tag.value?.count ?? ''} AI tools tagged ${tagName.value}: compare features, pricing, ratings and reviews on TopAICollection.`.trim())
+const seoTitle = computed(() => `${t('seo.tag.title', { name: tagName.value })} — TopAICollection`)
+const seoDescription = computed(() => t('seo.tag.description', { name: tagName.value, count: tag.value?.count ?? '' }).trim())
 useSeoMeta({
   title: seoTitle,
   description: seoDescription,

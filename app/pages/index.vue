@@ -143,13 +143,12 @@ const CATEGORY_HUES = [20, 60, 120, 160, 200, 250, 290, 330]
 const categoryTint = (i: number) => ({ background: `oklch(0.94 0.04 ${CATEGORY_HUES[i % CATEGORY_HUES.length]})` })
 
 // Lengths search engines show in full: title 50–60 characters, description 120–160.
-const SEO_TITLE = 'Discover The Best AI Websites & Tools | TopAICollection'
-const SEO_DESCRIPTION = 'Discover thousands of AI tools by category, updated daily. Compare pricing, reviews and traffic to find the best AI for coding, writing, design and video.'
+const seoTitle = () => `${t('seo.home.title')} | TopAICollection`
 useSeoMeta({
-  title: SEO_TITLE,
-  description: SEO_DESCRIPTION,
-  ogTitle: SEO_TITLE,
-  ogDescription: SEO_DESCRIPTION
+  title: seoTitle,
+  description: () => t('seo.home.description'),
+  ogTitle: seoTitle,
+  ogDescription: () => t('seo.home.description')
 })
 
 // Site name, logo, social profiles and the search box for search results.
@@ -184,7 +183,7 @@ useJsonLd('site', () => [
 
 <template>
   <div>
-    <AppHero />
+    <AppHero primary />
 
     <section class="mx-auto flex max-w-[1356px] flex-wrap gap-12 px-4 pt-6 pb-14 sm:px-10">
       <!-- Top AI launches -->

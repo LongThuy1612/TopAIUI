@@ -2188,5 +2188,62 @@
       "rating": "評価順",
       "name": "名前 A–Z"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "最高のAIウェブサイトとツールを見つけよう",
+      "description": "カテゴリ別に数千のAIツールを毎日更新。料金・レビュー・トラフィックを比較して、コーディング、ライティング、デザイン、動画に最適なAIを見つけましょう。"
+    },
+    "new": {
+      "title": "新着AIツール",
+      "description": "TopAICollectionに追加された最新のAIツール。ライティング、デザイン、コーディング、動画などの新サービスを毎日更新。"
+    },
+    "today": {
+      "title": "今日のAIツール",
+      "description": "今日TopAICollectionに追加されたAIツール。最新のAIサービスを毎日チェック。"
+    },
+    "mostFeatured": {
+      "title": "注目のAIツール",
+      "description": "TopAICollectionで最も注目され評価の高いAIツールを、数千のAIアプリから厳選。"
+    },
+    "mostSaved": {
+      "title": "最も保存されたAI",
+      "description": "TopAICollectionのユーザーが最も保存したAIツール。コミュニティが選んだ便利なAIサイトとアプリ。"
+    },
+    "discord": {
+      "title": "AIのDiscordコミュニティ",
+      "description": "AIツールのDiscordコミュニティ。AI製品が最新情報、サポート、ヒントを共有するサーバーに参加しよう。"
+    },
+    "ranking": {
+      "title": "AIツールランキング",
+      "description": "月間トラフィックと成長率で順位付けした人気AIツール。各ツールの流入元と上位の国も掲載。"
+    },
+    "rankingCategories": {
+      "title": "カテゴリ別トップAI",
+      "description": "各カテゴリのトップAIツールを、月間ウェブトラフィック順に掲載。"
+    },
+    "rankingRegions": {
+      "title": "地域別トップAI",
+      "description": "国と地域ごとに最も訪問されているAIツールを、トラフィック順に掲載。"
+    },
+    "rankingSource": {
+      "title": "流入元別トップAI",
+      "description": "トラフィックの流入元別に順位付けしたAIツール：直接、検索、ソーシャル、リファラルなど。"
+    },
+    "alphabet": {
+      "description": "{letter}で始まるAIツール：TopAICollectionのディレクトリをアルファベット順に閲覧。"
+    },
+    "archive": {
+      "description": "{date}にTopAICollectionに追加されたAIツール。"
+    },
+    "search": {
+      "title": "AIツールを検索",
+      "titleQuery": "{q} — 検索",
+      "description": "TopAICollectionのディレクトリでAIツール、カテゴリ、GPTsを検索。"
+    },
+    "tag": {
+      "title": "#{name} のAIツール",
+      "description": "{name} タグの付いたAIツール {count} 件：TopAICollectionで機能、料金、評価、レビューを比較。"
+    }
   }
 }

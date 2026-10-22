@@ -76,10 +76,10 @@ const currentPage = computed({
   }
 })
 
-const seoTitle = computed(() => (q.value ? `${q.value} — Search — TopAICollection` : 'Search AI Tools — TopAICollection'))
+const seoTitle = computed(() => `${q.value ? t('seo.search.titleQuery', { q: q.value }) : t('seo.search.title')} — TopAICollection`)
 useSeoMeta({
   title: seoTitle,
-  description: 'Search the TopAICollection directory of AI tools, categories and GPTs.',
+  description: () => t('seo.search.description'),
   robots: 'noindex, follow'
 })
 </script>

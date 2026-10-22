@@ -2188,5 +2188,62 @@
       "rating": "Top rated",
       "name": "Name A–Z"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Discover The Best AI Websites & Tools",
+      "description": "Discover thousands of AI tools by category, updated daily. Compare pricing, reviews and traffic to find the best AI for coding, writing, design and video."
+    },
+    "new": {
+      "title": "New AI Tools",
+      "description": "The newest AI tools added to TopAICollection — fresh launches in writing, design, coding, video and more, updated daily."
+    },
+    "today": {
+      "title": "Today's AI Tools",
+      "description": "AI tools added to TopAICollection today. Discover the latest AI launches every day."
+    },
+    "mostFeatured": {
+      "title": "Most Featured AI Tools",
+      "description": "The most featured and highest-rated AI tools on TopAICollection, picked from thousands of AI apps."
+    },
+    "mostSaved": {
+      "title": "Most Saved AIs",
+      "description": "The AI tools TopAICollection users save most: a community-picked shortlist of the most useful AI websites and apps."
+    },
+    "discord": {
+      "title": "Discord of AI",
+      "description": "Discord communities of AI tools: join the servers where AI products share updates, support and tips with their users."
+    },
+    "ranking": {
+      "title": "AI Tools Ranking",
+      "description": "The most visited AI tools ranked by monthly website traffic and growth, with traffic sources and top countries for each tool."
+    },
+    "rankingCategories": {
+      "title": "Top AI By Categories",
+      "description": "Top AI tools in every category, ranked by monthly website traffic."
+    },
+    "rankingRegions": {
+      "title": "Top AI By Regions",
+      "description": "The most visited AI tools in each country and region, ranked by website traffic."
+    },
+    "rankingSource": {
+      "title": "Top AI By Source",
+      "description": "AI tools ranked by where their traffic comes from: direct, search, social, referrals and more."
+    },
+    "alphabet": {
+      "description": "AI tools starting with {letter}: browse the TopAICollection directory alphabetically."
+    },
+    "archive": {
+      "description": "AI tools added to TopAICollection on {date}."
+    },
+    "search": {
+      "title": "Search AI Tools",
+      "titleQuery": "{q} — Search",
+      "description": "Search the TopAICollection directory of AI tools, categories and GPTs."
+    },
+    "tag": {
+      "title": "#{name} AI Tools",
+      "description": "{count} AI tools tagged {name}: compare features, pricing, ratings and reviews on TopAICollection."
+    }
   }
 }

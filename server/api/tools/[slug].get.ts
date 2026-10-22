@@ -110,14 +110,23 @@ export default defineCachedEventHandler(async (event) => {
     faqs = any?.faqs ?? faqs
   }
   const translation = pickByLocale(translations, locale)
+  // Field by field: a translated row can carry a broken field (the text "undefined", lists of
+  // "undefined") — that field falls back to English instead of showing the junk.
+  const en = translations.find(r => r.locale === 'en')
+  const textOf = (key: 'shortDesc' | 'description' | 'whatIs' | 'howToUse') =>
+    usableText(translation?.[key]) ?? (translation === en ? null : usableText(en?.[key]))
+  const listOf = (key: 'coreFeatures' | 'useCases') => {
+    const own = usableList(translation?.[key])
+    return own.length || translation === en ? own : usableList(en?.[key])
+  }
   // Languages with a real description: the tool's other language pages show the
   // English text, so they point search engines at the English page (useSeoLocales).
   const localeRows = await prisma.toolTranslation.findMany({
     where: {
       toolId: tool.id,
       OR: [
-        { AND: [{ shortDesc: { not: null } }, { shortDesc: { not: '' } }] },
-        { AND: [{ description: { not: null } }, { description: { not: '' } }] }
+        { AND: [{ shortDesc: { not: null } }, { shortDesc: { notIn: ['', 'undefined'] } }] },
+        { AND: [{ description: { not: null } }, { description: { notIn: ['', 'undefined'] } }] }
       ]
     },
     select: { locale: true }
@@ -134,12 +143,12 @@ export default defineCachedEventHandler(async (event) => {
     website: safeLinkUrl(rest.website),
     twitterUrl: safeLinkUrl(rest.twitterUrl),
     discordUrl: safeLinkUrl(rest.discordUrl),
-    shortDesc: cleanText(translation?.shortDesc),
-    description: cleanText(translation?.description),
-    whatIs: translation?.whatIs ?? null,
-    howToUse: translation?.howToUse ?? null,
-    coreFeatures: translation?.coreFeatures ?? [],
-    useCases: translation?.useCases ?? [],
+    shortDesc: textOf('shortDesc'),
+    description: textOf('description'),
+    whatIs: textOf('whatIs'),
+    howToUse: textOf('howToUse'),
+    coreFeatures: listOf('coreFeatures'),
+    useCases: listOf('useCases'),
     pricingPlans: pickLocaleGroup(pricingPlans, locale).map((p) => ({ name: p.name, price: p.price, period: p.period, features: p.features })),
     faqs: pickLocaleGroup(faqs, locale).map((f) => ({ question: f.question, answer: f.answer })),
     categories: categories.map((c) => ({ slug: c.slug, icon: c.icon, name: localizedName(c.translations, locale, c.name, c.slug) })),
