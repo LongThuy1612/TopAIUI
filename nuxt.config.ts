@@ -50,6 +50,10 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      meta: [
+        // impact.com affiliate site-ownership verification.
+        { name: 'impact-site-verification', value: 'd27d1102-69e0-443e-b708-4a039c6b49d2' }
+      ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'icon', type: 'image/png', href: '/topaicollection.png' },
