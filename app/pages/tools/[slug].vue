@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { markdownRenderer } from '#shared/markdown'
 import { SITE_TIME_ZONE } from '#shared/time'
 import type { Review, ReviewsResponse, Tool, ToolsResponse } from '~/types'
 
@@ -25,6 +26,14 @@ if (error.value) {
 }
 
 const category = computed(() => tool.value?.categories?.[0])
+// howToUse is crawler/AI-written Markdown (numbered steps, **bold**). Raw HTML stays escaped and
+// links leave with rel="sponsored noopener" since the text is third-party content.
+const howToUseHtml = computed(() => (tool.value?.howToUse ? markdownRenderer('sponsored').render(tool.value.howToUse) : ''))
+// Same for "What is": whatIs, falling back to the plain description.
+const whatIsHtml = computed(() => {
+  const text = tool.value?.whatIs || tool.value?.description
+  return text ? markdownRenderer('sponsored').render(text) : ''
+})
 
 // Slides come from `images` (entries are a string or { url }) when it has any;
 // otherwise fall back to a single screenshotUrl, then the logo.
@@ -889,12 +898,12 @@ useJsonLd('tool', () => {
         <div class="mt-6 divide-y divide-ink-100 rounded-lg border border-ink-200 bg-white p-7">
           <section v-if="tool.whatIs || tool.description" class="py-7 first:pt-0">
             <h3 class="text-2xl font-bold text-ink-900">{{ t('tool.whatIs', { name: tool.name }) }}</h3>
-            <p class="mt-4 text-lg leading-[1.6] text-ink-900">{{ tool.whatIs || tool.description }}</p>
+            <ArticleBody :html="whatIsHtml" class="mt-4 !text-lg !leading-[1.6] !text-ink-900" />
           </section>
 
           <section v-if="tool.howToUse" class="py-7 first:pt-0">
             <h3 class="text-2xl font-bold text-ink-900">{{ t('tool.howToUseHeading', { name: tool.name }) }}</h3>
-            <p class="mt-4 text-lg leading-[1.6] text-ink-900">{{ tool.howToUse }}</p>
+            <ArticleBody :html="howToUseHtml" class="mt-4 !text-lg !leading-[1.6] !text-ink-900" />
           </section>
 
           <section v-if="tool.coreFeatures?.length" class="py-7 first:pt-0">
