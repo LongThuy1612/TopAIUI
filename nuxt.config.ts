@@ -52,7 +52,7 @@ export default defineNuxtConfig({
     head: {
       meta: [
         // impact.com affiliate site-ownership verification.
-        { name: 'impact-site-verification', value: 'd27d1102-69e0-443e-b708-4a039c6b49d2', content: 'd27d1102-69e0-443e-b708-4a039c6b49d2' }
+        { name: 'impact-site-verification', value: '2716956c-7971-435f-af2c-6585ecd0b7c1', content: '2716956c-7971-435f-af2c-6585ecd0b7c1' }
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
